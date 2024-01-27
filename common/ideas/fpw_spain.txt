@@ -1,0 +1,45 @@
+ideas = {
+	country = {
+
+		# bankrupted country
+		fpw_SPR_bankrupted_country = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = EST_exploit_the_banks
+
+			modifier = {
+				industry_repair_factor = -0.25
+				stability_factor = -0.15
+			}
+		}
+
+		# corrupted goverenment
+		fpw_SPR_corrupted_government = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ETH_corrupt_bureaucracy
+
+			modifier = {
+				neutrality_drift = -0.25
+				political_power_factor = -0.25
+				stability_factor = -0.05
+			}
+		}
+	}
+}

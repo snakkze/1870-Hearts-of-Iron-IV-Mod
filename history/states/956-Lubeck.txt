@@ -1,0 +1,32 @@
+state={
+	id=956
+	name="STATE_956"
+
+	history={
+		victory_points = {
+			9320 10 
+		}
+		owner = LUE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 2
+
+		}
+		add_core_of = LUE
+		add_claim_by = DEN
+		add_claim_by = PRS
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+	provinces={
+		9320 
+	}
+	manpower=217198
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=city
+}

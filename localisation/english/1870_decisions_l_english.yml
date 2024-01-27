@@ -1,0 +1,56 @@
+﻿l_english:
+  fpw_franco_prussian_war_category:0 "Franco-Prussian War"
+  fpw_franco_prussian_war_category_desc:0 "The Unification of Germany has never been more relevant; the [PRS.GetAdjective] have beaten the [AUS.GetAdjective] in the Austro-Prussian War. Now, it is only left to unify with the rest of the German states."
+  fpw_side_with_germany:0 "Side with [PRS.GetNameDef]"
+  fpw_side_with_france:0 "Side with [FRA.GetNameDef]"
+
+  fpw_treaty_of_frankfurt_category:0 "Treaty of Frankfurt"
+  fpw_treaty_of_frankfurt_category_desc:0 "Following the [PRS.GetAdjective] victory in the Franco-Prussian War and the declaration of the Third Republic, as well as the unification of Germany was the Treaty of Frankfurt signed as a Peace Deal between France and the newly formed German State."
+  fpw_treaty_of_frankfurt_progress:0 "Ratifying the Treaty..."
+
+  fpw_german_unification_category:0 "Austro-Prussian War"
+  fpw_german_unification_category_desc:0 "[get_austro_prussian_war_desc]"
+
+  fpw_colonization_category:0 "Colonization"
+
+  fpw_german_confederation_category:0 "German Confederation"
+  fpw_german_confederation_category_desc:0 "Since the Treaty of Vienna, the Germans have been united once again under the German Confederation, the successor to the Holy Roman Empire. However, diverse opinions are all over the confederation. Some want the confederation to evolve into a single, unified country, while others wish for its dissolution."
+
+  fpw_austro_prussian_PRS_desc:0 "Since his employment as the German Chancellor, Otto von Bismarck has wanted to achieve German unification. However, this will only be possible if Prussia can demonstrate to the other German states, especially Austria, that it can effectively rule the many states within the German sphere of influence."
+  fpw_austro_prussian_AUS_desc:0 "Since the German-Danish War in 1864, our aim has been to demonstrate our dominance over the other German states. Now, the opportune moment has arrived to assert our supremacy by winning a war against the formidable Prussians."
+  fpw_austro_prussian_desc:0 "In 1864, the German states of Prussia and Austria fought bravely against the Danes. This conflict is now recognized as the First German Unification War, and the possibility of a second war is imminent. It is now upon us to decide which side of German supremacy within the German Confederation we wish to support."
+
+  fpw_german_confederation:0 "Leave the German Confederation"
+
+  fpw_austro_prussian_war_escalation:0 "Austro-Prussian War Escalation"
+
+  fpw_side_with_prussia:0 "Side with [PRS.GetNameDef]"
+  fpw_side_with_austria:0 "Side with [AUS.GetNameDef]"
+
+  colonization_descision:0 "Colonizing §Y[FROM.GetName]§!."
+  integration_descision:0 "Integrate §Y[FROM.GetName]§!."
+
+  PRS_ally_saxony:0 "Influence Saxony"
+  PRS_ally_bavaria:0 "Influence Bavaria"
+  PRS_ally_wurttemberg:0 "Influence Württemberg"
+  PRS_ally_baden:0 "Influence Baden"
+  PRS_ally_oldenburg:0 "Influence Oldenburg"
+  PRS_ally_hanover:0 "Influence Hanover"
+  PRS_ally_mecklenburg:0 "Influence Mecklenburg"
+  PRS_ally_kassel:0 "Influence Hessen-Kassel"
+  PRS_ally_hessen:0 "Influence Hessen-Darmstadt"
+  PRS_ally_nassau:0 "Influence Hessen-Nassau"
+  PRS_ally_sachsen_meiningen:0 "Influence Saxe-Meiningen"
+  PRS_ally_sachsen_coburg:0 "Influence Saxe-Coburg-Gotha"
+  PRS_ally_sachsen_weimar:0 "Influence Saxe-Weimar"
+  PRS_ally_sachsen_anhalt:0 "Influence Saxe-Anhalt"
+  PRS_ally_brunswick:0 "Influence Brunswick"
+  PRS_ally_waldeck:0 "Influence Waldeck"
+  PRS_ally_frankfurt:0 "Influence Frankfurt"
+  PRS_ally_strelitz:0 "Influence Mecklenburg-Strelitz"
+  PRS_ally_lippe:0 "Influence Lippe"
+  PRS_ally_schaumburg:0 "Influence Schaumburg-Lippe"
+  PRS_ally_schwarzburg:0 "Influence Schwarzburg"
+  PRS_ally_bremen:0 "Influence Bremen"
+  PRS_ally_hamburg:0 "Influence Hamburg"
+  PRS_ally_luburg:0 "Influence Lübeck"

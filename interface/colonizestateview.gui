@@ -1,0 +1,15 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "province_colonize_window"
+		position = { x = 22 y = 440 }
+		size = { width=480 height=29%% }
+
+		buttonType = {
+			name = "colonize_button"
+			quadTextureSprite ="GFX_colonize_button"
+			position = { x= 13 y = -11 }
+			pdx_tooltip = fpw_colonize_button_tt
+		}	
+	}
+}

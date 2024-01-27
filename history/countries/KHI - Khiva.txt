@@ -1,0 +1,26 @@
+﻿capital = 831 #Khiva
+
+set_cosmetic_tag = KHI_fpw_cosmetic
+
+#oob = "KHI_1936"
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = authoritarian_ideology
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	conservatism_ideology = 26
+	socialism_ideology = 2
+	authoritarian_ideology = 72
+}
+
+recruit_character = KHI_nedirbay_aytakov
+recruit_character = KHI_junaid_khan
+
+
+

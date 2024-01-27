@@ -1,0 +1,58 @@
+add_namespace = austro_prussian_fpw
+
+# [From.GetName] has joined our side
+country_event = {
+	id = austro_prussian_fpw.1
+	title = austro_prussian_fpw.1.t
+	desc = austro_prussian_fpw.1.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.1.a
+	}
+}
+ 
+ # Austria capitulates
+country_event = {
+	id = austro_prussian_fpw.2
+	title = austro_prussian_fpw.2.t
+	desc = austro_prussian_fpw.2.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.2.a
+		austrian_surrender = yes
+	}
+}
+
+ # Prussia capitulates
+country_event = {
+	id = austro_prussian_fpw.3
+	title = austro_prussian_fpw.3.t
+	desc = austro_prussian_fpw.3.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.3.a
+		prussian_surrender = yes
+	}
+}
+ 

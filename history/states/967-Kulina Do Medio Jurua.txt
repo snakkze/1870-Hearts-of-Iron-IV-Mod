@@ -1,0 +1,25 @@
+state={
+	id=967
+	name="STATE_967"
+
+	history={
+		owner = BOL
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_claim_by = BOL
+		add_core_of = BRA
+		1870.1.1 = {
+			owner = BRA
+		}
+
+	}
+	provinces={
+		5216 10960 
+	}
+	manpower=56320
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

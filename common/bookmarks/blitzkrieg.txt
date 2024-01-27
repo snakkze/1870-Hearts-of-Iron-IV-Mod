@@ -1,0 +1,119 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1870.8.14.12
+		picture = "GFX_select_date_1939"
+		default_country = "PRS"
+
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+	
+		"ENG"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		
+
+		"USA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"PRS"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"AUS"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"TUR"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"SOV"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		"ITA"={
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

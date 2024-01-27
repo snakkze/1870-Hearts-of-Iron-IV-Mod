@@ -1,0 +1,16 @@
+characters={
+
+	AUS_franz_joseph_i={
+		name="Franz Joseph I."
+		portraits={
+			civilian={
+				large=GFX_portrait_AUS_franz_joseph_i
+			}
+		}
+		country_leader={
+			ideology=conservative_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+state={
+	id=945
+	name="STATE_945"
+
+	history = {
+		owner = BRE
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 1
+		}
+		victory_points = {
+			3326 5 
+		}
+		add_core_of = BRE
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+	provinces={
+		3326 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=city
+}

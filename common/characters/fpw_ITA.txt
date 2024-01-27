@@ -1,0 +1,16 @@
+characters={
+
+	ITA_alfonso_ferrero={
+		name="Alfonso Ferrero La Marmora"
+		portraits={
+			civilian={
+				large=GFX_portrait_ITA_alfonso_ferrero
+			}
+		}
+		country_leader={
+			ideology=conservative_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

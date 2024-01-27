@@ -1,0 +1,30 @@
+state={
+	id=953
+	name="STATE_953"
+
+	history={
+		owner = SBG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			6524 5
+		}
+		add_core_of = SBG
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+
+	provinces={
+		6524 
+	}
+	manpower=13000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

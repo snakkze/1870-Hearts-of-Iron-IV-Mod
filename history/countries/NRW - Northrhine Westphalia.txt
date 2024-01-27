@@ -1,0 +1,15 @@
+capital = 51
+
+set_politics = {
+	ruling_party = authoritarian_ideology
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	liberalism_ideology = 21
+	conservatism_ideology = 6
+	authoritarian_ideology = 71
+	socialism_ideology = 2
+}

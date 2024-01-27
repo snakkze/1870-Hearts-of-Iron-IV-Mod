@@ -1,0 +1,38 @@
+
+state={
+	id=58
+	name="STATE_58"
+
+	history={
+		victory_points = {
+			6389 10 
+		}
+		owner = AUS
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 6
+			6389 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_claim_by = DEN
+		add_claim_by = AUS
+		add_claim_by = PRS
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+
+	provinces={
+		3368 6257 6389 11331 3231
+	}
+	manpower=3095630
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

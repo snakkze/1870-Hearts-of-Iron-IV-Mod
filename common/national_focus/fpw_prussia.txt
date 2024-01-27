@@ -1,0 +1,776 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+#!gfx:interface\fpw_goals.gfx
+
+focus_tree = {
+	id = prussian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PRS
+		}
+	}
+
+	continuous_focus_position = { x = 3012 y = 565 }
+	
+	default = no
+
+	focus = {
+		id = PRS_lesser_german_solution
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = PRS_greater_german_solution }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_seek_german_support
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_lesser_german_solution }
+		relative_position_id = PRS_lesser_german_solution
+		x = -4
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				AUS = {
+					set_country_flag = austro_prussian_war
+				}
+				PRS = {
+					set_country_flag = austro_prussian_war
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_propose_federal_reform
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = PRS_seek_german_support }
+		relative_position_id = PRS_seek_german_support
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Austria is triggered and ask for the schleswig holsteinische frage
+			# triggers schleswig holsteinische frage event
+		}
+	}
+
+	# Maybe austro prussian war
+	focus = {
+		id = PRS_annex_holstein
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = PRS_propose_federal_reform }
+		relative_position_id = PRS_propose_federal_reform
+		mutually_exclusive = { focus = PRS_find_a_peaceful_solution }
+		x = 3
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Following the Schleswig Holsteinisch question we will annex Holstein!
+			# This will trigger the Bundesbeschluss vom 14. Juni 1866 and will allow austria to mobilize against germany
+			# When escalation is finished prussia gets event to gain the following
+			# National idea "nationalism" or "brothers on the front" attack on austrian core higher because its same VOLK but lower war intrest because its the same Volk!
+			# Idea is for the fact to make the war easier
+		}
+	}
+
+	focus = {
+		id = PRS_bruderkrieg_ending
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = PRS_annex_holstein focus = PRS_find_a_peaceful_solution }
+		relative_position_id = PRS_annex_holstein
+		x = -4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Does the bruderkrieg peacedeal
+		}
+	}
+
+	# Socialist path
+	# United Workers of Germany
+	focus = {
+		id = PRS_accept_austrian_dominance
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_bruderkrieg_ending }
+		mutually_exclusive = { focus = PRS_prussian_identity }
+		relative_position_id = PRS_bruderkrieg_ending
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	# Prusso-Nationalist Path
+	focus = {
+		id = PRS_prussian_identity
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_bruderkrieg_ending }
+		mutually_exclusive = { focus = PRS_accept_austrian_dominance }
+		relative_position_id = PRS_bruderkrieg_ending
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_austro_prussian_victory
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = PRS_annex_holstein }
+		relative_position_id = PRS_annex_holstein
+		x = 4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_integrate_minor_austrian_lands
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_austro_prussian_victory }
+		mutually_exclusive = { focus = PRS_continue_bismarcks_plan }
+		relative_position_id = PRS_austro_prussian_victory
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
+			# possibly also with an event
+		}
+	}
+
+	focus = {
+		id = PRS_continue_bismarcks_plan
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_austro_prussian_victory }
+		mutually_exclusive = { focus = PRS_integrate_minor_austrian_lands }
+		relative_position_id = PRS_austro_prussian_victory
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
+			# possibly also with an event
+		}
+	}
+
+	focus = {
+		id = PRS_annex_hostile_nothern_states
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_continue_bismarcks_plan }
+		relative_position_id = PRS_continue_bismarcks_plan
+		x = -2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_invite_remaing_nothern_states
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_continue_bismarcks_plan }
+		relative_position_id = PRS_continue_bismarcks_plan
+		x = 2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Prussia demands the smaller remaing states to join, if not prussia will get a war goal
+		}
+	}
+
+	focus = {
+		id = PRS_ratify_the_peace
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = PRS_annex_hostile_nothern_states }
+		prerequisite = { focus = PRS_invite_remaing_nothern_states }
+		relative_position_id = PRS_annex_hostile_nothern_states
+		x = 2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_finalize_the_north_german_confederation
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_ratify_the_peace }
+		relative_position_id = PRS_ratify_the_peace
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# North Germany will be added as a cosmetic tag
+			set_cosmetic_tag = GER_north_germany
+		}
+	}
+
+	focus = {
+		id = PRS_towards_a_unified_germany
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_finalize_the_north_german_confederation }
+		relative_position_id = PRS_finalize_the_north_german_confederation
+		x = -2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# improve relations with south germany
+			# Schutz und trutz büdniss
+			# guarantee prussia south germany both sides
+		}
+	}
+
+	focus = {
+		id = PRS_maerchenprinz
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_towards_a_unified_germany }
+		relative_position_id = PRS_towards_a_unified_germany
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Pay the märchenprinz von bavaria gold for him to build a castle
+		}
+	}
+
+	focus = {
+		id = PRS_spanish_glorious_revolution
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_finalize_the_north_german_confederation }
+		relative_position_id = PRS_finalize_the_north_german_confederation
+		x = 2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_leopold_on_the_spanish_thrown
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_spanish_glorious_revolution }
+		relative_position_id = PRS_spanish_glorious_revolution
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_ems_dispatch
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_leopold_on_the_spanish_thrown }
+		prerequisite = { focus = PRS_maerchenprinz }  
+		relative_position_id = PRS_maerchenprinz
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_franco_prussian_war
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = PRS_ems_dispatch }
+		relative_position_id = PRS_ems_dispatch
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# We need a krupp for victory idea about their artillery or howitzers seprerate focus
+		}
+	}
+
+	focus = {
+		id = PRS_invite_baden
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_franco_prussian_war }
+		relative_position_id = PRS_franco_prussian_war
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_invite_wurttemberg
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_franco_prussian_war }
+		relative_position_id = PRS_franco_prussian_war
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_invite_bavaria
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_franco_prussian_war }
+		relative_position_id = PRS_franco_prussian_war
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_invite_hessen
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_franco_prussian_war }
+		relative_position_id = PRS_franco_prussian_war
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	# German Unification
+	focus = {
+		id = PRS_heil_dir_im_siegerkranz
+		icon = GFX_focus_PRS_unification
+		prerequisite = { focus = PRS_invite_baden }
+		prerequisite = { focus = PRS_invite_wurttemberg }
+		prerequisite = { focus = PRS_invite_bavaria }
+		prerequisite = { focus = PRS_invite_hessen }
+		relative_position_id = PRS_invite_wurttemberg
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = PRS_GER
+		}
+	}
+
+	focus = {
+		id = PRS_find_a_peaceful_solution
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_propose_federal_reform }
+		relative_position_id = PRS_propose_federal_reform
+		mutually_exclusive = { focus = PRS_annex_holstein }
+		x = -3
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# triggers schleswig holsteinische frage event
+		}
+	}
+
+	focus = {
+		id = PRS_seek_international_support
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_lesser_german_solution }
+		relative_position_id = PRS_lesser_german_solution
+		x = 4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_secure_french_peace
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = PRS_seek_international_support }
+		relative_position_id = PRS_seek_international_support
+		x = -2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# IF NOT DONE FRANCE WILL JOIN BECAUSE OF THE SECRET TREATY AUSTRIA CAN MAKE PER FOCUS
+			# basically we say to france we will give them territory after the war if they dont join(We can say yes but also no)
+		}
+	}
+	
+	focus = {
+		id = PRS_ally_with_italy
+		icon = GFX_focus_befriend_italy
+		prerequisite = { focus = PRS_seek_international_support }
+		relative_position_id = PRS_seek_international_support
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_secure_russian_friendship
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_seek_international_support focus = PRS_austrian_enemy}
+		relative_position_id = PRS_seek_international_support
+		x = 2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Russia wont join but will unlikier to join a great war
+			# Will join to split austria polish territories and border stuff russia and the austria prussia
+		}
+	}
+
+	focus = {
+		id = PRS_greater_german_solution
+		icon = GFX_goal_unknown
+		x = 20
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = PRS_lesser_german_solution }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_cooperate_with_austria
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_greater_german_solution }
+		relative_position_id = PRS_greater_german_solution
+		mutually_exclusive = { focus = PRS_austrian_enemy }
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	# North to Prussia, south to Austria will create a faction not a state pretty much sucks
+	focus = {
+		id = PRS_split_germany
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_cooperate_with_austria }
+		relative_position_id = PRS_cooperate_with_austria
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_austrian_enemy
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_greater_german_solution }
+		relative_position_id = PRS_greater_german_solution
+		mutually_exclusive = { focus = PRS_cooperate_with_austria }
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_habsburg_enemy
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_austrian_enemy }
+		relative_position_id = PRS_austrian_enemy
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_split_austria
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_habsburg_enemy }
+		prerequisite = { focus = PRS_secure_russian_friendship }
+		relative_position_id = PRS_secure_russian_friendship
+		mutually_exclusive = { focus = PRS_beating_austria_ourselfs }
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	# HRE
+	focus = {
+		id = PRS_pivot_to_the_past
+		icon = GFX_focus_POL_habsburg
+		prerequisite = { focus = PRS_austrian_enemy focus = PRS_cooperate_with_austria }
+		relative_position_id = PRS_austrian_enemy
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	# Icon fist beating the austrian eagle
+	focus = {
+		id = PRS_beating_austria_ourselfs
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_habsburg_enemy focus = PRS_pivot_to_the_past }
+		relative_position_id = PRS_habsburg_enemy
+		mutually_exclusive = { focus = PRS_split_austria }
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_finish_the_habsburgs
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = PRS_beating_austria_ourselfs }
+		relative_position_id = PRS_beating_austria_ourselfs
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+}

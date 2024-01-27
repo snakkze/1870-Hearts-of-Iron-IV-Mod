@@ -1,0 +1,66 @@
+capital = 64
+
+oob = "PRS_1866"
+
+1870.1.1 = {
+	set_cosmetic_tag = GER_north_germany
+}
+
+recruit_character = PRS_otto_von_bismarck
+recruit_character = PRS_wilhelm_i
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+		
+#	oob = "AFG_1939"
+#		set_technology = {
+#		early_fighter = 1
+#		CAS1 = 1
+#	}
+#	set_technology = {
+#		
+#		gw_artillery = 1
+#
+#		#doctrines
+#		air_superiority = 1
+#		grand_battle_plan = 1
+#		trench_warfare = 1
+#		fleet_in_being = 1
+#		battlefleet_concentration = 1
+#		convoy_sailing = 1
+#
+#
+#		#electronics
+#		electronic_mechanical_engineering = 1
+#		radio = 1
+#		radio_detection = 1
+#		mechanical_computing = 1
+#
+#		#industry
+#		basic_machine_tools = 1
+#		improved_machine_tools = 1
+#		advanced_machine_tools = 1
+#		fuel_silos = 1
+#		construction1 = 1
+#		construction2 = 1
+#		dispersed_industry = 1
+#		dispersed_industry2 = 1
+#	}
+}
+
+set_politics = {
+	# By seats
+	ruling_party = conservatism_ideology
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservatism_ideology = 44
+	liberalism_ideology = 49
+	socialism_ideology = 3
+	authoritarian_ideology = 4
+}

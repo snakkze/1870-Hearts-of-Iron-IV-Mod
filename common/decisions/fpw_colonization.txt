@@ -1,0 +1,191 @@
+fpw_colonization_category = {
+
+	colonization_descision = {
+
+		visible = {
+			has_country_flag = is_colonizing
+		}
+
+		available = {
+			always = no
+		}
+
+		allowed = {
+			always = no
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = TRB
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = colonizing_by_@ROOT
+			}
+		}
+
+		#on_map_mode = map_only
+		icon = GFX_decision_colonize
+		fire_only_once = no
+		#days_remove = ROOT.colonial_time
+		days_remove = 1
+    	selectable_mission = no
+
+		#ai_will_do = {
+		#	factor = 200
+		#	modifier = {
+		#		factor = 0
+		#		is_historical_focus_on = yes
+		#	}
+		#}
+
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = colonizing_by_@ROOT
+				}
+				# State Population
+				set_variable = { ROOT.temp_debuff_population = state_population_k }
+				round_variable = ROOT.temp_debuff_population
+
+				# Calculation of the Function
+				set_variable = { ROOT.temp_num = 0.003 }
+				multiply_variable = { ROOT.temp_num = ROOT.temp_debuff_population } # times population_k
+				add_to_variable = { ROOT.temp_num = 6 }
+
+				# Make Ready for usage
+				set_variable = { ROOT.temp_debuff = ROOT.temp_num }
+				round_variable = ROOT.temp_debuff
+
+				# Setup for Tooltip
+				add_to_variable = { ROOT.debuff_tt = ROOT.temp_debuff }
+
+				# Setup for usage in modifier(0.xx)
+				divide_variable = { ROOT.temp_debuff = 100 }
+
+				# Sum of all debuffs
+				subtract_from_variable = { ROOT.debuff = ROOT.temp_debuff }
+
+				if= {
+					limit = {
+						check_variable = { ROOT.debuff > 100 }
+					}
+					set_variable = { ROOT.debuff = 100 }
+				}
+
+				transfer_state_to = ROOT
+				clr_state_flag = colonizing_by_@ROOT
+				clr_state_flag = tribe_state
+				set_state_flag = is_colonized_by_@ROOT
+				#add_claim_by = ROOT Make it a integration Feature
+				remove_core_of = TRB
+				ROOT = {
+                    clr_country_flag = is_colonizing
+					if = {
+						limit = {
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = fpw_colonial_debuff
+								}
+							}
+						}
+						add_dynamic_modifier = { 
+							modifier = fpw_colonial_debuff 
+						}
+						force_update_dynamic_modifier = yes
+					}
+				}
+			}
+		}
+	}
+
+	integration_descision = {
+
+		visible = {
+			if = {
+				limit = {
+					any_owned_state = {
+						has_state_flag = is_colonized_by_@ROOT
+					}
+				}
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = is_integrating
+			}
+		}
+
+		allowed = {
+			if = {
+				limit = {
+					any_owned_state = {
+						has_state_flag = is_colonized_by_@ROOT
+					}
+				}
+			}	
+		}
+
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = is_colonized_by_@ROOT
+			}
+		}
+
+		icon = GFX_decision_integration
+		fire_only_once = no
+		#days_remove = ROOT.colonial_time
+		days_remove = 5
+    	selectable_mission = yes
+
+		#ai_will_do = {
+		#	factor = 200
+		#	modifier = {
+		#		factor = 0
+		#		is_historical_focus_on = yes
+		#	}
+		#}
+
+		complete_effect = {
+			ROOT = {
+				set_country_flag = is_integrating
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				clr_state_flag = is_colonized_by_@ROOT
+				add_claim_by = ROOT 
+
+				set_variable = { ROOT.temp_debuff_population_to_remove = state_population_k }
+				round_variable = ROOT.temp_debuff_population_to_remove
+
+				# Calculation of the Function
+				set_variable = { ROOT.temp_num_to_remove = 0.003 }
+				multiply_variable = { ROOT.temp_num_to_remove = ROOT.temp_debuff_population_to_remove } # times population_k
+				add_to_variable = { ROOT.temp_num_to_remove = 6 }
+
+				# Make Ready for usage
+				set_variable = { ROOT.temp_debuff_to_remove = ROOT.temp_num_to_remove }
+				round_variable = ROOT.temp_debuff_to_remove
+
+				# Setup for Tooltip
+				subtract_from_variable = { ROOT.debuff_tt = ROOT.temp_debuff_to_remove }
+
+				# Setup for usage in modifier(0.xx)
+				divide_variable = { ROOT.temp_debuff_to_remove = 100 }
+
+				# Sum of all debuffs
+				add_to_variable = { ROOT.debuff = ROOT.temp_debuff_to_remove }
+			}
+			ROOT = {
+				clr_country_flag = is_integrating
+				force_update_dynamic_modifier = yes
+			}
+		}
+	}
+}

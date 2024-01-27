@@ -1,0 +1,28 @@
+state={
+	id=940
+	name="STATE_940"
+
+	history = {
+		owner = FRK
+		victory_points = {
+			589 20
+		}
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 1
+		}
+		add_core_of = FRK
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+	provinces={
+		589 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=city
+}

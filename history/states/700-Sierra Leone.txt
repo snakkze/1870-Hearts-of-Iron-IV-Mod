@@ -1,0 +1,33 @@
+
+state={
+	id=700
+	name="STATE_700"
+	resources={
+		steel=32.000
+	}
+
+	history={
+		owner = ENG
+		add_core_of = SIE
+		victory_points = {
+			2038 1 
+		}
+		buildings = {
+			infrastructure = 2
+			2038 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		2094 
+	}
+	manpower=1768500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+state={
+	id=955
+	name="STATE_955"
+
+	history={
+		owner = SCG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			13274 5
+		}
+		add_core_of = SCG
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+
+	provinces={
+		9497 13274 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

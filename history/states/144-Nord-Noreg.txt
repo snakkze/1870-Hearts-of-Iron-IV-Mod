@@ -1,0 +1,44 @@
+
+state = {
+	id = 144
+	name = "STATE_144" # Nordland
+	manpower = 142100 # 355251
+	
+	state_category = rural
+	
+	resources = {
+		steel = 6
+	}
+
+	history = {
+		victory_points = {
+			192 5
+		}
+		victory_points = {
+			9126 1
+		}
+		
+		owner = SWE
+add_core_of = SWE
+		add_core_of = NOR
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_core_of = SMI
+		}
+		buildings = {
+			infrastructure = 2
+			192 = {
+				naval_base = 3
+			}
+			
+		}
+	}
+
+	provinces = {
+		38 192 3034 3132 3145 9126 11157 6214
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,29 @@
+defined_text = {
+    name = get_austro_prussian_war_desc
+
+    text = {
+        trigger = {
+            tag = PRS
+        }
+        localization_key = "fpw_austro_prussian_PRS_desc"
+    }
+
+    text = {
+        trigger = {
+            tag = AUS
+        }
+        localization_key = "fpw_austro_prussian_AUS_desc"
+    }
+
+    text = {
+        trigger = {
+		NOT = {
+			OR = {
+				tag = PRS
+				tag = AUS
+			}
+		}	  
+        }
+        localization_key = "fpw_austro_prussian_desc"
+    }
+}

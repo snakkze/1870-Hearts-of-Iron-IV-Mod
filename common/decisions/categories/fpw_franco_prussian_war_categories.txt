@@ -1,0 +1,60 @@
+fpw_franco_prussian_war_category = {
+	priority = 99
+
+	icon = GFX_decision_category_generic_independence
+	picture = GFX_decision_category_franco_prussian_war
+
+	allowed = {
+		OR = {
+			tag = BAD
+			tag = BAV
+			tag = WRT
+			tag = HES
+		}
+		NOT = {
+			AND = {
+				BAD = {
+					has_country_flag = fwp_franco_prussian_war_sided
+				}
+				BAV = {
+					has_country_flag = fwp_franco_prussian_war_sided
+				}
+				WRT = {
+					has_country_flag = fwp_franco_prussian_war_sided
+				}
+				HES = {
+					has_country_flag = fwp_franco_prussian_war_sided
+				}
+			}
+		}
+	}
+
+	visible = {
+		has_global_flag = fpw_franco_prussian_war_flag
+		OR = {
+			tag = FRA
+			tag = PRS
+			tag = BAD
+			tag = BAV
+			tag = WRT
+			tag = HES
+		}
+	}
+}
+
+fpw_treaty_of_frankfurt_category = {
+	priority = 99
+
+	icon = GFX_decision_category_generic_political_actions
+	picture = GFX_decision_category_treaty_of_frankfurt
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		any_owned_state = {
+			is_on_continent = europe	
+		}	
+	}
+}

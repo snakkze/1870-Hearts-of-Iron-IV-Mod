@@ -1,0 +1,27 @@
+
+state={
+	id=557
+	name="STATE_557"
+
+	history={
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = MRT
+		victory_points = {
+			5034 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		5012 5034 5077 7992 8058 10814 10875 
+	}
+	manpower=225000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

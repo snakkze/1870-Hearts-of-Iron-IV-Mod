@@ -1,0 +1,3824 @@
+fpw_german_confederation_category = {
+
+	fpw_german_confederation = {
+
+		icon = GFX_decision_leave_german_confederation
+
+		available = {
+			any_owned_state = {
+				has_state_flag = german_confederation_state
+			}
+		}
+
+		visible = {
+			AND = {
+				any_owned_state = {
+					is_on_continent = europe
+				}	
+				any_state = {
+					has_state_flag = german_confederation_state
+				}
+			}	
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = german_confederation_state
+			}
+		}
+
+		fire_only_once = no
+
+		icon = mission_iconustro_prussian_war_escalation_flag
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 50
+				if = {
+					ROOT = {
+						is_in_faction_with = PRS
+						PRS = {
+							any_owned_state = {
+							NOT = {
+									has_state_flag = german_confederation_state
+								}
+							}
+						}
+					}
+				}
+			}
+			# If no more majors it will just disband
+		}
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = german_confederation_state
+				}
+				clr_state_flag = german_confederation_state
+			}
+		}
+	}
+
+}
+
+fpw_german_unification_category = {
+
+	fpw_austro_prussian_war_escalation = {
+
+		activation = {
+			has_global_flag = austro_prussian_war_escalation_flag
+		}
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			AUS = {
+				has_war_with = PRS
+			}
+			NOT = {
+				has_global_flag = austro_prussian_war_escalation_flag
+			}
+		}
+		icon = mission_icon
+		is_good = no
+		days_mission_timeout = 5
+		days_remove = 5
+		selectable_mission = no
+		timeout_effect = {
+			minor_german_states_involvement = yes
+			PRS = {
+				create_faction = prussian_faction
+			}
+			AUS = {
+				create_faction = austrian_faction
+				declare_war_on = {
+					target = PRS
+					type = annex_everything
+				}
+			}
+			clr_global_flag = austro_prussian_war_escalation_flag
+		}
+	}
+
+	fpw_side_with_prussia = {
+
+		icon = GFX_decision_side_with_prussia
+
+		allowed = {
+
+		}
+
+		cost = 0
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = PRS
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = fwp_austro_prussian_war_sided
+			}
+			PRS = {
+				has_war_with = AUS
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = fwp_austro_prussian_war_sided
+				OR = {
+					original_tag = PRS
+					original_tag = AUS
+					is_subject_of = PRS
+					is_subject_of = AUS
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				if = {
+					limit = {
+						ROOT = {
+							any_owned_state = {
+								has_state_flag = influenced_by_PRS
+							}
+						}
+					}
+					add = 100
+				}
+				else = {
+					add = 40
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = fwp_austro_prussian_war_sided
+			PRS = {
+				add_to_faction = ROOT
+				country_event = austro_prussian_fpw.1
+			}
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = PRS
+					enemy = AUS
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+
+	fpw_side_with_austria = {
+
+		icon = GFX_decision_side_with_austria
+
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = AUS
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = fwp_austro_prussian_war_sided
+			}
+			PRS = {
+				has_war_with = AUS
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = fwp_austro_prussian_war_sided
+				OR = {
+					original_tag = PRS
+					original_tag = AUS
+					is_subject_of = PRS
+					is_subject_of = AUS
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				if = {
+					limit = {
+						ROOT = {
+							any_owned_state = {
+								has_state_flag = influenced_by_AUS
+							}
+						}
+					}
+					add = 100
+				}
+				else = {
+					add = 40
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = fwp_austro_prussian_war_sided
+			AUS = {
+				add_to_faction = ROOT
+				country_event = austro_prussian_fpw.1
+			}
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = AUS
+					enemy = PRS
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+
+	# Austrian
+	PRS_ally_saxony = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				65  = { 
+					65  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				65  = { 
+					65  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				65  = { 
+					65  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				65  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				65  = { 
+					65  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				65  = { 
+					65  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				65  = { 
+					65  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			65  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			65  = { 
+				owner = {
+					OR = {
+						tag = SXY
+						is_subject_of = SXY
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = SXY
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			65  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Austrian
+	PRS_ally_bavaria = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				52  = { 
+					52  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				52  = { 
+					52  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				52  = { 
+					52  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				52  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				52  = { 
+					52  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				52  = { 
+					52  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				52  = { 
+					52  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			52  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			52  = { 
+				owner = {
+					OR = {
+						tag = BAV
+						is_subject_of = BAV
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = BAV
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			52  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Austrian
+	PRS_ally_wurttemberg = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				50  = { 
+					50  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				50  = { 
+					50  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				50  = { 
+					50  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				50  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				50  = { 
+					50  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				50  = { 
+					50  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				50  = { 
+					50  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			50  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			50  = { 
+				owner = {
+					OR = {
+						tag = WRT
+						is_subject_of = WRT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = WRT
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			50  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Austrian
+	PRS_ally_baden = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				935  = { 
+					935  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				935  = { 
+					935  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				935  = { 
+					935  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				935  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				935  = { 
+					935  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				935  = { 
+					935  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				935  = { 
+					935  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			935  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			935  = { 
+				owner = {
+					OR = {
+						tag = BAD
+						is_subject_of = BAD
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = BAD
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			935  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_oldenburg = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				944  = { 
+					944  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				944  = { 
+					944  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				944  = { 
+					944  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				944  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				944  = { 
+					944  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				944  = { 
+					944  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				944  = { 
+					944  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			944  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			944  = { 
+				owner = {
+					OR = {
+						tag = OLD
+						is_subject_of = OLD
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = OLD
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			944  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Austrian
+	PRS_ally_hanover = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				59  = { 
+					59  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				59  = { 
+					59  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				59  = { 
+					59  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				59  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				59  = { 
+					59  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				59  = { 
+					59  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				59  = { 
+					59  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			59  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			59  = { 
+				owner = {
+					OR = {
+						tag = HNV
+						is_subject_of = HNV
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = HNV
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			59  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_mecklenburg = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				61  = { 
+					61  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				61  = { 
+					61  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				61  = { 
+					61  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				61  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				61  = { 
+					61  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				61  = { 
+					61  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				61  = { 
+					61  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			61  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			61  = { 
+				owner = {
+					OR = {
+						tag = MCK
+						is_subject_of = MCK
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = MCK
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			61  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_kassel = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				942  = { 
+					942  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				942  = { 
+					942  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				942  = { 
+					942  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				942  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				942  = { 
+					942  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				942  = { 
+					942  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				942  = { 
+					942  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			942  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			942  = { 
+				owner = {
+					OR = {
+						tag = HEK
+						is_subject_of = HEK
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = HEK
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			942  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Austrian
+	PRS_ally_hessen = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				55  = { 
+					55  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				55  = { 
+					55  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				55  = { 
+					55  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				55  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				55  = { 
+					55  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				55  = { 
+					55  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				55  = { 
+					55  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			55  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			55  = { 
+				owner = {
+					OR = {
+						tag = HES
+						is_subject_of = HES
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = HES
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			55  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	PRS_ally_nassau = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				941  = { 
+					941  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				941  = { 
+					941  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				941  = { 
+					941  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				941  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				941  = { 
+					941  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				941  = { 
+					941  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				941  = { 
+					941  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			941  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			941  = { 
+				owner = {
+					OR = {
+						tag = NAS
+						is_subject_of = NAS
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = NAS
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			941  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Austrian
+	PRS_ally_sachsen_meiningen = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				937  = { 
+					937  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				937  = { 
+					937  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				937  = { 
+					937  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				937  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				937  = { 
+					937  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				937  = { 
+					937  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				937  = { 
+					937  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			937  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			937  = { 
+				owner = {
+					OR = {
+						tag = SXM
+						is_subject_of = SXM
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = SXM
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			937  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_sachsen_coburg = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				955  = { 
+					955  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				955  = { 
+					955  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				955  = { 
+					955  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				955  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				955  = { 
+					955  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				955  = { 
+					955  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				955  = { 
+					955  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			955  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			955  = { 
+				owner = {
+					OR = {
+						tag = SCG
+						is_subject_of = SCG
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = SCG
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			955  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_sachsen_weimar = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				954  = { 
+					954  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				954  = { 
+					954  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				954  = { 
+					954  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				954  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				954  = { 
+					954  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				954  = { 
+					954  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				954  = { 
+					954  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			954  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			954  = { 
+				owner = {
+					OR = {
+						tag = SXW
+						is_subject_of = SXW
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = SXW
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			954  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_sachsen_anhalt = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				949  = { 
+					949  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				949  = { 
+					949  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				949  = { 
+					949  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				949  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				949  = { 
+					949  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				949  = { 
+					949  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				949  = { 
+					949  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			949  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			949  = { 
+				owner = {
+					OR = {
+						tag = ANH
+						is_subject_of = ANH
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = ANH
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			949  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_brunswick = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				948  = { 
+					948  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				948  = { 
+					948  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				948  = { 
+					948  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				948  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				948  = { 
+					948  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				948  = { 
+					948  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				948  = { 
+					948  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			948  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			948  = { 
+				owner = {
+					OR = {
+						tag = BRU
+						is_subject_of = BRU
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = BRU
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			948  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_waldeck = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				943  = { 
+					943  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				943  = { 
+					943  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				943  = { 
+					943  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				943  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				943  = { 
+					943  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				943  = { 
+					943  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				943  = { 
+					943  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			943  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			943  = { 
+				owner = {
+					OR = {
+						tag = WLD
+						is_subject_of = WLD
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = WLD
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			943  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+		allowed = {
+		}
+	}
+
+	# Austrian
+	PRS_ally_frankfurt = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				940  = { 
+					940  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				940  = { 
+					940  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				940  = { 
+					940  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_1
+			trigger = {
+				940  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				940  = { 
+					940  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				940  = { 
+					940  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				940  = { 
+					940  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			940  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			940  = { 
+				owner = {
+					OR = {
+						tag = FRK
+						is_subject_of = FRK
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = FRK
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			940  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = AUS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_strelitz = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				938  = { 
+					938  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				938  = { 
+					938  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				938  = { 
+					938  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				938  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				938  = { 
+					938  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				938  = { 
+					938  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				938  = { 
+					938  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			938  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			938  = { 
+				owner = {
+					OR = {
+						tag = MKS
+						is_subject_of = MKS
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = MKS
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			938  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_lippe = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				951  = { 
+					951  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				951  = { 
+					951  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				951  = { 
+					951  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				951  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				951  = { 
+					951  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				951  = { 
+					951  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				951  = { 
+					951  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			951  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			951  = { 
+				owner = {
+					OR = {
+						tag = LIP
+						is_subject_of = LIP
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = LIP
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			951  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_schaumburg = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				950  = { 
+					950  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				950  = { 
+					950  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				950  = { 
+					950  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				950  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				950  = { 
+					950  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				950  = { 
+					950  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				950  = { 
+					950  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			950  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			950  = { 
+				owner = {
+					OR = {
+						tag = SBL
+						is_subject_of = SBL
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = SBL
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			950  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_schwarzburg = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				953  = { 
+					953  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				953  = { 
+					953  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				953  = { 
+					953  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				953  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				953  = { 
+					953  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				953  = { 
+					953  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				953  = { 
+					953  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			953  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			953  = { 
+				owner = {
+					OR = {
+						tag = SBG
+						is_subject_of = SBG
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = SBG
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			953  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_bremen = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				945  = { 
+					945  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				945  = { 
+					945  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				945  = { 
+					945  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				945  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				945  = { 
+					945  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				945  = { 
+					945  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				945  = { 
+					945  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			945  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			945  = { 
+				owner = {
+					OR = {
+						tag = BRE
+						is_subject_of = BRE
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = BRE
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			945  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_hamburg = {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				947  = { 
+					947  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				947  = { 
+					947  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				947  = { 
+					947  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				947  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				947  = { 
+					947  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				947  = { 
+					947  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				947  = { 
+					947  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			947  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			947  = { 
+				owner = {
+					OR = {
+						tag = HAM
+						is_subject_of = HAM
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = HAM
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			947  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+
+	# Prussian
+	PRS_ally_luburg= {
+		#PRS
+		icon = {
+			key = GFX_decision_PRS_claim_ally_4
+			trigger = {
+				956  = { 
+					956  = { 
+						check_variable = {  var = claim_strength_PRS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_3
+			trigger = {
+				956  = { 
+					956  = { 
+						check_variable = {  var = claim_strength_PRS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_2
+			trigger = {
+				956  = { 
+					956  = { 
+						check_variable = {  var = claim_strength_PRS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_PRS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_PRS_claim_ally_1
+			trigger = {
+				956  = { 
+					NOT = {
+						has_state_flag = strongest_claimant_PRS
+						has_state_flag = strongest_claimant_AUS
+					}
+				}
+			}
+		}
+
+		#AUS
+		icon = {
+			key = GFX_decision_AUS_claim_ally_4
+			trigger = {
+				956  = { 
+					956  = { 
+						check_variable = {  var = claim_strength_AUS value = 3 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_3
+			trigger = {
+				956  = { 
+					956  = { 
+						check_variable = {  var = claim_strength_AUS value = 2 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+		icon = {
+			key = GFX_decision_AUS_claim_ally_2
+			trigger = {
+				956  = { 
+					956  = { 
+						check_variable = {  var = claim_strength_AUS value = 1 compare = greater_than_or_equals }
+						has_state_flag = strongest_claimant_AUS
+					} 
+				} 
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			956  = { 
+				has_anyone_else_claimed_PRS = yes
+			}
+			OR = {
+				AUS = {
+					has_country_flag = austro_prussian_war
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = austro_prussian_war
+			hidden_trigger = {
+				NOT = { has_country_flag = allied_german_state_flag }
+			}
+			956  = { 
+				owner = {
+					OR = {
+						tag = LUE
+						is_subject_of = LUE
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = LUE
+			}
+		}
+
+		on_map_mode = map_only
+
+		cost = 0
+		
+		fire_only_once = no
+		days_remove = 3
+		
+		remove_effect = {
+			956  = { 
+				custom_effect_tooltip = romania_total_claims_tt
+				prs_calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = allied_german_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = allied_german_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = PRS
+			}
+		}
+
+		allowed = {
+		}
+	}
+}

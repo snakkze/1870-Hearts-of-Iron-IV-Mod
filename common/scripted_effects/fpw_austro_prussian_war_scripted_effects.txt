@@ -1,0 +1,365 @@
+prs_calculate_claimant_effect = {	
+	if = {
+		limit = {
+			check_variable = { claim_strength_@PREV < 2 }
+		}
+		add_to_variable = { var = claim_strength_@PREV value = 1 }
+		custom_effect_tooltip = fpw_influenced_country_tt
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				any_country = {
+					has_country_flag = austro_prussian_war
+					PREV = {
+						has_state_flag = influenced_by_@PREV
+					}
+					
+				}
+			}
+		}
+		add_to_variable = { var = claim_strength_@PREV value = 1 }
+		custom_effect_tooltip = newline_tt
+		set_state_flag = influenced_by_@PREV
+	}
+	if = {
+		limit = {
+			check_variable = {claim_strength_PRS > claim_strength_AUS }
+		}
+		set_state_flag = strongest_claimant_PRS
+		clr_state_flag = strongest_claimant_AUS
+	}
+	if = {
+		limit = {
+			check_variable = {claim_strength_AUS > claim_strength_PRS }
+		}
+		set_state_flag = strongest_claimant_AUS
+		clr_state_flag = strongest_claimant_PRS
+	}
+}
+
+minor_german_states_involvement = {
+	ANH = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	BAD = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	BAV = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	BRE = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	HAM = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	HEK = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	HES = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	HNV = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	HOH = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	LIP = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	LUE = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	MCK = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	MKS = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	NAS = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	OLD = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	SBG = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	OLD = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	SBL = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	SCG = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	SXM = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	SXW = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	SXY = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	WLD = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	WRT = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	BRU = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}	
+	FRK = {
+		set_country_flag = austro_prussian_war_escalation_flag
+	}
+}	
+
+prussian_surrender = {
+	# Austria
+	every_country = {
+		limit = {
+			is_in_faction_with = AUS
+			is_faction_leader = yes
+			has_war_with = PRS
+		}
+		# Austrian faction peace with prussian faction
+		white_peace = {
+			tag = PRS
+			message = vienna_peace_tt
+		}
+		# Austrian faction peace with prussian faction
+		set_truce = {
+			target = PRS
+			days = 90
+		}
+	}
+	PRS = {
+		dismantle_faction = yes
+		clr_country_flag = austro_prussian_war
+	}	
+	AUS = {
+		dismantle_faction = yes
+		clr_country_flag = austro_prussian_war
+		762 = {
+			add_core_of = AUS
+			transfer_state_to = AUS
+		}
+		67 = {
+			add_core_of = AUS
+			transfer_state_to = AUS
+		}
+		58 = {
+			add_core_of = AUS
+			transfer_state_to = AUS
+		}
+		909 = {
+			transfer_state_to = AUS
+		}
+		912 = {
+			transfer_state_to = AUS
+		}
+		puppet = SXY
+		puppet = HES
+		puppet = HEK
+		puppet = NAS
+		puppet = BAV
+	}
+	# HNV should be able to be puppeted by the uk via the focus. Context either stand on yourself and be the opfer of prussia or be defended by the uk
+	HNV = {
+		puppet = OLD
+		948 = {
+			transfer_state_to = HNV
+			add_core_of = HNV
+		}
+		950 = {
+			transfer_state_to = HNV
+			add_core_of = HNV
+		}
+		951 = {
+			transfer_state_to = HNV
+			add_core_of = HNV
+		}
+	}
+	SXY = {
+		set_cosmetic_tag = SXY_austrian_subject
+		60 = {
+			transfer_state_to = SXY
+			add_core_of = SXY
+		}
+		937 = {
+			transfer_state_to = SXY
+			add_core_of = SXY
+		}
+		955 = {
+			transfer_state_to = SXY
+			add_core_of = SXY
+		}
+		953 = {
+			transfer_state_to = SXY
+			add_core_of = SXY
+		}
+		954 = {
+			transfer_state_to = SXY
+			add_core_of = SXY
+		}
+	}
+	# CAN INCOOPERATE FRANKRURT IN FOCUS
+	HES = {
+		set_cosmetic_tag = NAS_austrian_subject
+	}
+	HEK = {
+		set_cosmetic_tag = HEK_austrian_subject
+	}
+	NAS = {
+		set_cosmetic_tag = HES_austrian_subject
+	}
+
+	BAV = {
+		set_cosmetic_tag = BAV_SGC
+		annex_country = {
+			target = BAD
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = WRT
+			transfer_troops = yes
+		}
+		952 = {
+			transfer_state_to = BAV
+			add_core_of = BAV
+		}
+		935 = {
+			add_core_of = BAV
+		}
+		50 = {
+			add_core_of = BAV
+		}
+	}
+
+	ITA = {
+		if = {
+			limit = {
+				is_in_faction_with = PRS
+			}
+			159 = {
+				transfer_state_to = AUS
+				add_core_of = AUS
+			}
+		}
+	}
+
+	# France gonna ask to join the war if it is going good for the austrians, no matter if the prussian secured peace via focus. if they didnt do the focus they will always join
+	FRA = {
+		if = {
+			limit = {
+				is_in_faction_with = AUS
+			}
+			936 = {
+				transfer_state_to = FRA
+				add_core_of = FRA
+			}
+			42 = {
+				transfer_state_to = FRA
+				add_core_of = FRA
+			}
+			939 = {
+				transfer_state_to = FRA
+				add_core_of = FRA
+			}
+			57 = {
+				transfer_state_to = NRW
+				add_core_of = NRW
+			}
+			51 = {
+				transfer_state_to = NRW
+				add_core_of = NRW
+			}
+			# Bavarian Pfalz is given to france because of the help in the war
+			936 = {
+				transfer_state_to = FRA
+				add_core_of = FRA
+			}
+			puppet = NRW
+		}	
+	}
+}
+
+austrian_surrender = {
+	every_country = {
+		limit = {
+			is_in_faction_with = PRS
+			is_faction_leader = yes
+			has_war_with = AUS
+		}
+		# Austrian faction peace with prussian faction
+		white_peace = {
+			tag = AUS
+			message = vienna_peace_tt
+		}
+		# Austrian faction peace with prussian faction
+		set_truce = {
+			target = AUS
+			days = 90
+		}
+	}
+	every_country = {
+		limit = {
+			OR = {
+				has_country_flag = <
+				tag = SBL
+				AND = {
+					tag = HOH
+					is_subject_of = PRS
+				}
+			}
+			NOT = {
+				tag = BAV
+				tag = BAD
+				tag = WRT
+			}
+		}
+		PRS = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = PREV
+			}
+			add_core_of = PRS
+		}
+	}
+	ITA = {
+		if = {
+			limit = {
+				is_in_faction_with = PRS
+			}
+			160 = {
+				transfer_state_to = ITA
+				remove_core_of = AUS
+			}
+		}
+	}
+	PRS = {
+		dismantle_faction = yes
+		clr_country_flag = austro_prussian_war
+		set_cosmetic_tag = GER_north_germany
+		58 = {
+			add_core_of = PRS
+			transfer_state_to = PRS
+			remove_core_of = AUS
+		}
+	}	
+	AUS = {
+		dismantle_faction = yes
+		clr_country_flag = austro_prussian_war
+	}
+	disband_german_confederation = yes
+}

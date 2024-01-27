@@ -1,0 +1,31 @@
+
+state={
+	id=510
+	name="STATE_510"
+	resources={
+		oil=8.000
+	}
+
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 1
+
+		}
+		victory_points = {
+			7500 1 
+		}
+		add_core_of = ARG
+
+	}
+
+	provinces={
+		1449 2172 2194 5163 7500 8187 8208 8238 10515 10943 10975 10985 12453 12964 13000 
+	}
+	manpower=3497169
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

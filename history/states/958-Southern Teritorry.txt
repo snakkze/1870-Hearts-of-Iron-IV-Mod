@@ -1,0 +1,25 @@
+state={
+	id=958
+	name="STATE_958"
+
+	history={
+		owner = FRA
+		add_core_of = ALG
+		victory_points = {
+			12034 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		5035 8061 8077 
+	}
+	manpower=572000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=wasteland
+}

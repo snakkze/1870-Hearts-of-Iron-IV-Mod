@@ -1,0 +1,267 @@
+add_namespace = franco_prussian_fpw
+ 
+ # France capitulates
+country_event = {
+	id = franco_prussian_fpw.1
+	title = franco_prussian_fpw.1.t
+	desc = franco_prussian_fpw.1.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = franco_prussian_fpw.1.a
+		france_surrender = yes
+	}
+}
+
+ # Prussia capitulates
+country_event = {
+	id = franco_prussian_fpw.2
+	title = franco_prussian_fpw.2.t
+	desc = franco_prussian_fpw.2.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = franco_prussian_fpw.2.a
+		prussian_surrender_2 = yes
+	}
+}
+
+ # Alsace Lorraine
+country_event = {
+	id = franco_prussian_fpw.3
+	title = franco_prussian_fpw.3.t
+	desc = franco_prussian_fpw.3.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# Have Alsace-Lorraine be French(Bismarck just wanted Unification, will just be an department till all the debts are payed back)
+	option = {
+		name = franco_prussian_fpw.3.a
+	}
+
+	# Have Alsace-Lorraine be French(Compromise withouth Belfort)
+	option = {
+		name = franco_prussian_fpw.3.b
+		set_country_flag = fpw_PRS_took_alsace_lorraine
+		effect_tooltip = {	
+			custom_effect_tooltip = fpw_peace_deal_single_tt
+			every_state = { 
+				limit = { 
+					state = 28
+				}
+			}
+		}
+	}
+
+	# Annex Alsace-Lorraine and Belfort into the new Reich(Moltke wanted it for further Defense)
+	option = {
+		name = franco_prussian_fpw.3.c
+		set_country_flag = fpw_PRS_took_alsace_lorraine_and_belfort
+		effect_tooltip = {	
+			custom_effect_tooltip = fpw_peace_deal_tt
+			every_state = { 
+				limit = { 
+					OR = {
+						state = 28
+						state = 975
+					}
+				}
+			}
+		}
+	}
+}
+
+# Also take Nanzig-Epinal(If alsace is taken)
+country_event = {
+	id = franco_prussian_fpw.4
+	title = franco_prussian_fpw.4.t
+	desc = franco_prussian_fpw.4.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# Satisfy the Reichsheer even more by taking Nanzig-Epinal
+	option = {
+		name = franco_prussian_fpw.4.a
+		set_country_flag = fpw_PRS_took_nanzig_epinal
+		effect_tooltip = {	
+			custom_effect_tooltip = fpw_peace_deal_tt
+			every_state = { 
+				limit = { 
+					OR = {
+						state = 976
+						state = 977
+					}
+				}
+			}
+		}
+	}
+
+	# Satisfy Bismarck by not taking too much(Too many annexations will upset the Major Powers)
+	option = {
+		name = franco_prussian_fpw.4.b
+	}
+}
+
+# Further Annexations of Colonies
+country_event = {
+	id = franco_prussian_fpw.5
+	title = franco_prussian_fpw.5.t
+	desc = franco_prussian_fpw.5.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# Take no Colonies
+	option = {
+		name = franco_prussian_fpw.5.a
+	}
+
+	# Take all African colonies
+	option = {
+		name = franco_prussian_fpw.5.b
+		set_country_flag = fpw_PRS_took_colonies
+		effect_tooltip = {	
+			custom_effect_tooltip = fpw_peace_deal_tt
+			every_state = { 
+				limit = { 
+					is_on_continent = africa
+					is_owned_by = FRA
+				}
+			}
+			custom_effect_tooltip = fpw_great_war_warning_tt
+		}
+	}
+}
+
+# Napoleon III captured
+country_event = {
+	id = franco_prussian_fpw.6
+	title = franco_prussian_fpw.6.t
+	desc = franco_prussian_fpw.6.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# Prov Gov
+	option = {
+		name = franco_prussian_fpw.6.a
+		set_cosmetic_tag = FRA_republic
+		effect_tooltip = {	
+			FRA_prov_gov = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = conservatism
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = FRA_napoleon_iii
+						ruling_only = yes
+					}
+				}
+				kill_country_leader = yes
+			}
+			else = {
+				retire_character = FRA_napoleon_iii
+			}
+			set_politics = {
+				ruling_party = conservatism_ideology
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				conservatism_ideology = 33
+				liberalism_ideology = 10
+				authoritarian_ideology = 57
+			}
+			FRA_prov_gov = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = conservatism
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+			#news_event = { hours = 6 id = news.28 }
+		}
+	}
+}
+
+# Fall of Paris
+country_event = {
+	id = franco_prussian_fpw.7
+	title = franco_prussian_fpw.7.t
+	desc = franco_prussian_fpw.7.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# Prov Gov will resign, adolphe thiers get leader
+	option = {
+		name = franco_prussian_fpw.7.a
+	}
+}
+
+# Paris Commune
+country_event = {
+	id = franco_prussian_fpw.8
+	title = franco_prussian_fpw.8.t
+	desc = franco_prussian_fpw.8.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# 
+	option = {
+		name = franco_prussian_fpw.8.a
+	}
+}
+ 

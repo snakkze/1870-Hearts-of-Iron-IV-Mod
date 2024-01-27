@@ -1,0 +1,611 @@
+division_template = {
+	name = "Infanterietruppendivision"
+	division_names_group = AUS_INF_01
+	is_locked = no
+
+	regiments = {
+		infantry = { x	= 0 y = 0 }
+		infantry = { x	= 0 y = 1 }
+		infantry = { x	= 1 y = 0 }
+		infantry = { x	= 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kavallerietruppendivision"
+	division_names_group = AUS_KAV_01
+	is_locked = no
+
+	regiments = {
+		cavalry = { x	= 0 y = 0 }
+		cavalry = { x	= 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	### INFANTERIE ###
+	# Infanterietruppendivisionen
+	division = {
+		# Infanterietruppendivision Nr. 1
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 9427 # Kraków
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 2
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 690 # Brașov (Kronstadt)
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 3
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 3
+		}
+		location = 6562 # North of Brno (Kromieryż)
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 4
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 4
+		}
+		location = 9412 # South of Kraków (Wadowice)
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 5
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 5
+		}
+		location = 746 # Satu Mare
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 6
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 6
+		}
+		location = 3617 # Neusatz
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 7
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 7
+		}
+		location = 3673 # Klagenfurt am Wörthersee (West of Graz)
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 8
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 8
+		}
+		location = 3569 # Brno
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 9
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 9
+		}
+		location = 679 # Szegedin
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 10
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 10
+		}
+		location = 6522 # Przemyśl
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 11
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 11
+		}
+		location = 9421 # Písek (South of Prague)
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 12
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 12
+		}
+		location = 11679 # Komárom ( Between Budapest and Bratysława )
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 13
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 13
+		}
+		location = 9427 # Kraków
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 14
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 14
+		}
+		location = 11651 # Linz
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 15
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 15
+		}
+		location = 11427 # Tarnopol (East of Lwów)
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 16
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 16
+		}
+		location = 11627 # Szombathely (South of Wien)
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 17
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 17
+		}
+		location = 6626 # Triest
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 18
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 18
+		}
+		location = 494 # Sadowa
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 19
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 19
+		}
+		location = 9676 # Győr
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 20
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 20
+		}
+		location = 3410 # Nowy Sącz
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 21
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 21
+		}
+		location = 11556 # Čáslav
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 22
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 22
+		}
+		location = 3924 # Split
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 23
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 23
+		}
+		location = 11581 # Agram
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 24
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 24
+		}
+		location = 11550 # Kołomyja
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 25
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 25
+		}
+		location = 555 # Łuczeniec
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 26
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 26
+		}
+		location = 11663 # Ostrzyhom
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 27
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 27
+		}
+		location = 9648 # Graz
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 28
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 28
+		}
+		location = 11542 # Prague
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 29
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 29
+		}
+		location = 11787 # Zrenjanin
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 30
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 30
+		}
+		location = 11479 # Lwów
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 31
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 31
+		}
+		location = 11622 # Sybin
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Infanterietruppendivision Nr. 32
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 32
+		}
+		location = 9660 # Pesth
+		division_template = "Infanterietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	
+	### KAVALLERIE ###
+	division = {
+		# Kavallerie Nr. 1
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 6739 # Korneuburg
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 2
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 11511 # Slavkov u Brna
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 3
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 3
+		}
+		location = 11666 # Wien
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 4
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 4
+		}
+		location = 6700 # Kecskemét
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 5
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 5
+		}
+		location = 9676 # Győr
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 6
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 6
+		}
+		location = 6703 # Székesfehérvár
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 7
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 7
+		}
+		location = 11666 # Wien
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 8
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 8
+		}
+		location = 9582 # Padwa
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 9
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 9
+		}
+		location = 11413 # Bochnia
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 10 
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 10
+		}
+		location = 491 # Bereschany
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 11
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 11
+		}
+		location = 11413 # Gródek nad Dunajcem
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 12
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 12
+		}
+		location = 3418 # Žatec
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 13
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 13
+		}
+		location = 3684 # Wels
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 14
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 14
+		}
+		location = 9648 # Graz
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 15
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 15
+		}
+		location = 11511 # Veselí nad Moravou
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 16
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 16
+		}
+		location = 11639 # Mediaș
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 17
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 17
+		}
+		location = 9621 # Subotica
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 18
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 18
+		}
+		location = 716 # Gyöngyös
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 19
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 19
+		}
+		location = 690 # Brașov (Kronstadt)
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+	division = {
+		# Kavallerie Nr. 20
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 20
+		}
+		location = 11666 # Wien
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor	= 0.2
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_rifle_1
+			creator	= "AUS"
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 25
+	}
+	add_equipment_production = {
+		equipment = {
+			type = uniform_equipment_2
+			creator = "AUS"
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cavalry_equipment_0
+			creator = "AUS"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 25
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cannon_equipment_0
+			creator = "AUS"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = howitzer_equipment_0
+			creator = "AUS"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 15
+	}
+}

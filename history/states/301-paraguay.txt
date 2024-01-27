@@ -1,0 +1,28 @@
+
+state={
+	id=301
+	name="STATE_301"
+
+	history={
+		owner = PAR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+
+		}
+		add_core_of = PAR
+		victory_points = {
+			2152 5 
+		}
+
+	}
+
+	provinces={
+		2106 2152 2173 10986 11023 12901 12922 12943 
+	}
+	manpower=890100
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

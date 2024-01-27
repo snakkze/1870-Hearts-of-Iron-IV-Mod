@@ -1,0 +1,100 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = TRB
+					}
+				}
+				add_opinion_modifier = {
+    					target = TRB
+    					modifier = fpw_tribal_state_modifier
+				}
+				reverse_add_opinion_modifier = {
+					target = TRB
+					modifier = fpw_tribal_state_modifier
+				}
+			}
+
+			if = {
+				limit = {
+					has_start_date < 1866.1.2
+					has_start_date > 1865.12.31
+				}
+				# German Confederation Stuff
+				every_state = {
+					limit = {
+						OR = {
+							is_claimed_by = PRS
+							is_core_of = FRK
+							is_core_of = BRU
+							is_core_of = WRT
+							is_core_of = WLD
+							is_core_of = SXY
+							is_core_of = SXW
+							is_core_of = SXM
+							is_core_of = SCG
+							is_core_of = SBL
+							is_core_of = OLD
+							is_core_of = SBG
+							is_core_of = OLD
+							is_core_of = NAS
+							is_core_of = MKS
+							is_core_of = MCK
+							is_core_of = LUE
+							is_core_of = LIP
+							is_core_of = HOH
+							is_core_of = HNV
+							is_core_of = HEK
+							is_core_of = HES
+							is_core_of = HAM
+							is_core_of = BRE
+							is_core_of = BAV
+							is_core_of = BAD
+							is_core_of = ANH
+							is_core_of = LUX
+							AND = {
+								is_core_of = PRS
+								NOT = {
+									state = 86
+									state = 807
+									state = 85	
+									state = 5
+									state = 763
+									state = 188
+									state = 909
+									state = 912
+								}
+							}
+							AND = {
+								is_core_of = AUS
+								NOT = {	
+										is_core_of = CRO
+										is_core_of = SER
+										is_core_of = SLO
+										is_core_of = HUN
+										is_core_of = ROM
+										is_core_of = POL
+										is_core_of = SLO
+										state = 159
+										state = 160
+										state = 664
+										state = 73
+									
+								}
+							}
+						}
+					}
+					set_state_flag = german_confederation_state
+				}
+				every_state = {
+					limit = {
+						is_owned_by = TRB
+					}
+					set_state_flag = tribe_state
+				}
+			}
+		}
+	}
+}

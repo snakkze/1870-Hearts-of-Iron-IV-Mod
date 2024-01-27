@@ -1,0 +1,32 @@
+
+state={
+	id=60
+	name="STATE_60"
+	resources={
+		steel=9.000
+		chromium=3.000
+		tungsten=3.000
+	}
+
+	history={
+		owner = PRS
+		victory_points = {
+			3561 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = PRS
+
+	}
+
+	provinces={
+		3561 6582 13273 
+	}
+	manpower=3005214
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,68 @@
+scripted_gui = {
+    colonize_button = {
+        window_name = "province_colonize_window"
+        parent_window_token = selected_state_view
+        context_type = selected_state_context
+
+        visible = {
+            always = yes
+        }
+
+        effects = {
+            colonize_button_click = {
+                if = {
+        			limit = {
+                        NOT = {
+                            ROOT = {
+                                has_country_flag = is_colonizing
+                            }
+                        }
+                        has_state_flag = tribe_state
+        				OR = {
+                            AND = {
+                                is_coastal = no
+                                num_owned_neighbour_states = {
+                                    owner = ROOT
+                                    count > 0
+                                }
+                            }
+                            #AND = {
+                            #    is_coastal = yes
+                            #    limit = {
+                            #        is_owned_by = ROOT
+                            #    }
+                            #    distance_to = {
+                            #        value < 75
+                            #        target = PREV
+                            #    }
+                            #}
+        				}
+        			}
+                    set_variable = { ROOT.colonial_time = 250 }
+                    set_variable = { ROOT.temp_population = state_population_k }
+				    divide_variable = { ROOT.temp_population = 1750 }
+                    add_to_variable = { ROOT.temp_population = 1 }
+
+                    multiply_variable = {
+                        var = ROOT.colonial_time
+                        value = ROOT.temp_population
+                    }
+			
+        		    #transfer_state_to = ROOT
+				    set_state_flag = colonizing_by_@ROOT
+                    ROOT = {
+                        activate_mission = colonization_descision
+                        set_country_flag = is_colonizing
+                    }
+        		}
+            }
+        }
+
+        ai_enabled = {
+            always = no
+        }
+
+        ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+        ai_test_variance = 0.5
+    }
+}

@@ -1,0 +1,253 @@
+add_namespace = trigger
+
+# Austro Prussian War Escalation
+country_event = {
+	id = trigger.1
+	title = trigger.1.t
+	desc = trigger.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = austro_prussian_war_escalation_flag
+			NOT = {
+				has_global_flag = fpw_war_escalation
+			}
+		}
+	}
+
+	option = {
+		name = trigger.1.a
+
+        set_global_flag = fpw_war_escalation
+		news_event = news_fpw.1
+	}
+}
+
+# austria asks for peace
+country_event = {
+	id = trigger.2
+	title = trigger.2.t
+	desc = trigger.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			PRS = {
+				has_war_with = AUS
+			}
+			AUS = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 11666
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no
+						NOT = {
+							controls_province = 11666
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_austrian_peace
+			}
+		}
+	}
+
+	option = {
+		name = trigger.2.a
+
+        set_global_flag = fpw_austrian_peace
+		PRS = {
+			country_event = austro_prussian_fpw.2
+		}
+	}
+}
+
+# prussia asks for peace austro prussian war
+country_event = {
+	id = trigger.3
+	title = trigger.3.t
+	desc = trigger.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			PRS = {
+				has_war_with = AUS
+			}
+			PRS = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 6521
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no	
+						NOT = {
+							controls_province = 6521
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_prussia_peace
+			}
+		}
+	}
+
+	option = {
+		name = trigger.3.a
+        set_global_flag = fpw_prussia_peace
+		AUS = {
+			country_event = austro_prussian_fpw.3
+		}
+	}
+}
+
+# France ask for peace
+country_event = {
+	id = trigger.4
+	title = trigger.4.t
+	desc = trigger.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			FRA = {
+				has_war_with = PRS
+			}
+			FRA = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 3560
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no
+						NOT = {
+							controls_province = 3560
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_french_peace
+			}
+		}
+	}
+
+	option = {
+		name = trigger.4.a
+
+        set_global_flag = fpw_french_peace
+		PRS = {
+			# Napoleon Third is captured
+			country_event = franco_prussian_fpw.1
+		}
+	}
+}
+
+# prussia asks for peace # franco prussian
+country_event = {
+	id = trigger.5
+	title = trigger.5.t
+	desc = trigger.5.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			FRA = {
+				has_war_with = PRS
+			}
+			
+			PRS = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 6521
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no	
+						NOT = {
+							controls_province = 6521
+						}
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					AND = {
+						is_in_faction_with = PRS
+						OR = {
+							original_tag = BAD
+							original_tag = BAV
+							original_tag = HES
+							original_tag = WRT
+						}
+					}
+				}
+				has_capitulated = yes
+			}
+			NOT = {
+				has_global_flag = fpw_prussia_peace_2
+			}
+		}
+	}
+
+	option = {
+		name = trigger.5.a
+        set_global_flag = fpw_prussia_peace_2
+		FRA = {
+			country_event = franco_prussian_fpw.2
+		}
+	}
+}

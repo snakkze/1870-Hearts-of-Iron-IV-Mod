@@ -1,0 +1,66 @@
+spriteTypes = {
+	# PRS
+	spriteType = {
+		name = "GFX_portrait_PRS_wilhelm_I"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_wilhelm_I.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_otto_von_bismarck"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_otto_von_bismarck.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_heinrich_von_treitschke"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_heinrich_von_treitschke.dds"
+	}
+
+	# AUS
+	spriteType = {
+		name = "GFX_portrait_AUS_franz_joseph_i"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_franz_joseph_I.dds"
+	}
+
+	# ENG
+	spriteType = {
+		name = "GFX_portrait_ENG_victoria"
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_victoria.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ENG_karl_marx"
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_karl_marx.dds"
+	}
+
+	# FRA
+	spriteType = {
+		name = "GFX_portrait_FRA_napoleon_iii"
+		texturefile = "gfx/leaders/FRA/Portrait_FRA_napoleon_III.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_FRA_prov_gov"
+		texturefile = "gfx/leaders/FRA/Portrait_FRA_provisional_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_FRA_paris_commune"
+		texturefile = "gfx/leaders/FRA/Portrait_FRA_paris_commune.dds"
+	}
+
+
+	# SOV
+	spriteType = {
+		name = "GFX_portrait_SOV_alexander_ii"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_alexander_II.dds"
+	}
+
+	# TUR
+	spriteType = {
+		name = "GFX_portrait_TUR_murad_v"
+		texturefile = "gfx/leaders/TUR/Portrait_TUR_murad_V.dds"
+	}
+
+	# ITA
+	spriteType = {
+		name = "GFX_portrait_ITA_alfonso_ferrero"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_alfonso_ferrero.dds"
+	}
+}

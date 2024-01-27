@@ -1,0 +1,7 @@
+fpw_colonial_debuff = {
+	enable = { always = yes }
+	icon = GFX_modifier_colonization_debuff
+	
+	political_power_factor = ROOT.debuff
+	custom_modifier_tooltip = fpw_colonize_debuff_modifier_tt
+}

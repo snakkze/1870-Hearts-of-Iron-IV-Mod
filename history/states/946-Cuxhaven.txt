@@ -1,0 +1,28 @@
+state={
+	id=946
+	name="STATE_946"
+
+	history = {
+		owner = BRE
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 1
+		}
+		victory_points = {
+			374 3 
+		}
+		add_core_of = BRE
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+	provinces={
+		374 
+	}
+	manpower=2s00000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_town
+}

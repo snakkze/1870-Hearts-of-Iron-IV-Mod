@@ -1,0 +1,42 @@
+fpw_german_confederation_category = {
+	priority = 99
+
+	icon = GFX_decision_category_generic_independence
+	picture = GFX_decision_category_german_confederation
+
+	highlight_states = {
+		highlight_states_trigger = {
+			has_state_flag = german_confederation_state
+		}
+	}
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		any_owned_state = {
+			is_on_continent = europe	
+		}	
+	}
+}
+
+
+fpw_german_unification_category = {
+	priority = 100
+
+	icon = GFX_decision_category_power_struggle
+	picture = GFX_decision_category_austro_prussian_war
+
+	allowed = {
+		always=yes
+	}
+
+	visible = {
+		OR = {
+			original_tag = PRS
+			original_tag = AUS
+			has_country_flag = austro_prussian_war_escalation_flag
+		}
+	}
+}

@@ -1,0 +1,240 @@
+debug_decisions = {
+
+	tribal_modifier= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = TRB
+					}
+				}
+				add_opinion_modifier = {
+    					target = TRB
+    					modifier = fpw_tribal_state_modifier
+				}
+				reverse_add_opinion_modifier = {
+					target = TRB
+					modifier = fpw_tribal_state_modifier
+				}
+			}
+		}
+	}
+
+	calculate_distance= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			set_variable = { ROOT.colonial_time = 250 }
+			custom_effect_tooltip = "This equals [?ROOT.colonial_time], [?ROOT.temp_population]"
+			838 = {
+				set_variable = { ROOT.temp_population = state_population_k }
+				divide_variable = { ROOT.temp_population = 1750 }
+				add_to_variable = { ROOT.temp_population = 1 }
+
+				multiply_variable = {
+					var = ROOT.colonial_time
+					value = ROOT.temp_population
+                }
+			}
+		}
+	}
+
+	calculate_debuffs= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = "This equals [?ROOT.debuff]%, [?ROOT.temp_debuff_modifier]"
+			if = {
+				limit = {
+					NOT = {
+						ROOT = {
+							has_variable = ROOT.debuff
+						}
+					}
+				}
+				set_variable = { ROOT.debuff = 5 }
+				#set_variable = { ROOT.pp_gain = political_power_daily }
+			}
+			549 = {
+				set_variable = { ROOT.temp_debuff_modifier = state_population_k }
+				#divide_variable = { ROOT.temp_debuff_modifier = 1750 }
+				add_to_variable = { ROOT.temp_debuff_modifier = 1 }
+
+				multiply_variable = {
+					var = ROOT.debuff
+					value = ROOT.temp_debuff_modifier
+                }
+				round_variable = ROOT.debuff
+
+				if= {
+					limit = {
+						check_variable = { ROOT.debuff > 100 }
+					}
+					set_variable = { ROOT.debuff = 100 }
+				}
+			}
+		}
+	}
+
+	calculate_debuffs_complicatedasf= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+			#set_variable = { ROOT.temp_debuff_population = state_population_k }
+			#round_variable = ROOT.temp_debuff_population
+
+			set_variable = { ROOT.temp_one = 0.003 }
+			log = "fpw temp one: [?ROOT.temp_one]"
+
+			multiply_variable = { ROOT.temp_one = 3200 } # times population_k
+			set_variable = { ROOT.temp_two = ROOT.temp_one }
+
+			add_to_variable = { ROOT.temp_one = 6 }
+
+			set_variable = { ROOT.debufftemp = ROOT.temp_one }
+			round_variable = ROOT.debufftemp
+
+			custom_effect_tooltip = "Debuff Temp: [?ROOT.debufftemp], Temp One: [?ROOT.temp_one], Temp Two: [?ROOT.temp_two]"
+		}
+	}
+
+	remove_debuffs= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = "This equals [?ROOT.debuff]%, [?ROOT.temp_debuff_modifier]"
+			set_variable = { ROOT.debuff = 5 }
+		}
+	}
+
+	calculate_integration= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = "This equals [?ROOT.debuff]%, [?ROOT.debuff_to_remove]%"
+			838 = {
+				set_variable = { ROOT.debuff_to_remove = state_population_k }
+				divide_variable = { ROOT.debuff_to_remove = 50 }
+				add_to_variable = { ROOT.debuff_to_remove = 1 }
+
+				subtract_from_variable = { ROOT.debuff = ROOT.debuff_to_remove }
+				round_variable = ROOT.debuff
+
+				if= {
+					limit = {
+						check_variable = { ROOT.debuff < 5 }
+					}
+					set_variable = { ROOT.debuff = 5 }
+				}
+			}
+		}
+	}
+}

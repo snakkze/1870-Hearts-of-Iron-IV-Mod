@@ -1,0 +1,30 @@
+characters={
+
+	ENG_victoria={
+		name="Queen Victoria"
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_victoria
+			}
+		}
+		country_leader={
+			ideology=conservative_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+	ENG_karl_marx={
+		name="Karl Marx"
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_karl_marx
+			}
+		}
+		country_leader={
+			ideology=communism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,16 @@
+characters={
+
+	TUR_murad_v={
+		name="Murad V."
+		portraits={
+			civilian={
+				large=GFX_portrait_TUR_murad_v
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

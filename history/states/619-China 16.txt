@@ -1,0 +1,34 @@
+
+state={
+	id=619
+	name="STATE_619"
+	resources={
+		aluminium=2.000
+		chromium=2.000
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = SIK
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			2015 2 
+		}
+
+	}
+
+	provinces={
+		1766 1970 2015 4467 4828 4923 5016 5062 5087 7519 7790 7949 8112 12119 12370 12805 
+	}
+	manpower=1430700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

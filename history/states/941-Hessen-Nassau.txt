@@ -1,0 +1,28 @@
+state={
+	id=941
+	name="STATE_941"
+
+	history = {
+		owner = NAS
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 1
+		}
+		victory_points = {
+			6444 10 
+		}
+		add_core_of = NAS
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+	provinces={
+		6444 6488 9486 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_town
+}

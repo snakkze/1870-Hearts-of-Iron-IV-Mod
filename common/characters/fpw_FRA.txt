@@ -1,0 +1,44 @@
+characters={
+
+	FRA_napoleon_iii={
+		name="Napoleon III."
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_napoleon_iii
+			}
+		}
+		country_leader={
+			ideology=bonapartism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+	FRA_prov_gov={
+		name="Government of National Defense"
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_prov_gov
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+	FRA_paris_commune={
+		name="People of Paris"
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_paris_commune
+			}
+		}
+		country_leader={
+			ideology=social_anarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,197 @@
+fpw_treaty_of_frankfurt_category = {
+	fpw_treaty_of_frankfurt_progress = {
+
+		activation = {
+			has_global_flag = fpw_treaty_of_frankfurt
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			PRS = {
+				has_war_with = FRA
+			}
+			NOT = {
+				has_global_flag = fpw_treaty_of_frankfurt
+			}
+		}
+		icon = GFX_decision_eng_trade_unions_support
+		is_good = yes
+		# 90 Days(Or 60 days idk)
+		days_mission_timeout = 5
+		days_remove = 5
+		selectable_mission = no
+		timeout_effect = {
+			fpw_treaty_of_frankfurt = yes
+			clr_global_flag = fpw_treaty_of_frankfurt
+		}
+	}
+}
+
+fpw_franco_prussian_war_category = {
+
+	fpw_side_with_germany = {
+
+		icon = GFX_decision_side_with_germany
+
+		allowed = {
+
+		}
+
+		cost = 0
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = PRS
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = fwp_franco_prussian_war_sided
+			}
+			FRA = {
+				has_war_with = PRS
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = fwp_franco_prussian_war_sided
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+					is_subject_of = PRS
+					is_subject_of = FRA
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				ROOT = {
+					OR = {
+						tag = WRT
+						tag = BAV
+						tag = BAD
+						tag = HES
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = fwp_franco_prussian_war_sided
+			if = {
+				limit = {
+					PRS = {
+						is_in_faction = no
+					}
+				}
+				PRS = {
+					create_faction = prussian_faction
+				}
+			}
+			# created faction if not already
+			if = {
+				limit = {
+					ROOT = {
+						is_in_faction = no
+					}
+				}
+				PRS = {
+					add_to_faction = ROOT
+					#country_event = austro_prussian_fpw.1
+				}
+			}
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = PRS
+					enemy = FRA
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+
+	fpw_side_with_france = {
+
+		icon = GFX_decision_side_with_france
+
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = FRA
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = fwp_franco_prussian_war_sided
+			}
+			FRA = {
+				has_war_with = PRS
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = fwp_franco_prussian_war_sided
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+					is_subject_of = PRS
+					is_subject_of = FRA
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			set_country_flag = fwp_franco_prussian_war_sided
+			# created faction if not already
+			if = {
+				limit = {
+					FRA = {
+						is_in_faction = no
+					}
+				}
+				FRA = {
+					create_faction = prussian_faction
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_in_faction = no
+					}
+				}
+				FRA = {
+					add_to_faction = ROOT
+					#country_event = austro_prussian_fpw.1
+				}
+			}
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = FRA
+					enemy = PRS
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+is_german_minor = {
+	custom_trigger_tooltip = {
+		tooltip = fpw_is_german_minor
+		NOT = {
+			any_country = {
+				limit = {
+					is_core_of = BRU
+					is_core_of = WRT
+					is_core_of = WLD
+					is_core_of = SXY
+					is_core_of = SXW
+					is_core_of = SXM
+					is_core_of = SCG
+					is_core_of = SBL
+					is_core_of = OLD
+					is_core_of = SBG
+					is_core_of = OLD
+					is_core_of = NAS
+					is_core_of = MKS
+					is_core_of = MCK
+					is_core_of = LUE
+					is_core_of = LIP
+					is_core_of = HOH
+					is_core_of = HNV
+					is_core_of = HEK
+					is_core_of = HAM
+					is_core_of = BRE
+					is_core_of = ANH
+					has_state_flag = influenced_by_@PREV
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,133 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = austrian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = AUS_permit_estates_of_schleswig
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = AUS_federal_resolution_of_june
+		icon = GFX_goal_unknown
+		prerequisite = { focus = AUS_permit_estates_of_schleswig }
+		x = 0
+		y = 1
+		relative_position_id = AUS_permit_estates_of_schleswig
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_austro_hungarian_compromise
+		icon = GFX_goal_unknown
+		prerequisite = { focus = AUS_federal_resolution_of_june }
+		x = 0
+		y = 3
+		relative_position_id = AUS_federal_resolution_of_june
+		mutually_exclusive = { focus = AUS_triumph_in_the_german_war }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_triumph_in_the_german_war
+		icon = GFX_goal_unknown
+		prerequisite = { focus = AUS_federal_resolution_of_june }
+		x = 5
+		y = 3
+		relative_position_id = AUS_federal_resolution_of_june
+		mutually_exclusive = { focus = AUS_austro_hungarian_compromise }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_austria_first
+		icon = GFX_goal_unknown
+		prerequisite = { focus = AUS_triumph_in_the_german_war }
+		x = -2
+		y = 1
+		relative_position_id = AUS_triumph_in_the_german_war
+		mutually_exclusive = { focus = AUS_continue_german_confederation }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_continue_german_confederation
+		icon = GFX_goal_unknown
+		prerequisite = { focus = AUS_triumph_in_the_german_war }
+		x = 2
+		y = 1
+		relative_position_id = AUS_triumph_in_the_german_war
+		mutually_exclusive = { focus = AUS_austria_first }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+}

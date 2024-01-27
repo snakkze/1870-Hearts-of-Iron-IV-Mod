@@ -1,0 +1,28 @@
+
+state={
+	id=77
+	name="STATE_77"
+	manpower = 378000
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			11597 1
+		}
+		owner = TUR
+add_core_of = TUR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = ROM
+		add_claim_by = BUL
+	}
+
+	provinces={
+		9614 11597 
+	}
+
+	local_supplies=1.0 
+}

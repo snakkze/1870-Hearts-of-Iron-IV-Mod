@@ -1,0 +1,13 @@
+has_anyone_else_claimed_PRS = {
+	custom_trigger_tooltip = {
+		tooltip = fpw_no_other_country_claimed_tt
+		NOT = {
+			any_country = {
+				#has_country_flag = austro_prussian_war
+				PREV = {
+					has_state_flag = influenced_by_@PREV
+				}
+			}
+		}
+	}
+}

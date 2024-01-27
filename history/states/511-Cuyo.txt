@@ -1,0 +1,30 @@
+
+state={
+	id=511
+	name="STATE_511"
+
+	history={
+		owner = TRB
+		add_core_of = TRB
+
+		1870.1.1 = {
+			buildings = {
+				infrastructure = 1
+			}
+			owner = ARG
+			add_core_of = ARG
+		}
+		victory_points = {
+			12942 1 
+		}
+
+	}
+
+	provinces={
+		1596 5184 8215 10418 10992 12970 
+	}
+	manpower=1090274
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

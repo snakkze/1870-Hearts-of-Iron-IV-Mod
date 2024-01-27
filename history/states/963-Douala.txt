@@ -1,0 +1,21 @@
+state={
+	id=963
+	name="STATE_963"
+
+	history={
+		owner = SPR
+		add_core_of = CMR
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	provinces={
+		1903 5036 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

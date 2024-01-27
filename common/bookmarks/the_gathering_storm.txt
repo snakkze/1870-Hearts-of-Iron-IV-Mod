@@ -1,0 +1,119 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1866.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "PRS"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"ENG"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		
+
+		"ITA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"PRS"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"AUS"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"TUR"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"SOV"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				FRA_victors_of_wwi
+			}
+			focuses = {
+				FRA_form_the_popular_front
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		"USA"={
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

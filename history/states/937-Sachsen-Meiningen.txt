@@ -1,0 +1,34 @@
+
+state={
+	id=937
+	name="STATE_937"
+
+	history={
+		owner = SXM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			482 5
+		}
+		victory_points = {
+			6501 5
+		}
+		add_core_of = SXM
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+
+	provinces={
+		482 3500 6501 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

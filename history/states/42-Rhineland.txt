@@ -1,0 +1,34 @@
+
+state={
+	id=42
+	name="STATE_42"
+	resources={
+		steel=50.000
+		aluminium=14.000
+	}
+
+	history={
+		owner = PRS
+		victory_points = {
+			11435 1 
+		}
+		victory_points = {
+			11531 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+
+		}
+		add_core_of = PRS
+
+	}
+
+	provinces={
+		9575 11435 11470 11531 11494
+	}
+	manpower=3027739
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

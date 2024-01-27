@@ -1,0 +1,24 @@
+state={
+	id=936
+	name="STATE_936"
+
+	history = {
+		owner = BAV
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 1
+		}
+		add_core_of = BAV
+		1870.1.1 = {
+
+		}
+
+	}
+	provinces={
+		563 3558 11547 
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

@@ -1,0 +1,425 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	
+	default = no
+
+	# 
+	focus = {
+		id = FRA_foreign_policies
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_internal_politics
+		icon = GFX_goal_unknown
+		x = 14
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_support_the_union_liberale
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_internal_politics }
+		x = -3
+		y = 1
+		relative_position_id = FRA_internal_politics
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = FRA_strengthen_bonaparte_dynasty }
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_align_moderate_conservatives
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_support_the_union_liberale }
+		x = -1
+		y = 1
+		relative_position_id = FRA_support_the_union_liberale
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_alliance_with_legitimists
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_support_the_union_liberale }
+		x = 1
+		y = 1
+		relative_position_id = FRA_support_the_union_liberale
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_implement_new_constitution
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_align_moderate_conservatives focus = FRA_alliance_with_legitimists }
+		x = 1
+		y = 1
+		relative_position_id = FRA_align_moderate_conservatives
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_our_first_election
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_implement_new_constitution }
+		x = 0
+		y = 1
+		relative_position_id = FRA_implement_new_constitution
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Auto completed when the republicans seize power(when paris falls)
+	focus = {
+		id = FRA_government_of_national_defence
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_our_first_election }
+		mutually_exclusive = { focus = FRA_empire_triumphant }
+		x = 0
+		y = 1
+		relative_position_id = FRA_our_first_election
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_restore_bourbon_monarchy
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_government_of_national_defence }
+		mutually_exclusive = { focus = FRA_third_french_republic }
+		x = -1
+		y = 1
+		relative_position_id = FRA_government_of_national_defence
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_third_french_republic
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_government_of_national_defence }
+		mutually_exclusive = { focus = FRA_restore_bourbon_monarchy }
+		x = 1
+		y = 1
+		relative_position_id = FRA_government_of_national_defence
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_strengthen_bonaparte_dynasty
+		icon = GFX_focus_focus_fra_third_empire
+		prerequisite = { focus = FRA_internal_politics }
+		x = 3
+		y = 1
+		relative_position_id = FRA_internal_politics
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = FRA_support_the_union_liberale }
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_purge_republican_revolutionaries
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_strengthen_bonaparte_dynasty }
+		x = 0
+		y = 1
+		relative_position_id = FRA_strengthen_bonaparte_dynasty
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_flood_imperial_reservoir
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_strengthen_bonaparte_dynasty }
+		x = 2
+		y = 1
+		relative_position_id = FRA_strengthen_bonaparte_dynasty
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_construct_giant_napoleon_III_statue
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_flood_imperial_reservoir }
+		x = 0
+		y = 1
+		relative_position_id = FRA_flood_imperial_reservoir
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_the_red_scare
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_purge_republican_revolutionaries }
+		x = 0
+		y = 1
+		relative_position_id = FRA_purge_republican_revolutionaries
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_construct_high_secrurity_prison
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_the_red_scare }
+		x = 2
+		y = 1
+		relative_position_id = FRA_the_red_scare
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_crack_down_on_colonies
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_the_red_scare }
+		x = 0
+		y = 1
+		relative_position_id = FRA_the_red_scare
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Focus for colonial stuff
+	focus = {
+		id = FRA_expanding_colonial_empire
+		icon = GFX_focus_por_luso_tropicalism
+		prerequisite = { focus = FRA_foreign_policies }
+		x = -3
+		y = 1
+		relative_position_id = FRA_foreign_policies
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	# Auto completed when war starts
+	focus = {
+		id = FRA_franco_prussian_war
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_foreign_policies }
+		x = 0
+		y = 1
+		relative_position_id = FRA_foreign_policies
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		will_lead_to_war_with = PRS
+
+		completion_reward = {
+			#set_global_flag = fpw_franco_prussian_war_flag
+			#declare_war_on = {
+			#	target = PRS
+			#	type = annex_everything
+			#}
+		}
+	}
+
+	# Auto completed when france wins the franco prussian war
+	focus = {
+		id = FRA_empire_triumphant
+		icon = GFX_focus_fra_le_deluge
+		prerequisite = { focus = FRA_franco_prussian_war }
+		mutually_exclusive = { focus = FRA_government_of_national_defence }
+		x = 0
+		y = 4
+		relative_position_id = FRA_franco_prussian_war
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+}

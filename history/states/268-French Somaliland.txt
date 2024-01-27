@@ -1,0 +1,32 @@
+
+state={
+	id=268
+	name="STATE_268"
+
+	history={
+		owner = TUR
+		add_core_of = DJI
+		add_core_of = AFA
+		add_core_of = SOM
+		victory_points = {
+			8124 1 
+		}
+		buildings = {
+			infrastructure = 2
+			8124 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		4985 8124 10777 
+	}
+	manpower=85232
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

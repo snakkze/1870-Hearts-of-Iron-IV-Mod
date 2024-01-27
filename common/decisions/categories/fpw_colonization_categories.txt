@@ -1,0 +1,14 @@
+fpw_colonization_category = {
+	priority = 100
+
+	icon = GFX_decision_category_power_struggle
+	picture = GFX_decision_category_austro_prussian_war
+
+	allowed = {
+		always=yes
+	}
+
+	visible = {
+		always=yes
+	}
+}

@@ -1,0 +1,16 @@
+characters={
+
+	SOV_alexander_ii={
+		name="Alexander II."
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_alexander_ii
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

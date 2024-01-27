@@ -1,0 +1,28 @@
+
+state={
+	id=30
+	name="STATE_30"
+
+	history={
+		owner = FRA
+		victory_points = {
+			11465 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		503 3495 3523 9867 11465 11613 11616 
+	}
+	manpower=1388400
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

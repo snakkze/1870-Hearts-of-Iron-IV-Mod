@@ -1,0 +1,28 @@
+state={
+	id=950
+	name="STATE_950"
+
+	history = {
+		owner = SBL
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 1
+		}
+		victory_points = {
+			3395 3 
+		}
+		add_core_of = SBL
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+	provinces={
+		3395 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

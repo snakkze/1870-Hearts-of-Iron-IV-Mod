@@ -1,0 +1,32 @@
+
+state={
+	id=830
+	name="STATE_830"
+
+	history={
+		owner = BUK
+		add_core_of = BUK
+		victory_points = {
+			1573 2 
+		}
+		victory_points = {
+			10671 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = UZB
+
+	}
+
+	provinces={
+		756 1384 1554 1573 1623 1632 1649 4549 7584 7639 7775 7924 9605 10205 10414 10470 10671 10742 12161 12218 12239 12248 12250 12314 12722 
+	}
+	manpower=2189596
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=2.000
+}

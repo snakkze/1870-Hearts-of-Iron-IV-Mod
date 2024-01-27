@@ -1,0 +1,115 @@
+add_namespace = news_fpw
+
+# austro prussian war escalation
+news_event = {
+	id = news_fpw.1
+	title = news_fpw.1.t
+	desc = news_fpw.1.d
+	picture = GFX_report_event_total_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.1.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = AUS
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.1.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.1.c
+		trigger = {
+			original_tag = AUS
+		}
+	}
+}
+
+# napoleon the third is captured and the second empire collapses
+news_event = {
+	id = news_fpw.2
+	title = news_fpw.2.t
+	desc = news_fpw.2.d
+	picture = GFX_report_event_total_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.2.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.2.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.2.c
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}
+
+# prov government has resigned
+news_event = {
+	id = news_fpw.3
+	title = news_fpw.3.t
+	desc = news_fpw.3.d
+	picture = GFX_report_event_total_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.3.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.3.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.3.c
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}

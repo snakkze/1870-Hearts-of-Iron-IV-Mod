@@ -1,0 +1,30 @@
+state={
+	id=935
+	name="STATE_935"
+
+	history = {
+		owner = BAD
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 1
+		}
+		victory_points = {
+			3530 10 
+		}
+		victory_points = {
+			6568 5 
+		}
+		add_core_of = BAD
+		1870.1.1 = {
+
+		}
+
+	}
+	provinces={
+		3530 3679 3692 6542 6568 6581 6712 11640 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_town
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=80
+	name="STATE_80"
+
+	history={
+		victory_points = {
+			577 1 
+		}
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+
+		}
+		add_core_of = ROM
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		577 6761 9548 11689 
+	}
+	manpower=474600
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
