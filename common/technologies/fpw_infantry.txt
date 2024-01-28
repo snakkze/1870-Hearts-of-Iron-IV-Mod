@@ -1,26 +1,19 @@
 technologies = {
 	
-	@1856 = 0
-	@1858 = 1
-	@1860 = 2
-	@1862 = 4
-	@1864 = 6
-	@1866 = 8
-	@1868 = 10
-	@1870 = 12
-	@1872 = 14
+	@1860 = 0
+	@1862 = 2
+	@1864 = 4
+	@1866 = 6
+	@1868 = 8
+	@1870 = 10
+	@1872 = 12
+	@1874 = 14
 
-	# Rifled musket(1855)
+	# Model 1860 Spencer Rifle
 	fpw_infantry_weapons = {
 
 		enable_equipments = {
 			infantry_equipment_0
-		}
-
-		enable_equipment_modules = {
-			tank_heavy_machine_gun
-			secondary_turret_hmg
-			additional_machine_guns
 		}
 		
 		enable_subunits = {
@@ -33,7 +26,7 @@ technologies = {
 		}		
 
 		research_cost = 1.5
-		start_year = 1856
+		start_year = 1860
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = -1 }
@@ -102,27 +95,17 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		motorized = {
-			soft_attack = 0.05
-		}
-		
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
-			soft_attack = 0.05
-		}
-		
 		path = {
-			leads_to_tech = fpw_improved_infantry_weapons
+			leads_to_tech = fpw_improved_infantry_weapons_2
 			research_cost_coeff = 1
 		}		
 
 		research_cost = 1.5
-		start_year = 1866
+		start_year = 1864
+		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
-			position = { x = 0 y = @1866 }
+			position = { x = 0 y = @1864 }
 		}
 		
 		categories = {
@@ -152,6 +135,53 @@ technologies = {
 			}
 		}
 	}
+	# Yes yes
+	fpw_improved_infantry_weapons_2 = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = fpw_improved_infantry_weapons
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1866
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1866 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
 	
 	# Remington Rolling Block Rifle(1867)
 	fpw_improved_infantry_weapons = {
@@ -161,7 +191,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = fpw_improved_infantry_weapons_2
+			leads_to_tech = fpw_improved_infantry_weapons_3
 			research_cost_coeff = 1
 		}	
 
@@ -201,34 +231,330 @@ technologies = {
 		}
 	}
 
-	# Yes yes
-	fpw_improved_infantry_weapons_2 = {
+
+	# Yes Yes
+	fpw_improved_infantry_weapons_3 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		cavalry = {
-			soft_attack = 0.05
-		}
-		
-		motorized = {
-			soft_attack = 0.05
-		}
-		
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		path = {
-			leads_to_tech = fpw_improved_infantry_weapons_3
+			leads_to_tech = fpw_advanced_infantry_weapons
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
+		start_year = 1870
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1870 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5	
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	# Gras Modell 1874(1874 obv)
+	fpw_advanced_infantry_weapons = {
+
+		enable_equipments = {
+			infantry_equipment_3
+		}	
+		
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1874
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1874 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			
+			
+			modifier = {
+				tag = PRS
+				factor = 2.5
+			}
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	
+	fpw_support_weapons = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = fpw_support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1860
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1860 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 15
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	fpw_support_weapons2 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = fpw_support_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1866
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1866 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	fpw_support_weapons3 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = fpw_support_weapons4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
 		start_year = 1868
 		folder = {
 			name = fpw_infantry_folder
@@ -253,29 +579,61 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 5
+				factor = 2
 				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
 			}
 		}
 	}
+	
+	fpw_support_weapons4 = {
 
-	# Yes Yes
-	fpw_improved_infantry_weapons_3 = {
-
-		category_light_infantry = {
-			soft_attack = 0.1
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
-		
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
 		cavalry = {
-			soft_attack = 0.1
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
-		path = {
-			leads_to_tech = fpw_advanced_infantry_weapons
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1870
 		folder = {
 			name = fpw_infantry_folder
@@ -291,59 +649,26 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1940.1.6"
+				date > "1942.1.6"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1941.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
-		}
-	}
-
-	# Mauser Model 1871(1871 obv)
-	fpw_advanced_infantry_weapons = {
-
-		enable_equipments = {
-			infantry_equipment_3
-		}	
-		
-		path = {
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1872
-		folder = {
-			name = fpw_infantry_folder
-			position = { x = 0 y = @1872 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 0.8
-			
-			
-			modifier = {
-				tag = GER
-				factor = 2.5
-			}
-			modifier = {
-				num_of_military_factories > 150
-				factor = 2.5
+				factor = 2
+				date > "1944.1.1"
 			}
 			
 			modifier = {
-				num_of_military_factories < 50
-				factor = 0.5
+				factor = 2
+				date > "1945.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
 			}
 		}
 	}
