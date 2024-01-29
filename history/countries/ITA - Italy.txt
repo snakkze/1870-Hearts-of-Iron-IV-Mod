@@ -1,6 +1,7 @@
 capital = 2
 
 recruit_character = ITA_alfonso_ferrero
+set_cosmetic_tag = ITA_monarchy
 
 set_politics = {
 	ruling_party = conservatism_ideology
@@ -9,9 +10,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	liberalism_ideology = 10
-	socialism_ideology = 2
-	conservatism_ideology = 88
+	liberalism_ideology = 42
+	socialism_ideology = 11
+	conservatism_ideology = 47
 }
 
 ETH_set_up_lon_arms_resolution_effect = yes 
@@ -42,42 +43,6 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
-
-# RESISTANCE / COMPLIANCE
-
-550 = { #ERITREA
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-559 = { #SOMALILAND
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-844 = { #JUBALAND
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-every_owned_state = { #LIBYAN STATES
-	limit = {
-		is_core_of = LBA
-		NOT = { state = 273 } #Don't add resistance in the middle of the impassable desert thanks
-	}
-	start_resistance = yes
-	set_compliance = 35
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-
 #######################################
 ############ MISSIOLINIS ##############
 #######################################
