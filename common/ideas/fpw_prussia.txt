@@ -1,0 +1,48 @@
+ideas = {
+	country = {
+
+		# Brothers on the Front
+		fpw_brothers_on_the_front = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against_cores = 0.05
+				breakthrough_bonus_against = 0.10
+			}
+
+			modifier = {
+				war_support_factor = -0.25
+			}
+		}
+
+		# Krupp Artillery
+		fpw_krupp_artillery = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				army_artillery_attack_factor = 0.15
+			}
+		}
+	}
+}

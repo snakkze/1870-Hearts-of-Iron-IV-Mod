@@ -1,5 +1,17 @@
 fpw_german_confederation_category = {
-	priority = 99
+	
+	priority = {
+		base = 3
+		modifier = {
+			add = 10
+			OR = {
+				is_german_minor = yes
+				tag = PRS
+				tag = AUS
+				tag = LUX
+			}
+		}
+	}
 
 	icon = GFX_decision_category_generic_independence
 	picture = GFX_decision_category_german_confederation
