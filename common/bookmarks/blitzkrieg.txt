@@ -1,13 +1,13 @@
 bookmarks = {
 	bookmark = {
-		name = "BLITZKRIEG_NAME"
-		desc = "BLITZKRIEG_DESC"
-		date = 1870.8.14.12
+		name = "1870_NAME"
+		desc = "1870_DESC"
+		date = 1870.1.1.12
 		picture = "GFX_select_date_1939"
 		default_country = "PRS"
 
 		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "FRA_1870_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -19,7 +19,7 @@ bookmarks = {
 		}
 	
 		"ENG"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "ENG_1870_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -32,8 +32,8 @@ bookmarks = {
 
 		
 
-		"USA"={
-			history = "FRA_GATHERING_STORM_DESC"
+		"ITA"={
+			history = "ITA_1870_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -45,7 +45,7 @@ bookmarks = {
 		}
 
 		"PRS"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "PRS_1870_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -57,7 +57,7 @@ bookmarks = {
 		}
 
 		"AUS"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "AUS_1870_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -69,7 +69,7 @@ bookmarks = {
 		}
 
 		"TUR"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "TUR_1870_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -81,7 +81,7 @@ bookmarks = {
 		}
 
 		"SOV"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "SOV_1870_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -96,7 +96,7 @@ bookmarks = {
 			history = "OTHER_BLITZKRIEG_DESC"
 		}
 
-		"ITA"={
+		"USA"={
 			minor = yes
 			history = "CAN_BLITZKRIEG_DESC"
 			ideology = democratic

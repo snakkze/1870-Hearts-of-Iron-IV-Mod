@@ -47,7 +47,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_lesser_german_solution }
 		relative_position_id = PRS_lesser_german_solution
-		x = -4
+		x = -5
 		y = 1
 		cost = 5
 
@@ -115,7 +115,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = { focus = PRS_annex_holstein focus = PRS_find_a_peaceful_solution }
 		relative_position_id = PRS_annex_holstein
-		x = -4
+		x = -6
 		y = 1
 		cost = 10
 
@@ -136,7 +136,7 @@ focus_tree = {
 		prerequisite = { focus = PRS_bruderkrieg_ending }
 		mutually_exclusive = { focus = PRS_prussian_identity }
 		relative_position_id = PRS_bruderkrieg_ending
-		x = -3
+		x = -4
 		y = 1
 		cost = 10
 
@@ -149,13 +149,14 @@ focus_tree = {
 	}
 
 	# Prusso-Nationalist Path
+	# Requires a trigger warning!
 	focus = {
 		id = PRS_prussian_identity
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_bruderkrieg_ending }
 		mutually_exclusive = { focus = PRS_accept_austrian_dominance }
 		relative_position_id = PRS_bruderkrieg_ending
-		x = 3
+		x = 4
 		y = 1
 		cost = 10
 
@@ -168,11 +169,433 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PRS_inspect_the_kaisers_residence
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_prussian_identity }
+		relative_position_id = PRS_prussian_identity
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_plan_the_coup
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_inspect_the_kaisers_residence }
+		relative_position_id = PRS_inspect_the_kaisers_residence
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_overthrow_wilhelm
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_plan_the_coup }
+		relative_position_id = PRS_plan_the_coup
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_wacht_am_rhein
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_overthrow_wilhelm }
+		relative_position_id = PRS_overthrow_wilhelm
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_the_ruhrkampf
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_wacht_am_rhein }
+		relative_position_id = PRS_wacht_am_rhein
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_search_the_scrapegoat
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_prussian_identity }
+		relative_position_id = PRS_prussian_identity
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_dolchstosslegende
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_search_the_scrapegoat }
+		relative_position_id = PRS_search_the_scrapegoat
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_segrete_the_lesser_germans
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_dolchstosslegende }
+		relative_position_id = PRS_dolchstosslegende
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_subhumans_in_the_workforce
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_dolchstosslegende }
+		relative_position_id = PRS_dolchstosslegende
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_ruhm_und_ehre_der_volksarmee
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_subhumans_in_the_workforce }
+		prerequisite = { focus = PRS_segrete_the_lesser_germans }
+		relative_position_id = PRS_subhumans_in_the_workforce
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_the_vengeance
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_ruhm_und_ehre_der_volksarmee }
+		relative_position_id = PRS_ruhm_und_ehre_der_volksarmee
+		x = 0
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_fight_the_remains_of_north_germany
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_segrete_the_lesser_germans }
+		prerequisite = { focus = PRS_overthrow_wilhelm }
+		relative_position_id = PRS_overthrow_wilhelm
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_italian_ally
+		icon = GFX_focus_befriend_italy
+		prerequisite = { focus = PRS_fight_the_remains_of_north_germany }
+		relative_position_id = PRS_fight_the_remains_of_north_germany
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Unternehmen Germania because of Wacht am Rhein, Germania auf der Wacht am Rhein, Painting from Lorenz Clasen, 1860
+	focus = {
+		id = PRS_unternehmen_germania
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_the_ruhrkampf }
+		prerequisite = { focus = PRS_italian_ally }
+		prerequisite = { focus = PRS_the_vengeance }
+		relative_position_id = PRS_italian_ally
+		x = -1
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_towards_a_greater_prussia
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_prussian_identity focus = PRS_integrate_minor_austrian_lands }
+		relative_position_id = PRS_prussian_identity
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_fund_austrian_seperatists
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_towards_a_greater_prussia }
+		relative_position_id = PRS_towards_a_greater_prussia
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_defending_our_fatherland
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_fund_austrian_seperatists }
+		relative_position_id = PRS_fund_austrian_seperatists
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Defense on core territory
+		}
+	}
+
+	focus = {
+		id = PRS_fortify_silesia
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PRS_defending_our_fatherland }
+		relative_position_id = PRS_defending_our_fatherland	
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_seek_hungarian_support
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_fund_austrian_seperatists }
+		relative_position_id = PRS_fund_austrian_seperatists
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_prepare_our_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PRS_seek_hungarian_support }
+		relative_position_id = PRS_seek_hungarian_support
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_gott_mit_uns
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_prepare_our_infrastructure }
+		prerequisite = { focus = PRS_fortify_silesia }
+		relative_position_id = PRS_fortify_silesia
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_gott_mit_uns
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = PRS_prepare_our_infrastructure }
+		prerequisite = { focus = PRS_fortify_silesia }
+		relative_position_id = PRS_fortify_silesia
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_unternehmen_ostmark
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_gott_mit_uns }
+		prerequisite = { focus = PRS_the_vengeance }
+		relative_position_id = PRS_gott_mit_uns
+		x = 0
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = PRS_austro_prussian_victory
 		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = { focus = PRS_annex_holstein }
 		relative_position_id = PRS_annex_holstein
-		x = 4
+		x = 6
 		y = 1
 		cost = 10
 
@@ -205,6 +628,78 @@ focus_tree = {
 		}
 	}
 
+	# Ultimatum to the reichsrat of the independent northern states(faction).
+	focus = {
+		id = PRS_ultimatum_to_the_northern_reichsrat
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_integrate_minor_austrian_lands }
+		relative_position_id = PRS_integrate_minor_austrian_lands
+		x = 2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_2
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
+		prerequisite = { focus = PRS_towards_a_greater_prussia }
+		relative_position_id = PRS_towards_a_greater_prussia
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_ratify_the_victory
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
+		prerequisite = { focus = PRS_annex_hostile_nothern_states }
+		relative_position_id = PRS_ultimatum_to_the_northern_reichsrat
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_4
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_2 }
+		prerequisite = { focus = PRS_ratify_the_victory }
+		relative_position_id = PRS_2
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
 	focus = {
 		id = PRS_continue_bismarcks_plan
 		icon = GFX_goal_unknown
@@ -228,7 +723,7 @@ focus_tree = {
 	focus = {
 		id = PRS_annex_hostile_nothern_states
 		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_continue_bismarcks_plan }
+		prerequisite = { focus = PRS_continue_bismarcks_plan focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_continue_bismarcks_plan
 		x = -2
 		y = 1
@@ -527,7 +1022,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_lesser_german_solution }
 		relative_position_id = PRS_lesser_german_solution
-		x = 4
+		x = 5
 		y = 1
 		cost = 10
 
@@ -599,7 +1094,7 @@ focus_tree = {
 	focus = {
 		id = PRS_greater_german_solution
 		icon = GFX_goal_unknown
-		x = 20
+		x = 21
 		y = 0
 		cost = 10
 		ai_will_do = {

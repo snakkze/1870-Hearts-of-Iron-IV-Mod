@@ -1,14 +1,14 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
+		name = "1866_NAME"
+		desc = "1866_DESC"
 		date = 1866.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "PRS"
 		default = yes
 		
 		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "FRA_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -20,7 +20,7 @@ bookmarks = {
 		}
 
 		"ENG"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "ENG_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -34,7 +34,7 @@ bookmarks = {
 		
 
 		"ITA"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "ITA_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -46,7 +46,7 @@ bookmarks = {
 		}
 
 		"PRS"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "PRS_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -58,7 +58,7 @@ bookmarks = {
 		}
 
 		"AUS"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "AUS_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -70,7 +70,7 @@ bookmarks = {
 		}
 
 		"TUR"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "TUR_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -82,7 +82,7 @@ bookmarks = {
 		}
 
 		"SOV"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "SOV_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -94,7 +94,7 @@ bookmarks = {
 		}
 
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "OTHER_1866_DESC"
 		}
 
 		"USA"={
