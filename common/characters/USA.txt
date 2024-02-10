@@ -1,0 +1,16 @@
+characters={
+
+	USA_andrew_johnson={
+		name="Andrew Johnson"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_andrew_johnson
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

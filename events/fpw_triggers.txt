@@ -79,6 +79,10 @@ country_event = {
 		PRS = {
 			country_event = austro_prussian_fpw.2
 		}
+		if = {
+			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+			ITA = { country_event = austro_prussian_fpw.4 }
+		}
 	}
 }
 
@@ -129,6 +133,10 @@ country_event = {
         set_global_flag = fpw_prussia_peace
 		AUS = {
 			country_event = austro_prussian_fpw.3
+		}
+		if = {
+			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+			ITA = { country_event = austro_prussian_fpw.5 }
 		}
 	}
 }

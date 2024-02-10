@@ -4,3 +4,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_PRS_unification.dds"
 	}
 }
+
+# ITALY #
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_ITA_monarchy"
+		texturefile = "gfx/interface/goals/focus_italian_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_monarchy_shine"
+		texturefile = "gfx/interface/goals/focus_italian_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_star"
+		texturefile = "gfx/interface/goals/focus_italian_identity.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_star_shine"
+		texturefile = "gfx/interface/goals/focus_italian_identity.dds"
+	}
+}

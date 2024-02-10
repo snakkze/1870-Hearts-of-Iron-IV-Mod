@@ -13,4 +13,31 @@ characters={
 			id=-1
 		}
 	}
+	ITA_bettino_ricasoli={
+		name="Bettino Ricasoli"
+		portraits={
+			civilian={
+				large=GFX_portrait_ITA_bettino_ricasoli
+			}
+		}
+		country_leader={
+			ideology=conservative_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	ITA_vittorio_emanuele_ii = {
+		name = "Vittorio Emanuele II"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_vittorio_emanuele_III #yes ik it's not right but trust me
+			}
+		}
+
+		country_leader = {
+			ideology = aboslute_monarchy
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 }

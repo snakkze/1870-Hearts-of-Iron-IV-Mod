@@ -55,4 +55,41 @@ country_event = {
 		prussian_surrender = yes
 	}
 }
- 
+
+# Austria Capitulates from the POV of italy
+country_event = {
+	id = austro_prussian_fpw.4
+	title = austro_prussian_fpw.4.t
+	desc = austro_prussian_fpw.4.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.4.a
+		complete_national_focus = ITA_w
+	}
+}
+
+# Prussia Capitulates from the POV of italy
+country_event = {
+	id = austro_prussian_fpw.5
+	title = austro_prussian_fpw.5.t
+	desc = austro_prussian_fpw.5.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.5.a
+		complete_national_focus = ITA_l
+	}
+}

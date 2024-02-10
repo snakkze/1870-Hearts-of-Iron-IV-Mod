@@ -29,6 +29,8 @@
 
   colonization_descision:0 "Colonizing §Y[FROM.GetName]§!."
   integration_descision:0 "Integrate §Y[FROM.GetName]§!."
+  
+  ITA_government:0 "The Italian Government"
 
   PRS_ally_saxony:0 "Influence Saxony"
   PRS_ally_bavaria:0 "Influence Bavaria"
@@ -54,3 +56,5 @@
   PRS_ally_bremen:0 "Influence Bremen"
   PRS_ally_hamburg:0 "Influence Hamburg"
   PRS_ally_luburg:0 "Influence Lübeck"
+  
+  ITA_conquer_venice:0 "Conquer Venice"

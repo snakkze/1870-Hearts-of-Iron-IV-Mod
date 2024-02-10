@@ -1,0 +1,586 @@
+﻿focus_tree = {
+	id = italian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = ITA
+				tag = RSI
+				tag = RDS
+			}
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 1500 y = 800 }
+
+	initial_show_position = {
+		focus = industrial_effort
+	}
+
+	focus = {
+		id = ITA_start
+		icon = GFX_focus_ITA_italian_irredentism
+		x = 1
+		y = 0
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ITA_conservative_politics
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = ITA_start }
+		x = 5
+		y = 1
+		relative_position_id = ITA_start
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ITA_concessions_to_socialists
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = ITA_conservative_politics }
+		mutually_exclusive = { focus = ITA_kill_socialists }
+		available = { has_political_power > 50 }
+		x = 3
+		y = 1
+		relative_position_id = ITA_conservative_politics
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = ITA_kill_socialists
+		icon = GFX_focus_generic_conspiracy
+		prerequisite = { focus = ITA_conservative_politics }
+		mutually_exclusive = { focus = ITA_concessions_to_socialists }
+		available = { has_political_power > 200 }
+		x = 1
+		y = 1
+		relative_position_id = ITA_conservative_politics
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -200
+			add_popularity = {
+				ideology = socialism_ideology
+				popularity = -1
+			}
+			custom_effect_tooltip = ITA_unexpected_consequences
+			remove_ideas = liberal_country
+		}
+	}
+	focus = {
+		id = ITA_royal_parade
+		icon = GFX_focus_ITA_monarchy
+		prerequisite = { focus = ITA_conservative_politics }
+		available = { has_idea = vittorio_emanuele }
+		x = -1
+		y = 1
+		relative_position_id = ITA_conservative_politics
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ITA_monarchist_propaganda
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = ITA_royal_parade }
+		available = { has_idea = vittorio_emanuele }
+		x = 1
+		y = 1
+		relative_position_id = ITA_royal_parade
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ITA_crush_republican_opposition
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = ITA_monarchist_propaganda focus = ITA_kill_socialists focus = ITA_concessions_to_socialists }
+		available = {
+			has_idea = vittorio_emanuele
+			has_political_power > 250
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_monarchist_propaganda
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -250
+			remove_ideas = republican_opposition
+		}
+	}
+	focus = {
+		id = ITA_ally_prussia
+		icon = GFX_focus_ph
+		prerequisite = { focus = ITA_start }
+		mutually_exclusive = { focus = ITA_venice_for_support }
+		available = {
+			country_exists = PRS
+		}
+		bypass = {
+			OR = {
+				is_ally_with = PRS
+				is_guaranteed_by = PRS
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_start
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			PRS = { 
+				country_event = {
+					id = italy.1
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_prussian_military_cooperation
+		icon = GFX_focus_research
+		prerequisite = { focus = ITA_ally_prussia }
+		available = {
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_ally_prussia
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_to_tech_sharing_group = ITA_PRUSSIA_research_group
+			PRS = {
+				add_to_tech_sharing_group = ITA_PRUSSIA_research_group
+			}
+		}
+	}
+	focus = {
+		id = ITA_venice_for_support
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ITA_start }
+		mutually_exclusive = { focus = ITA_ally_prussia }
+		available = {
+			NOT = { owns_state = 160 }
+		}
+		bypass = {
+			owns_state = 160
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_start
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			160 = { owner = { country_event = italy.2} }
+		}
+	}
+	focus = {
+		id = ITA_formalise_habsburg_alliance
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ITA_venice_for_support }
+		available = {
+			owns_state = 160
+			country_exists = AUS
+		}
+		bypass = {
+			is_ally_with = AUS
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_venice_for_support
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = "GER_central_powers_faction"
+				add_to_faction = AUS
+			}
+		}
+	}
+	focus = {
+		id = ITA_the_war_with_austria
+		icon = GFX_goal_generic_major_war #PLACEHOLDER
+		prerequisite = { focus = ITA_ally_prussia focus = ITA_venice_for_support }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_austria_info
+				PRS = { has_war_with = AUS}
+			}
+			NOT = { owns_state = 160 }
+		}
+		bypass = {
+			OR = {
+				owns_state = 160
+				has_war_with = AUS
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_ally_prussia
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			declare_war_on = {
+				target = AUS
+				type = take_core_state
+			}
+		}
+	}
+	focus = {
+		id = ITA_venice_offensive
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_the_war_with_austria }
+		mutually_exclusive = { focus = ITA_mountain_defence }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_browars_info
+				has_war_with = AUS
+			}
+		}
+		bypass = {
+			controls_state = 160
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_the_war_with_austria
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+		## GIVES DOCTRINE BOOST FOR OFFENSIVE WARS ##
+		}
+	}
+	focus = {
+		id = ITA_mountain_defence
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = ITA_the_war_with_austria }
+		mutually_exclusive = { focus = ITA_venice_offensive }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_browars_info
+				has_war_with = AUS
+			}
+		}
+		bypass = {
+			owns_state = 160
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_the_war_with_austria
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+		## GIVES DOCTRINE BOOST FOR DEFENSIVE WARS ##
+		}
+	}
+	focus = {
+		id = ITA_w
+		icon = GFX_focus_ITA_cavalry_charge
+		prerequisite = { focus = ITA_mountain_defence focus = ITA_venice_offensive focus = ITA_formalise_habsburg_alliance }
+		mutually_exclusive = { focus = ITA_l }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_w_trigger
+				always = no
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_mountain_defence
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = ITA_seek_allies
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = ITA_w }
+		x = -1
+		y = 1
+		relative_position_id = ITA_w
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_find_a_queen
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = ITA_w }
+		prerequisite = { focus = ITA_royal_parade }
+		available = { has_idea = vittorio_emanuele }
+		x = 1
+		y = 1
+		relative_position_id = ITA_w
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = ITA_find_a_queen_effect
+		}
+	}
+	focus = {
+		id = ITA_l
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = ITA_mountain_defence focus = ITA_venice_offensive }
+		mutually_exclusive = { focus = ITA_w }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_l_trigger
+				always = no
+			}
+		}
+		x = -2
+		y = 1
+		relative_position_id = ITA_venice_offensive
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.15
+			set_politics = {
+				ruling_party = liberalism_ideology
+				elections_allowed = no
+			}
+			add_country_leader_role = {
+				character = ITA_comitato_di_liberazione_nazionale
+				promote_leader = yes
+				country_leader = {
+					ideology = liberalism
+					expire = "1965.1.1.1"
+					traits = { dysfunctional_assembly }
+				}
+			}
+			remove_ideas = vittorio_emanuele
+			remove_ideas = republican_opposition
+			set_cosmetic_tag = ITA_prov_gov
+		}
+	}
+	focus = {
+		id = ITA_proclaim_the_republic
+		icon = GFX_focus_ITA_the_italian_republic
+		prerequisite = { focus = ITA_l }
+		mutually_exclusive = { focus = ITA_counter_coup }
+		x = -2
+		y = 1
+		relative_position_id = ITA_l
+		cost = 10
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_stability = 0.1
+			set_cosmetic_tag = ITA_republic
+			add_popularity = {
+				ideology = liberalism_ideology
+				popularity = 0.15
+			}
+			set_politics = {
+				ruling_party = liberalism_ideology
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = ITA_counter_coup
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = ITA_l }
+		mutually_exclusive = { focus = ITA_proclaim_the_republic }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_counter_coup_trigger
+				ITA_alfonso_ferrero = { has_ideology = autocratic_republic }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_l
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = authoritarian_ideology
+					elections_allowed = no
+				}
+				set_cosmetic_tag = ITA_nationalist
+			}
+			custom_effect_tooltip = ITA_counter_coup_effect
+		}
+	}
+	focus = {
+		id = ITA_expansionism
+		icon = GFX_focus_ITA_italian_hegemony
+		prerequisite = { focus = ITA_counter_coup focus = ITA_seek_allies }
+		available = {
+			has_war_support > 0.5
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_counter_coup
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_state_claim = 735
+			add_state_claim = 1
+			if = {
+				limit = { NOT = { has_completed_focus = ITA_venice_for_support } }
+				add_state_claim = 163
+				add_state_claim = 103
+			}
+		}
+	}
+	focus = {
+		id = ITA_take_the_capital
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_expansionism }
+		available = {
+			NOT = { owns_state = 2 }
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_expansionism
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = PAP
+				generator = { 2 }
+				expire = 90
+			}
+			custom_effect_tooltip = ITA_take_the_capital_effect
+		}
+	}
+	focus = {
+		id = ITA_focus_on_the_mediterranean
+		icon = GFX_focus_generic_mediterranean_sea_focus
+		prerequisite = { focus = ITA_expansionism }
+		mutually_exclusive = { focus = ITA_colonial_empire }
+		available = {
+			NOT = { owns_state = 2 }
+		}
+		x = -3
+		y = 2
+		relative_position_id = ITA_expansionism
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			add_state_claim = 804
+			add_state_claim = 105
+			add_state_claim = 934
+			add_state_claim = 44
+			add_state_claim = 805
+			add_state_claim = 116
+			add_state_claim = 458
+			add_state_claim = 665
+			add_state_claim = 448
+			add_state_claim = 449
+			add_state_claim = 450
+			add_state_claim = 451
+			add_state_claim = 661
+			add_state_claim = 662
+			add_state_claim = 663
+			add_state_claim = 957
+		}
+	}
+	focus = {
+		id = ITA_colonial_empire
+		icon = GFX_focus_ITA_a_colonial_empire
+		prerequisite = { focus = ITA_expansionism }
+		mutually_exclusive = { focus = ITA_focus_on_the_mediterranean }
+		available = {
+			NOT = { owns_state = 2 }
+		}
+		x = 3
+		y = 2
+		relative_position_id = ITA_expansionism
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+		}
+	}
+}

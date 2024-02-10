@@ -1,0 +1,62 @@
+ideas = {
+
+	country = {
+	
+		vittorio_emanuele = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				NOT = {
+					has_government = authoritarian_ideology #remove if king in power
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				authoritarian_ideology_acceptance = 50
+			}
+		}
+		republican_opposition = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_idea = vittorio_emanuele
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				liberalism_ideology_drift = 0.01
+			}
+		}
+		liberal_country = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				OR = {
+					has_government = liberalism_ideology
+					has_country_leader_ideology = conservative_constitutional_monarchism
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				liberalism_ideology_acceptance = 50
+				authoritarian_ideology_drift = -0.05
+				socialism_ideology_drift = -0.03
+			}
+		}
+	}
+}

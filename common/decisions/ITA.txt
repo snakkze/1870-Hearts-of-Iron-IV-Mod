@@ -1,0 +1,17 @@
+ITA_government = {
+	conquer_venice = {
+		available = { controls_state = 160 }
+		activation = { always = no }
+		icon = mission_icon
+		is_good = no
+		days_mission_timeout = 60
+		selectable_mission = no
+		complete_effect = {
+			add_war_support = 0.1
+			add_political_power = 100
+		}
+		timeout_effect = {
+			country_event = italy.4
+		}
+	}
+}

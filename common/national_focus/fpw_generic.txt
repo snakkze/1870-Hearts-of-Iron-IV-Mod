@@ -2317,9 +2317,21 @@ focus_tree = {
 		id = join_the_confederation
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = alliance_with_prussia }
-		#available = {
-		#	The NGC exists and you are northern, or its the franco-prussian war
-		#}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = confederation_trigger
+					OR = {
+						PRS = { has_cosmetic_tag = GER_north_germany }
+						GER = { has_cosmetic_tag = GER_north_germany }
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = reich_trigger
+					PRS = { has_cosmetic_tag = PRS_GER }
+				}
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = alliance_with_prussia
@@ -2328,7 +2340,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		# JOIN THE NGC
+			if = {
+				limit = { country_exists = PRS }
+				PRS = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = GER }
+				GER = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -2366,9 +2395,15 @@ focus_tree = {
 			}
 			has_political_power > 1 # PRUSSIA DID NOT LOSE THE BROTHERS WAR
 		}
-		#available = {
-		#	The North German Confederation Exists
-		#}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = confederation_trigger
+				OR = {
+					PRS = { has_cosmetic_tag = GER_north_germany }
+					GER = { has_cosmetic_tag = GER_north_germany }
+				}
+			}
+		}
 		x = -1
 		y = 1
 		relative_position_id = aftermath_of_prussian_w

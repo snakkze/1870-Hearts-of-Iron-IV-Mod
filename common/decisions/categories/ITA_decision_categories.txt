@@ -1,0 +1,14 @@
+ITA_government = {
+
+	icon = decision_category_ITA_missiolinis
+
+	picture = GFX_decision_cat_picture_ITA_missiolinis
+	
+	allowed = {
+		original_tag = ITA
+	}
+	
+	priority = 100
+
+	visible_when_empty = no
+}
