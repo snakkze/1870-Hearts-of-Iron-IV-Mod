@@ -3,6 +3,16 @@ PRS_GER = {
 	color_ui = rgb { 115 115 115 }
 }
 
+PRS_fascist = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+
+PRS_greater_prussia = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+
 SXY_austrian_subject = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
