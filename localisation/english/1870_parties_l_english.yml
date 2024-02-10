@@ -54,6 +54,7 @@
  autocratic_republic_desc:0 "An autocratic republic is a dictatorship that isn't a monarchy."
  theocracy:0 "Theocracy"
  theocracy_desc:0 "Theocracy is a form of government in which one or more deities are recognized as supreme ruling authorities, giving divine guidance to human intermediaries who manage the government's daily affairs."
+ 
  # Parties
  # TEMPLATE
  #conservatism_ideology_party:0 ""
@@ -83,7 +84,7 @@
  AUS_authoritarian_ideology_party:0 "VG"
  AUS_authoritarian_ideology_party_long:0 "Verfassungstreue Großgrundbesitzer"
  
- ITA_conservatism_ideology_party:0 "Right" #the term "historical right" wasn't used until the 20th century
+ ITA_conservatism_ideology_party:0 "Right" #the term historical right wasn't used until the 20th century
  ITA_liberalism_ideology_party:0 "Left"
  ITA_socialism_ideology_party:0 "Italian Socialists" #the far left were radicals (progressive liberals) so it wouldn't make sense for them to be socialists
  ITA_authoritarian_ideology_party:0 "House of Savoy"
