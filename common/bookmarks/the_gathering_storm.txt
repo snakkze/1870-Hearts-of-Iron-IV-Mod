@@ -8,7 +8,7 @@ bookmarks = {
 		default = yes
 		
 		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "FRA_1866_DESC"
 			ideology = authoritarian_ideology
 			available = { always = yes }
 			ideas = {
@@ -20,7 +20,7 @@ bookmarks = {
 		}
 
 		"ENG"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "ENG_1866_DESC"
 			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
