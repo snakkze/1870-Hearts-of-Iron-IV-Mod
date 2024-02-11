@@ -1,0 +1,20 @@
+ideas = {
+    country = {
+        lost_schleswig = {
+            allowed = {
+				original_tag = DEN
+			}
+
+			available = {
+			}
+			
+			removal_cost = -1
+            modifier = {
+                war_support_factor = -0.3
+                stability_factor = -0.15
+                conscription_factor = -0.35
+            }
+            # picture = 
+        }
+    }
+}
