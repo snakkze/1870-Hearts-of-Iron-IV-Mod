@@ -8,7 +8,7 @@ bookmarks = {
 
 		"FRA"={
 			history = "FRA_1870_DESC"
-			ideology = democratic
+			ideology = liberalism_ideology
 			available = { always = yes }
 			ideas = {
 				FRA_victors_of_wwi
@@ -19,7 +19,7 @@ bookmarks = {
 		}
 	
 		"ENG"={
-			history = "ENG_1870_DESC"
+			history = "ENG_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -69,7 +69,7 @@ bookmarks = {
 		}
 
 		"TUR"={
-			history = "TUR_1870_DESC"
+			history = "TUR_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -81,7 +81,7 @@ bookmarks = {
 		}
 
 		"SOV"={
-			history = "SOV_1870_DESC"
+			history = "SOV_1866_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
@@ -92,13 +92,8 @@ bookmarks = {
 			}
 		}
 
-		"---"={
-			history = "OTHER_BLITZKRIEG_DESC"
-		}
-
 		"USA"={
-			minor = yes
-			history = "CAN_BLITZKRIEG_DESC"
+			history = "USA_1866_DESC"
 			ideology = democratic
 			ideas = {
 				CAN_great_depression_1
