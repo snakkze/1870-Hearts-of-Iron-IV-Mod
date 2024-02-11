@@ -43,4 +43,13 @@ spriteTypes = {
 		name = "GFX_ideology_bonapartism"
 		texturefile = "gfx/interface/ideologies/bonapartism_sub.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_orleanist"
+		texturefile = "gfx/interface/ideologies/orleanist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_monarchism"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+
 }

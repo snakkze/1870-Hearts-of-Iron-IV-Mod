@@ -54,22 +54,14 @@ capital = 947
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+set_popularities = {
+	conservatism_ideology = 11
+	liberalism_ideology = 89
+}
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = conservatism_ideology
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		conservatism_ideology = 70
-		authoritarian_ideology = 20
-		socialism_ideology = 10
-}
-}
+recruit_character = HAM_senate

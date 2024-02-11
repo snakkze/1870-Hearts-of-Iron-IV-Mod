@@ -61,21 +61,8 @@ set_politics = {
 }
 
 set_popularities = {
-	conservatism_ideology = 75
-	authoritarian_ideology = 15
-	socialism_ideology = 10
+	conservatism_ideology = 63
+	liberalsim_ideology = 37
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = conservatism_ideology
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		conservatism_ideology = 70
-		authoritarian_ideology = 20
-		socialism_ideology = 10
-}
-}
+recruit_character = FRK_karl_konstanz_viktor_fellner
