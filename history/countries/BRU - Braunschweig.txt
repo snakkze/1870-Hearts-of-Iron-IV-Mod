@@ -53,29 +53,17 @@ capital = 948
 	}
 }
 
+recruit_character = BRU_william
+
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	authoritarian_ideology = 75
-	authoritarian_ideology = 15
-	socialism_ideology = 10
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = authoritarian_ideology
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		authoritarian_ideology = 70
-		authoritarian_ideology = 20
-		socialism_ideology = 10
-}
+	liberalism_ideology = 77
+	authoritarian_ideology = 2
+	conservatism_ideology = 21
 }
