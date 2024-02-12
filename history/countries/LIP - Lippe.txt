@@ -53,6 +53,8 @@ capital = 951
 	}
 }
 
+recruit_character = LIP_leopold_iii
+
 set_politics = {
 	ruling_party = conservatism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +66,3 @@ set_popularities = {
 	authoritarian_ideology = 12
 	conservatism_ideology = 88
 }
-
-recruit_character = LIP_leopold_iii

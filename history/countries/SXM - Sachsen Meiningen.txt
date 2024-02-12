@@ -53,6 +53,9 @@ capital = 937
 	}
 }
 
+recruit_character = SXM_bernhard_ii
+
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +67,3 @@ set_popularities = {
 	liberalism_ideology = 92
 	conservatism_ideology = 8
 }
-
-recruit_character = SXM_bernhard_ii

@@ -53,16 +53,17 @@ capital = 52
 	}
 }
 
+recruit_character = BAV_ludwig_ii
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-	set_popularities = {
+
+set_popularities = {
 	authoritarian_ideology = 32
 	liberalism_ideology = 50
 	conservatism_ideology = 18
 }
-
-recruit_character = BAV_ludwig_ii

@@ -53,6 +53,8 @@ capital = 61
 	}
 }
 
+recruit_character = MCK_frederick_francis_ii
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +66,3 @@ set_popularities = {
 	authoritarian_ideology = 33
 	liberalism_ideology = 67
 }
-
-recruit_character = MCK_frederick_francis_ii

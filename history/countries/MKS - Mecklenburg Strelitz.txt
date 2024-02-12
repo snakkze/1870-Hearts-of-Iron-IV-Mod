@@ -53,6 +53,8 @@ capital = 938
 	}
 }
 
+recruit_character = MKS_frederick_william
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -62,7 +64,5 @@ set_politics = {
 
 set_popularities = {
 	liberalism_ideology = 89
-	socialism_ideology = 11
+	conservatism_ideology = 11
 }
-
-recruit_character = MKS_frederick_william

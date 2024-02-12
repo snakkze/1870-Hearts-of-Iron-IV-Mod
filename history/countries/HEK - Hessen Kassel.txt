@@ -53,6 +53,8 @@ capital = 942
 	}
 }
 
+recruit_character = HEK_friedrich_wilhelm
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +66,3 @@ set_popularities = {
 	liberalism_ideology = 75
 	authoritarian_ideology = 2
 }
-
-recruit_character = HEK_friedrich_wilhelm

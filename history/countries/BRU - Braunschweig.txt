@@ -53,6 +53,8 @@ capital = 948
 	}
 }
 
+recruit_character = BRU_william
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -65,5 +67,3 @@ set_popularities = {
 	authoritarian_ideology = 2
 	conservatism_ideology = 21
 }
-
-recruit_character = BRU_william

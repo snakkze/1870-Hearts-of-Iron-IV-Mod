@@ -53,6 +53,8 @@ capital = 941
 	}
 }
 
+recruit_character = NAS_august_ludwig
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +66,3 @@ set_popularities = {
 	conservatism_ideology = 17
 	liberalism_ideology = 83
 }
-
-recruit_character = NAS_august_ludwig

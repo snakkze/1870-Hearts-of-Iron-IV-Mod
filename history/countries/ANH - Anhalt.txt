@@ -53,6 +53,8 @@ capital = 949
 	}
 }
 
+recruit_character = ANH_leopold_iv
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -65,5 +67,3 @@ set_popularities = {
 	liberalism_ideology = 87
 	authoritarian_ideology = 2
 }
-
-recruit_character = ANH_leopold_iv

@@ -53,6 +53,8 @@ capital = 944
 	}
 }
 
+recruit_character = OLD_peter_ii
+
 set_politics = {
 	ruling_party = conservatism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +66,3 @@ set_popularities = {
 	authoritarian_ideology = 33
 	conservatism_ideology = 67
 }
-
-recruit_character = OLD_peter_ii

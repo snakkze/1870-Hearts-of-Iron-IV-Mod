@@ -53,6 +53,9 @@ capital = 954
 	}
 }
 
+recruit_character = SXW_charles_alexander
+
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +67,3 @@ set_popularities = {
 	liberalism_ideology = 86
 	conservatism_ideology = 14
 }
-
-recruit_character = SXW_charles_alexander

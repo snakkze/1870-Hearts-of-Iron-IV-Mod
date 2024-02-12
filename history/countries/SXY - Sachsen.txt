@@ -53,6 +53,9 @@ capital = 65
 	}
 }
 
+recruit_character = SXY_john_i
+
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -65,5 +68,3 @@ set_popularities = {
 	conservatism_ideology = 10
 	authoritarian_ideology = 6
 }
-
-recruit_character = SXY_john_i

@@ -53,6 +53,8 @@ capital = 940
 	}
 }
 
+recruit_character = FRK_karl_konstanz_viktor_fellner
+
 set_politics = {
 	ruling_party = conservatism_ideology
 	last_election = "1936.1.1"
@@ -64,5 +66,3 @@ set_popularities = {
 	conservatism_ideology = 63
 	liberalsim_ideology = 37
 }
-
-recruit_character = FRK_karl_konstanz_viktor_fellner

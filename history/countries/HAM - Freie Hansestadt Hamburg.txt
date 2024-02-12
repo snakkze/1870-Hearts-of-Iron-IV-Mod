@@ -53,6 +53,8 @@ capital = 947
 	}
 }
 
+recruit_character = HAM_senate
+
 set_politics = {
 	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
@@ -63,5 +65,3 @@ set_popularities = {
 	conservatism_ideology = 11
 	liberalism_ideology = 89
 }
-
-recruit_character = HAM_senate
