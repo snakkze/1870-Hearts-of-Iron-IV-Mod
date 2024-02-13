@@ -1,6 +1,6 @@
 ﻿capital = 2
-
-
+set_cosmetic_tag = PAP_neutrality
+recruit_character = PAP_pope
 
 set_research_slots = 3
 set_stability = 0.5
@@ -100,15 +100,15 @@ set_convoys = 60
 
 set_politics = {
 	ruling_party = authoritarian_ideology
-	last_election = "1934.3.26"
+	last_election = "1861.9.8"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 10
-	authoritarian_ideology = 10
+	conservatism_ideology = 15
+	liberalism_ideology = 10
 	socialism_ideology = 0
-	authoritarian_ideology = 80
+	authoritarian_ideology = 75
 }
 
 

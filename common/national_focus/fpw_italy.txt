@@ -255,7 +255,7 @@
 	}
 	focus = {
 		id = ITA_the_war_with_austria
-		icon = GFX_goal_generic_major_war #PLACEHOLDER
+		icon = GFX_focus_attack_austria
 		prerequisite = { focus = ITA_ally_prussia focus = ITA_venice_for_support }
 		available = {
 			custom_trigger_tooltip = {
@@ -553,21 +553,128 @@
 			add_state_claim = 44
 			add_state_claim = 805
 			add_state_claim = 116
-			add_state_claim = 458
-			add_state_claim = 665
-			add_state_claim = 448
-			add_state_claim = 449
-			add_state_claim = 450
-			add_state_claim = 451
-			add_state_claim = 661
-			add_state_claim = 662
-			add_state_claim = 663
-			add_state_claim = 957
+		}
+	}
+	focus = {
+		id = ITA_plotting_against_the_ottomans
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = { focus = ITA_focus_on_the_mediterranean }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_ott
+				TUR = { has_cosmetic_tag = TUR_ottoman_empire }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_focus_on_the_mediterranean
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_faction = anti_ottoman_faction
+		}
+	}
+	focus = {
+		id = ITA_betray_the_habsburgs
+		icon = GFX_focus_attack_austria
+		prerequisite = { focus = ITA_focus_on_the_mediterranean }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_habsburg_real
+				AUS = {
+					owns_state = 43
+				}
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_focus_on_the_mediterranean
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_proclaim_greater_italy
+		icon = GFX_focus_ITA_greater_italy
+		prerequisite = { focus = ITA_betray_the_habsburgs }
+		prerequisite = { focus = ITA_plotting_against_the_ottomans }
+		mutually_exclusive = { focus = ITA_roman_ambition }
+		mutually_exclusive = { focus = ITA_mto }
+		available = {
+			num_of_controlled_states > 20
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_betray_the_habsburgs
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = vittorio_emanuele }
+				set_cosmetic_tag = greater_italy
+			}
+			if = {
+				limit = { NOT = { has_idea = vittorio_emanuele} }
+				set_cosmetic_tag = ITA_gir
+			}
+		}
+	}
+	focus = {
+		id = ITA_roman_ambition
+		icon = GFX_focus_ITA_mare_nostrum
+		prerequisite = { focus = ITA_plotting_against_the_ottomans }
+		mutually_exclusive = { focus = ITA_proclaim_greater_italy }
+		mutually_exclusive = { focus = ITA_mto }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_n_ott
+				TUR = {
+					NOT = { has_cosmetic_tag = TUR_ottoman_empire }
+				}
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_plotting_against_the_ottomans
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			custom_effect_tooltip = ITA_roman_info
+			add_state_claim = 797
+		}
+	}
+	focus = {
+		id = ITA_mto
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ITA_betray_the_habsburgs }
+		mutually_exclusive = { focus = ITA_proclaim_greater_italy }
+		mutually_exclusive = { focus = ITA_roman_ambition }
+		available = {
+			NOT = { has_government = authoritarian_ideology }
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_betray_the_habsburgs
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_faction = mto_faction
 		}
 	}
 	focus = {
 		id = ITA_colonial_empire
-		icon = GFX_focus_ITA_a_colonial_empire
+		icon = GFX_focus_por_luso_tropicalism
 		prerequisite = { focus = ITA_expansionism }
 		mutually_exclusive = { focus = ITA_focus_on_the_mediterranean }
 		available = {
@@ -581,6 +688,140 @@
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
 		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_claim_libya
+		icon = GFX_focus_generic_conspiracy
+		prerequisite = { focus = ITA_focus_on_the_mediterranean focus = ITA_colonial_empire }
+		available = {
+		}
+		x = -3
+		y = 1
+		relative_position_id = ITA_colonial_empire
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_state_claim = 458
+			add_state_claim = 665
+			add_state_claim = 448
+			add_state_claim = 449
+			add_state_claim = 450
+			add_state_claim = 451
+			add_state_claim = 661
+			add_state_claim = 662
+			add_state_claim = 663
+			add_state_claim = 957
+			if = {
+				limit = {
+					TUR = { owns_state = 448 }
+					has_completed_focus = ITA_colonial_empire
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = TUR
+					generator = { 448 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_establish_the_african_colonies
+		icon = GFX_focus_ITA_ministry_of_italian_africa
+		prerequisite = {focus = ITA_colonial_empire }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_colonial_empire
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ITA_establish_italian_east_asia
+		icon = GFX_focus_usa_focus_on_asia
+		prerequisite = {focus = ITA_colonial_empire }
+		available = {
+			any_state = {
+				is_on_continent = asia
+				is_owned_by = ITA
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_colonial_empire
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ITA_conquer_dai_nam
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = ITA_establish_italian_east_asia }
+		available = {
+			VIN = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_establish_italian_east_asia
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = VIN
+			}
+		}
+	}
+	focus = {
+		id = ITA_prevent_diseases
+		icon = GFX_ph
+		prerequisite = {focus = ITA_establish_the_african_colonies }
+		available = {
+		}
+		x = -2
+		y = 1
+		relative_position_id = ITA_establish_the_african_colonies
+		cost = 5
+
+		search_filters = {}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_proclaim_empire
+		icon = GFX_focus_ITA_imperial_recognition
+		prerequisite = {focus = ITA_establish_the_african_colonies }
+		available = {
+			has_idea = vittorio_emanuele
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_establish_the_african_colonies
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			set_cosmetic_tag = ITA_italian_empire
+			add_war_support = 0.35
 		}
 	}
 }

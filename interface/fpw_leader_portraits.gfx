@@ -67,6 +67,10 @@ spriteTypes = {
 		name = "GFX_portrait_ITA_bettino_ricasoli"
 		texturefile = "gfx/leaders/ITA/Portrait_ITA_bettino_ricasoli.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_PAP_pope"
+		texturefile = "gfx/leaders/PAP/Portrait_PAP_pope.dds"
+	}
 	
 	# USA
 	spriteType = {

@@ -1,0 +1,108 @@
+﻿focus_tree = {
+	id = papal_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PAP
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = industrial_effort
+	}
+
+	focus = {
+		id = PAP_catholic_tradition
+		icon = GFX_focus_generic_catholic_dominion
+		mutually_exclusive = { focus = PAP_austria }
+		mutually_exclusive = { focus = PAP_italian_compromise }
+		x = 0
+		y = 0
+		cost = 5
+		ai_will_do = { base = 1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = PAP_austria
+		icon = GFX_focus_ph
+		mutually_exclusive = { focus = PAP_italian_compromise }
+		mutually_exclusive = { focus = PAP_catholic_tradition }
+		x = 3
+		y = 0
+		relative_position_id = PAP_catholic_tradition
+		cost = 5
+		ai_will_do = { base = 0 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = PAP_attack_italy
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = PAP_austria }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_austria_info
+				PRS = { has_war_with = AUS}
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = PAP_austria
+		cost = 5
+		ai_will_do = { base = 0 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = PAP_italian_compromise
+		icon = GFX_focus_befriend_italy
+		mutually_exclusive = { focus = PAP_austria }
+		mutually_exclusive = { focus = PAP_catholic_tradition }
+		x = -3
+		y = 0
+		relative_position_id = PAP_catholic_tradition
+		cost = 5
+		ai_will_do = { base = 0 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+			if = {
+				limit = { country_exists = ITA }
+				ITA = {
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+}

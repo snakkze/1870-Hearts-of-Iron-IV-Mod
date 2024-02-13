@@ -3,6 +3,14 @@ spriteTypes = {
 		name = "GFX_focus_PRS_unification"
 		texturefile = "gfx/interface/goals/focus_PRS_unification.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_attack_austria"
+		texturefile = "gfx/interface/goals/attack_austria.png"
+	}
+	spriteType = {
+		name = "GFX_focus_attack_austria_shine"
+		texturefile = "gfx/interface/goals/attack_austria.png"
+	}
 }
 
 # ITALY #
