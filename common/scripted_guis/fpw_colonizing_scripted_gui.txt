@@ -26,16 +26,16 @@ scripted_gui = {
                                     count > 0
                                 }
                             }
-                            #AND = {
-                            #    is_coastal = yes
-                            #    limit = {
-                            #        is_owned_by = ROOT
-                            #    }
-                            #    distance_to = {
-                            #        value < 75
-                            #        target = PREV
-                            #    }
-                            #}
+                            AND = {
+                                is_coastal = yes
+                                limit = {
+                                    is_owned_by = ROOT
+                                }
+                                distance_to = {
+                                    value < 75
+                                    target = PREV
+                                }
+                            }
         				}
         			}
                     set_variable = { ROOT.colonial_time = 250 }

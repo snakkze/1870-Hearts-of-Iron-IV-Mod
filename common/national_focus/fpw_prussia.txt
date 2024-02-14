@@ -47,7 +47,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_lesser_german_solution }
 		relative_position_id = PRS_lesser_german_solution
-		x = -5
+		x = -3
 		y = 1
 		cost = 5
 
@@ -93,7 +93,7 @@ focus_tree = {
 		prerequisite = { focus = PRS_propose_federal_reform }
 		relative_position_id = PRS_propose_federal_reform
 		mutually_exclusive = { focus = PRS_find_a_peaceful_solution }
-		x = 3
+		x = 0
 		y = 1
 		cost = 5
 
@@ -113,9 +113,10 @@ focus_tree = {
 	focus = {
 		id = PRS_bruderkrieg_ending
 		icon = GFX_focus_ger_revive_kaiserreich
-		prerequisite = { focus = PRS_annex_holstein focus = PRS_find_a_peaceful_solution }
+		prerequisite = { focus = PRS_annex_holstein }
+		mutually_exclusive = { focus = PRS_austro_prussian_victory }
 		relative_position_id = PRS_annex_holstein
-		x = -6
+		x = -4
 		y = 1
 		cost = 10
 
@@ -130,23 +131,23 @@ focus_tree = {
 
 	# Socialist path
 	# United Workers of Germany
-	focus = {
-		id = PRS_accept_austrian_dominance
-		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_bruderkrieg_ending }
-		mutually_exclusive = { focus = PRS_prussian_identity }
-		relative_position_id = PRS_bruderkrieg_ending
-		x = -4
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-		}
-	}
+	#focus = {
+	#	id = PRS_accept_austrian_dominance
+	#	icon = GFX_goal_unknown
+	#	prerequisite = { focus = PRS_bruderkrieg_ending }
+	#	mutually_exclusive = { focus = PRS_prussian_identity }
+	#	relative_position_id = PRS_bruderkrieg_ending
+	#	x = -4
+	#	y = 1
+	#	cost = 10
+#
+#		ai_will_do = {
+#			factor = 10
+#		}
+#
+#		completion_reward = {
+#		}
+#	}
 
 	# Prusso-Nationalist Path
 	# Requires a trigger warning!
@@ -156,7 +157,7 @@ focus_tree = {
 		prerequisite = { focus = PRS_bruderkrieg_ending }
 		mutually_exclusive = { focus = PRS_accept_austrian_dominance }
 		relative_position_id = PRS_bruderkrieg_ending
-		x = 4
+		x = 0
 		y = 1
 		cost = 10
 
@@ -447,6 +448,7 @@ focus_tree = {
 		id = PRS_fund_austrian_seperatists
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_towards_a_greater_prussia }
+		prerequisite = { focus = PRS_search_the_scrapegoat }
 		relative_position_id = PRS_towards_a_greater_prussia
 		x = 1
 		y = 1
@@ -594,8 +596,9 @@ focus_tree = {
 		id = PRS_austro_prussian_victory
 		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = { focus = PRS_annex_holstein }
+		mutually_exclusive = { focus = PRS_bruderkrieg_ending }
 		relative_position_id = PRS_annex_holstein
-		x = 6
+		x = 4
 		y = 1
 		cost = 10
 
@@ -608,9 +611,10 @@ focus_tree = {
 		}
 	}
 
+	# This could be a absolute monarchy branch
 	focus = {
 		id = PRS_integrate_minor_austrian_lands
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = PRS_austro_prussian_victory }
 		mutually_exclusive = { focus = PRS_continue_bismarcks_plan }
 		relative_position_id = PRS_austro_prussian_victory
@@ -631,7 +635,7 @@ focus_tree = {
 	# Ultimatum to the reichsrat of the independent northern states(faction).
 	focus = {
 		id = PRS_ultimatum_to_the_northern_reichsrat
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_integrate_minor_austrian_lands
 		x = 2
@@ -647,8 +651,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRS_2
-		icon = GFX_goal_unknown
+		id = PRS_kaisers_germany
+		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
 		prerequisite = { focus = PRS_towards_a_greater_prussia }
 		relative_position_id = PRS_towards_a_greater_prussia
@@ -661,11 +665,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			# "Blame" the victory on the kaiser
+			# Support for authoritarian ideology
 		}
 	}
 
 	focus = {
-		id = PRS_ratify_the_victory
+		id = PRS_cut_german_diplomatic_ties
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
 		prerequisite = { focus = PRS_annex_hostile_nothern_states }
@@ -683,11 +689,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRS_4
+		id = PRS_the_unified_north
 		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_2 }
-		prerequisite = { focus = PRS_ratify_the_victory }
-		relative_position_id = PRS_2
+		prerequisite = { focus = PRS_kaisers_germany }
+		prerequisite = { focus = PRS_cut_german_diplomatic_ties }
+		relative_position_id = PRS_kaisers_germany
 		x = 1
 		y = 1
 		cost = 10
@@ -697,6 +703,81 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_prepare_the_suedfront
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = PRS_the_unified_north }
+		relative_position_id = PRS_the_unified_north
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_support_pro_german_sentiments_in_the_south
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_prepare_the_suedfront }
+		relative_position_id = PRS_prepare_the_suedfront
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+
+	# Constituion rework that will justify a war against the southern states
+	# by giving the kaiser total control over the new reich
+	focus = {
+		id = PRS_constitutions_rework
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = PRS_the_unified_north }
+		relative_position_id = PRS_the_unified_north
+		x = 1
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# France will get an event or decision to intervene in that war, ai will always do
+			# If they intervene a war will break out between italy and prussia against france, austria and the south german states
+			# If no interventions nothing happens
+		}
+	}
+
+	focus = {
+		id = PRS_declare_kaisers_germany
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_constitutions_rework }
+		prerequisite = { focus = PRS_support_pro_german_sentiments_in_the_south }
+		relative_position_id = PRS_support_pro_german_sentiments_in_the_south
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			# Germany gets formed like in heil dir im siegerkranz
 		}
 	}
 
@@ -722,7 +803,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_annex_hostile_nothern_states
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = PRS_continue_bismarcks_plan focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_continue_bismarcks_plan
 		x = -2
@@ -739,7 +820,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_invite_remaing_nothern_states
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = PRS_continue_bismarcks_plan }
 		relative_position_id = PRS_continue_bismarcks_plan
 		x = 2
@@ -998,31 +1079,31 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = PRS_find_a_peaceful_solution
-		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_propose_federal_reform }
-		relative_position_id = PRS_propose_federal_reform
-		mutually_exclusive = { focus = PRS_annex_holstein }
-		x = -3
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			# triggers schleswig holsteinische frage event
-		}
-	}
+	#focus = {
+	#	id = PRS_find_a_peaceful_solution
+	#	icon = GFX_goal_unknown
+	#	prerequisite = { focus = PRS_propose_federal_reform }
+	#	relative_position_id = PRS_propose_federal_reform
+	#	mutually_exclusive = { focus = PRS_annex_holstein }
+	#	x = -3
+	#	y = 1
+	#	cost = 5
+#
+#		ai_will_do = {
+#			factor = 10
+#		}
+#
+#		completion_reward = {
+#			# triggers schleswig holsteinische frage event
+#		}
+#	}
 
 	focus = {
 		id = PRS_seek_international_support
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_lesser_german_solution }
 		relative_position_id = PRS_lesser_german_solution
-		x = 5
+		x = 3
 		y = 1
 		cost = 10
 
@@ -1094,7 +1175,7 @@ focus_tree = {
 	focus = {
 		id = PRS_greater_german_solution
 		icon = GFX_goal_unknown
-		x = 21
+		x = 19
 		y = 0
 		cost = 10
 		ai_will_do = {
