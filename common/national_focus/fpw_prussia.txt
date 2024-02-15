@@ -629,6 +629,8 @@ focus_tree = {
 		completion_reward = {
 			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
 			# possibly also with an event
+			set_state_owner = 978
+			set_state_owner = 979
 		}
 	}
 
@@ -1210,6 +1212,26 @@ focus_tree = {
 		}
 	}
 
+	# German Nationalism idea for liking other germanic countries
+	focus = {
+		id = PRS_improve_the_nation_spirit
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_cooperate_with_austria }
+		relative_position_id = PRS_cooperate_with_austria
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
 	# North to Prussia, south to Austria will create a faction not a state pretty much sucks
 	focus = {
 		id = PRS_split_germany
@@ -1227,6 +1249,24 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+
+	# Prussia and Austria proposing the Nord/Süd idee splitting the germanic nation between the prussian north and austrian south
+	focus = {
+		id = PRS_propose_the_nord_sued_idea
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_split_germany }
+		prerequisite = { focus = PRS_improve_the_nation_spirit }
+		relative_position_id = PRS_improve_the_nation_spirit
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			# Create Nordachse faction and Südachse Faction
 		}
 	}
 

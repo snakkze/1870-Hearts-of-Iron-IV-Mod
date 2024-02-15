@@ -1,0 +1,81 @@
+add_namespace = prussia_fpw
+
+# Bismarcks ultimatum
+country_event = {
+	id = prussia_fpw.1
+	title = prussia_fpw.1.t
+	desc = prussia_fpw.1.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# Agree to bismarck
+	option = {
+		name = prussia_fpw.1.a
+		complete_national_focus = PRS_continue_bismarcks_plan
+		hidden_effect = {
+			if = {
+				limit = {
+					has_completed_focus = PRS_integrate_minor_austrian_lands
+				}
+				uncomplete_national_focus = {
+					focus = PRS_integrate_minor_austrian_lands
+					uncomplete_children = yes
+					refund_political_power = yes
+				}
+			}
+		}
+	}
+
+	# Disagree with Bismarck
+	option = {
+		name = prussia_fpw.1.a
+		effect_tooltip = {	
+			PRS_wilhelm_i = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = monarchism
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = PRS_otto_von_bismarck
+						ruling_only = yes
+					}
+				}
+				kill_country_leader = yes
+			}
+			else = {
+				retire_character = PRS_otto_von_bismarck
+			}
+			set_politics = {
+				ruling_party = authoritarian_ideology
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			PRS_wilhelm_i = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = monarchism
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+			#news_event = { hours = 6 id = news.28 }
+		}
+	}
+}

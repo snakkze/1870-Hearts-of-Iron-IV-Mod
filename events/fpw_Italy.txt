@@ -1,0 +1,98 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = italy_fpw
+
+# Prussia Alliance
+country_event = {
+	id = italy_fpw.1
+	title = italy_fpw.1.t
+	desc = italy_fpw.1.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_fpw.1.a #yes
+
+		give_guarantee = ITA
+		ITA = { give_guarantee = PRS }
+	}
+	option = {
+		name = italy_fpw.1.b #no
+		
+		ITA = { 
+			add_opinion_modifier = {
+				target = ITA
+				modifier = refused_help
+			}
+		}
+	}
+}
+
+# venice for support
+country_event = {
+	id = italy_fpw.2
+	title = italy_fpw.2.t
+	desc = italy_fpw.2.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_fpw.2.a #yes
+
+		ITA = {
+			give_guarantee = AUS
+			transfer_state = 160
+		}
+	}
+	option = {
+		name = italy_fpw.2.b #no
+	}
+}
+
+# conquer venice
+country_event = {
+	id = italy_fpw.3
+	title = italy_fpw.3.t
+	desc = italy_fpw.3.d
+	picture = GFX_report_event_generic_handshake
+	trigger = {
+		PRS = { has_war_with = AUS }
+		AUS = { owns_state = 160 }
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = italy_fpw.3.a
+
+		activate_mission = conquer_venice
+	}
+	option = {
+		name = italy_fpw.3.b
+
+		activate_mission = conquer_venice
+		complete_national_focus = ITA_the_war_with_austria
+	}
+}
+
+# resignation of leader
+country_event = {
+	id = italy_fpw.4
+	title = italy_fpw.4.t
+	desc = italy_fpw.4.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_fpw.4.a
+		retire_country_leader = yes
+		promote_character = ITA_bettino_ricasoli
+	}
+}
+
+
