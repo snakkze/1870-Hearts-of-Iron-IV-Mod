@@ -3,11 +3,13 @@
 add_manpower = 15000
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = liberalism_ideology
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_ideology = 100
+	liberalism_ideology = 100
 }
+
+recruit_character = TRB_local_tribes

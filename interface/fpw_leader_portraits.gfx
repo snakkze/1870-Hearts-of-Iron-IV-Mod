@@ -12,6 +12,12 @@ spriteTypes = {
 		name = "GFX_portrait_PRS_heinrich_von_treitschke"
 		texturefile = "gfx/leaders/PRS/Portrait_PRS_heinrich_von_treitschke.dds"
 	}
+	
+	# CHI
+	spriteType = {
+		name = "GFX_portrait_CHI_tongzhi"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_tongzhi.dds"
+	}
 
 	# AUS
 	spriteType = {
@@ -219,6 +225,12 @@ spriteTypes = {
 		name = "GFX_portrait_WRT_karl_friedrich_august"
 		texturefile = "gfx/leaders/german_minors/WRT/Portrait_WRT_karl_friedrich_august.dds"
 	}
-
+	
+	# TRB
+	
+	spriteType = {
+		name = "GFX_portrait_TRB"
+		texturefile = "gfx/leaders/TRB/Portrait_TRB.dds"
+	}
 
 }

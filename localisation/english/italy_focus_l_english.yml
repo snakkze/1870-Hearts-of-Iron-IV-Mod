@@ -1,5 +1,6 @@
 ﻿l_english:
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
+ ITA_is_monarchy:0 "Italy is a §YMonarchy§!"
  ITA_owns_croatia:0 "Owns §YCroatia§!"
  ITA_owns_bulgaria:0 "Owns §YBulgaria§!"
  ITA_owns_caucasus:0 "Owns the entire region of the §YCaucasus§!"
@@ -81,4 +82,10 @@
  ITA_establish_the_african_colonies:0 "Establish African Colonies"
  ITA_establish_italian_east_asia:0 "Establish Asian Colonies"
  ITA_conquer_dai_nam:0 "Conquer Đai Nam"
+ ITA_claim_french_colonies:0 "Claim French Colonies in Asia"
  ITA_proclaim_empire:0 "Proclaim the Italian Empire"
+ ITA_ally_france:0 "Remain Loyal to France"
+ ITA_ally_germany:0 "Favour [PRS.GetNameDef]"
+ ITA_fpw_trigger:0 "The §YFranco-Prussian War§! is ongoing"
+ ITA_franco_prussian_war:0 "The Franco-Prussian War"
+ ITA_claim_the_french_coast:0 "Claim the French Coast"

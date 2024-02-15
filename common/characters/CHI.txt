@@ -1,0 +1,16 @@
+characters={
+
+	CHI_tongzhi={
+		name="Tongzhi Emperor"
+		portraits={
+			civilian={
+				large=GFX_portrait_CHI_tongzhi
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,16 @@
+characters={
+
+	TRB_local_tribes={
+		name="Local Tribes"
+		portraits={
+			civilian={
+				large=GFX_portrait_TRB
+			}
+		}
+		country_leader={
+			ideology=anarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

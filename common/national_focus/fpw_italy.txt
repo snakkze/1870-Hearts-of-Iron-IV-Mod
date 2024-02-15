@@ -100,7 +100,12 @@
 		id = ITA_royal_parade
 		icon = GFX_focus_ITA_monarchy
 		prerequisite = { focus = ITA_conservative_politics }
-		available = { has_idea = vittorio_emanuele }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
+		}
 		x = -1
 		y = 1
 		relative_position_id = ITA_conservative_politics
@@ -118,7 +123,12 @@
 		id = ITA_monarchist_propaganda
 		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = ITA_royal_parade }
-		available = { has_idea = vittorio_emanuele }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
+		}
 		x = 1
 		y = 1
 		relative_position_id = ITA_royal_parade
@@ -136,7 +146,10 @@
 		icon = GFX_focus_rom_royal_dictatorship
 		prerequisite = { focus = ITA_monarchist_propaganda focus = ITA_kill_socialists focus = ITA_concessions_to_socialists }
 		available = {
-			has_idea = vittorio_emanuele
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
 			has_political_power > 250
 		}
 		x = 1
@@ -154,7 +167,7 @@
 	}
 	focus = {
 		id = ITA_ally_prussia
-		icon = GFX_focus_ph
+		icon = GFX_focus_befriend_prussia
 		prerequisite = { focus = ITA_start }
 		mutually_exclusive = { focus = ITA_venice_for_support }
 		available = {
@@ -364,11 +377,92 @@
 		x = -1
 		y = 1
 		relative_position_id = ITA_w
-		cost = 1
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL}
 
 		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_ally_france
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = ITA_seek_allies }
+		mutually_exclusive = { focus = ITA_ally_germany }
+		x = 0
+		y = 1
+		relative_position_id = ITA_seek_allies
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_ally_germany
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = ITA_seek_allies }
+		mutually_exclusive = { focus = ITA_ally_france }
+		x = 2
+		y = 1
+		relative_position_id = ITA_seek_allies
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_franco_prussian_war
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = ITA_ally_germany }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_fpw_trigger
+				FRA = { has_war_with = PRS }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_ally_germany
+		cost = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			declare_war_on = {
+				target = FRA
+				type = take_claimed_state
+			}
+		}
+	}
+	focus = {
+		id = ITA_claim_the_french_coast
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_franco_prussian_war }
+		available = {
+			has_war_with = FRA
+			has_completed_focus = ITA_roman_ambition
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_franco_prussian_war
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			add_state_claim = 851
+			add_state_claim = 21
+			add_state_claim = 22
+			add_state_claim = 31
+			add_state_claim = 806
+			add_state_claim = 460
+			add_state_claim = 459
+			add_state_claim = 513
+			add_state_claim = 958
 		}
 	}
 	focus = {
@@ -578,7 +672,7 @@
 	}
 	focus = {
 		id = ITA_betray_the_habsburgs
-		icon = GFX_focus_attack_austria
+		icon = GFX_focus_attack_austria_hungary
 		prerequisite = { focus = ITA_focus_on_the_mediterranean }
 		available = {
 			custom_trigger_tooltip = {
@@ -692,7 +786,7 @@
 	}
 	focus = {
 		id = ITA_claim_libya
-		icon = GFX_focus_generic_conspiracy
+		icon = GFX_focus_claim_libya
 		prerequisite = { focus = ITA_focus_on_the_mediterranean focus = ITA_colonial_empire }
 		available = {
 		}
@@ -806,11 +900,42 @@
 		}
 	}
 	focus = {
+		id = ITA_claim_french_colonies
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ITA_establish_italian_east_asia }
+		prerequisite = { focus = ITA_franco_prussian_war }
+		available = {
+			any_state = {
+				is_on_continent = asia
+				is_owned_by = FRA
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_establish_italian_east_asia
+		cost = 1
+
+		search_filters = {}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = FRA
+					is_on_continent = asia
+				}
+				add_claim_by = ITA
+			}
+		}
+	}
+	focus = {
 		id = ITA_proclaim_empire
 		icon = GFX_focus_ITA_imperial_recognition
-		prerequisite = {focus = ITA_establish_the_african_colonies }
+		prerequisite = { focus = ITA_establish_the_african_colonies }
 		available = {
-			has_idea = vittorio_emanuele
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
 		}
 		x = 0
 		y = 1

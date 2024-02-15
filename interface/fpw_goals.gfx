@@ -11,6 +11,26 @@ spriteTypes = {
 		name = "GFX_focus_attack_austria_shine"
 		texturefile = "gfx/interface/goals/attack_austria.png"
 	}
+	spriteType = {
+		name = "GFX_focus_befriend_prussia"
+		texturefile = "gfx/interface/goals/befriend_prussia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_befriend_prussia_shine"
+		texturefile = "gfx/interface/goals/befriend_prussia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_claim_libya"
+		texturefile = "gfx/interface/goals/claim_libya.png"
+	}
+	spriteType = {
+		name = "GFX_focus_claim_libya_shine"
+		texturefile = "gfx/interface/goals/claim_libya.png"
+	}
+	spriteType = {
+		name = "GFX_focus_attack_austria_hungary"
+		texturefile = "gfx/interface/goals/focus_attack_austria_hungary.png"
+	}
 }
 
 # ITALY #
