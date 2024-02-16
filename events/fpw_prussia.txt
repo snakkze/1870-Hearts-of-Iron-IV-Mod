@@ -79,3 +79,54 @@ country_event = {
 		}
 	}
 }
+
+# Nord Süd Achse
+country_event = {
+	id = prussia_fpw.2
+	title = prussia_fpw.2.t
+	desc = prussia_fpw.2.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	# GREAT!
+	option = {
+		name = prussia_fpw.2.a
+		PRS = {
+			create_faction = nordachse_faction
+			add_to_faction = MKS
+			add_to_faction = MCK
+			add_to_faction = LUE
+			add_to_faction = HAM
+			add_to_faction = BRE
+			add_to_faction = OLD
+			add_to_faction = HNV
+			add_to_faction = HES
+			add_to_faction = HEK
+			add_to_faction = WLD
+			add_to_faction = SBL
+			add_to_faction = SBG
+			add_to_faction = LIP
+			add_to_faction = NAS
+			add_to_faction = BRU
+			add_to_faction = SXY
+			add_to_faction = SXM
+			add_to_faction = SXW
+			add_to_faction = SCG
+			transfer_state = 58
+		}
+		AUS = {
+			create_faction = sudachse_faction
+			add_to_faction = BAV
+			add_to_faction = WRT
+			add_to_faction = BAD
+		}
+		WRT = {
+			transfer_state = 952
+		}
+	}
+}

@@ -1232,6 +1232,27 @@ focus_tree = {
 		}
 	}
 
+	# Prussia ask hungary to desintegrate the lesser german places to make them crownlands/puppets
+	focus = {
+		id = PRS_propose_desintegration_hungary
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_improve_the_nation_spirit }
+		prerequisite = { focus = PRS_pivot_to_the_past }
+		relative_position_id = PRS_improve_the_nation_spirit
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
 	# North to Prussia, south to Austria will create a faction not a state pretty much sucks
 	focus = {
 		id = PRS_split_germany
@@ -1267,6 +1288,7 @@ focus_tree = {
 
 		completion_reward = {
 			# Create Nordachse faction and Südachse Faction
+			# Event about the barely won election about the Nord-Süd achsen Idea
 		}
 	}
 
@@ -1338,6 +1360,27 @@ focus_tree = {
 		relative_position_id = PRS_austrian_enemy
 		x = 3
 		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	# HRE
+	focus = {
+		id = PRS_integrate_bohemia
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_pivot_to_the_past }
+		prerequisite = { focus = PRS_finish_the_habsburgs }
+		relative_position_id = PRS_pivot_to_the_past
+		x = 0
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
