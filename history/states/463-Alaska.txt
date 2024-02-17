@@ -4,6 +4,11 @@ state={
 
 	history={
 		owner = SOV
+
+		1870.1.1 = {
+			owner = USA
+			add_core_of = USA
+		}
 		buildings = {
 			infrastructure = 1
 			13091 = {

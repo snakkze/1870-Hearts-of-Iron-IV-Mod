@@ -11,22 +11,18 @@ bookmarks = {
 			ideology = liberalism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 	
 		"ENG"={
 			history = "ENG_1866_DESC"
-			ideology = democratic
+			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
@@ -34,75 +30,61 @@ bookmarks = {
 
 		"ITA"={
 			history = "ITA_1870_DESC"
-			ideology = democratic
+			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
 		"PRS"={
 			history = "PRS_1870_DESC"
-			ideology = democratic
+			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
+				PRS_heil_dir_im_siegerkranz
 			}
 		}
 
 		"AUS"={
 			history = "AUS_1870_DESC"
-			ideology = democratic
+			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
 		"CHI"={			
 			history = "CHI_1866_DESC"
-			ideology = democratic
+			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
 		"SOV"={
 			history = "SOV_1866_DESC"
-			ideology = democratic
+			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
 		"USA"={
 			history = "USA_1866_DESC"
-			ideology = democratic
+			ideology = conservatism_ideology
 			ideas = {
-				CAN_great_depression_1
-				CAN_conscription_crisis
 			}
 			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
 			}
 		}
 

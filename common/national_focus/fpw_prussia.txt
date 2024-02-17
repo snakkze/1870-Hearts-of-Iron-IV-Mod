@@ -92,7 +92,6 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = PRS_propose_federal_reform }
 		relative_position_id = PRS_propose_federal_reform
-		mutually_exclusive = { focus = PRS_find_a_peaceful_solution }
 		x = 0
 		y = 1
 		cost = 5
@@ -107,6 +106,7 @@ focus_tree = {
 			# When escalation is finished prussia gets event to gain the following
 			# National idea "nationalism" or "brothers on the front" attack on austrian core higher because its same VOLK but lower war intrest because its the same Volk!
 			# Idea is for the fact to make the war easier
+			#set_state_owner = 58
 		}
 	}
 
@@ -155,7 +155,6 @@ focus_tree = {
 		id = PRS_prussian_identity
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_bruderkrieg_ending }
-		mutually_exclusive = { focus = PRS_accept_austrian_dominance }
 		relative_position_id = PRS_bruderkrieg_ending
 		x = 0
 		y = 1
@@ -631,6 +630,8 @@ focus_tree = {
 			# possibly also with an event
 			set_state_owner = 978
 			set_state_owner = 979
+			add_state_core = 978
+			add_state_core = 979
 		}
 	}
 
@@ -817,6 +818,32 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_state_owner = 58
+			add_state_core = 58
+			set_state_owner = 55
+			add_state_core = 55
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = HNV
+						original_tag = HEK
+						original_tag = NAS
+						original_tag = FRK
+					}
+				}
+				PRS = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PRS
+				}
+			}
 		}
 	}
 
@@ -835,6 +862,22 @@ focus_tree = {
 
 		completion_reward = {
 			# Prussia demands the smaller remaing states to join, if not prussia will get a war goal
+			SXY = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SXM = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SXW = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SCG = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SBG = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			MKS = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			MCK = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			LUE = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			HAM = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			OLD = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			BRE = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SBL = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			LIP = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			WLD = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			BRU = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			ANH = { country_event = { id = prussia_fpw.3 hours = 2 } }
 		}
 	}
 
@@ -853,7 +896,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			# Add Idea "United North"
 		}
 	}
 
@@ -893,6 +936,10 @@ focus_tree = {
 			# improve relations with south germany
 			# Schutz und trutz büdniss
 			# guarantee prussia south germany both sides
+			BAD = { country_event = { id = prussia_fpw.8 hours = 2 } }
+			HES = { country_event = { id = prussia_fpw.8 hours = 2 } }
+			BAV = { country_event = { id = prussia_fpw.8 hours = 2 } }
+			WRT = { country_event = { id = prussia_fpw.8 hours = 2 } }
 		}
 	}
 
@@ -1218,27 +1265,6 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_cooperate_with_austria }
 		relative_position_id = PRS_cooperate_with_austria
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-		}
-	}
-
-	# Prussia ask hungary to desintegrate the lesser german places to make them crownlands/puppets
-	focus = {
-		id = PRS_propose_desintegration_hungary
-		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_improve_the_nation_spirit }
-		prerequisite = { focus = PRS_pivot_to_the_past }
-		relative_position_id = PRS_improve_the_nation_spirit
 		x = -1
 		y = 1
 		cost = 10

@@ -4,4 +4,10 @@ opinion_modifiers = {
         	trade = no
         	value = -1000
 	}
+	
+	fpw_schutz_und_trutz_budniss = {
+        	trade = yes
+        	value = 75
+	}
+
 }

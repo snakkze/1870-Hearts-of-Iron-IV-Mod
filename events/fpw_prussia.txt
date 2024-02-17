@@ -6,12 +6,8 @@ country_event = {
 	title = prussia_fpw.1.t
 	desc = prussia_fpw.1.d
 	picture = GFX_report_event_generic_handshake
-
+	
 	is_triggered_only = yes
-
-	fire_only_once=yes
-
-	major = yes
 
 	# Agree to bismarck
 	option = {
@@ -86,12 +82,8 @@ country_event = {
 	title = prussia_fpw.2.t
 	desc = prussia_fpw.2.d
 	picture = GFX_report_event_generic_handshake
-
+	
 	is_triggered_only = yes
-
-	fire_only_once=yes
-
-	major = yes
 
 	# GREAT!
 	option = {
@@ -128,5 +120,476 @@ country_event = {
 		WRT = {
 			transfer_state = 952
 		}
+	}
+}
+
+# Invited to North German Confederation
+country_event = {
+	id = prussia_fpw.3
+	title = prussia_fpw.3.t
+	desc = prussia_fpw.3.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = prussia_fpw.3.a
+		 ai_chance = {
+			base = 10 
+			modifier = {
+				add = 10 
+				has_opinion = {
+					target = PRS
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = PRS
+					value > 20
+				}
+			}
+			modifier = {
+				add = 30 
+				has_opinion = {
+					target = PRS
+					value > 30
+				}
+			}
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+        }
+		PRS = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			country_event = prussia_fpw.4
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
+	}
+
+	# Decline
+	option = {
+		name = prussia_fpw.3.b
+		ai_chance = {
+			base = 10 
+			modifier = {
+				factor = 5
+				has_opinion = {
+					target = PRS
+					value < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		PRS = {
+			country_event = prussia_fpw.5
+		}
+	}
+}
+
+# Accepted Invite
+country_event = {
+	id = prussia_fpw.4
+	title = prussia_fpw.4.t
+	desc = prussia_fpw.4.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	option = {
+		name = prussia_fpw.4.a
+		PRS = {
+
+		}
+	}
+}
+
+# Declinded invite
+country_event = {
+	id = prussia_fpw.5
+	title = prussia_fpw.5.t
+	desc = prussia_fpw.5.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.5.a
+		PRS = {
+			create_wargoal = {
+				target = PREV
+				type = take_state_focus
+			}
+		}
+	}
+}
+
+# Schleswig Holsteinischer Frage
+country_event = {
+	id = prussia_fpw.6
+	title = prussia_fpw.6.t
+	desc = prussia_fpw.6.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.6.a
+
+	}
+}
+
+# Bundesbeschluss
+country_event = {
+	id = prussia_fpw.7
+	title = prussia_fpw.7.t
+	desc = prussia_fpw.7.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.7.a
+
+	}
+}
+
+# Schutz und Trutzbüdniss
+country_event = {
+	id = prussia_fpw.8
+	title = prussia_fpw.8.t
+	desc = prussia_fpw.8.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	# Offer accepted
+	option = {
+		name = prussia_fpw.8.a
+		 ai_chance = {
+			base = 10 
+			modifier = {
+				add = 10 
+				PRS = {
+					has_completed_focus = PRS_austro_prussian_victory
+				}
+			}
+			modifier = {
+				add = 50
+				PRS = {
+					set_variable = {
+						var = PRS_army_size
+						value = num_armies
+					}
+				}
+				ROOT = {
+					set_variable = {
+						var = @ROOT_army_size
+						value = num_armies
+					}
+				}
+				check_variable = { @ROOT_army_size < PRS_army_size }
+			}
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+        }
+		set_variable = {
+			var = @ROOT_schutz_und_trutz
+			value = 1
+		}
+	}
+
+	# Offer declined
+	option = {
+		name = prussia_fpw.8.a
+		ai_chance = {
+			base = 10 
+			modifier = {
+				factor = 5
+				PRS = {
+					has_completed_focus = PRS_bruderkrieg_ending
+				}
+			}
+			modifier = {
+				add = 50
+				PRS = {
+					set_variable = {
+						var = PRS_army_size
+						value = num_armies
+					}
+				}
+				ROOT = {
+					set_variable = {
+						var = @ROOT_army_size
+						value = num_armies
+					}
+				}
+				check_variable = { @ROOT_army_size > PRS_army_size }
+			}
+		}
+		set_variable = {
+			var = @ROOT_schutz_und_trutz
+			value = 2
+		}
+	}
+}
+
+# Offer accepted
+country_event = {
+	id = prussia_fpw.16
+	title = prussia_fpw.16.t
+	desc = prussia_fpw.16.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+		
+	trigger = {
+		if = {
+			limit = {
+				country_exists = HES
+			}
+			AND = {
+				has_variable = HES_schutz_und_trutz
+				check_variable = { HES_schutz_und_trutz = 1 } 
+			}
+		}
+		if = {
+			limit = {
+				country_exists = WRT
+			}
+			AND = {
+				has_variable = WRT_schutz_und_trutz
+				check_variable = { WRT_schutz_und_trutz = 1 } 
+			}
+		}
+		if = {
+			limit = {
+				country_exists = BAD
+			}
+			AND = {
+				has_variable = BAD_schutz_und_trutz
+				check_variable = { BAD_schutz_und_trutz = 1 } 
+			}
+		}
+		if = {
+			limit = {
+				country_exists = BAV
+			}
+			AND = {
+				has_variable = BAV_schutz_und_trutz
+				check_variable = { BAV_schutz_und_trutz = 1 } 
+			}
+		}
+	}
+
+	option = {
+		name = prussia_fpw.16.a
+		every_country = {
+				limit = {
+					OR = {
+						original_tag = BAD
+						original_tag = WRT
+						original_tag = BAV
+						original_tag = HES
+					}
+				}
+				give_guarantee = PRS
+				add_opinion_modifier = {
+    					target = PRS
+    					modifier = fpw_schutz_und_trutz_budniss
+				}
+				reverse_add_opinion_modifier = {
+					target = PRS
+					modifier = fpw_schutz_und_trutz_budniss
+				}
+			}
+			PRS = {
+				give_guarantee = BAD
+				give_guarantee = WRT
+				give_guarantee = BAV
+				give_guarantee = HES
+			}
+	}
+}
+
+# Offer declined
+country_event = {
+	id = prussia_fpw.16
+	title = prussia_fpw.16.t
+	desc = prussia_fpw.16.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+		
+	trigger = {
+		OR = {
+			if = {
+				limit = {
+					country_exists = HES
+				}
+				AND = {
+					has_variable = HES_schutz_und_trutz
+					check_variable = { HES_schutz_und_trutz = 2 } 
+				}
+			}
+			if = {
+				limit = {
+					country_exists = WRT
+				}
+				AND = {
+					has_variable = WRT_schutz_und_trutz
+					check_variable = { WRT_schutz_und_trutz = 2 } 
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BAD
+				}
+				AND = {
+					has_variable = BAD_schutz_und_trutz
+					check_variable = { BAD_schutz_und_trutz = 2 } 
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BAV
+				}
+				AND = {
+					has_variable = BAV_schutz_und_trutz
+					check_variable = { BAV_schutz_und_trutz = 2 } 
+				}
+			}
+		}
+	}
+
+	option = {
+		name = prussia_fpw.16.a
+		# Use scripted loc to check who was the one/who were the ones that declined
+	}
+}
+
+# Märchenprinz Ludwig
+country_event = {
+	id = prussia_fpw.9
+	title = prussia_fpw.9.t
+	desc = prussia_fpw.9.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.9.a
+		
+	}
+}
+
+# Spanish Glorious Revolution
+country_event = {
+	id = prussia_fpw.10
+	title = prussia_fpw.10.t
+	desc = prussia_fpw.10.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.10.a
+
+	}
+}
+
+# Ems dispatch
+country_event = {
+	id = prussia_fpw.11
+	title = prussia_fpw.11.t
+	desc = prussia_fpw.11.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.11.a
+
+	}
+}
+
+# Invite BAD/WRT/HES/BAY KASIERBRIEF
+country_event = {
+	id = prussia_fpw.12
+	title = prussia_fpw.12.t
+	desc = prussia_fpw.12.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.12.a
+
+	}
+}
+
+# Invite accepted
+country_event = {
+	id = prussia_fpw.13
+	title = prussia_fpw.13.t
+	desc = prussia_fpw.13.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.13.a
+
+	}
+}
+
+# Invite declined
+country_event = {
+	id = prussia_fpw.14
+	title = prussia_fpw.14.t
+	desc = prussia_fpw.14.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.14.a
+
+	}
+}
+
+# Germanic Unification(Could also be a superevent later)
+country_event = {
+	id = prussia_fpw.15
+	title = prussia_fpw.15.t
+	desc = prussia_fpw.15.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.15.a
+
 	}
 }

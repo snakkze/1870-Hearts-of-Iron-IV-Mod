@@ -12,10 +12,11 @@ bookmarks = {
 			ideology = authoritarian_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
+				FRA_empire_triumphant
+				FRA_strengthen_bonaparte_dynasty
+				FRA_expanding_colonial_empire
 			}
 		}
 
@@ -24,10 +25,8 @@ bookmarks = {
 			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
@@ -54,10 +53,11 @@ bookmarks = {
 			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
+				PRS_annex_holstein
+				PRS_pivot_to_the_past	
+				PRS_bruderkrieg_ending
 			}
 		}
 
@@ -66,10 +66,8 @@ bookmarks = {
 			ideology = conservatism_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
@@ -78,10 +76,8 @@ bookmarks = {
 			ideology = authoritarian_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 
@@ -90,10 +86,8 @@ bookmarks = {
 			ideology = authoritarian_ideology
 			available = { always = yes }
 			ideas = {
-				FRA_victors_of_wwi
 			}
 			focuses = {
-				FRA_form_the_popular_front
 			}
 		}
 		

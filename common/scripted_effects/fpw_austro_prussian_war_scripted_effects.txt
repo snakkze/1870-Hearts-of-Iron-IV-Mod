@@ -310,35 +310,6 @@ austrian_surrender = {
 			days = 90
 		}
 	}
-	every_country = {
-		limit = {
-			OR = {
-				has_country_flag = <
-				tag = SBL
-				AND = {
-					tag = HOH
-					is_subject_of = PRS
-				}
-			}
-			NOT = {
-				tag = BAV
-				tag = BAD
-				tag = WRT
-			}
-		}
-		PRS = {
-			annex_country = {
-				target = PREV
-				transfer_troops = yes
-			}
-		}
-		every_state = {
-			limit = {
-				is_core_of = PREV
-			}
-			add_core_of = PRS
-		}
-	}
 	ITA = {
 		if = {
 			limit = {
@@ -353,7 +324,6 @@ austrian_surrender = {
 	PRS = {
 		dismantle_faction = yes
 		clr_country_flag = austro_prussian_war
-		set_cosmetic_tag = GER_north_germany
 		58 = {
 			add_core_of = PRS
 			transfer_state_to = PRS
