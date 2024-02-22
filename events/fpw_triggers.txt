@@ -270,6 +270,8 @@ country_event = {
 	is_triggered_only = no
 	
 	fire_only_once = yes
+
+	hidden = yes
 		
 	trigger = {
 		PRS = {
@@ -284,6 +286,85 @@ country_event = {
 		name = trigger.6.a
 		PRS = {
 			country_event = prussia_fpw.1
+		}
+	}
+}
+
+# schutz und trutz JA
+country_event = {
+	id = trigger.7
+	title = trigger.7.t
+	desc = trigger.7.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		AND = {
+			HES = {
+				has_country_flag = schutz_und_trutz_accepted
+			}
+			WRT = {
+				has_country_flag = schutz_und_trutz_accepted
+			}
+			BAV = {
+				has_country_flag = schutz_und_trutz_accepted
+			}
+			BAD = {
+				has_country_flag = schutz_und_trutz_accepted
+			}
+		}
+	}
+
+	option = {
+		name = trigger.7.a
+		PRS = {
+			country_event = prussia_fpw.16
+		}
+	}
+}
+
+# schutz und trutz NEIN
+country_event = {
+	id = trigger.8
+	title = trigger.8.t
+	desc = trigger.8.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		AND = {
+			has_answered_schutz_und_trutz = yes
+			OR = {
+				HES = {
+					has_country_flag = schutz_und_trutz_declined
+				}
+				WRT = {
+					has_country_flag = schutz_und_trutz_declined
+				}
+				BAV = {
+					has_country_flag = schutz_und_trutz_declined
+				}
+				BAD = {
+					has_country_flag = schutz_und_trutz_declined
+				}
+			}
+		}
+	}
+
+	option = {
+		name = trigger.8.a
+		PRS = {
+			country_event = prussia_fpw.17
 		}
 	}
 }

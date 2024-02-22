@@ -56,6 +56,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = fpw_seek_german_support
 			hidden_effect = {
 				AUS = {
 					set_country_flag = austro_prussian_war
@@ -794,6 +795,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 
+		available = {
+			#always = no
+		}
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -896,7 +901,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# Add Idea "United North"
+			# Add Idea "Victor of 1866"
 		}
 	}
 
@@ -936,10 +941,40 @@ focus_tree = {
 			# improve relations with south germany
 			# Schutz und trutz büdniss
 			# guarantee prussia south germany both sides
-			BAD = { country_event = { id = prussia_fpw.8 hours = 2 } }
-			HES = { country_event = { id = prussia_fpw.8 hours = 2 } }
-			BAV = { country_event = { id = prussia_fpw.8 hours = 2 } }
-			WRT = { country_event = { id = prussia_fpw.8 hours = 2 } }
+			 hidden_effect = {
+				BAD = { country_event = { id = prussia_fpw.8 hours = 2 } }
+				HES = { country_event = { id = prussia_fpw.8 hours = 2 } }
+				BAV = { country_event = { id = prussia_fpw.8 hours = 2 } }
+				WRT = { country_event = { id = prussia_fpw.8 hours = 2 } }
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = BAD
+							original_tag = WRT
+							original_tag = BAV
+							original_tag = HES
+						}
+					}
+					give_guarantee = PRS
+					add_opinion_modifier = {
+							target = PRS
+							modifier = fpw_schutz_und_trutz_budniss
+					}
+					reverse_add_opinion_modifier = {
+						target = PRS
+						modifier = fpw_schutz_und_trutz_budniss
+					}
+				}
+				PRS = {
+					give_guarantee = BAD
+					give_guarantee = WRT
+					give_guarantee = BAV
+					give_guarantee = HES
+				}
+			}
 		}
 	}
 

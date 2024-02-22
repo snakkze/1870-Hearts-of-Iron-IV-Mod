@@ -1,0 +1,26 @@
+has_answered_schutz_und_trutz = {
+	HES = {
+		OR = {
+			has_country_flag = schutz_und_trutz_accepted
+			has_country_flag = schutz_und_trutz_declined
+		}
+	}
+	BAD = {
+		OR = {
+			has_country_flag = schutz_und_trutz_accepted
+			has_country_flag = schutz_und_trutz_declined
+		}
+	}
+	WRT = {
+		OR = {
+			has_country_flag = schutz_und_trutz_accepted
+			has_country_flag = schutz_und_trutz_declined
+		}
+	}
+	BAV = {
+		OR = {
+			has_country_flag = schutz_und_trutz_accepted
+			has_country_flag = schutz_und_trutz_declined
+		}
+	}
+}

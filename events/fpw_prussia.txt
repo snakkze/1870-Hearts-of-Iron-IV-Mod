@@ -281,7 +281,7 @@ country_event = {
 	# Offer accepted
 	option = {
 		name = prussia_fpw.8.a
-		 ai_chance = {
+		ai_chance = {
 			base = 10 
 			modifier = {
 				add = 10 
@@ -299,26 +299,23 @@ country_event = {
 				}
 				ROOT = {
 					set_variable = {
-						var = @ROOT_army_size
+						var = ROOT.army_size
 						value = num_armies
 					}
 				}
-				check_variable = { @ROOT_army_size < PRS_army_size }
+				check_variable = { ROOT.army_size < PRS_army_size }
 			}
 			modifier = {
 				add = 100
 				is_historical_focus_on = yes
 			}
-        }
-		set_variable = {
-			var = @ROOT_schutz_und_trutz
-			value = 1
 		}
+		set_country_flag = schutz_und_trutz_accepted
 	}
 
 	# Offer declined
 	option = {
-		name = prussia_fpw.8.a
+		name = prussia_fpw.8.b
 		ai_chance = {
 			base = 10 
 			modifier = {
@@ -337,17 +334,18 @@ country_event = {
 				}
 				ROOT = {
 					set_variable = {
-						var = @ROOT_army_size
+						var = ROOT.army_size
 						value = num_armies
 					}
 				}
-				check_variable = { @ROOT_army_size > PRS_army_size }
+				check_variable = { ROOT.army_size > PRS_army_size }
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
-		set_variable = {
-			var = @ROOT_schutz_und_trutz
-			value = 2
-		}
+		set_country_flag = schutz_und_trutz_declined
 	}
 }
 
@@ -360,131 +358,47 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	fire_only_once = yes
-		
-	trigger = {
-		if = {
-			limit = {
-				country_exists = HES
-			}
-			AND = {
-				has_variable = HES_schutz_und_trutz
-				check_variable = { HES_schutz_und_trutz = 1 } 
-			}
-		}
-		if = {
-			limit = {
-				country_exists = WRT
-			}
-			AND = {
-				has_variable = WRT_schutz_und_trutz
-				check_variable = { WRT_schutz_und_trutz = 1 } 
-			}
-		}
-		if = {
-			limit = {
-				country_exists = BAD
-			}
-			AND = {
-				has_variable = BAD_schutz_und_trutz
-				check_variable = { BAD_schutz_und_trutz = 1 } 
-			}
-		}
-		if = {
-			limit = {
-				country_exists = BAV
-			}
-			AND = {
-				has_variable = BAV_schutz_und_trutz
-				check_variable = { BAV_schutz_und_trutz = 1 } 
-			}
-		}
-	}
-
 	option = {
 		name = prussia_fpw.16.a
 		every_country = {
-				limit = {
-					OR = {
-						original_tag = BAD
-						original_tag = WRT
-						original_tag = BAV
-						original_tag = HES
-					}
+			limit = {
+				OR = {
+					original_tag = BAD
+					original_tag = WRT
+					original_tag = BAV
+					original_tag = HES
 				}
-				give_guarantee = PRS
-				add_opinion_modifier = {
-    					target = PRS
-    					modifier = fpw_schutz_und_trutz_budniss
-				}
-				reverse_add_opinion_modifier = {
+			}
+			give_guarantee = PRS
+			add_opinion_modifier = {
 					target = PRS
 					modifier = fpw_schutz_und_trutz_budniss
-				}
 			}
-			PRS = {
-				give_guarantee = BAD
-				give_guarantee = WRT
-				give_guarantee = BAV
-				give_guarantee = HES
+			reverse_add_opinion_modifier = {
+				target = PRS
+				modifier = fpw_schutz_und_trutz_budniss
 			}
+		}
+		PRS = {
+			give_guarantee = BAD
+			give_guarantee = WRT
+			give_guarantee = BAV
+			give_guarantee = HES
+		}
 	}
 }
 
 # Offer declined
 country_event = {
-	id = prussia_fpw.16
-	title = prussia_fpw.16.t
-	desc = prussia_fpw.16.d
+	id = prussia_fpw.17
+	title = prussia_fpw.17.t
+	desc = prussia_fpw.17.d
 	picture = GFX_report_event_generic_handshake
 
 	is_triggered_only = yes
-	
-	fire_only_once = yes
-		
-	trigger = {
-		OR = {
-			if = {
-				limit = {
-					country_exists = HES
-				}
-				AND = {
-					has_variable = HES_schutz_und_trutz
-					check_variable = { HES_schutz_und_trutz = 2 } 
-				}
-			}
-			if = {
-				limit = {
-					country_exists = WRT
-				}
-				AND = {
-					has_variable = WRT_schutz_und_trutz
-					check_variable = { WRT_schutz_und_trutz = 2 } 
-				}
-			}
-			if = {
-				limit = {
-					country_exists = BAD
-				}
-				AND = {
-					has_variable = BAD_schutz_und_trutz
-					check_variable = { BAD_schutz_und_trutz = 2 } 
-				}
-			}
-			if = {
-				limit = {
-					country_exists = BAV
-				}
-				AND = {
-					has_variable = BAV_schutz_und_trutz
-					check_variable = { BAV_schutz_und_trutz = 2 } 
-				}
-			}
-		}
-	}
-
+			
 	option = {
-		name = prussia_fpw.16.a
+		name = prussia_fpw.17.a
 		# Use scripted loc to check who was the one/who were the ones that declined
 	}
 }

@@ -3,6 +3,7 @@
 #### NO STEP BACK
 ####
 
+set_oob = "SOV_1866"
 
 set_politics = {
 	ruling_party = authoritarian_ideology
@@ -707,20 +708,6 @@ capital = 195
 
 starting_train_buffer = 3.0
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "SOV_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "SOV_1936_nsb"
-}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SOV_1936_naval_mtg"
