@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_divided_military"
+		texturefile = "gfx/interface/ideas/divided_military.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_hungarian_seperatism"
+		texturefile = "gfx/interface/ideas/hungarian_seperatism.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_progressive_education"
+		texturefile = "gfx/interface/ideas/progressive_education.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_stagnant_economy"
+		texturefile = "gfx/interface/ideas/stagnant_economy.dds"
+	}
+}

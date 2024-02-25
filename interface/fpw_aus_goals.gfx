@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_PRS_unification"
+		texturefile = "gfx/interface/goals/focus_PRS_unification.dds"
+	}	
+	spriteType = {
+		name = "GFX_allow_for_a_compromise"
+		texturefile = "gfx/interface/goals/allow_for_a_compromise.dds"
+	}	
+	spriteType = {
+		name = "GFX_hungarian_constitution"
+		texturefile = "gfx/interface/goals/hungarian_constitution.dds"
+	}	
+	spriteType = {
+		name = "GFX_hungarian_crisis"
+		texturefile = "gfx/interface/goals/hungarian_crisis.dds"
+	}	
+	spriteType = {
+		name = "GFX_ratify_ausgleich"
+		texturefile = "gfx/interface/goals/ratify_ausgleich.dds"
+	}	
+	spriteType = {
+		name = "GFX_seperate_taxations"
+		texturefile = "gfx/interface/goals/seperate_taxations.dds"
+	}
+}
