@@ -35,6 +35,13 @@ set_technology = {
 	basic_train = 1
 }
 
+add_ideas = {
+	fpw_AUS_hungarian_seperatism
+	fpw_AUS_divided_military
+	fpw_AUS_stagnant_economy
+	fpw_AUS_progressive_education
+}
+
 recruit_character = AUS_franz_joseph_I
 
 recruit_character = AUS_kurt_schuschnigg
