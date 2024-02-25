@@ -1,0 +1,35 @@
+fpw_AUS_autonomous_state1 = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	local_building_slots_factor = -0.2
+}
+
+fpw_AUS_autonomous_state2 = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	local_building_slots_factor = -0.2
+	local_manpower = -0.3
+	
+}
+
+fpw_AUS_autonomous_state3 = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	local_building_slots_factor = -0.2
+	local_manpower = -0.3
+	local_resources = -0.2
+}
+
+fpw_AUS_autonomous_state4 = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	local_building_slots_factor = -0.2
+	local_manpower = -0.3
+	local_resources = -0.2
+	state_production_speed_industrial_complex_factor = -0.1
+	state_production_speed_arms_factory_factor = -0.1
+}
