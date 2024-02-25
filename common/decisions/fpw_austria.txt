@@ -1,0 +1,30 @@
+fpw_austria_populations_of_the_empire = {
+	aus_test = {
+		completion_reward = {
+		
+		}
+	}
+}
+
+fpw_austro_hungarian_compromise = {
+	ratifying_the_augsleich = {
+		available = {
+			always = no
+		}
+		allowed = {
+			always = no
+		}
+		icon = mission_icon
+		is_good = yes
+		days_mission_timeout = 15
+		selectable_mission = no
+		timeout_effect = {
+		
+			remove_ideas = fpw_AUS_hungarian_seperatism
+			country_event = {
+				id = fpw_austria.7
+			}
+			set_cosmetic_tag = HUN_EMPIRE
+		}
+	}
+}
