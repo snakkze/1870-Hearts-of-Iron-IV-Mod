@@ -19,31 +19,609 @@ focus_tree = {
 	}
 	
 	default = no
-
+	
 	focus = {
-		id = AUS_permit_estates_of_schleswig
-		icon = GFX_goal_unknown
-		x = 6
+		id = AUS_review_domestic_affairs
+		x = 26
 		y = 0
 		cost = 10
+
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 
-		available_if_capitulated = yes
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
 
 		completion_reward = {
+		}
+	}
 
+	focus = {
+		id = AUS_addressing_the_hungarian_crisis
+		x = -3
+		y = 1
+		cost = 10
+		
+		icon = GFX_hungarian_crisis
+		
+		prerequisite = { focus = AUS_review_domestic_affairs }
+		relative_position_id = AUS_review_domestic_affairs
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_allow_for_a_compromise
+		x = -3
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_addressing_the_hungarian_crisis }
+		relative_position_id = AUS_addressing_the_hungarian_crisis
+		
+		icon = GFX_allow_for_a_compromise
+		
+		mutually_exclusive = { focus = AUS_continue_the_occupation}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			set_variable = {
+				var = hungarian_approval
+				value = 70
+			}
+		}
+	}
+
+	#historic-monarch	
+	focus = {
+		id = AUS_restore_the_hungarian_constitution
+		x = -2
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_allow_for_a_compromise }
+		relative_position_id = AUS_allow_for_a_compromise
+		
+		icon = GFX_hungarian_constitution
+		
+		mutually_exclusive = { focus = AUS_towards_complete_federation}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = AUS_found_the_common_army
+		x = -1
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_restore_the_hungarian_constitution }
+		relative_position_id = AUS_restore_the_hungarian_constitution
+		
+		icon = GFX_focus_chi_army_reform
+		
+		mutually_exclusive = { focus = AUS_towards_complete_federation}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_AUS_divided_military
+				add_idea = fpw_AUS_diverse_military
+			}
+			add_stability = 0.05
+
+		}
+	}
+
+	focus = {
+		id = AUS_seperate_taxation
+		x = -1
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_found_the_common_army }
+		relative_position_id = AUS_found_the_common_army
+		
+		icon = GFX_seperate_taxations
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_establish_hungarian_parliament
+		x = 1
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_found_the_common_army }
+		relative_position_id = AUS_found_the_common_army
+		
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_ratify_the_augsleich
+		x = -1
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_establish_hungarian_parliament }
+		prerequisite = { focus = AUS_seperate_taxation }
+		relative_position_id = AUS_establish_hungarian_parliament
+		
+		icon = GFX_ratify_ausgleich
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = {
+					check_variable = { hungarian_approval > 50}
+				}
+				country_event = {
+					id = fpw_austria.6 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_aiding_hungary
+		x = -2
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_ratify_the_augsleich }
+		relative_position_id = AUS_ratify_the_augsleich
+			
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_developing_slovak_steel
+		x = -1
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_aiding_hungary }
+		relative_position_id = AUS_aiding_hungary
+			
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_utilise_hungarian_agriculture
+		x = 1
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_aiding_hungary }
+		relative_position_id = AUS_aiding_hungary
+			
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = AUS_consolidate_the_empire
+		x = 1
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = AUS_ratify_the_augsleich }
+		relative_position_id = AUS_ratify_the_augsleich
+			
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = AUS_expanding_austrian_aqueducts
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_utilise_hungarian_agriculture }
+		relative_position_id = AUS_utilise_hungarian_agriculture
+			
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_expolit_czechoslovak_mining_industries
+		x = 0
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = AUS_developing_slovak_steel }
+		prerequisite = { focus = AUS_expanding_austrian_aqueducts }
+		relative_position_id = AUS_aiding_hungary
+			
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = AUS_entering_the_grunderzeit
+		x = 2
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_expolit_czechoslovak_mining_industries }
+		prerequisite = { focus = AUS_consolidate_the_empire }
+		relative_position_id = AUS_expolit_czechoslovak_mining_industries
+			
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}	
+
+	#alt-hist dem
+	focus = {
+		id = AUS_towards_complete_federation
+		x = 2
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_allow_for_a_compromise }
+		relative_position_id = AUS_allow_for_a_compromise
+		
+		mutually_exclusive = { focus = AUS_restore_the_hungarian_constitution}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+	
+	#alt-hist monarch
+	focus = {
+		id = AUS_continue_the_occupation
+		x = 3
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = AUS_addressing_the_hungarian_crisis }
+		relative_position_id = AUS_addressing_the_hungarian_crisis
+		
+		mutually_exclusive = { focus = AUS_allow_for_a_compromise}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+
+	
+	focus = {
+		id = AUS_schleswig_call_the_united_assembly
+		x = 4
+		y = 0
+		cost = 10
+		
+		
+		mutually_exclusive = { focus = AUS_allow_for_a_compromise}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
 		}
 	}
 
 	focus = {
 		id = AUS_federal_resolution_of_june
 		icon = GFX_goal_unknown
-		prerequisite = { focus = AUS_permit_estates_of_schleswig }
+		prerequisite = { focus = AUS_schleswig_call_the_united_assembly }
 		x = 0
 		y = 1
-		relative_position_id = AUS_permit_estates_of_schleswig
+		relative_position_id = AUS_schleswig_call_the_united_assembly
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -55,79 +633,4 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = AUS_austro_hungarian_compromise
-		icon = GFX_goal_unknown
-		prerequisite = { focus = AUS_federal_resolution_of_june }
-		x = 0
-		y = 3
-		relative_position_id = AUS_federal_resolution_of_june
-		mutually_exclusive = { focus = AUS_triumph_in_the_german_war }
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_triumph_in_the_german_war
-		icon = GFX_goal_unknown
-		prerequisite = { focus = AUS_federal_resolution_of_june }
-		x = 5
-		y = 3
-		relative_position_id = AUS_federal_resolution_of_june
-		mutually_exclusive = { focus = AUS_austro_hungarian_compromise }
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_austria_first
-		icon = GFX_goal_unknown
-		prerequisite = { focus = AUS_triumph_in_the_german_war }
-		x = -2
-		y = 1
-		relative_position_id = AUS_triumph_in_the_german_war
-		mutually_exclusive = { focus = AUS_continue_german_confederation }
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_continue_german_confederation
-		icon = GFX_goal_unknown
-		prerequisite = { focus = AUS_triumph_in_the_german_war }
-		x = 2
-		y = 1
-		relative_position_id = AUS_triumph_in_the_german_war
-		mutually_exclusive = { focus = AUS_austria_first }
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
 }
