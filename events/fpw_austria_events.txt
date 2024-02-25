@@ -1,0 +1,569 @@
+add_namespace = fpw_austria
+
+# hungarians demand a compromise
+country_event = {
+	id = fpw_austria.1
+	title = fpw_austria.1.t
+	desc = fpw_austria.1.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = fpw_austria.1.a
+		complete_national_focus = AUS_allow_for_a_compromise
+		custom_effect_tooltip = austria_1a_desc
+	}
+	option = {
+		name = fpw_austria.1.b 
+		complete_national_focus = AUS_continue_the_occupation
+		custom_effect_tooltip = austria_1b_desc
+	}
+}
+
+#Austro-Hungarian parliamentary debate
+country_event = {
+	id = fpw_austria.2
+	title = fpw_austria.2.t
+	desc = fpw_austria.2.d
+
+	is_triggered_only = no
+
+	fire_only_once=yes
+
+	major = yes
+	trigger = {
+		has_completed_focus = AUS_restore_the_hungarian_constitution
+	}
+	option = {
+		name = fpw_austria.2.a
+		custom_effect_tooltip = austria_2a_desc
+		add_to_variable = {
+			var = hungarian_approval
+			value = 10
+		}
+		add_to_variable = {
+			var = state_debuff_level
+			value = 1
+		}
+	}
+	option = {
+		name = fpw_austria.2.b 
+		subtract_from_variable = {
+			var = hungarian_approval
+			value = 40
+		}
+		custom_effect_tooltip = austria_2b_desc
+	}
+	immediate = {
+		country_event = {
+			id = fpw_austria.3
+			days = 25
+		}
+	}
+}
+
+#Austro-Hungarian judiciary debate
+country_event = {
+	id = fpw_austria.3
+	title = fpw_austria.3.t
+	desc = fpw_austria.3.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = fpw_austria.3.a
+		custom_effect_tooltip = austria_3a_desc
+		add_to_variable = {
+			var = hungarian_approval
+			value = 10
+		}
+		add_to_variable = {
+			var = state_debuff_level
+			value = 1
+		}
+	}
+	option = {
+		name = fpw_austria.3.b 
+		subtract_from_variable = {
+			var = hungarian_approval
+			value = 30
+		}
+		custom_effect_tooltip = austria_3b_desc
+	}
+}
+
+#Austro-Hungarian taxation debate
+country_event = {
+	id = fpw_austria.4
+	title = fpw_austria.4.t
+	desc = fpw_austria.4.d
+
+	is_triggered_only = no
+
+	fire_only_once=yes
+
+	major = yes
+	trigger = {
+		has_completed_focus = AUS_seperate_taxation
+	}
+	option = {
+		name = fpw_austria.4.a
+		custom_effect_tooltip = austria_4a_desc
+		add_to_variable = {
+			var = hungarian_approval
+			value = 10
+		}
+		add_to_variable = {
+			var = state_debuff_level
+			value = 1
+		}
+	}
+	option = {
+		name = fpw_austria.4.b 
+		subtract_from_variable = {
+			var = hungarian_approval
+			value = 20
+		}
+		custom_effect_tooltip = austria_4b_desc
+	}
+	immediate = {
+		country_event = {
+			id = fpw_austria.5
+			days = 15
+		}
+	}
+}
+
+#Austro-Hungarian land debate
+country_event = {
+	id = fpw_austria.5
+	title = fpw_austria.5.t
+	desc = fpw_austria.5.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	major = yes
+
+	option = {
+		name = fpw_austria.5.a
+		custom_effect_tooltip = austria_5a_desc
+		add_to_variable = {
+			var = hungarian_approval
+			value = 10
+		}
+		add_to_variable = {
+			var = state_debuff_level
+			value = 1
+		}
+		set_country_flag = AUS_natural_borders
+	}
+	option = {
+		name = fpw_austria.5.b 
+		subtract_from_variable = {
+			var = hungarian_approval
+			value = 40
+		}
+		custom_effect_tooltip = austria_5b_desc
+		set_country_flag = AUS_transylvania
+	}
+	option = {
+		name = fpw_austria.5.c
+		subtract_from_variable = {
+			var = hungarian_approval
+			value = 50
+		}
+
+		custom_effect_tooltip = austria_5c_desc
+		set_country_flag = AUS_vanilla_hungary
+	}
+}
+
+#Hungary approves reforms
+country_event = {
+	id = fpw_austria.6
+	title = fpw_austria.6.t
+	desc = fpw_austria.6.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = fpw_austria.6.a
+		activate_mission = ratifying_the_augsleich
+	}
+}
+
+#Augsleich
+country_event = {
+	id = fpw_austria.7
+	title = fpw_austria.7.t
+	desc = fpw_austria.7.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = fpw_austria.7.a
+			if = {
+			
+				#natural borders debuff
+				limit = {
+					has_country_flag = AUS_natural_borders
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 1}
+					}
+					70 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					71 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					73 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					109 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}					
+					664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 2}
+					}
+					70 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					71 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					73 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					109 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}					
+					664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 3}
+					}
+					70 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					71 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					73 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					109 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}					
+					664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 4}
+					}
+					70 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					71 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					73 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					109 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}					
+					664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}
+				}
+			}
+			
+			#Transylvania only
+			if = {
+				limit = {
+					has_country_flag = AUS_transylvania
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 1}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 2}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 3}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 4}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}664 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}76 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}84 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}83 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}82 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}45 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}
+				}
+
+			}
+			
+			#vanilla only
+			if  {
+				limit = {
+					has_country_flag = AUS_vanilla_hungary
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 1}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 2}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 3}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { state_debuff_level = 4}
+					}
+					155 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}43 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}154 = {
+						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+					}
+				}
+			}
+	}
+}
+
+
+
