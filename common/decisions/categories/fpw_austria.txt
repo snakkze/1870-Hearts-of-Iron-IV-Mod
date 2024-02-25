@@ -1,0 +1,33 @@
+fpw_austria_populations_of_the_empire = {
+	priority = 99
+
+	scripted_gui = aus_populations_of_the_empire_gui
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		tag = AUS
+	}
+}
+
+fpw_austro_hungarian_compromise = {
+	priority = 10
+	
+	on_map_area = {
+		targets = { 155 43 154 83 82 84 76 73 71 70 764 109 45 664 }
+		name = AUS_hungarian_states
+		zoom = 150
+	}
+	
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		tag = AUS
+	}
+}
+
+
