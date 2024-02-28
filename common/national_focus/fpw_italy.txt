@@ -18,7 +18,7 @@ focus_tree = {
 	
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = { x = -500 y = 660 }
+	continuous_focus_position = { x = 1500 y = 1500 }
 
 	initial_show_position = {
 		focus = industrial_effort
@@ -1598,7 +1598,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ITA_produce_olive_oil }
 		available = {
-			owns_state = 117
+			owns_state = 156
 		}
 		x = 0
 		y = 1
@@ -1609,11 +1609,37 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			117 = {
+			156 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = industrial_complex
     				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_produce_ice_cream
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ITA_produce_olive_oil }
+		available = {
+			owns_state = 117
+		}
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = ITA_produce_olive_oil
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			117 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
     				instant_build = yes
 				}
 			}
@@ -1686,6 +1712,300 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+	focus = {
+		id = ITA_construct_more_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ITA_develop_north }
+		available = {
+			owns_state = 158
+			owns_state = 161
+		}
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = ITA_develop_north
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			158 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			if = {
+				limit = { owns_state = 159 }
+				159 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { owns_state = 160 }
+				160 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { owns_state = 160 } }
+				162 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_produce_cheese
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = ITA_construct_more_factories }
+		available = {
+			owns_state = 158
+			owns_state = 161
+		}
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ITA_construct_more_factories
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			158 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_even_more_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ITA_construct_more_factories }
+		available = {
+			owns_state = 114
+			owns_state = 162
+		}
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = ITA_construct_more_factories
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			114 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_navy
+		icon = GFX_focus_generic_military_mission
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ITA_produce_cheese
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			115 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			114 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_rival_the_uk
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = ITA_navy }
+		mutually_exclusive = { focus = ITA_borrow_ideas_from_uk }
+		available = {
+			country_exists = ENG
+		}
+		x = -2
+		y = 2
+		cost = 5
+		relative_position_id = ITA_navy
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_borrow_ideas_from_uk
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ITA_navy }
+		mutually_exclusive = { focus = ITA_rival_the_uk }
+		available = {
+		}
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = ITA_navy
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_artillery_focus
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = ITA_borrow_ideas_from_uk }
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ITA_borrow_ideas_from_uk
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_cavalry_focus
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = ITA_borrow_ideas_from_uk }
+		available = {
+		}
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = ITA_borrow_ideas_from_uk
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_rifle_focus
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = ITA_artillery_focus focus = ITA_cavalry_focus }
+		available = {
+		}
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = ITA_artillery_focus
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = ITA_rifle_focus }
+		prerequisite = { focus = ITA_cavalry_focus }
+		available = {
+		}
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = ITA_rifle_focus
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = ITA_rifle_focus }
+		prerequisite = { focus = ITA_doctrine_effort }
+		available = {
+		}
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = ITA_rifle_focus
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
 		}
 	}
 }
