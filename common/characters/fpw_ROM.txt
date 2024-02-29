@@ -1,0 +1,17 @@
+characters={
+
+	ROM_alexandru = {
+		name = "Alexandru Ioan Cuza"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ROM_alexandru
+			}
+		}
+
+		country_leader = {
+			ideology = conservative_constitutional_monarchism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

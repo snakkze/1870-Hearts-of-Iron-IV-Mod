@@ -8,22 +8,20 @@ state={
 			11857 1 
 		}
 		owner = TUR
-add_core_of = TUR
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
 
 		}
 		add_core_of = SER
-		add_claim_by = BUL
 
 	}
 
 	provinces={
-		11832 11857 11868 
+		9906 11857 11868 11887 
 	}
 	manpower=210000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }

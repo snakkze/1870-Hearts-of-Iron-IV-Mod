@@ -232,6 +232,16 @@ spriteTypes = {
 		name = "GFX_portrait_WRT_karl_friedrich_august"
 		texturefile = "gfx/leaders/german_minors/WRT/Portrait_WRT_karl_friedrich_august.dds"
 	}
-
-
+	
+	# ROM
+	spriteType = {
+		name = "GFX_portrait_ROM_alexandru"
+		texturefile = "gfx/leaders/ROM/Portrait_ROM_alexandru.dds"
+	}
+	
+	# SER
+	spriteType = {
+		name = "GFX_portrait_SER_prince"
+		texturefile = "gfx/leaders/SER/Portrait_SER_prince.dds"
+	}
 }

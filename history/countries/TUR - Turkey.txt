@@ -210,27 +210,6 @@ if = {
 			}
 			set_state_flag = TUR_ideological_battleground_state
 		}
-	
-		add_opinion_modifier = { 
-			target = GRE
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = ROM
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = YUG
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = BUL
-			modifier = BFTB_balkan_pact_enemy
-		}
-		add_opinion_modifier = { 
-			target = HUN
-			modifier = BFTB_balkan_pact_enemy
-		}
 	}
 
 	if = { 
@@ -421,6 +400,26 @@ set_politics = {
 set_popularities = {
 	conservatism_ideology = 6
 	authoritarian_ideology = 94
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SER
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = SER
+		puppet = ROM
+	}
 }
 
 set_convoys = 20

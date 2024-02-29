@@ -4,8 +4,7 @@ state={
 	name="STATE_107"
 
 	history={
-		owner = TUR
-add_core_of = TUR
+		owner = SER
 		buildings = {
 			infrastructure = 3
 			arms_factory = 3
@@ -13,18 +12,18 @@ add_core_of = TUR
 
 		}
 		victory_points = {
-			11586 15 
+			11586 15
+			9602 3
 		}
 		add_core_of = SER
 
 	}
 
 	provinces={
-		797 3609 3956 3984 6634 9599 11583 11586 
+		630 797 3609 3956 3984 6634 6998 9599 9602 9756 11583 11586 
 	}
 	manpower=1279121
 	buildings_max_level_factor=1.000
 	state_category=large_city
-
-	local_supplies=4.0 
+	local_supplies=4.000
 }
