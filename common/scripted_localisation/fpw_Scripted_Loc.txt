@@ -1,0 +1,17 @@
+defined_text = {
+    name = get_fpw_version
+
+    text = {
+        trigger = {
+            is_debug = yes
+        }
+        localization_key = "fpw_version_debug"
+    }
+
+    text = {
+        trigger = {
+            is_debug = no
+        }
+        localization_key = "fpw_version_nondebug"
+    }
+}
