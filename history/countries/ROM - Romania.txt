@@ -1,4 +1,33 @@
 capital = 46
+set_politics = {
+	ruling_party = conservatism_ideology
+	last_election = "1863.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	conservatism_ideology = 60
+	authoritarian_ideology = 18
+	socialism_ideology = 2
+	liberalism_ideology = 20
+}
+TUR = {
+	if = {
+		limit = {
+			OR = {
+				has_dlc = "Together for Victory"
+				has_dlc = "Man the Guns"
+			}
+		}
+		set_autonomy = {
+			target = ROM
+			autonomous_state = autonomy_integrated_puppet
+		}
+		else = {
+			puppet = ROM
+		}
+	}
+}
 
 if = {
 	limit = {
@@ -95,21 +124,7 @@ if = {
 	}
 }
 
-#Ideas
-
 set_convoys = 10
-set_politics = {
-	ruling_party = conservatism_ideology
-	last_election = "1863.12.20"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	conservatism_ideology = 60
-	authoritarian_ideology = 18
-	socialism_ideology = 2
-	liberalism_ideology = 20
-}
 ### VARIANTS ###
 # 1936 Start #
 if = {

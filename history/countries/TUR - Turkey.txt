@@ -412,13 +412,8 @@ if = {
 		target = SER
 		autonomous_state = autonomy_integrated_puppet
 	}
-	set_autonomy = {
-		target = ROM
-		autonomous_state = autonomy_integrated_puppet
-	}
 	else = {
 		puppet = SER
-		puppet = ROM
 	}
 }
 
