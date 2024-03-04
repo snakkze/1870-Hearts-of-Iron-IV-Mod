@@ -143,7 +143,6 @@ if = {
 #Monroe Doctrine
 give_guarantee = CAN
 give_guarantee = MEX
-give_guarantee = CUB
 give_guarantee = HAI
 give_guarantee = DOM
 give_guarantee = GUA
@@ -324,14 +323,6 @@ add_ideas = {
 	free_trade
 	home_of_the_free
 }
-
-
-# DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
-}
-
 1939.1.1 = {
 	set_politics = {
 		ruling_party = conservatism_ideology

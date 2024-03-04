@@ -26,6 +26,30 @@ add_ideas = {
 		fpw_SPR_corrupted_government
 	}
 }
+1866.1.1 = {
+	if = {
+		limit = {
+			OR = {
+				has_dlc = "Together for Victory"
+				has_dlc = "Man the Guns"
+			}
+		}
+		set_autonomy = {
+			target = PHI
+			autonomous_state = autonomy_colony
+			freedom_level = 0.0
+		}
+		set_autonomy = {
+			target = CUB
+			autonomous_state = autonomy_colony
+			freedom_level = 0.4
+		}
+		else = {
+			puppet = CUB
+			puppet = PHI
+		}
+	}	
+}
 
 oob = "SPR_1936"
 if = {

@@ -16,6 +16,22 @@ set_popularities = {
 	socialism_ideology = 2
 	authoritarian_ideology = 88
 }
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = FIN
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = FIN
+	}
+}
 
 recruit_character = SOV_alexander_ii
 
