@@ -21,7 +21,7 @@ TUR = {
 		}
 		set_autonomy = {
 			target = ROM
-			autonomous_state = autonomy_integrated_puppet
+			autonomous_state = autonomy_puppet
 		}
 		else = {
 			puppet = ROM
