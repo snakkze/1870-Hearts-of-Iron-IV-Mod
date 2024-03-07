@@ -17,8 +17,10 @@ ideologies = {
 			}
 
 			conservative_semi_constitutional_monarchism = {
+				can_be_randomly_selected = no
 			}
 			conservative_constitutional_monarchism = {
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -83,11 +85,14 @@ ideologies = {
 			market_liberalism = {
 			}
 			liberal_semi_constitutional_monarchism = {
+				can_be_randomly_selected = no
 			}
 			liberal_constitutional_monarchism = {
+				can_be_randomly_selected = no
 			}
 			anarchism = {
-				
+				can_be_randomly_selected = no
+				color = { 44 44 44 }
 			}
 		}
 
@@ -145,12 +150,17 @@ ideologies = {
 		types = {
 
 			communism = {
+				color = { 185 37 37 }
 			}
 
 			vanguardism = {
+				color = { 149 49 49 }
+				can_be_randomly_selected = no
 			}
 
 			social_anarchism = {
+				color = { 77 0 0 }
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -198,25 +208,39 @@ ideologies = {
 
 		types = {
 			nationalism = {
+				color = { 124 68 12 }
+				can_be_randomly_selected = no
 			}
 			aboslute_monarchy  = {
+				color = { 125 45 149 }
+				can_be_randomly_selected = no
 			}
-			monarchism = { 
+			monarchism = {
+				color = { 125 45 149 }
+				can_be_randomly_selected = no
 			}
 			autocratic_republic  = {
 			}
 
 			theocracy = {
+				color = { 188 134 41 }
+				can_be_randomly_selected = no
 			}
 			despotism  = {
+				can_be_randomly_selected = no
 			}
 
 			oligarchism  = {
+				can_be_randomly_selected = no
 			}
 
 			bonapartism  = {
+				color = { 125 45 149 }
+				can_be_randomly_selected = no
 			}
 			orleanist = {
+				color = { 125 45 149 }
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -228,7 +252,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 
-		color = { 124 114 111 }
+		color = { 100 100 100 }
 
 
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -237,7 +261,7 @@ ideologies = {
 		rules = {
 			can_force_government = yes
 			can_puppet = yes
-			can_send_volunteers = no
+			can_send_volunteers = yes
 		}
 
 		modifiers = {
