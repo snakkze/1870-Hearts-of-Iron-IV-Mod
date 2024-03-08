@@ -56,7 +56,23 @@ autonomy_state = {
 		base = 0
 		modifier = {
 			add = 100
-			is_on_continent = africa
+			ROOT = {
+				OR = {
+					AND = {
+						NOT = {
+							OR = {
+								original_tag = EGY
+								original_tag = MOR
+							}
+						}
+						capital_scope = {
+							is_on_continent = africa
+						}
+					}
+					original_tag = VIN
+					original_tag = RAJ
+				}
+			}
 		}
 	}
 	

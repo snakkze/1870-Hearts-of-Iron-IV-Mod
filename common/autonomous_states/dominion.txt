@@ -36,6 +36,25 @@ autonomy_state = {
 		has_dlc = "Together for Victory"
 	}
 
+	use_for_peace_conference_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			ROOT = {
+				OR = {
+					original_tag = EGY
+					original_tag = MOR
+					original_tag = PER
+					original_tag = AFG
+					original_tag = NEP
+					original_tag = BHU
+					original_tag = SIA
+					original_tag = KOR
+				}
+			}
+		}
+	}
+
 	allowed_levels_filter = {
 		autonomy_dominion
 		autonomy_puppet

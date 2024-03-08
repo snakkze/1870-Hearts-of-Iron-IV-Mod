@@ -8,7 +8,20 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=conservatism
+			ideology=usa_democrat
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	USA_grant={
+		name="Ulysses S. Grant"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_republican
+			}
+		}
+		country_leader={
+			ideology=usa_republican
 			expire="1956.01.01.01"
 			id=-1
 		}

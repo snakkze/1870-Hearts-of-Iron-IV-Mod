@@ -22,6 +22,10 @@ ideologies = {
 			conservative_constitutional_monarchism = {
 				can_be_randomly_selected = no
 			}
+			usa_democrat = {
+				can_be_randomly_selected = no
+				color = { 0 60 255 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -93,6 +97,10 @@ ideologies = {
 			anarchism = {
 				can_be_randomly_selected = no
 				color = { 44 44 44 }
+			}
+			usa_republican = {
+				can_be_randomly_selected = no
+				color = { 255 0 0 }
 			}
 		}
 
@@ -212,11 +220,11 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 			aboslute_monarchy  = {
-				color = { 125 45 149 }
+				color = { 131 85 145 }
 				can_be_randomly_selected = no
 			}
 			monarchism = {
-				color = { 125 45 149 }
+				color = { 131 85 145 }
 				can_be_randomly_selected = no
 			}
 			autocratic_republic  = {
@@ -235,11 +243,11 @@ ideologies = {
 			}
 
 			bonapartism  = {
-				color = { 125 45 149 }
+				color = { 131 85 145 }
 				can_be_randomly_selected = no
 			}
 			orleanist = {
-				color = { 125 45 149 }
+				color = { 131 85 145 }
 				can_be_randomly_selected = no
 			}
 		}
