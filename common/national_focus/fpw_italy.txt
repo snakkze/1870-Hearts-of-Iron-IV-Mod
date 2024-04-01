@@ -738,6 +738,10 @@ focus_tree = {
 
 		select_effect = {
 			create_faction = anti_ottoman_faction
+			country_event = { 
+				id = italy_fpw.5 
+				days = 10
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = ITA_selected
@@ -747,6 +751,61 @@ focus_tree = {
 			declare_war_on = {
 				target = TUR
 				type = take_claimed_state
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						ITA = {
+							has_country_flag = supported_vassals
+						}
+					}
+					TUR = {
+						
+						country_event = { 
+							id = italy_fpw.9
+							#hours = 12
+						}
+						country_event = { 
+							id = italy_fpw.10
+							#hours = 12
+						}
+					}
+				}
+				
+				if = {
+					limit = { 
+						ITA = {
+							has_country_flag = supported_egypt
+						}
+					}
+					if = {
+						limit = {
+							EGY = {
+								exists = yes
+								is_subject_of = TUR
+							}
+						}
+						TUR = {
+							country_event = { 
+								id = italy_fpw.12
+								#hours = 12
+							}
+						}
+					}
+					if = {
+						limit = {
+							EGY = {
+								exists = no
+							}
+						}
+						TUR = {
+							country_event = { 
+								id = italy_fpw.11
+								#hours = 12
+							}
+						}
+					}
+				}
 			}
 		}
 	}

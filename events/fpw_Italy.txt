@@ -91,4 +91,332 @@ country_event = {
 	}
 }
 
+# carve up ottomans start
+country_event = {
+	id = italy_fpw.5
+	title = italy_fpw.5.t
+	desc = italy_fpw.5.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# with Russia
+	option = {
+		name = italy_fpw.5.a
+		
+		ai_chance = { 
+			factor = 10
+		}
+		add_stability = 0.05
+		
+		SOV = { 
+			country_event = { 
+				id = italy_fpw.6 
+				hours = 4
+			}
+		}
+		hidden_effect = {
+			
+			country_event = { 
+				id = italy_fpw.13
+				days = 20
+			}
+		}
+		
+	}
+	# only minor powers
+	option = {
+		name = italy_fpw.5.b
+		
+		ai_chance = { 
+			factor = 3
+		}
+		add_political_power = 25
+		#custom_effect_tooltip = italy_fpw_only_minor_powers
+		
+		hidden_effect = {
+			
+			country_event = { 
+				id = italy_fpw.13
+				days = 20
+			}
+		}
+	}
+	# Italy stands alone!
+	option = {
+		name = italy_fpw.5.c
+		
+		ai_chance = { 
+			factor = 1
+		}
+		
+		add_war_support = 0.05
+		
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# for russia # italy invites
+country_event = {
+	id = italy_fpw.6
+	title = italy_fpw.6.t
+	desc = italy_fpw.6.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = italy_fpw.6.a
+		
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				has_opinion = {	
+					target = ITA
+					value > 50
+				}
+				factor = 10
+			}
+		}
+		
+		hidden_effect = {
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.7 
+					hours = 4
+				}
+			}
+			if = {
+				limit = { 
+					ITA = { is_faction_leader = yes }
+				}
+				ITA = { add_to_faction = SOV }
+			}
+			
+		}
+		
+	}
+	# No
+	option = {
+		name = italy_fpw.6.b
+		
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 2
+			}
+		}
+		
+		hidden_effect = {
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.8 
+					hours = 4
+				}
+			}
+		}
+	}
+}
+# russia agrees
+country_event = {
+	id = italy_fpw.7
+	title = italy_fpw.7.t
+	desc = italy_fpw.7.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.7.a
+		
+		add_political_power = 25
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# russia rejects
+country_event = {
+	id = italy_fpw.8
+	title = italy_fpw.8.t
+	desc = italy_fpw.8.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.8.a
+		
+		add_stability = -0.05
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# serbia revolts
+country_event = {
+	id = italy_fpw.9
+	title = italy_fpw.9.t
+	desc = italy_fpw.9.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.9.a
+		
+		add_stability = -0.01
+		add_war_support = -0.01
+		
+		TUR = {
+			end_puppet = SER
+			declare_war_on = {
+				target = SER
+				type = annex_everything
+			}
+		}
+		
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# romania revolts
+country_event = {
+	id = italy_fpw.10
+	title = italy_fpw.10.t
+	desc = italy_fpw.10.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.9.a
+		
+		add_stability = -0.01
+		add_war_support = -0.01
+		
+		TUR = {
+			end_puppet = ROM
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+		
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# annexed egypt revolts 
+country_event = {
+	id = italy_fpw.11
+	title = italy_fpw.11.t
+	desc = italy_fpw.11.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.9.a
+		
+		add_stability = -0.01
+		add_war_support = -0.01
+		
+		TUR = {
+			release = EGY
+			declare_war_on = {
+				target = EGY
+				type = annex_everything
+			}
+		}
+		
+		hidden_effect = {
+			#EGY = {
+			#	load_oob = egypt_revolt
+			#}
+		}
+		
+	}
+}
+# puppet egypt revolts 
+country_event = {
+	id = italy_fpw.12
+	title = italy_fpw.11.t
+	desc = italy_fpw.11.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.9.a
+		
+		add_stability = -0.01
+		add_war_support = -0.01
+		
+		TUR = {
+			end_puppet = EGY
+			declare_war_on = {
+				target = EGY
+				type = annex_everything
+			}
+		}
+		
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# support vassals
+country_event = {
+	id = italy_fpw.13
+	title = italy_fpw.13.t
+	desc = italy_fpw.13.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# only balkan ones
+	option = {
+		name = italy_fpw.13.a
+		
+		ai_chance = { 
+			factor = 5
+		}
+		
+		hidden_effect = {
+			set_country_flag = supported_vassals
+		}
+		
+	}
+	# egypt too
+	option = {
+		name = italy_fpw.13.b
+		
+		ai_chance = { 
+			factor = 10
+		}
+		
+		hidden_effect = {
+			set_country_flag = supported_vassals
+			set_country_flag = supported_egypt
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
