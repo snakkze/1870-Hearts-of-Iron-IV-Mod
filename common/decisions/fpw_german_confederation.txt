@@ -63,29 +63,8 @@ fpw_german_confederation_category = {
 
 }
 
-fpw_austro_prussian_war_category = {
-
-	test_test = {
-
-		allowed = {
-			always = yes
-		}
-
-		cost = 0
-
-		available = {
-			always = yes
-		}
-		
-		visible = {
-			always = yes
-		}
-
-		complete_effect = {
-		}
-	}
+fpw_german_unification_category = {
 	
-
 	fpw_austro_prussian_war_historical_peace = {
 
 		activation = {
@@ -297,6 +276,73 @@ fpw_austro_prussian_war_category = {
 					hostility_reason = asked_to_join
 				}
 			}
+		}
+	}
+}
+
+fpw_austro_prussian_war_category = {
+
+	fpw_annex_holstein = {
+
+		icon = GFX_decision_border_war
+
+		allowed = {
+			always = yes
+		}
+
+		cost = 100
+
+		available = {
+			AND = {
+				PRS = {
+					has_completed_focus = PRS_seek_german_support
+				}
+				every_country = {
+					limit = {
+						is_german = yes
+					}
+					any_owned_state = {
+						OR = {
+							has_state_flag = influenced_by_AUS
+							has_state_flag = influenced_by_PRS
+						}
+					}
+				}
+			}
+		}
+		
+		visible = {
+			AND = {
+				OR = {
+					original_tag = AUS
+					original_tag = PRS
+				}
+				PRS = {
+					has_completed_focus = PRS_seek_german_support
+				}
+			}
+		}			
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				if = {
+					limit = {
+						ROOT = {
+							any_owned_state = {
+								has_state_flag = influenced_by_AUS
+							}
+						}
+					}
+					add = 100
+				}
+				else = {
+					add = 40
+				}
+			}
+		}
+
+		complete_effect = {
 		}
 	}
 
