@@ -4,13 +4,13 @@
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
-        infantry = { x = 0 y = 1 }
-        infantry = { x = 0 y = 2 }
-        infantry = { x = 0 y = 3 }
-        infantry = { x = 1 y = 0 }
-        infantry = { x = 1 y = 1 }
-        infantry = { x = 1 y = 2 }
-        infantry = { x = 1 y = 3 }
+        	infantry = { x = 0 y = 1 }
+        	infantry = { x = 0 y = 2 }
+        	infantry = { x = 0 y = 3 }
+        	infantry = { x = 1 y = 0 }
+        	infantry = { x = 1 y = 1 }
+        	infantry = { x = 1 y = 2 }
+        	infantry = { x = 1 y = 3 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -50,12 +50,12 @@ division_template = {
 	#division_names_group = 
 
 	regiments = {
-		line_infantry = { x = 0 y = 0}
-		line_infantry = { x = 0 y = 1}
-		line_infantry = { x = 0 y = 2}
-		line_infantry = { x = 0 y = 3}
-		line_infantry = { x = 0 y = 4}
-		line_infantry = { x = 1 y = 0}
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 0 y = 3}
+		infantry = { x = 0 y = 4}
+		infantry = { x = 1 y = 0}
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -67,12 +67,12 @@ division_template = {
 	#division_names_group = 
 
 	regiments = {
-		line_infantry = { x = 0 y = 0}
-		line_infantry = { x = 0 y = 1}
-		line_infantry = { x = 0 y = 2}
-		line_infantry = { x = 0 y = 3}
-		line_infantry = { x = 0 y = 4}
-		line_infantry = { x = 1 y = 0}
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 0 y = 3}
+		infantry = { x = 0 y = 4}
+		infantry = { x = 1 y = 0}
 	}
 }
 

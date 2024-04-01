@@ -68,6 +68,9 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			country_event = { id=franco_prussian_fpw.4 days = 1 }
+		}
 	}
 
 	# Annex Alsace-Lorraine and Belfort into the new Reich(Moltke wanted it for further Defense)
@@ -84,6 +87,9 @@ country_event = {
 					}
 				}
 			}
+		}
+		hidden_effect = {
+			country_event = { id=franco_prussian_fpw.4 days = 1 }
 		}
 	}
 }
@@ -116,11 +122,17 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			country_event = { id=franco_prussian_fpw.5 days = 1 }
+		}
 	}
 
 	# Satisfy Bismarck by not taking too much(Too many annexations will upset the Major Powers)
 	option = {
 		name = franco_prussian_fpw.4.b
+		hidden_effect = {
+			country_event = { id=franco_prussian_fpw.5 days = 1 }
+		}
 	}
 }
 

@@ -33,7 +33,7 @@ country_event = {
 
 	option = {
 		name = austro_prussian_fpw.2.a
-		austrian_surrender = yes
+		set_global_flag = fpw_koniggratz_victory
 	}
 }
 

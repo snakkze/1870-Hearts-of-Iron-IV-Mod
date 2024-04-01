@@ -1,4 +1,8 @@
-spriteTypes = {	
+spriteTypes = {		
+	spriteType = {
+		name = "GFX_decision_category_franco_prussian_war"
+		texturefile = "gfx/interface/decisions/decision_cat_german_unification.dds"
+	}
 	spriteType = {
 		name = "GFX_decision_category_austro_prussian_war"
 		texturefile = "gfx/interface/decisions/decision_cat_austro_prussian_war.dds"

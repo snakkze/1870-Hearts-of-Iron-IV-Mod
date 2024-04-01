@@ -30,7 +30,7 @@ country_event = {
 	}
 }
 
-# austria asks for peace
+# austria asks for peace(battle of koniggratz)
 country_event = {
 	id = trigger.2
 	title = trigger.2.t
@@ -51,17 +51,17 @@ country_event = {
 			AUS = {
 				OR = {
 					AND = {
-						surrender_progress > 0.35
 						is_ai = yes
 						NOT = {
-							controls_province = 11666
+							controls_province = 583
 						}
 					}
+					# Try keeping historical
 					AND = {
 						surrender_progress > 0.5
 						is_ai = no
 						NOT = {
-							controls_province = 11666
+							controls_province = 583
 						}
 					}
 				}
@@ -78,10 +78,6 @@ country_event = {
         set_global_flag = fpw_austrian_peace
 		PRS = {
 			country_event = austro_prussian_fpw.2
-		}
-		if = {
-			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
-			ITA = { country_event = austro_prussian_fpw.4 }
 		}
 	}
 }
@@ -365,6 +361,32 @@ country_event = {
 		name = trigger.8.a
 		PRS = {
 			country_event = prussia_fpw.17
+		}
+	}
+}
+# something italy idk ask fizzyjuice
+country_event = {
+	id = trigger.9
+	title = trigger.9.t
+	desc = trigger.9.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		PRS = { has_war_with = AUS }
+		AUS = { owns_state = 160 }
+		original_tag = ITA
+	}
+
+	option = {
+		name = trigger.9.a
+		ITA = {
+			country_event = italy_fpw.3
 		}
 	}
 }

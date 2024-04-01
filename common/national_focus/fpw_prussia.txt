@@ -1438,7 +1438,6 @@ focus_tree = {
 		id = PRS_integrate_bohemia
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_pivot_to_the_past }
-		prerequisite = { focus = PRS_finish_the_habsburgs }
 		relative_position_id = PRS_pivot_to_the_past
 		x = 0
 		y = 3
@@ -1471,7 +1470,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = {
+				type = topple_government
+				target = AUS
+			}
 		}
 	}
 

@@ -1,0 +1,23 @@
+fpw_launch_unification_germany_cat = {
+	priority = 99
+
+	icon = GFX_decision_category_generic_formable_nations
+	picture = GFX_decision_category_franco_prussian_war
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		OR = {
+			is_german_minor = yes
+			original_tag = PRS
+			original_tag = AUS
+			original_tag = BAD
+			original_tag = WRT
+			original_tag = BAVs
+			original_tag = HES
+		}
+	}
+}
+

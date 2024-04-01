@@ -1,0 +1,63 @@
+fpw_launch_unification_germany_cat = {
+	fpw_launch_german_unification_play = {
+		available = {
+			# has won the brotherwar alone or with russia
+			# Austrian Empire has been dissolved
+		}
+
+		visible = {
+			# WIP
+			always = no
+		}
+
+		allowed = {
+			original_tag = PRS
+			has_completed_focus = PRS_habsburg_enemy
+		}
+
+		icon = mission_icon
+		
+		complete_effect = {
+			every_country = { 
+				limit = { 
+					OR = {
+						is_german_minor = yes
+						original_tag = BAD
+						original_tag = WRT
+						original_tag = BAV
+						original_tag = HES
+					}
+				}
+				PRS = {
+					if = {
+						limit = {
+							NOT = {
+								has_war_with = PREV
+							}
+						}
+						declare_war_on = { type = annex_everything target = PREV }
+					}
+				}
+			}
+			BAV = {
+				create_faction = fpw_GERMAN_LEAGUE
+			}
+			every_country = { 
+				limit = { 
+					AND = {
+						OR = {
+							is_german_minor = yes
+							original_tag = BAD
+							original_tag = WRT
+							original_tag = BAV
+							original_tag = HES
+						}
+					}
+				}
+				BAV = {
+					add_to_faction = PREV
+				}
+			}
+		}
+	}
+}

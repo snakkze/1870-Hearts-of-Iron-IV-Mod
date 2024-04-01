@@ -59,10 +59,6 @@ country_event = {
 	title = italy_fpw.3.t
 	desc = italy_fpw.3.d
 	picture = GFX_report_event_generic_handshake
-	trigger = {
-		PRS = { has_war_with = AUS }
-		AUS = { owns_state = 160 }
-	}
 	
 	fire_only_once = yes
 	

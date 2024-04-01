@@ -65,6 +65,36 @@ fpw_german_confederation_category = {
 
 fpw_german_unification_category = {
 
+	fpw_austro_prussian_war_historical_peace = {
+
+		activation = {
+			has_global_flag = fpw_koniggratz_victory
+		}
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			has_global_flag = fpw_prussia_peace
+		}
+		icon = mission_icon
+		is_good = yes
+		days_mission_timeout = 35
+		days_remove = 35
+		selectable_mission = no
+
+		timeout_effect = {
+			austrian_surrender = yes
+			if = {
+				limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+				ITA = { country_event = austro_prussian_fpw.4 }
+			}
+			clr_global_flag = fpw_koniggratz_victory
+		}
+	}
+
 	fpw_austro_prussian_war_escalation = {
 
 		activation = {
