@@ -1,0 +1,395 @@
+scripted_gui = {
+	fpw_influencing_gui = {
+		context_type = decision_category
+		window_name = "fpw_influencing_gui_window"
+
+		triggers = {
+			# PRUSSIAN
+
+			prs_state_anhalt_visible = {
+				ANH = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}	
+		
+			prs_state_baden_visible = {
+				BAD = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}	
+			
+			prs_state_bavaria_visible = {
+				BAV = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}	
+				
+			prs_state_bremen_visible = {
+				BRE = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_brunswick_visible = {
+				BRU = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_frankfurt_visible = {
+				FRK = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_gotha_visible = {
+				SCG = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_hamburg_visible = {
+				HAM = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_hannover_visible = {
+				HNV = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_hessen_visible = {
+				HES = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_kassel_visible = {
+				HEK = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_lippe_visible = {
+				LIP = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_luebeck_visible = {
+				LUE = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_mecklenburg_visible = {
+				MCK = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_meiningen_visible = {
+				SXM = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_nassau_visible = {
+				NAS = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_oldenburg_visible = {
+				OLD = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_saxony_visible = {
+				SXY = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_schaumburg_visible = {
+				SBL = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_schwarzburg_visible = {
+				SBG = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_strelitz_visible = {
+				MKS = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_waldeck_visible = {
+				WLD = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_weimar_visible = {
+				SXW = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			prs_state_wurttemberg_visible = {
+				WRT = {
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
+				}
+			}
+			
+			# AUSTRIAN
+			aus_state_anhalt_visible = {
+				ANH = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}	
+		
+			aus_state_baden_visible = {
+				BAD = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}	
+			
+			aus_state_bavaria_visible = {
+				BAV = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}	
+				
+			aus_state_bremen_visible = {
+				BRE = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_brunswick_visible = {
+				BRU = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_frankfurt_visible = {
+				FRK = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_gotha_visible = {
+				SCG = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_hamburg_visible = {
+				HAM = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_hannover_visible = {
+				HNV = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_hessen_visible = {
+				HES = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_kassel_visible = {
+				HEK = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_lippe_visible = {
+				LIP = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_luebeck_visible = {
+				LUE = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_mecklenburg_visible = {
+				MCK = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_meiningen_visible = {
+				SXM = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_nassau_visible = {
+				NAS = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_oldenburg_visible = {
+				OLD = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_saxony_visible = {
+				SXY = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_schaumburg_visible = {
+				SBL = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_schwarzburg_visible = {
+				SBG = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_strelitz_visible = {
+				MKS = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_waldeck_visible = {
+				WLD = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_weimar_visible = {
+				SXW = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+			
+			aus_state_wurttemberg_visible = {
+				WRT = {
+					any_owned_state = {
+						has_state_flag = influenced_by_AUS
+					}
+				}
+			}
+		}
+	}
+}

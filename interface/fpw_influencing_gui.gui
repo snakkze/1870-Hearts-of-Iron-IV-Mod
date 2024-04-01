@@ -1,0 +1,388 @@
+@ANCHOR_X = 0
+@ANCHOR_Y = -10
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "fpw_influencing_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 400 }
+
+		#ICONS NEUTRAL, PRUSSIA AND AUSTRIA
+		iconType = {
+			name ="state_prussia"
+			spriteType = "GFX_prs_state_prussia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_austria"
+			spriteType = "GFX_aus_state_austria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_anhalt"
+			spriteType = "GFX_state_anhalt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_baden"
+			spriteType = "GFX_state_baden"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_bavaria"
+			spriteType = "GFX_state_bavaria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_bremen"
+			spriteType = "GFX_state_bremen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_brunswick"
+			spriteType = "GFX_state_brunswick"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_frankfurt"
+			spriteType = "GFX_state_frankfurt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_gotha"
+			spriteType = "GFX_state_gotha"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_hamburg"
+			spriteType = "GFX_state_hamburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_hannover"
+			spriteType = "GFX_state_hannover"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_hessen"
+			spriteType = "GFX_state_hessen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_kassel"
+			spriteType = "GFX_state_kassel"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_lippe"
+			spriteType = "GFX_state_lippe"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_luebeck"
+			spriteType = "GFX_state_luebeck"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_mecklenburg"
+			spriteType = "GFX_state_mecklenburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_meiningen"
+			spriteType = "GFX_state_meiningen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_nassau"
+			spriteType = "GFX_state_nassau"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_oldenburg"
+			spriteType = "GFX_state_oldenburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_saxony"
+			spriteType = "GFX_state_saxony"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_schaumburg"
+			spriteType = "GFX_state_schaumburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_schwarzburg"
+			spriteType = "GFX_state_schwarzburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_strelitz"
+			spriteType = "GFX_state_strelitz"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_waldeck"
+			spriteType = "GFX_state_waldeck"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_weimar"
+			spriteType = "GFX_state_weimar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="state_wurttemberg"
+			spriteType = "GFX_state_wurttemberg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+		# PRUSSIA
+		iconType = {
+			name ="prs_state_anhalt"
+			spriteType = "GFX_prs_state_anhalt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_baden"
+			spriteType = "GFX_prs_state_baden"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_bavaria"
+			spriteType = "GFX_prs_state_bavaria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_bremen"
+			spriteType = "GFX_prs_state_bremen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_brunswick"
+			spriteType = "GFX_prs_state_brunswick"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_frankfurt"
+			spriteType = "GFX_prs_state_frankfurt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_gotha"
+			spriteType = "GFX_prs_state_gotha"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_hamburg"
+			spriteType = "GFX_prs_state_hamburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_hannover"
+			spriteType = "GFX_prs_state_hannover"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_hessen"
+			spriteType = "GFX_prs_state_hessen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_kassel"
+			spriteType = "GFX_prs_state_kassel"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_lippe"
+			spriteType = "GFX_prs_state_lippe"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_luebeck"
+			spriteType = "GFX_prs_state_luebeck"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_mecklenburg"
+			spriteType = "GFX_prs_state_mecklenburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_meiningen"
+			spriteType = "GFX_prs_state_meiningen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_nassau"
+			spriteType = "GFX_prs_state_nassau"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_oldenburg"
+			spriteType = "GFX_prs_state_oldenburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_saxony"
+			spriteType = "GFX_prs_state_saxony"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_schaumburg"
+			spriteType = "GFX_prs_state_schaumburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_schwarzburg"
+			spriteType = "GFX_prs_state_schwarzburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_strelitz"
+			spriteType = "GFX_prs_state_strelitz"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_waldeck"
+			spriteType = "GFX_prs_state_waldeck"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_weimar"
+			spriteType = "GFX_prs_state_weimar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_state_wurttemberg"
+			spriteType = "GFX_prs_state_wurttemberg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+		# AUSTRIA
+		iconType = {
+			name ="aus_state_anhalt"
+			spriteType = "GFX_aus_state_anhalt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_baden"
+			spriteType = "GFX_aus_state_baden"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_bavaria"
+			spriteType = "GFX_aus_state_bavaria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_bremen"
+			spriteType = "GFX_aus_state_bremen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_brunswick"
+			spriteType = "GFX_aus_state_brunswick"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_frankfurt"
+			spriteType = "GFX_aus_state_frankfurt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_gotha"
+			spriteType = "GFX_aus_state_gotha"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_hamburg"
+			spriteType = "GFX_aus_state_hamburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_hannover"
+			spriteType = "GFX_aus_state_hannover"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_hessen"
+			spriteType = "GFX_aus_state_hessen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_kassel"
+			spriteType = "GFX_aus_state_kassel"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_lippe"
+			spriteType = "GFX_aus_state_lippe"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_luebeck"
+			spriteType = "GFX_aus_state_luebeck"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_mecklenburg"
+			spriteType = "GFX_aus_state_mecklenburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_meiningen"
+			spriteType = "GFX_aus_state_meiningen"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_nassau"
+			spriteType = "GFX_aus_state_nassau"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_oldenburg"
+			spriteType = "GFX_aus_state_oldenburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_saxony"
+			spriteType = "GFX_aus_state_saxony"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_schaumburg"
+			spriteType = "GFX_aus_state_schaumburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_schwarzburg"
+			spriteType = "GFX_aus_state_schwarzburg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_strelitz"
+			spriteType = "GFX_aus_state_strelitz"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_waldeck"
+			spriteType = "GFX_aus_state_waldeck"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_weimar"
+			spriteType = "GFX_aus_state_weimar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="aus_state_wurttemberg"
+			spriteType = "GFX_aus_state_wurttemberg"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+	}
+}

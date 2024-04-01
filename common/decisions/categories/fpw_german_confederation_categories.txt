@@ -3,12 +3,11 @@ fpw_german_confederation_category = {
 	priority = {
 		base = 3
 		modifier = {
-			add = 10
+			add = 15
 			OR = {
 				is_german_minor = yes
 				tag = PRS
 				tag = AUS
-				tag = LUX
 			}
 		}
 	}

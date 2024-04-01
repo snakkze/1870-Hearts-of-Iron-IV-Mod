@@ -29,7 +29,7 @@ fpw_german_confederation_category = {
 
 		fire_only_once = no
 
-		icon = mission_iconustro_prussian_war_escalation_flag
+		icon = mission_icon_prussian_war_escalation_flag
 		
 		ai_will_do = {
 			factor = 0
@@ -63,7 +63,28 @@ fpw_german_confederation_category = {
 
 }
 
-fpw_german_unification_category = {
+fpw_austro_prussian_war_category = {
+
+	test_test = {
+
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+		}
+	}
+	
 
 	fpw_austro_prussian_war_historical_peace = {
 

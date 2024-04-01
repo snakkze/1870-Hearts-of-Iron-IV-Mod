@@ -1,0 +1,304 @@
+spriteTypes = {
+
+	# Austria, Prussia and Neutrals
+	spriteType = {
+		name = "GFX_aus_state_austria"
+		texturefile = "gfx/interface/prs_influencing_gui/states/aus_state_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_prussia"
+		texturefile = "gfx/interface/prs_influencing_gui/states/prs_state_prussia.dds"
+	}
+	spriteType = {
+		name = "GFX_state_anhalt"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_anhalt.dds"
+	}
+	spriteType = {
+		name = "GFX_state_baden"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_baden.dds"
+	}
+	spriteType = {
+		name = "GFX_state_bavaria"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_bavaria.dds"
+	}
+	spriteType = {
+		name = "GFX_state_bremen"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_bremen.dds"
+	}
+	spriteType = {
+		name = "GFX_state_brunswick"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_brunswick.dds"
+	}
+	spriteType = {
+		name = "GFX_state_frankfurt"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_frankfurt.dds"
+	}
+	spriteType = {
+		name = "GFX_state_gotha"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_gotha.dds"
+	}
+	spriteType = {
+		name = "GFX_state_hamburg"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_hamburg.dds"
+	}
+	spriteType = {
+		name = "GFX_state_hannover"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_hannover.dds"
+	}
+	spriteType = {
+		name = "GFX_state_hessen"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_hessen.dds"
+	}
+	spriteType = {
+		name = "GFX_state_kassel"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_kassel.dds"
+	}
+	spriteType = {
+		name = "GFX_state_lippe"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_lippe.dds"
+	}
+	spriteType = {
+		name = "GFX_state_luebeck"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_luebeck.dds"
+	}
+	spriteType = {
+		name = "GFX_state_mecklenburg"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_mecklenburg.dds"
+	}
+	spriteType = {
+		name = "GFX_state_meiningen"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_meiningen.dds"
+	}
+	spriteType = {
+		name = "GFX_state_nassau"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_nassau.dds"
+	}
+	spriteType = {
+		name = "GFX_state_oldenburg"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_oldenburg.dds"
+	}
+	spriteType = {
+		name = "GFX_state_saxony"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_saxony.dds"
+	}
+	spriteType = {
+		name = "GFX_state_schaumburg"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_schaumburg.dds"
+	}
+	spriteType = {
+		name = "GFX_state_schwarzburg"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_schwarzburg.dds"
+	}
+	spriteType = {
+		name = "GFX_state_strelitz"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_strelitz.dds"
+	}
+	spriteType = {
+		name = "GFX_state_waldeck"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_waldeck.dds"
+	}
+	spriteType = {
+		name = "GFX_state_weimar"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_weimar.dds"
+	}
+	spriteType = {
+		name = "GFX_state_wurttemberg"
+		texturefile = "gfx/interface/prs_influencing_gui/states/state_wurttemberg.dds"
+	}
+
+	# Prussian States
+	spriteType = {
+		name = "GFX_prs_state_anhalt"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_anhalt.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_baden"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_baden.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_bavaria"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_bavaria.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_bremen"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_bremen.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_brunswick"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_brunswick.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_frankfurt"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_frankfurt.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_gotha"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_gotha.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_hamburg"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_hamburg.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_hannover"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_hannover.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_hessen"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_hessen.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_kassel"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_kassel.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_lippe"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_lippe.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_luebeck"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_luebeck.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_mecklenburg"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_mecklenburg.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_meiningen"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_meiningen.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_nassau"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_nassau.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_oldenburg"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_oldenburg.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_saxony"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_saxony.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_schaumburg"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_schaumburg.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_schwarzburg"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_schwarzburg.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_strelitz"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_strelitz.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_waldeck"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_waldeck.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_weimar"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_weimar.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_state_wurttemberg"
+		texturefile = "gfx/interface/prs_influencing_gui/prs_states/state_wurttemberg.dds"
+	}
+
+	# Austrian States
+	spriteType = {
+		name = "GFX_aus_state_anhalt"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_anhalt.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_baden"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_baden.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_bavaria"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_bavaria.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_bremen"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_bremen.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_brunswick"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_brunswick.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_frankfurt"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_frankfurt.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_gotha"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_gotha.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_hamburg"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_hamburg.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_hannover"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_hannover.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_hessen"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_hessen.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_kassel"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_kassel.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_lippe"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_lippe.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_luebeck"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_luebeck.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_mecklenburg"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_mecklenburg.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_meiningen"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_meiningen.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_nassau"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_nassau.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_oldenburg"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_oldenburg.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_saxony"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_saxony.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_schaumburg"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_schaumburg.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_schwarzburg"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_schwarzburg.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_strelitz"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_strelitz.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_waldeck"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_waldeck.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_weimar"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_weimar.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_state_wurttemberg"
+		texturefile = "gfx/interface/prs_influencing_gui/aus_states/state_wurttemberg.dds"
+	}
+}
