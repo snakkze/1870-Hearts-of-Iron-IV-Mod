@@ -752,6 +752,17 @@ focus_tree = {
 				target = TUR
 				type = take_claimed_state
 			}
+			SOV = {
+				if = { 
+					limit = {
+						has_country_flag = joined_italy_ottomans
+					}
+					declare_war_on = {
+						target = TUR
+						type = take_claimed_state
+					}
+				}
+			}
 			hidden_effect = {
 				if = {
 					limit = { 
@@ -829,6 +840,12 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
+		select_effect = {
+			country_event = { 
+				id = italy_fpw.14
+				days = 10
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = ITA_selected
 			custom_effect_tooltip = ITA_divide
@@ -837,6 +854,45 @@ focus_tree = {
 				target = AUS
 				type = take_claimed_state
 			}
+			PRS = {
+				if = { 
+					limit = {
+						has_country_flag = joined_italy_austria
+					}
+					declare_war_on = {
+						target = AUS
+						type = take_claimed_state
+					}
+				}
+			}
+			SOV = {
+				if = { 
+					limit = {
+						has_country_flag = joined_italy_austria
+					}
+					declare_war_on = {
+						target = AUS
+						type = take_claimed_state
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						ITA = {
+							has_country_flag = italy_supported_hungary
+						}
+					}
+					AUS = {
+						
+						country_event = { 
+							id = italy_fpw.19
+							#hours = 12
+						}
+					}
+				}
+			}
+			
 		}
 	}
 	focus = {

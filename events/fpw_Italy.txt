@@ -234,7 +234,7 @@ country_event = {
 		
 		add_political_power = 25
 		hidden_effect = {
-			
+			set_country_flag = joined_italy_ottomans
 		}
 		
 	}
@@ -410,7 +410,259 @@ country_event = {
 
 
 
-
+# carve up austria start
+country_event = {
+	id = italy_fpw.14
+	title = italy_fpw.14.t
+	desc = italy_fpw.14.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# with Russia and Prussia
+	option = {
+		name = italy_fpw.14.a
+		
+		ai_chance = { 
+			factor = 10
+		}
+		add_stability = 0.05
+		
+		SOV = { 
+			country_event = { 
+				id = italy_fpw.15 
+				hours = 4
+			}
+		}
+		PRS = { 
+			country_event = { 
+				id = italy_fpw.16 
+				hours = 4
+			}
+		}
+		hidden_effect = {
+			
+			set_country_flag = italy_supported_hungary
+		}
+		
+	}
+	# only hungary
+	option = {
+		name = italy_fpw.14.b
+		
+		ai_chance = { 
+			factor = 3
+		}
+		add_political_power = 25
+		
+		hidden_effect = {
+			
+			set_country_flag = italy_supported_hungary
+		}
+	}
+	# Italy stands alone!
+	option = {
+		name = italy_fpw.5.c
+		
+		ai_chance = { 
+			factor = 1
+		}
+		
+		add_war_support = 0.05
+		
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# invite for russia
+country_event = {
+	id = italy_fpw.15
+	title = italy_fpw.15.t
+	desc = italy_fpw.15.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = italy_fpw.15.a
+		
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				has_opinion = {	
+					target = ITA
+					value > 50
+				}
+				factor = 10
+			}
+		}
+		
+		hidden_effect = {
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.7 
+					hours = 4
+				}
+			}
+			set_country_flag = joined_italy_austria
+		}
+		
+	}
+	# No
+	option = {
+		name = italy_fpw.6.b
+		
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 2
+			}
+		}
+		
+		hidden_effect = {
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.8 
+					hours = 4
+				}
+			}
+		}
+	}
+}
+# invite for prussia
+country_event = {
+	id = italy_fpw.16
+	title = italy_fpw.15.t
+	desc = italy_fpw.16.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = italy_fpw.6.a
+		
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				has_opinion = {	
+					target = ITA
+					value > 50
+				}
+				factor = 10
+			}
+		}
+		
+		hidden_effect = {
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.17 
+					hours = 4
+				}
+			}
+			set_country_flag = joined_italy_austria
+		}
+		
+	}
+	# No
+	option = {
+		name = italy_fpw.6.b
+		
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 2
+			}
+		}
+		
+		hidden_effect = {
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.18 
+					hours = 4
+				}
+			}
+		}
+	}
+}
+# prussia agrees
+country_event = {
+	id = italy_fpw.17
+	title = italy_fpw.17.t
+	desc = italy_fpw.17.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.7.a
+		
+		add_political_power = 25
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# prussia rejects
+country_event = {
+	id = italy_fpw.18
+	title = italy_fpw.18.t
+	desc = italy_fpw.18.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.8.a
+		
+		add_stability = -0.05
+		hidden_effect = {
+			
+		}
+		
+	}
+}
+# hungary revolts
+country_event = {
+	id = italy_fpw.19
+	title = italy_fpw.19.t
+	desc = italy_fpw.19.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	option = {
+		name = italy_fpw.9.a
+		
+		add_stability = -0.01
+		add_war_support = -0.01
+		
+		HUN = {
+			transfer_state = 43
+			transfer_state = 154
+			transfer_state = 155
+			transfer_state = 664
+			transfer_state = 45
+			transfer_state = 76
+		}
+		AUS = {
+			declare_war_on = {
+				target = HUN
+				type = annex_everything
+			}
+		}
+		
+		hidden_effect = {
+			#HUN = {
+			#	load_oob = hungary_revolt
+			#}
+		}
+		
+	}
+}
 
 
 
