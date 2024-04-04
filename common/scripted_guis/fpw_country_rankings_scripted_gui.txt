@@ -57,7 +57,7 @@ scripted_gui = {
     fpw_countryrankingview = {
 	
 		context_type = player_context
-		
+        parent_window_token = politics_tab
 		window_name = "countryrankingview"
 
 		visible = {

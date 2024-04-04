@@ -8,26 +8,21 @@ guiTypes = {
 		buttonType = {
 			name = "country_rankings_button"
 			quadTextureSprite ="GFX_country_ranking_button_all"
-			position = { x= 480 y = 248 }
+			position = { x= 480 y = 258 }
 			pdx_tooltip = "country_rankings_tooltip"
 			oversound = ui_menu_over
 			pdx_tooltip_anchor =
 			{
 				x = -310
 				y = 0
-				relative = yes #It is default set to yes ( to the gui object )
 			}	
-
-		}	
+		}
 	}
 
 	containerWindowType = {
 		name = "countryrankingview"
-		position = { x = 537 y = 78 }
-		size = { width = 550 height = 1363 }
-		show_animation_type = decelerated
-		hide_animation_type = accelerated
-		animation_time = 300
+		position = { x = 542 y = 0 }
+		size = { width = 550 height = 100%% }
 		moveable = no
 
 		show_sound = menu_open_window
@@ -108,6 +103,8 @@ guiTypes = {
 			margin = { top = 10 bottom = 0 }
 			orientation = upper_left
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
 
 			background = {
 				name = "GDP_list_grid_background"

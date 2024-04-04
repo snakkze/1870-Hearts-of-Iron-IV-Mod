@@ -1112,19 +1112,41 @@ gdp_growth_calc = {
 calculate_prestige = {
 	every_country = {
 		set_variable = { country_prestige = 0 }
+		set_variable = { country_industry_score = 0 }
+		set_variable = { country_army_score = 0 }
+		set_variable = { country_navy_score = 0 }
+		set_variable = { country_size_score = 0 }
 	}
 
 	every_country = {
-		set_temp_variable = { temp_gdp = country_GDP }
-		set_temp_variable = { temp_gdp_per_capita = country_GDP_per_capita }
-		set_temp_variable = { temp_manpower = deployed_army_manpower_k  }
+		# Industry
+		set_variable = { country_civ_factories = num_of_civilian_factories }
+		set_variable = { country_mil_factories = num_of_military_factories }
+		set_variable = { country_naval_factories = num_of_naval_factories  }
 
-		#multiply_temp_variable = { temp_gdp = 1.2 }
-		#multiply_temp_variable = { temp_gdp_per_capita = 0.5 }
-		multiply_temp_variable = { temp_manpower = 0.8 }
+		add_to_variable = { country_industry_score = country_civ_factories }
+		add_to_variable = { country_industry_score = country_mil_factories }
+		add_to_variable = { country_industry_score = country_naval_factories }
 
-		add_to_variable = { country_prestige = temp_gdp }
-		add_to_variable = { country_prestige = temp_gdp_per_capita }
-		add_to_variable = { country_prestige = temp_manpower }
+		# Army Land
+		set_variable = { country_land_army = num_armies  }
+		multiply_variable = { country_land_army = 0.25 }
+		add_to_variable = { country_army_score = country_land_army }
+
+		# Army Navy
+		set_variable = { country_navy_score = num_divisions }
+		multiply_variable = { country_navy_score = 0.15 }
+		add_to_variable = { country_navy_score = temp_navy_strength }
+		
+		# Size
+		set_variable = { country_states = num_owned_controlled_states }
+		multiply_variable = { country_states = 0.05 }
+		add_to_variable = { country_size_score = country_states }
+
+		add_to_variable = { country_prestige = country_industry_score }
+		add_to_variable = { country_prestige = country_army_score }
+		add_to_variable = { country_prestige = country_navy_score }
+		add_to_variable = { country_prestige = country_size_score }
+		add_to_variable = { country_prestige = country_GDP }
 	}
 }
