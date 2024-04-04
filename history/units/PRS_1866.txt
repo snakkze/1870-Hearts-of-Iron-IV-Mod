@@ -44,6 +44,7 @@ division_template = {
 division_template = {
 	name = "Garde-Infanterie-Division"
 	division_names_group = PRS_GAR_01
+	priority = 2
 	is_locked = no
 
 	regiments = {

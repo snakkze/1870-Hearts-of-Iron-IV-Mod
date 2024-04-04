@@ -1,0 +1,146 @@
+scripted_gui = {
+    country_rankings_button = {
+        window_name = "country_rankings_window"
+        parent_window_token = politics_tab
+        context_type = player_context
+
+        visible = {
+            always = yes
+        }
+
+        effects = {
+     		country_rankings_button_click = {
+                clr_global_flag = sort_low_to_high
+                set_global_flag = sort_high_to_low
+                if = {
+                    limit = {
+                        has_global_flag = example_gui
+                    }
+                    clr_global_flag = example_gui
+                }
+                else = {
+                    set_global_flag = example_gui
+                }
+                set_variable = { old_array_num = global.prestige_list_array^num }
+				clear_array = global.prestige_list_array
+				every_country = {
+					if = {
+						limit = {
+							NOT = { is_in_array = { global.prestige_list_array = THIS } }
+						}
+						add_to_array = { global.prestige_list_array = THIS }
+						#calculate_GDP = yes # Is calculated monthly
+					}
+				}
+                set_variable = { new_array_num = global.prestige_list_array^num }
+                calculate_prestige = yes
+                if = {
+                    limit = {
+                        NOT = {
+                            check_variable = { old_array_num = new_array_num }
+                        }
+                    }
+                    calculate_GDP = yes
+                }
+				update_position = yes
+            }
+        }
+
+        ai_enabled = {
+            always = no
+        }
+
+        ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+        ai_test_variance = 0.5
+    }
+
+    fpw_countryrankingview = {
+	
+		context_type = player_context
+		
+		window_name = "countryrankingview"
+
+		visible = {
+			has_global_flag = example_gui
+		}
+
+		dynamic_lists = {
+			fpw_country_list_grid = {
+				array = global.prestige_list_array
+				change_scope = yes
+				entry_container = fpw_country_list_entry
+			}
+		}
+		effects = {
+			close_button_click = {
+                clr_global_flag = example_gui
+			}
+
+            fpw_list_sort_button_prestige_click = {
+                create_PRESTIGE_sorted_array = yes
+                if = {
+                    limit = {
+                        has_global_flag = sort_high_to_low
+                    }
+                    clr_global_flag = sort_high_to_low
+                    set_global_flag = sort_low_to_high
+                }
+                else = {
+                    clr_global_flag = sort_low_to_high
+                    set_global_flag = sort_high_to_low
+                }
+            }
+            fpw_list_sort_button_status_click = {
+                create_PRESTIGE_sorted_array = yes
+                if = {
+                    limit = {
+                        has_global_flag = sort_high_to_low
+                    }
+                    clr_global_flag = sort_high_to_low
+                    set_global_flag = sort_low_to_high
+                }
+                else = {
+                    clr_global_flag = sort_low_to_high
+                    set_global_flag = sort_high_to_low
+                }
+            }
+            fpw_list_sort_button_pos_click = {
+                create_PRESTIGE_sorted_array = yes
+                if = {
+                    limit = {
+                        has_global_flag = sort_high_to_low
+                    }
+                    clr_global_flag = sort_high_to_low
+                    set_global_flag = sort_low_to_high
+                }
+                else = {
+                    clr_global_flag = sort_low_to_high
+                    set_global_flag = sort_high_to_low
+                }
+            }
+            fpw_list_sort_button_country_click = {
+                create_PRESTIGE_sorted_array = yes
+                if = {
+                    limit = {
+                        has_global_flag = sort_high_to_low
+                    }
+                    clr_global_flag = sort_high_to_low
+                    set_global_flag = sort_low_to_high
+                }
+                else = {
+                    clr_global_flag = sort_low_to_high
+                    set_global_flag = sort_high_to_low
+                }
+            }
+
+		}
+		triggers = {
+
+		}
+		properties = {
+            fpw_list_flag_button = {
+				image = "[THIS.GetFlag]"
+			}
+		}
+	}
+}

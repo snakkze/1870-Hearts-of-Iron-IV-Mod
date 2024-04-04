@@ -108,6 +108,9 @@ focus_tree = {
 			# National idea "nationalism" or "brothers on the front" attack on austrian core higher because its same VOLK but lower war intrest because its the same Volk!
 			# Idea is for the fact to make the war easier
 			#set_state_owner = 58
+			# thanks snakkze for documenting how it worked cause i completly forgot it -snakkze
+
+			country_event = { id = prussia_fpw.6 }
 		}
 	}
 

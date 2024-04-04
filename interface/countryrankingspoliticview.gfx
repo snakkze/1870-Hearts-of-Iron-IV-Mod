@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_country_ranking_button_all"
+		texturefile = "gfx/interface/country_ranking_open_button.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_diplo_countrylist_flag_large_frame"
+		texturefile = "gfx/interface/diplo_countrylist_flag_large_frame.dds"
+	}
+
+}

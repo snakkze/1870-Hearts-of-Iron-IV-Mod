@@ -250,7 +250,15 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.6.a
+		set_state_owner = 58
+		AUS = { country_event = { id = prussia_fpw.7 hours = 2 } }
+	}
 
+	option = {
+		name = prussia_fpw.6.b
+		PRS = {
+			complete_national_focus = PRS_bruderkrieg_ending
+		}
 	}
 }
 
@@ -265,7 +273,7 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.7.a
-
+		set_global_flag = austro_prussian_war_escalation_flag
 	}
 }
 

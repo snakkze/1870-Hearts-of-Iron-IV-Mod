@@ -16,6 +16,18 @@ on_actions = {
 					modifier = fpw_tribal_state_modifier
 				}
 			}
+			every_country = {
+				if = {
+					limit = {
+						NOT = { is_in_array = { global.prestige_list_array = THIS } }
+					}
+					add_to_array = { global.prestige_list_array = THIS }
+				}
+				calculate_GDP = no
+				GDP_growth_calculation = yes
+				gdp_growth_calc = yes
+			}
+
 
 			if = {
 				limit = {
@@ -95,6 +107,13 @@ on_actions = {
 					set_state_flag = tribe_state
 				}
 			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			calculate_GDP = yes
+			GDP_growth_calculation = yes
 		}
 	}
 }

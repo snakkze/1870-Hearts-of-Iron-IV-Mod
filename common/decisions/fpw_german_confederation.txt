@@ -295,7 +295,7 @@ fpw_austro_prussian_war_category = {
 		available = {
 			AND = {
 				PRS = {
-					has_completed_focus = PRS_seek_german_support
+					has_completed_focus = PRS_propose_federal_reform
 				}
 				every_country = {
 					limit = {
@@ -308,6 +308,9 @@ fpw_austro_prussian_war_category = {
 						}
 					}
 				}
+				NOT = {
+					has_completed_focus = PRS_annex_holstein
+				}
 			}
 		}
 		
@@ -319,6 +322,14 @@ fpw_austro_prussian_war_category = {
 				}
 				PRS = {
 					has_completed_focus = PRS_seek_german_support
+				}
+				NOT = {
+					PRS = {
+						OR = {
+							has_completed_focus = PRS_austro_prussian_victory
+							has_completed_focus = PRS_bruderkrieg_ending
+						}
+					}
 				}
 			}
 		}			
@@ -343,6 +354,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		complete_effect = {
+			complete_national_focus = PRS_annex_holstein
 		}
 	}
 

@@ -1,0 +1,7 @@
+pos_sort = {
+    target_array = global.fpw_countries_temp_array
+    targets_dynamic = yes
+    score = {
+        factor = num_of_factories
+    }
+}

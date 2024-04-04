@@ -1,0 +1,10 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_republican_opposition"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_opposition.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_liberal_country"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+	}
+}

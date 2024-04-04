@@ -10,7 +10,6 @@ debug_dissolve_austria = {
 				AND = {
 					is_owned_by = AUS
 					OR = {
-						state = 109
 						state = 103
 						state = 163
 					}

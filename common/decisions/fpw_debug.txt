@@ -257,6 +257,42 @@ debug_decisions = {
 		}
 	}
 
+	calculate_total_pop= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			set_variable = { ROOT.total_population = 0 }
+			custom_effect_tooltip = "Total Population equals to [?ROOT.total_population] vs [?ROOT.max_manpower]"
+			every_country = {
+				if = {
+					limit = {
+						NOT = { is_in_array = { pop.fpw_list_array = THIS.manpower } }
+					}
+					add_to_array = { pop.fpw_list_array = THIS }
+				}
+			}
+		}
+	}
+
 	calculate_debuffs= {
 
 		icon = eng_trade_unions_demand

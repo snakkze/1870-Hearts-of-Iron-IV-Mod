@@ -28,8 +28,10 @@ scripted_gui = {
                             }
                             AND = {
                                 is_coastal = yes
-                                limit = {
-                                    is_owned_by = ROOT
+                                if = {
+                                    limit = {
+                                        is_owned_by = ROOT
+                                    }
                                 }
                                 distance_to = {
                                     value < 75

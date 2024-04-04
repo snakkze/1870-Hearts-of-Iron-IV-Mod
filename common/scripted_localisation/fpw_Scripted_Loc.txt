@@ -1,17 +1,118 @@
 defined_text = {
-    name = get_fpw_version
-
+    name = fpw_country_position_loc
     text = {
         trigger = {
-            is_debug = yes
+            has_global_flag = sort_high_to_low
+            add_to_temp_variable = { i = 1}
         }
-        localization_key = "fpw_version_debug"
+        localization_key = fpw_country_pos_localization_key_htl
     }
-
     text = {
         trigger = {
-            is_debug = no
+            has_global_flag = sort_low_to_high
+            set_temp_variable = { x = global.prestige_list_array^num }
+            subtract_from_temp_variable = { x = i }
         }
-        localization_key = "fpw_version_nondebug"
+        localization_key = fpw_country_pos_localization_key_lth
     }
+}
+
+defined_text = {
+	name = country_GDP_f_d
+	text = {
+		trigger = {
+			check_variable = { country_GDP < 1 }
+		}
+		localization_key = country_GDP_M_d
+	}
+	text = {
+		trigger = {
+			check_variable = { country_GDP > 999 }
+		}
+		localization_key = country_GDP_T_d
+	}
+	text = {
+		localization_key = country_GDP_B_d
+	}
+}
+
+
+defined_text = {
+    name = fpw_country_prestige_loc
+    text = {
+        trigger = {
+            always = yes
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            round_temp_variable = temp_prestige
+        }
+        localization_key = fpw_prestige_localization_key
+    }
+}
+
+defined_text = {
+    name = fpw_country_power_rank_loc
+    text = {
+        trigger = {
+            # Starting at 350
+            check_variable = { THIS.country_prestige > 399 }
+        }
+        localization_key = fpw_country_rank_great_power_localization_key
+    }
+    text = {
+        trigger = {
+            # Starting at 350
+            check_variable = { THIS.country_prestige > 349 }
+        }
+        localization_key = fpw_country_rank_major_power_localization_key
+    }
+    text = {
+        trigger = {
+            check_variable = { THIS.country_prestige > 299 }
+        }
+        localization_key = fpw_country_rank_unrecognized_major_power_localization_key
+    }
+    text = {
+        trigger = {
+            check_variable = { THIS.country_prestige > 249 }
+        }
+        localization_key = fpw_country_rank_minor_power_localization_key
+    }
+    text = {
+        trigger = {
+            check_variable = { THIS.country_prestige > 149 }
+        }
+        localization_key = fpw_country_rank_unrecognized_minor_power_localization_key
+    }
+    text = {
+        trigger = {
+            check_variable = { THIS.country_prestige > 69 }
+        }
+        localization_key = fpw_country_rank_insignificant_power_localization_key
+    }
+    text = {
+        trigger = {
+            check_variable = { THIS.country_prestige < 70 }
+        }
+        localization_key = fpw_country_rank_unrecognized_insignificant_power_localization_key
+    }
+}
+
+defined_text = {
+	name = GetSortArray
+	text = {
+		trigger = {
+			check_variable = { temp_array_sort = 4 }
+		}
+		localization_key = "global.prestige_list_array"
+	}
+}
+
+defined_text = {
+	name = GetSortValue		
+	text = {
+		trigger = {
+			check_variable = { temp_value_sort = 2 }
+		}
+		localization_key = "country_prestige"
+	}
 }
