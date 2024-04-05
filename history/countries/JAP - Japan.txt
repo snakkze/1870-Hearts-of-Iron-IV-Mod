@@ -5,6 +5,11 @@ capital = 282
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
+
+add_dynamic_modifier = { 
+	modifier = fpw_JAP_isolated 
+}
+
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
@@ -16,62 +21,6 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
-}
-
-609 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-527 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-525 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-745 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-524 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-647 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-684 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-633 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
 }
 
 if = {

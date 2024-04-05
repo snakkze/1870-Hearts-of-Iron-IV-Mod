@@ -1,5 +1,13 @@
 capital = 797
 
+add_dynamic_modifier = { 
+	modifier = fpw_victors_of_the_crimean_war 
+}
+
+add_dynamic_modifier = { 
+	modifier = fpw_TUR_sick_man_of_europe 
+}
+
 if = {
 	limit = {
 		NOT = {

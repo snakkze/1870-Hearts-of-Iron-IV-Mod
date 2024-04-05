@@ -2,6 +2,10 @@ capital = 361
 
 oob = "USA_1936"
 
+add_dynamic_modifier = { 
+	modifier = fpw_USA_divided_country 
+}
+
 starting_train_buffer = 5
 
 if = {

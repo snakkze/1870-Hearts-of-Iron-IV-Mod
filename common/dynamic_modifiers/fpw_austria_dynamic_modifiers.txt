@@ -33,3 +33,10 @@ fpw_AUS_autonomous_state4 = {
 	state_production_speed_industrial_complex_factor = -0.1
 	state_production_speed_arms_factory_factor = -0.1
 }
+
+fpw_AUS_loser_of_the_brotherswar = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	custom_modifier_tooltip = prestige_modifier_loser_of_brotherswar
+}

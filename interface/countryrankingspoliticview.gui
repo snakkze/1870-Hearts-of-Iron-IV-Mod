@@ -154,7 +154,7 @@ guiTypes = {
 			name ="fpw_list_prestige"
 			position = { x = 100 y = 20 }
 			font = "hoi_16mbs"
-			text = "[fpw_country_prestige_loc]"
+			text = [fpw_country_prestige_loc]
 			format = centre
 			maxWidth = 400
 			maxHeight = 24

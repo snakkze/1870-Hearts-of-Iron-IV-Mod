@@ -5,6 +5,13 @@
 
 set_oob = "SOV_1866"
 
+add_dynamic_modifier = { 
+	modifier = fpw_underdeveloped_industry 
+}
+add_dynamic_modifier = { 
+	modifier = fpw_SOV_losers_of_the_crimean_war 
+}
+
 set_politics = {
 	ruling_party = authoritarian_ideology
 	last_election = "1933.7.1"

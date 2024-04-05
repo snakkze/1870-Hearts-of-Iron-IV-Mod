@@ -36,7 +36,6 @@ defined_text = {
 	}
 }
 
-
 defined_text = {
     name = fpw_country_prestige_loc
     text = {
@@ -53,39 +52,47 @@ defined_text = {
     name = fpw_country_power_rank_loc
     text = {
         trigger = {
-            # Starting at 350
-            check_variable = { THIS.country_prestige > 399 }
+			is_in_array = { global.top_seven_prestige_array = THIS }
         }
         localization_key = fpw_country_rank_great_power_localization_key
     }
     text = {
         trigger = {
-            # Starting at 350
-            check_variable = { THIS.country_prestige > 349 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            multiply_temp_variable = { temp_last_prestige = 0.79 }
+            check_variable = { THIS.country_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_major_power_localization_key
     }
     text = {
         trigger = {
-            check_variable = { THIS.country_prestige > 299 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            multiply_temp_variable = { temp_last_prestige = 0.64 }
+            check_variable = { THIS.country_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_unrecognized_major_power_localization_key
     }
     text = {
         trigger = {
-            check_variable = { THIS.country_prestige > 249 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            multiply_temp_variable = { temp_last_prestige = 0.24 }
+            check_variable = { THIS.country_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_minor_power_localization_key
     }
     text = {
         trigger = {
-            check_variable = { THIS.country_prestige > 149 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            multiply_temp_variable = { temp_last_prestige = 0.14 }
+            check_variable = { THIS.country_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_unrecognized_minor_power_localization_key
     }
     text = {
         trigger = {
-            check_variable = { THIS.country_prestige > 69 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            multiply_temp_variable = { temp_last_prestige = 0.09 }
+            check_variable = { THIS.country_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_insignificant_power_localization_key
     }

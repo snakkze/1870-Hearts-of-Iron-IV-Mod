@@ -1,0 +1,432 @@
+give_prestige_modifiers = {
+	# Austria
+	if = {
+		limit = {
+			NOT = {
+				AUS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_AUS_loser_of_the_brotherswar
+					}
+				}
+			}
+		}
+		AUS = {
+			add_dynamic_modifier = { 
+				modifier = fpw_AUS_loser_of_the_brotherswar 
+			}
+		}
+	}
+
+	# Russia
+	if = {
+		limit = {
+			NOT = {
+				SOV = {		
+					has_dynamic_modifier = {
+						modifier = fpw_SOV_losers_of_the_crimean_war
+					}
+				}
+			}
+		}
+		SOV = {
+			add_dynamic_modifier = { 
+				modifier = fpw_SOV_losers_of_the_crimean_war 
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				SOV = {		
+					has_dynamic_modifier = {
+						modifier = fpw_underdeveloped_industry
+					}
+				}
+			}
+		}
+		SOV = {
+			add_dynamic_modifier = { 
+				modifier = fpw_underdeveloped_industry 
+			}
+		}
+	}
+
+	# Prussia
+	if = {
+		limit = {
+			NOT = {
+				PRS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_PRS_victor_of_the_brothers_war
+					}
+				}
+			}
+		}
+		PRS = {
+			add_dynamic_modifier = { 
+				modifier = fpw_PRS_victor_of_the_brothers_war 
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				PRS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_PRS_heil_dir_im_siegerkranz
+					}
+				}
+			}
+		}
+		PRS = {
+			add_dynamic_modifier = { 
+				modifier = fpw_PRS_heil_dir_im_siegerkranz 
+			}
+		}
+	}
+
+	# England
+	if = {
+		limit = {
+			NOT = {
+				ENG = {		
+					has_dynamic_modifier = {
+						modifier = fpw_ENG_sun_never_sets
+					}
+				}
+			}
+		}
+		ENG = {
+			add_dynamic_modifier = { 
+				modifier = fpw_ENG_sun_never_sets 
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				ENG = {		
+					has_dynamic_modifier = {
+						modifier = fpw_victors_of_the_crimean_war
+					}
+				}
+			}
+		}
+		ENG = {
+			add_dynamic_modifier = { 
+				modifier = fpw_victors_of_the_crimean_war 
+			}
+		}
+	}
+
+	# France
+	if = {
+		limit = {
+			NOT = {
+				FRA = {		
+					has_dynamic_modifier = {
+						modifier = fpw_victors_of_the_crimean_war
+					}
+				}
+			}
+		}
+		FRA = {
+			add_dynamic_modifier = { 
+				modifier = fpw_victors_of_the_crimean_war 
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				FRA = {		
+					has_dynamic_modifier = {
+						modifier = fpw_FRA_loser_of_1871
+					}
+				}
+			}
+		}
+		FRA = {
+			add_dynamic_modifier = { 
+				modifier = fpw_FRA_loser_of_1871 
+			}
+		}
+	}
+
+	# Turkey
+	if = {
+		limit = {
+			NOT = {
+				TUR = {		
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe
+					}
+				}
+			}
+		}
+		TUR = {
+			add_dynamic_modifier = { 
+				modifier = fpw_TUR_sick_man_of_europe 
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				TUR = {		
+					has_dynamic_modifier = {
+						modifier = fpw_victors_of_the_crimean_war
+					}
+				}
+			}
+		}
+		TUR = {
+			add_dynamic_modifier = { 
+				modifier = fpw_victors_of_the_crimean_war 
+			}
+		}
+	}
+
+	# China
+	if = {
+		limit = {
+			NOT = {
+				CHI = {		
+					has_dynamic_modifier = {
+						modifier = fpw_CHI_divided_country
+					}
+				}
+			}
+		}
+		CHI = {
+			add_dynamic_modifier = { 
+				modifier = fpw_CHI_divided_country 
+			}
+		}
+	}
+
+	# USA
+	if = {
+		limit = {
+			NOT = {
+				USA = {		
+					has_dynamic_modifier = {
+						modifier = fpw_USA_divided_country
+					}
+				}
+			}
+		}
+		USA = {
+			add_dynamic_modifier = { 
+				modifier = fpw_USA_divided_country 
+			}
+		}
+	}
+
+	# Japan
+	if = {
+		limit = {
+			NOT = {
+				JAP = {		
+					has_dynamic_modifier = {
+						modifier = fpw_JAP_isolated
+					}
+				}
+			}
+		}
+		JAP = {
+			add_dynamic_modifier = { 
+				modifier = fpw_JAP_isolated 
+			}
+		}
+	}
+	force_update_dynamic_modifier = yes
+}
+
+apply_prestige_modifier_effetcs = {
+	# Austria
+	if = {
+		limit = {
+			AUS = {		
+				has_dynamic_modifier = {
+					modifier = fpw_AUS_loser_of_the_brotherswar
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.15 }
+		subtract_from_variable = { AUS.country_base_prestige = prestige_to_remove }
+	}
+
+	# Russia
+	if = {
+		limit = {
+			SOV = {		
+				has_dynamic_modifier = {
+					modifier = fpw_SOV_losers_of_the_crimean_war
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.25 }
+		subtract_from_variable = { SOV.country_base_prestige = prestige_to_remove }
+	}
+	if = {
+		limit = {
+			SOV = {		
+				has_dynamic_modifier = {
+					modifier = fpw_underdeveloped_industry
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.25 }
+		subtract_from_variable = { SOV.country_base_prestige = prestige_to_remove }
+	}
+
+	# Prussia
+	if = {
+		limit = {
+			PRS = {		
+				has_dynamic_modifier = {
+					modifier = fpw_PRS_victor_of_the_brothers_war
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_add = 150 }
+		multiply_temp_variable = { prestige_to_add = 0.15 }
+		add_to_variable = { PRS.country_base_prestige = prestige_to_add }
+	}
+	if = {
+		limit = {
+			PRS = {		
+				has_dynamic_modifier = {
+					modifier = fpw_PRS_heil_dir_im_siegerkranz
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_add = 150 }
+		multiply_temp_variable = { prestige_to_add = 0.15 }
+		add_to_variable = { PRS.country_base_prestige = prestige_to_add }
+	}
+
+	# England
+	if = {
+		limit = {
+			ENG = {		
+				has_dynamic_modifier = {
+					modifier = fpw_ENG_sun_never_sets
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_add = 150 }
+		multiply_temp_variable = { prestige_to_add = 0.25 }
+		add_to_variable = { ENG.country_base_prestige = prestige_to_add }
+	}
+	if = {
+		limit = {
+			ENG = {		
+				has_dynamic_modifier = {
+					modifier = fpw_victors_of_the_crimean_war
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_add = 150 }
+		multiply_temp_variable = { prestige_to_add = 0.25 }
+		add_to_variable = { ENG.country_base_prestige = prestige_to_add }
+	}
+
+	# France
+	if = {
+		limit = {
+			FRA = {		
+				has_dynamic_modifier = {
+					modifier = fpw_victors_of_the_crimean_war
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_add = 150 }
+		multiply_temp_variable = { prestige_to_add = 0.25 }
+		add_to_variable = { FRA.country_base_prestige = prestige_to_add }
+	}
+	if = {
+		limit = {
+			FRA = {		
+				has_dynamic_modifier = {
+					modifier = fpw_FRA_loser_of_1871
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.35 }
+		subtract_from_variable = { FRA.country_base_prestige = prestige_to_remove }
+	}
+
+	# Turkey
+	if = {
+		limit = {
+			TUR = {		
+				has_dynamic_modifier = {
+					modifier = fpw_victors_of_the_crimean_war
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_add = 150 }
+		multiply_temp_variable = { prestige_to_add = 0.25 }
+		add_to_variable = { TUR.country_base_prestige = prestige_to_add }
+	}
+	if = {
+		limit = {
+			TUR = {		
+				has_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.15 }
+		subtract_from_variable = { TUR.country_base_prestige = prestige_to_remove }
+	}
+
+	# China
+	if = {
+		limit = {
+			CHI = {		
+				has_dynamic_modifier = {
+					modifier = fpw_CHI_divided_country
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.35 }
+		subtract_from_variable = { CHI.country_base_prestige = prestige_to_remove }
+	}
+
+	# USA
+	if = {
+		limit = {
+			USA = {		
+				has_dynamic_modifier = {
+					modifier = fpw_USA_divided_country
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.35 }
+		subtract_from_variable = { USA.country_base_prestige = prestige_to_remove }
+	}
+
+	# Japan
+	if = {
+		limit = {
+			JAP = {		
+				has_dynamic_modifier = {
+					modifier = fpw_JAP_isolated
+				}
+			}
+		}
+		set_temp_variable = { prestige_to_remove = 150 }
+		multiply_temp_variable = { prestige_to_remove = 0.25 }
+		subtract_from_variable = { JAP.country_base_prestige = prestige_to_remove }
+	}
+}

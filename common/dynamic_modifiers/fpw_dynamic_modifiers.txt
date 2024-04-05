@@ -5,3 +5,17 @@ fpw_colonial_debuff = {
 	political_power_factor = ROOT.debuff
 	custom_modifier_tooltip = fpw_colonize_debuff_modifier_tt
 }
+
+fpw_victors_of_the_crimean_war = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	custom_modifier_tooltip = prestige_modifier_crimean_victors
+}
+
+fpw_underdeveloped_industry = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	custom_modifier_tooltip = prestige_modifier_underdeveloped_country
+}

@@ -1,0 +1,7 @@
+fpw_TUR_sick_man_of_europe = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	# Maybe add more debuffs here later
+	custom_modifier_tooltip = prestige_modifier_sick_man_of_europe
+}

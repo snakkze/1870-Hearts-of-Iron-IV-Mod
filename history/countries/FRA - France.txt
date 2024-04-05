@@ -2,6 +2,10 @@ capital = 16
 
 oob = "FRA_1866"
 
+add_dynamic_modifier = { 
+	modifier = fpw_victors_of_the_crimean_war 
+}
+
 set_cosmetic_tag = FRA_kingdom
 
 set_politics = {

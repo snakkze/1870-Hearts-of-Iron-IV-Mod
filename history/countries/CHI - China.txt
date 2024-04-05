@@ -2,6 +2,10 @@ capital = 613 # Nanjing
 
 set_cosmetic_tag = CHI_qing
 
+add_dynamic_modifier = { 
+	modifier = fpw_CHI_divided_country 
+}
+
 oob = "CHI_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
