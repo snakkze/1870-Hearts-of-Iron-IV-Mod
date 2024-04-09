@@ -239,6 +239,28 @@ country_event = {
 	}
 }
 
+# Prussia asking the german confederation to unite as a country withouth austria
+country_event = {
+	id = prussia_fpw.18
+	title = prussia_fpw.18.t
+	desc = prussia_fpw.18.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	# Austria: If they provoke us than we will provoke them
+	option = {
+		name = prussia_fpw.18.a
+		if = {
+			limit = {
+				original_tag = AUS
+			}
+			# Ask The schleswig holstein Question
+			PRS = { country_event = { id = prussia_fpw.6 hours = 2 } }
+		}
+	}
+}
+
 # Schleswig Holsteinischer Frage
 country_event = {
 	id = prussia_fpw.6
@@ -248,12 +270,14 @@ country_event = {
 
 	is_triggered_only = yes
 
+	# Prussia: You know what, fuck them
 	option = {
 		name = prussia_fpw.6.a
-		set_state_owner = 58
+		complete_national_focus = PRS_annex_holstein
 		AUS = { country_event = { id = prussia_fpw.7 hours = 2 } }
 	}
 
+	# We should back off before war starts
 	option = {
 		name = prussia_fpw.6.b
 		PRS = {
@@ -263,16 +287,35 @@ country_event = {
 }
 
 # Bundesbeschluss
+# Basically did the prussians and austrians made the territories of the first german war to both of them, so they both own schleswig holstein. In the bundesbeschluss austria was allowed to mobilized against prussia cause they took holstein after austria
+# tried to recruit men in the territories of schleswig holstein
 country_event = {
 	id = prussia_fpw.7
+	# Prussia annexing holstein
 	title = prussia_fpw.7.t
+	# After provocations from both sides did prussia annex austrian holstein
 	desc = prussia_fpw.7.d
 	picture = GFX_report_event_generic_handshake
 
 	is_triggered_only = yes
 
+	# This cant be real! Ask Frankfurt for mobilisation
 	option = {
 		name = prussia_fpw.7.a
+		FRK = { country_event = { id = prussia_fpw.19 hours = 2 } }
+	}
+}
+
+country_event = {
+	id = prussia_fpw.19
+	title = prussia_fpw.19.t
+	desc = prussia_fpw.19.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.19.a
 		set_global_flag = austro_prussian_war_escalation_flag
 	}
 }
@@ -422,7 +465,8 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.9.a
-		
+		# prestige for bavaria
+		# some buffs for bavaria
 	}
 }
 
@@ -452,7 +496,7 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.11.a
-
+		FRA = { country_event = { id = france_fpw.1 hours = 2 } }
 	}
 }
 
@@ -467,7 +511,68 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.12.a
+		ai_chance = {
+			base = 10 
+			modifier = {
+				add = 10 
+				has_opinion = {
+					target = PRS
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = PRS
+					value > 20
+				}
+			}
+			modifier = {
+				add = 30 
+				has_opinion = {
+					target = PRS
+					value > 30
+				}
+			}
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
+		PRS = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			country_event = prussia_fpw.13
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
+	}
 
+	option = {
+		name = prussia_fpw.12.b
+		ai_chance = {
+			base = 10 
+			modifier = {
+				factor = 5
+				has_opinion = {
+					target = PRS
+					value < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		PRS = {
+			country_event = prussia_fpw.14
+		}
 	}
 }
 
@@ -497,11 +602,31 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.14.a
-
+		PRS = {
+			create_wargoal = {
+				target = PREV
+				type = take_state_focus
+			}
+		}
 	}
 }
 
 # Germanic Unification(Could also be a superevent later)
+country_event = {
+	id = prussia_fpw.15
+	title = prussia_fpw.15.t
+	desc = prussia_fpw.15.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.15.a
+
+	}
+}
+
+# German Military Parade
 country_event = {
 	id = prussia_fpw.15
 	title = prussia_fpw.15.t

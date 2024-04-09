@@ -137,7 +137,7 @@ country_event = {
 	}
 }
 
-# France ask for peace
+# Sedan
 country_event = {
 	id = trigger.4
 	title = trigger.4.t
@@ -156,25 +156,12 @@ country_event = {
 				has_war_with = PRS
 			}
 			FRA = {
-				OR = {
-					AND = {
-						surrender_progress > 0.35
-						is_ai = yes
-						NOT = {
-							controls_province = 3560
-						}
-					}
-					AND = {
-						surrender_progress > 0.5
-						is_ai = no
-						NOT = {
-							controls_province = 3560
-						}
-					}
+				NOT = {
+					controls_province = 3560
 				}
 			}
 			NOT = {
-				has_global_flag = fpw_french_peace
+				has_global_flag = fpw_lost_sedan
 			}
 		}
 	}
@@ -182,10 +169,10 @@ country_event = {
 	option = {
 		name = trigger.4.a
 
-        set_global_flag = fpw_french_peace
-		PRS = {
-			# Napoleon Third is captured
-			country_event = franco_prussian_fpw.1
+        set_global_flag = fpw_lost_sedan
+		FRA = {
+			# Sedan falls
+			country_event = franco_prussian_fpw.6
 		}
 	}
 }
@@ -387,6 +374,61 @@ country_event = {
 		name = trigger.9.a
 		ITA = {
 			country_event = italy_fpw.3
+		}
+	}
+}
+
+# Paris
+country_event = {
+	id = trigger.10
+	title = trigger.10.t
+	desc = trigger.10.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			FRA = {
+				has_war_with = PRS
+			}
+			FRA = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 11506
+							controls_province = 3560
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no
+						NOT = {
+							controls_province = 11506
+							controls_province = 3560
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_lost_paris
+			}
+		}
+	}
+
+	option = {
+		name = trigger.10.a
+
+        set_global_flag = fpw_lost_paris
+		PRS = {
+			# france versailles pre peace
+			country_event = franco_prussian_fpw.1
 		}
 	}
 }

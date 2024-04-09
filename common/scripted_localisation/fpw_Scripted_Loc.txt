@@ -58,47 +58,67 @@ defined_text = {
     }
     text = {
         trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
             set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
             multiply_temp_variable = { temp_last_prestige = 0.79 }
-            check_variable = { THIS.country_prestige > temp_last_prestige }
+            check_variable = { temp_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_major_power_localization_key
     }
     text = {
         trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
             set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
             multiply_temp_variable = { temp_last_prestige = 0.64 }
-            check_variable = { THIS.country_prestige > temp_last_prestige }
+            check_variable = { temp_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_unrecognized_major_power_localization_key
     }
     text = {
         trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
             set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
             multiply_temp_variable = { temp_last_prestige = 0.24 }
-            check_variable = { THIS.country_prestige > temp_last_prestige }
+            check_variable = { temp_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_minor_power_localization_key
     }
     text = {
         trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
             set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
             multiply_temp_variable = { temp_last_prestige = 0.14 }
-            check_variable = { THIS.country_prestige > temp_last_prestige }
+            check_variable = { temp_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_unrecognized_minor_power_localization_key
     }
     text = {
         trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
             set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
             multiply_temp_variable = { temp_last_prestige = 0.09 }
-            check_variable = { THIS.country_prestige > temp_last_prestige }
+            check_variable = { temp_prestige > temp_last_prestige }
         }
         localization_key = fpw_country_rank_insignificant_power_localization_key
     }
     text = {
         trigger = {
-            check_variable = { THIS.country_prestige < 70 }
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
+            multiply_temp_variable = { temp_last_prestige = 0.09 }
+            check_variable = { temp_prestige < temp_last_prestige }
         }
         localization_key = fpw_country_rank_unrecognized_insignificant_power_localization_key
     }

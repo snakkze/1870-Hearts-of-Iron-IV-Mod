@@ -1,0 +1,100 @@
+@ANCHOR_X = 0
+@ANCHOR_Y = -10
+
+guiTypes = {
+	containerWindowType = {
+		name = "fpw_great_war_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 255 }
+
+		instantTextBoxType = {
+			name ="fpw_initiator_title"
+			position = { x = -60 y = -3 }
+			font = "hoi_36header"
+			text = "Initiator"
+			format = centre
+			maxWidth = 400
+			maxHeight = 25
+		}
+
+		instantTextBoxType = {
+			name ="fpw_target_title"
+			position = { x = 160 y = -3 }
+			font = "hoi_36header"
+			text = "Target"
+			format = centre
+			maxWidth = 400
+			maxHeight = 25
+		}
+		
+		containerWindowType = {
+			name = "fpw_list_grid_container"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% } 
+			margin = { top = 10 bottom = 0 }
+			orientation = upper_left
+
+			background = {
+				name = "fpw_list_grid_background"
+			}
+
+			gridboxtype = {
+				name = "fpw_initiator_list_grid"
+				position = { x = -315 y = 35 }
+				padding = { top = 0 bottom = 15 }
+				size = { width = 100%% height = 100% }
+				slotsize = { width = 110 height = 65 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+			}
+
+			gridboxtype = {
+				name = "fpw_target_list_grid"
+				position = { x = 130 y = 35 }
+				padding = { top = 0 bottom = 15 }
+				size = { width = 100%% height = 100% }
+				slotsize = { width = 110 height = 65 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "fpw_initiators_entry"
+		position = { x = 0 y = 0 }	
+		size = { width = 150 height = 30 }
+		
+		buttonType = {
+			name = "fpw_list_flag_button"
+			position = { x = 0 y = 4 }
+			quadTextureSprite = "GFX_shield_medium"
+			pdx_tooltip = "fpw_list_flag_button_tt"
+		}
+		iconType = {
+			name = "fpw_list_flag_frame"
+			position = { x =-12 y = -6 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_large_frame"
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "fpw_targets_entry"
+		position = { x = 0 y = 0 }	
+		size = { width = 150 height = 30 }
+		
+		buttonType = {
+			name = "fpw_list_flag_button"
+			position = { x = 0 y = 4 }
+			quadTextureSprite = "GFX_shield_medium"
+			pdx_tooltip = "fpw_list_flag_button_tt"
+		}
+		iconType = {
+			name = "fpw_list_flag_frame"
+			position = { x =-12 y = -6 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_large_frame"
+			alwaystransparent = yes
+		}
+	}
+}

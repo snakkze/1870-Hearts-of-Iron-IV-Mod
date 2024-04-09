@@ -1,6 +1,7 @@
 add_namespace = franco_prussian_fpw
  
  # France capitulates
+ # The fall of France from the perspective of Prussia
 country_event = {
 	id = franco_prussian_fpw.1
 	title = franco_prussian_fpw.1.t
@@ -16,6 +17,9 @@ country_event = {
 	option = {
 		name = franco_prussian_fpw.1.a
 		france_surrender = yes
+		hidden_effect = {
+			country_event = { id=franco_prussian_fpw.4 days = 1 }
+		}
 	}
 }
 
@@ -201,6 +205,9 @@ country_event = {
 			}
 		}
 		hidden_effect = {
+			# German event saying that the new gov wont surrender
+			# dec.a = Then we will have to take Paris!
+			#country_event = { id=franco_prussian_fpw.4 days = 1 }
 			if = {
 				limit = {
 					has_country_leader = {
@@ -271,9 +278,36 @@ country_event = {
 
 	major = yes
 
-	# 
 	option = {
 		name = franco_prussian_fpw.8.a
+		16 = {
+			set_demilitarized_zone = yes
+			transfer_state_to = FPC
+			add_core_of = FPC
+		}
+	}
+}
+
+# Prussia leaves Paris after a parade
+country_event = {
+	id = franco_prussian_fpw.9
+	title = franco_prussian_fpw.9.t
+	desc = franco_prussian_fpw.9.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = franco_prussian_fpw.9.a
+		FRA = {
+			transfer_state = 16
+			country_event = { id=franco_prussian_fpw.8 days = 15 }
+		}
+		# News event about prussian victory
 	}
 }
  

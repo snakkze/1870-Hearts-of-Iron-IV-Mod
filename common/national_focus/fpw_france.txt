@@ -391,8 +391,12 @@ focus_tree = {
 			factor = 10
 		}
 
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		will_lead_to_war_with = PRS
+
+		available = {
+			always = no
+		}
 
 		completion_reward = {
 			set_global_flag = fpw_franco_prussian_war_flag

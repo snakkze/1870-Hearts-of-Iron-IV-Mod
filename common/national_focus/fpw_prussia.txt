@@ -68,6 +68,7 @@ focus_tree = {
 		}
 	}
 
+	# Prussia wanted the german state to unite as a country, but excluding austria. This provoked them which is why they provoked back by questioning the Gasteiner Konvention that splitted up schleswig holstein after the german-danish war
 	focus = {
 		id = PRS_propose_federal_reform
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -84,6 +85,7 @@ focus_tree = {
 		completion_reward = {
 			# Austria is triggered and ask for the schleswig holsteinische frage
 			# triggers schleswig holsteinische frage event
+			unlock_decision_tooltip = fpw_annex_holstein
 		}
 	}
 
@@ -101,16 +103,18 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			always = no
+		}
+
 		completion_reward = {
 			# Following the Schleswig Holsteinisch question we will annex Holstein!
 			# This will trigger the Bundesbeschluss vom 14. Juni 1866 and will allow austria to mobilize against germany
 			# When escalation is finished prussia gets event to gain the following
 			# National idea "nationalism" or "brothers on the front" attack on austrian core higher because its same VOLK but lower war intrest because its the same Volk!
 			# Idea is for the fact to make the war easier
-			#set_state_owner = 58
 			# thanks snakkze for documenting how it worked cause i completly forgot it -snakkze
-
-			country_event = { id = prussia_fpw.6 }
+			set_state_owner = 58
 		}
 	}
 
@@ -126,6 +130,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			always = no
 		}
 
 		completion_reward = {
@@ -609,6 +617,10 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			always = no
+		}
+
 		completion_reward = {
 			
 		}
@@ -1050,7 +1062,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = prussia_fpw.11 }
 		}
 	}
 
@@ -1067,6 +1079,10 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			always = no
+		}
+
 		completion_reward = {
 			# We need a krupp for victory idea about their artillery or howitzers seprerate focus
 		}
@@ -1079,14 +1095,14 @@ focus_tree = {
 		relative_position_id = PRS_franco_prussian_war
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		completion_reward = {
-			
+			BAD = { country_event = { id = prussia_fpw.12 hours = 2 } }
 		}
 	}
 
@@ -1097,14 +1113,14 @@ focus_tree = {
 		relative_position_id = PRS_franco_prussian_war
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		completion_reward = {
-			
+			WRT = { country_event = { id = prussia_fpw.12 hours = 2 } }
 		}
 	}
 
@@ -1115,14 +1131,14 @@ focus_tree = {
 		relative_position_id = PRS_franco_prussian_war
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		completion_reward = {
-			
+			BAV = { country_event = { id = prussia_fpw.12 hours = 2 } }
 		}
 	}
 
@@ -1133,14 +1149,14 @@ focus_tree = {
 		relative_position_id = PRS_franco_prussian_war
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		completion_reward = {
-			
+			HES = { country_event = { id = prussia_fpw.12 hours = 2 } }
 		}
 	}
 

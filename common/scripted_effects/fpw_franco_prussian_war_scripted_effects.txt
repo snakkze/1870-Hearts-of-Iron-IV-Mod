@@ -41,6 +41,7 @@ prussian_surrender_2 = {
 
 # preliminary peace of versailles
 france_surrender = {
+	country_event = { id=franco_prussian_fpw.9 days = 3 }
 	every_country = {
 		limit = {
 			OR = {
@@ -103,6 +104,7 @@ france_surrender = {
 				state = 18
 				state = 974
 				state = 785
+				# Paris was only occupied for a short while.
 				state = 16
 				state = 15
 				state = 24
@@ -282,6 +284,20 @@ fpw_treaty_of_frankfurt = {
 					}
 				}
 			}
+		}
+	}
+
+	# Germans gave back departments
+	every_state = { 
+		limit = { 
+			OR = {
+				state = 15
+				state = 24
+				state = 27
+			}
+		}
+		FRA = {
+			transfer_state = PREV	
 		}
 	}
 

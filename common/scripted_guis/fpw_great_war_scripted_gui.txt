@@ -1,0 +1,26 @@
+scripted_gui = {
+
+	fpw_great_war_gui = {
+		context_type = decision_category
+		window_name = "fpw_great_war_gui_window"
+
+		dynamic_lists = {
+			fpw_initiator_list_grid = {
+				array = global.gw_initiators_array
+				change_scope = yes
+				entry_container = fpw_initiators_entry
+			}
+			fpw_target_list_grid = {
+				array = global.gw_targets_array
+				change_scope = yes
+				entry_container = fpw_targets_entry
+			}
+		}	
+		properties = {
+            fpw_list_flag_button = {
+				image = "[THIS.GetFlag]"
+			}
+		}
+	}
+}
+

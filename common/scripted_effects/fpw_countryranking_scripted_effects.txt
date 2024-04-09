@@ -1144,6 +1144,19 @@ calculate_prestige = {
 		set_variable = { country_mil_factories = num_of_military_factories }
 		set_variable = { country_naval_factories = num_of_naval_factories  }
 
+		clamp_variable = {
+			var = country_civ_factories
+			min = 0
+		}
+		clamp_variable = {
+			var = country_mil_factories
+			min = 0
+		}
+		clamp_variable = {
+			var = country_naval_factories
+			min = 0
+		}
+
 		add_to_variable = { country_industry_score = country_civ_factories }
 		add_to_variable = { country_industry_score = country_mil_factories }
 		add_to_variable = { country_industry_score = country_naval_factories }

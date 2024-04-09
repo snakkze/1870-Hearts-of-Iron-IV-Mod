@@ -139,11 +139,10 @@ prussian_surrender = {
 		}
 	}
 	PRS = {
-		dismantle_faction = yes
 		clr_country_flag = austro_prussian_war
+		complete_national_focus = PRS_bruderkrieg_ending
 	}	
 	AUS = {
-		dismantle_faction = yes
 		clr_country_flag = austro_prussian_war
 		762 = {
 			add_core_of = AUS
@@ -291,6 +290,14 @@ prussian_surrender = {
 			puppet = NRW
 		}	
 	}
+
+	AUS = {
+		dismantle_faction = yes
+	}
+
+	PRS = {
+		dismantle_faction = yes
+	}
 }
 
 austrian_surrender = {
@@ -325,6 +332,7 @@ austrian_surrender = {
 	PRS = {
 		dismantle_faction = yes
 		clr_country_flag = austro_prussian_war
+		complete_national_focus = PRS_austro_prussian_victory
 		58 = {
 			add_core_of = PRS
 			transfer_state_to = PRS

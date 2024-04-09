@@ -29,17 +29,17 @@ fpw_colonization_category = {
 		#on_map_mode = map_only
 		icon = GFX_decision_colonize
 		fire_only_once = no
-		#days_remove = ROOT.colonial_time
-		days_remove = 1
+		days_remove = ROOT.colonial_time
+		#days_remove = 5
     	selectable_mission = no
 
-		#ai_will_do = {
-		#	factor = 200
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 
 		remove_effect = {
 			every_state = {
@@ -138,17 +138,17 @@ fpw_colonization_category = {
 
 		icon = GFX_decision_integration
 		fire_only_once = no
-		#days_remove = ROOT.colonial_time
-		days_remove = 5
+		days_remove = ROOT.colonial_time
+		#days_remove = 5
     	selectable_mission = yes
 
-		#ai_will_do = {
-		#	factor = 200
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 
 		complete_effect = {
 			ROOT = {

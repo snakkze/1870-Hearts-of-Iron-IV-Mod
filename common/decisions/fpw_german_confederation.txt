@@ -82,7 +82,6 @@ fpw_german_unification_category = {
 		icon = mission_icon
 		is_good = yes
 		days_mission_timeout = 35
-		days_remove = 35
 		selectable_mission = no
 
 		timeout_effect = {
@@ -117,7 +116,6 @@ fpw_german_unification_category = {
 		icon = mission_icon
 		is_good = no
 		days_mission_timeout = 5
-		days_remove = 5
 		selectable_mission = no
 		timeout_effect = {
 			minor_german_states_involvement = yes
@@ -140,7 +138,12 @@ fpw_german_unification_category = {
 		icon = GFX_decision_side_with_prussia
 
 		allowed = {
-
+			NOT = {
+				has_country_flag = fwp_austro_prussian_war_sided
+			}
+			PRS = {
+				has_war_with = AUS
+			}
 		}
 
 		cost = 0
@@ -354,7 +357,9 @@ fpw_austro_prussian_war_category = {
 		}
 
 		complete_effect = {
-			complete_national_focus = PRS_annex_holstein
+			AUS = {
+				country_event = { id = prussia_fpw.18 }
+			}
 		}
 	}
 
