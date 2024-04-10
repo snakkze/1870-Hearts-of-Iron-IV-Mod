@@ -764,6 +764,8 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
+
+				set_global_flag = ITA_TUR_war
 				if = {
 					limit = { 
 						ITA = {
@@ -877,6 +879,8 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
+				
+				set_global_flag = ITA_AUS_war
 				if = {
 					limit = { 
 						ITA = {

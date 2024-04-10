@@ -234,7 +234,7 @@ country_event = {
 		
 		add_political_power = 25
 		hidden_effect = {
-			set_country_flag = joined_italy_ottomans
+			SOV = { set_country_flag = joined_italy_ottomans }
 		}
 		
 	}
@@ -672,7 +672,339 @@ country_event = {
 		
 	}
 }
-
+# Ottomans want peace | for ITA
+country_event = {
+	id = italy_fpw.20
+	title = italy_fpw.20.t
+	desc = italy_fpw.20.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# End the war
+	option = {
+		name = italy_fpw.20.a
+		
+		add_stability = 0.05
+		
+		add_political_power = 50
+		
+		TUR = {
+			white_peace = ITA
+		}
+		
+		
+		hidden_effect = {
+			clr_global_flag = ITA_TUR_war
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.21 
+					hours = 40
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 10
+		}
+		
+	}
+	# We want total victory!
+	option = {
+		name = italy_fpw.20.b
+		
+		add_stability = -0.10
+		add_war_support = -0.05
+		
+		ai_chance = { 
+			factor = 0
+		}
+	}
+}
+# peace deal Out come
+#
+# If you want to change the effect of the peace deal
+# do it in this event
+#
+# 
+#
+country_event = {
+	id = italy_fpw.21
+	title = italy_fpw.21.t
+	desc = italy_fpw.21.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_fpw.21.a
+		
+		add_stability = 0.01
+		add_political_power = 10
+		
+		ITA = {
+			transfer_state = 458
+			transfer_state = 665
+			transfer_state = 448
+			transfer_state = 449
+			transfer_state = 450
+			transfer_state = 451
+			transfer_state = 661
+			transfer_state = 662
+			transfer_state = 663
+			transfer_state = 957
+			transfer_state = 44
+			transfer_state = 805
+			transfer_state = 934
+		}
+		
+		hidden_effect = {
+			GRE = {
+				transfer_state = 185
+				transfer_state = 164
+				transfer_state = 182
+				transfer_state = 187
+				transfer_state = 731
+				transfer_state = 184
+				transfer_state = 341
+				transfer_state = 797
+				transfer_state = 347
+				transfer_state = 340
+				transfer_state = 339
+				transfer_state = 342
+			}
+			ROM = {
+				transfer_state = 980
+				if = {
+					limit = { is_puppet = yes }
+					TUR = {
+						end_puppet = ROM
+					}
+				}
+			}
+			SER = {
+				transfer_state = 104
+				transfer_state = 804
+				transfer_state = 108
+				transfer_state = 802
+				transfer_state = 803
+				transfer_state = 105
+				transfer_state = 106
+				set_cosmetic_tag = SER_YUG
+				if = {
+					limit = { is_puppet = yes }
+					TUR = {
+						end_puppet = SER
+					}
+				}
+			}
+			BUL = {
+				transfer_state = 48
+				transfer_state = 801
+				transfer_state = 212
+				transfer_state = 211
+				transfer_state = 77
+			}
+			SYR = {
+				transfer_state = 454
+				transfer_state = 455
+				transfer_state = 553
+				transfer_state = 554
+				transfer_state = 799
+				transfer_state = 677
+			}
+			KUR = {
+				transfer_state = 800
+				transfer_state = 352
+				transfer_state = 350
+				transfer_state = 676
+				transfer_state = 680
+			}
+			IRQ = {
+				transfer_state = 291
+				transfer_state = 656
+			}
+			ETH = {
+				transfer_state = 908
+				transfer_state = 271
+			}
+			TRB = {
+				transfer_state = 268
+				transfer_state = 550
+			}
+			EGY = {
+				if = {
+					limit = { exists = no }
+					TUR = {
+						release = EGY
+					}
+				}
+				transfer_state = 883
+				transfer_state = 886
+				transfer_state = 551
+				
+				# TEMP
+				transfer_state = 855
+				transfer_state = 679
+				transfer_state = 856
+			}
+			
+			if = { 
+				limit = { 
+					SOV = { has_country_flag = joined_italy_ottomans }
+				}
+				SOV = {
+					transfer_state = 354
+				}
+			}
+			
+			ITA = { dismantle_faction = yes }
+			
+		}
+		
+	}
+}
+# Austrians want peace | for ITA
+country_event = {
+	id = italy_fpw.22
+	title = italy_fpw.22.t
+	desc = italy_fpw.22.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	# End the war
+	option = {
+		name = italy_fpw.20.a
+		
+		add_stability = 0.05
+		
+		add_political_power = 50
+		
+		AUS = {
+			white_peace = ITA
+			white_peace = PRS
+			white_peace = SOV
+			white_peace = SER
+			white_peace = ROM
+			white_peace = HUN
+		}
+		
+		
+		hidden_effect = {
+			clr_global_flag = ITA_AUS_war
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.23 
+					hours = 40
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 10
+		}
+		
+	}
+	# We want total victory!
+	option = {
+		name = italy_fpw.20.b
+		
+		add_stability = -0.10
+		add_war_support = -0.05
+		
+		ai_chance = { 
+			factor = 0
+		}
+	}
+}
+# peace deal Out come
+#
+# If you want to change the effect of the peace deal
+# do it in this event
+#
+# 
+#
+country_event = {
+	id = italy_fpw.23
+	title = italy_fpw.21.t
+	desc = italy_fpw.23.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_fpw.21.a
+		
+		add_stability = 0.01
+		add_political_power = 10
+		
+		ITA = {
+			transfer_state = 163
+			transfer_state = 103
+			transfer_state = 982
+			transfer_state = 852
+			transfer_state = 736
+			transfer_state = 160
+			transfer_state = 850
+		}
+		
+		hidden_effect = {
+			ROM = {
+				if = {
+					limit = { is_puppet = no }
+					transfer_state = 76
+					transfer_state = 80
+					transfer_state = 82
+					transfer_state = 83
+					transfer_state = 84
+				}
+			}
+			SER = {
+				if = {
+					limit = { is_puppet = no }
+					transfer_state = 109
+				}
+			}
+			CZE = {
+				transfer_state = 9
+				transfer_state = 69
+				transfer_state = 74
+				transfer_state = 72
+				transfer_state = 75
+			}
+			
+			if = { 
+				limit = { 
+					SOV = { has_country_flag = joined_italy_austria }
+				}
+				SOV = {
+					transfer_state = 88
+					transfer_state = 89
+					transfer_state = 91
+				}
+			}
+			
+			if = { 
+				limit = {
+					PRS = { 
+						AND = {
+							has_country_flag = joined_italy_austria
+							has_cosmetic_tag = PRS_GER
+						}
+					}
+					
+				}
+				PRS = {
+					annex_country = {
+						target = AUS
+						transfer_troops = no
+					}
+				}
+			}
+			
+		}
+		
+	}
+}
 
 
 

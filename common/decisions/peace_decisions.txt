@@ -1,0 +1,105 @@
+sue_for_peace_category = {
+	
+	ITA_TUR_war_peace = {
+
+		#icon = generic_industry
+		priority = 10
+		available = {
+			surrender_progress > 0.49
+		}
+		
+		allowed = {
+			tag = TUR
+		}
+		
+		visible = {
+			has_global_flag = ITA_TUR_war
+		}
+
+		fire_only_once = yes
+
+		#modifier = {
+		#	stability_weekly = 0.005
+		#	consumer_goods_factor = 0.10
+		#	industrial_capacity_factory = -0.1
+		#}
+
+		#days_remove = 180
+		#days_re_enable = 540
+
+		#cost = 100
+
+		complete_effect = {
+			
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.20 
+					hours = 4
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				surrender_progress > 0.5
+			}
+		}
+	}
+	ITA_AUS_war_peace = {
+
+		#icon = generic_industry
+		priority = 10
+		available = {
+			surrender_progress > 0.49
+		}
+		
+		allowed = {
+			tag = AUS
+		}
+		
+		visible = {
+			has_global_flag = ITA_AUS_war
+		}
+
+		fire_only_once = yes
+
+		#modifier = {
+		#	stability_weekly = 0.005
+		#	consumer_goods_factor = 0.10
+		#	industrial_capacity_factory = -0.1
+		#}
+
+		#days_remove = 180
+		#days_re_enable = 540
+
+		#cost = 100
+
+		complete_effect = {
+			
+			ITA = { 
+				country_event = { 
+					id = italy_fpw.22 
+					hours = 4
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				surrender_progress > 0.5
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
