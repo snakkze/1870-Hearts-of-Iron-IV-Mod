@@ -827,7 +827,7 @@ country_event = {
 				transfer_state = 908
 				transfer_state = 271
 			}
-			TRB = {
+			ETH = {
 				transfer_state = 268
 				transfer_state = 550
 			}
@@ -950,7 +950,7 @@ country_event = {
 		hidden_effect = {
 			ROM = {
 				if = {
-					limit = { is_puppet = no }
+					limit = { is_subject_of = ITA }
 					transfer_state = 76
 					transfer_state = 80
 					transfer_state = 82
@@ -960,7 +960,7 @@ country_event = {
 			}
 			SER = {
 				if = {
-					limit = { is_puppet = no }
+					limit = { is_subject_of = ITA }
 					transfer_state = 109
 				}
 			}
@@ -1000,7 +1000,6 @@ country_event = {
 					}
 				}
 			}
-			
 		}
 		
 	}
