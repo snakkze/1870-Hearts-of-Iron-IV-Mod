@@ -1107,7 +1107,7 @@ country_event = {
 				limit = {
 					PRS = { 
 						AND = {
-							#has_country_flag = joined_italy_austria
+							has_country_flag = joined_italy_austria
 							has_cosmetic_tag = PRS_GER
 						}
 					}
