@@ -938,48 +938,168 @@ country_event = {
 		add_political_power = 10
 		
 		ITA = {
-			transfer_state = 163
-			transfer_state = 103
-			transfer_state = 982
-			transfer_state = 852
-			transfer_state = 736
-			transfer_state = 160
-			transfer_state = 850
+			every_state = {
+				limit = {
+					AND = {
+						is_owned_by = AUS
+						OR = {
+							state = 163
+							state = 103
+							state = 982
+							state = 852
+							state = 736
+							state = 160
+							state = 850
+							state = 39
+						}
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							state = 39
+						}
+					}
+					set_state_flag = german_claimed_state
+				}
+				ITA = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
 		}
 		
-		hidden_effect = {
+		hidden_effect = {	
 			ROM = {
 				if = {
-					limit = { is_subject_of = ITA }
-					transfer_state = 76
-					transfer_state = 80
-					transfer_state = 82
-					transfer_state = 83
-					transfer_state = 84
+					limit = { 
+						OR = {
+							is_subject_of = ITA 
+							is_subject = no
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_owned_by = AUS
+								OR = {
+									state = 76
+									state = 80
+									state = 82
+									state = 83
+									state = 84
+								}
+							}
+						}
+						ROM = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
 				}
 			}
+
 			SER = {
 				if = {
-					limit = { is_subject_of = ITA }
-					transfer_state = 109
+					limit = { 
+						OR = {
+							is_subject_of = ITA 
+							is_subject = no
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_owned_by = AUS
+								OR = {
+									state = 109
+									state = 764
+									state = 45
+								}
+							}
+						}
+						SER = {
+							transfer_state = PREV
+							add_state_core = PREV	
+						}
+					}
 				}
 			}
-			CZE = {
-				transfer_state = 9
-				transfer_state = 69
-				transfer_state = 74
-				transfer_state = 72
-				transfer_state = 75
+
+			every_state = {
+				limit = {
+					AND = {
+						is_owned_by = AUS
+						is_core_of = CZE
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							OR = {
+								state = 979
+								state = 978
+							}
+						}
+					}
+					set_state_flag = german_claimed_state
+				}
+				CZE = {
+					transfer_state = PREV
+				}
 			}
 			
 			if = { 
 				limit = { 
 					SOV = { has_country_flag = joined_italy_austria }
 				}
-				SOV = {
-					transfer_state = 88
-					transfer_state = 89
-					transfer_state = 91
+				every_state = {
+					limit = {
+						AND = {
+							is_owned_by = AUS
+							OR = {
+								state = 80
+								state = 88
+								state = 89
+								state = 91
+							}
+						}
+					}
+					SOV = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						AND = {
+							is_owned_by = AUS
+							OR = {
+								state = 88
+								state = 91
+								state = 89
+								state = 80
+							}
+						}
+					}
+					PGA = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+				}
+			}
+
+			every_state = {
+				limit = {
+					AND = {
+						is_owned_by = AUS
+						is_core_of = HUN
+					}
+				}
+				HUN = {
+					transfer_state = PREV
 				}
 			}
 			
@@ -987,21 +1107,31 @@ country_event = {
 				limit = {
 					PRS = { 
 						AND = {
-							has_country_flag = joined_italy_austria
+							#has_country_flag = joined_italy_austria
 							has_cosmetic_tag = PRS_GER
 						}
 					}
 					
 				}
 				PRS = {
-					annex_country = {
-						target = AUS
-						transfer_troops = no
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_owned_by = AUS
+									is_core_of = AUS
+								}
+								has_state_flag = german_claimed_state
+							}
+						}
+						PRS = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
 					}
 				}
 			}
 		}
-		
 	}
 }
 
