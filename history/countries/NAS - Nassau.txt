@@ -56,13 +56,13 @@ capital = 941
 recruit_character = NAS_august_ludwig
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 17
-	liberalism_ideology = 83
+	democratic = 17
+	fascism = 83
 }

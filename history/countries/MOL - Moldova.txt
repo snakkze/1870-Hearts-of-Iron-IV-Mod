@@ -65,16 +65,16 @@ recruit_character = MOL_ar
 	}
 }
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 55
-	authoritarian_ideology = 1
-	socialism_ideology = 30
-	authoritarian_ideology = 14
+	democratic = 55
+	neutrality = 1
+	communism = 30
+	neutrality = 14
 }
 
 #create_country_leader = {

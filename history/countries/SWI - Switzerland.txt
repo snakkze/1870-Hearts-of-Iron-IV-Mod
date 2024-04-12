@@ -355,23 +355,23 @@ if = { #########   By Blood Alone Stuff
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 96
-	authoritarian_ideology = 2
-	socialism_ideology = 2
+	democratic = 96
+	neutrality = 2
+	communism = 2
 }
 
 #1939.1.1 = {
 #	#next election october 39
 #	set_popularities = {
-#		conservatism_ideology = 95
-#		authoritarian_ideology = 2
-#		socialism_ideology = 3
+#		democratic = 95
+#		neutrality = 2
+#		communism = 3
 #	}
 #}
 

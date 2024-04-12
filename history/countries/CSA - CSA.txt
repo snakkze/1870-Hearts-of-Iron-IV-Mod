@@ -195,15 +195,15 @@ set_convoys = 100
 
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 80
-	authoritarian_ideology = 10
-	socialism_ideology = 10
+	democratic = 80
+	neutrality = 10
+	communism = 10
 }
 
 add_ideas = {
@@ -215,14 +215,14 @@ add_ideas = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
-		conservatism_ideology = 99
-		socialism_ideology = 1
+		democratic = 99
+		communism = 1
 	}
 }
 

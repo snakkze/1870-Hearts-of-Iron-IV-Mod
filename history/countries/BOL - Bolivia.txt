@@ -102,26 +102,26 @@ set_country_flag = monroe_doctrine
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-	authoritarian_ideology = 100
+	neutrality = 100
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = authoritarian_ideology
+		ruling_party = neutrality
 		last_election = "1934.11.11"
 		election_frequency = 72
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		authoritarian_ideology = 100
+		neutrality = 100
 	}
 
 }

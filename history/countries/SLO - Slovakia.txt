@@ -131,13 +131,13 @@ recruit_character = SLO_anton_pulanick
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 5
-	authoritarian_ideology = 90
-	socialism_ideology = 5
+	democratic = 5
+	neutrality = 90
+	communism = 5
 }

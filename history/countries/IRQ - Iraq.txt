@@ -112,26 +112,26 @@ recruit_character = IRQ_nuri_as_said
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_ideology = 20
-	authoritarian_ideology = 80
+	neutrality = 20
+	neutrality = 80
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = authoritarian_ideology
+		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
-		authoritarian_ideology = 30
-		authoritarian_ideology = 70
+		neutrality = 30
+		neutrality = 70
 	}
 
 	recruit_character = IRQ_faisal_ii

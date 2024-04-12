@@ -1,15 +1,15 @@
 capital = 46
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1863.12.20"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 60
-	authoritarian_ideology = 18
-	socialism_ideology = 2
-	liberalism_ideology = 20
+	democratic = 60
+	neutrality = 18
+	communism = 2
+	fascism = 20
 }
 TUR = {
 	if = {

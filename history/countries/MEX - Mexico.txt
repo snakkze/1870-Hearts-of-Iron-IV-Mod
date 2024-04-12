@@ -262,16 +262,16 @@ if = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 18
-	authoritarian_ideology = 20
-	socialism_ideology = 9
-	authoritarian_ideology = 53
+	democratic = 18
+	neutrality = 20
+	communism = 9
+	neutrality = 53
 }
 
 ### VARIANTS ###

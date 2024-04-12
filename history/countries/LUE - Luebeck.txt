@@ -56,13 +56,13 @@ capital = 956
 recruit_character = LUE_heinrich_brehmer
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 9
-	liberalism_ideology = 91
+	democratic = 9
+	fascism = 91
 }

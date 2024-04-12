@@ -67,15 +67,15 @@ recruit_character = WLS_democratic_guy
 	}
 }
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 93
-	authoritarian_ideology = 3
-	socialism_ideology = 4
+	democratic = 93
+	neutrality = 3
+	communism = 4
 }
 
 #create_country_leader = {

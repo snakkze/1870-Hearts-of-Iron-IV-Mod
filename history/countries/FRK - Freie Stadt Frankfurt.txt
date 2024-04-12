@@ -56,13 +56,13 @@ capital = 940
 recruit_character = FRK_karl_konstanz_viktor_fellner
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 63
-	liberalism_ideology = 37
+	democratic = 63
+	fascism = 37
 }

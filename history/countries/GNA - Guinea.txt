@@ -74,14 +74,14 @@ recruit_character = GNA_awt
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 25
-	authoritarian_ideology = 20
-	socialism_ideology = 5
-	authoritarian_ideology = 50
+	democratic = 25
+	neutrality = 20
+	communism = 5
+	neutrality = 50
 }

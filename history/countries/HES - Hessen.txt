@@ -57,13 +57,13 @@ recruit_character = HES_louis_iii
 
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 25
-	liberalism_ideology = 74
-	socialism_ideology = 1
+	democratic = 25
+	fascism = 74
+	communism = 1
 }

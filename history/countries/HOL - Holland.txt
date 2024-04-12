@@ -267,15 +267,15 @@ recruit_character = HOL_wilhelmina
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1933.4.26"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 93
-	authoritarian_ideology = 4
-	socialism_ideology = 3
+	democratic = 93
+	neutrality = 4
+	communism = 3
 }
 
 set_convoys = 150

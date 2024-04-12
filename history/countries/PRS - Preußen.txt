@@ -69,15 +69,15 @@ recruit_character = PRS_wilhelm_i
 
 set_politics = {
 	# By seats
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 44
-	liberalism_ideology = 49
-	socialism_ideology = 3
-	authoritarian_ideology = 4
+	democratic = 44
+	fascism = 49
+	communism = 3
+	neutrality = 4
 }

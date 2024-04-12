@@ -67,16 +67,16 @@ recruit_character = BRM_fascist_guy
 	}
 }
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 72
-	authoritarian_ideology = 2
-	socialism_ideology = 14
-	authoritarian_ideology = 12
+	democratic = 72
+	neutrality = 2
+	communism = 14
+	neutrality = 12
 }
 #create_country_leader = {
 #	

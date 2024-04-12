@@ -105,12 +105,12 @@ recruit_character = YUN_ding_zhipan
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_ideology = 20
-	authoritarian_ideology = 80
+	neutrality = 20
+	neutrality = 80
 }

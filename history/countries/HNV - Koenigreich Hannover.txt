@@ -57,14 +57,14 @@ recruit_character = HNV_george_v
 
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	authoritarian_ideology = 48
-	conservatism_ideology = 5
-	authoritarian_ideology = 47
+	neutrality = 48
+	democratic = 5
+	neutrality = 47
 }

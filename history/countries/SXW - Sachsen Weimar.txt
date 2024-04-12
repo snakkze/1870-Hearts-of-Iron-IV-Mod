@@ -57,13 +57,13 @@ recruit_character = SXW_charles_alexander
 
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	liberalism_ideology = 86
-	conservatism_ideology = 14
+	fascism = 86
+	democratic = 14
 }

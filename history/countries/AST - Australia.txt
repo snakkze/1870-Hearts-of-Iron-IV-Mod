@@ -270,30 +270,30 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservatism_ideology = 98
-	socialism_ideology = 2
+	democratic = 98
+	communism = 2
 }
 
 set_convoys = 100
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1937.10.23"
 		election_frequency = 36
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		conservatism_ideology = 99
-		socialism_ideology = 1
+		democratic = 99
+		communism = 1
 	}
 
 	set_convoys = 100

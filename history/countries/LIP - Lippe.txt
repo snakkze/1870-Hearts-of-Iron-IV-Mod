@@ -56,13 +56,13 @@ capital = 951
 recruit_character = LIP_leopold_iii
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	authoritarian_ideology = 12
-	conservatism_ideology = 88
+	neutrality = 12
+	democratic = 88
 }

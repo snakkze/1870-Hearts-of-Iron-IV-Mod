@@ -57,14 +57,14 @@ recruit_character = SXY_john_i
 
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	liberalism_ideology = 84
-	conservatism_ideology = 10
-	authoritarian_ideology = 6
+	fascism = 84
+	democratic = 10
+	neutrality = 6
 }

@@ -56,14 +56,14 @@ capital = 949
 recruit_character = ANH_leopold_iv
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 11
-	liberalism_ideology = 87
-	authoritarian_ideology = 2
+	democratic = 11
+	fascism = 87
+	neutrality = 2
 }

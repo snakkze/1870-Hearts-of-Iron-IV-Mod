@@ -91,7 +91,7 @@ focus_tree = {
 			add_stability = 0.1
 			add_political_power = -200
 			add_popularity = {
-				ideology = socialism_ideology
+				ideology = communism
 				popularity = -1
 			}
 			custom_effect_tooltip = ITA_unexpected_consequences
@@ -507,7 +507,7 @@ focus_tree = {
 			add_stability = -0.1
 			add_war_support = -0.15
 			set_politics = {
-				ruling_party = liberalism_ideology
+				ruling_party = fascism
 				elections_allowed = no
 			}
 			add_country_leader_role = {
@@ -540,11 +540,11 @@ focus_tree = {
 			add_stability = 0.1
 			set_cosmetic_tag = ITA_republic
 			add_popularity = {
-				ideology = liberalism_ideology
+				ideology = fascism
 				popularity = 0.15
 			}
 			set_politics = {
-				ruling_party = liberalism_ideology
+				ruling_party = fascism
 				elections_allowed = yes
 			}
 		}
@@ -591,7 +591,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = liberalism_ideology
+				ideology = fascism
 				popularity = 0.2
 			}
 		}
@@ -617,7 +617,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				set_politics = {
-					ruling_party = authoritarian_ideology
+					ruling_party = neutrality
 					elections_allowed = no
 				}
 				set_cosmetic_tag = ITA_nationalist
@@ -638,7 +638,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = authoritarian_ideology
+				ideology = neutrality
 				popularity = 0.35
 			}
 		}
@@ -907,8 +907,8 @@ focus_tree = {
 		available = {
 			PRS = {
 				OR = {
-					has_government = socialism_ideology
-					has_government = authoritarian_ideology
+					has_government = communism
+					has_government = neutrality
 				}
 			}
 		}
@@ -1180,7 +1180,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_proclaim_greater_italy }
 		mutually_exclusive = { focus = ITA_roman_ambition }
 		available = {
-			NOT = { has_government = authoritarian_ideology }
+			NOT = { has_government = neutrality }
 			has_war = no
 		}
 		x = -1
@@ -1223,7 +1223,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_mto }
 		available = {
 			SPR = {
-				has_government = authoritarian_ideology
+				has_government = neutrality
 			}
 			NOT = { is_ally_with = SPR }
 		}

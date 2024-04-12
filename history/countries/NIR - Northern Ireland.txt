@@ -81,20 +81,20 @@ recruit_character = NIR_democratic_guy
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 98
-	authoritarian_ideology = 1
-	socialism_ideology = 1
+	democratic = 98
+	neutrality = 1
+	communism = 1
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1938.6.17"
 		election_frequency = 48
 		elections_allowed = yes

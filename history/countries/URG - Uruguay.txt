@@ -71,7 +71,7 @@ set_convoys = 5
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1938.3.28"
 		election_frequency = 48
 		elections_allowed = yes
@@ -133,19 +133,19 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1934.4.19"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 97
-	socialism_ideology = 3
+	democratic = 97
+	communism = 3
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1938.3.28"
 		election_frequency = 48
 		elections_allowed = yes

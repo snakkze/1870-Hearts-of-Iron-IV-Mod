@@ -56,13 +56,13 @@ capital = 938
 recruit_character = MKS_frederick_william
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	liberalism_ideology = 89
-	conservatism_ideology = 11
+	fascism = 89
+	democratic = 11
 }

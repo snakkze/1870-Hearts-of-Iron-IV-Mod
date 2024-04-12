@@ -395,16 +395,16 @@ if = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1935.10.22"
 		election_frequency = 42
 		elections_allowed = yes
 	}
 	set_popularities = {
-		conservatism_ideology = DEN_democratic_popularity
-		authoritarian_ideology = DEN_fascism_popularity
-		socialism_ideology = DEN_communism_popularity
-		authoritarian_ideology = DEN_neutrality_popularity
+		democratic = DEN_democratic_popularity
+		neutrality = DEN_fascism_popularity
+		communism = DEN_communism_popularity
+		neutrality = DEN_neutrality_popularity
 	}
 
 	store_core_states_on_game_start = yes
@@ -414,13 +414,13 @@ if = {
 		NOT = { has_dlc = "Arms Against Tyranny" }
 	}
 	set_popularities = {
-		conservatism_ideology = 94
-		authoritarian_ideology = 1
-		socialism_ideology = 2
-		authoritarian_ideology = 3
+		democratic = 94
+		neutrality = 1
+		communism = 2
+		neutrality = 3
 	}
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1935.10.22"
 		election_frequency = 48
 		elections_allowed = yes
@@ -433,7 +433,7 @@ if = {
 			has_dlc = "Arms Against Tyranny"
 		}
 		set_politics = {
-			ruling_party = conservatism_ideology
+			ruling_party = democratic
 			last_election = "1939.4.3"
 			election_frequency = 42
 			elections_allowed = yes
@@ -444,7 +444,7 @@ if = {
 			NOT = { has_dlc = "Arms Against Tyranny" }
 		}
 		set_politics = {
-			ruling_party = conservatism_ideology
+			ruling_party = democratic
 			last_election = "1939.10.22"
 			election_frequency = 48
 			elections_allowed = yes

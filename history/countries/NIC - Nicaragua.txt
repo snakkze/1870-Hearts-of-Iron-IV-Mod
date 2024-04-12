@@ -90,21 +90,21 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 15
-	authoritarian_ideology = 5
-	socialism_ideology = 10
-	authoritarian_ideology = 70
+	democratic = 15
+	neutrality = 5
+	communism = 10
+	neutrality = 70
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = authoritarian_ideology
+		ruling_party = neutrality
 		last_election = "1936.12.8"
 		election_frequency = 48
 		elections_allowed = no

@@ -186,10 +186,10 @@ if = { #DLC
 
 	#DLC POLIICS
 	set_popularities = { #DLC
-		conservatism_ideology = 10
-		authoritarian_ideology = 30
-		authoritarian_ideology = 55
-		socialism_ideology = 5
+		democratic = 10
+		neutrality = 30
+		neutrality = 55
+		communism = 5
 	}
 
 	recruit_character = BUL_boris_iii
@@ -270,7 +270,7 @@ if = { #DLC
 
 	#RULING PARTY
 	set_politics = { #DLC
-		ruling_party = authoritarian_ideology
+		ruling_party = neutrality
 		last_election = "1935.1.22"
 		election_frequency = 48
 		elections_allowed = no
@@ -284,12 +284,12 @@ if = { #DLC
 
 		#POLITICS
 		set_popularities = { #VANILLA
-			conservatism_ideology = 5
-			authoritarian_ideology = 35
-			authoritarian_ideology = 60
+			democratic = 5
+			neutrality = 35
+			neutrality = 60
 		}
 		set_politics = { #VANILLA
-			ruling_party = authoritarian_ideology
+			ruling_party = neutrality
 			last_election = "1931.6.21"
 			election_frequency = 48
 			elections_allowed = no
@@ -350,12 +350,12 @@ if = {
 	
 	#POLIICS
 	set_popularities = { #VANILLA & DLC //  # Will get +7 from Italian focus: Potential Allies in the Balkans
-		conservatism_ideology = 5
-		authoritarian_ideology = 35
-		authoritarian_ideology = 60
+		democratic = 5
+		neutrality = 35
+		neutrality = 60
 	}
 	set_politics = { #VANILLA & DLC
-		ruling_party = authoritarian_ideology
+		ruling_party = neutrality
 		last_election = "1938.3.27"
 		election_frequency = 48
 		elections_allowed = no

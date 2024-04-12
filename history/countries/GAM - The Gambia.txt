@@ -53,14 +53,14 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 55
-	authoritarian_ideology = 15
-	socialism_ideology = 5
-	authoritarian_ideology = 25
+	democratic = 55
+	neutrality = 15
+	communism = 5
+	neutrality = 25
 }

@@ -57,13 +57,13 @@ recruit_character = WLD_goerge_victor
 
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	liberalism_ideology = 83
-	conservatism_ideology = 17
+	fascism = 83
+	democratic = 17
 }

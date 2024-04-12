@@ -9,7 +9,7 @@ ideas = {
 
 			available = {
 				NOT = {
-					has_government = authoritarian_ideology #remove if king in power
+					has_government = neutrality #remove if king in power
 				}
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = 0.05
-				authoritarian_ideology_acceptance = 50
+				neutrality_acceptance = 50
 			}
 		}
 		republican_opposition = {
@@ -34,7 +34,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				political_power_factor = -0.1
-				liberalism_ideology_drift = 0.01
+				fascism_drift = 0.01
 			}
 		}
 		liberal_country = {
@@ -44,7 +44,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = liberalism_ideology
+					has_government = fascism
 					has_country_leader_ideology = conservative_constitutional_monarchism
 				}
 			}
@@ -53,9 +53,9 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = 0.05
-				liberalism_ideology_acceptance = 50
-				authoritarian_ideology_drift = -0.05
-				socialism_ideology_drift = -0.03
+				fascism_acceptance = 50
+				neutrality_drift = -0.05
+				communism_drift = -0.03
 			}
 		}
 	}

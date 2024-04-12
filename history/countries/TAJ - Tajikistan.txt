@@ -44,16 +44,16 @@ set_convoys = 5
 	}
 }
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 50
-	authoritarian_ideology = 1
-	socialism_ideology = 40
-	authoritarian_ideology = 9
+	democratic = 50
+	neutrality = 1
+	communism = 40
+	neutrality = 9
 }
 
 #create_country_leader = {

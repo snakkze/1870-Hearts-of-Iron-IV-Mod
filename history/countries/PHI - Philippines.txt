@@ -121,13 +121,13 @@ recruit_character = PHI_sergio_osmena
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1935.9.15"
 	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 82
-	authoritarian_ideology = 9
-	socialism_ideology = 9
+	democratic = 82
+	neutrality = 9
+	communism = 9
 }

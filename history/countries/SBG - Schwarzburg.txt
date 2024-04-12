@@ -56,13 +56,13 @@ capital = 953
 recruit_character = SBG_friedrich_guenther
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 51
-	liberalism_ideology = 49
+	democratic = 51
+	fascism = 49
 }

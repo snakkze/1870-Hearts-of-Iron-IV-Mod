@@ -171,14 +171,14 @@ recruit_character = BRA_arlindo_veiga_dos_santos
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	authoritarian_ideology = 100
+	neutrality = 100
 }
 
 
@@ -186,13 +186,13 @@ set_convoys = 40
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = authoritarian_ideology
+		ruling_party = neutrality
 		last_election = "1934.7.17"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
-		authoritarian_ideology = 100
+		neutrality = 100
 	}
 }
 

@@ -141,27 +141,27 @@ set_convoys = 10
 
 set_convoys = 5
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 99
-	socialism_ideology = 1
+	democratic = 99
+	communism = 1
 }
 
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1938.5.1"
 		election_frequency = 48  
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		conservatism_ideology = 100
+		democratic = 100
 	}
 
 	recruit_character = COL_eduardo_santos

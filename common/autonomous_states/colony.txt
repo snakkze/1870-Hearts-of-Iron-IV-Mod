@@ -49,7 +49,7 @@ autonomy_state = {
 
 	allowed = {
 		has_dlc = "Together for Victory"
-		NOT = { has_government = socialism_ideology }
+		NOT = { has_government = communism }
 	}
 
 	use_for_peace_conference_weight = {

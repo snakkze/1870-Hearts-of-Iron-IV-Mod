@@ -56,14 +56,14 @@ capital = 950
 recruit_character = SBL_adolf_i
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	liberalism_ideology = 88
-	authoritarian_ideology = 2
-	conservatism_ideology = 10
+	fascism = 88
+	neutrality = 2
+	democratic = 10
 }

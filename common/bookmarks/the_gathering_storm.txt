@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"FRA"={
 			history = "FRA_1866_DESC"
-			ideology = authoritarian_ideology
+			ideology = neutrality
 			available = { always = yes }
 			ideas = {
 			}
@@ -22,7 +22,7 @@ bookmarks = {
 
 		"ENG"={
 			history = "ENG_1866_DESC"
-			ideology = conservatism_ideology
+			ideology = democratic
 			available = { always = yes }
 			ideas = {
 			}
@@ -34,7 +34,7 @@ bookmarks = {
 
 		"ITA"={
 			history = "ITA_1866_DESC"
-			ideology = conservatism_ideology
+			ideology = democratic
 			available = { always = yes }
 			ideas = {
 				vittorio_emanuele
@@ -50,7 +50,7 @@ bookmarks = {
 
 		"PRS"={
 			history = "PRS_1866_DESC"
-			ideology = conservatism_ideology
+			ideology = democratic
 			available = { always = yes }
 			ideas = {
 			}
@@ -63,7 +63,7 @@ bookmarks = {
 
 		"AUS"={
 			history = "AUS_1866_DESC"
-			ideology = conservatism_ideology
+			ideology = democratic
 			available = { always = yes }
 			ideas = {
 			}
@@ -73,7 +73,7 @@ bookmarks = {
 
 		"CHI"={
 			history = "CHI_1866_DESC"
-			ideology = authoritarian_ideology
+			ideology = neutrality
 			available = { always = yes }
 			ideas = {
 			}
@@ -83,7 +83,7 @@ bookmarks = {
 
 		"SOV"={
 			history = "SOV_1866_DESC"
-			ideology = authoritarian_ideology
+			ideology = neutrality
 			available = { always = yes }
 			ideas = {
 			}
@@ -93,7 +93,7 @@ bookmarks = {
 		
 		"USA"={
 			history = "USA_1866_DESC"
-			ideology = conservatism_ideology
+			ideology = democratic
 			ideas = {
 			}
 			focuses = {

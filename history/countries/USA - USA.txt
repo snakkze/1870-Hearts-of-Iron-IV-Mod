@@ -310,14 +310,14 @@ set_convoys = 700
 
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1864.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 50
-	liberalism_ideology = 50
+	democratic = 50
+	fascism = 50
 }
 set_cosmetic_tag = USA_democratic
 add_ideas = {
@@ -329,7 +329,7 @@ add_ideas = {
 }
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
 		elections_allowed = yes

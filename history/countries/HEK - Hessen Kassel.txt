@@ -56,13 +56,13 @@ capital = 942
 recruit_character = HEK_friedrich_wilhelm
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 23
-	liberalism_ideology = 75
-	authoritarian_ideology = 2
+	democratic = 23
+	fascism = 75
+	neutrality = 2
 }

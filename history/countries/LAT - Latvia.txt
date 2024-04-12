@@ -183,16 +183,16 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1931.10.3"
 	election_frequency = 10
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 30
-	authoritarian_ideology = 15
-	socialism_ideology = 15
-	authoritarian_ideology = 40
+	democratic = 30
+	neutrality = 15
+	communism = 15
+	neutrality = 40
 }
 
 # probably needs some adjustment before nazi occupation in 1940

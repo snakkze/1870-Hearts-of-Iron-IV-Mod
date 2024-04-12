@@ -12,26 +12,26 @@ add_dynamic_modifier = {
 set_cosmetic_tag = FRA_kingdom
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1863.6.22"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 11
-	authoritarian_ideology = 89
+	democratic = 11
+	neutrality = 89
 }
 
 1870.1.1 = {
 	set_politics = {
-		ruling_party = authoritarian_ideology
+		ruling_party = neutrality
 		last_election = "1869.6.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
-		conservatism_ideology = 17
-		authoritarian_ideology = 83
+		democratic = 17
+		neutrality = 83
 	}
 }
 

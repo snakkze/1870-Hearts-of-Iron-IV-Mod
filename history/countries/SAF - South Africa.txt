@@ -176,15 +176,15 @@ if = {
 
 set_convoys = 25
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 75
-	authoritarian_ideology = 20
-	socialism_ideology = 5
+	democratic = 75
+	neutrality = 20
+	communism = 5
 }
 
 recruit_character = SAF_j_b_m_hertzog
@@ -212,13 +212,13 @@ recruit_character = SAF_abram_fischer
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1938.5.18"
 		election_frequency = 60
 		elections_allowed = yes
 	}
 	set_popularities = {
-		conservatism_ideology = 100
+		democratic = 100
 	}
 
 	#retire_character = SAF_j_b_m_hertzog

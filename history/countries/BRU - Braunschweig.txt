@@ -56,14 +56,14 @@ capital = 948
 recruit_character = BRU_william
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	liberalism_ideology = 77
-	authoritarian_ideology = 2
-	conservatism_ideology = 21
+	fascism = 77
+	neutrality = 2
+	democratic = 21
 }

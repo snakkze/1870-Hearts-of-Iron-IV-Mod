@@ -268,7 +268,7 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -276,15 +276,15 @@ set_politics = {
 IF = {
 	limit = { has_dlc = "By Blood Alone" }
 	set_popularities = {
-		authoritarian_ideology = 70
-		authoritarian_ideology = 20 
-		conservatism_ideology = 5
-		socialism_ideology = 5
+		neutrality = 70
+		neutrality = 20 
+		democratic = 5
+		communism = 5
 	}
 }
 IF = {
 	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	set_popularities = {
-		authoritarian_ideology = 100
+		neutrality = 100
 	}
 }

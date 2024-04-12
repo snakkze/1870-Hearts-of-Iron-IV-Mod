@@ -74,14 +74,14 @@ recruit_character = NMB_ar
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 50
-	authoritarian_ideology = 20
-	socialism_ideology = 5
-	authoritarian_ideology = 25
+	democratic = 50
+	neutrality = 20
+	communism = 5
+	neutrality = 25
 }

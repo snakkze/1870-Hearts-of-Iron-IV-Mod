@@ -68,17 +68,17 @@ recruit_character = AUS_leopold_figl
 
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	authoritarian_ideology = 34
-	conservatism_ideology = 56
-	liberalism_ideology = 8
-	socialism_ideology = 2
+	neutrality = 34
+	democratic = 56
+	fascism = 8
+	communism = 2
 }
 
 set_stability = 0.50

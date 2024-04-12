@@ -57,14 +57,14 @@ recruit_character = WRT_karl_friedrich_august
 
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 33
-	liberalism_ideology = 57
-	authoritarian_ideology = 10
+	democratic = 33
+	fascism = 57
+	neutrality = 10
 }

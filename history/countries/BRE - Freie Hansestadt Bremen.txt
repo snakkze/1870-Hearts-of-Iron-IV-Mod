@@ -56,14 +56,14 @@ capital = 945
 recruit_character = BRE_arnold_duckwitz
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism_ideology = 18
-	authoritarian_ideology = 4
-	liberalism_ideology = 78
+	democratic = 18
+	neutrality = 4
+	fascism = 78
 }

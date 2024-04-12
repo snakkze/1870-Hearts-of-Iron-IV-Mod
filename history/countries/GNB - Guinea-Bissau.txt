@@ -74,14 +74,14 @@ recruit_character = GNB_communist_guy
 }
 
 set_politics = {
-	ruling_party = socialism_ideology
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism_ideology = 25
-	authoritarian_ideology = 20
-	socialism_ideology = 50
-	authoritarian_ideology = 5
+	democratic = 25
+	neutrality = 20
+	communism = 50
+	neutrality = 5
 }

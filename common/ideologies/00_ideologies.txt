@@ -1,6 +1,7 @@
 ideologies = {
 
-	conservatism_ideology = {
+	# Conservatism
+	democratic = {
 
 		types = {
 
@@ -77,7 +78,8 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
 
-	liberalism_ideology = {
+	# Liberalism
+	fascism = {
 
 		types = {
 
@@ -153,11 +155,12 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
 
-	socialism_ideology = {
+	# Socialism
+	communism = {
 
 		types = {
 
-			communism = {
+			communism_subideology = {
 				color = { 185 37 37 }
 			}
 
@@ -212,7 +215,8 @@ ideologies = {
 		}
 	}
 
-	authoritarian_ideology = {
+	# Authoritarian
+	neutrality = {
 
 		types = {
 			nationalism = {

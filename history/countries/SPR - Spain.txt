@@ -3,13 +3,13 @@ capital = 41
 set_cosmetic_tag = SPR_kingdom
 
 set_popularities = {
-	authoritarian_ideology = 47
-	conservatism_ideology = 46
-	socialism_ideology = 7
+	neutrality = 47
+	democratic = 46
+	communism = 7
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -323,15 +323,15 @@ set_stability = 0.5
 		complete_national_focus = production_effort
 
 		set_politics = {
-			ruling_party = authoritarian_ideology
+			ruling_party = neutrality
 			last_election = "1934.3.26"
 			election_frequency = 60
 			elections_allowed = no
 		}
 		set_popularities = {
-			conservatism_ideology = 22
-			authoritarian_ideology = 76
-			socialism_ideology = 2
+			democratic = 22
+			neutrality = 76
+			communism = 2
 		}
 	}
 
@@ -382,15 +382,15 @@ set_stability = 0.5
 			remove_unit_leader_trait = trait_SPA_nationalist_sympathies
 		}
 		set_politics = {
-			ruling_party = authoritarian_ideology
+			ruling_party = neutrality
 			last_election = "1934.3.26"
 			election_frequency = 60
 			elections_allowed = no
 		}
 		set_popularities = {
-			conservatism_ideology = 17
-			authoritarian_ideology = 38
-			authoritarian_ideology = 45
+			democratic = 17
+			neutrality = 38
+			neutrality = 45
 		}
 	}
 	

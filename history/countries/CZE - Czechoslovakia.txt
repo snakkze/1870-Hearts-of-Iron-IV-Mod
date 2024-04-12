@@ -98,17 +98,17 @@ if = {
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservatism_ideology = 65
-	authoritarian_ideology = 20
-	authoritarian_ideology = 5
-	socialism_ideology = 10
+	democratic = 65
+	neutrality = 20
+	neutrality = 5
+	communism = 10
 }
 
 if = {

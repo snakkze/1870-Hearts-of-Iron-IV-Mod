@@ -56,13 +56,13 @@ capital = 61
 recruit_character = MCK_frederick_francis_ii
 
 set_politics = {
-	ruling_party = liberalism_ideology
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	authoritarian_ideology = 33
-	liberalism_ideology = 67
+	neutrality = 33
+	fascism = 67
 }

@@ -79,13 +79,13 @@ recruit_character = MON_pai_yun_ti
 }
 
 set_politics = {
-	ruling_party = socialism_ideology
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	socialism_ideology = 100
+	communism = 100
 }
 
 1939.1.1 = {

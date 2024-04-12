@@ -232,29 +232,29 @@ set_convoys = 30
 set_stability = 0.65
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 96
-	authoritarian_ideology = 2
-	socialism_ideology = 2
+	democratic = 96
+	neutrality = 2
+	communism = 2
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = conservatism_ideology
+		ruling_party = democratic
 		last_election = "1936.10.19"
 		election_frequency = 36
 		elections_allowed = yes
 	}
 	set_popularities = {
-		conservatism_ideology = 84
-		authoritarian_ideology = 2
-		socialism_ideology = 2
-		authoritarian_ideology = 12
+		democratic = 84
+		neutrality = 2
+		communism = 2
+		neutrality = 12
 	}
 }
 

@@ -41,15 +41,15 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservatism_ideology
+	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism_ideology = 94
-	authoritarian_ideology = 2
-	socialism_ideology = 2
-	authoritarian_ideology = 2
+	democratic = 94
+	neutrality = 2
+	communism = 2
+	neutrality = 2
 }
 

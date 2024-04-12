@@ -7,16 +7,16 @@ set_cosmetic_tag = KHI_fpw_cosmetic
 set_research_slots = 2
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservatism_ideology = 26
-	socialism_ideology = 2
-	authoritarian_ideology = 72
+	democratic = 26
+	communism = 2
+	neutrality = 72
 }
 
 recruit_character = KHI_nedirbay_aytakov

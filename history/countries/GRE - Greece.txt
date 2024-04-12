@@ -182,10 +182,10 @@ set_convoys = 10
 			days = 730
 		}
 		set_popularities = {
-			conservatism_ideology = 10
-			authoritarian_ideology = 22
-			socialism_ideology = 26
-			authoritarian_ideology = 42
+			democratic = 10
+			neutrality = 22
+			communism = 26
+			neutrality = 42
 		}
 		
 		create_country_leader = {
@@ -310,16 +310,16 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = authoritarian_ideology
+	ruling_party = neutrality
 	last_election = "1935.6.9"
 	election_frequency = 7
 	elections_allowed = yes # none after offset 1
 }
 set_popularities = {
-	conservatism_ideology = 43
-	authoritarian_ideology = 2
-	socialism_ideology = 17
-	authoritarian_ideology = 38
+	democratic = 43
+	neutrality = 2
+	communism = 17
+	neutrality = 38
 }
 
 set_stability = 0.72

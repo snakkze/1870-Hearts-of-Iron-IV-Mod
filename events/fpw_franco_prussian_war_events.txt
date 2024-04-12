@@ -221,15 +221,15 @@ country_event = {
 				retire_character = FRA_napoleon_iii
 			}
 			set_politics = {
-				ruling_party = conservatism_ideology
+				ruling_party = democratic
 				last_election = "1936.1.1"
 				election_frequency = 48
 				elections_allowed = no
 			}
 			set_popularities = {
-				conservatism_ideology = 33
-				liberalism_ideology = 10
-				authoritarian_ideology = 57
+				democratic = 33
+				fascism = 10
+				neutrality = 57
 			}
 			FRA_prov_gov = {
 				add_country_leader_role = {

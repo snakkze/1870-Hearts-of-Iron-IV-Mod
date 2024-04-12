@@ -97,9 +97,9 @@ if = {
 }
 
 set_popularities = {
-	conservatism_ideology = 25
-	socialism_ideology = 35
-	authoritarian_ideology = 40
+	democratic = 25
+	communism = 35
+	neutrality = 40
 }
 
 create_country_leader = {
