@@ -21,7 +21,6 @@ scripted_gui = {
                 else = {
                     set_global_flag = example_gui
                 }
-                set_variable = { old_array_num = global.prestige_list_array^num }
 				clear_array = global.prestige_list_array
 				every_country = {
 					if = {
@@ -29,18 +28,11 @@ scripted_gui = {
 							NOT = { is_in_array = { global.prestige_list_array = THIS } }
 						}
 						add_to_array = { global.prestige_list_array = THIS }
-						#calculate_GDP = yes # Is calculated monthly
 					}
 				}
-                set_variable = { new_array_num = global.prestige_list_array^num }
                 calculate_prestige = yes
-                if = {
-                    limit = {
-                        NOT = {
-                            check_variable = { old_array_num = new_array_num }
-                        }
-                    }
-                    calculate_GDP = yes
+                TRB = {
+                    set_variable = { THIS.country_prestige = 0 }
                 }
 				update_position = yes
             }

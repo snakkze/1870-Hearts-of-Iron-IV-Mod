@@ -122,6 +122,14 @@ defined_text = {
         }
         localization_key = fpw_country_rank_unrecognized_insignificant_power_localization_key
     }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            check_variable = { temp_prestige = 0 }
+        }
+        localization_key = fpw_country_rank_decentralized_nation_localization_key
+    }
+
 }
 
 defined_text = {
