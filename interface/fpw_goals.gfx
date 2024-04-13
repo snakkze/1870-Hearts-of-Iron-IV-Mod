@@ -1,15 +1,79 @@
+# PRUSSIA #
 spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_PRS_unification"
 		texturefile = "gfx/interface/goals/focus_PRS_unification.dds"
 	}
 	spriteType = {
+		name = "GFX_focus_PRS_greater_german"
+		texturefile = "gfx/interface/goals/focus_PRS_greater_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_lesser_german"
+		texturefile = "gfx/interface/goals/focus_PRS_lesser_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_baden"
+		texturefile = "gfx/interface/goals/focus_PRS_invite_baden.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_bavaria"
+		texturefile = "gfx/interface/goals/focus_PRS_invite_bavaria.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_wrt"
+		texturefile = "gfx/interface/goals/focus_PRS_invite_wurttemberg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_hessen"
+		texturefile = "gfx/interface/goals/focus_PRS_invite_hessen.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_russian_friendship"
+		texturefile = "gfx/interface/goals/focus_PRS_russian_friendship.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_bismarcks_plan"
+		texturefile = "gfx/interface/goals/focus_PRS_bismarcks_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_defending_the_fatherland"
+		texturefile = "gfx/interface/goals/focus_PRS_defending_the_fatherland.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_form_the_ngc"
+		texturefile = "gfx/interface/goals/focus_PRS_from_the_ngc.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_form_greater_prussia"
+		texturefile = "gfx/interface/goals/focus_PRS_greater_prussia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_austrian_seperatism"
+		texturefile = "gfx/interface/goals/focus_PRS_austrian_seperatism.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_hungarian_support"
+		texturefile = "gfx/interface/goals/focus_PRS_hungarian_support.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_schutz_und_trutz_alliance"
+		texturefile = "gfx/interface/goals/focus_PRS_schutz_and_trutz_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_supreme_prussian_race"
+		texturefile = "gfx/interface/goals/focus_PRS_supreme_prussian_race.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
 		name = "GFX_focus_attack_austria"
 		texturefile = "gfx/interface/goals/attack_austria.png"
 	}
 	spriteType = {
 		name = "GFX_focus_attack_austria_shine"
-		texturefile = "gfx/interface/goals/attack_austria.png"
+		texturefile = "gfx/interface/goals/focus_generic_attack_austria.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_befriend_prussia"

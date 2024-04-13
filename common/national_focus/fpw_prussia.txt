@@ -26,7 +26,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_lesser_german_solution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_lesser_german
 		x = 6
 		y = 0
 		cost = 10
@@ -163,9 +163,10 @@ focus_tree = {
 
 	# Prusso-Nationalist Path
 	# Requires a trigger warning!
+	# Loc Name: Supreme Prussian Race
 	focus = {
 		id = PRS_prussian_identity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_supreme_prussian_race
 		prerequisite = { focus = PRS_bruderkrieg_ending }
 		relative_position_id = PRS_bruderkrieg_ending
 		x = 0
@@ -177,6 +178,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_cosmetic_tag = PRS_nationalist
 		}
 	}
 
@@ -439,7 +441,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_towards_a_greater_prussia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_form_greater_prussia
 		prerequisite = { focus = PRS_prussian_identity focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_prussian_identity
 		x = 3
@@ -451,13 +453,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			# Proud Nation idea or smth idk
+			#set_cosmetic_tag = PRS_greater_prussia
 		}
 	}
 
 	focus = {
 		id = PRS_fund_austrian_seperatists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_austrian_seperatism
 		prerequisite = { focus = PRS_towards_a_greater_prussia }
 		prerequisite = { focus = PRS_search_the_scrapegoat }
 		relative_position_id = PRS_towards_a_greater_prussia
@@ -476,7 +479,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_defending_our_fatherland
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_defending_the_fatherland
 		prerequisite = { focus = PRS_fund_austrian_seperatists }
 		relative_position_id = PRS_fund_austrian_seperatists
 		x = -1
@@ -512,7 +515,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_seek_hungarian_support
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_hungarian_support
 		prerequisite = { focus = PRS_fund_austrian_seperatists }
 		relative_position_id = PRS_fund_austrian_seperatists
 		x = 1
@@ -548,25 +551,6 @@ focus_tree = {
 
 	focus = {
 		id = PRS_gott_mit_uns
-		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_prepare_our_infrastructure }
-		prerequisite = { focus = PRS_fortify_silesia }
-		relative_position_id = PRS_fortify_silesia
-		x = 1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_gott_mit_uns
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = PRS_prepare_our_infrastructure }
 		prerequisite = { focus = PRS_fortify_silesia }
@@ -586,7 +570,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_unternehmen_ostmark
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_austria
 		prerequisite = { focus = PRS_gott_mit_uns }
 		prerequisite = { focus = PRS_the_vengeance }
 		relative_position_id = PRS_gott_mit_uns
@@ -709,7 +693,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_the_unified_north
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_form_the_ngc
 		prerequisite = { focus = PRS_kaisers_germany }
 		prerequisite = { focus = PRS_cut_german_diplomatic_ties }
 		relative_position_id = PRS_kaisers_germany
@@ -802,7 +786,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_continue_bismarcks_plan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_bismarcks_plan
 		prerequisite = { focus = PRS_austro_prussian_victory }
 		mutually_exclusive = { focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_austro_prussian_victory
@@ -922,7 +906,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_finalize_the_north_german_confederation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_form_the_ngc
 		prerequisite = { focus = PRS_ratify_the_peace }
 		relative_position_id = PRS_ratify_the_peace
 		x = 0
@@ -941,7 +925,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_towards_a_unified_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_schutz_und_trutz_alliance
 		prerequisite = { focus = PRS_finalize_the_north_german_confederation }
 		relative_position_id = PRS_finalize_the_north_german_confederation
 		x = -2
@@ -1090,7 +1074,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_invite_baden
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_invite_baden
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = -3
@@ -1108,7 +1092,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_invite_wurttemberg
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_invite_wrt
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = -1
@@ -1126,7 +1110,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_invite_bavaria
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_invite_bavaria
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = 3
@@ -1144,7 +1128,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_invite_hessen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_invite_hessen
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = 1
@@ -1258,7 +1242,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_secure_russian_friendship
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_russian_friendship
 		prerequisite = { focus = PRS_seek_international_support focus = PRS_austrian_enemy}
 		relative_position_id = PRS_seek_international_support
 		x = 2
@@ -1277,7 +1261,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_greater_german_solution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_greater_german
 		x = 19
 		y = 0
 		cost = 10
