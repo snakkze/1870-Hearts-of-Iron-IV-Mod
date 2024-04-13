@@ -1,11 +1,9 @@
-
 state={
-	id=95
-	name="STATE_95"
-
+	id=983
+	name="STATE_983"
 	history={
 		victory_points = {
-			9304 1 
+			11301 3 
 		}
 		owner = SOV
 		add_core_of = SOV
@@ -13,15 +11,14 @@ state={
 			infrastructure = 3
 
 		}
-		add_core_of = BLR
+		add_core_of = POL
 
 	}
-
 	provinces={
-		318 3281 3366 3393 6359 6413 9236 9304 9359 11341 13206 
+		290 347 11247 11301 
 	}
-	manpower=1598900
+	manpower=600000
 	buildings_max_level_factor=1.000
 	state_category=rural
-	local_supplies=6.000
+	local_supplies=0.000
 }
