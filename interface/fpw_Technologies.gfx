@@ -1,6 +1,7 @@
 spriteTypes = {
 
 	### generic equipment archetypes ###
+	# generic infantry archetypes #
 	
 	SpriteType = {
 		name = "GFX_fpw_infantry_weapons_medium"
@@ -57,5 +58,69 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_fpw_support_weapons_medium"
 		texturefile = "gfx/interface/technologies/support_weapons.dds"
+	}
+
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon_artillery_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_artillery_0.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon3_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_artillery_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon6_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_artillery_5.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon8_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_artillery_7.dds"
+	}	
+
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer_artillery_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_artillery_0.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer3_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_artillery_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer5_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_artillery_4.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer8_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_artillery_7.dds"
+	}		
+		
+	
+	SpriteType = {
+		name = "GFX_fpw_breech_artillery_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_artillery_0.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_fpw_breech6_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_artillery_5.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_fpw_muzzle_artillery_medium"
+		texturefile = "gfx/interface/technologies/muzzle/fpw_breech_muzzle_0.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_fpw_muzzle4_medium"
+		texturefile = "gfx/interface/technologies/muzzle/fpw_breech_muzzle_3.dds"
+	}	
+
 }

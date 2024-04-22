@@ -1,0 +1,76 @@
+characters={
+
+	SPR_isabella_ii={
+		name="Isabella II"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_isabella
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+	SPR_amadeo_i={
+		name="Amadeo I"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_amadeo
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+
+	SPR_leopold={
+		name="Leopold of Hohenzollern-Sigmaringen"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_leopold
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+
+	SPR_napoleon_iv={
+		name="Napoleon IV"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_napoleon
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+
+	SPR_victoria_mary_louisa={
+		name="Victoria Mary Louisa"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_victoria
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+}

@@ -2,6 +2,13 @@ capital = 41
 
 set_cosmetic_tag = SPR_kingdom
 
+recruit_character = SPR_isabella_ii
+
+recruit_character = SPR_amadeo_i
+recruit_character = SPR_leopold
+recruit_character = SPR_napoleon_iv
+recruit_character = SPR_victoria_mary_louisa
+
 set_popularities = {
 	neutrality = 47
 	democratic = 46
@@ -71,6 +78,7 @@ if = {
 			has_dlc = "La Resistance"
 		}
 	}
+
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz
 	recruit_character = SPR_alejandro_lerroux

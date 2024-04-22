@@ -1,4 +1,26 @@
 spriteTypes = {
+	# SPR
+	spriteType = {
+		name = "GFX_portrait_SPR_amadeo"
+		texturefile = "gfx/leaders/SPR/Portrait_SPR_amadeo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_isabella"
+		texturefile = "gfx/leaders/SPR/Portrait_SPR_isabella.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_leopold"
+		texturefile = "gfx/leaders/SPR/Portrait_SPR_leopold.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_napoleon"
+		texturefile = "gfx/leaders/SPR/Portrait_SPR_napoleon_iv.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_victoria"
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_victoria_mary_louisa.dds"
+	}
+
 	# PRS
 	spriteType = {
 		name = "GFX_portrait_PRS_wilhelm_I"
