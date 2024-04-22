@@ -5,6 +5,44 @@
 
 set_oob = "SOV_1866"
 
+10 = {
+	start_resistance = yes
+	set_resistance = 25
+	set_compliance = 40
+	set_garrison_strength = 1.0
+}
+87 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 40
+	set_garrison_strength = 1.0
+}
+90 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 40
+	set_garrison_strength = 1.0
+}
+92 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 40
+	set_garrison_strength = 1.0
+}
+97 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 40
+	set_garrison_strength = 1.0
+}
+98 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 40
+	set_garrison_strength = 1.0
+}
+
+
 add_dynamic_modifier = { 
 	modifier = fpw_underdeveloped_industry 
 }
@@ -68,23 +106,28 @@ if = {
 #POLITICAL ADVISORS
 
 
-#GOSPROYEKTSTROY
-set_variable = { SOV_gosproyektstroy_decision_cost = 50 }
-set_variable = { SOV_gosproyektstroy_decision_time = 90 }
 
-#USSR ACADEMY OF SCIENCES
-set_variable = { SOV_national_academy_of_sciences_research_increase = 0.01 } #Research speed increment for each Academy of Sciences built
-set_variable = { SOV_academy_of_sciences_research_speed_factor = 0.01 } #Var used by the dynamic modifier to apply the research bonus
-set_variable = { SOV_national_academy_of_sciences_construction_cost = 50 } #The cost for activating the decision to build an academy.
-set_variable = { SOV_national_academy_of_sciences_construction_time = 90 } #The time it takes for the decision to finish and build an academy.
-set_variable = { SOV_academies_required_for_atomic_bomb_project = 7 } #Number of academies of sciences required to pick focus Soviet Atomic Bomb Project
+#SERFDOM REMNANTS SPIRIT
+set_variable = { SOV_sr_consumer_goods_factor = 0.10 }
+set_variable = { SOV_sr_global_building_slots_factor = -0.20 }
+set_variable = { SOV_sr_production_factory_max_efficiency_factor = -0.10 }
+set_variable = { SOV_sr_industrial_capacity_factory = -0.05 }
+set_variable = { SOV_sr_industrial_capacity_dockyard = -0.05 }
 
-#THIRD FIVE YEAR PLAN FACTORY REQUIREMENTS
-set_variable = { SOV_fyp_factory_requirement_tier_1 = 100 }
-set_variable = { SOV_fyp_factory_requirement_tier_2 = 120 }
-set_variable = { SOV_fyp_factory_requirement_tier_3 = 130 }
-set_variable = { SOV_fyp_factory_requirement_tier_4 = 150 }
-set_variable = { SOV_fyp_factory_requirement_tier_5 = 200 }
+set_variable = { SOV_sr_local_resources_factor = 0 }
+set_variable = { SOV_sr_production_speed_buildings_factor = 0 }
+
+add_dynamic_modifier = { modifier = SOV_serfdom_remnants_dynamic_modifier }
+
+
+
+
+
+
+
+
+
+
 
 #THIRD FIVE YEAR PLAN NATIONAL SPIRIT VARS
 set_variable = { SOV_fyp_production_factory_efficiency_gain_factor = -0.15 }
@@ -103,7 +146,7 @@ set_variable = { SOV_fyp_fuel_gain_factor_from_states = 0 } #-> Oil Production
 set_variable = { SOV_fyp_production_oil_factor = 0 } #-> Oil Production
 set_variable = { SOV_fyp_industry_repair_factor = 0.1 } #-> Fourth Five Year Plan
 
-add_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
+#add_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
 
 
 #THE RED FLEET NATIONAL SPIRIT VARS
@@ -162,7 +205,7 @@ set_variable = { SOV_the_red_army_dig_in_speed_factor = 0 } # -> Experts in Camo
 set_variable = { SOV_the_red_army_operative_slot  = 0 } # -> Organization of the Partisans
 set_variable = { SOV_the_red_army_max_command_power_mult = 0 } # -> Depoliticize the Military
 
-add_dynamic_modifier = { modifier = SOV_the_red_army_dynamic_modifier }
+#add_dynamic_modifier = { modifier = SOV_the_red_army_dynamic_modifier }
 
 #THE POLITBURO SPIRIT VARS
 set_variable = { SOV_the_politburo_communism_drift = 0.05 }
