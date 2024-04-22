@@ -321,7 +321,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-		## GIVES DOCTRINE BOOST FOR OFFENSIVE WARS ##
+			add_ideas = ITA_venice_attack
+			custom_effect_tooltip = ITA_will_be_removed
 		}
 	}
 	focus = {
@@ -346,7 +347,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL}
 
 		completion_reward = {
-		## GIVES DOCTRINE BOOST FOR DEFENSIVE WARS ##
+			add_ideas = ITA_defending
+			custom_effect_tooltip = ITA_will_be_removed
 		}
 	}
 	focus = {
@@ -547,6 +549,7 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = yes
 			}
+			promote_character = ITA_giuseppe_mazzini
 		}
 	}
 	focus = {
@@ -604,7 +607,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_counter_coup_trigger
-				ITA_alfonso_ferrero = { has_ideology = autocratic_republic }
+				ITA_alfonso_ferrero = { has_ideology = nationalism }
 			}
 		}
 		x = 1
@@ -623,6 +626,9 @@ focus_tree = {
 				set_cosmetic_tag = ITA_nationalist
 			}
 			custom_effect_tooltip = ITA_counter_coup_effect
+			remove_ideas = {
+				ITA_liberal_country
+			}
 		}
 	}
 	focus = {

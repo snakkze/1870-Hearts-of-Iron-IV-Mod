@@ -537,7 +537,7 @@ country_event = {
 country_event = {
 	id = italy_fpw.16
 	title = italy_fpw.15.t
-	desc = italy_fpw.16.d
+	desc = italy_fpw.15.d
 	picture = GFX_report_event_generic_handshake
 	
 	is_triggered_only = yes
@@ -1138,11 +1138,55 @@ country_event = {
 		}
 	}
 }
-
-
-
-
-
-
-
-
+# birth of the national party
+country_event = {
+	id = italy_fpw.24
+	title = italy_fpw.24.t
+	desc = italy_fpw.24.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_fpw.24.a
+		set_party_name = {
+			ideology = neutrality
+			long_name = ITA_np
+			name = ITA_np
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.35
+		}
+		add_country_leader_role = {
+			character = ITA_alfonso_ferrero
+			promote_leader = yes
+			country_leader = {
+				ideology = nationalism
+				expire = "1965.1.1.1"
+				traits = {}
+			}
+		}
+		hidden_effect = {
+			ITA_alfonso_ferrero = {
+				remove_country_leader_role = {
+   					ideology = conservative_constitutional_monarchism
+				}
+			}
+		}
+	}
+}
+# First Presidential election
+country_event = {
+	id = italy_fpw.25
+	title = italy_fpw.25.t
+	desc = italy_fpw.25.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_fpw.25.a
+		add_stability = 0.3
+	}
+}

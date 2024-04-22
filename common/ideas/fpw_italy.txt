@@ -58,5 +58,44 @@ ideas = {
 				communism_drift = -0.03
 			}
 		}
+		ITA_venice_attack = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_war_with = AUS
+			}
+
+			cancel = {
+				NOT = { has_war_with = AUS }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+			}
+		}
+		ITA_defending = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_war_with = AUS
+			}
+
+			cancel = {
+				NOT = { has_war_with = AUS }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_strength_factor = 0.2
+			}
+		}
 	}
 }

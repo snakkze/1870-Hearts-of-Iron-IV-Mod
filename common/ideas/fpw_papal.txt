@@ -1,0 +1,33 @@
+ideas = {
+
+	country = {
+	
+		french_garrison = {
+			allowed = {
+				original_tag = PAP
+			}
+
+			available = {
+				FRA = {
+					exists = yes
+					has_war_with_major = no
+				}
+			}
+
+			cancel = {
+				FRA = {
+					OR = {
+						has_war_with_major = yes
+						exists = no
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 2
+			}
+		}
+	}
+}

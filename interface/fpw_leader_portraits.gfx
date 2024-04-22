@@ -77,7 +77,10 @@ spriteTypes = {
 		name = "GFX_portrait_PAP_pope"
 		texturefile = "gfx/leaders/PAP/Portrait_PAP_pope.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_portrait_ITA_giuseppe_mazzini"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_giuseppe_mazzini.dds"
+	}
 	# USA
 	spriteType = {
 		name = "GFX_portrait_USA_andrew_johnson"

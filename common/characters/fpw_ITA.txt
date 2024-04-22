@@ -40,4 +40,17 @@ characters={
 			id = -1
 		}
 	}
+	ITA_giuseppe_mazzini = {
+		name = "Giuseppe Mazzini"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_giuseppe_mazzini
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 }
