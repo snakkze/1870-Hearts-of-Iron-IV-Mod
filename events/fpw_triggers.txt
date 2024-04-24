@@ -365,9 +365,11 @@ country_event = {
 	hidden = yes
 		
 	trigger = {
-		PRS = { has_war_with = AUS }
-		AUS = { owns_state = 160 }
-		original_tag = ITA
+		AND = {
+			PRS = { has_war_with = AUS }
+			AUS = { owns_state = 160 }
+			original_tag = ITA
+		}	
 	}
 
 	option = {
@@ -429,6 +431,34 @@ country_event = {
 		PRS = {
 			# france versailles pre peace
 			country_event = franco_prussian_fpw.1
+		}
+	}
+}
+# Spanish Glorious Revolution
+country_event = {
+	id = trigger.11
+	title = trigger.11.t
+	desc = trigger.11.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		AND = {
+			original_tag = SPR
+			has_start_date < 1968.9.20
+			has_start_date > 1968.9.18
+		}
+	}
+
+	option = {
+		name = trigger.9.a
+		SPR = {
+			country_event = spain_fpw.1
 		}
 	}
 }

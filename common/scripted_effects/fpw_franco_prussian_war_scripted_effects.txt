@@ -20,10 +20,17 @@ prussian_surrender_2 = {
 	PRS = {
 		dismantle_faction = yes
 		clr_country_flag = franco_prussian_war
+		add_dynamic_modifier = { 
+			modifier = fpw_FRA_loser_of_1871
+		}
 	}	
 	FRA = {
 		dismantle_faction = yes
 		clr_country_flag = franco_prussian_war
+		add_dynamic_modifier = { 
+			modifier = fpw_PRS_heil_dir_im_siegerkranz
+		}
+
 		936 = {
 			transfer_state_to = FRA
 		}
@@ -123,11 +130,19 @@ france_surrender = {
 	PRS = {
 		dismantle_faction = yes
 		clr_country_flag = franco_prussian_war
-		#set_cosmetic_tag = PRS_GER	
+		#set_cosmetic_tag = PRS_GER
+		add_dynamic_modifier = { 
+			modifier = fpw_PRS_heil_dir_im_siegerkranz
+		}
+	
 	}	
 	FRA = {
 		dismantle_faction = yes
 		clr_country_flag = franco_prussian_war
+		add_dynamic_modifier = { 
+			modifier = fpw_FRA_loser_of_1871
+		}
+
 	}
 }
 

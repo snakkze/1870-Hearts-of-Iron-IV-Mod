@@ -1028,7 +1028,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			# idk some event lore
 		}
 	}
 
@@ -1043,6 +1043,24 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			always = no
+		}
+
+		bypass = {
+			OR = {	
+				AND = {
+					SPR = {
+						has_country_flag = SPR_found_king
+						NOT = {
+							has_completed_focus = invite_a_hohenzollern
+						}
+					}
+				}
+				has_global_flag = fpw_declined_leopold
+			}
 		}
 
 		completion_reward = {
@@ -1064,6 +1082,10 @@ focus_tree = {
 			factor = 10
 		}
 
+		bypass = {
+			has_global_flag = fpw_no_ems_dispatch
+		}
+
 		completion_reward = {
 			country_event = { id = prussia_fpw.11 }
 		}
@@ -1083,10 +1105,27 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			if = {
+				limit = {
+					has_global_flag = fpw_no_ems_dispatch
+				}
+			}
+			else = {
+				always = no
+			}
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = fpw_no_ems_dispatch
+				}
+				set_global_flag = fpw_franco_prussian_war_flag
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}
 			# We need a krupp for victory idea about their artillery or howitzers seprerate focus
 		}
 	}

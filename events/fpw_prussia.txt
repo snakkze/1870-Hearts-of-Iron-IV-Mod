@@ -485,7 +485,7 @@ country_event = {
 	}
 }
 
-# Ems dispatch
+# "Modified" Ems dispatch
 country_event = {
 	id = prussia_fpw.11
 	title = prussia_fpw.11.t
@@ -627,17 +627,22 @@ country_event = {
 	}
 }
 
-# German Military Parade
+# Recieved Ems dispatch
 country_event = {
-	id = prussia_fpw.15
-	title = prussia_fpw.15.t
-	desc = prussia_fpw.15.d
+	id = prussia_fpw.16
+	title = prussia_fpw.16.t
+	desc = prussia_fpw.16.d
 	picture = GFX_report_event_generic_handshake
 
 	is_triggered_only = yes
 
 	option = {
-		name = prussia_fpw.15.a
+		name = prussia_fpw.16.a
+		complete_national_focus = PRS_ems_dispatch
+	}
 
+	option = {
+		name = prussia_fpw.16.b
+		
 	}
 }

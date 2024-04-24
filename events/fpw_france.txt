@@ -26,3 +26,39 @@ country_event = {
 		#news_event = { hours = 6 id = news.28 }
 	}
 }
+
+# Send ems dispatch
+country_event = {
+	id = france_fpw.2
+	title = france_fpw.2.t
+	desc = france_fpw.2.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_fpw.2.a
+		ai_chance = {
+			base = 50 
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+		PRS = { country_event = { id = prussia_fpw.16 days = 1 } }
+	}
+
+	option = {
+		name = france_fpw.2.a
+		ai_chance = {
+			base = 0 
+			modifier = {
+				add = 50
+				is_historical_focus_on = no
+			}
+		}
+		hidden_effect = {
+			set_global_flag = fpw_no_ems_dispatch
+		}
+	}
+}

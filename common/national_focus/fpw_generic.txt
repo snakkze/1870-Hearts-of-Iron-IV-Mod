@@ -2438,9 +2438,9 @@ focus_tree = {
 	focus = {
 		id = spanish_glorious_revolution
 		icon = GFX_focus_spr_no_pasaran
-		#allow_branch = {
-		#	original_tag = SPR
-		#}
+		allow_branch = {
+			original_tag = SPR
+		}
 		available = {
 			always = no
 		}
@@ -2452,7 +2452,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.1
+			# Category similar to netherlands cave in...
+			unlock_decision_category_tooltip = fpw_spanish_succession
+			set_global_flag = spanish_succession
 		}
 	}
 
@@ -2460,14 +2462,16 @@ focus_tree = {
 		id = invite_a_hohenzollern
 		icon = GFX_focus_SPR_invite_a_hohenzollern
 		prerequisite = { focus = spanish_glorious_revolution }
-		mutually_exclusive = { focus = invite_a_british }
-		mutually_exclusive = { focus = invite_a_savoyan }
-		mutually_exclusive = { focus = invite_a_bonaparte }
-		#allow_branch = {
-		#	original_tag = SPR
-		#}
+		allow_branch = {
+			original_tag = SPR
+		}
 		available = {
-			has_civil_war = no
+			AND = {
+				has_civil_war = no	
+				NOT = {
+					has_country_flag = SPR_found_king
+				}
+			}		
 		}
 		x = 3
 		y = 1
@@ -2477,7 +2481,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.1
+			PRS = {
+				country_event = { id = spain_fpw.2 days = 1 }
+			}
 		}
 	}
 
@@ -2485,14 +2491,16 @@ focus_tree = {
 		id = invite_a_savoyan
 		icon = GFX_focus_SPR_invite_a_savoyan
 		prerequisite = { focus = spanish_glorious_revolution }
-		mutually_exclusive = { focus = invite_a_british }
-		mutually_exclusive = { focus = invite_a_bonaparte }
-		mutually_exclusive = { focus = invite_a_hohenzollern }
-		#allow_branch = {
-		#	original_tag = SPR
-		#}
+		allow_branch = {
+			original_tag = SPR
+		}
 		available = {
-			has_civil_war = no
+			AND = {
+				has_civil_war = no	
+				NOT = {
+					has_country_flag = SPR_found_king
+				}
+			}		
 		}
 		x = 1
 		y = 1
@@ -2502,7 +2510,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.1
+			ITA = {
+				country_event = { id = spain_fpw.2 days = 1 }
+			}
 		}
 	}
 
@@ -2510,14 +2520,16 @@ focus_tree = {
 		id = invite_a_british
 		icon = GFX_focus_SPR_invite_a_british
 		prerequisite = { focus = spanish_glorious_revolution }
-		mutually_exclusive = { focus = invite_a_bonaparte }
-		mutually_exclusive = { focus = invite_a_savoyan }
-		mutually_exclusive = { focus = invite_a_hohenzollern }
-		#allow_branch = {
-		#	original_tag = SPR
-		#}
+		allow_branch = {
+			original_tag = SPR
+		}
 		available = {
-			has_civil_war = no
+			AND = {
+				has_civil_war = no	
+				NOT = {
+					has_country_flag = SPR_found_king
+				}
+			}		
 		}
 		x = -1
 		y = 1
@@ -2527,7 +2539,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.1
+			ENG = {
+				country_event = { id = spain_fpw.2 days = 1 }
+			}
 		}
 	}
 
@@ -2535,14 +2549,16 @@ focus_tree = {
 		id = invite_a_bonaparte
 		icon = GFX_focus_SPR_invite_a_bonaparte
 		prerequisite = { focus = spanish_glorious_revolution }
-		mutually_exclusive = { focus = invite_a_british }
-		mutually_exclusive = { focus = invite_a_savoyan }
-		mutually_exclusive = { focus = invite_a_hohenzollern }
-		#allow_branch = {
-		#	original_tag = SPR
-		#}
+		allow_branch = {
+			original_tag = SPR
+		}
 		available = {
-			has_civil_war = no
+			AND = {
+				has_civil_war = no	
+				NOT = {
+					has_country_flag = SPR_found_king
+				}
+			}		
 		}
 		x = -3
 		y = 1
@@ -2552,7 +2568,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = prussia_fpw.11 }
+			FRA = {
+				country_event = { id = spain_fpw.2 days = 1 }
+			}
 		}
 	}
 }

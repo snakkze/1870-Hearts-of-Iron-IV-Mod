@@ -20,6 +20,10 @@ spriteTypes = {
 		name = "GFX_portrait_SPR_victoria"
 		texturefile = "gfx/leaders/ENG/Portrait_ENG_victoria_mary_louisa.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_SPR_prov_gov"
+		texturefile = "gfx/leaders/SPR/Portrait_SPR_prov_gov.dds"
+	}
 
 	# PRS
 	spriteType = {

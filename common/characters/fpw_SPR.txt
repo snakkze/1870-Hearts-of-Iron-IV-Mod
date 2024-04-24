@@ -8,7 +8,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=aboslute_monarchy
+			ideology=monarchism
 			expire="1956.01.01.01"
 			id=-1
 		}
@@ -22,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=aboslute_monarchy
+			ideology=monarchism
 			expire="1956.01.01.01"
 			id=-1
 		}
@@ -30,14 +30,14 @@ characters={
 
 
 	SPR_leopold={
-		name="Leopold of Hohenzollern-Sigmaringen"
+		name="Leopold of Hohenzollern"
 		portraits={
 			civilian={
 				large=GFX_portrait_SPR_leopold
 			}
 		}
 		country_leader={
-			ideology=aboslute_monarchy
+			ideology=monarchism
 			expire="1956.01.01.01"
 			id=-1
 		}
@@ -52,7 +52,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=aboslute_monarchy
+			ideology=monarchism
 			expire="1956.01.01.01"
 			id=-1
 		}
@@ -67,10 +67,26 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=aboslute_monarchy
+			ideology=monarchism
 			expire="1956.01.01.01"
 			id=-1
 		}
 	}
+
+
+	SPR_prov_gov={
+		name="Spanish Provisional Government"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_prov_gov
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
 
 }
