@@ -1011,6 +1011,7 @@ focus_tree = {
 
 		completion_reward = {
 			# Pay the märchenprinz von bavaria gold for him to build a castle
+			BAV = { country_event = { id = prussia_fpw.9 hours = 2 } }
 		}
 	}
 

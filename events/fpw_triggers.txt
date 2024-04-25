@@ -273,7 +273,7 @@ country_event = {
 	}
 }
 
-# schutz und trutz JA
+# 
 country_event = {
 	id = trigger.7
 	title = trigger.7.t
@@ -287,31 +287,15 @@ country_event = {
 	hidden = yes
 		
 	trigger = {
-		AND = {
-			HES = {
-				has_country_flag = schutz_und_trutz_accepted
-			}
-			WRT = {
-				has_country_flag = schutz_und_trutz_accepted
-			}
-			BAV = {
-				has_country_flag = schutz_und_trutz_accepted
-			}
-			BAD = {
-				has_country_flag = schutz_und_trutz_accepted
-			}
-		}
+
 	}
 
 	option = {
 		name = trigger.7.a
-		PRS = {
-			country_event = prussia_fpw.16
-		}
 	}
 }
 
-# schutz und trutz NEIN
+# 
 country_event = {
 	id = trigger.8
 	title = trigger.8.t
@@ -325,32 +309,14 @@ country_event = {
 	hidden = yes
 		
 	trigger = {
-		AND = {
-			has_answered_schutz_und_trutz = yes
-			OR = {
-				HES = {
-					has_country_flag = schutz_und_trutz_declined
-				}
-				WRT = {
-					has_country_flag = schutz_und_trutz_declined
-				}
-				BAV = {
-					has_country_flag = schutz_und_trutz_declined
-				}
-				BAD = {
-					has_country_flag = schutz_und_trutz_declined
-				}
-			}
-		}
-	}
+	
+}
 
 	option = {
 		name = trigger.8.a
-		PRS = {
-			country_event = prussia_fpw.17
-		}
 	}
 }
+
 # something italy idk ask fizzyjuice
 country_event = {
 	id = trigger.9
@@ -450,8 +416,8 @@ country_event = {
 	trigger = {
 		AND = {
 			original_tag = SPR
-			has_start_date < 1968.9.20
-			has_start_date > 1968.9.18
+			date < 1868.9.20
+			date > 1868.9.18
 		}
 	}
 

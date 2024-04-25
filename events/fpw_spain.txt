@@ -5,7 +5,7 @@ country_event = {
 	id = spain_fpw.1
 	title = spain_fpw.1.t
 	desc = spain_fpw.1.d
-	picture = GFX_report_event_ger_civil_war
+	picture = GFX_report_event_spain_civil_war_soldiers
 
 	is_triggered_only = yes
 	
@@ -254,8 +254,6 @@ country_event = {
 			limit = {
 				original_tag = PRS
 			}
-			# France sends the ems dispatch
-			FRA = { country_event = { id = france_fpw.2 days = 1 } }
 			set_global_flag = fpw_declined_leopold
 		}
 		SPR = {
@@ -436,7 +434,7 @@ country_event = {
 		if = {
 			limit = {
 				FROM = {
-					original_tag = FRA
+					original_tag = PRS
 				}
 			}
 			hidden_effect = {	

@@ -12,7 +12,6 @@ country_event = {
 	# Agree to bismarck
 	option = {
 		name = prussia_fpw.1.a
-		complete_national_focus = PRS_continue_bismarcks_plan
 		hidden_effect = {
 			if = {
 				limit = {
@@ -24,12 +23,21 @@ country_event = {
 					refund_political_power = yes
 				}
 			}
+			else = {
+				complete_national_focus = PRS_integrate_minor_austrian_lands
+				uncomplete_national_focus = {
+					focus = PRS_integrate_minor_austrian_lands
+					uncomplete_children = yes
+					refund_political_power = yes
+				}
+			}
 		}
+		complete_national_focus = PRS_continue_bismarcks_plan
 	}
 
 	# Disagree with Bismarck
 	option = {
-		name = prussia_fpw.1.a
+		name = prussia_fpw.1.b
 		effect_tooltip = {	
 			PRS_wilhelm_i = {
 				add_country_leader_role = {
@@ -361,7 +369,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		set_country_flag = schutz_und_trutz_accepted
+		PRS = { country_event = { id = prussia_fpw.16 hours = 2 } }
 	}
 
 	# Offer declined
@@ -396,7 +404,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		set_country_flag = schutz_und_trutz_declined
+		PRS = { country_event = { id = prussia_fpw.17 hours = 2 } }
 	}
 }
 
@@ -413,12 +421,7 @@ country_event = {
 		name = prussia_fpw.16.a
 		every_country = {
 			limit = {
-				OR = {
-					original_tag = BAD
-					original_tag = WRT
-					original_tag = BAV
-					original_tag = HES
-				}
+				original_tag = FROM
 			}
 			give_guarantee = PRS
 			add_opinion_modifier = {
@@ -429,12 +432,6 @@ country_event = {
 				target = PRS
 				modifier = fpw_schutz_und_trutz_budniss
 			}
-		}
-		PRS = {
-			give_guarantee = BAD
-			give_guarantee = WRT
-			give_guarantee = BAV
-			give_guarantee = HES
 		}
 	}
 }
@@ -450,7 +447,7 @@ country_event = {
 			
 	option = {
 		name = prussia_fpw.17.a
-		# Use scripted loc to check who was the one/who were the ones that declined
+		
 	}
 }
 
@@ -481,7 +478,7 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.10.a
-
+		# Enable event to influence Spain
 	}
 }
 
@@ -629,20 +626,20 @@ country_event = {
 
 # Recieved Ems dispatch
 country_event = {
-	id = prussia_fpw.16
-	title = prussia_fpw.16.t
-	desc = prussia_fpw.16.d
+	id = prussia_fpw.20
+	title = prussia_fpw.20.t
+	desc = prussia_fpw.20.d
 	picture = GFX_report_event_generic_handshake
 
 	is_triggered_only = yes
 
 	option = {
-		name = prussia_fpw.16.a
+		name = prussia_fpw.20.a
 		complete_national_focus = PRS_ems_dispatch
 	}
 
 	option = {
-		name = prussia_fpw.16.b
+		name = prussia_fpw.20.b
 		
 	}
 }
