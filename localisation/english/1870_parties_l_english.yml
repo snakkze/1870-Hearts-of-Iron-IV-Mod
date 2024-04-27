@@ -1,20 +1,4 @@
 ﻿l_english:
- democratic:0 "Conservative"
- democratic_noun:0 "Conservatism"
- democratic_desc:0 "Conservative Regime"
- fascism:0 "Liberal"
- fascism_noun:0 "Liberalism"
- fascism_desc:0 "Liberal Regime"
- communism:0 "Socialist"
- communism_noun:0 "Socialism"
- communism_desc:0 "Socialist Regime"
- neutrality:0 "Authoritarian"
- neutrality_noun:0 "Authoritarianism"
- neutrality_desc:0 "Authoritarian Regime"
-
- # Conservatism
- #conservatism:0 ""
- #conservatism_desc:0 ""
  authoritarian_conservatism:0 "Authoritarian Conservatism"
  authoritarian_conservatism_desc:0 "Rooted in a belief that swift societal transformations may pose inherent risks, authoritarian conservatism embraces a commitment to established authority and traditional values, often favoring a measured approach to change while emphasizing the preservation of core societal structures."
  social_conservatism:0 "Social Conservatism"
@@ -81,21 +65,3 @@
  PRS_communism__party_long:0 "Sächsiche Volkspartei"
  PRS_neutrality_party:0 "Partei Hohenzollern"
  PRS_neutrality_party_long:0 "Partei Hohenzollern"
- 
- AUS_democratic_party:0 "KP"
- AUS_democratic_party_long:0 "Konservative Partei"
- AUS_fascism_party:0 "DLP"
- AUS_fascism_party_long:0 "Deutschliberale Partei"
- AUS_communism_party:0 "Deutsche Agrarpartei"
- AUS_communism_party_long:0 "Deutsche Agrarpartei"
- AUS_neutrality_party:0 "VG"
- AUS_neutrality_party_long:0 "Verfassungstreue Großgrundbesitzer"
- 
- ITA_democratic_party:0 "Right"
- ITA_fascism_party:0 "Left"
- ITA_communism_party:0 "Italian Socialists"
- ITA_neutrality_party:0 "House of Savoy"
- ITA_np:0 "Italian National Party"
- 
- USA_democratic_party:0 "Democratic Party"
- USA_fascism_party:0 "Republican Party"
