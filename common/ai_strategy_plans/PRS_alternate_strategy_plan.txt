@@ -1,0 +1,149 @@
+PRS_monarchist = {
+	name = "Prussian alternate kaiser plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = MONARCHISM
+			}
+			has_country_flag = PRS_AI_RANDOM_MONARCHIST
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		PRS_lesser_german_solution
+		PRS_seek_german_support
+		PRS_seek_international_support
+		PRS_secure_french_peace
+		PRS_ally_with_italy
+		PRS_propose_federal_reform
+		PRS_integrate_minor_austrian_lands
+		PRS_ultimatum_to_the_northern_reichsrat
+		PRS_kaisers_germany
+		PRS_cut_german_diplomatic_ties
+		PRS_the_unified_north
+		PRS_constitutions_rework
+		PRS_prepare_the_suedfront
+		PRS_support_pro_german_sentiments_in_the_south
+		PRS_declare_kaisers_germany
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+PRS_nationalist = {
+	name = "Prussian alternate nationalist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = NATIONALIST
+			}
+			has_completed_focus = PRS_bruderkrieg_ending
+			has_country_flag = PRS_AI_RANDOM_NATIONALIST
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		PRS_lesser_german_solution
+		PRS_seek_german_support
+		PRS_seek_international_support
+		PRS_secure_french_peace
+		PRS_ally_with_italy
+		PRS_propose_federal_reform
+		PRS_prussian_identity
+		PRS_towards_a_greater_prussia
+		PRS_inspect_the_kaisers_residence
+		PRS_plan_the_coup
+		PRS_overthrow_wilhelm
+		PRS_search_the_scrapegoat
+		PRS_dolchstosslegende
+		PRS_fund_austrian_seperatists
+		PRS_seek_hungarian_support
+		PRS_segrete_the_lesser_germans
+		PRS_subhumans_in_the_workforce
+		PRS_prepare_our_infrastructure
+		PRS_ruhm_und_ehre_der_volksarmee
+		PRS_wacht_am_rhein
+		PRS_the_ruhrkampf
+		PRS_fight_the_remains_of_north_germany
+		PRS_italian_ally
+		PRS_defending_our_fatherland
+		PRS_fortify_silesia
+		PRS_gott_mit_uns
+		PRS_the_vengeance
+		PRS_unternehmen_germania
+		PRS_unternehmen_ostmark
+		PRS_form_the_greater_german_empire
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}

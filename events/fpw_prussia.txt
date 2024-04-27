@@ -643,3 +643,27 @@ country_event = {
 		
 	}
 }
+
+# Wilhelm offers an Alliance to Italy
+country_event = {
+	id = prussia_fpw.21
+	title = prussia_fpw.21.t
+	desc = prussia_fpw.21.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.21.a
+		give_guarantee = PRS
+		PRS = { give_guarantee = ITA }
+	}
+
+	option = {
+		name = prussia_fpw.21.b
+		add_opinion_modifier = {
+			target = PRS
+			modifier = refused_help
+		}
+	}
+}

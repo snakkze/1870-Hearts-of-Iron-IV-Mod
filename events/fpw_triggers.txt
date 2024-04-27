@@ -1,6 +1,6 @@
 add_namespace = trigger
 
-# Austro Prussian War Escalation
+# Clear
 country_event = {
 	id = trigger.1
 	title = trigger.1.t
@@ -14,19 +14,11 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		AND = {
-			has_global_flag = austro_prussian_war_escalation_flag
-			NOT = {
-				has_global_flag = fpw_war_escalation
-			}
-		}
+	
 	}
 
 	option = {
 		name = trigger.1.a
-
-        set_global_flag = fpw_war_escalation
-		news_event = news_fpw.1
 	}
 }
 
@@ -415,7 +407,6 @@ country_event = {
 		
 	trigger = {
 		AND = {
-			original_tag = SPR
 			date < 1868.9.20
 			date > 1868.9.18
 		}

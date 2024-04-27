@@ -905,30 +905,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRS_ratify_the_peace
-		icon = GFX_goal_molotov_ribbentrop_pact
+		id = PRS_finalize_the_north_german_confederation
+		icon = GFX_focus_PRS_form_the_ngc
 		prerequisite = { focus = PRS_annex_hostile_nothern_states }
 		prerequisite = { focus = PRS_invite_remaing_nothern_states }
 		relative_position_id = PRS_annex_hostile_nothern_states
 		x = 2
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			# Add Idea "Victor of 1866"
-		}
-	}
-
-	focus = {
-		id = PRS_finalize_the_north_german_confederation
-		icon = GFX_focus_PRS_form_the_ngc
-		prerequisite = { focus = PRS_ratify_the_peace }
-		relative_position_id = PRS_ratify_the_peace
-		x = 0
 		y = 1
 		cost = 10
 
@@ -1024,6 +1006,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 
+		available = {
+			always = no
+		}
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -1088,7 +1074,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = prussia_fpw.11 }
+			country_event = { id = prussia_fpw.11 hours = 2 }
 		}
 	}
 
@@ -1144,6 +1130,16 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			country_exists = BAD
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = BAD
+			}
+		}
+
 		completion_reward = {
 			BAD = { country_event = { id = prussia_fpw.12 hours = 2 } }
 		}
@@ -1160,6 +1156,16 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			country_exists = WRT
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = WRT
+			}
 		}
 
 		completion_reward = {
@@ -1180,6 +1186,16 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			country_exists = BAV
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = BAV
+			}
+		}
+
 		completion_reward = {
 			BAV = { country_event = { id = prussia_fpw.12 hours = 2 } }
 		}
@@ -1196,6 +1212,16 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			country_exists = HES
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = HES
+			}
 		}
 
 		completion_reward = {
@@ -1275,6 +1301,16 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			country_exists = FRA
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = FRA
+			}
+		}
+
 		completion_reward = {
 			# IF NOT DONE FRANCE WILL JOIN BECAUSE OF THE SECRET TREATY AUSTRIA CAN MAKE PER FOCUS
 			# basically we say to france we will give them territory after the war if they dont join(We can say yes but also no)
@@ -1294,8 +1330,27 @@ focus_tree = {
 			factor = 10
 		}
 
-		completion_reward = {
+		available = {
+			country_exists = ITA
+		}
 
+		bypass = {
+			OR = {
+				is_ally_with = ITA
+				is_guaranteed_by = ITA
+				NOT = {
+					country_exists = ITA
+				}
+			}
+		}
+
+		completion_reward = {
+			ITA = { 
+				country_event = {
+					id = prussia_fpw.21
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -1310,6 +1365,16 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			country_exists = SOV
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = SOV
+			}
 		}
 
 		completion_reward = {

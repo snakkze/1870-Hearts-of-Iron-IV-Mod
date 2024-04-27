@@ -1,0 +1,80 @@
+LIE_historical = {
+	name = "Prussian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		or = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					has_game_rule = {
+						rule = PRS_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			has_country_flag = PRS_AI_RANDOM_DEFAULT
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+		has_completed_focus = PRS_bruderkrieg_ending
+	}
+
+	ai_national_focuses = {
+		PRS_lesser_german_solution
+		PRS_seek_german_support
+		PRS_seek_international_support
+		PRS_secure_french_peace
+		PRS_ally_with_italy
+		PRS_propose_federal_reform
+		PRS_continue_bismarcks_plan
+		PRS_annex_hostile_nothern_states
+		PRS_invite_remaing_nothern_states
+		PRS_finalize_the_north_german_confederation
+		PRS_towards_a_unified_germany
+		PRS_towards_a_unified_germany
+		PRS_maerchenprinz
+		PRS_invite_hessen
+		PRS_invite_baden
+		PRS_invite_wurttemberg
+		PRS_invite_bavaria
+		PRS_heil_dir_im_siegerkranz
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
