@@ -1,4 +1,5 @@
 capital = 41
+ oob = "SPR_1866"
 
 set_cosmetic_tag = SPR_kingdom
 
@@ -60,12 +61,12 @@ add_ideas = {
 	}	
 }
 
-oob = "SPR_1936"
+oob = "SPR_1866"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SPR_1936_naval_mtg"
+		set_naval_oob = "SPR_1866_naval_mtg"
 	else = {
-		set_naval_oob = "SPR_1936_naval_legacy"
+		set_naval_oob = "SPR_1866_naval_legacy"
 	}
 }
 if = {

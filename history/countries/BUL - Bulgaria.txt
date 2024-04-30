@@ -1,7 +1,8 @@
 capital = 48
+ oob = "BUL_1866"
 
 #TROOPS
-oob = "BUL_1936" #VANILLA & DLC
+oob = "BUL_1866" #VANILLA & DLC
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {

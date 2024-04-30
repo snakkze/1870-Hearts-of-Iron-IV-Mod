@@ -23,14 +23,6 @@ country_event = {
 					refund_political_power = yes
 				}
 			}
-			else = {
-				complete_national_focus = PRS_integrate_minor_austrian_lands
-				uncomplete_national_focus = {
-					focus = PRS_integrate_minor_austrian_lands
-					uncomplete_children = yes
-					refund_political_power = yes
-				}
-			}
 		}
 		complete_national_focus = PRS_continue_bismarcks_plan
 	}

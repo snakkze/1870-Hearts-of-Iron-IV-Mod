@@ -101,6 +101,7 @@ if = {
 	}
 	recruit_character = SOV_provisional_government # United Exiles
 	set_country_flag = vlasov_owner_flag
+add_core_of = None
 }
 
 #POLITICAL ADVISORS
@@ -249,14 +250,15 @@ set_technology = {
 ####
 
 capital = 195
+ oob = "SOV_1866"
 
 starting_train_buffer = 3.0
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SOV_1936_naval_mtg"
+		set_naval_oob = "SOV_1866_naval_mtg"
 	else = {
-		set_naval_oob = "SOV_1936_naval_legacy"
+		set_naval_oob = "SOV_1866_naval_legacy"
 	}
 }
 if = {

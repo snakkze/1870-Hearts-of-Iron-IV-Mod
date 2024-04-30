@@ -1,6 +1,7 @@
 capital = 275
+ oob = "SAF_1866"
 
-oob = "SAF_1936"
+oob = "SAF_1866"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {

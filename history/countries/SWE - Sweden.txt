@@ -1,14 +1,15 @@
 capital = 141	
+ oob = "SWE_1866"
 
 set_cosmetic_tag = SWE_norway_union
 
 #add_opinion_modifier = { target = GER modifier = GER_SWE_historic_trade_Partners } CUT
-oob = "SWE_1936"
+oob = "SWE_1866"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SWE_1936_naval_mtg"
+		set_naval_oob = "SWE_1866_naval_mtg"
 	else = {
-		set_naval_oob = "SWE_1936_naval_legacy"
+		set_naval_oob = "SWE_1866_naval_legacy"
 	}
 }
 if = {

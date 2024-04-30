@@ -1,6 +1,7 @@
 capital = 284
+ oob = "NZL_1866"
 
-oob = "NZL_1936"
+oob = "NZL_1866"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {

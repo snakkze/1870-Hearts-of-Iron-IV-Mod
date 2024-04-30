@@ -1,4 +1,5 @@
 capital = 107
+ oob = "YUG_1866"
 
 if = {
 	limit = {
@@ -6,19 +7,19 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "YUG_1936"
+	set_oob = "YUG_1866"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "YUG_1936_nsb"
+	set_oob = "YUG_1866"
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "YUG_1936_naval_mtg"
+		set_naval_oob = "YUG_1866_naval_mtg"
 	else = {
-		set_naval_oob = "YUG_1936_naval_legacy"
+		set_naval_oob = "YUG_1866_naval_legacy"
 	}
 }
 if = {

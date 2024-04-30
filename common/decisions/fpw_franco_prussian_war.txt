@@ -71,15 +71,18 @@ fpw_franco_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
-				ROOT = {
-					OR = {
-						tag = WRT
-						tag = BAV
-						tag = BAD
-						tag = HES
+				AND = {
+					is_historical_focus_on = yes
+					ROOT = {
+						OR = {
+							tag = WRT
+							tag = BAV
+							tag = BAD
+							tag = HES
+						}
 					}
 				}
 			}
@@ -157,7 +160,7 @@ fpw_franco_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
 
 		complete_effect = {

@@ -346,8 +346,14 @@ austrian_surrender = {
 		add_dynamic_modifier = { 
 			modifier = fpw_PRS_victor_of_the_brothers_war
 		}
-
-		complete_national_focus = PRS_austro_prussian_victory
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = PRS_austro_prussian_victory
+				}	
+			}
+			complete_national_focus = PRS_austro_prussian_victory
+		}
 		58 = {
 			add_core_of = PRS
 			transfer_state_to = PRS

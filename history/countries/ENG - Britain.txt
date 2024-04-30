@@ -1,4 +1,5 @@
 capital = 126
+ oob = "ENG_1866"
 
 set_cosmetic_tag = ENG_democratic
 set_politics = {
@@ -38,13 +39,13 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "ENG_1936"
+	set_oob = "ENG_1866"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "ENG_1936_nsb"
+	set_oob = "ENG_1866"
 }
 
 starting_train_buffer = 4
@@ -53,9 +54,9 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "ENG_1936_Naval"
+	set_naval_oob = "ENG_1866_Naval"
 	else = {
-		set_naval_oob = "ENG_1936_Naval_Legacy"
+		set_naval_oob = "ENG_1866_Naval_Legacy"
 	}
 }
 

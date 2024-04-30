@@ -1,4 +1,5 @@
 capital = 37
+ oob = "DEN_1866"
 
 if = {
 	limit = { has_dlc = "Arms Against Tyranny" }
@@ -6,12 +7,12 @@ if = {
 }
 
 
-oob = "DEN_1936"
+oob = "DEN_1866"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "DEN_1936_naval_mtg"
+		set_naval_oob = "DEN_1866_naval_mtg"
 	else = {
-		set_naval_oob = "DEN_1936_naval_legacy"
+		set_naval_oob = "DEN_1866_naval_legacy"
 	}
 }
 if = {

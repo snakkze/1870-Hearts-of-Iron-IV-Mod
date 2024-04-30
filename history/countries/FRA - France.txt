@@ -1,4 +1,5 @@
 capital = 16
+ oob = "FRA_1866"
 
 oob = "FRA_1866"
 
@@ -39,10 +40,10 @@ starting_train_buffer = 2
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FRA_1936_naval_mtg"
+		set_naval_oob = "FRA_1866_naval_mtg"
 		set_war_support = 0.1
 	else = {
-		set_naval_oob = "FRA_1936_naval_legacy"
+		set_naval_oob = "FRA_1866_naval_legacy"
 		set_war_support = 0.15
 	}
 }

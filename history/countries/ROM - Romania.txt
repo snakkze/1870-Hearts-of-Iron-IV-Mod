@@ -1,4 +1,5 @@
 capital = 46
+ oob = "ROM_1866"
 set_politics = {
 	ruling_party = democratic
 	last_election = "1863.12.20"
@@ -35,19 +36,19 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "ROM_1936"
+	set_oob = "ROM_1866"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "ROM_1936_nsb"
+	set_oob = "ROM_1866"
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ROM_1936_naval_mtg"
+		set_naval_oob = "ROM_1866_naval_mtg"
 	else = {
-		set_naval_oob = "ROM_1936_naval_legacy"
+		set_naval_oob = "ROM_1866_naval_legacy"
 	}
 }
 if = {

@@ -1,11 +1,12 @@
 capital = 279
+ oob = "CHL_1866"
 
-oob = "CHL_1936"
+oob = "CHL_1866"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "CHL_1936_naval_mtg"
+		set_naval_oob = "CHL_1866_naval_mtg"
 	else = {
-		set_naval_oob = "CHL_1936_naval_legacy"
+		set_naval_oob = "CHL_1866_naval_legacy"
 	}
 }
 if = {

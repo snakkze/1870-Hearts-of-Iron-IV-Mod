@@ -1,6 +1,7 @@
 capital = 291
+ oob = "IRQ_1866"
 
-oob = "IRQ_1936"
+oob = "IRQ_1866"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {

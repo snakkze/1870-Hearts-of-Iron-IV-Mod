@@ -1,5 +1,69 @@
 debug_decisions = {
 
+	calculate_num_states_provinces_oob = {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			PRS = {
+				set_variable = { THIS.test_armies = num_armies }
+				every_state = {
+					limit = {
+						is_owned_by = PRS
+					}
+					add_to_array = {
+						array = global.prs_num_states
+						value = THIS
+					}
+				}
+			}
+			BAD = {
+				set_variable = { THIS.test_armies = num_armies }
+				every_state = {
+					limit = {
+						is_owned_by = BAD
+					}
+					add_to_array = {
+						array = global.bad_num_states
+						value = THIS
+					}
+				}
+			}
+			SOV = {
+				set_variable = { THIS.test_armies = num_armies }
+				every_state = {
+					limit = {
+						is_owned_by = SOV
+					}
+					add_to_array = {
+						array = global.sov_num_states
+						value = THIS
+					}
+				}
+			}
+			custom_effect_tooltip = "This equals [?ROOT.colonial_time], [?ROOT.temp_population]"
+			custom_effect_tooltip = "Prussia: [?PRS.test_armies], [?global.prs_num_states^num] \n Russia: [?SOV.test_armies], [?global.sov_num_states^num] \n Baden: [?BAD.test_armies], [?global.bad_num_states^num]"
+		}
+	}
+
 	schutz_und_trutz_JA= {
 
 		icon = eng_trade_unions_demand

@@ -1,4 +1,5 @@
 capital = 797
+ oob = "TUR_1866"
 
 add_dynamic_modifier = { 
 	modifier = fpw_victors_of_the_crimean_war 
@@ -14,19 +15,19 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "TUR_1936"
+	set_oob = "TUR_1866"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "TUR_1936_nsb"
+	set_oob = "TUR_1866"
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "TUR_1936_naval_mtg"
+		set_naval_oob = "TUR_1866_naval_mtg"
 	else = {
-		set_naval_oob = "TUR_1936_naval_legacy"
+		set_naval_oob = "TUR_1866_naval_legacy"
 	}
 }
 if = {

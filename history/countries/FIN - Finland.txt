@@ -1,14 +1,15 @@
 capital = 111
+ oob = "FIN_1866"
 
-set_oob = "FIN_1936"
+set_oob = "FIN_1866"
 
 ### VARS ###
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FIN_1936_naval_mtg"
+		set_naval_oob = "FIN_1866_naval_mtg"
 	else = {
-		set_naval_oob = "FIN_1936_naval_legacy"
+		set_naval_oob = "FIN_1866_naval_legacy"
 	}
 }
 

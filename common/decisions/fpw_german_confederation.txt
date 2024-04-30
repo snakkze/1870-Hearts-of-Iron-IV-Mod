@@ -32,7 +32,7 @@ fpw_german_confederation_category = {
 		icon = mission_icon_prussian_war_escalation_flag
 		
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 50
 				if = {
@@ -190,14 +190,12 @@ fpw_german_unification_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				if = {
 					limit = {
-						ROOT = {
-							any_owned_state = {
-								has_state_flag = influenced_by_PRS
-							}
+						any_owned_state = {
+							has_state_flag = influenced_by_PRS
 						}
 					}
 					add = 100
@@ -262,14 +260,12 @@ fpw_german_unification_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				if = {
 					limit = {
-						ROOT = {
-							any_owned_state = {
-								has_state_flag = influenced_by_AUS
-							}
+						any_owned_state = {
+							has_state_flag = influenced_by_AUS
 						}
 					}
 					add = 100
@@ -352,7 +348,7 @@ fpw_austro_prussian_war_category = {
 		}			
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				if = {
 					limit = {
@@ -515,7 +511,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -664,7 +660,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -813,7 +809,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -962,7 +958,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -1111,7 +1107,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -1260,7 +1256,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -1409,7 +1405,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -1558,7 +1554,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -1707,7 +1703,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -1855,7 +1851,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -2004,7 +2000,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -2152,7 +2148,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -2301,7 +2297,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -2450,7 +2446,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -2599,7 +2595,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -2748,7 +2744,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -2896,7 +2892,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = AUS
@@ -3045,7 +3041,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -3194,7 +3190,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -3343,7 +3339,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -3492,7 +3488,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -3641,7 +3637,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -3790,7 +3786,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS
@@ -3939,7 +3935,7 @@ fpw_austro_prussian_war_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 100
 				tag = PRS

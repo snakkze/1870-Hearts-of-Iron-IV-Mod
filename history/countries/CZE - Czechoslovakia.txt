@@ -1,4 +1,5 @@
 capital = 9
+ oob = "CZE_1866"
 
 if = {
 	limit = {
@@ -6,13 +7,13 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "CZE_1936"
+	set_oob = "CZE_1866"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "CZE_1936_nsb"
+	set_oob = "CZE_1866"
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }

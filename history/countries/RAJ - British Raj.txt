@@ -1,6 +1,7 @@
 capital = 439
+ oob = "RAJ_1866"
 
-oob = "RAJ_1936"
+oob = "RAJ_1866"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_technology = {
