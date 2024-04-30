@@ -28,7 +28,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9335
+		location = 9309
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -37,17 +37,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11456
+		location = 3262
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 9431
-		division_template = "Militia-Division"
-		start_experience_factor = 0.1
 	}
 }
