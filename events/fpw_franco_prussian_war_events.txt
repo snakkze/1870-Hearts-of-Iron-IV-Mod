@@ -17,9 +17,11 @@ country_event = {
 	option = {
 		name = franco_prussian_fpw.1.a
 		france_surrender = yes
-		hidden_effect = {
-			country_event = { id=franco_prussian_fpw.4 days = 1 }
-		}
+	}
+
+	# PRUSSIA WILL FIGTH TILL ITS OVER!!!
+	option = {
+		name = franco_prussian_fpw.1.b
 	}
 }
 
@@ -39,6 +41,11 @@ country_event = {
 	option = {
 		name = franco_prussian_fpw.2.a
 		prussian_surrender_2 = yes
+	}
+
+	# WE WILL FIGHT TO THE BITTER END!
+	option = {
+		name = franco_prussian_fpw.2.b
 	}
 }
 

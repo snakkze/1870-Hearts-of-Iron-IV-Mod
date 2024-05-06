@@ -7,4 +7,27 @@ spriteTypes = {
 		name = "GFX_idea_liberal_country"
 		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_eng_britain_the_sun_never_sets"
+		texturefile = "gfx/interface/ideas/prestige_modifiers/idea_eng_sun_never_sets.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_prs_victor_of_1866"
+		texturefile = "gfx/interface/ideas/prestige_modifiers/idea_prs_victor_of_1866.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_prs_victor_of_1871"
+		texturefile = "gfx/interface/ideas/prestige_modifiers/idea_prs_victor_of_1871.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_tur_sick_man_of_europe"
+		texturefile = "gfx/interface/ideas/prestige_modifiers/idea_tur_sick_man_of_europe.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_us_divided_country"
+		texturefile = "gfx/interface/ideas/prestige_modifiers/idea_usa_divided_country.dds"
+	}
+
 }

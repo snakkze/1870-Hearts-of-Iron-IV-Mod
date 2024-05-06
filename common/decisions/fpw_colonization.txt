@@ -31,7 +31,6 @@ fpw_colonization_category = {
 		fire_only_once = no
 		days_remove = ROOT.colonial_time
 		#days_remove = 5
-    	selectable_mission = no
 
 		ai_will_do = {
 			factor = 200
@@ -140,7 +139,6 @@ fpw_colonization_category = {
 		fire_only_once = no
 		days_remove = ROOT.colonial_time
 		#days_remove = 5
-    	selectable_mission = yes
 
 		ai_will_do = {
 			factor = 200

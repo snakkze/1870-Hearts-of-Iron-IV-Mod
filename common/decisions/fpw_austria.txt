@@ -1,7 +1,14 @@
 fpw_austria_populations_of_the_empire = {
 	aus_test = {
-		completion_reward = {
-		
+		available = {
+			always = no
+		}
+		allowed = {
+			always = no
+		}
+		icon = mission_icon
+
+		complete_effect = {
 		}
 	}
 }

@@ -1,0 +1,6 @@
+fpw_EGY_suez_built = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	
+	custom_modifier_tooltip = prestige_modifier_suez_built
+}

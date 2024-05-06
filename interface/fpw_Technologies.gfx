@@ -79,6 +79,26 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_fpw_cannon8_medium"
 		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_artillery_7.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon2_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_support_1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon4_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_support_2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon5_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_support_3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_cannon7_medium"
+		texturefile = "gfx/interface/technologies/cannons/fpw_cannon_support_4.dds"
 	}	
 
 	
@@ -101,6 +121,26 @@ spriteTypes = {
 		name = "GFX_fpw_howitzer8_medium"
 		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_artillery_7.dds"
 	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer2_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_support_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer4_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_support_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer6_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_support_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_fpw_howitzer7_medium"
+		texturefile = "gfx/interface/technologies/howitzers/fpw_howitzer_support_4.dds"
+	}	
 		
 	
 	SpriteType = {
@@ -115,12 +155,57 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_fpw_muzzle_artillery_medium"
-		texturefile = "gfx/interface/technologies/muzzle/fpw_breech_muzzle_0.dds"
+		texturefile = "gfx/interface/technologies/muzzle/fpw_muzzle_0.dds"
 	}			
 	
 	SpriteType = {
 		name = "GFX_fpw_muzzle4_medium"
-		texturefile = "gfx/interface/technologies/muzzle/fpw_breech_muzzle_3.dds"
+		texturefile = "gfx/interface/technologies/muzzle/fpw_muzzle_3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_breech2_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_support_1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_breech3_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_support_2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_breech4_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_support_3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_breech5_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_support_4.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_breech7_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_support_5.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_fpw_breech8_medium"
+		texturefile = "gfx/interface/technologies/breech/fpw_breech_support_6.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_fpw_muzzle2_medium"
+		texturefile = "gfx/interface/technologies/muzzle/fpw_muzzle_support_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_fpw_muzzle3_medium"
+		texturefile = "gfx/interface/technologies/muzzle/fpw_muzzle_support_2.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_fpw_muzzle5_medium"
+		texturefile = "gfx/interface/technologies/muzzle/fpw_muzzle_support_3.dds"
 	}	
 
 }

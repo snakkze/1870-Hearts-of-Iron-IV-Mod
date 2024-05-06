@@ -8,7 +8,6 @@
 	FOCUS_FILTER_BALANCE_OF_POWER = 200
 	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
 	FOCUS_FILTER_PROPAGANDA = 110
-	FOCUS_FILTER_MISSIOLINI = 110
 	FOCUS_FILTER_ARMY_XP = 103
 	FOCUS_FILTER_NAVY_XP = 102
 	FOCUS_FILTER_AIR_XP = 101
@@ -1705,7 +1704,7 @@ focus_tree = {
 					elections_allowed = yes
 				}
 				add_stability = -0.1
-				set_country_leader_ideology = communism
+				set_country_leader_ideology = communism_subideology
 			}
 			if = {
 				limit = {
@@ -1988,7 +1987,7 @@ focus_tree = {
 	}
 	focus = {
 		id = loyalty_to_the_confederation
-		icon = GFX_focus_generic_german_confederation
+		icon = GFX_focus_PRS_greater_german
 		prerequisite = { focus = our_place_in_the_world }
 		mutually_exclusive = { focus = internationalism }
 		mutually_exclusive = { focus = imperialism }
@@ -2558,8 +2557,8 @@ focus_tree = {
 
 		completion_reward = {
 			# Category similar to netherlands cave in...
-			unlock_decision_category_tooltip = fpw_spanish_succession
-			set_global_flag = spanish_succession
+			#unlock_decision_category_tooltip = fpw_spanish_succession
+			#set_global_flag = spanish_succession
 		}
 	}
 
@@ -2574,16 +2573,57 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					has_country_flag = SPR_found_king
+					AND = {
+						has_country_flag = SPR_found_king
+						has_idea = fpw_SPR_aftermath_of_the_civilwar
+					}
 				}
 			}		
 		}
+
+		bypass = {
+			PRS = {
+				NOT = {
+					exists = yes
+				}
+			}
+		}
+
 		x = 3
 		y = 1
 		relative_position_id = spanish_glorious_revolution
 		cost = 5
 	
 		available_if_capitulated = yes
+
+		ai_will_do = {
+		   base = 0 
+		   modifier = {
+			   add = 10 
+			   has_opinion = {
+				   target = PRS
+				   value > 10
+			   }
+		   }
+		   modifier = {
+			   add = 20
+			   has_opinion = {
+				   target = PRS
+				   value > 20
+			   }
+		   }
+		   modifier = {
+			   add = 30 
+			   has_opinion = {
+				   target = PRS
+				   value > 30
+			   }
+		   }
+		   modifier = {
+			   add = 100
+			   is_historical_focus_on = yes
+		   }
+		}
 
 		completion_reward = {
 			PRS = {
@@ -2603,7 +2643,10 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					has_country_flag = SPR_found_king
+					AND = {
+						has_country_flag = SPR_found_king
+						has_idea = fpw_SPR_aftermath_of_the_civilwar
+					}
 				}
 			}		
 		}
@@ -2613,6 +2656,43 @@ focus_tree = {
 		cost = 5
 	
 		available_if_capitulated = yes
+
+		bypass = {
+			ITA = {
+				NOT = {
+					exists = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+		   base = 0 
+		   modifier = {
+			   add = 10 
+			   has_opinion = {
+				   target = ITA
+				   value > 10
+			   }
+		   }
+		   modifier = {
+			   add = 20
+			   has_opinion = {
+				   target = ITA
+				   value > 20
+			   }
+		   }
+		   modifier = {
+			   add = 30 
+			   has_opinion = {
+				   target = ITA
+				   value > 30
+			   }
+		   }
+		   modifier = {
+			   factor = 0
+			   is_historical_focus_on = yes
+		   }
+		}
 
 		completion_reward = {
 			ITA = {
@@ -2632,7 +2712,10 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					has_country_flag = SPR_found_king
+					AND = {
+						has_country_flag = SPR_found_king
+						has_idea = fpw_SPR_aftermath_of_the_civilwar
+					}
 				}
 			}		
 		}
@@ -2642,6 +2725,43 @@ focus_tree = {
 		cost = 5
 	
 		available_if_capitulated = yes
+
+		bypass = {
+			ENG = {
+				NOT = {
+					exists = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+		   base = 0 
+		   modifier = {
+			   add = 10 
+			   has_opinion = {
+				   target = ENG
+				   value > 10
+			   }
+		   }
+		   modifier = {
+			   add = 20
+			   has_opinion = {
+				   target = ENG
+				   value > 20
+			   }
+		   }
+		   modifier = {
+			   add = 30 
+			   has_opinion = {
+				   target = ENG
+				   value > 30
+			   }
+		   }
+		   modifier = {
+			   factor = 0
+			   is_historical_focus_on = yes
+		   }
+		}
 
 		completion_reward = {
 			ENG = {
@@ -2661,7 +2781,10 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					has_country_flag = SPR_found_king
+					AND = {
+						has_country_flag = SPR_found_king
+						has_idea = fpw_SPR_aftermath_of_the_civilwar
+					}
 				}
 			}		
 		}
@@ -2671,6 +2794,43 @@ focus_tree = {
 		cost = 5
 	
 		available_if_capitulated = yes
+
+		bypass = {
+			FRA = {
+				NOT = {
+					exists = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+		   base = 0 
+		   modifier = {
+			   add = 10 
+			   has_opinion = {
+				   target = FRA
+				   value > 10
+			   }
+		   }
+		   modifier = {
+			   add = 20
+			   has_opinion = {
+				   target = FRA
+				   value > 20
+			   }
+		   }
+		   modifier = {
+			   add = 30 
+			   has_opinion = {
+				   target = FRA
+				   value > 30
+			   }
+		   }
+		   modifier = {
+			   factor = 0
+			   is_historical_focus_on = yes
+		   }
+		}
 
 		completion_reward = {
 			FRA = {

@@ -49,6 +49,7 @@ adjacency_rule =
 
 	is_disabled = {
 		OR = {
+			has_global_flag = SUEZ_CANAL_NOT_BUILT
 			has_global_flag = SUEZ_CANAL_BLOCKED
 			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
 			has_country_flag = SUEZ_SANCTIONS_FLAG
@@ -138,54 +139,6 @@ adjacency_rule =
 	
 	icon = 2431
 	offset = { -2 0 -7 }
-}
-
-#Panama Canal
-adjacency_rule =
-{
-	name = "PANAMA_CANAL"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = yes
-	}
-	
-	required_provinces = { 4624 7617 }
-
-	is_disabled = {
-		OR = {
-			has_global_flag = PANAMA_CANAL_BLOCKED
-			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
-		}
-		tooltip = disable_canal_tt
-	}
-		
-	icon = 7617
-	offset = { -3 0 -2 }
 }
 
 #Marmara Strait

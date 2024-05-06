@@ -23,7 +23,6 @@ fpw_treaty_of_frankfurt_category = {
 		is_good = yes
 		# 90 Days(Or 60 days idk)
 		days_mission_timeout = 60
-		timeout_effect = no
 		remove_effect = {
 			fpw_treaty_of_frankfurt = yes
 			clr_global_flag = fpw_treaty_of_frankfurt

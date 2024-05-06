@@ -15,7 +15,7 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
+		cannon_artillery = { x = 0 y = 0 }
 	}
 }
 
@@ -32,7 +32,7 @@ division_template = {
 		irregular_infantry = { x = 0 y = 1 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
+		cannon_artillery = { x = 0 y = 0 }
 	}
 }
 
@@ -52,7 +52,7 @@ division_template = {
 		cavalry = { x = 1 y = 3 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
+		cannon_artillery = { x = 0 y = 0 }
 	}
 }
 

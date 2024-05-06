@@ -10,7 +10,7 @@ division_template = {
 		infantry = { x	= 1 y = 1 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
+		cannon_artillery = { x = 0 y = 0 }
 	}
 }
 
@@ -22,7 +22,7 @@ division_template = {
 	regiments = {
 		cavalry = { x	= 0 y = 0 }
 		cavalry = { x	= 0 y = 1 }
-		artillery_brigade = { x = 0 y = 2 }
+		cannon_brigade = { x = 0 y = 2 }
 	}
 }
 

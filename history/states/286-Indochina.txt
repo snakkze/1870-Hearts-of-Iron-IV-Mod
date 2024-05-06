@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-		add_core_of = VIN
-		owner = FRA
+		add_core_of = TRB
+		owner = TRB
 		victory_points = {
 			4401 3 
 		}
@@ -23,6 +23,9 @@ state={
 
 		}
 
+		1870.1.1 = {
+			owner = FRA
+		}
 	}
 
 	provinces={

@@ -30,8 +30,6 @@ country_event = {
 	title = fpw_austria.2.t
 	desc = fpw_austria.2.d
 
-	is_triggered_only = no
-
 	fire_only_once=yes
 
 	major = yes
@@ -106,7 +104,6 @@ country_event = {
 	title = fpw_austria.4.t
 	desc = fpw_austria.4.d
 
-	is_triggered_only = no
 
 	fire_only_once=yes
 

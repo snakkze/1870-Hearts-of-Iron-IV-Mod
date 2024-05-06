@@ -13,6 +13,7 @@ country_event = {
 	option = {
 		name = spain_fpw.1.a
 		hidden_effect = {
+			set_global_flag = fpw_spanish_glorious_revolution
 
 			set_capital = { state = 169 }
 			start_civil_war = {
@@ -54,12 +55,12 @@ country_event = {
 		add_stability = -0.25
 		hidden_effect = { 
 			set_cosmetic_tag = SPR_revolutionaries 
-			PRS = {
-				complete_national_focus = PRS_spanish_glorious_revolution
-			}
-			SPR = {
-				complete_national_focus = spanish_glorious_revolution
-			}
+			#PRS = {
+			#	complete_national_focus = PRS_spanish_glorious_revolution
+			#}
+			#SPR = {
+			#	complete_national_focus = spanish_glorious_revolution
+			#}
 		}
 		random_other_country = {
 			limit = {
@@ -446,3 +447,35 @@ country_event = {
 	}
 }
  
+# Spanish Glorious Revolution ends
+country_event = {
+	id = spain_fpw.5
+	title = spain_fpw.5.t
+	desc = spain_fpw.5.d
+	picture = GFX_report_event_fascists_posing
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			#news_event = { id = wtt_news.8 hours = 6 }
+		}
+	}
+
+	# 
+	option = {
+		name = spain_fpw.5.a
+		SPR = {
+			complete_national_focus = spanish_glorious_revolution
+			add_timed_idea = {
+				idea = fpw_SPR_aftermath_of_the_civilwar
+				years = 1
+			}
+		}
+		hidden_effect = {	
+			PRS = {
+				complete_national_focus = PRS_spanish_glorious_revolution
+			}
+		}
+	}
+}

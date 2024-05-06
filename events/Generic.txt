@@ -1675,7 +1675,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 			modifier = {
-				threat > 20
+				threat > 0.2
 				factor = 2
 			}
 			modifier = {
@@ -1723,7 +1723,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 			modifier = {
-				threat > 20
+				threat > 0.2
 				factor = 2
 			}
 			modifier = {
@@ -1770,7 +1770,7 @@ country_event = {
 				factor = 2
 			}
 			modifier = {
-				threat < 20
+				threat < 0.2
 				factor = 2
 			}
 		}

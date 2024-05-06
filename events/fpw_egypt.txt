@@ -1,0 +1,24 @@
+add_namespace = egypt_fpw
+
+# suez canal built
+country_event = {
+	id = egypt_fpw.1
+	title = egypt_fpw.1.t
+	desc = egypt_fpw.1.d
+	picture = GFX_fpw_report_event_001
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = egypt_fpw.1.a 
+		add_dynamic_modifier = { 
+			modifier = fpw_EGY_suez_built 
+			days = 365
+		}
+	}
+}
+

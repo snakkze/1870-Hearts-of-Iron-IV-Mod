@@ -89,12 +89,6 @@ technologies = {
 			soft_attack = 0.15
 		}
 
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
-		}
-
 		path = {
 			leads_to_tech = fpw_breech3
 			research_cost_coeff = 1
@@ -639,7 +633,7 @@ technologies = {
 	fpw_muzzle4 = {
 
 		enable_equipments = {
-			fpw_muzzle_artillery_equipment_1
+			fpw_muzzle_artillery_equipment_2
 		}
 
 		motorized_rocket_brigade = {
@@ -788,12 +782,6 @@ technologies = {
 		}
 		modern_sp_artillery_brigade= {
 			soft_attack = 0.15
-		}
-
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
 		}
 
 		path = {
@@ -1285,12 +1273,6 @@ technologies = {
 		}
 		modern_sp_artillery_brigade= {
 			soft_attack = 0.15
-		}
-
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
 		}
 
 		path = {

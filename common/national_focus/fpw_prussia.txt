@@ -114,7 +114,7 @@ focus_tree = {
 			# National idea "nationalism" or "brothers on the front" attack on austrian core higher because its same VOLK but lower war intrest because its the same Volk!
 			# Idea is for the fact to make the war easier
 			# thanks snakkze for documenting how it worked cause i completly forgot it -snakkze
-			set_state_owner = 58
+			transfer_state = 58
 		}
 	}
 
@@ -646,8 +646,8 @@ focus_tree = {
 		completion_reward = {
 			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
 			# possibly also with an event
-			set_state_owner = 978
-			set_state_owner = 979
+			transfer_state = 978
+			transfer_state = 979
 			add_state_core = 978
 			add_state_core = 979
 		}
@@ -841,9 +841,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_state_owner = 58
+			transfer_state = 58
 			add_state_core = 58
-			set_state_owner = 55
+			transfer_state = 55
 			add_state_core = 55
 			every_country = {
 				limit = {
@@ -1427,26 +1427,6 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_cooperate_with_austria }
 		relative_position_id = PRS_cooperate_with_austria
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-		}
-	}
-
-	# North to Prussia, south to Austria will create a faction not a state pretty much sucks
-	focus = {
-		id = PRS_split_germany
-		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_cooperate_with_austria }
-		relative_position_id = PRS_cooperate_with_austria
 		x = 1
 		y = 1
 		cost = 10
@@ -1457,7 +1437,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			# North gets Prusso-German nationalist, south gets Austro-German Nationalism
 		}
 	}
 
@@ -1465,10 +1445,10 @@ focus_tree = {
 	focus = {
 		id = PRS_propose_the_nord_sued_idea
 		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_split_germany }
 		prerequisite = { focus = PRS_improve_the_nation_spirit }
+		prerequisite = { focus = PRS_pivot_to_the_past }
 		relative_position_id = PRS_improve_the_nation_spirit
-		x = 1
+		x = -2
 		y = 1
 		cost = 10
 
@@ -1481,8 +1461,39 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRS_austrian_enemy
+		id = PRS_hohenzollern_schleswig_treaty
 		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_improve_the_nation_spirit }
+		relative_position_id = PRS_improve_the_nation_spirit
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_unify_the_north
+		icon = GFX_focus_PRS_form_the_ngc
+		prerequisite = { focus = PRS_hohenzollern_schleswig_treaty }
+		prerequisite = { focus = PRS_propose_the_nord_sued_idea }
+		relative_position_id = PRS_propose_the_nord_sued_idea
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_austrian_enemy
+		icon = GFX_focus_attack_austria
 		prerequisite = { focus = PRS_greater_german_solution }
 		relative_position_id = PRS_greater_german_solution
 		mutually_exclusive = { focus = PRS_cooperate_with_austria }
@@ -1501,7 +1512,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRS_habsburg_enemy
+		id = PRS_northern_unification_play
 		icon = GFX_goal_unknown
 		prerequisite = { focus = PRS_austrian_enemy }
 		relative_position_id = PRS_austrian_enemy
@@ -1515,14 +1526,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			
 		}
 	}
 
 	focus = {
 		id = PRS_split_austria
 		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_habsburg_enemy }
+		prerequisite = { focus = PRS_northern_unification_play }
 		prerequisite = { focus = PRS_secure_russian_friendship }
 		relative_position_id = PRS_secure_russian_friendship
 		mutually_exclusive = { focus = PRS_beating_austria_ourselfs }
@@ -1531,6 +1542,12 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			SOV = {
+				exists = yes
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1560,14 +1577,14 @@ focus_tree = {
 		}
 	}
 
-	# HRE
+	# HRE federal statae of the Holy Roman Empire
 	focus = {
-		id = PRS_integrate_bohemia
+		id = PRS_national_reforms
 		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_pivot_to_the_past }
+		prerequisite = { focus = PRS_pivot_to_the_past}
 		relative_position_id = PRS_pivot_to_the_past
-		x = 0
-		y = 3
+		x = 0 
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1576,7 +1593,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			# If they have cooperated then it will become not hre and more a federal state
+			# If they waged war the hre will be led by an authoritarian Wilhelm
+			# if authoritarian party more than 50% than wilhelm gets to power, if not civil war
 		}
 	}
 
@@ -1584,8 +1603,9 @@ focus_tree = {
 	focus = {
 		id = PRS_beating_austria_ourselfs
 		icon = GFX_goal_unknown
-		prerequisite = { focus = PRS_habsburg_enemy focus = PRS_pivot_to_the_past }
-		relative_position_id = PRS_habsburg_enemy
+		prerequisite = { focus = PRS_northern_unification_play }
+		prerequisite = { focus = PRS_pivot_to_the_past }
+		relative_position_id = PRS_northern_unification_play
 		mutually_exclusive = { focus = PRS_split_austria }
 		x = 2
 		y = 1
@@ -1607,9 +1627,249 @@ focus_tree = {
 	focus = {
 		id = PRS_finish_the_habsburgs
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		prerequisite = { focus = PRS_beating_austria_ourselfs }
+		prerequisite = { focus = PRS_beating_austria_ourselfs focus = PRS_split_austria }
 		relative_position_id = PRS_beating_austria_ourselfs
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			# Puppets CZE and AUS
+		}
+	}
+
+	focus = {
+		id = PRS_integration_of_the_south
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_finish_the_habsburgs }
+		prerequisite = { focus = PRS_national_reforms }
+		relative_position_id = PRS_national_reforms
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			# Prussia delcares war on BAV etc
+			# Event chain france says no if prussia says well ok than they get suck and if they so well stfu france
+			# the will fight them. Depending if russia accepted friendship they will join on prussian side
+			# If france declares war they will offer ITA an alliance for them to gain 1936 borders
+		}
+	}
+
+	focus = {
+		id = PRS_integration_of_bohemia
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_finish_the_habsburgs }
+		relative_position_id = PRS_finish_the_habsburgs
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_suggest_the_unification
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_unify_the_north }
+		prerequisite = { focus = PRS_national_reforms }
+		relative_position_id = PRS_national_reforms
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			# AI WILL ALWAYS SAY NO
+			# Means even if you try to cooperate you will have to fight Austria
+			# Use crisis system for this!
+			# Offer italy venice
+		}
+	}
+
+	# Finalize the new Country
+	# Federation or Empire
+	focus = {
+		id = PRS_finalize_the_federation
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_integration_of_the_south focus = PRS_suggest_the_unification }
+		relative_position_id = PRS_integration_of_the_south
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_integration_of_austria
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_integration_of_bohemia }
+		prerequisite = { focus = PRS_integration_of_the_south }
+		relative_position_id = PRS_integration_of_the_south
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_embrace_holy_roman_traditions
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_integration_of_austria }
+		prerequisite = { focus = PRS_finalize_the_federation }
+		relative_position_id = PRS_integration_of_austria
 		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_fight_the_benelux
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_embrace_holy_roman_traditions }
+		relative_position_id = PRS_embrace_holy_roman_traditions
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_look_south
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_embrace_holy_roman_traditions }
+		relative_position_id = PRS_embrace_holy_roman_traditions
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_figth_the_frenchs
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_embrace_holy_roman_traditions }
+		relative_position_id = PRS_embrace_holy_roman_traditions
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_prussian_militarism
+		icon = GFX_goal_unknown
+		x = 32
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_bulwark_of_conservatism
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_prussian_militarism }
+		relative_position_id = PRS_prussian_militarism
+		mutually_exclusive = { focus = PRS_a_change_in_the_course }
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRS_a_change_in_the_course
+		icon = GFX_goal_unknown
+		prerequisite = { focus = PRS_prussian_militarism }
+		relative_position_id = PRS_prussian_militarism
+		mutually_exclusive = { focus = PRS_bulwark_of_conservatism }
+		x = 1
 		y = 1
 		cost = 10
 		ai_will_do = {

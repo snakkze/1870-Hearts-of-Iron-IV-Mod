@@ -175,6 +175,22 @@ give_prestige_modifiers = {
 			NOT = {
 				TUR = {		
 					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+			}
+		}
+		TUR = {
+			add_dynamic_modifier = { 
+				modifier = fpw_TUR_sick_man_of_europe_2 
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				TUR = {		
+					has_dynamic_modifier = {
 						modifier = fpw_victors_of_the_crimean_war
 					}
 				}
@@ -237,6 +253,24 @@ give_prestige_modifiers = {
 		JAP = {
 			add_dynamic_modifier = { 
 				modifier = fpw_JAP_isolated 
+			}
+		}
+	}
+
+	# Egypt
+	if = {
+		limit = {
+			NOT = {
+				EGY = {		
+					has_dynamic_modifier = {
+						modifier = fpw_EGY_suez_built
+					}
+				}
+			}
+		}
+		EGY = {
+			add_dynamic_modifier = { 
+				modifier = fpw_EGY_suez_built 
 			}
 		}
 	}
@@ -378,6 +412,32 @@ apply_prestige_modifier_effetcs = {
 			set_temp_variable = { prestige_to_remove = 150 }
 			multiply_temp_variable = { prestige_to_remove = 0.3 }
 			subtract_from_variable = { THIS.country_base_prestige = prestige_to_remove }
+		}
+		if = {
+			limit = {
+				THIS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+			}
+			set_temp_variable = { prestige_to_remove = 150 }
+			multiply_temp_variable = { prestige_to_remove = 0.2 }
+			subtract_from_variable = { THIS.country_base_prestige = prestige_to_remove }
+		}
+
+		# Egypt
+		if = {
+			limit = {
+				THIS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_EGY_suez_built
+					}
+				}
+			}
+			set_temp_variable = { prestige_to_add = 150 }
+			multiply_temp_variable = { prestige_to_add = 0.15 }
+			add_to_variable = { THIS.country_base_prestige = prestige_to_add }
 		}
 
 		# China

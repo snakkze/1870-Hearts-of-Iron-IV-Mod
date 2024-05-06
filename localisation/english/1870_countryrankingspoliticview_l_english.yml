@@ -1,8 +1,5 @@
 ﻿l_english:
 fpw_list_flag_button_tt:0 "[THIS.GetName]\nBase Prestige Score: §Y[?country_base_prestige]§!\nIndustry Score: §Y[?country_industry_score]§!\n - Civilian Factories: §Y[?country_civ_factories]§!\n - Military Factories: §Y[?country_mil_factories]§!\n - Dockyards: §Y[?country_naval_factories]§!\nArmy Score: §Y[?country_army_score]§!\n - Land: §Y[?country_land_army]§!\n - Navy: §Y[?country_navy_score]§!\nCountry Size Score: §Y[?country_size_score]§!\n - Own Land Score: §Y[?country_own_size_score]§!\n - Subject Land Score: §Y[?country_subject_size_score]§!"
-country_GDP_M_d: "[?country_GDP_M|Y0] §YM§!"
-country_GDP_B_d: "[?country_GDP_B|Y0..3] §YB§!"
-country_GDP_T_d: "[?country_GDP_T|Y0..3] §YT§!"
 fpw_country_pos_localization_key_htl:0"[?i]"
 fpw_country_pos_localization_key_lth:0"[?x]"
 fpw_prestige_localization_key:0 "[?temp_prestige]"

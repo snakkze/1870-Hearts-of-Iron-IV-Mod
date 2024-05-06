@@ -567,7 +567,6 @@ guiTypes = {
 			name = "bookmark_desc"
 			position = { x = 25 y = 330 }
 			font = "hoi4_typewriter16"
-			 verticalScrollbar = "right_vertical_slider"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 540
 			maxHeight = 25

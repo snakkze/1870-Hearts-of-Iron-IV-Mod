@@ -353,7 +353,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x=1200 y=0 }
+			position = { x=-1200 y=0 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"

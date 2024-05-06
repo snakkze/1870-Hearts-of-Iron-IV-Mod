@@ -97,7 +97,6 @@ country_event = {
 			add_to_faction = BRE
 			add_to_faction = OLD
 			add_to_faction = HNV
-			add_to_faction = HES
 			add_to_faction = HEK
 			add_to_faction = WLD
 			add_to_faction = SBL
@@ -109,12 +108,14 @@ country_event = {
 			add_to_faction = SXM
 			add_to_faction = SXW
 			add_to_faction = SCG
+			add_to_faction = ANH
 			transfer_state = 58
 		}
 		AUS = {
 			create_faction = sudachse_faction
 			add_to_faction = BAV
 			add_to_faction = WRT
+			add_to_faction = HES
 			add_to_faction = BAD
 		}
 		WRT = {
@@ -343,13 +344,13 @@ country_event = {
 			modifier = {
 				add = 50
 				PRS = {
-					set_variable = {
+					set_temp_variable = {
 						var = PRS_army_size
 						value = num_armies
 					}
 				}
 				ROOT = {
-					set_variable = {
+					set_temp_variable = {
 						var = ROOT.army_size
 						value = num_armies
 					}
@@ -378,13 +379,13 @@ country_event = {
 			modifier = {
 				add = 50
 				PRS = {
-					set_variable = {
+					set_temp_variable = {
 						var = PRS_army_size
 						value = num_armies
 					}
 				}
 				ROOT = {
-					set_variable = {
+					set_temp_variable = {
 						var = ROOT.army_size
 						value = num_armies
 					}

@@ -16,7 +16,8 @@ ideas = {
 			picture = EST_exploit_the_banks
 
 			modifier = {
-				industry_repair_factor = -0.25
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
 				stability_factor = -0.15
 			}
 		}
@@ -41,5 +42,24 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+
+		# recover from the civil war
+		fpw_SPR_aftermath_of_the_civilwar = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SPA_national_recovery
+
+			modifier = {
+				political_power_factor = 0.4
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+		}
+
 	}
 }
