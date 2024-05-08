@@ -287,7 +287,7 @@ country_event = {
 				has_war_with = PRS
 			}
 			PRS = {
-				surrender_progress > 0.98
+				surrender_progress > 0.95
 				surrender_progress < 1
 			}
 			NOT = {
@@ -328,7 +328,7 @@ country_event = {
 				has_war_with = FRA
 			}
 			FRA = {
-				surrender_progress > 0.98
+				surrender_progress > 0.95
 				surrender_progress < 1
 			}
 			NOT = {
@@ -508,7 +508,7 @@ country_event = {
 				has_war_with = AUS
 			}
 			AUS = {
-				surrender_progress > 0.98
+				surrender_progress > 0.95
 				surrender_progress < 1
 			}
 			NOT = {
@@ -552,7 +552,7 @@ country_event = {
 				has_war_with = PRS
 			}
 			PRS = {
-				surrender_progress > 0.98
+				surrender_progress > 0.95
 				surrender_progress < 1
 			}
 			NOT = {

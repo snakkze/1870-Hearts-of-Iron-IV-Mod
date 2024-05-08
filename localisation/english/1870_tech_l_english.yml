@@ -1,18 +1,96 @@
 ﻿l_english:
+ # ARTILLERY
+ fpw_howitzer_artillery_equipment:0 "Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_short:0 "Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_desc:0 "Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
  fpw_howitzer_artillery_equipment_1:0 "Early Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_1_short:0 "Early Howitzer"
+ fpw_howitzer_artillery_equipment_1_desc:0 "Early Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
  fpw_howitzer_artillery_equipment_2:0 "Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_2_short:0 "Basic Howitzer"
+ fpw_howitzer_artillery_equipment_2_desc:0 "Basic Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
  fpw_howitzer_artillery_equipment_3:0 "Improved Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_3_short:0 "Improved Howitzer"
+ fpw_howitzer_artillery_equipment_3_desc:0 "Improved Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
  fpw_howitzer_artillery_equipment_4:0 "Advanced Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_4_short:0 "Advanced Howitzer"
+ fpw_howitzer_artillery_equipment_4_desc:0 "Advanced Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
+
+ fpw_cannon_artillery_equipment:0 "Cannon Artillery"
+ fpw_cannon_artillery_equipment_short:0 "Cannon Artillery"
+ fpw_cannon_artillery_equipment_desc:0 "Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
 
  fpw_cannon_artillery_equipment_1:0 "Early Cannon Artillery"
+ fpw_cannon_artillery_equipment_1_short:0 "Early Cannon"
+ fpw_cannon_artillery_equipment_1_desc:0 "Early Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
  fpw_cannon_artillery_equipment_2:0 "Cannon Artillery"
+ fpw_cannon_artillery_equipment_2_short:0 "Basic Cannon"
+ fpw_cannon_artillery_equipment_2_desc:0 "Basic Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
  fpw_cannon_artillery_equipment_3:0 "Improved Cannon Artillery"
+ fpw_cannon_artillery_equipment_3_short:0 "Improved Cannon"
+ fpw_cannon_artillery_equipment_3_desc:0 "Improved Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
  fpw_cannon_artillery_equipment_4:0 "Advanced Cannon Artillery"
+ fpw_cannon_artillery_equipment_4_short:0 "Advanced Cannon"
+ fpw_cannon_artillery_equipment_4_desc:0 "Advanced Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
+
+ fpw_breech_artillery_equipment:0 "Rifled Breech-Loading Artillery"
+ fpw_breech_artillery_equipment_short:0 "RBL Artillery"
+ fpw_breech_artillery_equipment_desc:0 "As part of the Siege Artilleries are the RBL Artilleries and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
 
  fpw_breech_artillery_equipment_1:0 "Early Rifled Breech-Loading Artillery"
- fpw_breech_artillery_equipment_2:0 "Improved Rifled Breech Artillery"
+ fpw_breech_artillery_equipment_1_short:0 "Early RBL Artillery"
+ fpw_breech_artillery_equipment_1_desc:0 "As part of the Siege Artilleries are the RBL Artilleries and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_breech_artillery_equipment_2:0 "Improved Rifled Breech-Loading Artillery"
+ fpw_breech_artillery_equipment_2_short:0 "Improved RBL Artillery"
+ fpw_breech_artillery_equipment_2_desc:0 "As part of the Siege Artilleries are the RBL Artilleries and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+
+ fpw_muzzle_artillery_equipment:0 "Rifled Muzzle-Loading Artillery"
+ fpw_muzzle_artillery_equipment_short:0 "RML Artillery"
+ fpw_muzzle_artillery_equipment_desc:0 "As part of the Siege Artilleries are the RML Artilleries, an improved version of the RBL Artilleries, powerful and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
  fpw_muzzle_artillery_equipment_1:0 "Early Rifled Muzzle-Loading Artillery"
+ fpw_muzzle_artillery_equipment_1_short:0 "Early RML Artillery"
+ fpw_muzzle_artillery_equipment_1_desc:0 "As part of the Siege Artilleries are the RML Artilleries, an improved version of the RBL Artilleries, powerful and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
  fpw_muzzle_artillery_equipment_2:0 "Advanced Rifled Muzzle-Loading Artillery"
+ fpw_muzzle_artillery_equipment_2_short:0 "Advanced RML Artillery"
+ fpw_muzzle_artillery_equipment_2_desc:0 "As part of the Siege Artilleries are the RML Artilleries, an improved version of the RBL Artilleries, powerful and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+
+ # INFANTRY #
+ fpw_infantry_equipment:0 "Infantry Equipment"
+ fpw_infantry_equipment_short:0 "Infantry Eq."
+ fpw_infantry_equipment_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_equipment_0:0 "Basic Infantry Equipment"
+ fpw_infantry_equipment_0_short:0 "Basic Eq."
+ fpw_infantry_equipment_0_desc:0 "Basic infantryman equipment improved during the Crimean War."
+
+ fpw_infantry_equipment_1:0 "Infantry Equipment I"
+ fpw_infantry_equipment_1_short:0 "Weapons I"
+ fpw_infantry_equipment_1_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_equipment_2:0 "Infantry Equipment II"
+ fpw_infantry_equipment_2_short:0 "Weapons II"
+ fpw_infantry_equipment_2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_equipment_3:0 "Infantry Equipment III"
+ fpw_infantry_equipment_3_short:0 "Weapons III"
+ fpw_infantry_equipment_3_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+
+
 
 
 

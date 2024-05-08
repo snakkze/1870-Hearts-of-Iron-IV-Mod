@@ -23,12 +23,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		enable_equipment_modules = {
-			ship_anti_air_1
-			tank_small_cannon
-			secondary_turret_small_cannon
-		}
-
 		research_cost = 1.5
 
 		folder = {
@@ -64,29 +58,11 @@ technologies = {
 	# 1862: Coehorn Mortar (Various Models)
 	fpw_breech2 = {
 
-		artillery = {
+		breech_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		breech_brigade = {
 			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.15
 		}
 
 		path = {
@@ -96,7 +72,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1860
 
 		folder = {
 			name = fpw_artillery_folder
@@ -131,19 +107,21 @@ technologies = {
 	# 1864: 8-inch Siege Mortar M1861
 	fpw_breech3 = {
 
-		enable_equipment_modules = {
-			tank_medium_howitzer
-			tank_medium_cannon
-		}
-
 		path = {
 			leads_to_tech = fpw_breech4
 			research_cost_coeff = 1
 		}
 
+		breech_artillery = {
+			soft_attack = 0.1
+		}
+		breech_brigade = {
+			soft_attack = 0.1
+		}
+
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1862
 
 		folder = {
 			name = fpw_artillery_folder
@@ -178,28 +156,10 @@ technologies = {
 	# 1866: Armstrong's 20-Pounder Rifled Muzzle-Loading Mortar
 	fpw_breech4 = {
 
-		artillery = {
+		breech_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		modern_sp_artillery_brigade= {
+		breech_brigade = {
 			soft_attack = 0.1
 		}
 
@@ -215,7 +175,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1864
 
 		folder = {
 			name = fpw_artillery_folder
@@ -250,34 +210,13 @@ technologies = {
 	# 1868: 13-inch Seacoast Mortar
 	fpw_breech5 = {
 
-		artillery = {
+		breech_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		breech_brigade = {
 			soft_attack = 0.1
 		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			tank_medium_howitzer_2
-		}
+		
 		path = {
 			leads_to_tech = fpw_breech6
 			research_cost_coeff = 1
@@ -285,7 +224,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 1866
 
 		folder = {
 			name = fpw_artillery_folder
@@ -326,7 +265,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1868
 
 		folder = {
 			name = fpw_artillery_folder
@@ -361,34 +300,11 @@ technologies = {
 	# 1872: 10-inch Parrott Rifle 
 	fpw_breech7 = {
 
-		artillery = {
+		breech_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		breech_brigade = {
 			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
 		}
 
 		path = {
@@ -398,7 +314,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1870
 
 		folder = {
 			name = fpw_artillery_folder
@@ -433,39 +349,16 @@ technologies = {
 	# 1874: Dahlgren 12-inch Coasting Mortar
 	fpw_breech8 = {
 
-		artillery = {
+		breech_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		breech_brigade = {
 			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
 		}
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1872
 
 		folder = {
 			name = fpw_artillery_folder
@@ -504,14 +397,10 @@ technologies = {
 		enable_equipments = {
 			fpw_muzzle_artillery_equipment_1
 		}
+
 #		enable_subunits = {
 #			rocket_artillery_brigade
 #		}
-
-		enable_equipment_modules = {
-			tank_rocket_launcher
-			rocket_rails
-		}
 
 		path = {
 			leads_to_tech = fpw_muzzle2
@@ -520,7 +409,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1866
 
 		folder = {
 			name = fpw_artillery_folder
@@ -537,24 +426,18 @@ technologies = {
 		}
 
 		categories = {
-			rocketry
+			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}
 
 	fpw_muzzle2 = {
 
-		rocket_artillery = {
-			soft_attack = 0.15
+		muzzle_artillery = {
+			soft_attack = 0.1
 		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
+		muzzle_brigade = {
+			soft_attack = 0.1
 		}
 
 		path = {
@@ -564,7 +447,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 1868
 
 		folder = {
 			name = fpw_artillery_folder
@@ -581,24 +464,18 @@ technologies = {
 		}
 
 		categories = {
-			rocketry
+			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}
 
 	fpw_muzzle3 = {
 
-		rocket_artillery = {
-			soft_attack = 0.15
+		muzzle_artillery = {
+			soft_attack = 0.1
 		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
+		muzzle_brigade = {
+			soft_attack = 0.1
 		}
 
 		path = {
@@ -608,7 +485,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1942
+		start_year = 1870
 
 		folder = {
 			name = fpw_artillery_folder
@@ -625,7 +502,7 @@ technologies = {
 		}
 
 		categories = {
-			rocketry
+			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}
@@ -636,13 +513,6 @@ technologies = {
 			fpw_muzzle_artillery_equipment_2
 		}
 
-		motorized_rocket_brigade = {
-			soft_attack = 0.3
-		}
-		enable_equipment_modules = {
-			tank_rocket_launcher_2
-		}
-
 		path = {
 			leads_to_tech = fpw_muzzle5
 			research_cost_coeff = 1
@@ -650,7 +520,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1872
 
 		folder = {
 			name = fpw_artillery_folder
@@ -667,22 +537,23 @@ technologies = {
 		}
 
 		categories = {
-			rocketry
+			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}
 
 	fpw_muzzle5 = {
 
-		motorized_rocket_brigade = {
-			soft_attack = 0.3
+		muzzle_artillery = {
+			soft_attack = 0.1
 		}
-		enable_equipment_modules = {
-			tank_rocket_launcher_2
+		muzzle_brigade = {
+			soft_attack = 0.1
 		}
+
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1874
 
 		folder = {
 			name = fpw_artillery_folder
@@ -699,7 +570,7 @@ technologies = {
 		}
 
 		categories = {
-			rocketry
+			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}
@@ -718,13 +589,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		enable_equipment_modules = {
-			ship_anti_air_1
-			tank_small_cannon
-			secondary_turret_small_cannon
-		}
-
 		research_cost = 1.5
+
+		start_year = 1860
 
 		folder = {
 			name = fpw_artillery_folder
@@ -759,29 +626,11 @@ technologies = {
 	# 1862: Mitrailleuse
 	fpw_howitzer2 = {
 
-		artillery = {
+		howitzer_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		howitzer_brigade = {
 			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.15
 		}
 
 		path = {
@@ -791,7 +640,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1862
 
 		folder = {
 			name = fpw_artillery_folder
@@ -826,13 +675,15 @@ technologies = {
 	# 1864: 24-pounder Coehorn Mortar
 	fpw_howitzer3 = {
 
-		enable_equipments = {
-			fpw_howitzer_artillery_equipment_2
+		howitzer_artillery = {
+			soft_attack = 0.1
+		}
+		howitzer_brigade = {
+			soft_attack = 0.1
 		}
 
-		enable_equipment_modules = {
-			tank_medium_howitzer
-			tank_medium_cannon
+		enable_equipments = {
+			fpw_howitzer_artillery_equipment_2
 		}
 
 		path = {
@@ -842,7 +693,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1864
 
 		folder = {
 			name = fpw_artillery_folder
@@ -877,28 +728,10 @@ technologies = {
 	# 1866: Reffye Mitrailleuse
 	fpw_howitzer4 = {
 
-		artillery = {
+		howitzer_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		modern_sp_artillery_brigade= {
+		howitzer_brigade = {
 			soft_attack = 0.1
 		}
 
@@ -909,7 +742,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1866
 
 		folder = {
 			name = fpw_artillery_folder
@@ -948,34 +781,6 @@ technologies = {
 			fpw_howitzer_artillery_equipment_3
 		}
 
-		artillery = {
-			soft_attack = 0.1
-		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			tank_medium_howitzer_2
-		}
 		path = {
 			leads_to_tech = fpw_howitzer6
 			research_cost_coeff = 1
@@ -983,7 +788,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 1868
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1013,6 +818,13 @@ technologies = {
 	# 1870: 4.7-inch Armstrong Gun (RML)
 	fpw_howitzer6 = {
 
+		howitzer_artillery = {
+			soft_attack = 0.1
+		}
+		howitzer_brigade = {
+			soft_attack = 0.1
+		}
+
 		path = {
 			leads_to_tech = fpw_howitzer7
 			research_cost_coeff = 1
@@ -1020,7 +832,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1870
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1055,34 +867,11 @@ technologies = {
 	# 1872: 8-inch M1884 Siege Howitzer
 	fpw_howitzer7 = {
 
-		artillery = {
+		howitzer_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		howitzer_brigade = {
 			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
 		}
 
 		path = {
@@ -1092,7 +881,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1872
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1131,39 +920,9 @@ technologies = {
 			fpw_howitzer_artillery_equipment_4
 		}
 
-		artillery = {
-			soft_attack = 0.1
-		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
-		}
-
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1874
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1209,13 +968,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		enable_equipment_modules = {
-			ship_anti_air_1
-			tank_small_cannon
-			secondary_turret_small_cannon
-		}
-
 		research_cost = 1.5
+
+		start_year = 1860
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1250,29 +1005,11 @@ technologies = {
 	# 1862: Parrott Rifle
 	fpw_cannon2 = {
 
-		artillery = {
+		cannon_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		cannon_brigade = {
 			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.15
 		}
 
 		path = {
@@ -1282,7 +1019,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1862
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1321,11 +1058,6 @@ technologies = {
 			fpw_cannon_artillery_equipment_2
 		}
 
-		enable_equipment_modules = {
-			tank_medium_howitzer
-			tank_medium_cannon
-		}
-
 		path = {
 			leads_to_tech = fpw_cannon4
 			research_cost_coeff = 1
@@ -1333,7 +1065,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1864
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1368,28 +1100,10 @@ technologies = {
 	# 1866: Armstrong Gun (Rifled Breech-Loading)
 	fpw_cannon4 = {
 
-		artillery = {
+		cannon_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		modern_sp_artillery_brigade= {
+		cannon_brigade = {
 			soft_attack = 0.1
 		}
 
@@ -1400,7 +1114,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1866
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1435,34 +1149,13 @@ technologies = {
 	# 1868: Krupp Field Gun (C/64)
 	fpw_cannon5 = {
 
-		artillery = {
+		cannon_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		cannon_brigade = {
 			soft_attack = 0.1
 		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			tank_medium_howitzer_2
-		}
+		
 		path = {
 			leads_to_tech = fpw_cannon6
 			research_cost_coeff = 1
@@ -1470,7 +1163,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941
+		start_year = 1868
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1503,9 +1196,6 @@ technologies = {
 		enable_equipments = {
 			fpw_cannon_artillery_equipment_3
 		}
-		enable_equipment_modules = {
-			tank_medium_cannon_2
-		}
 
 		path = {
 			leads_to_tech = fpw_cannon7
@@ -1514,7 +1204,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1870
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1549,34 +1239,11 @@ technologies = {
 	# 1872: 9-inch Dahlgren Smoothbore
 	fpw_cannon7 = {
 
-		artillery = {
+		cannon_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_brigade = {
+		cannon_brigade = {
 			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
 		}
 
 		path = {
@@ -1586,7 +1253,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1872
 
 		folder = {
 			name = fpw_artillery_folder
@@ -1625,39 +1292,9 @@ technologies = {
 			fpw_cannon_artillery_equipment_4
 		}
 
-		artillery = {
-			soft_attack = 0.1
-		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
-		}
-
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1874
 
 		folder = {
 			name = fpw_artillery_folder

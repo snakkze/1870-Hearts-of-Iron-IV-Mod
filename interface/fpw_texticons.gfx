@@ -1,0 +1,112 @@
+spriteTypes = {
+
+	#### unit texticons	
+
+	spriteType = {
+		name = "GFX_unit_howitzer_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_howitzer_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_howitzer_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_unit_cannon_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_cannon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_cannon_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_unit_breech_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_rbl_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_breech_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_unit_muzzle_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_rml_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_muzzle_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+	###############
+	### SUPPORT ###	
+
+	spriteType = {
+		name = "GFX_unit_howitzer_artillery_icon_small"
+		texturefile = "gfx/texticons/support_hart_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_howitzer_artillery_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_unit_cannon_artillery_icon_small"
+		texturefile = "gfx/texticons/support_cart_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_cannon_artillery_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_unit_breech_artillery_icon_small"
+		texturefile = "gfx/texticons/support_bart_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_breech_artillery_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_unit_muzzle_artillery_icon_small"
+		texturefile = "gfx/texticons/support_mart_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_muzzle_artillery_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+}

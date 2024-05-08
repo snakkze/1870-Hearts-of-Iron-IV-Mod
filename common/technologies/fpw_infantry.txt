@@ -13,7 +13,7 @@ technologies = {
 	fpw_infantry_weapons = {
 
 		enable_equipments = {
-			infantry_equipment_0
+			fpw_infantry_equipment_0
 		}
 		
 		enable_subunits = {
@@ -43,10 +43,6 @@ technologies = {
 	
 	# Dreyse Needle Gun(1862)
 	fpw_infantry_weapons1 = {
-
-		enable_equipments = {
-			infantry_equipment_1
-		}
 				
 		path = {
 			leads_to_tech = fpw_infantry_weapons2
@@ -55,6 +51,7 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1862
+		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1862 }
@@ -135,15 +132,12 @@ technologies = {
 			}
 		}
 	}
+
 	# Yes yes
 	fpw_improved_infantry_weapons_2 = {
 
-		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		
-		cavalry = {
-			soft_attack = 0.05
+		enable_equipments = {
+			fpw_infantry_equipment_1
 		}
 		
 		path = {
@@ -153,7 +147,6 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1866
-		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1866 }
@@ -186,8 +179,12 @@ technologies = {
 	# Remington Rolling Block Rifle(1867)
 	fpw_improved_infantry_weapons = {
 
-		enable_equipments = {
-			infantry_equipment_2
+		category_light_infantry = {
+			soft_attack = 0.1
+		}
+		
+		cavalry = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -197,6 +194,7 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1868
+		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1868 }
@@ -231,16 +229,11 @@ technologies = {
 		}
 	}
 
-
 	# Yes Yes
 	fpw_improved_infantry_weapons_3 = {
 
-		category_light_infantry = {
-			soft_attack = 0.1
-		}
-		
-		cavalry = {
-			soft_attack = 0.1
+		enable_equipments = {
+			fpw_infantry_equipment_2
 		}
 		
 		path = {
@@ -250,7 +243,6 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1870
-		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1870 }
@@ -284,7 +276,7 @@ technologies = {
 	fpw_advanced_infantry_weapons = {
 
 		enable_equipments = {
-			infantry_equipment_3
+			fpw_infantry_equipment_3
 		}	
 		
 		path = {
@@ -368,6 +360,7 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1860
+		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1860 }
@@ -459,6 +452,7 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1866
+		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1866 }
@@ -556,6 +550,7 @@ technologies = {
 		
 		research_cost = 1.5
 		start_year = 1868
+		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1868 }
@@ -635,6 +630,7 @@ technologies = {
 		
 		research_cost = 1.5
 		start_year = 1870
+		force_use_small_tech_layout = yes
 		folder = {
 			name = fpw_infantry_folder
 			position = { x = 0 y = @1870 }

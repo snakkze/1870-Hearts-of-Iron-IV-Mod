@@ -1,0 +1,45 @@
+spriteTypes = {	
+
+	###############################
+	### Large images for Groups ###
+
+	#spriteType = { name = "GFX_group_infantry_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_mobile_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_cavalry_icon.dds" noOfFrames = 2 }
+
+	
+	##################################
+	### Large images for DIVISIONS ###
+
+	spriteType = { name = "GFX_unit_howitzer_artillery_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/support_unit_hart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_cannon_artillery_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/support_unit_cart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_breech_artillery_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/support_unit_bart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_muzzle_artillery_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/support_unit_mart_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_howitzer_brigade_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/unit_hart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_cannon_brigade_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/unit_cart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_breech_brigade_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/unit_bart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_muzzle_brigade_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/unit_mart_icon.dds" noOfFrames = 2 }
+
+	####################################################
+	### Small images for DIVISIONS (On-map-counters) ###
+
+	spriteType = { name = "GFX_unit_howitzer_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_hart_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_cannon_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cart_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_breech_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_bart_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_muzzle_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mart_icon.dds" noOfFrames = 2}
+		
+	#################################
+	### On-map-counters for SHIPS ###
+
+	#spriteType = { name = "GFX_unit_battle_cruiser_icon_medium_white"					texturefile = "gfx/interface/counters/ships_small/onmap_battlecruiser.dds" }
+
+	############################################
+	### On-map-counters for SHIPS - Inverted ###
+
+	#spriteType = { name = "GFX_unit_battle_cruiser_icon_medium_black"					texturefile = "gfx/interface/counters/ships_small/onmap_battlecruiser_inverted.dds" }
+
+	#############################################################################
+	### Large ships images used in NAVAL-COMBAT-VIEW and SELECTED-FLEETS-VIEW ###
+
+	#spriteType = { name = "GFX_unit_battle_cruiser_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/battlecruiser.dds"		noOfFrames = 2 }	
+}

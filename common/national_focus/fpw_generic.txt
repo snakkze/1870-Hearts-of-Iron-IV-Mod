@@ -1421,9 +1421,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			base = 0
+			base = 10
 			modifier = {
-				add = 20
+				add = 2
 				any_neighbor_country = {
 					is_major = yes
 					has_government = neutrality
@@ -1471,9 +1471,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		ai_will_do = {
-			base = 0
+			base = 10
 			modifier = {
-				add = 20
+				factor = 2
 				any_neighbor_country = {
 					is_major = yes
 					OR = {
@@ -1661,9 +1661,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			base = 0
+			base = 10
 			modifier = {
-				add = 20
+				factor = 2
 				any_neighbor_country = {
 					is_major = yes
 					OR = {
@@ -1698,7 +1698,12 @@ focus_tree = {
 				add_stability = 0.1
 			}
 			if = {
-				limit = { has_completed_focus = support_the_proletariat }
+				limit = { 
+					has_completed_focus = support_the_proletariat 
+					NOT = {		
+						neutrality > 0.35
+					}
+				}
 				set_politics = {
 					ruling_party = communism
 					elections_allowed = yes
@@ -1708,13 +1713,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					OR = {
-						has_completed_focus = support_the_proletariat
-						neutrality > 0.35
-					}
+					has_completed_focus = support_the_proletariat
+					neutrality > 0.35
 				}
 				start_civil_war = {
-					ideology = neutrality
+					ideology = communism
 					size = 0.4
 					keep_political_leader = yes
 				}
@@ -1805,9 +1808,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			base = 0
+			base = 10
 			modifier = {
-				add = 20
+				add = 2
 				any_neighbor_country = {
 					is_major = yes
 					has_government = communism
