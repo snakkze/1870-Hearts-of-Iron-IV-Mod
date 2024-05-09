@@ -202,11 +202,19 @@ fpw_german_unification_category = {
 							has_state_flag = influenced_by_PRS
 						}
 					}
-					add = 100
 				}
-				else = {
+				add = 100
+				modifier = {
+					if = {
+						limit = {
+							NOT = {
+								any_owned_state = {
+									has_state_flag = influenced_by_PRS
+								}
+							}
+						}
+					}
 					add = 40
-				}
 			}
 		}
 
@@ -274,9 +282,18 @@ fpw_german_unification_category = {
 					}
 					add = 100
 				}
-				else = {
-					add = 40
+			}
+			modifier = {
+				if = {
+					limit = {
+						NOT = {
+							any_owned_state = {
+								has_state_flag = influenced_by_AUS
+							}
+						}
+					}
 				}
+				add = 40
 			}
 		}
 

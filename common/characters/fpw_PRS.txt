@@ -41,4 +41,374 @@ characters={
 			id=-1
 		}
 	}
+
+    #############
+    # GENERATED #
+
+	PRS_Friedrich_Graf_von_Wrangel = {
+        name = "Friedrich Graf von Wrangel"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Friedrich_Graf_von_Wrangel.png"
+			}
+        }
+
+		field_marshal = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
+	PRS_Helmuth_von_Moltke = {
+        name = "Helmuth von Moltke"
+        portraits = {
+            civilian = {
+				small = "gfx/interface/ministers/PRS/PRS_Helmuth_von_Moltke.png"
+			}
+	        army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Helmuth_von_Moltke.png"
+			}
+        }
+
+		field_marshal = {
+            traits = {  }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 4
+			logistics_skill = 1
+		}
+        advisor = {
+            cost = 150
+            slot = army_chief
+            idea_token = PRS_Helmuth_von_Moltke_carm
+            available = {
+            } 
+			can_be_fired = yes
+            traits = {  army_chief_planning_2 }
+        }
+    }
+	PRS_Alfred_von_Rauch = {
+        name = "Alfred von Rauch"
+        portraits = {
+            civilian = {
+				small = "gfx/interface/ministers/PRS/PRS_Alfred_von_Rauch.png"
+			}
+	        army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Alfred_von_Rauch.png"
+			}
+        }
+
+		corps_commander = {
+            traits = { }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 1
+			logistics_skill = 1
+		}
+        advisor = {
+            cost = 150
+            slot = army_chief
+            idea_token = PRS_Alfred_von_Rauch_carm
+            available = {
+            } 
+			can_be_fired = yes
+            traits = {  army_cavalry_3 }
+        }
+    }
+	PRS_Eduard_Vogel_von_Falckenstein = {
+        name = "Eduard Vogel von Falckenstein"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Eduard_Vogel_von_Falckenstein.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
+	PRS_Hans_Wilhelm_von_Kotze = {
+        name = "Hans Wilhelm von Kotze"
+        portraits = {
+            civilian = {
+				small = "gfx/interface/ministers/PRS/PRS_Hans_Wilhelm_von_Kotze.png"
+			}
+	        army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Hans_Wilhelm_von_Kotze.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 1
+			logistics_skill = 3
+		}
+        advisor = {
+            cost = 150
+            slot = army_chief
+            idea_token = PRS_Hans_Wilhelm_von_Kotze_carm
+            available = {
+            } 
+			can_be_fired = yes
+            traits = {  quartermaster_general }
+        }
+    }
+	PRS_Friedrich_Karl_of_Prussia = {
+        name = "Friedrich Karl of Prussia"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Friedrich_Karl_of_Prussia.png"
+			}
+        }
+
+		field_marshal = {
+            traits = {  }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
+	PRS_Gustav_von_Stiehle = {
+        name = "Gustav von Stiehle"
+        portraits = {
+            civilian = {
+				small = "gfx/interface/ministers/PRS/PRS_Gustav_von_Stiehle.png"
+			}
+	        army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Gustav_von_Stiehle.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 2
+			logistics_skill = 1
+		}
+    }
+	PRS_August_Karl_von_Goeben = {
+        name = "August Karl von Goeben"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_August_Karl_von_Goeben.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
+	PRS_Hans_von_Bülow = {
+        name = "Hans von Bülow"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Hans_von_Bülow.png"
+			}
+        }
+
+		corps_commander = {
+            traits = { }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+			logistics_skill = 1
+		}
+        advisor = {
+            cost = 150
+            slot = army_chief
+            idea_token = PRS_Hans_von_Bülow_carm
+            available = {
+            } 
+			can_be_fired = yes
+            traits = {  army_artillery_3 }
+        }
+    }
+	PRS_Heinrich_Adolf_von_Zastrow = {
+        name = "Heinrich Adolf von Zastrow"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Heinrich_Adolf_von_Zastrow.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+			logistics_skill = 2
+		}
+    }
+	PRS_Albrecht_Graf_von_Roon = {
+        name = "Albrecht Graf von Roon"
+        portraits = {
+            civilian = {
+				small = "gfx/interface/ministers/PRS/PRS_Albrecht_Graf_von_Roon.png"
+			}
+	        army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Albrecht_Graf_von_Roon.png"
+			}
+        }
+
+		field_marshal = {
+            traits = {  }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+			logistics_skill = 4
+		}
+        advisor = {
+            cost = 150
+            slot = army_chief
+            idea_token = PRS_Albrecht_Graf_von_Roon_carm
+            available = {
+            } 
+			can_be_fired = yes
+            traits = {  army_chief_organizational_2 }
+        }
+    }
+	PRS_Leonhard_von_Blumenthal = {
+        name = "Leonhard von Blumenthal"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Leonhard_von_Blumenthal.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
+	PRS_Friedrich_Wilhelm_of_Prussia = {
+        name = "Friedrich Wilhelm of Prussia"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Friedrich_Wilhelm_of_Prussia.png"
+			}
+        }
+
+		field_marshal = {
+            traits = {  }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+			logistics_skill = 1
+		}
+    }
+	PRS_Hermann_von_Treskow = {
+        name = "Hermann von Treskow"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Hermann_von_Treskow.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+			logistics_skill = 1
+		}
+    }
+	PRS_Edwin_Freiherr_von_Manteuffel = {
+        name = "Edwin Freiherr von Manteuffel"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Edwin_Freiherr_von_Manteuffel.png"
+			}
+        }
+
+		field_marshal = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
+	PRS_Constantin_von_Alvensleben = {
+        name = "Constantin von Alvensleben"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Constantin_von_Alvensleben.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 1
+			logistics_skill = 2
+		}
+    }
+	PRS_Karl_Eberhard_von_Bittenfeld = {
+        name = "Karl Eberhard  von Bittenfeld"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Karl_Eberhard_von_Bittenfeld.png"
+			}
+        }
+
+		field_marshal = {
+            traits = {  }
+            skill = 1
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
+	PRS_Albert_von_Boguslawski = {
+        name = "Albert von Boguslawski"
+        portraits = {
+            army = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Albert_von_Boguslawski.png"
+			}
+        }
+
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 1
+			logistics_skill = 1
+		}
+    }
 }

@@ -131,7 +131,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_attack_austria_hungary"
 		texturefile = "gfx/interface/goals/focus_attack_austria_hungary.png"
-	}
+	}	
+	spriteType = {
+		name = "GFX_goal_continuous_colonization"
+		texturefile = "gfx/interface/goals/goal_continuous_colonization.dds"
+	}	
 }
 
 # ITALY #

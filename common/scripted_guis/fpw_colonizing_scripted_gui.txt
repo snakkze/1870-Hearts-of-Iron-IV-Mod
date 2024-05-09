@@ -49,6 +49,11 @@ scripted_gui = {
                         var = ROOT.colonial_time
                         value = ROOT.temp_population
                     }
+
+                    multiply_variable = {
+                        var = ROOT.colonial_time
+                        value = ROOT.extra_colonizing_speed
+                    }
 			
         		    #transfer_state_to = ROOT
 				    set_state_flag = colonizing_by_@ROOT

@@ -35,6 +35,42 @@ continuous_focus_palette = {
 		
 		available_if_capitulated = yes
 	}
+
+	focus = {
+		id = continuous_colonial_expantion
+		
+		icon = GFX_goal_continuous_colonization
+		
+		available = {
+		}
+		
+		modifier = {
+    			custom_modifier_tooltip = continuous_focus_colonization_speed
+		}
+
+		select_effect = {
+			subtract_from_variable = { ROOT.extra_colonizing_speed = 0.2 }
+		}
+
+		cancel_effect = {
+			add_from_variable = { ROOT.extra_colonizing_speed = 0.2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25		
+				is_government_in_exile = yes 
+			}
+		}
+		
+		supports_ai_strategy = ai_focus_military_advancements
+		
+		daily_cost = 1
+		
+		available_if_capitulated = yes
+	}
+
 	
 	focus = {
 		id = continuous_non_factory_construct
@@ -49,16 +85,9 @@ continuous_focus_palette = {
 			production_speed_infrastructure_factor = 0.1
 			production_speed_rail_way_factor = 0.1
 			production_speed_supply_node_factor = 0.1
-			production_speed_air_base_factor = 0.1
 			production_speed_naval_base_factor = 0.1
-			#production_speed_synthetic_refinery_factor = 0.1
-			production_speed_fuel_silo_factor = 0.1	
-			production_speed_rocket_site_factor = 0.1
-			production_speed_nuclear_reactor_factor = 0.1
 			production_speed_bunker_factor = 0.2
 			production_speed_coastal_bunker_factor = 0.2
-			production_speed_anti_air_building_factor = 0.2
-			production_speed_radar_station_factor = 0.2	
 		}
 		
 		ai_will_do = {

@@ -31,6 +31,10 @@ on_actions = {
 			}
 			update_position = yes
 
+			every_country = {
+				set_variable = { ROOT.extra_colonizing_speed = 1 }
+			}
+
 			if = {
 				limit = {
 					has_start_date < 1866.1.2
