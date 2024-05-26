@@ -1312,6 +1312,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = fpw_france_austro_prussian_war
+			add_opinion_modifier = {
+				target = FRA
+				modifier = fpw_france_prussia_modifier
+			}
+			reverse_add_opinion_modifier = {
+				target = FRA
+				modifier = fpw_france_prussia_modifier
+			}
 			# IF NOT DONE FRANCE WILL JOIN BECAUSE OF THE SECRET TREATY AUSTRIA CAN MAKE PER FOCUS
 			# basically we say to france we will give them territory after the war if they dont join(We can say yes but also no)
 		}
@@ -1403,7 +1412,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_cooperate_with_austria
-		icon = GFX_goal_unknown
+		icon = GFX_focus_befriend_austria
 		prerequisite = { focus = PRS_greater_german_solution }
 		relative_position_id = PRS_greater_german_solution
 		mutually_exclusive = { focus = PRS_austrian_enemy }
@@ -1444,7 +1453,7 @@ focus_tree = {
 	# Prussia and Austria proposing the Nord/Süd idee splitting the germanic nation between the prussian north and austrian south
 	focus = {
 		id = PRS_propose_the_nord_sued_idea
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_nord_sud
 		prerequisite = { focus = PRS_improve_the_nation_spirit }
 		prerequisite = { focus = PRS_pivot_to_the_past }
 		relative_position_id = PRS_improve_the_nation_spirit
@@ -1577,7 +1586,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_northern_unification_play
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = PRS_austrian_enemy }
 		relative_position_id = PRS_austrian_enemy
 		x = -1
@@ -1596,7 +1605,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_split_austria
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_split_austria
 		prerequisite = { focus = PRS_northern_unification_play }
 		prerequisite = { focus = PRS_secure_russian_friendship }
 		relative_position_id = PRS_secure_russian_friendship
@@ -1666,7 +1675,7 @@ focus_tree = {
 	# Icon fist beating the austrian eagle
 	focus = {
 		id = PRS_beating_austria_ourselfs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_beat_austria
 		prerequisite = { focus = PRS_northern_unification_play }
 		prerequisite = { focus = PRS_pivot_to_the_past }
 		relative_position_id = PRS_northern_unification_play
@@ -1694,7 +1703,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_finish_the_habsburgs
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		icon = GFX_focus_PRS_finish_habsburgs
 		prerequisite = { focus = PRS_beating_austria_ourselfs focus = PRS_split_austria }
 		relative_position_id = PRS_beating_austria_ourselfs
 		x = -2
@@ -1846,6 +1855,8 @@ focus_tree = {
 				expire = 0
 			}
 		}
+
+		# If won britain gets split up and england will be renamed to "Neu England"
 	}
 
 	focus = {
@@ -1892,7 +1903,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_embrace_holy_roman_traditions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_hre_traditions
 		prerequisite = { focus = PRS_integration_of_austria }
 		prerequisite = { focus = PRS_finalize_the_federation }
 		relative_position_id = PRS_integration_of_austria
@@ -1912,7 +1923,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_fight_the_benelux
-		icon = GFX_goal_unknown
+		icon = GFX_focus_fight_benelux
 		prerequisite = { focus = PRS_embrace_holy_roman_traditions }
 		relative_position_id = PRS_embrace_holy_roman_traditions
 		x = -2
@@ -1931,7 +1942,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_look_south
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_italy
 		prerequisite = { focus = PRS_embrace_holy_roman_traditions }
 		relative_position_id = PRS_embrace_holy_roman_traditions
 		x = 0
@@ -1950,7 +1961,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_figth_the_frenchs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_fight_france
 		prerequisite = { focus = PRS_embrace_holy_roman_traditions }
 		relative_position_id = PRS_embrace_holy_roman_traditions
 		x = 2
@@ -1990,7 +2001,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRS_albert_from_roon
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_albrecht_roon
 		prerequisite = { focus = PRS_army_effort }
 		x = -2
 		y = 1
@@ -2032,7 +2043,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRS_krupp_artillery
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_krupp_artillery
 		prerequisite = { focus = PRS_flexible_army }
 		x = 0
 		y = 1
@@ -2432,7 +2443,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_ironclad_effort
+		id = PRS_cruiser_effort
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = PRS_flexible_navy focus = PRS_large_navy }
 		x = 0
@@ -2470,7 +2481,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_cruiser_effort
+		id = PRS_torpedo_boats
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = PRS_large_navy focus = PRS_flexible_navy }
 		x = 0
@@ -2509,12 +2520,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_destroyer_effort
+		id = PRS_frigates_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = PRS_ironclad_effort }
+		prerequisite = { focus = PRS_cruiser_effort }
 		x = 0
 		y = 1
-		relative_position_id = PRS_ironclad_effort
+		relative_position_id = PRS_cruiser_effort
 		cost = 10
 	
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2547,12 +2558,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_capital_ships_effort
+		id = PRS_ironclad_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = PRS_cruiser_effort }
+		prerequisite = { focus = PRS_torpedo_boats }
 		x = 0
 		y = 1
-		relative_position_id = PRS_cruiser_effort
+		relative_position_id = PRS_torpedo_boats
 		cost = 10
 	
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2589,11 +2600,11 @@ focus_tree = {
 	focus = {
 		id = PRS_kaiserliche_marine
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = PRS_destroyer_effort }
-		prerequisite = { focus = PRS_capital_ships_effort }
+		prerequisite = { focus = PRS_frigates_effort }
+		prerequisite = { focus = PRS_ironclad_effort }
 		x = 1
 		y = 1
-		relative_position_id = PRS_destroyer_effort
+		relative_position_id = PRS_frigates_effort
 		cost = 10
 	
 		search_filters = {  FOCUS_FILTER_RESEARCH }

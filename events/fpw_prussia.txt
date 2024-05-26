@@ -274,6 +274,13 @@ country_event = {
 	# Prussia: You know what, fuck them
 	option = {
 		name = prussia_fpw.6.a
+		ai_chance = {
+			base = 50 
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
 		complete_national_focus = PRS_annex_holstein
 		AUS = { country_event = { id = prussia_fpw.7 hours = 2 } }
 	}
@@ -281,6 +288,13 @@ country_event = {
 	# We should back off before war starts
 	option = {
 		name = prussia_fpw.6.b
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		PRS = {
 			complete_national_focus = PRS_bruderkrieg_ending
 		}

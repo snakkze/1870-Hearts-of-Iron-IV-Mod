@@ -70,7 +70,7 @@ ETH_italian_occupation_category = { # TODO_TA Update for BBA
 			AND = {
 				original_tag = ITA
 				any_controlled_state = {
-					has_state_flag = ITA_can_electrify_state_flag #This is the only decision available if ETH is gone.
+					has_state_flag = ITA_can_electrify_state_flag #This is the only decision av	lable if ETH is gone.
 				}
 				ETH = {
 					OR = {

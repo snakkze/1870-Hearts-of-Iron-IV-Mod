@@ -29,6 +29,7 @@ fpw_german_confederation_category = {
 	visible = {
 		any_owned_state = {
 			has_state_flag = german_confederation_state
+			
 		}
 	}
 }

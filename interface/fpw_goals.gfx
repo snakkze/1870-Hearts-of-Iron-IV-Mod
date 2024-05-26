@@ -28,7 +28,6 @@ spriteTypes = {
 		name = "GFX_focus_PRS_wacht_am_rhein"
 		texturefile = "gfx/interface/goals/wacht_am_rhein.dds"
 	}
-
 	spriteType = {
 		name = "GFX_focus_PRS_unification"
 		texturefile = "gfx/interface/goals/focus_PRS_unification.dds"
@@ -93,6 +92,42 @@ spriteTypes = {
 		name = "GFX_focus_PRS_supreme_prussian_race"
 		texturefile = "gfx/interface/goals/focus_PRS_supreme_prussian_race.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_PRS_nord_sud"
+		texturefile = "gfx/interface/goals/focus_PRS_nord_sud.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_beat_austria"
+		texturefile = "gfx/interface/goals/focus_PRS_beat_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_finish_habsburgs"
+		texturefile = "gfx/interface/goals/focus_PRS_finish_habsburgs.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_fight_france"
+		texturefile = "gfx/interface/goals/focus_PRS_fight_france.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_fight_france"
+		texturefile = "gfx/interface/goals/focus_PRS_fight_france.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_krupp_artillery"
+		texturefile = "gfx/interface/goals/focus_PRS_krupp_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_hre_traditions"
+		texturefile = "gfx/interface/goals/focus_PRS_hre.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_split_austria"
+		texturefile = "gfx/interface/goals/focus_PRS_split_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_albrecht_roon"
+		texturefile = "gfx/interface/goals/focus_PRS_albrecht_roon.dds"
+	}
 }
 
 # SPAIN #
@@ -135,7 +170,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_continuous_colonization"
 		texturefile = "gfx/interface/goals/goal_continuous_colonization.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_focus_befriend_austria"
+		texturefile = "gfx/interface/goals/focus_befriend_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_fight_benelux"
+		texturefile = "gfx/interface/goals/focus_benelux.dds"
+	}
+	
 }
 
 # ITALY #
