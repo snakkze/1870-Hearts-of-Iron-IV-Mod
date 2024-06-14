@@ -31,7 +31,7 @@ add_ideas = {
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	fpw_infantry_weapons = 1
 	tech_mountaineers = 1
 }
 set_war_support = 0.1
@@ -60,32 +60,9 @@ set_stability = 0.8
 	
 	oob = "NEP_1939"
 	set_technology = {
-		gw_artillery = 1
-		tech_support = 1		
-		tech_engineers = 1
-		infantry_weapons1 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+		fpw_cannon_artillery = 1
+		fpw_infantry_weapons1 = 1
+}
 }
 
 set_politics = {

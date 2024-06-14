@@ -11,6 +11,17 @@
  HUN_DEF:0 "Hungary"
  HUN_ADJ:0 "Hungarian"
 
+ # Cause constitutional monarchy
+ AUS_democratic:0 "Kingdom of Austria"
+ AUS_democratic_DEF:0 "the Kingdom of Austria"
+ AUS_neutrality:0 "Kingdom of Austria"
+ AUS_neutrality_DEF:0 "the Kingdom of Austria"
+ AUS_communism:0 "Austrian Socialist Republic"
+ AUS_communism_DEF:0 "the Austrian Socialist Republic"
+ AUS_fascism:0 "Republic of Austria"
+ AUS_fascism_DEF:0 "the Republic of Austria"
+
+
  SAF_fascism:0 "Cape Colony"
  SAF_fascism_DEF:0 "the Unitary Cape Colony"
  SAF_democratic:0 "Cape Colony"

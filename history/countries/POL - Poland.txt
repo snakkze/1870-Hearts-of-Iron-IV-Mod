@@ -12,19 +12,12 @@ if = {
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_technology = {
-			aa_lmg = 1
-			aa_cannon_1 = 1
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			engines_1 = 1
-			early_bombs = 1
-		}
+
+}
 	else = {
 		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
+
+}
 	}
 }
 
@@ -32,18 +25,10 @@ set_research_slots = 3
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_trucks = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_recon = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	trench_warfare = 1
-	fuel_silos = 1
-	synth_oil_experiments = 1
+	fpw_cannon_artillery = 1
 	basic_train = 1
 }
 
@@ -52,36 +37,28 @@ if = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
-	}
+
+}
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
-		gwtank_chassis = 1
-	}
+
+}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_destroyer = 1
-		early_submarine = 1	
-	}
+
+}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-	}
+
+}
 }
 if = {
 	limit = { has_dlc = "No Step Back" }
@@ -192,55 +169,18 @@ if = {
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_technology = {
-				iw_medium_airframe = 1
-				basic_medium_airframe = 1
-				engines_2 = 1
-				improved_small_airframe = 1
-			}
+
+}
 		else = {
 			set_technology = {
-				tactical_bomber1 = 1
-			}
+
+}
 		}
 	}
 
 	set_technology = {
-		motorised_infantry = 1
-		support_weapons = 1
-		interwar_artillery = 1
 
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-		concentrated_industry4 = 1
-	}
+}
 	if = {
 		limit = {
 			NOT = {
@@ -248,8 +188,8 @@ if = {
 			}
 		}
 		set_technology = {
-			basic_light_tank = 1
-		}
+
+}
 		set_oob = "POL_1939"
 	}
 	if = {
@@ -259,23 +199,21 @@ if = {
 			
 		}
 		set_technology = {
-			basic_light_tank_chassis = 1
-		}
+
+}
 		set_oob = "POL_1939_nsb"
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
-			basic_submarine = 1
-			basic_destroyer = 1
-		}
+
+}
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
-			basic_ship_hull_light = 1
-			basic_light_battery = 1
-		}
+
+}
 	}
 	if = {
 		limit = {

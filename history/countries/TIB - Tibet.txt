@@ -5,7 +5,7 @@ oob = "TIB_1866"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	fpw_infantry_weapons = 1
 }
 
 recruit_character = TIB_jamphel_yeshe_gyaltsen
@@ -48,26 +48,8 @@ recruit_character = TIB_taktra_rinpoche
 	
 	oob = "TIB_1939"
 	set_technology = {
-		#doctrines
-		air_superiority = 1
 
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+}
 }
 
 set_politics = {

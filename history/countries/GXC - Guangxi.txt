@@ -7,8 +7,7 @@ set_stability = 0.6
 set_war_support = 0.4
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	mass_assault = 1
+	fpw_infantry_weapons = 1
 }
 
 recruit_character = GXC_li_zongren

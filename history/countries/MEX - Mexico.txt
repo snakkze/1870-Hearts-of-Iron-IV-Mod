@@ -12,66 +12,47 @@ if = {
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	set_technology = {
-		aa_lmg = 1
-		engines_1 = 1
-		early_bombs = 1
-		aircraft_construction = 1
-		iw_small_airframe = 1
-	}
+
+}
 	else = {
 		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
 
-		}
+}
 	}
 }
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	tech_trucks = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	
-	fuel_silos = 1
-	fuel_refining = 1
+	fpw_infantry_weapons = 1
+	fpw_cannon_artillery = 1
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
-		gwtank_chassis = 1
-	}
+
+}
 }
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
-	}
+
+}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-	}
+
+}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_battery = 1
-		coastal_defense_ships = 1
-	}
+
+}
 }
 
 recruit_character = MEX_lazaro_cardenas
@@ -153,37 +134,9 @@ if = {
 	}
 	
 	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
+		fpw_infantry_weapons1 = 1
+		fpw_infantry_weapons2 = 1
+}
 
 	if = {
 		limit = {

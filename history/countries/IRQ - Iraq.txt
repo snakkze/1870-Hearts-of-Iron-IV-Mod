@@ -6,20 +6,17 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {
 		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
+
+}
 	}
 }
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_trucks = 1
-	gw_artillery = 1
-	fuel_silos = 1
+	fpw_cannon_artillery = 1
 }
 
 
@@ -27,7 +24,9 @@ if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
 	}
-	set_technology = { camelry = 1 }
+	set_technology = {
+
+}
 }
 
 set_convoys = 5
@@ -78,38 +77,9 @@ recruit_character = IRQ_nuri_as_said
 		}
 	}
 	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+		fpw_infantry_weapons2 = 1
+		fpw_cannon_artillery = 1
+}
 }
 
 set_politics = {

@@ -340,6 +340,29 @@ austrian_surrender = {
 			}
 		}
 	}
+	SOV = {
+		if = {
+			limit = {
+				is_in_faction_with = PRS
+			}
+			88 = {
+				transfer_state_to = SOV
+				add_core_of = SOV
+			}
+			91 = {
+				transfer_state_to = SOV
+				add_core_of = SOV
+			}
+			89 = {
+				transfer_state_to = SOV
+				add_core_of = SOV
+			}
+			80 = {
+				transfer_state_to = SOV
+				add_core_of = SOV
+			}
+		}	
+	}
 	PRS = {
 		dismantle_faction = yes
 		clr_country_flag = austro_prussian_war

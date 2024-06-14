@@ -367,6 +367,9 @@ country_event = {
 			PRS = { has_war_with = AUS }
 			AUS = { owns_state = 160 }
 			original_tag = ITA
+			NOT = {
+				original_tag = WRT
+			}
 		}	
 	}
 
@@ -567,7 +570,7 @@ country_event = {
 			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
 			ITA = { country_event = austro_prussian_fpw.4 }
 		}
-		clr_global_flag = fpw_franco_prussian_war_flagaustro_prussian_war
+		clr_global_flag = fpw_franco_prussian_war_flag
 	}
 
 	option = {

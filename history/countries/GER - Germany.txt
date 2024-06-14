@@ -18,29 +18,12 @@ if = {
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_technology = {
-			aa_lmg = 1
-			aa_cannon_1 = 1
-			engines_1 = 1
-			engines_2 = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_medium_airframe = 1
-			iw_large_airframe = 1
-			air_torpedoe_1 = 1
-		}
+
+}
 	else = {
 		set_technology = {
-			early_fighter = 1
-			fighter1 = 1
-			early_bomber = 1
-			tactical_bomber1 = 1
-			strategic_bomber1 = 1
-			CAS1 = 1
-			naval_bomber1 = 1
-		}
+
+}
 	}
 }
 
@@ -51,65 +34,35 @@ set_fuel_ratio = 0.8
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_trucks = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
+	fpw_cannon_artillery = 1
 	basic_train = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
-	synth_oil_experiments = 1
-	fuel_silos = 1
-	fuel_refining = 1
 }
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-		basic_heavy_tank = 1
-	}
+
+}
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
-		engine_tech_1 = 1
-	}
+
+}
 }
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
+
+}
 	set_naval_oob = "GER_1866_naval"
 }
 if = {
@@ -117,29 +70,8 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		panzerschiffe = 1
-		pre_dreadnoughts = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		mtg_transport = 1
-		basic_torpedo = 1
-		improved_ship_torpedo_launcher = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_depth_charges = 1
-		sonar = 1
-		basic_cruiser_armor_scheme = 1
-	}
+
+}
 	set_naval_oob = "GER_1866_naval_mtg"
 }
 if = {
@@ -147,8 +79,8 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	set_technology = {
-		armored_car1 = 1
-	}
+
+}
 }
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
@@ -262,55 +194,9 @@ create_import = {
 	
 
 	set_technology = {
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
+		fpw_infantry_weapons2 = 1
+		improved_fpw_infantry_weapons = 1
+}
 
 	if = {
 		limit = {
@@ -319,8 +205,8 @@ create_import = {
 			}
 		}
 		set_technology = {
-			basic_medium_tank = 1 
-		}
+
+}
 		set_oob = "GER_1939"
 	}
 	if = {
@@ -330,8 +216,8 @@ create_import = {
 			
 		}
 		set_technology = {
-			basic_medium_tank_chassis = 1 
-		}
+
+}
 		set_oob = "GER_1939_nsb"
 	}
 	if = {
@@ -341,13 +227,8 @@ create_import = {
 			}
 		}
 		set_technology = {
-			basic_heavy_cruiser = 1
-			improved_heavy_cruiser = 1
-			improved_battleship = 1
-			early_carrier = 1
-			basic_carrier = 1
-			improved_carrier = 1
-		}
+
+}
 		set_naval_oob = "GER_1939_naval_legacy"
 	}
 	if = {
@@ -355,22 +236,16 @@ create_import = {
 			has_dlc = "Man the Guns"
 		}
 		set_technology = {
-			improved_ship_hull_cruiser = 1
-			basic_ship_hull_heavy = 1
-			early_ship_hull_carrier = 1
-			basic_ship_hull_carrier = 1
-			improved_heavy_battery = 1
-			basic_heavy_armor_scheme = 1
-		}
+
+}
 		set_naval_oob = "GER_1939_naval_mtg"
 	}
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 		else = {
 			set_technology = {
-				CAS2 = 1
-				heavy_fighter1 = 1
-			}
+
+}
 		}
 	}
 }

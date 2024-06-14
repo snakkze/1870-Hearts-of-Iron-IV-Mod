@@ -3,7 +3,7 @@
 oob = "YUN_1866"
 
 set_technology = {
-	infantry_weapons = 1
+	fpw_infantry_weapons = 1
 }
 
 if = {
@@ -83,26 +83,8 @@ recruit_character = YUN_ding_zhipan
 	oob = "YUN_1939"
 
 	set_technology = {
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+}
 }
 
 set_politics = {

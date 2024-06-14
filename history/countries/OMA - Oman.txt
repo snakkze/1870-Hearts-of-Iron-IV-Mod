@@ -5,15 +5,16 @@ oob = "OMA_1866"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	tech_trucks = 1
+	fpw_infantry_weapons = 1
 }
 
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
 	}
-	set_technology = { camelry = 1 }
+	set_technology = {
+
+}
 }
 
 recruit_character = OMA_said_bin_taimur
@@ -58,27 +59,8 @@ set_stability = 0.8
 	
 	oob = "OMA_1939"
 	set_technology = {
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+}
 }
 
 set_politics = {

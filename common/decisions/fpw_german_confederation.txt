@@ -195,8 +195,23 @@ fpw_german_unification_category = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				any_owned_state = {
-					has_state_flag = influenced_by_PRS
+				AND = {
+
+				}
+				add = 100
+			}
+			modifier = {
+				OR = {
+					AND = {
+						original_tag = SOV
+						FRA = {
+							has_war_with = PRS
+							is_in_faction_with = AUS
+						}
+					}
+					any_owned_state = {
+						has_state_flag = influenced_by_PRS
+					}
 				}
 				add = 100
 			}
@@ -206,7 +221,7 @@ fpw_german_unification_category = {
 						has_state_flag = influenced_by_PRS
 					}
 				}
-				add = 40
+				add = 50
 			}
 		}
 
@@ -269,7 +284,9 @@ fpw_german_unification_category = {
 				OR = {
 					AND = {
 						original_tag = FRA
-						has_opinion_modifier = fpw_france_prussia_modifier
+						NOT = {
+							has_opinion_modifier = fpw_france_prussia_modifier
+						}
 					}
 					any_owned_state = {
 						has_state_flag = influenced_by_AUS
@@ -283,7 +300,7 @@ fpw_german_unification_category = {
 						has_state_flag = influenced_by_AUS
 					}
 				}
-				add = 40
+				add = 50
 			}
 		}
 

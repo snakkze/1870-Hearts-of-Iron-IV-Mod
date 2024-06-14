@@ -6,8 +6,8 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {
 		set_technology = {
-			early_fighter = 1
-		}
+
+}
 	}
 }
 
@@ -71,11 +71,9 @@ IF = {
 
 
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_trucks = 1
-	gw_artillery = 1
-	tech_support = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
 }
 
 set_convoys = 10
@@ -116,50 +114,17 @@ set_convoys = 10
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_technology = {
-				iw_small_airframe = 1
-				engines_1 = 1
-				engines_2 = 1
-				aa_lmg = 1
-				early_bombs = 1
-			}
+
+}
 		else = {
 			set_technology = {
-				early_bomber = 1
-			}
+
+}
 		}
 	}
 	set_technology = {
-		tech_engineers = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+		fpw_cannon_artillery = 1
+}
 	if = {
 		limit = {
 			has_dlc = "By Blood Alone"

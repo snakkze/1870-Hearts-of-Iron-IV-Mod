@@ -5,7 +5,7 @@ oob = "HON_1866"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	fpw_infantry_weapons = 1
 }
 
 recruit_character = HON_tiburcio_carías_andino
@@ -55,35 +55,8 @@ set_convoys = 10
 	
 	oob = "HON_1939"
 	set_technology = {
-		infantry_weapons1 = 1
-
-		#doctrines
-		air_superiority = 1
-		
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+		fpw_infantry_weapons1 = 1
+}
 }
 
 set_politics = {

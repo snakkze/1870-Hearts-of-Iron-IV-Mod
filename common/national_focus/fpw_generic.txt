@@ -1423,18 +1423,8 @@ focus_tree = {
 		ai_will_do = {
 			base = 10
 			modifier = {
-				add = 2
-				any_neighbor_country = {
-					is_major = yes
-					has_government = neutrality
-				}
-			}
-			modifier = {
 				factor = 0
-				AND = {
-					is_historical_focus_on = yes
-					NOT = { has_government = neutrality }
-				}
+				is_historical_focus_on = yes
 			}
 		}
 
@@ -1473,26 +1463,8 @@ focus_tree = {
 		ai_will_do = {
 			base = 10
 			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = democratic 
-						has_government = fascism 
-					}
-				}
-			}
-			modifier = {
 				factor = 0
-				AND = {
-					is_historical_focus_on = yes
-					NOT = { 
-						OR = {
-							has_government = democratic 
-							has_government = fascism 
-						}
-					}
-				}
+				is_historical_focus_on = yes
 			}
 		}
 
@@ -1661,30 +1633,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			base = 0
+			base = 10
 			modifier = {
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = fascism
-						has_government = communism
-						has_government = neutrality
-					}
-				}
-				add = 20
-			}
-			modifier = {
-				AND = {
-					is_historical_focus_on = yes
-					NOT = {
-						OR = {
-							has_government = fascism
-							has_government = communism
-							has_government = neutrality
-						} 
-					}
-				}
 				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 
@@ -1810,21 +1762,11 @@ focus_tree = {
 		ai_will_do = {
 			base = 10
 			modifier = {
-				add = 2
-				any_neighbor_country = {
-					is_major = yes
-					has_government = communism
-				}
-			}
-			modifier = {
 				factor = 0
-				AND = {
-					is_historical_focus_on = yes
-					NOT = { has_government = communism }
-				}
+				is_historical_focus_on = yes
 			}
 		}
-
+		
 		completion_reward = {
 			add_stability = -0.15
 			start_civil_war = {

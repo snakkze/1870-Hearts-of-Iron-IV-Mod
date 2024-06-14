@@ -5,7 +5,7 @@ oob = "TAN_1866"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	fpw_infantry_weapons = 1
 }
 
 recruit_character = TAN_salchak_toka
@@ -51,27 +51,8 @@ add_ideas = {
 	
 	oob = "TAN_1939"
 	set_technology = {
-		infantry_weapons = 1
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-	}
+		fpw_infantry_weapons = 1
+}
 }
 
 set_politics = {

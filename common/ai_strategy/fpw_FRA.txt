@@ -1,0 +1,65 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+FRA_defend_franco_prussian_border = {
+	allowed = { original_tag = FRA }
+	enable = {
+		OR = {
+			PRS = { has_cosmetic_tag = GER_north_germany }
+			PRS = { has_opinion_modifier = fpw_schutz_und_trutz_budniss }
+			PRS = { is_justifying_wargoal_against = PRS }
+			PRS = { has_completed_focus = PRS_leopold_on_the_spanish_thrown }
+		}
+	}
+
+	abort = {
+		OR = {
+			PRS = { has_completed_focus = PRS_GER }
+		}
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "HOL"
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "BEL"
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "LUX"
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SWI"
+		value = 50
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			28
+			972
+			976
+			977
+			975
+		}
+		ratio = 0.1
+		area = europe
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}

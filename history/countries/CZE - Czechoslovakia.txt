@@ -18,32 +18,20 @@ if = {
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_technology = {
-			aa_lmg = 1
-			engines_1 = 1
-			engines_2 = 1
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			early_bombs = 1
-		}
+
+}
 	else = {
 		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
+
+}
 	}
 }
 
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_recon = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_trucks = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	fuel_silos = 1
+	fpw_cannon_artillery = 1
 	basic_train = 1
 }
 recruit_character = CZE_karl_albrecht
@@ -80,20 +68,16 @@ if = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-	}
+
+}
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-	}
+
+}
 }
 
 set_research_slots = 3

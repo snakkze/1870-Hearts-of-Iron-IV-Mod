@@ -5,23 +5,24 @@ oob = "SAU_1866"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	tech_trucks = 1
+	fpw_infantry_weapons = 1
 }
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
-	}
+
+}
 }
 
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
 	}
-	set_technology = { camelry = 1 }
+	set_technology = {
+
+}
 }
 
 set_convoys = 5
@@ -58,36 +59,8 @@ recruit_character = SAU_gholam_wali
 	
 	oob = "SAU_1939"
 	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
+		fpw_cannon_artillery = 1
+}
 }
 
 set_politics = {

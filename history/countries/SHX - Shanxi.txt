@@ -7,7 +7,7 @@ set_stability = 0.7
 set_war_support = 0.4
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	fpw_infantry_weapons = 1
 }
 
 recruit_character = SHX_yan_xishan
@@ -96,36 +96,8 @@ if = {
 	}
 	
 	set_technology = {
-		#doctrines
-		air_superiority = 1
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
+}
 }
 
 set_politics = {

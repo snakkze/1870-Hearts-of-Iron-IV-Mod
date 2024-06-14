@@ -5,18 +5,11 @@ capital = 70
 
 
 set_technology = {
-	tech_trucks = 1
-	gw_artillery = 1
-	interwar_artillery = 1
-	interwar_antiair = 1
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	infantry_weapons2 = 1
-	support_weapons = 1
-	tech_support = 1
-	tech_recon = 1
+	fpw_cannon_artillery = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_infantry_weapons2 = 1
 	tech_mountaineers = 1
-	tech_engineers = 1
 }
 
 if = {
@@ -24,9 +17,8 @@ if = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
+
+}
 	set_oob = "SLO_1939"
 }
 if = {
@@ -34,19 +26,16 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
+
+}
 	set_oob = "SLO_1939_nsb"
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {
 		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
+
+}
 	}
 }
 
@@ -89,25 +78,8 @@ recruit_character = SLO_anton_pulanick
 	complete_national_focus = production_effort
 	
 	set_technology = {
-		#doctrines
-		formation_flying = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		concentrated_industry = 1
-	}
+}
 	if = {
 		limit = {
 			has_dlc = "No Step Back"

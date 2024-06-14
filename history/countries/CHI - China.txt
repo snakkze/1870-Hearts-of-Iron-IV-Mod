@@ -19,9 +19,8 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {
 		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-		}
+
+}
 	}
 }
 
@@ -70,11 +69,8 @@ set_stability = 0.2
 set_war_support = 0.5
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	mass_assault = 1
-	fleet_in_being = 1
+	fpw_infantry_weapons = 1
+	fpw_cannon_artillery = 1
 	basic_train = 1
 }
 if = {
@@ -82,31 +78,25 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
-		gwtank_chassis = 1
-	}
+
+}
 	else = {
 		set_technology = {
-			gwtank = 1
-		}
+
+}
 	}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
-	}
+
+}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-	}
+
+}
 }
 
 add_ideas = {
@@ -282,44 +272,7 @@ set_convoys = 40
 	}
 	set_technology = {
 
-		#PLACEHOLDER techs for vehicles
-		motorised_infantry = 1
-		tech_support = 1		
-		tech_recon = 1
-		tech_engineers = 1
-		tech_trucks = 1
-
-		#doctrines
-		air_superiority = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
+}
 }
 
 set_politics = {
