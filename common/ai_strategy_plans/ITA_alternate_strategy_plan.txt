@@ -1,0 +1,229 @@
+ITA_habsburg = {
+	name = "Italian alternate habsburg plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = HABSBURG
+			}
+			has_completed_focus = ITA_w
+		}
+	}
+	abort = {
+		has_completed_focus = ITA_l
+	}
+
+	ai_national_focuses = {
+		ITA_start
+		ITA_venice_for_support
+		ITA_formalise_habsburg_alliance
+		ITA_w
+		ITA_seek_allies
+		ITA_ally_germany
+		ITA_expansionism
+		ITA_franco_prussian_war
+		ITA_take_the_capital
+		ITA_claim_the_french_coast
+		ITA_colonial_empire
+		ITA_establish_the_african_colonies
+		ITA_establish_italian_east_asia
+		ITA_conquer_dai_nam
+		ITA_claim_french_colonies
+		ITA_attack_ethiopia
+		ITA_proclaim_empire
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+ITA_democratic = {
+	name = "Italian alternate democratic plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = DEMOCRATIC
+			}
+			has_completed_focus = ITA_l
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ITA_start
+		ITA_ally_prussia
+		ITA_prussian_military_cooperation
+		ITA_the_war_with_austria	
+		ITA_venice_offensive
+		ITA_l
+		ITA_proclaim_empire
+		ITA_presidential_election
+		ITA_ban_monarchism
+		ITA_bastion_of_democracy
+		ITA_economics
+		ITA_develop_north
+		ITA_construct_more_factories
+		ITA_produce_cheese
+		ITA_even_more_factories
+		ITA_expanding_military_industry
+		ITA_lombardy_weapons
+		ITA_venice_weapons
+		ITA_start_mobilisation
+		ITA_navy
+		ITA_borrow_ideas_from_uk
+		ITA_artillery_focus
+		ITA_cavalry_focus
+		ITA_rifle_focus
+		ITA_doctrine_effort
+		ITA_special_forces
+		ITA_united_against_prussia
+		ITA_mto
+		ITA_destroy_french_empire
+
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+ITA_roman = {
+	name = "Italian alternate roman plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = ROMAN
+			}
+			has_completed_focus = ITA_w
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ITA_start
+		ITA_ally_prussia
+		ITA_prussian_military_cooperation
+		ITA_the_war_with_austria	
+		ITA_venice_offensive
+		ITA_w
+		ITA_economics
+		ITA_develop_north
+		ITA_construct_more_factories
+		ITA_produce_cheese
+		ITA_even_more_factories
+		ITA_expanding_military_industry
+		ITA_lombardy_weapons
+		ITA_venice_weapons
+		ITA_expansionism
+		ITA_focus_on_the_mediterranean
+		ITA_take_the_capital
+		ITA_betray_the_habsburgs
+		ITA_plotting_against_the_ottomans
+		ITA_roman_ambition
+		ITA_push_to_the_danube
+		ITA_attack_istanbul
+		ITA_conquer_turkey_and_levant
+		ITA_take_care_of_iberia
+		ITA_revive_the_empire
+		ITA_finish_egypt
+		ITA_finish_morocco
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}

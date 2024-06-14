@@ -1122,7 +1122,6 @@ country_event = {
 						limit = {
 							OR = {
 								AND = {
-									is_owned_by = AUS
 									is_core_of = AUS
 								}
 								has_state_flag = german_claimed_state

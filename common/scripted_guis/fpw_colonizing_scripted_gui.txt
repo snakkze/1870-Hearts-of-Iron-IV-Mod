@@ -57,6 +57,9 @@ scripted_gui = {
 			
         		    #transfer_state_to = ROOT
 				    set_state_flag = colonizing_by_@ROOT
+
+                    set_variable = { THIS.integration_time = ROOT.colonial_time }
+                    
                     ROOT = {
                         activate_mission = colonization_descision
                         set_country_flag = is_colonizing

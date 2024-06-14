@@ -607,6 +607,11 @@ PRS_ai_behavior = {
 		desc = "RULE_OPTION_NATIONALIST_PRS_AI_DESC"
 		allow_achievements = yes
 	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
 }
 SOV_ai_behavior = {
 	name = "SOV_AI_BEHAVIOR"
@@ -709,46 +714,19 @@ ITA_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = FASCIST_HISTORICAL
-		text = "RULE_OPTION_FASCIST_HISTORICAL"
-		desc = "RULE_FASCIST_HISTORICAL_ITA_AI_DESC" 
-		allow_achievements = yes
-	}
-	option = {
-		required_dlc = "By Blood Alone"
-		name = ALT_FASCIST_BALBO
-		text = "RULE_OPTION_ALT_FASCIST_BALBO"
-		desc = "RULE_ALT_FASCIST_BALBO_ITA_AI_DESC"
-	}
-	option = {
-		required_dlc = "By Blood Alone"
-		name = ALT_FASCIST_GRANDI
-		text = "RULE_OPTION_ALT_FASCIST_GRANDI"
-		desc = "RULE_ALT_FASCIST_GRANDI_ITA_AI_DESC"
-	}
-	option = {
-		required_dlc = "By Blood Alone"
-		name = ITA_MONARCHIST_ROMAN_EMPIRE
+		name = ROMAN
 		text = "RULE_OPTION_ITA_MONARCHIST_ROMAN_EMPIRE"
 		desc = "RULE_OPTION_ITA_MONARCHIST_ROMAN_EMPIRE_AI_DESC"
 	}
 	option = {
-		required_dlc = "By Blood Alone"
-		name = ITA_CHRISTIAN_DEMOCRACY
-		text = "RULE_OPTION_ITA_CHRISTIAN_DEMOCRACY"
-		desc = "RULE_OPTION_ITA_CHRISTIAN_DEMOCRACY_AI_DESC"
+		name = HABSBURG
+		text = "RULE_OPTION_ITA_HABSBURG_PLAN"
+		desc = "RULE_OPTION_ITA_HABSBURG_PLAN_AI_DESC"
 	}
 	option = {
-		required_dlc = "By Blood Alone"
-		name = ITA_COMMUNIST_PLAN
-		text = "RULE_OPTION_ITA_COMMUNIST_PLAN"
-		desc = "RULE_OPTION_ITA_COMMUNIST_PLAN_AI_DESC"
-	}
-	option = {
-		required_dlc = "By Blood Alone"
-		name = ITA_DEMOCRATIC_PLAN
-		text = "RULE_OPTION_ITA_DEMOCRATIC_PLAN"
-		desc = "RULE_OPTION_ITA_DEMOCRATIC_PLAN_AI_DESC"
+		name = DEMOCRATIC
+		text = "RULE_OPTION_ITA_LIBERAL_PLAN"
+		desc = "RULE_OPTION_ITA_LIBERAL_PLAN_AI_DESC"
 	}
 	option = {
 		name = RANDOM

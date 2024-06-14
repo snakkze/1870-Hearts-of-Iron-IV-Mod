@@ -1,4 +1,21 @@
 on_actions = {
+	on_declare_war  = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						tag = TRB
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = TRB
+					}
+					white_peace = TRB
+				}
+			}
+		}
+	}
 	on_startup = {
 		effect = {
 			every_country = {
@@ -32,7 +49,7 @@ on_actions = {
 			update_position = yes
 
 			every_country = {
-				set_variable = { ROOT.extra_colonizing_speed = 1 }
+				set_variable = { THIS.extra_colonizing_speed = 1 }
 			}
 
 			if = {

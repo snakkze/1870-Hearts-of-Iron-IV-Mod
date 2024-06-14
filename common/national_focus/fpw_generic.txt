@@ -1661,9 +1661,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			base = 10
+			base = 0
 			modifier = {
-				factor = 2
 				any_neighbor_country = {
 					is_major = yes
 					OR = {
@@ -1672,9 +1671,9 @@ focus_tree = {
 						has_government = neutrality
 					}
 				}
+				add = 20
 			}
 			modifier = {
-				factor = 0
 				AND = {
 					is_historical_focus_on = yes
 					NOT = {
@@ -1685,6 +1684,7 @@ focus_tree = {
 						} 
 					}
 				}
+				factor = 0
 			}
 		}
 
@@ -2576,10 +2576,8 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					AND = {
-						has_country_flag = SPR_found_king
-						has_idea = fpw_SPR_aftermath_of_the_civilwar
-					}
+					has_country_flag = SPR_found_king
+					has_idea = fpw_SPR_aftermath_of_the_civilwar
 				}
 			}		
 		}
@@ -2646,10 +2644,8 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					AND = {
-						has_country_flag = SPR_found_king
-						has_idea = fpw_SPR_aftermath_of_the_civilwar
-					}
+					has_country_flag = SPR_found_king
+					has_idea = fpw_SPR_aftermath_of_the_civilwar
 				}
 			}		
 		}
@@ -2715,10 +2711,8 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					AND = {
-						has_country_flag = SPR_found_king
-						has_idea = fpw_SPR_aftermath_of_the_civilwar
-					}
+					has_country_flag = SPR_found_king
+					has_idea = fpw_SPR_aftermath_of_the_civilwar
 				}
 			}		
 		}
@@ -2784,10 +2778,8 @@ focus_tree = {
 			AND = {
 				has_civil_war = no	
 				NOT = {
-					AND = {
-						has_country_flag = SPR_found_king
-						has_idea = fpw_SPR_aftermath_of_the_civilwar
-					}
+					has_country_flag = SPR_found_king
+					has_idea = fpw_SPR_aftermath_of_the_civilwar
 				}
 			}		
 		}

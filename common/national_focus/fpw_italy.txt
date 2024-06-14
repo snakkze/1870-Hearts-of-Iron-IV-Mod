@@ -686,6 +686,18 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
+		ai_will_do = {
+			base = 0
+			modifier = {
+				any_neighbor_country = {
+					OR = {
+						has_global_flag = fpw_franco_prussian_war_flag
+					}
+				}
+				add = 20
+			}
+		}
+
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -702,7 +714,6 @@ focus_tree = {
 		prerequisite = { focus = ITA_expansionism }
 		mutually_exclusive = { focus = ITA_colonial_empire }
 		available = {
-			NOT = { owns_state = 2 }
 		}
 		x = -3
 		y = 2

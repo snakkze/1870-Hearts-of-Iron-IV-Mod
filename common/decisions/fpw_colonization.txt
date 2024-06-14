@@ -30,7 +30,6 @@ fpw_colonization_category = {
 		icon = GFX_decision_colonize
 		fire_only_once = no
 		days_remove = ROOT.colonial_time
-		#days_remove = 5
 
 		ai_will_do = {
 			factor = 200
@@ -137,7 +136,7 @@ fpw_colonization_category = {
 
 		icon = GFX_decision_integration
 		fire_only_once = no
-		days_remove = ROOT.colonial_time
+		days_remove = THIS.integration_time
 		#days_remove = 5
 
 		ai_will_do = {

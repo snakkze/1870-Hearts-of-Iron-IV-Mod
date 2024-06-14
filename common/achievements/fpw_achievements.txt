@@ -1,0 +1,73 @@
+unique_id=fpw_achievements
+
+# HRE
+fpw_achievements_1 = {
+    possible = {
+        difficulty > 1
+		original_tag = PRS
+    }
+ 
+    happened = {
+    } 
+}
+
+# Germany
+fpw_achievements_2 = {
+    possible = {
+        difficulty > 1
+		original_tag = PRS
+    }
+ 
+    happened = {
+    } 
+}
+
+# Greater Germany
+fpw_achievements_3 = {
+    possible = {
+        difficulty > 1
+		original_tag = PRS
+    }
+ 
+    happened = {
+        PRS = {
+            has_completed_focus = PRS_form_the_greater_german_empire
+        }
+    } 
+}
+
+# Greater Prussia
+fpw_achievements_4 = {
+    possible = {
+        difficulty > 1
+		original_tag = PRS
+    }
+ 
+    happened = {
+    } 
+}
+
+# Venice for Support
+fpw_achievements_5 = {
+    possible = {
+        difficulty > 1
+		original_tag = ITA
+    }
+ 
+    happened = {
+    } 
+}
+
+# Roman Empire
+fpw_achievements_6 = {
+    possible = {
+        difficulty > 1
+		original_tag = ITA
+    }
+ 
+    happened = {
+        ITA = {
+            has_completed_focus = 
+        }
+    } 
+}
