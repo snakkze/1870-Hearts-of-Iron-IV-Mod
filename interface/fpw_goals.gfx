@@ -156,6 +156,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/attack_austria.png"
 	}
 	spriteType = {
+		name = "GFX_focus_attack_siam"
+		texturefile = "gfx/interface/goals/attack_siam.png"
+	}
+	spriteType = {
 		name = "GFX_focus_befriend_prussia"
 		texturefile = "gfx/interface/goals/befriend_prussia.png"
 	}	

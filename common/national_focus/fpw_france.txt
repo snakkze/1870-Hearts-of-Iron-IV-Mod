@@ -19,14 +19,15 @@ focus_tree = {
 	}
 	
 	default = no
+	continuous_focus_position = { x = 1500 y = 1500 }
 
 	# 
 	focus = {
 		id = FRA_foreign_policies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_focus_fra_border
 		x = 6
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -41,10 +42,10 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_internal_politics
-		icon = GFX_goal_unknown
-		x = 14
+		icon = GFX_focus_generic_improve_the_administration
+		x = 10
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -59,12 +60,12 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_support_the_union_liberale
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = FRA_internal_politics }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = FRA_internal_politics
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -79,13 +80,36 @@ focus_tree = {
 
 	#
 	focus = {
-		id = FRA_align_moderate_conservatives
-		icon = GFX_goal_unknown
+		id = FRA_draft_the_constitution
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = FRA_support_the_union_liberale }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = FRA_support_the_union_liberale
 		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = FRA_align_moderate_conservatives
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = FRA_support_the_union_liberale }
+		x = -1
+		y = 2
+		relative_position_id = FRA_support_the_union_liberale
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -100,12 +124,12 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_alliance_with_legitimists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = FRA_support_the_union_liberale }
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = FRA_support_the_union_liberale
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -120,8 +144,10 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_implement_new_constitution
-		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_align_moderate_conservatives focus = FRA_alliance_with_legitimists }
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = FRA_align_moderate_conservatives }
+		prerequisite = { focus = FRA_alliance_with_legitimists }
+		prerequisite = { focus = FRA_draft_the_constitution }
 		x = 1
 		y = 1
 		relative_position_id = FRA_align_moderate_conservatives
@@ -140,12 +166,12 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_our_first_election
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FRA_implement_new_constitution }
 		x = 0
 		y = 1
 		relative_position_id = FRA_implement_new_constitution
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -223,7 +249,7 @@ focus_tree = {
 		id = FRA_strengthen_bonaparte_dynasty
 		icon = GFX_focus_focus_fra_third_empire
 		prerequisite = { focus = FRA_internal_politics }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = FRA_internal_politics
 		cost = 10
@@ -242,7 +268,7 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_purge_republican_revolutionaries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_royal_dictatorship
 		prerequisite = { focus = FRA_strengthen_bonaparte_dynasty }
 		x = 0
 		y = 1
@@ -262,7 +288,7 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_flood_imperial_reservoir
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SMB_blue_water_fleet
 		prerequisite = { focus = FRA_strengthen_bonaparte_dynasty }
 		x = 2
 		y = 1
@@ -282,7 +308,7 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_construct_giant_napoleon_III_statue
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = FRA_flood_imperial_reservoir }
 		x = 0
 		y = 1
@@ -302,7 +328,7 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_the_red_scare
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = FRA_purge_republican_revolutionaries }
 		x = 0
 		y = 1
@@ -322,7 +348,7 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_construct_high_secrurity_prison
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_crush_the_revolution
 		prerequisite = { focus = FRA_the_red_scare }
 		x = 2
 		y = 1
@@ -342,7 +368,7 @@ focus_tree = {
 	#
 	focus = {
 		id = FRA_crack_down_on_colonies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = FRA_the_red_scare }
 		x = 0
 		y = 1
@@ -367,7 +393,94 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = FRA_foreign_policies
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = FRA_strike_the_east
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = FRA_expanding_colonial_empire }
+		x = 1
+		y = 1
+		relative_position_id = FRA_expanding_colonial_empire
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_attack_dai_nam
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = FRA_strike_the_east }
+		x = 1
+		y = 1
+		relative_position_id = FRA_strike_the_east
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_malacca_strategy
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = FRA_strike_the_east }
+		x = -1
+		y = 1
+		relative_position_id = FRA_strike_the_east
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_to_the_mekong
+		icon = GFX_focus_attack_siam
+		prerequisite = { focus = FRA_malacca_strategy focus = FRA_attack_dai_nam}
+		x = 1
+		y = 1
+		relative_position_id = FRA_malacca_strategy
 		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = FRA_strike_africa
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = FRA_expanding_colonial_empire }
+		x = -1
+		y = 1
+		relative_position_id = FRA_expanding_colonial_empire
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -381,7 +494,7 @@ focus_tree = {
 	# Auto completed when war starts
 	focus = {
 		id = FRA_franco_prussian_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_germany
 		prerequisite = { focus = FRA_foreign_policies }
 		x = 0
 		y = 1
@@ -414,7 +527,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_franco_prussian_war }
 		mutually_exclusive = { focus = FRA_government_of_national_defence }
 		x = 0
-		y = 4
+		y = 5
 		relative_position_id = FRA_franco_prussian_war
 		cost = 10
 		ai_will_do = {
