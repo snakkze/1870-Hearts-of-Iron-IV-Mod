@@ -38,10 +38,10 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_morale_bonus
+			picture = GFX_idea_krupp
 
 			modifier = {
-				army_artillery_attack_factor = 0.15
+				army_artillery_attack_factor = 0.05
 			}
 		}
 	}

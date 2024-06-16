@@ -1479,6 +1479,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = prussia_fpw.2 hours = 2 } 
 			# Create Nordachse faction and Südachse Faction
 			# Event about the barely won election about the Nord-Süd achsen Idea
 		}
@@ -1528,30 +1529,23 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = {
-				AND = {
-					exists = yes
-					is_subject_of = PRS
-				}
-			}
 		}
 
 		bypass = {
-			CZE = {
-				NOT = {
-					exists = yes
-				}
-			}
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			PRS = {
-				annex_country = {
-					target = CZE
-					transfer_troops = no
-				}
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
 			}
 		}
 	}
@@ -2086,7 +2080,13 @@ focus_tree = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	
@@ -2105,6 +2105,10 @@ focus_tree = {
 	
 		completion_reward = {
 			# add idea Krupp Artilleries
+			add_timed_idea = {
+				idea = fpw_krupp_artillery
+				days = 365
+			}
 		}
 	}
 	
