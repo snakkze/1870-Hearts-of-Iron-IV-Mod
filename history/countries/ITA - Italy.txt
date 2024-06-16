@@ -35,6 +35,25 @@ set_popularities = {
 	neutrality = 3
 }
 
+1870.1.1 = {
+	complete_national_focus = ITA_start
+	complete_national_focus = ITA_ally_prussia
+	complete_national_focus = ITA_prussian_military_cooperation
+	complete_national_focus = ITA_the_war_with_austria	
+	complete_national_focus = ITA_mountain_defence
+	complete_national_focus = ITA_w
+	complete_national_focus = ITA_economics
+	complete_national_focus = ITA_develop_north
+	complete_national_focus = ITA_construct_more_factories
+	complete_national_focus = ITA_produce_cheese
+	complete_national_focus = ITA_even_more_factories
+	complete_national_focus = ITA_expanding_military_industry
+	complete_national_focus = ITA_lombardy_weapons
+	complete_national_focus = ITA_venice_weapons
+	complete_national_focus = ITA_seek_allies
+	complete_national_focus = ITA_ally_germany
+}
+
 if = {
 	limit = {
 		NOT = {

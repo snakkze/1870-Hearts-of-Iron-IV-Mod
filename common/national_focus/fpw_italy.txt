@@ -433,6 +433,14 @@ focus_tree = {
 		relative_position_id = ITA_ally_germany
 		cost = 2
 
+		ai_will_do = {
+			base = 10
+			modifier = {
+				is_ai = yes
+				factor = 0
+			}
+		}
+
 		search_filters = {}
 
 		completion_reward = {

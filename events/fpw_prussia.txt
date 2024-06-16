@@ -243,6 +243,12 @@ country_event = {
 			target = FROM
 			type = take_state_focus
 		}
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = PRS
+		}
 	}
 }
 

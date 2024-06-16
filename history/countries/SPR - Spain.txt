@@ -20,9 +20,7 @@ set_popularities = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 add_ideas = {
@@ -31,10 +29,34 @@ add_ideas = {
 }
 
 1870.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = no
+	}
+	
+	add_ideas = {
+		fpw_SPR_bankrupted_country
+		fpw_SPR_corrupted_government
+	}
+	set_cosmetic_tag = SPR_revolutionaries 
+	SPR_prov_gov = {
+		add_country_leader_role = {
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = conservatism
+			}
+			promote_leader = yes
+		}
+	}
 	remove_ideas = {
 		fpw_SPR_bankrupted_country
 		fpw_SPR_corrupted_government
 	}
+	add_timed_idea = {
+		idea = fpw_SPR_aftermath_of_the_civilwar
+		months = 4
+	}
+	complete_national_focus = spanish_glorious_revolution
 }
 1866.1.1 = {
 	if = {

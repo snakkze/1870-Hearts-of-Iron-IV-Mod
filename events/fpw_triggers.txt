@@ -328,8 +328,10 @@ country_event = {
 				has_war_with = FRA
 			}
 			FRA = {
-				surrender_progress > 0.95
-				surrender_progress < 1
+				AND = {
+					surrender_progress > 0.95
+					surrender_progress < 1
+				}
 			}
 			NOT = {
 				has_global_flag = fpw_france_peace
@@ -429,7 +431,6 @@ country_event = {
         set_global_flag = fpw_lost_paris
 		PRS = {
 			# france versailles pre peace
-			clr_global_flag = fpw_franco_prussian_war_flag
 			country_event = franco_prussian_fpw.1
 		}
 	}
@@ -569,7 +570,7 @@ country_event = {
 			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
 			ITA = { country_event = austro_prussian_fpw.4 }
 		}
-		clr_global_flag = fpw_franco_prussian_war_flag
+		clr_global_flag = austro_prussian_war
 	}
 
 	option = {

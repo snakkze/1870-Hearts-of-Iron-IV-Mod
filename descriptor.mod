@@ -9,6 +9,7 @@ replace_path="map"
 replace_path="map/strategicregions"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
+replace_path="common/ideas"
 
 version="1.0"
 picture="thumbnail.png"
@@ -22,4 +23,5 @@ tags={
 	"Gameplay"
 }
 name="1870: Franco-Prussian War"
-supported_version="1.13.6"
+supported_version="1.14.6"
+remote_file_id="3268912955"

@@ -85,6 +85,13 @@ fpw_franco_prussian_war_category = {
 					}
 				}
 			}
+			modifier = {
+				add = 4000
+				AND = {
+					SPR = { has_country_flag = SPR_prussian_king }
+					original_tag = SPR
+				}
+			}
 		}
 
 		complete_effect = {
@@ -171,6 +178,20 @@ fpw_franco_prussian_war_category = {
 							tag = HES
 						}
 					}
+				}
+			}
+			modifier = {
+				add = 4000
+				AND = {
+					PRS = { NOT = { has_completed_focus = PRS_secure_russian_friendship } }
+					original_tag = SOV
+				}
+			}
+			modifier = {
+				add = 4000
+				AND = {
+					SPR = { has_country_flag = SPR_prussian_king }
+					original_tag = ENG
 				}
 			}
 		}

@@ -7,6 +7,11 @@ add_dynamic_modifier = {
 	modifier = fpw_CHI_divided_country 
 }
 
+add_ideas = {
+	fpw_CHI_instable_country
+	fpw_CHI_outdated_military
+}
+
 oob = "CHI_1866"
 if = {
 	limit = { has_dlc = "Man the Guns" }

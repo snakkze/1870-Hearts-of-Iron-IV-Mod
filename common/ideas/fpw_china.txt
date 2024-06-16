@@ -1,0 +1,38 @@
+ideas = {
+    country = {
+        fpw_CHI_instable_country = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+
+            picture = chi_warlord_integration
+
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.25
+                political_power_factor = -0.15
+            }
+        }
+        
+        fpw_CHI_outdated_military = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+            
+            picture = chi_army_corruption
+            
+            removal_cost = -1
+            modifier = {
+                army_org_regain = -0.2
+                army_morale_factor = -0.2
+                army_attack_factor = -0.2
+            }
+        }
+    }
+}

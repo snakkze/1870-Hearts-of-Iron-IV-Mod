@@ -2,5 +2,8 @@ fpw_USA_divided_country = {
 	enable = { always = yes }
 	icon = GFX_idea_us_divided_country
 	
+	conscription_factor = -0.05
+	industrial_capacity_factory = -0.05
+
 	custom_modifier_tooltip = prestige_modifier_divided_country
 }

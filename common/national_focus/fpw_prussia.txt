@@ -29,7 +29,7 @@ focus_tree = {
 		icon = GFX_focus_PRS_lesser_german
 		x = 6
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1085,7 +1085,12 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_global_flag = fpw_no_ems_dispatch
+			OR = {
+				SPR = {
+					has_country_flag = SPR_prussian_king
+				}
+				has_global_flag = fpw_no_ems_dispatch
+			}
 		}
 
 		completion_reward = {
@@ -1109,7 +1114,12 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
-					has_global_flag = fpw_no_ems_dispatch
+					OR = {
+						SPR = {
+							has_country_flag = SPR_prussian_king
+						}
+						has_global_flag = fpw_no_ems_dispatch
+					}
 				}
 			}
 			else = {
@@ -1120,7 +1130,12 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_global_flag = fpw_no_ems_dispatch
+					OR = {
+						SPR = {
+							has_country_flag = SPR_prussian_king
+						}
+						has_global_flag = fpw_no_ems_dispatch
+					}
 				}
 				set_global_flag = fpw_franco_prussian_war_flag
 				declare_war_on = {
@@ -1412,7 +1427,7 @@ focus_tree = {
 		icon = GFX_focus_PRS_greater_german
 		x = 19
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1988,12 +2003,57 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = yes
-
+		available = {
+			158 = {
+				OWNER = {
+					controls_state = PREV
+				}
+			}
+			853 = {
+				OWNER = {
+					controls_state = PREV
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			create_wargoal = {
-				type = topple_government
-				target = ITA
+			add_state_core = 158
+			add_state_core = 161
+			add_state_core = 162
+			add_state_core = 159
+			add_state_core = 160
+			add_state_core = 736
+			add_state_core = 852
+			add_state_core = 850
+			add_state_core = 39
+			add_state_core = 853
+			add_state_core = 102
+
+			random_country = {
+				limit = {
+					owns_state = 158
+				}
+				PRS = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						expire = 0
+						generator = { 158 }
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					owns_state = 853
+				}
+				PRS = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						expire = 0
+						generator = { 853 }
+					}
+				}
 			}
 		}
 	}
@@ -2759,7 +2819,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 2
 						include_locked = yes
 					}					
 				}
@@ -2767,10 +2827,10 @@ focus_tree = {
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}			
 		}
@@ -2799,10 +2859,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2833,7 +2893,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -2841,10 +2901,10 @@ focus_tree = {
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -2873,10 +2933,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2907,7 +2967,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -2915,10 +2975,10 @@ focus_tree = {
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}		
@@ -2947,10 +3007,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2989,10 +3049,10 @@ focus_tree = {
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}		
@@ -3021,10 +3081,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3151,7 +3211,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 4
 						include_locked = yes
 					}					
 				}
@@ -3159,10 +3219,10 @@ focus_tree = {
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 4
 				instant_build = yes
 			}
 		}		
@@ -3191,10 +3251,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 4
 					instant_build = yes
 				}
 			}

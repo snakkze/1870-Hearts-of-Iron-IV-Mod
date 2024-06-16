@@ -6,38 +6,61 @@ fpw_franco_prussian_war_category = {
 
 	allowed = {
 		OR = {
-			tag = BAD
-			tag = BAV
-			tag = WRT
-			tag = HES
+			original_tag = BAD
+			original_tag = BAV
+			original_tag = WRT
+			original_tag = HES
+			if = {
+				limit = {
+					PRS = { NOT = { has_completed_focus = PRS_secure_russian_friendship } }
+				}
+				original_tag = SOV
+			}
+			if = {
+				limit = {
+					SPR = { has_country_flag = SPR_prussian_king }
+				}
+				original_tag = ENG
+			}
+			if = {
+				limit = {
+					SPR = { has_country_flag = SPR_prussian_king }
+				}
+				original_tag = SPR
+			}
 		}
 		NOT = {
-			AND = {
-				BAD = {
-					has_country_flag = fwp_franco_prussian_war_sided
-				}
-				BAV = {
-					has_country_flag = fwp_franco_prussian_war_sided
-				}
-				WRT = {
-					has_country_flag = fwp_franco_prussian_war_sided
-				}
-				HES = {
-					has_country_flag = fwp_franco_prussian_war_sided
-				}
-			}
+			has_country_flag = fwp_franco_prussian_war_sided
 		}
 	}
 
 	visible = {
 		has_global_flag = fpw_franco_prussian_war_flag
 		OR = {
-			tag = FRA
-			tag = PRS
-			tag = BAD
-			tag = BAV
-			tag = WRT
-			tag = HES
+			original_tag = FRA
+			original_tag = PRS
+			original_tag = BAD
+			original_tag = BAV
+			original_tag = WRT
+			original_tag = HES
+			if = {
+				limit = {
+					PRS = { NOT = { has_completed_focus = PRS_secure_russian_friendship } }
+				}
+				original_tag = SOV
+			}
+			if = {
+				limit = {
+					SPR = { has_country_flag = SPR_prussian_king }
+				}
+				original_tag = ENG
+			}
+			if = {
+				limit = {
+					SPR = { has_country_flag = SPR_prussian_king }
+				}
+				original_tag = SPR
+			}
 		}
 	}
 }

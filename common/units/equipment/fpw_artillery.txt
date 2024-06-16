@@ -35,9 +35,6 @@ equipments = {
 		lend_lease_cost = 4
 
 		build_cost_ic = 7
-		resources = {
-			steel = 2
-		}
 	}
 
 	fpw_cannon_artillery_equipment_1 = {
@@ -46,13 +43,17 @@ equipments = {
 		archetype = fpw_cannon_artillery_equipment
 		priority = 50
 		visual_level = 0
+
+		resources = {
+			steel = 2
+		}
 	}
 	
 	fpw_cannon_artillery_equipment_2 = {
 		year = 1866
 
 		archetype = fpw_cannon_artillery_equipment
-		parent = artillery_equipment_1
+		parent = fpw_cannon_artillery_equipment_1
 		priority = 50
 		visual_level = 1
 		
@@ -81,7 +82,7 @@ equipments = {
 		year = 1870
 
 		archetype = fpw_cannon_artillery_equipment
-		parent = artillery_equipment_2
+		parent = fpw_cannon_artillery_equipment_2
 		priority = 50
 		visual_level = 2
 		
@@ -111,7 +112,7 @@ equipments = {
 		year = 1874
 
 		archetype = fpw_cannon_artillery_equipment
-		parent = artillery_equipment_3
+		parent = fpw_cannon_artillery_equipment_3
 		priority = 50
 		visual_level = 2
 		

@@ -23,10 +23,12 @@
   franco_prussian_fpw.1.t:0 "[FRA.GetName] has capitulated!"
   franco_prussian_fpw.1.d:0 "The [FRA.GetAdjective] leader [FRA.GetLeader] has reached out to our Chancellor [PRS.GetName], asking us for peace in our war. We think it is best to accept this preliminary peace, as not agreeing to peace now could prolong this war even more and cause more casualties."
   franco_prussian_fpw.1.a:0 "Great!"
+  franco_prussian_fpw.1.b:0 "WE WILL FIGHT UNTIL IT'S OVER!"
 
   franco_prussian_fpw.2.t:0 "[PRS.GetName] has capitulated!"
   franco_prussian_fpw.2.d:0 "The Prussian leader [PRS.GetLeader] has reached out to us, asking for peace in our war. We think it is best to accept this preliminary peace since not going to peace now could prolong this war even more and cause more casualties."
   franco_prussian_fpw.2.a:0 "Great!"
+  franco_prussian_fpw.2.b:0 "WE WILL FIGHT UNTIL IT'S OVER!"
 
   franco_prussian_fpw.3.t:0 "Question of the annexation of Alsace-Lorraine."
   franco_prussian_fpw.3.d:0 "Following the vicotry over the [FRA.GetName] in the Franco-Prussian War, we are now at a position to also take territories, next to giving the [FRA.GetAdjective] Debts and taking some territory until the debts are paid back. The First territory we could take is the territory of Alsace Lorraine and Belfort. The Reichsheer has said those territories are necessary for further defense in later wars against france, while the chancellor Bismarck has said that taking Territory by the [FRA.GetAdjective] will cause a bad relationshsip which we shouldnt risk just now as such a new major state in the middle of Europe."
@@ -169,6 +171,7 @@
   prussia_fpw.20.t:0 "Ems-Dispatch"
   prussia_fpw.20.d:0 "The Ems Dispatch is sent, mocking the French and potentially provoking a military response."
   prussia_fpw.20.a:0 "Sure sure"
+  prussia_fpw.20.b:0 "We should stop here."
   prussia_fpw.21.t:0 "[PRS.GetLeader] offers an alliance"
   prussia_fpw.21.d:0 "Prussian Prime Minister [PRS.GetLeader] is wanting to make an alliance with us because of our common enemy of Austria. They are trying to unify Germany, and we are trying to liberate Venice, so naturally it would make sense to befriend them."
   prussia_fpw.21.a:0 "Of Course!"
