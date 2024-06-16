@@ -10,7 +10,6 @@ replace_path="map/strategicregions"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="common/ideas"
-
 version="1.0"
 picture="thumbnail.png"
 tags={
