@@ -133,10 +133,16 @@ technology_folders = {
 	fpw_infantry_folder = {
 		ledger = army
 	}
-
+	fpw_support_folder = {
+		ledger = army
+	}
 	fpw_artillery_folder = {
 		ledger = army
 	}
+	fpw_industry_folder = {
+		ledger = civilian
+	}
+
 
 	## VANILLA WE DONT WANT!(Even tho its the best ice cream)
 	infantry_folder = {

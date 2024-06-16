@@ -6,7 +6,6 @@ oob = "BHU_1866"
 # Starting tech
 set_technology = {
 	fpw_fpw_fpw_infantry_weapons = 1
-	tech_mountaineers = 1
 }
 set_war_support = 0.1
 set_stability = 0.8
@@ -53,7 +52,6 @@ recruit_character = BHU_mang_pos_bhur_bai
 	oob = "BHU_1939"
 	set_technology = {
 		fpw_fpw_fpw_infantry_weapons = 1
-		tech_mountaineers = 1
 }
 }
 

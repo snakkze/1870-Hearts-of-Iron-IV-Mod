@@ -21,22 +21,22 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_fpw_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/fpw_infantry_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/infantry/fpw_infantry_equipment_0.dds"
 	}		
 	
 	SpriteType = {
 		name = "GFX_fpw_improved_infantry_weapons_2_medium"
-		texturefile = "gfx/interface/technologies/fpw_infantry_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/infantry/fpw_infantry_equipment_1.dds"
 	}		
 	
 	SpriteType = {
 		name = "GFX_fpw_improved_infantry_weapons_3_medium"
-		texturefile = "gfx/interface/technologies/fpw_infantry_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/infantry/fpw_infantry_equipment_2.dds"
 	}		
 	
 	SpriteType = {
 		name = "GFX_fpw_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/fpw_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/infantry/fpw_infantry_equipment_3.dds"
 	}
 
 

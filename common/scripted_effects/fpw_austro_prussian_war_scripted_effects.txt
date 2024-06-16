@@ -338,6 +338,28 @@ austrian_surrender = {
 				transfer_state_to = ITA
 				remove_core_of = AUS
 			}
+			if = {
+				limit = {
+					any_war_score > 25
+				}
+				850 = {
+					transfer_state_to = ITA
+					remove_core_of = AUS
+				}
+			}
+			if = {
+				limit = {
+					any_war_score > 75
+				}
+				736 = {
+					transfer_state_to = ITA
+					remove_core_of = AUS
+				}
+				852 = {
+					transfer_state_to = ITA
+					remove_core_of = AUS
+				}
+			}
 		}
 	}
 	SOV = {
