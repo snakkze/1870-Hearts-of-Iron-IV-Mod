@@ -1,0 +1,958 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = russian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1100 }
+	
+##########################################################################
+#
+#	Empire Branch
+#
+##########################################################################
+
+	# Historical russian empire
+	focus = {
+		id = SOV_chrush_polish_resistance_remnants
+		x = 4
+		y = 1
+		cost = 5
+		
+		#icon = GFX_
+		mutually_exclusive = { focus = SOV_amnesty_for_polish_resistance }
+		#prerequisite = { focus =  }
+		#relative_position_id = 
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			10 = { add_compliance = -10 add_resistance = -20 }
+			87 = { add_compliance = -10 add_resistance = -15 }
+			90 = { add_compliance = -10 add_resistance = -15 }
+			92 = { add_compliance = -10 add_resistance = -15 }
+			97 = { add_compliance = -10 add_resistance = -15 }
+			98 = { add_compliance = -10 add_resistance = -15 }
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_russification_programs
+		x = -2
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_chrush_polish_resistance_remnants }
+		relative_position_id = SOV_chrush_polish_resistance_remnants
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_undermine_national_identity
+		x = -1
+		y = 2
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_russification_programs }
+		relative_position_id = SOV_chrush_polish_resistance_remnants
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_one_way_trip_to_siberia
+		x = -3
+		y = 2
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_russification_programs }
+		relative_position_id = SOV_chrush_polish_resistance_remnants
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_integration_of_subjects
+		x = -2
+		y = 3
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_one_way_trip_to_siberia }
+		prerequisite = { focus = SOV_undermine_national_identity}
+		relative_position_id = SOV_chrush_polish_resistance_remnants
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_finnish_question
+		x = 1
+		y = 1
+		cost = 10
+		
+		icon = GFX_focus_EST_national_pride_in_finland
+		prerequisite = { focus = SOV_chrush_polish_resistance_remnants focus = SOV_amnesty_for_polish_resistance }
+		relative_position_id = SOV_chrush_polish_resistance_remnants 
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_finnish_integration
+		x = -1
+		y = 2
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_undermine_national_identity }
+		prerequisite = { focus = SOV_finnish_question }
+		relative_position_id = SOV_finnish_question
+		mutually_exclusive = { focus = SOV_finnish_autonomy }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	# A-Historical wholesome russian empire
+	focus = {
+		id = SOV_amnesty_for_polish_resistance
+		x = 2
+		y = 0
+		cost = 5
+		
+		#icon = GFX_
+		mutually_exclusive = { focus = SOV_chrush_polish_resistance_remnants }
+		#prerequisite = { focus =  }
+		relative_position_id = SOV_chrush_polish_resistance_remnants 
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			has_completed_focus = SOV_more_radical_reforms
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			10 = { add_resistance = -10 }
+			87 = { add_resistance = -5 }
+			90 = { add_resistance = -5 }
+			92 = { add_resistance = -5 }
+			97 = { add_resistance = -5 }
+			98 = { add_resistance = -5 }
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_finnish_autonomy
+		x = 1
+		y = 2
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_finnish_question }
+		relative_position_id = SOV_finnish_question
+		mutually_exclusive = { focus = SOV_finnish_integration }
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_stop_russification
+		x = 1
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_amnesty_for_polish_resistance }
+		prerequisite = { focus = SOV_more_radical_reforms }
+		relative_position_id = SOV_amnesty_for_polish_resistance
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_congressional_kingdom
+		x = 3
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_amnesty_for_polish_resistance }
+		prerequisite = { focus = SOV_more_radical_reforms }
+		relative_position_id = SOV_amnesty_for_polish_resistance
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+			has_completed_focus = SOV_federative_empire
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_promote_national_identity
+		x = 1
+		y = 2
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_stop_russification }
+		relative_position_id = SOV_amnesty_for_polish_resistance
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_accessibility_of_culture
+		x = 3
+		y = 2
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_stop_russification }
+		relative_position_id = SOV_amnesty_for_polish_resistance
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_federative_empire
+		x = 2
+		y = 3
+		cost = 10
+		
+		#icon = GFX_
+		prerequisite = { focus = SOV_promote_national_identity }
+		prerequisite = { focus = SOV_accessibility_of_culture }
+		relative_position_id = SOV_amnesty_for_polish_resistance
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+		}
+	}
+	
+	
+##########################################################################
+#
+#	Politics Branch
+#
+##########################################################################
+	
+	
+	# Historical
+	focus = {
+		id = SOV_continue_reforms 
+		x = 16
+		y = 1
+		cost = 5
+		
+		#icon = GFX_
+		mutually_exclusive = { focus = SOV_more_radical_reforms }
+		#prerequisite = { focus =  }
+		#relative_position_id = 
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = russia_fpw.1
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_free_state_serfs 
+		x = -2
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_continue_reforms focus = SOV_more_radical_reforms }
+		relative_position_id = SOV_continue_reforms
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			add_to_variable = { SOV_sr_consumer_goods_factor = 0.10 }
+			add_to_variable = { SOV_sr_global_building_slots_factor = 0.10 }
+			
+			custom_effect_tooltip = SOV_free_state_serfs_effect_tt
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_administrative_reform
+		x = 0
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_continue_reforms focus = SOV_more_radical_reforms }
+		relative_position_id = SOV_continue_reforms
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_judicial_system
+		x = 2
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_continue_reforms focus = SOV_more_radical_reforms }
+		relative_position_id = SOV_continue_reforms
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_help_for_peasants
+		x = -1
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_administrative_reform }
+		prerequisite = { focus = SOV_free_state_serfs }
+		relative_position_id = SOV_administrative_reform
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			add_to_variable = { SOV_sr_consumer_goods_factor = 0.05 }
+			add_to_variable = { SOV_sr_production_factory_max_efficiency_factor = 0.10 }
+			add_to_variable = { SOV_sr_local_resources_factor = 0.10 }
+			
+			
+			custom_effect_tooltip = SOV_help_for_peasants_effect_tt
+			
+			
+		}
+	}
+	
+	
+	
+	# Alt-hist Liberal
+	focus = {
+		id = SOV_more_radical_reforms
+		x = 12
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		mutually_exclusive = { focus = SOV_continue_reforms  }
+		#prerequisite = { focus =  }
+		#relative_position_id = 
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = russia_fpw.2
+			
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_pay_of_serfs 
+		x = 1
+		y = 2
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_more_radical_reforms }
+		prerequisite = { focus = SOV_free_state_serfs }
+		relative_position_id = SOV_more_radical_reforms
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			add_to_variable = { SOV_sr_consumer_goods_factor = 0.10 }
+			add_to_variable = { SOV_sr_global_building_slots_factor = 0.20 }
+			
+			custom_effect_tooltip = SOV_pay_of_serfs_effect_tt
+			
+		}
+	}
+	focus = {
+		id = SOV_new_agricultural_economy
+		x = 1
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_pay_of_serfs }
+		prerequisite = { focus = SOV_help_for_peasants }
+		relative_position_id = SOV_pay_of_serfs
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			#add_to_variable = { SOV_sr_consumer_goods_factor = 0.05 }
+			#add_to_variable = { SOV_sr_production_factory_max_efficiency_factor = 0.10 }
+			#add_to_variable = { SOV_sr_industrial_capacity_factory = 0.10 }
+			#add_to_variable = { SOV_sr_industrial_capacity_dockyard = 0.10 }
+			#custom_effect_tooltip = SOV_new_agricultural_economy_effect_tt
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = SOV_serfdom_remnants_dynamic_modifier }
+			}
+			add_ideas = fpw_SOV_new_agricultural_economy
+			
+		}
+	}
+	focus = {
+		id = SOV_liberalize_the_press
+		x = -1
+		y = 1
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_more_radical_reforms }
+		relative_position_id = SOV_more_radical_reforms
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_first_russian_constitution
+		x = 0
+		y = 2
+		cost = 20
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_liberalize_the_press }
+		relative_position_id = SOV_liberalize_the_press
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+##########################################################################
+#
+#	Diplomacy Branch
+#
+##########################################################################
+	
+	focus = {
+		id = SOV_russian_diplomacy
+		x = 10
+		y = 0
+		cost = 10
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		#prerequisite = { focus =  }
+		relative_position_id = SOV_continue_reforms
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
