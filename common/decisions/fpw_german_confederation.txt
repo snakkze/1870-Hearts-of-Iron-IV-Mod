@@ -274,6 +274,7 @@ fpw_german_unification_category = {
 				OR = {
 					original_tag = PRS
 					original_tag = AUS
+					original_tag = SOV
 					is_subject_of = PRS
 					is_subject_of = AUS
 				}
