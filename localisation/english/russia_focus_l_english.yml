@@ -1,9 +1,46 @@
 ﻿l_english: 
 
+## Russian Empire Branch
 
- SOV_modify_sr_ns_intro: "Modify §Y$SOV_serfdom_remnants_dynamic_modifier$§! by"
- SOV_free_state_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nMax Factories in a State: §G+10.00%§! \nConsumer Goods Factories: §Y+10.0%§!\n\n"
+ SOV_chrush_polish_resistance_remnants: "Chrush Polish Resistance Remnants"
+ SOV_russification_programs: "Russification Programs"
+ SOV_undermine_national_identity: "Undermine National Identities"
+ SOV_one_way_trip_to_siberia: "Deportations to Siberia"
+ SOV_integration_of_subjects: "Integration of Subjects"
+ SOV_finnish_question: "Finnish Question"
+ SOV_finnish_integration: "Finnish Integration"
  
+ SOV_amnesty_for_polish_resistance: "Amnesty for Polish Resistance"
+ SOV_finnish_autonomy: "Finnish Autonomy"
+ SOV_stop_russification: "Stop Russification"
+ SOV_congressional_kingdom: "Congressional Kingdom"
+ SOV_promote_national_identity: "Promote National Identities"
+ SOV_accessibility_of_culture: "Accessibility of Culture"
+ SOV_federative_empire: "a Federative Empire?"
+ 
+## Politics Branch
+ 
+ SOV_continue_reforms: "Continue Reforms"
+ SOV_free_state_serfs: "Free State Serfs"
+ SOV_modify_sr_ns_intro: "Modify §Y$SOV_serfdom_remnants_dynamic_modifier$§! by"
+ SOV_free_state_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+10.0%§! \nMax Factories in a State: §G+10.00%§! \n\n"    
+ SOV_administrative_reform: "Administrative Reform"
+ SOV_judicial_system: "Judicial System"
+ SOV_help_for_peasants: "Help for Peasants"
+ SOV_help_for_peasants_effect_tt: "$SOV_modify_sr_ns_intro$ \nResource Gain Efficiency: §G+10.00%§! \nConsumer Goods Factories: §Y+5.0%§! \nProduction Efficiency Cap: §G+10.00%§! \n\n"
+ 
+ 
+ SOV_more_radical_reforms: "More Radical Reforms"
+ SOV_pay_of_serfs: "Pay of Serfs"
+ SOV_pay_of_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+10.0%§! \nMax Factories in a State: §G+20.00%§! \n\n"
+ SOV_new_agricultural_economy: "New Agricultural Economy"
+ SOV_new_agricultural_economy_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+5.0%§! \nProduction Efficiency Cap: §G+10.00%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§! \n\n"
+ SOV_liberalize_the_press: "Liberalize the Press"
+ SOV_first_russian_constitution: "First Russian Constitution"
+ 
+## Diplomacy Branch
+ 
+ SOV_russian_diplomacy: "Russian Diplomacy"
  
  
  
