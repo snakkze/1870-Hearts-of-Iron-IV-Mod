@@ -1,16 +1,61 @@
 on_actions = {
-	on_declare_war  = {
+	on_generate_wargoal = {
 		effect = {
 			if = {
 				limit = {
-					FROM = { 
-						tag = TRB
+					FROM = {
+						original_tag = TRB
+					}
+				}
+				ROOT = {
+					remove_wargoal = {
+						type = all
+						target = TRB
+					}
+				}
+			}
+		}
+	}
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = TRB
+					}
+				}
+				ROOT = {
+					white_peace = TRB
+				}
+			}
+		}
+	}
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					THIS = { 
+						original_tag = TRB
 					}
 				}
 				every_country = {
 					limit = {
 						has_war_with = TRB
 					}
+					white_peace = TRB
+				}
+			}
+		}
+	}
+	on_declare_war  = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						original_tag = TRB
+					}
+				}
+				ROOT = {
 					white_peace = TRB
 				}
 			}
