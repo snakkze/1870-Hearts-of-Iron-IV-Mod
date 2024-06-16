@@ -151,4 +151,14 @@ on_actions = {
 			update_position = yes
 		}
 	}
+	on_startup = {
+		effect = {
+			every_country = {
+				country_event = {
+					id = generic.26
+					days = 1
+				}
+			}
+		}
+	}
 }

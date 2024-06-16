@@ -20,8 +20,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 11
-	neutrality = 89
+	fascism = 40
+	democratic = 33
+	communism = 12
+	neutrality = 15
 }
 
 1870.1.1 = {
@@ -32,8 +34,10 @@ set_popularities = {
 		elections_allowed = no
 	}
 	set_popularities = {
-		democratic = 17
-		neutrality = 83
+		fascism = 60
+		democratic = 15
+		communism = 25
+		neutrality = 0
 	}
 }
 

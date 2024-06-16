@@ -183,6 +183,10 @@ spriteTypes = {
 		name = "GFX_focus_fight_benelux"
 		texturefile = "gfx/interface/goals/focus_benelux.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_france_africa"
+		texturefile = "gfx/interface/goals/attack_africa_france_2.png"
+	}
 	
 }
 

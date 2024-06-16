@@ -1969,3 +1969,17 @@ country_event = {
 		hidden_effect = { clear_global_event_target = demanded_prov_target }
 	}
 }
+
+# Warning
+country_event = {
+	id = generic.26
+	title = generic.26.t
+	desc = generic.26.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic.26.a
+	}
+}
