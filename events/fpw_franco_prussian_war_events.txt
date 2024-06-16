@@ -199,6 +199,11 @@ country_event = {
 	option = {
 		name = franco_prussian_fpw.6.a
 		set_cosmetic_tag = FRA_republic
+		diplomatic_relation = {
+			country = PAP
+			relation = guarantee
+			active = no
+		}
 		effect_tooltip = {	
 			FRA_prov_gov = {
 				add_country_leader_role = {
@@ -248,7 +253,7 @@ country_event = {
 					}
 				}
 			}
-			#news_event = { hours = 6 id = news.28 }
+			news_event = { hours = 6 id = news_fpw.2 }
 		}
 	}
 }
@@ -269,6 +274,7 @@ country_event = {
 	# Prov Gov will resign, adolphe thiers get leader
 	option = {
 		name = franco_prussian_fpw.7.a
+		news_event = { hours = 6 id = news_fpw.3 }
 	}
 }
 

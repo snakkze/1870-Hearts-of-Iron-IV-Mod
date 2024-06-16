@@ -160,6 +160,14 @@ country_event = {
 				}
 			}
 			modifier = {
+				add = 70
+				PRS = {
+					has_dynamic_modifier = {
+						modifier = fpw_PRS_victor_of_the_brothers_war
+					}
+				}
+			}
+			modifier = {
 				add = 100
 				is_historical_focus_on = yes
 			}
@@ -231,11 +239,9 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.5.a
-		PRS = {
-			create_wargoal = {
-				target = PREV
-				type = take_state_focus
-			}
+		create_wargoal = {
+			target = FROM
+			type = take_state_focus
 		}
 	}
 }

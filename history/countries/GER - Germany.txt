@@ -38,7 +38,7 @@ set_technology = {
 	fpw_infantry_weapons1 = 1
 	tech_mountaineers = 1
 	fpw_cannon_artillery = 1
-	basic_train = 1
+	fpw_basic_train = 1
 }
 if = {
 	limit = {
@@ -83,12 +83,6 @@ if = {
 }
 }
 
-set_variable = { var = ger_gateway_to_europe_influence value = 0 }
-
-set_variable = { var = wehrmacht_anger value = 0 }
-set_variable = { var = ss_anger value = 0 }
-set_variable = { GER_narvik_shipments = 0 }
-set_variable = { GER_narvik_civs = 0 }
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 

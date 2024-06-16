@@ -8,14 +8,14 @@ fpw_colonial_debuff = {
 
 fpw_victors_of_the_crimean_war = {
 	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
+	icon = GFX_idea_wip
 	
 	custom_modifier_tooltip = prestige_modifier_crimean_victors
 }
 
 fpw_underdeveloped_industry = {
 	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
+	icon = GFX_idea_wip
 	
 	custom_modifier_tooltip = prestige_modifier_underdeveloped_country
 }

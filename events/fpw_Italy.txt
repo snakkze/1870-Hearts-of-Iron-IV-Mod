@@ -60,18 +60,21 @@ country_event = {
 	desc = italy_fpw.3.d
 	picture = GFX_report_event_generic_handshake
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = {
 		name = italy_fpw.3.a
-
-		activate_mission = conquer_venice
+		ITA = {
+			activate_mission = conquer_venice
+		}
 	}
 	option = {
 		name = italy_fpw.3.b
 
-		activate_mission = conquer_venice
-		complete_national_focus = ITA_the_war_with_austria
+		ITA = {
+			activate_mission = conquer_venice
+			complete_national_focus = ITA_the_war_with_austria
+		}
 	}
 }
 
@@ -385,7 +388,7 @@ country_event = {
 		name = italy_fpw.13.a
 		
 		ai_chance = { 
-			factor = 5
+			base = 5
 		}
 		
 		hidden_effect = {
@@ -398,7 +401,7 @@ country_event = {
 		name = italy_fpw.13.b
 		
 		ai_chance = { 
-			factor = 10
+			base = 10
 		}
 		
 		hidden_effect = {
@@ -424,7 +427,7 @@ country_event = {
 		name = italy_fpw.14.a
 		
 		ai_chance = { 
-			factor = 10
+			base = 10
 		}
 		add_stability = 0.05
 		
@@ -451,7 +454,7 @@ country_event = {
 		name = italy_fpw.14.b
 		
 		ai_chance = { 
-			factor = 3
+			base = 3
 		}
 		add_political_power = 25
 		
@@ -465,7 +468,7 @@ country_event = {
 		name = italy_fpw.5.c
 		
 		ai_chance = { 
-			factor = 1
+			base = 1
 		}
 		
 		add_war_support = 0.05
@@ -490,7 +493,7 @@ country_event = {
 		name = italy_fpw.15.a
 		
 		ai_chance = { 
-			factor = 1 
+			base = 1 
 			modifier = {
 				has_opinion = {	
 					target = ITA
@@ -516,7 +519,7 @@ country_event = {
 		name = italy_fpw.6.b
 		
 		ai_chance = { 
-			factor = 1
+			base = 1
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 2
@@ -547,7 +550,7 @@ country_event = {
 		name = italy_fpw.6.a
 		
 		ai_chance = { 
-			factor = 1 
+			base = 1 
 			modifier = {
 				has_opinion = {	
 					target = ITA
@@ -573,7 +576,7 @@ country_event = {
 		name = italy_fpw.6.b
 		
 		ai_chance = { 
-			factor = 1
+			base = 1
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 2
@@ -704,7 +707,7 @@ country_event = {
 			}
 		}
 		ai_chance = { 
-			factor = 10
+			base = 10
 		}
 		
 	}
@@ -716,7 +719,7 @@ country_event = {
 		add_war_support = -0.05
 		
 		ai_chance = { 
-			factor = 0
+			base = 0
 		}
 	}
 }
@@ -900,7 +903,7 @@ country_event = {
 			}
 		}
 		ai_chance = { 
-			factor = 10
+			base = 10
 		}
 		
 	}
@@ -912,7 +915,7 @@ country_event = {
 		add_war_support = -0.05
 		
 		ai_chance = { 
-			factor = 0
+			base = 0
 		}
 	}
 }

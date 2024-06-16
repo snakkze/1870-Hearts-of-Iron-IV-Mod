@@ -1,13 +1,13 @@
 fpw_FRA_loser_of_1871 = {
 	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
+	icon = GFX_idea_wip
 	
 	custom_modifier_tooltip = prestige_modifier_loser_of_1871
 }
 
 fpw_FRA_cultural_heritage = {
 	enable = { always = yes }
-	icon = FRA_la_deluge
+	icon = GFX_idea_fra_cultural_heritage
 	
 	custom_modifier_tooltip = prestige_modifier_cultural_heritage
 }

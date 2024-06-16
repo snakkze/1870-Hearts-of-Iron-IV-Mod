@@ -678,6 +678,12 @@ focus_tree = {
 		prerequisite = { focus = ITA_expansionism }
 		available = {
 			NOT = { owns_state = 2 }
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				NOT = { PAP = { is_guaranteed_by = FRA } }
+			}
 		}
 		x = 0
 		y = 1
@@ -689,12 +695,12 @@ focus_tree = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				any_neighbor_country = {
-					OR = {
-						has_global_flag = fpw_franco_prussian_war_flag
+				PAP = {
+					NOT = {
+						is_guaranteed_by = FRA
 					}
 				}
-				add = 20
+				add = 100
 			}
 		}
 
@@ -1349,6 +1355,16 @@ focus_tree = {
 		cost = 5
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				ITA = {
+					is_ai = yes
+				}
+				factor = 0
+			}
+		}
 
 		completion_reward = {
 			add_political_power = 150

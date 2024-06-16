@@ -1,0 +1,46 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+PRS_win_austro_prussian_war = {
+	allowed = { original_tag = PRS }
+	enable = {
+		PRS = {
+			has_war_with = AUS
+		}
+	}
+
+	abort = {
+		PRS = {
+			NOT = {		
+				OR = {
+					has_completed_focus = PRS_austro_prussian_victory
+					has_completed_focus = PRS_bruderkrieg_ending
+				}
+			}
+		}
+
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			is_owned_by = AUS
+			state = 9
+		}
+		ratio = 1
+		priority = 4000
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}

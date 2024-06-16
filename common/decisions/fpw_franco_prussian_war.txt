@@ -108,7 +108,6 @@ fpw_franco_prussian_war_category = {
 				}
 				PRS = {
 					add_to_faction = ROOT
-					#country_event = austro_prussian_fpw.1
 				}
 			}
 			ROOT = {
@@ -197,7 +196,6 @@ fpw_franco_prussian_war_category = {
 				}
 				FRA = {
 					add_to_faction = ROOT
-					#country_event = austro_prussian_fpw.1
 				}
 			}
 			ROOT = {

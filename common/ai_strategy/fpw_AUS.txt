@@ -1,0 +1,162 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+AUS_give_victory_to_ai = {
+	allowed = { 
+		original_tag = AUS 
+	}
+	enable = {
+		PRS = {
+			AND = {
+				PRS = { is_ai = yes }
+				NOT = {
+					OR = {
+						has_completed_focus = PRS_austro_prussian_victory
+						has_completed_focus = PRS_bruderkrieg_ending
+					}
+				}
+			}
+		}
+	}
+
+	abort = {
+		PRS = {
+			OR = {
+				has_completed_focus = PRS_austro_prussian_victory
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PRS
+		value = 100
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			original_tag = PRS
+		}
+		value = 0
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			9
+		}
+		ratio = 0
+		area = europe
+		subtract_fronts_from_need = no
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			any_neighbor_state = { is_owned_by = PRS }
+		}
+		ratio = 0
+		priority = 0
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = no
+	}
+
+}
+
+
+AUS_defend_prussian_border = {
+	allowed = { 
+		original_tag = AUS 
+	}
+
+	enable = {
+		PRS = {
+			AND = {
+				PRS = { is_ai = no }
+				NOT = {
+					OR = {
+						has_completed_focus = PRS_austro_prussian_victory
+						has_completed_focus = PRS_bruderkrieg_ending
+					}
+				}
+			}
+		}
+	}
+
+	abort = {
+		PRS = {
+			OR = {
+				has_completed_focus = PRS_austro_prussian_victory
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TUR
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ROM
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SER
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SOV
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SWI
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BAV
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SAX
+		value = 50
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			88
+			72
+			74
+			979
+			978
+			9
+			69
+		}
+		ratio = 0.1
+		area = europe
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}

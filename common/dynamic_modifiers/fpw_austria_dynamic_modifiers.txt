@@ -36,7 +36,7 @@ fpw_AUS_autonomous_state4 = {
 
 fpw_AUS_loser_of_the_brotherswar = {
 	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
+	icon = GFX_idea_wip
 	
 	custom_modifier_tooltip = prestige_modifier_loser_of_brotherswar
 }

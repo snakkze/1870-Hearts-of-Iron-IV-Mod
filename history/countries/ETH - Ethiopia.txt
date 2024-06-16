@@ -140,7 +140,7 @@ IF = {
 set_technology = {
 	fpw_infantry_weapons = 1
 	tech_mountaineers = 1
-	basic_train = 1
+	fpw_basic_train = 1
 }
 
 recruit_character = ETH_haile_selassie

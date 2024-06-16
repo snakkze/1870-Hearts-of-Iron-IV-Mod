@@ -364,20 +364,19 @@ country_event = {
 		
 	trigger = {
 		AND = {
-			PRS = { has_war_with = AUS }
-			AUS = { owns_state = 160 }
-			original_tag = ITA
-			NOT = {
-				original_tag = WRT
+			date < 1866.6.15
+			date > 1866.6.13
+			is_historical_focus_on = yes
+			PRS = {
+				is_ai = yes
+				has_decision = fpw_annex_holstein
 			}
-		}	
+		}
 	}
 
 	option = {
 		name = trigger.9.a
-		ITA = {
-			country_event = italy_fpw.3
-		}
+		activate_decision = fpw_annex_holstein
 	}
 }
 

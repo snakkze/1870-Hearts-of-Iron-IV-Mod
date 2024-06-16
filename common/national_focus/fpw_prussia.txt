@@ -434,6 +434,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = FRA
+			}
 			
 		}
 	}
@@ -581,7 +585,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			create_wargoal = {
+				type = topple_government
+				target = AUS
+			}
 		}
 	}
 
@@ -811,7 +818,7 @@ focus_tree = {
 		relative_position_id = PRS_austro_prussian_victory
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			#always = no
@@ -991,6 +998,14 @@ focus_tree = {
 			factor = 10
 		}
 
+		bypass = {
+			BAV = {
+				NOT = {
+					exists = yes
+				}
+			}
+		}
+
 		completion_reward = {
 			# Pay the märchenprinz von bavaria gold for him to build a castle
 			BAV = { country_event = { id = prussia_fpw.9 hours = 2 } }
@@ -1063,7 +1078,7 @@ focus_tree = {
 		relative_position_id = PRS_maerchenprinz
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1240,7 +1255,7 @@ focus_tree = {
 		relative_position_id = PRS_invite_wurttemberg
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1277,7 +1292,7 @@ focus_tree = {
 		relative_position_id = PRS_lesser_german_solution
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1295,7 +1310,7 @@ focus_tree = {
 		relative_position_id = PRS_seek_international_support
 		x = -2
 		y = 1
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -1333,7 +1348,7 @@ focus_tree = {
 		relative_position_id = PRS_seek_international_support
 		x = 0
 		y = 1
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -1717,6 +1732,21 @@ focus_tree = {
 
 		completion_reward = {
 			# Puppets CZE and AUS
+			
+			create_wargoal = {
+				type = topple_government
+				target = CZE
+			}
+			
+			create_wargoal = {
+				type = topple_government
+				target = HUN
+			}
+			
+			create_wargoal = {
+				type = topple_government
+				target = AUS
+			}
 		}
 	}
 
@@ -1937,6 +1967,18 @@ focus_tree = {
 
 		completion_reward = {
 
+			create_wargoal = {
+				type = topple_government
+				target = BEL
+			}
+			create_wargoal = {
+				type = topple_government
+				target = LUX
+			}
+			create_wargoal = {
+				type = topple_government
+				target = HOL
+			}
 		}
 	}
 
@@ -1955,7 +1997,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_wargoal = {
+				type = topple_government
+				target = ITA
+			}
 		}
 	}
 
@@ -1974,7 +2019,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			
+			create_wargoal = {
+				type = topple_government
+				target = FRA
+			}
 		}
 	}
 	

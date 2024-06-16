@@ -20,6 +20,17 @@
  fpw_howitzer_artillery_equipment_4_short:0 "Advanced Howitzer"
  fpw_howitzer_artillery_equipment_4_desc:0 "Advanced Howitzer Artillery designed for fights against Infantry and other light Divisions."
 
+ fpw_howitzer2:0 "Improved Early Howitzer Artillery"
+ fpw_howitzer2_desc:0 ""
+
+ fpw_howitzer4:0 "Improved Basic Howitzer Artillery"
+ fpw_howitzer4_desc:0 ""
+
+ fpw_howitzer6:0 "Improved Howitzer Artillery I"
+ fpw_howitzer6_desc:0 ""
+
+ fpw_howitzer7:0 "Improved Howitzer Artillery II"
+ fpw_howitzer7_desc:0 ""
 
  fpw_cannon_artillery_equipment:0 "Cannon Artillery"
  fpw_cannon_artillery_equipment_short:0 "Cannon Artillery"
@@ -41,6 +52,18 @@
  fpw_cannon_artillery_equipment_4_short:0 "Advanced Cannon"
  fpw_cannon_artillery_equipment_4_desc:0 "Advanced Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
 
+ fpw_cannon2:0 "Improved Early Cannon Artillery"
+ fpw_cannon2_desc:0 ""
+
+ fpw_cannon4:0 "Improved Basic Cannon Artillery"
+ fpw_cannon4_desc:0 ""
+
+ fpw_cannon5:0 "Advanced Basic Cannon Artillery"
+ fpw_cannon5_desc:0 ""
+
+ fpw_cannon7:0 "Improved Cannon Artillery I"
+ fpw_cannon7_desc:0 ""
+
 
  fpw_breech_artillery_equipment:0 "Rifled Breech-Loading Artillery"
  fpw_breech_artillery_equipment_short:0 "RBL Artillery"
@@ -54,6 +77,24 @@
  fpw_breech_artillery_equipment_2_short:0 "Improved RBL Artillery"
  fpw_breech_artillery_equipment_2_desc:0 "As part of the Siege Artilleries are the RBL Artilleries and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
 
+ fpw_breech2:0 "Improved Early RBL Artillery I"
+ fpw_breech2_desc:0 ""
+
+ fpw_breech3:0 "Improved Early RBL Artillery II"
+ fpw_breech3_desc:0 ""
+
+ fpw_breech4:0 "Advanced Early RBL Artillery I"
+ fpw_breech4_desc:0 ""
+
+ fpw_breech5:0 "Advanced Early RBL Artillery II"
+ fpw_breech5_desc:0 ""
+
+ fpw_breech7:0 "Advanced RBL Artillery I"
+ fpw_breech7_desc:0 ""
+
+ fpw_breech8:0 "Advanced RBL Artillery II"
+ fpw_breech8_desc:0 ""
+
 
  fpw_muzzle_artillery_equipment:0 "Rifled Muzzle-Loading Artillery"
  fpw_muzzle_artillery_equipment_short:0 "RML Artillery"
@@ -66,6 +107,15 @@
  fpw_muzzle_artillery_equipment_2:0 "Advanced Rifled Muzzle-Loading Artillery"
  fpw_muzzle_artillery_equipment_2_short:0 "Advanced RML Artillery"
  fpw_muzzle_artillery_equipment_2_desc:0 "As part of the Siege Artilleries are the RML Artilleries, an improved version of the RBL Artilleries, powerful and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_muzzle2:0 "Improved Early RML Artillery I"
+ fpw_muzzle2_desc:0 ""
+
+ fpw_muzzle3:0 "Improved Early RML Artillery II"
+ fpw_muzzle3_desc:0 ""
+
+ fpw_muzzle5:0 "Advanced Early RML Artillery I"
+ fpw_muzzle5_desc:0 ""
 
 
  # INFANTRY #
@@ -88,6 +138,35 @@
  fpw_infantry_equipment_3:0 "Infantry Equipment III"
  fpw_infantry_equipment_3_short:0 "Weapons III"
  fpw_infantry_equipment_3_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_weapons1:0 "Baisc Infantry Weapons"
+ fpw_infantry_weapons1_desc:0 ""
+
+ fpw_infantry_weapons2:0 "Advanced Infantry Weapons"
+ fpw_infantry_weapons2_desc:0 ""
+
+ fpw_improved_infantry_weapons:0 "Improved Infantry Weapons"
+ fpw_improved_infantry_weapons_desc:0 ""
+
+ fpw_support_weapons:0 "Early Support Weapons"
+ fpw_support_weapons_desc:0 ""
+
+ fpw_support_weapons2:0 "Basic Support Weapons"
+ fpw_support_weapons2_desc:0 ""
+
+ fpw_support_weapons3:0 "Improved Support Weapons"
+ fpw_support_weapons3_desc:0 ""
+
+ fpw_support_weapons4:0 "Advanced Support Weapons"
+ fpw_support_weapons4_desc:0 ""
+
+
+ # FOLDERS #
+ fpw_infantry_folder:0 "Infantry"
+ fpw_artillery_folder:0 "Artillery"
+
+ # TO DISABLE AIRPLANES #
+ early_fighter:0 "Aircraft Technology"
 
 
 

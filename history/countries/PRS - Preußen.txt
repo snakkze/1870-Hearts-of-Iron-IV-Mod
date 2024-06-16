@@ -45,10 +45,13 @@ set_popularities = {
 }
 
 set_technology = {
+	fpw_support_weapons = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
+	fpw_infantry_weapons2 = 1
+	fpw_improved_infantry_weapons_2 = 1
 	fpw_cannon_artillery = 1
-	basic_train = 1
+	fpw_basic_train = 1
 }
 
 recruit_character = PRS_wilhelm_i

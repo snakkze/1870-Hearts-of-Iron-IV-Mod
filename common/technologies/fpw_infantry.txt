@@ -43,6 +43,14 @@ technologies = {
 	
 	# Dreyse Needle Gun(1862)
 	fpw_infantry_weapons1 = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
+		}
 				
 		path = {
 			leads_to_tech = fpw_infantry_weapons2
@@ -397,6 +405,91 @@ technologies = {
 			modifier = {
 				has_war = yes
 				factor = 2
+			}
+		}
+	}
+
+	fpw_basic_train = {
+		enable_equipments = {
+			train_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 1860
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 4 y = -1 }
+		}
+
+		path = {
+			leads_to_tech = fpw_wartime_train
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				num_of_factories > 25
+				factor = 100 #might wanna get on that
+			}
+			modifier = {
+				factor = 1.2
+				date > "1866.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1867.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1868.1.1"
+			}
+		}
+	}
+
+
+	fpw_wartime_train = {
+		enable_equipments = {
+			train_equipment_2
+		}
+
+		research_cost = 1.5
+		start_year = 1866
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 4 y = @1866 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				has_war = yes
+				factor = 20
+			}
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
 			}
 		}
 	}

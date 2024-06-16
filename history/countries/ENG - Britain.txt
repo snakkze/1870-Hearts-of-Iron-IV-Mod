@@ -87,7 +87,7 @@ set_technology = {
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
-	basic_train = 1
+	fpw_basic_train = 1
 }
 
 if = {
@@ -144,7 +144,6 @@ if = {
 }
 }
 
-set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
 	stiff_upper_lip

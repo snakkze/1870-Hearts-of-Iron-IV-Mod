@@ -1,6 +1,22 @@
 spriteTypes = {
 
 	### generic equipment archetypes ###
+	# trains #
+
+	SpriteType = {
+		name = "GFX_fpw_basic_train_medium"
+		texturefile = "gfx/interface/technologies/train_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_wartime_train_medium"
+		texturefile = "gfx/interface/technologies/train_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_armored_train_medium"
+		texturefile = "gfx/interface/technologies/train_equipment_3.dds"
+	}
+	
+
 	# generic infantry archetypes #
 	
 	SpriteType = {

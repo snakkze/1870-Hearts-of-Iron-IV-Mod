@@ -23,28 +23,28 @@ FRA_defend_franco_prussian_border = {
 
 	abort = {
 		OR = {
-			PRS = { has_completed_focus = PRS_GER }
+			PRS = { has_cosmetic_tag = PRS_GER }
 		}
 	}
 
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "HOL"
+		id = HOL
 		value = 50
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "BEL"
+		id = BEL"
 		value = 50
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "LUX"
+		id = LUX"
 		value = 50
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "SWI"
+		id = SWI
 		value = 50
 	}
 

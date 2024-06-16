@@ -7,6 +7,8 @@ replace_path="common/ai_strategy_plans"
 replace_path="history/states"
 replace_path="map"
 replace_path="map/strategicregions"
+replace_path="common/decisions"
+replace_path="common/decisions/categories"
 
 version="1.0"
 picture="thumbnail.png"
