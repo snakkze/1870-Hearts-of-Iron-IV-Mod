@@ -206,4 +206,51 @@ on_actions = {
 			}
 		}
 	}
+	
+	## Dynamic State Names
+	
+	on_state_control_changed = {
+		effect = {
+			IF = {
+				limit = {
+					FROM.FROM = { 
+						state = 28 
+					}
+					ROOT = { original_tag = PRS }
+					FROM = { 
+						NOT = {
+							original_tag = PRS
+						}	
+					}
+				}
+				28 = { 
+					set_state_name = "Elsass–Lothringen" 
+				}
+				set_province_name = {
+					id = 9503
+					name = "Straßburg" 
+				}
+				set_province_name = {
+					id = 678
+					name = "Mülhausen" 
+				}
+			}
+			IF = {
+				limit = {
+					FROM.FROM = { 
+						state = 28
+					}
+					NOT = {
+						original_tag = PRS
+					}
+				}
+				28 = { 
+					reset_state_name = yes
+				}
+				reset_province_name = 9503
+				reset_province_name = 678
+			}
+		}
+	}
+	
 }

@@ -13,4 +13,17 @@ characters={
 			id=-1
 		}
 	}
+	SOV_nikolai_adlerberg={
+		name="Nikolai Adlerberg"
+		portraits={
+			civilian={
+				#large=GFX_portrait_SOV_nikolai_adlerberg
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
 }

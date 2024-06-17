@@ -21,15 +21,18 @@ set_research_slots = 3
 
 ### COUNTRY LEADERS ###
 store_core_states_on_game_start = yes
-create_country_leader = {
-	name = "Alexander II"
-	desc = ""
-	picture = GFX_portrait_SOV_alexander_ii
-	expire = "1965.1.1"
-	ideology = aboslute_monarchy
-	traits = {
-	}
-}
+
+recruit_character = SOV_nikolai_adlerberg
+
+#create_country_leader = {
+#	name = "Alexander II"
+#	desc = ""
+#	picture = GFX_portrait_SOV_alexander_ii
+#	expire = "1965.1.1"
+#	ideology = aboslute_monarchy
+#	traits = {
+#	}
+#}
 
 ### NAVY LEADERS
 recruit_character = FIN_ragnar_hakola
