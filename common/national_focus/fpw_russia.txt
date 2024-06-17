@@ -34,6 +34,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_
 		mutually_exclusive = { focus = SOV_amnesty_for_polish_resistance }
@@ -75,8 +76,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_
+		icon = GFX_focus_generic_university_1
 		prerequisite = { focus = SOV_chrush_polish_resistance_remnants }
 		relative_position_id = SOV_chrush_polish_resistance_remnants
 		
@@ -109,6 +111,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_russification_programs }
@@ -143,6 +146,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_russification_programs }
@@ -212,6 +216,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_focus_EST_national_pride_in_finland
 		prerequisite = { focus = SOV_chrush_polish_resistance_remnants focus = SOV_amnesty_for_polish_resistance }
@@ -246,6 +251,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_undermine_national_identity }
@@ -395,7 +401,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_focus_generic_polish_deal
 		prerequisite = { focus = SOV_amnesty_for_polish_resistance }
 		prerequisite = { focus = SOV_more_radical_reforms }
 		relative_position_id = SOV_amnesty_for_polish_resistance
@@ -418,9 +424,34 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
-			
-			
+			hidden_effect = {
+				POL = {
+					add_state_core = 814
+					transfer_state = 10
+					transfer_state = 87
+					transfer_state = 90
+					transfer_state = 92
+					transfer_state = 98
+					transfer_state = 97
+					transfer_state = 814
+				}
+				#create_country_leader = {
+				#	name = "Alexander II"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	picture = GFX_portrait_SOV_alexander_ii
+				#	expire = "1965.1.1"
+				#	ideology = aboslute_monarchy
+				#	traits = {
+				#	}
+				#}
+			}
+			#effect_tooltip = {
+			#	release_on_controlled = POL
+			#}
+			set_autonomy = {
+				target = POL
+				autonomous_state = autonomy_integrated_puppet
+			}
 		}
 	}
 	
@@ -561,7 +592,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			country_event = russia_fpw.1
@@ -596,7 +627,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -614,7 +645,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_focus_generic_self_management
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_continue_reforms focus = SOV_more_radical_reforms }
 		relative_position_id = SOV_continue_reforms
@@ -634,7 +665,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -648,7 +679,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_focus_generic_court
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_continue_reforms focus = SOV_more_radical_reforms }
 		relative_position_id = SOV_continue_reforms
@@ -668,7 +699,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -703,7 +734,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -747,7 +778,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			country_event = russia_fpw.2
@@ -783,7 +814,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -800,7 +831,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_focus_generic_farmland
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_pay_of_serfs }
 		prerequisite = { focus = SOV_help_for_peasants }
@@ -821,7 +852,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -863,7 +894,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -897,7 +928,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -917,8 +948,9 @@ focus_tree = {
 		x = 10
 		y = 0
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_
+		icon = GFX_goal_generic_improve_relations
 		#mutually_exclusive = { focus =  }
 		#prerequisite = { focus =  }
 		relative_position_id = SOV_continue_reforms
