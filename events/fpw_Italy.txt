@@ -773,6 +773,9 @@ country_event = {
 					}
 				}
 			}
+			TUR = {
+				set_cosmetic_tag = TUR
+			}
 			SER = {
 				transfer_state = 104
 				transfer_state = 804
