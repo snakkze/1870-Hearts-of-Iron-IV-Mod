@@ -98,7 +98,7 @@ set_party_name = {
 
 
 #SERFDOM REMNANTS SPIRIT
-set_variable = { SOV_sr_consumer_goods_factor = 0.10 }
+set_variable = { SOV_sr_consumer_goods_factor = -0.10 }
 set_variable = { SOV_sr_global_building_slots_factor = -0.20 }
 set_variable = { SOV_sr_production_factory_max_efficiency_factor = -0.20 }
 set_variable = { SOV_sr_industrial_capacity_factory = -0.05 }
