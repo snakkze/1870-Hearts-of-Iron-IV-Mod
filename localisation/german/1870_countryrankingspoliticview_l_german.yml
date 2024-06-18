@@ -1,0 +1,21 @@
+﻿l_german:
+ fpw_list_flag_button_tt: "[THIS.GetName]\nBasis-Prestige-Punktzahl: §Y[?country_base_prestige]§!\nIndustrie-Punktzahl: §Y[?country_industry_score]§!\n - Zivile Fabriken: §Y[?country_civ_factories]§!\n - Militärische Fabriken: §Y[?country_mil_factories]§!\n - Werften: §Y[?country_naval_factories]§!\nArmee-Punktzahl: §Y[?country_army_score]§!\n - Land: §Y[?country_land_army]§!\n - Marine: §Y[?country_navy_score]§!\nLändergrößen-Punktzahl: §Y[?country_size_score]§!\n - Eigene Landpunktzahl: §Y[?country_base_prestige]§0!\n ​​- Unterworfene Landpunktzahl: §Y[?country_base_prestige]§1!" #NT!
+ fpw_country_pos_localization_key_htl: "[?i]" #NT!
+ fpw_country_pos_localization_key_lth: "[?x]" #NT!
+ fpw_prestige_localization_key: "[?temp_prestige]" #NT!
+ fpw_country_rank_great_power_localization_key: "§GGroße Macht§!" #NT!
+ fpw_country_rank_major_power_localization_key: "§GGroße Macht§!" #NT!
+ fpw_country_rank_unrecognized_major_power_localization_key: "§RGroße Macht§!" #NT!
+ fpw_country_rank_minor_power_localization_key: "§GGeringere Macht§!" #NT!
+ fpw_country_rank_unrecognized_minor_power_localization_key: "§RGeringere Macht§!" #NT!
+ fpw_country_rank_insignificant_power_localization_key: "§GUnbedeutende Macht§!" #NT!
+ fpw_country_rank_unrecognized_insignificant_power_localization_key: "§RUnbedeutende Macht§!" #NT!
+ fpw_country_rank_decentralized_nation_localization_key: "§RDezentrale Nation§!" #NT!
+ fpw_political_title: "Länder-Power-Ranking" #NT!
+ fpw_list_sort_button_country: "Land" #NT!
+ fpw_list_sort_button_pos: "Position" #NT!
+ fpw_list_sort_button_prestige: "Prestige" #NT!
+ fpw_list_sort_button_status: "Status" #NT!
+ fpw_list_pos_button_tt: "Ihr §YPosition§! hängt von Ihrem §YPrestige§! ab; je höher das §YPrestige§!, desto höher das §YPosition§!. Das Prestige wird durch Ihr §YIndustry§!, §YArmeestärke§!, §YMarinestärke§! und §YLandesgröße§! bestimmt." #NT!
+ fpw_list_prestige_button_tt: "Das Prestige stellt das §Yinfluence§! des Landes dar. Je höher es ist, desto höher ist Ihr §YStatus§! auf der internationalen Bühne und Sie können in §Ygroße Kriege§! eingreifen." #NT!
+ fpw_list_status_button_tt: "§YStatus§! ist Ihr Rang auf internationaler Ebene. Je höher Ihr §YPrestige§!, desto höher Ihr §YStatus§!. Wenn der Status §RRed§! ist, weist dies auf eine nicht anerkannte Stufe hin, die als Übergangsphase zwischen zwei Status dient. Wenn er §GGreen§! ist, haben Sie einen anerkannten Status." #NT!

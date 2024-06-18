@@ -1,0 +1,70 @@
+﻿l_german:
+ fpw_franco_prussian_war_category: "Deutsch-Französischer Krieg" #NT!
+ fpw_franco_prussian_war_category_desc: "Die deutsche Wiedervereinigung war noch nie so wichtig. Die [PRS.GetAdjective] haben die [AUS.GetAdjective] im Deutsch-Österreichischen Krieg besiegt. Nun steht nur noch die Wiedervereinigung mit den übrigen deutschen Staaten aus." #NT!
+ fpw_side_with_germany: "Seite mit [PRS.GetNameDef]" #NT!
+ fpw_side_with_france: "Seite mit [FRA.GetNameDef]" #NT!
+  
+ fpw_treaty_of_frankfurt_category: "Vertrag von Frankfurt" #NT!
+ fpw_treaty_of_frankfurt_category_desc: "Nach dem Sieg im Deutsch-Französischen Krieg und der Ausrufung der Dritten Republik sowie der deutschen Einigung wurde der Vertrag von Frankfurt als Friedensabkommen zwischen Frankreich und dem neu gegründeten deutschen Staat unterzeichnet." #NT!
+ fpw_treaty_of_frankfurt_progress: "Die Ratifizierung des Vertrags..." #NT!
+  
+ fpw_german_unification_category: "Österreichisch-Preußischer Krieg" #NT!
+ fpw_german_unification_category_desc: "[get_austro_prussian_war_desc]" #NT!
+  
+ fpw_colonization_category: "Kolonisation" #NT!
+  
+ fpw_german_confederation_category: "Deutscher Bund" #NT!
+ fpw_german_confederation_category_desc: "Seit dem Wiener Vertrag sind die Deutschen wieder im Deutschen Bund vereint, dem Nachfolger des Heiligen Römischen Reiches. Über den Bund herrschen jedoch unterschiedliche Meinungen. Einige wollen, dass sich der Bund zu einem einzigen, vereinigten Land entwickelt, andere wünschen sich seine Auflösung." #NT!
+  
+ fpw_austro_prussian_PRS_desc: "Seit seiner Amtszeit als Reichskanzler strebt Otto von Bismarck die deutsche Einigung an. Dies wird jedoch nur möglich sein, wenn Preußen den anderen deutschen Staaten, insbesondere Österreich, beweisen kann, dass es die zahlreichen Staaten im deutschen Einflussbereich effektiv regieren kann." #NT!
+ fpw_austro_prussian_AUS_desc: "Seit dem Deutsch-Dänischen Krieg im Jahr 1864 ist es unser Ziel, unsere Dominanz über die anderen deutschen Staaten zu demonstrieren. Jetzt ist der richtige Moment gekommen, um unsere Vorherrschaft durch einen Sieg im Krieg gegen die mächtigen Preußen zu behaupten." #NT!
+ fpw_austro_prussian_desc: "1864 kämpften die deutschen Staaten Preußen und Österreich tapfer gegen die Dänen. Dieser Konflikt wird heute als Erster Deutscher Einigungskrieg bezeichnet, und die Möglichkeit eines zweiten Krieges steht unmittelbar bevor. Es liegt nun an uns, zu entscheiden, welche Seite der deutschen Vorherrschaft im Deutschen Bund wir unterstützen möchten." #NT!
+ fpw_austro_prussian_war_historical_peace: "Unterzeichnung des Wiener Vertrags" #NT!
+  
+ fpw_german_confederation: "Austritt aus dem Deutschen Bund" #NT!
+  
+ fpw_austro_prussian_war_escalation: "Eskalation des Preußisch-Österreichischen Krieges" #NT!
+  
+ fpw_side_with_prussia: "Seite mit [PRS.GetNameDef]" #NT!
+ fpw_side_with_austria: "Seite mit [AUS.GetNameDef]" #NT!
+  
+ colonization_descision: "Kolonisierung von §Y[FROM.GetName]§!." #NT!
+ integration_descision: "Integrieren Sie §Y[FROM.GetName]§!." #NT!
+  
+ ITA_government: "Die italienische Regierung" #NT!
+  
+ PRS_ally_saxony: "Einfluss Sachsen" #NT!
+ PRS_ally_bavaria: "Einfluss Bayern" #NT!
+ PRS_ally_wurttemberg: "Einfluss Württemberg" #NT!
+ PRS_ally_baden: "Einfluss Baden" #NT!
+ PRS_ally_oldenburg: "Einfluss Oldenburg" #NT!
+ PRS_ally_hanover: "Einfluss Hannover" #NT!
+ PRS_ally_mecklenburg: "Einfluss Mecklenburg" #NT!
+ PRS_ally_kassel: "Einfluss Hessen-Kassel" #NT!
+ PRS_ally_hessen: "Einfluss Hessen-Darmstadt" #NT!
+ PRS_ally_nassau: "Einfluss Hessen-Nassau" #NT!
+ PRS_ally_sachsen_meiningen: "Einfluss Sachsen-Meiningen" #NT!
+ PRS_ally_sachsen_coburg: "Einfluss Sachsen-Coburg-Gotha" #NT!
+ PRS_ally_sachsen_weimar: "Einfluss Sachsen-Weimar" #NT!
+ PRS_ally_sachsen_anhalt: "Einfluss Sachsen-Anhalt" #NT!
+ PRS_ally_brunswick: "Einfluss Braunschweig" #NT!
+ PRS_ally_waldeck: "Einfluss Waldeck" #NT!
+ PRS_ally_frankfurt: "Einfluss Frankfurt" #NT!
+ PRS_ally_strelitz: "Einfluss Mecklenburg-Strelitz" #NT!
+ PRS_ally_lippe: "Einfluss Lippe" #NT!
+ PRS_ally_schaumburg: "Einfluss Schaumburg-Lippe" #NT!
+ PRS_ally_schwarzburg: "Einfluss Schwarzburg" #NT!
+ PRS_ally_bremen: "Einfluss Bremen" #NT!
+ PRS_ally_hamburg: "Einfluss Hamburg" #NT!
+ PRS_ally_luburg: "Einfluss Lübeck" #NT!
+  
+ ITA_conquer_venice: "Erobern Sie Venedig" #NT!
+ ITA_move_capital_to_rome: "Verlegung der Hauptstadt nach Rom" #NT!
+  
+ fpw_austro_prussian_war_category: "Einfluss auf Deutschland" #NT!
+ fpw_annex_holstein: "Schlagen Sie einen Kleindeutschen Staat vor" #NT!
+  
+ fpw_great_war_category: "Großer Krieg" #NT!
+ fpw_great_war_progress: "Eskalationsfortschritt" #NT!
+ fpw_side_with_initiator: "Seite mit Initiatorseite" #NT!
+ fpw_side_with_target: "Seite mit Zielseite" #NT!
