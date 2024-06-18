@@ -43,12 +43,12 @@ set_oob = "SOV_1866"
 }
 
 
-#sadd_dynamic_modifier = { 
-#	modifier = fpw_underdeveloped_industry 
-#}
-#add_dynamic_modifier = { 
-#	modifier = fpw_SOV_losers_of_the_crimean_war 
-#}
+add_dynamic_modifier = { 
+	modifier = fpw_underdeveloped_industry 
+}
+add_dynamic_modifier = { 
+	modifier = fpw_SOV_losers_of_the_crimean_war 
+}
 
 set_politics = {
 	ruling_party = neutrality
@@ -109,9 +109,8 @@ set_variable = { SOV_sr_production_speed_buildings_factor = 0 }
 
 add_dynamic_modifier = { modifier = SOV_serfdom_remnants_dynamic_modifier }
 
-add_ideas = {
-	fpw_SOV_losers_of_the_crimean_war_1
-}
+
+
 
 
 

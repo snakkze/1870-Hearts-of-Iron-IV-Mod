@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 
-		
+		# Brothers on the Front
 		fpw_SOV_new_agricultural_economy = {
 			allowed = {
 				tag = SOV
@@ -13,10 +13,10 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_agrarian_reform
-			
+			picture = SOV_second_five_year_plan
+
 			modifier = {
-				consumer_goods_factor = 0.30
+				consumer_goods_factor = 0.40
 				global_building_slots_factor = 0.10
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
@@ -24,100 +24,6 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 			}
 		}
-		
-		
-		fpw_SOV_losers_of_the_crimean_war_1 = {
-			allowed = {
-				tag = SOV
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = SWE_neither_death_nor_dishonor
-
-			modifier = {
-				political_power_factor = -0.15
-				war_support_factor = -0.30
-				opinion_gain_monthly_factor = -0.50
-				
-				custom_modifier_tooltip = prestige_modifier_losers_of_the_crimean_war_1
-			}
-		}
-		fpw_SOV_losers_of_the_crimean_war_2 = {
-			allowed = {
-				tag = SOV
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = SWE_neither_death_nor_dishonor
-
-			modifier = {
-				political_power_factor = -0.10
-				war_support_factor = -0.20
-				opinion_gain_monthly_factor = -0.40
-				
-				custom_modifier_tooltip = prestige_modifier_losers_of_the_crimean_war_2
-			}
-		}
-		fpw_SOV_losers_of_the_crimean_war_3 = {
-			allowed = {
-				tag = SOV
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = SWE_neither_death_nor_dishonor
-
-			modifier = {
-				political_power_factor = -0.05
-				war_support_factor = -0.10
-				opinion_gain_monthly_factor = -0.20
-				
-				custom_modifier_tooltip = prestige_modifier_losers_of_the_crimean_war_3
-			}
-		}
-		
-		
-		alaska_bought = {
-			allowed = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = SPR_seize_the_gold_reserves
-			
-			modifier = {
-				consumer_goods_factor = 0.05
-			}
-		}
-		alaska_sold = {
-			allowed = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = SPR_seize_the_gold_reserves
-			
-			modifier = {
-				consumer_goods_factor = -0.10
-			}
-		}
-		
 		
 		
 		

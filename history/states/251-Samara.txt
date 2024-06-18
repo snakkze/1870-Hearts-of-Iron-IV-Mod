@@ -12,7 +12,8 @@ state={
 			11225 3 
 		}
 		buildings = {
-			infrastructure = 2 #was: 5
+			infrastructure = 3 #was: 5
+			arms_factory = 2
 		}
 		add_core_of = SOV
 		1939.1.1 = {
