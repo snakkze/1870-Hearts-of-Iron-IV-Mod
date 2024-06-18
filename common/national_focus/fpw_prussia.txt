@@ -68,7 +68,7 @@ focus_tree = {
 		}
 	}
 
-	# Prussia wanted the german state to unite as a country, but excluding austria. This provoked them which is why they provoked back by questioning the Gasteiner Konvention that splitted up schleswig holstein after the german-danish war
+	# Prussia wanted the german state to unite as a country, but excluding austria. This provoked them which is why they provoked back by questioning the Gasteiner Konvention that splitted up Schleswig-Holstein after the German-Danish war
 	focus = {
 		id = PRS_propose_federal_reform
 		icon = GFX_focus_generic_treaty
@@ -108,7 +108,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# Following the Schleswig Holsteinisch question we will annex Holstein!
+			# Following the question of Schleswig-Holstein we will annex Holstein!
 			# This will trigger the Bundesbeschluss vom 14. Juni 1866 and will allow austria to mobilize against germany
 			# When escalation is finished prussia gets event to gain the following
 			# National idea "nationalism" or "brothers on the front" attack on austrian core higher because its same VOLK but lower war intrest because its the same Volk!
@@ -1480,7 +1480,7 @@ focus_tree = {
 		}
 	}
 
-	# Prussia and Austria proposing the Nord/Süd idee splitting the germanic nation between the prussian north and austrian south
+	# Prussia and Austria proposing the Nord/Süd idee splitting the germanic nation between the Prussian north and Austrian south.
 	focus = {
 		id = PRS_propose_the_nord_sued_idea
 		icon = GFX_focus_PRS_nord_sud

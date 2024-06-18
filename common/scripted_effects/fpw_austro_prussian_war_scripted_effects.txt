@@ -259,6 +259,10 @@ prussian_surrender = {
 				transfer_state_to = AUS
 				add_core_of = AUS
 			}
+			country_event = { 
+				id = austro_prussian_fpw.5
+				#hours = 1
+			}
 		}
 	}
 
@@ -359,6 +363,10 @@ austrian_surrender = {
 					transfer_state_to = ITA
 					remove_core_of = AUS
 				}
+			}
+			country_event = { 
+				id = austro_prussian_fpw.4
+				#hours = 1
 			}
 		}
 	}

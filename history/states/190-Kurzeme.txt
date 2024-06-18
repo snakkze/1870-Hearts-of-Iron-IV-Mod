@@ -15,11 +15,10 @@ state={
 		owner = SOV
 add_core_of = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			9262 = {
 				naval_base = 1
 			}
-			dockyard = 1
 		}
 		add_core_of = LAT
 	}
