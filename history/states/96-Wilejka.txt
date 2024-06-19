@@ -1,25 +1,27 @@
+
 state={
 	id=96
 	name="STATE_96"
-	manpower = 726000
-	
-	state_category = rural
-	
+
 	history={
 		victory_points = {
-			406 1
+			9289 5 
 		}
 		owner = SOV
-add_core_of = SOV
+		add_core_of = SOV
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = BLR
+
 	}
 
 	provinces={
-		233 277 358 406 6340 9341 11391 
+		216 294 342 3331 3378 6220 6292 6371 9241 9289 11322 
 	}
-
-	local_supplies=0.0 
+	manpower=726000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

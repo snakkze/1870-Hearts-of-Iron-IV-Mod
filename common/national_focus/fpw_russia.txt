@@ -251,7 +251,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = {  }
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_undermine_national_identity }
@@ -333,6 +333,10 @@ focus_tree = {
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_finnish_question }
+<<<<<<< HEAD
+=======
+		#prerequisite = { focus = SOV_promote_national_identity }
+>>>>>>> 8fd56c22e5650eefa7de805d577ec549eb8ae2d1
 		relative_position_id = SOV_finnish_question
 		mutually_exclusive = { focus = SOV_finnish_integration }
 		
@@ -351,7 +355,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			
@@ -434,6 +438,7 @@ focus_tree = {
 					transfer_state = 98
 					transfer_state = 97
 					transfer_state = 814
+					add_ideas = fpw_alexander_ii
 				}
 				#create_country_leader = {
 				#	name = "Alexander II"
@@ -734,7 +739,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			

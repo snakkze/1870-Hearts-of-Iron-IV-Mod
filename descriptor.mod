@@ -10,6 +10,7 @@ replace_path="map/strategicregions"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="common/ideas"
+replace_path="common/autonomous_states"
 version="1.0"
 picture="thumbnail.png"
 tags={
