@@ -232,7 +232,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			remove_ideas = {
+				fpw_kaiser_wilhelm
+			}
 		}
 	}
 
@@ -2756,7 +2758,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		x = 27
 		y = 0
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
@@ -2801,7 +2803,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = PRS_industrial_effort
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -3098,7 +3100,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRS_construction_effort_2
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		

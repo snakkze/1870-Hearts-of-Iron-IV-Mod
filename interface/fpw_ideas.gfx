@@ -40,5 +40,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/prestige_modifiers/WIP.dds"
 	}
 
-
+	SpriteType = {
+		name = "GFX_idea_wilhelm_i"
+		texturefile = "gfx/interface/ideas/idea_kaiser_wilhelm.dds"
+	}
 }
