@@ -130,6 +130,7 @@ country_event = {
 		effect_tooltip = {
 			transfer_state = 463
 			transfer_state = 650
+			transfer_state = 986
 			add_timed_idea = {
 				idea = alaska_bought
 				days = 365
@@ -188,6 +189,7 @@ country_event = {
 		USA = {
 			transfer_state = 463
 			transfer_state = 650
+			transfer_state = 986
 			add_timed_idea = {
 				idea = alaska_bought
 				days = 365
@@ -225,4 +227,36 @@ country_event = {
 	}
 }
 
+# Russo-German Relations
+country_event = {
+	id = russia_fpw.7
+	title = russia_fpw.7.t
+	desc = russia_fpw.7.d
+	picture = GFX_report_event_bul_boris_with_hitler
+	
+	is_triggered_only = yes
 
+	
+	option = {
+		name = russia_fpw.7.a
+		
+		
+	}
+}
+
+# Russian Economic Situation
+country_event = {
+	id = russia_fpw.8
+	title = russia_fpw.8.t
+	desc = russia_fpw.8.d
+	#picture = GFX_report_event_bul_boris_with_hitler
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.7.a
+		
+		
+	}
+}

@@ -472,6 +472,7 @@ focus_tree = {
 					transfer_state = 98
 					transfer_state = 97
 					transfer_state = 814
+					add_ideas = fpw_alexander_ii
 				}
 				#create_country_leader = {
 				#	name = "Alexander II"
@@ -1228,8 +1229,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
-			
+			add_political_power = 10
+			add_stability = 0.02
 			
 		}
 	}
@@ -1302,6 +1303,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
+			add_political_power = 10
 			add_state_claim = 984
 			add_state_claim = 980
 			add_state_claim = 797
@@ -1376,7 +1378,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			add_political_power = 10
+			country_event = russia_fpw.7s
 			
 			
 		}
@@ -1496,7 +1499,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			add_political_power = 10
 			add_state_claim = 761
 			add_state_claim = 714
 			add_state_claim = 328
@@ -1543,6 +1546,245 @@ focus_tree = {
 		}
 	}
 	
+##########################################################################
+#
+#	Industry Branch
+#
+##########################################################################
+	
+	focus = {
+		id = SOV_russian_economy
+		x = 11
+		y = 0
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_goal_generic_consumer_goods
+		#mutually_exclusive = { focus =  }
+		#prerequisite = { focus =  }
+		relative_position_id = SOV_russian_diplomacy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 10
+			country_event = russia_fpw.8
+			random_owned_state = {
+				limit = { is_core_of = SOV }
+				prioritize = { 193 225 259 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			random_owned_state = {
+				limit = { is_core_of = SOV }
+				prioritize = { 11 810 812 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_infrastracture_investments
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_goal_generic_construct_infrastructure
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_russian_economy }
+		relative_position_id = SOV_russian_economy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 10
+			
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_infrastracture_in_ukraine
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		#icon = GFX_goal_generic_construct_infrastructure
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_infrastracture_investments }
+		relative_position_id = SOV_infrastracture_investments
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 10
+			custom_effect_tooltip = SOV_infrastracture_in_ukraine_tp
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_infrastracture_in_baltic_belarus
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		#icon = GFX_goal_generic_construct_infrastructure
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_infrastracture_investments }
+		relative_position_id = SOV_infrastracture_investments
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 10
+			custom_effect_tooltip = SOV_infrastracture_in_baltic_belarus_tp
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_infrastracture_in_central_russia
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		#icon = GFX_goal_generic_construct_infrastructure
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_infrastracture_investments }
+		relative_position_id = SOV_infrastracture_investments
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 10
+			custom_effect_tooltip = SOV_infrastracture_in_central_russia_tp
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_build_upon_the_new_infrastracture
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_goal_generic_construction2
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_infrastracture_in_ukraine focus = SOV_infrastracture_in_baltic_belarus focus = SOV_infrastracture_in_central_russia }
+		relative_position_id = SOV_infrastracture_in_baltic_belarus
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add_political_power = 10
+			custom_effect_tooltip = SOV_build_upon_the_new_infrastracture_tp
+			
+			
+		}
+	}
 	
 	
 	
