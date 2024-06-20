@@ -3,7 +3,8 @@ state={
 	name="STATE_471"
 
 	history={
-		owner = CAN
+		owner = BRC
+		add_core_of = BRC
 		buildings = {
 			infrastructure = 1
 			10548 = {
@@ -12,7 +13,6 @@ state={
 			}
 
 		}
-		add_core_of = CAN
 
 	}
 
