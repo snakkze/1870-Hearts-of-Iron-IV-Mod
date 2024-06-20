@@ -754,7 +754,7 @@ focus_tree = {
 				tooltip = ITA_ott
 				TUR = {
 					exists = yes
-					has_cosmetic_tag = TUR_ottoman_empire
+					owns_state = 797
 				}
 			}
 		}
