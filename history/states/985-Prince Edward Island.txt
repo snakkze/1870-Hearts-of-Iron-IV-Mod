@@ -1,0 +1,25 @@
+
+state={
+	id=985
+	name="STATE_985"
+	manpower = 68283
+	
+	state_category = rural
+
+	history={
+		owner = PEI
+		add_core_of = PEI
+		1870.1.1 = {
+			owner = CAN
+			add_core_of = CAN
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		4360
+	}
+	local_supplies=1.0 
+}
