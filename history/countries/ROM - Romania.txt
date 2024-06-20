@@ -78,6 +78,13 @@ set_technology = {
     tech_support = 1
 }
 
+add_ideas = {
+	fpw_ROM_divided_nation
+	fpw_ROM_ottoman_tribute
+	fpw_ROM_territorial_disputes
+	fpw_ROM_incompetent_army
+}
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
