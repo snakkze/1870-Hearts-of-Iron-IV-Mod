@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 
-		# Brothers on the Front
+		
 		fpw_SOV_new_agricultural_economy = {
 			allowed = {
 				tag = SOV
@@ -13,7 +13,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = SOV_second_five_year_plan
+			picture = generic_agrarian_society
 
 			modifier = {
 				consumer_goods_factor = 0.40
