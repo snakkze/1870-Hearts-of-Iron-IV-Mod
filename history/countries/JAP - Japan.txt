@@ -1,4 +1,4 @@
-capital = 282
+capital = 531
  oob = "JAP_1866"
 
 
@@ -9,6 +9,17 @@ set_war_support = 0.8
 
 add_dynamic_modifier = { 
 	modifier = fpw_JAP_isolated 
+}
+
+1870.1.1 = {
+
+	#Change Capital to Tokyo for 1870(was Kyoto in 1866)
+	JAP = {
+		set_capital = {
+		state = 282
+		}
+	}
+
 }
 
 set_research_slots = 4
