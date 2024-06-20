@@ -1010,17 +1010,11 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_greece
 		prerequisite = { focus = ITA_roman_ambition }
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_n_ott
-				TUR = {
-					NOT = { has_cosmetic_tag = TUR_ottoman_empire }
-				}
-			}
-			797 = { is_owned_by = GRE }
+			47 = { is_owned_by = GRE }
 		}
 		bypass = {
 			NOT = {
-				797 = { is_owned_by = GRE }
+				47 = { is_owned_by = GRE }
 			}
 		}
 		x = 1
