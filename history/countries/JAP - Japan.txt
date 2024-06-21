@@ -172,8 +172,11 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	neutrality = 65
+	fascism = 35
 }
+recruit_character = JAP_emperor_komei
+recruit_character = JAP_emperor_meiji
 
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
