@@ -46,7 +46,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.4
-				political_power_gain = -0.3
+				political_power_gain = -0.5
 			}
 		}
 	}
@@ -94,8 +94,34 @@ ideas = {
 			
 			modifier = {
 				land_reinforce_rate = -0.2
-				field_officer_promotion_penalty = -0.1
+				field_officer_promotion_penalty = 0.1
 				offence = -0.3
+			}
+		}	
+	}
+
+		country = {
+		fpw_ROM_weak_industry = {
+			picture = weak_industry
+
+			allowed = {
+				tag = ROM
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.3
+
 			}
 		}	
 	}

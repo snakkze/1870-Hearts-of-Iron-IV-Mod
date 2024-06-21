@@ -69,6 +69,11 @@ spriteTypes = {
 		name = "GFX_idea_incompetent_army"
 		texturefile = "gfx\interface\ideas\incompetent_army.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_weak_industry"
+		texturefile = "gfx\interface\ideas\weak_industry.dds"
+	}
 	
 	
 	
