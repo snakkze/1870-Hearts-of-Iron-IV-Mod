@@ -1109,6 +1109,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
+		will_lead_to_war_with = FRA
 
 		ai_will_do = {
 			factor = 10
