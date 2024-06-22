@@ -2,24 +2,20 @@
 state={
 	id=185
 	name="STATE_185"
-	manpower = 760900
-	
-	state_category = rural
-	
 	resources={
-		chromium=14 # was: 20
-		steel = 14 # was: 20
+		chromium=14.000
+		steel=14.000
 	}
 
 	history={
 		victory_points = {
-			10203 1
+			10203 1 
 		}
 		victory_points = {
-			3914 3
+			3914 3 
 		}
 		victory_points = {
-			1205 1
+			1205 1 
 		}
 		owner = TUR
 		buildings = {
@@ -27,15 +23,19 @@ state={
 			industrial_complex = 1
 			9805 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = GRE
 		add_core_of = TUR
 	}
 
 	provinces={
-		841 863 3914 3973 3980 6930 9805 9837 9916 10203 11786 
+		841 863 3914 3973 3980 6930 9805 9916 10203 11786 
 	}
-
-	local_supplies=9.0 
+	manpower=760900
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=9.000
 }

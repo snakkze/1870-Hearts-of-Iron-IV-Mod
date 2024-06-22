@@ -78,7 +78,10 @@ fpw_german_unification_category = {
 		fire_only_once = yes
 
 		cancel_trigger = {
-			has_global_flag = fpw_prussia_peace
+			OR = {
+				has_global_flag = fpw_prussia_peace
+				has_global_flag = fpw_austrian_peace
+			}
 		}
 		icon = mission_icon
 		is_good = yes
@@ -218,9 +221,12 @@ fpw_german_unification_category = {
 						is_ai = no
 					}
 					NOT = {
-						any_owned_state = {
-							has_state_flag = influenced_by_PRS
-						}
+						AND = {
+							original_tag = SOV
+							any_owned_state = {
+								has_state_flag = influenced_by_PRS
+							}
+						{FOCUS_FILTER_POLITICAL}
 					}
 				}
 				add = 50
@@ -303,8 +309,11 @@ fpw_german_unification_category = {
 						is_ai = no
 					}
 					NOT = {
-						any_owned_state = {
-							has_state_flag = influenced_by_AUS
+						AND = {
+							original_tag = FRA
+							any_owned_state = {
+								has_state_flag = influenced_by_AUS
+							}
 						}
 					}
 				}

@@ -3,7 +3,12 @@ state={
 	name="STATE_470"
 
 	history={
-		owner = CAN
+		owner = REU
+		add_core_of = REU
+		1870.1.1 = {
+			owner = CAN
+			add_core_of = CAN
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -12,7 +17,6 @@ state={
 		victory_points = {
 			3010 3 
 		}
-		add_core_of = CAN
 
 	}
 

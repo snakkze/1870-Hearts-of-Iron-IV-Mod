@@ -45,6 +45,129 @@ ideas = {
 			}
 		}
 
+		fpw_northern_nationalism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.1
+			}
+		}
+
+		fpw_the_two_emperors = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				stability_factor = 0.25
+			}
+		}
+		
+		fpw_disorganised_army = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				army_attack_factor = -0.25
+				army_defence_factor = -0.1
+				army_org_factor = -0.15
+			}
+		}
+
+		fpw_disorganised_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				consumer_goods_factor 0.15
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.25
+				cic_construction_boost = -0.25
+			}
+		}
+
+			fpw_united_now_united_forever = {
+				allowed = {
+					always = no
+				}
+	
+				allowed_civil_war = {
+					
+				}
+	
+				removal_cost = -1
+	
+				picture = icon
+	
+				modifier = {
+					stability_factor = 0.5
+					war_support_factor = 0.25
+					political_power_gain = 0.1
+				}
+			}
+
+				fpw_disorganised_people = {
+					allowed = {
+						always = no
+					}
+		
+					allowed_civil_war = {
+						
+					}
+		
+					removal_cost = -1
+		
+					picture = icon
+		
+					modifier = {
+						stability_factor = -0.15
+						war_support_factor = -0.25
+						political_power_gain = -0.2
+					}
+
+				
+				}
+			
+
+			
+		
 		# Kaiser Wilhelm I
 		fpw_kaiser_wilhelm = {
 			allowed = {
@@ -66,5 +189,7 @@ ideas = {
 			}
 		}
 
-	}
 }
+}
+
+
