@@ -94,7 +94,7 @@
 
 		focus = {
 		id = rom_education_budget
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_education_budget
 		prerequisite = { focus = rom_formalize_department_education }
 		mutually_exclusive = {  }
 		
@@ -103,12 +103,13 @@
 		relative_position_id = rom_formalize_department_education
 		
 		
-		cost = 10
+		cost = 1.5
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			country_event = fpw_romania.2	
 		}
 		
 		ai_will_do = {

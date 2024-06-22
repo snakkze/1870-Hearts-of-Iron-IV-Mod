@@ -45,3 +45,31 @@
             add_manpower = -1000000
 		}
 	}
+
+	country_event = {
+		id = fpw_romania.2
+		title = fpw_romania.2.t
+		desc = fpw_romania.2.d
+		picture = fpw_romania_event_001.dds
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_romania.2.a
+			ai_chance = {
+				base = 5
+			}
+            complete_national_focus = rom_high_spending
+		}
+        option = {
+			name = fpw_romania.2.b
+			ai_chance = {
+				base = 5
+			}
+            complete_national_focus = rom_low_spending
+		}
+	}

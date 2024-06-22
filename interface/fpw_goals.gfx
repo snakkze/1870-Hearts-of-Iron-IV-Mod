@@ -216,4 +216,8 @@ spriteTypes = {
 		name = "GFX_focus_rom_formalize_department_education"
 		texturefile = "gfx/interface/goals/focus_rom_formalize_department_education.dds"
 	}	
+	spriteType = {
+		name = "GFX_focus_rom_education_budget"
+		texturefile = "gfx/interface/goals/GFX_focus_rom_education_budget.dds"
+	}	
 }
