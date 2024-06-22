@@ -41,12 +41,12 @@ ideologies = {
 		color = { 64 89 137 }
 
 		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
 			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = no
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
@@ -104,6 +104,10 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 255 0 0 }
 			}
+			jap_imperial = {
+				can_be_randomly_selected = no
+				color = { 177 45 61 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -118,12 +122,12 @@ ideologies = {
 		color = { 209 177 19 }
 
 		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
 			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = no
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
@@ -253,6 +257,10 @@ ideologies = {
 			orleanist = {
 				color = { 131 85 145 }
 				can_be_randomly_selected = no
+			}
+			jap_tokugawa = {
+				can_be_randomly_selected = no
+				color = { 239 198 46 }
 			}
 		}
 

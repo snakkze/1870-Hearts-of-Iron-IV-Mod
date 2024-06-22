@@ -1,0 +1,80 @@
+SOV_historical = {
+	name = "Russian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		or = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			has_country_flag = SOV_AI_RANDOM_DEFAULT
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+		has_completed_focus = SOV_plot_against_the_tsars
+	}
+
+	ai_national_focuses = {
+		SOV_tsars_regime
+		SOV_russian_diplomacy
+		SOV_recovering_from_the_cimean_war
+		SOV_state_of_the_empire
+		SOV_crush_polish_resistance_remnants
+		SOV_continue_reforms
+		SOV_asian_giant
+		SOV_sale_of_alaska
+		SOV_finnish_question
+		SOV_finnish_autonomy
+		SOV_free_state_serfs
+		SOV_administrative_reform
+		SOV_judicial_system
+		SOV_tighten_tsars_control
+		SOV_the_tsar_knows_best
+		SOV_help_for_peasants
+		SOV_reformed_but_still_russia
+		
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

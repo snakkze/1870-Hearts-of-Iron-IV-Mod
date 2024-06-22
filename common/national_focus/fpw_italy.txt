@@ -697,6 +697,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_expansionism
 		cost = 5
+		will_lead_to_war_with = PAP
+		if = {
+			limit = {
+				PAP = { is_guaranteed_by = FRA }
+			}
+			will_lead_to_war_with = FRA
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
@@ -754,7 +761,7 @@ focus_tree = {
 				tooltip = ITA_ott
 				TUR = {
 					exists = yes
-					has_cosmetic_tag = TUR_ottoman_empire
+					owns_state = 797
 				}
 			}
 		}
@@ -1010,17 +1017,11 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_greece
 		prerequisite = { focus = ITA_roman_ambition }
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_n_ott
-				TUR = {
-					NOT = { has_cosmetic_tag = TUR_ottoman_empire }
-				}
-			}
-			797 = { is_owned_by = GRE }
+			47 = { is_owned_by = GRE }
 		}
 		bypass = {
 			NOT = {
-				797 = { is_owned_by = GRE }
+				47 = { is_owned_by = GRE }
 			}
 		}
 		x = 1
