@@ -125,4 +125,54 @@ ideas = {
 			}
 		}	
 	}
+		country = {
+		fpw_ROM_department_education = {
+			picture = department_education
+
+			allowed = {
+				tag = ROM
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				research_speed_factor = 0.1
+				consumer_goods_factor = 0.025
+
+			}
+		}	
+	}
+		country = {
+		fpw_ROM_national_illiteracy = {
+			picture = national_illiteracy
+
+			allowed = {
+				tag = ROM
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				research_speed_factor = -0.1
+				consumer_goods_factor = 0.05
+
+			}
+		}	
+	}
 }

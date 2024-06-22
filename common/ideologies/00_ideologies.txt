@@ -104,10 +104,6 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 255 0 0 }
 			}
-			jap_imperial = {
-				can_be_randomly_selected = no
-				color = { 177 45 61 }
-			}
 		}
 
 		dynamic_faction_names = {
@@ -257,10 +253,6 @@ ideologies = {
 			orleanist = {
 				color = { 131 85 145 }
 				can_be_randomly_selected = no
-			}
-			jap_tokugawa = {
-				can_be_randomly_selected = no
-				color = { 239 198 46 }
 			}
 		}
 

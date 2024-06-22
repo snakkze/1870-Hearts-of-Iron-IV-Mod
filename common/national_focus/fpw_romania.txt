@@ -19,18 +19,19 @@
 	
 	focus = {
 		id = rom_industrial_dreams
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_industrial_dreams
 		
 		x = 30
 		y = 0
 		
-		cost = 10
+		cost = 5.8
 		
 		available = {
 		}
 		
 		completion_reward = {	
 			add_political_power = 50	
+			country_event = fpw_romania.1
 		}
 		
 		ai_will_do = {
@@ -41,7 +42,7 @@
 	
 	focus = {
 		id = rom_start_construction_university
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_start_construction_university
 		prerequisite = { focus = rom_industrial_dreams }
 		mutually_exclusive = {  }
 		
@@ -50,12 +51,13 @@
 		relative_position_id = rom_industrial_dreams
 		
 		
-		cost = 10
+		cost = 7.2
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_research_slot = 1	
 		}
 		
 		ai_will_do = {
@@ -66,7 +68,7 @@
 
 		focus = {
 		id = rom_formalize_department_education
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_formalize_department_education
 		prerequisite = { focus = rom_start_construction_university }
 		mutually_exclusive = {  }
 		
@@ -75,12 +77,13 @@
 		relative_position_id = rom_start_construction_university
 		
 		
-		cost = 10
+		cost = 7.2
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_ideas = fpw_ROM_department_education	
 		}
 		
 		ai_will_do = {

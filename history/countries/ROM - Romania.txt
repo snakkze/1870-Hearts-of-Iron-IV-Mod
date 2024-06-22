@@ -67,7 +67,7 @@ if = {
 	}
 }
 
-set_research_slots = 2
+set_research_slots = 1
 set_stability = 0.4
 set_war_support = 0.3
 
@@ -87,6 +87,7 @@ add_ideas = {
 	fpw_ROM_territorial_disputes
 	fpw_ROM_incompetent_army
 	fpw_ROM_weak_industry
+	fpw_ROM_national_illiteracy
 }
 
 if = {

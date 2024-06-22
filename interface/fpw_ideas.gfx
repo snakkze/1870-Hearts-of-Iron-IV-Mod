@@ -74,6 +74,16 @@ spriteTypes = {
 		name = "GFX_idea_weak_industry"
 		texturefile = "gfx\interface\ideas\weak_industry.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_department_education"
+		texturefile = "gfx\interface\ideas\department_education.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_national_illiteracy"
+		texturefile = "gfx\interface\ideas\national_illiteracy.dds"
+	}
 	
 	
 	

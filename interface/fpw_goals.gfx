@@ -201,3 +201,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_italian_identity.dds"
 	}
 }
+
+# ROMANIA #
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_rom_industrial_dreams"
+		texturefile = "gfx/interface/goals/focus_rom_industrial_dreams.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_start_construction_university"
+		texturefile = "gfx/interface/goals/focus_rom_start_construction_university.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_formalize_department_education"
+		texturefile = "gfx/interface/goals/focus_rom_formalize_department_education.dds"
+	}	
+}
