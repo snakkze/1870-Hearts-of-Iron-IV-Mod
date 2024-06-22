@@ -252,5 +252,26 @@ on_actions = {
 			}
 		}
 	}
-	
+	on_monthly = {
+		effect = {
+				if = {
+					limit = {
+					JAP = {
+							has_civil_war = yes 
+							has_government = fascism
+							}
+							}
+				JAP = {			
+					add_equipment_to_stockpile = {
+				type = fpw_infantry_equipment_1
+				amount = 10
+				producer = ENG
+			}
+			}
+					}
+					
+			}
+
+		}
+
 }

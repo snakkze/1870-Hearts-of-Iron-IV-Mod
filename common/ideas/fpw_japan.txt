@@ -1,0 +1,149 @@
+ideas = {
+	country = {
+
+		jap_small_imperial_resistance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.15
+				fascism_drift = 0.05
+			}
+		}
+
+		jap_medium_imperial_resistance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.25
+				fascism_drift = 0.1
+			}
+		}
+		
+		jap_high_imperial_resistance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.35
+				fascism_drift = 0.15
+			}
+		}
+		
+		jap_solidifying_imperial_command = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+		#add idea Sonnō jōi Ehret den Kaiser, vertreibt die Barbaren!
+		jap_sonno_joi = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			modifier = {
+				recruitable_population_factor = -0.3
+				weekly_manpower = -1000
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.002
+				neutrality_drift = -0.05
+			}
+		}
+
+		jap_civil_war = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = GFX_
+
+			modifier = {
+			army_speed_factor = -0.5
+			breakthrough_factor = 0.4
+			}
+		}
+		
+		jap_civil_warb = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = GFX_
+
+			modifier = {
+			army_speed_factor = -0.5
+			}
+		}
+
+
+
+
+
+
+
+
+}
+}
