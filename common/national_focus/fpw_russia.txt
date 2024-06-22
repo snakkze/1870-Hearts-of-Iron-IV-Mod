@@ -333,10 +333,7 @@ focus_tree = {
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_finnish_question }
-<<<<<<< HEAD
-=======
 		#prerequisite = { focus = SOV_promote_national_identity }
->>>>>>> 8fd56c22e5650eefa7de805d577ec549eb8ae2d1
 		relative_position_id = SOV_finnish_question
 		mutually_exclusive = { focus = SOV_finnish_integration }
 		
