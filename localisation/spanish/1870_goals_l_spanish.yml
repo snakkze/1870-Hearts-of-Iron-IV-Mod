@@ -1,0 +1,143 @@
+﻿l_spanish:
+ continuous_colonial_expantion: "Esfuerzos coloniales" #NT!
+ WHILE_FOCUSING: "Mientras se concentra en esto, se producirán los siguientes efectos:\n$EFF$" #NT!
+ generic_focus: "Enfoque Nacional" #NT!
+ army_effort: "Esfuerzo del ejército" #NT!
+ army_effort_desc: "A pesar de las crecientes posibilidades de la guerra aérea y naval, el combate terrestre sigue siendo clave en las guerras del mañana. Con preparación, podemos evitar revivir el infierno de las trincheras." #NT!
+ equipment_effort: "Esfuerzo del equipo" #NT!
+ equipment_effort_desc: "Los límites del equipamiento que puede llevar la infantería se superan constantemente. Nos concentraremos en brindar a nuestras tropas las mejores herramientas disponibles." #NT!
+ motorization_effort: "Esfuerzo de motorización" #NT!
+ motorization_effort_desc: "La movilidad y la protección son cruciales para que la infantería entre y salga del campo de manera segura. Centrarse en estos desarrollos nos permitirá tomar medidas rápidamente." #NT!
+ doctrine_effort: "Esfuerzo doctrinal" #NT!
+ doctrine_effort_desc: "Las doctrinas militares que definieron el combate terrestre en la Gran Guerra están obsoletas. Debemos dedicar nuestras mejores mentes a la tarea de dar forma al pensamiento militar del mañana." #NT!
+ equipment_effort_2: "Esfuerzo del equipo II" #NT!
+ equipment_effort_2_desc: "Continuaremos nuestros esfuerzos para garantizar que nuestra infantería y tropas de apoyo estén armadas con el mejor equipo posible de nuestro tiempo." #NT!
+ mechanization_effort: "Esfuerzo de mecanización" #NT!
+ mechanization_effort_desc: "Al repensar las posibilidades de la infantería motorizada, podemos superar los límites de los vehículos que se pueden construir hoy." #NT!
+ doctrine_effort_2: "Esfuerzo doctrinal II" #NT!
+ doctrine_effort_2_desc: "El campo de batalla ha cambiado no sólo en los años de entreguerras, sino también en el transcurso de los conflictos recientes. Debemos reevaluar continuamente nuestras doctrinas para reflejar esto." #NT!
+ equipment_effort_3: "Esfuerzo del equipo III" #NT!
+ equipment_effort_3_desc: "En lugar de imitar o comprar equipos extranjeros, deberíamos aspirar a convertirnos en líderes mundiales en armas de infantería." #NT!
+ armor_effort: "Esfuerzo de armadura" #NT!
+ armor_effort_desc: "Aplicando lo que hemos aprendido al mecanizar nuestra infantería, también podemos mejorar nuestros vehículos blindados." #NT!
+ special_forces: "Fuerzas especiales" #NT!
+ special_forces_desc: "Necesitamos fuerzas de élite; Las tropas de montaña y los paracaidistas deberían ser nuestra prioridad." #NT!
+ naval_effort: "Esfuerzo naval" #NT!
+ naval_effort_tt: "No hay suficientes espacios de construcción para §YAstilleros Navales§!" #NT!
+ naval_effort_desc: "La expansión de nuestra marina debería ser nuestra primera prioridad. Asigna todos los recursos disponibles a nuevos astilleros e investiga barcos de superficie ligeros." #NT!
+ GER_naval_effort2: "Ampliar las instalaciones del astillero" #NT!
+ GER_naval_effort2_desc: "Para reconstruir verdaderamente una marina digna de mención, debemos ampliar enormemente nuestra capacidad de construcción naval." #NT!
+ flexible_navy: "Azul marino flexible" #NT!
+ flexible_navy_desc: "Reinventar la guerra naval para tener en cuenta los avances en la tecnología submarina nos permitirá atacar eficientemente los convoyes enemigos." #NT!
+ large_navy: "Azul marino grande" #NT!
+ large_navy_desc: "Adaptar nuestras doctrinas navales para dar cabida a barcos grandes y garantizar la seguridad de nuestros convoyes comerciales nos enseñará mucho sobre qué tipo de barcos necesitamos." #NT!
+ submarine_effort: "Esfuerzo submarino" #NT!
+ submarine_effort_desc: "La guerra submarina es el desarrollo naval más apasionante desde la invención del torpedero. Haríamos bien no sólo en protegernos contra los submarinos, sino también en utilizarlos contra los barcos enemigos." #NT!
+ cruiser_effort: "Esfuerzo de crucero" #NT!
+ cruiser_effort_desc: "Antes de incursionar en la investigación avanzada de acorazados, los cruceros más pequeños necesitan ser reemplazados." #NT!
+ destroyer_effort: "Esfuerzo destructor" #NT!
+ destroyer_effort_desc: "Al estudiar el diseño y el uso estratégico de los submarinos, también hemos aprendido cómo contrarrestar esas estrategias. Los destructores serán cruciales para esto." #NT!
+ capital_ships_effort: "Esfuerzo del buque capital" #NT!
+ capital_ships_effort_desc: "La nación con más acorazados gobernará los océanos. Los acorazados y los portaaviones representan lo viejo y lo nuevo en superioridad naval." #NT!
+ industrial_effort: "Esfuerzo industrial" #NT!
+ industrial_effort_desc: "Centrar todos nuestros esfuerzos políticos en fortalecer la industria civil en un gran salto adelante." #NT!
+ industrial_effort_2: "Esfuerzo Industrial II" #NT!
+ industrial_effort_2_desc: "Con voluntad de hierro y una ética de trabajo implacable, podemos movilizar a la gente en otro gran esfuerzo industrial." #NT!
+ construction_effort: "Esfuerzo de construcción" #NT!
+ construction_effort_tt: "No hay suficientes espacios de construcción para §YFábricas civiles§!" #NT!
+ construction_effort_desc: "La capacidad industrial civil no debe subestimarse incluso cuando la guerra se cierne sobre el mundo." #NT!
+ production_effort: "Esfuerzo armamentista" #NT!
+ production_effort_tt: "No hay suficientes espacios de construcción para §YMilitary Factory§!" #NT!
+ production_effort_desc: "¡Si puedes construir tractores, puedes construir tanques! No debemos permitir que nuestra capacidad de producción militar se quede atrás." #NT!
+ construction_effort_2: "Esfuerzo de construcción II" #NT!
+ construction_effort_2_desc: "Continuar ampliando nuestras fábricas nos permitirá acelerar la producción de bienes para el comercio y mayores esfuerzos de construcción." #NT!
+ production_effort_2: "Esfuerzo de armamento II" #NT!
+ production_effort_2_desc: "Intentar adaptar fábricas civiles para producir equipamiento militar es ineficiente. Deberíamos centrarnos ahora en preparar la producción militar." #NT!
+ production_effort_3: "Esfuerzo armamentístico III" #NT!
+ production_effort_3_desc: "Son necesarios esfuerzos continuos para ampliar nuestras fábricas militares para satisfacer la demanda de nuevos equipos." #NT!
+ infrastructure_effort: "Esfuerzo de infraestructura" #NT!
+ infrastructure_effort_desc: "Un país sin una infraestructura adecuada no puede llevar a cabo proyectos o construcciones avanzadas." #NT!
+ infrastructure_effort_tt: "¡No hay suficientes espacios de construcción para §YInfrastructure§!" #NT!
+ synth_oil_effort_tt: "No hay suficientes espacios de construcción para §YRefinería sintética§!" #NT!
+ infrastructure_effort_2: "Esfuerzo de infraestructura II" #NT!
+ infrastructure_effort_2_desc: "Ampliar aún más nuestra infraestructura permitirá los transportes y las comunicaciones necesarios para proyectos clandestinos de alta tecnología." #NT!
+ construction_effort_3: "Esfuerzo de construcción III" #NT!
+ construction_effort_3_desc: "La expansión de nuestra red de infraestructura ha mejorado significativamente nuestra capacidad de construcción." #NT!
+ nuclear_effort: "Esfuerzo nuclear" #NT!
+ nuclear_effort_desc: "Al estar al borde de un descubrimiento que cambiará el mundo, no podemos permitir que otros enciendan el fuego que algún día podría consumir la Tierra." #NT!
+ extra_tech_slot: "Espacio de investigación adicional" #NT!
+ extra_tech_slot_desc: "Nuestra expansión industrial y otros avances recientes podrían permitirnos realizar más I+D en paralelo." #NT!
+ extra_tech_slot_2: "Espacio de investigación adicional II" #NT!
+ extra_tech_slot_2_desc: "La rápida industrialización de nuestra nación ha abierto nuevas oportunidades en I+D que debemos aprovechar." #NT!
+ technology_sharing: "Compartir tecnología" #NT!
+ technology_sharing_desc: "Al compartir los avances tecnológicos con nuestros aliados, toda nuestra facción podrá realizar I+D en tiempos de guerra de manera más eficiente." #NT!
+ secret_weapons: "Armas secretas" #NT!
+ secret_weapons_desc: "Es tentador gastar todos los recursos adicionales en el desarrollo de tanques y aviones, pero el secreto para ganar guerras reside en campos científicos completamente nuevos; electrónica, cohetes e investigación nuclear." #NT!
+ political_effort: "Esfuerzo político" #NT!
+ political_effort_desc: "Para lograr un cambio en el mundo, debemos poder lograr un cambio en nuestro propio país. El fortalecimiento de nuestra posición política debería ser lo primero." #NT!
+ support_the_landowners: "Apoyar a los terratenientes" #NT!
+ support_the_landowners_desc: "Apoyando a los terratenientes podemos garantizar la estabilidad en un mundo que cambia rápidamente." #NT!
+ crack_down_on_dissent: "Tomar medidas enérgicas contra la disidencia" #NT!
+ appoint_conservative_bureaucrats: "Nombrar burócratas conservadores" #NT!
+ absolute_monarchy: "Monarquía absoluta" #NT!
+ support_the_bourgeoisie: "Apoyar a la burguesía" #NT!
+ support_the_bourgeoisie_desc: "Apoyar a los capitalistas e industriales beneficiaría a nuestra economía a medida que modernicemos nuestras leyes." #NT!
+ privatize_agriculture: "Privatizar la agricultura" #NT!
+ privatize_the_industries: "Privatizar las industrias" #NT!
+ limited_democracy: "Democracia limitada" #NT!
+ universal_suffrage: "Sufragio universal" #NT!
+ support_the_proletariat: "Apoyar al proletariado" #NT!
+ support_the_proletariat_desc: "La clase trabajadora ha sufrido durante demasiado tiempo. Debemos derrocar al establishment conservador para apoderarse de los medios de producción, adoptando políticas socialistas." #NT!
+ invite_karl_marx: "Invitar a Karl Marx" #NT!
+ bolster_the_trade_unions: "Reforzar los sindicatos" #NT!
+ vanguard_state: "Estado de vanguardia" #NT!
+ our_place_in_the_world: "Nuestro lugar en el mundo" #NT!
+ our_place_in_the_world_desc: "El mundo está cambiando rápidamente. ¿Cómo debería protegerse [ROOT.GetNameDef] de las amenazas externas?" #NT!
+ nuetrality: "Neutralidad" #NT!
+ nuetrality_desc: "La mejor manera de mantenernos a salvo es evitar conflictos extranjeros." #NT!
+ imperialism: "Imperialismo" #NT!
+ imperialism_desc: "Olvídate de la paz, los [ROOT.GetAdjectiveCap] conquistarán el mundo, trabajando por un Imperio [ROOT.GetAdjectiveCap]." #NT!
+ national_militarism: "[ROOT.GetAdjectiveCap] Militarismo" #NT!
+ national_militarism_desc: "Nuestros soldados serán los mejores soldados del mundo, mientras marchan de país en país, matando implacablemente a quienes se nos oponen." #NT!
+ colonial_effort: "Esfuerzo colonial" #NT!
+ colonial_effort_desc: "Si bien la expansión en nuestro propio continente puede ser difícil, hay un continente completamente inexplorado esperando ser devorado por nosotros: África. Podemos conquistarlos fácilmente y establecer algunas colonias." #NT!
+ manifest_destiny: "Destino manifiesto" #NT!
+ manifest_destiny_desc: "El Imperio [ROOT.GetAdjectiveCap] se fortalece cada día y pronto seremos el país más grande que el mundo haya conocido." #NT!
+ loyalty_to_the_confederation: "Lealtad a la Confederación" #NT!
+ alliance_with_prussia: "Fortalecer lazos con [PRS.GetNameDef]" #NT!
+ alliance_with_prussia_desc: "Parece que podríamos beneficiarnos mucho de mejorar las relaciones con los [PRS.GetAdjectiveCap], no sólo por su deseo de unir a Alemania, sino también por sus fuertes capacidades militares." #NT!
+ alliance_with_austria: "Fortalecer los lazos con los [AUS.GetAdjectiveCap]s" #NT!
+ alliance_with_austria_desc: "[AUS.GetNameDefCap] es el digno líder del pueblo alemán y sería lógico inclinarse ante él." #NT!
+ befriend_neighbouring_countries: "Hacernos amigos de los Estados miembros vecinos" #NT!
+ befriend_neighbouring_countries_desc: "Podemos hacernos amigos de los estados vecinos que están en la Confederación Alemana." #NT!
+ aftermath_of_prussian_w: "Después de la Guerra de los Hermanos" #NT!
+ aftermath_of_prussian_w_completion_tt: "Autocompletado después de una victoria prusiana en la §YGuerra de los Hermanos§!" #NT!
+ home_of_the_revolution: "[ROOT.GetNonIdeologyName], Hogar de la Revolución" #NT!
+ home_of_the_revolution_desc: "El pueblo [ROOT.GetAdjectiveCap] ha logrado derrocar el régimen tiránico de la burguesía y ahora extenderá su influencia a otras naciones." #NT!
+ loyalty_to_the_leader_and_state: "Lealtad al Líder y al Estado" #NT!
+ loyalty_to_the_leader_and_state_desc: "Seguiremos siendo leales a la república, a [ROOT.GetRulingParty] y, por supuesto, a [ROOT.GetLeader], ya que no sería posible sin [ROOT.GetLeader.GetHerHim]." #NT!
+ the_socialist_crusade: "La cruzada socialista" #NT!
+ the_socialist_crusade_desc: "Violaremos a todas las naciones capitalistas, ya que sus malos puntos de vista no tienen derecho a existir en este planeta." #NT!
+ create_defensive_militia: "Crear milicia defensiva" #NT!
+ create_defensive_militia_desc: "Crearemos la [ROOT.GetAdjectiveCap] Milicia de Defensa Nacional para protegernos de los invasores extranjeros." #NT!
+ counter_intelligence_effort: "Contraespionaje" #NT!
+ counter_intelligence_effort_desc: "Emplear espías especializados en contrainteligencia evitará que las naciones militaristas nos espíen." #NT!
+ denounce_the_new_confederation: "Denunciar la Nueva Confederación" #NT!
+ denounce_the_new_confederation_desc: "La Confederación de Alemania del Norte es un sustituto ilegítimo de la versión original, ya que es simplemente una forma de que los prusianos no parezcan los "malos". Nos negaremos a unirnos a estos tiranos y, en cambio, trabajaremos con [FRA.GetLeader] para destruirlos." #NT!
+ alliance_with_france: "Alianza con Francia" #NT!
+ alliance_with_france_desc: "[FRA.GetNameDefCap] tiene rivalidad con nuestros enemigos en [PRS.GetNameDef], por lo que sería muy prudente buscar una alianza con ellos." #NT!
+ join_the_confederation: "Únase a la Confederación" #NT!
+ join_the_confederation_desc: "Por fin ha llegado el momento de unirse a la Confederación de Alemania del Norte." #NT!
+ confederation_trigger: "La §YConfederación Alemana del Norte§! existe" #NT!
+ reich_trigger: "El §YImperio Alemán§! existe" #NT!
+ spanish_glorious_revolution: "Revolución Gloriosa Española" #NT!
+ spanish_glorious_revolution_desc: "¡La Revolución Gloriosa, orquestada por estos valientes rebeldes, marca un nuevo amanecer para España, un testimonio de la resiliencia y el espíritu de nuestro pueblo! Al abrazar esta ola de cambio, estamos preparados para forjar un futuro mejor, unidos bajo la bandera del progreso y la libertad." #NT!
+ invite_a_bonaparte: "invitar a un bonaparte" #NT!
+ invite_a_bonaparte_desc: ""Invitar a un Bonaparte a nuestras cortes es una burla de la historia y la soberanía de nuestra nación. No nos doblegaremos ante los caprichos de potencias extranjeras que buscan manipularnos para su propio beneficio. Nuestra lealtad recae en nuestro propio pueblo, no en el autoproclamado herederos de un imperio desaparecido hace mucho tiempo." #NT!
+ invite_a_british: "Invita a un británico" #NT!
+ invite_a_british_desc: "La sola idea de invitar a un gobernante británico a gobernar nuestras tierras es un insulto a nuestra independencia y herencia. Nos negamos a entregar nuestra autonomía a intereses extranjeros, especialmente a los de los imperialistas británicos. Nuestra lealtad es hacia nuestro propio pueblo, no hacia algún monarca distante al otro lado del mar." #NT!
+ invite_a_savoyan: "Invitar a un saboyano" #NT!
+ invite_a_savoyan_desc: "La invitación de un gobernante de Saboya honra nuestra rica historia y tradiciones, presentando una oportunidad para la unidad y la estabilidad bajo un linaje respetado. Al abrazar el legado de Italia, abrimos nuestros brazos a un líder que comprende nuestros valores y aspiraciones." #NT!
+ invite_a_hohenzollern: "Invitar a un Hohenzollern" #NT!
+ invite_a_hohenzollern_desc: "Invitar a un Hohenzollern a liderarnos refleja el espíritu de la candidatura de Leopoldo, ofreciendo un camino hacia la fortaleza y la resiliencia en estos tiempos inciertos. Inspirados por un legado de liderazgo, estamos listos para acoger a un gobernante que comparte nuestra visión de un futuro próspero." #NT!
+  

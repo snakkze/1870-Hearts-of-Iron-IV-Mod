@@ -139,6 +139,9 @@ technology_folders = {
 	fpw_artillery_folder = {
 		ledger = army
 	}
+	fpw_naval_folder = {
+		ledger = navy
+	}
 	fpw_industry_folder = {
 		ledger = civilian
 	}
