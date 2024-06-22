@@ -1109,7 +1109,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		will_lead_to_war_with = FRA
 
 		ai_will_do = {
 			factor = 10
@@ -1651,7 +1650,7 @@ focus_tree = {
 		icon = picture
 		prerequisite = { focus = PRS_unify_the_north }
 		relative_position_id = PRS_unify_the_north
-		x = 3
+		x = 2
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1693,7 +1692,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-	      ## get world event german kings visit london
+	      ## get event german kings visit london
 		  
 		  diplomatic_relation = { 
 			country = ENG
@@ -1701,177 +1700,6 @@ focus_tree = {
 		}
 		}
 	}
-
-	focus = {
-		id = PRS_the_naval_treaty
-		icon = picture
-		prerequisite = { focus = PRS_with_the_uk }
-		relative_position_id = PRS_with_the_uk
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-	      ## get idea to debuff the germans navy and naval construction
-		  
-		 
-		}
-	}
-
-	focus = {
-		id = PRS_announce_the_triple_allaince
-		icon = picture
-		prerequisite = { focus = PRS_the_naval_treaty }
-		prerequisite = { focus = PRS_treaties_with_the_ottermans }
-		relative_position_id = PRS_the_naval_treaty
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = yes
-## get world event the formantion of the triple allaince
-		completion_reward = {
-			Create_faction = "the triple alliance"
-			Add_to_faction = PRS
-			Add_to_faction = ENG
-			Add_to_faction = TUR
-		  
-	
-		}
-	}
-
-	focus = {
-		id = PRS_announce_the_mediteranean_pact
-		icon = picture
-		prerequisite = { focus = PRS_transfer_venice }
-		prerequisite = { focus = PRS_treaties_with_the_ottermans }
-		relative_position_id = PRS_transfer_venice
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = yes
-## get world event the formantion of the mediteranean pact
-		completion_reward = {
-			Create_faction = "the mediteranean pact"
-			Add_to_faction = PRS
-			Add_to_faction = ITA
-			Add_to_faction = TUR
-		  
-	
-		}
-	}
-
-	focus = {
-		id = PRS_unify_high_command
-		icon = picture
-		prerequisite = { focus = PRS_announce_the_triple_allaince focus = PRS_announce_the_mediteranean_pact }
-		relative_position_id = PRS_treaties_with_the_ottermans
-		x = 0
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = yes
-## get idea that bufss armies of the three majours in the german alliance
-	}
-
-	focus = {
-		id = PRS_treaties_with_the_ottermans
-		icon = picture
-		prerequisite = { focus = PRS_with_the_uk focus = PRS_with_itily }
-		relative_position_id = PRS_with_the_uk
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-	      ## get world event german otterman treaties
-		  
-
-		  diplomatic_relation = { 
-			country = TUR
-			relation = non_aggression_pact 
-		}
-		
-		}
-	}
-
-	focus = {
-		id = PRS_transfer_venice
-		icon = picture
-		prerequisite = { focus = PRS_with_itily }
-		relative_position_id = PRS_with_itily
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-	      ## transfer venice to italy
-		  ## bypass if italy already owns venice
-		  
-		}
-	}
-
 
 	focus = {
 		id = PRS_with_itily
@@ -1895,7 +1723,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-	    ## get world event german-italian talks
+	    ## get event german-italian talks
 
 		diplomatic_relation = { 
 			country = ITA
@@ -2208,7 +2036,7 @@ focus = {
 
 	available_if_capitulated = no
 	completion_reward = {
-	## get world event the grand crowning where both the monarch of austria and monarch of prussia are crowned the two emperors of germany
+	## get event the grand crowning where both the monarch of austria and monarch of prussia are crowned the two emperors of germany
 	## all german nations get idea the two emperors
 
 	AUS = { add_ideas = fpw_the_two_emperors }
@@ -2239,7 +2067,6 @@ focus = {
 	available_if_capitulated = no
 	completion_reward = {
 	## get ideas disorgansied state, disorgansied army, disorgansied people
-	## get world event the unifaction of greater germany
     annex_country = { target = AUS transfer_troops = yes }
 	annex_country = { target = BAV transfer_troops = yes }
 	annex_country = { target = WRT transfer_troops = yes }
@@ -2248,7 +2075,6 @@ focus = {
 	annex_country = { target = FRK transfer_troops = yes }
 	set_cosmetic_tag = PRS_GER
 
-	PRS = { remove_ideas = fpw_northern_nationalism }
 	add_ideas = fpw_disorganised_people
 	add_ideas = fpw_disorganised_industry
 	add_ideas = fpw_disorganised_army
@@ -2538,7 +2364,7 @@ focus = {
 	focus = {
 		id = PRS_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 37
+		x = 35
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2804,7 +2630,7 @@ focus = {
 	focus = {
 		id = PRS_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 42
+		x = 40
 		y = 0
 		cost = 10
 
@@ -3208,7 +3034,7 @@ focus = {
 	focus = {
 		id = PRS_industrial_effort
 		icon = GFX_focus_generic_industry_2
-		x = 32
+		x = 30
 		y = 0
 		cost = 5
 	

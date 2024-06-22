@@ -49,6 +49,41 @@ spriteTypes = {
 		name = "GFX_idea_alexander_ii"
 		texturefile = "gfx/interface/ideas/idea_alexander_ii.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_divided_nation"
+		texturefile = "gfx\interface\ideas\divided_nation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_ottoman_tribute"
+		texturefile = "gfx\interface\ideas\ottoman_tribute.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_territorial_disputes"
+		texturefile = "gfx\interface\ideas\territorial_disputes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_incompetent_army"
+		texturefile = "gfx\interface\ideas\incompetent_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_weak_industry"
+		texturefile = "gfx\interface\ideas\weak_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_department_education"
+		texturefile = "gfx\interface\ideas\department_education.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_national_illiteracy"
+		texturefile = "gfx\interface\ideas\national_illiteracy.dds"
+	}
 	
 	
 	

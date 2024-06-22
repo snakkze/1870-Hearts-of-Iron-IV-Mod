@@ -1,0 +1,1223 @@
+﻿focus_tree = {
+	id = romania_focus
+	
+	default = no
+	
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = ROM
+		}
+	}
+	
+	continuous_focus_position = { x = 25 y = 680 }
+
+	############################## RESEARCH PATH ##############################
+	
+	focus = {
+		id = rom_industrial_dreams
+		icon = GFX_focus_rom_industrial_dreams
+		
+		x = 30
+		y = 0
+		
+		cost = 5.8
+		
+		available = {
+		}
+		
+		completion_reward = {	
+			add_political_power = 50	
+			country_event = fpw_romania.1
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	
+	focus = {
+		id = rom_start_construction_university
+		icon = GFX_focus_rom_start_construction_university
+		prerequisite = { focus = rom_industrial_dreams }
+		mutually_exclusive = {  }
+		
+		x = -10
+		y = 1
+		relative_position_id = rom_industrial_dreams
+		
+		
+		cost = 7.2
+		
+		available = {
+		}
+		
+		completion_reward = {	
+			add_research_slot = 1	
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_formalize_department_education
+		icon = GFX_focus_rom_formalize_department_education
+		prerequisite = { focus = rom_start_construction_university }
+		mutually_exclusive = {  }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_start_construction_university
+		
+		
+		cost = 7.2
+		
+		available = {
+		}
+		
+		completion_reward = {	
+			add_ideas = fpw_ROM_department_education	
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_education_budget
+		icon = GFX_focus_rom_education_budget
+		prerequisite = { focus = rom_formalize_department_education }
+		mutually_exclusive = {  }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_formalize_department_education
+		
+		
+		cost = 1.5
+		
+		available = {
+		}
+		
+		completion_reward = {	
+			country_event = fpw_romania.2	
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_high_spending
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_education_budget }
+		mutually_exclusive = { focus = rom_low_spending }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_education_budget
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_low_spending
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_education_budget }
+		mutually_exclusive = { focus = rom_high_spending }
+		
+		x = 1
+		y = 1
+		relative_position_id = rom_education_budget
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_mandatory_education
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_high_spending }
+		mutually_exclusive = { }
+		
+		x = 0 
+		y = 1
+		relative_position_id = rom_high_spending
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_optional_education
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_low_spending }
+		mutually_exclusive = { }
+		
+		x = 0 
+		y = 1
+		relative_position_id = rom_low_spending
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_major_staff_expansions
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_mandatory_education }
+		mutually_exclusive = { }
+		
+		x = 0 
+		y = 1
+		relative_position_id = rom_mandatory_education
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_minor_staff_expansions
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_optional_education }
+		mutually_exclusive = { }
+		
+		x = 0 
+		y = 1
+		relative_position_id = rom_optional_education
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_finish_education_reform
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_minor_staff_expansions
+		                 focus = rom_major_staff_expansions }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_minor_staff_expansions
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_open_labs
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_mandatory_education }
+		mutually_exclusive = { }
+		
+		x = -2
+		y = 1
+		relative_position_id = rom_mandatory_education
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_expand_labs
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_open_labs }
+		mutually_exclusive = { }
+		
+		x = -2
+		y = 2
+		relative_position_id = rom_mandatory_education
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_factory_education
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_optional_education 
+		                 focus = rom_end_industry_reform}
+		mutually_exclusive = { }
+		
+		x = 2
+		y = 1
+		relative_position_id = rom_optional_education
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_factory_profesional
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_factory_education }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_factory_education
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+		focus = {
+		id = rom_education_golden_age
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_factory_profesional
+		                 focus = rom_expand_labs }
+		mutually_exclusive = { }
+		
+		x = -3
+		y = 1
+		relative_position_id = rom_factory_profesional
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+	} 	############################## INDUSTRY PATH 1 ##############################
+
+		focus = {
+		id = rom_minister_of_labour
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_industrial_dreams }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_industrial_dreams
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_strict_work_shifts
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_minister_of_labour }
+		mutually_exclusive = { }
+		
+		x = -4
+		y = 1
+		relative_position_id = rom_minister_of_labour
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_industrial_standards_act
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_strict_work_shifts }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_strict_work_shifts
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_worker_safety_regulations
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_strict_work_shifts }
+		mutually_exclusive = { }
+		
+		x = 1
+		y = 1
+		relative_position_id = rom_strict_work_shifts
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_workplace_inspections
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_industrial_standards_act
+		                 focus = rom_worker_safety_regulations }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_industrial_standards_act
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_labor_union_recognition
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_industrial_standards_act
+		                 focus = rom_worker_safety_regulations }
+		mutually_exclusive = { }
+		
+		x = 2
+		y = 1
+		relative_position_id = rom_industrial_standards_act
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_end_industry_reform
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_labor_union_recognition
+		                 focus = rom_workplace_inspections }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_labor_union_recognition
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_invest_in_moldova
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_minister_of_labour }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_minister_of_labour
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_invest_in_wallachia
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_minister_of_labour }
+		mutually_exclusive = { }
+		
+		x = 1
+		y = 1
+		relative_position_id = rom_minister_of_labour
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_infrastructure_wallachia
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_invest_in_wallachia }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_invest_in_wallachia
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_infrastructure_moldova
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_invest_in_moldova }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_invest_in_moldova
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_factory_moldova
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_infrastructure_moldova }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_infrastructure_moldova
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_factory_wallachia
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_infrastructure_wallachia }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_infrastructure_wallachia
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_connect_the_railways
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_factory_wallachia
+		                 focus = rom_factory_moldova }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_factory_wallachia
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_national_building 
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_connect_the_railways }
+		prerequisite = { focus = rom_end_industry_reform }
+		mutually_exclusive = { }
+		
+		x = -2
+		y = 1
+		relative_position_id = rom_connect_the_railways
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_military_complex
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_industrial_dreams }
+		mutually_exclusive = { }
+		
+		x = 10
+		y = 1
+		relative_position_id = rom_industrial_dreams
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_military_fund
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_complex }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_military_complex
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}   ############################## OTTOMAN INDUSTRY PATH ##############################
+
+		focus = {
+		id = rom_ottoman_aid
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_minister_of_labour }
+		mutually_exclusive = { }
+		
+		x = 4
+		y = 1
+		relative_position_id = rom_minister_of_labour
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_ottoman_workforece
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_ottoman_aid }
+		mutually_exclusive = { }
+		
+		x = 1
+		y = 1
+		relative_position_id = rom_ottoman_aid
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_ottoman_machinery
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_ottoman_aid }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_ottoman_aid
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_ottoman_licences
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_ottoman_machinery }
+		prerequisite = { focus = rom_ottoman_workforece }
+		mutually_exclusive = { }
+		
+		x = 1
+		y = 1
+		relative_position_id = rom_ottoman_machinery
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}   ############################## MILLITARY INDUSTRY PATH ##############################
+	
+		focus = {
+		id = rom_military_factory_wallachia
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_fund }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_military_fund
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_military_factory_moldova
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_fund }
+		mutually_exclusive = { }
+		
+		x = 1
+		y = 1
+		relative_position_id = rom_military_fund
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_fortify_border_moldova
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_factory_moldova }
+		mutually_exclusive = { }
+		
+		x = 2
+		y = 1
+		relative_position_id = rom_military_factory_moldova
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_fortify_border_moldova_2
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_fortify_border_moldova }
+		mutually_exclusive = { }
+		
+		x = 2
+		y = 2
+		relative_position_id = rom_military_factory_moldova
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_fortify_border_wallachia
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_factory_wallachia }
+		mutually_exclusive = { }
+		
+		x = -2
+		y = 1
+		relative_position_id = rom_military_factory_wallachia
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_fortify_border_wallachia_2
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_fortify_border_wallachia }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_fortify_border_wallachia
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_military_factory_wallachia_2
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_factory_wallachia }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_military_factory_wallachia
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_military_factory_wallachia_3
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_factory_wallachia_2 }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_military_factory_wallachia_2
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_military_factory_moldova_2
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_factory_moldova }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_military_factory_moldova
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_military_factory_moldova_3
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_factory_moldova_2 }
+		mutually_exclusive = { }
+		
+		x = 0
+		y = 1
+		relative_position_id = rom_military_factory_moldova_2
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_expand_the_complex
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_military_factory_moldova_3
+		                 focus = rom_military_factory_wallachia_3 }
+		mutually_exclusive = { }
+		
+		x = -1
+		y = 1
+		relative_position_id = rom_military_factory_moldova_3
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+		focus = {
+		id = rom_industry_supper_power
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = rom_expand_the_complex
+		                 focus = rom_national_building  }
+		mutually_exclusive = { }
+		
+		x = -7
+		y = 2
+		relative_position_id = rom_military_factory_moldova_3
+		
+		
+		cost = 5
+		
+		available = {
+		}
+		
+		completion_reward = {		
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

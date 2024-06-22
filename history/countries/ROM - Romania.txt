@@ -1,17 +1,21 @@
 capital = 46
  oob = "ROM_1866"
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1863.12.20"
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
-	democratic = 60
-	neutrality = 18
+	neutrality = 39
+	democratic = 51
+	fascism = 8
 	communism = 2
-	fascism = 20
 }
+
+
 TUR = {
 	if = {
 		limit = {
@@ -63,9 +67,9 @@ if = {
 	}
 }
 
-set_research_slots = 3
-set_stability = 0.6
-set_war_support = 0.6
+set_research_slots = 1
+set_stability = 0.4
+set_war_support = 0.3
 
 recruit_character = ROM_alexandru
 
@@ -73,9 +77,17 @@ recruit_character = ROM_alexandru
 set_technology = {
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
-	fpw_cannon_artillery = 1
 	fpw_basic_train = 1
     tech_support = 1
+}
+
+add_ideas = {
+	fpw_ROM_divided_nation
+	fpw_ROM_ottoman_tribute
+	fpw_ROM_territorial_disputes
+	fpw_ROM_incompetent_army
+	fpw_ROM_weak_industry
+	fpw_ROM_national_illiteracy
 }
 
 if = {
@@ -107,7 +119,7 @@ if = {
 }
 }
 
-set_convoys = 10
+set_convoys = 3
 ### VARIANTS ###
 # 1936 Start #
 if = {
