@@ -1,0 +1,75 @@
+    add_namespace = fpw_romania
+
+	country_event = {
+		id = fpw_romania.1
+		title = fpw_romania.1.t
+		desc = fpw_romania.1.d
+		picture = fpw_romania_event_001.dds
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_romania.1.a
+			ai_chance = {
+				base = 10
+			}
+            add_stability = 0.01
+		}
+        option = {
+			name = fpw_romania.1.b
+			ai_chance = {
+				base = 0
+			}
+            end_puppet = TUR
+            declare_war_on = {
+             target = AUS
+             type = annex_everything
+            }
+            declare_war_on = {
+             target = TUR
+             type = annex_everything
+            }
+            declare_war_on = {
+             target = SOV
+             type = annex_everything
+            }
+            declare_war_on = {
+             target = SER
+             type = annex_everything
+            }
+            delete_unit = {}
+            add_manpower = -1000000
+		}
+	}
+
+	country_event = {
+		id = fpw_romania.2
+		title = fpw_romania.2.t
+		desc = fpw_romania.2.d
+		picture = fpw_romania_event_001.dds
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_romania.2.a
+			ai_chance = {
+				base = 5
+			}
+            complete_national_focus = rom_high_spending
+		}
+        option = {
+			name = fpw_romania.2.b
+			ai_chance = {
+				base = 5
+			}
+            complete_national_focus = rom_low_spending
+		}
+	}

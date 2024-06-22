@@ -1,7 +1,7 @@
 characters={
 
 	ROM_alexandru = {
-		name = "Alexandru Ioan Cuza"
+		name = ROM_ALEXANDRU_NAME
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ROM_alexandru
@@ -10,6 +10,7 @@ characters={
 
 		country_leader = {
 			ideology = conservative_constitutional_monarchism
+			desc = ROM_ALEXANDRU_DESC
 			expire = "1965.1.1.1"
 			id = -1
 		}
