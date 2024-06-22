@@ -16,8 +16,10 @@ state={
 			525 25
 		}
 		buildings = {
-			infrastructure = 3 #was: 7
-			industrial_complex = 1
+			infrastructure = 4 #was: 7
+			arms_factory = 1
+			industrial_complex = 2
+			fuel_silo = 1
 		}
 		add_core_of = SOV
 		add_core_of = UKR

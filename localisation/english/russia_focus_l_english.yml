@@ -2,8 +2,7 @@
 
 ## Russian Empire Branch
 
- SOV_state_of_the_empire: "State of the Empire"
- SOV_crush_polish_resistance_remnants: "Crush Polish Resistance Remnants"
+ SOV_chrush_polish_resistance_remnants: "Chrush Polish Resistance Remnants"
  SOV_russification_programs: "Russification Programs"
  SOV_undermine_national_identity: "Undermine National Identities"
  SOV_one_way_trip_to_siberia: "Deportations to Siberia"
@@ -21,17 +20,20 @@
  
 ## Politics Branch
  
- SOV_tsars_regime: "Tsars Regime"
  SOV_continue_reforms: "Continue Reforms"
  SOV_free_state_serfs: "Free State Serfs"
  SOV_modify_sr_ns_intro: "Modify §Y$SOV_serfdom_remnants_dynamic_modifier$§! by"
  SOV_free_state_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+10.0%§! \nMax Factories in a State: §G+10.00%§! \n\n"    
  SOV_administrative_reform: "Administrative Reform"
  SOV_judicial_system: "Judicial System"
+<<<<<<< HEAD
+ SOV_help_for_peasants: "Help for Peasants"
+=======
  SOV_tighten_tsars_control: "Tighten Tsars Control"
  SOV_the_tsar_knows_best: "The Tsar Knows Best"
  SOV_reformed_but_still_russia: "Reformed but Stil Russia"
- SOV_help_for_peasants: "Help for Peasants"
+ SOV_help_for_peasants: "Allow Peasant Ownership"
+>>>>>>> 8fd56c22e5650eefa7de805d577ec549eb8ae2d1
  SOV_help_for_peasants_effect_tt: "$SOV_modify_sr_ns_intro$ \nResource Gain Efficiency: §G+10.00%§! \nConsumer Goods Factories: §Y+5.0%§! \nProduction Efficiency Cap: §G+10.00%§! \n\n"
  
  
@@ -42,38 +44,12 @@
  SOV_new_agricultural_economy_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+5.0%§! \nProduction Efficiency Cap: §G+10.00%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§! \n\n"
  SOV_liberalize_the_press: "Liberalize the Press"
  SOV_first_russian_constitution: "First Russian Constitution"
- SOV_democratic_russian_empire: "Democratic Russian Empire"
  
- 
- SOV_plot_against_the_tsars: "Plot Against the Tsar"
- 
- 
- 
- ## Diplomacy Branch
+## Diplomacy Branch
  
  SOV_russian_diplomacy: "Russian Diplomacy"
- SOV_recovering_from_the_cimean_war: "Recovering From the Crimean War"
- SOV_look_to_balkans: "Look to Balkans"
- SOV_promote_balkan_independence: "Promote Balkan Independence"
  
- SOV_our_german_intrests: "Our German Intrests"
- SOV_remember_austrian_betrayal: "Remember Austrian Betrayal"
- SOV_our_prussian_friends: "Our Prussian Friends"
  
- SOV_asian_giant: "Asian Giant"
- SOV_sale_of_alaska: "Sale of Alaska"
  
- ## Economy Branch
- 
- SOV_russian_economy: "Russian Economy"
- SOV_infrastracture_investments: "Infrastracture Investments"
- SOV_infrastracture_in_ukraine: "Infrastracture in Ukraine"
- SOV_infrastracture_in_ukraine_tp: "§gUnlocks decisions to invest in §YInfrastracture§! in §GUkraine§!§!"
- SOV_infrastracture_in_baltic_belarus: "Infrastracture in Baltic-Belarus"
- SOV_infrastracture_in_baltic_belarus_tp: "§gUnlocks decisions to invest in §YInfrastracture§! in §GBaltics§! and §GBelarus§!§!"
- SOV_infrastracture_in_central_russia: "Infrastracture in Central Russia"
- SOV_infrastracture_in_central_russia_tp: "§gUnlocks decisions to invest in §YInfrastracture§! in §GCentral Russia§!§!"
- SOV_build_upon_the_new_infrastracture: "Build Upon the New Infrastracture"
- SOV_build_upon_the_new_infrastracture_tp: "§gAdds some §YCivilian Factories§! in every previously invested in region!§!"
  
  

@@ -8,7 +8,7 @@ fpw_SOV_losers_of_the_crimean_war = {
 SOV_serfdom_remnants_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 	
-	icon = GFX_idea_generic_agrarian_society
+	icon = GFX_idea_SOV_second_five_year_plan
 	
 	consumer_goods_factor = SOV_sr_consumer_goods_factor
 	global_building_slots_factor = SOV_sr_global_building_slots_factor

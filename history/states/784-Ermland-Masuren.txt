@@ -12,7 +12,8 @@ add_core_of = SOV
 			3320 3
 		}
 		buildings = {
-			infrastructure = 2 #was: 5
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
 		}
 		add_core_of = LIT
 	}

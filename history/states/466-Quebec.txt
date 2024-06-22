@@ -6,12 +6,7 @@ state={
 	}
 
 	history={
-		owner = REU
-		add_core_of = REU
-		1870.1.1 = {
-			owner = CAN
-			add_core_of = CAN
-		}
+		owner = CAN
 		buildings = {
 			infrastructure = 1
 			3691 = {
@@ -20,11 +15,12 @@ state={
 			}
 
 		}
+		add_core_of = CAN
 
 	}
 
 	provinces={
-		490 1712 3208 3691 6740 7364 7813 10176 12147 13162 13166 13181 13184 13186 13196 11902 3911 11682
+		490 1712 3208 3691 6740 7364 7813 10176 12147 13162 13166 13181 13184 13186 13196 
 	}
 	manpower=8860
 	buildings_max_level_factor=1.000

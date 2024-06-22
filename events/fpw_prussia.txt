@@ -1,38 +1,5 @@
 add_namespace = prussia_fpw
 
-#
-# Event Template
-#
-# an event like this will only be triggered by an effect #country_event = EVENT.NAME#
-#
-#country_event = {
-#	id = prussia_fpw.22
-#	title = prussia_fpw.22.t
-#	desc = prussia_fpw.22.d
-#	picture = GFX_report_event_generic_handshake
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = prussia_fpw.22.a
-#		
-#		
-#		
-#	}
-#
-#	option = {
-#		name = prussia_fpw.22.b
-#		
-#		
-#		
-#	}
-#}
-
-
-
-
-
-
 # Bismarcks ultimatum
 country_event = {
 	id = prussia_fpw.1
@@ -719,30 +686,3 @@ country_event = {
 		}
 	}
 }
-
-country_event = {
-	id = prussia_fpw.22
-	title = prussia_fpw.22.t
-	desc = prussia_fpw.22.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.22.a
-		
-		
-		
-	}
-
-	option = {
-		name = prussia_fpw.22.b
-		
-		
-		
-	}
-}
-
-
-
-

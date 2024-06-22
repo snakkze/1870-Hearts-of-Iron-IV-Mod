@@ -5,12 +5,8 @@ state={
 		5239 6728 7185 7782 9615 10585 10605 13182
 	}
 	history = {
-		owner = REU
-		add_core_of = REU
-		1870.1.1 = {
-			owner = CAN
-			add_core_of = CAN
-		}
+		owner = CAN
+		add_core_of = CAN
 	}
 	manpower=10000
 	state_category = pastoral

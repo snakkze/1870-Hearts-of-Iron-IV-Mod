@@ -174,31 +174,6 @@ if = {
 		freedom_level = 0.4
 	}
 	set_autonomy = {
-		target = NBR
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = BRC
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = NOV
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = PEI
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = REU
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
 		target = SAF
 		autonomous_state = autonomy_colony
 		freedom_level = 0.4
@@ -206,11 +181,6 @@ if = {
 	else = {
 		puppet = RAJ
 		puppet = CAN
-		puppet = NBR
-		puppet = BRC
-		puppet = NOV
-		puppet = PEI
-		puppet = REU
 		puppet = SAF
 	}
 }

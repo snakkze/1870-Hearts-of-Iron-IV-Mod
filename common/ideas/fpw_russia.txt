@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 
-		
+		# Brothers on the Front
 		fpw_SOV_new_agricultural_economy = {
 			allowed = {
 				tag = SOV
@@ -13,7 +13,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_agrarian_society
+			picture = SOV_second_five_year_plan
 
 			modifier = {
 				consumer_goods_factor = 0.40
@@ -26,6 +26,8 @@ ideas = {
 		}
 		
 		
+<<<<<<< HEAD
+=======
 		fpw_SOV_losers_of_the_crimean_war_1 = {
 			allowed = {
 				tag = SOV
@@ -136,6 +138,13 @@ ideas = {
 				war_support_factor = 0.1
 				political_power_factor = 0.05
 			}
-		}		
+		}
+		
+		
+>>>>>>> 8fd56c22e5650eefa7de805d577ec549eb8ae2d1
+		
+		
+		
+		
 	}
 }
