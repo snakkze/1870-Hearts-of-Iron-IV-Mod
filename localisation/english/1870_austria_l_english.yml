@@ -1,0 +1,88 @@
+﻿l_english:
+
+#focuses
+ AUS_allow_for_a_compromise:0 "Allow for a compromise"
+ AUS_continue_the_occupation:0 "Continue the occupation"
+
+
+#decisions
+ fpw_austro_hungarian_compromise:0 "The Austro-Hungarian Compromise"
+ fpw_austro_hungarian_compromise_desc:0 "After our recent defeats in Prussia and Italy, the Hungarians have once more made clear their desire for autonomy. This time, we must amend the mistakes of the past and allow for some measure of Hungarian freedom.\n\nWe can do this through a number of reforms, which will debuff Hungarian states to allow for political stability.\n\n§RWe must keep Hungarian Reform Approval above 50 for the reforms to succeed§!\n\nCurrent §CHungarian Reform Approval§!: §Y[?AUS.hungarian_approval]%§!"
+ AUS_hungarian_states:0 "Hungarian States affected by reform"
+ 
+#ideas
+ 
+ fpw_AUS_hungarian_seperatism:0 "Hungarian Seperatism"
+ fpw_AUS_hungarian_seperatism_desc:0 "Since the failed Hungarian revolution of 1848, irredentism in Hungary has steadily increased. Alongside tensions rising between other ethnic minorities within the empire, Hungarian seperatism will impact upon the stability of our empire. Either a compromise must be made, or our military must be ready to face another revolution..."
+ fpw_AUS_divided_military:0 "Divided Military"
+ fpw_AUS_divided_military_desc:0 "Although the Austrian army has domineered throughout the centuries, recent losses in Prussia have brought to light some of the weaknesses of the Austrian military.\n\nNamely the vaste amounts of minorities within the empire is causing strains upon our militaries effectiveness and organisations, compremises will need to be met to amend this."
+ fpw_AUS_stagnant_economy:0 "Stagnant Economy"
+ fpw_AUS_stagnant_economy_desc:0 "The industrialisation of Iron, Textiles and Coal allowed Austria to outproduce the other German states in the early 1800's, and experience a luxerious economic growth. Since then, however, a period of economic stagnation has occured, largely caused by military defeats against the Prussians and the loss of the resource-rich Silesian lands. The economy has thus ground to a halt, allowing the Prussians to overtake our productivity."
+ fpw_AUS_progressive_education:0 "Progressive Education"
+ fpw_AUS_progressive_education_desc:0 "Austrian Literacy became one of the highest in the Habsburg realm following education reforms which saw compulsory education for both boys and girls."
+ fpw_AUS_diverse_military:0 "Diverse Military"
+ fpw_AUS_diverse_military_desc:0 "Through the foundation of the common army, an army now exists that serves both Austrians and Hungarians.\nHowever, with the massive amount of ethnicities within the Austrian realm, it will be largely impossible to make amends for this."
+ 
+#events
+ 
+ fpw_austria.1.t:0 "Hungarians Demand Compromise!"
+ fpw_austria.1.d:0 "Following our recent defeat in Italy and Prussia, our economy is on the verge of collapse and our military is in shambles. The Hungarians have taken this opportunity to demand a compromise, lest we risk the flames of revolution to burn once more.."
+ fpw_austria.1.a:0 "We must begin negotiations.."
+ fpw_austria.1.b:0 "We will not yield!"
+ austria_1a_desc:0 "§GHistorical Option§!\n§YWe will enter a period of negotiations with the Hungarians, granting them rights and more autonomy at the expense of Austria§!"
+ austria_1b_desc:0 "§RNon-Historical Option§!\n§YThe Hungarians will stage revolts in various parts of Hungary, which we must quell to prevent a larger revolution...§!"
+ fpw_austria.2.t:0 "The question of parliament"
+ fpw_austria.2.d:0 "With the upcoming compromise, the Hungarian parliament has become more aggressive with their legislature, the question has now arisen whether the Hungarian Parliament will be free from Austria, or if it will exist beneath Austria."
+ fpw_austria.2.a:0 "We must allow for freedom"
+ fpw_austria.2.b:0 "Austrian law will reign supreme!"
+ austria_2a_desc:0 "§GHistorical Option§!\n§YThe Hungarian "Autonomous State" debuff will worsen, but Hungarian Reform Approval will slightly increase§!"
+ austria_2b_desc:0 "§RNon-Historical Option§!\n§YThe Hungarian Approval will worsen deeply§!"
+ fpw_austria.3.t:0 "The question of Judiciary"
+ fpw_austria.3.d:0 "The Hungarian Judiciary system has shown its protest for following Austrian legislature, and will soon begin following Hungarian Legislature over Austrian. Should we allow for Hungarian judges to follow Hungarian legislature, or will Austrian laws reign supreme?"
+ fpw_austria.3.a:0 "We must allow for freedom"
+ fpw_austria.3.b:0 "Austrian Judges will have the final say!"
+ austria_3a_desc:0 "§GHistorical Option§!\n§YThe Hungarian "Autonomous State" debuff will worsen, but Hungarian Reform Approval will slightly increase§!"
+ austria_3b_desc:0 "§RNon-Historical Option§!\n§YThe Hungarian Approval will worsen§!"
+ fpw_austria.4.t:0 "The Taxation question"
+ fpw_austria.4.d:0 "To allow for financial freedom from Austria, we must decide upon the Taxation laws of the new empire; Should an empire-wide taxation system take place, or should it be divided between the Hungarian and Austrian realms?"
+ fpw_austria.4.a:0 "We must allow for freedom"
+ fpw_austria.4.b:0 "Taxation is a joint matter!"
+ austria_4a_desc:0 "§GHistorical Option§!\n§YThe Hungarian "Autonomous State" debuff will worsen, but Hungarian Reform Approval will slightly increase§!"
+ austria_4b_desc:0 "§RNon-Historical Option§!\n§YThe Hungarian Approval will somewhat worsen§!"
+ fpw_austria.5.t:0 "The Territory Debate"
+ fpw_austria.5.d:0 "The final debate that must take place before we ratify the Augsleich, is that of the lands that Hungary will administer under their new freedom. Should they be limited to the core Hungarian lands, should they be allowed to administer Transylvania, or should they be free to administer their natural borders?"
+ fpw_austria.5.a:0 "Natural borders are most appropriate"
+ fpw_austria.5.b:0 "They should be limited to Transylvania"
+ fpw_austria.5.c:0 "Only core Hungarian Lands!"
+ austria_5a_desc:0 "§GHistorical Option§!\n§YThe Hungarian "Autonomous State" debuff will worsen, but Hungarian Reform Approval will slightly increase§!"
+ austria_5b_desc:0 "§RNon-Historical Option§!\n§YThe Hungarian Approval will deeply worsen§!"
+ austria_5c_desc:0 "§RNon-Historical Option§!\n§YThe Hungarian Approval will §Rirreversibly§! worsen§!"
+ fpw_austria.6.t:0 "Hungary approves of reforms!"
+ fpw_austria.6.d:0 "Hungary has approved of the reforms present in the Austro-Hungarian compromise, allowing us to ratify the terms!"
+ fpw_austria.6.a:0 "We are entering a new age of peace!"
+ fpw_austria.7.t:0 "Augsleich is ratified!"
+ fpw_austria.7.d:0 "following extrenuous negotations with the Hungarian representatives, and compromise has finally been made. Hungary will gain much autonomy, and the Austrian Empire will reform into the dual monarchy of Austria-Hungary. This compromise will be renewed every 10 years"
+ fpw_austria.7.a:0 "Long live the Empire!"
+ 
+#custom cost texts 
+ 
+ 
+#custom effect tooltips
+ 
+
+ 
+ 
+#custom modifier tooltips
+
+#scripted gui text
+ AUS_hungarians_name_text:0 "Hungarians"
+ AUS_croats_name_text:0 "Croats"
+ AUS_slovak_name_text:0 "Slovaks"
+ AUS_czech_name_text:0 "Czechs"
+
+#leaders
+
+#opinion modifiers
+
+
+ #cosmetic nation/ideology names
