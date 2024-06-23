@@ -2,8 +2,22 @@
 
 #focuses
  AUS_allow_for_a_compromise:0 "Allow for a compromise"
+ AUS_allow_for_a_compromise_desc:0 ""
  AUS_continue_the_occupation:0 "Continue the occupation"
-
+ AUS_continue_the_occupation_desc:0 ""
+ # Green Tree - WIP #
+ AUS_prep_looming_conflict:0 "Preparing for Looming Conflict"
+ AUS_prep_looming_conflict_desc:0 "A conflict with Prussia is coming soon enough, a war that if we underestimate can shift the influence of the Victor towards the German states. Have the whole army on top shape for the foreseeable conflict."
+ AUS_mobilise_army:0 "Mobilizing the Army"
+ AUS_mobilise_army_desc:0 "Citing war traditions of our military history, we will gather the experienced and tough as nails men for our army. These divisions have been raised and trained to the peak of efficiency and will stand ready to meet the conditions of warfare with capability and courage."
+ AUS_reserves:0 "Activating the Reservers"
+ AUS_reserves_desc:0 "As the veteran divisions gear up, the next thing is to summon our reserve forces for action. These reserves of fully prepared men shall be very useful should they be called upon to fill up the ranks for the upcoming battle against the Prussians. By activating these reserves, we are making an action to build the strength and defense of the Austro-Hungarian Empire."
+ AUS_scholstein_question:0 "The Schleswig-Holstein Question"
+ AUS_scholstein_question_desc:0 "The Schleswig-Holstein Question is one of the most elusive issues in European politics as both Austria-Hungary and Prussia have the rights over these two strategic duchies. Settling this matter is important in order to ensure that there is not much turbulence in the region as well as unnecessary violence. Will we grant Schleswig-Holstein its independence, or place it under the rule of Prussia?"
+ AUS_brothers_war:0 "Brothers at War"
+ AUS_brothers_war_desc:0 "Diplomacy has not worked and this has culminated into a hatred between the two states and particularly Prussia. War is now inevitable. European nations should get ready for the upcoming war to protect the interests of our countries and to become the leaders in Central Europe."
+ AUS_stop_prussia:0 "Stop Prussian Expansion"
+ AUS_stop_prussia_desc:0 "As witnessed, the influence of Prussia continues to rise and thus Austria-Hungary needs to act appropriately to ensure they don’t continue with their expansionist tendencies."
 
 #decisions
  fpw_austro_hungarian_compromise:0 "The Austro-Hungarian Compromise"
@@ -11,7 +25,6 @@
  AUS_hungarian_states:0 "Hungarian States affected by reform"
  
 #ideas
- 
  fpw_AUS_hungarian_seperatism:0 "Hungarian Seperatism"
  fpw_AUS_hungarian_seperatism_desc:0 "Since the failed Hungarian revolution of 1848, irredentism in Hungary has steadily increased. Alongside tensions rising between other ethnic minorities within the empire, Hungarian seperatism will impact upon the stability of our empire. Either a compromise must be made, or our military must be ready to face another revolution..."
  fpw_AUS_divided_military:0 "Divided Military"
@@ -24,7 +37,6 @@
  fpw_AUS_diverse_military_desc:0 "Through the foundation of the common army, an army now exists that serves both Austrians and Hungarians.\nHowever, with the massive amount of ethnicities within the Austrian realm, it will be largely impossible to make amends for this."
  
 #events
- 
  fpw_austria.1.t:0 "Hungarians Demand Compromise!"
  fpw_austria.1.d:0 "Following our recent defeat in Italy and Prussia, our economy is on the verge of collapse and our military is in shambles. The Hungarians have taken this opportunity to demand a compromise, lest we risk the flames of revolution to burn once more.."
  fpw_austria.1.a:0 "We must begin negotiations.."
@@ -69,9 +81,6 @@
  
 #custom effect tooltips
  
-
- 
- 
 #custom modifier tooltips
 
 #scripted gui text
@@ -83,6 +92,4 @@
 #leaders
 
 #opinion modifiers
-
-
  #cosmetic nation/ideology names
