@@ -1419,7 +1419,12 @@ focus_tree = {
 		cost = 1
 
 		ai_will_do = {
-			factor = 10
+			base = 100
+			modifier = {
+				ITA = { NOT = { is_in_faction_with = AUS } }
+				factor = 0
+			}
+
 		}
 
 		available = {
