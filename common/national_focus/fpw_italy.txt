@@ -698,6 +698,9 @@ focus_tree = {
 		relative_position_id = ITA_expansionism
 		cost = 5
 
+		will_lead_to_war_with = PAP
+		will_lead_to_war_with = FRA
+
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
 		ai_will_do = {
@@ -735,7 +738,7 @@ focus_tree = {
 		cost = 5
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
-
+		
 		completion_reward = {
 			add_state_claim = 804
 			add_state_claim = 105
@@ -990,7 +993,8 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_n_ott
 				TUR = {
-					NOT = { has_cosmetic_tag = TUR_ottoman_empire }
+					exists = no
+					NOT = { owns_state = 797 }
 				}
 			}
 		}
@@ -1300,6 +1304,14 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
+		ai_will_do = {
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
 		completion_reward = {
 			add_state_claim = 458
 			add_state_claim = 665
@@ -1409,6 +1421,14 @@ focus_tree = {
 		cost = 5
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
 
 		completion_reward = {
 			create_wargoal = {
@@ -2076,6 +2096,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -2093,6 +2120,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -2110,6 +2144,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -2127,6 +2162,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -2145,6 +2187,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -2163,6 +2211,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
 		}
 	}
 }

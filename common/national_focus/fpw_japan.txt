@@ -32,7 +32,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		ai_will_do = {
-			factor = 3
+			factor = 30
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -85,7 +85,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 3
+			factor = 30
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -116,7 +116,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 3
+			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -135,14 +135,13 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 3
+			factor = 30
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-		add_timed_idea = {
-			idea = jap_sonno_joi
-			days = 365
+		add_ideas = {
+		jap_sonno_joi
 		}
 		}
 	}
@@ -158,7 +157,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 3
+			factor = 20
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -228,19 +227,18 @@ focus_tree = {
             ruling_party = fascism #Player becomes that
             ideology = ROOT
             size = 0.8
-            army_ratio = 0.2
-            navy_ratio = 0.2
-            air_ratio = 0.2
+            army_ratio = 0.45
+            navy_ratio = 0.45
+            air_ratio = 0.45
             states = { 532 533 534 535 537 555 282 536 }  # States controlled by the Tokugawa faction
             keep_unit_leaders = {  }
             keep_political_leader = yes
             keep_political_party_members = yes
         }
-		hidden_effect = {
-		add_timed_idea = {
-		idea = jap_civil_war
-		days = 720
+		remove_ideas = {
+		jap_sonno_joi
 		}
+		hidden_effect = {
 		add_stability = 0.3
 		set_country_leader_name = {
 
@@ -254,7 +252,12 @@ focus_tree = {
 		
 		every_country_with_original_tag = {
 		original_tag_to_check = JAP 
-		remove_ideas = jap_high_imperial_resistance
+		remove_ideas = {
+		jap_high_imperial_resistance
+		}
+		add_dynamic_modifier = { 
+		modifier = fpw_JAP_isolated 
+		}
         IF = { 
 		limit = { Has_government = neutrality }
 		create_country_leader = {
@@ -264,10 +267,6 @@ focus_tree = {
 		expire = "1965.1.1"
 		ideology = jap_tokugawa
 		traits = { }
-		}
-		add_timed_idea = {
-		idea = jap_civil_warb
-		days = 720
 		}
 		}
 		}
@@ -296,7 +295,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_war = no
+			has_civil_war = no
 		}
 
 		ai_will_do = {
@@ -355,7 +354,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_war = no
+			has_civil_war = no
 		}
 
 		ai_will_do = {
@@ -408,7 +407,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		swap_ideas = { 
+			remove_idea = jap_agrarian_society
+			add_idea = jap_transitional_agricultural_society
+		}
 		}
 	}
 	
@@ -506,7 +508,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		swap_ideas = { 
+			remove_idea = jap_transitional_agricultural_society
+			add_idea = jap_industrializing_society
+		}
 		}
 	}
 
@@ -689,7 +694,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_war = no
+			has_civil_war = no
 		}
 
 		ai_will_do = {
@@ -1463,7 +1468,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		x = 31
 		y = 0
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
@@ -1479,25 +1484,7 @@ focus_tree = {
 		}
 	
 		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-	
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}				
-			}
+			factor = 20
 		}
 	}
 	
@@ -1517,31 +1504,31 @@ focus_tree = {
 	
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
-	
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 2
+						size < 1
 						include_locked = yes
 					}					
 				}
 			}
 		}
-	
+
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}			
 		}
-	
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1566,10 +1553,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1591,7 +1578,7 @@ focus_tree = {
 	
 	
 		ai_will_do = {
-			factor = 2			
+			factor = 20		
 		}
 	
 		bypass = {
@@ -1600,22 +1587,22 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 2
+						size < 1
 						include_locked = yes
 					}
 				}
 			}
 		}
-	
+
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
-	
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1640,10 +1627,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1665,31 +1652,31 @@ focus_tree = {
 	
 	
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 	
-		bypass = {
+			bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 2
+						size < 1
 						include_locked = yes
-					}
+					}					
 				}
 			}
 		}
-	
+
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
-			}
-		}		
-	
+			}			
+		}
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1714,10 +1701,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1739,7 +1726,7 @@ focus_tree = {
 	
 	
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 	
 		bypass = {
@@ -1754,16 +1741,16 @@ focus_tree = {
 				}
 			}
 		}
-	
+
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
-		}		
-	
+		}
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1788,10 +1775,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1909,7 +1896,7 @@ focus_tree = {
 	
 	
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 	
 		bypass = {
@@ -1918,22 +1905,22 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 4
+						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
-	
+
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 4
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 4
+				level = 2
 				instant_build = yes
 			}
-		}		
-	
+		}
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1958,10 +1945,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2082,34 +2069,34 @@ focus_tree = {
 			factor = 2
 		}
 	
-		bypass = {
+			bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 2
+						size < 1
 						include_locked = yes
-					}
+					}					
 				}
 			}
 		}
-	
+
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-			}
+			}			
 		}
-	
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 0
 						include_locked = yes
 					}
 					OR = {
@@ -2119,7 +2106,7 @@ focus_tree = {
 								any_owned_state = {
 									free_building_slots = {
 										building = industrial_complex
-										size > 1
+										size > 0
 										include_locked = yes
 									}
 									is_in_home_area = yes

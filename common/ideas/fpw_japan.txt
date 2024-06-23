@@ -93,56 +93,70 @@ ideas = {
 			picture = FIN_finnish_federation_of_trade_unions
 
 			modifier = {
-				recruitable_population_factor = -0.3
-				weekly_manpower = -1000
+				conscription_factor = -0.3
+				weekly_manpower = -500
 				consumer_goods_factor = 0.2
 				stability_weekly = -0.002
 				neutrality_drift = -0.05
 			}
 		}
-
-		jap_civil_war = {
+		
+		jap_agrarian_society = {
+				
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
+			picture = generic_agrarian_society
+				
 			removal_cost = -1
-
-			picture = GFX_
-
+				
 			modifier = {
-			army_speed_factor = -0.5
-			breakthrough_factor = 0.4
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.30
+				conscription_factor = -0.45
 			}
 		}
 		
-		jap_civil_warb = {
+		jap_transitional_agricultural_society = {
+				
 			allowed = {
 				always = no
 			}
 
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
+			picture = generic_agrarian_society
+				
 			removal_cost = -1
-
-			picture = GFX_
-
+				
 			modifier = {
-			army_speed_factor = -0.5
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.15
+				conscription_factor = -0.15
 			}
 		}
+		
+		jap_industrializing_society	= {
+				
+			allowed = {
+				always = no
+			}
 
-
-
-
-
-
+			picture = man_five_year_plan_industry
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				political_power_factor = -0.1
+				conscription_factor = -0.07	
+			}
+		}
 
 
 }
