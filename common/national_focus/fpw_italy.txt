@@ -993,7 +993,6 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_n_ott
 				TUR = {
-					exists = no
 					NOT = { owns_state = 797 }
 				}
 			}
