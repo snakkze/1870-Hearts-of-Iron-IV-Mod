@@ -336,7 +336,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 
 		completion_reward = {
@@ -350,7 +350,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = -4
+		x = -5
 		y = 1
 		cost = 10
 		available = {
@@ -459,11 +459,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_expand_railway_system
-		icon = GFX_goal_generic_construct_infrastructure
+		id = JAP_government_directed_rail_development
+		icon = GFX_focus_generic_railroad
 		prerequisite = { focus = JAP_establish_national_infrastructure }
 		relative_position_id = JAP_establish_national_infrastructure
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 
@@ -474,10 +474,30 @@ focus_tree = {
 		completion_reward = {
 
 		}
+		mutually_exclusive = { focus = JAP_privatize_rail_expansion }
 	}
 	
 	focus = {
-		id = JAP_reform_the_financial_system
+		id = JAP_privatize_rail_expansion
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = JAP_establish_national_infrastructure }
+		relative_position_id = JAP_establish_national_infrastructure
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+
+		}
+		mutually_exclusive = { focus = JAP_government_directed_rail_development }
+	}
+	
+	focus = {
+		id = JAP_modernize_currency_system
 		icon = GFX_
 		prerequisite = { focus = JAP_lay_foundations_for_industrialization }
 		relative_position_id = JAP_lay_foundations_for_industrialization
@@ -492,14 +512,34 @@ focus_tree = {
 		completion_reward = {
 
 		}
+		mutually_exclusive = { focus = JAP_preserve_traditional_currency }
+	}
+	
+	focus = {
+		id = JAP_preserve_traditional_currency
+		icon = GFX_
+		prerequisite = { focus = JAP_lay_foundations_for_industrialization }
+		relative_position_id = JAP_lay_foundations_for_industrialization
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+		mutually_exclusive = { focus = JAP_modernize_currency_system }
 	}
 	
 	focus = {
 		id = JAP_modernize_agriculture_and_taxation
 		icon = GFX_
-		prerequisite = { focus = JAP_reform_the_financial_system }
-		relative_position_id = JAP_reform_the_financial_system
-		x = 0
+		prerequisite = { focus = JAP_modernize_currency_system focus = JAP_preserve_traditional_currency }
+		relative_position_id = JAP_modernize_currency_system
+		x = 1
 		y = 1
 		cost = 10
 
@@ -520,7 +560,7 @@ focus_tree = {
 		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = JAP_centralize_authority }
 		relative_position_id = JAP_centralize_authority
-		x = -3
+		x = -4
 		y = 1
 		cost = 10
 
@@ -628,8 +668,8 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = JAP_centralize_authority }
 		relative_position_id = JAP_centralize_authority
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -642,12 +682,57 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_colonize_the_northern_frontier
+		id = JAP_redistribute_land_to_peasants
 		icon = GFX_
 		prerequisite = { focus = JAP_strengthen_local_administrations }
 		relative_position_id = JAP_strengthen_local_administrations
-		x = 0
+		x = -1
 		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+
+
+		
+		mutually_exclusive = { focus = JAP_support_large_landholdings }
+		
+	}
+	
+	focus = {
+		id = JAP_support_large_landholdings
+		icon = GFX_
+		prerequisite = { focus = JAP_strengthen_local_administrations }
+		relative_position_id = JAP_strengthen_local_administrations
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+
+		}
+
+
+		
+		mutually_exclusive = { focus = JAP_redistribute_land_to_peasants }
+		
+	}
+	
+	focus = {
+		id = JAP_colonize_the_northern_frontier
+		icon = GFX_
+		prerequisite = { focus = JAP_redistribute_land_to_peasants focus = JAP_support_large_landholdings }
+		relative_position_id = JAP_strengthen_local_administrations
+		x = 0
+		y = 2
 		cost = 10
 
 		ai_will_do = {
@@ -690,7 +775,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = 4
+		x = 6
 		y = 1
 		cost = 10
 		available = {
@@ -706,23 +791,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = JAP_launch_the_iwakura_mission
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = JAP_renegotiate_unequal_treaties }
-		relative_position_id = JAP_renegotiate_unequal_treaties
-		x = 2
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-		}
-	}
 
 	
 	
@@ -733,7 +801,7 @@ focus_tree = {
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		prerequisite = { focus = JAP_renegotiate_unequal_treaties }
 		relative_position_id = JAP_renegotiate_unequal_treaties
-		x = 0
+		x = -2
 		y = 1
 		cost = 10
 
@@ -755,30 +823,30 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_seek_international_allies
+		id = JAP_launch_the_iwakura_mission
 		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = JAP_launch_the_iwakura_mission }
 		prerequisite = { focus = JAP_open_the_nation }
-		relative_position_id = JAP_launch_the_iwakura_mission
-		x = 0
+		relative_position_id = JAP_open_the_nation
+		x = -1
 		y = 1
 		cost = 10
 
 		ai_will_do = {
-			factor = 0
+			factor = 2
 		}
-
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 
 		}
 	}
-	
+		
 	focus = {
-		id = JAP_promote_western_education
-		icon = GFX_focus_generic_university_1
+		id = JAP_forge_global_partnerships
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = JAP_launch_the_iwakura_mission }
 		prerequisite = { focus = JAP_open_the_nation }
-		relative_position_id = JAP_open_the_nation
-		x = -2
+		relative_position_id = JAP_launch_the_iwakura_mission
+		x = 1
 		y = 1
 		cost = 10
 
@@ -792,11 +860,106 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = JAP_commission_western_warships
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = { focus = JAP_forge_global_partnerships }
+		relative_position_id = JAP_forge_global_partnerships
+		x = -1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_engage_foreign_industrial_advisors
+		icon = GFX_focus_generic_industrialists
+		prerequisite = { focus = JAP_forge_global_partnerships }
+		relative_position_id = JAP_forge_global_partnerships
+		x = 1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_liberalize_trade_policy
+		icon = GFX_
+		prerequisite = { focus = JAP_open_the_nation }
+		relative_position_id = JAP_open_the_nation
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+		mutually_exclusive = { focus = JAP_implement_trade_tariffs }
+	}
+	
+	focus = {
+		id = JAP_implement_trade_tariffs
+		icon = GFX_
+		prerequisite = { focus = JAP_open_the_nation }
+		relative_position_id = JAP_open_the_nation
+		x = 5
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+		mutually_exclusive = { focus = JAP_liberalize_trade_policy }
+	}
+	
+	focus = {
+		id = JAP_promote_western_education
+		icon = GFX_focus_generic_university_1
+		prerequisite = { focus = JAP_open_the_nation }
+		relative_position_id = JAP_open_the_nation
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+		mutually_exclusive = { focus = JAP_strengthen_classical_education }
+	}
+	
+
+	
+	focus = {
 		id = JAP_establish_public_health_systems
 		icon = GFX_
 		prerequisite = { focus = JAP_promote_western_education }
 		relative_position_id = JAP_promote_western_education
-		x = 2
+		x = -1
 		y = 1
 		cost = 10
 
@@ -814,8 +977,8 @@ focus_tree = {
 		icon = GFX_focus_generic_court
 		prerequisite = { focus = JAP_promote_western_education }
 		relative_position_id = JAP_promote_western_education
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -846,24 +1009,7 @@ focus_tree = {
 	
 	
   
-	focus = {
-		id = JAP_next_steps
-		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = JAP_adopt_western_legal_codes }
-		prerequisite = { focus = JAP_establish_the_kaitakushi }
-		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = 2
-		y = 7
-		cost = 10
 
-		ai_will_do = {
-			factor = 3
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-	#add idea Sonnō jōi Ehret den Kaiser, vertreibt die Barbaren!
-		}
-	}
   
 	
   
@@ -920,7 +1066,7 @@ focus_tree = {
   focus = {
 		id = JAP_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 36
+		x = 45
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1062,7 +1208,7 @@ focus_tree = {
 	focus = {
 		id = JAP_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 41
+		x = 50
 		y = 0
 		cost = 10
 
@@ -1466,7 +1612,7 @@ focus_tree = {
 	focus = {
 		id = JAP_industrial_effort
 		icon = GFX_focus_generic_industry_2
-		x = 31
+		x = 40
 		y = 0
 		cost = 5
 	
