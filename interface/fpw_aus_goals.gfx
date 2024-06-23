@@ -23,4 +23,28 @@ spriteTypes = {
 		name = "GFX_seperate_taxations"
 		texturefile = "gfx/interface/goals/seperate_taxations.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_AUS_conflict"
+		texturefile = "gfx/interface/goals/focus_AUS_conflict.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_mobilise_army"
+		texturefile = "gfx/interface/goals/focus_AUS_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_reserves"
+		texturefile = "gfx/interface/goals/focus_AUS_reserves.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_scholstein_question"
+		texturefile = "gfx/interface/goals/focus_AUS_question.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_brothers_war"
+		texturefile = "gfx/interface/goals/focus_AUS_brother_war.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_stop_prussia"
+		texturefile = "gfx/interface/goals/focus_AUS_stop_prussia.dds"
+	}
 }
