@@ -252,7 +252,12 @@ focus_tree = {
 		
 		every_country_with_original_tag = {
 		original_tag_to_check = JAP 
-		remove_ideas = jap_high_imperial_resistance
+		remove_ideas = {
+		jap_high_imperial_resistance
+		}
+		add_dynamic_modifier = { 
+		modifier = fpw_JAP_isolated 
+		}
         IF = { 
 		limit = { Has_government = neutrality }
 		create_country_leader = {
@@ -290,7 +295,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_war = no
+			has_civil_war = no
 		}
 
 		ai_will_do = {
@@ -349,7 +354,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_war = no
+			has_civil_war = no
 		}
 
 		ai_will_do = {
@@ -402,7 +407,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		swap_ideas = { 
+			remove_idea = jap_agrarian_society
+			add_idea = jap_transitional_agricultural_society
+		}
 		}
 	}
 	
@@ -500,7 +508,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		swap_ideas = { 
+			remove_idea = jap_transitional_agricultural_society
+			add_idea = jap_industrializing_society
+		}
 		}
 	}
 
@@ -683,7 +694,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_war = no
+			has_civil_war = no
 		}
 
 		ai_will_do = {
@@ -2072,10 +2083,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}			
 		}
@@ -2104,10 +2115,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
