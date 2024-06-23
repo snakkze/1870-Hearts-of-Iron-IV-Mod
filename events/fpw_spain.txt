@@ -16,12 +16,26 @@ country_event = {
 			set_global_flag = fpw_spanish_glorious_revolution
 
 			set_capital = { state = 169 }
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = neutrality
-				size = 0.4
-				capital = 41
-				states = { 41 793 170 168 175 789 173}
+			if = {
+				limit = {
+					SPR = { is_ai = yes }
+				}
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = neutrality
+					size = 0
+					capital = 41
+					states = { 41 793 170 168 175 789 173}
+				}
+			}
+			else = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = neutrality
+					size = 0.5
+					capital = 41
+					states = { 41 793 170 168 175 789 173}
+				}
 			}
 			#set_party_name = { ideology = neutrality long_name = GER_neutrality_party_civil_war name = GER_neutrality_party_civil_war }
 			#load_oob = "GER_German_Civil_War_neutrality"

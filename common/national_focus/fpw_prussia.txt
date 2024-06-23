@@ -1284,6 +1284,56 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = PRS_weltpolitik
+		icon = picture
+		prerequisite = { focus = PRS_heil_dir_im_siegerkranz }
+		relative_position_id = PRS_heil_dir_im_siegerkranz
+		x = -3
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_kolonialamt_asien
+		icon = picture
+		prerequisite = { focus = PRS_weltpolitik }
+		relative_position_id = PRS_weltpolitik
+		x = -3
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
 	#focus = {
 	#	id = PRS_find_a_peaceful_solution
 	#	icon = GFX_goal_unknown

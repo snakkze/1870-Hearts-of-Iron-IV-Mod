@@ -993,7 +993,9 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_n_ott
 				TUR = {
-					NOT = { owns_state = 797 }
+					NOT = {
+						has_cosmetic_tag = TUR_ottoman_empire
+					}
 				}
 			}
 		}
