@@ -86,10 +86,15 @@ ideas = {
 					}
 				}
 				ELSE = {
-					OR = {
+				  IF = {
+					limit = {
+						original_tag = JAP
+					}
+					AND = {
 						has_war_support > 0.75
 						has_war = yes
 					}
+				}	
 				}
 			}
 

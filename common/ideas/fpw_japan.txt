@@ -101,49 +101,6 @@ ideas = {
 			}
 		}
 
-		jap_civil_war = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = GFX_
-
-			modifier = {
-			army_speed_factor = -0.5
-			breakthrough_factor = 0.4
-			}
-		}
-		
-		jap_civil_warb = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = GFX_
-
-			modifier = {
-			army_speed_factor = -0.5
-			}
-		}
-
-
-
-
-
-
-
 
 }
 }
