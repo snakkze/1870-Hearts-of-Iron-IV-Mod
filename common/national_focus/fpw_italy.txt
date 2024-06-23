@@ -990,7 +990,8 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_n_ott
 				TUR = {
-					NOT = { has_cosmetic_tag = TUR_ottoman_empire }
+					exists = yes
+					owns_state = 797
 				}
 			}
 		}
@@ -2076,6 +2077,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -2093,6 +2101,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -2110,6 +2125,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -2127,6 +2143,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -2145,6 +2168,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -2163,6 +2192,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
 		}
 	}
 }
