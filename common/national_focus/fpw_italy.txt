@@ -436,7 +436,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 10
 			modifier = {
-				is_ai = yes
+				is_historical_focus_on = yes
 				factor = 0
 			}
 		}
@@ -1097,7 +1097,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ITA_attack_istanbul }
 		available = {
-			owns_state = 342
+			is_neighbor_of = TUR
 		}
 		x = 1
 		y = 1

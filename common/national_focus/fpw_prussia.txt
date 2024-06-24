@@ -1285,11 +1285,113 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PRS_second_european_concert
+		icon = picture
+		prerequisite = { focus = PRS_heil_dir_im_siegerkranz }
+		relative_position_id = PRS_heil_dir_im_siegerkranz
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_league_of_three_emperors
+		icon = picture
+		prerequisite = { focus = PRS_second_european_concert }
+		mutually_exclusive = { focus = PRS_italo_austrian_reapprochement }
+		relative_position_id = PRS_second_european_concert
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_italo_austrian_reapprochement
+		icon = picture
+		prerequisite = { focus = PRS_second_european_concert }
+		mutually_exclusive = { focus = PRS_league_of_three_emperors }
+		relative_position_id = PRS_second_european_concert
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_tripple_alliance
+		icon = picture
+		prerequisite = { focus = PRS_italo_austrian_reapprochement }
+		relative_position_id = PRS_italo_austrian_reapprochement
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
 		id = PRS_weltpolitik
 		icon = picture
 		prerequisite = { focus = PRS_heil_dir_im_siegerkranz }
 		relative_position_id = PRS_heil_dir_im_siegerkranz
-		x = -3
+		x = -4
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1314,7 +1416,159 @@ focus_tree = {
 		icon = picture
 		prerequisite = { focus = PRS_weltpolitik }
 		relative_position_id = PRS_weltpolitik
-		x = -3
+		x = -4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_tsingdao_incedent
+		icon = picture
+		prerequisite = { focus = PRS_kolonialamt_asien }
+		relative_position_id = PRS_kolonialamt_asien
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_approach_spain
+		icon = picture
+		prerequisite = { focus = PRS_kolonialamt_asien }
+		relative_position_id = PRS_kolonialamt_asien
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_new_guinea_expedition
+		icon = GFX_focus_por_luso_tropicalism
+		prerequisite = { focus = PRS_kolonialamt_asien }
+		prerequisite = { focus = PRS_increase_colonial_funding }
+		relative_position_id = PRS_kolonialamt_asien
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_luederitz_expedition
+		icon = picture
+		prerequisite = { focus = PRS_weltpolitik }
+		relative_position_id = PRS_weltpolitik
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_increase_colonial_funding
+		icon = picture
+		prerequisite = { focus = PRS_weltpolitik }
+		relative_position_id = PRS_weltpolitik
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = PRS_berlin_confrence
+		icon = picture
+		prerequisite = { focus = PRS_increase_colonial_funding }
+		prerequisite = { focus = PRS_luederitz_expedition }
+		relative_position_id = PRS_increase_colonial_funding
+		x = 2
 		y = 1
 		cost = 5
 		ai_will_do = {
