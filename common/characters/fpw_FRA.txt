@@ -41,4 +41,211 @@ characters={
 			id=-1
 		}
 	}
+
+	FRA_Patrice_de_MacMahon = {
+		name = "Patrice de Mac Mahon"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Patrice_de_Mac_Mahon.png"
+		}
+		}
+		
+		field_marshal = {
+		traits = {  }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+		}
+		}
+		
+		FRA_François_Achille_Bazaine = {
+		name = "François Achille Bazaine"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Francois_Achille_Bazaine.png"
+		}
+		}
+		
+		field_marshal = {
+		traits = {  }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+		}
+		}
+		
+		FRA_marie_edme_patrice_de_mac_mahon_comte_de_magenta = {
+		name = "Adolphe Niel"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Adolphe_Niel.png"
+		}
+		}
+		
+		field_marshal = {
+		traits = {  }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+		}
+		}
+		
+		FRA_elisse_louis_camaron = {
+		name = "Elisée Louis Camarón"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Elisée_Louis_Camarón.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_Charles_Denis_Bourbaki = {
+		name = "Charles Denis Bourbaki"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Charles_Denis_Bourbaki.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_emile_mellinet = {
+		name = "Émile Mellinet"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Emile_Mellinet.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_jacques_louis_cesar_latour_maubourg = {
+		name = "Jacques Louis César Latour Maubourg"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Jacques_Louis_Cesar_Latour_Maubourg.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_Michel_Arnaud = {
+		name = "Michel Arnaud"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Michel_Arnaud.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_Jean_Isidore_Hariscoth = {
+		name = "Jean Isidore Hariscoth"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Jean_Isidore_Hariscoth.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_Louis_Jules_Trochu = {
+		name = "Louis Jules Trochu"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Louis_Jules_Trochu.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_Pierre_Dominique_Bazaine = {
+		name = "Pierre Dominique Bazaine"
+		portraits = {
+		army = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Pierre_Dominique_Bazaine.png"
+		}
+		}
+		
+		corps_commander = {
+		traits = {  }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 1
+		}
+		}
+		
+		FRA_Abraham_Duquesne = {
+		name = "Abraham Duquesne"
+		portraits = {
+		navy = {
+		large = "gfx/leaders/FRA/Portrait_FRA_Abraham_Duquesne.png"
+		}
+		}
+	}
 }

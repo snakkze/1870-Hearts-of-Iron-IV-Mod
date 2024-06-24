@@ -89,29 +89,11 @@ spriteTypes = {
 		name = "GFX_idea_national_illiteracy"
 		texturefile = "gfx\interface\ideas\national_illiteracy.dds"
 	}
-
-	SpriteType = {
-		name = "GFX_idea_optional_education"
-		texturefile = "gfx\interface\ideas\optional_education.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_idea_department_education_big"
-		texturefile = "gfx\interface\ideas\optional_education.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_idea_education_reform"
-		texturefile = "gfx\interface\ideas\education_reform.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_idea_factory_education"
-		texturefile = "gfx\interface\ideas\factory_education.dds"
-	}
 	
-	SpriteType = {
-		name = "GFX_idea_education_golden_age"
-		texturefile = "gfx\interface\ideas\education_golden_age.dds"
-	}	
+	
+	
+	
+	
+	
+	
 }
