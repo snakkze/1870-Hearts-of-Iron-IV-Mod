@@ -128,7 +128,16 @@ fpw_german_unification_category = {
 				create_faction = prussian_faction
 			}
 			AUS = {
-				create_faction = austrian_faction
+				if = {
+					limit = {
+						AUS = {
+							NOT = {
+								is_in_faction = yes
+							}
+						}
+					}
+					create_faction = austrian_faction
+				}
 				declare_war_on = {
 					target = PRS
 					type = topple_government
@@ -226,7 +235,7 @@ fpw_german_unification_category = {
 							any_owned_state = {
 								has_state_flag = influenced_by_PRS
 							}
-						{FOCUS_FILTER_POLITICAL}
+						}
 					}
 				}
 				add = 50

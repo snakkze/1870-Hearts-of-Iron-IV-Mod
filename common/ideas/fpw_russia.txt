@@ -136,6 +136,137 @@ ideas = {
 				war_support_factor = 0.1
 				political_power_factor = 0.05
 			}
-		}		
+		}
+		
+		underdeveloped_industry_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_disjointed_industry
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+				production_speed_buildings_factor = -0.30
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				
+				custom_modifier_tooltip = prestige_modifier_underdeveloped_country
+			}
+		}
+		underdeveloped_industry_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_disjointed_industry
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.20
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				
+				custom_modifier_tooltip = prestige_modifier_underdeveloped_country
+			}
+		}
+		underdeveloped_industry_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_disjointed_industry
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				
+				custom_modifier_tooltip = prestige_modifier_underdeveloped_country
+			}
+		}
+		new_russian_industry_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		new_russian_industry_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		orthodox_giant = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = YUG_orthodox_church_support
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				
+			}
+		}
+		press_freedom = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_weekly = 0.002
+				war_support_factor = -0.10
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
