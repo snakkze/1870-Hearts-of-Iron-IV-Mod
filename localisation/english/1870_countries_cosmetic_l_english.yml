@@ -99,7 +99,17 @@
  POL_SOV_neutrality_subject: "Congresional Kingdom of Poland"
  POL_SOV_neutrality_subject_DEF: "the Congresional Kingdom of Poland"
  
- 
- 
- 
- 
+ MOR_autonomy_dominion:0 "$OVERLORDADJ$ Protectorate of Morocco"
+ MOR_autonomy_dominion_DEF:0 "the $OVERLORDADJ$ Protectorate of Morocco"
+ MOR_autonomy_puppet:0 "$OVERLORDADJ$ Morocco"
+ MOR_autonomy_puppet_DEF:0 "$OVERLORDADJ$ Morocco"
+ MOR_autonomy_integrated_puppet:0 "$OVERLORDADJ$ North West Africa"
+ MOR_autonomy_integrated_puppet_DEF:0 "$OVERLORDADJ$ North West Africa"
+ WES_autonomy_colony:0 "$OVERLORDADJ$ West Africa"
+ WES_autonomy_colony_DEF:0 "$OVERLORDADJ$ West Africa"
+ MAD_autonomy_colony:0 "$OVERLORDADJ$ Colony of Madagascar"
+ MAD_autonomy_colony_DEF:0 "the $OVERLORDADJ$ Colony of Madagascar"
+ MAD_autonomy_dominion:0 "Protectorate of Madagascar"
+ MAD_autonomy_dominion_DEF:0 "the Protectorate of Madagascar"
+ MAD_subject:0 "Madagascar"
+ MAD_subject_DEF:0 "Madagascar"
