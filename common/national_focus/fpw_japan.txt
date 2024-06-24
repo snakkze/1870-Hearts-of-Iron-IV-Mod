@@ -173,7 +173,7 @@ focus_tree = {
 		relative_position_id = JAP_secure_daimyo_allegiances
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -199,7 +199,7 @@ focus_tree = {
 		relative_position_id = JAP_seize_imperial_palace
 		x = 0
 		y = 1
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -247,32 +247,12 @@ focus_tree = {
 		name = "Emperor Meiji"
 
 		}
-		add_ideas = {
-		jap_unequal_treaties
-		jap_feudal_entrenchment
-		jap_isolationist_sentiment
-		jap_technological_stagnation
-		jap_outdated_forces
-		}
-		
 		mark_focus_tree_layout_dirty = yes
 	
 		
 		every_country_with_original_tag = {
 		original_tag_to_check = JAP 
-		remove_ideas = {
-		jap_high_imperial_resistance
-		}
-		add_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
-		}
-		add_ideas = {
-		jap_unequal_treaties
-		jap_feudal_entrenchment
-		jap_isolationist_sentiment
-		jap_technological_stagnation
-		jap_outdated_forces
-		}
+		remove_ideas = jap_high_imperial_resistance
         IF = { 
 		limit = { Has_government = neutrality }
 		create_country_leader = {
@@ -310,11 +290,11 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_civil_war = no
+			has_war = no
 		}
 
 		ai_will_do = {
-			factor = 20
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -336,76 +316,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-	
-	
 
 		}
 		mutually_exclusive = { focus = JAP_conservative_modernization }
@@ -421,87 +331,10 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 0
+			factor = 2
 		}
 
 		completion_reward = {
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
-
-
-
-
-
-
-
-
-
 
 		}
 		mutually_exclusive = { focus = JAP_radical_modernization }
@@ -512,15 +345,15 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = -5
+		x = -4
 		y = 1
 		cost = 10
 		available = {
-			has_civil_war = no
+			has_war = no
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -539,7 +372,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 10
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -557,7 +390,8 @@ focus_tree = {
 	focus = {
 		id = JAP_lay_foundations_for_industrialization
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = JAP_centralize_authority focus = JAP_promote_western_education focus = JAP_radical_modernization }
+		prerequisite = { focus = JAP_centralize_authority }
+		prerequisite = { focus = JAP_promote_western_education }
 		relative_position_id = JAP_centralize_authority
 		x = 3
 		y = 2
@@ -568,93 +402,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
 
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		swap_ideas = { 
-			remove_idea = jap_agrarian_society
-			add_idea = jap_transitional_agricultural_society
-		}
-		
-		
-		
-		
 		}
 	}
 	
@@ -703,11 +451,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_government_directed_rail_development
-		icon = GFX_focus_generic_railroad
+		id = JAP_expand_railway_system
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = JAP_establish_national_infrastructure }
 		relative_position_id = JAP_establish_national_infrastructure
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -718,30 +466,10 @@ focus_tree = {
 		completion_reward = {
 
 		}
-		mutually_exclusive = { focus = JAP_privatize_rail_expansion }
 	}
 	
 	focus = {
-		id = JAP_privatize_rail_expansion
-		icon = GFX_focus_generic_railroad
-		prerequisite = { focus = JAP_establish_national_infrastructure }
-		relative_position_id = JAP_establish_national_infrastructure
-		x = 1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 0
-		}
-		
-		completion_reward = {
-
-		}
-		mutually_exclusive = { focus = JAP_government_directed_rail_development }
-	}
-	
-	focus = {
-		id = JAP_modernize_currency_system
+		id = JAP_reform_the_financial_system
 		icon = GFX_
 		prerequisite = { focus = JAP_lay_foundations_for_industrialization }
 		relative_position_id = JAP_lay_foundations_for_industrialization
@@ -754,170 +482,16 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
 
 		}
-		mutually_exclusive = { focus = JAP_preserve_traditional_currency }
-	}
-	
-	focus = {
-		id = JAP_preserve_traditional_currency
-		icon = GFX_
-		prerequisite = { focus = JAP_lay_foundations_for_industrialization }
-		relative_position_id = JAP_lay_foundations_for_industrialization
-		x = 3
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		completion_reward = {
-if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
-		}
-		mutually_exclusive = { focus = JAP_modernize_currency_system }
 	}
 	
 	focus = {
 		id = JAP_modernize_agriculture_and_taxation
 		icon = GFX_
-		prerequisite = { focus = JAP_modernize_currency_system focus = JAP_preserve_traditional_currency }
-		relative_position_id = JAP_modernize_currency_system
-		x = 1
+		prerequisite = { focus = JAP_reform_the_financial_system }
+		relative_position_id = JAP_reform_the_financial_system
+		x = 0
 		y = 1
 		cost = 10
 
@@ -926,86 +500,7 @@ if = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
 
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		
-		
-		
-		
-		
-		
-		
-		
-		swap_ideas = { 
-			remove_idea = jap_transitional_agricultural_society
-			add_idea = jap_industrializing_society
-		}
 		}
 	}
 
@@ -1014,7 +509,7 @@ if = {
 		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = JAP_centralize_authority }
 		relative_position_id = JAP_centralize_authority
-		x = -4
+		x = -3
 		y = 1
 		cost = 10
 
@@ -1023,82 +518,7 @@ if = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
 
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-			
-			remove_ideas = {
-		jap_feudal_entrenchment
-			}
-			
-			
-			
-			
 		}
 	}
 	
@@ -1116,9 +536,7 @@ if = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			remove_ideas = {
-			jap_outdated_forces
-			}
+
 		}
 	}
 	
@@ -1199,8 +617,8 @@ if = {
 		icon = GFX_
 		prerequisite = { focus = JAP_centralize_authority }
 		relative_position_id = JAP_centralize_authority
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		cost = 10
 
 		ai_will_do = {
@@ -1213,200 +631,16 @@ if = {
 	}
 	
 	focus = {
-		id = JAP_redistribute_land_to_peasants
-		icon = GFX_
-		prerequisite = { focus = JAP_strengthen_local_administrations }
-		relative_position_id = JAP_strengthen_local_administrations
-		x = -1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-
-
-
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		
-		}
-
-
-		
-		mutually_exclusive = { focus = JAP_support_large_landholdings }
-		
-	}
-	
-	focus = {
-		id = JAP_support_large_landholdings
-		icon = GFX_
-		prerequisite = { focus = JAP_strengthen_local_administrations }
-		relative_position_id = JAP_strengthen_local_administrations
-		x = 1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
-		}
-
-
-		
-		mutually_exclusive = { focus = JAP_redistribute_land_to_peasants }
-		
-	}
-	
-	focus = {
 		id = JAP_colonize_the_northern_frontier
 		icon = GFX_
-		prerequisite = { focus = JAP_redistribute_land_to_peasants focus = JAP_support_large_landholdings }
+		prerequisite = { focus = JAP_strengthen_local_administrations }
 		relative_position_id = JAP_strengthen_local_administrations
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -1428,7 +662,7 @@ if = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -1445,11 +679,11 @@ if = {
 		icon = GFX_
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = 6
+		x = 4
 		y = 1
 		cost = 10
 		available = {
-			has_civil_war = no
+			has_war = no
 		}
 
 		ai_will_do = {
@@ -1457,15 +691,13 @@ if = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		remove_ideas = {
-		jap_unequal_treaties
-		}
+
 		}
 	}
 	
 	focus = {
-		id = JAP_guard_national_sovereignty
-		icon = GFX_
+		id = JAP_launch_the_iwakura_mission
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = JAP_renegotiate_unequal_treaties }
 		relative_position_id = JAP_renegotiate_unequal_treaties
 		x = 2
@@ -1475,143 +707,13 @@ if = {
 		ai_will_do = {
 			factor = 2
 		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		#Western Powers maybe get event to intervene? 
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
 
 		}
-		mutually_exclusive = { focus = JAP_open_the_nation }
 	}
+
 	
-	focus = {
-		id = JAP_fortify_the_homeland
-		icon = GFX_
-		prerequisite = { focus = JAP_guard_national_sovereignty }
-		relative_position_id = JAP_guard_national_sovereignty
-		x = -2
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		completion_reward = {
-		
-		
-		
-
-
-		}
-	}
-	
-	focus = {
-		id = JAP_boost_domestic_production
-		icon = GFX_
-		prerequisite = { focus = JAP_guard_national_sovereignty }
-		relative_position_id = JAP_guard_national_sovereignty
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		completion_reward = {
-		
-		
-		
-
-
-		}
-	}
-	
-	focus = {
-		id = JAP_indigenous_military_innovation
-		icon = GFX_
-		prerequisite = { focus = JAP_guard_national_sovereignty }
-		relative_position_id = JAP_guard_national_sovereignty
-		x = 2
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		completion_reward = {
-		
-		
-		
-
-
-		}
-	}
 	
 	
 	
@@ -1620,7 +722,7 @@ if = {
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		prerequisite = { focus = JAP_renegotiate_unequal_treaties }
 		relative_position_id = JAP_renegotiate_unequal_treaties
-		x = -2
+		x = 0
 		y = 1
 		cost = 10
 
@@ -1629,76 +731,9 @@ if = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}	
-		
+		remove_dynamic_modifier = { 
+		modifier = fpw_JAP_isolated 
+		}
 		add_ideas = {
 		civilian_economy
 		}
@@ -1706,89 +741,22 @@ if = {
 		export_focus
 		}
 		}
-		mutually_exclusive = { focus = JAP_guard_national_sovereignty }
 	}
 	
 	focus = {
-		id = JAP_launch_the_iwakura_mission
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = JAP_open_the_nation }
-		relative_position_id = JAP_open_the_nation
-		x = -1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-		remove_ideas = {
-		jap_isolationist_sentiment
-		}
-		remove_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
-		}
-		
-		#ALSO MAYBE ADD FURTHER EVENTS/DECISIONS 
-		
-		
-		
-		
-		
-		
-		}
-	}
-		
-	focus = {
-		id = JAP_forge_global_partnerships
+		id = JAP_seek_international_allies
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = JAP_launch_the_iwakura_mission }
+		prerequisite = { focus = JAP_open_the_nation }
 		relative_position_id = JAP_launch_the_iwakura_mission
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = JAP_commission_western_warships
-		icon = GFX_focus_POL_develop_polish_shipbuilding
-		prerequisite = { focus = JAP_forge_global_partnerships }
-		relative_position_id = JAP_forge_global_partnerships
-		x = -1
-		y = 1
-		cost = 5
 
 		ai_will_do = {
 			factor = 0
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
 
-		}
-	}
-	
-	focus = {
-		id = JAP_engage_foreign_industrial_advisors
-		icon = GFX_focus_generic_industrialists
-		prerequisite = { focus = JAP_forge_global_partnerships }
-		relative_position_id = JAP_forge_global_partnerships
-		x = 1
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 
 		}
@@ -1799,7 +767,7 @@ if = {
 		icon = GFX_focus_generic_university_1
 		prerequisite = { focus = JAP_open_the_nation }
 		relative_position_id = JAP_open_the_nation
-		x = -3
+		x = -2
 		y = 1
 		cost = 10
 
@@ -1809,98 +777,15 @@ if = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 
-
-
-
-
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-
-			remove_ideas = {
-			jap_technological_stagnation
-			}
-
-			
-
 		}
-		mutually_exclusive = { focus = JAP_strengthen_classical_education }
 	}
-	
-
 	
 	focus = {
 		id = JAP_establish_public_health_systems
 		icon = GFX_
 		prerequisite = { focus = JAP_promote_western_education }
 		relative_position_id = JAP_promote_western_education
-		x = -1
+		x = 2
 		y = 1
 		cost = 10
 
@@ -1910,75 +795,6 @@ if = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
 		}
 	}
 	
@@ -1987,8 +803,8 @@ if = {
 		icon = GFX_focus_generic_court
 		prerequisite = { focus = JAP_promote_western_education }
 		relative_position_id = JAP_promote_western_education
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		cost = 10
 
 		ai_will_do = {
@@ -1996,81 +812,7 @@ if = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		
-		
-		
-		
-		
-		
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
 
-		#CIVIL WAR??
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
 		}
 	}
 	
@@ -2093,7 +835,24 @@ if = {
 	
 	
   
+	focus = {
+		id = JAP_next_steps
+		icon = GFX_focus_jap_pacific_guardian
+		prerequisite = { focus = JAP_adopt_western_legal_codes }
+		prerequisite = { focus = JAP_establish_the_kaitakushi }
+		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
+		x = 2
+		y = 7
+		cost = 10
 
+		ai_will_do = {
+			factor = 3
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+	#add idea Sonnō jōi Ehret den Kaiser, vertreibt die Barbaren!
+		}
+	}
   
 	
   
@@ -2111,7 +870,7 @@ if = {
   	focus = {
 		id = JAP_keep_shogunate
 		icon = GFX_
-		x = 30
+		x = 26
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -2150,7 +909,7 @@ if = {
   focus = {
 		id = JAP_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 45
+		x = 36
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2292,7 +1051,7 @@ if = {
 	focus = {
 		id = JAP_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 50
+		x = 41
 		y = 0
 		cost = 10
 
@@ -2696,7 +1455,7 @@ if = {
 	focus = {
 		id = JAP_industrial_effort
 		icon = GFX_focus_generic_industry_2
-		x = 40
+		x = 31
 		y = 0
 		cost = 5
 	
@@ -3313,10 +2072,10 @@ if = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}			
 		}
@@ -3345,10 +2104,10 @@ if = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}

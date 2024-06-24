@@ -21,21 +21,3 @@ SOV_serfdom_remnants_dynamic_modifier = { #NATIONAL SPIRIT
 	
 	
 }
-SOV_first_constitution_dynamic_modifier = { #NATIONAL SPIRIT
-	enable = { always = yes }
-	
-	icon = GFX_idea_generic_constitutional_guarantees
-	
-	political_power_gain = SOV_fc_political_power_gain
-	stability_factor = SOV_fc_stability_factor
-	war_support_factor = SOV_fc_war_support_factor
-	civilian_advisor_cost_factor = SOV_fc_civilian_advisor_cost_factor
-	high_command_advisor_cost_factor = SOV_fc_high_command_advisor_cost_factor
-	defensive_war_stability_factor = SOV_fc_defensive_war_stability_factor
-	neutrality_drift = SOV_fc_neutrality_drift
-	democratic_drift = SOV_fc_democratic_drift
-	fascism_drift = SOV_fc_fascism_drift
-	
-	
-	
-}

@@ -750,9 +750,6 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			TUR = {
-				set_cosmetic_tag = TUR
-			}
 			GRE = {
 				transfer_state = 185
 				transfer_state = 47

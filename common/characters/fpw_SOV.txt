@@ -1,36 +1,29 @@
 characters={
 
-	SOV_alexander_ii = {
-		name = SOV_alexander_ii
-		portraits = {
-			civilian = {
-				large = GFX_portrait_SOV_alexander_ii
+	SOV_alexander_ii={
+		name="Alexander II"
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_alexander_ii
 			}
 		}
-		country_leader = {
-			ideology = aboslute_monarchy
-			traits = {
-				tsar_of_russia
-				tsar_reformer
-			}
-			expire = "1956.01.01.01"
-			id = -1
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
 		}
 	}
-	SOV_nikolai_adlerberg = {
-		name = SOV_nikolai_adlerberg
-		portraits = {
-			civilian = {
-				#large = GFX_portrait_SOV_nikolai_adlerberg
+	SOV_nikolai_adlerberg={
+		name="Nikolai Adlerberg"
+		portraits={
+			civilian={
+				#large=GFX_portrait_SOV_nikolai_adlerberg
 			}
 		}
-		country_leader = {
-			ideology = aboslute_monarchy
-			traits = {
-				
-			}
-			expire = "1956.01.01.01"
-			id = -1
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
 		}
 	}
 }

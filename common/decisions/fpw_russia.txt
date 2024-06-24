@@ -15,10 +15,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_baltic_belarus
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -34,11 +33,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_northern_baltics }
 			810 = {
 				add_building_construction = {
 					type = infrastructure
@@ -107,10 +104,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_baltic_belarus
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -126,11 +122,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_southern_baltics }
 			814 = {
 				add_building_construction = {
 					type = infrastructure
@@ -198,10 +192,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_baltic_belarus
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -217,11 +210,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_belarus }
 			96 = {
 				add_building_construction = {
 					type = infrastructure
@@ -282,10 +273,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_ukraine
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -301,11 +291,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_western_ukraine }
 			93 = {
 				add_building_construction = {
 					type = infrastructure
@@ -367,10 +355,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_ukraine
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -386,11 +373,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_southern_ukraine }
 			203 = {
 				add_building_construction = {
 					type = infrastructure
@@ -458,10 +443,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_ukraine
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -477,11 +461,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_northern_ukraine }
 			193 = {
 				add_building_construction = {
 					type = infrastructure
@@ -542,10 +524,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_central_russia
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -561,11 +542,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_smolensk_region }
 			207 = {
 				add_building_construction = {
 					type = infrastructure
@@ -626,10 +605,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_central_russia
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -645,11 +623,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_central_russia }
 			240 = {
 				add_building_construction = {
 					type = infrastructure
@@ -710,10 +686,9 @@ fpw_russia_economy_cat = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 3
 		}
-		fire_only_once = yes
+		
 		available = {
 			has_completed_focus = SOV_infrastracture_in_central_russia
-			NOT = { has_country_flag = investing_in_infrastracture }
 		}
 		visible = {
 			has_completed_focus = SOV_infrastracture_investments
@@ -729,11 +704,9 @@ fpw_russia_economy_cat = {
 		icon = infiltrate_state
 		
 		complete_effect = {
-			hidden_effect = { set_country_flag = investing_in_infrastracture }
+			
 		}
 		remove_effect = {
-			hidden_effect = { clr_country_flag = investing_in_infrastracture }
-			hidden_effect = { set_country_flag = invested_in_novogrod_region }
 			210 = {
 				add_building_construction = {
 					type = infrastructure

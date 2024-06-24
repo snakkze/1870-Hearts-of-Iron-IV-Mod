@@ -16,7 +16,6 @@ focus_tree = {
 		#	add = 10
 		#	tag = SOV
 		#}
-		
 	}
 	
 	default = no
@@ -35,7 +34,7 @@ focus_tree = {
 		x = 5
 		y = 0
 		cost = 10
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_focus_SOV_panslavic_nationalism
 		#mutually_exclusive = { focus =  }
@@ -289,7 +288,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
-		search_filters = { }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_undermine_national_identity }
@@ -348,10 +347,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = {  }
 
 		completion_reward = {
-			add_stability = -0.05
 			10 = { add_resistance = -10 }
 			87 = { add_resistance = -5 }
 			90 = { add_resistance = -5 }
@@ -409,6 +407,7 @@ focus_tree = {
 		
 		#icon = GFX_
 		prerequisite = { focus = SOV_amnesty_for_polish_resistance }
+		prerequisite = { focus = SOV_more_radical_reforms }
 		relative_position_id = SOV_amnesty_for_polish_resistance
 		
 		ai_will_do = {
@@ -613,7 +612,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_goal_generic_political_pressure
 		mutually_exclusive = { focus = SOV_plot_against_the_tsars }
 		#prerequisite = { focus =  }
 		#relative_position_id = 
@@ -668,7 +667,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			country_event = russia_fpw.1
@@ -790,7 +789,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		icon = GFX_goal_generic_political_pressure
+		#icon = GFX_focus_generic_self_management
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_administrative_reform }
 		prerequisite = { focus = SOV_judicial_system }
@@ -896,7 +895,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		icon = GFX_focus_SOV_breadbasket_of_the_union
+		#icon = GFX_
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_administrative_reform }
 		prerequisite = { focus = SOV_free_state_serfs }
@@ -961,20 +960,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			country_event = russia_fpw.2
-			SOV_alexander_ii = {
-				remove_trait = {
-					ideology = aboslute_monarchy
-					trait = tsar_reformer
-				}
-				add_trait = {
-					ideology = aboslute_monarchy
-					trait = tsar_reformer_radical
-				}
-			}
+			
+			
 			
 		}
 	}
@@ -1088,11 +1079,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_stability = -0.10
-			add_timed_idea = {
-				idea = press_freedom
-				days = 540
-			}
+			
+			
 			
 		}
 	}
@@ -1123,21 +1111,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		select_effect = { 
-			
-			country_event = russia_fpw.9
-			
-			#country_event = {
-			#	id = russia_fpw.9
-			#	days = 1
-			#}
-			
-			
-		}
-		completion_reward = {
-			add_dynamic_modifier = { modifier = SOV_first_constitution_dynamic_modifier }
 
+		completion_reward = {
+			
 			
 			
 		}
@@ -1172,25 +1148,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = conservative_constitution
-				}
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = no
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = liberal_constitution
-				}
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-			}
-			add_ideas = fpw_alexander_ii
+			
+			
 			
 		}
 	}
@@ -1246,7 +1205,7 @@ focus_tree = {
 		x = -2
 		y = 6
 		cost = 10
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_goal_generic_improve_relations
 		#mutually_exclusive = { focus =  }
@@ -1457,20 +1416,9 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			AUS = {
-				add_opinion_modifier = {
-					target = SOV
-					modifier = large_decrease
-				}
-			}
-			add_opinion_modifier = {
-				target = AUS
-				modifier = large_decrease
-			}
 			add_state_claim = 88
 			add_state_claim = 89
 			add_state_claim = 91
-			add_state_claim = 80
 			#add_state_claim = 73
 			
 		}
@@ -1478,13 +1426,13 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_our_prussian_friends
-		x = 3
+		x = 1
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_goal_generic_improve_relations
-		mutually_exclusive = { focus = SOV_never_trust_germans }
+		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
 		
@@ -1521,96 +1469,10 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
-		id = SOV_never_trust_germans 
-		x = 1
-		y = 1
-		cost = 10
-		search_filters = {  }
-		
-		#icon = GFX_goal_generic_improve_relations
-		mutually_exclusive = { focus = SOV_our_prussian_friends }
-		prerequisite = { focus = SOV_our_german_intrests }
-		relative_position_id = SOV_our_german_intrests
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			PRS = {
-				add_opinion_modifier = {
-					target = SOV
-					modifier = medium_decrease
-				}
-			}
-			add_opinion_modifier = {
-				target = PRS
-				modifier = medium_decrease
-			}
-			add_state_claim = 188
-			
-		}
-	}
-	focus = {
-		id = SOV_protector_of_poles
-		x = 1
-		y = 1
-		cost = 10
-		search_filters = {  }
-		
-		#icon = GFX_goal_generic_improve_relations
-		mutually_exclusive = { focus = SOV_our_prussian_friends }
-		prerequisite = { focus = SOV_remember_austrian_betrayal}
-		prerequisite = { focus = SOV_never_trust_germans }
-		relative_position_id = SOV_remember_austrian_betrayal
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			every_state = {
-				limit = {
-					is_core_of = POL
-				}
-				add_claim_by = SOV
-			}
-			
-		}
-	}
-	
-	
 	
 	focus = {
 		id = SOV_asian_giant
-		x = 6
+		x = 4
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -1685,59 +1547,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = SOV_consolidate_central_asia
-		x = 1
-		y = 1
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		
-		icon = GFX_goal_generic_position_armies
-		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_asian_giant }
-		relative_position_id = SOV_asian_giant
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			add_state_claim = 405
-			add_state_claim = 830
-			add_state_claim = 831
-			add_state_claim = 823
-			add_state_claim = 832
-			add_state_claim = 584
-			
-			create_wargoal = {
-				type = annex_everything
-				target = BUK
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = KHI
-			}
-			
-			
-		}
-	}
-	
-	
-	
-	
 ##########################################################################
 #
 #	Industry Branch
@@ -1749,12 +1558,12 @@ focus_tree = {
 		x = 11
 		y = 0
 		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_goal_generic_consumer_goods
 		#mutually_exclusive = { focus =  }
 		#prerequisite = { focus =  }
-		relative_position_id = SOV_plot_against_the_tsars
+		relative_position_id = SOV_russian_diplomacy
 		
 		ai_will_do = {
 			factor = 1
@@ -1805,9 +1614,9 @@ focus_tree = {
 	focus = {
 		id = SOV_infrastracture_investments
 		x = -2
-		y = 2
+		y = 1
 		cost = 5
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_goal_generic_construct_infrastructure
 		#mutually_exclusive = { focus =  }
@@ -1832,37 +1641,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 10
-			218 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			245 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			265 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 			
 			
 		}
 	}
 	focus = {
 		id = SOV_infrastracture_in_ukraine
-		x = 2
+		x = -2
 		y = 1
 		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_goal_generic_construct_infrastructure
 		#mutually_exclusive = { focus =  }
@@ -1897,7 +1686,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_goal_generic_construct_infrastructure
 		#mutually_exclusive = { focus =  }
@@ -1929,10 +1718,10 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_infrastracture_in_central_russia
-		x = -2
+		x = 2
 		y = 1
 		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		#icon = GFX_goal_generic_construct_infrastructure
 		#mutually_exclusive = { focus =  }
@@ -1967,7 +1756,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_goal_generic_construction2
 		#mutually_exclusive = { focus =  }
@@ -1994,822 +1783,10 @@ focus_tree = {
 			#add_political_power = 10
 			custom_effect_tooltip = SOV_build_upon_the_new_infrastracture_tp
 			
-			if = {
-				limit = {
-					has_country_flag = invested_in_northern_baltics
-				}
-				12 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				13 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_southern_baltics
-				}
-				809 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				815 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_belarus
-				}
-				94 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				96 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_western_ukraine
-				}
-				93 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				198 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_southern_ukraine
-				}
-				200 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				197 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_norther_ukraine
-				}
-				221 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				193 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_central_russia
-				}
-				220 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				223 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_smolensk_region
-				}
-				205 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				224 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = invested_in_novogrod_region
-				}
-				263 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				210 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				
-				}
-			}
-			
-			
-			
-			
 			
 		}
 	}
-	focus = {
-		id = SOV_promote_industralization
-		x = 2
-		y = 1
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-		
-		icon = GFX_focus_generic_modernize_industry
-		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_russian_economy }
-		relative_position_id = SOV_russian_economy
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 10
-			swap_ideas = {
-				add_idea= underdeveloped_industry_2
-				remove_idea = underdeveloped_industry_1
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 193 225 259 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 11 810 812 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SOV_foreign_investors
-		x = -1
-		y = 1
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-		
-		icon = GFX_goal_generic_positive_trade_relations
-		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_promote_industralization }
-		relative_position_id = SOV_promote_industralization
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 10
-			
-			
-			
-		}
-	}
-	focus = {
-		id = SOV_civs_one
-		x = 1
-		y = 1
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY }
-		
-		icon = GFX_goal_generic_construct_civ_factory
-		mutually_exclusive = { focus = SOV_mils_one }
-		prerequisite = { focus = SOV_promote_industralization }
-		relative_position_id = SOV_promote_industralization
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SOV_mils_one
-		x = 3
-		y = 1
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-		
-		icon = GFX_goal_generic_construct_mil_factory
-		mutually_exclusive = { focus = SOV_civs_one }
-		prerequisite = { focus = SOV_promote_industralization }
-		relative_position_id = SOV_promote_industralization
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-		}
-	}
-	focus = {
-		id = SOV_industry_upgrade_one
-		x = 0
-		y = 2
-		cost = 15
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-		
-		icon = GFX_focus_generic_industry_1
-		#mutually_exclusive = { focus =  }
-		#prerequisite = { focus = SOV_promote_industralization }
-		prerequisite = { focus = SOV_foreign_investors }
-		prerequisite = { focus = SOV_civs_one focus = SOV_mils_one }
-		relative_position_id = SOV_promote_industralization
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_war = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 10
-			swap_ideas = {
-				add_idea= underdeveloped_industry_3
-				remove_idea = underdeveloped_industry_2
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 193 225 259 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 11 810 812 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SOV_ukrainian_wheat
-		x = -1
-		y = 1
-		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-		
-		icon = GFX_focus_generic_agricultural_subsidies
-		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_industry_upgrade_one }
-		prerequisite = { focus = SOV_infrastracture_in_ukraine }
-		relative_position_id = SOV_industry_upgrade_one
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			203 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			226 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			197 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SOV_civs_two
-		x = 1
-		y = 1
-		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
-		icon = GFX_focus_chi_british_cooperation
-		mutually_exclusive = { focus = SOV_mils_two }
-		prerequisite = { focus = SOV_industry_upgrade_one }
-		relative_position_id = SOV_industry_upgrade_one
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			ENG = {
-				add_opinion_modifier = {
-					target = SOV
-					modifier = medium_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = ENG
-				modifier = medium_increase
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SOV_mils_two
-		x = 3
-		y = 1
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY }
-		
-		icon = GFX_
-		mutually_exclusive = { focus = SOV_civs_two }
-		prerequisite = { focus = SOV_industry_upgrade_one }
-		relative_position_id = SOV_industry_upgrade_one
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			PRS = {
-				add_opinion_modifier = {
-					target = SOV
-					modifier = medium_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = PRS
-				modifier = medium_increase
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-		}
-	}
-	focus = {
-		id = SOV_industry_upgrade_two
-		x = 0
-		y = 2
-		cost = 15
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
-		icon = GFX_focus_generic_industry_2
-		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_ukrainian_wheat }
-		prerequisite = { focus = SOV_build_upon_the_new_infrastracture }
-		prerequisite = { focus = SOV_civs_two focus = SOV_mils_two }
-		relative_position_id = SOV_industry_upgrade_one
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_war = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 10
-			swap_ideas = {
-				add_idea= new_russian_industry_1
-				remove_idea = underdeveloped_industry_3
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 193 225 259 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 11 810 812 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SOV_industry_upgrade_three
-		x = 0
-		y = 2
-		cost = 15
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
-		icon = GFX_focus_generic_industry_3
-		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_industry_upgrade_two }
-		relative_position_id = SOV_industry_upgrade_two
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_war = no
-			num_of_owned_factories > 100
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 10
-			swap_ideas = {
-				add_idea= new_russian_industry_1
-				remove_idea = underdeveloped_industry_3
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 193 225 259 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = { is_core_of = SOV }
-				#prioritize = { 11 810 812 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			
-			
-		}
-	}
+	
 	
 	
 	
