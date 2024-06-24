@@ -7,17 +7,25 @@ set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 
+add_ideas = {
+	jap_unequal_treaties
+	jap_feudal_entrenchment
+	jap_isolationist_sentiment
+	jap_technological_stagnation
+	jap_outdated_forces
+	jap_agrarian_society
+	jap_medium_imperial_resistance
+}
+
 add_dynamic_modifier = { 
 	modifier = fpw_JAP_isolated 
 }
 
-add_ideas = {
-	jap_medium_imperial_resistance
-	jap_agrarian_society
-}
-
 1870.1.1 = {
-	remove_ideas = jap_medium_imperial_resistance
+	remove_ideas = {
+	jap_medium_imperial_resistance
+	jap_unequal_treaties
+	}
 	
 	536 = { 
 	transfer_state_to = JAP 

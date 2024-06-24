@@ -61,6 +61,188 @@ ideas = {
 			}
 		}
 		
+		jap_feudal_entrenchment	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = generic_agrarian_reform
+				
+			removal_cost = -1
+				
+			modifier = {
+			political_power_cost = 0.15
+			max_command_power = -10
+			}
+		}
+		
+		jap_unequal_treaties	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = HUN_treaty_of_triannon
+				
+			removal_cost = -1
+				
+			modifier = {
+			consumer_goods_factor = 0.1
+			trade_opinion_factor = -0.2
+			}
+		}
+		
+		jap_isolationist_sentiment	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = undisturbed_isolation
+				
+			removal_cost = -1
+				
+			modifier = {
+			lend_lease_tension = 0.3
+			diplomatic_pressure_mission_factor = -0.3
+			guarantee_cost = 1
+			justify_war_goal_time = 0.3
+			license_purchase_cost = 0.3 
+			join_faction_tension = 0.5
+			research_speed_factor = -0.05
+			send_volunteers_tension = 0.3
+			land_doctrine_cost_factor = 0.15
+			naval_doctrine_cost_factor = 0.15
+			}
+		}
+		
+		jap_technological_stagnation	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = SOV_third_five_year_plan_military
+				
+			removal_cost = -1
+				
+			modifier = {
+			research_speed_factor = -0.1
+			production_factory_start_efficiency_factor = -0.05
+			}
+		}
+		
+		jap_outdated_forces	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = chi_army_corruption
+				
+			removal_cost = -1
+				
+            modifier = {
+				army_defence_factor: -0.2
+				army_speed_factor = -0.3
+                army_org_regain = -0.2
+                army_morale_factor = -0.2
+                army_attack_factor = -0.2
+            }
+		}
+		
+		#GET BETTER EVERY YEAR?
+		jap_societal_backlash_1	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.05
+            }
+		}
+		
+		jap_societal_backlash_2	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.1
+            }
+		}
+		
+		jap_societal_backlash_3	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.15
+            }
+		}
+		
+		jap_societal_backlash_4	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.20
+            }
+		}
+		
+		jap_societal_backlash_5	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.25
+            }
+		}
+		
+		jap_societal_backlash_6	= {
+				
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.30
+            }
+		}
+		
 		jap_solidifying_imperial_command = {
 			allowed = {
 				always = no
@@ -157,7 +339,6 @@ ideas = {
 				conscription_factor = -0.07	
 			}
 		}
-
 
 }
 }

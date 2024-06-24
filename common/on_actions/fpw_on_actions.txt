@@ -252,11 +252,11 @@ on_actions = {
 			}
 		}
 	}
-	on_monthly = {
+	on_weekly = {
 		effect = {
 				if = {
 					limit = {
-					JAP = {
+				JAP = {
 							has_civil_war = yes 
 							has_government = fascism
 							}
@@ -264,7 +264,7 @@ on_actions = {
 				JAP = {			
 					add_equipment_to_stockpile = {
 				type = fpw_infantry_equipment_1
-				amount = 4
+				amount = 1
 				producer = ENG
 			}
 			}
@@ -273,5 +273,83 @@ on_actions = {
 			}
 
 		}
-
+	on_monthly = {
+		effect = {
+				if = {
+					limit = {
+					JAP = {
+							has_government = fascism
+							}
+							}
+		random_list = {
+		90 = { 	}
+		10 = { 
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_1
+				}}
+			JAP = {	
+			remove_ideas = {
+			jap_societal_backlash_1
+			}}
+			}
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_2
+				}}
+			JAP = {	
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_1
+			}}
+			}
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_3
+				}}
+			JAP = {	
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_2
+			}}
+			}
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_4
+				}}
+			JAP = {	
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_3
+			}}
+			}
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_5
+				}}
+			JAP = {	
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_4
+			}}
+			}
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_6
+				}}
+			JAP = {	
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_6
+			add_idea = jap_societal_backlash_5
+			}}
+			}
+		}}}
+		}
+		}			
 }
