@@ -2,7 +2,7 @@
 state={
 	id=535
 	name="STATE_535" # Koshinetsu
-	manpower = 2012920
+	manpower = 3871000
 	state_category = large_city
 	
 	resources={
@@ -15,8 +15,10 @@ state={
 		add_core_of = JAP
 		buildings = {
 		
-			industrial_complex = 1
-			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2
+			infrastructure = 2
+			dockyard = 1
 			fuel_silo = 1
 
 		}

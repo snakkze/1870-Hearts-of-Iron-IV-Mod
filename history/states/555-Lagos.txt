@@ -2,7 +2,7 @@
 state={
 	id=555
 	name="STATE_555" #Kuril Islands
-	manpower = 7800 
+	manpower = 15000 
 	
 	state_category = tiny_island
 
@@ -11,15 +11,12 @@ state={
 		#add_core_of = JAP
 		#add_claim_by = SOV # Removed because of too much aggression
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			1399 = {
 				naval_base = 3
 
 			}
-			13037 = {
-				naval_base = 2
 
-			}
 		}
 
 	}

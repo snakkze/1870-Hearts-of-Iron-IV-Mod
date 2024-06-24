@@ -281,17 +281,4 @@ spriteTypes = {
 		name = "GFX_portrait_SER_prince"
 		texturefile = "gfx/leaders/SER/Portrait_SER_prince.dds"
 	}
-	# JAP
-	spriteType = {
-		name = "GFX_Portrait_JAP_tokugawa_iemochi"
-		texturefile = "gfx/leaders/JAP/Portrait_JAP_tokugawa_Iemochi.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_JAP_tokugawa_yoshinobu"
-		texturefile = "gfx/leaders/JAP/Portrait_JAP_tokugawa_yoshinobu.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_JAP_emperor_meiji"
-		texturefile = "gfx/leaders/JAP/Portrait_JAP_emperor_meiji.dds"
-	}
 }

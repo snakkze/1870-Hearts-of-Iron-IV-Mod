@@ -11,69 +11,15 @@ add_dynamic_modifier = {
 	modifier = fpw_JAP_isolated 
 }
 
-add_ideas = {
-	jap_medium_imperial_resistance
-}
-
 1870.1.1 = {
-	remove_ideas = jap_medium_imperial_resistance
-	
-	536 = { 
-	transfer_state_to = JAP 
-	add_core_of = JAP
-	}
-	
-	
+
 	#Change Capital to Tokyo for 1870(was Kyoto in 1866)
 	JAP = {
 		set_capital = {
 		state = 282
 		}
 	}
-	
-	set_politics = {
-	ruling_party = fascism
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-	}
-	set_popularities = {
-	neutrality = 20
-	fascism = 80
-	}
-	set_country_leader_name = {
 
-		ideology = fascism
-
-		name = "Emperor Meiji"
-
-		}
-		
-	remove_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
-		}
-	add_ideas = {
-		civilian_economy
-		}
-	add_ideas = {
-		export_focus
-		}
-
-	unlock_national_focus = JAP_denounce_shogunate
-	unlock_national_focus = JAP_form_satcho_alliance
-	unlock_national_focus = JAP_secure_western_armaments
-	unlock_national_focus = JAP_consolidate_imperial_loyalties
-	unlock_national_focus = JAP_secure_daimyo_allegiances
-	unlock_national_focus = JAP_seize_imperial_palace
-	unlock_national_focus = JAP_proclaim_emperor_meijis_restoration_to_full_power
-	unlock_national_focus = JAP_renegotiate_unequal_treaties
-	unlock_national_focus = JAP_open_the_nation
-	unlock_national_focus = JAP_adopt_the_charter_oath
-	unlock_national_focus = JAP_manage_samurai_discontent
-	unlock_national_focus = JAP_centralize_authority
-	unlock_national_focus = JAP_strengthen_local_administrations
-	unlock_national_focus = JAP_colonize_the_northern_frontier
-	unlock_national_focus = JAP_establish_the_kaitakushi
 }
 
 set_research_slots = 4
@@ -167,6 +113,12 @@ if = {
 }
 }
 
+create_import = {
+		resource = oil
+		factories = 2
+		exporter = USA
+}
+
 set_convoys = 400
 
 if = {
@@ -220,11 +172,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 66
-	fascism = 34
+	neutrality = 100
 }
-recruit_character = JAP_tokugawa_iemochi
-recruit_character = JAP_emperor_meiji
 
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda

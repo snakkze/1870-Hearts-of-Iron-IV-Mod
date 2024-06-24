@@ -2,7 +2,7 @@
 state = {
 	id = 117
 	name = "STATE_117" # Campania
-	manpower = 2204800 # (Campania 3697k + Basilicato 543k )  # was 5333611 before Puglia state was added
+	manpower = 4240000 # (Campania 3697k + Basilicato 543k )  # was 5333611 before Puglia state was added
 	
 	state_category = city
 	resources = { #TODO_Manu: Check resource split (Puglia is now a different state)

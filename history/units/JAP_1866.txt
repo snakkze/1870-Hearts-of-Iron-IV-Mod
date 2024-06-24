@@ -1,6 +1,6 @@
 division_template = {
-  name = "Provincial Militia"
-  is_locked = yes
+  name = "Militia-Division"
+  is_locked = no
 
   regiments = {
     irregular_infantry = { x = 0 y = 0 }
@@ -21,12 +21,12 @@ division_template = {
   }
 }
 division_template = {
-  name = "Samurai Elite Guard"
+  name = "Cavalry-Division"
   is_locked = no
 
   regiments = {
-    infantry = { x = 0 y = 0 }
-    infantry = { x = 0 y = 1 }
+    cavalry = { x = 0 y = 0 }
+    cavalry = { x = 0 y = 1 }
     cavalry = { x = 1 y = 0 }
     cavalry = { x = 1 y = 1 }
   }
@@ -37,53 +37,53 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11960
-		division_template = "Samurai Elite Guard"
-		start_experience_factor = 1.0
+		location = 9865
+		division_template = "Militia-Division"
+		start_experience_factor = 0.1
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 7072
-		division_template = "Samurai Elite Guard"
-		start_experience_factor = 1.0
+		location = 1063
+		division_template = "Militia-Division"
+		start_experience_factor = 0.1
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 1182
-		division_template = "Samurai Elite Guard"
-		start_experience_factor = 1.0
+		location = 7197
+		division_template = "Militia-Division"
+		start_experience_factor = 0.1
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 9950
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		location = 1113
+		division_template = "Militia-Division"
+		start_experience_factor = 0.1
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 9859
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		location = 6870
+		division_template = "Militia-Division"
+		start_experience_factor = 0.1
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 12032
-		division_template = "Provincial Militia"
+		location = 11925
+		division_template = "Militia-Division"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -91,8 +91,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 1133
-		division_template = "Provincial Militia"
+		location = 7113
+		division_template = "Militia-Division"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -101,35 +101,35 @@ units = {
 			name_order = 1
 		}
 		location = 4000
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 7217
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		location = 1133
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 1063
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		location = 4100
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 11997
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		location = 7212
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
@@ -137,8 +137,206 @@ units = {
 			name_order = 5
 		}
 		location = 1191
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 12031
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 4054
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 7532
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 12446
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 7157
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 7072
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 1182
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 6994
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 4067
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 7595
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 1167
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 1158
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 12007
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 11908
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 9985
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 7087
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 10512
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9859
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10125
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10052
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1067
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6873
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
@@ -146,25 +344,25 @@ units = {
 			name_order = 6
 		}
 		location = 10055
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 12097
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		location = 10032
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 1024
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
+		location = 7046
+		division_template = "Cavalry-Division"
+		start_experience_factor = 0.3
 	}
 }

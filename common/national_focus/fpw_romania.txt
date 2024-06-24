@@ -120,7 +120,7 @@
 
 		focus = {
 		id = rom_high_spending
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_high_spending
 		prerequisite = { focus = rom_education_budget }
 		mutually_exclusive = { focus = rom_low_spending }
 		
@@ -129,9 +129,12 @@
 		relative_position_id = rom_education_budget
 		
 		
-		cost = 5
+		cost = 1.5
 		
 		available = {
+			NOT = {
+            has_completed_focus = rom_low_spending
+			}
 		}
 		
 		completion_reward = {		
@@ -145,7 +148,7 @@
 
 		focus = {
 		id = rom_low_spending
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_low_spending
 		prerequisite = { focus = rom_education_budget }
 		mutually_exclusive = { focus = rom_high_spending }
 		
@@ -154,9 +157,12 @@
 		relative_position_id = rom_education_budget
 		
 		
-		cost = 5
+		cost = 1.5
 		
 		available = {
+			NOT = {
+            has_completed_focus = rom_high_spending
+			}
 		}
 		
 		completion_reward = {		
@@ -170,7 +176,7 @@
 
 		focus = {
 		id = rom_mandatory_education
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_mandatory_education
 		prerequisite = { focus = rom_high_spending }
 		mutually_exclusive = { }
 		
@@ -179,12 +185,17 @@
 		relative_position_id = rom_high_spending
 		
 		
-		cost = 5
+		cost = 7.2
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {
+			add_political_power = 100
+			swap_ideas = {
+                remove_idea = fpw_ROM_national_illiteracy
+                add_idea = fpw_ROM_national_illiteracy_low
+            }		
 		}
 		
 		ai_will_do = {
@@ -195,7 +206,7 @@
 
 		focus = {
 		id = rom_optional_education
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_optional_education
 		prerequisite = { focus = rom_low_spending }
 		mutually_exclusive = { }
 		
@@ -204,12 +215,13 @@
 		relative_position_id = rom_low_spending
 		
 		
-		cost = 5
+		cost = 4.4
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_ideas = fpw_ROM_optional_education	
 		}
 		
 		ai_will_do = {
@@ -220,7 +232,7 @@
 
 		focus = {
 		id = rom_major_staff_expansions
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_minor_staff_expansions
 		prerequisite = { focus = rom_mandatory_education }
 		mutually_exclusive = { }
 		
@@ -229,12 +241,16 @@
 		relative_position_id = rom_mandatory_education
 		
 		
-		cost = 5
+		cost = 7.2
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			swap_ideas = {
+                remove_idea = fpw_ROM_department_education
+                add_idea = fpw_ROM_department_education_big
+            }		
 		}
 		
 		ai_will_do = {
@@ -245,7 +261,7 @@
 
 		focus = {
 		id = rom_minor_staff_expansions
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_minor_staff_expansions
 		prerequisite = { focus = rom_optional_education }
 		mutually_exclusive = { }
 		
@@ -254,12 +270,13 @@
 		relative_position_id = rom_optional_education
 		
 		
-		cost = 5
+		cost = 4.4
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_political_power = 50	
 		}
 		
 		ai_will_do = {
@@ -270,7 +287,7 @@
 
 		focus = {
 		id = rom_finish_education_reform
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_dep_reform
 		prerequisite = { focus = rom_minor_staff_expansions
 		                 focus = rom_major_staff_expansions }
 		mutually_exclusive = { }
@@ -280,12 +297,23 @@
 		relative_position_id = rom_minor_staff_expansions
 		
 		
-		cost = 5
+		cost = 10
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			country_event = fpw_romania.4
+			swap_ideas = {
+                remove_idea = fpw_ROM_department_education_big
+                add_idea = fpw_ROM_department_education_reform
+            }		
+			swap_ideas = {
+                remove_idea = fpw_ROM_department_education
+                add_idea = fpw_ROM_department_education_big
+            }		
+			remove_ideas = fpw_ROM_national_illiteracy_low		
+			remove_ideas = fpw_ROM_national_illiteracy		
 		}
 		
 		ai_will_do = {
@@ -296,7 +324,7 @@
 
 		focus = {
 		id = rom_open_labs
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_open_labs
 		prerequisite = { focus = rom_mandatory_education }
 		mutually_exclusive = { }
 		
@@ -305,12 +333,13 @@
 		relative_position_id = rom_mandatory_education
 		
 		
-		cost = 5
+		cost = 5.8
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_stability = 0.1
 		}
 		
 		ai_will_do = {
@@ -321,7 +350,7 @@
 
 		focus = {
 		id = rom_expand_labs
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_expand_labs
 		prerequisite = { focus = rom_open_labs }
 		mutually_exclusive = { }
 		
@@ -330,12 +359,13 @@
 		relative_position_id = rom_mandatory_education
 		
 		
-		cost = 5
+		cost = 5.8
 		
 		available = {
 		}
 		
 		completion_reward = {		
+			add_research_slot = 1
 		}
 		
 		ai_will_do = {
@@ -346,7 +376,7 @@
 
 		focus = {
 		id = rom_factory_education
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_factory_education
 		prerequisite = { focus = rom_optional_education 
 		                 focus = rom_end_industry_reform}
 		mutually_exclusive = { }
@@ -361,7 +391,8 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_stability = 0.05
 		}
 		
 		ai_will_do = {
@@ -372,7 +403,7 @@
 
 		focus = {
 		id = rom_factory_profesional
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_factory_profesional
 		prerequisite = { focus = rom_factory_education }
 		mutually_exclusive = { }
 		
@@ -386,7 +417,8 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_ideas = fpw_ROM_factory_education			
 		}
 		
 		ai_will_do = {
@@ -397,7 +429,7 @@
 
 		focus = {
 		id = rom_education_golden_age
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_education_golden_age
 		prerequisite = { focus = rom_factory_profesional
 		                 focus = rom_expand_labs }
 		mutually_exclusive = { }
@@ -412,7 +444,9 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {
+			country_event = fpw_romania.3
+			add_ideas = fpw_ROM_education_golden_age		
 		}
 		
 		ai_will_do = {
