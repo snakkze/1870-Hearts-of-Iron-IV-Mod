@@ -2,7 +2,7 @@
 state = {
 	id = 536
 	name = "STATE_536"
-	manpower = 81571
+	manpower = 58571
 	
 	state_category = rural
 
@@ -10,6 +10,7 @@ state = {
 
 		owner = TRB
 		add_core_of = TRB
+		add_core_of = EZO
 		add_claim_by = JAP
 		
 		buildings = {
@@ -23,7 +24,7 @@ state = {
 			12421 5 # Asahikawa
 		}
 		victory_points = {
-			3962 2 # Hakodate
+			3962 30 # Hakodate
 		}
 
 	}

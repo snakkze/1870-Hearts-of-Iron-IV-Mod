@@ -1,0 +1,17 @@
+characters={
+
+	EZO_enomoto_takeaki={
+		name="Enomoto Takeaki"
+		portraits={
+			civilian={
+				large=GFX_Portrait_EZO_enomoto_takeaki
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+}

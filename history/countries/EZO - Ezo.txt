@@ -1,0 +1,42 @@
+﻿capital = 536
+ oob = "EZO_1866"
+
+# Starting tech
+set_technology = {
+	fpw_infantry_weapons = 1
+}
+
+set_convoys = 20
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1866.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 60
+	neutrality = 40
+}
+
+
+recruit_character = EZO_enomoto_takeaki
+
+1939.1.1 = {
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		fpw_cannon_artillery = 1
+}
+}

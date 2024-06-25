@@ -294,4 +294,9 @@ spriteTypes = {
 		name = "GFX_Portrait_JAP_emperor_meiji"
 		texturefile = "gfx/leaders/JAP/Portrait_JAP_emperor_meiji.dds"
 	}
+	#EZO
+		spriteType = {
+		name = "GFX_Portrait_EZO_enomoto_takeaki"
+		texturefile = "gfx/leaders/EZO/Portrait_EZO_enomoto_takeaki.dds"
+	}
 }
