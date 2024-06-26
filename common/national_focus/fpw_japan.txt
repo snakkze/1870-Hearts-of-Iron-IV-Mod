@@ -541,6 +541,9 @@ focus_tree = {
 		idea = jap_solidifying_imperial_command
 		days = 365
 		}
+		set_capital = {
+		   state = 282
+		}
 		}
 	}
 	
@@ -1212,7 +1215,7 @@ if = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -1399,7 +1402,7 @@ if = {
 		controls_state = 536
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
