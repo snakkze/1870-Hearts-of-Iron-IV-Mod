@@ -23,5 +23,5 @@ tags={
 	"Gameplay"
 }
 name="1870: Franco-Prussian War"
-supported_version="1.14.6"
+supported_version="1.14.*"
 remote_file_id="3268912955"
