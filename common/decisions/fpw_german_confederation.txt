@@ -78,10 +78,7 @@ fpw_german_unification_category = {
 		fire_only_once = yes
 
 		cancel_trigger = {
-			OR = {
-				has_global_flag = fpw_prussia_peace
-				has_global_flag = fpw_austrian_peace
-			}
+			has_global_flag = fpw_prussia_peace
 		}
 		icon = mission_icon
 		is_good = yes
