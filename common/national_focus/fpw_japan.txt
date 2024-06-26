@@ -541,9 +541,6 @@ focus_tree = {
 		idea = jap_solidifying_imperial_command
 		days = 365
 		}
-		set_capital = {
-		   state = 282
-		}
 		}
 	}
 	
@@ -1215,7 +1212,7 @@ if = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -1402,7 +1399,7 @@ if = {
 		controls_state = 536
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -1415,34 +1412,11 @@ if = {
 	}
 	
 	focus = {
-		id = JAP_renegotiate_unequal_treaties
+		id = JAP_guard_national_sovereignty
 		icon = GFX_
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = 6
-		y = 1
-		cost = 10
-		available = {
-			has_civil_war = no
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-		remove_ideas = {
-		jap_unequal_treaties
-		}
-		}
-	}
-	
-	focus = {
-		id = JAP_guard_national_sovereignty
-		icon = GFX_
-		prerequisite = { focus = JAP_renegotiate_unequal_treaties }
-		relative_position_id = JAP_renegotiate_unequal_treaties
-		x = 2
+		x = 8
 		y = 1
 		cost = 10
 
@@ -1592,9 +1566,9 @@ if = {
 	focus = {
 		id = JAP_open_the_nation
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
-		prerequisite = { focus = JAP_renegotiate_unequal_treaties }
-		relative_position_id = JAP_renegotiate_unequal_treaties
-		x = -2
+		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
+		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
+		x = 4
 		y = 1
 		cost = 10
 
@@ -1684,12 +1658,35 @@ if = {
 	}
 	
 	focus = {
+		id = JAP_discuss_the_Sakhalin_situation_with_russia
+		icon = GFX_
+		prerequisite = { focus = JAP_open_the_nation }
+		relative_position_id = JAP_open_the_nation
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		SOV = {
+			country_event = fpw_japan.2
+			}
+		
+		
+		}
+		mutually_exclusive = { focus = JAP_strengthen_classical_education }
+	}
+	
+	focus = {
 		id = JAP_launch_the_iwakura_mission
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = JAP_open_the_nation }
 		relative_position_id = JAP_open_the_nation
-		x = -1
-		y = 1
+		x = 1
+		y = 2
 		cost = 10
 
 		ai_will_do = {
@@ -1711,6 +1708,29 @@ if = {
 		
 		
 		
+		}
+	}
+	
+	focus = {
+		id = JAP_renegotiate_unequal_treaties
+		icon = GFX_
+		prerequisite = { focus = JAP_launch_the_iwakura_mission }
+		relative_position_id = JAP_launch_the_iwakura_mission
+		x = 3
+		y = 1
+		cost = 10
+		available = {
+			has_civil_war = no
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		remove_ideas = {
+		jap_unequal_treaties
+		}
 		}
 	}
 		
@@ -1773,8 +1793,8 @@ if = {
 		icon = GFX_focus_generic_university_1
 		prerequisite = { focus = JAP_open_the_nation }
 		relative_position_id = JAP_open_the_nation
-		x = -3
-		y = 1
+		x = -1
+		y = 2
 		cost = 10
 
 		ai_will_do = {

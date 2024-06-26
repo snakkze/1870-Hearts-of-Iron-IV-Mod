@@ -9,8 +9,10 @@ state= {
 	state_category = rural
 
 	history= {
-		owner = SOV
-		add_core_of = SOV
+		owner = TRB
+		add_core_of = TRB
+		add_claim_by = JAP
+		add_claim_by = SOV
 		
 		buildings = {
 			infrastructure = 2
@@ -26,7 +28,7 @@ state= {
 	}
 	provinces=
 	{
-1322 1820 12446 	}
+		1322 1820 12446 	}
 
 	local_supplies=0.0 
 }
