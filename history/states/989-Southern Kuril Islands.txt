@@ -1,0 +1,25 @@
+state={
+	id=989
+	name="STATE_989"
+	
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 1
+			13037 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		13037 
+	}
+	manpower=2431
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

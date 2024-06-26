@@ -35,3 +35,120 @@
 			}
 		}
 	}
+	}
+	
+	country_event = {
+		id = fpw_japan.2
+		title = fpw_japan.2.t
+		desc = fpw_japan.2.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.2.a
+			ai_chance = {
+				base = 10
+			}
+			537 = {
+			transfer_state_to = SOV
+			hidden_effect = {
+			remove_claim_by = JAP
+			remove_core_of = TRB
+			add_core_of = SOV
+			}
+			}
+			555 = {
+			transfer_state_to = JAP
+			hidden_effect = {
+			remove_core_of = SOV
+			add_core_of = JAP
+			}
+			}
+		}
+        option = {
+			name = fpw_japan.2.b
+			ai_chance = {
+				base = 0
+			}
+			country_event = fpw_japan.3
+			JAP = {add_opinion_modifier = { target = JAP modifier = small_decrease }
+		}
+		}
+		option = {
+			name = fpw_japan.2.c
+			ai_chance = {
+				base = 0
+			}
+			537 = {
+			transfer_state_to = SOV
+			hidden_effect = {
+			remove_core_of = TRB
+			}
+			}
+			JAP = {
+			country_event = fpw_japan.4
+			}
+			JAP = {add_opinion_modifier = { target = JAP modifier = large_decrease }
+		}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.3
+		title = fpw_japan.3.t
+		desc = fpw_japan.3.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.3.a
+			ai_chance = {
+				base = 10
+			}
+			
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.4
+		title = fpw_japan.4.t
+		desc = fpw_japan.4.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.4.a
+			ai_chance = {
+				base = 10
+			}
+		add_political_power = -50
+		add_stability = -0.02
+		}
+        option = {
+			name = fpw_japan.4.b
+			ai_chance = {
+				base = 0
+			}
+			
+		JAP = {
+            declare_war_on = {
+                target = SOV
+                type = annex_everything
+            }
+        }}	
+	}
