@@ -1,36 +1,31 @@
 ﻿l_russian:
-
- CAN:0 "Провинция Канада"
- CAN_DEF:0 "провинция Канада"
- CAN_ADJ:0 "канадский"
- 
- REU:0 "Земля принца Руперта"
- REU_DEF:0 "Земля принца Руперта"
- REU_ADJ:0 "Гудзон"
- 
- BRC:0 "Территория Британской Колумбии"
- BRC_DEF:0 "Территория Британской Колумбии"
- BRC_ADJ:0 "Британская Колумбия"
- 
- NBR:0 "Колония Нью-Брансуик"
- NBR_DEF:0 "колония Нью-Брансуик"
- NBR_ADJ:0 "Нью-Брансуик"
- 
- NOV:0 " колония Новая Шотландия"
- NOV_DEF:0 "колония Новой Шотландия"
- NOV_ADJ:0 "Новая Шотландия"
- 
- PEI:0 "колония острова принца эдуарда"
- PEI_DEF:0 "колониальный остров принца эдуарда"
- PEI_ADJ:0 "Принц Эдуард"
+ REU: "Земля принца Руперта" #NT!
+ REU_DEF: "Земля принца Руперта" #NT!
+ REU_ADJ: "Хадсон" #NT!
+  
+ BRC: "Территория Британская Колумбия" #NT!
+ BRC_DEF: "территория Британской Колумбии" #NT!
+ BRC_ADJ: "Британская Колумбия" #NT!
+  
+ NBR: "Колония Нью-Брансуик" #NT!
+ NBR_DEF: "Колония Нью-Брансуик" #NT!
+ NBR_ADJ: "Новый Брансвик" #NT!
+  
+ NOV: "Колония Новая Шотландия" #NT!
+ NOV_DEF: "колония Новая Шотландия" #NT!
+ NOV_ADJ: "Новая Шотландия" #NT!
+  
+ PEI: "Остров Принца Эдуарда" #NT!
+ PEI_DEF: "Остров Принца Эдуарда" #NT!
+ PEI_ADJ: "Принц Эдвард" #NT!
   
  FPC: "Парижская Коммуна" #NT!
  FPC_DEF: "Парижская Коммуна" #NT!
- FPC_ADJ: "коммунар" #NT!
+ FPC_ADJ: "Коммунар" #NT!
   
- PGA: "Польша-Галичина" #NT!
+ PGA: "Польша-Галиция" #NT!
  PGA_DEF: "Польско-Галицкое государство" #NT!
- PGA_ADJ: "Польско-галицийский" #NT!
+ PGA_ADJ: "Польско-Галицкий" #NT!
   
  NRW: "Северный Рейн-Вестфалия" #NT!
  NRW_DEF: "Северный Рейн-Вестфалия" #NT!
@@ -109,7 +104,7 @@
  MCK_ADJ: "Мекленбургер" #NT!
   
  MKS: "Великое герцогство Мекленбург-Стрелицкое" #NT!
- MKS_DEF: "Великое герцогство Мекленбург-Стрелицкое" #NT!
+ MKS_DEF: "Великое Герцогство Мекленбург-Стрелицкое" #NT!
  MKS_ADJ: "Мекленбург-Стрелиц" #NT!
   
  LUE_conservatism: "Вольный и ганзейский город Любек" #NT!
@@ -156,7 +151,7 @@
   
  BRE_conservatism: "Вольный ганзейский город Бремен" #NT!
  BRE_conservatism_DEF: "Вольный ганзейский город Бремен" #NT!
- BRE: "Великое герцогство Бремен" #NT!
+ BRE: "Великое герцогство Бременское" #NT!
  BRE_DEF: "Великое Герцогство Бремен" #NT!
  BRE_ADJ: "Бремиш" #NT!
   
@@ -173,5 +168,58 @@
  SOV_socialism_ideology: "Советский Союз" #NT!
  SOV_socialism_ideology_DEF: "Советский Союз" #NT!
   
- FIN_SOV_subject: "Великое княжество Финляндское" #NT!
+ FIN_SOV_subject: "Великое Княжество Финляндское" #NT!
  FIN_SOV_subject_DEF: "Великое Княжество Финляндское" #NT!
+  
+ EZO_fascism: "Националистическое государство Эзо" #NT!
+ EZO_fascism_DEF: "Националистическое государство Эзо" #NT!
+ EZO_democratic: "Республика Эзо" #NT!
+ EZO_democratic_DEF: "Республика Эзо" #NT!
+ EZO_neutrality: "Эзо" #NT!
+ EZO_neutrality_DEF: "Эзо" #NT!
+ EZO_communism: "Социалистический союз Эзо" #NT!
+ EZO_communism_DEF: "Социалистический союз Эдзо" #NT!
+ EZO_fascism_ADJ: "Эзо" #NT!
+ EZO_democratic_ADJ: "Эзо" #NT!
+ EZO_neutrality_ADJ: "Эзо" #NT!
+ EZO_communism_ADJ: "Эзо" #NT!
+ EZO: "Эзо" #NT!
+ EZO_DEF: "Эзо" #NT!
+ EZO_ADJ: "Эзо" #NT!
+  
+ SWI_democratic: "Швейцарская Конфедерация" #NT!
+ SWI_democratic_DEF: "Швейцария" #NT!
+  
+ LUX_democratic: "Великое Герцогство Люксембург" #NT!
+ LUX_democratic_DEF: "Люксембург" #NT!
+  
+ BEL_democratic: "Королевство Бельгия" #NT!
+ BEL_democratic_DEF: "Бельгия" #NT!
+  
+ HOL_democratic: "Королевство Нидерландов" #NT!
+ HOL_democratic_DEF: "Нидерланды" #NT!
+  
+ DEN_democratic: "Королевство Дания" #NT!
+ DEN_democratic_DEF: "Дания" #NT!
+  
+ POR_neutrality: "Королевство Португалия" #NT!
+ POR_neutrality_DEF: "Португалия" #NT!
+  
+ USA_democratic: "Соединенные Штаты Америки" #NT!
+ USA_democratic_DEF: "Соединенные Штаты" #NT!
+  
+ MEX_neutrality: "Мексиканская империя" #NT!
+ MEX_neutrality_DEF: "Мексика" #NT!
+  
+ VEN_neutrality: "Соединенные Штаты Венесуэлы" #NT!
+ VEN_neutrality_DEF: "Венесуэла" #NT!
+  
+ BRA_neutrality: "Империя Бразилии" #NT!
+ BRA_neutrality_DEF: "Бразилия" #NT!
+  
+ DOM_neutrality: "Доминиканская Республика" #NT!
+ DOM_neutrality_DEF: "Доминиканская республика" #NT!
+  
+ ETH_neutrality: "Эфиопская Империя" #NT!
+ ETH_neutrality_DEF: "Эфиопия" #NT!
+  
