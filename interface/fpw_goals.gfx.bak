@@ -218,6 +218,56 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_focus_rom_education_budget"
-		texturefile = "gfx/interface/goals/GFX_focus_rom_education_budget.dds"
+		texturefile = "gfx/interface/goals/focus_rom_education_budget.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_high_spending"
+		texturefile = "gfx/interface/goals/focus_rom_high_spending.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_low_spending"
+		texturefile = "gfx/interface/goals/focus_rom_low_spending.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_mandatory_education"
+		texturefile = "gfx/interface/goals/focus_rom_mandatory_education.dds"
+s	}	
+	spriteType = {
+		name = "GFX_focus_rom_optional_education"
+		texturefile = "gfx/interface/goals/focus_rom_optional_education.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_major_staff_expansions"
+		texturefile = "gfx/interface/goals/focus_rom_major_staff_expansions.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_minor_staff_expansions"
+		texturefile = "gfx/interface/goals/focus_rom_minor_staff_expansions.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_dep_reform"
+		texturefile = "gfx/interface/goals/focus_rom_dep_reform.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_open_labs"
+		texturefile = "gfx/interface/goals/focus_rom_open_labs.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_expand_labs"
+		texturefile = "gfx/interface/goals/focus_rom_expand_labs.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_factory_education"
+		texturefile = "gfx/interface/goals/focus_rom_factory_education.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_factory_profesional"
+		texturefile = "gfx/interface/goals/focus_rom_factory_profesional.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_rom_education_golden_age"
+		texturefile = "gfx/interface/goals/focus_rom_education_golden_age.dds"
 	}	
 }
+
+

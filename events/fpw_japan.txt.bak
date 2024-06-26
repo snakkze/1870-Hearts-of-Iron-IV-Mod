@@ -1,0 +1,37 @@
+    add_namespace = fpw_japan
+
+	country_event = {
+		id = fpw_japan.1
+		title = fpw_japan.1.t
+		desc = fpw_japan.1.d
+		picture = GFX_report_event_sanation_left_victory
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.1.a
+			ai_chance = {
+				base = 10
+			}
+            JAP = {
+            declare_war_on = {
+                target = EZO
+                type = annex_everything
+            }
+        }
+		}
+        option = {
+			name = fpw_japan.1.b
+			ai_chance = {
+				base = 0
+			}
+			EZO = {add_opinion_modifier = { target = JAP modifier = large_increase }
+				536 = {
+				remove_claim_of = JAP
+				}
+		}
+	}
