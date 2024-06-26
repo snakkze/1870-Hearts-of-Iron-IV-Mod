@@ -30,8 +30,8 @@
 				base = 0
 			}
 			EZO = {add_opinion_modifier = { target = JAP modifier = large_increase }
-				536 = {
-				remove_claim_of = JAP
-				}
+			536 = {
+			remove_claim_by = JAP
+			}
 		}
 	}
