@@ -1,3 +1,4 @@
+
 state={
 	id=965
 	name="STATE_965"
@@ -5,21 +6,21 @@ state={
 	history={
 		owner = HES
 		victory_points = {
-			3574 5
+			3574 10 
 		}
 		buildings = {
-			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 2
-
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		add_core_of = HES
+
 	}
+
 	provinces={
-		3574 11560 
+		3574 
 	}
-	manpower=1287000
+	manpower=169240
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=town
 	local_supplies=0.000
 }

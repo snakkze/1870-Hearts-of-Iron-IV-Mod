@@ -58,18 +58,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		swap_ideas = { 
-		remove_idea = jap_medium_imperial_resistance
-		add_idea = jap_high_imperial_resistance
-		}
-		528 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-		set_demilitarized_zone = yes
-		}
-		529 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-		set_demilitarized_zone = yes
-		}
+		
+		
+		
+		
+
 		}
 		mutually_exclusive = { focus = JAP_form_satcho_alliance }
 	}
@@ -1014,7 +1007,7 @@ if = {
 		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = JAP_centralize_authority }
 		relative_position_id = JAP_centralize_authority
-		x = -4
+		x = -3
 		y = 1
 		cost = 10
 
@@ -1199,7 +1192,7 @@ if = {
 		icon = GFX_
 		prerequisite = { focus = JAP_centralize_authority }
 		relative_position_id = JAP_centralize_authority
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -1396,37 +1389,18 @@ if = {
 		
 	}
 	
+	
 	focus = {
-		id = JAP_colonize_the_northern_frontier
+		id = JAP_establish_the_kaitakushi
 		icon = GFX_
 		prerequisite = { focus = JAP_redistribute_land_to_peasants focus = JAP_support_large_landholdings }
 		relative_position_id = JAP_strengthen_local_administrations
 		x = 0
 		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
+		cost = 5
+		available = {
+		controls_state = 536
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-		536 = { 
-		transfer_state_to = JAP 
-		}
-
-
-		}
-	}
-	
-	focus = {
-		id = JAP_establish_the_kaitakushi
-		icon = GFX_
-		prerequisite = { focus = JAP_colonize_the_northern_frontier}
-		relative_position_id = JAP_colonize_the_northern_frontier
-		x = 0
-		y = 1
-		cost = 10
-
 		ai_will_do = {
 			factor = 10
 		}
