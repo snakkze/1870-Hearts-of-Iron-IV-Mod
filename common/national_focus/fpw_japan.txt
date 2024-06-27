@@ -49,7 +49,7 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = JAP_denounce_shogunate }
 		relative_position_id = JAP_denounce_shogunate
-		x = 5
+		x = 8
 		y = 1
 		cost = 10
 
@@ -73,7 +73,7 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = JAP_denounce_shogunate }
 		relative_position_id = JAP_denounce_shogunate
-		x = -5
+		x = -8
 		y = 1
 		cost = 10
 
@@ -220,10 +220,10 @@ focus_tree = {
             ruling_party = fascism #Player becomes that
             ideology = ROOT
             size = 0.8
-            army_ratio = 0.45
-            navy_ratio = 0.45
-            air_ratio = 0.45
-            states = { 532 533 534 535 537 555 282 536 }  # States controlled by the Tokugawa faction
+            army_ratio = 0.4
+            navy_ratio = 0.4
+            air_ratio = 0.4
+            states = { 532 533 534 535 537 555 282 536 989 }  # States controlled by the Tokugawa faction
             keep_unit_leaders = {  }
             keep_political_leader = yes
             keep_political_party_members = yes
@@ -1132,7 +1132,7 @@ if = {
 	
 	focus = {
 		id = JAP_embrace_american_logistics
-		icon = GFX_
+		icon = GFX_focus_generic_truck
 		prerequisite = { focus = JAP_reform_the_military_system }
 		relative_position_id = JAP_reform_the_military_system
 		x = 2
@@ -1389,7 +1389,7 @@ if = {
 	
 	focus = {
 		id = JAP_establish_the_kaitakushi
-		icon = GFX_
+		icon = GFX_focus_generic_land_reclamation
 		prerequisite = { focus = JAP_redistribute_land_to_peasants focus = JAP_support_large_landholdings }
 		relative_position_id = JAP_strengthen_local_administrations
 		x = 0
@@ -1420,8 +1420,12 @@ if = {
 		y = 1
 		cost = 10
 
+		available = {
+			has_civil_war = no
+		}
+
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		completion_reward = {
 		#Western Powers maybe get event to intervene? 
@@ -1521,7 +1525,7 @@ if = {
 	
 	focus = {
 		id = JAP_boost_domestic_production
-		icon = GFX_
+		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
 		prerequisite = { focus = JAP_guard_national_sovereignty }
 		relative_position_id = JAP_guard_national_sovereignty
 		x = 0
@@ -1571,6 +1575,10 @@ if = {
 		x = 4
 		y = 1
 		cost = 10
+
+		available = {
+			has_civil_war = no
+		}
 
 		ai_will_do = {
 			factor = 2
@@ -1659,21 +1667,25 @@ if = {
 	
 	focus = {
 		id = JAP_discuss_the_Sakhalin_situation_with_russia
-		icon = GFX_
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = JAP_open_the_nation }
 		relative_position_id = JAP_open_the_nation
 		x = 0
 		y = 1
 		cost = 10
 
+		available = {
+		NOT = {
+		has_war_with = SOV
+		}
+		}
+
 		ai_will_do = {
 			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		SOV = {
-			country_event = fpw_japan.2
-			}
+		country_event = fpw_japan.5
 		
 		
 		}
@@ -1682,7 +1694,7 @@ if = {
 	
 	focus = {
 		id = JAP_launch_the_iwakura_mission
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = JAP_open_the_nation }
 		relative_position_id = JAP_open_the_nation
 		x = 1
@@ -1713,10 +1725,10 @@ if = {
 	
 	focus = {
 		id = JAP_renegotiate_unequal_treaties
-		icon = GFX_
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = JAP_launch_the_iwakura_mission }
 		relative_position_id = JAP_launch_the_iwakura_mission
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 		available = {
@@ -1736,10 +1748,10 @@ if = {
 		
 	focus = {
 		id = JAP_forge_global_partnerships
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_focus_BRA_reach_out_to_military_dem
 		prerequisite = { focus = JAP_launch_the_iwakura_mission }
 		relative_position_id = JAP_launch_the_iwakura_mission
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -1894,7 +1906,7 @@ if = {
 		icon = GFX_
 		prerequisite = { focus = JAP_promote_western_education }
 		relative_position_id = JAP_promote_western_education
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 
@@ -1981,7 +1993,7 @@ if = {
 		icon = GFX_focus_generic_court
 		prerequisite = { focus = JAP_promote_western_education }
 		relative_position_id = JAP_promote_western_education
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 

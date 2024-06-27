@@ -358,9 +358,12 @@ on_actions = {
 					limit = {
 					JAP = {
 							has_government = fascism
+							controls_state = 282
 							}
-							}
-							
+					TRB = {
+					controls_state = 536
+					}
+							}		
 				536 = {
 				transfer_state_to = EZO
 				remove_core_of = TRB
@@ -375,7 +378,14 @@ on_actions = {
 					limit = {
 					JAP = {
 							has_government = fascism
+							controls_state = 282
 							}
+					EZO = {
+					controls_state = 536
+					}
+					536= = {
+					is_claimed_by = JAP
+					}
 							}
 			EZO = {
 			add_manpower = 2000
