@@ -34,12 +34,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = PRS_greater_german_solution }
 
 		completion_reward = {
-
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -1295,7 +1295,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
+		allow_branch = {
+			is_debug = yes
+		}
+		
 		available = {
 		}
 
@@ -1305,7 +1309,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			
 		}
 	}
 
@@ -1396,6 +1400,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+
+		allow_branch = {
+			is_debug = yes
 		}
 
 		available = {
@@ -1743,7 +1751,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
+		offset = {
+			x = -5
+			trigger = {
+				is_debug = no
+			}
+		}
+		
+		allow_branch = {
+			NOT = { has_completed_focus = PRS_lesser_german_solution }
+		}
+		
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = PRS_lesser_german_solution }
 
@@ -1764,7 +1783,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
+		allow_branch = {
+			is_debug = yes
+			AND = {
+				NOT = {
+					has_completed_focus = PRS_lesser_german_solution
+				}	
+			}	
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2055,7 +2083,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
+		allow_branch = {
+			is_debug = yes
+			AND = {
+				NOT = {
+					has_completed_focus = PRS_lesser_german_solution
+				}	
+			}	
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2678,6 +2715,29 @@ focus = {
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
+		offset = {
+			x = -11
+			trigger = {
+				is_debug = no
+			}	
+		}
+		
+		offset = {
+			x = -2
+			trigger = {
+				is_debug = no
+				has_completed_focus = PRS_lesser_german_solution
+			}	
+		}
+		
+		offset = {
+			x = -13
+			trigger = {
+				is_debug = yes
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+		
 		available_if_capitulated = yes
 	
 		completion_reward = {
@@ -2945,8 +3005,30 @@ focus = {
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
+		offset = {
+			x = -10
+			trigger = {
+				is_debug = no
+			}	
+		}
+		
+		offset = {
+			x = -2
+			trigger = {
+				is_debug = no
+				has_completed_focus = PRS_lesser_german_solution
+			}	
+		}
+		
+		offset = {
+			x = -12
+			trigger = {
+				is_debug = yes
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+		
 		available_if_capitulated = yes
-	
 	
 		available = {
 			any_state = {
@@ -3350,7 +3432,30 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
-	
+		
+		offset = {
+			x = -12
+			trigger = {
+				is_debug = no
+			}	
+		}
+		
+		offset = {
+			x = -2
+			trigger = {
+				is_debug = no
+				has_completed_focus = PRS_lesser_german_solution
+			}	
+		}
+		
+		offset = {
+			x = -14
+			trigger = {
+				is_debug = yes
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}	
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
