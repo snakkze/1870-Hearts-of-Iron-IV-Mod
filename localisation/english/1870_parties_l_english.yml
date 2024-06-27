@@ -65,3 +65,6 @@
  PRS_communism__party_long:0 "Sächsiche Volkspartei"
  PRS_neutrality_party:0 "Partei Hohenzollern"
  PRS_neutrality_party_long:0 "Partei Hohenzollern"
+ 
+ independent_party:0 "Independent" # used for cases when there is no political party. sometimes triggered in history files
+ independent_party_long:0 "Independent"

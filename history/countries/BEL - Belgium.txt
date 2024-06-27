@@ -22,6 +22,7 @@ set_technology = {
     tech_support = 1
 }
 
+recruit_character = BEL_charles_rogier
 recruit_character = BEL_hubert_pierlot
 recruit_character = BEL_joseph_jacquemotte
 recruit_character = BEL_mcl_keyaerts
@@ -79,16 +80,16 @@ recruit_character = BEL_paul_van_zeeland
 }
 }
 
-
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 83
+	democratic = 38
+	fascism = 45
 	neutrality = 11
 	communism = 6
 }

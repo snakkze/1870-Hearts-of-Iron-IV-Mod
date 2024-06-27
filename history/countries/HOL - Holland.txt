@@ -89,6 +89,7 @@ if = {
 	}
 }
 
+recruit_character = HOL_johan_r_thorbecke
 recruit_character = HOL_hendrikus_colijn
 recruit_character = HOL_anton_mussert
 recruit_character = HOL_lou_de_visser
@@ -194,15 +195,15 @@ recruit_character = HOL_wilhelmina
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1933.4.26"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 93
-	neutrality = 4
-	communism = 3
+	fascism = 50
+	democratic = 46
+	communism = 4
 }
 
 set_convoys = 150

@@ -270,6 +270,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/german_minors/WRT/Portrait_WRT_karl_friedrich_august.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_portrait_LUX_victor_de_tornaco"
+		texturefile = "gfx/leaders/german_minors/LUX/Portrait_LUX_victor_de_tornaco.dds"
+	}
+	
 	# ROM
 	spriteType = {
 		name = "GFX_portrait_ROM_alexandru"
@@ -298,5 +303,23 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_Portrait_EZO_enomoto_takeaki"
 		texturefile = "gfx/leaders/EZO/Portrait_EZO_enomoto_takeaki.dds"
+	}
+	
+	# BEL
+	spriteType = {
+		name = "GFX_portrait_BEL_victor_de_tornaco"
+		texturefile = "gfx/leaders/BEL/Portrait_BEL_charles_rogier.dds"
+	}
+	
+	# HOL
+	spriteType = {
+		name = "GFX_portrait_HOL_johan_r_thorbecke"
+		texturefile = "gfx/leaders/HOL/Portrait_HOL_johan_r_thorbecke.dds"
+	}
+	
+	# DEN
+	spriteType = {
+		name = "GFX_portrait_DEN_christian_emil"
+		texturefile = "gfx/leaders/DEN/Portrait_DEN_christian_emil.dds"
 	}
 }

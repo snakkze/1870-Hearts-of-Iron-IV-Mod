@@ -19,10 +19,17 @@ if = {
 
 }
 }
+
+set_party_name = { # for victor de dornaco as he was independent
+    ideology = democratic
+    name = independent_party
+	long_name = independent_party
+}
+
 set_war_support = 0.1
 set_stability = 0.8
 
-recruit_character = LUX_joseph_bech
+recruit_character = LUX_victor_de_tornaco
 recruit_character = LUX_gustave_lebeau
 recruit_character = LUX_frédéric_nagelmackers
 recruit_character = LUX_jean_pirson

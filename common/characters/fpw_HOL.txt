@@ -1,0 +1,15 @@
+characters={
+	HOL_johan_r_thorbecke={
+		name="Johan R. Thorbecke"
+		portraits={
+			civilian={
+				large=GFX_portrait_HOL_johan_r_thorbecke
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

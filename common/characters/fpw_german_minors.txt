@@ -335,4 +335,18 @@ characters={
 			id=-1
 		}
 	}
+	
+	LUX_victor_de_tornaco={
+		name="Victor de Tornaco"
+		portraits={
+			civilian={
+				large=GFX_portrait_LUX_victor_de_tornaco
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
 }
