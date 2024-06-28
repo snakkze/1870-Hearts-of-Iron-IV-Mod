@@ -4165,4 +4165,192 @@ focus = {
 			add_research_slot = 1
 		}
 	}
+	
+	###################
+		ARMY BRANCH
+	###################
+	
+	focus = {
+		id = PRS_focus_status_of_the_army
+		icon = GFX_focus_generic_fascist_troops
+		
+		allow_branch = {
+			is_debug = yes
+		}	
+		
+		available = {
+			
+		}
+		
+		x = -10
+		y = 0
+		
+		cost = 5
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			army_experience = 15
+			country_event = prussia_fpw.22
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_moltke_plan
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			always = false
+		}
+		
+		x = -2
+		y = 1
+		
+		cost = 0
+		
+		prerequisite = { focus = PRS_focus_status_of_the_army }
+		relative_position_id = PRS_focus_status_of_the_army
+		mutually_exclusive = { focus = PRS_focus_appoint_clausewitz }
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_appoint_clausewitz 
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			always = false
+		}
+		
+		x = 2
+		y = 1
+		
+		cost = 0
+		
+		prerequisite = { focus = PRS_focus_status_of_the_army }
+		relative_position_id = PRS_focus_status_of_the_army
+		mutually_exclusive = { focus = PRS_focus_moltke_plan }
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_the_prussian_norms
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = 1
+		y = 1
+		
+		cost = 3
+		
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
+		relative_position_id = PRS_focus_appoint_clausewitz
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_prussian_discipline
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = -1
+		y = 1
+		
+		cost = 3
+		
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
+		relative_position_id = PRS_focus_moltke_plan
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_expand_officer_academies 
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = -1
+		y = 2
+		
+		cost = 5
+		
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
+		relative_position_id = PRS_focus_status_of_the_army
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_central_command_structure
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = 1
+		y = 2
+		
+		cost = 5
+		
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
+		relative_position_id = PRS_focus_status_of_the_army
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_new_general_staff
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = 0
+		y = 3
+		
+		cost = 6
+		
+		prerequisite = { focus = PRS_focus_central_command_structure }
+		prerequisite = { focus = PRS_focus_expand_officer_academies }
+		prerequisite = { focus = PRS_focus_prussian_discipline }
+		prerequisite = { focus = PRS_focus_the_prussian_norms }
+		relative_position_id = PRS_focus_status_of_the_army
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
 }

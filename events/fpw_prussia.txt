@@ -686,3 +686,26 @@ country_event = {
 		}
 	}
 }
+
+# Status of the Royal Prussian Army
+country_event = {
+	id = prussia_fpw.22
+	title = prussia_fpw.22.t
+	desc = prussia_fpw.22.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.22.a
+		
+		custom_effect_tooltip = fpw_historical_option_tt
+		complete_national_focus = PRS_focus_moltke_plan
+	}
+
+	option = {
+		name = prussia_fpw.22.b
+		
+		complete_national_focus = PRS_focus_moltke_plan
+	}
+}
