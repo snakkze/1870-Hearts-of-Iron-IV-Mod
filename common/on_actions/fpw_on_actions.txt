@@ -278,7 +278,7 @@ on_actions = {
 				if = {
 					limit = {
 					JAP = {
-							has_government = fascism
+		
 							}
 							}
 		random_list = {
@@ -368,6 +368,19 @@ on_actions = {
 				transfer_state_to = EZO
 				remove_core_of = TRB
 				}
+				EZO = {
+				add_ideas = {
+				ezo_exiled_samurai
+				ezo_unstable_government
+				ezo_foreign_isolation
+				}
+				
+				
+				
+				}
+				
+				
+				
 				}
 			}
 		}

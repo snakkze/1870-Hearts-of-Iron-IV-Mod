@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+		#The samurai who fled to Ezo after the fall of the Tokugawa Shogunate are highly skilled and motivated, yet their traditionalist views can slow the modernization efforts.
+		ezo_exiled_samurai = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = GFX_
+
+			modifier = {
+				war_support = 0.15
+				political_power_factor = -0.1
+				research_speed_factor = -0.2
+				army_morale_factor = 0.1
+			}
+		}
+
+		#The Republic of Ezo, established hastily after the fall of the Tokugawa Shogunate, struggles with internal conflicts and the lack of a stable administrative structure.
+		ezo_unstable_government = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = GFX_
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.15
+				surrender_limit = -0.5
+			}
+		}
+		
+		#Due to its isolation from major trade routes and the ongoing conflict in Japan, Ezo faces significant difficulties in maintaining economic stability and acquiring resources.
+		ezo_foreign_isolation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = GFX_
+
+			modifier = {
+			
+			}
+		}
+}
+}
