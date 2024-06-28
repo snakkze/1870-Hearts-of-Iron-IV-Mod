@@ -20,8 +20,11 @@ focus_tree = {
 			tag = PRS
 		}
 	}
-
-	continuous_focus_position = { x = 2100 y = 1365 }
+	
+	continuous_focus_position = {
+		x = 4300
+		y = 1000	
+	}
 	
 	default = no
 
@@ -128,7 +131,20 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 10
-
+		
+		offset = {
+			x = 2
+			trigger = {
+				is_debug = no
+			}	
+		}
+		
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}	
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -138,7 +154,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# Does the bruderkrieg peacedeal
+			custom_effect_tooltip = fpw_branch_incomplete_tt
 		}
 	}
 
@@ -173,7 +189,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-
+		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}	
+		}	
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -453,7 +476,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 10
-
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -624,7 +647,22 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 10
+		
+		offset = {
+			x = -2
+			trigger = {
+				is_debug = no
+			}
+		}
 
+		offset = {
+			x = -2
+			trigger = {
+				is_debug = no
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}			
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -634,7 +672,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -651,6 +689,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+		
+		allow_branch = {
+			is_debug = yes
 		}
 
 		completion_reward = {
@@ -822,7 +864,22 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 5
-
+		
+		offset = {
+			x = -1
+			trigger = {
+				is_debug = no
+			}
+		}
+		
+		offset = {
+			x = -2
+			trigger = {
+				is_debug = no
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
+		
 		available = {
 			#always = no
 		}
@@ -1761,6 +1818,10 @@ focus_tree = {
 		
 		allow_branch = {
 			NOT = { has_completed_focus = PRS_lesser_german_solution }
+		}
+		
+		available = {
+			always = no
 		}
 		
 		available_if_capitulated = yes
