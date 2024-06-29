@@ -273,13 +273,31 @@ on_actions = {
 			}
 
 		}
+	on_monthly_JAP = {
+		effect = {
+				if = {
+					limit = {
+				JAP = {
+					has_completed_focus = JAP_build_a_merchant_fleet
+							}
+							}
+				JAP = {			
+					add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 1
+				producer = JAP
+			}
+			}
+					}
+					
+			}
+
+		}
 	on_monthly = {
 		effect = {
 				if = {
 					limit = {
-					JAP = {
-		
-							}
+
 							}
 		random_list = {
 		90 = { 	}
@@ -374,9 +392,9 @@ on_actions = {
 				ezo_unstable_government
 				ezo_foreign_isolation
 				}
-				
-				
-				
+				add_dynamic_modifier = { 
+				modifier = fpw_JAP_isolated 
+				}
 				}
 				
 				
