@@ -1,0 +1,23 @@
+guiTypes = {
+	containerWindowType = {
+		name = "fpw_secondary_leader_container_diplomacy"
+		position = {x = 0 y = 0}
+		size = { width=380 height=280 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+
+		moveable = no
+		
+		containerWindowType = {
+			name = "fpw_secondary_leader_container"
+			position = { x = 0 y = 0 }
+			iconType = {
+				name = "fpw_secondary_leader_icon"
+				spriteType = "GFX_Portrait_Secondary_Vacant"
+				pdx_tooltip = "Get_Secondary_Leader_Name_loc"
+				position = { x = 95 y = 230 }
+				alwaystransparent = no
+			}
+		}
+	}
+}

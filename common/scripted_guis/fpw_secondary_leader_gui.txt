@@ -1,0 +1,21 @@
+scripted_gui = {
+	secondary_leader_gui_diplomacy = {
+		parent_window_token = selected_country_view_diplomacy
+		context_type = selected_country_context
+		
+		window_name = "fpw_secondary_leader_container_diplomacy"
+		
+		visible = {
+		}
+		
+		effects = {
+		}
+		triggers = {
+		}
+		properties = {
+			fpw_secondary_leader_icon = {
+				image = "[Get_Secondary_Leader_Portrait]"
+			}
+		}
+	}
+}

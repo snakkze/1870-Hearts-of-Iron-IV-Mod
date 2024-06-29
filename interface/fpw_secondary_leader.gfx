@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Secondary_Vacant"
+		texturefile = "gfx/leaders/Portrait_Secondary_Vacant.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_Wilhelm_I"
+		texturefile = "gfx/leaders/PRS/Secondary/Portrait_Secondary_PRS_wilhelm_i.dds"
+	}
+}

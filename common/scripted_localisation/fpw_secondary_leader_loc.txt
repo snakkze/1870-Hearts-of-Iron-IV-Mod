@@ -1,0 +1,26 @@
+defined_text = {
+	name = Get_Secondary_Leader_Portrait
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_wilhelm_i
+		}
+		localization_key = GFX_Portrait_Secondary_Wilhelm_I
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = GFX_Portrait_Secondary_Vacant
+	}
+}
+defined_text = {
+	name = Get_Secondary_Leader_Name
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_wilhelm_i
+		}
+		localization_key = fpw_secondary_leader_wilhelm_i_loc
+	}
+	text = {
+		localization_key = fpw_no_secondary_leader_loc
+	}
+}

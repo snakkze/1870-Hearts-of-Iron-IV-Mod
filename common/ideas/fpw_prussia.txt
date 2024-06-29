@@ -1,6 +1,5 @@
 ideas = {
 	country = {
-
 		# Brothers on the Front
 		fpw_brothers_on_the_front = {
 			allowed = {
@@ -164,14 +163,12 @@ ideas = {
 
 				
 				}
+			}
 			
-
-			
-		
-		# Kaiser Wilhelm I
+	hidden_ideas = {
 		fpw_kaiser_wilhelm = {
 			allowed = {
-				always = no
+				has_country_flag = fpw_secondary_leader_wilhelm_i
 			}
 
 			allowed_civil_war = {
@@ -180,16 +177,13 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = wilhelm_i
-
 			modifier = {
 				stability_factor = 0.15
 				war_support_factor = 0.2
 				political_power_factor = 0.1
 			}
 		}
-
-}
+	}
 }
 
 

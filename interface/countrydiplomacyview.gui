@@ -224,14 +224,14 @@ guiTypes = {
 
 				iconType = {
 					name = "leader_portrait"
-					position = { x = 22 y = 5 }
+					position = { x = 22 y = 8 }
 					spriteType = "GFX_leader_unknown"
 					scale = 0.74
 				}
 
 				iconType = {
 					name = "diplo_leader_frame"
-					position = { x = 13 y = 0 }
+					position = { x = 13 y = 3 }
 					spriteType = "GFX_diplo_leader_frame"
 					alwaystransparent = yes
 				}
