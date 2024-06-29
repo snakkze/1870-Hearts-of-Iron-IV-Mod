@@ -1979,7 +1979,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_build_a_merchant_fleet
-		icon = GFX_
+		icon = GFX_focus_generic_merchant_fleet
 		prerequisite = { focus = JAP_establish_modern_ports }
 		relative_position_id = JAP_establish_modern_ports
 		x = -1
@@ -2121,7 +2121,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_adopt_the_gold_standard
-		icon = GFX_
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = JAP_distribute_the_yen focus= JAP_keep_the_koban }
 		relative_position_id = JAP_keep_the_koban
 		x = -1
@@ -2399,10 +2399,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}			
 		}
@@ -2414,6 +2414,7 @@ focus_tree = {
 			}
 		
 			random_owned_controlled_state = {
+				prioritize = { 533 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -2436,10 +2437,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3337,7 +3338,7 @@ focus_tree = {
   focus = {
 		id = JAP_modernize_the_military_system
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 49
+		x = 51
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -3361,85 +3362,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_invite_french_military_advisers
+		id = JAP_an_european_style_military
 		icon = GFX_
-		prerequisite = { focus = JAP_modernize_the_military_system }
-		relative_position_id = JAP_modernize_the_military_system
-		x = -4
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = JAP_train_the_denshutai
-		icon = GFX_
-		prerequisite = { focus = JAP_invite_french_military_advisers }
-		relative_position_id = JAP_invite_french_military_advisers
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-		}
-	}
-	
-	
-	focus = {
-		id = JAP_adopt_royal_navy_traditions
-		icon = GFX_
-		prerequisite = { focus = JAP_modernize_the_military_system }
-		relative_position_id = JAP_modernize_the_military_system
-		x = -2
-		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = JAP_embrace_american_logistics
-		icon = GFX_focus_generic_truck
-		prerequisite = { focus = JAP_modernize_the_military_system }
-		relative_position_id = JAP_modernize_the_military_system
-		x = 2
-		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = JAP_promulgate_the_conscription_act
-		icon = GFX_
+		
 		prerequisite = { focus = JAP_modernize_the_military_system }
 		relative_position_id = JAP_modernize_the_military_system
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -3454,8 +3383,64 @@ focus_tree = {
 	focus = {
 		id = JAP_integrate_prussian_infantry_tactics
 		icon = GFX_
-		prerequisite = { focus = JAP_promulgate_the_conscription_act }
-		relative_position_id = JAP_promulgate_the_conscription_act
+		prerequisite = { focus = JAP_an_european_style_military }
+		relative_position_id = JAP_an_european_style_military
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_embrace_american_logistics
+		icon = GFX_focus_generic_truck
+		prerequisite = { focus = JAP_an_european_style_military }
+		relative_position_id = JAP_an_european_style_military
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_establish_the_imperial_guard
+		icon = GFX_
+		
+		prerequisite = { focus = JAP_an_european_style_military }
+		relative_position_id = JAP_an_european_style_military
+		x = -2
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_create_the_army_general_staff_office
+		icon = GFX_
+		
+		prerequisite = { focus = JAP_an_european_style_military }
+		relative_position_id = JAP_an_european_style_military
 		x = 0
 		y = 2
 		cost = 10
@@ -3468,6 +3453,256 @@ focus_tree = {
 
 		}
 	}
+	
+	focus = {
+		id = JAP_new_military_plans_and_strategies
+		icon = GFX_
+		
+		prerequisite = { focus = JAP_create_the_army_general_staff_office }
+		relative_position_id = JAP_create_the_army_general_staff_office
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_samurai_spirit
+		icon = GFX_
+		
+		prerequisite = { focus = JAP_create_the_army_general_staff_office }
+		relative_position_id = JAP_create_the_army_general_staff_office
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_invite_french_military_advisers
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = JAP_modernize_the_military_system }
+		relative_position_id = JAP_modernize_the_military_system
+		x = -4
+		y = 1
+		cost = 10
+		available = {
+		NOT = {
+		has_war_with = FRA
+		}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_train_the_denshutai
+		icon = GFX_
+		prerequisite = { focus = JAP_invite_french_military_advisers }
+		relative_position_id = JAP_invite_french_military_advisers
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_second_french_military_mission_to_japan
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = JAP_invite_french_military_advisers }
+		relative_position_id = JAP_invite_french_military_advisers
+		x = 0
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_the_military_school_of_ichigaya
+		icon = GFX_
+		prerequisite = { focus = JAP_second_french_military_mission_to_japan }
+		relative_position_id = JAP_second_french_military_mission_to_japan
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_the_japanese_army_academy
+		icon = GFX_
+		prerequisite = { focus = JAP_the_military_school_of_ichigaya }
+		relative_position_id = JAP_the_military_school_of_ichigaya
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	
+	
+	
+	focus = {
+		id = JAP_promulgate_the_conscription_act
+		icon = GFX_
+		prerequisite = { focus = JAP_modernize_the_military_system }
+		relative_position_id = JAP_modernize_the_military_system
+		x = -2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		if = {
+			limit = {
+				has_idea = limited_conscription
+				}
+			add_ideas = { 
+			extensive_conscription
+			}
+			}
+		if = {
+			limit = {
+				has_idea = volunteer_only
+				}
+			add_ideas = { 
+			limited_conscription
+			}
+			}
+		if = {
+			limit = {
+				has_idea = disarmed_nation
+				}
+			add_ideas = { 
+			limited_conscription
+			}
+			}
+		
+		
+		
+		
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_6
+				}
+
+		#CIVIL WAR??
+
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_6
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_4
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_3
+			}
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_1
+			add_idea = jap_societal_backlash_2
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_ideas = {
+			jap_societal_backlash_1
+			}
+			}
+		}
+	}
+	
+
   
  
   
@@ -3476,8 +3711,8 @@ focus_tree = {
   
   focus = {
 		id = JAP_focus_on_our_strengths
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 55
+		icon = GFX_
+		x = 58
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -3796,6 +4031,24 @@ focus_tree = {
 					}
 				}
 			}			
+		}
+	}
+	
+	focus = {
+		id = JAP_adopt_royal_navy_traditions
+		icon = GFX_
+		prerequisite = { focus = JAP_yokosuka_naval_arsenal }
+		relative_position_id = JAP_yokosuka_naval_arsenal
+		x = -3
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
 		}
 	}
 	

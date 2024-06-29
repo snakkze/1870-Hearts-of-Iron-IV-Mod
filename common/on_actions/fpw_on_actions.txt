@@ -396,6 +396,9 @@ on_actions = {
 				modifier = fpw_JAP_isolated 
 				}
 				}
+				JAP = {
+				country_event = fpw_japan.1
+				}
 				
 				
 				
@@ -452,7 +455,6 @@ on_actions = {
 				}
 			}}
 			JAP = {
-			country_event = fpw_japan.1
 			set_capital = {
 			state = 282
 			}
