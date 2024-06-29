@@ -125,6 +125,7 @@ france_surrender = {
 	}
 
 	set_global_flag = fpw_treaty_of_frankfurt
+	set_global_flag = fpw_prussia_won
 
 	country_event = { id=franco_prussian_fpw.3 days = 1 }
 
