@@ -12,10 +12,10 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		#modifier = {
-		#	add = 10
-		#	tag = FRA
-		#}
+		modifier = {
+			add = 10
+			tag = FRA
+		}
 	}
 	
 	default = no
@@ -24,7 +24,7 @@ focus_tree = {
 	# 
 	focus = {
 		id = FRA_foreign_policies
-		icon = GFX_focus_focus_fra_border
+		icon = GFX_focus_FRA_heart_of_europe
 		x = 6
 		y = 0
 		cost = 5
@@ -202,7 +202,7 @@ focus_tree = {
 	# Auto completed when the republicans seize power(when sedan falls)
 	focus = {
 		id = FRA_government_of_national_defence
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FRA_government_of_national_defence
 		prerequisite = { focus = FRA_implement_new_constitution }
 		mutually_exclusive = { focus = FRA_empire_triumphant }
 		available = {
@@ -263,7 +263,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_third_french_republic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FRA_third_republic
 		prerequisite = { focus = FRA_government_of_national_defence }
 		mutually_exclusive = { focus = FRA_restore_bourbon_monarchy }
 		available ={
@@ -738,12 +738,18 @@ focus_tree = {
 		id = FRA_seek_revenge
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = FRA_third_french_republic }
+		mutually_exclusive = { focus = FRA_eternal_republic }
+		mutually_exclusive = { focus = FRA_work_with_the_commune }
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_defeat
+				has_global_flag = fpw_prussia_won
+			}
 		}
 		x = 0
 		y = 1
 		relative_position_id = FRA_third_french_republic
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0
 		}
@@ -758,12 +764,14 @@ focus_tree = {
 		id = FRA_eternal_republic
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = FRA_third_french_republic }
+		mutually_exclusive = { focus = FRA_seek_revenge }
+		mutually_exclusive = { focus = FRA_work_with_the_commune }
 		available = {
 		}
 		x = 3
 		y = 1
 		relative_position_id = FRA_third_french_republic
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -778,13 +786,17 @@ focus_tree = {
 		id = FRA_work_with_the_commune
 		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = FRA_third_french_republic }
+		mutually_exclusive = { focus = FRA_seek_revenge }
+		mutually_exclusive = { focus = FRA_eternal_republic }
 		available = {
-			country_exists = FPC
+			16 = {
+				is_controlled_by = FPC
+			}
 		}
 		x = 6
 		y = 1
 		relative_position_id = FRA_third_french_republic
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0
 		}
@@ -792,6 +804,35 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = FRA_natural_borders
+		icon = GFX_focus_focus_fra_border
+		prerequisite = { focus = FRA_empire_triumphant focus = FRA_restore_bourbon_monarchy focus = FRA_seek_revenge }
+		available = {
+		}
+		x = 0
+		y = 3
+		relative_position_id = FRA_empire_triumphant
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_claim = 936
+			add_state_claim = 988
+			add_state_claim = 42
+			add_state_claim = 939
+			add_state_claim = 51
+			add_state_claim = 8
+			add_state_claim = 34
+			add_state_claim = 6
+			add_state_claim = 35
 		}
 	}
 

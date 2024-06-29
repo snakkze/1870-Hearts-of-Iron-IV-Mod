@@ -12,7 +12,6 @@ state={
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			fuel_silo = 1
 		}
 		
 		victory_points = {
@@ -26,5 +25,5 @@ state={
 		1117 9952 10128 11930 11989 12007 
 	}
 
-	local_supplies=0.0 
+	local_supplies=25.0 
 }

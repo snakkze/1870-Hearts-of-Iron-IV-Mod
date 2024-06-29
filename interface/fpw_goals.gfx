@@ -202,6 +202,22 @@ spriteTypes = {
 	}
 }
 
+# FRANCE #
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_FRA_third_republic"
+		texturefile = "gfx/interface/goals/third_republic.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_heart_of_europe"
+		texturefile = "gfx/interface/goals/heart_of_europe.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_government_of_national_defence"
+		texturefile = "gfx/interface/goals/focus_FRA_government_of_national_defence.png"
+	}
+}
+
 # ROMANIA #
 spriteTypes = {
 	spriteType = {

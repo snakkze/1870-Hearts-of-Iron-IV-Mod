@@ -153,13 +153,14 @@ ideas = {
             }
 		}
 		
-		#GET BETTER EVERY YEAR?
 		jap_societal_backlash_1	= {
 				
 			allowed = {
 				always = no
 			}
-
+			allowed_civil_war = {
+                has_government = fascism
+            }
 			picture = chi_war_of_resistance
 				
 			removal_cost = -1
@@ -174,7 +175,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
+			allowed_civil_war = {
+                has_government = fascism
+            }
 			picture = chi_war_of_resistance
 				
 			removal_cost = -1
@@ -189,6 +192,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			allowed_civil_war = {
+                has_government = fascism
+            }
 
 			picture = chi_war_of_resistance2
 				
@@ -204,6 +210,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			allowed_civil_war = {
+                has_government = fascism
+            }
 
 			picture = chi_war_of_resistance2
 				
@@ -219,6 +228,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			allowed_civil_war = {
+                has_government = fascism
+            }
 
 			picture = chi_war_of_resistance3
 				
@@ -234,6 +246,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			allowed_civil_war = {
+                has_government = fascism
+            }
 
 			picture = chi_war_of_resistance3
 				

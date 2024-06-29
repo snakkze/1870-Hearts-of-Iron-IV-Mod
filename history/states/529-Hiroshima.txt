@@ -9,10 +9,10 @@ state={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 3 #was: 7
+			infrastructure = 1 #was: 7
 			industrial_complex = 1
 			1092 = {
-				naval_base = 10
+				naval_base = 1
 
 			}
 		}
@@ -34,5 +34,5 @@ state={
 		1092 1167 1191 4197 7050 7145 7212 9968 10052 10055 11946 11985 
 	}
 
-	local_supplies=0.0 
+	local_supplies=25.0 
 }

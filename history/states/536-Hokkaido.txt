@@ -14,7 +14,9 @@ state = {
 		add_claim_by = JAP
 		
 		buildings = {
-			infrastructure = 1
+			3962 = {
+				naval_base = 2
+			}
 		}
 
 		victory_points = {
@@ -33,5 +35,5 @@ state = {
 		1512 1642 3962 4576 4646 7532 7595 10444 10512 12352 12421 12493 
 	}
 
-	local_supplies = 0.0 
+	local_supplies = 20.0 
 }
