@@ -18,4 +18,23 @@ scripted_gui = {
 			}
 		}
 	}
+	secondary_leader_gui_political = {
+		parent_window_token = politics_tab
+		context_type = player_context
+		
+		window_name = "fpw_secondary_leader_container_political"
+		
+		visible = {
+		}
+		
+		effects = {
+		}
+		triggers = {
+		}
+		properties = {
+			fpw_secondary_leader_icon = {
+				image = "[Get_Secondary_Leader_Portrait]"
+			}
+		}
+	}
 }
