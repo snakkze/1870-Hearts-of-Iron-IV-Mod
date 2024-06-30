@@ -3,7 +3,6 @@ is_german_minor = {
 		tooltip = fpw_is_german_minor
 		OR = {
 			original_tag = BRU
-			original_tag = WRT
 			original_tag = WLD
 			original_tag = SXY
 			original_tag = SXW
