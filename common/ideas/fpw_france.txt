@@ -4,12 +4,18 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-
-			available = {
-				NOT = {
-					has_government = neutrality # not if napoleon is the leader
-				}
-			}
+			cancel = {
+                NOT = {
+					has_government = democratic
+					has_government = fascism
+				}	
+            }
+			on_add = {
+                set_country_flag = fpw_secondary_leader_fra_napoleon_III
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_fra_napoleon_III
+            }
 			
 			removal_cost = -1
 			

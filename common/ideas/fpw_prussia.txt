@@ -187,11 +187,20 @@ ideas = {
 		# Kaiser Wilhelm I
 		fpw_kaiser_wilhelm = {
 			allowed = {
-				OR = {
+				original_tag = PRS
+			}
+			cancel = {
+                NOT = {
 					has_government = democratic
 					has_government = fascism
-				}
-			}
+				}	
+            }
+			on_add = {
+                set_country_flag = fpw_secondary_leader_prs_wilhelm_I
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_prs_wilhelm_I
+            }
 
 			removal_cost = -1
 

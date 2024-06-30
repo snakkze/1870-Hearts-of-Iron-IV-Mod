@@ -85,12 +85,18 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
-
-			available = {
-				NOT = {
-					has_government = neutrality #remove if king in power
-				}
-			}
+			cancel = {
+                NOT = {
+					has_government = democratic
+					has_government = fascism
+				}	
+            }
+			on_add = {
+                set_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
+            }
 			
 			removal_cost = -1
 			
