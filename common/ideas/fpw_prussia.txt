@@ -181,6 +181,22 @@ ideas = {
 				neutrality_acceptance = 35
 			}
 		}
+		
+		fpw_prussian_norms = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_prussian_norms
+
+			modifier = {
+				war_support_factor = 0.10
+				mobilization_speed = 0.15
+				surrender_limit = 0.25
+			}
+		}
 	}
 	
 	hidden_ideas = {

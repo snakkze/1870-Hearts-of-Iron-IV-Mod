@@ -22,8 +22,8 @@ focus_tree = {
 	}
 	
 	continuous_focus_position = {
-		x = 4300
-		y = 1000	
+		x = 3800
+		y = 950	
 	}
 	
 	default = no
@@ -138,6 +138,13 @@ focus_tree = {
 		offset = {
 			x = 2
 			trigger = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}	
+		}
+		
+		offset = {
+			x = 2
+			trigger = {
 				is_debug = no
 			}	
 		}
@@ -161,6 +168,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_branch_incomplete_tt
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -197,7 +205,6 @@ focus_tree = {
 		cost = 10
 		
 		allow_branch = {
-			#is_debug = yes
 			NOT = {
 				has_completed_focus = PRS_austro_prussian_victory
 			}	
@@ -481,15 +488,31 @@ focus_tree = {
 		id = PRS_towards_a_greater_prussia
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = PRS_prussian_identity focus = PRS_integrate_minor_austrian_lands }
-		relative_position_id = PRS_prussian_identity
-		x = 3
+		relative_position_id = PRS_integrate_minor_austrian_lands
+		x = -3
 		y = 1
 		cost = 10
+		
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}	
+		}
+
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}	
+		}		
 		
 		ai_will_do = {
 			factor = 10
 		}
-
+		
 		available = {
 			if = {
 				limit = {
@@ -520,7 +543,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
+		
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}	
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -668,24 +697,23 @@ focus_tree = {
 		prerequisite = { focus = PRS_annex_holstein }
 		mutually_exclusive = { focus = PRS_bruderkrieg_ending }
 		relative_position_id = PRS_annex_holstein
-		x = 4
+		x = 7
 		y = 1
 		cost = 10
 		
 		offset = {
-			x = -2
+			x = -7
+			y = 0
 			trigger = {
-				is_debug = no
+				has_completed_focus = PRS_austro_prussian_victory	
 			}
-		}
-
-		offset = {
-			x = -2
-			trigger = {
-				is_debug = no
-				has_completed_focus = PRS_austro_prussian_victory
+		}	
+		
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
 			}
-		}			
+		}	
 		
 		ai_will_do = {
 			factor = 10
@@ -713,18 +741,40 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 10
-
-		ai_will_do = {
-			factor = 10
+		
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory	
+			}
+		}
+		
+		offset = {
+			x = 3
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_integrate_minor_austrian_lands
+			}
 		}
 		
 		allow_branch = {
-			#is_debug = yes
+			NOT = {
+				OR = {
+					has_completed_focus = PRS_continue_bismarcks_plan
+					has_completed_focus = PRS_bruderkrieg_ending
+				}	
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
 		}
 
 		completion_reward = {
 			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
 			# possibly also with an event
+			mark_focus_tree_layout_dirty = yes
 			country_event = prussia_fpw.1
 			hidden_effect = {
 				set_global_flag = fpw_kaiser_path_not_allowed
@@ -741,7 +791,32 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-
+		
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = PRS_continue_bismarcks_plan
+					has_completed_focus = PRS_bruderkrieg_ending
+				}	
+			}
+		}
+		
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
+		
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_integrate_minor_austrian_lands
+			}
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -769,6 +844,23 @@ focus_tree = {
 		y = 1
 		cost = 10
 
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+				NOT = {
+					has_completed_focus = PRS_continue_bismarcks_plan
+				}
+			}
+		}	
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_continue_bismarcks_plan
+			}
+		}
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -788,7 +880,15 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
+		
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_integrate_minor_austrian_lands
+			}
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -806,7 +906,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
+		
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_continue_bismarcks_plan
+			}
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -880,7 +986,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
+		
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_continue_bismarcks_plan
+			}
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -902,17 +1014,19 @@ focus_tree = {
 		cost = 5
 		
 		offset = {
-			x = -1
+			x = -3
+			y = 0
 			trigger = {
-				is_debug = no
+				has_completed_focus = PRS_continue_bismarcks_plan
 			}
 		}
 		
-		offset = {
-			x = -2
-			trigger = {
-				is_debug = no
-				has_completed_focus = PRS_austro_prussian_victory
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = PRS_integrate_minor_austrian_lands
+					has_completed_focus = PRS_bruderkrieg_ending
+				}	
 			}
 		}
 		
@@ -927,6 +1041,7 @@ focus_tree = {
 		completion_reward = {
 			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
 			# possibly also with an event
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -938,7 +1053,23 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-
+		
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
+		
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_continue_bismarcks_plan
+			}
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -981,6 +1112,22 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
+		
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_continue_bismarcks_plan	
+			}
+		}
+		
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory	
+			}
+		}
 
 		ai_will_do = {
 			factor = 10
@@ -1016,7 +1163,15 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-
+		
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_continue_bismarcks_plan	
+			}
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -1401,7 +1556,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			#is_debug = yes
+			is_debug = yes
 		}
 		
 		available = {
@@ -1507,7 +1662,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			#is_debug = yes
+			is_debug = yes
 		}
 
 		available = {
@@ -1857,6 +2012,13 @@ focus_tree = {
 		}
 		
 		offset = {
+			x = 3
+			trigger = {
+				is_debug = yes
+			}
+		}
+		
+		offset = {
 			x = -5
 			trigger = {
 				is_debug = no
@@ -1893,7 +2055,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			#is_debug = yes
+			is_debug = yes
 			AND = {
 				NOT = {
 					has_completed_focus = PRS_lesser_german_solution
@@ -2193,7 +2355,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			#is_debug = yes
+			is_debug = yes
 			AND = {
 				NOT = {
 					has_completed_focus = PRS_lesser_german_solution
@@ -2826,28 +2988,9 @@ focus = {
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
-		offset = {
-			x = -11
-			trigger = {
-				is_debug = no
-			}	
-		}
-		
-		offset = {
-			x = -2
-			trigger = {
-				is_debug = no
-				has_completed_focus = PRS_lesser_german_solution
-			}	
-		}
-		
-		offset = {
-			x = -13
-			trigger = {
-				#is_debug = yes
-				has_completed_focus = PRS_lesser_german_solution
-			}
-		}
+		allow_branch = {
+			always = no
+		}	
 		
 		available_if_capitulated = yes
 	
@@ -3110,34 +3253,49 @@ focus = {
 	focus = {
 		id = PRS_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 40
+		x = 31
 		y = 0
 		cost = 10
-
-		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
 		offset = {
-			x = -10
+			x = 14
+			y = 0
 			trigger = {
-				is_debug = no
-			}	
+				is_debug = yes
+			}
+		}
+		
+		offset = {
+			x = -15
+			y = 0
+			trigger = {
+				is_debug = yes
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+		
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				is_debug = yes
+				OR = {
+					has_completed_focus = PRS_bruderkrieg_ending
+					has_completed_focus = PRS_austro_prussian_victory
+				}	
+			}
 		}
 		
 		offset = {
 			x = -2
+			y = 0
 			trigger = {
 				is_debug = no
 				has_completed_focus = PRS_lesser_german_solution
-			}	
-		}
+			}			
+		}	
 		
-		offset = {
-			x = -12
-			trigger = {
-				#is_debug = yes
-				has_completed_focus = PRS_lesser_german_solution
-			}
-		}
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
 	
@@ -3536,36 +3694,51 @@ focus = {
 	focus = {
 		id = PRS_industrial_effort
 		icon = GFX_focus_generic_industry_2
-		x = 30
+		x = 26
 		y = 0
 		cost = 5
-	
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
 		
 		offset = {
-			x = -12
+			x = 25
+			y = 0
 			trigger = {
-				is_debug = no
-			}	
+				is_debug = yes
+			}
+		}
+		
+		offset = {
+			x = -15
+			y = 0
+			trigger = {
+				is_debug = yes
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+		
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				is_debug = yes
+				OR = {
+					has_completed_focus = PRS_bruderkrieg_ending
+					has_completed_focus = PRS_austro_prussian_victory
+				}	
+			}
 		}
 		
 		offset = {
 			x = -2
+			y = 0
 			trigger = {
 				is_debug = no
 				has_completed_focus = PRS_lesser_german_solution
-			}	
-		}
-		
-		offset = {
-			x = -14
-			trigger = {
-				#is_debug = yes
-				has_completed_focus = PRS_lesser_german_solution
-			}
+			}			
 		}	
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -4283,17 +4456,51 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_status_of_the_army
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_goal_generic_allies_build_infantry
 		
-		allow_branch = {
-			#is_debug = yes
+		offset = {
+			x = 18
+			y = 0
+			trigger = {
+				is_debug = yes
+			}
+		}
+
+		offset = {
+			x = -15
+			y = 0
+			trigger = {
+				is_debug = yes
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				is_debug = yes
+				OR = {
+					has_completed_focus = PRS_bruderkrieg_ending
+					has_completed_focus = PRS_austro_prussian_victory
+				}	
+			}
+		}
+		
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				is_debug = no
+				has_completed_focus = PRS_lesser_german_solution
+			}
 		}	
 		
 		available = {
 			
 		}
 		
-		x = -11
+		x = 19
 		y = 0
 		
 		cost = 5
@@ -4308,7 +4515,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_moltke_plan
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_military_mission
 		
 		available = {
 			always = false
@@ -4331,7 +4538,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_appoint_alfred 
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_military_mission
 		
 		available = {
 			always = false
@@ -4354,7 +4561,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_the_prussian_norms
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_goal_generic_national_unity
 		
 		available = {
 			
@@ -4370,13 +4577,15 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_ideas = {
+				fpw_prussian_norms
+			}	
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_prussian_discipline
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_manpower
 		
 		available = {
 			
@@ -4392,13 +4601,15 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			custom_effect_tooltip = fpw_prs_prussian_discipline_focus_tt
+			add_to_variable = { prs_army_attack_factor = 0.05 }
+			add_to_variable = { prs_army_defence_factor = 0.05 }
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_expand_officer_academies 
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_military_academy
 		
 		available = {
 			
@@ -4414,16 +4625,17 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			custom_effect_tooltip = fpw_prs_expand_officer_academies_focus_tt
+			add_to_variable = { prs_experience_gain_factor = 0.15 }
+			add_to_variable = { prs_max_planning = 0.20 }
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_central_command_structure
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_full_social_mobilization
 		
 		available = {
-			
 		}
 		
 		x = 1
@@ -4436,16 +4648,21 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			custom_effect_tooltip = fpw_prs_central_command_structure_tt
+			add_to_variable = { prs_command_power_gain = 0.15 }
+			add_to_variable = { prs_army_intel_decryption_bonus = 2.5 }
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_new_general_staff
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_military_dictatorship
 		
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = fpw_prs_formed_german_empire_tt
+				has_cosmetic_tag = PRS_GER
+			}	
 		}
 		
 		x = 0
@@ -4461,13 +4678,16 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_mobile_warfare
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
+		
+		allow_branch = {
+			is_debug = yes
+		}	
 		
 		available = {
 			
@@ -4490,7 +4710,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_expand_cavalry_core
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
 		
 		available = {
 			
@@ -4512,7 +4732,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_faster_armies
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
 		
 		available = {
 			
@@ -4534,7 +4754,11 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_grand_planning
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
+		
+		allow_branch = {
+			is_debug = yes
+		}	
 		
 		available = {
 			
@@ -4557,7 +4781,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_improve_training_quality
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
 		
 		available = {
 		}
@@ -4578,7 +4802,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_quality_of_education
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
 		
 		available = {
 		}
@@ -4599,7 +4823,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_amend_research_budget
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
 		
 		available = {
 		}
@@ -4620,7 +4844,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_equipment_quality
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
 		
 		available = {
 		}
@@ -4646,7 +4870,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_equipment_quantity
-		icon = GFX_focus_generic_fascist_troops
+		#icon = GFX_focus_generic_fascist_troops
 		
 		available = {
 		}

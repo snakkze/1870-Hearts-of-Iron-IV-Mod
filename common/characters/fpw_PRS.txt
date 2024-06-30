@@ -81,13 +81,13 @@ characters={
             planning_skill = 4
 			logistics_skill = 1
 		}
-        advisor = {
+		advisor = {
             cost = 150
             slot = army_chief
             idea_token = PRS_Helmuth_von_Moltke_carm
             available = {
             } 
-			can_be_fired = yes
+			can_be_fired = no
             traits = {  army_chief_planning_2 }
         }
     }
@@ -110,13 +110,14 @@ characters={
             planning_skill = 1
 			logistics_skill = 1
 		}
-        advisor = {
+		advisor = {
             cost = 150
             slot = army_chief
             idea_token = PRS_Alfred_von_Rauch_carm
             available = {
+				has_completed_focus = PRS_focus_appoint_alfred
             } 
-			can_be_fired = yes
+			can_be_fired = no
             traits = {  army_cavalry_3 }
         }
     }
@@ -156,15 +157,6 @@ characters={
             planning_skill = 1
 			logistics_skill = 3
 		}
-        advisor = {
-            cost = 150
-            slot = army_chief
-            idea_token = PRS_Hans_Wilhelm_von_Kotze_carm
-            available = {
-            } 
-			can_be_fired = yes
-            traits = {  quartermaster_general }
-        }
     }
 	PRS_Friedrich_Karl_of_Prussia = {
         name = "Friedrich Karl of Prussia"
@@ -236,15 +228,6 @@ characters={
             planning_skill = 2
 			logistics_skill = 1
 		}
-        advisor = {
-            cost = 150
-            slot = army_chief
-            idea_token = PRS_Hans_von_Bülow_carm
-            available = {
-            } 
-			can_be_fired = yes
-            traits = {  army_artillery_3 }
-        }
     }
 	PRS_Heinrich_Adolf_von_Zastrow = {
         name = "Heinrich Adolf von Zastrow"
@@ -282,15 +265,6 @@ characters={
             planning_skill = 2
 			logistics_skill = 4
 		}
-        advisor = {
-            cost = 150
-            slot = army_chief
-            idea_token = PRS_Albrecht_Graf_von_Roon_carm
-            available = {
-            } 
-			can_be_fired = yes
-            traits = {  army_chief_organizational_2 }
-        }
     }
 	PRS_Leonhard_von_Blumenthal = {
         name = "Leonhard von Blumenthal"

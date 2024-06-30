@@ -706,12 +706,21 @@ country_event = {
 		name = prussia_fpw.22.a
 		
 		custom_effect_tooltip = fpw_historical_option_tt
-		complete_national_focus = PRS_focus_moltke_plan
+		custom_effect_tooltip = fpw_prs_moltke_plan_focus_tt
+		custom_effect_tooltip = fpw_prs_keep_moltke_tt
+		hidden_effect = {
+			complete_national_focus = PRS_focus_moltke_plan
+		}	
 	}
 
 	option = {
 		name = prussia_fpw.22.b
 		
-		complete_national_focus = PRS_focus_moltke_plan
+		custom_effect_tooltip = fpw_prs_appoint_alfred_focus_tt
+		custom_effect_tooltip = fpw_prs_appoint_alfred_tt
+		hidden_effect = {
+			complete_national_focus = PRS_focus_appoint_alfred
+			activate_advisor = PRS_Alfred_von_Rauch_carm
+		}	
 	}
 }

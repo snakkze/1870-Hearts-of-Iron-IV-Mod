@@ -114,4 +114,14 @@ spriteTypes = {
 		name = "GFX_idea_education_golden_age"
 		texturefile = "gfx\interface\ideas\education_golden_age.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_idea_prussian_general_staff"
+		texturefile = "gfx\interface\ideas\PRS\prs_icon_general_staff.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_prussian_norms"
+		texturefile = "gfx\interface\ideas\PRS\prs_icon_prussian_norms.dds"
+	}
 }

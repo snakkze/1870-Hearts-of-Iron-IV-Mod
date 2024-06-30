@@ -28,9 +28,18 @@ oob = "PRS_1866"
 	}
 }
 
-add_ideas = fpw_kaiser_wilhelm
+add_ideas = {
+	fpw_kaiser_wilhelm
+}	
 
-set_research_slots = 4
+add_dynamic_modifier = {
+	modifier = fpw_PRS_prussian_general_staff
+}
+
+set_variable = { prs_command_power_gain = -0.05 }
+set_variable = { prs_army_leader_cost_factor = 0.10}
+
+set_research_slots = 3
 
 set_politics = {
 	# By seats
@@ -121,5 +130,7 @@ recruit_character = PRS_Reinhold_von_Werner
 recruit_character = PRS_Max_von_der_Goltz
 recruit_character = PRS_Friedrich_von_Hollmann
 recruit_character = PRS_Adalbert_of_Prussia
+
+activate_advisor = PRS_Helmuth_von_Moltke_carm
 
 

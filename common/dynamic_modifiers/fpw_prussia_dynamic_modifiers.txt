@@ -11,3 +11,19 @@ fpw_PRS_heil_dir_im_siegerkranz = {
 	
 	custom_modifier_tooltip = prestige_victor_of_1871
 }
+
+fpw_PRS_prussian_general_staff = {
+	enable = { always = yes }
+	icon = GFX_idea_prussian_general_staff
+
+	army_leader_cost_factor = prs_army_leader_cost_factor
+	experience_gain_factor = prs_experience_gain_factor
+	command_power_gain = prs_command_power_gain
+	max_planning = prs_max_planning
+	army_intel_decryption_bonus = prs_army_intel_decryption_bonus
+	experience_gain_infantry_training_factor = prs_experience_gain_infantry_training_factor
+	army_infantry_attack_factor = prs_army_infantry_attack_factor
+	cavalry_attack_factor = prs_cavalry_attack_factor
+	army_defence_factor = prs_army_defence_factor
+	army_attack_factor = prs_army_attack_factor
+}
