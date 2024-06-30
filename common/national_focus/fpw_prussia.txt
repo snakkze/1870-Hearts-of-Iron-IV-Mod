@@ -1134,33 +1134,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			effect_tooltip = {
-				every_country = {
-					limit = {
-						is_german_minor = yes
-					}
-					country_event = { id = prussia_fpw.3 hours = 2 }
-				}
-			}
 			# Prussia demands the smaller remaing states to join, if not prussia will get a war goal
-			hidden_effect = {
-				SXY = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				SXM = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				SXW = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				SCG = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				SBG = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				MKS = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				MCK = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				LUE = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				HAM = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				OLD = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				BRE = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				SBL = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				LIP = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				WLD = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				BRU = { country_event = { id = prussia_fpw.3 hours = 2 } }
-				ANH = { country_event = { id = prussia_fpw.3 hours = 2 } }
-			}
+			SXY = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SXM = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SXW = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SCG = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SBG = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			MKS = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			MCK = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			LUE = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			HAM = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			OLD = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			BRE = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			SBL = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			LIP = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			WLD = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			BRU = { country_event = { id = prussia_fpw.3 hours = 2 } }
+			ANH = { country_event = { id = prussia_fpw.3 hours = 2 } }
 		}
 	}
 
@@ -2006,7 +1996,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = fpw_russian_friendship
 			# Russia wont join but will unlikier to join a great war
 			# Will join to split austria polish territories and border stuff russia and the austria prussia
 		}
