@@ -61,6 +61,7 @@ on_actions = {
 			}
 		}
 	}
+
 	on_startup = {
 		effect = {
 			every_country = {
@@ -426,7 +427,7 @@ on_actions = {
 					EZO = {
 					controls_state = 536
 					}
-					536= = {
+					536= {
 					is_claimed_by = JAP
 					}
 							}
@@ -468,7 +469,7 @@ on_actions = {
 			state = 282
 			}
 			}
-				}
 			}
 		}
+	}
 }

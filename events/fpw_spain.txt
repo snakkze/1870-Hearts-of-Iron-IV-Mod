@@ -69,9 +69,9 @@ country_event = {
 		add_stability = -0.25
 		hidden_effect = { 
 			set_cosmetic_tag = SPR_revolutionaries 
-			#PRS = {
-			#	complete_national_focus = PRS_spanish_glorious_revolution
-			#}
+			PRS = {
+				complete_national_focus = PRS_spanish_glorious_revolution
+			}
 			#SPR = {
 			#	complete_national_focus = spanish_glorious_revolution
 			#}
@@ -239,6 +239,12 @@ country_event = {
 	# Decline
 	option = {
 		name = spain_fpw.2.b
+		if = {
+			limit = {
+				original_tag = PRS
+			}
+			custom_effect_tooltip = fpw_historical_option_tt
+		}
 		ai_chance = {
 			base = 10 
 			modifier = {
@@ -485,11 +491,6 @@ country_event = {
 				idea = fpw_SPR_aftermath_of_the_civilwar
 				years = 1
 				months = 5
-			}
-		}
-		hidden_effect = {	
-			PRS = {
-				complete_national_focus = PRS_spanish_glorious_revolution
 			}
 		}
 	}

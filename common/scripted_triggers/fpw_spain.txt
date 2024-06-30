@@ -1,0 +1,26 @@
+isabella_won = {
+	custom_trigger_tooltip = {
+		tooltip = fpw_isabella_won_tt
+		has_global_flag = fpw_spanish_glorious_revolution
+		SPR = {
+			has_country_leader = {
+				character = SPR_isabella_ii
+				ruling_only = yes
+			}
+		}
+		NOT = {
+			all_other_country = {
+				limit = {
+					original_tag = SPR
+					NOT = {
+						has_country_leader = {
+							character = SPR_isabella_ii
+							ruling_only = yes
+						}
+					}
+				}
+				exists = no
+			}
+		}
+	}
+}
