@@ -358,6 +358,7 @@ fpw_austro_prussian_war_category = {
 
 		available = {
 			AND = {
+				original_tag = PRS
 				PRS = {
 					has_completed_focus = PRS_propose_federal_reform
 				}

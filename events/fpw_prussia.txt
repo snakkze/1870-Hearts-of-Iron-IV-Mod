@@ -25,6 +25,7 @@ country_event = {
 			}
 		}
 		complete_national_focus = PRS_continue_bismarcks_plan
+		
 	}
 
 	# Disagree with Bismarck
@@ -42,7 +43,12 @@ country_event = {
 				}
 			}
 		}
+		transfer_state = 978
+		transfer_state = 979
+		add_state_core = 978
+		add_state_core = 979
 		hidden_effect = {
+			clr_global_flag = fpw_kaiser_path_not_allowed
 			if = {
 				limit = {
 					has_country_leader = {

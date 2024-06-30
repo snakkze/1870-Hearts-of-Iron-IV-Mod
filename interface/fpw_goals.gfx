@@ -1,6 +1,27 @@
 # PRUSSIA #
 spriteTypes = {
 	spriteType = {
+		name = "GFX_focus_PRS_league_of_three_emperors"
+		texturefile = "gfx/interface/goals/focus_PRS_league_of_three_emperors.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_italo_austro_reapproachments"
+		texturefile = "gfx/interface/goals/focus_PRS_italo_austro_reapproachments.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_tripple_alliance"
+		texturefile = "gfx/interface/goals/focus_PRS_tripple_alliance.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_congo_confrence"
+		texturefile = "gfx/interface/goals/focus_PRS_congo_confrence.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_unified_germany"
+		texturefile = "gfx/interface/goals/focus_PRS_unified_germany.png"
+	}
+
+	spriteType = {
 		name = "GFX_focus_PRS_maerchenprinz"
 		texturefile = "gfx/interface/goals/focus_PRS_maerchenprinz.dds"
 	}

@@ -115,57 +115,54 @@ ideas = {
 			picture = icon
 
 			modifier = {
-				consumer_goods_factor 0.15
+				consumer_goods_factor =  0.15
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.25
 				cic_construction_boost = -0.25
 			}
 		}
 
-			fpw_united_now_united_forever = {
-				allowed = {
-					always = no
-				}
-	
-				allowed_civil_war = {
-					
-				}
-	
-				removal_cost = -1
-	
-				picture = icon
-	
-				modifier = {
-					stability_factor = 0.5
-					war_support_factor = 0.25
-					political_power_gain = 0.1
-				}
+		fpw_united_now_united_forever = {
+			allowed = {
+				always = no
 			}
 
-				fpw_disorganised_people = {
-					allowed = {
-						always = no
-					}
-		
-					allowed_civil_war = {
-						
-					}
-		
-					removal_cost = -1
-		
-					picture = icon
-		
-					modifier = {
-						stability_factor = -0.15
-						war_support_factor = -0.25
-						political_power_gain = -0.2
-					}
-
+			allowed_civil_war = {
 				
-				}
 			}
-			
-	hidden_ideas = {
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				stability_factor = 0.5
+				war_support_factor = 0.25
+				political_power_gain = 0.1
+			}
+		}
+
+		fpw_disorganised_people = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.25
+				political_power_gain = -0.2
+			}	
+		}
+		
+		# Kaiser Wilhelm I
 		fpw_kaiser_wilhelm = {
 			allowed = {
 				OR = {
@@ -180,6 +177,26 @@ ideas = {
 				stability_factor = 0.15
 				war_support_factor = 0.2
 				political_power_factor = 0.1
+			}
+		}
+		
+		# Proud Nation
+		fpw_proud_nation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				neutrality_drift = 0.02
+				neutrality_acceptance = 35
 			}
 		}
 	}

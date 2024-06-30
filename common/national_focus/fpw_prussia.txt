@@ -108,7 +108,10 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = fpw_focus_autocomplete_holstein_tt
+				always = no
+			}
 		}
 
 		completion_reward = {
@@ -150,7 +153,10 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = fpw_focus_autocomplete_brotherwar_tt
+				always = no
+			}
 		}
 
 		completion_reward = {
@@ -191,7 +197,7 @@ focus_tree = {
 		cost = 10
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 			NOT = {
 				has_completed_focus = PRS_austro_prussian_victory
 			}	
@@ -484,7 +490,22 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = PRS_integrate_minor_austrian_lands
+				}
+				custom_trigger_tooltip = {
+					tooltip = fpw_bismarck_ultimatum_tt
+					NOT = {
+						has_global_flag = fpw_kaiser_path_not_allowed
+					}
+				}
+			}
+		}
+
 		completion_reward = {
+			add_ideas = fpw_proud_nation
 			# Proud Nation idea or smth idk
 			# Gives boost to authoritarian party
 		}
@@ -671,7 +692,10 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = fpw_focus_autocomplete_brotherwar_tt
+				always = no
+			}
 		}
 
 		completion_reward = {
@@ -695,16 +719,16 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		completion_reward = {
 			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
 			# possibly also with an event
-			transfer_state = 978
-			transfer_state = 979
-			add_state_core = 978
-			add_state_core = 979
+			country_event = prussia_fpw.1
+			hidden_effect = {
+				set_global_flag = fpw_kaiser_path_not_allowed
+			}
 		}
 	}
 
@@ -720,6 +744,15 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = fpw_bismarck_ultimatum_tt
+				NOT = {
+					has_global_flag = fpw_kaiser_path_not_allowed
+				}
+			}
 		}
 
 		completion_reward = {
@@ -1085,7 +1118,10 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = fpw_focus_autocomplete_glorious_rev_tt
+				always = no
+			}
 		}
 
 		ai_will_do = {
@@ -1111,7 +1147,10 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = fpw_focus_autocomplete_leopold_tt
+				always = no
+			}
 		}
 
 		bypass = {
@@ -1124,6 +1163,7 @@ focus_tree = {
 						}
 					}
 				}
+				isabella_won = yes
 				has_global_flag = fpw_declined_leopold
 			}
 		}
@@ -1152,6 +1192,7 @@ focus_tree = {
 				SPR = {
 					has_country_flag = SPR_prussian_king
 				}
+				isabella_won = yes
 				has_global_flag = fpw_no_ems_dispatch
 			}
 		}
@@ -1186,7 +1227,10 @@ focus_tree = {
 				}
 			}
 			else = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = fpw_focus_autocomplete_tt
+					always = no
+				}
 			}
 		}
 
@@ -1346,7 +1390,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_second_european_concert
-		icon = picture
+		icon = GFX_focus_PRS_unified_germany
 		prerequisite = { focus = PRS_heil_dir_im_siegerkranz }
 		relative_position_id = PRS_heil_dir_im_siegerkranz
 		x = 4
@@ -1357,7 +1401,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 		}
 		
 		available = {
@@ -1375,7 +1419,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_league_of_three_emperors
-		icon = picture
+		icon = GFX_focus_PRS_league_of_three_emperors
 		prerequisite = { focus = PRS_second_european_concert }
 		mutually_exclusive = { focus = PRS_italo_austrian_reapprochement }
 		relative_position_id = PRS_second_european_concert
@@ -1401,7 +1445,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_italo_austrian_reapprochement
-		icon = picture
+		icon = GFX_focus_PRS_italo_austro_reapproachments
 		prerequisite = { focus = PRS_second_european_concert }
 		mutually_exclusive = { focus = PRS_league_of_three_emperors }
 		relative_position_id = PRS_second_european_concert
@@ -1427,7 +1471,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_tripple_alliance
-		icon = picture
+		icon = GFX_focus_PRS_tripple_alliance
 		prerequisite = { focus = PRS_italo_austrian_reapprochement }
 		relative_position_id = PRS_italo_austrian_reapprochement
 		x = 0
@@ -1463,7 +1507,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		available = {
@@ -1481,7 +1525,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_kolonialamt_asien
-		icon = picture
+		icon = GFX_focus_jap_spiritual_mobilization
 		prerequisite = { focus = PRS_weltpolitik }
 		relative_position_id = PRS_weltpolitik
 		x = -4
@@ -1632,7 +1676,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_berlin_confrence
-		icon = picture
+		icon = GFX_focus_PRS_congo_confrence
 		prerequisite = { focus = PRS_increase_colonial_funding }
 		prerequisite = { focus = PRS_luederitz_expedition }
 		relative_position_id = PRS_increase_colonial_funding
@@ -1849,7 +1893,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 			AND = {
 				NOT = {
 					has_completed_focus = PRS_lesser_german_solution
@@ -2149,7 +2193,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 			AND = {
 				NOT = {
 					has_completed_focus = PRS_lesser_german_solution
@@ -2800,7 +2844,7 @@ focus = {
 		offset = {
 			x = -13
 			trigger = {
-				is_debug = yes
+				#is_debug = yes
 				has_completed_focus = PRS_lesser_german_solution
 			}
 		}
@@ -3090,7 +3134,7 @@ focus = {
 		offset = {
 			x = -12
 			trigger = {
-				is_debug = yes
+				#is_debug = yes
 				has_completed_focus = PRS_lesser_german_solution
 			}
 		}
@@ -3518,7 +3562,7 @@ focus = {
 		offset = {
 			x = -14
 			trigger = {
-				is_debug = yes
+				#is_debug = yes
 				has_completed_focus = PRS_lesser_german_solution
 			}
 		}	
@@ -4242,7 +4286,7 @@ focus = {
 		icon = GFX_focus_generic_fascist_troops
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 		}	
 		
 		available = {
