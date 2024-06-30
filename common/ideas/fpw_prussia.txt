@@ -168,11 +168,10 @@ ideas = {
 	hidden_ideas = {
 		fpw_kaiser_wilhelm = {
 			allowed = {
-				has_country_flag = fpw_secondary_leader_wilhelm_i
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
+				OR = {
+					has_government = democratic
+					has_government = fascism
+				}
 			}
 
 			removal_cost = -1

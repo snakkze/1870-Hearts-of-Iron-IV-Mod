@@ -259,6 +259,9 @@ focus_tree = {
 			remove_ideas = {
 				fpw_kaiser_wilhelm
 			}
+			hidden_effect = {
+				clr_country_flag = fpw_secondary_leader_wilhelm_i
+			}	
 		}
 	}
 
@@ -2454,6 +2457,9 @@ focus = {
 	FRK = { add_ideas = fpw_the_two_emperors }
 	PRS = { add_ideas = fpw_the_two_emperors }
 	PRS = { remove_ideas = fpw_kaiser_wilhelm }
+	hidden_effect = {
+		clr_country_flag = fpw_secondary_leader_wilhelm_i
+	}	
 
 }
 }
@@ -4243,7 +4249,7 @@ focus = {
 			
 		}
 		
-		x = -10
+		x = -11
 		y = 0
 		
 		cost = 5
@@ -4271,7 +4277,7 @@ focus = {
 		
 		prerequisite = { focus = PRS_focus_status_of_the_army }
 		relative_position_id = PRS_focus_status_of_the_army
-		mutually_exclusive = { focus = PRS_focus_appoint_clausewitz }
+		mutually_exclusive = { focus = PRS_focus_appoint_alfred }
 		available_if_capitulated = yes
 	
 		completion_reward = {
@@ -4280,7 +4286,7 @@ focus = {
 	}
 	
 	focus = {
-		id = PRS_focus_appoint_clausewitz 
+		id = PRS_focus_appoint_alfred 
 		icon = GFX_focus_generic_fascist_troops
 		
 		available = {
@@ -4315,8 +4321,8 @@ focus = {
 		
 		cost = 3
 		
-		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
-		relative_position_id = PRS_focus_appoint_clausewitz
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_alfred }
+		relative_position_id = PRS_focus_appoint_alfred
 		available_if_capitulated = yes
 	
 		completion_reward = {
@@ -4337,7 +4343,7 @@ focus = {
 		
 		cost = 3
 		
-		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_alfred }
 		relative_position_id = PRS_focus_moltke_plan
 		available_if_capitulated = yes
 	
@@ -4359,7 +4365,7 @@ focus = {
 		
 		cost = 5
 		
-		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_alfred }
 		relative_position_id = PRS_focus_status_of_the_army
 		available_if_capitulated = yes
 	
@@ -4381,7 +4387,7 @@ focus = {
 		
 		cost = 5
 		
-		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_clausewitz }
+		prerequisite = { focus = PRS_focus_moltke_plan focus = PRS_focus_appoint_alfred }
 		relative_position_id = PRS_focus_status_of_the_army
 		available_if_capitulated = yes
 	
@@ -4408,6 +4414,211 @@ focus = {
 		prerequisite = { focus = PRS_focus_prussian_discipline }
 		prerequisite = { focus = PRS_focus_the_prussian_norms }
 		relative_position_id = PRS_focus_status_of_the_army
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_mobile_warfare
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = 2
+		y = 1
+		
+		cost = 5
+		
+		mutually_exclusive = { focus = PRS_focus_grand_planning }
+		prerequisite = { focus = PRS_focus_new_general_staff }
+		relative_position_id = PRS_focus_new_general_staff
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_expand_cavalry_core
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = 0
+		y = 1
+		
+		cost = 5
+		
+		prerequisite = { focus = PRS_focus_mobile_warfare }
+		relative_position_id = PRS_focus_mobile_warfare
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_faster_armies
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = 2
+		y = 1
+		
+		cost = 5
+		
+		prerequisite = { focus = PRS_focus_mobile_warfare }
+		relative_position_id = PRS_focus_mobile_warfare
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_grand_planning
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+			
+		}
+		
+		x = -2
+		y = 1
+		
+		cost = 5
+		
+		mutually_exclusive = { focus = PRS_focus_mobile_warfare }
+		prerequisite = { focus = PRS_focus_new_general_staff }
+		relative_position_id = PRS_focus_new_general_staff
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_improve_training_quality
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+		}
+		
+		x = -2
+		y = 1
+		
+		cost = 5
+		
+		prerequisite = { focus = PRS_focus_grand_planning }
+		relative_position_id = PRS_focus_grand_planning
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_quality_of_education
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+		}
+		
+		x = 0
+		y = 1
+		
+		cost = 5
+		
+		prerequisite = { focus = PRS_focus_grand_planning }
+		relative_position_id = PRS_focus_grand_planning
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_amend_research_budget
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+		}
+		
+		x = 0
+		y = 2
+		
+		cost = 5
+		
+		prerequisite = { focus = PRS_focus_grand_planning focus = PRS_focus_mobile_warfare }
+		relative_position_id = PRS_focus_new_general_staff
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_equipment_quality
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+		}
+		
+		x = -1
+		y = 1
+		
+		cost = 5
+		
+		mutually_exclusive = { focus = PRS_focus_equipment_quantity }
+		prerequisite = { focus = PRS_focus_improve_training_quality }
+		prerequisite = { focus = PRS_focus_quality_of_education }
+		prerequisite = { focus = PRS_focus_amend_research_budget }
+		prerequisite = { focus = PRS_focus_expand_cavalry_core }
+		prerequisite = { focus = PRS_focus_faster_armies }
+		relative_position_id = PRS_focus_amend_research_budget
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_focus_equipment_quantity
+		icon = GFX_focus_generic_fascist_troops
+		
+		available = {
+		}
+		
+		x = 1
+		y = 1
+		
+		cost = 5
+		
+		mutually_exclusive = { focus = PRS_focus_equipment_quality }
+		prerequisite = { focus = PRS_focus_improve_training_quality }
+		prerequisite = { focus = PRS_focus_quality_of_education }
+		prerequisite = { focus = PRS_focus_amend_research_budget }
+		prerequisite = { focus = PRS_focus_expand_cavalry_core }
+		prerequisite = { focus = PRS_focus_faster_armies }
+		relative_position_id = PRS_focus_amend_research_budget
 		available_if_capitulated = yes
 	
 		completion_reward = {

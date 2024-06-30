@@ -196,7 +196,10 @@ focus_tree = {
 			add_ideas = {
 				napoleon_iii_i
 			}
-		}
+			hidden_effect = {
+				set_country_flag = fpw_secondary_leader_fra_napoleon_III
+			}
+		}	
 	}
 
 	# Auto completed when the republicans seize power(when sedan falls)
@@ -225,6 +228,9 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = {
 				napoleon_iii_i
+			}
+			hidden_effect = {
+				clr_country_flag = fpw_secondary_leader_fra_napoleon_III
 			}
 		}
 	}

@@ -179,8 +179,11 @@ on_actions = {
 		}
 		effect = {
 			PRS = {
-				set_country_flag = fpw_secondary_leader_wilhelm_i
-			}	
+				set_country_flag = fpw_secondary_leader_prs_wilhelm_I
+			}
+			FIN = {
+				set_country_flag = fpw_secondary_leader_fin_alexander_II
+			}			
 		}
 	}
 	

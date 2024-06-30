@@ -2,9 +2,33 @@ defined_text = {
 	name = Get_Secondary_Leader_Portrait
 	text = {
 		trigger = {
-			has_country_flag = fpw_secondary_leader_wilhelm_i
+			has_country_flag = fpw_secondary_leader_prs_wilhelm_I
 		}
-		localization_key = GFX_Portrait_Secondary_Wilhelm_I
+		localization_key = GFX_Portrait_Secondary_PRS_Wilhelm_I
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fra_napoleon_III
+		}
+		localization_key = GFX_Portrait_Secondary_FRA_Napoleon_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_sov_alexander_II
+		}
+		localization_key = GFX_Portrait_Secondary_SOV_Alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fin_alexander_II
+		}
+		localization_key = GFX_Portrait_Secondary_SOV_Alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_pol_alexander_II
+		}
+		localization_key = GFX_Portrait_Secondary_SOV_Alexander_II
 	}
 	text = {
 		trigger = {
@@ -16,11 +40,35 @@ defined_text = {
 	name = Get_Secondary_Leader_Name
 	text = {
 		trigger = {
-			has_country_flag = fpw_secondary_leader_wilhelm_i
+			has_country_flag = fpw_secondary_leader_prs_wilhelm_I
 		}
-		localization_key = fpw_secondary_leader_wilhelm_i_loc
+		localization_key = fpw_secondary_leader_prs_wilhelm_I
 	}
 	text = {
-		localization_key = fpw_no_secondary_leader_loc
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fra_napoleon_III
+		}
+		localization_key = fpw_secondary_leader_fra_napoleon_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_sov_alexander_II
+		}
+		localization_key = fpw_secondary_leader_sov_alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fin_alexander_II
+		}
+		localization_key = fpw_secondary_leader_fin_alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_pol_alexander_II
+		}
+		localization_key = fpw_secondary_leader_pol_alexander_II
+	}
+	text = {
+		localization_key = no_secondary_leader
 	}
 }

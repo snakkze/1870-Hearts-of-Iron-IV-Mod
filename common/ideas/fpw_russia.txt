@@ -118,26 +118,6 @@ ideas = {
 			}
 		}
 		
-		fpw_alexander_ii = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = alexander_ii
-
-			modifier = {
-				stability_factor = 0.05
-				war_support_factor = 0.1
-				political_power_factor = 0.05
-			}
-		}
-		
 		underdeveloped_industry_1 = {
 			allowed = {
 				always = no
@@ -255,18 +235,26 @@ ideas = {
 				war_support_factor = -0.10
 			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
+	hidden_ideas = {
+		fpw_alexander_ii = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = alexander_ii
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+	}	
 }

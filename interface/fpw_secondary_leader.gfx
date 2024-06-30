@@ -1,10 +1,18 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_Portrait_Secondary_Vacant"
-		texturefile = "gfx/leaders/Portrait_Secondary_Vacant.dds"
+		name = "GFX_Portrait_Secondary_PRS_Wilhelm_I"
+		texturefile = "gfx/leaders/PRS/Secondary/Portrait_Secondary_PRS_wilhelm_I.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Secondary_Wilhelm_I"
-		texturefile = "gfx/leaders/PRS/Secondary/Portrait_Secondary_PRS_wilhelm_i.dds"
+		name = "GFX_Portrait_Secondary_FRA_Napoleon_III"
+		texturefile = "gfx/leaders/FRA/Secondary/Portrait_Secondary_FRA_napoleon_III.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_SOV_Alexander_II"
+		texturefile = "gfx/leaders/SOV/Secondary/Portrait_Secondary_SOV_alexander_II.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_Vacant"
+		texturefile = "gfx/leaders/Portrait_Secondary_Vacant.dds"
 	}
 }
