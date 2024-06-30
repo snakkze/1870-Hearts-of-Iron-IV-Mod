@@ -183,7 +183,10 @@ on_actions = {
 			}
 			FIN = {
 				set_country_flag = fpw_secondary_leader_fin_alexander_II
-			}			
+			}	
+			ITA = {
+				set_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
+			}	
 		}
 	}
 	

@@ -32,6 +32,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
+		}
+		localization_key = GFX_Portrait_Secondary_ITA_vittorio_emanuele_III
+	}
+	text = {
+		trigger = {
 		}
 		localization_key = GFX_Portrait_Secondary_Vacant
 	}
@@ -67,6 +73,12 @@ defined_text = {
 			has_country_flag = fpw_secondary_leader_pol_alexander_II
 		}
 		localization_key = fpw_secondary_leader_pol_alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
+		}
+		localization_key = fpw_secondary_leader_ita_vittorio_emanuele_III
 	}
 	text = {
 		localization_key = no_secondary_leader

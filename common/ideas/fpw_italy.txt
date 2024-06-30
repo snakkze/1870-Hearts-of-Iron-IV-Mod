@@ -1,25 +1,6 @@
 ideas = {
 
 	country = {
-	
-		vittorio_emanuele = {
-			allowed = {
-				original_tag = ITA
-			}
-
-			available = {
-				NOT = {
-					has_government = neutrality #remove if king in power
-				}
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				war_support_factor = 0.05
-				neutrality_acceptance = 50
-			}
-		}
 		republican_opposition = {
 			allowed = {
 				original_tag = ITA
@@ -98,4 +79,25 @@ ideas = {
 			}
 		}
 	}
+	
+	hidden_ideas = {
+		vittorio_emanuele = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				NOT = {
+					has_government = neutrality #remove if king in power
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				neutrality_acceptance = 50
+			}
+		}
+	}	
 }
