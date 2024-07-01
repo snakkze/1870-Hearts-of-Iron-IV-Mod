@@ -38,3 +38,7 @@
   fpw_prs_formed_german_empire_tt:0 "§YHas Formed§! the §Y@GERGerman Empire§!"
   fpw_russian_friendship_tt:0 "§Y[SOV.GetNameDefCap]§! will join on our behalf if §Y[FRA.GetNameDef]§! joins the §YAustro-Prussian War§!."
   fpw_prs_heinrich_abeken_tt:0 "Unlocks Advisor §YHeinrich Abeken§!, which grants (Political Power Gain: §G+5.0%§!, Improve relations opinion: §G+15.0%§!, Ideology drift defense: §G+15.0%§!)"
+  fpw_focus_prussian_victory_tt:0 "Add §YVictor of The Brothers War§!, which grants (Country Base Prestige: §G+15%§!)"
+  fpw_focus_austrian_victory_tt:0 "Add §YLoser of The Brothers War§!, which grants (Country Base Prestige: §R-15%§!)"
+  fpw_bismarcks_plan_new_tt:0 "§YOtto von Bismarck§! gains:\nWar Penalty Stability Modifier: §G+10.00%§!\nTrade Laws Cost: §G-25%§!\nEconomy Laws Cost: §G-25%§!"
+  fpw_disagree_with_bismarck_absolute:0 "§YWilhelm I§! becomes §YKing of @PRS[PRS.GetNameDefCap]§! as an §YAbsolute Monarch§!"

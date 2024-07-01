@@ -31,8 +31,28 @@ focus_tree = {
 	focus = {
 		id = PRS_lesser_german_solution
 		icon = GFX_focus_PRS_lesser_german
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_greater_german_solution
+			}
+		}
+
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				OR = {
+					has_completed_focus = PRS_integrate_minor_austrian_lands
+					has_completed_focus = PRS_austro_prussian_victory
+					has_completed_focus = PRS_bruderkrieg_ending
+				}	
+			}
+		}
+
 		x = 6
 		y = 0
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -42,12 +62,12 @@ focus_tree = {
 		mutually_exclusive = { focus = PRS_greater_german_solution }
 
 		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.025
 			}
 			add_country_leader_trait = fpw_trait_bismarcks_plan
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -65,7 +85,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 15
 			custom_effect_tooltip = fpw_seek_german_support
 			hidden_effect = {
 				AUS = {
@@ -137,29 +157,25 @@ focus_tree = {
 		prerequisite = { focus = PRS_annex_holstein }
 		mutually_exclusive = { focus = PRS_austro_prussian_victory }
 		relative_position_id = PRS_annex_holstein
-		x = -4
-		y = 1
-		cost = 10
-		
-		offset = {
-			x = 2
-			trigger = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}	
-		}
-		
-		offset = {
-			x = 2
-			trigger = {
-				is_debug = no
-			}	
-		}
-		
+
 		allow_branch = {
 			NOT = {
 				has_completed_focus = PRS_austro_prussian_victory
-			}	
+			}
 		}
+
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
+		x = -4
+		y = 1
+
+		cost = 10
 		
 		ai_will_do = {
 			factor = 10
@@ -174,6 +190,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_branch_incomplete_tt
+			custom_effect_tooltip = fpw_focus_austrian_victory_tt
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -209,12 +226,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRS_austro_prussian_victory
-			}	
-		}	
 		
 		ai_will_do = {
 			factor = 10
@@ -494,26 +505,28 @@ focus_tree = {
 		id = PRS_towards_a_greater_prussia
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = PRS_prussian_identity focus = PRS_integrate_minor_austrian_lands }
-		relative_position_id = PRS_integrate_minor_austrian_lands
-		x = -3
-		y = 1
-		cost = 10
-		
+		relative_position_id = PRS_prussian_identity
+
 		offset = {
-			x = 1
+			x = -3
 			y = 0
 			trigger = {
 				has_completed_focus = PRS_austro_prussian_victory
-			}	
+			}
 		}
 
 		offset = {
 			x = 2
 			y = 0
 			trigger = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}	
-		}		
+				has_completed_focus = PRS_integrate_minor_austrian_lands
+			}
+		}
+
+		x = 3
+		y = 1
+
+		cost = 10	
 		
 		ai_will_do = {
 			factor = 10
@@ -549,12 +562,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRS_austro_prussian_victory
-			}	
-		}
 		
 		ai_will_do = {
 			factor = 10
@@ -703,24 +710,26 @@ focus_tree = {
 		prerequisite = { focus = PRS_annex_holstein }
 		mutually_exclusive = { focus = PRS_bruderkrieg_ending }
 		relative_position_id = PRS_annex_holstein
-		x = 7
-		y = 1
-		cost = 10
-		
-		offset = {
-			x = -7
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_austro_prussian_victory	
-			}
-		}	
-		
+
 		allow_branch = {
 			NOT = {
 				has_completed_focus = PRS_bruderkrieg_ending
 			}
-		}	
-		
+		}
+
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
+
+		x = 4
+		y = 1
+
+		cost = 10
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -734,6 +743,7 @@ focus_tree = {
 
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = fpw_focus_prussian_victory_tt
 		}
 	}
 
@@ -744,34 +754,39 @@ focus_tree = {
 		prerequisite = { focus = PRS_austro_prussian_victory }
 		mutually_exclusive = { focus = PRS_continue_bismarcks_plan }
 		relative_position_id = PRS_austro_prussian_victory
-		x = -3
-		y = 1
-		cost = 10
-		
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_austro_prussian_victory	
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_continue_bismarcks_plan
 			}
 		}
-		
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		offset = {
-			x = 3
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
+
+		offset = {
+			x = 4
 			y = 0
 			trigger = {
 				has_completed_focus = PRS_integrate_minor_austrian_lands
 			}
 		}
-		
-		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = PRS_continue_bismarcks_plan
-					has_completed_focus = PRS_bruderkrieg_ending
-				}	
-			}
-		}
+
+		x = -3
+		y = 1
+
+		cost = 10
 		
 		ai_will_do = {
 			factor = 10
@@ -780,11 +795,11 @@ focus_tree = {
 		completion_reward = {
 			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
 			# possibly also with an event
-			mark_focus_tree_layout_dirty = yes
 			country_event = prussia_fpw.1
 			hidden_effect = {
 				set_global_flag = fpw_kaiser_path_not_allowed
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -794,34 +809,11 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_integrate_minor_austrian_lands
+
 		x = 2
 		y = 1
+
 		cost = 10
-		
-		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = PRS_continue_bismarcks_plan
-					has_completed_focus = PRS_bruderkrieg_ending
-				}	
-			}
-		}
-		
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_austro_prussian_victory
-			}
-		}
-		
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_integrate_minor_austrian_lands
-			}
-		}
 		
 		ai_will_do = {
 			factor = 10
@@ -846,26 +838,19 @@ focus_tree = {
 		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
 		prerequisite = { focus = PRS_towards_a_greater_prussia }
 		relative_position_id = PRS_towards_a_greater_prussia
-		x = 3
-		y = 1
-		cost = 10
 
 		offset = {
 			x = -2
 			y = 0
 			trigger = {
 				has_completed_focus = PRS_austro_prussian_victory
-				NOT = {
-					has_completed_focus = PRS_continue_bismarcks_plan
-				}
-			}
-		}	
-
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRS_continue_bismarcks_plan
 			}
 		}
+		
+		x = 3
+		y = 1
+
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -883,10 +868,7 @@ focus_tree = {
 		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
 		prerequisite = { focus = PRS_annex_hostile_nothern_states }
 		relative_position_id = PRS_ultimatum_to_the_northern_reichsrat
-		x = 1
-		y = 1
-		cost = 10
-		
+
 		offset = {
 			x = -2
 			y = 0
@@ -894,6 +876,11 @@ focus_tree = {
 				has_completed_focus = PRS_integrate_minor_austrian_lands
 			}
 		}
+
+		x = 1
+		y = 1
+
+		cost = 10
 		
 		ai_will_do = {
 			factor = 10
@@ -912,12 +899,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRS_continue_bismarcks_plan
-			}
-		}
 		
 		ai_will_do = {
 			factor = 10
@@ -993,12 +974,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRS_continue_bismarcks_plan
-			}
-		}
-		
 		ai_will_do = {
 			factor = 10
 		}
@@ -1015,26 +990,39 @@ focus_tree = {
 		prerequisite = { focus = PRS_austro_prussian_victory }
 		mutually_exclusive = { focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_austro_prussian_victory
-		x = 3
-		y = 1
-		cost = 5
-		
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_integrate_minor_austrian_lands
+			}
+		}
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		offset = {
-			x = -3
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
+
+		offset = {
+			x = -4
 			y = 0
 			trigger = {
 				has_completed_focus = PRS_continue_bismarcks_plan
 			}
 		}
-		
-		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = PRS_integrate_minor_austrian_lands
-					has_completed_focus = PRS_bruderkrieg_ending
-				}	
-			}
-		}
+
+		x = 3
+		y = 1
+
+		cost = 5
 		
 		available = {
 			#always = no
@@ -1048,6 +1036,15 @@ focus_tree = {
 			# Bismarck made an ultimatum to the king, if he took austrian land bismarck would resign!
 			# possibly also with an event
 			mark_focus_tree_layout_dirty = yes
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = fpw_bismarcks_plan_new_tt
+			hidden_effect = {
+				swap_ruler_traits = { remove = fpw_trait_bismarcks_plan add = fpw_trait_bismarcks_plan_2 }
+			}
 		}
 	}
 
@@ -1056,10 +1053,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = PRS_continue_bismarcks_plan focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_continue_bismarcks_plan
-		x = -2
-		y = 1
-		cost = 10
-		
+
 		offset = {
 			x = -1
 			y = 0
@@ -1067,7 +1061,7 @@ focus_tree = {
 				has_completed_focus = PRS_austro_prussian_victory
 			}
 		}
-		
+
 		offset = {
 			x = 2
 			y = 0
@@ -1075,6 +1069,19 @@ focus_tree = {
 				has_completed_focus = PRS_continue_bismarcks_plan
 			}
 		}
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_integrate_minor_austrian_lands
+			}
+		}
+
+		x = -2
+		y = 1
+
+		cost = 10
 		
 		ai_will_do = {
 			factor = 10
@@ -1115,25 +1122,19 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = PRS_continue_bismarcks_plan }
 		relative_position_id = PRS_continue_bismarcks_plan
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
+
 		x = 2
 		y = 1
+
 		cost = 10
-		
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_continue_bismarcks_plan	
-			}
-		}
-		
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_austro_prussian_victory	
-			}
-		}
 
 		ai_will_do = {
 			factor = 10
@@ -1176,17 +1177,19 @@ focus_tree = {
 		prerequisite = { focus = PRS_annex_hostile_nothern_states }
 		prerequisite = { focus = PRS_invite_remaing_nothern_states }
 		relative_position_id = PRS_annex_hostile_nothern_states
-		x = 2
-		y = 1
-		cost = 10
-		
+
 		offset = {
 			x = -1
 			y = 0
 			trigger = {
-				has_completed_focus = PRS_continue_bismarcks_plan	
+				has_completed_focus = PRS_continue_bismarcks_plan
 			}
 		}
+
+		x = 2
+		y = 1
+
+		cost = 10
 		
 		ai_will_do = {
 			factor = 10
@@ -1564,15 +1567,17 @@ focus_tree = {
 		icon = GFX_focus_PRS_unified_germany
 		prerequisite = { focus = PRS_heil_dir_im_siegerkranz }
 		relative_position_id = PRS_heil_dir_im_siegerkranz
+
+		allow_branch = {
+			is_debug = yes
+		}
+
 		x = 4
 		y = 1
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
-		}
-		
-		allow_branch = {
-			is_debug = yes
 		}
 		
 		available = {
@@ -1670,15 +1675,17 @@ focus_tree = {
 		icon = picture
 		prerequisite = { focus = PRS_heil_dir_im_siegerkranz }
 		relative_position_id = PRS_heil_dir_im_siegerkranz
-		x = -4
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 
 		allow_branch = {
 			is_debug = yes
+		}
+
+		x = -4
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
 
 		available = {
@@ -1994,8 +2001,18 @@ focus_tree = {
 		icon = GFX_focus_PRS_russian_friendship
 		prerequisite = { focus = PRS_seek_international_support focus = PRS_austrian_enemy}
 		relative_position_id = PRS_seek_international_support
+
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_greater_german_solution
+			}
+		}
+
 		x = 2
 		y = 1
+
 		cost = 5
 
 		ai_will_do = {
@@ -2023,31 +2040,21 @@ focus_tree = {
 	focus = {
 		id = PRS_greater_german_solution
 		icon = GFX_focus_PRS_greater_german
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+
 		x = 19
 		y = 0
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
-		
-		offset = {
-			x = 3
-			trigger = {
-				is_debug = yes
-			}
-		}
-		
-		offset = {
-			x = -5
-			trigger = {
-				is_debug = no
-			}
-		}
-		
-		allow_branch = {
-			NOT = { has_completed_focus = PRS_lesser_german_solution }
-		}
-		
+
 		available = {
 			always = no
 		}
@@ -2057,6 +2064,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_branch_incomplete_tt
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -2071,15 +2079,6 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}
-		
-		allow_branch = {
-			is_debug = yes
-			AND = {
-				NOT = {
-					has_completed_focus = PRS_lesser_german_solution
-				}	
-			}	
 		}
 		
 		available_if_capitulated = yes
@@ -2276,8 +2275,14 @@ focus_tree = {
 		icon = picture
 		prerequisite = { focus = PRS_unify_the_north }
 		relative_position_id = PRS_unify_the_north
+
+		allow_branch = {
+			is_debug = yes
+		}
+
 		x = 2
 		y = 1
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2371,15 +2376,6 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}
-		
-		allow_branch = {
-			is_debug = yes
-			AND = {
-				NOT = {
-					has_completed_focus = PRS_lesser_german_solution
-				}	
-			}	
 		}
 		
 		available_if_capitulated = yes
@@ -2610,8 +2606,14 @@ focus_tree = {
 		prerequisite = { focus = PRS_unify_the_north }
 		prerequisite = { focus = PRS_national_reforms }
 		relative_position_id = PRS_national_reforms
+
+		allow_branch = {
+			is_debug = yes
+		}
+
 		x = 2
 		y = 1
+
 		cost = 40
 		ai_will_do = {
 			factor = 1
@@ -3002,14 +3004,15 @@ focus = {
 	focus = {
 		id = PRS_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
+
+		allow_branch = {
+			always = false
+		}
+
 		x = 35
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		allow_branch = {
-			always = no
-		}	
 		
 		available_if_capitulated = yes
 	
@@ -3272,47 +3275,19 @@ focus = {
 	focus = {
 		id = PRS_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 31
+
+		offset = {
+			x = -16
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+
+		x = 42
 		y = 0
+
 		cost = 10
-		
-		offset = {
-			x = 14
-			y = 0
-			trigger = {
-				is_debug = yes
-			}
-		}
-		
-		offset = {
-			x = -15
-			y = 0
-			trigger = {
-				is_debug = yes
-				has_completed_focus = PRS_lesser_german_solution
-			}
-		}
-		
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				is_debug = yes
-				OR = {
-					has_completed_focus = PRS_bruderkrieg_ending
-					has_completed_focus = PRS_austro_prussian_victory
-				}	
-			}
-		}
-		
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				is_debug = no
-				has_completed_focus = PRS_lesser_german_solution
-			}			
-		}	
 		
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -3713,47 +3688,19 @@ focus = {
 	focus = {
 		id = PRS_industrial_effort
 		icon = GFX_focus_generic_industry_2
-		x = 26
+
+		offset = {
+			x = -17
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_lesser_german_solution
+			}
+		}
+
+		x = 48
 		y = 0
+
 		cost = 5
-		
-		offset = {
-			x = 25
-			y = 0
-			trigger = {
-				is_debug = yes
-			}
-		}
-		
-		offset = {
-			x = -15
-			y = 0
-			trigger = {
-				is_debug = yes
-				has_completed_focus = PRS_lesser_german_solution
-			}
-		}
-		
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				is_debug = yes
-				OR = {
-					has_completed_focus = PRS_bruderkrieg_ending
-					has_completed_focus = PRS_austro_prussian_victory
-				}	
-			}
-		}
-		
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				is_debug = no
-				has_completed_focus = PRS_lesser_german_solution
-			}			
-		}	
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
@@ -4478,54 +4425,23 @@ focus = {
 		icon = GFX_goal_generic_allies_build_infantry
 		
 		offset = {
-			x = 18
+			x = -16
 			y = 0
 			trigger = {
-				is_debug = yes
-			}
-		}
-
-		offset = {
-			x = -15
-			y = 0
-			trigger = {
-				is_debug = yes
 				has_completed_focus = PRS_lesser_german_solution
 			}
 		}
 
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				is_debug = yes
-				OR = {
-					has_completed_focus = PRS_bruderkrieg_ending
-					has_completed_focus = PRS_austro_prussian_victory
-				}	
-			}
-		}
-		
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				is_debug = no
-				has_completed_focus = PRS_lesser_german_solution
-			}
-		}	
-		
-		available = {
-			
-		}
-		
-		x = 19
+		x = 35
 		y = 0
 		
 		cost = 5
 		
 		available_if_capitulated = yes
 	
+		available = {
+		}
+
 		completion_reward = {
 			army_experience = 15
 			country_event = prussia_fpw.22
@@ -4706,16 +4622,16 @@ focus = {
 		
 		allow_branch = {
 			is_debug = yes
-		}	
-		
+		}
+
+		x = 2
+		y = 1
+
+		cost = 5
+
 		available = {
 			
 		}
-		
-		x = 2
-		y = 1
-		
-		cost = 5
 		
 		mutually_exclusive = { focus = PRS_focus_grand_planning }
 		prerequisite = { focus = PRS_focus_new_general_staff }
@@ -4777,16 +4693,16 @@ focus = {
 		
 		allow_branch = {
 			is_debug = yes
-		}	
-		
+		}
+
+		x = -2
+		y = 1
+
+		cost = 5
+
 		available = {
 			
 		}
-		
-		x = -2
-		y = 1
-		
-		cost = 5
 		
 		mutually_exclusive = { focus = PRS_focus_mobile_warfare }
 		prerequisite = { focus = PRS_focus_new_general_staff }

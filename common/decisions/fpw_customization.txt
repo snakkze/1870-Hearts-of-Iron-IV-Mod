@@ -9,10 +9,28 @@ fpw_customization_category = {
 				original_tag = PRS
 				has_cosmetic_tag = PRS
 			}
+			NOT = {
+				OR = {
+					has_cosmetic_tag = PRS_historical
+					has_cosmetic_tag = PRS_GER
+					has_cosmetic_tag = GER_north_germany
+					has_cosmetic_tag = PRS_nationalist
+					has_cosmetic_tag = PRS_greater_prussia
+				}	
+			}
 		}
 
 		visible = {
 			original_tag = PRS
+			NOT = {
+				OR = {
+					has_cosmetic_tag = PRS_historical
+					has_cosmetic_tag = PRS_GER
+					has_cosmetic_tag = GER_north_germany
+					has_cosmetic_tag = PRS_nationalist
+					has_cosmetic_tag = PRS_greater_prussia
+				}	
+			}	
 		}
 
 		cost = 0
@@ -35,10 +53,26 @@ fpw_customization_category = {
 				original_tag = PRS
 				has_cosmetic_tag = PRS_historical
 			}
+			NOT = {
+				OR = {
+					has_cosmetic_tag = PRS_GER
+					has_cosmetic_tag = GER_north_germany
+					has_cosmetic_tag = PRS_nationalist
+					has_cosmetic_tag = PRS_greater_prussia
+				}	
+			}
 		}
 
 		visible = {
 			original_tag = PRS
+			NOT = {
+				OR = {
+					has_cosmetic_tag = PRS_GER
+					has_cosmetic_tag = GER_north_germany
+					has_cosmetic_tag = PRS_nationalist
+					has_cosmetic_tag = PRS_greater_prussia
+				}	
+			}
 		}
 
 		cost = 0
