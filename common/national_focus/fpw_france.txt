@@ -12,10 +12,10 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		modifier = {
-			add = 10
-			tag = FRA
-		}
+		#modifier = {
+		#	add = 10
+		#	tag = FRA
+		#}
 	}
 	
 	default = no
@@ -778,6 +778,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = FRA_third_french_republic
 		cost = 5
+		search_filters = {FOCUS_FILTER_HISTORICAL}
 		ai_will_do = {
 			factor = 10
 		}
