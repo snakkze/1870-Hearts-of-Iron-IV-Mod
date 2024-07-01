@@ -175,7 +175,7 @@ fpw_german_unification_category = {
 			}
 		}
 
-		cost = 0
+		cost = 25
 
 		highlight_states = {
 			highlight_states_trigger = {
@@ -263,7 +263,7 @@ fpw_german_unification_category = {
 			always = yes
 		}
 
-		cost = 0
+		cost = 25
 
 		highlight_states = {
 			highlight_states_trigger = {
@@ -354,7 +354,7 @@ fpw_austro_prussian_war_category = {
 			always = yes
 		}
 
-		cost = 0
+		cost = 25
 
 		available = {
 			AND = {
@@ -543,10 +543,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			65  = { 
@@ -692,10 +692,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			52  = { 
@@ -841,10 +841,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			50  = { 
@@ -990,10 +990,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			935  = { 
@@ -1139,10 +1139,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			944  = { 
@@ -1288,10 +1288,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			59  = { 
@@ -1437,10 +1437,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			61  = { 
@@ -1586,10 +1586,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			942  = { 
@@ -1735,10 +1735,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			55  = { 
@@ -1883,10 +1883,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			941  = { 
@@ -2032,10 +2032,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			937  = { 
@@ -2180,10 +2180,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			955  = { 
@@ -2329,10 +2329,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			954  = { 
@@ -2478,10 +2478,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			949  = { 
@@ -2627,10 +2627,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			948  = { 
@@ -2776,10 +2776,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			943  = { 
@@ -2924,10 +2924,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			940  = { 
@@ -3073,10 +3073,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			938  = { 
@@ -3222,10 +3222,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			951  = { 
@@ -3371,10 +3371,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			950  = { 
@@ -3520,10 +3520,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			953  = { 
@@ -3669,10 +3669,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			945  = { 
@@ -3818,10 +3818,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			947  = { 
@@ -3967,10 +3967,10 @@ fpw_austro_prussian_war_category = {
 
 		on_map_mode = map_only
 
-		cost = 0
+		cost = 25
 		
 		fire_only_once = no
-		days_remove = 3
+		days_remove = 15
 		
 		remove_effect = {
 			956  = { 
