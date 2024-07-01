@@ -763,6 +763,98 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = FRA_sway_bonapartists
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_seek_revenge }
+		available = {
+		}
+		x = -1
+		y = 1
+		relative_position_id = FRA_seek_revenge
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = FRA_invade_the_commune
+		icon = GFX_focus_FRA_attack_the_commune
+		prerequisite = { focus = FRA_seek_revenge focus = FRA_eternal_republic }
+		available = {
+			country_exists = FPC
+			NOT = { has_war_with = FPC }
+		}
+		x = 1
+		y = 1
+		relative_position_id = FRA_seek_revenge
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FPC
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = FPC
+				NOT = { country_exists = FPC }
+			}
+		}
+	}
+	focus = {
+		id = FRA_guillotine_for_socialists
+		icon = GFX_focus_unkown
+		prerequisite = { focus = FRA_seek_revenge }
+		prerequisite = { focus = FRA_invade_the_commune }
+		available = {
+			NOT = { country_exists = FPC }
+		}
+		x = 0
+		y = 2
+		relative_position_id = FRA_seek_revenge
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.20
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = -0.30
+            }
 		}
 	}
 
@@ -786,6 +878,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
 		}
 	}
 
@@ -811,6 +911,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			annex_country = {
+				target = FPC
+				transfer_troops = yes
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
 		}
 	}
 	
@@ -856,7 +964,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		
 		available_if_capitulated = yes
 
@@ -884,7 +992,7 @@ focus_tree = {
 			factor = 1
 		}
 		relative_position_id = FRA_army_reforms
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		
 		available_if_capitulated = yes
 
@@ -911,7 +1019,7 @@ focus_tree = {
 			factor = 1
 		}
 		relative_position_id = FRA_army_reforms
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		
 		available_if_capitulated = yes
 
@@ -934,7 +1042,7 @@ focus_tree = {
 			factor = 1
 		}
 		relative_position_id = FRA_army_reforms
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		
 		available_if_capitulated = yes
 
@@ -953,7 +1061,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		relative_position_id = FRA_army_reforms
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		
 		available_if_capitulated = yes
 

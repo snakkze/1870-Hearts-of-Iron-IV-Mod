@@ -237,6 +237,10 @@ spriteTypes = {
 		name = "GFX_focus_FRA_government_of_national_defence"
 		texturefile = "gfx/interface/goals/focus_FRA_government_of_national_defence.png"
 	}
+	spriteType = {
+		name = "GFX_focus_FRA_attack_the_commune"
+		texturefile = "gfx/interface/goals/focus_attack_commune.png"
+	}
 }
 
 # ROMANIA #
