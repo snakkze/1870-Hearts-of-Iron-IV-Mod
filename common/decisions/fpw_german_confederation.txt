@@ -86,6 +86,7 @@ fpw_german_unification_category = {
 		selectable_mission = no
 
 		timeout_effect = {
+
 			austrian_surrender = yes
 			if = {
 				limit = { ITA = { has_completed_focus = ITA_ally_prussia } }

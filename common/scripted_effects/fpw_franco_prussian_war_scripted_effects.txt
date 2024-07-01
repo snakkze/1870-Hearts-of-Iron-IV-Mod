@@ -149,6 +149,9 @@ france_surrender = {
 }
 
 fpw_treaty_of_frankfurt = {
+	FRA = {
+		add_ideas = fpw_FRA_indemnity_debts_4
+	}
 	if = {
 		limit = {
 			PRS = {

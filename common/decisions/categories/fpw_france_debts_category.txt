@@ -1,0 +1,42 @@
+fpw_france_debts_category = {
+	
+	priority = {
+		base = 3
+		modifier = {
+			add = 99
+			OR = {
+				original_tag = FRA
+			}
+		}
+	}
+
+	scripted_gui = fpw_french_debts_gui
+	icon = GFX_decision_category_border_conflicts
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		AND = {
+			OR = {
+				original_tag = PRS
+				original_tag = FRA
+			}
+			OR = {
+				FRA = {
+					has_idea = fpw_FRA_indemnity_debts_4
+				}
+				FRA = {
+					has_idea = fpw_FRA_indemnity_debts_3
+				}
+				FRA = {
+					has_idea = fpw_FRA_indemnity_debts_2
+				}
+				FRA = {
+					has_idea = fpw_FRA_indemnity_debts_1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,146 @@
+spriteTypes = {
+
+	# NEUTRAL
+	spriteType = {
+		name = "GFX_debts_outline"
+		texturefile = "gfx/interface/fra_debts_gui/outline.dds"
+	}
+
+	# PARIS COMMUNE
+	spriteType = {
+		name = "GFX_fpc_16"
+		texturefile = "gfx/interface/fra_debts_gui/fpc_states/16.dds"
+	}
+
+	# PRUSSIA
+	spriteType = {
+		name = "GFX_prs_15"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/15.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_16"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/16.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_17"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/17.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_18"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/18.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_24"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/24.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_27"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/27.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_28"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/28.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_29"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/29.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_785"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/785.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_971"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/971.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_972"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/972.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_973"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/973.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_974"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/974.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_975"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/975.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_976"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/976.dds"
+	}
+	spriteType = {
+		name = "GFX_prs_977"
+		texturefile = "gfx/interface/fra_debts_gui/prs_states/977.dds"
+	}
+
+	# FRANCE
+	spriteType = {
+		name = "GFX_fra_15"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/15.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_16"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/16.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_17"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/17.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_18"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/18.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_24"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/24.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_27"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/27.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_28"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/28.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_29"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/29.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_785"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/785.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_971"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/971.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_972"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/972.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_973"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/973.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_974"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/974.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_975"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/975.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_976"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/976.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_977"
+		texturefile = "gfx/interface/fra_debts_gui/fra_states/977.dds"
+	}
+}

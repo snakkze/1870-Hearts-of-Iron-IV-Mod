@@ -1,0 +1,189 @@
+@ANCHOR_X = 33
+@ANCHOR_Y = 25
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "fpw_french_debts_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 400 }
+
+		#ICON NEUTRAL
+		iconType = {
+			name ="outline"
+			spriteType = "GFX_debts_outline"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+		# PARIS COMMUNE
+		iconType = {
+			name ="fpc_16"
+			spriteType = "GFX_fpc_16"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+		# PRUSSIA
+		iconType = {
+			name ="prs_15"
+			spriteType = "GFX_prs_15"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_16"
+			spriteType = "GFX_prs_16"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_17"
+			spriteType = "GFX_prs_17"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_18"
+			spriteType = "GFX_prs_18"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_24"
+			spriteType = "GFX_prs_24"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_27"
+			spriteType = "GFX_prs_27"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_28"
+			spriteType = "GFX_prs_28"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_29"
+			spriteType = "GFX_prs_29"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_785"
+			spriteType = "GFX_prs_785"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_971"
+			spriteType = "GFX_prs_971"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_972"
+			spriteType = "GFX_prs_972"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_973"
+			spriteType = "GFX_prs_973"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_974"
+			spriteType = "GFX_prs_974"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_975"
+			spriteType = "GFX_prs_975"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_976"
+			spriteType = "GFX_prs_976"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_977"
+			spriteType = "GFX_prs_977"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+		# FRANCE
+		iconType = {
+			name ="fra_15"
+			spriteType = "GFX_fra_15"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_16"
+			spriteType = "GFX_fra_16"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_17"
+			spriteType = "GFX_fra_17"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_18"
+			spriteType = "GFX_fra_18"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_24"
+			spriteType = "GFX_fra_24"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_27"
+			spriteType = "GFX_fra_27"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_28"
+			spriteType = "GFX_fra_28"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_29"
+			spriteType = "GFX_fra_29"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_785"
+			spriteType = "GFX_fra_785"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_971"
+			spriteType = "GFX_fra_971"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_972"
+			spriteType = "GFX_fra_972"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_973"
+			spriteType = "GFX_fra_973"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_974"
+			spriteType = "GFX_fra_974"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_975"
+			spriteType = "GFX_fra_975"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_976"
+			spriteType = "GFX_fra_976"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_977"
+			spriteType = "GFX_fra_977"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+	}
+}
