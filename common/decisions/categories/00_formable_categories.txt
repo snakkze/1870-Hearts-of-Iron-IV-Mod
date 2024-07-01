@@ -68,17 +68,6 @@ form_gran_colombia_category = {
 	}
 }
 
-form_austria_hungary_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_generic_austria_hungary
-
-	allowed = {
-		has_dlc = "Waking the Tiger"
-	}
-}
-
 form_commonwealth_category = {
 
 	icon = generic_formable_nations

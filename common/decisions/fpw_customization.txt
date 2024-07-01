@@ -1,0 +1,118 @@
+fpw_customization_category = {
+
+	fpw_prussia_historical_flag_customization = {
+
+		icon = GFX_decision_category_generic_formable_nations
+
+		allowed = {
+			and = {
+				original_tag = PRS
+				has_cosmetic_tag = PRS
+			}
+		}
+
+		visible = {
+			original_tag = PRS
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = PRS_historical
+		}
+	}
+
+	fpw_prussia_reset_flag = {
+
+		icon = GFX_decision_BOL_reintegrate_acre_state
+
+		allowed = {
+			and = {
+				original_tag = PRS
+				has_cosmetic_tag = PRS_historical
+			}
+		}
+
+		visible = {
+			original_tag = PRS
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = PRS
+		}
+	}
+
+	fpw_austro_hungarian_fleet_flag_customization = {
+
+		icon = GFX_decision_category_generic_formable_nations
+
+		allowed = {
+			and = {
+				original_tag = AUS
+				has_cosmetic_tag = AUS_austria_hungary
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = AUS
+				OR = {
+					has_cosmetic_tag = AUS_austria_hungary_civil_fleet
+					has_cosmetic_tag = AUS_austria_hungary
+				}
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = AUS_austria_hungary_civil_fleet
+		}
+	}
+
+	fpw_austria_reset_flag = {
+
+		icon = GFX_decision_BOL_reintegrate_acre_state
+
+		allowed = {
+			and = {
+				original_tag = AUS
+				has_cosmetic_tag = AUS_austria_hungary_civil_fleet
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = AUS
+				OR = {
+					has_cosmetic_tag = AUS_austria_hungary_civil_fleet
+					has_cosmetic_tag = AUS_austria_hungary
+				}
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = AUS_austria_hungary
+		}
+	}
+}

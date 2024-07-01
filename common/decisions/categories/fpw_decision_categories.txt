@@ -1,0 +1,17 @@
+fpw_customization_category = {
+	
+	priority = {
+		base = 0
+	}
+
+	icon = GFX_decision_generic_nationalism
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		always = yes
+	}
+}
+

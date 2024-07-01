@@ -227,15 +227,16 @@ fpw_german_unification_category = {
 						is_ai = no
 					}
 					NOT = {
-						AND = {
-							original_tag = SOV
-							any_owned_state = {
-								has_state_flag = influenced_by_PRS
-							}
+						any_owned_state = {
+							has_state_flag = influenced_by_PRS
 						}
 					}
 				}
 				add = 50
+			}
+			modifier = {
+				original_tag = FRA
+				factor = 0
 			}
 		}
 
@@ -315,15 +316,16 @@ fpw_german_unification_category = {
 						is_ai = no
 					}
 					NOT = {
-						AND = {
-							original_tag = FRA
-							any_owned_state = {
-								has_state_flag = influenced_by_AUS
-							}
+						any_owned_state = {
+							has_state_flag = influenced_by_AUS
 						}
 					}
 				}
 				add = 50
+			}
+			modifier = {
+				original_tag = SOV
+				factor = 0
 			}
 		}
 
