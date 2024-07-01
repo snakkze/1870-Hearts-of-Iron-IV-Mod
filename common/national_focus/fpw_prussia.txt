@@ -43,6 +43,11 @@ focus_tree = {
 
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.025
+			}
+			add_country_leader_trait = fpw_trait_bismarcks_plan
 		}
 	}
 
@@ -60,6 +65,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 150
 			custom_effect_tooltip = fpw_seek_german_support
 			hidden_effect = {
 				AUS = {
@@ -1898,7 +1904,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 25
+			custom_effect_tooltip = fpw_prs_heinrich_abeken_tt
 		}
 	}
 
@@ -2009,6 +2016,7 @@ focus_tree = {
 			custom_effect_tooltip = fpw_russian_friendship_tt
 			# Russia wont join but will unlikier to join a great war
 			# Will join to split austria polish territories and border stuff russia and the austria prussia
+			custom_effect_tooltip = fpw_russia_austro_prussian_war
 		}
 	}
 

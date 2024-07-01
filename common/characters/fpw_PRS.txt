@@ -41,6 +41,25 @@ characters={
 			id=-1
 		}
 	}
+	
+	PRS_heinrich_abeken={
+		name="Heinrich Abeken"
+		portraits={
+			civilian = {
+				small = "gfx/interface/ministers/PRS/PRS_heinrich_abeken.dds"
+			}
+		}
+		advisor = {
+            cost = 150
+            slot = political_advisor
+            idea_token = PRS_Heinrich_Abeken_polad
+            available = {
+				has_completed_focus = PRS_seek_international_support
+            } 
+			can_be_fired = yes
+            traits = {  theocratic_diplomat }
+        }
+	}
 
     #############
     # GENERATED #
