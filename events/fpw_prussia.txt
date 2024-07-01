@@ -31,24 +31,15 @@ country_event = {
 	# Disagree with Bismarck
 	option = {
 		name = prussia_fpw.1.b
-		effect_tooltip = {	
-			PRS_wilhelm_i = {
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = monarchism
-						expire = "1965.1.1.1"
-						traits = {}
-					}
-				}
-			}
-		}
+		add_stability = -0.05
+		custom_effect_tooltip = fpw_disagree_with_bismarck_absolute
 		transfer_state = 978
 		transfer_state = 979
 		add_state_core = 978
 		add_state_core = 979
 		hidden_effect = {
 			clr_global_flag = fpw_kaiser_path_not_allowed
+			remove_country_leader_trait = fpw_trait_bismarcks_plan
 			if = {
 				limit = {
 					has_country_leader = {
@@ -67,17 +58,6 @@ country_event = {
 				election_frequency = 48
 				elections_allowed = no
 			}
-			PRS_wilhelm_i = {
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = monarchism
-						expire = "1965.1.1.1"
-						traits = {}
-					}
-				}
-			}
-			#news_event = { hours = 6 id = news.28 }
 		}
 	}
 }
