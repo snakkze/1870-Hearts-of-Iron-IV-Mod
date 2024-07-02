@@ -316,3 +316,95 @@
 		add_stability = -0.02
 		}
 	}
+	
+	country_event = {
+		id = fpw_japan.10
+		title = fpw_japan.10.t
+		desc = fpw_japan.10.d
+		picture = GFX_report_event_japanese_transport_soldiers
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.10.a
+			ai_chance = {
+				base = 10
+			}
+		JAP = {
+		puppet = RYU
+		}
+		hidden_effect = {
+		JAP = {
+			country_event = fpw_japan.12
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.10.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = fpw_japan.11
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.11
+		title = fpw_japan.11.t
+		desc = fpw_japan.11.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.11.a
+			ai_chance = {
+				base = 10
+			}
+		JAP = {
+        create_wargoal = {
+            target = RYU
+            type = puppet_wargoal_focus
+            generator = { 526 }
+			}
+		}
+		}
+		option = {
+			name = fpw_japan.11.b
+			ai_chance = {
+				base = 0
+			}
+		add_political_power = -50
+		add_stability = -0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.12
+		title = fpw_japan.12.t
+		desc = fpw_japan.12.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.12.a
+			ai_chance = {
+				base = 10
+			}
+		}
+	}

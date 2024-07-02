@@ -1,5 +1,25 @@
 ideas = {
 	country = {
+	
+		fpw_emperor_komei = {
+			allowed = {
+				has_country_flag = fpw_secondary_leader_komei
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = wilhelm_i
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.2
+				political_power_factor = 0.1
+			}
+		}
 
 		jap_small_imperial_resistance = {
 			allowed = {
@@ -140,6 +160,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			allowed_civil_war = {
+                always = yes
+            }
 
 			picture = chi_army_corruption
 				
@@ -150,6 +173,27 @@ ideas = {
 				army_speed_factor = -0.2
                 army_org_regain = -0.2
                 army_attack_factor = -0.1
+            }
+		}
+		
+		jap_outdated_forces2	= {
+				
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+                always = yes
+            }
+
+			picture = chi_army_corruption
+				
+			removal_cost = -1
+				
+            modifier = {
+				army_defence_factor = -0.1
+				army_speed_factor = -0.1
+                army_org_regain = -0.1
+                army_attack_factor = -0.05
             }
 		}
 		

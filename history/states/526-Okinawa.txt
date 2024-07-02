@@ -2,18 +2,19 @@
 state={
 	id=526
 	name="STATE_526"
-	manpower = 300560
+	manpower = 341560
 	
 	state_category = small_island
 
 	history={
-		owner = TRB
-		add_core_of = TRB
+		owner = RYU
+		add_core_of = RYU
+		add_claim_by = CHI
+		add_claim_by = JAP
 		buildings = {
 			infrastructure = 1
 			11932 = {
-				naval_base = 2
-
+				naval_base = 1
 			}
 
 		}

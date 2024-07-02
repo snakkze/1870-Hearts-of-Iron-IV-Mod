@@ -254,16 +254,6 @@ focus_tree = {
 		if = {
 			limit = {
 			NOT = {
-				has_completed_focus = JAP_modernize_the_military_system
-			}	
-				}
-			add_ideas = {
-			jap_outdated_forces
-			}
-			}
-		if = {
-			limit = {
-			NOT = {
 				has_completed_focus = JAP_lay_foundations_for_industrialization
 			}	
 				}
@@ -317,18 +307,6 @@ focus_tree = {
 		jap_isolationist_sentiment
 		jap_technological_stagnation
 		}
-		if = {
-			limit = {
-			NOT = {
-			JAP = {
-				has_completed_focus = JAP_modernize_the_military_system
-				}
-			}	
-				}
-			add_ideas = {
-			jap_outdated_forces
-			}
-			}
 		if = {
 			limit = {
 			NOT = {
@@ -406,7 +384,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = -7
+		x = -8
 		y = 1
 		cost = 10
 
@@ -496,7 +474,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = 7
+		x = 8
 		y = 1
 		cost = 10
 
@@ -1215,11 +1193,126 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = JAP_our_sphere_of_influence
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = JAP_open_the_nation focus = JAP_guard_national_sovereignty }
+		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
+		x = 0
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_establish_the_ryukyu_han
+		icon = GFX_
+		prerequisite = { focus = JAP_our_sphere_of_influence }
+		relative_position_id = JAP_our_sphere_of_influence
+		x = 0
+		y = 1
+		cost = 10
+
+		bypass = {
+		OR = {
+		RYU = {
+		is_puppet_of = JAP
+		}
+		NOT = {
+		country_exists = RYU
+		}
+		}
+		}
+
+		available = {
+		country_exists = RYU
+		RYU = {
+		is_subject = no
+		}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		RYU = {
+			country_event = fpw_japan.10
+			}
+		CHI = {add_opinion_modifier = { target = JAP modifier = medium_decrease }
+		}
+		}
+	}
+	
+	focus = {
+		id = JAP_taiwanese_campaign
+		icon = GFX_
+		prerequisite = { focus = JAP_our_sphere_of_influence }
+		relative_position_id = JAP_our_sphere_of_influence
+		x = -1
+		y = 2
+		cost = 10
+
+		available = {
+		always = no #unlocks trough event 54 ryukyuan sailors killed in Taiwan 1871
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		#occupies Taiwan -> Qing Dynasty offers to pay 500.000 taels to get Taiwan back
+		#Qing renunciation of suzerainty over the Ryukyu Islands
+		}
+	}
+	
+	focus = {
+		id = JAP_annex_the_ryukyu_kingdom #1872 assert control - 1876
+		icon = GFX_
+		prerequisite = { focus = JAP_establish_the_ryukyu_han }
+		relative_position_id = JAP_establish_the_ryukyu_han
+		x = 0
+		y = 2
+		cost = 10
+
+		available = {
+		RYU = {
+		is_puppet_of = JAP
+		}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		annex_country = {
+		target = RYU
+		transfer_troops = no
+		}
+		CHI = {add_opinion_modifier = { target = JAP modifier = large_decrease }
+		}
+		}
+	}
+	
+	focus = {
 		id = JAP_discuss_the_Sakhalin_situation_with_russia
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = JAP_open_the_nation focus = JAP_guard_national_sovereignty }
-		relative_position_id = JAP_open_the_nation
-		x = 4
+		prerequisite = { focus = JAP_our_sphere_of_influence }
+		relative_position_id = JAP_our_sphere_of_influence
+		x = -2
 		y = 1
 		cost = 10
 
@@ -1236,6 +1329,52 @@ focus_tree = {
 		completion_reward = {
 		country_event = fpw_japan.5
 		
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_ganghwa_naval_expedition
+		icon = GFX_
+		prerequisite = { focus = JAP_our_sphere_of_influence }
+		relative_position_id = JAP_our_sphere_of_influence
+		x = 1
+		y = 2
+		cost = 10
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		#EVENT naval battle plus treaty korea
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_seize_the_bonin_islands
+		icon = GFX_
+		prerequisite = { focus = JAP_our_sphere_of_influence }
+		relative_position_id = JAP_our_sphere_of_influence
+		x = 2
+		y = 1
+		cost = 10
+
+		available = {
+		
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		#EVENT naval battle plus treaty korea
 		
 		}
 	}
@@ -1276,7 +1415,7 @@ focus_tree = {
 		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = JAP_launch_the_iwakura_mission }
 		relative_position_id = JAP_launch_the_iwakura_mission
-		x = 2
+		x = -2
 		y = 1
 		cost = 10
 		available = {
@@ -2024,7 +2163,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 30
+			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -3338,7 +3477,7 @@ focus_tree = {
   focus = {
 		id = JAP_modernize_the_military_system
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 51
+		x = 48
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -3354,8 +3493,9 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			remove_ideas = {
-			jap_outdated_forces
+			swap_ideas = { 
+			remove_idea = jap_outdated_forces
+			add_idea = jap_outdated_forces2
 			}
 		}
 		mutually_exclusive = { focus = JAP_focus_on_our_strengths }
@@ -3367,7 +3507,7 @@ focus_tree = {
 		
 		prerequisite = { focus = JAP_modernize_the_military_system }
 		relative_position_id = JAP_modernize_the_military_system
-		x = 0
+		x = 2
 		y = 1
 		cost = 10
 
@@ -3469,7 +3609,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		remove_ideas = {
+			jap_outdated_forces2
+			}
 		}
 	}
 	
@@ -3497,7 +3639,7 @@ focus_tree = {
 		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = JAP_modernize_the_military_system }
 		relative_position_id = JAP_modernize_the_military_system
-		x = -4
+		x = -2
 		y = 1
 		cost = 10
 		available = {
@@ -3540,7 +3682,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
-
+		available = {
+		NOT = {
+		has_war_with = FRA
+		}
+		}
 		ai_will_do = {
 			factor = 2
 		}
@@ -3594,7 +3740,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = JAP_modernize_the_military_system }
 		relative_position_id = JAP_modernize_the_military_system
-		x = -2
+		x = 0
 		y = 1
 		cost = 10
 
@@ -3712,7 +3858,7 @@ focus_tree = {
   focus = {
 		id = JAP_focus_on_our_strengths
 		icon = GFX_
-		x = 58
+		x = 57
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -3904,15 +4050,16 @@ focus_tree = {
 	focus = {
 		id = JAP_yokosuka_naval_arsenal
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 66
+		x = 65
 		y = 0
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		search_filters = {  FOCUS_FILTER_HISTORICAL }
 		
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 2
+			factor = 30
 		}
 	
 		available = {
@@ -4035,12 +4182,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_adopt_royal_navy_traditions
-		icon = GFX_
+		id = JAP_british_naval_mission_to_japan
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = JAP_yokosuka_naval_arsenal }
 		relative_position_id = JAP_yokosuka_naval_arsenal
 		x = -3
-		y = 2
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -4053,33 +4200,199 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = JAP_yokosuka_naval_arsenal }
-		mutually_exclusive = { focus = JAP_large_navy }
-		x = -1
+		id = JAP_adopt_royal_navy_traditions
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = JAP_british_naval_mission_to_japan }
+		relative_position_id = JAP_british_naval_mission_to_japan
+		x = 0
 		y = 1
-		relative_position_id = JAP_yokosuka_naval_arsenal
 		cost = 10
-		
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-	
-		available_if_capitulated = yes
-	
-	
+
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_defenders_of_the_rising_sun
+		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
+		prerequisite = { focus = JAP_yokosuka_naval_arsenal }
+		relative_position_id = JAP_yokosuka_naval_arsenal
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_establish_the_japanese_navy
+		icon = GFX_
+		prerequisite = { focus = JAP_defenders_of_the_rising_sun }
+		relative_position_id = JAP_defenders_of_the_rising_sun
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
 			}
 		}
 	
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_builty
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_builty }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_builty
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_builty }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+		}
+	}
+	
+	focus = {
+		id = JAP_the_200_ship_plan #Failed irl within 1 year due to lack of resources
+		icon = GFX_focus_generic_refit_civilian_ships
+		prerequisite = { focus = JAP_establish_the_japanese_navy }
+		relative_position_id = JAP_establish_the_japanese_navy
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_coastal_defence_force
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = JAP_the_200_ship_plan }
+		relative_position_id = JAP_the_200_ship_plan
+		x = -3
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		ai_will_do = {
+			factor = 2
+		}
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = sub_op_bonus
@@ -4092,36 +4405,21 @@ focus_tree = {
 				technology = combined_operations_raiding
 			}
 		}
+		mutually_exclusive = { focus = JAP_dominance_of_the_seas }
 	}
 	
 	focus = {
-		id = JAP_large_navy
+		id = JAP_dominance_of_the_seas #makes struggles worse satsuma rebellion -> expensive
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = JAP_yokosuka_naval_arsenal }
-		mutually_exclusive = { focus = JAP_flexible_navy }
-		x = 1
+		prerequisite = { focus = JAP_the_200_ship_plan }
+		relative_position_id = JAP_the_200_ship_plan
+		x = 3
 		y = 1
-		relative_position_id = JAP_yokosuka_naval_arsenal
 		cost = 10
-		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
-	
-		available_if_capitulated = yes
-	
-	
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
+			factor = 2
 		}
-	
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = fleet_in_being_bonus
@@ -4130,15 +4428,17 @@ focus_tree = {
 				category = fleet_in_being_tree
 			}
 		}
+		mutually_exclusive = { focus = JAP_coastal_defence_force }
 	}
+	
 	
 	focus = {
 		id = JAP_cruiser_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = JAP_flexible_navy focus = JAP_large_navy }
-		x = 0
+		prerequisite = { focus = JAP_coastal_defence_force focus = JAP_dominance_of_the_seas }
+		x = 2
 		y = 1
-		relative_position_id = JAP_flexible_navy
+		relative_position_id = JAP_coastal_defence_force
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -4173,10 +4473,10 @@ focus_tree = {
 	focus = {
 		id = JAP_torpedo_boats
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = JAP_large_navy focus = JAP_flexible_navy }
-		x = 0
+		prerequisite = { focus = JAP_coastal_defence_force focus = JAP_dominance_of_the_seas }
+		x = -2
 		y = 1
-		relative_position_id = JAP_large_navy
+		relative_position_id = JAP_dominance_of_the_seas
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }

@@ -1,5 +1,5 @@
-﻿capital = 536
- oob = "EZO_1866"
+﻿capital = 526
+ oob = "RYU_1866"
 
 # Starting tech
 set_technology = {
@@ -10,18 +10,17 @@ set_convoys = 8
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1866.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 60
-	neutrality = 40
+	neutrality = 100
 }
 
 
-recruit_character = EZO_enomoto_takeaki
+recruit_character = RYU_king_sho_tai
 
 1939.1.1 = {
 	
