@@ -1363,10 +1363,12 @@ focus_tree = {
 		relative_position_id = JAP_our_sphere_of_influence
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
-		
+		645 = {
+		is_controlled_by = TRB
+		}
 		}
 
 		ai_will_do = {
@@ -1374,8 +1376,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		#EVENT naval battle plus treaty korea
-		
+		645 = { transfer_state_to = JAP }
 		}
 	}
 	

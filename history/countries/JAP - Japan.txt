@@ -26,6 +26,7 @@ add_dynamic_modifier = {
 	jap_medium_imperial_resistance
 	jap_unequal_treaties
 	}
+	add_stability = 0.15
 	
 	536 = { 
 	transfer_state_to = JAP 
@@ -76,13 +77,15 @@ add_dynamic_modifier = {
 	unlock_national_focus = JAP_seize_imperial_palace
 	unlock_national_focus = JAP_proclaim_emperor_meijis_restoration_to_full_power
 	unlock_national_focus = JAP_open_the_nation
-	unlock_national_focus = JAP_adopt_the_charter_oath
-	unlock_national_focus = JAP_manage_samurai_discontent
-	unlock_national_focus = JAP_centralize_authority
+	unlock_national_focus = JAP_announce_the_charter_oath
+	unlock_national_focus = JAP_create_a_centralized_state
 	unlock_national_focus = JAP_strengthen_local_administrations
 	unlock_national_focus = JAP_redistribute_land_to_peasants
-	unlock_national_focus = JAP_colonize_the_northern_frontier
 	unlock_national_focus = JAP_establish_the_kaitakushi
+	unlock_national_focus = JAP_lay_foundations_for_industrialization
+	unlock_national_focus = JAP_improve_national_infrastructure
+	unlock_national_focus = JAP_reform_the_monetary_system
+	unlock_national_focus = JAP_yokosuka_naval_arsenal
 }
 
 set_research_slots = 3

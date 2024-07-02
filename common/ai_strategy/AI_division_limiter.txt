@@ -39,6 +39,18 @@ division_limiter = {
 				upper_limit = 1.05
 			}
 		}
+		if = {
+			limit = {
+				AND = {
+				original_tag = JAP
+				has_civil_war = yes
+				date < 1870.1.1
+				}
+			}
+			multiply_temp_variable = {
+				upper_limit = 2
+			}
+		}
 		check_variable = {
 			num_divisions > upper_limit
 		}
