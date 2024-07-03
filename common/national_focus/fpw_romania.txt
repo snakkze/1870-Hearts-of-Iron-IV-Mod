@@ -9,7 +9,10 @@
 		
 		modifier = {
 			add = 50
-			tag = ROM
+			AND = {
+				tag = ROM
+				is_debug = yes
+			}
 		}
 	}
 	
