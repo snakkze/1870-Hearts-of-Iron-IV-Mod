@@ -38,11 +38,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-		}
-		localization_key = GFX_Portrait_Secondary_Vacant
-	}
-	text = {
-		trigger = {
 			has_country_flag = fpw_secondary_leader_jap_komei
 		}
 		localization_key = GFX_Portrait_Secondary_JAP_komei
@@ -52,6 +47,11 @@ defined_text = {
 			has_country_flag = fpw_secondary_leader_jap_meiji
 		}
 		localization_key = GFX_Portrait_Secondary_JAP_meiji
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = GFX_Portrait_Secondary_Vacant
 	}
 }
 defined_text = {
