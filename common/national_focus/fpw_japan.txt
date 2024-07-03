@@ -16,10 +16,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			AND = {
-				tag = JAP
-				is_debug = yes
-			}
+			tag = JAP
 		}
 	}
 
