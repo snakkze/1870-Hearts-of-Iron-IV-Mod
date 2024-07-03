@@ -296,8 +296,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/JAP/Portrait_JAP_tokugawa_yoshinobu.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_JAP_emperor_meiji"
-		texturefile = "gfx/leaders/JAP/Portrait_JAP_emperor_meiji.dds"
+		name = "GFX_Portrait_JAP_meiji"
+		texturefile = "gfx/leaders/JAP/Portrait_JAP_meiji.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_komei"
+		texturefile = "gfx/leaders/JAP/Portrait_JAP_komei.dds"
 	}
 	#EZO
 		spriteType = {

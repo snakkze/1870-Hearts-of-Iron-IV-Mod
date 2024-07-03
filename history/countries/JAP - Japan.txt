@@ -4,10 +4,11 @@ capital = 531
 
 
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
-set_war_support = 0.8
+set_war_support = 0.6
 
 
 add_ideas = {
+	fpw_komei
 	jap_unequal_treaties
 	jap_feudal_entrenchment
 	jap_isolationist_sentiment
@@ -234,8 +235,9 @@ set_popularities = {
 	neutrality = 66
 	fascism = 34
 }
-recruit_character = JAP_tokugawa_iemochi
-recruit_character = JAP_emperor_meiji
+recruit_character = FPW_tokugawa_iemochi
+recruit_character = FPW_komei
+recruit_character = FPW_meiji
 
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda

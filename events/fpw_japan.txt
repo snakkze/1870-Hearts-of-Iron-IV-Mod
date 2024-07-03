@@ -408,3 +408,198 @@
 			}
 		}
 	}
+	
+	country_event = {
+		id = fpw_japan.13
+		title = fpw_japan.13.t
+		desc = fpw_japan.13.d
+		picture = GFX_report_event_japanese_army_parade
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.13.a
+			ai_chance = {
+				base = 10
+			}
+			create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { }
+		}
+		}
+		option = {
+			name = fpw_japan.13.b
+			ai_chance = {
+				base = 0
+			}
+		custom_effect_tooltip = JAP_tt4
+		hidden_effect = {
+		unlock_national_focus = JAP_secure_western_armaments
+		unlock_national_focus = JAP_consolidate_imperial_loyalties
+		unlock_national_focus = JAP_secure_daimyo_allegiances
+		unlock_national_focus = JAP_seize_imperial_palace
+		unlock_national_focus = JAP_proclaim_emperor_meijis_restoration_to_full_power
+		set_capital = {state = 528}
+		528 = {
+		set_demilitarized_zone = no
+		}
+		529 = {
+		set_demilitarized_zone = no
+		}
+		530 = {
+		set_demilitarized_zone = no
+		}
+		531 = {
+		set_demilitarized_zone = no
+		}
+		}
+        start_civil_war = {
+            ruling_party = fascism #Player becomes that
+            ideology = ROOT
+            size = 0.8
+            army_ratio = 0.6
+            navy_ratio = 0.6
+            air_ratio = 0.6
+            states = { 532 533 534 535 537 555 282 536 989 }  # States controlled by the Tokugawa faction
+            keep_unit_leaders = {  }
+            keep_political_leader = yes
+            keep_political_party_members = yes
+        }
+		hidden_effect = {
+		add_dynamic_modifier = { 
+		modifier = fpw_JAP_isolated 
+		}
+		add_stability = 0.2
+		if = {
+			limit = {
+				date < 1867.1.30
+					}
+		create_country_leader = {
+		name = "Emperor Komei"
+		desc = "JAP_komei_desc"
+		picture = "GFX_Portrait_JAP_komei"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = { }
+		}
+					}
+		
+		set_capital = {
+			state = 531
+		}	
+	
+		every_country_with_original_tag = {
+		original_tag_to_check = JAP 
+		remove_ideas = {
+		jap_high_imperial_resistance
+		}
+		add_dynamic_modifier = { 
+		modifier = fpw_JAP_isolated 
+		}
+        IF = { 
+		limit = { Has_government = neutrality }
+		create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { }
+		}
+		}
+		}
+		}
+		hidden_effect = {
+		528 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		529 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		530 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		531 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.14
+		title = fpw_japan.14.t
+		desc = fpw_japan.14.d
+		picture = GFX_report_event_japanese_army_parade
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.14.a
+			ai_chance = {
+				base = 10
+			}
+		create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { }
+		}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.15
+		title = fpw_japan.15.t
+		desc = fpw_japan.15.d
+		picture = GFX_report_event_japanese_army_parade
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.15.a
+			ai_chance = {
+				base = 10
+			}
+		swap_ideas = { 
+			remove_idea = fpw_komei
+			add_idea = fpw_meiji
+			}
+			
+		create_country_leader = {
+		name = "Emperor Meiji"
+		desc = "JAP_meiji_desc"
+		picture = "GFX_Portrait_JAP_meiji"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = { }
+		}
+		
+		}
+	}

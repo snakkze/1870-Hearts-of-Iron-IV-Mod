@@ -157,7 +157,7 @@ focus_tree = {
 		set_demilitarized_zone = yes
 		}
 		}
-		mutually_exclusive = { focus = JAP_alt_history_1 }
+		mutually_exclusive = { focus = JAP_unite_the_common_people }
 	}
   
 	focus = {
@@ -289,65 +289,29 @@ focus_tree = {
             keep_political_leader = yes
             keep_political_party_members = yes
         }
-		remove_ideas = {
-		jap_sonno_joi
-		}
 		hidden_effect = {
-		add_stability = 0.3
-		set_country_leader_name = {
-
-		ideology = fascism
-
-		name = "Emperor Meiji"
-
+		add_dynamic_modifier = { 
+		modifier = fpw_JAP_isolated 
 		}
-		add_ideas = {
-		jap_unequal_treaties
-		jap_feudal_entrenchment
-		jap_isolationist_sentiment
-		jap_technological_stagnation
-		jap_outdated_forces
-		}
+		add_stability = 0.2
 		
-			set_capital = {
+		if = {
+			limit = {
+				date < 1867.1.30
+					}
+		create_country_leader = {
+		name = "Emperor Komei"
+		desc = "JAP_komei_desc"
+		picture = "GFX_Portrait_JAP_komei"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = { }
+		}
+					}
+		
+		set_capital = {
 			state = 531
-			}	
-		if = {
-			limit = {
-			NOT = {
-				has_completed_focus = JAP_lay_foundations_for_industrialization
-			}	
-				}
-			add_ideas = {
-			jap_agrarian_society
-			}
-			}
-		if = {
-			limit = {
-				has_completed_focus = JAP_lay_foundations_for_industrialization	
-				}
-			add_ideas = {
-			jap_transitional_agricultural_society
-			}
-			}
-		if = {
-			limit = {
-				has_completed_focus = JAP_expand_the_silk_industry
-				}
-			swap_ideas = { 
-			remove_idea = jap_transitional_agricultural_society
-			add_idea = jap_industrializing_society
-			}
-			}	
-		if = {
-			limit = {
-				has_completed_focus = JAP_an_industrialized_country
-				}
-			swap_ideas = { 
-			remove_idea = jap_industrializing_society
-			add_idea = jap_industrialized_society
-			}
-			}	
+		}	
 	
 			
 		
@@ -362,56 +326,6 @@ focus_tree = {
 		add_dynamic_modifier = { 
 		modifier = fpw_JAP_isolated 
 		}
-		add_ideas = {
-		jap_unequal_treaties
-		jap_feudal_entrenchment
-		jap_isolationist_sentiment
-		jap_technological_stagnation
-		}
-		if = {
-			limit = {
-			NOT = {
-			JAP = {
-				has_completed_focus = JAP_lay_foundations_for_industrialization
-				}
-			}	
-				}
-			add_ideas = {
-			jap_agrarian_society
-			}
-			}
-		if = {
-			limit = {
-			JAP = {
-				has_completed_focus = JAP_lay_foundations_for_industrialization	
-				}
-				}
-			add_ideas = {
-			jap_transitional_agricultural_society
-			}
-			}
-		if = {
-			limit = {
-			JAP = {
-				has_completed_focus = JAP_expand_the_silk_industry
-				}
-				}
-			swap_ideas = { 
-			remove_idea = jap_transitional_agricultural_society
-			add_idea = jap_industrializing_society
-			}
-			}	
-		if = {
-			limit = {
-			JAP = {
-				has_completed_focus = JAP_an_industrialized_country
-				}
-				}
-			swap_ideas = { 
-			remove_idea = jap_industrializing_society
-			add_idea = jap_industrialized_society
-			}
-			}	
         IF = { 
 		limit = { Has_government = neutrality }
 		create_country_leader = {
@@ -422,6 +336,14 @@ focus_tree = {
 		ideology = jap_tokugawa
 		traits = { }
 		}
+		
+		load_focus_tree = { tree = japanese_focus keep_completed = yes }
+		uncomplete_national_focus = {
+		focus = JAP_denounce_shogun
+		uncomplete_children = yes
+		refund_political_power = no
+		}
+		complete_national_focus = JAP_continue_the_shogunate_tradition
 		}
 		}
 		}
@@ -766,7 +688,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_promote_ownership_of_land
+		id = JAP_promote_the_ownership_of_land
 		icon = GFX_
 		prerequisite = { focus = JAP_abolish_the__han_system }
 		relative_position_id = JAP_abolish_the__han_system
@@ -857,12 +779,12 @@ focus_tree = {
 
 
 		
-		mutually_exclusive = { focus = JAP_support_modern_agricultural_enterprises }
+		mutually_exclusive = { focus = JAP_support_modern_agriculture }
 		
 	}
 	
 	focus = {
-		id = JAP_support_modern_agricultural_enterprises
+		id = JAP_support_modern_agriculture
 		icon = GFX_
 		prerequisite = { focus = JAP_abolish_the__han_system }
 		relative_position_id = JAP_abolish_the__han_system
@@ -945,61 +867,10 @@ focus_tree = {
 
 
 		
-		mutually_exclusive = { focus = JAP_promote_ownership_of_land }
+		mutually_exclusive = { focus = JAP_promote_the_ownership_of_land }
 		
 	}
 	
-	
-	focus = {
-		id = JAP_establish_the_kaitakushi
-		icon = GFX_focus_generic_land_reclamation
-		prerequisite = { focus = JAP_promote_ownership_of_land focus = JAP_support_modern_agricultural_enterprises }
-		relative_position_id = JAP_abolish_the__han_system
-		x = 0
-		y = 2
-		cost = 5
-		available = {
-		controls_state = 536
-		}
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-		536 = { 
-		add_core_of = JAP
-		}
-		536 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-
-		}
-	}
 	
 	focus = {
 		id = JAP_guard_national_sovereignty
@@ -1250,6 +1121,57 @@ focus_tree = {
 		add_ideas = {
 		export_focus
 		}
+		}
+	}
+	
+	focus = {
+		id = JAP_establish_the_kaitakushi
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = JAP_open_the_nation focus = JAP_guard_national_sovereignty }
+		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
+		x = -2
+		y = 3
+		cost = 5
+		available = {
+		controls_state = 536
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		536 = { 
+		add_core_of = JAP
+		}
+		536 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+
 		}
 	}
 	
@@ -4653,7 +4575,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_kaiserliche_marine
+		id = JAP_imperial_marine
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = JAP_frigates_effort }
 		prerequisite = { focus = JAP_ironclad_effort }

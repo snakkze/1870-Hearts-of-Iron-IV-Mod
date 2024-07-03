@@ -1,6 +1,6 @@
 characters={
 
-	JAP_tokugawa_iemochi={
+	fpw_tokugawa_iemochi={
 		name="Tokugawa Iemochi"
 		portraits={
 			civilian={
@@ -14,11 +14,25 @@ characters={
 		}
 	}
 	
-	JAP_emperor_meiji={
+	fpw_komei={
+		name="Emperor Komei"
+		portraits={
+			civilian={
+				large=GFX_Portrait_JAP_komei
+			}
+		}
+		country_leader={
+			ideology=jap_imperial
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}	
+	
+	fpw_meiji={
 		name="Emperor Meiji"
 		portraits={
 			civilian={
-				large=GFX_Portrait_JAP_emperor_meiji
+				large=GFX_Portrait_JAP_meiji
 			}
 		}
 		country_leader={

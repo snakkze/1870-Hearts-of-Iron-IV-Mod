@@ -41,6 +41,18 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Secondary_Vacant
 	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_komei
+		}
+		localization_key = GFX_Portrait_Secondary_JAP_komei
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_meiji
+		}
+		localization_key = GFX_Portrait_Secondary_JAP_meiji
+	}
 }
 defined_text = {
 	name = Get_Secondary_Leader_Name
@@ -79,6 +91,18 @@ defined_text = {
 			has_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
 		}
 		localization_key = fpw_secondary_leader_ita_vittorio_emanuele_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_komei
+		}
+		localization_key = fpw_secondary_leader_jap_komei
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_meiji
+		}
+		localization_key = fpw_secondary_leader_jap_meiji
 	}
 	text = {
 		localization_key = no_secondary_leader

@@ -1,30 +1,6 @@
 ideas = {
 	country = {
-	
-		fpw_emperor_komei = {
-			allowed = {
-				has_country_flag = fpw_secondary_leader_komei
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = wilhelm_i
-
-			modifier = {
-				stability_factor = 0.15
-				war_support_factor = 0.2
-				political_power_factor = 0.1
-			}
-		}
-
 		jap_small_imperial_resistance = {
-			allowed = {
-				always = no
-			}
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -42,9 +18,6 @@ ideas = {
 		}
 
 		jap_medium_imperial_resistance = {
-			allowed = {
-				always = no
-			}
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -62,9 +35,6 @@ ideas = {
 		}
 		
 		jap_high_imperial_resistance = {
-			allowed = {
-				always = no
-			}
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -83,8 +53,8 @@ ideas = {
 		
 		jap_feudal_entrenchment	= {
 				
-			allowed = {
-				always = no
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = generic_agrarian_reform
@@ -101,8 +71,8 @@ ideas = {
 		
 		jap_unequal_treaties	= {
 				
-			allowed = {
-				always = no
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = HUN_treaty_of_triannon
@@ -117,8 +87,8 @@ ideas = {
 		
 		jap_isolationist_sentiment	= {
 				
-			allowed = {
-				always = no
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = undisturbed_isolation
@@ -141,8 +111,8 @@ ideas = {
 		
 		jap_technological_stagnation	= {
 				
-			allowed = {
-				always = no
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = SOV_third_five_year_plan_military
@@ -157,9 +127,6 @@ ideas = {
 		
 		jap_outdated_forces	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 always = yes
             }
@@ -178,9 +145,6 @@ ideas = {
 		
 		jap_outdated_forces2	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 always = yes
             }
@@ -199,9 +163,6 @@ ideas = {
 		
 		jap_societal_backlash_1	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 has_government = fascism
             }
@@ -216,9 +177,6 @@ ideas = {
 		
 		jap_societal_backlash_2	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 has_government = fascism
             }
@@ -233,9 +191,6 @@ ideas = {
 		
 		jap_societal_backlash_3	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 has_government = fascism
             }
@@ -251,9 +206,6 @@ ideas = {
 		
 		jap_societal_backlash_4	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 has_government = fascism
             }
@@ -269,9 +221,6 @@ ideas = {
 		
 		jap_societal_backlash_5	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 has_government = fascism
             }
@@ -287,9 +236,6 @@ ideas = {
 		
 		jap_societal_backlash_6	= {
 				
-			allowed = {
-				always = no
-			}
 			allowed_civil_war = {
                 has_government = fascism
             }
@@ -304,9 +250,6 @@ ideas = {
 		}
 		
 		jap_solidifying_imperial_command = {
-			allowed = {
-				always = no
-			}
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -322,9 +265,6 @@ ideas = {
 		}
 		#add idea Sonnō jōi Ehret den Kaiser, vertreibt die Barbaren!
 		jap_sonno_joi = {
-			allowed = {
-				always = no
-			}
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -344,10 +284,6 @@ ideas = {
 		}
 		
 		jap_agrarian_society = {
-				
-			allowed = {
-				always = no
-			}
 
 			allowed_civil_war = {
 				always = yes
@@ -365,9 +301,9 @@ ideas = {
 		}
 		
 		jap_transitional_agricultural_society = {
-				
-			allowed = {
-				always = no
+
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = SOV_second_five_year_plan
@@ -383,9 +319,9 @@ ideas = {
 		}
 		
 		jap_industrializing_society	= {
-				
-			allowed = {
-				always = no
+
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = SOV_third_five_year_plan
@@ -400,9 +336,9 @@ ideas = {
 		}
 		
 		jap_industrialized_society	= {
-				
-			allowed = {
-				always = no
+
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = SOV_third_five_year_plan_civilian
@@ -414,6 +350,64 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
-
 }
+	hidden_ideas = {
+	
+			fpw_komei = {
+			allowed = {
+			original_tag = JAP	
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			on_add = {
+                set_country_flag = fpw_secondary_leader_jap_komei
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_jap_komei
+            }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.2
+				political_power_factor = 0.1
+			}
+		}
+
+	
+	}
+
+
+
+	hidden_ideas = {
+		
+		fpw_meiji = {
+			allowed = {
+			original_tag = JAP		
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			on_add = {
+                set_country_flag = fpw_secondary_leader_jap_meiji
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_jap_meiji
+            }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.2
+				political_power_factor = 0.1
+			}
+		}
+		}
 }

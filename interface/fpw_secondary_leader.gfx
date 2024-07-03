@@ -19,4 +19,12 @@ spriteTypes = {
 		name = "GFX_Portrait_Secondary_Vacant"
 		texturefile = "gfx/leaders/Portrait_Secondary_Vacant.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_JAP_komei"
+		texturefile = "gfx/leaders/JAP/Secondary/Portrait_Secondary_JAP_komei.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_JAP_meiji"
+		texturefile = "gfx/leaders/JAP/Secondary/Portrait_Secondary_JAP_meiji.dds"
+	}
 }
