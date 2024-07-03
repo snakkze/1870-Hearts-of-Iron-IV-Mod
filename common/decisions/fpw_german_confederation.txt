@@ -199,9 +199,18 @@ fpw_german_unification_category = {
 				OR = {
 					original_tag = PRS
 					original_tag = AUS
+					original_tag = FRA
 					is_subject_of = PRS
 					is_subject_of = AUS
 				}
+			}
+			if = {
+				limit = {
+					PRS = {
+						has_completed_focus = PRS_secure_russian_friendship
+					}
+				}
+				original_tag = SOV
 			}
 		}
 
@@ -288,10 +297,20 @@ fpw_german_unification_category = {
 				OR = {
 					original_tag = PRS
 					original_tag = AUS
-					original_tag = SOV
+					is_subject_of = SOV
 					is_subject_of = PRS
 					is_subject_of = AUS
 				}
+			}
+			if = {
+				limit = {
+					PRS = {
+						NOT = {
+							has_completed_focus = PRS_secure_french_peace
+						}
+					}	
+				}
+				original_tag = FRA
 			}
 		}
 
