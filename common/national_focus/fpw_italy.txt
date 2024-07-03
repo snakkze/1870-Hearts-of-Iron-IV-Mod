@@ -1306,10 +1306,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
 		ai_will_do = {
-			base = 10
+			base = 0
 			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
+				is_historical_focus_on = no
+				add = 10
 			}
 		}
 
@@ -1424,10 +1424,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		ai_will_do = {
-			base = 10
+			base = 0
 			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
+				is_historical_focus_on = no
+				add = 10
 			}
 		}
 

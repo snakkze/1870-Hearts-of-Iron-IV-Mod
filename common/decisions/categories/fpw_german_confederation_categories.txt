@@ -29,7 +29,6 @@ fpw_german_confederation_category = {
 	visible = {
 		any_owned_state = {
 			has_state_flag = german_confederation_state
-			
 		}
 	}
 }
@@ -49,21 +48,24 @@ fpw_german_unification_category = {
 		OR = {
 			original_tag = PRS
 			original_tag = AUS
-			AND = {
+			if = {
+				limit = {
+					PRS = {
+						NOT = {
+							has_completed_focus = PRS_secure_french_peace
+						}
+					}	
+				}
 				original_tag = FRA
-				PRS = {
-					NOT = {
-						has_completed_focus = PRS_secure_french_peace
+			}
+			if = {
+				limit = {
+					PRS = {
+						has_completed_focus = PRS_secure_russian_friendship
 					}
 				}
-			}
-			AND = {
 				original_tag = SOV
-				PRS = {
-					has_completed_focus = PRS_secure_russian_friendship
-				}
 			}
-			has_country_flag = austro_prussian_war_escalation_flag
 		}
 	}
 }

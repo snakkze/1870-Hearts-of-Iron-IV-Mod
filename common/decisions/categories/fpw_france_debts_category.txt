@@ -19,22 +19,21 @@ fpw_france_debts_category = {
 
 	visible = {
 		AND = {
-			OR = {
-				original_tag = PRS
+			AND = {
 				original_tag = FRA
-			}
-			OR = {
-				FRA = {
-					has_idea = fpw_FRA_indemnity_debts_4
-				}
-				FRA = {
-					has_idea = fpw_FRA_indemnity_debts_3
-				}
-				FRA = {
-					has_idea = fpw_FRA_indemnity_debts_2
-				}
-				FRA = {
-					has_idea = fpw_FRA_indemnity_debts_1
+				OR = {
+					FRA = {
+						has_idea = fpw_FRA_indemnity_debts_4
+					}
+					FRA = {
+						has_idea = fpw_FRA_indemnity_debts_3
+					}
+					FRA = {
+						has_idea = fpw_FRA_indemnity_debts_2
+					}
+					FRA = {
+						has_idea = fpw_FRA_indemnity_debts_1
+					}
 				}
 			}
 		}

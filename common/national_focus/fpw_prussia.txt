@@ -32,6 +32,8 @@ focus_tree = {
 		id = PRS_lesser_german_solution
 		icon = GFX_focus_PRS_lesser_german
 
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
 		allow_branch = {
 			NOT = {
 				has_completed_focus = PRS_greater_german_solution
@@ -74,6 +76,8 @@ focus_tree = {
 	focus = {
 		id = PRS_seek_german_support
 		icon = GFX_goal_generic_military_sphere
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_lesser_german_solution }
 		relative_position_id = PRS_lesser_german_solution
 		x = -3
@@ -102,6 +106,8 @@ focus_tree = {
 	focus = {
 		id = PRS_propose_federal_reform
 		icon = GFX_focus_generic_treaty
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_seek_german_support }
 		relative_position_id = PRS_seek_german_support
 		x = 0
@@ -123,6 +129,8 @@ focus_tree = {
 	focus = {
 		id = PRS_annex_holstein
 		icon = GFX_focus_generic_little_entente
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_propose_federal_reform }
 		relative_position_id = PRS_propose_federal_reform
 		x = 0
@@ -707,6 +715,8 @@ focus_tree = {
 	focus = {
 		id = PRS_austro_prussian_victory
 		icon = GFX_focus_ger_revive_kaiserreich
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_annex_holstein }
 		mutually_exclusive = { focus = PRS_bruderkrieg_ending }
 		relative_position_id = PRS_annex_holstein
@@ -987,6 +997,8 @@ focus_tree = {
 	focus = {
 		id = PRS_continue_bismarcks_plan
 		icon = GFX_focus_PRS_bismarcks_plan
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_austro_prussian_victory }
 		mutually_exclusive = { focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_austro_prussian_victory
@@ -1051,6 +1063,8 @@ focus_tree = {
 	focus = {
 		id = PRS_annex_hostile_nothern_states
 		icon = GFX_goal_generic_more_territorial_claims
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_continue_bismarcks_plan focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_continue_bismarcks_plan
 
@@ -1120,6 +1134,8 @@ focus_tree = {
 	focus = {
 		id = PRS_invite_remaing_nothern_states
 		icon = GFX_goal_generic_improve_relations
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_continue_bismarcks_plan }
 		relative_position_id = PRS_continue_bismarcks_plan
 
@@ -1174,6 +1190,8 @@ focus_tree = {
 	focus = {
 		id = PRS_finalize_the_north_german_confederation
 		icon = GFX_focus_PRS_form_the_ngc
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_annex_hostile_nothern_states }
 		prerequisite = { focus = PRS_invite_remaing_nothern_states }
 		relative_position_id = PRS_annex_hostile_nothern_states
@@ -1204,6 +1222,8 @@ focus_tree = {
 	focus = {
 		id = PRS_towards_a_unified_germany
 		icon = GFX_focus_PRS_schutz_und_trutz_alliance
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_finalize_the_north_german_confederation }
 		relative_position_id = PRS_finalize_the_north_german_confederation
 		x = -2
@@ -1258,6 +1278,8 @@ focus_tree = {
 	focus = {
 		id = PRS_maerchenprinz
 		icon = GFX_focus_PRS_maerchenprinz
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_towards_a_unified_germany }
 		relative_position_id = PRS_towards_a_unified_germany
 		x = 1
@@ -1285,6 +1307,8 @@ focus_tree = {
 	focus = {
 		id = PRS_spanish_glorious_revolution
 		icon = GFX_focus_spr_no_pasaran
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_finalize_the_north_german_confederation }
 		relative_position_id = PRS_finalize_the_north_german_confederation
 		x = 2
@@ -1310,6 +1334,8 @@ focus_tree = {
 	focus = {
 		id = PRS_leopold_on_the_spanish_thrown
 		icon = GFX_focus_CHL_crown_antoine_as_sovereign_king
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_spanish_glorious_revolution }
 		relative_position_id = PRS_spanish_glorious_revolution
 		x = -1
@@ -1350,6 +1376,8 @@ focus_tree = {
 	focus = {
 		id = PRS_ems_dispatch
 		icon = GFX_focus_hol_the_foundations_of_defense
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_leopold_on_the_spanish_thrown }
 		prerequisite = { focus = PRS_maerchenprinz }  
 		relative_position_id = PRS_maerchenprinz
@@ -1379,6 +1407,8 @@ focus_tree = {
 	focus = {
 		id = PRS_franco_prussian_war
 		icon = GFX_focus_attack_france
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_ems_dispatch }
 		relative_position_id = PRS_ems_dispatch
 		x = 0
@@ -1431,6 +1461,8 @@ focus_tree = {
 	focus = {
 		id = PRS_invite_baden
 		icon = GFX_focus_PRS_invite_baden
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = -3
@@ -1459,6 +1491,8 @@ focus_tree = {
 	focus = {
 		id = PRS_invite_wurttemberg
 		icon = GFX_focus_PRS_invite_wrt
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = -1
@@ -1487,6 +1521,8 @@ focus_tree = {
 	focus = {
 		id = PRS_invite_bavaria
 		icon = GFX_focus_PRS_invite_bavaria
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = 3
@@ -1515,6 +1551,8 @@ focus_tree = {
 	focus = {
 		id = PRS_invite_hessen
 		icon = GFX_focus_PRS_invite_hessen
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_franco_prussian_war }
 		relative_position_id = PRS_franco_prussian_war
 		x = 1
@@ -1544,6 +1582,8 @@ focus_tree = {
 	focus = {
 		id = PRS_heil_dir_im_siegerkranz
 		icon = GFX_focus_PRS_unification
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_invite_baden }
 		prerequisite = { focus = PRS_invite_wurttemberg }
 		prerequisite = { focus = PRS_invite_bavaria }
@@ -1900,6 +1940,8 @@ focus_tree = {
 	focus = {
 		id = PRS_seek_international_support
 		icon = GFX_goal_generic_major_alliance
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_lesser_german_solution }
 		relative_position_id = PRS_lesser_german_solution
 		x = 3
@@ -1919,6 +1961,8 @@ focus_tree = {
 	focus = {
 		id = PRS_secure_french_peace
 		icon = GFX_focus_chi_reach_out_to_france
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_seek_international_support }
 		relative_position_id = PRS_seek_international_support
 		x = -2
@@ -1957,6 +2001,8 @@ focus_tree = {
 	focus = {
 		id = PRS_ally_with_italy
 		icon = GFX_focus_befriend_italy
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_seek_international_support }
 		relative_position_id = PRS_seek_international_support
 		x = 0
@@ -1999,6 +2045,8 @@ focus_tree = {
 	focus = {
 		id = PRS_secure_russian_friendship
 		icon = GFX_focus_PRS_russian_friendship
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_seek_international_support focus = PRS_austrian_enemy}
 		relative_position_id = PRS_seek_international_support
 
@@ -2031,6 +2079,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_russian_friendship_tt
+			custom_effect_tooltip = fpw_russia_franco_prussian_war_tt
 			# Russia wont join but will unlikier to join a great war
 			# Will join to split austria polish territories and border stuff russia and the austria prussia
 		}
@@ -3005,7 +3054,7 @@ focus = {
 		icon = GFX_goal_generic_allies_build_infantry
 
 		allow_branch = {
-			always = false
+			always = no
 		}
 
 		x = 35
@@ -4399,14 +4448,14 @@ focus = {
 		available = {
 			num_of_factories > 50
 		}
-		cancel_if_invalid = PRS_no
-		continue_if_invalid = PRS_yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = PRS_extra_tech_slot
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_RESEARCH } 
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 		
 		available_if_capitulated = yes
 	
@@ -4416,7 +4465,7 @@ focus = {
 	}
 	
 	###################
-		ARMY BRANCH
+	#	ARMY BRANCH   #
 	###################
 	
 	focus = {
@@ -4450,9 +4499,12 @@ focus = {
 	focus = {
 		id = PRS_focus_moltke_plan
 		icon = GFX_focus_generic_military_mission
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = -2
@@ -4475,7 +4527,7 @@ focus = {
 		icon = GFX_focus_generic_military_mission
 		
 		available = {
-			always = false
+			always = no
 		}
 		
 		x = 2
