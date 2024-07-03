@@ -26,7 +26,7 @@ focus_tree = {
 
 #historical
     focus = {
-		id = JAP_denounce_shogunate
+		id = JAP_denounce_shogun
 		icon = GFX_
 		x = 11
 		y = 0
@@ -37,7 +37,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		available_if_capitulated = yes
-		mutually_exclusive = { focus = JAP_keep_shogunate }
+		mutually_exclusive = { focus = JAP_continue_the_shogunate_tradition }
 
 		completion_reward = {
 		add_stability = -0.05
@@ -45,11 +45,36 @@ focus_tree = {
 	}
   
   	focus = {
-		id = JAP_alt_history_1
-		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = JAP_denounce_shogunate }
-		relative_position_id = JAP_denounce_shogunate
+		id = JAP_unite_the_common_people
+		icon = GFX_
+		prerequisite = { focus = JAP_denounce_shogun }
+		relative_position_id = JAP_denounce_shogun
 		x = 8
+		y = 1
+		cost = 10
+
+		available = {
+		always = false
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+		
+		
+
+		}
+		mutually_exclusive = { focus = JAP_form_satcho_alliance }
+	}
+	
+	focus = {
+		id = JAP_form_the_peoples_army
+		icon = GFX_
+		prerequisite = { focus = JAP_unite_the_common_people }
+		relative_position_id = JAP_unite_the_common_people
+		x = -2
 		y = 1
 		cost = 10
 
@@ -60,19 +85,55 @@ focus_tree = {
 		completion_reward = {
 		
 		
+
+		}
+	}
+	
+	focus = {
+		id = JAP_occupy_key_cities
+		icon = GFX_
+		prerequisite = { focus = JAP_unite_the_common_people }
+		relative_position_id = JAP_unite_the_common_people
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
 		
 		
 
 		}
-		mutually_exclusive = { focus = JAP_form_satcho_alliance }
 	}
-  
+	
+	focus = {
+		id = JAP_reform_the_government
+		icon = GFX_
+		prerequisite = { focus = JAP_unite_the_common_people }
+		relative_position_id = JAP_unite_the_common_people
+		x = 2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+		
+		
+
+		}
+	}
   
 	focus = {
 		id = JAP_form_satcho_alliance
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = JAP_denounce_shogunate }
-		relative_position_id = JAP_denounce_shogunate
+		prerequisite = { focus = JAP_denounce_shogun }
+		relative_position_id = JAP_denounce_shogun
 		x = -8
 		y = 1
 		cost = 10
@@ -687,7 +748,7 @@ focus_tree = {
 	
 	
 	focus = {
-		id = JAP_strengthen_local_administrations
+		id = JAP_abolish_the__han_system
 		icon = GFX_
 		prerequisite = { focus = JAP_create_a_centralized_state }
 		relative_position_id = JAP_create_a_centralized_state
@@ -705,10 +766,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_redistribute_land_to_peasants
+		id = JAP_promote_ownership_of_land
 		icon = GFX_
-		prerequisite = { focus = JAP_strengthen_local_administrations }
-		relative_position_id = JAP_strengthen_local_administrations
+		prerequisite = { focus = JAP_abolish_the__han_system }
+		relative_position_id = JAP_abolish_the__han_system
 		x = -1
 		y = 1
 		cost = 10
@@ -796,15 +857,15 @@ focus_tree = {
 
 
 		
-		mutually_exclusive = { focus = JAP_support_large_landholdings }
+		mutually_exclusive = { focus = JAP_support_modern_agricultural_enterprises }
 		
 	}
 	
 	focus = {
-		id = JAP_support_large_landholdings
+		id = JAP_support_modern_agricultural_enterprises
 		icon = GFX_
-		prerequisite = { focus = JAP_strengthen_local_administrations }
-		relative_position_id = JAP_strengthen_local_administrations
+		prerequisite = { focus = JAP_abolish_the__han_system }
+		relative_position_id = JAP_abolish_the__han_system
 		x = 1
 		y = 1
 		cost = 10
@@ -884,7 +945,7 @@ focus_tree = {
 
 
 		
-		mutually_exclusive = { focus = JAP_redistribute_land_to_peasants }
+		mutually_exclusive = { focus = JAP_promote_ownership_of_land }
 		
 	}
 	
@@ -892,8 +953,8 @@ focus_tree = {
 	focus = {
 		id = JAP_establish_the_kaitakushi
 		icon = GFX_focus_generic_land_reclamation
-		prerequisite = { focus = JAP_redistribute_land_to_peasants focus = JAP_support_large_landholdings }
-		relative_position_id = JAP_strengthen_local_administrations
+		prerequisite = { focus = JAP_promote_ownership_of_land focus = JAP_support_modern_agricultural_enterprises }
+		relative_position_id = JAP_abolish_the__han_system
 		x = 0
 		y = 2
 		cost = 5
@@ -1803,7 +1864,7 @@ focus_tree = {
   
   
   	focus = {
-		id = JAP_keep_shogunate
+		id = JAP_continue_the_shogunate_tradition
 		icon = GFX_
 		x = 30
 		y = 0
@@ -1811,9 +1872,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
+		available = {
+		always = false
+		}
 
 		available_if_capitulated = yes
-		mutually_exclusive = { focus = JAP_denounce_shogunate }
+		mutually_exclusive = { focus = JAP_denounce_shogun }
 
 		completion_reward = {
 
