@@ -1,8 +1,21 @@
 ﻿l_russian:
  fpw_franco_prussian_war_category: "Франко-прусская война" #NT!
  fpw_franco_prussian_war_category_desc: "Объединение Германии никогда не было более актуальным; [PRS.GetAdjective] победили [AUS.GetAdjective] в австро-прусской войне. Теперь осталось только объединиться с остальными немецкими государствами." #NT!
- fpw_side_with_germany: "Сторона с [PRS.GetNameDef]" #NT!
- fpw_side_with_france: "Сторона с [FRA.GetNameDef]" #NT!
+ fpw_side_with_germany: "На стороне [PRS.GetNameDef]" #NT!
+ fpw_side_with_france: "На стороне [FRA.GetNameDef]" #NT!
+  
+ fpw_customization_category: "Настройка флага" #NT!
+ fpw_prussia_historical_flag_customization: "Исторический прусский флаг" #NT!
+ fpw_prussia_reset_flag: "Сбросить флаг" #NT!
+ fpw_austro_hungarian_fleet_flag_customization: "Флаг гражданского прапорщика Австро-Венгрии" #NT!
+ fpw_austria_reset_flag: "Сбросить флаг" #NT!
+  
+ fpw_france_debts_category: "Французские компенсации" #NT!
+ fpw_pay_debts_1: "Первая прусская компенсационная выплата" #NT!
+ fpw_pay_debts_2: "Вторая прусская контрибуция" #NT!
+ fpw_pay_debts_3: "Третья прусская контрибуция" #NT!
+ fpw_pay_debts_4: "Последняя выплата прусской контрибуции" #NT!
+  
   
  fpw_treaty_of_frankfurt_category: "Франкфуртский договор" #NT!
  fpw_treaty_of_frankfurt_category_desc: "После победы [PRS.GetAdjective] во франко-прусской войне и провозглашения Третьей республики, а также объединения Германии был подписан Франкфуртский договор как мирное соглашение между Францией и недавно образованным немецким государством." #NT!
@@ -21,15 +34,15 @@
  fpw_austro_prussian_desc: "В 1864 году немецкие государства Пруссия и Австрия храбро сражались против датчан. Этот конфликт теперь признан Первой войной за объединение Германии, и вероятность второй войны неизбежна. Теперь нам предстоит решить, какую сторону немецкого превосходства внутри Германской Конфедерации мы хотим поддержать." #NT!
  fpw_austro_prussian_war_historical_peace: "Подписание Венского договора" #NT!
   
- fpw_german_confederation: "Выход из Германской Конфедерации" #NT!
+ fpw_german_confederation: "Выйти из Германского союза" #NT!
   
  fpw_austro_prussian_war_escalation: "Эскалация австро-прусской войны" #NT!
   
- fpw_side_with_prussia: "Сторона с [PRS.GetNameDef]" #NT!
- fpw_side_with_austria: "Сторона с [AUS.GetNameDef]" #NT!
+ fpw_side_with_prussia: "На стороне [PRS.GetNameDef]" #NT!
+ fpw_side_with_austria: "На стороне [AUS.GetNameDef]" #NT!
   
  colonization_descision: "Колонизация §Y[FROM.GetName]§!." #NT!
- integration_descision: "Интегрируйте §Y[FROM.GetName]§!." #NT!
+ integration_descision: "Интегрировать §Y[FROM.GetName]§!." #NT!
   
  ITA_government: "Правительство Италии" #NT!
   
@@ -59,6 +72,7 @@
  PRS_ally_luburg: "Влияние Любека" #NT!
   
  ITA_conquer_venice: "Покорить Венецию" #NT!
+ ITA_move_capital_to_rome: "Перенести столицу в Рим" #NT!
   
  fpw_austro_prussian_war_category: "Влияние на Германию" #NT!
  fpw_annex_holstein: "Предложить создание Малого немецкого государства" #NT!

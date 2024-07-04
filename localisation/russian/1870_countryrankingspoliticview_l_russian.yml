@@ -1,11 +1,11 @@
 ﻿l_russian:
- fpw_list_flag_button_tt: "[THIS.GetName]\nБазовый показатель престижа: §Y[?country_base_prestige]§!\nОценка промышленности: §Y[?country_industry_score]§!\n - Гражданские заводы: §Y[?country_civ_factories]§!\n - Военные заводы: §Y[?country_mil_factories]§!\n - Верфи: §Y[?country_naval_factories]§!\nОценка армии: §Y[?country_army_score]§! \n - Земля: §Y[?country_land_army]§!\n - Военно-морской флот: §Y[?country_navy_score]§!\nОценка размера страны: §Y[?country_size_score]§!\n - Оценка собственной земли: §Y[?country_base_prestige]§0!\n ​​- Оценка земли субъекта: §Y[?country_base_prestige]§1!" #NT!
+ fpw_list_flag_button_tt: "[THIS.GetName]\nБазовый балл престижа: §Y[?country_base_prestige]§!\nОценка промышленности: §Y[?country_industry_score]§!\n - Гражданские заводы: §Y[?country_civ_factories]§!\n - Военные заводы: §Y[?country_mil_factories]§!\n - Верфи: §Y[?country_naval_factories]§!\nОценка армии: §Y[?country_army_score]§! \n - Земля: §Y[?country_land_army]§!\n - Военно-морской флот: §Y[?country_navy_score]§!\nОценка размера страны: §Y[?country_size_score]§!\n - Оценка собственной земли: §Y[?country_base_prestige]§0!\n ​​- Оценка земли субъекта: §Y[?country_base_prestige]§1!" #NT!
  fpw_country_pos_localization_key_htl: "[?i]" #NT!
  fpw_country_pos_localization_key_lth: "[?x]" #NT!
  fpw_prestige_localization_key: "[?temp_prestige]" #NT!
- fpw_country_rank_great_power_localization_key: "§GВеликая держава§!" #NT!
- fpw_country_rank_major_power_localization_key: "§GВеликая держава§!" #NT!
- fpw_country_rank_unrecognized_major_power_localization_key: "§RВеликая держава§!" #NT!
+ fpw_country_rank_great_power_localization_key: "§GВеликая Сила§!" #NT!
+ fpw_country_rank_major_power_localization_key: "§GВысшая Сила§!" #NT!
+ fpw_country_rank_unrecognized_major_power_localization_key: "§RВысшая Сила§!" #NT!
  fpw_country_rank_minor_power_localization_key: "§GМалая сила§!" #NT!
  fpw_country_rank_unrecognized_minor_power_localization_key: "§RМалая сила§!" #NT!
  fpw_country_rank_insignificant_power_localization_key: "§GНезначительная сила§!" #NT!
@@ -17,5 +17,5 @@
  fpw_list_sort_button_prestige: "Престиж" #NT!
  fpw_list_sort_button_status: "Положение дел" #NT!
  fpw_list_pos_button_tt: "Ваш §YPosition§! зависит от вашего §YPrestige§!; чем выше §YPrestige§!, тем выше §YPosition§!. Престиж определяется вашими §YIndustry§!, §YСилой армии§!, §YСилой флота§! и §YРазмером страны§!." #NT!
- fpw_list_prestige_button_tt: "Престиж представляет собой §Yinfluence§ страны!. Чем оно выше, тем выше §YStatus§! вы будете на международной арене, имея возможность вмешаться в §YБольшие войны§!." #NT!
+ fpw_list_prestige_button_tt: "Престиж представляет собой §Yinfluence§! страны. Чем он выше, тем выше §YStatus§! вы будете на международной арене, имея возможность вмешиваться в §Yкрупные войны§!." #NT!
  fpw_list_status_button_tt: "§YStatus§! это ваш рейтинг на международной арене. Чем выше ваш §YPrestige§!, тем выше ваш §YStatus§!. Если статус §RRed§!, это указывает на нераспознанный этап, служащий переходной фазой между двумя статусами. Если это §GGreen§!, то у вас признанный статус." #NT!

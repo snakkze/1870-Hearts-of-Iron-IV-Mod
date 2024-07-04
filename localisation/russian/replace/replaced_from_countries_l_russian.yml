@@ -1,4 +1,58 @@
 ﻿l_russian:
+ JAP_fascism: "Японская империя" #NT!
+ JAP_fascism_DEF: "Японская империя" #NT!
+ JAP_neutrality: "Японский сёгунат" #NT!
+ JAP_neutrality_DEF: "японский сёгунат" #NT!
+  
+ SWI_democratic: "Швейцарская Конфедерация" #NT!
+ SWI_democratic_DEF: "Швейцарская Конфедерация" #NT!
+  
+ LUX_democratic: "Великое Герцогство Люксембург" #NT!
+ LUX_democratic_DEF: "Великое Герцогство Люксембург" #NT!
+  
+ BEL_fascism: "Королевство Бельгия" #NT!
+ BEL_fascism_DEF: "Королевство Бельгия" #NT!
+ BEL_democratic: "Королевство Бельгия" #NT!
+ BEL_democratic_DEF: "Королевство Бельгия" #NT!
+  
+ HOL_fascism: "Королевство Нидерландов" #NT!
+ HOL_fascism_DEF: "Королевство Нидерландов" #NT!
+ HOL_democratic: "Королевство Нидерландов" #NT!
+ HOL_democratic_DEF: "Королевство Нидерландов" #NT!
+  
+ DEN_democratic: "Королевство Дания" #NT!
+ DEN_democratic_DEF: "Королевство Дания" #NT!
+  
+ POR_neutrality: "Королевство Португалия" #NT!
+ POR_neutrality_DEF: "Королевство Португалия" #NT!
+  
+ USA_democratic: "Соединенные Штаты Америки" #NT!
+ USA_democratic_DEF: "Соединенные Штаты" #NT!
+  
+ MEX_neutrality: "Мексиканская Империя" #NT!
+ MEX_neutrality_DEF: "Мексиканская империя" #NT!
+  
+ VEN_neutrality: "Соединенные Штаты Венесуэлы" #NT!
+ VEN_neutrality_DEF: "Соединенные Штаты Венесуэлы" #NT!
+  
+ BRA_neutrality: "Империя Бразилии" #NT!
+ BRA_neutrality_DEF: "Бразильская империя" #NT!
+  
+ DOM_neutrality: "Доминиканская Республика" #NT!
+ DOM_neutrality_DEF: "Доминиканская республика" #NT!
+  
+ ETH_neutrality: "Эфиопская империя" #NT!
+ ETH_neutrality_DEF: "Эфиопская империя" #NT!
+  
+ CAN_fascism: "Провинция Канады" #NT!
+ CAN_fascism_DEF: "Провинция Канады" #NT!
+ CAN_democratic: "Провинция Канада" #NT!
+ CAN_democratic_DEF: "Провинция Канады" #NT!
+ CAN_neutrality: "Провинция Канады" #NT!
+ CAN_neutrality_DEF: "Провинция Канады" #NT!
+ CAN_communism: "Провинция Канады" #NT!
+ CAN_communism_DEF: "Провинция Канады" #NT!
+  
  HUN_fascism: "Венгерская Республика" #NT!
  HUN_fascism_DEF: "Венгерская Республика" #NT!
  HUN_democratic: "Венгерская Республика" #NT!
@@ -10,6 +64,13 @@
  HUN: "Венгрия" #NT!
  HUN_DEF: "Венгрия" #NT!
  HUN_ADJ: "Венгерский" #NT!
+  
+ KOR_fascism: "Независимая Корейская Республика" #NT!
+ KOR_fascism_DEF: "Независимая Корейская Республика" #NT!
+ KOR_neutrality: "Великий штат Чосон" #NT!
+ KOR_neutrality_DEF: "Великое государство Чосон" #NT!
+ KOR_democratic: "Великий штат Чосон" #NT!
+ KOR_democratic_DEF: "Великое государство Чосон" #NT!
   
   # Cause constitutional monarchy 
  AUS_democratic: "Королевство Австрия" #NT!
@@ -28,7 +89,7 @@
  SAF_democratic_DEF: "унитарная Капская колония" #NT!
  SAF_neutrality: "Унитарная Южная Африка" #NT!
  SAF_neutrality_DEF: "Унитарная Южная Африка" #NT!
- SAF_communism: "Кейп-Коммуна" #NT!
+ SAF_communism: "Мыс Коммуна" #NT!
  SAF_communism_DEF: "Капская коммуна" #NT!
  SAF: "Капская колония" #NT!
  SAF_DEF: "унитарная Капская колония" #NT!
@@ -50,7 +111,7 @@
  PER_fascism_DEF: "Республика Персия" #NT!
  PER_democratic: "Республика Персия" #NT!
  PER_democratic_DEF: "Республика Персия" #NT!
- PER_neutrality: "Великое государство Персия" #NT!
+ PER_neutrality: "Возвышенное государство Персия" #NT!
  PER_neutrality_DEF: "Великое Государство Персия" #NT!
  PER_communism: "Персидская социалистическая власть" #NT!
  PER_communism_DEF: "Персидская социалистическая власть" #NT!
@@ -69,7 +130,7 @@
  SOV_neutrality: "Российская империя" #NT!
  SOV_neutrality_DEF: "Российская империя" #NT!
  SOV_communism: "Социалистическое государство России" #NT!
- SOV_communism_DEF: "Социалистическое государство Россия" #NT!
+ SOV_communism_DEF: "Социалистическое Государство Россия" #NT!
  SOV_communism_ADJ: "Русский" #NT!
  SOV: "Россия" #NT!
  SOV_DEF: "Россия" #NT!
@@ -89,7 +150,7 @@
  CZE_fascism: "Чешская Республика" #NT!
  CZE_fascism_DEF: "Республика Богемия" #NT!
  CZE_democratic: "Республика Богемия" #NT!
- CZE_democratic_DEF: "Чешская Республика" #NT!
+ CZE_democratic_DEF: "Республика Богемия" #NT!
  CZE_neutrality: "Королевство Богемия" #NT!
  CZE_neutrality_DEF: "Королевство Богемия" #NT!
  CZE_communism: "Богемский союз" #NT!
@@ -100,10 +161,14 @@
  CZE_communism_ADJ: "богемный" #NT!
  CZE: "Королевство Богемия" #NT!
  CZE_DEF: "Королевство Богемия" #NT!
- CZE_ADJ: "богемный" #NT!
+ CZE_ADJ: "Богемский" #NT!
   
  SPQR_UNIFIED_fascism: "Нео-Римская империя" #NT!
- SPQR_UNIFIED_fascism_DEF: "Нео-Римская империя" #NT!
+ SPQR_UNIFIED_fascism_DEF: "Неоромская империя" #NT!
+ SPQR_UNIFIED_democratic: "Нео-Римская империя" #NT!
+ SPQR_UNIFIED_democratic_DEF: "Нео-Римская империя" #NT!
+ SPQR_UNIFIED_neutrality: "Неоромская империя" #NT!
+ SPQR_UNIFIED_neutrality_DEF: "Нео-Римская империя" #NT!
   
  ROM_TUR_subject: "Объединенные княжества" #NT!
  ROM_TUR_subject_DEF: "Объединенные княжества" #NT!
@@ -116,4 +181,17 @@
  EGY_neutrality: "Хедиват Египта" #NT!
  EGY_neutrality_DEF: "Хедиват Египта" #NT!
  EGY_communism: "Социалистическая Республика Нила" #NT!
- EGY_communism_DEF: "Социалистическая Республика Нил" #NT!
+ EGY_communism_DEF: "Социалистическая Республика Нила" #NT!
+  
+ FRA_democratic: "Французская Республика" #NT!
+ FRA_democratic_DEF: "Французская Республика" #NT!
+  
+ BEL_fascism: "Королевство Бельгия" #NT!
+ BEL_fascism_DEF: "Королевство Бельгия" #NT!
+ BEL_democratic: "Королевство Бельгия" #NT!
+ BEL_democratic_DEF: "Королевство Бельгия" #NT!
+  
+ HOL_fascism: "Королевство Нидерландов" #NT!
+ HOL_fascism_DEF: "Королевство Нидерландов" #NT!
+ HOL_democratic: "Королевство Нидерландов" #NT!
+ HOL_democratic_DEF: "Королевство Нидерландов" #NT!

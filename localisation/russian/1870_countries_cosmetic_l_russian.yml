@@ -6,7 +6,7 @@
  NAS_austrian_subject: "Герцогство Австрийское Нассау" #NT!
  NAS_austrian_subject_DEF: "герцогство Австрийское Нассау" #NT!
   
- HES_austrian_subject: "Великое Герцогство Австрийское Гессен" #NT!
+ HES_austrian_subject: "Великое герцогство Австрийское Гессен" #NT!
  HES_austrian_subject_DEF: "Великое герцогство Австрийское Гессен" #NT!
   
  HEK_austrian_subject: "Великое герцогство Австрийское Гессен-Кассель" #NT!
@@ -24,7 +24,7 @@
  KHI_fpw_cosmetic_DEF: "Хивинское ханство" #NT!
  KHI_fpw_cosmetic_ADJ: "Хиван" #NT!
   
- PRS_nationalist: "Прусский фольксрейх" #NT!
+ PRS_nationalist: "Прусский Народный Рейх" #NT!
  PRS_nationalist_DEF: "прусский фольксрейх" #NT!
  PRS_nationalist_ADJ: "прусский" #NT!
   
@@ -33,7 +33,7 @@
  PRS_greater_prussia_ADJ: "прусский" #NT!
   
   # https://tombricks.com/ 
- PRS_GER: "Германская Империя" #NT!
+ PRS_GER: "Германская империя" #NT!
  PRS_GER_DEF: "Германская империя" #NT!
  PRS_GER_ADJ: "Немецкий" #NT!
   
@@ -57,11 +57,15 @@
  AUS_austria_hungary_DEF: "Австро-Венгерская империя" #NT!
  AUS_austria_hungary_ADJ: "австрийский" #NT!
   
+ AUS_austria_hungary_civil_fleet: "Австро-Венгерская империя" #NT!
+ AUS_austria_hungary_civil_fleet_DEF: "Австро-Венгерская империя" #NT!
+ AUS_austria_hungary_civil_fleet_ADJ: "австрийский" #NT!
+  
  AUS_austrian_empire: "Австрийская империя" #NT!
  AUS_austria_empire_DEF: "Австрийская империя" #NT!
  AUS_austria_empire_ADJ: "австрийский" #NT!
   
- CHI_qing: "Великая Цин" #NT!
+ CHI_qing: "Великий Цин" #NT!
  CHI_qing_DEF: "Великий Цин" #NT!
  CHI_qing_ADJ: "Цин" #NT!
   
@@ -71,10 +75,10 @@
   
  TUR_ottoman_empire: "Османская империя" #NT!
  TUR_ottoman_empire_DEF: "Османская Империя" #NT!
- TUR_ottoman_empire_ADJ: "Османская империя" #NT!
+ TUR_ottoman_empire_ADJ: "Османская" #NT!
   
  GER_north_germany: "Северо-Германская Конфедерация" #NT!
- GER_north_germany_DEF: "Северогерманский союз" #NT!
+ GER_north_germany_DEF: "Северо-Германская Конфедерация" #NT!
  GER_north_germany_ADJ: "прусский" #NT!
   
  ITA_monarchy: "Королевство Италия" #NT!
@@ -87,8 +91,8 @@
  ITA_nationalist_DEF: "Итальянская Национальная Республика" #NT!
  ITA_gir: "Великое итальянское государство" #NT!
  ITA_gir_DEF: "Великое итальянское государство" #NT!
- greater_italy: "Империя Великой Италии" #NT!
- greater_italy_DEF: "Великая Итальянская Империя" #NT!
+ greater_italy: "Великая Итальянская Империя" #NT!
+ greater_italy_DEF: "Империя Великой Италии" #NT!
  ITA_italian_empire: "Итальянская империя" #NT!
  ITA_italian_empire_DEF: "Итальянская империя" #NT!
   
@@ -96,5 +100,23 @@
  SER_YUG_DEF: "Югославия" #NT!
  SER_YUG_ADJ: "югославский" #NT!
   
- POL_SOV_neutrality_subject: "Царство Польское"
- POL_SOV_neutrality_subject_DEF: "Царство Польское"
+ POL_SOV_neutrality_subject: "Конгресс Королевства Польши" #NT!
+ POL_SOV_neutrality_subject_DEF: "Конгрессовское Королевство Польша" #NT!
+  
+ MOR_autonomy_dominion: "$OVERLORDADJ$ Протекторат Марокко" #NT!
+ MOR_autonomy_dominion_DEF: "$OVERLORDADJ$ Протекторат Марокко" #NT!
+ MOR_autonomy_puppet: "$OVERLORDADJ$ Марокко" #NT!
+ MOR_autonomy_puppet_DEF: "$OVERLORDADJ$ Марокко" #NT!
+ MOR_autonomy_integrated_puppet: "$OVERLORDADJ$ Северо-Западная Африка" #NT!
+ MOR_autonomy_integrated_puppet_DEF: "$OVERLORDADJ$ Северо-Западная Африка" #NT!
+ WES_autonomy_colony: "$OVERLORDADJ$ Западная Африка" #NT!
+ WES_autonomy_colony_DEF: "$OVERLORDADJ$ Западная Африка" #NT!
+ MAD_autonomy_colony: "$OVERLORDADJ$ Колония Мадагаскара" #NT!
+ MAD_autonomy_colony_DEF: "$OVERLORDADJ$ Колония Мадагаскара" #NT!
+ MAD_autonomy_dominion: "Протекторат Мадагаскара" #NT!
+ MAD_autonomy_dominion_DEF: "Протекторат Мадагаскара" #NT!
+ MAD_subject: "Мадагаскар" #NT!
+ MAD_subject_DEF: "Мадагаскар" #NT!
+  
+ PHI_SPAIN_subject: "Испанская Ост-Индия" #NT!
+ PHI_SPAIN_subject_DEF: "Испанская Ост-Индия" #NT!
