@@ -285,9 +285,8 @@ ideologies = {
 		}
 
 		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
+			generate_wargoal_tension = 0.0
+			join_faction_tension = 0.0
 			lend_lease_tension = 0.6
 			send_volunteers_tension = 0.4
 			guarantee_tension = 0.4
