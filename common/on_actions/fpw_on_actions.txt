@@ -178,7 +178,7 @@ on_actions = {
 				}
 			}
 		}
-		effect = {
+		effect = { #for secondary characters, MUST ADD here for it to appear on start
 			PRS = {
 				set_country_flag = fpw_secondary_leader_prs_wilhelm_I
 			}
@@ -190,6 +190,9 @@ on_actions = {
 			}
 			JAP = {
 				set_country_flag = fpw_secondary_leader_jap_komei
+			}	
+			ENG = {
+				set_country_flag = fpw_secondary_leader_eng_victoria
 			}			
 		}
 	}
