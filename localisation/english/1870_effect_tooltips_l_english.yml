@@ -43,3 +43,7 @@
   fpw_bismarcks_plan_new_tt:0 "§YOtto von Bismarck§! gains:\nWar Penalty Stability Modifier: §G+10.00%§!\nTrade Laws Cost: §G-25%§!\nEconomy Laws Cost: §G-25%§!"
   fpw_disagree_with_bismarck_absolute:0 "§YWilhelm I§! becomes §YKing of @PRS[PRS.GetNameDefCap]§! as an §YAbsolute Monarch§!"
   fpw_russia_franco_prussian_war_tt:0 "§R[SOV.GetNameDefCap] will join the Franco-Prussian war if we don't complete this Focus!§!"
+  fpw_bismarck_forced_resign_tt:0 "§YOtto von Bismarck§! will be forced to §Yresign§! and will be §Yreplaced§! by §YOtto zu Stolberg-Wernigerode§!"
+  fpw_suspended_parliament_1:0 "§YWilhelm I§! will take §Y@PRSHead of State§! indefinitely\nAdd §YWilhelm's Legitimacy§!:§R Low§!, which grants (Stability: §R-15.00%§!, Ideology drift defense: §R-10.00%§!, Political Power Gain: §R-2.00%§!)"
+  fpw_suspended_parliament_2:0 "Modify §YWilhelm's Legitimacy:§!§O Medium§!, which grants (Stability: §R-8.00%§!, Ideology drift defense: §R-5.50%§!, Political Power Gain: §R-1.00%§!)"
+  PRS_utilize_the_armies_loyalty_tt:0 "§G@PRSThe Prussian Royal Army will back Wilhelm§!"

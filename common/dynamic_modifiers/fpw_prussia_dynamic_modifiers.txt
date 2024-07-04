@@ -27,3 +27,12 @@ fpw_PRS_prussian_general_staff = {
 	army_defence_factor = prs_army_defence_factor
 	army_attack_factor = prs_army_attack_factor
 }
+
+fpw_PRS_wilhelms_legitimacy = {
+	enable = { always = yes }
+	#icon = GFX_idea_prussian_general_staff
+
+	stability_factor = fpw_PRS_wilhelms_legitimacy_stability
+	drift_defence_factor = fpw_PRS_wilhelms_legitimacy_drift_defence_factor
+	political_power_gain = fpw_PRS_wilhelms_legitimacy_political_power_gain
+}	

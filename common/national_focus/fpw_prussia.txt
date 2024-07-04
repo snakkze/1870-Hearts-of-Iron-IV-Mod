@@ -4685,7 +4685,12 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
+			add_stability = -0.025
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			custom_effect_tooltip = fpw_bismarck_forced_resign_tt
 		}
 	}
 
@@ -4798,7 +4803,27 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
+			add_stability = -0.10
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			custom_effect_tooltip = fpw_suspended_parliament_1
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = fpw_PRS_wilhelms_legitimacy }
+				set_variable = { 
+					var = fpw_PRS_wilhelms_legitimacy_stability
+				 	value = -0.15
+				}
+				set_variable = { 
+					var = fpw_PRS_wilhelms_legitimacy_drift_defence_factor
+				 	value = -0.10
+				}
+				set_variable = { 
+					var = fpw_PRS_wilhelms_legitimacy_political_power_gain
+				 	value = -2
+				}
+			}
 		}
 	}
 
@@ -4821,7 +4846,24 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
+			add_political_power = -75
+			add_stability = 0.05
+			custom_effect_tooltip = fpw_suspended_parliament_2
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = fpw_PRS_wilhelms_legitimacy }
+				set_variable = { 
+					var = fpw_PRS_wilhelms_legitimacy_stability
+				 	value = -0.08
+				}
+				set_variable = { 
+					var = fpw_PRS_wilhelms_legitimacy_drift_defence_factor
+				 	value = -0.055
+				}
+				set_variable = { 
+					var = fpw_PRS_wilhelms_legitimacy_political_power_gain
+				 	value = -1
+				}
+			}
 		}
 	}
 
@@ -4844,7 +4886,12 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
+			add_stability = 0.025
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.065
+			}
+			custom_effect_tooltip = PRS_utilize_the_armies_loyalty_tt
 		}
 	}
 
