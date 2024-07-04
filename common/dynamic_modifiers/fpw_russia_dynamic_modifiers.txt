@@ -21,6 +21,21 @@ SOV_serfdom_remnants_dynamic_modifier = { #NATIONAL SPIRIT
 	
 	
 }
+
+SOV_russian_army_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+	
+	icon = GFX_idea_MEX_politicised_army
+	
+	experience_gain_army_factor = SOV_ra_experience_gain_army_factor
+	army_attack_factor = SOV_ra_army_attack_factor
+	army_defence_factor = SOV_ra_army_defence_factor
+	command_power_gain = SOV_ra_command_power_gain
+	
+	
+	
+}
+
 SOV_first_constitution_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 	
