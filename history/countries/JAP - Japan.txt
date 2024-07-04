@@ -52,13 +52,6 @@ add_dynamic_modifier = {
 	neutrality = 20
 	fascism = 80
 	}
-	set_country_leader_name = {
-
-		ideology = fascism
-
-		name = "Emperor Meiji"
-
-		}
 		
 	remove_dynamic_modifier = { 
 		modifier = fpw_JAP_isolated 

@@ -353,13 +353,9 @@ ideas = {
 }
 	hidden_ideas = {
 	
-			fpw_komei = {
+		fpw_komei = {
 			allowed = {
 			original_tag = JAP	
-			}
-			
-			allowed_civil_war = {
-				has_government = fascism
 			}
 
 			on_add = {
@@ -388,10 +384,6 @@ ideas = {
 		fpw_meiji = {
 			allowed = {
 			original_tag = JAP		
-			}
-			
-			allowed_civil_war = {
-				has_government = fascism
 			}
 			
 			on_add = {
