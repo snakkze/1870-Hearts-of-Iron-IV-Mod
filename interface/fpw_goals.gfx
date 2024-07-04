@@ -243,6 +243,17 @@ spriteTypes = {
 	}
 }
 
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_SOV_tsar"
+		texturefile = "gfx/interface/goals/SOV_tsar.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_plot_tsar"
+		texturefile = "gfx/interface/goals/SOV_plot_tsar.png"
+	}
+}
+
 # ROMANIA #
 spriteTypes = {
 	spriteType = {

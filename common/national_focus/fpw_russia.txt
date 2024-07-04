@@ -834,7 +834,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_focus_generic_self_management
+		icon = GFX_focus_SOV_tsar
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_tighten_tsars_control }
 		relative_position_id = SOV_tighten_tsars_control
@@ -1218,7 +1218,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_SOV_plot_tsar
 		mutually_exclusive = { focus = SOV_tsars_regime }
 		#prerequisite = { focus =  }
 		#relative_position_id = 
@@ -1512,7 +1512,7 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_befriend_prussia
 		mutually_exclusive = { focus = SOV_never_trust_germans }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
@@ -1601,7 +1601,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {  }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_polish_deal
 		mutually_exclusive = { focus = SOV_our_prussian_friends }
 		prerequisite = { focus = SOV_remember_austrian_betrayal}
 		prerequisite = { focus = SOV_never_trust_germans }
