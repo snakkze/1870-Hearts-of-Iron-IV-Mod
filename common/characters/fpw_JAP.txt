@@ -15,7 +15,7 @@ characters={
 	}
 	
 	fpw_komei={
-		name="Emperor Komei"
+		name="Emperor Kōmei"
 		portraits={
 			civilian={
 				large=GFX_Portrait_JAP_komei
@@ -25,6 +25,7 @@ characters={
 			ideology=jap_imperial
 			expire="1956.01.01.01"
 			id=-1
+			traits = { fpw_trait_emperor_komei }
 		}
 	}	
 	
@@ -39,6 +40,7 @@ characters={
 			ideology=jap_imperial
 			expire="1956.01.01.01"
 			id=-1
+			traits = { fpw_trait_emperor_meiji }
 		}
 	}	
 }
