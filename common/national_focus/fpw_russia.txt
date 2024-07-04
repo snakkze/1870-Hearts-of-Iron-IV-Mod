@@ -12,10 +12,13 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		#modifier = {
-		#	add = 10
-		#	tag = SOV
-		#}
+		modifier = {
+			add = 10
+			AND = {
+				tag = SOV
+				is_debug = yes
+			}
+		}
 		
 	}
 	
@@ -708,6 +711,8 @@ focus_tree = {
 
 		completion_reward = {
 			
+			add_stability = -0.05
+			
 			add_to_variable = { SOV_sr_consumer_goods_factor = 0.10 }
 			add_to_variable = { SOV_sr_global_building_slots_factor = 0.10 }
 			
@@ -815,9 +820,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			
-			
-			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_stability = 0.10
 		}
 	}
 	
@@ -827,7 +834,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_focus_generic_self_management
+		icon = GFX_focus_SOV_tsar
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_tighten_tsars_control }
 		relative_position_id = SOV_tighten_tsars_control
@@ -851,7 +858,9 @@ focus_tree = {
 
 		completion_reward = {
 			
+			add_stability = 0.05
 			
+			add_ideas = SOV_tsars_supremacy
 			
 		}
 	}
@@ -862,7 +871,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_focus_generic_self_management
+		icon = GFX_focus_SOV_my_brothers_keeper
 		mutually_exclusive = { focus = SOV_democratic_russian_empire }
 		prerequisite = { focus = SOV_the_tsar_knows_best }
 		relative_position_id = SOV_the_tsar_knows_best
@@ -886,7 +895,7 @@ focus_tree = {
 
 		completion_reward = {
 			
-			
+			add_ideas = SOV_new_russian_empire
 			
 		}
 	}
@@ -1103,7 +1112,7 @@ focus_tree = {
 		y = 2
 		cost = 20
 		
-		#icon = GFX_
+		icon = GFX_goal_support_democracy
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_liberalize_the_press }
 		relative_position_id = SOV_liberalize_the_press
@@ -1129,18 +1138,21 @@ focus_tree = {
 			
 			country_event = russia_fpw.9
 			
-			#country_event = {
-			#	id = russia_fpw.9
-			#	days = 1
-			#}
 			
 			
 		}
 		completion_reward = {
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			
 			add_dynamic_modifier = { modifier = SOV_first_constitution_dynamic_modifier }
-
-			
-			
 		}
 	}
 	focus = {
@@ -1149,7 +1161,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_focus_generic_the_giant_wakes
 		mutually_exclusive = { focus = SOV_reformed_but_still_russia }
 		prerequisite = { focus = SOV_first_russian_constitution }
 		prerequisite = { focus = SOV_new_agricultural_economy }
@@ -1206,7 +1218,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_SOV_plot_tsar
 		mutually_exclusive = { focus = SOV_tsars_regime }
 		#prerequisite = { focus =  }
 		#relative_position_id = 
@@ -1308,10 +1320,26 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = fpw_SOV_losers_of_the_crimean_war_2
-				remove_idea = fpw_SOV_losers_of_the_crimean_war_1
+			if = { 
+				limit = {
+					has_idea = fpw_SOV_losers_of_the_crimean_war_2
+				}
+				swap_ideas = {
+					add_idea = fpw_SOV_losers_of_the_crimean_war_3
+					remove_idea = fpw_SOV_losers_of_the_crimean_war_2
+				}
 			}
+			if = { 
+				limit = {
+					has_idea = fpw_SOV_losers_of_the_crimean_war_1
+				}
+				swap_ideas = {
+					add_idea = fpw_SOV_losers_of_the_crimean_war_2
+					remove_idea = fpw_SOV_losers_of_the_crimean_war_1
+				}
+			}
+			
+			
 			
 		}
 	}
@@ -1484,7 +1512,7 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_befriend_prussia
 		mutually_exclusive = { focus = SOV_never_trust_germans }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
@@ -1573,7 +1601,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {  }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_polish_deal
 		mutually_exclusive = { focus = SOV_our_prussian_friends }
 		prerequisite = { focus = SOV_remember_austrian_betrayal}
 		prerequisite = { focus = SOV_never_trust_germans }
@@ -2623,7 +2651,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY }
 		
-		icon = GFX_
+		icon = GFX_focus_befriend_prussia
 		mutually_exclusive = { focus = SOV_civs_two }
 		prerequisite = { focus = SOV_industry_upgrade_one }
 		relative_position_id = SOV_industry_upgrade_one
@@ -2813,6 +2841,444 @@ focus_tree = {
 	}
 	
 	
+##########################################################################
+#
+#	Military Branch
+#
+##########################################################################
+	
+	focus = {
+		id = SOV_russian_army
+		x = 14
+		y = 0
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_goal_generic_allies_build_infantry
+		#mutually_exclusive = { focus =  }
+		#prerequisite = { focus =  }
+		relative_position_id = SOV_russian_diplomacy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			army_experience  = 10
+			country_event = russia_fpw.15
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_local_advisors
+		x = -3
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_focus_generic_national_security
+		mutually_exclusive = { focus = SOV_foreign_advisors }
+		prerequisite = { focus = SOV_russian_army }
+		relative_position_id = SOV_russian_army
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			#army_experience  = 20
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_universal_conscription
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_focus_generic_limited_social_mobilization
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_local_advisors focus = SOV_foreign_advisorss }
+		relative_position_id = SOV_local_advisors
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			not = { has_completed_focus = SOV_new_mobilization_plan }
+		}
+		
+		bypass = {
+			has_completed_focus = SOV_new_mobilization_plan
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			#army_experience  = 20
+			add_ideas = SOV_universal_conscription
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_improve_military_education
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ARMY_XP }
+		
+		icon = GFX_focus_generic_military_academy
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_local_advisors }
+		relative_position_id = SOV_local_advisors
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			army_experience  = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_foreign_advisors
+		x = 3
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = SOV_local_advisors }
+		prerequisite = { focus = SOV_russian_army }
+		relative_position_id = SOV_russian_army
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			army_experience  = 25
+			#add_doctrine_cost_reduction = {
+			#	cost_reduction = 0.5
+			#	uses = 1
+			#	category = land_doctrine
+			#}
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_prussian_model
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = { }
+		
+		icon = GFX_focus_befriend_prussia
+		mutually_exclusive = { focus = SOV_french_model }
+		prerequisite = { focus = SOV_foreign_advisors }
+		relative_position_id = SOV_foreign_advisors
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			not = { has_war_with = PRS }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			#army_experience  = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_superior_firepower
+			}
+			PRS = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = attache_sent
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = SOV_new_mobilization_plan
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		icon = GFX_focus_generic_full_social_mobilization
+		mutually_exclusive = { focus = SOV_french_model }
+		prerequisite = { focus = SOV_prussian_model }
+		relative_position_id = SOV_prussian_model
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			not = { has_war_with = PRS }
+			not = { has_completed_focus = SOV_universal_conscription }
+		}
+		
+		bypass = {
+			has_completed_focus = SOV_universal_conscription
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			army_experience  = 5
+			add_ideas = SOV_new_mobilization_plan
+			
+		}
+	}
+	focus = {
+		id = SOV_french_model
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { }
+		
+		icon = GFX_focus_chi_reach_out_to_france
+		mutually_exclusive = { focus = SOV_prussian_model }
+		prerequisite = { focus = SOV_foreign_advisors }
+		relative_position_id = SOV_foreign_advisors
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			not = { has_war_with = FRA }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			#army_experience  = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = attache_sent
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = SOV_army_of_professionals
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		icon = GFX_focus_generic_little_entente
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_french_model }
+		relative_position_id = SOV_french_model
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			not = { has_war_with = FRA }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			army_experience  = 5
+			
+			add_ideas = SOV_professional_army
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_study_the_crimean_war
+		x = 3
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
+		
+		#icon = GFX_
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_local_advisors focus = SOV_foreign_advisors }
+		relative_position_id = SOV_local_advisors
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			army_experience  = 10
+			if = { 
+				limit = {
+					has_idea = fpw_SOV_losers_of_the_crimean_war_2
+				}
+				swap_ideas = {
+					add_idea = fpw_SOV_losers_of_the_crimean_war_3
+					remove_idea = fpw_SOV_losers_of_the_crimean_war_2
+				}
+			}
+			if = { 
+				limit = {
+					has_idea = fpw_SOV_losers_of_the_crimean_war_1
+				}
+				swap_ideas = {
+					add_idea = fpw_SOV_losers_of_the_crimean_war_2
+					remove_idea = fpw_SOV_losers_of_the_crimean_war_1
+				}
+			}
+			
+			
+			
+		}
+	}
 	
 	
 	

@@ -266,7 +266,7 @@ country_event = {
 	id = russia_fpw.9
 	title = russia_fpw.9.t
 	desc = russia_fpw.9.d
-	#picture = GFX_report_event_romania_parliament
+	picture = GFX_report_event_romania_parliament
 	
 	is_triggered_only = yes
 
@@ -286,7 +286,7 @@ country_event = {
 	id = russia_fpw.10
 	title = russia_fpw.10.t
 	desc = russia_fpw.10.d
-	#picture = GFX_report_event_romania_parliament
+	picture = GFX_report_event_romania_parliament
 	
 	is_triggered_only = yes
 
@@ -308,7 +308,7 @@ country_event = {
 	id = russia_fpw.11
 	title = russia_fpw.11.t
 	desc = russia_fpw.11.d
-	#picture = GFX_report_event_romania_parliament
+	picture = GFX_report_event_romania_parliament
 	
 	is_triggered_only = yes
 
@@ -331,7 +331,7 @@ country_event = {
 	id = russia_fpw.12
 	title = russia_fpw.12.t
 	desc = russia_fpw.12.d
-	#picture = GFX_report_event_romania_parliament
+	picture = GFX_report_event_romania_parliament
 	
 	is_triggered_only = yes
 
@@ -353,7 +353,7 @@ country_event = {
 	id = russia_fpw.13
 	title = russia_fpw.13.t
 	desc = russia_fpw.13.d
-	#picture = GFX_report_event_romania_parliament
+	picture = GFX_report_event_romania_parliament
 	
 	is_triggered_only = yes
 
@@ -397,7 +397,7 @@ country_event = {
 	id = russia_fpw.14
 	title = russia_fpw.14.t
 	desc = russia_fpw.14.d
-	#picture = GFX_report_event_romania_parliament
+	picture = GFX_report_event_romania_parliament
 	
 	is_triggered_only = yes
 
@@ -412,6 +412,22 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = russia_fpw.15
+	title = russia_fpw.15.t
+	desc = russia_fpw.15.d
+	picture = GFX_report_event_ast_army
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.7.a
+		
+		
+		
+	}
+}
 
 
 

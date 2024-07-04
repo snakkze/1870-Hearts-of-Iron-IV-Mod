@@ -167,20 +167,13 @@ focus_tree = {
 		relative_position_id = PRS_annex_holstein
 
 		allow_branch = {
+			is_debug = yes #temporarily hidden until finished
 			NOT = {
 				has_completed_focus = PRS_austro_prussian_victory
 			}
 		}
 
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
-
-		x = -4
+		x = -5
 		y = 1
 
 		cost = 10
@@ -203,335 +196,13 @@ focus_tree = {
 		}
 	}
 
-	# Socialist path
-	# United Workers of Germany
-	#focus = {
-	#	id = PRS_accept_austrian_dominance
-	#	icon = GFX_goal_unknown
-	#	prerequisite = { focus = PRS_bruderkrieg_ending }
-	#	mutually_exclusive = { focus = PRS_prussian_identity }
-	#	relative_position_id = PRS_bruderkrieg_ending
-	#	x = -4
-	#	y = 1
-	#	cost = 10
-#
-#		ai_will_do = {
-#			factor = 10
-#		}
-#
-#		completion_reward = {
-#		}
-#	}
-
-	# Prusso-Nationalist Path
-	# Requires a trigger warning!
-	# Loc Name: Supreme Prussian Race
-	focus = {
-		id = PRS_prussian_identity
-		icon = GFX_focus_PRS_supreme_prussian_race
-		prerequisite = { focus = PRS_bruderkrieg_ending }
-		relative_position_id = PRS_bruderkrieg_ending
-		x = 0
-		y = 1
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			set_cosmetic_tag = PRS_nationalist
-		}
-	}
-
-	focus = {
-		id = PRS_inspect_the_kaisers_residence
-		icon = GFX_focus_PRS_kaisers_residence
-		prerequisite = { focus = PRS_prussian_identity }
-		relative_position_id = PRS_prussian_identity
-		x = -3
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_plan_the_coup
-		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = PRS_inspect_the_kaisers_residence }
-		relative_position_id = PRS_inspect_the_kaisers_residence
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_overthrow_wilhelm
-		icon = GFX_focus_PRS_prussian_coup
-		prerequisite = { focus = PRS_plan_the_coup }
-		relative_position_id = PRS_plan_the_coup
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			remove_ideas = {
-				fpw_kaiser_wilhelm
-			}
-			hidden_effect = {
-				clr_country_flag = fpw_secondary_leader_wilhelm_i
-			}	
-		}
-	}
-
-	focus = {
-		id = PRS_wacht_am_rhein
-		icon = GFX_focus_PRS_wacht_am_rhein
-		prerequisite = { focus = PRS_overthrow_wilhelm }
-		relative_position_id = PRS_overthrow_wilhelm
-		x = -1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_the_ruhrkampf
-		icon = GFX_goal_rhineland
-		prerequisite = { focus = PRS_wacht_am_rhein }
-		relative_position_id = PRS_wacht_am_rhein
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			# Push towards annexation of NRW
-		}
-	}
-
-	focus = {
-		id = PRS_search_the_scrapegoat
-		icon = GFX_focus_PRS_search_for_the_scapegoat
-		prerequisite = { focus = PRS_prussian_identity }
-		relative_position_id = PRS_prussian_identity
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_dolchstosslegende
-		icon = GFX_focus_PRS_dolchstoss_legende
-		prerequisite = { focus = PRS_search_the_scrapegoat }
-		relative_position_id = PRS_search_the_scrapegoat
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_segrete_the_lesser_germans
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = PRS_dolchstosslegende }
-		relative_position_id = PRS_dolchstosslegende
-		x = -1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_subhumans_in_the_workforce
-		icon = GFX_focus_FIN_parmis_devils
-		prerequisite = { focus = PRS_dolchstosslegende }
-		relative_position_id = PRS_dolchstosslegende
-		x = 1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_ruhm_und_ehre_der_volksarmee
-		icon = GFX_focus_generic_fascist_troops
-		prerequisite = { focus = PRS_subhumans_in_the_workforce }
-		prerequisite = { focus = PRS_segrete_the_lesser_germans }
-		relative_position_id = PRS_subhumans_in_the_workforce
-		x = -1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_the_vengeance
-		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = PRS_ruhm_und_ehre_der_volksarmee }
-		relative_position_id = PRS_ruhm_und_ehre_der_volksarmee
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_fight_the_remains_of_north_germany
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = PRS_segrete_the_lesser_germans }
-		prerequisite = { focus = PRS_overthrow_wilhelm }
-		relative_position_id = PRS_overthrow_wilhelm
-		x = 1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = PRS_italian_ally
-		icon = GFX_focus_befriend_italy
-		prerequisite = { focus = PRS_fight_the_remains_of_north_germany }
-		relative_position_id = PRS_fight_the_remains_of_north_germany
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	# Unternehmen Germania because of Wacht am Rhein, Germania auf der Wacht am Rhein, Painting from Lorenz Clasen, 1860
-	focus = {
-		id = PRS_unternehmen_germania
-		icon = GFX_focus_PRS_unternehmen_germania
-		prerequisite = { focus = PRS_the_ruhrkampf }
-		prerequisite = { focus = PRS_italian_ally }
-		relative_position_id = PRS_italian_ally
-		x = -1
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			create_wargoal = {
-				type = topple_government
-				target = FRA
-			}
-			
-		}
-	}
-
 	focus = {
 		id = PRS_towards_a_greater_prussia
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = PRS_prussian_identity focus = PRS_integrate_minor_austrian_lands }
-		relative_position_id = PRS_prussian_identity
+		prerequisite = { focus = PRS_governmental_reform focus = PRS_integrate_minor_austrian_lands }
+		relative_position_id = PRS_integrate_minor_austrian_lands
 
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_austro_prussian_victory
-			}
-		}
-
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_integrate_minor_austrian_lands
-			}
-		}
-
-		x = 3
+		x = -2
 		y = 1
 
 		cost = 10	
@@ -556,8 +227,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = fpw_proud_nation
-			# Proud Nation idea or smth idk
-			# Gives boost to authoritarian party
 		}
 	}
 
@@ -565,7 +234,6 @@ focus_tree = {
 		id = PRS_fund_austrian_seperatists
 		icon = GFX_focus_PRS_austrian_seperatism
 		prerequisite = { focus = PRS_towards_a_greater_prussia }
-		prerequisite = { focus = PRS_search_the_scrapegoat }
 		relative_position_id = PRS_towards_a_greater_prussia
 		x = 1
 		y = 1
@@ -603,7 +271,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = PRS_defending_our_fatherland }
 		relative_position_id = PRS_defending_our_fatherland	
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -639,7 +307,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = PRS_seek_hungarian_support }
 		relative_position_id = PRS_seek_hungarian_support
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -674,9 +342,10 @@ focus_tree = {
 	focus = {
 		id = PRS_unternehmen_ostmark
 		icon = GFX_focus_attack_austria
+		prerequisite = { focus = PRS_assume_power }
 		prerequisite = { focus = PRS_gott_mit_uns }
 		relative_position_id = PRS_gott_mit_uns
-		x = 0
+		x = -3
 		y = 1
 		cost = 10
 
@@ -689,26 +358,6 @@ focus_tree = {
 				type = topple_government
 				target = AUS
 			}
-		}
-	}
-
-	focus = {
-		id = PRS_form_the_greater_german_empire
-		icon = GFX_focus_PRS_form_greater_prussia
-		prerequisite = { focus = PRS_unternehmen_germania }
-		prerequisite = { focus = PRS_unternehmen_ostmark }
-		prerequisite = { focus = PRS_the_vengeance }
-		relative_position_id = PRS_unternehmen_ostmark
-		x = -3
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			set_cosmetic_tag = PRS_greater_prussia
 		}
 	}
 
@@ -848,14 +497,6 @@ focus_tree = {
 		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
 		prerequisite = { focus = PRS_towards_a_greater_prussia }
 		relative_position_id = PRS_towards_a_greater_prussia
-
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_austro_prussian_victory
-			}
-		}
 		
 		x = 3
 		y = 1
@@ -878,14 +519,6 @@ focus_tree = {
 		prerequisite = { focus = PRS_ultimatum_to_the_northern_reichsrat }
 		prerequisite = { focus = PRS_annex_hostile_nothern_states }
 		relative_position_id = PRS_ultimatum_to_the_northern_reichsrat
-
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				has_completed_focus = PRS_integrate_minor_austrian_lands
-			}
-		}
 
 		x = 1
 		y = 1
@@ -923,7 +556,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = PRS_the_unified_north }
 		relative_position_id = PRS_the_unified_north
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -959,7 +592,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_dictatorship
 		prerequisite = { focus = PRS_the_unified_north }
 		relative_position_id = PRS_the_unified_north
-		x = 1
+		x = 2
 		y = 2
 		cost = 10
 
@@ -971,26 +604,6 @@ focus_tree = {
 			# France will get an event or decision to intervene in that war, ai will always do
 			# If they intervene a war will break out between italy and prussia against france, austria and the south german states
 			# If no interventions nothing happens
-		}
-	}
-
-	focus = {
-		id = PRS_declare_kaisers_germany
-		icon = GFX_focus_generic_monarchy_2
-		prerequisite = { focus = PRS_constitutions_rework }
-		prerequisite = { focus = PRS_support_pro_german_sentiments_in_the_south }
-		relative_position_id = PRS_support_pro_german_sentiments_in_the_south
-		x = 1
-		y = 1
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			# Germany gets formed like in heil dir im siegerkranz
-			set_cosmetic_tag = PRS_GER
 		}
 	}
 
@@ -1226,7 +839,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_finalize_the_north_german_confederation }
 		relative_position_id = PRS_finalize_the_north_german_confederation
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 
@@ -1282,7 +895,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_towards_a_unified_germany }
 		relative_position_id = PRS_towards_a_unified_germany
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -1311,7 +924,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_finalize_the_north_german_confederation }
 		relative_position_id = PRS_finalize_the_north_german_confederation
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 
@@ -1338,7 +951,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = { focus = PRS_spanish_glorious_revolution }
 		relative_position_id = PRS_spanish_glorious_revolution
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -1609,6 +1222,9 @@ focus_tree = {
 		relative_position_id = PRS_heil_dir_im_siegerkranz
 
 		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_lesser_german_solution
+			}
 			is_debug = yes
 		}
 
@@ -1717,6 +1333,9 @@ focus_tree = {
 		relative_position_id = PRS_heil_dir_im_siegerkranz
 
 		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_lesser_german_solution
+			}
 			is_debug = yes
 		}
 
@@ -2325,6 +1944,9 @@ focus_tree = {
 		relative_position_id = PRS_unify_the_north
 
 		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_lesser_german_solution
+			}
 			is_debug = yes
 		}
 
@@ -2656,6 +2278,9 @@ focus_tree = {
 		relative_position_id = PRS_national_reforms
 
 		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_lesser_german_solution
+			}
 			is_debug = yes
 		}
 
@@ -4874,6 +4499,372 @@ focus = {
 		prerequisite = { focus = PRS_focus_faster_armies }
 		relative_position_id = PRS_focus_amend_research_budget
 		available_if_capitulated = yes
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_focus_blame_the_king
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_bruderkrieg_ending }
+		mutually_exclusive = { focus = PRS_governmental_reform }
+		relative_position_id = PRS_bruderkrieg_ending
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = -7
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_focus_secure_army_support
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_blame_the_king }
+		relative_position_id = PRS_focus_blame_the_king
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = -2
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_focus_the_real_scapegoat
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_blame_the_king }
+		relative_position_id = PRS_focus_blame_the_king
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 0
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_focus_promises_of_prosperity
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_blame_the_king }
+		relative_position_id = PRS_focus_blame_the_king
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 2
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_focus_treitschke_leads_us
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_secure_army_support }
+		prerequisite = { focus = PRS_focus_the_real_scapegoat }
+		prerequisite = { focus = PRS_focus_promises_of_prosperity }
+		mutually_exclusive = { focus = PRS_focus_power_to_the_army }
+		relative_position_id = PRS_focus_blame_the_king
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = -1
+		y = 2
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_focus_power_to_the_army
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_secure_army_support }
+		prerequisite = { focus = PRS_focus_the_real_scapegoat }
+		prerequisite = { focus = PRS_focus_promises_of_prosperity }
+		mutually_exclusive = { focus = PRS_focus_treitschke_leads_us }
+		relative_position_id = PRS_focus_blame_the_king
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 1
+		y = 2
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_focus_the_coup
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_treitschke_leads_us focus = PRS_focus_power_to_the_army }
+		relative_position_id = PRS_focus_the_real_scapegoat
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 0
+		y = 2
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_governmental_reform
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_bruderkrieg_ending }
+		mutually_exclusive = { focus = PRS_focus_blame_the_king }
+		relative_position_id = PRS_bruderkrieg_ending
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 0
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_dreams_of_equality
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_governmental_reform }
+		mutually_exclusive = { focus = PRS_suspend_parliament }
+		relative_position_id = PRS_governmental_reform
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = -1
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_gather_public_support
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_dreams_of_equality }
+		relative_position_id = PRS_dreams_of_equality
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = -2
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_unite_the_opposition
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_dreams_of_equality }
+		relative_position_id = PRS_dreams_of_equality
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 0
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_demand_a_referendum
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_gather_public_support }
+		prerequisite = { focus = PRS_unite_the_opposition }
+		relative_position_id = PRS_dreams_of_equality
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = -1
+		y = 2
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_suspend_parliament
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_governmental_reform }
+		mutually_exclusive = { focus = PRS_dreams_of_equality }
+		relative_position_id = PRS_governmental_reform
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 1
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_amend_the_1850_constitution
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_suspend_parliament }
+		prerequisite = { focus = PRS_towards_a_greater_prussia }
+		relative_position_id = PRS_suspend_parliament
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 0
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_utilize_the_armies_loyalty
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_suspend_parliament }
+		prerequisite = { focus = PRS_towards_a_greater_prussia }
+		relative_position_id = PRS_suspend_parliament
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 2
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PRS_assume_power
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_amend_the_1850_constitution }
+		prerequisite = { focus = PRS_utilize_the_armies_loyalty }
+		relative_position_id = PRS_suspend_parliament
+
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 1
+		y = 2
 	
 		completion_reward = {
 			

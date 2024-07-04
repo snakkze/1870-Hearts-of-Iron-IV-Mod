@@ -235,6 +235,93 @@ ideas = {
 				war_support_factor = -0.10
 			}
 		}
+		
+		
+		SOV_universal_conscription = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+				conscription = 0.02
+				
+			}
+		}
+		SOV_new_mobilization_plan = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = cze_planning_bonus
+			
+			modifier = {
+				conscription = 0.01
+				mobilization_speed = 0.2
+			}
+		}
+		SOV_professional_army = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+				experience_gain_army_factor = 0.10
+				land_doctrine_cost_factor = -0.05
+				training_time_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		SOV_tsars_supremacy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.10
+				political_power_factor = 0.10
+				generate_wargoal_tension = -0.20
+				guarantee_tension = -0.20
+			}
+		}
+		
+		
+		SOV_new_russian_empire = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_the_true_tsars
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				political_power_factor = 0.05
+				generate_wargoal_tension = -0.20
+				justify_war_goal_time = -0.10
+				subjects_autonomy_gain = -0.1
+				puppet_cost_factor = -0.1
+			}
+		}
+		
+		
 	}
 	hidden_ideas = {
 		fpw_alexander_ii = {

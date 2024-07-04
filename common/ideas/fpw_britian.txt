@@ -1,0 +1,26 @@
+ideas = {
+	hidden_ideas = {
+		fpw_victoria = {
+			allowed = {
+				original_tag = ENG
+			}
+			cancel = {
+                NOT = {
+					has_government = democratic
+					has_government = fascism
+				}	
+            }
+			on_add = {
+                set_country_flag = fpw_secondary_leader_eng_victoria
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_eng_victoria
+            }
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+	}	
+}

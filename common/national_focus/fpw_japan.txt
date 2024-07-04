@@ -276,6 +276,10 @@ focus_tree = {
 		531 = {
 		set_demilitarized_zone = no
 		}
+		remove_ideas = {
+		fpw_komei
+		fpw_meiji
+			}
 		}
         start_civil_war = {
             ruling_party = fascism #Player becomes that
@@ -300,13 +304,21 @@ focus_tree = {
 				date < 1867.1.30
 					}
 		create_country_leader = {
-		name = "Emperor Komei"
+		name = "Emperor Kōmei"
 		desc = "JAP_komei_desc"
 		picture = "GFX_Portrait_JAP_komei"
 		expire = "1965.1.1"
 		ideology = jap_imperial
-		traits = { }
+		traits = { 
+		fpw_trait_emperor_komei
 		}
+		}
+		hidden_effect = {
+			clr_country_flag = fpw_secondary_leader_jap_komei
+			}
+		hidden_effect = {
+			clr_country_flag = fpw_secondary_leader_jap_meiji
+			}
 					}
 		
 		set_capital = {
@@ -1359,7 +1371,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		645 = { transfer_state_to = JAP }
+		645 = { 
+		transfer_state_to = JAP 
+		}
+		hidden_effect = {
+		645 = { 
+		remove_core_of = TRB
+		}
+		}
 		}
 	}
 	

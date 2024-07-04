@@ -1,5 +1,7 @@
 ﻿l_english:
  
+ # Economy
+ 
  fpw_russia_economy_cat: "Russian Economy"
  investing_in_infrastracture: "Already Investing in Infrastracture"
  russia_infrastracture_northern_baltics: "Infrastracture in Northern Baltics"
@@ -12,10 +14,19 @@
  russia_infrastracture_central_russia: "Infrastracture in Central Russia"
  russia_infrastracture_novogrod_region: "Infrastracture in Novogrod Region"
  
+ # Military
+ 
+ fpw_russia_military_cat: "State of the Military"
+ russia_military_situation_mission: "Changing Military Situation"
+ russia_military_situation_mission_good_tp: "§GThe Russian Army is ahead of its time!§!\nModify §Y$SOV_russian_army_dynamic_modifier$§! by\nArmy Experience Gain: §G+5.0%§!\nDivision Attack: §G+5.0%§!\nDivision Defence: §G+5.0%§!\nDaily Command Power Gain: §G+0.05§!"
+ russia_military_situation_mission_ok_tp: "§gThe Russian military didn't innovate and didn't fall behind, so the §Y$SOV_russian_army_dynamic_modifier$§! National Spirit will not be modified.§!"
+ russia_military_situation_mission_bad_tp: "§RThe Russian Army is falling behind!§!\nModify §Y$SOV_russian_army_dynamic_modifier$§! by\nArmy Experience Gain: §R-5.0%§!\nDivision Attack: §R-5.0%§!\nDivision Defence: §R-5.0%§!\nDaily Command Power Gain: §R-0.05§!"
+ 
+ # Russification
+ 
  fpw_russification_cat: "Russification"
  fpw_russification_cat_desc: ""
  
- #OV_russification_text: "mimimimimimimimimimimi"
  SOV_russification_text: "Russification is a form of cultural assimilation in which non-Russians, whether involuntarily or voluntarily, give up their culture and language in favor of the Russian culture and the Russian language"
  
  

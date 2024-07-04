@@ -80,4 +80,26 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	fpw_trait_emperor_komei = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = 0.2
+		political_power_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fpw_trait_emperor_meiji = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = 0.2
+		political_power_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
