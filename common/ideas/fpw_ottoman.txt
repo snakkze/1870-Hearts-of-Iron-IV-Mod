@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+}
+	hidden_ideas = {
+	
+		fpw_abdulaziz = {
+			allowed = {
+			original_tag = TUR
+			}
+			cancel = {
+                NOT = {
+					has_government = neutrality
+				}	
+            }
+			on_add = {
+                set_country_flag = fpw_secondary_leader_tur_abdulaziz
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_tur_abdulaziz
+            }
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+	}
+}

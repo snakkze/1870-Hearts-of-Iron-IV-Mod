@@ -9,6 +9,10 @@ add_dynamic_modifier = {
 	modifier = fpw_TUR_sick_man_of_europe 
 }
 
+add_ideas = {
+fpw_abdulaziz
+}
+
 if = {
 	limit = {
 		NOT = {
