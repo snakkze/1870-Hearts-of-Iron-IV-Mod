@@ -335,7 +335,7 @@ ideas = {
 			}
 		}
 		
-		jap_industrialized_society	= {
+		jap_industrialized_society = {
 
 			allowed_civil_war = {
 				always = yes
@@ -348,6 +348,57 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		jap_heigakko = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_whampoa_military_academy
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_leader_cost_factor = 0.6
+				army_leader_start_level = 1 
+			}
+		}
+		
+		jap_army_academy = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_whampoa_military_academy
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_leader_cost_factor = 0.3
+				army_leader_start_level = 1 
+				army_leader_start_planning_level = 1 
+				army_leader_start_attack_level = 1 
+			}
+		}
+		
+		jap_samurai_spirit = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				conscription = 0.015
 			}
 		}
 }

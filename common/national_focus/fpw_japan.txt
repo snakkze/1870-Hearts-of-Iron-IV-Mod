@@ -3499,10 +3499,6 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			swap_ideas = { 
-			remove_idea = jap_outdated_forces
-			add_idea = jap_outdated_forces2
-			}
 		}
 		mutually_exclusive = { focus = JAP_focus_on_our_strengths }
 	}
@@ -3522,7 +3518,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+			swap_ideas = { 
+			remove_idea = jap_outdated_forces
+			add_idea = jap_outdated_forces2
+			}
 		}
 	}
 	
@@ -3551,25 +3550,6 @@ focus_tree = {
 		relative_position_id = JAP_an_european_style_military
 		x = 1
 		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = JAP_establish_the_imperial_guard
-		icon = GFX_
-		
-		prerequisite = { focus = JAP_an_european_style_military }
-		relative_position_id = JAP_an_european_style_military
-		x = -2
-		y = 2
 		cost = 10
 
 		ai_will_do = {
@@ -3636,7 +3616,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+			add_ideas = {
+			jap_samurai_spirit
+			}
 		}
 	}
 	
@@ -3663,8 +3645,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_train_the_denshutai
-		icon = GFX_
+		id = JAP_establish_the_imperial_guard
+		icon = GFX_focus_generic_japanese_imperial_glory
 		prerequisite = { focus = JAP_invite_french_military_advisers }
 		relative_position_id = JAP_invite_french_military_advisers
 		x = -1
@@ -3676,7 +3658,44 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+			division_template = {
+				priority = 2
+				is_locked = yes
+				name = "Imperial Guard"
+				priority = 1
+				division_names_group = JAP_INF_IG
+				regiments = {
+					infantry = { x = 0 y = 0 }
+		
+					infantry = { x = 1 y = 0 }
+					
+					infantry = { x = 0 y = 1 }
+		
+					infantry = { x = 1 y = 1 }
+					
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 2 }
+					
+					infantry = { x = 2 y = 0 }
+					
+					infantry = { x = 2 y = 1 }
+		
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 282 }
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1. Imperial Guard\" division_template = \"Imperial Guard\" start_experience_factor = 1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2. Imperial Guard\" division_template = \"Imperial Guard\" start_experience_factor = 1" 
+					owner = ROOT
+				}
+			}
 		}
 	}
 	
@@ -3703,29 +3722,36 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_the_military_school_of_ichigaya
-		icon = GFX_
-		prerequisite = { focus = JAP_second_french_military_mission_to_japan }
-		relative_position_id = JAP_second_french_military_mission_to_japan
+		id = JAP_establish_the_heigakko
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = JAP_modernize_the_military_system }
+		relative_position_id = JAP_modernize_the_military_system
 		x = -1
-		y = 1
+		y = 2
 		cost = 10
-
+		available = {
+		NOT = {
+		has_war_with = FRA
+		}
+		}
 		ai_will_do = {
 			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		add_ideas = {
+		jap_heigakko
+		}
 		}
 	}
 	
 	focus = {
-		id = JAP_the_japanese_army_academy
-		icon = GFX_
-		prerequisite = { focus = JAP_the_military_school_of_ichigaya }
-		relative_position_id = JAP_the_military_school_of_ichigaya
-		x = 0
+		id = JAP_the_military_school_of_ichigaya
+		icon = GFX_focus_chi_whampoa_military_academy
+		prerequisite = { focus = JAP_establish_the_heigakko }
+		prerequisite = { focus = JAP_second_french_military_mission_to_japan }
+		relative_position_id = JAP_second_french_military_mission_to_japan
+		x = 1
 		y = 1
 		cost = 10
 
@@ -3734,9 +3760,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+			swap_ideas = { 
+			remove_idea = jap_heigakko
+			add_idea = jap_army_academy
+			}
 		}
 	}
+
 	
 	
 	
