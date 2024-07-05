@@ -1,4 +1,5 @@
 add_namespace = prussia_fpw
+add_namespace = prussia_fpw_news
 
 # Bismarcks ultimatum
 country_event = {
@@ -702,5 +703,45 @@ country_event = {
 			complete_national_focus = PRS_focus_appoint_alfred
 			activate_advisor = PRS_Alfred_von_Rauch_carm
 		}	
+	}
+}
+
+# Wilhelm Assume Power - News
+news_event = {
+	id = prussia_fpw_news.1
+	title = prussia_fpw_news.1.t
+	desc = prussia_fpw_news.1.d
+	picture = GFX_fpw_prussia_fpw_news_001
+
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			set_politics = {
+    			ruling_party = neutrality
+    			elections_allowed = no
+    			election_frequency = 48
+				name = PRS_hohenzollern
+    			long_name = PRS_hohenzollern
+			}
+			add_country_leader_role = {
+    			character = PRS_wilhelm_i
+    			promote_leader = yes
+    			country_leader={
+					ideology=aboslute_monarchy
+					expire="1956.01.01.01"
+            		traits = { fpw_trait_wilhelm_the_great }
+				}	
+			}
+			retire_ideology_leader = democratic
+			remove_ideas = fpw_kaiser_wilhelm
+		}	
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw_news.1.a
+		events = fpw_disagree_with_bismarck_absolute
 	}
 }

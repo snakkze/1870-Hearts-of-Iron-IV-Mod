@@ -205,13 +205,16 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 10	
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
 		}
 		
 		available = {
+			NOT = {
+				has_completed_focus = PRS_dreams_of_equality
+			}
 			if = {
 				limit = {
 					has_completed_focus = PRS_integrate_minor_austrian_lands
@@ -237,7 +240,7 @@ focus_tree = {
 		relative_position_id = PRS_towards_a_greater_prussia
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -255,7 +258,7 @@ focus_tree = {
 		relative_position_id = PRS_fund_austrian_seperatists
 		x = -1
 		y = 1
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -273,7 +276,7 @@ focus_tree = {
 		relative_position_id = PRS_defending_our_fatherland	
 		x = 0
 		y = 1
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 10
@@ -291,7 +294,7 @@ focus_tree = {
 		relative_position_id = PRS_fund_austrian_seperatists
 		x = 1
 		y = 1
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -309,7 +312,7 @@ focus_tree = {
 		relative_position_id = PRS_seek_hungarian_support
 		x = 0
 		y = 1
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -328,7 +331,7 @@ focus_tree = {
 		relative_position_id = PRS_fortify_silesia
 		x = 1
 		y = 1
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -347,7 +350,7 @@ focus_tree = {
 		relative_position_id = PRS_gott_mit_uns
 		x = -3
 		y = 1
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 10
@@ -4679,7 +4682,7 @@ focus = {
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 2
 		
 		x = 0
 		y = 1
@@ -4691,6 +4694,19 @@ focus = {
 				popularity = -0.05
 			}
 			custom_effect_tooltip = fpw_bismarck_forced_resign_tt
+			hidden_effect = {
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Otto zu Stolberg-Wernigerode"
+					#picture = 
+					expire = "1965.1.1"
+					ideology = conservative_semi_constitutional_monarchism
+					traits = {
+					}
+				}
+				generate_character = {
+    			}
+			}
 		}
 	}
 
@@ -4797,7 +4813,7 @@ focus = {
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 6
 		
 		x = 1
 		y = 1
@@ -4805,11 +4821,21 @@ focus = {
 		completion_reward = {
 			add_stability = -0.10
 			add_popularity = {
-				ideology = democratic
+				ideology = neutrality
 				popularity = 0.15
 			}
 			custom_effect_tooltip = fpw_suspended_parliament_1
 			hidden_effect = {
+				retire_country_leader = yes
+				add_country_leader_role = {
+    				character = PRS_wilhelm_i
+    				promote_leader = yes
+    				country_leader = {
+        				ideology = conservative_semi_constitutional_monarchism
+        				expire = "1965.1.1.1"
+        				traits = { }
+    				}
+				}
 				add_dynamic_modifier = { modifier = fpw_PRS_wilhelms_legitimacy }
 				set_variable = { 
 					var = fpw_PRS_wilhelms_legitimacy_stability
@@ -4840,7 +4866,7 @@ focus = {
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 8
 		
 		x = 0
 		y = 1
@@ -4877,10 +4903,11 @@ focus = {
 		
 
 		available = {
+			has_completed_focus = PRS_amend_the_1850_constitution
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 4
 		
 		x = 2
 		y = 1
@@ -4891,6 +4918,7 @@ focus = {
 				ideology = neutrality
 				popularity = 0.065
 			}
+			remove_dynamic_modifier = { modifier = fpw_PRS_wilhelms_legitimacy }
 			custom_effect_tooltip = PRS_utilize_the_armies_loyalty_tt
 		}
 	}
@@ -4905,16 +4933,19 @@ focus = {
 		
 
 		available = {
+			NOT = {
+				has_dynamic_modifier = { modifier = fpw_PRS_wilhelms_legitimacy }
+			}
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 12
 		
 		x = 1
 		y = 2
 	
 		completion_reward = {
-			
+			news_event = prussia_fpw_news.1
 		}
 	}
 }
