@@ -313,6 +313,15 @@ spriteTypes = {
 		name = "GFX_Portrait_RYU_king_sho_tai"
 		texturefile = "gfx/leaders/RYU/Portrait_RYU_king_sho_tai.dds"
 	}
+	#KOR
+		spriteType = {
+		name = "GFX_Portrait_KOR_heungseon_daewongun"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_heungseon_daewongun.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_gojong_older"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Gojong_older.dds"
+	}
 	
 	# BEL
 	spriteType = {

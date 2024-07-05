@@ -190,10 +190,13 @@ on_actions = {
 			}
 			JAP = {
 				set_country_flag = fpw_secondary_leader_jap_komei
-			}	
+			}			
 			ENG = {
 				set_country_flag = fpw_secondary_leader_eng_victoria
-			}			
+			}	
+			KOR = {
+				set_country_flag = fpw_secondary_leader_kor_gojong_young
+			}				
 		}
 	}
 	

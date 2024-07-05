@@ -27,7 +27,10 @@ spriteTypes = {
 		name = "GFX_Portrait_Secondary_ENG_victoria"
 		texturefile = "gfx/leaders/ENG/Secondary/Portrait_Secondary_ENG_victoria.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_Portrait_Secondary_KOR_gojong_young"
+		texturefile = "gfx/leaders/KOR/Secondary/Portrait_Secondary_KOR_gojong_young.dds"
+	}
 	spriteType = {
 		name = "GFX_Portrait_Secondary_Vacant"
 		texturefile = "gfx/leaders/Portrait_Secondary_Vacant.dds"

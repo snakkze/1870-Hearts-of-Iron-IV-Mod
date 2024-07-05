@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+}
+	hidden_ideas = {
+	
+		fpw_gojong_young = {
+			allowed = {
+			original_tag = KOR	
+			}
+			cancel = {
+                NOT = {
+					has_government = neutrality
+				}	
+            }
+			on_add = {
+                set_country_flag = fpw_secondary_leader_kor_gojong_young
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_kor_gojong_young
+            }
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+	}
+}

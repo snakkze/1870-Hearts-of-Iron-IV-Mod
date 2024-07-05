@@ -56,6 +56,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_flag = fpw_secondary_leader_kor_gojong_young
+		}
+		localization_key = GFX_Portrait_Secondary_KOR_gojong_young
+	}
+	text = {
+		trigger = {
 		}
 		localization_key = GFX_Portrait_Secondary_Vacant
 	}
@@ -115,6 +121,12 @@ defined_text = {
 			has_country_flag = fpw_secondary_leader_eng_victoria
 		}
 		localization_key = fpw_secondary_leader_eng_victoria
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_kor_gojong_young
+		}
+		localization_key = fpw_secondary_leader_kor_gojong_young
 	}
 	text = {
 		localization_key = no_secondary_leader
