@@ -216,11 +216,10 @@ ideas = {
 
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
-			NOT = { has_idea = isolation }
-			AND = {
 				OR = {
-					has_government = fascism
 					has_government = communism
+					has_government = democratic
+					has_government = neutrality
 					SWE_rapid_mob_manpower_law_trigger = yes 
 					if = {
 						limit = {
@@ -256,7 +255,7 @@ ideas = {
 					else = {
 						hidden_trigger = { always = no }  #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
 					}
-				}}
+				}
 				has_war_support > 0.2
 				#Special rules AST in TFV
 				if = {
@@ -423,10 +422,8 @@ ideas = {
 			NOT = { has_idea = isolation }
 			AND = {
 				OR = {
-					has_government = fascism
 					has_government = communism
 					SWE_rapid_mob_manpower_law_trigger = yes
-					NOT = { has_idea = isolation }
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.6

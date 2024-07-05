@@ -455,11 +455,6 @@ on_actions = {
 							has_government = fascism
 							controls_state = 282
 							}
-					EZO = {
-							has_army_manpower = {
-							size < 1
-							}
-					}
 					TRB = {
 					controls_state = 536
 					}
@@ -498,6 +493,11 @@ on_actions = {
 							}
 					EZO = {
 					controls_state = 536
+					}
+					EZO = {
+							has_army_manpower = {
+							size < 1
+							}
 					}
 					536 = {
 					is_claimed_by = JAP
