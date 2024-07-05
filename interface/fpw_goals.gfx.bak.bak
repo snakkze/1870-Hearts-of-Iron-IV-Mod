@@ -319,23 +319,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_rom_education_golden_age"
 		texturefile = "gfx/interface/goals/focus_rom_education_golden_age.dds"
-	}
-	spriteType = {
-		name = "GFX_focus_rom_military_complex"
-		texturefile = "gfx/interface/goals/focus_rom_military_complex.dds"
 	}	
-	spriteType = {
-		name = "GFX_focus_rom_military_fund"
-		texturefile = "gfx/interface/goals/focus_rom_military_fund.dds"
-	}	
-	spriteType = {
-		name = "GFX_focus_rom_military_f1"
-		texturefile = "gfx/interface/goals/focus_rom_military_f1.dds"
-	}	
-	spriteType = {
-		name = "GFX_focus_rom_fortify_border_m1"
-		texturefile = "gfx/interface/goals/focus_rom_fortify_border_m1.dds"
-	}				
 }
 
 

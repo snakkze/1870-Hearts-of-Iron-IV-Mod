@@ -825,7 +825,7 @@
 
 		focus = {
 		id = rom_military_complex
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_military_complex
 		prerequisite = { focus = rom_industrial_dreams }
 		mutually_exclusive = { }
 		
@@ -834,12 +834,14 @@
 		relative_position_id = rom_industrial_dreams
 		
 		
-		cost = 5
+		cost = 4.3
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {
+			add_stability = 0.05
+			country_event = fpw_romania.5		
 		}
 		
 		ai_will_do = {
@@ -849,7 +851,7 @@
 
 		focus = {
 		id = rom_military_fund
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_rom_military_fund
 		prerequisite = { focus = rom_military_complex }
 		mutually_exclusive = { }
 		
@@ -858,12 +860,13 @@
 		relative_position_id = rom_military_complex
 		
 		
-		cost = 5
+		cost = 4.3
 		
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {
+			country_event = fpw_romania.6				
 		}
 		
 		ai_will_do = {
@@ -970,7 +973,7 @@
 	
 		focus = {
 		id = rom_military_factory_wallachia
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = rom_military_fund }
 		mutually_exclusive = { }
 		
@@ -984,8 +987,24 @@
 		available = {
 		}
 		
-		completion_reward = {		
-		}
+		completion_reward = {	
+			81 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }	
+			46 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }	
+        }
 		
 		ai_will_do = {
 			factor = 5
@@ -994,7 +1013,7 @@
 
 		focus = {
 		id = rom_military_factory_moldova
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = rom_military_fund }
 		mutually_exclusive = { }
 		
@@ -1008,7 +1027,15 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			79 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                type = arms_factory
+                level = 4
+                instant_build = yes
+            }
+        }	
 		}
 		
 		ai_will_do = {
@@ -1018,7 +1045,7 @@
 
 		focus = {
 		id = rom_fortify_border_moldova
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = rom_military_factory_moldova }
 		mutually_exclusive = { }
 		
@@ -1032,7 +1059,18 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			79 = {
+                add_building_construction = {
+                type = bunker
+                level = 1
+                instant_build = yes
+                province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+               }
+        }		
 		}
 		
 		ai_will_do = {
@@ -1042,7 +1080,7 @@
 
 		focus = {
 		id = rom_fortify_border_moldova_2
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = rom_fortify_border_moldova }
 		mutually_exclusive = { }
 		
@@ -1056,7 +1094,18 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			79 = {
+                add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+               }
+           }		
 		}
 		
 		ai_will_do = {
@@ -1066,7 +1115,7 @@
 
 		focus = {
 		id = rom_fortify_border_wallachia
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = rom_military_factory_wallachia }
 		mutually_exclusive = { }
 		
@@ -1080,7 +1129,29 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			46 = {
+                add_building_construction = {
+                type = bunker
+                level = 1
+                instant_build = yes
+                province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+               }
+           }		
+			81 = {
+                add_building_construction = {
+                type = bunker
+                level = 1
+                instant_build = yes
+                province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+               }
+           }	
 		}
 		
 		ai_will_do = {
@@ -1090,7 +1161,7 @@
 
 		focus = {
 		id = rom_fortify_border_wallachia_2
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = rom_fortify_border_wallachia }
 		mutually_exclusive = { }
 		
@@ -1104,7 +1175,29 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			46 = {
+                add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+               }
+           }		
+			81 = {
+                add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+               }
+           }	
 		}
 		
 		ai_will_do = {
@@ -1114,7 +1207,7 @@
 
 		focus = {
 		id = rom_military_factory_wallachia_2
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = rom_military_factory_wallachia }
 		mutually_exclusive = { }
 		
@@ -1128,8 +1221,24 @@
 		available = {
 		}
 		
-		completion_reward = {		
-		}
+		completion_reward = {	
+			81 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }	
+			46 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }	
+        }
 		
 		ai_will_do = {
 			factor = 5
@@ -1138,7 +1247,7 @@
 
 		focus = {
 		id = rom_military_factory_wallachia_3
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = rom_military_factory_wallachia_2 }
 		mutually_exclusive = { }
 		
@@ -1152,8 +1261,24 @@
 		available = {
 		}
 		
-		completion_reward = {		
-		}
+		completion_reward = {	
+			81 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }	
+			46 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }	
+        }
 		
 		ai_will_do = {
 			factor = 5
@@ -1162,7 +1287,7 @@
 
 		focus = {
 		id = rom_military_factory_moldova_2
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = rom_military_factory_moldova }
 		mutually_exclusive = { }
 		
@@ -1176,7 +1301,15 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			79 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                type = arms_factory
+                level = 4
+                instant_build = yes
+            }
+        }	
 		}
 		
 		ai_will_do = {
@@ -1186,7 +1319,7 @@
 
 		focus = {
 		id = rom_military_factory_moldova_3
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = rom_military_factory_moldova_2 }
 		mutually_exclusive = { }
 		
@@ -1200,7 +1333,15 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			79 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                type = arms_factory
+                level = 4
+                instant_build = yes
+            }
+        }	
 		}
 		
 		ai_will_do = {
@@ -1210,7 +1351,7 @@
 
 		focus = {
 		id = rom_expand_the_complex
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = rom_military_factory_moldova_3
 		                 focus = rom_military_factory_wallachia_3 }
 		mutually_exclusive = { }
