@@ -739,6 +739,18 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				SOV = { has_completed_focus = SOV_help_roman_imperialists }
+				add = 10
+			}
+			modifier = {
+				is_historical_focus_on = no
+				add = 5
+			}
+		}
+		
 		completion_reward = {
 			add_state_claim = 804
 			add_state_claim = 105
@@ -767,6 +779,18 @@ focus_tree = {
 		cost = 14
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				SOV = { has_completed_focus = SOV_help_roman_imperialists }
+				add = 10
+			}
+			modifier = {
+				is_historical_focus_on = no
+				add = 1
+			}
+		}
 
 		select_effect = {
 			create_faction = anti_ottoman_faction
@@ -858,6 +882,7 @@ focus_tree = {
 		id = ITA_betray_the_habsburgs
 		icon = GFX_focus_attack_austria_hungary
 		prerequisite = { focus = ITA_focus_on_the_mediterranean focus = ITA_ban_monarchism }
+		mutually_exclusive = { focus = ITA_betray_the_habsburgs }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_habsburg_real
@@ -1349,6 +1374,18 @@ focus_tree = {
 		cost = 5
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				SOV = { has_completed_focus = SOV_help_roman_imperialists }
+				add = -9
+			}
+			modifier = {
+				NOT = { is_historical_focus_on }
+				add = -5
+			}
+		}
 
 		completion_reward = {
 			add_political_power = 150

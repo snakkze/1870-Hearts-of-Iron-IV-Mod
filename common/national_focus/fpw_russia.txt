@@ -1378,8 +1378,51 @@ focus_tree = {
 			add_state_claim = 984
 			add_state_claim = 980
 			add_state_claim = 797
-			
-			
+			add_state_claim = 766
+		}
+	}
+	
+	focus = {
+		id = SOV_help_roman_imperialists
+		x = -1
+		y = 1
+		cost = 10
+		
+		icon = GFX_focus_befriend_italy
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_look_to_balkans }
+		relative_position_id = SOV_look_to_balkans
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			ITA = {
+				NOT = { has_completed_focus = ITA_colonial_empire }
+				OR = {
+					NOT = { has_completed_focus = ITA_focus_on_the_mediterranean }
+					NOT = { has_completed_focus = ITA_plotting_against_the_ottomans }
+				}
+			}
+		}
+		
+		bypass = {
+			ITA = {
+				OR = {
+					has_completed_focus = ITA_focus_on_the_mediterranean
+					has_completed_focus = ITA_plotting_against_the_ottomans
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_roman_tt
 		}
 	}
 	
@@ -1752,15 +1795,13 @@ focus_tree = {
 			add_state_claim = 584
 			
 			create_wargoal = {
-				type = annex_everything
+				type = puppet_wargoal_focus
 				target = BUK
 			}
 			create_wargoal = {
-				type = annex_everything
+				type = puppet_wargoal_focus
 				target = KHI
 			}
-			
-			
 		}
 	}
 	
@@ -2854,7 +2895,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
 		
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_SOV_army
 		#mutually_exclusive = { focus =  }
 		#prerequisite = { focus =  }
 		relative_position_id = SOV_russian_diplomacy
