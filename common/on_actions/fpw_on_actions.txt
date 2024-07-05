@@ -455,6 +455,11 @@ on_actions = {
 							has_government = fascism
 							controls_state = 282
 							}
+					EZO = {
+							has_army_manpower = {
+							size < 1
+							}
+					}
 					TRB = {
 					controls_state = 536
 					}
