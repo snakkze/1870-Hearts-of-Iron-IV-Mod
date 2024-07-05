@@ -243,6 +243,7 @@ spriteTypes = {
 	}
 }
 
+# RUSSIA #
 spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_SOV_tsar"
@@ -251,6 +252,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_SOV_plot_tsar"
 		texturefile = "gfx/interface/goals/SOV_plot_tsar.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_army"
+		texturefile = "gfx/interface/goals/SOV_army.png"
 	}
 }
 

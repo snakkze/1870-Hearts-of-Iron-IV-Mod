@@ -22,7 +22,9 @@
 ## Politics Branch
  
  SOV_tsars_regime: "The Tsar's Regime"
+ SOV_tsars_regime_desc: "The Tsar is the legitimate ruler of the Russian Empire, and should keep his power."
  SOV_continue_reforms: "Continue Reforms"
+ SOV_continue_reforms_desc: "Ending Serfdom was a great success. We shall continue these reforms in hope of a better future."
  SOV_free_state_serfs: "Free State Serfs"
  SOV_modify_sr_ns_intro: "Modify §Y$SOV_serfdom_remnants_dynamic_modifier$§! by"
  SOV_free_state_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+10.0%§! \nMax Factories in a State: §G+10.00%§! \n\n"    
@@ -56,6 +58,9 @@
  SOV_recovering_from_the_cimean_war: "Recovering From the Crimean War"
  SOV_look_to_balkans: "Look to the Balkans"
  SOV_promote_balkan_independence: "Promote Balkan Independence"
+ SOV_help_roman_imperialists: "Support Roman Imperialists"
+ SOV_help_roman_imperialists_desc: "Studies show that many people in [ITA.GetNameDef] are willing to invade our main rival in the Balkans, [TUR.GetNameDef]. Helping these people get into government would increase the chances of a war between the [TUR.GetAdjective]s and the Christians."
+ SOV_roman_tt: "Increases the chances of a war between §Y[ITA.GetNameDef]§! and §Y[TUR.GetNameDef]§! which we will be able to join."
  
  SOV_our_german_intrests: "Our German Interests"
  SOV_remember_austrian_betrayal: "Remember Austria's Betrayal"
