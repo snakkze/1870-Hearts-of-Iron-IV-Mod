@@ -1,0 +1,21 @@
+state={
+	id=992
+	name="STATE_992"
+
+	history={
+		owner = JAB
+		add_core_of = JAB
+		add_core_of = JOR
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+	provinces={
+		4440 
+	}
+	manpower=13023
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
