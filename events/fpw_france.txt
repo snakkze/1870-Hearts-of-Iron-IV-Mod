@@ -23,16 +23,7 @@ country_event = {
 				is_historical_focus_on = no
 			}
 		}
-		#complete_national_focus = FRA_franco_prussian_war
-		set_global_flag = fpw_franco_prussian_war_flag
-		declare_war_on = {
-			target = PRS
-			type = annex_everything
-		}
-
-		PRS = {
-			complete_national_focus = PRS_franco_prussian_war
-		}
+		complete_national_focus = FRA_franco_prussian_war
 		#news_event = { hours = 6 id = news.28 }
 	}
 
