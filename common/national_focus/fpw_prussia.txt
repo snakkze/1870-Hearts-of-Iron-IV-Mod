@@ -4698,14 +4698,14 @@ focus = {
 	
 		completion_reward = {
 			add_stability = -0.025
-			set_popularities = {
-				democratic = 55
-				neutrality = 15
-				fascism = 15
-				communism = 15
-			}
 			custom_effect_tooltip = fpw_bismarck_forced_resign_tt
 			hidden_effect = {
+				set_popularities = {
+					democratic = 55
+					neutrality = 15
+					fascism = 15
+					communism = 15
+				}
 				retire_country_leader = yes
 				create_country_leader = {
 					name = "Otto zu Stolberg-Wernigerode"
