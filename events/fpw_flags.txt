@@ -1,0 +1,24 @@
+add_namespace = fpw_flags
+
+# Prussia
+country_event = {
+	id = fpw_flags.1
+	title = fpw_flags.1.t
+	desc = fpw_flags.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_flags.1.a 
+		hidden_effect = {
+			PRS = { set_cosmetic_tag = PRS_historical_1 }
+		}
+	}
+	option = {
+		name = fpw_flags.1.b
+		hidden_effect = {
+			PRS = { set_cosmetic_tag = PRS_historical_2 }
+		}
+	}
+}
+
