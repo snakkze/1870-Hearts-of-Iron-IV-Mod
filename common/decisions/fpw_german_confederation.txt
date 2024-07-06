@@ -194,45 +194,61 @@ fpw_german_unification_category = {
 		}
 		
 		visible = {
-			NOT = {
-				has_country_flag = fwp_austro_prussian_war_sided
-				OR = {
-					original_tag = PRS
-					original_tag = AUS
-					original_tag = FRA
-					is_subject_of = PRS
-					is_subject_of = AUS
-				}
-			}
-			if = {
-				limit = {
-					PRS = {
-						has_completed_focus = PRS_secure_russian_friendship
+			AND = {
+				has_global_flag = austro_prussian_war
+				NOT = {
+					has_country_flag = fwp_austro_prussian_war_sided
+					OR = {
+						original_tag = PRS
+						original_tag = AUS
+						original_tag = FRA
+						is_subject_of = PRS
+						is_subject_of = AUS
 					}
 				}
-				original_tag = SOV
+				OR = {
+					has_country_flag = austro_prussian_war_escalation_flag
+					if = {
+						limit = {
+							AND = {
+								PRS = {
+									has_completed_focus = PRS_secure_russian_friendship
+								}
+								FRA = {
+									has_war_with = PRS
+									is_in_faction_with = AUS
+								}
+							}
+						}
+						original_tag = SOV
+					}
+				}
 			}
 		}
 
 		ai_will_do = {
 			base = 0
 			modifier = {
-				OR = {
-					AND = {
-						original_tag = SOV
-						FRA = {
-							has_war_with = PRS
-							is_in_faction_with = AUS
-						}
-					}
-					any_owned_state = {
-						has_state_flag = influenced_by_PRS
+				any_owned_state = {
+					has_state_flag = influenced_by_PRS
+				}
+				add = 100
+			}
+			modifier = {
+				AND = {
+					original_tag = SOV
+					FRA = {
+						has_war_with = PRS
+						is_in_faction_with = AUS
 					}
 				}
 				add = 100
 			}
 			modifier = {
 				AND = {
+					NOT = {
+						original_tag = SOV
+					}
 					AUS = {
 						is_ai = no
 					}
@@ -292,6 +308,7 @@ fpw_german_unification_category = {
 		}
 		
 		visible = {
+			has_global_flag = austro_prussian_war
 			NOT = {
 				has_country_flag = fwp_austro_prussian_war_sided
 				OR = {
@@ -302,15 +319,18 @@ fpw_german_unification_category = {
 					is_subject_of = AUS
 				}
 			}
-			if = {
-				limit = {
-					PRS = {
-						NOT = {
-							has_completed_focus = PRS_secure_french_peace
-						}
-					}	
+			OR = {
+				has_country_flag = austro_prussian_war_escalation_flag
+				if = {
+					limit = {
+						PRS = {
+							NOT = {
+								has_completed_focus = PRS_secure_french_peace
+							}
+						}	
+					}
+					original_tag = FRA
 				}
-				original_tag = FRA
 			}
 		}
 
@@ -332,6 +352,9 @@ fpw_german_unification_category = {
 			}
 			modifier = {
 				AND = {
+					NOT = {
+						original_tag = FRA
+					}
 					PRS = {
 						is_ai = no
 					}
