@@ -102,14 +102,14 @@ ideas = {
 			justify_war_goal_time = 0.3
 			license_purchase_cost = 0.3 
 			join_faction_tension = 0.5
-			research_speed_factor = -0.05
+			research_speed_factor = -0.2
 			send_volunteers_tension = 0.3
 			land_doctrine_cost_factor = 0.15
 			naval_doctrine_cost_factor = 0.15
 			}
 		}
 		
-		jap_technological_stagnation	= {
+		jap_underdeveloped_country	= {
 				
 			allowed_civil_war = {
 				always = yes
@@ -120,8 +120,27 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-			research_speed_factor = -0.1
+			research_speed_factor = -0.2
 			production_factory_start_efficiency_factor = -0.05
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		jap_modern_medical_infrastructure	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_
+				
+			removal_cost = -1
+				
+			modifier = {
+			monthly_population = 0.5
+			recruitable_population_factor = 0.05
+			army_morale_factor = 0.1
+			production_speed_buildings_factor = 0.1
 			}
 		}
 		
@@ -172,6 +191,7 @@ ideas = {
 				
             modifier = {
 			stability_factor = -0.05
+			political_power_factor = -0.03
             }
 		}
 		
@@ -186,6 +206,7 @@ ideas = {
 				
             modifier = {
 			stability_factor = -0.1
+			political_power_factor = -0.06
             }
 		}
 		
@@ -201,6 +222,7 @@ ideas = {
 				
             modifier = {
 			stability_factor = -0.15
+			political_power_factor = -0.09
             }
 		}
 		
@@ -216,6 +238,7 @@ ideas = {
 				
             modifier = {
 			stability_factor = -0.20
+			political_power_factor = -0.12
             }
 		}
 		
@@ -231,6 +254,7 @@ ideas = {
 				
             modifier = {
 			stability_factor = -0.25
+			political_power_factor = -0.15
             }
 		}
 		
@@ -246,6 +270,7 @@ ideas = {
 				
             modifier = {
 			stability_factor = -0.30
+			political_power_factor = -0.18
             }
 		}
 		
@@ -399,6 +424,7 @@ ideas = {
 				weekly_casualties_war_support = 0.001
 				offensive_war_stability_factor = 0.2
 				conscription = 0.015
+				surrender_limit = 0.2
 			}
 		}
 }
