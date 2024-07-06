@@ -204,16 +204,13 @@ on_actions = {
 			}
 			TUR = {
 				set_country_flag = fpw_secondary_leader_tur_abdulaziz
-<<<<<<< Updated upstream
 			}	
 			CHI = {
 				set_country_flag = fpw_secondary_leader_chi_tongzhi
 			}				
-=======
-			}			
->>>>>>> Stashed changes
 		}
 	}
+	
 	on_monthly = {
 		effect = {
 			clear_array = global.prestige_list_array
