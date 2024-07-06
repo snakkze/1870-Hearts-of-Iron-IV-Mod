@@ -246,6 +246,15 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = PRS_governmental_reform
+				}
+				has_completed_focus = PRS_assume_power
+			}
+		}
+
 		completion_reward = {
 			
 		}
@@ -4689,16 +4698,18 @@ focus = {
 	
 		completion_reward = {
 			add_stability = -0.025
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.05
+			set_popularities = {
+				democratic = 55
+				neutrality = 15
+				fascism = 15
+				communism = 15
 			}
 			custom_effect_tooltip = fpw_bismarck_forced_resign_tt
 			hidden_effect = {
 				retire_country_leader = yes
 				create_country_leader = {
 					name = "Otto zu Stolberg-Wernigerode"
-					#picture = 
+					picture = GFX_portrait_PRS_otto_zu
 					expire = "1965.1.1"
 					ideology = conservative_semi_constitutional_monarchism
 					traits = {
@@ -4729,7 +4740,7 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
+			add_ideas = fpw_dreams_of_equality
 		}
 	}
 
@@ -4739,9 +4750,8 @@ focus = {
 		prerequisite = { focus = PRS_dreams_of_equality }
 		relative_position_id = PRS_dreams_of_equality
 
-		
-
 		available = {
+			has_completed_focus = PRS_unite_the_opposition
 		}
 
 		available_if_capitulated = yes
@@ -4751,7 +4761,13 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = PRS_reform_expand_support_category
+			hidden_effect = {
+				set_variable = {
+    				var = variable_prs_liberal_tensions
+    				value = 0
+				}
+			}
 		}
 	}
 
@@ -4773,7 +4789,10 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
+			add_ideas = fpw_popular_front
+			set_power_balance = {
+   				id = PRS_reform_power_balance
+			}
 		}
 	}
 
@@ -4784,9 +4803,12 @@ focus = {
 		prerequisite = { focus = PRS_unite_the_opposition }
 		relative_position_id = PRS_dreams_of_equality
 
-		
-
 		available = {
+			has_civil_war = no
+			OR = {
+				fascism > 0.50
+				communism > 0.50
+			}	
 		}
 
 		available_if_capitulated = yes

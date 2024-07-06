@@ -197,6 +197,36 @@ ideas = {
 				surrender_limit = 0.25
 			}
 		}
+
+		fpw_dreams_of_equality = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				stability_factor = -0.1
+				drift_defence_factor = -0.05
+			}
+		}
+
+		fpw_popular_front = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				fascism_drift = 0.03
+				communism_drift = 0.03
+			}
+		}
 	}
 	
 	hidden_ideas = {

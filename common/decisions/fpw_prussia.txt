@@ -61,3 +61,68 @@ fpw_launch_unification_germany_cat = {
 		}
 	}
 }
+
+PRS_reform_expand_support_category = {
+	PRS_reform_expand_support_test = {
+		priority = 100
+		#icon =
+
+		available = {
+		}
+
+		cost = 25
+
+		complete_effect = {
+			add_to_variable = {
+    			var = variable_prs_liberal_tensions
+    			value = 15
+			}
+		}
+	}
+}
+
+PRS_reform_balance_of_power_category = {
+	PRS_bop_reform_criticize_the_socialist = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+		}
+
+		available = {
+			has_completed_focus = PRS_unite_the_opposition
+		}
+
+		cost = 15
+
+		complete_effect = {
+
+		}
+	}	
+
+	PRS_bop_reform_criticize_the_liberals = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+		}
+
+		available = {
+			has_completed_focus = PRS_unite_the_opposition
+		}
+
+		cost = 15
+
+		complete_effect = {
+
+		}
+	}
+}	
