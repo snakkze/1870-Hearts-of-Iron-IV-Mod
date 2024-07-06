@@ -26,7 +26,7 @@ focus_tree = {
 
 
 	focus = {
-		id = naval_effort
+		id = fra_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 18
 		y = 0
@@ -154,13 +154,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = flexible_navy
+		id = fra_flexible_navy
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = naval_effort }
-		mutually_exclusive = { focus = large_navy }
+		prerequisite = { focus = fra_naval_effort }
+		mutually_exclusive = { focus = fra_large_navy }
 		x = -1
 		y = 1
-		relative_position_id = naval_effort
+		relative_position_id = fra_naval_effort
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -196,13 +196,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = large_navy
+		id = fra_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = naval_effort }
-		mutually_exclusive = { focus = flexible_navy }
+		prerequisite = { focus = fra_naval_effort }
+		mutually_exclusive = { focus = fra_flexible_navy }
 		x = 1
 		y = 1
-		relative_position_id = naval_effort
+		relative_position_id = fra_naval_effort
 		cost = 10
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
@@ -234,12 +234,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = submarine_effort
+		id = fra_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = flexible_navy focus = large_navy }
+		prerequisite = { focus = fra_flexible_navy focus = fra_large_navy }
 		x = 0
 		y = 1
-		relative_position_id = flexible_navy
+		relative_position_id = fra_flexible_navy
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -272,12 +272,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cruiser_effort
+		id = fra_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = large_navy focus = flexible_navy }
+		prerequisite = { focus = fra_large_navy focus = fra_flexible_navy }
 		x = 0
 		y = 1
-		relative_position_id = large_navy
+		relative_position_id = fra_large_navy
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -311,12 +311,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = destroyer_effort
+		id = fra_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = submarine_effort }
+		prerequisite = { focus = fra_submarine_effort }
 		x = 0
 		y = 1
-		relative_position_id = submarine_effort
+		relative_position_id = fra_submarine_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -349,12 +349,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = capital_ships_effort
+		id = fra_capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = cruiser_effort }
+		prerequisite = { focus = fra_cruiser_effort }
 		x = 0
 		y = 1
-		relative_position_id = cruiser_effort
+		relative_position_id = fra_cruiser_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -389,7 +389,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = industrial_effort
+		id = fra_industrial_effort
 		icon = GFX_focus_generic_industry_2
 		x = 22
 		y = 0
@@ -432,12 +432,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort
+		id = fra_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = { focus = fra_industrial_effort }
 		x = -1
 		y = 1
-		relative_position_id = industrial_effort
+		relative_position_id = fra_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -507,12 +507,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort
+		id = fra_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = { focus = fra_industrial_effort }
 		x = 1
 		y = 1
-		relative_position_id = industrial_effort
+		relative_position_id = fra_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -581,12 +581,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort_2
+		id = fra_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = construction_effort }
+		prerequisite = { focus = fra_construction_effort }
 		x = 0
 		y = 1
-		relative_position_id = construction_effort
+		relative_position_id = fra_construction_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -655,12 +655,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort_2
+		id = fra_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort }
+		prerequisite = { focus = fra_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = production_effort
+		relative_position_id = fra_production_effort
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -729,12 +729,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = infrastructure_effort
+		id = fra_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = construction_effort_2 }
+		prerequisite = { focus = fra_construction_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = construction_effort_2
+		relative_position_id = fra_construction_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -825,12 +825,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort_3
+		id = fra_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort_2 }
+		prerequisite = { focus = fra_production_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = production_effort_2
+		relative_position_id = fra_production_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -899,12 +899,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = infrastructure_effort_2
+		id = fra_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = { focus = fra_infrastructure_effort }
 		x = -1
 		y = 1
-		relative_position_id = infrastructure_effort
+		relative_position_id = fra_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -995,12 +995,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort_3
+		id = fra_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = { focus = fra_infrastructure_effort }
 		x = 1
 		y = 1
-		relative_position_id = infrastructure_effort
+		relative_position_id = fra_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -1069,12 +1069,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = extra_tech_slot
+		id = fra_extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = infrastructure_effort_2 focus = construction_effort_3 }
+		prerequisite = { focus = fra_infrastructure_effort_2 focus = fra_construction_effort_3 }
 		x = 1
 		y = 1
-		relative_position_id = infrastructure_effort_2
+		relative_position_id = fra_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -1087,9 +1087,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = extra_tech_slot_2
+		id = fra_extra_tech_slot_2
 		icon = GFX_focus_research
-		prerequisite = { focus = extra_tech_slot }
+		prerequisite = { focus = fra_extra_tech_slot }
 		available = {
 			num_of_factories > 50
 		}
@@ -1097,7 +1097,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		x = 0
 		y = 1
-		relative_position_id = extra_tech_slot
+		relative_position_id = fra_extra_tech_slot
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
