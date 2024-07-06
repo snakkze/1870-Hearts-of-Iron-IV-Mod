@@ -13,4 +13,18 @@ characters={
 			id=-1
 		}
 	}
+	
+	CHI_cixi={
+		name="Empress Dowager Cixi"
+		portraits={
+			civilian={
+				large=GFX_portrait_CHI_cixi
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
 }

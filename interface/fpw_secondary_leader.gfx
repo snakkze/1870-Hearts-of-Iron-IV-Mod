@@ -36,6 +36,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TUR/Secondary/Portrait_Secondary_TUR_abdulaziz.dds"
 	}
 	spriteType = {
+		name = "GFX_Portrait_Secondary_CHI_tongzhi"
+		texturefile = "gfx/leaders/CHI/Secondary/Portrait_Secondary_CHI_tongzhi.dds"
+	}
+	spriteType = {
 		name = "GFX_Portrait_Secondary_Vacant"
 		texturefile = "gfx/leaders/Portrait_Secondary_Vacant.dds"
 	}

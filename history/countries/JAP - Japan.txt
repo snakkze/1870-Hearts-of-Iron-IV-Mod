@@ -26,20 +26,13 @@ add_dynamic_modifier = {
 	remove_ideas = {
 	jap_medium_imperial_resistance
 	jap_unequal_treaties
+	fpw_komei
 	}
 	add_stability = 0.15
 	
 	536 = { 
 	transfer_state_to = JAP 
 	add_core_of = JAP
-	}
-	
-	
-	#Change Capital to Tokyo for 1870(was Kyoto in 1866)
-	JAP = {
-		set_capital = {
-		state = 282
-		}
 	}
 	
 	set_politics = {
@@ -52,6 +45,26 @@ add_dynamic_modifier = {
 	neutrality = 20
 	fascism = 80
 	}
+	
+	create_country_leader = {
+		name = "Emperor Meiji"
+		desc = "JAP_meiji_desc"
+		picture = "GFX_Portrait_JAP_meiji"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = {
+		fpw_trait_emperor_meiji
+		}
+		}
+	
+	
+	#Change Capital to Tokyo for 1870(was Kyoto in 1866)
+	JAP = {
+		set_capital = {
+		state = 282
+		}
+	}
+	
 		
 	remove_dynamic_modifier = { 
 		modifier = fpw_JAP_isolated 
@@ -63,7 +76,7 @@ add_dynamic_modifier = {
 		export_focus
 		}
 
-	unlock_national_focus = JAP_denounce_shogunate
+	unlock_national_focus = JAP_denounce_shogun
 	unlock_national_focus = JAP_form_satcho_alliance
 	unlock_national_focus = JAP_secure_western_armaments
 	unlock_national_focus = JAP_consolidate_imperial_loyalties
@@ -232,37 +245,25 @@ recruit_character = FPW_tokugawa_iemochi
 recruit_character = FPW_komei
 recruit_character = FPW_meiji
 
+recruit_character = JAP_Saigo_Takamorig
+recruit_character = JAP_Yamagata_Aritomo
+recruit_character = JAP_Kuroda_Kiyotaka
+recruit_character = JAP_Kirino_Toshiaki
+recruit_character = JAP_Miura_Goro
+
+recruit_character = JAP_Kawakami_Soroku
+recruit_character = JAP_Yamaji_Motoharu
+recruit_character = JAP_Oshima_Hisanao
+recruit_character = JAP_Oku_Yasukata
+recruit_character = JAP_Takashima_Tomonosuke
+
+recruit_character = JAP_Nishi_Kanjiro
+recruit_character = JAP_Fukushima_Yasumasa
+recruit_character = JAP_Tani_Tateki
+
+
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
-recruit_character = JAP_emperor_hirohito
-recruit_character = JAP_tomoyuki_yamashita
-recruit_character = JAP_hisaichi_terauchi
-recruit_character = JAP_shunroku_hata
-recruit_character = JAP_akira_muto
-recruit_character = JAP_kanji_ishiwara
-recruit_character = JAP_shizuichi_tanaka
-recruit_character = JAP_yasuji_okamura
-recruit_character = JAP_toshizo_nishio
-recruit_character = JAP_rikichi_ando
-recruit_character = JAP_naruhiko_higashikuni
-recruit_character = JAP_seishiro_itagaki
-recruit_character = JAP_takashi_sakai
-recruit_character = JAP_kenji_doihara
-recruit_character = JAP_kenkichi_ueda
-recruit_character = JAP_shigeru_honjo
-recruit_character = JAP_yoshijiro_umezu
-recruit_character = JAP_otozo_yamada
-recruit_character = JAP_hatazo_adachi
-recruit_character = JAP_iwane_matsui
-recruit_character = JAP_sadao_araki
-recruit_character = JAP_keisuke_fujie
-recruit_character = JAP_kiichiro_higuchi
-recruit_character = JAP_masaharu_homma
-recruit_character = JAP_harukichi_hyakutake
-recruit_character = JAP_jo_iimura
-recruit_character = JAP_hitoshi_imamura
-recruit_character = JAP_masatane_kanda
-recruit_character = JAP_kuniaki_koiso
 recruit_character = JAP_isoroku_yamamoto
 recruit_character = JAP_mineichi_koga
 recruit_character = JAP_kiyoshi_hasegawa

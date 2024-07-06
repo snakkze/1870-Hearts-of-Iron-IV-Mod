@@ -784,18 +784,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		
-		every_core_state = {
-				limit = {
-					is_controlled_by = JAP
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-		
-		
 
-
-
-		
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_6
@@ -864,6 +853,15 @@ focus_tree = {
 			jap_societal_backlash_1
 			}
 			}
+		
+			every_core_state = {
+				limit = {
+					is_controlled_by = JAP
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		
+		
 		
 		}
 
@@ -1708,14 +1706,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		
-		add_ideas = {
-		jap_modern_medical_infrastructure
-		}
-
-
-
-
-
 
 		if = {
 			limit = {
@@ -1785,6 +1775,11 @@ focus_tree = {
 			jap_societal_backlash_1
 			}
 			}
+			
+		add_ideas = {
+		jap_modern_medical_infrastructure
+		}
+			
 		}
 	}
 	
@@ -3568,14 +3563,18 @@ focus_tree = {
 		relative_position_id = JAP_an_european_style_military
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		add_tech_bonus = {
+		bonus = 0.5
+		uses = 2
+		category = logistics_tech
+		}
 		}
 	}
 	
@@ -3594,7 +3593,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-
+		custom_effect_tooltip = JAP_tt5
+		
+		hidden_effect = {
+		retire_character = JAP_Saigo_Takamorig
+		recruit_character = JAP_Saigo_Takamorif
+		}
 		}
 	}
 	

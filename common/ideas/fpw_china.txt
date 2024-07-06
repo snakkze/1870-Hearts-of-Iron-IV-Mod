@@ -35,4 +35,27 @@ ideas = {
             }
         }
     }
+	
+	hidden_ideas = {
+	
+		fpw_tongzhi = {
+			allowed = {
+			original_tag = CHI	
+			}
+
+			on_add = {
+                set_country_flag = fpw_secondary_leader_chi_tongzhi
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_chi_tongzhi
+            }
+
+			removal_cost = -1
+
+			modifier = {
+			
+			}
+		}
+	}
+	
 }

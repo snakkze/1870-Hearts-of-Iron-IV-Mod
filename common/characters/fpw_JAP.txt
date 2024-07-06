@@ -43,4 +43,334 @@ characters={
 			traits = { fpw_trait_emperor_meiji }
 		}
 	}	
+	
+	JAP_Saigo_Takamorif = {
+        name = "Saigō Takamori"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Saigo_Takamori.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		field_marshal = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 4
+            planning_skill = 5
+			logistics_skill = 4
+			traits = { 
+			brilliant_strategist 
+			war_hero
+			JAP_samurai_lineage
+			 }
+		}
+    }
+
+	JAP_Saigo_Takamorig = {		#1
+        name = "Saigō Takamori"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Saigo_Takamori.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			brilliant_strategist
+			war_hero
+			JAP_samurai_lineage
+			 }
+		}
+    }
+	
+	JAP_Yamagata_Aritomo = {		#2
+        name = "Yamagata Aritomo"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Yamagata_Aritomo.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 4
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 4
+			logistics_skill = 4
+			legacy_id = 0
+			traits = { 
+			brilliant_strategist
+			career_officer	
+			infantry_officer			
+			 }
+		}
+    }
+	
+	JAP_Kuroda_Kiyotaka = {		#3
+        name = "Kuroda Kiyotaka"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Kuroda_Kiyotaka.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			politically_connected
+			trait_cautious	
+			 }
+		}
+    }
+	
+	JAP_Kirino_Toshiaki = {  #DIED 1877		#4
+        name = "Kirino Toshiaki"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Kirino_Toshiaki.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			war_hero
+			trait_reckless		
+			 }
+		}
+    }
+	
+	JAP_Miura_Goro = {		#5
+        name = "Miura Gorō"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Miura_Goro.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			infantry_officer
+			 }
+		}
+    }
+	
+	JAP_Kawakami_Soroku = {		#6
+        name = "Kawakami Soroku"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Kawakami Soroku.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
+			traits = { 
+			brilliant_strategist 
+			media_personality
+			 }
+		}
+    }
+	
+	JAP_Yamaji_Motoharu = {		#7
+        name = "Yamaji Motoharu"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Yamaji_Motoharu.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			brilliant_strategist 
+			harsh_leader
+			 }
+		}
+    }
+	
+	JAP_Oshima_Hisanao = {		#8
+        name = "Ōshima Hisanao"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Oshima_Hisanao.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			brilliant_strategist 
+			career_officer
+			 }
+		}
+    }
+	
+	JAP_Oku_Yasukata = {		#9
+        name = "Oku Yasukata"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Oku_Yasukata.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			brilliant_strategist
+			career_officer
+			 }
+		}
+    }
+	
+	JAP_Takashima_Tomonosuke = {		#10
+        name = "Takashima Tomonosuke"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Takashima_Tomonosuke.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+			traits = { 
+			career_officer
+			 }
+		}
+    }
+	
+	JAP_Nishi_Kanjiro = {		#11
+        name = "Nishi Kanjiro"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Nishi_Kanjiro.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			traits = { 
+			career_officer
+			 }
+		}
+    }
+	
+	JAP_Fukushima_Yasumasa = {		#12
+        name = "Fukushima Yasumasa"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Fukushima_Yasumasa.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 0
+			traits = { 
+			career_officer
+			 }
+		}
+    }
+	
+	JAP_Tani_Tateki = {		#13
+        name = "Tani Tateki"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Tani_Tateki.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			traits = { 
+			infantry_officer
+			career_officer
+			politically_connected
+			 }
+		}
+    }
+	
+	
+
+	
+	
+	
+	
+	
+	
 }

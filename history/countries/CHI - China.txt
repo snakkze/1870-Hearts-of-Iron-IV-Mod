@@ -8,6 +8,8 @@ add_dynamic_modifier = {
 }
 
 add_ideas = {
+	fpw_tongzhi
+
 	fpw_CHI_instable_country
 	fpw_CHI_outdated_military
 }
@@ -30,6 +32,7 @@ if = {
 }
 
 # 1870
+recruit_character = CHI_cixi
 recruit_character = CHI_tongzhi
 
 recruit_character = CHI_chiang_kaishek

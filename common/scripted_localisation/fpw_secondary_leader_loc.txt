@@ -68,6 +68,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_flag = fpw_secondary_leader_chi_tongzhi
+		}
+		localization_key = GFX_Portrait_Secondary_CHI_tongzhi
+	}
+	text = {
+		trigger = {
 		}
 		localization_key = GFX_Portrait_Secondary_Vacant
 	}
@@ -139,6 +145,12 @@ defined_text = {
 			has_country_flag = fpw_secondary_leader_tur_abdulaziz
 		}
 		localization_key = fpw_secondary_leader_tur_abdulaziz
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_chi_tongzhi
+		}
+		localization_key = fpw_secondary_leader_chi_tongzhi
 	}
 	text = {
 		localization_key = no_secondary_leader
