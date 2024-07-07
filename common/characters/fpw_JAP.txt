@@ -43,31 +43,8 @@ characters={
 			traits = { fpw_trait_emperor_meiji }
 		}
 	}	
-	
-	JAP_Saigo_Takamorif = {
-        name = "Saigō Takamori"
-        portraits = {
-	        army = {
-				large = "gfx/leaders/JAP/generals/Portrait_JAP_Saigo_Takamori.dds"
-				small= "GFX_idea_gerd_von_rundstedt"
-			}
-        }
 
-		field_marshal = {
-            skill = 5
-            attack_skill = 5
-            defense_skill = 4
-            planning_skill = 5
-			logistics_skill = 4
-			traits = { 
-			brilliant_strategist 
-			war_hero
-			JAP_samurai_lineage
-			 }
-		}
-    }
-
-	JAP_Saigo_Takamorig = {		#1
+	JAP_Saigo_Takamori = {		#1
         name = "Saigō Takamori"
         portraits = {
 	        army = {
@@ -83,7 +60,8 @@ characters={
             planning_skill = 4
 			logistics_skill = 3
 			legacy_id = 0
-			traits = { 
+			traits = {
+			jap_emperor_trait			
 			brilliant_strategist
 			war_hero
 			JAP_samurai_lineage
@@ -101,14 +79,14 @@ characters={
         }
 
 		corps_commander = {
-            skill = 4
+            skill = 3
             attack_skill = 3
-            defense_skill = 4
-            planning_skill = 4
-			logistics_skill = 4
+            defense_skill = 2
+            planning_skill = 3
+			logistics_skill = 3
 			legacy_id = 0
 			traits = { 
-			brilliant_strategist
+			jap_emperor_trait
 			career_officer	
 			infantry_officer			
 			 }
@@ -127,13 +105,40 @@ characters={
 		corps_commander = {
             skill = 3
             attack_skill = 3
-            defense_skill = 3
+            defense_skill = 2
             planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
 			traits = { 
+			jap_emperor_trait
 			politically_connected
-			trait_cautious	
+			brilliant_strategist
+			 }
+		}
+    }
+	
+	JAP_Hijikata_Toshizo = {		#14 Shogun
+        name = "Hijikata Toshizō"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Hijikata_Toshizo.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			traits = {
+			jap_shogun_trait
+			trait_reckless	
+			harsh_leader			
+			politically_connected
+			media_personality
 			 }
 		}
     }
@@ -148,14 +153,15 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
+            skill = 2
             attack_skill = 3
             defense_skill = 2
-            planning_skill = 3
-			logistics_skill = 3
+            planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 			traits = { 
-			war_hero
+			jap_emperor_trait
+			cavalry_officer
 			trait_reckless		
 			 }
 		}
@@ -171,14 +177,16 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
-            defense_skill = 3
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
             planning_skill = 2
-			logistics_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 			traits = { 
-			infantry_officer
+			jap_emperor_trait
+			career_officer
+			trait_cautious
 			 }
 		}
     }
@@ -193,15 +201,41 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
-            defense_skill = 3
-            planning_skill = 3
-			logistics_skill = 2
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 3
 			legacy_id = 0
 			traits = { 
-			brilliant_strategist 
-			media_personality
+			jap_emperor_trait
+			inflexible_strategist
+			organizer
+			 }
+		}
+    }
+	
+	JAP_Kondo_Isami = {		#15	Shogun
+        name = "Kondō Isami"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Kondo_Isami.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			traits = {
+			jap_shogun_trait		
+			infantry_officer
+			career_officer
+			JAP_samurai_lineage
 			 }
 		}
     }
@@ -216,18 +250,44 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
+            skill = 2
+            attack_skill = 2
             defense_skill = 2
-            planning_skill = 3
-			logistics_skill = 3
+            planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 			traits = { 
-			brilliant_strategist 
+			jap_emperor_trait
+			infantry_officer
 			harsh_leader
 			 }
 		}
     }
+	
+	JAP_Otori_Keisuke = {		#16		#ezo	#Shogun
+    name = "Ōtori Keisuke"
+    portraits = {
+        army = {
+            large = "gfx/leaders/JAP/generals/Portrait_JAP_Tani_Tateki.dds"
+            small= "GFX_idea_gerd_von_rundstedt"
+        }
+    }
+
+    corps_commander = {
+        skill = 2
+        attack_skill = 2
+        defense_skill = 2
+        planning_skill = 2
+        logistics_skill = 2
+        legacy_id = 0
+        traits = { 
+            jap_shogun_trait
+			old_guard
+            inflexible_strategist
+			JAP_samurai_lineage
+        }
+    }
+}
 	
 	JAP_Oshima_Hisanao = {		#8
         name = "Ōshima Hisanao"
@@ -239,15 +299,16 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
-            defense_skill = 3
-            planning_skill = 3
-			logistics_skill = 3
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 			traits = { 
-			brilliant_strategist 
-			career_officer
+			old_guard
+			jap_emperor_trait
+			inflexible_strategist
 			 }
 		}
     }
@@ -262,13 +323,14 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
-            defense_skill = 3
-            planning_skill = 3
-			logistics_skill = 3
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 			traits = { 
+			jap_emperor_trait
 			brilliant_strategist
 			career_officer
 			 }
@@ -285,14 +347,41 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
-            defense_skill = 3
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
             planning_skill = 2
-			logistics_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 			traits = { 
-			career_officer
+			jap_emperor_trait
+			politically_connected
+			inflexible_strategist
+			 }
+		}
+    }
+	
+	JAP_Matsudaira_Katamori = {		#17		Shogun
+        name = "Matsudaira Katamori"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Matsudaira_Katamori.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			traits = {
+			jap_shogun_trait			
+			politically_connected
+			trait_cautious
+			JAP_samurai_lineage
 			 }
 		}
     }
@@ -307,14 +396,16 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
+            skill = 2
+            attack_skill = 2
             defense_skill = 2
             planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
 			traits = { 
-			career_officer
+			jap_emperor_trait
+			trait_cautious
+			inflexible_strategist
 			 }
 		}
     }
@@ -329,13 +420,15 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
-            defense_skill = 3
-            planning_skill = 4
-			logistics_skill = 2
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+			logistics_skill = 3
 			legacy_id = 0
 			traits = { 
+			jap_emperor_trait
+			organizer
 			career_officer
 			 }
 		}
@@ -351,25 +444,127 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
+            skill = 2
             attack_skill = 2
-            defense_skill = 3
+            defense_skill = 2
             planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			traits = { 
+			traits = {
+			jap_emperor_trait			
 			infantry_officer
 			career_officer
-			politically_connected
+			brilliant_strategist
 			 }
 		}
     }
 	
 	
+	#NAVY
+	
+	
+	JAP_Enomoto_Takeaki = {		#1 Shogun
+        name = "Enomoto Takeaki"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/admirals/Portrait_JAP_Enomoto_Takeaki.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
 
+		navy_leader = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            maneuvering_skill = 4
+			coordination_skill = 3
+			traits = {
+			jap_shogun_trait
+			naval_lineage
+			bold
+			blockade_runner
+			blue_water_expert
+			}
+		}
+    }
+
+
+	JAP_Katsu_Kaishu = {	#2 Shogun
+        name = "Katsu Kaishū"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/admirals/Portrait_JAP_Katsu_Kaishu.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		navy_leader = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 4
+            maneuvering_skill = 3
+			coordination_skill = 4
+			traits = {
+			jap_shogun_trait
+			navy_career_officer
+			superior_tactician
+			gentlemanly
+			fleet_protector
+			}
+		}
+    }
 	
 	
 	
+	JAP_Ito_Sukemaro = {	#3 Emperor
+        name = "Itō Sukemaro"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/admirals/Portrait_JAP_Ito_Sukemaro.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		navy_leader = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            maneuvering_skill = 4
+			coordination_skill = 2
+			traits = {
+			jap_emperor_trait
+			bold
+			navy_career_officer
+			spotter
+			green_water_expert
+			}
+		}
+    }
+	
+	JAP_Nakamuta_Kuranosuke = {	#4 Emperor
+        name = "Nakamuta Kuranosuke"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/admirals/Portrait_JAP_Nakamuta_Kuranosuke.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		navy_leader = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 2
+            maneuvering_skill = 3
+			coordination_skill = 3
+			traits = {
+			jap_emperor_trait
+			naval_lineage
+			gunnery_expert
+			ironside
+			marksman
+			}
+		}
+    }
 	
 	
 	

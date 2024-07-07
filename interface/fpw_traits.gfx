@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_jap_shogun_trait"
+		texturefile = "gfx/interface/traits/personal/trait_jap_shogun_trait.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_jap_emperor_trait"
+		texturefile = "gfx/interface/traits/personal/trait_jap_emperor_trait.dds"
+		legacy_lazy_load = no
+	}
+	
+
+}

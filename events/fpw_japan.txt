@@ -472,12 +472,16 @@
             army_ratio = 0.6
             navy_ratio = 0.6
             air_ratio = 0.6
+			keep_unit_leaders_trigger = {
+			has_trait = jap_emperor_trait
+				}
             states = { 532 533 534 535 537 555 282 536 989 }  # States controlled by the Tokugawa faction
-            keep_unit_leaders = {  }
             keep_political_leader = yes
             keep_political_party_members = yes
         }
 		hidden_effect = {
+		retire_character = JAP_Enomoto_Takeaki
+		retire_character = JAP_Katsu_Kaishu
 		add_dynamic_modifier = { 
 		modifier = fpw_JAP_isolated 
 		}
@@ -539,6 +543,8 @@
 		refund_political_power = no
 		}
 		complete_national_focus = JAP_continue_the_shogunate_tradition
+		recruit_character = JAP_Enomoto_Takeaki
+		recruit_character = JAP_Katsu_Kaishu
 		}
 		}
 		}
