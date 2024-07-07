@@ -35,8 +35,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/PRS/Portrait_PRS_otto_von_bismarck.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_PRS_heinrich_von_treitschke"
-		texturefile = "gfx/leaders/PRS/Portrait_PRS_heinrich_von_treitschke.dds"
+		name = "GFX_portrait_PRS_otto_von_bismarck"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_otto_von_bismarck.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_rudolf_von_bennigsen"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_rudolf_von_bennigsen.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_PRS_otto_zu"

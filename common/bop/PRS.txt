@@ -26,8 +26,11 @@ PRS_reform_power_balance = {
 			min = -0.3
 			max = -0.1
 			modifier = {
+				custom_modifier_tooltip = PRS_reform_socialist_low_influence_range_tt
 			}
 			on_activate = {
+				set_variable = { prs_bop_fascism_drift = 0.02 }
+				set_variable = { prs_bop_communism_drift = 0.03 }
 			}
 			on_deactivate = {
 			}
@@ -38,8 +41,11 @@ PRS_reform_power_balance = {
 			min = -0.6
 			max = -0.3
 			modifier = {
+				custom_modifier_tooltip = PRS_reform_socialist_medium_influence_range_tt
 			}
 			on_activate = {
+				set_variable = { prs_bop_fascism_drift = 0.02 }
+				set_variable = { prs_bop_communism_drift = 0.06 }
 			}
 			on_deactivate = {
 			}
@@ -50,8 +56,11 @@ PRS_reform_power_balance = {
 			min = -0.9
 			max = -0.6
 			modifier = {
+				custom_modifier_tooltip = PRS_reform_socialist_high_influence_range_tt
 			}
 			on_activate = {
+				set_variable = { prs_bop_fascism_drift = 0.01 }
+				set_variable = { prs_bop_communism_drift = 0.085 }
 			}
 			on_deactivate = {
 			}
@@ -62,8 +71,11 @@ PRS_reform_power_balance = {
 			min = -1
 			max = -0.9
 			modifier = {
+				custom_modifier_tooltip = PRS_reform_socialist_complete_influence_range_tt
 			}
 			on_activate = {
+				set_variable = { prs_bop_fascism_drift = 0 }
+				set_variable = { prs_bop_communism_drift = 0.15 }
 			}
 			on_deactivate = {
 			}
@@ -98,7 +110,7 @@ PRS_reform_power_balance = {
 				custom_modifier_tooltip = PRS_reform_liberal_medium_influence_range_tt
 			}
 			on_activate = {
-				set_variable = { prs_bop_fascism_drift = 0.04 }
+				set_variable = { prs_bop_fascism_drift = 0.06 }
 				set_variable = { prs_bop_communism_drift = 0.02 }
 			}
 			on_deactivate = {
@@ -113,7 +125,7 @@ PRS_reform_power_balance = {
 				custom_modifier_tooltip = PRS_reform_liberal_high_influence_range_tt
 			}
 			on_activate = {
-				set_variable = { prs_bop_fascism_drift = 0.05 }
+				set_variable = { prs_bop_fascism_drift = 0.085 }
 				set_variable = { prs_bop_communism_drift = 0.01 }
 			}
 			on_deactivate = {
@@ -128,8 +140,8 @@ PRS_reform_power_balance = {
 				custom_modifier_tooltip = PRS_reform_liberal_complete_influence_range_tt
 			}
 			on_activate = {
-				set_variable = { prs_bop_fascism_drift = 0.06 }
-				set_variable = { prs_bop_communism_drift = 0.0 }
+				set_variable = { prs_bop_fascism_drift = 0.15 }
+				set_variable = { prs_bop_communism_drift = 0 }
 			}
 			on_deactivate = {
 			}

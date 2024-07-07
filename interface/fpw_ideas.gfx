@@ -124,4 +124,19 @@ spriteTypes = {
 		name = "GFX_idea_prussian_norms"
 		texturefile = "gfx\interface\ideas\PRS\prs_icon_prussian_norms.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_dreams_of_equality"
+		texturefile = "gfx\interface\ideas\PRS\prs_icon_dreams_of_equality.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_popular_front"
+		texturefile = "gfx\interface\ideas\PRS\prs_icon_popular_front.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_liberal_front"
+		texturefile = "gfx\interface\ideas\PRS\prs_icon_liberal_front.dds"
+	}
 }

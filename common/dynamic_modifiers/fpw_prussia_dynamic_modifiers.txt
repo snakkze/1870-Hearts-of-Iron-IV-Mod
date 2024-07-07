@@ -39,7 +39,7 @@ fpw_PRS_wilhelms_legitimacy = {
 
 fpw_popular_front = {
 	enable = { always = yes }
-	icon = GFX_idea_prussian_general_staff
+	icon = GFX_idea_popular_front
 
 	fascism_drift = prs_bop_fascism_drift
 	communism_drift = prs_bop_communism_drift
@@ -49,7 +49,17 @@ fpw_popular_front = {
 
 fpw_liberal_front = {
 	enable = { always = yes }
-	icon = GFX_idea_prussian_general_staff
+	icon = GFX_idea_liberal_front
+
+	fascism_drift = prs_bop_fascism_drift
+	communism_drift = prs_bop_communism_drift
+	political_power_gain = prs_bop_political_power_gain
+	party_popularity_stability_factor = prs_bop_party_popularity_stability_factor
+}
+
+fpw_socialist_front = {
+	enable = { always = yes }
+	icon = GFX_idea_socialist_front
 
 	fascism_drift = prs_bop_fascism_drift
 	communism_drift = prs_bop_communism_drift

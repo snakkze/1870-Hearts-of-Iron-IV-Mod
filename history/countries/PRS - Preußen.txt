@@ -52,8 +52,8 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 44
-	fascism = 49
+	democratic = 49
+	fascism = 44
 	communism = 3
 	neutrality = 4
 }
@@ -97,6 +97,7 @@ set_technology = {
 }
 
 recruit_character = PRS_otto_von_bismarck
+recruit_character = PRS_rudolf_von_bennigsen
 recruit_character = PRS_wilhelm_i
 recruit_character = PRS_heinrich_von_treitschke
 

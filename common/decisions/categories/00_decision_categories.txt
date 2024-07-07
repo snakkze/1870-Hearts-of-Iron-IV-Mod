@@ -110,6 +110,9 @@ fascism_on_the_rise = {
 
 	allowed = {
 		NOT = {
+			original_tag = PRS
+		}
+		NOT = {
 			AND = {
 				has_dlc = "Man the Guns"
 				OR = {
@@ -174,6 +177,9 @@ democratic_on_the_rise = {
 
 	allowed = {
 		NOT = {
+			original_tag = PRS
+		}
+		NOT = {
 			AND = {
 				has_dlc = "No Step Back"
 				OR = {
@@ -212,6 +218,9 @@ communism_on_the_rise = {
 	icon = generic_communism
 
 	allowed = {
+		NOT = {
+			original_tag = PRS
+		}
 		NOT = {
 			AND = {
 				has_dlc = "Man the Guns"

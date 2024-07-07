@@ -29,6 +29,20 @@ characters={
 		}
 	}
 
+    PRS_rudolf_von_bennigsen={
+		name="Rudolf von Bennigsen"
+		portraits={
+			civilian={
+				large=GFX_portrait_PRS_rudolf_von_bennigsen
+			}
+		}
+		country_leader={
+			ideology=liberal_semi_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
 	PRS_heinrich_von_treitschke={
 		name="Heinrich von Treitschke"
 		portraits={
@@ -47,7 +61,7 @@ characters={
 		name="Heinrich Abeken"
 		portraits={
 			civilian = {
-				small = "gfx/interface/ministers/PRS/PRS_heinrich_abeken.dds"
+				small = "gfx/interface/ideas/idea_GER_generic_3.dds"
 			}
 		}
 		advisor = {

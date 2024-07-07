@@ -41,24 +41,20 @@ country_event = {
 		hidden_effect = {
 			clr_global_flag = fpw_kaiser_path_not_allowed
 			remove_country_leader_trait = fpw_trait_bismarcks_plan
-			if = {
-				limit = {
-					has_country_leader = {
-						character = PRS_otto_von_bismarck
-						ruling_only = yes
-					}
-				}
-				kill_country_leader = yes
-			}
-			else = {
-				retire_character = PRS_otto_von_bismarck
-			}
+			retire_character = PRS_otto_von_bismarck
 			set_politics = {
 				ruling_party = neutrality
 				last_election = "1936.1.1"
 				election_frequency = 48
 				elections_allowed = no
+				name = PRS_hohenzollern
+				long_name = PRS_hohenzollern
 			}
+			add_popularity = {
+   				ideology = neutrality
+    			popularity = 0.51
+			}
+			news_event = prussia_fpw_news.1
 		}
 	}
 }
@@ -706,6 +702,37 @@ country_event = {
 	}
 }
 
+# The Public Demands
+country_event = {
+	id = prussia_fpw.23
+	title = prussia_fpw.23.t
+	desc = prussia_fpw.23.d
+	#picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = { # Liberal
+		name = prussia_fpw.23.a
+		trigger = {
+			fascism > party_popularity@communism
+		}
+
+		set_politics = {
+    		ruling_party = fascism
+    		elections_allowed = no
+		}
+	}
+
+	option = { # Socialist
+		name = prussia_fpw.23.b
+		trigger = {
+			communism > party_popularity@fascism
+		}
+
+
+	}
+}
+
 # Wilhelm Assume Power - News
 news_event = {
 	id = prussia_fpw_news.1
@@ -716,25 +743,32 @@ news_event = {
 	major = yes
 
 	immediate = {
-		hidden_effect = {
-			set_politics = {
-    			ruling_party = neutrality
-    			elections_allowed = no
-    			election_frequency = 48
-				name = PRS_hohenzollern
-    			long_name = PRS_hohenzollern
+		if = {
+			limit = {
+				PRS = { 
+					has_completed_focus = PRS_assume_power
+				}
 			}
-			add_country_leader_role = {
-    			character = PRS_wilhelm_i
-    			promote_leader = yes
-    			country_leader={
-					ideology=aboslute_monarchy
-					expire="1956.01.01.01"
-            		traits = { fpw_trait_wilhelm_the_great }
-				}	
+			hidden_effect = {
+				set_politics = {
+    				ruling_party = neutrality
+    				elections_allowed = no
+    				election_frequency = 48
+					name = PRS_hohenzollern
+    				long_name = PRS_hohenzollern
+				}
+				add_country_leader_role = {
+    				character = PRS_wilhelm_i
+    				promote_leader = yes
+    				country_leader={
+						ideology=aboslute_monarchy
+						expire="1956.01.01.01"
+            			traits = { fpw_trait_wilhelm_the_great }
+					}	
+				}
+				retire_ideology_leader = democratic
+				remove_ideas = fpw_kaiser_wilhelm
 			}
-			retire_ideology_leader = democratic
-			remove_ideas = fpw_kaiser_wilhelm
 		}	
 	}
 
