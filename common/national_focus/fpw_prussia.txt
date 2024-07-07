@@ -4761,12 +4761,14 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			unlock_decision_category_tooltip = PRS_reform_expand_support_category
-			hidden_effect = {
-				set_variable = {
-    				var = variable_prs_liberal_tensions
-    				value = 0
-				}
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.045
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.045
 			}
 		}
 	}
@@ -4789,7 +4791,7 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			add_ideas = fpw_popular_front
+			add_dynamic_modifier = { modifier = fpw_popular_front }
 			set_power_balance = {
    				id = PRS_reform_power_balance
 			}
@@ -4804,10 +4806,9 @@ focus = {
 		relative_position_id = PRS_dreams_of_equality
 
 		available = {
-			has_civil_war = no
 			OR = {
-				fascism > 0.50
-				communism > 0.50
+				fascism > 0.40
+				communism > 0.40
 			}	
 		}
 

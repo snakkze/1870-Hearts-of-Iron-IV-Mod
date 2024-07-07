@@ -62,25 +62,6 @@ fpw_launch_unification_germany_cat = {
 	}
 }
 
-PRS_reform_expand_support_category = {
-	PRS_reform_expand_support_test = {
-		priority = 100
-		#icon =
-
-		available = {
-		}
-
-		cost = 25
-
-		complete_effect = {
-			add_to_variable = {
-    			var = variable_prs_liberal_tensions
-    			value = 15
-			}
-		}
-	}
-}
-
 PRS_reform_balance_of_power_category = {
 	PRS_bop_reform_criticize_the_socialist = {
 		priority = 100
@@ -95,16 +76,31 @@ PRS_reform_balance_of_power_category = {
 
 		available = {
 			has_completed_focus = PRS_unite_the_opposition
+			activate_decision = PRS_bop_reform_guarantee_freedom
+			NOT = {
+				has_decision = PRS_bop_reform_criticize_the_liberals
+			}
 		}
 
 		cost = 15
+		days_remove = 35
+		days_re_enable = 75
 
 		complete_effect = {
+			set_country_flag = criticizing_socialist
+			set_country_flag = took_criticize_the_socialist
+		}
 
+		remove_effect = {
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_liberal
+    			value = 0.1
+			}
+			set_country_flag = criticized_socialist
 		}
 	}	
-
-	PRS_bop_reform_criticize_the_liberals = {
+	PRS_bop_reform_promote_freedom = {
 		priority = 99
 		#icon =
 
@@ -113,6 +109,110 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		visible = {
+			has_country_flag = criticizing_socialist
+		}
+
+		available = {
+			has_country_flag = criticized_socialist
+		}
+
+		cost = 15
+		days_remove = 15
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = promoting_freedom
+		}
+
+		remove_effect = {
+			clr_country_flag = criticizing_socialist
+			clr_country_flag = criticized_socialist
+			set_country_flag = promoted_freedom
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_liberal
+    			value = 0.1
+			}
+		}
+	}
+
+	PRS_bop_reform_promise_better_reforms = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			has_country_flag = promoting_freedom
+		}
+
+		available = {
+			has_country_flag = promoted_freedom
+		}
+
+		cost = 15
+		days_remove = 15
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = better_reforms
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_liberal
+    			value = 0.1
+			}
+			clr_country_flag = promoting_freedom
+			clr_country_flag = promoted_freedom
+		}
+	}
+
+	PRS_bop_the_liberal_front = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			has_country_flag = better_reforms
+		}
+
+		available = {
+		}
+
+		cost = 15
+		days_remove = 15
+		fire_only_once = yes
+
+		remove_effect = {
+			add_dynamic_modifier = { modifier = fpw_liberal_front }
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_liberal
+    			value = 0.3
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = fpw_popular_front }
+				clr_country_flag = better_reforms
+			}
+		}
+	}
+
+	PRS_bop_reform_criticize_the_liberals = {
+		priority = 98
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = took_criticize_the_socialist	
+			}
 		}
 
 		available = {
@@ -120,9 +220,15 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		cost = 15
+		days_remove = 35
+		days_re_enable = 75
 
-		complete_effect = {
-
+		remove_effect = {
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_socialist
+    			value = -0.1
+			}
 		}
 	}
 }	

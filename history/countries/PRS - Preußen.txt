@@ -37,7 +37,9 @@ add_dynamic_modifier = {
 }
 
 set_variable = { prs_command_power_gain = -0.05 }
-set_variable = { prs_army_leader_cost_factor = 0.10}
+set_variable = { prs_army_leader_cost_factor = 0.10 }
+set_variable = { prs_bop_fascism_drift = 0.03 }
+set_variable = { prs_bop_communism_drift = 0.03 }
 
 set_research_slots = 3
 
