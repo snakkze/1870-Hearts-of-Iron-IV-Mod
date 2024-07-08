@@ -167,7 +167,7 @@ focus_tree = {
 		relative_position_id = PRS_annex_holstein
 
 		allow_branch = {
-			is_debug = yes #temporarily hidden until finished
+			#is_debug = yes #temporarily hidden until finished
 			NOT = {
 				has_completed_focus = PRS_austro_prussian_victory
 			}
@@ -1237,7 +1237,7 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = PRS_lesser_german_solution
 			}
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		x = 4
@@ -1348,7 +1348,7 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = PRS_lesser_german_solution
 			}
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		x = -4
@@ -1726,7 +1726,7 @@ focus_tree = {
 			}
 		}
 
-		x = 19
+		x = 20
 		y = 0
 
 		cost = 10
@@ -1735,14 +1735,13 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
 		}
 		
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = PRS_lesser_german_solution }
 
 		completion_reward = {
-			custom_effect_tooltip = fpw_branch_incomplete_tt
+			add_country_leader_trait = fpw_trait_bismarcks_plan
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -1763,7 +1762,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_opinion_modifier = {
+					target = AUS
+					modifier = fpw_austrian_friendship_modifier
+			}
+			reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = fpw_austrian_friendship_modifier
+			}
 		}
 	}
 
@@ -1783,34 +1789,23 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			# North gets Prusso-German nationalist, south gets Austro-German Nationalism
-			AUS = { add_ideas = fpw_southern_nationalism }
-			BAV = { add_ideas = fpw_southern_nationalism }
-			WRT = { add_ideas = fpw_southern_nationalism }
-			BAD = { add_ideas = fpw_southern_nationalism }
-			HES = { add_ideas = fpw_southern_nationalism }
-			FRK = { add_ideas = fpw_southern_nationalism }
-
-			PRS = { add_ideas = fpw_northern_nationalism }
-			NAS = { add_ideas = fpw_northern_nationalism }
-			OLD = { add_ideas = fpw_northern_nationalism }
-			HNV = { add_ideas = fpw_northern_nationalism }
-			SBL = { add_ideas = fpw_northern_nationalism }
-			BRU = { add_ideas = fpw_northern_nationalism }
-			SXW = { add_ideas = fpw_northern_nationalism }
-			SXM = { add_ideas = fpw_northern_nationalism }
-			SXY = { add_ideas = fpw_northern_nationalism }
-			ANH = { add_ideas = fpw_northern_nationalism }
-			MKS = { add_ideas = fpw_northern_nationalism }
-			MCK = { add_ideas = fpw_northern_nationalism }
-			HAM = { add_ideas = fpw_northern_nationalism }
-			LIP = { add_ideas = fpw_northern_nationalism }
-			LUE = { add_ideas = fpw_northern_nationalism }
-			HEK = { add_ideas = fpw_northern_nationalism }
-			WLD = { add_ideas = fpw_northern_nationalism }
-			SCG = { add_ideas = fpw_northern_nationalism }
-			SBG = { add_ideas = fpw_northern_nationalism }
-			BRE = { add_ideas = fpw_northern_nationalism }
+			every_country = {
+				limit = {
+					OR = {
+						is_german = yes
+						original_tag = PRS
+						original_tag = AUS
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV
+					modifier = fpw_german_nationalism_modifier
+				}
+				reverse_add_opinion_modifier = {
+					target = PREV
+					modifier = fpw_german_nationalism_modifier
+				}
+			}
 		}
 	}
 
@@ -1830,42 +1825,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = prussia_fpw.2 hours = 2 } 
 			# Create Nordachse faction and Südachse Faction
-
-			Create_faction = "Nordachse"
-             Add_to_faction = PRS
-			 Add_to_faction = NAS
-			 Add_to_faction = OLD
-			 Add_to_faction = HNV
-			 Add_to_faction = SBL
-			 Add_to_faction = BRU
-			 Add_to_faction = SXW
-			 Add_to_faction = SXM
-			 Add_to_faction = SXY
-			 Add_to_faction = ANH
-			 Add_to_faction = MKS
-			 Add_to_faction = MCK
-			 Add_to_faction = HAM
-			 Add_to_faction = LIP
-			 Add_to_faction = LUE
-			 Add_to_faction = HEK
-			 Add_to_faction = WLD
-			 Add_to_faction = SCG
-			 Add_to_faction = SBG
-			 Add_to_faction = BRE
-
-		    AUS = {
-			Create_faction = "Südachse"
-             Add_to_faction = AUS
-			 Add_to_faction = FRK
-			 Add_to_faction = BAV
-			 Add_to_faction = WRT
-			 Add_to_faction = BAD
-			 Add_to_faction = HES
-			}
-
-			PRS = {give_guarantee = AUS}
-			AUS = {give_guarantee = PRS}
-
 			# Event about the barely won election about the Nord-Süd achsen Idea
 		}
 	}
@@ -1882,9 +1841,30 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_state_owner = 58
-			set_state_controller = 58
-			add_state_core = 58
+			if = {
+				limit = {
+					AND = {
+						AUS = {
+							owns_state = 58
+						}
+						PRS = {
+							owns_state = 952
+						}
+					}
+				}
+				PRS = {
+					transfer_state = 58
+					add_state_core = 58
+				}
+				AUS = {
+					transfer_state = 952
+					add_state_core = 952
+					country_event = { id = austria_fpw.2 } 
+				}
+			}
+			else = {
+				add_political_power = 150
+			}
 		}
 	}
 
@@ -1898,54 +1878,26 @@ focus_tree = {
 		y = 1
 		cost = 12
 
-		available_if_capitulated = no
-
 		completion_reward = {
-    ## give france event to create a franco russian alliance
-	set_cosmetic_tag = GER_north_germany
- 
-	annex_country = { target = BRE transfer_troops = yes }
-	annex_country = { target = NAS transfer_troops = yes }
-	annex_country = { target = WLD transfer_troops = yes }
-	annex_country = { target = LUE transfer_troops = yes }
-	annex_country = { target = LIP transfer_troops = yes }
-	annex_country = { target = HAM transfer_troops = yes }
-	annex_country = { target = MCK transfer_troops = yes }
-	annex_country = { target = MKS transfer_troops = yes }
-	annex_country = { target = ANH transfer_troops = yes }
-	annex_country = { target = SXY transfer_troops = yes }
-	annex_country = { target = SXM transfer_troops = yes }
-	annex_country = { target = SXW transfer_troops = yes }
-	annex_country = { target = BRU transfer_troops = yes }
-	annex_country = { target = SBL transfer_troops = yes }
-	annex_country = { target = HNV transfer_troops = yes }
-	annex_country = { target = OLD transfer_troops = yes }
-	annex_country = { target = HEK transfer_troops = yes }
-	annex_country = { target = SCG transfer_troops = yes }
-	annex_country = { target = SBG transfer_troops = yes }
-
-			add_state_core = 938
-			add_state_core = 61
-			add_state_core = 956
-			add_state_core = 947
-			add_state_core = 59
-			add_state_core = 942
-			add_state_core = 944
-			add_state_core = 56
-			add_state_core = 950
-			add_state_core = 948
-			add_state_core = 949
-			add_state_core = 65
-			add_state_core = 939
-			add_state_core = 941
-			add_state_core = 943
-			add_state_core = 951
-			add_state_core = 954
-			add_state_core = 953
-			add_state_core = 937
-			add_state_core = 955
-			add_state_core = 945
-
+    	## give france event to create a franco russian alliance
+		hidden_effect = {
+			FRA = {
+				country_event = prussia_fpw.24
+			}
+			PRS = {
+				set_cosmetic_tag = GER_north_germany
+				every_country = {
+					limit = {
+						AND = {
+							is_in_faction_with = PRS
+							is_german = yes
+						}
+					}
+					country_event = { id = prussia_fpw.3 hours = 2 }
+				}
+			}
+		}
+		custom_effect_tooltip = NGC_tt
 		}
 	}
 
@@ -1959,7 +1911,7 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = PRS_lesser_german_solution
 			}
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		x = 2
@@ -1971,21 +1923,44 @@ focus_tree = {
 		}
 
 		available = {
+			OR = {
+				FRA = {
+					exists = yes
+				}
+				SOV = {
+					exists = yes
+				}
+			}
 		}
 
 		bypass = {
+			AND = {
+				FRA = {
+					exists = no
+				}
+				SOV = {
+					exists = no
+				}
+			}
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-	
+			create_wargoal = {
+				type = topple_government
+				target = FRA
+			}
+			create_wargoal = {
+				type = topple_government
+				target = SOV
+			}
 		}
 	}
 	
 	focus = {
 		id = PRS_with_the_uk
-		icon = picture
+		icon = GFX_focus_chi_british_cooperation
 		mutually_exclusive = { focus = PRS_with_itily }
 		prerequisite = { focus = PRS_the_franco_russian_threat }
 		relative_position_id = PRS_the_franco_russian_threat
@@ -1995,28 +1970,33 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
+			country_exists = ENG
 		}
 
 		bypass = {
+			OR = {
+				is_ally_with = ENG
+				is_guaranteed_by = ENG
+				NOT = {
+					country_exists = ENG
+				}
+			}
 		}
-
-		available_if_capitulated = yes
 
 		completion_reward = {
-	      ## get event german kings visit london
-		  
-		  diplomatic_relation = { 
-			country = ENG
-			relation = non_aggression_pact 
-		}
+			ENG = { 
+				country_event = {
+					id = prussia_fpw.21
+					days = 1
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = PRS_with_itily
-		icon = picture
+		id = PRS_with_italy
+		icon = GFX_focus_befriend_italy
 		mutually_exclusive = { focus = PRS_with_the_uk }
 		prerequisite = { focus = PRS_the_franco_russian_threat }
 		relative_position_id = PRS_the_franco_russian_threat
@@ -2028,19 +2008,25 @@ focus_tree = {
 		}
 
 		available = {
+			country_exists = ITA
 		}
 
 		bypass = {
+			OR = {
+				is_ally_with = ITA
+				is_guaranteed_by = ITA
+				NOT = {
+					country_exists = ITA
+				}
+			}
 		}
 
-		available_if_capitulated = yes
-
 		completion_reward = {
-	    ## get event german-italian talks
-
-		diplomatic_relation = { 
-			country = ITA
-			relation = non_aggression_pact 
+			ITA = { 
+				country_event = {
+					id = prussia_fpw.21
+					days = 1
+				}
 			}
 		}
 	}
@@ -2053,7 +2039,7 @@ focus_tree = {
 		prerequisite = { focus = PRS_greater_german_solution }
 		relative_position_id = PRS_greater_german_solution
 		mutually_exclusive = { focus = PRS_cooperate_with_austria }
-		x = -3
+		x = -4
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2063,7 +2049,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_opinion_modifier = {
+					target = AUS
+					modifier = fpw_austrian_enemy_modifier
+			}
+			reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = fpw_austrian_enemy_modifier
+			}
 		}
 	}
 
@@ -2082,7 +2075,35 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PRS_unification_play
+			hidden_effect = {
+				every_country = { 
+					limit = { 
+						is_german_minor = yes
+					}
+					PRS = {
+						if = {
+							limit = {
+								NOT = {
+									has_war_with = PREV
+								}
+							}
+							declare_war_on = { type = annex_everything target = PREV }
+						}
+					}
+					HNV = {
+						create_faction = north_german_faction
+					}
+					every_country = { 
+						limit = { 								
+							is_german_minor = yes
+						}
+						HNV = {
+							add_to_faction = PREV
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -2119,7 +2140,7 @@ focus_tree = {
 		icon = GFX_focus_POL_habsburg
 		prerequisite = { focus = PRS_austrian_enemy focus = PRS_cooperate_with_austria }
 		relative_position_id = PRS_austrian_enemy
-		x = 3
+		x = 4
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2129,7 +2150,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+			add_war_support = 0.15
 		}
 	}
 
@@ -2149,6 +2174,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = -0.025
+			add_timed_idea = {
+				idea = fpw_national_reforms
+				days = 365
+			}
 			# If they have cooperated then it will become not hre and more a federal state
 			# If they waged war the hre will be led by an authoritarian Wilhelm
 			# if authoritarian party more than 50% than wilhelm gets to power, if not civil war
@@ -2293,7 +2323,13 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = PRS_lesser_german_solution
 			}
-			is_debug = yes
+			#is_debug = yes
+		}
+
+		available = {
+			NOT = {
+				has_idea = fpw_national_reforms
+			}
 		}
 
 		x = 2
@@ -2311,11 +2347,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRS_the_land_of_many
+		id = PRS_unify_the_state
 		icon = picture
 		prerequisite = { focus = PRS_start_unifaction_talks }
 		relative_position_id = PRS_start_unifaction_talks
-		x = 0
+		x = 1
 		y = 1
 		cost = 40
 		ai_will_do = {
@@ -2324,92 +2360,22 @@ focus_tree = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		## get a series of events to deal with the none german lands in austria
-		## event one: hungry
-		## option one: release hungry with a hungarian prince
-		## option two: release hungry but keep the austrian monarch as king of hungry
-		## option three: release hungry with a british/italian monarch //can only do if player has completed with uk or with italy focuses
-		## event two: czechia  
-		## option one: release them as a puppet 
-		## option two: create a kingdom that will become part of germany
-		## event three: croatia
-		## option one: create a inderpendant croatia
-		## option two: give it to hungry
-		## event four: galisia
-		## option one: create a galisain kingdom
-		## option two: split it into two smaller polish and ukrianan kingdoms
-		## event five: slovienna
-		## option one: create a kingdom that will become part of germany
-		## option two: create a free sloviennane state
+		## get ideas disorgansied state, disorgansied army, disorgansied people
+			annex_country = { target = AUS transfer_troops = yes }
+			annex_country = { target = BAV transfer_troops = yes }
+			annex_country = { target = WRT transfer_troops = yes }
+			annex_country = { target = BAD transfer_troops = yes }
+			annex_country = { target = HES transfer_troops = yes }
+			annex_country = { target = FRK transfer_troops = yes }
+			set_cosmetic_tag = PRS_GER
+		}
 	}
-}
-
-focus = {
-	id = PRS_the_two_emperors
-	icon = picture
-	prerequisite = { focus = PRS_start_unifaction_talks }
-	relative_position_id = PRS_start_unifaction_talks
-	x = 2
-	y = 1
-	cost = 40
-	ai_will_do = {
-		factor = 1
-	}
-
-	available_if_capitulated = no
-	completion_reward = {
-	## get event the grand crowning where both the monarch of austria and monarch of prussia are crowned the two emperors of germany
-	## all german nations get idea the two emperors
-
-	AUS = { add_ideas = fpw_the_two_emperors }
-	BAV = { add_ideas = fpw_the_two_emperors }
-	WRT = { add_ideas = fpw_the_two_emperors }
-	BAD = { add_ideas = fpw_the_two_emperors }
-	HES = { add_ideas = fpw_the_two_emperors }
-	FRK = { add_ideas = fpw_the_two_emperors }
-	PRS = { add_ideas = fpw_the_two_emperors }
-	PRS = { remove_ideas = fpw_kaiser_wilhelm }
-	hidden_effect = {
-		clr_country_flag = fpw_secondary_leader_wilhelm_i
-	}	
-
-}
-}
-
-focus = {
-	id = PRS_unify_the_state
-	icon = picture
-	prerequisite = { focus = PRS_the_land_of_many }
-	prerequisite = { focus = PRS_the_two_emperors }
-	relative_position_id = PRS_the_land_of_many
-	x = 1
-	y = 1
-	cost = 40
-	ai_will_do = {
-		factor = 1
-	}
-
-	available_if_capitulated = no
-	completion_reward = {
-	## get ideas disorgansied state, disorgansied army, disorgansied people
-    annex_country = { target = AUS transfer_troops = yes }
-	annex_country = { target = BAV transfer_troops = yes }
-	annex_country = { target = WRT transfer_troops = yes }
-	annex_country = { target = BAD transfer_troops = yes }
-	annex_country = { target = HES transfer_troops = yes }
-	annex_country = { target = FRK transfer_troops = yes }
-	set_cosmetic_tag = PRS_GER
-
-	add_ideas = fpw_disorganised_people
-	add_ideas = fpw_disorganised_industry
-	add_ideas = fpw_disorganised_army
-}
-}
 
 focus = {
 	id = PRS_unify_the_people
 	icon = picture
 	prerequisite = { focus = PRS_unify_the_state }
+	prerequisite = { focus = PRS_finalize_the_federation }
 	relative_position_id = PRS_unify_the_state
 	x = -2
 	y = 1
@@ -2429,6 +2395,7 @@ focus = {
 	id = PRS_unify_the_army
 	icon = picture
 	prerequisite = { focus = PRS_unify_the_state }
+	prerequisite = { focus = PRS_finalize_the_federation }
 	relative_position_id = PRS_unify_the_state
 	x = 0
 	y = 1
@@ -2448,6 +2415,7 @@ focus = {
 	id = PRS_unify_the_industry
 	icon = picture
 	prerequisite = { focus = PRS_unify_the_state }
+	prerequisite = { focus = PRS_finalize_the_federation }
 	relative_position_id = PRS_unify_the_state
 	x = 2
 	y = 1
@@ -2497,7 +2465,65 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = PRS_cooperate_with_austria
+				}
+				set_cosmetic_tag = PRS_greater_germany
+				# event austria unify greater germany
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = PRS_austrian_enemy
+				}
+				if = {
+					limit = {
+						AND = {
+							neutrality < 50
+							NOT = {
+								has_government = neutrality
+							}
+						}
+					}
+					start_civil_war = {
+						ruling_party = neutrality
+						# Original country's ideology changes to communism
+						ideology = ROOT
+						# Breakaway gets old ideology of ROOT
+						size = 0.5
+						capital = 64
+						states = all
+						states_filter = { 
+							NOT = {
+								OR = {
+									state = 947
+									state = 59
+									state = 944
+									state = 56
+									state = 950
+									state = 951
+									state = 942
+									state = 57
+									state = 981
+									state = 51
+									state = 42
+									state = 939
+									state = 943
+									state = 948
+									state = 941
+									state = 58
+									state = 909
+									state = 912
+								}
+							}
+						}
+					}
+				}
+				set_cosmetic_tag = HRE_UNIFIED
+			}
+			else = {
+				custom_effect_tooltip = finalize_federation_tt
+			}
 		}
 	}
 
@@ -2561,7 +2587,9 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = {
+				fpw_hre_traditions
+			}
 		}
 	}
 
@@ -4309,7 +4337,7 @@ focus = {
 		#icon = GFX_focus_generic_fascist_troops
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		x = 2
@@ -4380,7 +4408,7 @@ focus = {
 		#icon = GFX_focus_generic_fascist_troops
 		
 		allow_branch = {
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		x = -2

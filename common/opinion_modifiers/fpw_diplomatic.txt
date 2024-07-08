@@ -14,6 +14,19 @@ opinion_modifiers = {
         	trade = no
         	value = 15
 	}
+	
+	fpw_german_nationalism_modifier = {
+        	trade = no
+        	value = 25
+	}
+	
+	fpw_austrian_friendship_modifier = {
+        	trade = no
+        	value = 25
+	}
 
-
+	fpw_austrian_enemy_modifier = {
+        	trade = no
+        	value = -50
+	}
 }
