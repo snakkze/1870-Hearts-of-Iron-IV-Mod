@@ -1,0 +1,28 @@
+characters={
+	FPC_paris_commune={
+		name="People of Paris"
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_paris_commune
+			}
+		}
+		country_leader={
+			ideology=social_anarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	FPC_anarchists={
+		name="People of Paris"
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_paris_commune
+			}
+		}
+		country_leader={
+			ideology=anarchism
+			expire="1956.01.01.01"
+			id=-2
+		}
+	}
+}

@@ -82,6 +82,18 @@ if = {
 		puppet = INS
 	}
 }
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_autonomy = {
+		target = LUX
+		autonomous_state = autonomy_personal_union
+	}
+	else = {
+		puppet = LUX
+	}
+}
 
 add_ideas = {
 	HOL_wilhelmina
