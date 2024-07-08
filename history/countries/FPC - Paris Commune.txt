@@ -8,11 +8,12 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = FPC_paris_commune
+recruit_character = FPC_anarchists
+
 set_popularities = {
-	fascism = 0
+	fascism = 22
 	democratic = 0
 	neutrality = 0
-	communism = 100
+	communism = 78
 }
-
-recruit_character = FRA_paris_commune

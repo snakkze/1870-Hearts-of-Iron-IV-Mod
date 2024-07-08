@@ -96,6 +96,7 @@ country_event = {
 			add_to_faction = SXW
 			add_to_faction = SCG
 			add_to_faction = ANH
+			transfer_state = 58
 		}
 		AUS = {
 			create_faction = sudachse_faction
@@ -103,7 +104,9 @@ country_event = {
 			add_to_faction = WRT
 			add_to_faction = HES
 			add_to_faction = BAD
-			country_event = { id = austria_fpw.1 } 
+		}
+		WRT = {
+			transfer_state = 952
 		}
 	}
 }
@@ -700,167 +703,6 @@ country_event = {
 			complete_national_focus = PRS_focus_appoint_alfred
 			activate_advisor = PRS_Alfred_von_Rauch_carm
 		}	
-	}
-}
-
-# France offers focus to russia (Part of Prussian tree) decision yes no
-country_event = {
-	id = prussia_fpw.23
-	title = prussia_fpw.23.t
-	desc = prussia_fpw.23.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.23.a
-		SOV = {
-			country_event = prussia_fpw.24
-		}
-	}
-}
-
-# ask russia
-country_event = {
-	id = prussia_fpw.24
-	title = prussia_fpw.24.t
-	desc = prussia_fpw.24.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.24.a
-		ai_chance = {
-			base = 100 
-		}
-		FRA = {
-			country_event = prussia_fpw.25
-		}
-	}
-
-	option = {
-		name = prussia_fpw.24.b
-		ai_chance = {
-			base = 0 
-		}
-		FRA = {
-			country_event = prussia_fpw.26
-		}
-	}
-}
-
-# yes 
-country_event = {
-	id = prussia_fpw.25
-	title = prussia_fpw.25.t
-	desc = prussia_fpw.25.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.25.a
-		if = {
-			limit = {
-				ROOT = {
-					is_in_faction = yes
-				}
-			}
-			add_to_faction = SOV
-		}
-		else = {
-			ROOT = {
-				create_faction = FRA_SOV_faction
-				add_to_faction = SOV
-			}
-		}
-	}
-}
-
-# no
-country_event = {
-	id = prussia_fpw.26
-	title = prussia_fpw.26.t
-	desc = prussia_fpw.26.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.26.a
-	}
-}
-
-# ask russia
-country_event = {
-	id = prussia_fpw.28
-	title = prussia_fpw.28.t
-	desc = prussia_fpw.28.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.28.a
-		ai_chance = {
-			base = 100 
-		}
-		PRS = {
-			country_event = prussia_fpw.29
-		}
-	}
-
-	option = {
-		name = prussia_fpw.28.b
-		ai_chance = {
-			base = 0 
-		}
-		PRS = {
-			country_event = prussia_fpw.30
-		}
-	}
-}
-
-# yes 
-country_event = {
-	id = prussia_fpw.29
-	title = prussia_fpw.29.t
-	desc = prussia_fpw.29.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.29.a
-		if = {
-			limit = {
-				ROOT = {
-					is_in_faction = yes
-				}
-			}
-			add_to_faction = SOV
-		}
-		else = {
-			ROOT = {
-				create_faction = PRS_SOV_faction
-				add_to_faction = SOV
-			}
-		}
-	}
-}
-
-# no
-country_event = {
-	id = prussia_fpw.30
-	title = prussia_fpw.30.t
-	desc = prussia_fpw.30.d
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = prussia_fpw.30.a
 	}
 }
 

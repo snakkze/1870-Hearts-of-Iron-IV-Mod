@@ -28,20 +28,6 @@ characters={
 		}
 	}
 
-	FRA_paris_commune={
-		name="People of Paris"
-		portraits={
-			civilian={
-				large=GFX_portrait_FRA_paris_commune
-			}
-		}
-		country_leader={
-			ideology=social_anarchism
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-
 	FRA_Patrice_de_MacMahon = {
 		name = "Patrice de Mac Mahon"
 		portraits = {

@@ -61,11 +61,14 @@
  PRS_democratic_party_long:0 "Konservative Partei"
  PRS_fascism_party:0 "NLP"
  PRS_fascism_party_long:0 "Nationalliberale Partei"
- PRS_communism_party:0 "SVP"
- PRS_communism__party_long:0 "Sächsiche Volkspartei"
+ PRS_communism_party:0 "Sozialist Movement"
+ PRS_communism__party_long:0 "Sozialist Movement"
  PRS_neutrality_party:0 "Partei Hohenzollern"
  PRS_neutrality_party_long:0 "Partei Hohenzollern"
  PRS_hohenzollern:0 "Haus Hohenzollern"
+ 
+ FPC_fascism_party:0 "Anarchist"
+ FPC_fascism_party_long:0 "Anarchist"
  
  independent_party:0 "Independent" # used for cases when there is no political party. sometimes triggered in history files
  independent_party_long:0 "Independent"

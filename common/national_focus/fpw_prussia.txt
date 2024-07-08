@@ -173,6 +173,14 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		x = -5
 		y = 1
 
@@ -190,7 +198,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = fpw_branch_incomplete_tt
 			custom_effect_tooltip = fpw_focus_austrian_victory_tt
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -201,6 +208,23 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = PRS_governmental_reform focus = PRS_integrate_minor_austrian_lands }
 		relative_position_id = PRS_integrate_minor_austrian_lands
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = PRS_dreams_of_equality
+					has_completed_focus = PRS_continue_bismarcks_plan
+				}	
+			}
+		}
+
+		offset = {
+			x = 5
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
 
 		x = -2
 		y = 1
@@ -354,12 +378,19 @@ focus_tree = {
 	focus = {
 		id = PRS_unternehmen_ostmark
 		icon = GFX_focus_attack_austria
-		prerequisite = { focus = PRS_assume_power }
-		prerequisite = { focus = PRS_gott_mit_uns }
+		prerequisite = { focus = PRS_assume_power focus = PRS_gott_mit_uns }
 		relative_position_id = PRS_gott_mit_uns
-		x = -3
+		x = -2
 		y = 1
 		cost = 8
+
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_austro_prussian_victory
+			}
+		}
 
 		ai_will_do = {
 			factor = 10
@@ -1710,7 +1741,6 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_russian_friendship_tt
-			custom_effect_tooltip = fpw_russia_franco_prussian_war_tt
 			# Russia wont join but will unlikier to join a great war
 			# Will join to split austria polish territories and border stuff russia and the austria prussia
 		}
@@ -4552,7 +4582,10 @@ focus = {
 		mutually_exclusive = { focus = PRS_governmental_reform }
 		relative_position_id = PRS_bruderkrieg_ending
 
-		
+		allow_branch = {
+			always = false
+		}
+
 
 		available = {
 		}
@@ -4756,18 +4789,35 @@ focus = {
 		mutually_exclusive = { focus = PRS_suspend_parliament }
 		relative_position_id = PRS_governmental_reform
 
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = PRS_suspend_parliament
+					has_completed_focus = PRS_austro_prussian_victory
+				}	
+			}
+		}
 		
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_dreams_of_equality
+			}
+		}
 
 		available = {
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 4
 		
 		x = -1
 		y = 1
 	
 		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = fpw_socialist_path_incomplete_tt
 			add_ideas = fpw_dreams_of_equality
 		}
 	}
@@ -4778,23 +4828,35 @@ focus = {
 		prerequisite = { focus = PRS_dreams_of_equality }
 		relative_position_id = PRS_dreams_of_equality
 
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_dreams_of_equality
+			}
+		}
+
 		available = {
 			has_completed_focus = PRS_unite_the_opposition
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 4
 		
 		x = -2
 		y = 1
 	
 		completion_reward = {
-			unlock_decision_category_tooltip = PRS_reform_expand_support_category
-			hidden_effect = {
-				set_variable = {
-    				var = variable_prs_liberal_tensions
-    				value = 0
-				}
+			add_political_power = 75
+			custom_effect_tooltip = fpw_prs_jonas_evans_tt
+			custom_effect_tooltip = fpw_prs_john_white_tt
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.045
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.045
 			}
 		}
 	}
@@ -4805,19 +4867,25 @@ focus = {
 		prerequisite = { focus = PRS_dreams_of_equality }
 		relative_position_id = PRS_dreams_of_equality
 
-		
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_dreams_of_equality
+			}
+		}
 
 		available = {
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 7
 		
 		x = 0
 		y = 1
 	
 		completion_reward = {
-			add_ideas = fpw_popular_front
+			add_dynamic_modifier = { modifier = fpw_popular_front }
 			set_power_balance = {
    				id = PRS_reform_power_balance
 			}
@@ -4831,22 +4899,121 @@ focus = {
 		prerequisite = { focus = PRS_unite_the_opposition }
 		relative_position_id = PRS_dreams_of_equality
 
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_dreams_of_equality
+			}
+		}
+
 		available = {
-			has_civil_war = no
 			OR = {
-				fascism > 0.50
-				communism > 0.50
+				fascism > 0.40
+				communism > 0.40
 			}	
 		}
 
 		available_if_capitulated = yes
-		cost = 0
+		cost = 5
 		
 		x = -1
 		y = 2
 	
 		completion_reward = {
-			
+			country_event = prussia_fpw.23
+		}
+	}
+
+	focus = {
+		id = PRS_focus_a_new_constitution
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_demand_a_referendum }
+		relative_position_id = PRS_demand_a_referendum
+
+		available = {
+			always = false
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 0
+		y = 1
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRS_focus_proclaim_the_socialist_republic
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_a_new_constitution }
+		mutually_exclusive = { focus = PRS_focus_proclaim_the_republic_monarchy }
+		mutually_exclusive = { focus = PRS_focus_proclaim_the_republic }
+		relative_position_id = PRS_focus_a_new_constitution
+
+		available = {
+			always = false
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = -2
+		y = 1
+	
+		completion_reward = {
+			custom_effect_tooltip = fpw_branch_incomplete_tt
+			custom_effect_tooltip = fpw_loads_socialist_branch_tt
+		}
+	}
+
+	focus = {
+		id = PRS_focus_proclaim_the_republic_monarchy
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_a_new_constitution }
+		mutually_exclusive = { focus = PRS_focus_proclaim_the_socialist_republic }
+		mutually_exclusive = { focus = PRS_focus_proclaim_the_republic }
+		relative_position_id = PRS_focus_a_new_constitution
+
+		available = {
+			always = false
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 1
+		y = 1
+	
+		completion_reward = {
+			custom_effect_tooltip = fpw_branch_incomplete_tt
+			custom_effect_tooltip = fpw_loads_democratic_branch_tt
+		}
+	}
+
+	focus = {
+		id = PRS_focus_proclaim_the_republic
+		#icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = PRS_focus_a_new_constitution }
+		mutually_exclusive = { focus = PRS_focus_proclaim_the_socialist_republic }
+		mutually_exclusive = { focus = PRS_focus_proclaim_the_republic_monarchy }
+		relative_position_id = PRS_focus_a_new_constitution
+
+		available = {
+			always = false
+		}
+
+		available_if_capitulated = yes
+		cost = 0
+		
+		x = 3
+		y = 1
+	
+		completion_reward = {
+			custom_effect_tooltip = fpw_branch_incomplete_tt
+			custom_effect_tooltip = fpw_loads_democratic_branch_tt
 		}
 	}
 
@@ -4857,7 +5024,14 @@ focus = {
 		mutually_exclusive = { focus = PRS_dreams_of_equality }
 		relative_position_id = PRS_governmental_reform
 
-		
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = PRS_dreams_of_equality
+					has_completed_focus = PRS_austro_prussian_victory
+				}	
+			}
+		}
 
 		available = {
 		}
@@ -4869,6 +5043,7 @@ focus = {
 		y = 1
 	
 		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
 			add_stability = -0.10
 			add_popularity = {
 				ideology = neutrality

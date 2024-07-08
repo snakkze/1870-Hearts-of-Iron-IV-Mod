@@ -5,25 +5,78 @@ fpw_customization_category = {
 		icon = GFX_decision_category_generic_formable_nations
 
 		visible = {
-			original_tag = PRS
-			NOT = {
-				OR = {
-					has_government = communism
-					has_cosmetic_tag = PRS_historical
-					has_cosmetic_tag = PRS_GER
-					has_cosmetic_tag = GER_north_germany
+			is_ai = no
+			PRS = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_cosmetic_tag = PRS_historical_1
+						has_cosmetic_tag = PRS_historical_2
+						has_cosmetic_tag = PRS_GER
+						has_cosmetic_tag = GER_north_germany
+					}	
 				}
 			}
 		}
 
 		cost = 0
 
-		ai_will_do = {
-			factor = 0
+		complete_effect = {
+			country_event = fpw_flags.1
+		}
+	}
+
+	fpw_prussia_switch_historical_1_flag = {
+
+		icon = GFX_decision_category_generic_formable_nations
+
+		visible = {
+			is_ai = no
+			PRS = {
+				has_cosmetic_tag = PRS_historical_1
+				NOT = {
+					OR = {
+						has_government = communism
+						has_cosmetic_tag = PRS_GER
+						has_cosmetic_tag = GER_north_germany
+					}	
+				}
+			}
 		}
 
+		cost = 0
+
 		complete_effect = {
-			set_cosmetic_tag = PRS_historical
+			hidden_effect = {
+				PRS = { set_cosmetic_tag = PRS_historical_2 }
+			}	
+		}
+	}
+
+	fpw_prussia_switch_historical_2_flag = {
+
+		icon = GFX_decision_category_generic_formable_nations
+
+		visible = {
+			is_ai = no
+			PRS = {
+				has_cosmetic_tag = PRS_historical_2
+				NOT = {
+					OR = {
+						has_government = communism
+						has_cosmetic_tag = PRS_GER
+						has_cosmetic_tag = GER_north_germany
+					}	
+				}
+			}
+		}
+
+		cost = 0
+
+		complete_effect = {
+			hidden_effect = {
+				PRS = { set_cosmetic_tag = PRS_historical_1 }
+			}	
 		}
 	}
 
@@ -32,24 +85,28 @@ fpw_customization_category = {
 		icon = GFX_decision_BOL_reintegrate_acre_state
 
 		visible = {
-			has_cosmetic_tag = PRS_historical
-			NOT = {
+			is_ai = no
+			PRS = {
 				OR = {
-					has_government = communism
-					has_cosmetic_tag = PRS_GER
-					has_cosmetic_tag = GER_north_germany
+					has_cosmetic_tag = PRS_historical_1
+					has_cosmetic_tag = PRS_historical_2
+				}
+				NOT = {
+					OR = {
+						has_government = communism
+						has_cosmetic_tag = PRS_GER
+						has_cosmetic_tag = GER_north_germany
+					}	
 				}
 			}
 		}
 
 		cost = 0
 
-		ai_will_do = {
-			factor = 0
-		}
-
 		complete_effect = {
-			drop_cosmetic_tag = yes
+			hidden_effect = {
+				PRS = { drop_cosmetic_tag = yes }
+			}	
 		}
 	}
 
@@ -58,17 +115,18 @@ fpw_customization_category = {
 		icon = GFX_decision_category_generic_formable_nations
 
 		visible = {
-			has_cosmetic_tag = AUS_austria_hungary
+			is_ai = no
+			AUS = {
+				has_cosmetic_tag = AUS_austria_hungary
+			}	
 		}
 
 		cost = 0
 
-		ai_will_do = {
-			factor = 0
-		}
-
 		complete_effect = {
-			set_cosmetic_tag = AUS_austria_hungary_civil_fleet
+			hidden_effect = {
+				AUS = { set_cosmetic_tag = AUS_austria_hungary_civil_fleet }
+			}	
 		}
 	}
 
@@ -77,7 +135,10 @@ fpw_customization_category = {
 		icon = GFX_decision_BOL_reintegrate_acre_state
 
 		visible = {
-			has_cosmetic_tag = AUS_austria_hungary_civil_fleet
+			is_ai = no
+			AUS = {
+				has_cosmetic_tag = AUS_austria_hungary_civil_fleet
+			}	
 		}
 
 		cost = 0
@@ -87,7 +148,9 @@ fpw_customization_category = {
 		}
 
 		complete_effect = {
-			set_cosmetic_tag = AUS_austria_hungary
+			hidden_effect = {
+				AUS = { set_cosmetic_tag = AUS_austria_hungary }
+			}	
 		}
 	}
 }

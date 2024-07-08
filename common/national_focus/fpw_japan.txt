@@ -20,14 +20,14 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 2100 y = 1365 }
+	continuous_focus_position = { x = 2100 y = 1465 }
 	
 	default = no
 
 #historical
     focus = {
 		id = JAP_denounce_shogun
-		icon = GFX_
+		icon = GFX_goal_continuous_suppression
 		x = 11
 		y = 0
 		cost = 10
@@ -181,7 +181,7 @@ focus_tree = {
   
 	focus = {
 		id = JAP_consolidate_imperial_loyalties
-		icon = GFX_focus_jap_zaibatsu
+		icon = GFX_focus_jap_imperial_loyalties
 		prerequisite = { focus = JAP_form_satcho_alliance }
 		relative_position_id = JAP_form_satcho_alliance
 		x = 2
@@ -202,7 +202,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_secure_daimyo_allegiances
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_jap_daimyo
 		prerequisite = { focus = JAP_secure_western_armaments }
 		prerequisite = { focus = JAP_consolidate_imperial_loyalties }
 		relative_position_id = JAP_form_satcho_alliance
@@ -222,7 +222,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_seize_imperial_palace
-		icon = GFX_focus_POL_riot_of_37
+		icon = GFX_focus_jap_seize_imperial_palace
 		prerequisite = { focus = JAP_secure_daimyo_allegiances }
 		relative_position_id = JAP_secure_daimyo_allegiances
 		x = 0
@@ -248,7 +248,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		icon = GFX_focus_SWE_neither_death_nor_dishonor
+		icon = GFX_focus_jap_civil_war
 		prerequisite = { focus = JAP_seize_imperial_palace }
 		relative_position_id = JAP_seize_imperial_palace
 		x = 0
@@ -286,14 +286,18 @@ focus_tree = {
             ideology = ROOT
             size = 0.8
             army_ratio = 0.4
-            navy_ratio = 0.4
-            air_ratio = 0.4
+            navy_ratio = 0.6
+            air_ratio = 0.6
+			  keep_unit_leaders_trigger = {
+			has_trait = jap_emperor_trait
+				}
             states = { 532 533 534 535 537 555 282 536 989 }  # States controlled by the Tokugawa faction
-            keep_unit_leaders = {  }
             keep_political_leader = yes
             keep_political_party_members = yes
         }
 		hidden_effect = {
+		retire_character = JAP_Enomoto_Takeaki
+		retire_character = JAP_Katsu_Kaishu
 		add_dynamic_modifier = { 
 		modifier = fpw_JAP_isolated 
 		}
@@ -356,6 +360,8 @@ focus_tree = {
 		refund_political_power = no
 		}
 		complete_national_focus = JAP_continue_the_shogunate_tradition
+		recruit_character = JAP_Enomoto_Takeaki
+		recruit_character = JAP_Katsu_Kaishu
 		}
 		}
 		}
@@ -376,7 +382,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_announce_the_charter_oath
-		icon = GFX_
+		icon = GFX_focus_jap_charter_oath
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
 		x = -9
@@ -466,7 +472,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_conservative_approach
-		icon = GFX_
+		icon = GFX_focus_jap_conservative_approach
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
 		x = 9
@@ -559,7 +565,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_a_strong_centralized_state
-		icon = GFX_
+		icon = GFX_focus_jap_centralized_state
 		prerequisite = { focus = JAP_announce_the_charter_oath }
 		relative_position_id = JAP_announce_the_charter_oath
 		x = -1
@@ -962,7 +968,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_guard_national_sovereignty
-		icon = GFX_
+		icon = GFX_focus_jap_national_sovereignty
 		prerequisite = { focus = JAP_conservative_approach }
 		relative_position_id = JAP_conservative_approach
 		x = -3
@@ -1117,7 +1123,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_open_the_nation
-		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		icon = GFX_focus_jap_open_nation
 		prerequisite = { focus = JAP_announce_the_charter_oath }
 		relative_position_id = JAP_announce_the_charter_oath
 		x = 3
@@ -1693,7 +1699,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_adopt_western_medical_practices
-		icon = raj_risk_of_famine
+		icon = GFX_focus_jap_western_medical_practices
 		prerequisite = { focus = JAP_launch_the_iwakura_mission }
 		relative_position_id = JAP_launch_the_iwakura_mission
 		x = -1
@@ -1819,7 +1825,7 @@ focus_tree = {
   
   	focus = {
 		id = JAP_continue_the_shogunate_tradition
-		icon = GFX_
+		icon = GFX_focus_jap_shogun
 		x = 30
 		y = 0
 		cost = 5
@@ -2117,7 +2123,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_import_western_technologies
-		icon = GFX_
+		icon = GFX_focus_jap_import_western_technologies
 		prerequisite = { focus = JAP_establish_modern_ports }
 		relative_position_id = JAP_establish_modern_ports
 		x = 1
@@ -2174,7 +2180,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_reform_the_monetary_system
-		icon = GFX_focus_CHL_strengthen_the_central_bank
+		icon = GFX_focus_jap_tokugawa_crest
 		prerequisite = { focus = JAP_lay_foundations_for_industrialization }
 		relative_position_id = JAP_lay_foundations_for_industrialization
 		x = 3
@@ -2192,7 +2198,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_distribute_the_yen
-		icon = GFX_
+		icon = GFX_focus_jap_yen
 		prerequisite = { focus = JAP_reform_the_monetary_system }
 		relative_position_id = JAP_reform_the_monetary_system
 		x = -2
@@ -2297,7 +2303,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_keep_the_koban
-		icon = GFX_
+		icon = GFX_focus_CHL_strengthen_the_central_bank
 		prerequisite = { focus = JAP_reform_the_monetary_system }
 		relative_position_id = JAP_reform_the_monetary_system
 		x = 2
@@ -2607,7 +2613,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_expand_the_cotton_industry
-		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		icon = GFX_focus_jap_cotton
 		prerequisite = { focus = JAP_expand_the_silk_industry }
 		x = 0
 		y = 1
@@ -2683,7 +2689,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_modernize_coal_mines
-		icon = GFX_focus_generic_mining_industry
+		icon = GFX_focus_jap_coal_mines
 		prerequisite = { focus = JAP_expand_the_cotton_industry }
 		x = 0
 		y = 1
@@ -3460,7 +3466,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_innovation_drive
-		icon = GFX_focus_research
+		icon = GFX_focus_jap_innovation_drive
 		prerequisite = { focus = JAP_invest_in_weapon_manufacturing_3 }
 		relative_position_id = JAP_invest_in_weapon_manufacturing_3
 		x = 0
@@ -3540,7 +3546,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_integrate_prussian_infantry_tactics
-		icon = GFX_
+		icon = GFX_focus_jap_prussian_army
 		prerequisite = { focus = JAP_an_european_style_military }
 		relative_position_id = JAP_an_european_style_military
 		x = -1
@@ -3593,12 +3599,29 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		custom_effect_tooltip = JAP_tt5
 		
+		if = {
+				limit = {
+					JAP_Saigo_Takamori = {
+						is_corps_commander = yes
+					}
+				}
+				custom_effect_tooltip = JAP_tt5
+			}
 		hidden_effect = {
-		retire_character = JAP_Saigo_Takamorig
-		recruit_character = JAP_Saigo_Takamorif
-		}
+			if = {
+				limit = {
+					JAP_Saigo_Takamori = {
+						is_corps_commander = yes
+					}
+				}
+				JAP_Saigo_Takamori = {
+					promote_leader = yes
+				}
+			}}
+		
+		
+
 		}
 	}
 	
@@ -3625,7 +3648,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_samurai_spirit
-		icon = GFX_
+		icon = GFX_focus_jap_samurai_spirit
 		
 		prerequisite = { focus = JAP_create_the_army_general_staff_office }
 		relative_position_id = JAP_create_the_army_general_staff_office
@@ -3769,7 +3792,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_the_military_school_of_ichigaya
-		icon = GFX_focus_chi_whampoa_military_academy
+		icon = GFX_focus_jap_military_schools
 		prerequisite = { focus = JAP_establish_the_heigakko }
 		prerequisite = { focus = JAP_second_french_military_mission_to_japan }
 		relative_position_id = JAP_second_french_military_mission_to_japan
@@ -4241,7 +4264,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_british_naval_mission_to_japan
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_jap_british_naval_mission
 		prerequisite = { focus = JAP_yokosuka_naval_arsenal }
 		relative_position_id = JAP_yokosuka_naval_arsenal
 		x = -3
@@ -4259,7 +4282,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_adopt_royal_navy_traditions
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_jap_british_naval_mission
 		prerequisite = { focus = JAP_british_naval_mission_to_japan }
 		relative_position_id = JAP_british_naval_mission_to_japan
 		x = 0
@@ -4295,7 +4318,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_establish_the_japanese_navy
-		icon = GFX_
+		icon = GFX_focus_jap_establish_navy
 		prerequisite = { focus = JAP_defenders_of_the_rising_sun }
 		relative_position_id = JAP_defenders_of_the_rising_sun
 		x = 0
@@ -4441,7 +4464,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_coastal_defence_force
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_focus_SWE_coastal_support
 		prerequisite = { focus = JAP_the_200_ship_plan }
 		relative_position_id = JAP_the_200_ship_plan
 		x = -3
@@ -4468,7 +4491,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_dominance_of_the_seas #makes struggles worse satsuma rebellion -> expensive
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_JAP_sea_dominance
 		prerequisite = { focus = JAP_the_200_ship_plan }
 		relative_position_id = JAP_the_200_ship_plan
 		x = 3

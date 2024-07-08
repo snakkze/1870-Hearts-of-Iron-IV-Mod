@@ -151,3 +151,19 @@ defined_text = {
 		localization_key = "country_prestige"
 	}
 }
+
+defined_text = {
+	name = socialism_or_anarchism
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = socialist_yes
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarchism
+		}
+		localization_key = anarchist_yes
+	}
+}
