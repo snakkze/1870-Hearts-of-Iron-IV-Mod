@@ -3,22 +3,11 @@ state={
 	name="STATE_686"
 	manpower = 802835
 	
-	state_category = rural
+	state_category = small_island
 
 	history={
-		add_core_of = PUE
-		owner = USA
-		victory_points = {
-			1440 1 
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			1440 = {
-				naval_base = 3
-
-			}
-		}
+		add_core_of = SPR
+		owner = SPR
 	}
 
 	provinces={

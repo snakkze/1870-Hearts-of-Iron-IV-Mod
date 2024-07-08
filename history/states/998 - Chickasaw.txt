@@ -1,0 +1,18 @@
+state={
+	id=998
+	name="STATE_998"
+
+	history={
+		owner = OKL
+		add_claim_by = USA
+		add_core_of = OKL
+		add_core_of = CIC
+	}
+	provinces={
+		8025 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -5,20 +5,8 @@ state={
 	state_category = small_island
 
 	history={
-		owner = USA
-		add_core_of = HAW
-		buildings = {
-			infrastructure = 1
-			13048 = {
-				naval_base = 1
-			}
-			13049 = {
-				naval_base = 1
-			}
-			13053 = {
-				naval_base = 1
-			}
-		}
+		owner = TRB
+		add_core_of = TRB
 	}
 	
 	provinces={

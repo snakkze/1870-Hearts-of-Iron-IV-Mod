@@ -1,0 +1,20 @@
+state={
+	id=994
+	name="STATE_994"
+
+	history={
+		owner = CIM
+		add_claim_by = USA
+		add_core_of = CIM
+		victory_points = {
+			12624 1 
+		}
+	}
+	provinces={
+		12624 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -9,15 +9,15 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = MTN
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = USA
+		add_claim_by = USA
+		add_core_of = MTN
 		victory_points = {
 			4860 1 
 		}
-
 	}
 
 	provinces={

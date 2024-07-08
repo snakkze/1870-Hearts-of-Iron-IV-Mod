@@ -1,0 +1,17 @@
+state={
+	id=999
+	name="STATE_999"
+
+	history={
+		owner = OKL
+		add_claim_by = USA
+		add_core_of = OKL
+	}
+	provinces={
+		11743 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

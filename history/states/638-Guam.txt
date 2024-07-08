@@ -6,18 +6,8 @@ state=
 	manpower=39080
 	history=
 	{
-		owner = USA
-		add_core_of = GUM
-		buildings = {
-			infrastructure = 3 #was: 5
-			12140 = {
-				naval_base = 1
-			}
-		}
-		victory_points = {
-			12140 1
-		 }
-
+		owner = TRB
+		add_core_of = TRB
 	}
 	provinces={
 		12140

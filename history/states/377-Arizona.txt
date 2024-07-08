@@ -13,12 +13,13 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = ARZ
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = USA
+		add_claim_by = USA
+		add_core_of = ARZ
 		victory_points = {
 			853 3 
 		}

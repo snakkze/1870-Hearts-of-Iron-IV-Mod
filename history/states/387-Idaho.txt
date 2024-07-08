@@ -13,11 +13,12 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = IDA
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = USA
+		add_claim_by = USA
+		add_core_of = IDA
 		victory_points = {
 			9616 1
 		}

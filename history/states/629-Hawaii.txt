@@ -5,20 +5,14 @@ state={
 	manpower = 191535
 	state_category = town
 	history={
-		owner = USA
+		owner = HAW
 		add_core_of = HAW
-		buildings = {
-			infrastructure = 2
-			4180 = {
-				naval_base = 10
-			}
-		}
 		victory_points = {
 			4180 15
-		 }
+		}
 		victory_points = {
 			12021 3
-		 }
+	 }
 	}
 
 	provinces={
