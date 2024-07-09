@@ -415,3 +415,127 @@ austrian_surrender = {
 	}
 	disband_german_confederation = yes
 }
+
+austrian_surrender_2 = {
+	every_country = {
+		limit = {
+			is_in_faction_with = PRS
+			is_faction_leader = yes
+			has_war_with = AUS
+		}
+		# Austrian faction peace with prussian faction
+		white_peace = {
+			tag = AUS
+			message = vienna_peace_tt
+		}
+		# Austrian faction peace with prussian faction
+		set_truce = {
+			target = AUS
+			days = 90
+		}
+	}
+	if = {
+		limit = {
+			AUS = {
+				exists = yes
+			}
+		}
+		if = {
+			limit = {
+				58 = {
+					is_owned_by = AUS
+				}
+			}
+			PRS = {
+				transfer_state = 58	
+				add_state_core = 58	
+			}
+		}
+		every_state = {
+			limit = {
+				AND = {
+					is_owned_by = AUS
+					OR = {
+						state = 103
+						state = 163
+					}
+				}
+			}
+			CRO = {
+				transfer_state = PREV	
+				add_state_core = PREV	
+			}
+		}
+		every_state = {
+			limit = {
+				AND = {
+					is_owned_by = AUS
+					is_core_of = HUN
+				}
+			}
+			HUN = {
+				transfer_state = PREV	
+				add_state_core = PREV	
+			}
+		}
+		every_state = {
+			limit = {
+				AND = {
+					is_owned_by = AUS
+					is_core_of = CZE
+				}
+			}
+			CZE = {
+				transfer_state = PREV	
+				add_state_core = PREV	
+			}
+		}
+		if = {
+			limit = {
+				SOV = {
+					is_in_faction_with = PRS
+				}
+			}
+			every_state = {
+				limit = {
+					AND = {
+						is_owned_by = AUS
+						OR = {
+							state = 88
+							state = 91
+							state = 89
+							state = 80
+						}
+					}
+				}
+				SOV = {
+					transfer_state = PREV		
+					add_state_core = PREV
+				}
+			}
+		}
+		else = {
+			every_state = {
+				limit = {
+					AND = {
+						is_owned_by = AUS
+						OR = {
+							state = 88
+							state = 91
+							state = 89
+							state = 80
+						}
+					}
+				}
+				PGA = {
+					transfer_state = PREV	
+					add_state_core = PREV
+				}
+			}
+		}
+	}
+	PRS = {
+		dismantle_faction = yes
+	}
+	set_global_flag = fpw_prussia_won_apw_alt
+}

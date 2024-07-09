@@ -19,7 +19,13 @@
   fpw_russia_austro_prussian_war:0 "§ORussia has a chance to join the Austro-Prussian war if we don't complete this Focus!§!"
   continuous_focus_colonization_speed:0 "Colonization Speed: §G+20.00%§!"
   fpw_influenced_country_tt:0 "will be influenced by [PREV.GetNameDef]!"
-  fpw_branch_incomplete_tt:0 "§RTHIS BRANCH IS INCOMPLETE ! ! !§!"
+  fpw_branch_incomplete_tt:0 "§RTHIS BRANCH IS INCOMPLETE!§!"
+  fpw_path_incomplete_tt:0 "§RTHIS PATH IS PARTLY INCOMPLETE!§!"
+
+  fpw_loads_socialist_branch_tt:0 "Load Focus: §YPrussia: Socialist§!"
+  fpw_loads_democratic_monarchy_branch_tt:0 "Load Focus: §YPrussia: Constitutional Monarchy§!"
+  fpw_loads_democratic_branch_tt:0 "Load Focus: §YPrussia: Democracy§!"
+
   fpw_historical_option_tt:0 "§4Historical Option§!"
   fpw_focus_autocomplete_tt:0 "§YThis Focus§! will be §YCompleted§!"
   fpw_focus_autocomplete_holstein_tt:0 "§YThis Focus§! will be §YCompleted§! with the decision §YPropose a Lesser German State§!"
@@ -51,3 +57,6 @@
   finalize_federation_tt:0 "Depending on our chosen Branch we will either be known as §Ythe United German Federation§! or as §Ythe Holy Roman Empire§!."
  PRS_unification_play:0 "§Y[PRS.GetNameDefCap]§! declares war on §Yall Northern German States§!."
   PRS_utilize_the_armies_loyalty_tt:0 "§G@PRSThe Prussian Royal Army will back Wilhelm§!"
+ SOV_might_join_tt:0 "Complete the Focus §YSecure Russian Friendship§! for §Y[SOV.GetNameDefCap]§! to join your side."
+ SOV_will_join_tt:0 "§Y[SOV.GetNameDefCap]§! will join the war §YPrusso-Austrian§! war."
+ fpw_prussia_won_apw_alt_tt:0 "Won the §YPrusso-Austrian War§!."

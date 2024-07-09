@@ -287,8 +287,10 @@ country_event = {
 				has_war_with = PRS
 			}
 			PRS = {
-				surrender_progress > 0.95
-				surrender_progress < 1
+				AND = {
+					surrender_progress > 0.95
+					surrender_progress < 1
+				}
 			}
 			NOT = {
 				has_global_flag = fpw_prussia_peace_3
@@ -506,7 +508,10 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			has_global_flag = austro_prussian_war
+			OR = {
+				has_global_flag = austro_prussian_war
+				has_global_flag = fpw_prusso_austrian_war
+			}
 			PRS = {
 				has_war_with = AUS
 			}
@@ -521,12 +526,21 @@ country_event = {
 	}
 
 	immediate = {
-		austrian_surrender = yes
 		if = {
-			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
-			ITA = { country_event = austro_prussian_fpw.4 }
+			limit = {
+				has_global_flag = austro_prussian_war
+			}
+			austrian_surrender = yes
+			if = {
+				limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+				ITA = { country_event = austro_prussian_fpw.4 }
+			}
+			clr_global_flag = austro_prussian_war
 		}
-		clr_global_flag = austro_prussian_war
+		else = {
+			austrian_surrender_2 = yes 
+			clr_global_flag = fpw_prusso_austrian_war
+		}
 	}
 
 	option = {
