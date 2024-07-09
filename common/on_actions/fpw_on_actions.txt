@@ -303,7 +303,7 @@ on_actions = {
 		effect = {
 				if = {
 					limit = {
-					date = 1866.6.29 #Tokugawa Iemochi dies
+					date = 1866.8.29 #Tokugawa Iemochi dies
 							}
 			
 			if = {
@@ -337,15 +337,20 @@ on_actions = {
 		effect = {
 				if = {
 					limit = {
+				ENG = {
+							exists = yes
+							has_tech = fpw_infantry_equipment_1
+				}
 				JAP = {
 							has_civil_war = yes 
 							has_government = fascism
 							}
+				date < 1870.1.1
 							}
 				if = {
 					limit = {
 				JAP = {
-					has_completed_focus = JAP_secure_western_armaments
+					has_country_tag = jap_western_guns
 							}
 							}
 				JAP = {			
@@ -357,9 +362,36 @@ on_actions = {
 			}
 					}
 					}
-					
+			if = {
+					limit = {
+				ENG = {
+							exists = yes
+							NOT = {
+							has_tech = fpw_infantry_equipment_1
+							}
+				}
+				JAP = {
+							has_civil_war = yes 
+							has_government = fascism
+							}
+				date < 1870.1.1
+							}
+				if = {
+					limit = {
+				JAP = {
+					has_country_tag = jap_western_guns
+							}
+							}
+				JAP = {			
+					add_equipment_to_stockpile = {
+				type = fpw_infantry_equipment_0
+				amount = 2
+				producer = ENG
 			}
-
+			}
+					}
+					}		
+			}
 		}
 	on_monthly_JAP = {
 		effect = {
@@ -551,6 +583,7 @@ on_actions = {
 			set_capital = {
 			state = 282
 			}
+			set_province_name = { id = 1182 name = "Tokyo" }
 			}
 			}
 		}
