@@ -24,7 +24,6 @@ add_dynamic_modifier = {
 }
 
 1870.1.1 = {
-	set_province_name = { id = 1182 name = "Tokyo" }
 	remove_ideas = {
 	jap_medium_imperial_resistance
 	jap_unequal_treaties
@@ -75,6 +74,7 @@ add_dynamic_modifier = {
 		state = 282
 		}
 	}
+	set_province_name = { id = 1182 name = "Tokyo" }
 	
 		
 	remove_dynamic_modifier = { 
