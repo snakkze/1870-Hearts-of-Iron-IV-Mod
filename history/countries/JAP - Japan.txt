@@ -24,6 +24,7 @@ add_dynamic_modifier = {
 }
 
 1870.1.1 = {
+	set_province_name = { id = 1182 name = "Tokyo" }
 	remove_ideas = {
 	jap_medium_imperial_resistance
 	jap_unequal_treaties
@@ -57,6 +58,15 @@ add_dynamic_modifier = {
 		fpw_trait_emperor_meiji
 		}
 		}
+		
+	create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { }
+		}	
 	
 	
 	#Change Capital to Tokyo for 1870(was Kyoto in 1866)
