@@ -3799,9 +3799,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available = {
-		NOT = {
-		has_war_with = FRA
-		}
+
 		}
 		ai_will_do = {
 			factor = 2
