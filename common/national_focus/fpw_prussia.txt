@@ -1977,7 +1977,6 @@ focus_tree = {
 		mutually_exclusive = { focus = PRS_lesser_german_solution }
 
 		completion_reward = {
-			add_country_leader_trait = fpw_trait_bismarcks_plan
 			mark_focus_tree_layout_dirty = yes
 			add_ideas = fpw_greater_german_solution
 		}
