@@ -902,3 +902,391 @@ news_event = {
 		events = fpw_disagree_with_bismarck_absolute
 	}
 }
+
+
+
+# Generic puppet
+country_event = {
+	id = prussia_fpw.31
+	title = prussia_fpw.31.t
+	desc = prussia_fpw.31.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = prussia_fpw.31.a
+		 ai_chance = {
+			base = 10 
+			modifier = {
+				add = 10 
+				has_opinion = {
+					target = PRS
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = PRS
+					value > 20
+				}
+			}
+			modifier = {
+				add = 30 
+				has_opinion = {
+					target = PRS
+					value > 30
+				}
+			}
+        }
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			PRS = {
+				set_autonomy = {
+					target = ROOT
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.2
+				}
+				country_event = prussia_fpw.32
+			}
+			else = {
+				PRS = {
+					puppet = ROOT
+					country_event = prussia_fpw.32
+				}
+			}
+		}
+		#PRS = {
+		#	annex_country = {
+		#		target = ROOT
+		#		transfer_troops = yes
+		#	}
+		#	country_event = prussia_fpw.4
+		#}
+		#every_state = {
+		#	limit = {
+		#		is_core_of = ROOT
+		#	}
+		#	add_core_of = PRS
+		#}
+	}
+
+	# Decline
+	option = {
+		name = prussia_fpw.31.b
+		ai_chance = {
+			base = 10 
+			modifier = {
+				factor = 5
+				has_opinion = {
+					target = PRS
+					value < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+# Accepted
+country_event = {
+	id = prussia_fpw.32
+	title = prussia_fpw.32.t
+	desc = prussia_fpw.32.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	option = {
+		name = prussia_fpw.32.a
+		PRS = {
+
+		}
+	}
+}
+
+# Declined
+country_event = {
+	id = prussia_fpw.33
+	title = prussia_fpw.33.t
+	desc = prussia_fpw.33.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.33.a
+		create_wargoal = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+# Generic annex
+country_event = {
+	id = prussia_fpw.34
+	title = prussia_fpw.34.t
+	desc = prussia_fpw.34.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = prussia_fpw.34.a
+		 ai_chance = {
+			base = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = PRS
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { original_tag = PRS }
+						is_in_faction_with = PRS
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 0.05 #if you are in a faction with a major, probably fight
+				is_faction_leader = no
+				is_in_faction = yes
+				any_allied_country = {
+					is_major = yes
+				}
+			}
+			modifier = { # Increase it again if other bordering nations are in Axis
+				any_neighbor_country = {
+					NOT = { tag = PRS }
+					is_in_faction_with = PRS
+				}
+				factor = 2.0
+			}
+        }
+		PRS = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			country_event = prussia_fpw.35
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
+	}
+
+	# Decline
+	option = {
+		name = prussia_fpw.34.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = PRS
+					ratio < 0.5
+				}
+			}
+		}
+		PRS = {
+			country_event = prussia_fpw.36
+		}
+	}
+}
+
+# Accepted
+country_event = {
+	id = prussia_fpw.35
+	title = prussia_fpw.35.t
+	desc = prussia_fpw.35.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	option = {
+		name = prussia_fpw.35.a
+		PRS = {
+
+		}
+	}
+}
+
+# Declined
+country_event = {
+	id = prussia_fpw.36
+	title = prussia_fpw.36.t
+	desc = prussia_fpw.36.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.36.a
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						is_puppet_of = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			end_puppet = FROM
+		}
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+# Greater Germany annex
+country_event = {
+	id = prussia_fpw.37
+	title = prussia_fpw.37.t
+	desc = prussia_fpw.37.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = prussia_fpw.37.a
+		 ai_chance = {
+			base = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = PRS
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { original_tag = PRS }
+						is_in_faction_with = PRS
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 0.05 #if you are in a faction with a major, probably fight
+				is_faction_leader = no
+				is_in_faction = yes
+				any_allied_country = {
+					is_major = yes
+				}
+			}
+			modifier = { # Increase it again if other bordering nations are in Axis
+				any_neighbor_country = {
+					NOT = { tag = PRS }
+					is_in_faction_with = PRS
+				}
+				factor = 2.0
+			}
+        }
+		PRS = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			country_event = prussia_fpw.38
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
+	}
+
+	# Decline
+	option = {
+		name = prussia_fpw.34.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = PRS
+					ratio < 0.5
+				}
+			}
+		}
+		PRS = {
+			country_event = prussia_fpw.39
+		}
+	}
+}
+
+# Accepted
+country_event = {
+	id = prussia_fpw.38
+	title = prussia_fpw.38.t
+	desc = prussia_fpw.38.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	option = {
+		name = prussia_fpw.38.a
+		PRS = {
+			add_ideas = fpw_disorganised_people
+			add_ideas = fpw_disorganised_army
+			add_ideas = fpw_disorganised_industry
+		}
+	}
+}
+
+# Declined
+country_event = {
+	id = prussia_fpw.39
+	title = prussia_fpw.39.t
+	desc = prussia_fpw.39.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.39.a
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}

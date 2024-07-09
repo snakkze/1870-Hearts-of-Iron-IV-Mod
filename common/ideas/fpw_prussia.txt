@@ -65,6 +65,27 @@ ideas = {
 			}
 		}
 
+		# snall country, big dreams
+		fpw_greater_german_solution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				political_power_factor = 0.05
+				war_support_weekly = 0.05
+				army_morale_factor = 0.025
+			}
+		}
+
 		# HRE traditions
 		fpw_hre_traditions = {
 			allowed = {

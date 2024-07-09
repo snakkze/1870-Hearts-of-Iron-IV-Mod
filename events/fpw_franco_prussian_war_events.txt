@@ -299,6 +299,21 @@ country_event = {
 			add_core_of = FPC
 		}
 	}
+
+	option = {
+		name = franco_prussian_fpw.8.b
+		custom_effect_tooltip = change_to_fpc_tt
+		16 = {
+			set_demilitarized_zone = yes
+			transfer_state_to = FPC
+			add_core_of = FPC
+		}
+		hidden_effect = {
+			FPC = {
+				change_tag_from = ROOT
+			}
+		}
+	}
 }
 
 # Prussia leaves Paris after a parade

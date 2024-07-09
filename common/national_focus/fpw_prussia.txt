@@ -610,6 +610,48 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = PRS_unification_play
+			hidden_effect = {
+				every_country = { 
+					limit = { 
+						is_german_minor = yes
+					}
+					PRS = {
+						if = {
+							limit = {
+								NOT = {
+									has_war_with = PREV
+								}
+							}
+							declare_war_on = { type = annex_everything target = PREV }
+						}
+					}
+					HNV = {
+						create_faction = north_german_faction
+					}
+					every_country = { 
+						limit = { 								
+							is_german_minor = yes
+						}
+						HNV = {
+							add_to_faction = PREV
+						}
+					}
+				}
+				every_country = { 
+					limit = { 
+						is_german_minor = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						PRS = {
+							add_state_core = PREV	
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -669,7 +711,12 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			# if prussia owns all of north germany
+		}
+
 		completion_reward = {
+			set_cosmetic_tag = GER_north_germany
 		}
 	}
 
@@ -687,6 +734,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			# modifier attack on core bav, wrt, bad, hes
 		}
 	}
 
@@ -704,6 +752,48 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = PRS_attack_south_tt
+			hidden_effect = {
+				every_country = { 
+					limit = { 
+						OR = {
+							original_tag = BAV
+							original_tag = HES
+							original_tag = BAD
+							original_tag = WRT
+						}
+					}
+					PRS = {
+						if = {
+							limit = {
+								NOT = {
+									has_war_with = PREV
+								}
+							}
+							declare_war_on = { type = annex_everything target = PREV }
+						}
+					}
+				}
+				every_country = { 
+					limit = { 
+						OR = {
+							original_tag = BAV
+							original_tag = HES
+							original_tag = BAD
+							original_tag = WRT
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						PRS = {
+							add_state_core = PREV	
+						}
+					}
+				}
+			}
+		
 		}
 	}
 
@@ -1889,6 +1979,7 @@ focus_tree = {
 		completion_reward = {
 			add_country_leader_trait = fpw_trait_bismarcks_plan
 			mark_focus_tree_layout_dirty = yes
+			add_ideas = fpw_greater_german_solution
 		}
 	}
 
@@ -2433,6 +2524,17 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		bypass = {
+			AND = {
+				CZE = {
+					exists = no
+				}
+				AUS = {
+					exists = no
+				}
+			}
+		}
+
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = fpw_prussia_won_apw_alt_tt
@@ -2442,20 +2544,14 @@ focus_tree = {
 
 		completion_reward = {
 			# Puppets CZE and AUS
-			
-			create_wargoal = {
-				type = topple_government
-				target = CZE
-			}
-			
-			create_wargoal = {
-				type = topple_government
-				target = HUN
-			}
-			
-			create_wargoal = {
-				type = topple_government
-				target = AUS
+			custom_effect_tooltip = fpw_demand_puppet_habsburg
+			hidden_effect = {
+				CZE = {
+					country_event = { id = prussia_fpw.31 hours = 2 }
+				}
+				AUS = {
+					country_event = { id = prussia_fpw.31 hours = 2 }
+				}
 			}
 		}
 	}
@@ -2476,10 +2572,47 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			# Prussia delcares war on BAV etc
-			# Event chain france says no if prussia says well ok than they get suck and if they so well stfu france
-			# the will fight them. Depending if russia accepted friendship they will join on prussian side
-			# If france declares war they will offer ITA an alliance for them to gain 1936 borders
+			custom_effect_tooltip = PRS_attack_south_tt
+			hidden_effect = {
+				every_country = { 
+					limit = { 
+						OR = {
+							original_tag = BAV
+							original_tag = HES
+							original_tag = BAD
+							original_tag = WRT
+						}
+					}
+					PRS = {
+						if = {
+							limit = {
+								NOT = {
+									has_war_with = PREV
+								}
+							}
+							declare_war_on = { type = annex_everything target = PREV }
+						}
+					}
+				}
+				every_country = { 
+					limit = { 
+						OR = {
+							original_tag = BAV
+							original_tag = HES
+							original_tag = BAD
+							original_tag = WRT
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						PRS = {
+							add_state_core = PREV	
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -2515,11 +2648,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			PRS = {
-				annex_country = {
-					target = CZE
-					transfer_troops = no
-				}
+			CZE = {
+				country_event = { id = prussia_fpw.34 hours = 2 }
 			}
 		}
 	}
@@ -2552,7 +2682,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -2570,16 +2699,11 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = no
 		completion_reward = {
 		## get ideas disorgansied state, disorgansied army, disorgansied people
-			annex_country = { target = AUS transfer_troops = yes }
-			annex_country = { target = BAV transfer_troops = yes }
-			annex_country = { target = WRT transfer_troops = yes }
-			annex_country = { target = BAD transfer_troops = yes }
-			annex_country = { target = HES transfer_troops = yes }
-			annex_country = { target = FRK transfer_troops = yes }
-			set_cosmetic_tag = PRS_GER
+			AUS = {
+				country_event = { id = prussia_fpw.37 hours = 2 }
+			}
 		}
 	}
 
@@ -2697,35 +2821,40 @@ focus = {
 							}
 						}
 					}
-					start_civil_war = {
-						ruling_party = neutrality
-						# Original country's ideology changes to communism
-						ideology = ROOT
-						# Breakaway gets old ideology of ROOT
-						size = 0.5
-						capital = 64
-						states = all
-						states_filter = { 
-							NOT = {
-								OR = {
-									state = 947
-									state = 59
-									state = 944
-									state = 56
-									state = 950
-									state = 951
-									state = 942
-									state = 57
-									state = 981
-									state = 51
-									state = 42
-									state = 939
-									state = 943
-									state = 948
-									state = 941
-									state = 58
-									state = 909
-									state = 912
+					if = {
+						limit = {
+							has_idea = fpw_national_reforms
+						}
+						start_civil_war = {
+							ruling_party = neutrality
+							# Original country's ideology changes to communism
+							ideology = ROOT
+							# Breakaway gets old ideology of ROOT
+							size = 0.5
+							capital = 64
+							states = all
+							states_filter = { 
+								NOT = {
+									OR = {
+										state = 947
+										state = 59
+										state = 944
+										state = 56
+										state = 950
+										state = 951
+										state = 942
+										state = 57
+										state = 981
+										state = 51
+										state = 42
+										state = 939
+										state = 943
+										state = 948
+										state = 941
+										state = 58
+										state = 909
+										state = 912
+									}
 								}
 							}
 						}
@@ -2774,11 +2903,8 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			PRS = {
-				annex_country = {
-					target = AUS
-					transfer_troops = no
-				}
+			AUS = {
+				country_event = { id = prussia_fpw.34 hours = 2 }
 			}
 		}
 	}
@@ -2820,18 +2946,37 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
-			create_wargoal = {
-				type = topple_government
-				target = BEL
-			}
-			create_wargoal = {
-				type = topple_government
-				target = LUX
-			}
-			create_wargoal = {
-				type = topple_government
-				target = HOL
+			custom_effect_tooltip = fpw_hre_benelux_tt
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything
+					target = BEL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = LUX
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HOL
+				}
+				every_country = { 
+					limit = {
+						OR = {
+							original_tag = BEL
+							original_tag = LUX
+							original_tag = HOL
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						PRS = {
+							add_state_core = PREV	
+						}
+					}
+				}
 			}
 		}
 	}
@@ -2862,41 +3007,55 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_state_core = 158
-			add_state_core = 161
-			add_state_core = 162
-			add_state_core = 159
-			add_state_core = 160
-			add_state_core = 736
-			add_state_core = 852
-			add_state_core = 850
-			add_state_core = 39
-			add_state_core = 853
-			add_state_core = 102
-
-			random_country = {
-				limit = {
-					owns_state = 158
-				}
-				PRS = {
-					create_wargoal = {
-						type = take_state_focus
-						target = PREV
-						expire = 0
-						generator = { 158 }
+			custom_effect_tooltip = fpw_hre_south_tt
+			hidden_effect = {
+				add_state_core = 159
+				add_state_core = 161
+				add_state_core = 162
+				add_state_core = 158
+				every_country = { 
+					limit = {
+						original_tag = SWI
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						PRS = {
+							add_state_core = PREV	
+						}
 					}
 				}
-			}
-			random_country = {
-				limit = {
-					owns_state = 853
+	
+				random_country = {
+					limit = {
+						OR = {
+							owns_state = 159
+							owns_state = 161
+							owns_state = 162
+							owns_state = 158
+						}
+					}
+					PRS = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+						}
+					}
 				}
-				PRS = {
-					create_wargoal = {
-						type = take_state_focus
-						target = PREV
-						expire = 0
-						generator = { 853 }
+				random_country = {
+					limit = {
+						any_owned_state = {
+							is_core_of = SWI
+						}
+					}
+					PRS = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							expire = 0
+						}
 					}
 				}
 			}
@@ -2918,10 +3077,26 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = fpw_hre_france_tt
 			
-			create_wargoal = {
-				type = topple_government
-				target = FRA
+			hidden_effect = {
+				add_state_core = 735
+				add_state_core = 28
+				random_country = {
+					limit = {
+						OR = {
+							owns_state = 735
+							owns_state = 28
+						}
+					}
+					PRS = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+						}
+					}
+				}
 			}
 		}
 	}

@@ -56,7 +56,8 @@
 
   franco_prussian_fpw.8.t:0 "The Paris Commune"
   franco_prussian_fpw.8.d:0 "Following the turmoil and the capture of Paris, a radical socialist government known as the Paris Commune has taken control of the city. This new government opposes both the French provisional government and our forces, leading to further instability."
-  franco_prussian_fpw.8.a:0 "Excuse me?"
+  franco_prussian_fpw.8.a:0 "Excuse me, what?"
+  franco_prussian_fpw.8.b:0 "Play as the Paris Commune"
 
   franco_prussian_fpw.9.t:0 "Prussia Leaves Paris"
   franco_prussian_fpw.9.d:0 "After a triumphant parade through Paris, our forces have withdrawn from the city. This symbolic act marks the end of our military operations in the region, solidifying our victory and reshaping the political landscape of Europe."
@@ -238,7 +239,47 @@
   prussia_fpw.30.d: "The Russian leader [SOV.GetLeader] has declined our offer for an Alliance against Austria."
   prussia_fpw.30.a: "Verdammt!"
 
-  
+  prussia_fpw.31.t: "[FROM.GetNameDefCap] demands to puppet [ROOT.GetNameDef]!"
+  prussia_fpw.31.d: "The leader [FROM.GetLeader] demands that our nation become a puppet state under their control. If we decline the offer, we will stand alone against them in a war."
+  prussia_fpw.31.a: "Back down..."
+  prussia_fpw.31.b: "Fight for our Freedom!"
+
+  prussia_fpw.32.t: "[FROM.GetNameDefCap] accepts ultimatum"
+  prussia_fpw.32.d: "The leader [FROM.GetLeader] has accepted our offer and backed down, resulting in [FROM.GetNameDef] becoming our puppet state."
+  prussia_fpw.32.a: "Great!"
+
+  prussia_fpw.33.t: "[FROM.GetNameDefCap] declines ultimatum!"
+  prussia_fpw.33.d: "The leader [FROM.GetLeader] has declined our ultimatum. At this point, we must act decisively to assert our dominance by waging war against [FROM.GetNameDef]."
+  prussia_fpw.33.a: "War it is!"
+
+  prussia_fpw.34.t: "[FROM.GetNameDefCap] demands to annex [ROOT.GetNameDef]!"
+  prussia_fpw.34.d: "The leader [FROM.GetLeader] demands that our nation will be annexed by [FROM.GetNameDef]. If we decline the offer, we will stand alone against them in a war."
+  prussia_fpw.34.a: "Back down..."
+  prussia_fpw.34.b: "Fight for our Freedom!"
+
+  prussia_fpw.35.t: "[FROM.GetNameDefCap] accepts ultimatum"
+  prussia_fpw.35.d: "The leader [FROM.GetLeader] has accepted our offer and backed down, resulting in [FROM.GetNameDef] being annexed and integrated into our great nation."
+  prussia_fpw.35.a: "Great!"
+
+  prussia_fpw.36.t: "[FROM.GetNameDefCap] declines ultimatum!"
+  prussia_fpw.36.d: "The leader [FROM.GetLeader] has declined our ultimatum. At this point, we must act decisively to assert our dominance by waging war against [FROM.GetNameDef]."
+  prussia_fpw.36.a: "War it is!"
+
+  prussia_fpw.37.t: "[FROM.GetNameDefCap] demands German Unification"
+  prussia_fpw.37.d: "Prussia demands that we join [PRS.GetNameDef] to finally unify the Greater German Space under [PRS.GetAdjective] rule. This proposal aims to consolidate all German-speaking territories into a single nation dominated by Prussian influence."
+  prussia_fpw.37.a: "Long Live Sacred Germany!"
+  prussia_fpw.37.b: "Not undeer Prussian rule!"
+
+  prussia_fpw.38.t: "[FROM.GetNameDefCap] accepts ultimatum"
+  prussia_fpw.38.d: "[AUS.GetNameDefCap] has accepted our demand to unify the Greater German Space under our rule. This historic agreement signifies the end of long-standing rivalries and the beginning of a unified German nation, dominated by our leadership."
+  prussia_fpw.38.a: "Long Live Sacred Germany!"
+
+  prussia_fpw.39.t: "[FROM.GetNameDefCap] declines ultimatum!"
+  prussia_fpw.39.d: "[AUS.GetNameDefCap] has declined our demand to unify the Greater German Space under our rule. This rejection signifies a continued division within the German-speaking territories and a clear refusal to submit to our leadership. We can't allow this rejection, as one country shouldn't decide the future of our shared culture."
+  prussia_fpw.39.a: "War it is!"
+
+
+ 
   generic.26.t:0 "Warning"
   generic.26.d:0 "This mod is a very early release, and many bugs will be present, and many national focuses will be missing. If you find any bugs, please report them to the Discord server. For now, we only recommend playing as Prussia or Italy."
   generic.26.a:0 "I Agree"
