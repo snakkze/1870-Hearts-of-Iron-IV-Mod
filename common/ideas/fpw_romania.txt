@@ -324,4 +324,28 @@ ideas = {
 			}
 		}	
 	}
+		country = {
+		fpw_ROM_complex_reformed = {
+			picture = generic_local_self_management
+
+			allowed = {
+				tag = ROM
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.3
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}	
+	}
 }

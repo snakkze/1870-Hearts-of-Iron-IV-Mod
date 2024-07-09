@@ -1095,6 +1095,7 @@
 		}
 		
 		completion_reward = {	
+			country_event = fpw_romania.8
 			79 = {
                 add_building_construction = {
                 type = bunker
@@ -1175,7 +1176,8 @@
 		available = {
 		}
 		
-		completion_reward = {	
+		completion_reward = {
+			country_event = fpw_romania.8
 			46 = {
                 add_building_construction = {
                 type = bunker
@@ -1262,6 +1264,7 @@
 		}
 		
 		completion_reward = {	
+			country_event = fpw_romania.7
 			81 = {
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1334,6 +1337,7 @@
 		}
 		
 		completion_reward = {	
+			country_event = fpw_romania.7
 			79 = {
                 add_extra_state_shared_building_slots = 4
                 add_building_construction = {
@@ -1366,7 +1370,9 @@
 		available = {
 		}
 		
-		completion_reward = {		
+		completion_reward = {	
+			add_ideas = fpw_ROM_complex_reformed	
+			country_event = fpw_romania.9	
 		}
 		
 		ai_will_do = {
