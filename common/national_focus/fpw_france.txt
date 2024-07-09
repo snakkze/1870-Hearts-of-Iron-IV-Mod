@@ -1855,7 +1855,7 @@
 	}
 	focus = {
 		id = FRA_sway_bonapartists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_fra_french_union
 		prerequisite = { focus = FRA_seek_revenge }
 		available = {
 		}
@@ -1913,7 +1913,7 @@
 	}
 	focus = {
 		id = FRA_guillotine_for_socialists
-		icon = GFX_focus_unkown
+		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = FRA_seek_revenge }
 		prerequisite = { focus = FRA_invade_the_commune }
 		available = {
@@ -2238,11 +2238,11 @@
 	}
 	focus = {
 		id = FRA_republic_reform
-		icon = GFX_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = FRA_thiers_presidency }
 		available = {
 		}
-		x = 0
+		x = 1
 		y = 6
 		relative_position_id = FRA_third_french_republic
 		cost = 15
@@ -2260,11 +2260,11 @@
 	
 	focus = {
 		id = FRA_moderate_approach
-		icon = GFX_unknown
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = FRA_republic_reform }
 		available = {
 		}
-		x = -2
+		x = -1
 		y = 7
 		relative_position_id = FRA_third_french_republic
 		cost = 5
@@ -2280,11 +2280,11 @@
 	}
 	focus = {
 		id = FRA_sway_conservatives
-		icon = GFX_unknown
+		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = FRA_moderate_approach }
 		available = {
 		}
-		x = -2
+		x = -1
 		y = 8
 		relative_position_id = FRA_third_french_republic
 		cost = 10
@@ -2300,11 +2300,11 @@
 	}
 	focus = {
 		id = FRA_continue_reforms
-		icon = GFX_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = FRA_sway_conservatives }
 		available = {
 		}
-		x = -2
+		x = -1
 		y = 9
 		relative_position_id = FRA_third_french_republic
 		cost = 10
@@ -2320,11 +2320,11 @@
 	}
 	focus = {
 		id = FRA_radical_approach
-		icon = GFX_unknown
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = FRA_republic_reform focus = FRA_establish_workers_parliament }
 		available = {
 		}
-		x = 1
+		x = 2
 		y = 7
 		relative_position_id = FRA_third_french_republic
 		cost = 5
@@ -2342,11 +2342,11 @@
 	
 	focus = {
 		id = FRA_bastion_of_democracy
-		icon = GFX_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = FRA_continue_reforms }
 		available = {
 		}
-		x = -2
+		x = -1
 		y = 10
 		relative_position_id = FRA_third_french_republic
 		cost = 5
@@ -2362,11 +2362,11 @@
 	
 	focus = {
 		id = FRA_macmahons_presidency
-		icon = GFX_unknown
-		prerequisite = { focus = FRA_bastion_of_democracy focus = FRA_radical_approach }
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = FRA_bastion_of_democracy }
 		available = {
 		}
-		x = 0
+		x = 1
 		y = 11
 		relative_position_id = FRA_third_french_republic
 		cost = 7
@@ -2382,7 +2382,7 @@
 	
 	focus = {
 		id = FRA_never_another_sedan
-		icon = GFX_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = FRA_guillotine_for_socialists }
 		available = {
 		}
@@ -2402,11 +2402,11 @@
 	
 	focus = {
 		id = FRA_rally_the_far_right
-		icon = GFX_unknown
+		icon = GFX_focus_fra_le_deluge
 		prerequisite = { focus = FRA_never_another_sedan }
 		available = {
 		}
-		x = -6
+		x = -4
 		y = 6
 		relative_position_id = FRA_third_french_republic
 		cost = 5
@@ -2422,11 +2422,11 @@
 	
 	focus = {
 		id = FRA_ban_labour_unions
-		icon = GFX_unknown
+		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = FRA_rally_the_far_right }
 		available = {
 		}
-		x = -8
+		x = -6
 		y = 7
 		relative_position_id = FRA_third_french_republic
 		cost = 5
@@ -2442,11 +2442,11 @@
 	
 	focus = {
 		id = FRA_suspend_the_parliament
-		icon = GFX_unknown
+		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = FRA_rally_the_far_right }
 		available = {
 		}
-		x = -6
+		x = -4
 		y = 7
 		relative_position_id = FRA_third_french_republic
 		cost = 10
@@ -2462,27 +2462,7 @@
 	
 	focus = {
 		id = FRA_create_national_rally
-		icon = GFX_unknown
-		prerequisite = { focus = FRA_suspend_the_parliament }
-		available = {
-		}
-		x = -7
-		y = 8
-		relative_position_id = FRA_third_french_republic
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = FRA_grant_macmahon_emergency_powers
-		icon = GFX_unknown
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = FRA_suspend_the_parliament }
 		available = {
 		}
@@ -2501,13 +2481,33 @@
 	}
 	
 	focus = {
+		id = FRA_grant_macmahon_emergency_powers
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = FRA_suspend_the_parliament }
+		available = {
+		}
+		x = -3
+		y = 8
+		relative_position_id = FRA_third_french_republic
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
 		id = FRA_establish_french_state
-		icon = GFX_unknown
+		icon = GFX_focus_generic_vichy_france_triumphant_focus
 		prerequisite = { focus = FRA_grant_macmahon_emergency_powers }
 		prerequisite = { focus = FRA_create_national_rally }
 		available = {
 		}
-		x = -6
+		x = -4
 		y = 9
 		relative_position_id = FRA_third_french_republic
 		cost = 15
@@ -2523,7 +2523,7 @@
 	
 	focus = {
 		id = FRA_organize_labour_unions
-		icon = GFX_unknown
+		icon = GFX_focus_YUG_pan_slavic_congress
 		prerequisite = { focus = FRA_work_with_the_commune }
 		available = {
 		}
@@ -2543,7 +2543,7 @@
 	
 	focus = {
 		id = FRA_allow_strikes
-		icon = GFX_unknown
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FRA_work_with_the_commune }
 		available = {
 		}
@@ -2563,7 +2563,7 @@
 	
 	focus = {
 		id = FRA_spread_radicalist_ideals
-		icon = GFX_unknown
+		icon = GFX_focus_spr_unify_the_london_bureau
 		prerequisite = { focus = FRA_work_with_the_commune }
 		available = {
 		}
@@ -2583,7 +2583,7 @@
 	
 	focus = {
 		id = FRA_establish_workers_parliament
-		icon = GFX_unknown
+		icon = GFX_focus_SWE_socialist_reforms
 		prerequisite = { focus = FRA_organize_labour_unions }
 		prerequisite = { focus = FRA_allow_strikes }
 		prerequisite = { focus = FRA_spread_radicalist_ideals}
@@ -2602,3 +2602,4 @@
 		completion_reward = {
 		}
 	}
+}
