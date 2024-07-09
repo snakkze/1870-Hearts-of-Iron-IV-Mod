@@ -2156,7 +2156,186 @@
 				uses = 1
 				category = infantry_weapons
 				category = artillery
+          }
+		}
+	}
+
+	focus = {
+		id = FRA_return_stability
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = FRA_eternal_republic }
+		available = {
+		}
+		x = 3
+		y = 3
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = FRA_crackdown_on_radicalism
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = FRA_return_stability }
+		available = {
+		}
+		x = 3
+		y = 4
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+				add_political_power = -100
 			}
 		}
 	}
-}
+		focus = {
+		id = FRA_thiers_presidency
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = FRA_crackdown_on_radicalism }
+		available = {
+		}
+		x = 3
+		y = 5
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+				add_political_power = 50
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_republic_reform
+		icon = GFX_unknown
+		prerequisite = { focus = FRA_thiers_presidency }
+		available = {
+		}
+		x = -1
+		y = 6
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_moderate_approach
+		icon = GFX_unknown
+		prerequisite = { focus = FRA_republic_reform }
+		available = {
+		}
+		x = -3
+		y = 7
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = FRA_sway_conservatives
+		icon = GFX_unknown
+		prerequisite = { focus = FRA_moderate_approach }
+		available = {
+		}
+		x = -3
+		y = 8
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = FRA_continue_reforms
+		icon = GFX_unknown
+		prerequisite = { focus = FRA_sway_conservatives }
+		available = {
+		}
+		x = -3
+		y = 9
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = FRA_radical_approach
+		icon = GFX_unknown
+		prerequisite = { focus = FRA_republic_reform }
+		available = {
+		}
+		x = 0
+		y = 7
+		relative_position_id = FRA_third_french_republic
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = fpw_branch_incomplete_tt
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
