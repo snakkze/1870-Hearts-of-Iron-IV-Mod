@@ -157,6 +157,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_government = communism
+			NOT = { has_country_leader_ideology = communism_subideology }
 		}
 		localization_key = socialist_yes
 	}
@@ -165,5 +166,11 @@ defined_text = {
 			has_country_leader_ideology = anarchism
 		}
 		localization_key = anarchist_yes
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = communism_subideology
+		}
+		localization_key = communist_yes
 	}
 }

@@ -177,6 +177,10 @@ ideologies = {
 				color = { 77 0 0 }
 				can_be_randomly_selected = no
 			}
+			
+			democratic_socialism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
@@ -187,7 +191,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 204 75 75 }
+		color = { 213 57 57 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5

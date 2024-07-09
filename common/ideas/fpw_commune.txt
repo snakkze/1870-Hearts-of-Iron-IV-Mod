@@ -1,0 +1,32 @@
+ideas = {
+    country = {
+        FPC_attack_bonus = {
+            allowed = {
+				original_tag = FPC
+			}
+
+			available = {
+				has_war_with = FRA
+			}
+
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.2
+            }
+        }
+		FPC_defence_bonus = {
+            allowed = {
+				original_tag = FPC
+			}
+
+			available = {
+				has_war_with = FRA
+			}
+
+            removal_cost = -1
+            modifier = {
+                army_core_defence_factor = 0.5
+            }
+        }
+	}
+}

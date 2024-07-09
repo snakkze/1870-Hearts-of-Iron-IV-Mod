@@ -1,0 +1,1945 @@
+focus_tree = {
+	id = paris_commune_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			AND = {
+				tag = FPC
+				is_debug = yes
+			}
+		}
+	}
+	initial_show_position = { focus = FPC_start_the_revolution }
+	
+	continuous_focus_position = { x = 1 y = 1200 }
+	
+	focus = {
+		id = FPC_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = FPC_army_effort }
+		x = -1
+		y = 1
+		relative_position_id = FPC_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+
+	focus = {
+		id = FPC_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = FPC_army_effort }
+		x = 1
+		y = 1
+		relative_position_id = FPC_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = FPC_equipment_effort }
+		x = 0
+		y = 1
+		relative_position_id = FPC_equipment_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+
+	focus = {
+		id = FPC_doctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = FPC_doctrine_effort }
+		x = 0
+		y = 1
+		relative_position_id = FPC_doctrine_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = FPC_equipment_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = FPC_equipment_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = FPC_equipment_effort_3 }
+		prerequisite = { focus = FPC_doctrine_effort_2 }
+		x = 1
+		y = 1
+		relative_position_id = FPC_equipment_effort_3
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+
+	focus = {
+		id = FPC_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 10
+		y = 5
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = FPC_flexible_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = FPC_naval_effort }
+		mutually_exclusive = { focus = FPC_large_navy }
+		x = -1
+		y = 1
+		relative_position_id = FPC_naval_effort
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = FPC_naval_effort }
+		mutually_exclusive = { focus = FPC_flexible_navy }
+		x = 1
+		y = 1
+		relative_position_id = FPC_naval_effort
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = FPC_flexible_navy focus = large_navy }
+		x = 0
+		y = 1
+		relative_position_id = FPC_flexible_navy
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = FPC_large_navy focus = flexible_navy }
+		x = 0
+		y = 1
+		relative_position_id = FPC_large_navy
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = FPC_submarine_effort }
+		x = 0
+		y = 1
+		relative_position_id = FPC_submarine_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = FPC_cruiser_effort }
+		x = 0
+		y = 1
+		relative_position_id = FPC_cruiser_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_industrial_effort
+		icon = GFX_focus_generic_industry_2
+		x = 15
+		y = 0
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				OR = { 
+					# we dont want chinese minors to go crazy on slots early since they get eaten
+					tag = GXC 
+					tag = YUN
+					tag = SHX
+					tag = XSM
+					tag = BEL
+					tag = LUX
+					tag = HOL
+					tag = DEN
+
+					# we also dont want tiny nations to go crazy with slots right away
+					num_of_controlled_states < 2
+				}				
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = FPC_industrial_effort }
+		x = -1
+		y = 1
+		relative_position_id = FPC_industrial_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FPC_industrial_effort }
+		x = 1
+		y = 1
+		relative_position_id = FPC_industrial_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = FPC_construction_effort }
+		x = 0
+		y = 1
+		relative_position_id = FPC_construction_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FPC_production_effort }
+		x = 0
+		y = 1
+		relative_position_id = FPC_production_effort
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = FPC_construction_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = FPC_construction_effort_2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FPC_production_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = FPC_production_effort_2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_infrastructure_effort_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = FPC_infrastructure_effort }
+		x = -1
+		y = 1
+		relative_position_id = FPC_infrastructure_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FPC_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = FPC_infrastructure_effort }
+		x = 1
+		y = 1
+		relative_position_id = FPC_infrastructure_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_start_the_revolution
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		mutually_exclusive = { focus = FPC_cooperate_with_the_republic }
+		available = {
+			OR = {
+				has_government = communism
+				has_country_leader_ideology = anarchism
+			}
+			custom_trigger_tooltip = {
+				tooltip = FPC_borders_france
+				any_state = {
+					is_owned_by = FPC
+					any_neighbor_state = {
+						is_owned_by = FRA
+					}
+				}
+			}
+		}
+		bypass = {
+			has_war_with = FRA
+		}
+		x = 5
+		y = 0
+		cost = 5
+		will_lead_to_war_with = FRA
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+			add_war_support = 0.3
+		}
+	}
+	
+	focus = {
+		id = FPC_focus_on_the_attack
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = FPC_start_the_revolution }
+		mutually_exclusive = { focus = FPC_defence_first }
+		available = {
+			has_war_with = FRA
+		}
+		x = -1
+		y = 1
+		relative_position_id = FPC_start_the_revolution
+		cost = 5
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { FPC_attack_bonus }
+		}
+	}
+	
+	focus = {
+		id = FPC_defence_first
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = FPC_start_the_revolution }
+		mutually_exclusive = { focus = FPC_focus_on_the_attack }
+		available = {
+			has_war_with = FRA
+		}
+		x = 1
+		y = 1
+		relative_position_id = FPC_start_the_revolution
+		cost = 5
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { FPC_defence_bonus }
+		}
+	}
+	
+	focus = {
+		id = FPC_victory
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FPC_start_the_revolution }
+		mutually_exclusive = { focus = FPC_focus_on_the_attack }
+		available = {
+			NOT = { country_exists = FRA }
+		}
+		x = 0
+		y = 2
+		relative_position_id = FPC_start_the_revolution
+		cost = 5
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = 0.1
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	focus = {
+		id = FPC_establish_government
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FPC_victory }
+		available = {
+			NOT = { country_exists = FRA }
+		}
+		x = -1
+		y = 1
+		relative_position_id = FPC_victory
+		cost = 10
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_cosmetic_tag = FRA_communism
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	focus = {
+		id = FPC_integrate_the_rest
+		icon = GFX_focus_fra_french_union
+		prerequisite = { focus = FPC_victory }
+		available = {
+			NOT = { country_exists = FRA }
+		}
+		x = 1
+		y = 1
+		relative_position_id = FPC_victory
+		cost = 10
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_state = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+				add_core_of = FPC
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_socialism_knows_no_borders
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		prerequisite = { focus = FPC_establish_government }
+		prerequisite = { focus = FPC_integrate_the_rest }
+		available = {
+			OR = {
+				has_government = communism
+				has_country_leader_ideology = anarchism
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = FPC_establish_government
+		cost = 5
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 936
+			add_state_core = 988
+			add_state_core = 42
+			add_state_core = 939
+			add_state_core = 51
+			add_state_core = 8
+			add_state_core = 34
+			add_state_core = 6
+			add_state_core = 35
+		}
+	}
+	
+	focus = {
+		id = FPC_liberate_benelux_workers
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = FPC_socialism_knows_no_borders }
+		available = {
+			OR = {
+				country_exists = HOL
+				country_exists = BEL
+				country_exists = LUX
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = FPC_socialism_knows_no_borders
+		cost = 5
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = HOL
+		will_lead_to_war_with = LUX
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = HOL 
+					NOT = { has_war_with = HOL} 
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HOL
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BEL 
+					NOT = { has_war_with = BEL} 
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BEL
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LUX 
+					NOT = { has_war_with = LUX} 
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = LUX
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = HOL
+				NOT = { country_exists = HOL }
+			}
+			OR = {
+				has_war_with = BEL
+				NOT = { country_exists = BEL }
+			}
+			OR = {
+				has_war_with = LUX
+				NOT = { country_exists = LUX }
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_workers_of_iberia_unite
+		icon = GFX_focus_por_workers_of_iberia
+		prerequisite = { focus = FPC_socialism_knows_no_borders }
+		available = {
+			OR = {
+				country_exists = SPR
+				country_exists = POL
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = FPC_socialism_knows_no_borders
+		cost = 5
+		will_lead_to_war_with = SPR
+		will_lead_to_war_with = POR
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = SPR 
+					NOT = { has_war_with = SPR} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = SPR
+				}
+			}
+			if = {
+				limit = {
+					country_exists = POR 
+					NOT = { has_war_with = POR} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = POR
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = SPR
+				NOT = { country_exists = SPR }
+			}
+			OR = {
+				has_war_with = POR
+				NOT = { country_exists = POR }
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_save_the_peninsula
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = FPC_liberate_benelux_workers }
+		available = {
+			OR = {
+				country_exists = ITA
+				country_exists = PAP
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = FPC_liberate_benelux_workers
+		cost = 5
+		will_lead_to_war_with = ITA
+		will_lead_to_war_with = PAP
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = ITA 
+					NOT = { has_war_with = ITA} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = ITA
+				}
+			}
+			if = {
+				limit = {
+					country_exists = PAP 
+					NOT = { has_war_with = PAP} 
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PAP
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = ITA
+				NOT = { country_exists = ITA }
+			}
+			OR = {
+				has_war_with = PAP
+				NOT = { country_exists = PAP }
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_short_lived_reich
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = FPC_workers_of_iberia_unite }
+		available = {
+			OR = {
+				country_exists = PRS
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = FPC_workers_of_iberia_unite
+		cost = 5
+		will_lead_to_war_with = PRS
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = PRS 
+					NOT = { has_war_with = PRS} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = PRS
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = PRS
+				NOT = { country_exists = PRS }
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_disunite_the_uk
+		icon = GFX_focus_ICE_infiltrating_the_british_isles
+		prerequisite = { focus = FPC_liberate_benelux_workers focus = FPC_workers_of_iberia_unite }
+		prerequisite = { focus = FPC_socialism_knows_no_borders }
+		available = {
+			OR = {
+				country_exists = ENG
+			}
+		}
+		x = 0
+		y = 2
+		relative_position_id = FPC_socialism_knows_no_borders
+		cost = 5
+		will_lead_to_war_with = ENG
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = ENG 
+					NOT = { has_war_with = ENG} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = ENG
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = ENG
+				NOT = { country_exists = ENG }
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_form_the_eu
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = FPC_save_the_peninsula focus = FPC_disunite_the_uk focus = FPC_short_lived_reich }
+		available = {
+			num_of_controlled_states > 40
+		}
+		x = 0
+		y = 1
+		relative_position_id = FPC_disunite_the_uk
+		cost = 5
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_cosmetic_tag = EUR_UNIFIED_communism
+			every_subject_country = {
+				limit = {
+					capital_state = { is_on_continent = europe }
+				}
+				FPC = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			every_state = {
+				limit = { is_on_continent = europe }
+				add_core_of = FPC
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	focus = {
+		id = FPC_comintern
+		icon = GFX_focus_SOV_the_comecon
+		prerequisite = { focus = FPC_form_the_eu }
+		allow_branch = {
+			NOT = { has_country_leader_ideology = anarchism }
+		}
+		x = 2
+		y = 1
+		relative_position_id = FPC_form_the_eu
+		cost = 5
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = Comintern
+		}
+	}
+	
+	focus = {
+		id = FPC_global_defence_council
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = FPC_form_the_eu }
+		allow_branch = {
+			has_country_leader_ideology = anarchism
+		}
+		x = 2
+		y = 1
+		relative_position_id = FPC_form_the_eu
+		cost = 5
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = global_defence_council
+		}
+	}
+	
+	focus = {
+		id = FPC_cooperate_with_the_republic
+		icon = GFX_focus_chi_reach_out_to_france
+		mutually_exclusive = { focus = FPC_start_the_revolution }
+		available = {
+			NOT = { has_war_with = FRA }
+		}
+		x = 3
+		y = 0
+		relative_position_id = FPC_start_the_revolution
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.35
+		}
+	}
+	
+	focus = {
+		id = FPC_join_the_republic
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = FPC_cooperate_with_the_republic }
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = FPC_borders_france
+				any_state = {
+					is_owned_by = FPC
+					any_neighbor_state = {
+						is_owned_by = FRA
+					}
+				}
+			}
+		}
+		x = 0
+		y = 4
+		relative_position_id = FPC_cooperate_with_the_republic
+		cost = 1
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA = {
+				annex_country = {
+					target = FPC
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FPC_communard_politics
+		icon = GFX_focus_generic_improve_the_administration
+		available = {
+		}
+		x = -4
+		y = 0
+		relative_position_id = FPC_start_the_revolution
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = FPC_anarchy
+		icon = GFX_focus_generic_anarchy
+		prerequisite = { focus = FPC_communard_politics }
+		mutually_exclusive = { focus = FPC_democracy }
+		mutually_exclusive = { focus = FPC_dictatorship_of_the_proletariat }
+		available = {
+			has_political_power > 200
+			fascism > 0.1
+		}
+		x = 2
+		y = 2
+		relative_position_id = FPC_communard_politics
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -200
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.4
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	focus = {
+		id = FPC_democracy
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = FPC_communard_politics }
+		mutually_exclusive = { focus = FPC_dictatorship_of_the_proletariat }
+		mutually_exclusive = { focus = FPC_anarchy }
+		available = {
+			has_political_power > 200
+		}
+		x = 0
+		y = 2
+		relative_position_id = FPC_communard_politics
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -200
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+			set_country_leader_ideology = democratic_socialism
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	focus = {
+		id = FPC_abolish_capital_punishment
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = FPC_democracy focus = FPC_anarchy }
+		available = {
+			has_political_power > 100
+		}
+		x = 1
+		y = 1
+		relative_position_id = FPC_democracy
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = FPC_bastion_of_democracy
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = FPC_abolish_capital_punishment }
+		prerequisite = { focus = FPC_form_the_eu }
+		available = {
+			has_elections = yes
+		}
+		x = 0
+		y = 5
+		relative_position_id = FPC_abolish_capital_punishment
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 250
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = FPC_dictatorship_of_the_proletariat
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = FPC_communard_politics }
+		mutually_exclusive = { focus = FPC_democracy }
+		mutually_exclusive = { focus = FPC_anarchy }
+		available = {
+			has_political_power > 200
+		}
+		x = -2
+		y = 2
+		relative_position_id = FPC_communard_politics
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -200
+			set_country_leader_ideology = communism_subideology
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}

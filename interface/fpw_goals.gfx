@@ -241,6 +241,10 @@ spriteTypes = {
 		name = "GFX_focus_FRA_attack_the_commune"
 		texturefile = "gfx/interface/goals/focus_attack_commune.png"
 	}
+	spriteType = {
+		name = "GFX_focus_generic_anarchy"
+		texturefile = "gfx/interface/goals/focus_generic_anarchy.png"
+	}
 }
 
 # RUSSIA #
