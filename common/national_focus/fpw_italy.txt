@@ -434,11 +434,7 @@ focus_tree = {
 		cost = 2
 
 		ai_will_do = {
-			base = 10
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
+			base = 0
 		}
 
 		search_filters = {}
