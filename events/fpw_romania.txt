@@ -163,3 +163,60 @@
             complete_national_focus = rom_military_factory_moldova
 		}
 	}
+	country_event = {
+		id = fpw_romania.7
+		title = fpw_romania.7.t
+		desc = fpw_romania.7.d
+		picture = fpw_romania_event_001.dds
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_romania.7.a
+			ai_chance = {
+				base = 5
+			}
+		}
+	}
+	country_event = {
+		id = fpw_romania.8
+		title = fpw_romania.8.t
+		desc = fpw_romania.8.d
+		picture = fpw_romania_event_001.dds
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_romania.8.a
+			ai_chance = {
+				base = 5
+			}
+		}
+	}
+	country_event = {
+		id = fpw_romania.9
+		title = fpw_romania.9.t
+		desc = fpw_romania.9.d
+		picture = fpw_romania_event_001.dds
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_romania.9.a
+			ai_chance = {
+				base = 5
+			}
+		}
+	}

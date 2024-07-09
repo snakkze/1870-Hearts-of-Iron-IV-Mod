@@ -148,11 +148,11 @@ focus_tree = {
 		remove_idea = jap_medium_imperial_resistance
 		add_idea = jap_high_imperial_resistance
 		}
-		528 = {
+		1007 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
 		set_demilitarized_zone = yes
 		}
-		529 = {
+		1008 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
 		set_demilitarized_zone = yes
 		}
@@ -175,6 +175,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+		set_country_flag = jap_western_guns
 		custom_effect_tooltip = JAP_tt1
 		}
 	}
@@ -216,6 +217,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+		528 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+		set_demilitarized_zone = yes
+		}
+		529 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+		set_demilitarized_zone = yes
+		}
+		530 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+		set_demilitarized_zone = yes
+		}
+		
+		
 		#GET DAIMYO SUPPORT?
 		}
 	}
@@ -236,10 +251,6 @@ focus_tree = {
 
 		completion_reward = {
 		530 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-		set_demilitarized_zone = yes
-		}
-		531 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
 		set_demilitarized_zone = yes
 		}
@@ -274,6 +285,12 @@ focus_tree = {
 		set_demilitarized_zone = no
 		}
 		531 = {
+		set_demilitarized_zone = no
+		}
+		1007 = {
+		set_demilitarized_zone = no
+		}
+		1008 = {
 		set_demilitarized_zone = no
 		}
 		remove_ideas = {
@@ -365,6 +382,7 @@ focus_tree = {
 		}
 		}
 		}
+		hidden_effect = {
 		528 = {
 		remove_dynamic_modifier = { modifier = autonomous_state }
 		}
@@ -376,6 +394,13 @@ focus_tree = {
 		}
 		531 = {
 		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		1007 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		1008 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
 		}
 		}
 	}
@@ -1840,7 +1865,6 @@ focus_tree = {
 		mutually_exclusive = { focus = JAP_denounce_shogun }
 
 		completion_reward = {
-
 		}
 	}
   
