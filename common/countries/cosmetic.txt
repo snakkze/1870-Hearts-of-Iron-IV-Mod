@@ -4,8 +4,8 @@ PRS_GER = {
 }
 
 PRS_greater_germany = {
-	color = rgb { 247 208 0 }
-	color_ui = rgb { 247 208 0 }
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
 }
 
 PRS_nationalist = {
@@ -282,8 +282,8 @@ RAT_UNIFIED = {
 }
 
 HRE_UNIFIED = {
-	color = rgb { 128 128 128 }
-	color_ui = rgb { 128 128 128 }
+	color = rgb { 255 195 0 }
+	color_ui = rgb { 247 208 0 }
 }
 
 HOL_reichskommissariat = {

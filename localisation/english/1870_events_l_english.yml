@@ -123,13 +123,6 @@
   prussia_fpw.5.t: "[FROM.GetNameDefCap] declines the offer"
   prussia_fpw.5.d: "The invited state has declined the offer to join the North German Confederation."
   prussia_fpw.5.a: "They decided their fate"
-  prussia_fpw.6.t: "Schleswig-Holsteinische Question"
-  prussia_fpw.6.d: "The question of the ownership and control of Schleswig and Holstein has arisen, presenting a strategic dilemma for Prussia."
-  prussia_fpw.6.a: "Let's annex Holstein then!"
-  prussia_fpw.6.b: "We shouldn't risk a war!"
-  prussia_fpw.7.t: "Prussia annexes Holstein"
-  prussia_fpw.7.d: "Prussia has decided to annex Holstein, a move that could escalate tensions with Austria."
-  prussia_fpw.7.a: "Let's ask Frankfurt for allowance to mobilize"
   prussia_fpw.8.t: "Schutz und Trutzbüdniss"
   prussia_fpw.8.d: " A defensive and offensive alliance is proposed to strengthen ties and security among Prussian and South German states."
   prussia_fpw.8.a: "We will accept."
@@ -138,7 +131,7 @@
   prussia_fpw.9.d: "Prussia has offered a significant gift, a gesture to solidify alliances and foster goodwill."
   prussia_fpw.9.a: "Let's accept this Gift"
   prussia_fpw.10.t: "Spanish Glorious Revolution"
-  prussia_fpw.10.d: " News of a revolution in Spain reaches Prussia, potentially affecting European dynamics."
+  prussia_fpw.10.d: "News of a revolution in Spain reaches Prussia, potentially affecting European dynamics."
   prussia_fpw.10.a: "Good to know"
   prussia_fpw.11.t: "Modified Ems-Dispatch"
   prussia_fpw.11.d: "The Ems Dispatch has been modified to provoke a reaction from France, a strategic move by Bismarck."
@@ -162,18 +155,11 @@
   prussia_fpw.17.t: "[FROM.GetNameDefCap] declines the Schutz und Trutzbüdniss"
   prussia_fpw.17.d: "The state has declined the proposed alliance, choosing not to align with Prussia."
   prussia_fpw.17.a: "We dont need them anyways!"
-  prussia_fpw.18.t: "Prussian Proposal for the German Confederation"
-  prussia_fpw.18.d: "Prussia proposes a new structure for the German Confederation, excluding Austria from the arrangement."
-  prussia_fpw.18.a: "Ask the Schleswig-Holsteinische Question then"
   prussia_fpw.19.t: "Austria asks for allowance to Mobilize against Prussia"
   prussia_fpw.19.d: "Austria requests permission to mobilize its forces in response to Prussian actions, escalating the conflict."
   prussia_fpw.19.a: "Sure thing!"
-  prussia_fpw.20.t: "Ems-Dispatch"
-  prussia_fpw.20.d: "The Ems Dispatch is sent, mocking the French and potentially provoking a military response."
-  prussia_fpw.20.a: "Sure sure"
-  prussia_fpw.20.b: "We should stop here."
   prussia_fpw.21.t: "[PRS.GetLeader] offers an alliance"
-  prussia_fpw.21.d: "Prussian Prime Minister [PRS.GetLeader] is wanting to make an alliance with us because of our common enemy of Austria. They are trying to unify Germany, and we are trying to liberate Venice, so naturally it would make sense to befriend them."
+  prussia_fpw.21.d: "Prussian Prime Minister [PRS.GetLeader] is wanting to make an alliance with us to guarantee each of our great Nations in case of a war in Europe."
   prussia_fpw.21.a: "Of Course!"
   prussia_fpw.21.b: "Decline the offer"
   prussia_fpw.22.t: "Status of the Royal Prussian Army"
@@ -183,6 +169,74 @@
   prussia_fpw_news.1.t: "Wilhelm I Asserts Absolute Rule"
   prussia_fpw_news.1.d: "After a brutal loss in the Austro-Prussian War, Prussia stood as a failing world power, losing its prestige. After various reforms by Wilhelm I, he has proclaimed a new government.\n\nThe absolute monarchy has returned as it was before 1848 in [PRS.GetNameDef]. The people of Prussia hope for a renewed sense of stability under Wilhelm's rule to counter the challenges of the past."
   prussia_fpw_news.1.a: "Gott Erhalte King Wilhelm!"
+
+  austria_fpw.1.t:0 "Nord-Süd Idea"
+  austria_fpw.1.d:0 "After the [PRS.GetAdjective] proposal to the Federal Council of German Nations, the German-speaking subcontinent has been divided into spheres of influence, with the north falling under the Prussian sphere and the south under our control."
+  austria_fpw.1.a:0 "Fine."
+  austria_fpw.2.t:0 "Holstein-Hohenzollern Exchange"
+  austria_fpw.2.d:0 "[PRS.GetNameDefCap] have requested that we exchange the territory of Holstein for their territory of Hohenzollern in the south. Given the divided spheres of influence, we have little choice but to accept this proposal, as declining would likely lead to an unwinnable war for us."
+  austria_fpw.2.a:0 "Okay."
+
+  france_fpw.1.t:0 "Prussian reaction to the Ems-Dispatch"
+  france_fpw.1.d:0 "[PRS.GetNameDefCap] has responded to our ultimatum in a mocking manner, publishing a modified version of it in the largest German newspaper, making us appear fearful of them. This has further enraged the French public, leaving us with a critical choice between going to war or facing national riots."
+  france_fpw.1.a:0 "These damn Prussians!"
+  france_fpw.1.b:0 "We shall ignore this."
+
+  france_fpw.2.t:0 "The Prusso-Spanish King?"
+  france_fpw.2.d:0 "In the wake of the Spanish Glorious Revolution and the overthrow of Isabella II, Spain is searching for a new monarch. One candidate they approached is Leopold of Hohenzollern. Although Prussia declined the offer to send one of their monarchs to Spain, we must demonstrate our strength by ensuring Prussia will not consider such actions in the future."
+  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!" #Ems-Dispatch
+  france_fpw.2.b:0 "Let the Spanish do there own thing."
+
+
+  prussia_fpw.18.t: "Prussian Proposal for the German Confederation"
+  prussia_fpw.18.d: "[PRS.GetNameDefCap] has proposed the idea of German unification under Prussian dominance, deliberately excluding us from the new nation. This proposal is not only a provocation but also a waste of our time."
+  prussia_fpw.18.a: "Ask the Schleswig-Holsteinische Question then"
+
+
+  prussia_fpw.6.t: "Schleswig-Holsteinische Question"
+  prussia_fpw.6.d: "After our proposal to unify Germany while excluding Austria, Austria has responded by questioning the validity of our treaties concerning the Schleswig-Holstein question. Following Prussia's proposal for a German state that excludes us, Prussia has now decided to annex our part of Schleswig-Holstein. This is an act we cannot tolerate, and we must act immediately."
+  prussia_fpw.6.a: "Let's annex Holstein then!"
+  prussia_fpw.6.b: "We shouldn't risk a war!"
+
+  prussia_fpw.7.t: "Prussia annexes Holstein"
+  prussia_fpw.7.d: "Prussia has decided to annex Holstein, a move that could escalate tensions with Austria."
+  prussia_fpw.7.a: "Let's ask Frankfurt for allowance to mobilize"
+
+
+  prussia_fpw.20.t: "Ems-Dispatch"
+  prussia_fpw.20.d: "[FRA.GetNameDefCap] has sent us an ultimatum, demanding that we reject any possibility of a Prussian monarch on the Spanish throne, and that our leader [PRS.GetLeader] explicitly state this. We should respond by publicly displaying a modified version of the ultimatum, mocking them in the process."
+  prussia_fpw.20.a: "Sure sure"
+
+
+  prussia_fpw.23.t: "German North Unifies!"
+  prussia_fpw.23.d: "The Kingdom of Prussia is unifying northern Germany following their proposal of the Nord-Süd Achse, which divides Germany into Prussian and Austrian zones. We should take decisive action by seeking an alliance with Russia to oppose the newly formed North German Confederation."
+  prussia_fpw.23.a: "Lets ask Russia"
+
+  prussia_fpw.24.t: "[FRA.GetLeader] offers an alliance"
+  prussia_fpw.24.d: "The French leader [FRA.GetLeader] is seeking an alliance with us in light of the newly unified northern Germany. They believe it is in our mutual interest to unite against our common enemy and to expand our natural borders."
+  prussia_fpw.24.a: "Of Course!"
+  prussia_fpw.24.b: "Decline the offer"
+
+  prussia_fpw.25.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.25.d: "The Russian leader [SOV.GetLeader] has accepted our offer for an Alliance against the North German Confederation."
+  prussia_fpw.25.a: "Excellent!"
+
+  prussia_fpw.26.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.26.d: "The Russian leader [SOV.GetLeader] has declined our offer for an Alliance against the North German Confederation."
+  prussia_fpw.26.a: "Sacre Bleu!"
+
+  prussia_fpw.28.t: "[PRS.GetLeader] offers an alliance"
+  prussia_fpw.28.d: "The Prussian leader [PRS.GetLeader] is seeking an alliance with us. They believe it is in our mutual interest to unite against our common enemy of Austria and to expand our natural borders."
+  prussia_fpw.28.a: "Of Course!"
+  prussia_fpw.28.b: "Decline the offer"
+
+  prussia_fpw.29.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.29.d: "The Russian leader [SOV.GetLeader] has accepted our offer for an Alliance against Austria."
+  prussia_fpw.29.a: "Exzellent!"
+
+  prussia_fpw.30.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.30.d: "The Russian leader [SOV.GetLeader] has declined our offer for an Alliance against Austria."
+  prussia_fpw.30.a: "Verdammt!"
 
   
   generic.26.t:0 "Warning"
