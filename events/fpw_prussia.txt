@@ -96,7 +96,7 @@ country_event = {
 			add_to_faction = SXW
 			add_to_faction = SCG
 			add_to_faction = ANH
-			transfer_state = 58
+			add_to_faction = FRK
 		}
 		AUS = {
 			create_faction = sudachse_faction
@@ -104,9 +104,6 @@ country_event = {
 			add_to_faction = WRT
 			add_to_faction = HES
 			add_to_faction = BAD
-		}
-		WRT = {
-			transfer_state = 952
 		}
 	}
 }
@@ -1163,6 +1160,26 @@ country_event = {
 		create_wargoal = {
 			target = FROM
 			type = annex_everything
+		}
+		if = {
+			limit = {
+				ROOT = {
+					original_tag = PRS
+					has_completed_focus = PRS_austrian_enemy
+				}
+				FROM = {
+					OR = {
+						original_tag = AUS
+						original_tag = CZE
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = FROM
+				}
+				add_core_of = ROOT
+			}
 		}
 	}
 }

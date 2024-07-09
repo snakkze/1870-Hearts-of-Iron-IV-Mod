@@ -2559,7 +2559,7 @@ focus_tree = {
 	focus = {
 		id = PRS_integration_of_the_south
 		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = PRS_finish_the_habsburgs }
+		prerequisite = { focus = PRS_finish_the_habsburgs focus = PRS_unify_the_north }
 		prerequisite = { focus = PRS_national_reforms }
 		relative_position_id = PRS_national_reforms
 		x = -2
@@ -2720,6 +2720,12 @@ focus = {
 		factor = 1
 	}
 
+	bypass = {
+		NOT = {
+			has_idea = fpw_disorganised_people
+		}
+	}
+
 	available_if_capitulated = no
 	completion_reward = {
 	
@@ -2740,6 +2746,12 @@ focus = {
 		factor = 1
 	}
 
+	bypass = {
+		NOT = {
+			has_idea = fpw_disorganised_army
+		}
+	}
+
 	available_if_capitulated = no
 	completion_reward = {
 	
@@ -2758,6 +2770,12 @@ focus = {
 	cost = 12
 	ai_will_do = {
 		factor = 1
+	}
+
+	bypass = {
+		NOT = {
+			has_idea = fpw_disorganised_industry
+		}
 	}
 
 	available_if_capitulated = no
@@ -2830,7 +2848,7 @@ focus = {
 							# Original country's ideology changes to communism
 							ideology = ROOT
 							# Breakaway gets old ideology of ROOT
-							size = 0.5
+							size = 0.8
 							capital = 64
 							states = all
 							states_filter = { 
@@ -2851,9 +2869,19 @@ focus = {
 										state = 943
 										state = 948
 										state = 941
+										state = 946
 										state = 58
 										state = 909
 										state = 912
+										state = 945
+										is_core_of = AUS
+										is_core_of = CZE
+										is_core_of = BAV
+										is_core_of = HES
+										is_core_of = BAD
+										is_core_of = WRT
+										is_core_of = HOH
+										is_core_of = FRK
 									}
 								}
 							}
