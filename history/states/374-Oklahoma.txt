@@ -2,7 +2,7 @@
 state={
 	id=374
 	name="STATE_374"
-	manpower = 0
+	manpower = 1
 
 	history={
 		owner = OKL
@@ -14,7 +14,7 @@ state={
 	}
 
 	provinces={
-		1618 5103 7945 9822 10798 
+		1618 5103 10798 
 	}
 
 	local_supplies=0.0 

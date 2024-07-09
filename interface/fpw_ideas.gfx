@@ -57,86 +57,86 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_divided_nation"
-		texturefile = "gfx\interface\ideas\divided_nation.dds"
+		texturefile = "gfx/interface/ideas/divided_nation.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ottoman_tribute"
-		texturefile = "gfx\interface\ideas\ottoman_tribute.dds"
+		texturefile = "gfx/interface/ideas/ottoman_tribute.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_territorial_disputes"
-		texturefile = "gfx\interface\ideas\territorial_disputes.dds"
+		texturefile = "gfx/interface/ideas/territorial_disputes.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_incompetent_army"
-		texturefile = "gfx\interface\ideas\incompetent_army.dds"
+		texturefile = "gfx/interface/ideas/incompetent_army.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_weak_industry"
-		texturefile = "gfx\interface\ideas\weak_industry.dds"
+		texturefile = "gfx/interface/ideas/weak_industry.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_department_education"
-		texturefile = "gfx\interface\ideas\department_education.dds"
+		texturefile = "gfx/interface/ideas/department_education.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_national_illiteracy"
-		texturefile = "gfx\interface\ideas\national_illiteracy.dds"
+		texturefile = "gfx/interface/ideas/national_illiteracy.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_optional_education"
-		texturefile = "gfx\interface\ideas\optional_education.dds"
+		texturefile = "gfx/interface/ideas/optional_education.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_idea_department_education_big"
-		texturefile = "gfx\interface\ideas\optional_education.dds"
+		texturefile = "gfx/interface/ideas/optional_education.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_idea_education_reform"
-		texturefile = "gfx\interface\ideas\education_reform.dds"
+		texturefile = "gfx/interface/ideas/education_reform.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_idea_factory_education"
-		texturefile = "gfx\interface\ideas\factory_education.dds"
+		texturefile = "gfx/interface/ideas/factory_education.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_idea_education_golden_age"
-		texturefile = "gfx\interface\ideas\education_golden_age.dds"
+		texturefile = "gfx/interface/ideas/education_golden_age.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_idea_prussian_general_staff"
-		texturefile = "gfx\interface\ideas\PRS\prs_icon_general_staff.dds"
+		texturefile = "gfx/interface/ideas/PRS/prs_icon_general_staff.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_idea_prussian_norms"
-		texturefile = "gfx\interface\ideas\PRS\prs_icon_prussian_norms.dds"
+		texturefile = "gfx/interface/ideas/PRS/prs_icon_prussian_norms.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_dreams_of_equality"
-		texturefile = "gfx\interface\ideas\PRS\prs_icon_dreams_of_equality.dds"
+		texturefile = "gfx/interface/ideas/PRS/prs_icon_dreams_of_equality.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_popular_front"
-		texturefile = "gfx\interface\ideas\PRS\prs_icon_popular_front.dds"
+		texturefile = "gfx/interface/ideas/PRS/prs_icon_popular_front.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_liberal_front"
-		texturefile = "gfx\interface\ideas\PRS\prs_icon_liberal_front.dds"
+		texturefile = "gfx/interface/ideas/PRS/prs_icon_liberal_front.dds"
 	}
 }

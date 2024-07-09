@@ -30,7 +30,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_focus_ITA_monarchy_shine"
@@ -61,7 +60,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_focus_attack_austria_hungary_shine"
@@ -92,7 +90,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_focus_attack_siam_shine"
@@ -123,7 +120,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_focus_claim_libya_shine"
@@ -154,7 +150,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_focus_befriend_prussia_shine"
@@ -185,7 +180,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_attack_austria_shine"
@@ -216,7 +211,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_SPR_invite_a_british_shine"
@@ -247,7 +242,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_SPR_invite_a_bonaparte_shine"
@@ -278,7 +273,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_SPR_invite_a_hohenzollern_shine"
@@ -309,7 +304,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_SPR_invite_a_savoyan_shine"
@@ -340,7 +335,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_supreme_prussian_race_shine"
@@ -371,7 +366,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_schutz_und_trutz_alliance_shine"
@@ -402,7 +397,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_hungarian_support_shine"
@@ -433,7 +428,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_austrian_seperatism_shine"
@@ -464,7 +459,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_form_greater_prussia_shine"
@@ -495,7 +490,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_form_the_ngc_shine"
@@ -526,7 +521,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_defending_the_fatherland_shine"
@@ -557,7 +552,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_bismarcks_plan_shine"
@@ -588,7 +583,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_russian_friendship_shine"
@@ -619,7 +614,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_invite_hessen_shine"
@@ -650,7 +645,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_invite_wrt_shine"
@@ -681,7 +676,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_invite_bavaria_shine"
@@ -712,7 +707,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_invite_baden_shine"
@@ -743,7 +738,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_lesser_german_shine"
@@ -774,7 +769,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_greater_german_shine"
@@ -805,7 +800,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_unification_shine"
@@ -836,7 +831,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_wacht_am_rhein_shine"
@@ -867,7 +862,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_unternehmen_germania_shine"
@@ -898,7 +893,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_kaisers_residence_shine"
@@ -929,7 +924,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_prussian_coup_shine"
@@ -960,7 +955,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_search_for_the_scapegoat_shine"
@@ -991,7 +986,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_dolchstoss_legende_shine"
@@ -1022,7 +1017,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_maerchenprinz_shine"
@@ -1053,7 +1048,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_goal_continuous_colonization_shine"
@@ -1084,7 +1079,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_france_africa_shine"
@@ -1115,7 +1110,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_industrial_dreams_shine"
@@ -1146,7 +1141,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_start_construction_university_shine"
@@ -1177,7 +1172,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_formalize_department_education_shine"
@@ -1208,7 +1203,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_education_budget_shine"
@@ -1239,7 +1234,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_high_spending_shine"
@@ -1270,7 +1265,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_low_spending_shine"
@@ -1301,7 +1296,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_mandatory_education_shine"
@@ -1332,7 +1327,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_optional_education_shine"
@@ -1363,7 +1358,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_major_staff_expansions_shine"
 		texturefile = "gfx/interface/goals/focus_rom_major_staff_expansions.dds"
@@ -1393,7 +1388,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_minor_staff_expansions_shine"
 		texturefile = "gfx/interface/goals/focus_rom_minor_staff_expansions.dds"
@@ -1423,7 +1418,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_dep_reform_shine"
 		texturefile = "gfx/interface/goals/focus_rom_dep_reform.dds"
@@ -1453,7 +1448,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_open_labs_shine"
 		texturefile = "gfx/interface/goals/focus_rom_open_labs.dds"
@@ -1483,7 +1478,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_expand_labs_shine"
 		texturefile = "gfx/interface/goals/focus_rom_expand_labs.dds"
@@ -1513,7 +1508,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_factory_education_shine"
 		texturefile = "gfx/interface/goals/focus_rom_factory_education.dds"
@@ -1543,7 +1538,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_factory_profesional_shine"
 		texturefile = "gfx/interface/goals/focus_rom_factory_profesional.dds"
@@ -1573,7 +1568,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_rom_education_golden_age_shine"
 		texturefile = "gfx/interface/goals/focus_rom_education_golden_age.dds"
@@ -1603,7 +1598,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_FRA_third_republic_shine"
 		texturefile = "gfx/interface/goals/third_republic.png"
@@ -1633,7 +1628,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_FRA_heart_of_europe_shine"
 		texturefile = "gfx/interface/goals/heart_of_europe.png"
@@ -1663,7 +1658,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_FRA_government_of_national_defence_shine"
 		texturefile = "gfx/interface/goals/focus_FRA_government_of_national_defence.png"
@@ -1693,7 +1688,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_FRA_attack_the_commune_shine"
 		texturefile = "gfx/interface/goals/focus_attack_commune.png"
@@ -1723,7 +1718,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_SOV_tsar_shine"
 		texturefile = "gfx/interface/goals/SOV_tsar.png"
@@ -1753,7 +1748,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-    }	legacy_lazy_load = no
+    }	
 	SpriteType = {
 		name = "GFX_focus_SOV_plot_tsar_shine"
 		texturefile = "gfx/interface/goals/SOV_plot_tsar.png"
@@ -1783,7 +1778,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-	}	legacy_lazy_load = no
+	}	
 	SpriteType = {
 		name = "GFX_focus_SOV_army_shine"
 		texturefile = "gfx/interface/goals/SOV_army.png"
@@ -1813,7 +1808,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-	}	legacy_lazy_load = no
+	}	
 	SpriteType = {
 		name = "GFX_focus_generic_anarchy_shine"
 		texturefile = "gfx/interface/goals/focus_generic_anarchy.png"
@@ -1843,7 +1838,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-	}	legacy_lazy_load = no
+	}	
 	SpriteType = {
 		name = "GFX_focus_rom_military_f1_shine"
 		texturefile = "gfx/interface/goals/focus_rom_military_f1.dds"
@@ -2054,7 +2049,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_imperial_loyalties_shine"
@@ -2085,7 +2080,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_western_medical_practices_shine"
@@ -2116,7 +2111,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_coal_mines_shine"
@@ -2147,7 +2142,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_cotton_shine"
@@ -2178,7 +2173,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_centralized_state_shine"
@@ -2209,7 +2204,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_seize_imperial_palace_shine"
@@ -2240,7 +2235,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_open_nation_shine"
@@ -2271,7 +2266,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_prussian_army_shine"
@@ -2302,7 +2297,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_innovation_drive_shine"
@@ -2333,7 +2328,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_JAP_sea_dominance_shine"
@@ -2364,7 +2359,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_establish_navy_shine"
@@ -2395,7 +2390,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_tokugawa_crest_shine"
@@ -2426,7 +2421,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_british_naval_mission_shine"
@@ -2457,7 +2452,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_conservative_approach_shine"
@@ -2488,7 +2483,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_civil_war_shine"
@@ -2519,7 +2514,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_samurai_spirit_shine"
@@ -2550,7 +2545,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_military_schools_shine"
@@ -2581,7 +2576,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_yen_shine"
@@ -2612,7 +2607,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_charter_oath_shine"
@@ -2643,7 +2638,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_daimyo_shine"
@@ -2674,7 +2669,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_import_western_technologies_shine"
@@ -2705,7 +2700,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_shogun_shine"
@@ -2736,7 +2731,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_emperor_shine"
@@ -2767,7 +2762,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_fortify_border_m1_shine"
@@ -2798,7 +2793,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_military_fund_shine"
@@ -2829,7 +2824,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_rom_military_complex_shine"
@@ -2860,7 +2855,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_fight_benelux_shine"
@@ -2891,7 +2886,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_befriend_austria_shine"
@@ -2922,7 +2917,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_albrecht_roon_shine"
@@ -2953,7 +2948,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_split_austria_shine"
@@ -2984,7 +2979,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_hre_traditions_shine"
@@ -3015,7 +3010,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_krupp_artillery_shine"
@@ -3046,7 +3041,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_fight_france_shine"
@@ -3077,7 +3072,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_finish_habsburgs_shine"
@@ -3108,7 +3103,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_beat_austria_shine"
@@ -3139,7 +3134,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_nord_sud_shine"
@@ -3170,7 +3165,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_unified_germany_shine"
@@ -3201,7 +3196,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_congo_confrence_shine"
@@ -3232,7 +3227,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_tripple_alliance_shine"
@@ -3263,7 +3258,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_italo_austro_reapproachments_shine"
@@ -3294,7 +3289,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 	SpriteType = {
 		name = "GFX_focus_PRS_league_of_three_emperors_shine"
@@ -3325,6 +3320,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
+		
 	}
 }
