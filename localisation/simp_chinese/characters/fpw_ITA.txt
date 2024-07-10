@@ -1,0 +1,290 @@
+﻿characters = {
+  ITA_alfonso_ferrero = {
+    name = "阿方索·费雷罗·拉马尔莫拉"  # Alfonso Ferrero La Marmora
+    portraits = {
+      civilian = {
+        large = GFX_portrait_ITA_alfonso_ferrero
+      }
+    }
+    country_leader = {
+      ideology = conservative_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+      field_marshal = {
+        traits = {}
+        skill = 3
+        attack_skill = 2
+        defense_skill = 1
+        planning_skill = 2
+        logistics_skill = 2
+      }
+      advisor = {
+        cost = 150
+        slot = army_chief
+        idea_token = ITA_La_Marmora_carm
+        available = {}
+        can_be_fired = yes
+        traits = {
+          army_chief_organization_2
+        }
+      }
+    }
+  }
+  ITA_bettino_ricasoli = {
+    name = "贝丁诺·利卡索里"  # Bettino Ricasoli
+    portraits = {
+      civilian = {
+        large = GFX_portrait_ITA_bettino_ricasoli
+      }
+    }
+    country_leader = {
+      ideology = conservative_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  ITA_vittorio_emanuele_ii = {
+    name = "维托里奥·伊曼纽尔二世"  # Vittorio Emanuele II
+    portraits = {
+      civilian = {
+        large = GFX_portrait_ITA_vittorio_emanuele_III
+      }
+    }
+    country_leader = {
+      ideology = aboslute_monarchy
+      expire = "1965.1.1.1"
+      id = -1
+    }
+  }
+  ITA_giuseppe_mazzini = {
+    name = "朱塞佩·马志尼"  # Giuseppe Mazzini
+    portraits = {
+      civilian = {
+        large = GFX_portrait_ITA_giuseppe_mazzini
+      }
+    }
+    country_leader = {
+      ideology = socialism
+      expire = "1965.1.1.1"
+      id = -1
+    }
+  }
+  ITA_Enrico_Cialdini = {
+    name = "恩里科·恰尔迪尼"  # Enrico Cialdini
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Enrico_Cialdini.png"
+      }
+    }
+    field_marshal = {
+      traits = {}
+      skill = 4
+      attack_skill = 3
+      defense_skill = 2
+      planning_skill = 3
+      logistics_skill = 3
+    }
+    advisor = {
+      cost = 150
+      slot = army_chief
+      idea_token = ITA_Enrico_Cialdini_carm
+      available = {}
+      can_be_fired = yes
+      traits = {
+        army_chief_offensive_2
+      }
+    }
+  }
+  ITA_Domenico_Cucchetella = {
+    name = "多梅尼科·库切泰拉"  # Domenico Cucchetella
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Domenico_Cucchetella.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 3
+      attack_skill = 2
+      defense_skill = 2
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Manfredo_Fanti = {
+    name = "曼弗雷多·范蒂"  # Manfredo Fanti
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Manfredo_Fanti.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 3
+      attack_skill = 2
+      defense_skill = 1
+      planning_skill = 2
+      logistics_skill = 1
+    }
+  }
+  ITA_Nino_Bixio = {
+    name = "尼诺·比西奥"  # Nino Bixio
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Nino_Bixio.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 2
+      attack_skill = 2
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Pietro_Ingami = {
+    name = "彼得罗·因加米"  # Pietro Ingami
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Pietro_Ingami.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 2
+      attack_skill = 2
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Benedetto_Cairoli = {
+    name = "贝内代托·卡伊罗利"  # Benedetto Cairoli
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Benedetto_Cairoli.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Agostino_Depretis = {
+    name = "阿戈斯蒂诺·德普雷蒂斯"  # Agostino Depretis
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Agostino_Depretis.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Francesco_Crispi = {
+    name = "弗朗切斯科·克里斯皮"  # Francesco Crispi
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Francesco_Crispi.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Luigi_Platamone = {
+    name = "路易吉·普拉塔莫内"  # Luigi Platamone
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Luigi_Platamone.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Antonio_Scialoja = {
+    name = "安东尼奥·夏洛亚"  # Antonio Scialoja
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Antonio_Scialoja.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Emilio_Visconti_Venosta = {
+    name = "埃米利奥·维斯孔蒂·韦诺斯塔"  # Emilio Visconti Venosta
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Emilio_Visconti_Venosta.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Carlo_Di_Robilant = {
+    name = "卡洛·迪罗比兰特"  # Carlo Di Robilant
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Carlo_Di_Robilant.png"
+      }
+    }
+    field_marshal = {
+      traits = {}
+      skill = 2
+      attack_skill = 2
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+  ITA_Giovanni_Lanza = {
+    name = "乔瓦尼·兰扎"  # Giovanni Lanza
+    portraits = {
+      army = {
+        large = "gfx/leaders/ITA/Portrait_ITA_Giovanni_Lanza.png"
+      }
+    }
+    corps_commander = {
+      traits = {}
+      skill = 1
+      attack_skill = 1
+      defense_skill = 1
+      planning_skill = 1
+      logistics_skill = 1
+    }
+  }
+}

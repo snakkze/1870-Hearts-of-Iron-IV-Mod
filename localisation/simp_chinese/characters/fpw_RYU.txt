@@ -1,0 +1,15 @@
+﻿characters = {
+  RYU_king_sho_tai = {
+    name = "尚泰王"  # King Sho Tai
+    portraits = {
+      civilian = {
+        large = GFX_Portrait_RYU_king_sho_tai
+      }
+    }
+    country_leader = {
+      ideology = monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+}
