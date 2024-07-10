@@ -414,31 +414,30 @@ on_actions = {
 					}		
 			}
 		}
-	on_monthly_JAP = {
+	on_monthly = {
 		effect = {
-				if = {
+			if = {
 					limit = {
-				JAP = {
+						original_tag = JAP
+							}
+        	if = {
+					limit = {
 					has_completed_focus = JAP_build_a_merchant_fleet
-							}
-							}
-				JAP = {			
+							}		
 					add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = 1
 				producer = JAP
 			}
-			}
 					}
-					
+		}		
 			}
-
 		}
-	on_monthly_JAP = {
+	on_monthly = {
 		effect = {
 				if = {
 					limit = {
-
+						original_tag = JAP
 							}
 		random_list = {
 		90 = { 	}

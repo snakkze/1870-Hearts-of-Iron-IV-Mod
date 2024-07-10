@@ -69,4 +69,14 @@ abort = {
 		id = convoy
 		value = 15
 	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 30
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment
+		value = 20
+	}
 }
