@@ -6,10 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			AND = {
-				tag = FPC
-				is_debug = yes
-			}
+			tag = FPC
 		}
 	}
 	initial_show_position = { focus = FPC_start_the_revolution }
