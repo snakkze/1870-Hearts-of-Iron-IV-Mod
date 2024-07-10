@@ -198,7 +198,6 @@ country_event = {
 	# Prov Gov
 	option = {
 		name = franco_prussian_fpw.6.a
-		set_cosmetic_tag = FRA_republic
 		diplomatic_relation = {
 			country = PAP
 			relation = guarantee
