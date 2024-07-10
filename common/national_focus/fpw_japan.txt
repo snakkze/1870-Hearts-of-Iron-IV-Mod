@@ -250,7 +250,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-		530 = {
+		531 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
 		set_demilitarized_zone = yes
 		}
@@ -4309,7 +4309,7 @@ focus_tree = {
 		relative_position_id = JAP_british_naval_mission_to_japan
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2

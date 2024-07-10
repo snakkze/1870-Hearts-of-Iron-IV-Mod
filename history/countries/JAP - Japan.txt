@@ -104,6 +104,11 @@ add_dynamic_modifier = {
 	unlock_national_focus = JAP_improve_national_infrastructure
 	unlock_national_focus = JAP_reform_the_monetary_system
 	unlock_national_focus = JAP_yokosuka_naval_arsenal
+	complete_national_focus = JAP_modernize_the_military_system
+	complete_national_focus = JAP_invite_french_military_advisers
+	complete_national_focus = JAP_establish_the_heigakko
+	unlock_national_focus = JAP_british_naval_mission_to_japan
+	complete_national_focus = JAP_adopt_royal_navy_traditions
 }
 
 set_research_slots = 3

@@ -618,11 +618,19 @@ JAP_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_OPTION_HISTORICAL_JAP_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
+
+
 
 POL_ai_behavior = {
 	name = "POL_AI_BEHAVIOR"
