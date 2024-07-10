@@ -230,6 +230,7 @@ country_event = {
 		every_state = {
 			limit = {
 				is_core_of = FROM
+				is_owned_by = FROM
 			}
 			add_core_of = PRS
 		}
@@ -1177,6 +1178,7 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = FROM
+					is_owned_by = FROM
 				}
 				add_core_of = ROOT
 			}

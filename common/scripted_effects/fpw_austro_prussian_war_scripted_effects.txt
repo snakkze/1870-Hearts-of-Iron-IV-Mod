@@ -451,6 +451,21 @@ austrian_surrender_2 = {
 				add_state_core = 58	
 			}
 		}
+		if = {
+			limit = {
+				AND = {	
+					160 = {
+						is_owned_by = AUS
+					}
+					ITA = {
+						is_in_faction_with = PRS
+					}
+				}
+			}
+			ITA = {
+				transfer_state = 160
+			}
+		}
 		every_state = {
 			limit = {
 				AND = {
