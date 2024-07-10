@@ -1,6 +1,6 @@
 add_namespace = france_fpw
 
-# Reaction to the Emps dispatch
+# Reaction to the Ems dispatch
 country_event = {
 	id = france_fpw.1
 	title = france_fpw.1.t
@@ -83,6 +83,28 @@ country_event = {
 		}
 		hidden_effect = {
 			set_global_flag = fpw_no_ems_dispatch
+		}
+	}
+}
+
+# French demands sent to Bismarck after the Austro-Prussian war
+country_event = {
+	id = france_fpw.3
+	title = france_fpw.3.t
+	desc = france_fpw.3.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_fpw.3.a
+		ai_chance = {
+			base = 50 
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			    }
+		    }
 		}
 	}
 }

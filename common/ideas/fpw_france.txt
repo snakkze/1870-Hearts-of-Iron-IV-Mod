@@ -1,5 +1,64 @@
 ideas = {
     country = {
+	    # Parliament Suspended
+		fpw_suspend_parliament = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			modifier = {
+				neutrality_drift = 0.1
+				stability_weekly_factor = -0.001
+			}
+		}
+		
+	    # Marxist Literature
+		fpw_marxist_literature = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		
+	    # National Reforms
+		fpw_reformes_nationales = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_weekly_factor = 0.01
+			}
+		}
+		
         fpw_FRA_indemnity_debts_4 = {
             allowed = {
 			original_tag = FRA
