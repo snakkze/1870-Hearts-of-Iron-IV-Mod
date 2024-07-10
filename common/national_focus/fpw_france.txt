@@ -2609,4 +2609,26 @@
     ruling_party = communism
 		}
 	}
+}   
+    focus = {
+		id = FRA_luxembourg_crisis
+		icon = GFX_focus_generic_total_war
+		prerequisite = { focus = FRA_foreign_policies }
+		x = 0
+		y = 1
+		relative_position_id = FRA_foreign_policies
+		cost = 5
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_lux_tt
+				always = no
+		}
+	}
 }
