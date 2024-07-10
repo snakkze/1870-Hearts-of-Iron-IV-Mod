@@ -2819,11 +2819,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_political_power = 50
-		add_popularity = {
-    ideology = communism
-    popularity = 0.05
-}
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 	
@@ -2886,11 +2886,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		set_politics = {
-    ruling_party = communism
+			set_politics = {
+				ruling_party = communism
+			}
 		}
-	}
-}   
+	}   
     focus = {
 		id = FRA_luxembourg_crisis
 		icon = GFX_focus_generic_total_war
@@ -2910,6 +2910,7 @@
 			custom_trigger_tooltip = {
 				tooltip = FRA_lux_tt
 				always = no
+			}
 		}
 	}
 }
