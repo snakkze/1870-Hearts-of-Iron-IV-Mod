@@ -1761,7 +1761,7 @@
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = FRA_foreign_policies }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = FRA_foreign_policies
 		cost = 10
 		search_filters = {FOCUS_FILTER_HISTORICAL}
@@ -1810,7 +1810,7 @@
 			}
 		}
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = FRA_franco_prussian_war
 		cost = 10
 		ai_will_do = {
@@ -2538,6 +2538,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+		add_political_power = 50
+		add_popularity = {
+    ideology = communism
+    popularity = 0.05
+}
 		}
 	}
 	
@@ -2600,6 +2605,8 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+		set_politics = {
+    ruling_party = communism
 		}
 	}
 }
