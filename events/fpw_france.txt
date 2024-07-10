@@ -87,7 +87,7 @@ country_event = {
 	}
 }
 
-# French demands sent to Bismarck after the Austro-Prussian war
+# buy luxembourg (holland)
 country_event = {
 	id = france_fpw.3
 	title = france_fpw.3.t
@@ -96,6 +96,7 @@ country_event = {
 
 	is_triggered_only = yes
 
+	# accept
 	option = {
 		name = france_fpw.3.a
 		ai_chance = {
@@ -103,8 +104,174 @@ country_event = {
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
-			    }
-		    }
+			}
+		}
+	
+		custom_effect_tooltip = fpw_historical_option_tt
+		add_political_power = 250
+		add_stability = 0.25
+		hidden_effect = {
+			FRA = { country_event = { id = france_fpw.4 hours = 2 } }
+		}
+	}
+
+	# decline
+	option = {
+		name = france_fpw.3.b
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		hidden_effect = {
+			set_global_flag = fpw_no_ems_dispatch
+		}
+	}
+}
+
+# luxembourg accepted
+country_event = {
+	id = france_fpw.4
+	title = france_fpw.4.t
+	desc = france_fpw.4.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_fpw.4.a
+		ai_chance = {
+			base = 100 
+		}
+		add_political_power = -250
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Man the Guns"
+				}
+			}
+			FRA = {
+				set_autonomy = {
+					target = LUX
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.2
+				}
+			}
+			else = {
+				FRA = {
+					puppet = LUX
+				}
+			}
+		}
+		hidden_effect = {
+			HOL = {
+				end_puppet = LUX
+			}
+			PRS = { country_event = { id = france_fpw.6 hours = 2 } }
+		}
+	}
+}
+
+# luxembourg declined
+country_event = {
+	id = france_fpw.5
+	title = france_fpw.5.t
+	desc = france_fpw.5.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_fpw.5.a
+		ai_chance = {
+			base = 100 
+		}
+	}
+}
+
+# Prussia event luxembourg bought
+country_event = {
+	id = france_fpw.6
+	title = france_fpw.6.t
+	desc = france_fpw.6.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	# Oppose this purchase
+	option = {
+		name = france_fpw.6.a
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		custom_effect_tooltip = fpw_historical_option_tt
+		FRA = { country_event = { id = france_fpw.7 hours = 2 } }
+		hidden_effect = {
+			news_event = news_fpw.4
+		}
+	}
+
+	# And?
+	option = {
+		name = france_fpw.6.b
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_stability = -0.25
+		add_political_power = -250
+	}
+}
+
+
+# Prussia opposed
+country_event = {
+	id = france_fpw.7
+	title = france_fpw.7.t
+	desc = france_fpw.7.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	# Back down
+	option = {
+		name = france_fpw.7.a
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		custom_effect_tooltip = fpw_historical_option_tt
+		FRA = {
+			end_puppet = LUX
+		}
+	}
+
+	# WE DONT BACK DOWN!
+	option = {
+		name = france_fpw.7.b
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		declare_war_on = {
+			target = PRS
+			type = topple_government
 		}
 	}
 }

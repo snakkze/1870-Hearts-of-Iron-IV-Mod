@@ -118,3 +118,17 @@ news_event = {
 		}
 	}
 }
+
+# luxembourg crisis
+news_event = {
+	id = news_fpw.4
+	title = news_fpw.4.t
+	desc = news_fpw.4.d
+	picture = GFX_report_event_total_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.3.a
+	}
+}

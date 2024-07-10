@@ -2931,15 +2931,44 @@
 		cost = 5
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 		ai_will_do = {
-			factor = 10
+			base = 0
+			modifier = {
+				date > 1867.02.20
+				add = 100
+			}
 		}
 
 		available_if_capitulated = yes
 		
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_lux_tt
-				always = no
+			LUX = {
+				AND = {
+					exists = yes
+					OR = {
+						is_puppet_of = HOL
+						is_subject_of = HOL
+					}
+				}
+			}
+		}
+
+		bypass = {
+			NOT = {
+				LUX = {
+					AND = {
+						exists = yes
+						OR = {
+							is_puppet_of = HOL
+							is_subject_of = HOL
+						}
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			HOL = {
+				country_event = france_fpw.3
 			}
 		}
 	}

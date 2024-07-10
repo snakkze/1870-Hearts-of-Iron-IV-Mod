@@ -95,13 +95,37 @@
   spain_fpw.4.a:0 "How unfortunate."
 
   france_fpw.1.t:0 "Prussian reaction to the Ems-Dispatch"
-  france_fpw.1.d:0 ""
+  france_fpw.1.d:0 "[PRS.GetNameDefCap] has responded to our ultimatum in a mocking manner, publishing a modified version of it in the largest German newspaper, making us appear fearful of them. This has further enraged the French public, leaving us with a critical choice between going to war or facing national riots."
   france_fpw.1.a:0 "These damn Prussians!"
   france_fpw.1.b:0 "We shall ignore this."
+
   france_fpw.2.t:0 "The Prusso-Spanish King?"
-  france_fpw.2.d:0 ""
-  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!"
+  france_fpw.2.d:0 "In the wake of the Spanish Glorious Revolution and the overthrow of Isabella II, Spain is searching for a new monarch. One candidate they approached is Leopold of Hohenzollern. Although Prussia declined the offer to send one of their monarchs to Spain, we must demonstrate our strength by ensuring Prussia will not consider such actions in the future."
+  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!" #Ems-Dispatch
   france_fpw.2.b:0 "Let the Spanish do there own thing."
+
+  france_fpw.3.t:0 "[FRA.GetNameDefCap] Offers to Buy [LUX.GetNameDef]"
+  france_fpw.3.d:0 "The leader of [FRA.GetNameDefCap], [FRA.GetLeader], offers us 5 million to cede Luxembourg to them. This could be a great opportunity as we are in severe financial trouble, and the exclave of Luxembourg is no longer profitable after its territory was drastically decreased."
+  france_fpw.3.a:0 "Accept this offer"
+  france_fpw.3.b:0 "Decline"
+
+  france_fpw.4.t:0 "[HOL.GetNameDefCap] Accepts Our Purchase!"
+  france_fpw.4.d:0 "Our purchase of [LUX.GetNameDef] has been accepted by [HOL.GetNameDef], who have been deep in debt."
+  france_fpw.4.a:0 "Great!"
+
+  france_fpw.5.t:0 "[HOL.GetNameDefCap] Declines Our Purchase Idea!"
+  france_fpw.5.d:0 "Our purchase of [LUX.GetNameDef] has been declined by [HOL.GetNameDef]. Unfortunately, there is little we can do without violating international laws regarding the sovereignty of nations."
+  france_fpw.5.a:0 "Sacré bleu!"
+
+  france_fpw.6.t:0 "[FRA.GetNameDefCap] Seizes Control Over [LUX.GetNameDef]!"
+  france_fpw.6.d:0 "Latest news reports that [FRA.GetNameDef] has bought [LUX.GetNameDef] from [HOL.GetNameDef] for around 5 million guilders. Even though we agreed that France could take control of Luxembourg, the public is outraged that a member of the former German Confederation has lost its sovereignty to our greatest enemy."
+  france_fpw.6.a:0 "Demand France to give it back!"
+  france_fpw.6.b:0 "Ignore the public."
+
+  france_fpw.7.t:0 "[PRS.GetNameDefCap] Opposes the Luxembourg Purchase!"
+  france_fpw.7.d:0 "After our purchase of Luxembourg, [PRS.GetNameDef] has intervened, positioning themselves as protectors of the Germanic countries. Despite allowing such a purchase two years ago, it appears they have changed their stance. This could escalate into a conflict between us and the [PRS.GetAdjective]s."
+  france_fpw.7.a:0 "Luxembourg isn’t worth a war!"
+  france_fpw.7.b:0 "We will keep [LUX.GetNameDef], no matter what"
 
   egypt_fpw.1.t:0 "Suez Canal built!"
   egypt_fpw.1.d:0 ""
@@ -187,10 +211,6 @@
   france_fpw.2.d:0 "In the wake of the Spanish Glorious Revolution and the overthrow of Isabella II, Spain is searching for a new monarch. One candidate they approached is Leopold of Hohenzollern. Although Prussia declined the offer to send one of their monarchs to Spain, we must demonstrate our strength by ensuring Prussia will not consider such actions in the future."
   france_fpw.2.a:0 "We need to send a ultimatum to Prussia!" #Ems-Dispatch
   france_fpw.2.b:0 "Let the Spanish do there own thing."
-  
-  france_fpw.3.t:0 "French Demands Sent to Bismarck"
-  france_fpw.3.d:0 "Napoleon III has ordered us to send our demands to Bismarck after the war, and that time has finally arrived. We shall ask the Prussians for the Annexation of Luxembourg, in return signing a Non-Aggression Pact with Them."
-  france_fpw.3.a:0 "Send the Demands!"
 
 
   prussia_fpw.18.t: "Prussian Proposal for the German Confederation"
