@@ -6,10 +6,7 @@
 		
 		modifier = {
 			add = 10
-			AND = {
-				tag = FRA
-				is_debug = yes
-			}
+			tag = FRA
 		}
 	}
 	
@@ -2012,7 +2009,7 @@
 		prerequisite = { focus = FRA_empire_triumphant focus = FRA_restore_bourbon_monarchy focus = FRA_seek_revenge }
 		available = {
 		}
-		x = 0
+		x = -1
 		y = 3
 		relative_position_id = FRA_empire_triumphant
 		cost = 5
@@ -2031,7 +2028,291 @@
 			add_state_claim = 8
 			add_state_claim = 34
 			add_state_claim = 6
-			add_state_claim = 35
+			add_state_claim = 1011
+		}
+	}
+	focus = {
+		id = FRA_attack_belgium
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = FRA_natural_borders }
+		available = {
+			OR = {
+				country_exists = BEL
+				country_exists = LUX
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_natural_borders
+		cost = 5
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = LUX
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = BEL 
+					NOT = { has_war_with = BEL} 
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BEL
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LUX 
+					NOT = { has_war_with = LUX} 
+				}
+				create_wargoal = {
+					type = take_core_state
+					target = LUX
+				}
+			}
+			if = {
+				limit = {
+					BEL = { is_guaranteed_by = ENG }
+				}
+				custom_effect_tooltip = FRA_warning
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = BEL
+				NOT = { country_exists = BEL }
+			}
+			OR = {
+				has_war_with = LUX
+				NOT = { country_exists = LUX }
+			}
+		}
+	}
+	focus = {
+		id = FRA_round_2
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = FRA_natural_borders }
+		available = {
+			country_exists = PRS
+			custom_trigger_tooltip = {
+				tooltip = FRA_defeat
+				has_global_flag = fpw_prussia_won
+			}
+			days_since_capitulated > 730
+		}
+		x = 2
+		y = 2
+		relative_position_id = FRA_natural_borders
+		cost = 5
+		will_lead_to_war_with = PRS
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = PRS 
+					NOT = { has_war_with = PRS} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = PRS
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = PRS
+				NOT = { country_exists = PRS }
+			}
+		}
+	}
+	focus = {
+		id = FRA_limburg_or_war
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = FRA_attack_belgium }
+		available = {
+			NOT = {
+				owns_state = 1011
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_attack_belgium
+		cost = 5
+		will_lead_to_war_with = HOL
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = HOL 
+					NOT = { has_war_with = HOL} 
+				}
+				create_wargoal = {
+					type = take_core_state
+					target = HOL
+					generator = 1011
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = HOL
+				NOT = { country_exists = HOL }
+			}
+		}
+	}
+	focus = {
+		id = FRA_form_the_continental_alliance
+		icon = GFX_focus_focus_fra_third_empire
+		prerequisite = { focus = FRA_natural_borders }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = not_reich_trigger
+				PRS = {
+					NOT = { has_cosmetic_tag = PRS_GER }
+				}
+			}
+			has_country_leader = {
+				character = FRA_napoleon_iii
+				ruling_only = yes
+			}
+		}
+		x = -3
+		y = 1
+		relative_position_id = FRA_natural_borders
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = french_faction
+		}
+	}
+	
+	focus = {
+		id = FRA_invade_spain
+		icon = GFX_focus_generic_attack_nationalist_spain_focus
+		prerequisite = { focus = FRA_form_the_continental_alliance }
+		available = {
+			country_exists = SPR
+		}
+		x = -1
+		y = 1
+		relative_position_id = FRA_form_the_continental_alliance
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = SPR 
+					NOT = { has_war_with = SPR} 
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SPR
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = SPR
+				NOT = { country_exists = SPR }
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_disunite_italy
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = FRA_form_the_continental_alliance }
+		available = {
+			country_exists = ITA
+		}
+		x = 1
+		y = 1
+		relative_position_id = FRA_form_the_continental_alliance
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = ITA 
+					NOT = { has_war_with = ITA} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = ITA
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = ITA
+				NOT = { country_exists = ITA }
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_revenge_for_1815
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = FRA_form_the_continental_alliance }
+		available = {
+			country_exists = SOV
+		}
+		x = 0
+		y = 2
+		relative_position_id = FRA_form_the_continental_alliance
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = SOV 
+					NOT = { has_war_with = SOV} 
+				}
+				create_wargoal = {
+					type = topple_government
+					target = SOV
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = SOV
+				NOT = { country_exists = SOV }
+			}
 		}
 	}
 

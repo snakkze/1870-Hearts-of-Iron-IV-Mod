@@ -258,6 +258,67 @@ ideas = {
 				drift_defence_factor = -0.05
 			}
 		}
+
+		fpw_funding_austrian_seperatists = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor =  0.08
+			}
+		}
+
+		fpw_prs_gott_mit_uns = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				stability_factor = 0.05
+				army_morale_factor = 0.05
+				pocket_penalty = -0.025
+			}
+		}
+
+		fpw_prs_kaisers_germany = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension_against = -0.1
+			}
+		}
+
+		prs_fpw_suedfront = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			targeted_modifier = { tag = BAD attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = HES attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = BAV attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = WRT attack_bonus_against = 0.05 }
+		}
 	}
 	
 	hidden_ideas = {

@@ -198,7 +198,6 @@ country_event = {
 	# Prov Gov
 	option = {
 		name = franco_prussian_fpw.6.a
-		set_cosmetic_tag = FRA_republic
 		diplomatic_relation = {
 			country = PAP
 			relation = guarantee
@@ -217,6 +216,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
+			complete_national_focus = FRA_government_of_national_defence
 			# German event saying that the new gov wont surrender
 			# dec.a = Then we will have to take Paris!
 			#country_event = { id=franco_prussian_fpw.4 days = 1 }

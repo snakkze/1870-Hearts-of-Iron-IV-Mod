@@ -30,6 +30,9 @@ focus_tree = {
 		x = 1
 		y = 0
 		cost = 5
+		ai_will_do = {
+			base = 10
+		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		
 		available_if_capitulated = yes
@@ -46,6 +49,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_start
 		cost = 5
+		ai_will_do = {
+			base = 10
+		}
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		
 		available_if_capitulated = yes
@@ -62,6 +68,9 @@ focus_tree = {
 		available = { has_political_power > 50 }
 		x = 3
 		y = 1
+		ai_will_do = {
+			base = 3
+		}
 		relative_position_id = ITA_conservative_politics
 		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -83,6 +92,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_conservative_politics
 		cost = 5
+		ai_will_do = {
+			base = 3
+		}
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -110,6 +122,9 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
+		ai_will_do = {
+			base = 8
+		}
 		relative_position_id = ITA_conservative_politics
 		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY } 
@@ -130,6 +145,9 @@ focus_tree = {
 				tooltip = ITA_is_monarchy
 				has_idea = vittorio_emanuele
 			}
+		}
+		ai_will_do = {
+			base = 10
 		}
 		x = 1
 		y = 1
@@ -156,6 +174,9 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		ai_will_do = {
+			base = 9
+		}
 		relative_position_id = ITA_monarchist_propaganda
 		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -185,6 +206,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_start
 		cost = 5
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 
@@ -207,6 +231,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_ally_prussia
 		cost = 5
+		ai_will_do = {
+			base = 8
+		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -232,6 +259,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_start
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {}
 
@@ -254,6 +284,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_venice_for_support
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {}
 
@@ -289,6 +322,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_ally_prussia
 		cost = 1
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
@@ -317,6 +353,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_the_war_with_austria
 		cost = 1
+		ai_will_do = {
+			base = 8
+		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
@@ -338,6 +377,9 @@ focus_tree = {
 		}
 		bypass = {
 			owns_state = 160
+		}
+		ai_will_do = {
+			base = 8
 		}
 		x = 1
 		y = 1
@@ -366,6 +408,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_mountain_defence
 		cost = 1
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 
@@ -382,6 +427,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_w
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 
@@ -397,6 +445,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_seek_allies
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 
@@ -412,6 +463,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_seek_allies
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {}
 
@@ -456,6 +510,9 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
+		ai_will_do = {
+			base = 0
+		}
 		relative_position_id = ITA_franco_prussian_war
 		cost = 1
 
@@ -481,6 +538,9 @@ focus_tree = {
 		available = { has_idea = vittorio_emanuele }
 		x = 1
 		y = 1
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_w
 		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
@@ -503,6 +563,7 @@ focus_tree = {
 			}
 		}
 		x = -2
+		y = 1
 		y = 1
 		relative_position_id = ITA_venice_offensive
 		cost = 5
@@ -539,6 +600,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_l
 		cost = 10
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -564,6 +628,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_proclaim_the_republic
 		cost = 5
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -578,6 +645,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_proclaim_the_republic
 		cost = 5
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -593,6 +663,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = ITA_ban_monarchism
 		cost = 5
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -618,6 +691,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_l
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -641,6 +717,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_counter_coup
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -662,6 +741,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_counter_coup
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
@@ -693,6 +775,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_expansionism
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		will_lead_to_war_with = PAP
 		will_lead_to_war_with = FRA
@@ -732,6 +817,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = ITA_expansionism
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		
@@ -773,6 +861,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_focus_on_the_mediterranean
 		cost = 14
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		
@@ -892,6 +983,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_focus_on_the_mediterranean
 		cost = 14
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -969,6 +1063,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_bastion_of_democracy
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {}
 
@@ -990,6 +1087,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_betray_the_habsburgs
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL}
 
@@ -1024,6 +1124,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_plotting_against_the_ottomans
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1047,6 +1150,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_roman_ambition
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1077,6 +1183,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_roman_ambition
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1105,6 +1214,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_push_to_the_danube
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 		text_icon = NORDIC_focus_style
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -1124,6 +1236,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_attack_istanbul
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1153,6 +1268,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_revive_the_empire
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1183,6 +1301,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_push_to_the_danube
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1212,6 +1333,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_revive_the_empire
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1236,6 +1360,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_betray_the_habsburgs
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {}
 
@@ -1261,6 +1388,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_mto
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {}
 
@@ -1285,6 +1415,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_mto
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {}
 
@@ -1307,6 +1440,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = ITA_expansionism
 		cost = 5
+		ai_will_do = {
+			base = 10
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
@@ -1323,6 +1459,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_colonial_empire
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 
@@ -1368,6 +1507,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_colonial_empire
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
 		
@@ -1401,6 +1543,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_colonial_empire
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1432,6 +1577,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_establish_italian_east_asia
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -1453,6 +1601,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_establish_the_african_colonies
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
@@ -1482,6 +1633,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_establish_italian_east_asia
 		cost = 1
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
@@ -1504,11 +1658,15 @@ focus_tree = {
 				tooltip = ITA_is_monarchy
 				has_idea = vittorio_emanuele
 			}
+			num_of_controlled_states > 25
 		}
 		x = 0
 		y = 1
 		relative_position_id = ITA_establish_the_african_colonies
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -1525,6 +1683,9 @@ focus_tree = {
 		x = -8
 		y = 0
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_start
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		
@@ -1540,6 +1701,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_economics
 		search_filters = {}
 		
@@ -1570,6 +1734,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_expanding_military_industry
 		search_filters = {}
 		
@@ -1620,6 +1787,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_expanding_military_industry
 		search_filters = {}
 		
@@ -1649,6 +1819,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_lombardy_weapons
 		search_filters = {}
 		
@@ -1679,6 +1852,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_lombardy_weapons
 		search_filters = {}
 		
@@ -1707,6 +1883,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_economics
 		search_filters = {}
 		
@@ -1760,6 +1939,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_develop_south
 		search_filters = {}
 		
@@ -1810,6 +1992,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_produce_olive_oil
 		search_filters = {}
 		
@@ -1836,6 +2021,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_produce_olive_oil
 		search_filters = {}
 		
@@ -1864,6 +2052,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_economics
 		search_filters = {}
 		
@@ -1932,6 +2123,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_develop_north
 		search_filters = {}
 		
@@ -2000,6 +2194,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_construct_more_factories
 		search_filters = {}
 		
@@ -2035,6 +2232,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_construct_more_factories
 		search_filters = {}
 		
@@ -2067,6 +2267,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_produce_cheese
 		search_filters = {}
 		
@@ -2102,6 +2305,9 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 5
+		ai_will_do = {
+			base = 0
+		}
 		relative_position_id = ITA_navy
 		search_filters = {}
 		
@@ -2120,6 +2326,9 @@ focus_tree = {
 		x = 2
 		y = 2
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_navy
 		search_filters = {}
 		
@@ -2144,6 +2353,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 5
+		}
 		relative_position_id = ITA_borrow_ideas_from_uk
 		search_filters = {}
 		
@@ -2168,6 +2380,9 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 5
+		ai_will_do = {
+			base = 1
+		}
 		relative_position_id = ITA_borrow_ideas_from_uk
 		search_filters = {}
 		
@@ -2186,6 +2401,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = {
+			base = 1
+		}
 		relative_position_id = ITA_artillery_focus
 		search_filters = {}
 		
@@ -2211,6 +2429,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		ai_will_do = {
+			base = 1
+		}
 		relative_position_id = ITA_rifle_focus
 		search_filters = {}
 		
@@ -2235,6 +2456,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = {
+			base = 1
+		}
 		relative_position_id = ITA_rifle_focus
 		search_filters = {}
 		

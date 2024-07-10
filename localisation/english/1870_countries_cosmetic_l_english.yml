@@ -27,19 +27,27 @@
  PRS_nationalist:0 "Prussian Volksreich" 
  PRS_nationalist_DEF:0 "the Prussian Volksreich"
  PRS_nationalist_ADJ:0 "Prussian"
-
  PRS_greater_prussia:0 "Greater Prussian Empire" 
  PRS_greater_prussia_DEF:0 "the Greater Prussian Empire"
  PRS_greater_prussia_ADJ:0 "Prussian"
-
  PRS_greater_germany:0 "Greater German Confederation" 
  PRS_greater_germany_DEF:0 "the Greater German Confederation"
  PRS_greater_prussia_ADJ:0 "German"
-
- # https://tombricks.com/
  PRS_GER:0 "German Empire" 
  PRS_GER_DEF:0 "the German Empire"
  PRS_GER_ADJ:0 "German"
+ PRS_republic:0 "Republic of Prussia"
+ PRS_republic_DEF:0 "the Prussian Republic"
+ PRS_republic_monarchy:0 "United Kingdom of Prussia"
+ PRS_republic_monarchy_DEF:0 "the United Kingdom of Prussia"
+ PRS_republic_monarchy_historical_1:0 "United Kingdom of Prussia"
+ PRS_republic_monarchy_historical_1_DEF:0 "the United Kingdom of Prussia"
+ PRS_republic_monarchy_historical_2:0 "United Kingdom of Prussia"
+ PRS_republic_monarchy_historical_2_DEF:0 "the United Kingdom of Prussia"
+ PRS_socialist_republic_1:0 "Socialist Republic of Prussia"
+ PRS_socialist_republic_1_DEF:0 "the Socialist Republic of Prussia"
+ PRS_socialist_republic_2:0 "Socialist Republic of Prussia"
+ PRS_socialist_republic_2_DEF:0 "the Socialist Republic of Prussia"
 
  FRA_republic:0 "Third French Republic"
  FRA_republic_DEF:0 "the Third French Republic"
