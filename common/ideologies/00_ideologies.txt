@@ -181,6 +181,14 @@ ideologies = {
 			democratic_socialism = {
 				can_be_randomly_selected = no
 			}
+
+			socialist_constitutional_monarchism = { #more of a filler until a proper ideology is set up in the monarchy
+				can_be_randomly_selected = no
+			}
+
+			socialist_semi_constitutional_monarchism = { #more of a filler until a proper ideology is set up in the monarchy
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

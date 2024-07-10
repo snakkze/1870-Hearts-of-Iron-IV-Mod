@@ -236,8 +236,11 @@ focus_tree = {
 		}
 		
 		available = {
-			NOT = {
-				has_completed_focus = PRS_dreams_of_equality
+			if = {
+				limit = {
+					has_completed_focus = PRS_bruderkrieg_ending
+				}
+				has_completed_focus = PRS_suspend_parliament
 			}
 			if = {
 				limit = {
@@ -5305,7 +5308,7 @@ focus = {
 		y = 2
 	
 		completion_reward = {
-			#country_event = { id = prussia_fpw.23 }
+			country_event = { id = prussia_fpw.40 }
 		}
 	}
 

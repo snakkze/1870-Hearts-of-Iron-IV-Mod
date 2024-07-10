@@ -278,6 +278,10 @@
   prussia_fpw.39.d: "[AUS.GetNameDefCap] has declined our demand to unify the Greater German Space under our rule. This rejection signifies a continued division within the German-speaking territories and a clear refusal to submit to our leadership. We can't allow this rejection, as one country shouldn't decide the future of our shared culture."
   prussia_fpw.39.a: "War it is!"
 
+  prussia_fpw.40.t: "The Public Demands"
+  prussia_fpw.40.d: "With significant public outrage after the loss in the Austro-Prussian War, many have criticized the government for its failure to provide for the people.\n\nHaving had enough of this, the reform movement has become the most popular movement in Prussia, and now the public wants what they've been protesting for."
+  prussia_fpw.40.a: "Towards Proper Democracy"
+  prussia_fpw.40.b: "Towards Socialism"
 
  
   generic.26.t:0 "Warning"
@@ -377,8 +381,16 @@
   fpw_japan.15.t:0 "Death Of Emperor Komei"
   fpw_japan.15.d:0 "Emperor Komei has passed away at the age of 35. His sudden death has left a void in the heart of the nation. "
   fpw_japan.15.a:0 "Long Live Emperor Meiji"
+<<<<<<< Updated upstream
   
   fpw_japan.16.t:0 "A New Era"
   fpw_japan.16.d:0 "Following the revolutionary reforms outlined in the Charter Oath, the government has begun considering a new symbol to represent a modernized Japan. The traditional flags have served their purpose, but some believe a new emblem is needed to reflect the nation's aspirations. "
   fpw_japan.16.a:0 "Embrace the Rising Sun (Change Flag)"
   fpw_japan.16.b:0 "Keep Current Flag"
+=======
+
+  fpw_flags.1.t: "Historical Prussian Flag"
+  fpw_flags.1.d: "Would you prefer to use the historical flag during the time or use the same historical flag that was improved to be appealing to the eyes?\n\nYou can always revert your changes later."
+  fpw_flags.1.a: "The Historical Flag"
+  fpw_flags.1.b: "Improved Historical Flag"
+>>>>>>> Stashed changes

@@ -1307,3 +1307,38 @@ country_event = {
 		}
 	}
 }
+
+# The Public Demands
+country_event = {
+	id = prussia_fpw.40
+	title = prussia_fpw.40.t
+	desc = prussia_fpw.40.d
+	#picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = { # Liberal
+		name = prussia_fpw.40.a
+		trigger = {
+			fascism > party_popularity@communism
+		}
+
+		set_politics = {
+    		ruling_party = fascism
+    		elections_allowed = no
+		}
+
+	}
+
+	option = { # Socialist
+		name = prussia_fpw.40.b
+		trigger = {
+			communism > party_popularity@fascism
+		}
+
+		set_politics = {
+    		ruling_party = communism
+    		elections_allowed = no
+		}
+	}
+}

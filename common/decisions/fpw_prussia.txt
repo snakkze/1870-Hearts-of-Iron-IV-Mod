@@ -72,11 +72,13 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		visible = {
+			NOT = {
+				has_country_flag = bop_socialist_branch	
+			}
 		}
 
 		available = {
 			has_completed_focus = PRS_unite_the_opposition
-			activate_decision = PRS_bop_reform_guarantee_freedom
 			NOT = {
 				has_decision = PRS_bop_reform_criticize_the_liberals
 			}
@@ -87,8 +89,9 @@ PRS_reform_balance_of_power_category = {
 		fire_only_once = yes
 
 		complete_effect = {
+			custom_effect_tooltip = bop_democratic_branch_tt
+			set_country_flag = bop_democratic_branch
 			set_country_flag = criticizing_socialist
-			set_country_flag = took_criticize_the_socialist
 		}
 
 		remove_effect = {
@@ -97,7 +100,9 @@ PRS_reform_balance_of_power_category = {
 				tooltip_side = PRS_reform_liberal
     			value = 0.1
 			}
+			clr_country_flag = criticizing_socialist
 			set_country_flag = criticized_socialist
+			set_country_flag = doing_bop
 		}
 	}	
 	PRS_bop_reform_promote_freedom = {
@@ -109,7 +114,10 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		visible = {
-			has_country_flag = criticizing_socialist
+			OR = {
+				has_country_flag = criticizing_socialist
+				has_country_flag = criticized_socialist
+			}	
 		}
 
 		available = {
@@ -117,7 +125,7 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		cost = 15
-		days_remove = 15
+		days_remove = 35
 		fire_only_once = yes
 
 		complete_effect = {
@@ -125,7 +133,6 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		remove_effect = {
-			clr_country_flag = criticizing_socialist
 			clr_country_flag = criticized_socialist
 			set_country_flag = promoted_freedom
 			add_power_balance_value = {
@@ -145,7 +152,10 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		visible = {
-			has_country_flag = promoting_freedom
+			OR = {
+				has_country_flag = promoting_freedom
+				has_country_flag = promoted_freedom
+			}	
 		}
 
 		available = {
@@ -153,11 +163,15 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		cost = 15
-		days_remove = 15
+		days_remove = 35
 		fire_only_once = yes
 
+		complete_effect = {
+			set_country_flag = promising_better_reforms
+		}
+
 		remove_effect = {
-			set_country_flag = better_reforms
+			set_country_flag = completed_better_reforms
 			add_power_balance_value = {
    				id = PRS_reform_power_balance
 				tooltip_side = PRS_reform_liberal
@@ -177,31 +191,81 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		visible = {
-			has_country_flag = better_reforms
+			OR = {
+				has_country_flag = promising_better_reforms
+				has_country_flag = better_reforms
+			}	
 		}
 
 		available = {
+			has_country_flag = completed_better_reforms
 		}
 
 		cost = 15
 		days_remove = 15
 		fire_only_once = yes
 
+		complete_effect = {
+			clr_country_flag = completed_better_reforms
+		}
+
 		remove_effect = {
 			add_dynamic_modifier = { modifier = fpw_liberal_front }
-			add_power_balance_value = {
-   				id = PRS_reform_power_balance
-				tooltip_side = PRS_reform_liberal
-    			value = 0.5
-			}
+			custom_effect_tooltip = bop_set_liberal_complete_tt
 			hidden_effect = {
 				remove_dynamic_modifier = { modifier = fpw_popular_front }
-				clr_country_flag = better_reforms
+				add_power_balance_value = {
+   					id = PRS_reform_power_balance
+					tooltip_side = PRS_reform_liberal
+    				value = 1.0
+				}
 			}
 		}
 	}
 
 	PRS_bop_reform_criticize_the_liberals = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		NOT = {
+			has_country_flag = bop_democratic_branch	
+		}
+
+		available = {
+			has_completed_focus = PRS_unite_the_opposition
+			#activate_decision = 
+			NOT = {
+				has_decision = PRS_bop_reform_criticize_the_socialist
+			}
+		}
+
+		cost = 15
+		days_remove = 35
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = bop_socialist_branch_tt
+			set_country_flag = criticizing_liberals
+			set_country_flag = bop_socialist_branch
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_socialist
+    			value = -0.1
+			}
+			set_country_flag = doing_bop
+			clr_country_flag = criticizing_liberals
+			set_country_flag = criticized_liberals
+		}
+	}
+
+	PRS_bop_reform_officialize_the_movement = {
 		priority = 98
 		#icon =
 
@@ -210,24 +274,127 @@ PRS_reform_balance_of_power_category = {
 		}
 
 		visible = {
-			NOT = {
-				has_country_flag = took_criticize_the_socialist	
+			OR = {
+				has_country_flag = criticizing_liberals
+				has_country_flag = criticized_liberals
 			}
 		}
 
 		available = {
-			has_completed_focus = PRS_unite_the_opposition
+			has_country_flag = criticized_liberals
 		}
 
 		cost = 15
 		days_remove = 35
-		days_re_enable = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = officializing_movement
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				recruit_character = PRS_august_bebel
+			}
+			retire_ideology_leader = communism
+    		add_country_leader_role = {
+        		character = PRS_august_bebel
+        		promote_leader = yes
+        		country_leader = {
+            		ideology = socialist_semi_constitutional_monarchism
+            		traits = { }
+        		}
+    		}
+			set_party_name = {
+    			ideology = communism
+				name = PRS_socialist_party
+    			long_name = PRS_socialist_party_long
+			}
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_socialist
+    			value = -0.1
+			}
+			clr_country_flag = officializing_movement
+			set_country_flag = officilized_movement
+		}
+	}
+
+	PRS_bop_reform_promise_land_and_bread = {
+		priority = 97
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = officializing_movement
+				has_country_flag = officilized_movement
+			}
+		}
+
+		available = {
+			has_country_flag = officilized_movement
+		}
+
+		cost = 15
+		days_remove = 35
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = promising_land_and_bread
+		}
 
 		remove_effect = {
 			add_power_balance_value = {
    				id = PRS_reform_power_balance
 				tooltip_side = PRS_reform_socialist
     			value = -0.1
+			}
+			clr_country_flag = promising_land_and_bread
+			set_country_flag = promised_land_and_bread
+		}
+	}
+
+	PRS_bop_reform_socialist_front = {
+		priority = 96
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = promising_land_and_bread
+				has_country_flag = promised_land_and_bread
+			}
+		}
+
+		available = {
+			has_country_flag = promised_land_and_bread
+		}
+
+		cost = 15
+		days_remove = 35
+		fire_only_once = yes
+
+		complete_effect = {
+			clr_country_flag = promised_land_and_bread
+		}
+
+		remove_effect = {
+			add_dynamic_modifier = { modifier = fpw_socialist_front }
+			custom_effect_tooltip = bop_set_socialist_complete_tt
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = fpw_popular_front }
+				add_power_balance_value = {
+   					id = PRS_reform_power_balance
+					tooltip_side = PRS_reform_socialist
+    				value = -1.0
+				}
 			}
 		}
 	}

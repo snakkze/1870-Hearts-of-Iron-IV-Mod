@@ -139,4 +139,9 @@ spriteTypes = {
 		name = "GFX_idea_liberal_front"
 		texturefile = "gfx/interface/ideas/PRS/prs_icon_liberal_front.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_socialist_front"
+		texturefile = "gfx/interface/ideas/PRS/prs_icon_socialist_front.dds"
+	}
 }
