@@ -1327,7 +1327,8 @@ country_event = {
     		ruling_party = fascism
     		elections_allowed = no
 		}
-
+		complete_national_focus = PRS_focus_a_new_constitution
+		country_event = prussia_fpw.41
 	}
 
 	option = { # Socialist
@@ -1340,5 +1341,68 @@ country_event = {
     		ruling_party = communism
     		elections_allowed = no
 		}
+		complete_national_focus = PRS_focus_a_new_constitution
+		country_event = prussia_fpw.41
+	}
+}
+
+# Completed Constitution
+country_event = {
+	id = prussia_fpw.41
+	title = prussia_fpw.41.t
+	desc = prussia_fpw.41.d
+	#picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = { # Republic
+		name = prussia_fpw.41.a
+		trigger = {
+			has_government = fascism
+		}
+
+		custom_effect_tooltip = fpw_branch_incomplete_tt
+		hidden_effect = {
+			set_cosmetic_tag = PRS_republic
+		}
+	}
+
+	option = { # Republic Monarchy
+		name = prussia_fpw.41.b
+		trigger = {
+			has_government = fascism
+		}
+		custom_effect_tooltip = fpw_branch_incomplete_tt
+		if = {
+			limit = {
+				has_cosmetic_tag = PRS_historical_1
+			}
+			hidden_effect = {
+				set_cosmetic_tag = PRS_republic_monarchy_historical_1
+			}	
+		}
+		else_if = {
+			limit = {
+				has_cosmetic_tag = PRS_historical_2
+			}
+			hidden_effect = {
+				set_cosmetic_tag = PRS_republic_monarchy_historical_2
+			}	
+		}
+		else = {
+			hidden_effect = {
+				set_cosmetic_tag = PRS_republic_monarchy
+			}	
+		}
+	}
+
+	option = { # Socialist Republic
+		name = prussia_fpw.41.c
+		trigger = {
+			has_government = communism
+		}
+
+		custom_effect_tooltip = fpw_branch_incomplete_tt
+		country_event = fpw_flags.3
 	}
 }

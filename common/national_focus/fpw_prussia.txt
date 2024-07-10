@@ -167,9 +167,11 @@ focus_tree = {
 		relative_position_id = PRS_annex_holstein
 
 		allow_branch = {
-			#is_debug = yes #temporarily hidden until finished
 			NOT = {
-				has_completed_focus = PRS_austro_prussian_victory
+				OR = {
+					has_completed_focus = PRS_austro_prussian_victory
+					has_completed_focus = PRS_greater_german_solution
+				}	
 			}
 		}
 
@@ -214,7 +216,16 @@ focus_tree = {
 				OR = {
 					has_completed_focus = PRS_dreams_of_equality
 					has_completed_focus = PRS_continue_bismarcks_plan
+					has_completed_focus = PRS_greater_german_solution
 				}	
+			}
+		}
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_suspend_parliament
 			}
 		}
 
@@ -273,7 +284,10 @@ focus_tree = {
 			factor = 10
 		}
 
+		cancel_if_invalid = yes
+
 		available = {
+			has_political_power = 65
 			if = {
 				limit = {
 					has_completed_focus = PRS_governmental_reform
@@ -283,7 +297,65 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = -65
+			add_timed_idea = {
+   				idea = fpw_funding_austrian_seperatists
+    			days = 180
+			}
+			custom_effect_tooltip = prs_fund_seperatist_bohemia_tt
+			custom_effect_tooltip = prs_fund_seperatist_hungary_tt
+
+			hidden_effect = {
+				add_resistance_target = {
+    				id = 9
+   					amount = 23
+    				occupied = CZE
+    				occupier = AUS
+    				days = 180
+				}
+				add_resistance_target = {
+    				id = 75
+   					amount = 26
+    				occupied = CZE
+    				occupier = AUS
+    				days = 180
+				}
+				add_resistance_target = {
+    				id = 69
+   					amount = 30
+    				occupied = CZE
+    				occupier = AUS
+    				days = 180
+				}	
+				add_resistance_target = {
+    				id = 74
+   					amount = 31
+    				occupied = CZE
+    				occupier = AUS
+    				days = 180
+				}
+				add_resistance_target = {
+    				id = 155
+   					amount = 26
+    				occupied = HUN
+    				occupier = AUS
+    				days = 180
+				}
+				add_resistance_target = {
+    				id = 43
+   					amount = 28
+    				occupied = HUN
+    				occupier = AUS
+    				days = 180
+				}
+				add_resistance_target = {
+    				id = 154
+   					amount = 32
+    				occupied = HUN
+    				occupier = AUS
+    				days = 180
+				}
+			}
 		}
 	}
 
@@ -296,12 +368,37 @@ focus_tree = {
 		y = 1
 		cost = 4
 
+		cancel_if_invalid = yes
+
 		ai_will_do = {
 			factor = 10
 		}
 
+		available = {
+			has_political_power = 80
+		}
+
 		completion_reward = {
-			# Defense on core territory
+			add_political_power = -80
+			add_war_support = 0.05
+			64 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 4
+    				province = {
+        				limit_to_victory_point = yes
+					}	
+    			}
+			}
+			763 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 4
+    				province = {
+        				limit_to_victory_point = yes
+					}	
+    			}
+			}
 		}
 	}
 
@@ -318,8 +415,23 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			owns_state = 66
+			has_political_power = 35
+		}
+
 		completion_reward = {
-			
+			add_political_power = -35
+			66 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 3
+    				province = {
+        				limit_to_border = yes
+        				level < 3
+					}	
+    			}
+			}
 		}
 	}
 
@@ -337,7 +449,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = prs_hungary_revolt_tt
 		}
 	}
 
@@ -452,7 +564,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = fpw_prs_gott_mit_uns
 		}
 	}
 
@@ -479,6 +591,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_command_power = 25
 			create_wargoal = {
 				type = topple_government
 				target = AUS
@@ -498,6 +611,7 @@ focus_tree = {
 		allow_branch = {
 			NOT = {
 				has_completed_focus = PRS_bruderkrieg_ending
+				has_completed_focus = PRS_greater_german_solution
 			}
 		}
 
@@ -541,13 +655,11 @@ focus_tree = {
 
 		allow_branch = {
 			NOT = {
-				has_completed_focus = PRS_continue_bismarcks_plan
-			}
-		}
-
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
+				OR = {
+					has_completed_focus = PRS_continue_bismarcks_plan
+					has_completed_focus = PRS_bruderkrieg_ending
+					has_completed_focus = PRS_greater_german_solution
+				}	
 			}
 		}
 
@@ -675,8 +787,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# "Blame" the victory on the kaiser
-			# Support for authoritarian ideology
+			add_ideas = fpw_prs_kaisers_germany
+			add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.085
+			}
 		}
 	}
 
@@ -697,6 +812,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_threat = 5
+			add_political_power = 85
+			add_opinion_modifier = { target = BAD modifier = hostile_status }
+			add_opinion_modifier = { target = HES modifier = hostile_status }
+			add_opinion_modifier = { target = BAV modifier = hostile_status }
+			add_opinion_modifier = { target = WRT modifier = hostile_status }
 		}
 	}
 
@@ -737,7 +858,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# modifier attack on core bav, wrt, bad, hes
+			add_timed_idea = {
+				idea = prs_fpw_suedfront
+				days = 380
+			} 
 		}
 	}
 
@@ -809,16 +933,21 @@ focus_tree = {
 		relative_position_id = PRS_the_unified_north
 		x = 1
 		y = 2
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		completion_reward = {
-			# France will get an event or decision to intervene in that war, ai will always do
-			# If they intervene a war will break out between italy and prussia against france, austria and the south german states
-			# If no interventions nothing happens
+			add_political_power = 150
+			set_popularities = {
+				democratic = 0
+				neutrality = 100
+				fascism = 0
+				communism = 0
+			}
+			custom_effect_tooltip = prs_focus_constitution_rework_tt
 		}
 	}
 	
@@ -845,6 +974,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_cosmetic_tag = PRS_GER
+			add_stability = 0.1
+			remove_ideas = fpw_prs_kaisers_germany
 		}
 	}
 
@@ -860,6 +991,7 @@ focus_tree = {
 		allow_branch = {
 			NOT = {
 				has_completed_focus = PRS_integrate_minor_austrian_lands
+				has_completed_focus = PRS_greater_german_solution
 			}
 		}
 
@@ -1464,7 +1596,7 @@ focus_tree = {
 
 		allow_branch = {
 			NOT = {
-				has_completed_focus = PRS_lesser_german_solution
+				has_completed_focus = PRS_greater_german_solution
 			}
 			is_debug = yes
 		}
@@ -1575,7 +1707,7 @@ focus_tree = {
 
 		allow_branch = {
 			NOT = {
-				has_completed_focus = PRS_lesser_german_solution
+				has_completed_focus = PRS_greater_german_solution
 			}
 			is_debug = yes
 		}
@@ -5181,6 +5313,7 @@ focus = {
 				OR = {
 					has_completed_focus = PRS_suspend_parliament
 					has_completed_focus = PRS_austro_prussian_victory
+					has_completed_focus = PRS_greater_german_solution
 				}	
 			}
 		}
@@ -5416,7 +5549,16 @@ focus = {
 				OR = {
 					has_completed_focus = PRS_dreams_of_equality
 					has_completed_focus = PRS_austro_prussian_victory
+					has_completed_focus = PRS_greater_german_solution
 				}	
+			}
+		}
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_suspend_parliament
 			}
 		}
 

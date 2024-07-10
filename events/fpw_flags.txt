@@ -21,4 +21,43 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = fpw_flags.2
+	title = fpw_flags.2.t
+	desc = fpw_flags.2.d
 
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_flags.2.a 
+		hidden_effect = {
+			PRS = { set_cosmetic_tag = PRS_republic_monarchy_historical_1 }
+		}
+	}
+	option = {
+		name = fpw_flags.2.b
+		hidden_effect = {
+			PRS = { set_cosmetic_tag = PRS_republic_monarchy_historical_2 }
+		}
+	}
+}
+country_event = {
+	id = fpw_flags.3
+	title = fpw_flags.3.t
+	desc = fpw_flags.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_flags.3.a 
+		hidden_effect = {
+			PRS = { set_cosmetic_tag = PRS_socialist_republic_1 }
+		}
+	}
+	option = {
+		name = fpw_flags.3.b
+		hidden_effect = {
+			PRS = { set_cosmetic_tag = PRS_socialist_republic_2 }
+		}
+	}
+}

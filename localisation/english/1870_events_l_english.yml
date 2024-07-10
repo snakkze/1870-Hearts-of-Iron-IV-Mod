@@ -283,6 +283,12 @@
   prussia_fpw.40.a: "Towards Proper Democracy"
   prussia_fpw.40.b: "Towards Socialism"
 
+  prussia_fpw.41.t: "Liberal Front Prevails"
+  prussia_fpw.41.d: ""
+  prussia_fpw.41.a: "Proclaim the @PRSRepublic"
+  prussia_fpw.41.b: "Proclaim the @PRSUnited Kingdom"
+  prussia_fpw.41.c: "Proclaim the @PRSSocialist Republic"
+
  
   generic.26.t:0 "Warning"
   generic.26.d:0 "This mod is a very early release, and many bugs will be present, and many national focuses will be missing. If you find any bugs, please report them to the Discord server. For now, we only recommend playing as Prussia or Italy."
@@ -381,16 +387,21 @@
   fpw_japan.15.t:0 "Death Of Emperor Komei"
   fpw_japan.15.d:0 "Emperor Komei has passed away at the age of 35. His sudden death has left a void in the heart of the nation. "
   fpw_japan.15.a:0 "Long Live Emperor Meiji"
-<<<<<<< Updated upstream
   
   fpw_japan.16.t:0 "A New Era"
   fpw_japan.16.d:0 "Following the revolutionary reforms outlined in the Charter Oath, the government has begun considering a new symbol to represent a modernized Japan. The traditional flags have served their purpose, but some believe a new emblem is needed to reflect the nation's aspirations. "
   fpw_japan.16.a:0 "Embrace the Rising Sun (Change Flag)"
   fpw_japan.16.b:0 "Keep Current Flag"
-=======
 
   fpw_flags.1.t: "Historical Prussian Flag"
   fpw_flags.1.d: "Would you prefer to use the historical flag during the time or use the same historical flag that was improved to be appealing to the eyes?\n\nYou can always revert your changes later."
   fpw_flags.1.a: "The Historical Flag"
   fpw_flags.1.b: "Improved Historical Flag"
->>>>>>> Stashed changes
+  fpw_flags.2.t: "Historical Prussian Flag"
+  fpw_flags.2.d: "Would you prefer to use the historical flag during the time or use the same historical flag that was improved to be appealing to the eyes?\n\nYou can always revert your changes later."
+  fpw_flags.2.a: "The Historical Flag"
+  fpw_flags.2.b: "Improved Historical Flag"
+  fpw_flags.3.t: "Flag For a New Prussia"
+  fpw_flags.3.d: "(Flag 1) Traditional Prussian two-sided black and white, communist theme\n\n(Flag 2) Inspired by the First International, uses a red background with eblem inspired by the SDAP.\n\n\nYou can always revert your changes later."
+  fpw_flags.3.a: "Flag 1"
+  fpw_flags.3.b: "Flag 2"
