@@ -1,0 +1,81 @@
+FRA_historical = {
+	name = "French historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		or = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			has_country_flag = FRA_AI_RANDOM_DEFAULT
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+		has_completed_focus = FRA_empire_triumphant
+	}
+
+	ai_national_focuses = {
+		FRA_internal_politics
+		FRA_foreign_policies
+		FRA_support_the_union_liberale
+		FRA_draft_the_constitution
+		FRA_align_moderate_conservatives
+		FRA_alliance_with_legitimists
+		FRA_implement_new_constitution
+		FRA_government_of_national_defence
+		FRA_third_french_republic
+		FRA_eternal_republic
+		FRA_return_stability
+		FRA_crackdown_on_radicalism
+		FRA_thiers_presidency
+		FRA_republic_reform
+		FRA_expanding_colonial_empire
+		FRA_strike_africa
+		FRA_defeat_morocco
+		FRA_strike_the_east
+		FRA_attack_dai_nam
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
