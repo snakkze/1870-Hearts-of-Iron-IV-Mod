@@ -2966,11 +2966,8 @@ focus = {
 				}
 				if = {
 					limit = {
-						AND = {
-							neutrality < 50
-							NOT = {
-								has_government = neutrality
-							}
+						NOT = {
+							has_government = neutrality
 						}
 					}
 					start_civil_war = {
