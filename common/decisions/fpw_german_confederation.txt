@@ -237,6 +237,7 @@ fpw_german_unification_category = {
 			modifier = {
 				AND = {
 					original_tag = SOV
+					PRS = { has_completed_focus = PRS_secure_russian_friendship }
 					FRA = {
 						has_war_with = PRS
 						is_in_faction_with = AUS
