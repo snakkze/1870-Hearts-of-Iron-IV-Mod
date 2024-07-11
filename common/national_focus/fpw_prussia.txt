@@ -2973,50 +2973,45 @@ focus = {
 							}
 						}
 					}
-					if = {
-						limit = {
-							has_idea = fpw_national_reforms
-						}
-						start_civil_war = {
-							ruling_party = neutrality
-							# Original country's ideology changes to communism
-							ideology = ROOT
-							# Breakaway gets old ideology of ROOT
-							size = 0.8
-							capital = 64
-							states = all
-							states_filter = { 
-								NOT = {
-									OR = {
-										state = 947
-										state = 59
-										state = 944
-										state = 56
-										state = 950
-										state = 951
-										state = 942
-										state = 57
-										state = 981
-										state = 51
-										state = 42
-										state = 939
-										state = 943
-										state = 948
-										state = 941
-										state = 946
-										state = 58
-										state = 909
-										state = 912
-										state = 945
-										is_core_of = AUS
-										is_core_of = CZE
-										is_core_of = BAV
-										is_core_of = HES
-										is_core_of = BAD
-										is_core_of = WRT
-										is_core_of = HOH
-										is_core_of = FRK
-									}
+					start_civil_war = {
+						ruling_party = neutrality
+						# Original country's ideology changes to communism
+						ideology = ROOT
+						# Breakaway gets old ideology of ROOT
+						size = 0.8
+						capital = 64
+						states = all
+						states_filter = { 
+							NOT = {
+								OR = {
+									state = 947
+									state = 59
+									state = 944
+									state = 56
+									state = 950
+									state = 951
+									state = 942
+									state = 57
+									state = 981
+									state = 51
+									state = 42
+									state = 939
+									state = 943
+									state = 948
+									state = 941
+									state = 946
+									state = 58
+									state = 909
+									state = 912
+									state = 945
+									is_core_of = AUS
+									is_core_of = CZE
+									is_core_of = BAV
+									is_core_of = HES
+									is_core_of = BAD
+									is_core_of = WRT
+									is_core_of = HOH
+									is_core_of = FRK
 								}
 							}
 						}
