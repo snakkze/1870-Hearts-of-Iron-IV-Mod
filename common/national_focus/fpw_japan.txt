@@ -1237,9 +1237,24 @@ focus_tree = {
 		add_ideas = {
 		civilian_economy
 		}
-		add_ideas = {
-		export_focus
-		}
+		if = {
+			limit = {
+				has_idea = export_focus
+				}
+			swap_ideas = { 
+			remove_idea = export_focus
+			add_idea = free_trade
+			}
+			}
+		if = {
+			limit = {
+				has_idea = limited_exports
+				}
+			swap_ideas = { 
+			remove_idea = limited_exports
+			add_idea = export_focus
+			}
+			}
 		}
 	}
 	
@@ -1411,7 +1426,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_discuss_the_Sakhalin_situation_with_russia
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_PRS_russian_friendship
 		prerequisite = { focus = JAP_our_sphere_of_influence }
 		relative_position_id = JAP_our_sphere_of_influence
 		x = -2
@@ -1421,6 +1436,14 @@ focus_tree = {
 		available = {
 		NOT = {
 		has_war_with = SOV
+		}
+		}
+		
+		bypass = {
+		537 = {
+		NOT ={
+		is_controlled_by = TRB
+		}
 		}
 		}
 
@@ -1491,7 +1514,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_launch_the_iwakura_mission
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_jap_iwakura_mission
 		prerequisite = { focus = JAP_open_the_nation }
 		relative_position_id = JAP_open_the_nation
 		x = 0

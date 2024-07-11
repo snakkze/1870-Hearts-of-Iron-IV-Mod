@@ -442,6 +442,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_jap_national_sovereignty"
 		texturefile = "gfx/interface/goals/focus_jap_national_sovereignty.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_iwakura_mission"
+		texturefile = "gfx/interface/goals/focus_jap_iwakura_mission.dds"
 	}	
 }
 
