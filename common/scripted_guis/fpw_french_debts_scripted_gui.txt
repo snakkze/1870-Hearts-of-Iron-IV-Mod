@@ -18,296 +18,194 @@ scripted_gui = {
 
 			prs_15_visible = {
 				15 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}
 
 			prs_16_visible = {
 				16 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}
 
 			prs_17_visible = {
 				17 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_18_visible = {
 				18 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_24_visible = {
 				24 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_27_visible = {
 				27 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_28_visible = {
 				28 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_29_visible = {
 				29 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_785_visible = {
 				785 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_971_visible = {
 				971 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_972_visible = {
 				972 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_973_visible = {
 				973 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_974_visible = {
-				972 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+				974 = {
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_975_visible = {
 				975 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_976_visible = {
 				976 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-						PRS = {
-							has_country_flag = fpw_PRS_took_nanzig_epinal
-						}
-					}
+					is_owned_by = PRS
 				}
 			}	
 
 			prs_977_visible = {
 				977 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-						PRS = {
-							has_country_flag = fpw_PRS_took_nanzig_epinal
-						}
-					}
+					is_owned_by = PRS
 				}
 			}
 
 			# France
 			fra_15_visible = {
 				15 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}
 
 			fra_16_visible = {
 				16 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}
 
 			fra_17_visible = {
 				17 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_18_visible = {
 				18 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_24_visible = {
 				24 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_27_visible = {
 				27 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_28_visible = {
 				28 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_29_visible = {
 				29 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_785_visible = {
 				785 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_971_visible = {
 				971 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_972_visible = {
 				972 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_973_visible = {
 				973 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_974_visible = {
-				972 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+				974 = {
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_975_visible = {
 				975 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}	
 
-			prs_976_visible = {
+			fra_976_visible = {
 				976 = {
-					OR = {
-						is_owned_by = PRS
-						is_core_of = PRS
-					}
+					is_owned_by = FRA
 				}
 			}	
 
 			fra_977_visible = {
 				977 = {
-					OR = {
-						is_owned_by = fra
-						is_core_of = fra
-					}
+					is_owned_by = FRA
 				}
 			}
 		}
