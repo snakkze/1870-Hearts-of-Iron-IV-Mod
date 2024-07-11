@@ -6,20 +6,47 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				NOT = {
 					OR = {
-						has_government = communism
-						has_cosmetic_tag = PRS_historical_1
-						has_cosmetic_tag = PRS_historical_2
 						has_cosmetic_tag = PRS_GER
 						has_cosmetic_tag = GER_north_germany
+						has_cosmetic_tag = HRE_unified
+						has_cosmetic_tag = PRS_greater_germany
+						has_cosmetic_tag = PRS_historical_1
+						has_cosmetic_tag = PRS_historical_2
 						has_cosmetic_tag = PRS_republic
 						has_cosmetic_tag = PRS_republic_monarchy
 						has_cosmetic_tag = PRS_republic_monarchy_historical_1
 						has_cosmetic_tag = PRS_republic_monarchy_historical_2
 						has_cosmetic_tag = PRS_socialist_republic_1
 						has_cosmetic_tag = PRS_socialist_republic_2
+					}	
+				}
+			}
+			else = {
+				PRS = {
+					NOT = {
+						OR = {
+							has_government = communism
+							has_cosmetic_tag = PRS_historical_1
+							has_cosmetic_tag = PRS_historical_2
+							has_cosmetic_tag = PRS_GER
+							has_cosmetic_tag = GER_north_germany
+							has_cosmetic_tag = PRS_republic
+							has_cosmetic_tag = PRS_republic_monarchy
+							has_cosmetic_tag = PRS_republic_monarchy_historical_1
+							has_cosmetic_tag = PRS_republic_monarchy_historical_2
+							has_cosmetic_tag = PRS_socialist_republic_1
+							has_cosmetic_tag = PRS_socialist_republic_2
+						}	
 					}	
 				}
 			}
@@ -38,8 +65,20 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				has_cosmetic_tag = PRS_historical_1
+			}
+			else = {
+				PRS = {
+					has_cosmetic_tag = PRS_historical_1
+				}	
 			}
 		}
 
@@ -58,8 +97,20 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				has_cosmetic_tag = PRS_historical_2
+			}
+			else = {
+				PRS = {
+					has_cosmetic_tag = PRS_historical_2
+				}	
 			}
 		}
 
@@ -78,11 +129,26 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				OR = {
 					has_cosmetic_tag = PRS_historical_1
 					has_cosmetic_tag = PRS_historical_2
 				}
+			}
+			else = {
+				PRS = {
+					OR = {
+						has_cosmetic_tag = PRS_historical_1
+						has_cosmetic_tag = PRS_historical_2
+					}	
+				}	
 			}
 		}
 
@@ -104,8 +170,20 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				has_cosmetic_tag = PRS_republic_monarchy
+			}
+			else = {
+				PRS = {
+					has_cosmetic_tag = PRS_republic_monarchy
+				}	
 			}
 		}
 
@@ -122,8 +200,20 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				has_cosmetic_tag = PRS_republic_monarchy_historical_1
+			}
+			else = {
+				PRS = {
+					has_cosmetic_tag = PRS_republic_monarchy_historical_1
+				}	
 			}
 		}
 
@@ -142,8 +232,20 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				has_cosmetic_tag = PRS_republic_monarchy_historical_2
+			}
+			else = {
+				PRS = {
+					has_cosmetic_tag = PRS_republic_monarchy_historical_2
+				}	
 			}
 		}
 
@@ -162,11 +264,26 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			PRS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				OR = {
 					has_cosmetic_tag = PRS_republic_monarchy_historical_1
 					has_cosmetic_tag = PRS_republic_monarchy_historical_2
 				}
+			}
+			else = {
+				PRS = {
+					OR = {
+						has_cosmetic_tag = PRS_republic_monarchy_historical_1
+						has_cosmetic_tag = PRS_republic_monarchy_historical_2
+					}
+				}	
 			}
 		}
 
@@ -184,9 +301,21 @@ fpw_customization_category = {
 		icon = GFX_decision_category_generic_formable_nations
 
 		visible = {
-			original_tag = PRS
-			PRS = {
+			is_ai = no
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				has_cosmetic_tag = PRS_socialist_republic_1
+			}
+			else = {
+				PRS = {
+					has_cosmetic_tag = PRS_socialist_republic_1
+				}	
 			}
 		}
 
@@ -204,9 +333,21 @@ fpw_customization_category = {
 		icon = GFX_decision_category_generic_formable_nations
 
 		visible = {
-			original_tag = PRS
-			PRS = {
+			is_ai = no
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = PRS
 				has_cosmetic_tag = PRS_socialist_republic_2
+			}
+			else = {
+				PRS = {
+					has_cosmetic_tag = PRS_socialist_republic_2
+				}	
 			}
 		}
 
@@ -225,9 +366,21 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			AUS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = AUS
 				has_cosmetic_tag = AUS_austria_hungary
-			}	
+			}
+			else = {
+				AUS = {
+					has_cosmetic_tag = AUS_austria_hungary
+				}	
+			}
 		}
 
 		cost = 0
@@ -245,9 +398,21 @@ fpw_customization_category = {
 
 		visible = {
 			is_ai = no
-			AUS = {
+			if = {
+				limit = {
+            		has_game_rule = {
+                		rule = fpw_rule_flag_options
+                		option = FPW_NATION_ONLY_FLAG
+            		}
+        		}
+				original_tag = AUS
 				has_cosmetic_tag = AUS_austria_hungary_civil_fleet
-			}	
+			}
+			else = {
+				AUS = {
+					has_cosmetic_tag = AUS_austria_hungary_civil_fleet
+				}	
+			}
 		}
 
 		cost = 0

@@ -45,21 +45,6 @@ set_popularities = {
 	neutrality = 50
 }
 
-
-recruit_character = INS_a_t_van_starkenborgh_stachouwer
-recruit_character = INS_sukarno
-recruit_character = INS_amir_sjarifuddin_harahap
-recruit_character = INS_suharto
-recruit_character = INS_sutan_sjahrir
-
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	recruit_character = INS_hein_ter_poorten
-}
-
 set_cosmetic_tag = INS_HOL # Netherlands East Indies
 
 1939.1.1 = {

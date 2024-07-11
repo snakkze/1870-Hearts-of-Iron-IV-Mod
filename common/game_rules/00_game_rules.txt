@@ -20,6 +20,23 @@
 #	}
 # }
 
+fpw_rule_flag_options = {
+	name = "FPW_RULE_FLAG_CUSTOMIZATION"
+	group = "FPW_RULE_GROUP_MOD_CUSTOMIZATION"
+	icon = "GFX_leave_faction"
+	default = {
+		name = "FPW_NATION_ONLY_FLAG"
+		text = FPW_NATION_ONLY_FLAG
+		desc = FPW_NATION_ONLY_FLAG_desc
+	}
+	option = {
+		name = "FPW_PLAYERS_FLAG"
+		text = FPW_PLAYERS_FLAG
+		desc = FPW_PLAYERS_FLAG_desc
+		allow_achievements = yes
+	}
+}
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
