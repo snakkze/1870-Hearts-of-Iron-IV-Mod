@@ -75,7 +75,7 @@
  
  ## Economy Branch
  
- SOV_russian_economy: "Russian Economy"
+ SOV_russian_economy: "[SOV.GetAdjective] Economy"
  SOV_infrastracture_investments: "Infrastructure Investments"
  SOV_infrastracture_in_ukraine: "Infrastructure in Ukraine"
  SOV_infrastracture_in_ukraine_tp: "§gUnlocks decisions to invest in §YInfrastracture§! in §GUkraine§!§!"
@@ -91,7 +91,7 @@
  SOV_mils_one: "Military Economy"
  SOV_industry_upgrade_one: "Complete the First Industrial Plan"
  SOV_ukrainian_wheat: "Ukrainian Wheat"
- SOV_civs_two: "British Investors"
+ SOV_civs_two: "[ENG.GetAdjective] Investors"
  SOV_mils_two: "[PRS.GetAdjective] Investors"
  SOV_industry_upgrade_two: "Complete the Second Industrial Plan"
  SOV_industry_upgrade_three: "Complete the Third Industrial Plan"
@@ -102,12 +102,29 @@
  SOV_local_advisors: "Local Advisors"
  SOV_universal_conscription: "Universal Conscription"
  SOV_improve_military_education: "Improve Military Education"
+ SOV_new_oficer_core: "New Officer Core"
+ SOV_build_fortifications: "Build Fortifications"
  
  SOV_foreign_advisors: "Foreign Advisors"
- SOV_prussian_model: "Prussian Model"
+ SOV_prussian_model: "[PRS.GetAdjective] Model"
  SOV_new_mobilization_plan: "New Mobilization Plan"
- SOV_french_model: "French Model"
+ SOV_french_model: "[FRA.GetAdjective] Model"
  SOV_army_of_professionals: "Army of Professionals"
+ SOV_reeducate_the_officers: "Reeducate the Officers"
  
+ SOV_mission_to_britain: "Mission to Britain"
  SOV_study_the_crimean_war: "Study the Crimean War"
+ SOV_doctrine_reform: "Doctrine Reform"
+ SOV_preper_a_revenge: "Preper a Revenge"
+ SOV_new_army_spirit: "New Army Spirit"
+ 
+ SOV_new_military_equipment: "New Military Equipment"
+ SOV_military_research_institute: "Military Research Institute"
+ SOV_expand_research_funding: "Expand Research Funding"
+ SOV_infantry_equipment_standardization: "Infantry Equipment Standardization"
+ SOV_flooding_the_enemy: "Flooding the Enemy"
+ SOV_artillery_standardization: "Artillery Standardization"
+ SOV_artillery_supremacy: "Artillery Supremacy"
+ SOV_arms_factories: "Arms Factories"
+ 
  

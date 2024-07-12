@@ -103,17 +103,18 @@ if = {
 
 recruit_character = SOV_alexander_ii
 
-#You don't want Russian party names? Just remove these lines
-set_party_name = {
-	ideology = communism
-	long_name = SOV_communism_party_russian_long
-	name = SOV_communism_party_russian
-}
-set_party_name = {
-	ideology = fascism
-	long_name = SOV_fascism_party_russian_long
-	name = SOV_fascism_party_russian
-}
+#RUSSIAN ARMY 
+
+#	activate_mission = russia_military_situation_mission	# uncomment for relese
+set_variable = { russia_military_investments = 0 }
+
+
+set_variable = { SOV_ra_experience_gain_army_factor = -0.05 }
+set_variable = { SOV_ra_army_attack_factor = 0.0 }
+set_variable = { SOV_ra_army_defence_factor = 0.0 }
+set_variable = { SOV_ra_command_power_gain = 0.0 }
+
+add_dynamic_modifier = { modifier = SOV_russian_army_dynamic_modifier }
 
 
 #POLITICAL ADVISORS
@@ -137,19 +138,6 @@ set_variable = { SOV_sr_local_resources_factor = 0 }
 set_variable = { SOV_sr_production_speed_buildings_factor = 0 }
 
 add_dynamic_modifier = { modifier = SOV_serfdom_remnants_dynamic_modifier }
-
-#RUSSIAN ARMY 
-
-activate_mission = russia_military_situation_mission
-set_variable = { russia_military_investments = 0 }
-
-
-set_variable = { SOV_ra_experience_gain_army_factor = -0.05 }
-set_variable = { SOV_ra_army_attack_factor = 0.0 }
-set_variable = { SOV_ra_army_defence_factor = 0.0 }
-set_variable = { SOV_ra_command_power_gain = 0.0 }
-
-add_dynamic_modifier = { modifier = SOV_russian_army_dynamic_modifier }
 
 #RUSSIAN  SPIRIT
 set_variable = { SOV_fc_political_power_gain = 0 }

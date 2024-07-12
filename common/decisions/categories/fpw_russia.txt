@@ -29,7 +29,7 @@ fpw_russification_cat = {
 	}
 	visible_when_empty = yes
 	visible = {
-		#has_completed_focus = SOV_russian_economy
+		has_completed_focus = SOV_state_of_the_empire
 	}
 }
 fpw_russia_military_cat = {

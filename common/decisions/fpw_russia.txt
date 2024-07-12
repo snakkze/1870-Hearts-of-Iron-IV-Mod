@@ -818,7 +818,7 @@ fpw_russia_military_cat = {
 			if = {
 				limit = {
 					#has_country_flag = army_upgrade
-					check_variable = { russia_military_investments > 3 }
+					check_variable = { russia_military_investments > 1 }
 					check_variable = { SOV_ra_army_attack_factor < 0.06 }
 				}
 				add_to_variable = { SOV_ra_experience_gain_army_factor = 0.05 }
@@ -832,8 +832,8 @@ fpw_russia_military_cat = {
 				limit = {
 					#has_country_flag = army_still
 					and = {
-						check_variable = { russia_military_investments > 1 }
-						check_variable = { russia_military_investments < 4 }
+						check_variable = { russia_military_investments > 0 }
+						check_variable = { russia_military_investments < 2 }
 					}
 				}
 				
@@ -842,7 +842,7 @@ fpw_russia_military_cat = {
 			if = {
 				limit = {
 					#has_country_flag = army_downgrade
-					check_variable = { russia_military_investments < 2 }
+					check_variable = { russia_military_investments < 1 }
 				}
 				add_to_variable = { SOV_ra_experience_gain_army_factor = -0.05 }
 				add_to_variable = { SOV_ra_army_attack_factor = -0.05 }

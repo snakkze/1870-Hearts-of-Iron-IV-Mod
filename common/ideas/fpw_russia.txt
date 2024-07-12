@@ -321,6 +321,100 @@ ideas = {
 			}
 		}
 		
+		SOV_expanded_research_fund = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		
+		SOV_supremacy_of_artillery = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					soft_attack = 0.1
+					instant = yes
+				}
+			}
+			
+			modifier = {
+				
+			}
+		}
+		SOV_flood_the_enemy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					soft_attack = 0.15
+					instant = yes
+				}
+			}
+			
+			modifier = {
+				
+			}
+		}
+		SOV_fresh_officer_core = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_SOV_fresh_officer_core
+			
+			modifier = {
+				command_power_gain_mult = 0.10
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+				land_doctrine_cost_factor = -0.05
+				
+			}
+		}
+		SOV_grudge_against_ottomans = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			modifier = {
+				
+				
+			}
+		}
+		
+		
+		
 		
 	}
 	hidden_ideas = {
