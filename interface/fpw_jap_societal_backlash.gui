@@ -1,0 +1,116 @@
+@jap_societal_backlash1 = 96
+@jap_societal_backlash2 = 146
+@jap_societal_backlash3 = 195
+@jap_societal_backlash4 = 245
+@jap_societal_backlash5 = 294
+@jap_societal_backlash6 = 344
+@jap_societal_backlashy = 138
+
+@jap_societal_backlashn1 = 74
+@jap_societal_backlashn2 = 123
+@jap_societal_backlashn3 = 172
+@jap_societal_backlashn4 = 222
+@jap_societal_backlashn5 = 271
+@jap_societal_backlashn6 = 321
+@jap_societal_backlashny = 150
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "jap_societal_backlash_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 330 }
+
+		#Background
+		
+		iconType = {
+			name ="societal_backlash_background"
+			spriteType = "GFX_JAP_societal_backlash_background"
+			position = { x= 0	 y= -20 }
+		}
+
+		#ICONS
+
+		instantTextBoxType = {
+			name ="fpw_societal_backlash_text"
+			position = { x = 50 y = -5 }
+			font = "garamond_14_bold"
+			text = "fpw_societal_backlash_text"
+			format = center
+			maxWidth = 400
+			
+		}
+		iconType = {
+			name ="societal_backlash_meter1"
+			spriteType = "GFX_JAP_societal_backlash_meter1"
+			position = { x= @jap_societal_backlash1	 y= @jap_societal_backlashy }
+			pdx_tooltip = JAP_societal_backlash_1_tt
+		}
+		iconType = {
+			name ="societal_backlash_meter2"
+			spriteType = "GFX_JAP_societal_backlash_meter2"
+			position = { x= @jap_societal_backlash2	 y= @jap_societal_backlashy }
+			pdx_tooltip = JAP_societal_backlash_2_tt
+		}
+		iconType = {
+			name ="societal_backlash_meter3"
+			spriteType = "GFX_JAP_societal_backlash_meter3"
+			position = { x= @jap_societal_backlash3	 y= @jap_societal_backlashy }
+			pdx_tooltip = JAP_societal_backlash_3_tt
+		}
+		iconType = {
+			name ="societal_backlash_meter4"
+			spriteType = "GFX_JAP_societal_backlash_meter4"
+			position = { x= @jap_societal_backlash4	 y= @jap_societal_backlashy }
+			pdx_tooltip = JAP_societal_backlash_4_tt
+		}
+		iconType = {
+			name ="societal_backlash_meter5"
+			spriteType = "GFX_JAP_societal_backlash_meter5"
+			position = { x= @jap_societal_backlash5	 y= @jap_societal_backlashy }
+			pdx_tooltip = JAP_societal_backlash_5_tt
+		}
+		iconType = {
+			name ="societal_backlash_meter6"
+			spriteType = "GFX_JAP_societal_backlash_meter6"
+			position = { x= @jap_societal_backlash6	 y= @jap_societal_backlashy }
+			pdx_tooltip = JAP_societal_backlash_6_tt
+		}
+		iconType = {
+			name ="societal_backlash_needle1"
+			spriteType = "GFX_JAP_societal_backlash_needle"
+			position = { x = @jap_societal_backlashn1	 y = @jap_societal_backlashny }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="societal_backlash_needle2"
+			spriteType = "GFX_JAP_societal_backlash_needle"
+			position = { x = @jap_societal_backlashn2	 y = @jap_societal_backlashny }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="societal_backlash_needle3"
+			spriteType = "GFX_JAP_societal_backlash_needle"
+			position = { x = @jap_societal_backlashn3	 y = @jap_societal_backlashny }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="societal_backlash_needle4"
+			spriteType = "GFX_JAP_societal_backlash_needle"
+			position = { x = @jap_societal_backlashn4	 y = @jap_societal_backlashny }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="societal_backlash_needle5"
+			spriteType = "GFX_JAP_societal_backlash_needle"
+			position = { x = @jap_societal_backlashn5	 y = @jap_societal_backlashny }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="societal_backlash_needle6"
+			spriteType = "GFX_JAP_societal_backlash_needle"
+			position = { x = @jap_societal_backlashn6	 y = @jap_societal_backlashny }
+			alwaystransparent = yes
+		}
+	}
+}

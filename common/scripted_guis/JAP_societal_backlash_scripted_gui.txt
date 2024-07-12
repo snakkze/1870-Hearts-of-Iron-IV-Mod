@@ -1,0 +1,49 @@
+scripted_gui = {
+	societal_backlash_gui = {
+		window_name = "jap_societal_backlash_gui_window"
+		context_type = decision_category
+		
+		triggers = {
+			societal_backlash_needle1_visible = {
+				JAP = {
+					has_idea = jap_societal_backlash_1
+				}
+			}
+			societal_backlash_needle2_visible = {
+				JAP = {
+					has_idea = jap_societal_backlash_2
+				}
+			}
+			societal_backlash_needle3_visible = {
+				JAP = {
+					has_idea = jap_societal_backlash_3
+				}
+			}
+			societal_backlash_needle4_visible = {
+				JAP = {
+					has_idea = jap_societal_backlash_4
+				}
+			}
+			societal_backlash_needle5_visible = {
+				JAP = {
+					has_idea = jap_societal_backlash_5
+				}
+			}
+			societal_backlash_needle6_visible = {
+				JAP = {
+					has_idea = jap_societal_backlash_6
+				}
+			}
+		}
+		
+		}
+		
+		
+		ai_enabled = {
+			always = no
+		}
+		
+		ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+		ai_test_variance = 0.5
+	}
+}

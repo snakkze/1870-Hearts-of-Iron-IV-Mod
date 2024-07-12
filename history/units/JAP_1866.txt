@@ -1,5 +1,5 @@
 division_template = {
-  name = "Provincial Militia"
+  name = "Daimyo Troops"
   is_locked = yes
 
   regiments = {
@@ -10,7 +10,7 @@ division_template = {
   }
 }
 division_template = {
-  name = "Infantry-Division"
+  name = "Infantry Division"
   is_locked = no
 
   regiments = {
@@ -65,7 +65,7 @@ units = {
 			name_order = 4
 		}
 		location = 9950
-		division_template = "Infantry-Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -74,7 +74,7 @@ units = {
 			name_order = 5
 		}
 		location = 9859
-		division_template = "Infantry-Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -83,7 +83,7 @@ units = {
 			name_order = 6
 		}
 		location = 12032
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -92,7 +92,7 @@ units = {
 			name_order = 7
 		}
 		location = 1133
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -101,7 +101,7 @@ units = {
 			name_order = 1
 		}
 		location = 4000
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -110,7 +110,7 @@ units = {
 			name_order = 2
 		}
 		location = 7217
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -119,7 +119,7 @@ units = {
 			name_order = 3
 		}
 		location = 1063
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -128,7 +128,7 @@ units = {
 			name_order = 4
 		}
 		location = 11997
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -137,7 +137,7 @@ units = {
 			name_order = 5
 		}
 		location = 1191
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -146,7 +146,7 @@ units = {
 			name_order = 6
 		}
 		location = 10055
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -155,7 +155,7 @@ units = {
 			name_order = 7
 		}
 		location = 12097
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -164,7 +164,7 @@ units = {
 			name_order = 8
 		}
 		location = 1024
-		division_template = "Provincial Militia"
+		division_template = "Daimyo Troops"
 		start_experience_factor = 0.1
 	}
 }

@@ -1,0 +1,39 @@
+fpw_societal_backlash_cat = {
+	priority = 100
+
+	#icon = GFX_decision_category_SOV_merge_designers
+	#picture = GFX_decision_category_franco_prussian_war
+	scripted_gui = societal_backlash_gui
+	
+	
+	
+	
+	
+	
+	allowed = {
+		original_tag = JAP
+	}
+	visible_when_empty = yes
+	visible = {
+			OR = {
+			JAP = {
+			has_idea = jap_societal_backlash_1
+			}
+			JAP = {
+			has_idea = jap_societal_backlash_2
+			}
+			JAP = {
+			has_idea = jap_societal_backlash_3
+			}
+			JAP = {
+			has_idea = jap_societal_backlash_4
+			}
+			JAP = {
+			has_idea = jap_societal_backlash_5
+			}
+			JAP = {
+			has_idea = jap_societal_backlash_6
+			}
+			}
+		}
+}
