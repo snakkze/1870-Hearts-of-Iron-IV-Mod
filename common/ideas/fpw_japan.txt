@@ -180,100 +180,6 @@ ideas = {
             }
 		}
 		
-		jap_societal_backlash_1	= {
-				
-			allowed_civil_war = {
-                has_government = fascism
-            }
-			picture = chi_war_of_resistance
-				
-			removal_cost = -1
-				
-            modifier = {
-			stability_factor = -0.05
-			political_power_factor = -0.03
-            }
-		}
-		
-		jap_societal_backlash_2	= {
-				
-			allowed_civil_war = {
-                has_government = fascism
-            }
-			picture = chi_war_of_resistance
-				
-			removal_cost = -1
-				
-            modifier = {
-			stability_factor = -0.1
-			political_power_factor = -0.06
-            }
-		}
-		
-		jap_societal_backlash_3	= {
-				
-			allowed_civil_war = {
-                has_government = fascism
-            }
-
-			picture = chi_war_of_resistance2
-				
-			removal_cost = -1
-				
-            modifier = {
-			stability_factor = -0.15
-			political_power_factor = -0.09
-            }
-		}
-		
-		jap_societal_backlash_4	= {
-				
-			allowed_civil_war = {
-                has_government = fascism
-            }
-
-			picture = chi_war_of_resistance2
-				
-			removal_cost = -1
-				
-            modifier = {
-			stability_factor = -0.20
-			political_power_factor = -0.12
-            }
-		}
-		
-		jap_societal_backlash_5	= {
-				
-			allowed_civil_war = {
-                has_government = fascism
-            }
-
-			picture = chi_war_of_resistance3
-				
-			removal_cost = -1
-				
-            modifier = {
-			stability_factor = -0.25
-			political_power_factor = -0.15
-            }
-		}
-		
-		jap_societal_backlash_6	= {
-				
-			allowed_civil_war = {
-                has_government = fascism
-            }
-
-			picture = chi_war_of_resistance3
-				
-			removal_cost = -1
-				
-            modifier = {
-			stability_factor = -0.30
-			political_power_factor = -0.18
-            }
-		}
-		
 		jap_solidifying_imperial_command = {
 
 			allowed_civil_war = {
@@ -449,13 +355,6 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
-
-	
-	}
-
-
-
-	hidden_ideas = {
 		
 		fpw_meiji = {
 			allowed = {
@@ -476,5 +375,105 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
+		
+		jap_societal_backlash_1	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.05
+			political_power_factor = -0.03
+            }
+		}
+		
+		jap_societal_backlash_2	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.1
+			political_power_factor = -0.06
+            }
+		}
+		
+		jap_societal_backlash_3	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.15
+			political_power_factor = -0.09
+            }
+		}
+		
+		jap_societal_backlash_4	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.20
+			political_power_factor = -0.12
+            }
+		}
+		
+		jap_societal_backlash_5	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.25
+			political_power_factor = -0.15
+            }
+		}
+		
+		jap_societal_backlash_6	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.30
+			political_power_factor = -0.18
+            }
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		}
 }
