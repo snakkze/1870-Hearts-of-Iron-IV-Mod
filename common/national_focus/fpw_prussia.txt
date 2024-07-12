@@ -287,7 +287,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		available = {
-			has_political_power = 65
 			if = {
 				limit = {
 					has_completed_focus = PRS_governmental_reform
@@ -297,7 +296,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = -65
 			add_timed_idea = {
    				idea = fpw_funding_austrian_seperatists
     			days = 180
@@ -375,11 +373,9 @@ focus_tree = {
 		}
 
 		available = {
-			has_political_power = 80
 		}
 
 		completion_reward = {
-			add_political_power = -80
 			add_war_support = 0.05
 			64 = {
 				set_building_level = {
@@ -417,11 +413,9 @@ focus_tree = {
 
 		available = {
 			owns_state = 66
-			has_political_power = 35
 		}
 
 		completion_reward = {
-			add_political_power = -35
 			66 = {
 				set_building_level = {
    		 			type = bunker
