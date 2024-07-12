@@ -62,6 +62,45 @@ fpw_launch_unification_germany_cat = {
 	}
 }
 
+PRS_reform_the_government = {
+	fpw_reform_government = {
+
+		visible = {
+			has_idea = fpw_national_reforms
+		}
+
+		available = {
+			has_idea = fpw_national_reforms
+		}
+
+		allowed = {
+			has_idea = fpw_national_reforms
+		}
+
+		icon = GFX_decision_eng_trade_unions_support
+		fire_only_once = no
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			ROOT = {
+				set_country_flag = reforming_government
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = fpw_national_reforms
+		}
+	}
+}
+
 PRS_reform_balance_of_power_category = {
 	PRS_bop_reform_criticize_the_socialist = {
 		priority = 100

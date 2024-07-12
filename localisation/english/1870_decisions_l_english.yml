@@ -4,6 +4,10 @@
   fpw_side_with_germany:0 "Side with [PRS.GetNameDef]"
   fpw_side_with_france:0 "Side with [FRA.GetNameDef]"
   
+  PRS_reform_the_government:0 "Reforming the Government"
+  PRS_reform_the_government_desc:0 "The [PRS.GetAdjective] parliament has been fervently debating the governmental changes planned by [PRS.GetLeader] to fulfill our dream of a German state the size of the Holy Roman Empire. If we do not proceed with these reforms, the heated may initiate a coup against [PRS.GetLeader] to stop further expansion and integration of non prussian territories."
+  fpw_reform_government:0 "Start reformation talks"
+
   fpw_customization_category:0 "Nation Customization"
   fpw_prussia_historical_flag_customization:0 "Historical @PRSPrussian Flag"
   fpw_prussia_republic_monarchy_historical_flag_customization:0 "Historical @PRSPrussian Flag"

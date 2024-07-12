@@ -725,6 +725,19 @@ focus_tree = {
 					limit = { 
 						is_german_minor = yes
 					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						PRS = {
+							add_state_core = PREV	
+						}
+					}
+				}
+				every_country = { 
+					limit = { 
+						is_german_minor = yes
+					}
 					PRS = {
 						if = {
 							limit = {
@@ -744,19 +757,6 @@ focus_tree = {
 						}
 						HNV = {
 							add_to_faction = PREV
-						}
-					}
-				}
-				every_country = { 
-					limit = { 
-						is_german_minor = yes
-					}
-					every_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						PRS = {
-							add_state_core = PREV	
 						}
 					}
 				}
@@ -2447,6 +2447,20 @@ focus_tree = {
 					limit = { 
 						is_german_minor = yes
 					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						PRS = {
+							add_state_core = PREV	
+						}
+					}
+				}
+
+				every_country = { 
+					limit = { 
+						is_german_minor = yes
+					}
 					PRS = {
 						if = {
 							limit = {
@@ -2466,19 +2480,6 @@ focus_tree = {
 						}
 						HNV = {
 							add_to_faction = PREV
-						}
-					}
-				}
-				every_country = { 
-					limit = { 
-						is_german_minor = yes
-					}
-					every_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						PRS = {
-							add_state_core = PREV	
 						}
 					}
 				}
@@ -2590,11 +2591,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.025
-			add_timed_idea = {
-				idea = fpw_national_reforms
-				days = 365
-			}
+			add_ideas = fpw_national_reforms
 			# If they have cooperated then it will become not hre and more a federal state
 			# If they waged war the hre will be led by an authoritarian Wilhelm
 			# if authoritarian party more than 50% than wilhelm gets to power, if not civil war
@@ -2965,55 +2962,56 @@ focus = {
 				}
 				if = {
 					limit = {
-						NOT = {
-							has_government = neutrality
-						}
+						has_idea = fpw_national_reforms
 					}
-					start_civil_war = {
-						ruling_party = neutrality
-						# Original country's ideology changes to communism
-						ideology = ROOT
-						# Breakaway gets old ideology of ROOT
-						size = 0.5
-						capital = 64
-						states = all
-						states_filter = { 
-							NOT = {
-								OR = {
-									state = 947
-									state = 59
-									state = 944
-									state = 56
-									state = 950
-									state = 951
-									state = 942
-									state = 57
-									state = 981
-									state = 51
-									state = 42
-									state = 939
-									state = 943
-									state = 948
-									state = 941
-									state = 946
-									state = 58
-									state = 909
-									state = 912
-									state = 1009
-									is_core_of = AUS
-									is_core_of = CZE
-									is_core_of = BAV
-									is_core_of = HES
-									is_core_of = BAD
-									is_core_of = WRT
-									is_core_of = HOH
-									is_core_of = FRK
+					set_cosmetic_tag = HRE_UNIFIED
+					custom_effect_tooltip = PRS_reform_civil_war
+					hidden_effect = {
+						start_civil_war = {
+							ruling_party = root
+							# Original country's ideology changes to communism
+							ideology = neutrality
+							# Breakaway gets old ideology of ROOT
+							size = 0.5
+							capital = 64
+							states = all
+							states_filter = { 
+								NOT = {
+									OR = {
+										state = 947
+										state = 59
+										state = 944
+										state = 56
+										state = 950
+										state = 951
+										state = 942
+										state = 57
+										state = 981
+										state = 51
+										state = 42
+										state = 939
+										state = 943
+										state = 948
+										state = 941
+										state = 946
+										state = 58
+										state = 909
+										state = 912
+										state = 1009
+										is_core_of = AUS
+										is_core_of = CZE
+										is_core_of = BAV
+										is_core_of = HES
+										is_core_of = BAD
+										is_core_of = WRT
+										is_core_of = HOH
+										is_core_of = FRK
+									}
 								}
 							}
-						}
+						}	
 					}
 				}
-				set_cosmetic_tag = HRE_UNIFIED
 			}
 			else = {
 				custom_effect_tooltip = finalize_federation_tt
@@ -3100,7 +3098,16 @@ focus = {
 		will_lead_to_war_with = HOL
 		will_lead_to_war_with = LUX
 
-		available_if_capitulated = yes
+		bypass = {
+			owns_state = 8
+			owns_state = 34
+			owns_state = 1010
+			owns_state = 6
+			owns_state = 1011
+			owns_state = 35
+			owns_state = 7
+			owns_state = 36
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_hre_benelux_tt
@@ -3153,18 +3160,18 @@ focus = {
 		will_lead_to_war_with = ITA
 		will_lead_to_war_with = SWI
 
-		available = {
-			158 = {
-				OWNER = {
-					controls_state = PREV
-				}
-			}
-			853 = {
-				OWNER = {
-					controls_state = PREV
-				}
-			}
+		bypass = {
+			owns_state = 159
+			owns_state = 161
+			owns_state = 162
+			owns_state = 158
+			owns_state = 3
+			owns_state = 845
+			owns_state = 847
+			owns_state = 151
+			owns_state = 846
 		}
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			custom_effect_tooltip = fpw_hre_south_tt
@@ -3237,6 +3244,11 @@ focus = {
 		available_if_capitulated = yes
 
 		will_lead_to_war_with = FRA
+
+		bypass = {
+			owns_state = 735
+			owns_state = 28
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_hre_france_tt

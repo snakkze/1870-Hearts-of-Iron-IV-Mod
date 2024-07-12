@@ -18,9 +18,6 @@ on_actions = {
 				set_variable = {
 					FROM.men = manpower_k 
 				}
-				multiply_variable = {
-					FROM.men = FROM.states
-				}
 			}
 			ROOT = {
 				set_variable = {
@@ -29,14 +26,72 @@ on_actions = {
 				set_variable = {
 					ROOT.men = manpower_k 
 				}
-				multiply_variable = { ROOT.men = ROOT.states }
+			}    
+			
+			# Base infamy for declaration
+			set_variable = { infamy_to_add = 5 }
+			
+			# Check if ROOT is smaller than FROM
+			if = {
+				limit = {
+					check_variable = { var = ROOT.men value = FROM.men compare = greater_than }
+					check_variable = { var = ROOT.states value = FROM.states compare = greater_than }
+				}
+			
+				# Max additional infamy
+				set_variable = { extra_infamy = 5 }
+			
+				# Calculate ratios
+				set_variable = { FROM.d_men = FROM.men }
+				set_variable = { FROM.d_states = FROM.states }
+				divide_variable = { FROM.d_men = ROOT.men }
+				divide_variable = { FROM.d_states = ROOT.states }
+			
+				# Calculate inverted normalized ratios
+				set_variable = { percentage_men = 1 }
+				set_variable = { percentage_states = 1 }
+				subtract_from_variable = { percentage_men = FROM.d_men }
+				subtract_from_variable = { percentage_states = FROM.d_states }
+				multiply_variable = { percentage_men = percentage_states }
+				multiply_variable = { extra_infamy = percentage_men }
+				log = "[?infamy_to_add]"
+				log = "[?extra_infamy]"
+			
+				# Add calculated extra infamy to base infamy
+				add_to_variable = { infamy_to_add = extra_infamy }
+				log = "[?infamy_to_add]"
+			
+				# Check if attacker has full core on defending country
+				set_variable = { ROOT.cored_states = 0 }
+				every_state = {
+					limit = {
+						is_owned_by = FROM
+						is_core_of = ROOT
+					}
+					add_to_variable = { ROOT.cored_states = 1 }
+				}
+			
+				if = {
+					limit = {
+						check_variable = { var = ROOT.cored_states value = 0 compare = greater_than }
+					}
+					divide_variable = { ROOT.cored_states = FROM.states }
+					clamp_variable = {
+						var = ROOT.cored_states
+						min = 0
+					}
+					set_variable = { percentage_core_states = 1 }
+					subtract_from_variable = { percentage_core_states = ROOT.cored_states }
+					multiply_variable = { infamy_to_add = percentage_core_states }
+					log = "[?percentage_core_states]"
+					log = "[?infamy_to_add]"
+				}
 			}
-			divide_variable = {
-				ROOT.men = FROM.manpower
-			}
-			add_to_variable = { ROOT.men = 10 }
-			add_to_variable = { ROOT.infamy = ROOT.men }
-			log = "[?ROOT.men]"
+			
+			# Round and apply the final infamy value
+			round_variable = infamy_to_add
+			add_to_variable = { THIS.infamy = infamy_to_add }
+			
 		}
 	}
 	

@@ -30,6 +30,28 @@ PRS_reform_expand_support_category = {
 	}
 }
 
+PRS_reform_the_government = {
+	#icon =
+	priority = 20
+
+	icon = GFX_decision_category_usa_congress
+	picture = GFX_decision_cat_picture_SWI_federal_council
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		AND = {
+			original_tag = PRS
+			PRS = {
+				has_idea = fpw_national_reforms
+				has_completed_focus = PRS_austrian_enemy
+			}
+		}
+	}
+}
+
 PRS_reform_balance_of_power_category = {
 	#icon =
 	
