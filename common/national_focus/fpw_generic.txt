@@ -2566,6 +2566,12 @@ focus_tree = {
 			   add = 4000
 			   is_historical_focus_on = yes
 		   }
+		   modifier = {
+			   factor = 0
+			   PRS = {
+					has_completed_focus = PRS_greater_german_solution
+			   }
+		   }
 		}
 
 		completion_reward = {

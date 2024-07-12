@@ -897,7 +897,11 @@ focus_tree = {
 									has_war_with = PREV
 								}
 							}
-							declare_war_on = { type = annex_everything target = PREV }
+							create_wargoal = {
+								type = take_state_focus
+								target = PREV
+								expire = 0
+							}
 						}
 					}
 				}
@@ -2259,10 +2263,7 @@ focus_tree = {
 				set_cosmetic_tag = GER_north_germany
 				every_country = {
 					limit = {
-						AND = {
-							is_in_faction_with = PRS
-							is_german = yes
-						}
+						is_german_minor = yes
 					}
 					country_event = { id = prussia_fpw.3 hours = 2 }
 				}
@@ -2724,7 +2725,11 @@ focus_tree = {
 									has_war_with = PREV
 								}
 							}
-							declare_war_on = { type = annex_everything target = PREV }
+							create_wargoal = {
+								type = take_state_focus
+								target = PREV
+								expire = 0
+							}
 						}
 					}
 				}
@@ -2975,7 +2980,7 @@ focus = {
 						# Original country's ideology changes to communism
 						ideology = ROOT
 						# Breakaway gets old ideology of ROOT
-						size = 0.8
+						size = 0.5
 						capital = 64
 						states = all
 						states_filter = { 
@@ -3000,7 +3005,7 @@ focus = {
 									state = 58
 									state = 909
 									state = 912
-									state = 945
+									state = 1009
 									is_core_of = AUS
 									is_core_of = CZE
 									is_core_of = BAV

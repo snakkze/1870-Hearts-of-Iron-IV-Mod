@@ -18,22 +18,58 @@ defined_text = {
 }
 
 defined_text = {
-	name = country_GDP_f_d
-	text = {
-		trigger = {
-			check_variable = { country_GDP < 1 }
-		}
-		localization_key = country_GDP_M_d
-	}
-	text = {
-		trigger = {
-			check_variable = { country_GDP > 999 }
-		}
-		localization_key = country_GDP_T_d
-	}
-	text = {
-		localization_key = country_GDP_B_d
-	}
+    name = fpw_infamy_rank_loc
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.infamy
+                value = 25
+                compare = less_than
+            }
+        }
+        localization_key = fpw_infamy_regular_loc_key
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.infamy
+                value = 25
+                compare = greater_than_or_equals 
+            }
+            check_variable = {
+                var = THIS.infamy
+                value = 50
+                compare = less_than
+            }
+        }
+        localization_key = fpw_infamy_infamous_loc_key
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.infamy
+                value = 50
+                compare = greater_than_or_equals 
+            }
+            check_variable = {
+                var = THIS.infamy
+                value = 100
+                compare = less_than
+            }
+        }
+        localization_key = fpw_infamy_notorious_loc_key
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.infamy
+                value = 100
+                compare = greater_than_or_equals 
+            }
+        }
+        localization_key = fpw_infamy_pariah_loc_key
+    }
+
 }
 
 defined_text = {

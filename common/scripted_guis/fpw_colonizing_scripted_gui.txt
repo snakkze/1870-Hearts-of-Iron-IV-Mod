@@ -32,10 +32,10 @@ scripted_gui = {
                                     limit = {
                                         is_owned_by = ROOT
                                     }
-                                }
-                                distance_to = {
-                                    value < 75
-                                    target = PREV
+                                    distance_to = {
+                                        value < 75
+                                        target = PREV
+                                    }
                                 }
                             }
         				}

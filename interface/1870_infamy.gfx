@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_infamy_regular"
+		texturefile = "gfx/interface/infamy/infamy_regular_icon.png"
+	}
+	spriteType = {
+		name = "GFX_infamy_infamous"
+		texturefile = "gfx/interface/infamy/infamy_infamous_icon.png"
+	}
+	spriteType = {
+		name = "GFX_infamy_notorious"
+		texturefile = "gfx/interface/infamy/infamy_notorious_icon.png"
+	}
+	spriteType = {
+		name = "GFX_infamy_pariah"
+		texturefile = "gfx/interface/infamy/infamy_pariah_icon.png"
+	}
+
+
+}
