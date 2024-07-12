@@ -38,7 +38,7 @@ guiTypes = {
 			name ="infany_text"
 			position = { x= 25 y = 3 }
 			font = "hoi_18mbs"
-			text = "[?infamy]"
+			text = "fpw_infamy_score"
 			format = center
 			maxWidth = 46
 			maxHeight = 24

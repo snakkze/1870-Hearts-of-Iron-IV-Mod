@@ -1,5 +1,7 @@
 ﻿l_english:
-fpw_infamy_tt:0 "§RInfamy§! is tied to diplomatic mechanics. In the vast majority of cases, any diplomatic action a country takes, such as §Yannexing land§! in a peace conference or §Ydeclaring war§! on another country which is smaller than itself will affect its infamy score. [?infamy]"
+fpw_infamy_tt:0 "§RInfamy§! is tied to diplomatic mechanics. In the vast majority of cases, any diplomatic action a country takes, such as §Yannexing land§! in a peace conference or §Ydeclaring war§! on another country which is smaller than itself will affect its infamy score."
+fpw_infamy_score:0 "[fpw_infamy_num_loc]"
+fpw_infamy_score_loc_key:0 "[?temp_infamy]"
 fpw_infamy_rank:0 "[fpw_infamy_rank_loc]"
 fpw_infamy_regular_loc_key:0 "Current level: §GReputable§!"
 fpw_infamy_infamous_loc_key:0 "Current level: §RInfamous§!"

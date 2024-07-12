@@ -31,7 +31,6 @@ on_actions = {
 			# Base infamy for declaration
 			set_variable = { infamy_to_add = 5 }
 			
-			# Check if ROOT is smaller than FROM
 			if = {
 				limit = {
 					check_variable = { var = ROOT.men value = FROM.men compare = greater_than }
@@ -40,26 +39,18 @@ on_actions = {
 			
 				# Max additional infamy
 				set_variable = { extra_infamy = 5 }
-			
-				# Calculate ratios
+		
 				set_variable = { FROM.d_men = FROM.men }
 				set_variable = { FROM.d_states = FROM.states }
 				divide_variable = { FROM.d_men = ROOT.men }
 				divide_variable = { FROM.d_states = ROOT.states }
-			
-				# Calculate inverted normalized ratios
 				set_variable = { percentage_men = 1 }
 				set_variable = { percentage_states = 1 }
 				subtract_from_variable = { percentage_men = FROM.d_men }
 				subtract_from_variable = { percentage_states = FROM.d_states }
 				multiply_variable = { percentage_men = percentage_states }
 				multiply_variable = { extra_infamy = percentage_men }
-				log = "[?infamy_to_add]"
-				log = "[?extra_infamy]"
-			
-				# Add calculated extra infamy to base infamy
 				add_to_variable = { infamy_to_add = extra_infamy }
-				log = "[?infamy_to_add]"
 			
 				# Check if attacker has full core on defending country
 				set_variable = { ROOT.cored_states = 0 }
@@ -83,12 +74,8 @@ on_actions = {
 					set_variable = { percentage_core_states = 1 }
 					subtract_from_variable = { percentage_core_states = ROOT.cored_states }
 					multiply_variable = { infamy_to_add = percentage_core_states }
-					log = "[?percentage_core_states]"
-					log = "[?infamy_to_add]"
 				}
 			}
-			
-			# Round and apply the final infamy value
 			round_variable = infamy_to_add
 			add_to_variable = { THIS.infamy = infamy_to_add }
 			
@@ -152,9 +139,9 @@ on_actions = {
 	on_daily_TRB = {
 		# decrease infamy
 		effect = {
-			every_country = {
-				add_to_variable = { THIS.infamy = 1 }
-			}
+			#every_country = {
+			#	add_to_variable = { THIS.infamy = 1 }
+			#}
 		}
 	}
 }

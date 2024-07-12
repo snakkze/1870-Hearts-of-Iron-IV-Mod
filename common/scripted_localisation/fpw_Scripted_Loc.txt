@@ -18,6 +18,17 @@ defined_text = {
 }
 
 defined_text = {
+    name = fpw_infamy_num_loc
+    text = {
+        trigger = {
+            set_temp_variable = { temp_infamy = THIS.infamy }
+            round_temp_variable = temp_infamy
+        }
+        localization_key = fpw_infamy_score_loc_key
+    }
+}
+
+defined_text = {
     name = fpw_infamy_rank_loc
     text = {
         trigger = {
@@ -83,7 +94,6 @@ defined_text = {
         localization_key = fpw_prestige_localization_key
     }
 }
-
 defined_text = {
     name = fpw_country_power_rank_loc
     text = {
