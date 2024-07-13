@@ -723,3 +723,216 @@
 		
 		}
 	}
+	
+	country_event = {
+		id = fpw_japan.18
+		title = fpw_japan.18.t
+		desc = fpw_japan.18.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.18.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = fpw_japan.19
+			}	
+		}
+		option = {
+			name = fpw_japan.18.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = fpw_japan.20
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.19
+		title = fpw_japan.19.t
+		desc = fpw_japan.19.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.19.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			country_event = fpw_japan.21
+			}	
+		}
+		option = {
+			name = fpw_japan.19.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			set_country_flag = JAP_assert_strength_korea
+			}
+			hidden_effect = {
+			JAP = {
+			country_event = fpw_japan.23
+			}	
+			KOR = {
+			country_event = fpw_japan.24
+			}
+			JAP = {
+			mark_focus_tree_layout_dirty = yes
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.20
+		title = fpw_japan.20.t
+		desc = fpw_japan.20.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.20.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+			JAP = {add_opinion_modifier = { target = KOR modifier = large_increase }
+			}
+	}}
+	
+	country_event = {
+		id = fpw_japan.21
+		title = fpw_japan.21.t
+		desc = fpw_japan.21.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.21.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = fpw_japan.22
+			}	
+			
+		}
+		option = {
+			name = fpw_japan.21.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = fpw_japan.20			
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.22
+		title = fpw_japan.22.t
+		desc = fpw_japan.22.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.22.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			set_country_flag = JAP_assert_strength_korea
+			}
+			hidden_effect = {
+			JAP = {
+			country_event = fpw_japan.23
+			}	
+			KOR = {
+			country_event = fpw_japan.24
+			}
+			JAP = {
+			mark_focus_tree_layout_dirty = yes
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.22.b
+			ai_chance = {
+				base = 0
+			}
+			
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.23
+		title = fpw_japan.23.t
+		desc = fpw_japan.23.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.23.a
+			ai_chance = {
+				base = 10
+			}
+			complete_national_focus = JAP_ganghwa_island_accident	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.24
+		title = fpw_japan.24.t
+		desc = fpw_japan.24.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.24.a
+			ai_chance = {
+				base = 10
+			}
+			
+		}
+	}

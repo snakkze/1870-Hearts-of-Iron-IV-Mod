@@ -148,9 +148,16 @@ focus_tree = {
 		remove_idea = jap_medium_imperial_resistance
 		add_idea = jap_high_imperial_resistance
 		}
+		if = {
+		limit = {
+		JAP = {
+		controls_state = 1007
+		}
+		}
 		1007 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
 		set_demilitarized_zone = yes
+		}
 		}
 		1008 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
@@ -410,7 +417,7 @@ focus_tree = {
 		icon = GFX_focus_jap_charter_oath
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = -9
+		x = -10
 		y = 1
 		cost = 10
 
@@ -500,7 +507,7 @@ focus_tree = {
 		icon = GFX_focus_jap_conservative_approach
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = 9
+		x = 10
 		y = 1
 		cost = 10
 
@@ -1333,6 +1340,37 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = JAP_seize_the_bonin_islands
+		icon = GFX_
+		prerequisite = { focus = JAP_open_the_nation focus = JAP_guard_national_sovereignty }
+		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
+		x = 2
+		y = 3
+		cost = 5
+
+		available = {
+		645 = {
+		is_controlled_by = TRB
+		}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		645 = { 
+		transfer_state_to = JAP 
+		}
+		hidden_effect = {
+		645 = { 
+		remove_core_of = TRB
+		}
+		}
+		}
+	}
+	
+	focus = {
 		id = JAP_establish_the_ryukyu_han
 		icon = GFX_
 		prerequisite = { focus = JAP_our_sphere_of_influence }
@@ -1434,6 +1472,9 @@ focus_tree = {
 		cost = 10
 
 		available = {
+		SOV = {
+		exists = yes
+		}
 		NOT = {
 		has_war_with = SOV
 		}
@@ -1459,14 +1500,52 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_ganghwa_naval_expedition
+		id = JAP_send_a_diplomatic_mission_to_korea
 		icon = GFX_
 		prerequisite = { focus = JAP_our_sphere_of_influence }
 		relative_position_id = JAP_our_sphere_of_influence
-		x = 1
-		y = 2
+		x = 3
+		y = 1
 		cost = 10
 
+		allow_branch = {
+
+		}
+
+		available = {
+		KOR = {
+		exists = yes
+		}
+		NOT = {
+		has_war_with = KOR
+		}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			KOR = {
+			country_event = fpw_japan.18
+			}	
+		}
+	}
+	
+	focus = {
+		id = JAP_ganghwa_island_accident
+		icon = GFX_
+		prerequisite = { focus = JAP_send_a_diplomatic_mission_to_korea }
+		relative_position_id = JAP_send_a_diplomatic_mission_to_korea
+		x = 0
+		y = 1
+		cost = 1
+		
+		allow_branch = {
+		JAP = {
+		has_country_flag = JAP_assert_strength_korea
+		}}
+		
 		available = {
 
 		}
@@ -1476,40 +1555,122 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		#EVENT naval battle plus treaty korea
+		
 		
 		}
 	}
 	
 	focus = {
-		id = JAP_seize_the_bonin_islands
+		id = JAP_demand_an_official_apology
 		icon = GFX_
-		prerequisite = { focus = JAP_our_sphere_of_influence }
-		relative_position_id = JAP_our_sphere_of_influence
-		x = 2
+		prerequisite = { focus = JAP_ganghwa_island_accident }
+		relative_position_id = JAP_ganghwa_island_accident
+		x = -1
 		y = 1
-		cost = 5
-
+		cost = 10
+		
+	
+		
 		available = {
-		645 = {
-		is_controlled_by = TRB
-		}
+
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 80
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		645 = { 
-		transfer_state_to = JAP 
+		
+		
+		set_country_flag = jap_saigo_rejected
+		custom_effect_tooltip = JAP_tt7
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_6
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_4
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_3
+			}
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_1
+			add_idea = jap_societal_backlash_2
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_ideas = {
+			jap_societal_backlash_1
+			}
+			}
 		}
-		hidden_effect = {
-		645 = { 
-		remove_core_of = TRB
+		mutually_exclusive = { focus = JAP_prepare_for_further_actions }
+	}
+	
+	focus = {
+		id = JAP_prepare_for_further_actions
+		icon = GFX_
+		prerequisite = { focus = JAP_ganghwa_island_accident }
+		relative_position_id = JAP_ganghwa_island_accident
+		x = 1
+		y = 1
+		cost = 10
+		
+	
+		
+		available = {
+
 		}
+
+		ai_will_do = {
+			factor = 0
 		}
+		completion_reward = {
+		
+		
 		}
+		mutually_exclusive = { focus = JAP_demand_an_official_apology }
 	}
 	
 	focus = {
@@ -1638,16 +1799,6 @@ focus_tree = {
 
 
 
-
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		#CIVIL WAR??
-
-			}
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_5
@@ -2022,7 +2173,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 			bypass = {
-			custom_trigger_tooltip = {
+			custom_trigger_tool1 = {
 				tooltip = infrastructure_effort_tt
 				all_owned_state = {			
 					free_building_slots = {
@@ -3649,18 +3800,30 @@ focus_tree = {
 		
 		if = {
 				limit = {
+					AND = {
 					JAP_Saigo_Takamori = {
 						is_corps_commander = yes
 					}
+					SAT = {
+						NOT = {
+						has_country_flag = sat_satsuma_rebellion
+						}}
+							}
 				}
 				custom_effect_tooltip = JAP_tt5
 			}
 		hidden_effect = {
 			if = {
 				limit = {
+					AND = {
 					JAP_Saigo_Takamori = {
 						is_corps_commander = yes
 					}
+					SAT = {
+						NOT = {
+						has_country_flag = sat_satsuma_rebellion
+						}
+							}}
 				}
 				JAP_Saigo_Takamori = {
 					promote_leader = yes
@@ -4315,7 +4478,11 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 10
-
+		available = {
+		NOT = {
+		has_war_with = ENG
+		}
+		}
 		ai_will_do = {
 			factor = 2
 		}

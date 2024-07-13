@@ -93,6 +93,31 @@ characters={
 		}
     }
 	
+	JAP_Arisugawa_Taruhito = {		#2.5new
+        name = "Arisugawa Taruhito"
+        portraits = {
+	        army = {
+				large = "gfx/leaders/JAP/generals/Portrait_JAP_Arisugawa_Taruhito.dds"
+				small= "GFX_idea_gerd_von_rundstedt"
+			}
+        }
+
+		corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
+			traits = { 
+			jap_emperor_trait
+			brilliant_strategist
+			politically_connected
+			JAP_samurai_lineage
+			 }
+		}
+    }
+	
 	JAP_Kuroda_Kiyotaka = {		#3
         name = "Kuroda Kiyotaka"
         portraits = {
@@ -103,8 +128,8 @@ characters={
         }
 
 		corps_commander = {
-            skill = 3
-            attack_skill = 3
+            skill = 2
+            attack_skill = 2
             defense_skill = 2
             planning_skill = 3
 			logistics_skill = 3

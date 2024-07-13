@@ -325,12 +325,14 @@ on_actions = {
 			state = 282
 			}
 			set_province_name = { id = 1182 name = "Tokyo" }
+			set_province_name = { id = 7087 name = "Shizuoka" }
 			set_country_flag = jap_ezo_created
+			clr_country_tag = jap_western_guns
 			}	
 			}
 		}
 	}
-		on_annex = {
+	on_annex = {
 			effect = {
 				if = {
 				limit = {
@@ -349,4 +351,129 @@ on_actions = {
 				}
 			}
 		}
+	on_weekly = {
+		effect = {
+				if = {
+					limit = {
+						original_tag = JAP
+							}
+		random_list = {
+		10 = { 	}
+		90 = { 
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_6
+				}}
+				if = {
+				limit = {
+					AND = {
+					JAP = {
+						has_country_flag = jap_saigo_rejected
+							}
+					SAT = {
+						is_puppet = no
+						}
+					SAT = {
+						NOT = {
+						has_country_flag = sat_satsuma_rebellion
+						}
+						NOT = {
+							has_war_with = JAP
+						}}
+						}}
+				if = {
+					limit = {
+						SAT = {
+							exists = no
+						}
+					}
+				release = SAT
+				1007 = {
+				add_core_of = JAP
+				}
+				}
+				SAT = {
+				declare_war_on = {
+				target = JAP
+				type = annex_everything
+				}
+				create_country_leader = {
+				name = "Saigo Takamori"
+				desc = "JAP_komei_desc"
+				picture = "gfx/leaders/JAP/generals/Portrait_JAP_Saigo_Takamori.dds"
+				expire = "1965.1.1"
+				ideology = sat_satsuma
+				traits = { 
+				}
+			}
+			set_country_flag = sat_satsuma_rebellion
+			add_manpower = 2000
+			division_template = {
+				name = "Samurai Elite Guard"
+				priority = 1
+				division_names_group = SAT_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+				}
+			}
+			division_template = {
+				name = "Daimyo Troops"
+				priority = 1
+				division_names_group = SAT_INF_01
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 1 y = 0 }
+					irregular_infantry = { x = 1 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1007 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Samurai Elite Guard\" division_template = \"Samurai Elite Guard\" start_experience_factor = 1.0" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Samurai Elite Guard\" division_template = \"Samurai Elite Guard\" start_experience_factor = 1.0" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Daimyo Troops\" division_template = \"Daimyo Troops\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Daimyo Troops\" division_template = \"Daimyo Troops\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Daimyo Troops\" division_template = \"Daimyo Troops\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+			}
+				
+				inherit_technology = JAP
+				}
+				JAP_Saigo_Takamori = { 
+				set_nationality = SAT
+				}
+				JAP = {	
+				swap_ideas = { 
+				remove_idea = jap_societal_backlash_6
+				add_idea = jap_societal_backlash_4
+				}}
+				}
+			}
+			}
+		}}}
+		}
+		}
+		
+		
+		
+		
 }
