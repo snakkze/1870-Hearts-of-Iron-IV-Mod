@@ -156,18 +156,18 @@ country_event = {
 				is_historical_focus_on = yes
 			}
         }
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
 		PRS = {
 			annex_country = {
 				target = ROOT
 				transfer_troops = yes
 			}
 			country_event = prussia_fpw.4
-		}
-		every_state = {
-			limit = {
-				is_core_of = ROOT
-			}
-			add_core_of = PRS
 		}
 	}
 
@@ -540,18 +540,18 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
 		PRS = {
 			annex_country = {
 				target = ROOT
 				transfer_troops = yes
 			}
 			country_event = prussia_fpw.13
-		}
-		every_state = {
-			limit = {
-				is_core_of = ROOT
-			}
-			add_core_of = PRS
 		}
 	}
 
@@ -1084,18 +1084,18 @@ country_event = {
 				factor = 2.0
 			}
         }
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
 		PRS = {
 			annex_country = {
 				target = ROOT
 				transfer_troops = yes
 			}
 			country_event = prussia_fpw.35
-		}
-		every_state = {
-			limit = {
-				is_core_of = ROOT
-			}
-			add_core_of = PRS
 		}
 	}
 
@@ -1238,18 +1238,18 @@ country_event = {
 				factor = 2.0
 			}
         }
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = PRS
+		}
 		PRS = {
 			annex_country = {
 				target = ROOT
 				transfer_troops = yes
 			}
 			country_event = prussia_fpw.38
-		}
-		every_state = {
-			limit = {
-				is_core_of = ROOT
-			}
-			add_core_of = PRS
 		}
 	}
 

@@ -458,10 +458,17 @@ country_event = {
 					original_tag = PRS
 				}
 			}
-			hidden_effect = {	
-				FRA = {
-					country_event = france_fpw.2
-				}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = fpw_franco_prussian_war_flag
+						}
+					}
+					FRA = {
+						country_event = france_fpw.2
+					}
+				}	
 			}
 		}
 	}

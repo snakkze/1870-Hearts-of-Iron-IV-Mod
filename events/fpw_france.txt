@@ -269,9 +269,15 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
+		set_global_flag = fpw_franco_prussian_war_flag
 		declare_war_on = {
 			target = PRS
 			type = topple_government
+		}
+		diplomatic_relation = {
+			country = PAP
+			   relation = guarantee
+			active = no
 		}
 	}
 }
