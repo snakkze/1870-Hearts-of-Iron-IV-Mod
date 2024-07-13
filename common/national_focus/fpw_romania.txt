@@ -460,7 +460,7 @@
 
 		focus = {
 		id = rom_minister_of_labour
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = rom_industrial_dreams }
 		mutually_exclusive = { }
 		
@@ -484,7 +484,7 @@
 
 		focus = {
 		id = rom_strict_work_shifts
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = rom_minister_of_labour }
 		mutually_exclusive = { }
 		
@@ -508,7 +508,7 @@
 
 		focus = {
 		id = rom_industrial_standards_act
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construction
 		prerequisite = { focus = rom_strict_work_shifts }
 		mutually_exclusive = { }
 		
@@ -532,7 +532,7 @@
 
 		focus = {
 		id = rom_worker_safety_regulations
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = rom_strict_work_shifts }
 		mutually_exclusive = { }
 		
@@ -556,7 +556,7 @@
 
 		focus = {
 		id = rom_workplace_inspections
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = rom_industrial_standards_act
 		                 focus = rom_worker_safety_regulations }
 		mutually_exclusive = { }
@@ -581,7 +581,7 @@
 
 		focus = {
 		id = rom_labor_union_recognition
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = rom_industrial_standards_act
 		                 focus = rom_worker_safety_regulations }
 		mutually_exclusive = { }
@@ -606,7 +606,7 @@
 
 		focus = {
 		id = rom_end_industry_reform
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = rom_labor_union_recognition
 		                 focus = rom_workplace_inspections }
 		mutually_exclusive = { }
@@ -631,7 +631,7 @@
 
 		focus = {
 		id = rom_invest_in_moldova
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = rom_minister_of_labour }
 		mutually_exclusive = { }
 		
@@ -655,7 +655,7 @@
 
 		focus = {
 		id = rom_invest_in_wallachia
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = rom_minister_of_labour }
 		mutually_exclusive = { }
 		
@@ -679,7 +679,7 @@
 
 		focus = {
 		id = rom_infrastructure_wallachia
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = rom_invest_in_wallachia }
 		mutually_exclusive = { }
 		
@@ -703,7 +703,7 @@
 
 		focus = {
 		id = rom_infrastructure_moldova
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = rom_invest_in_moldova }
 		mutually_exclusive = { }
 		
@@ -727,7 +727,7 @@
 
 		focus = {
 		id = rom_factory_moldova
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = rom_infrastructure_moldova }
 		mutually_exclusive = { }
 		
@@ -751,7 +751,7 @@
 
 		focus = {
 		id = rom_factory_wallachia
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = rom_infrastructure_wallachia }
 		mutually_exclusive = { }
 		
@@ -775,7 +775,7 @@
 
 		focus = {
 		id = rom_connect_the_railways
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = rom_factory_wallachia
 		                 focus = rom_factory_moldova }
 		mutually_exclusive = { }
@@ -800,7 +800,7 @@
 
 		focus = {
 		id = rom_national_building 
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = rom_connect_the_railways }
 		prerequisite = { focus = rom_end_industry_reform }
 		mutually_exclusive = { }
@@ -876,7 +876,7 @@
 
 		focus = {
 		id = rom_ottoman_aid
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = rom_minister_of_labour }
 		mutually_exclusive = { }
 		
@@ -900,7 +900,7 @@
 
 		focus = {
 		id = rom_ottoman_workforece
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_aluminum
 		prerequisite = { focus = rom_ottoman_aid }
 		mutually_exclusive = { }
 		
@@ -924,7 +924,7 @@
 
 		focus = {
 		id = rom_ottoman_machinery
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_tungsten
 		prerequisite = { focus = rom_ottoman_aid }
 		mutually_exclusive = { }
 		
@@ -948,7 +948,7 @@
 
 		focus = {
 		id = rom_ottoman_licences
-		icon = GFX_thisgfxiswrong
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = rom_ottoman_machinery }
 		prerequisite = { focus = rom_ottoman_workforece }
 		mutually_exclusive = { }
@@ -1382,7 +1382,7 @@
 
 		focus = {
 		id = rom_industry_supper_power
-		icon = GFX_thisgfxiswrong
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = rom_expand_the_complex
 		                 focus = rom_national_building  }
 		mutually_exclusive = { }
