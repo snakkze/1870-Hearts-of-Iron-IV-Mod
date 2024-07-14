@@ -322,9 +322,6 @@ focus_tree = {
 		hidden_effect = {
 		retire_character = JAP_Enomoto_Takeaki
 		retire_character = JAP_Katsu_Kaishu
-		add_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
-		}
 		add_stability = 0.2
 		
 		if = {
@@ -362,9 +359,6 @@ focus_tree = {
 		original_tag_to_check = JAP 
 		remove_ideas = {
 		jap_high_imperial_resistance
-		}
-		add_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
 		}
         IF = { 
 		limit = { Has_government = neutrality }
@@ -1706,9 +1700,6 @@ focus_tree = {
 		completion_reward = {
 		remove_ideas = {
 		jap_isolationist_sentiment
-		}
-		remove_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
 		}
 		
 		#ALSO MAYBE ADD FURTHER EVENTS/DECISIONS 
@@ -3944,7 +3935,7 @@ focus_tree = {
 		completion_reward = {
 			division_template = {
 				priority = 2
-				is_locked = yes
+				is_locked = no
 				name = "Imperial Guard"
 				priority = 1
 				division_names_group = JAP_INF_IG
