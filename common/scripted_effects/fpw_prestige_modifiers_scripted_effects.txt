@@ -243,17 +243,13 @@ give_prestige_modifiers = {
 	if = {
 		limit = {
 			NOT = {
-				JAP = {		
-					has_dynamic_modifier = {
-						modifier = fpw_JAP_isolated
-					}
+				JAP = {	
+					has_idea = jap_isolationist_sentiment
 				}
 			}
 		}
 		JAP = {
-			add_dynamic_modifier = { 
-				modifier = fpw_JAP_isolated 
-			}
+			add_ideas = jap_isolationist_sentiment
 		}
 	}
 
@@ -472,10 +468,8 @@ apply_prestige_modifier_effetcs = {
 		# Japan
 		if = {
 			limit = {
-				THIS = {		
-					has_dynamic_modifier = {
-						modifier = fpw_JAP_isolated
-					}
+				THIS = {	
+					has_idea = jap_isolationist_sentiment
 				}
 			}
 			set_temp_variable = { prestige_to_remove = 150 }
