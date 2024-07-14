@@ -116,10 +116,20 @@ if = {
 		target = SER
 		autonomous_state = autonomy_puppet
 	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_puppet
+	}
 	else = {
 		puppet = SER
+		puppet = ROM
 	}
 }
+
+create_faction = fpw_ottoman_empire_faction
+add_to_faction = TUR
+add_to_faction = SER
+add_to_faction = ROM
 
 set_convoys = 20
 set_stability = 0.5

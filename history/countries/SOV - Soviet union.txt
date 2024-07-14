@@ -101,6 +101,10 @@ if = {
 	}
 }
 
+create_faction = fpw_russian_empire_faction
+add_to_faction = SOV
+add_to_faction = FIN
+
 recruit_character = SOV_alexander_ii
 
 #RUSSIAN ARMY 

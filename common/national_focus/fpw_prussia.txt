@@ -2965,11 +2965,11 @@ focus = {
 				limit = {
 					has_completed_focus = PRS_austrian_enemy
 				}
+				set_cosmetic_tag = HRE_UNIFIED
 				if = {
 					limit = {
 						has_idea = fpw_national_reforms
 					}
-					set_cosmetic_tag = HRE_UNIFIED
 					custom_effect_tooltip = PRS_reform_civil_war
 					hidden_effect = {
 						start_civil_war = {

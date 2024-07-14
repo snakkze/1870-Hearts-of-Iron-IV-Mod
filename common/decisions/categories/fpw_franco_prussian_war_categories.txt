@@ -35,31 +35,33 @@ fpw_franco_prussian_war_category = {
 	}
 
 	visible = {
-		has_global_flag = fpw_franco_prussian_war_flag
-		OR = {
-			original_tag = FRA
-			original_tag = PRS
-			original_tag = BAD
-			original_tag = BAV
-			original_tag = WRT
-			original_tag = HES
-			if = {
-				limit = {
-					PRS = { NOT = { has_completed_focus = PRS_secure_russian_friendship } }
+		AND = {
+			has_global_flag = fpw_franco_prussian_war_flag
+			OR = {
+				original_tag = FRA
+				original_tag = PRS
+				original_tag = BAD
+				original_tag = BAV
+				original_tag = WRT
+				original_tag = HES
+				if = {
+					limit = {
+						PRS = { NOT = { has_completed_focus = PRS_secure_russian_friendship } }
+					}
+					original_tag = SOV
 				}
-				original_tag = SOV
-			}
-			if = {
-				limit = {
-					SPR = { has_country_flag = SPR_prussian_king }
+				if = {
+					limit = {
+						SPR = { has_country_flag = SPR_prussian_king }
+					}
+					original_tag = ENG
 				}
-				original_tag = ENG
-			}
-			if = {
-				limit = {
-					SPR = { has_country_flag = SPR_prussian_king }
+				if = {
+					limit = {
+						SPR = { has_country_flag = SPR_prussian_king }
+					}
+					original_tag = SPR
 				}
-				original_tag = SPR
 			}
 		}
 	}

@@ -205,6 +205,17 @@ if = {
 	}
 }
 
+create_faction = fpw_british_empire_faction
+add_to_faction = ENG
+add_to_faction = RAJ
+add_to_faction = CAN
+add_to_faction = NBR
+add_to_faction = BRC
+add_to_faction = NOV
+add_to_faction = PEI
+add_to_faction = REU
+add_to_faction = SAF
+
 
 if = {
 	limit = { has_dlc = "Together for Victory" }

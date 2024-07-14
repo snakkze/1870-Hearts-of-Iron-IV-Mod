@@ -15,25 +15,6 @@ set_popularities = {
 	communism = 2
 }
 
-
-TUR = {
-	if = {
-		limit = {
-			OR = {
-				has_dlc = "Together for Victory"
-				has_dlc = "Man the Guns"
-			}
-		}
-		set_autonomy = {
-			target = ROM
-			autonomous_state = autonomy_puppet
-		}
-		else = {
-			puppet = ROM
-		}
-	}
-}
-
 if = {
 	limit = {
 		NOT = {
