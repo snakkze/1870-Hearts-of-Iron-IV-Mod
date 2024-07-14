@@ -426,12 +426,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		
+		
+		
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -637,12 +640,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		
+		
+		
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -741,7 +747,7 @@ focus_tree = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -828,7 +834,7 @@ focus_tree = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -1172,12 +1178,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		
+		
+		
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -1341,7 +1349,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_seize_the_bonin_islands
-		icon = GFX_
+		icon = GFX_focus_SWE_the_aland_question
 		prerequisite = { focus = JAP_open_the_nation focus = JAP_guard_national_sovereignty }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
 		x = 2
@@ -1501,7 +1509,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_send_a_diplomatic_mission_to_korea
-		icon = GFX_
+		icon = GFX_focus_jap_diplomatic_mission
 		prerequisite = { focus = JAP_our_sphere_of_influence }
 		relative_position_id = JAP_our_sphere_of_influence
 		x = 3
@@ -1534,7 +1542,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_ganghwa_island_accident
-		icon = GFX_
+		icon = GFX_focus_ARG_balancing_act
 		prerequisite = { focus = JAP_send_a_diplomatic_mission_to_korea }
 		relative_position_id = JAP_send_a_diplomatic_mission_to_korea
 		x = 0
@@ -1562,7 +1570,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_demand_an_official_apology
-		icon = GFX_
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = JAP_ganghwa_island_accident }
 		relative_position_id = JAP_ganghwa_island_accident
 		x = -1
@@ -1572,7 +1580,7 @@ focus_tree = {
 	
 		
 		available = {
-
+		
 		}
 
 		ai_will_do = {
@@ -1581,6 +1589,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		
+		KOR = {
+			country_event = fpw_japan.25
+			}
 		
 		set_country_flag = jap_saigo_rejected
 		custom_effect_tooltip = JAP_tt7
@@ -1645,12 +1656,12 @@ focus_tree = {
 			}
 			}
 		}
-		mutually_exclusive = { focus = JAP_prepare_for_further_actions }
+		mutually_exclusive = { focus = JAP_perfect_justification_for_an_invasion }
 	}
 	
 	focus = {
-		id = JAP_prepare_for_further_actions
-		icon = GFX_
+		id = JAP_perfect_justification_for_an_invasion
+		icon = GFX_focus_jap_prepare_for_further_actions
 		prerequisite = { focus = JAP_ganghwa_island_accident }
 		relative_position_id = JAP_ganghwa_island_accident
 		x = 1
@@ -1667,7 +1678,13 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-		
+		create_wargoal = {
+		type = puppet_wargoal_focus
+		target = KOR
+		}
+		CHI = {
+			country_event = fpw_japan.29
+			}
 		
 		}
 		mutually_exclusive = { focus = JAP_demand_an_official_apology }
@@ -1798,7 +1815,14 @@ focus_tree = {
 
 
 
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_6
+				}
 
+		add_stability = -0.1
+
+			}
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_5
@@ -1917,7 +1941,7 @@ focus_tree = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -2039,6 +2063,7 @@ focus_tree = {
 		mutually_exclusive = { focus = JAP_denounce_shogun }
 
 		completion_reward = {
+		
 		}
 	}
   
@@ -2072,7 +2097,7 @@ focus_tree = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -2408,12 +2433,16 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		
+		
+		
+		
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -2604,7 +2633,7 @@ focus_tree = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {
@@ -4071,7 +4100,7 @@ focus_tree = {
 				has_idea = jap_societal_backlash_6
 				}
 
-		#CIVIL WAR??
+		add_stability = -0.1
 
 			}
 		if = {

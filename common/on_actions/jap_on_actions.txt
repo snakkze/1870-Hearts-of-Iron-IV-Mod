@@ -364,6 +364,7 @@ on_actions = {
 			limit = {
 				JAP = {
 				has_idea = jap_societal_backlash_6
+				has_government = fascism
 				}}
 				if = {
 				limit = {
@@ -457,6 +458,7 @@ on_actions = {
 			}
 				
 				inherit_technology = JAP
+				add_political_power = 300
 				}
 				JAP_Saigo_Takamori = { 
 				set_nationality = SAT
@@ -468,12 +470,38 @@ on_actions = {
 				}}
 				}
 			}
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_6
+				has_government = fascism
+				}}
+				JAP = {	
+				swap_ideas = { 
+				remove_idea = jap_societal_backlash_6
+				add_idea = jap_societal_backlash_4
+				}}
+				JAP = {
+				start_civil_war = {
+				ideology = neutrality
+				size = 0.25
+				army_ratio = 0.25
+				navy_ratio = 0
+				keep_all_characters = yes
+				keep_political_leader = yes
 			}
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			}	
+		}
 		}}}
 		}
 		}
-		
-		
-		
-		
-}

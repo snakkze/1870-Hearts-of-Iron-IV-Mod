@@ -333,6 +333,103 @@ ideas = {
 				surrender_limit = 0.2
 			}
 		}
+		
+		jap_supporting_korea = {	#ONLY CHINA CAN GET IT IF THEY SUPPORT KOREA IN INVASION
+
+			picture = ast_volunteer_defence_corps
+				
+			removal_cost = -1
+				
+			modifier = {
+				send_volunteers_tension = -1
+			}
+		}
+		
+		jap_kor_minor_concessions_to_japan = {
+
+			picture = great_depression
+				
+			removal_cost = -1
+				
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}
+				
+			modifier = {
+			civilian_factory_use = 1
+			}
+			targeted_modifier = {
+			tag = JAP
+			trade_cost_for_target_factor = -0.25
+			}
+		}
+		
+		jap_kor_major_concessions_to_japan = {
+
+			picture = usa_great_depression_2
+				
+			removal_cost = -1
+				
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}	
+				
+			modifier = {
+			civilian_factory_use = 2
+			}
+			targeted_modifier = {
+			tag = JAP
+			trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		jap_favourable_contracts_with_korea = {
+
+			picture = FIN_finnish_federation_of_trade_unions_light
+				
+			removal_cost = -1
+				
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}	
+				
+			modifier = {
+			consumer_goods_factor = 0.05
+			#civilian_factory_use = -1
+			}
+		}
+		
+		jap_advantageous_contracts_with_korea = {
+
+			picture = FIN_finnish_federation_of_trade_unions_light
+				
+			removal_cost = -1
+			
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}
+			
+			modifier = {
+			consumer_goods_factor = 0.1
+			#civilian_factory_use = -2
+			}
+		}
 }
 	hidden_ideas = {
 	
