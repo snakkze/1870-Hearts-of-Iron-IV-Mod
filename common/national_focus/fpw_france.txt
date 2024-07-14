@@ -1492,9 +1492,12 @@
 		cost = 5
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1529,13 +1532,14 @@
 		relative_position_id = FRA_strike_the_east
 		cost = 5
 		search_filters = {FOCUS_FILTER_HISTORICAL}
-		ai_will_do = {
-			factor = 0
-		}
 
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		completion_reward = {
@@ -1566,11 +1570,11 @@
 		relative_position_id = FRA_strike_the_east
 		cost = 5
 		ai_will_do = {
-			factor = 0
-		}
-
-		ai_will_do = {
-			factor = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1607,7 +1611,11 @@
 		relative_position_id = FRA_malacca_strategy
 		cost = 10
 		ai_will_do = {
-			factor = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1641,13 +1649,14 @@
 		relative_position_id = FRA_expanding_colonial_empire
 		cost = 5
 		search_filters = {FOCUS_FILTER_HISTORICAL}
-		ai_will_do = {
-			factor = 5
-		}
 
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		completion_reward = {
@@ -1662,13 +1671,14 @@
 		y = 2
 		relative_position_id = FRA_strike_africa
 		cost = 5
-		ai_will_do = {
-			factor = 0
-		}
 
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		completion_reward = {
@@ -1700,13 +1710,14 @@
 		relative_position_id = FRA_strike_africa
 		cost = 5
 		search_filters = {FOCUS_FILTER_HISTORICAL}
-		ai_will_do = {
-			factor = 0
-		}
 
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		completion_reward = {

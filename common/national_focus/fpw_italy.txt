@@ -487,8 +487,13 @@ focus_tree = {
 		relative_position_id = ITA_ally_germany
 		cost = 2
 
+		
 		ai_will_do = {
-			base = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		search_filters = {}
@@ -510,8 +515,13 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
+		
 		ai_will_do = {
-			base = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 		relative_position_id = ITA_franco_prussian_war
 		cost = 1
@@ -1459,17 +1469,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_colonial_empire
 		cost = 5
-		ai_will_do = {
-			base = 0
-		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
-
 		ai_will_do = {
-			base = 0
+			base = 10
 			modifier = {
-				is_historical_focus_on = no
-				add = 10
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 
@@ -1520,7 +1526,7 @@ focus_tree = {
 				add = -9
 			}
 			modifier = {
-				NOT = { is_historical_focus_on }
+				NOT = { is_historical_focus_on = yes }
 				add = -5
 			}
 		}
@@ -1543,19 +1549,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_colonial_empire
 		cost = 5
-		ai_will_do = {
-			base = 0
-		}
+		
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
+		
 		ai_will_do = {
 			base = 10
 			modifier = {
-				ITA = {
-					is_ai = yes
-				}
 				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 
@@ -1577,8 +1580,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_establish_italian_east_asia
 		cost = 5
+		
 		ai_will_do = {
-			base = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
@@ -1601,14 +1609,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_establish_the_african_colonies
 		cost = 5
-		ai_will_do = {
-			base = 0
-		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
+		
 		ai_will_do = {
-			base = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		completion_reward = {
@@ -1633,8 +1643,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_establish_italian_east_asia
 		cost = 1
+		
 		ai_will_do = {
-			base = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1665,7 +1680,11 @@ focus_tree = {
 		relative_position_id = ITA_establish_the_african_colonies
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
