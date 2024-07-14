@@ -95,6 +95,7 @@ ideas = {
 				
 			removal_cost = -1
 				
+				
 			modifier = {
 			lend_lease_tension = 0.3
 			diplomatic_pressure_mission_factor = -0.3
@@ -106,6 +107,7 @@ ideas = {
 			send_volunteers_tension = 0.3
 			land_doctrine_cost_factor = 0.15
 			naval_doctrine_cost_factor = 0.15
+			custom_modifier_tooltip = prestige_modifier_isolation
 			}
 		}
 		
@@ -132,7 +134,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = GFX_
+			picture = JAP_medical_infrastructure
 				
 			removal_cost = -1
 				
