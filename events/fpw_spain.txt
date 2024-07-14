@@ -462,7 +462,10 @@ country_event = {
 				if = {
 					limit = {
 						NOT = {
-							has_global_flag = fpw_franco_prussian_war_flag
+							OR = {
+								has_global_flag = fpw_franco_prussian_war_flag
+								has_global_flag = fpw_prussia_lost_apw
+							}	
 						}
 					}
 					FRA = {

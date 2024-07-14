@@ -44,6 +44,9 @@ prussian_surrender_2 = {
 		51 = {
 			transfer_state_to = FRA
 		}
+		1009 = {
+			transfer_state_to = FRA
+		}
 		complete_national_focus = FRA_empire_triumphant
 	}
 }

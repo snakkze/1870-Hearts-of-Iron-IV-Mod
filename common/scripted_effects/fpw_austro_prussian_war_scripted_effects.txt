@@ -309,6 +309,7 @@ prussian_surrender = {
 	PRS = {
 		dismantle_faction = yes
 	}
+	set_global_flag = fpw_prussia_lost_apw
 }
 
 austrian_surrender = {

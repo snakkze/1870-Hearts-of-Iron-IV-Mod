@@ -1762,6 +1762,13 @@
 			}
 		}
 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = fpw_prussia_lost_apw_tt
+				has_global_flag = fpw_prussia_lost_apw
+			}
+		}
+
 		completion_reward = {
 			set_global_flag = fpw_franco_prussian_war_flag
 			declare_war_on = {
