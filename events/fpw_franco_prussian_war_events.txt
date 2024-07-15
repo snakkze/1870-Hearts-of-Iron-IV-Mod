@@ -297,6 +297,11 @@ country_event = {
 			transfer_state_to = FPC
 			add_core_of = FPC
 		}
+		hidden_effect = {
+			FPC = {
+				load_oob = "FPC_1871"
+			}
+		}
 	}
 
 	option = {
@@ -307,6 +312,9 @@ country_event = {
 			add_core_of = FPC
 		}
 		hidden_effect = {
+			FPC = {
+				load_oob = "FPC_1871"
+			}
 			FPC = {
 				change_tag_from = ROOT
 			}
