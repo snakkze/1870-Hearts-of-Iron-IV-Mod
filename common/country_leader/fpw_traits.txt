@@ -13,7 +13,7 @@
 leader_traits = {
 
 
-	tsar_of_russia = {
+	fpw_tsar_of_russia = {
 		random = no
 		#political_power_factor = 0.05
 		war_support_factor = 0.10
@@ -25,7 +25,7 @@ leader_traits = {
 		}
 	}
 
-	tsar_reformer_radical = {
+	fpw_tsar_reformer_radical = {
 		random = no
 		political_power_factor = 0.10
 		stability_factor = 0.05
@@ -35,7 +35,7 @@ leader_traits = {
 		}
 	}
 	
-	tsar_reformer = {
+	fpw_tsar_reformer = {
 		random = no
 		political_power_factor = 0.05
 		stability_factor = -0.05
@@ -102,4 +102,43 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	fpw_minister_of_national_enlightenment = {
+		random = no
+		political_power_factor = -0.05
+		research_speed_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fpw_minister_of_foreign_affairs = {
+		random = no
+		opinion_gain_monthly_factor = 0.15
+		enemy_justify_war_goal_time = 0.15
+		trade_opinion_factor = 0.10
+		justify_war_goal_time = -0.1
+	}
+	
+	fpw_liberal_architect = {
+		random = no
+		stability_factor = -0.05
+		fascism_drift = 0.01
+		democratic_drift = 0.01
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.10
+		
+	}
+	
+	fpw_minister_of_war = {
+		random = no
+		war_support_factor = 0.10
+		command_power_gain_mult = 0.10
+		conscription_factor = 0.10
+		mobilization_speed = 0.20
+	}
+	
+	
+	
 }
