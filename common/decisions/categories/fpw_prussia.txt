@@ -38,17 +38,10 @@ PRS_reform_the_government = {
 	picture = GFX_decision_cat_picture_SWI_federal_council
 
 	allowed = {
-		always = yes
+		original_tag = PRS
 	}
 
 	visible = {
-		AND = {
-			original_tag = PRS
-			PRS = {
-				has_idea = fpw_national_reforms
-				has_completed_focus = PRS_austrian_enemy
-			}
-		}
 	}
 }
 

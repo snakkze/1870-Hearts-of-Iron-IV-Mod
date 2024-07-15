@@ -74,7 +74,7 @@ PRS_reform_the_government = {
 		}
 
 		allowed = {
-			has_idea = fpw_national_reforms
+			original_tag = PRS
 		}
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -83,10 +83,6 @@ PRS_reform_the_government = {
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 
 		complete_effect = {
