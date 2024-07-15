@@ -78,9 +78,9 @@ on_actions = {
 					limit = {
 					ALL = {
 				country_exists = ENG
-				ENG = {
-						has_tech = fpw_infantry_equipment_1
-				}
+				JAP = {
+					has_country_flag = jap_western_guns
+							}
 				JAP = {
 							has_civil_war = yes 
 							has_government = fascism
@@ -89,9 +89,9 @@ on_actions = {
 							}}
 				if = {
 					limit = {
-				JAP = {
-					has_country_flag = jap_western_guns
-							}
+				ENG = {
+						has_tech = fpw_infantry_equipment_1
+				}
 							}
 				JAP = {			
 					add_equipment_to_stockpile = {
@@ -100,36 +100,29 @@ on_actions = {
 				producer = ENG
 			}
 			}
-					}
-					}
-			else_if = {
+			}
+			if = {
 					limit = {
-					AND = {
-				country_exists = ENG
-				JAP = {
-							has_civil_war = yes 
-							has_government = fascism
-							}
-				date < 1870.1.1
+					ALL = {
+				ENG = {
+					NOT = {
+						has_tech = fpw_infantry_equipment_1
+					}	
 				}
-							}
-				if = {
-					limit = {
-				JAP = {
-					has_country_flag = jap_western_guns
-							}
-							}
+				ENG = {
+						has_tech = fpw_infantry_equipment_0
+				}
+					}}
 				JAP = {			
 					add_equipment_to_stockpile = {
 				type = fpw_infantry_equipment_0
 				amount = 100
 				producer = ENG
 			}
-			}
+			}}
 					}
 					}
 					}
-			}
 		}
 	on_monthly = {
 		effect = {
