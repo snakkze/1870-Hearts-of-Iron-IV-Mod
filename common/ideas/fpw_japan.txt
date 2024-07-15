@@ -230,6 +230,12 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			
+			available = {
+			NOT = {
+			has_government = communism
+			}
+			}
 
 			picture = JAP_upset_farmers
 				
@@ -240,6 +246,30 @@ ideas = {
 			consumer_goods_factor = -0.05
 			industrial_capacity_factory = 0.1
 			monthly_population = 0.2
+			}
+		}
+		
+		jap_food_shortage	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+
+			}
+
+			picture = raj_risk_of_famine
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.1
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+			monthly_population = -0.5
+			army_speed_factor = -0.1
+			army_morale_factor = -0.1
 			}
 		}
 		

@@ -94,7 +94,8 @@
  JAP_tt3: "You will receive §Y1 convoy§! per §Ymonth§!. "
  JAP_tt4: "The §Ycivil war§! will be §Rharder§!. "
  JAP_tt5: "§YSaigō Takamori§! becomes a Field Marshal. "
- JAP_tt6: "§YEnomoto Takeaki§! and §YKatsu Kaishū§! will be pardoned. "
+ JAP_tt6: "§YEnomoto Takeaki§! and §YKatsu Kaishū§! will be §Gpardoned§!. "
+ JAP_tt6b: "§YEnomoto Takeaki§! and §YKatsu Kaishū§! will be §Rexecuted§!. "
  JAP_tt7: "§YSaigō Takamori§! will §Rlose trust§! in the §Yemperor§!. "
  JAP_societal_backlash_1_tt: "§YMinor Grievances§!\n Political Power Gain: §R-3%§!\n Stability: §R-5.00%§!"
  JAP_societal_backlash_2_tt: "§YGrowing Concerns§!\n Political Power Gain: §R-6%§!\n Stability: §R-10.00%§!"
@@ -105,6 +106,9 @@
  JAP_tt8: "After the §RCurrency Transition Period§! is §Yover§!, it will be replaced by §GStandardized Currency§! \n\n§YStandardized Currency§!\n- Consumer Goods Factories factor: §Y-5.0%§!\n- Construction Speed: §G+10.00%§!\n- Production Efficiency Growth: §G+10.00%§!\n- Factory Output: §G+10.00%§!\n- Trade deal opinion factor: §Y+10.00%§!"
  JAP_tt9: "After the §RTax Reform Period§! is §Yover§!, it will be replaced by §GReformed Tax System§! \n\n§YReformed Tax System§!\n- Resource Gain Efficiency: §G+15.0%§!\n- Consumer Goods Factories factor: §Y-3.0%§!\n- Stability: §G+5.00%§!\n- Factory Output: §G+5.00%§!"
  JAP_tt10: "§YFarmers§! may §Rrevolt§! at some point. "
+ fpw_japan_farmer_leader_name: "Rebelling Farmers"
+ fpw_japan_farmer_leader_desc: ""
+
 
  JAP_modernize_the_military_system: "Modernize The Military System"
  JAP_modernize_the_military_system_desc: ""

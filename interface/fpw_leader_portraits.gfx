@@ -323,6 +323,10 @@ spriteTypes = {
 		name = "GFX_Portrait_JAP_komei"
 		texturefile = "gfx/leaders/JAP/Portrait_JAP_komei.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_farmers"
+		texturefile = "gfx/leaders/JAP/Portrait_JAP_farmers.dds"
+	}
 	#EZO
 		spriteType = {
 		name = "GFX_Portrait_EZO_enomoto_takeaki"
