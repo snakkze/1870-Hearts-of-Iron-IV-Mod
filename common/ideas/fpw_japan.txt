@@ -146,6 +146,103 @@ ideas = {
 			}
 		}
 		
+		jap_currency_transition_period	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			on_remove = {
+                set_country_flag = fpw_jap_currency_transition_period_removed
+            }
+		
+			picture = usa_great_depression
+				
+			removal_cost = -1
+				
+			modifier = {
+			trade_opinion_factor = -0.1
+			consumer_goods_factor = 0.1
+			production_factory_efficiency_gain_factor = -0.5 
+			}
+		}
+		
+		jap_standardized_currency	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = NOR_printing_money
+				
+			removal_cost = -1
+				
+			modifier = {
+			industrial_capacity_factory = 0.10
+			production_factory_efficiency_gain_factor = 0.1
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			trade_opinion_factor = 0.1
+			}
+		}
+		
+		jap_tax_reform_period	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			on_remove = {
+                set_country_flag = fpw_jap_tax_reform_period_removed
+            }
+
+			picture = JAP_upset_farmers
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.05
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			}
+		}
+		
+		jap_reformed_tax_system	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = JAP_upset_farmers
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = 0.05
+			consumer_goods_factor = -0.03
+			industrial_capacity_factory = 0.05
+			local_resources_factor = 0.15
+			}
+		}
+		
+		jap_upset_farmers	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = JAP_upset_farmers
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.1
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.1
+			monthly_population = 0.2
+			}
+		}
+		
 		jap_outdated_forces	= {
 				
 			allowed_civil_war = {

@@ -1246,6 +1246,7 @@ focus_tree = {
 		add_ideas = {
 		civilian_economy
 		}
+		custom_effect_tooltip = JAP_tt0
 		if = {
 			limit = {
 				has_idea = export_focus
@@ -2039,7 +2040,7 @@ focus_tree = {
   
   	focus = {
 		id = JAP_continue_the_shogunate_tradition
-		icon = GFX_focus_jap_shogun
+		icon = GFX_focus_jap_shogunate_tradition
 		x = 30
 		y = 0
 		cost = 5
@@ -2424,10 +2425,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		
-		
-		
-		
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_6
@@ -2497,6 +2494,17 @@ focus_tree = {
 			}
 			}
 
+		add_timed_idea = {
+		idea = jap_currency_transition_period
+		days = 365
+		}
+		custom_effect_tooltip = JAP_tt0
+		custom_effect_tooltip = JAP_tt8
+		custom_effect_tooltip = JAP_tt0
+
+
+
+
 		}
 		mutually_exclusive = { focus = JAP_keep_the_koban }
 	}
@@ -2515,7 +2523,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
+		add_stability = 0.05
+		add_political_power = 75
 		}
 	}
 	
@@ -2526,7 +2535,7 @@ focus_tree = {
 		relative_position_id = JAP_reform_the_monetary_system
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0
@@ -2607,7 +2616,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_modernize_taxation
-		icon = GFX_
+		icon = GFX_focus_jap_modernize_taxation
 		prerequisite = { focus = JAP_distribute_the_yen focus = JAP_keep_the_koban }
 		relative_position_id = JAP_distribute_the_yen
 		x = 1
@@ -2619,6 +2628,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		
+		country_event = fpw_japan.40
+		custom_effect_tooltip = JAP_tt0
+		
+		
+		
 		if = {
 			limit = {
 				has_idea = jap_societal_backlash_6

@@ -90,7 +90,7 @@ on_actions = {
 				if = {
 					limit = {
 				JAP = {
-					has_country_tag = jap_western_guns
+					has_country_flag = jap_western_guns
 							}
 							}
 				JAP = {			
@@ -116,7 +116,7 @@ on_actions = {
 				if = {
 					limit = {
 				JAP = {
-					has_country_tag = jap_western_guns
+					has_country_flag = jap_western_guns
 							}
 							}
 				JAP = {			
@@ -327,7 +327,7 @@ on_actions = {
 			set_province_name = { id = 1182 name = "Tokyo" }
 			set_province_name = { id = 7087 name = "Shizuoka" }
 			set_country_flag = jap_ezo_created
-			clr_country_tag = jap_western_guns
+			clr_country_flag = jap_western_guns
 			}	
 			}
 		}
@@ -489,10 +489,75 @@ on_actions = {
 				navy_ratio = 0
 				keep_all_characters = yes
 				keep_political_leader = yes
+				keep_unit_leaders_trigger = {
+				has_trait = jap_emperor_trait
+				}
 			}
 			}
 			}	
 		}
 		}}}
 		}
+		on_daily = {
+		effect = {
+			every_country = {
+			limit = {
+			original_tag = JAP
+			has_completed_focus = JAP_distribute_the_yen
+			NOT = {
+			has_idea = {
+			jap_currency_transition_period
+			}
+			}
+			NOT = {
+			has_idea = {
+			jap_standardized_currency
+			}
+			}
+			has_country_flag = fpw_jap_currency_transition_period_removed
+			}
+			add_ideas = {
+			jap_standardized_currency
+			}
+			}		
+			}
+		}
+		
+		on_daily = {
+		effect = {
+			every_country = {
+			limit = {
+			original_tag = JAP
+			has_completed_focus = JAP_modernize_taxation
+			NOT = {
+			has_idea = {
+			jap_tax_reform_period
+			}
+			}
+			NOT = {
+			has_idea = {
+			jap_reformed_tax_system
+			}
+			}
+			has_country_flag = fpw_jap_tax_reform_period_removed
+			}
+			add_ideas = {
+			jap_reformed_tax_system
+			}
+			}		
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		}

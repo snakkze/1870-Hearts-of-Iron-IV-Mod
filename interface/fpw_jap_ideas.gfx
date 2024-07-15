@@ -1,0 +1,10 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_JAP_medical_infrastructure"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_medical_infrastructure.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_upset_farmers"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_upset_farmers.dds"
+	}
+}
