@@ -294,7 +294,6 @@ country_event = {
 	option = {
 		name = franco_prussian_fpw.8.a
 		16 = {
-			set_demilitarized_zone = yes
 			transfer_state_to = FPC
 			add_core_of = FPC
 		}
@@ -304,7 +303,6 @@ country_event = {
 		name = franco_prussian_fpw.8.b
 		custom_effect_tooltip = change_to_fpc_tt
 		16 = {
-			set_demilitarized_zone = yes
 			transfer_state_to = FPC
 			add_core_of = FPC
 		}

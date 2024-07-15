@@ -511,6 +511,7 @@ country_event = {
 			OR = {
 				has_global_flag = austro_prussian_war
 				has_global_flag = fpw_prusso_austrian_war
+				has_global_flag = fpw_prusso_austrian_war_2
 			}
 			PRS = {
 				has_war_with = AUS
@@ -536,6 +537,13 @@ country_event = {
 				ITA = { country_event = austro_prussian_fpw.4 }
 			}
 			clr_global_flag = austro_prussian_war
+		}
+		else_if = {
+			limit = {
+				has_global_flag = fpw_prusso_austrian_war_2
+			}
+			austrian_surrender_3 = yes
+			clr_global_flag = fpw_prusso_austrian_war_2
 		}
 		else = {
 			austrian_surrender_2 = yes 

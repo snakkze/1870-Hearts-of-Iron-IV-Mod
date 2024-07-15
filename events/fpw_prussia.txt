@@ -75,35 +75,81 @@ country_event = {
 	# GREAT!
 	option = {
 		name = prussia_fpw.2.a
-		PRS = {
-			create_faction = nordachse_faction
-			add_to_faction = MKS
-			add_to_faction = MCK
-			add_to_faction = LUE
-			add_to_faction = HAM
-			add_to_faction = BRE
-			add_to_faction = OLD
-			add_to_faction = HNV
-			add_to_faction = HEK
-			add_to_faction = WLD
-			add_to_faction = SBL
-			add_to_faction = SBG
-			add_to_faction = LIP
-			add_to_faction = NAS
-			add_to_faction = BRU
-			add_to_faction = SXY
-			add_to_faction = SXM
-			add_to_faction = SXW
-			add_to_faction = SCG
-			add_to_faction = ANH
-			add_to_faction = FRK
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = MKS
+					original_tag = MCK
+					original_tag = LUE
+					original_tag = HAM
+					original_tag = BRE
+					original_tag = OLD
+					original_tag = HNV
+					original_tag = HEK
+					original_tag = WLD
+					original_tag = SBL
+					original_tag = SBG
+					original_tag = LIP
+					original_tag = NAS
+					original_tag = BRU
+					original_tag = SXY
+					original_tag = SXM
+					original_tag = SXW
+					original_tag = SCG
+					original_tag = ANH
+					original_tag = FRK
+				}
+			}
+			PRS = {
+				create_faction = nordachse_faction
+				add_to_faction = PREV
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_autonomy = {
+						target = PREV
+						autonomous_state = autonomy_integrated_puppet
+						freedom_level = 0.2
+					}
+					else = {
+						puppet = PREV
+					}
+				}
+			}
 		}
-		AUS = {
-			create_faction = sudachse_faction
-			add_to_faction = BAV
-			add_to_faction = WRT
-			add_to_faction = HES
-			add_to_faction = BAD
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = BAV
+					original_tag = WRT
+					original_tag = HES
+					original_tag = BAD
+				}
+			}
+			AUS = {
+				create_faction = sudachse_faction
+				add_to_faction = PREV
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_autonomy = {
+						target = PREV
+						autonomous_state = autonomy_integrated_puppet
+						freedom_level = 0.2
+					}
+					else = {
+						puppet = PREV
+					}
+				}
+			}
 		}
 	}
 }
@@ -1206,36 +1252,6 @@ country_event = {
 					tag = PRS
 					ratio > 0.75
 				}
-				NOT = {
-					any_neighbor_country = {
-						NOT = { original_tag = PRS }
-						is_in_faction_with = PRS
-					}
-				}
-			}
-			modifier = {
-				factor = 0 #if you lead a faction, fight
-				is_faction_leader = yes
-			}
-			modifier = {
-				factor = 0.5 #if you are in a faction, maybe fight
-				is_faction_leader = no
-				is_in_faction = yes
-			}
-			modifier = {
-				factor = 0.05 #if you are in a faction with a major, probably fight
-				is_faction_leader = no
-				is_in_faction = yes
-				any_allied_country = {
-					is_major = yes
-				}
-			}
-			modifier = { # Increase it again if other bordering nations are in Axis
-				any_neighbor_country = {
-					NOT = { tag = PRS }
-					is_in_faction_with = PRS
-				}
-				factor = 2.0
 			}
         }
 		every_state = {
@@ -1257,7 +1273,7 @@ country_event = {
 	option = {
 		name = prussia_fpw.34.b
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
 				factor = 0.5
 				strength_ratio = {
@@ -1303,8 +1319,9 @@ country_event = {
 
 	option = {
 		name = prussia_fpw.39.a
-		create_wargoal = {
-			target = FROM
+		set_global_flag = fpw_prusso_austrian_war_2
+		declare_war_on = {
+			target = AUS
 			type = annex_everything
 		}
 	}

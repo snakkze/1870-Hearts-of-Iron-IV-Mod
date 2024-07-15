@@ -555,3 +555,68 @@ austrian_surrender_2 = {
 	}
 	set_global_flag = fpw_prussia_won_apw_alt
 }
+
+
+
+austrian_surrender_3 = {
+	every_country = {
+		limit = {
+			is_in_faction_with = PRS
+			is_faction_leader = yes
+			has_war_with = AUS
+		}
+		# Austrian faction peace with prussian faction
+		white_peace = {
+			tag = AUS
+			message = vienna_peace_tt
+		}
+		# Austrian faction peace with prussian faction
+		set_truce = {
+			target = AUS
+			days = 90
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = AUS
+		}
+		add_core_of = PRS
+	}
+	PRS = {
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						original_tag = BAV
+						original_tag = WRT
+						original_tag = BAD
+						original_tag = HES
+					}
+					is_in_faction_with = PRS
+				}
+			}
+			PRS = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_core_of = PRS
+			}
+		}
+		annex_country = {
+			target = AUS
+			transfer_troops = yes
+		}
+		dismantle_faction = yes
+		add_ideas = fpw_disorganised_people
+		add_ideas = fpw_disorganised_army
+		add_ideas = fpw_disorganised_industry
+	}
+	set_global_flag = fpw_won_prusso_austrian_war
+}

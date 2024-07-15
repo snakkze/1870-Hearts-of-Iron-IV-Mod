@@ -2855,8 +2855,10 @@ focus = {
 		factor = 1
 	}
 
-	bypass = {
-		NOT = {
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = fpw_won_prusso_austrian_war_tt
+			has_global_flag = fpw_won_prusso_austrian_war
 			has_idea = fpw_disorganised_people
 		}
 	}
@@ -2881,8 +2883,10 @@ focus = {
 		factor = 1
 	}
 
-	bypass = {
-		NOT = {
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = fpw_won_prusso_austrian_war_tt
+			has_global_flag = fpw_won_prusso_austrian_war
 			has_idea = fpw_disorganised_army
 		}
 	}
@@ -2907,8 +2911,10 @@ focus = {
 		factor = 1
 	}
 
-	bypass = {
-		NOT = {
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = fpw_won_prusso_austrian_war_tt
+			has_global_flag = fpw_won_prusso_austrian_war
 			has_idea = fpw_disorganised_industry
 		}
 	}
