@@ -1313,7 +1313,6 @@ focus_tree = {
 		id = FPC_victory
 		icon = GFX_focus_focus_fra_revolution_utmost
 		prerequisite = { focus = FPC_start_the_revolution }
-		mutually_exclusive = { focus = FPC_focus_on_the_attack }
 		available = {
 			NOT = { country_exists = FRA }
 		}
