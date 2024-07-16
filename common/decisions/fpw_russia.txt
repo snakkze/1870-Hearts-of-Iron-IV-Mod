@@ -804,7 +804,7 @@ fpw_russia_military_cat = {
 			
 		}
 		allowed = {
-			
+			always = no # delete for relese
 		}
 		days_mission_timeout = 365
 		

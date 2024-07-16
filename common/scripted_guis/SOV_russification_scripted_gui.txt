@@ -3,15 +3,734 @@ scripted_gui = {
 		window_name = "sov_russification_gui_window"
 		context_type = decision_category
 		
-		#effects = {
-		#	polish_icon_click = {
-		#		add_political_power = 100
-		#	}
-		#	polish_icon_alt_click = {
-		#	   add_political_power = -100
-		#	}
-		#}
+		# Russia on map
 		
+		triggers = {
+			sov_russia_russification_text_visible = {
+				has_country_flag = russification_russia_visible
+			}
+			gui_russification_russia_map_1_visible = {
+				check_variable = {
+					russia_russification < 70
+				}
+			}
+			gui_russification_russia_map_2_visible = {
+				and = {
+					check_variable = {
+						russia_russification > 69
+					}
+					check_variable = {
+						russia_russification < 90
+					}
+				}
+			}
+			gui_russification_russia_map_3_visible = {
+				check_variable = {
+					russia_russification > 89
+				}
+			}
+		}
+		effects = {
+			gui_russification_russia_map_1_click = {
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_russia_visible
+					}
+					clr_country_flag = russification_russia_visible
+				}
+				else = {
+					set_country_flag = russification_russia_visible
+				}
+			}
+			gui_russification_russia_map_2_click = {
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_russia_visible
+					}
+					clr_country_flag = russification_russia_visible
+				}
+				else = {
+					set_country_flag = russification_russia_visible
+				}
+			}
+			gui_russification_russia_map_3_click = {
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_russia_visible
+					}
+					clr_country_flag = russification_russia_visible
+				}
+				else = {
+					set_country_flag = russification_russia_visible
+				}
+			}
+		}
+		
+		# Poland on map
+		
+		triggers = {
+			sov_poland_russification_text_visible = {
+				has_country_flag = russification_poland_visible
+			}
+			gui_russification_poland_map_1_visible = {
+				check_variable = {
+					poland_russification < 50
+				}
+			}
+			gui_russification_poland_map_2_visible = {
+				and = {
+					check_variable = {
+						poland_russification > 49
+					}
+					check_variable = {
+						poland_russification < 70
+					}
+				}
+			}
+			gui_russification_poland_map_3_visible = {
+				and = {
+					check_variable = {
+						poland_russification > 69
+					}
+					check_variable = {
+						poland_russification < 90
+					}
+				}
+			}
+			gui_russification_poland_map_4_visible = {
+				check_variable = {
+					poland_russification > 89
+				}
+			}
+		}
+		effects = {
+			gui_russification_poland_map_1_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_poland_visible
+					}
+					clr_country_flag = russification_poland_visible
+				}
+				else = {
+					set_country_flag = russification_poland_visible
+				}
+			}
+			gui_russification_poland_map_2_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_poland_visible
+					}
+					clr_country_flag = russification_poland_visible
+				}
+				else = {
+					set_country_flag = russification_poland_visible
+				}
+			}
+			gui_russification_poland_map_3_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_poland_visible
+					}
+					clr_country_flag = russification_poland_visible
+				}
+				else = {
+					set_country_flag = russification_poland_visible
+				}
+			}
+			gui_russification_poland_map_4_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_poland_visible
+					}
+					clr_country_flag = russification_poland_visible
+				}
+				else = {
+					set_country_flag = russification_poland_visible
+				}
+			}
+		}
+		
+		# Ukraine on map
+		
+		triggers = {
+			sov_ukraine_russification_text_visible = {
+				has_country_flag = russification_ukraine_visible
+			}
+			gui_russification_ukraine_map_1_visible = {
+				check_variable = {
+					ukraine_russification < 50
+				}
+			}
+			gui_russification_ukraine_map_2_visible = {
+				and = {
+					check_variable = {
+						ukraine_russification > 49
+					}
+					check_variable = {
+						ukraine_russification < 70
+					}
+				}
+			}
+			gui_russification_ukraine_map_3_visible = {
+				and = {
+					check_variable = {
+						ukraine_russification > 69
+					}
+					check_variable = {
+						ukraine_russification < 90
+					}
+				}
+			}
+			gui_russification_ukraine_map_4_visible = {
+				check_variable = {
+					ukraine_russification > 89
+				}
+			}
+		}
+		effects = {
+			gui_russification_ukraine_map_1_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_ukraine_visible
+					}
+					clr_country_flag = russification_ukraine_visible
+				}
+				else = {
+					set_country_flag = russification_ukraine_visible
+				}
+			}
+			gui_russification_ukraine_map_2_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_ukraine_visible
+					}
+					clr_country_flag = russification_ukraine_visible
+				}
+				else = {
+					set_country_flag = russification_ukraine_visible
+				}
+			}
+			gui_russification_ukraine_map_3_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_ukraine_visible
+					}
+					clr_country_flag = russification_ukraine_visible
+				}
+				else = {
+					set_country_flag = russification_ukraine_visible
+				}
+			}
+			gui_russification_ukraine_map_4_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_ukraine_visible
+					}
+					clr_country_flag = russification_ukraine_visible
+				}
+				else = {
+					set_country_flag = russification_ukraine_visible
+				}
+			}
+		}
+		
+		# Belarus on map
+		
+		triggers = {
+			sov_belarus_russification_text_visible = {
+				has_country_flag = russification_belarus_visible
+			}
+			gui_russification_belarus_map_1_visible = {
+				check_variable = {
+					belarus_russification < 50
+				}
+			}
+			gui_russification_belarus_map_2_visible = {
+				and = {
+					check_variable = {
+						belarus_russification > 49
+					}
+					check_variable = {
+						belarus_russification < 70
+					}
+				}
+			}
+			gui_russification_belarus_map_3_visible = {
+				and = {
+					check_variable = {
+						belarus_russification > 69
+					}
+					check_variable = {
+						belarus_russification < 90
+					}
+				}
+			}
+			gui_russification_belarus_map_4_visible = {
+				check_variable = {
+					belarus_russification > 89
+				}
+			}
+		}
+		effects = {
+			gui_russification_belarus_map_1_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_belarus_visible
+					}
+					clr_country_flag = russification_belarus_visible
+				}
+				else = {
+					set_country_flag = russification_belarus_visible
+				}
+			}
+			gui_russification_belarus_map_2_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_belarus_visible
+					}
+					clr_country_flag = russification_belarus_visible
+				}
+				else = {
+					set_country_flag = russification_belarus_visible
+				}
+			}
+			gui_russification_belarus_map_3_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_belarus_visible
+					}
+					clr_country_flag = russification_belarus_visible
+				}
+				else = {
+					set_country_flag = russification_belarus_visible
+				}
+			}
+			gui_russification_belarus_map_4_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_belarus_visible
+					}
+					clr_country_flag = russification_belarus_visible
+				}
+				else = {
+					set_country_flag = russification_belarus_visible
+				}
+			}
+		}
+		
+		# Baltics on map
+		
+		triggers = {
+			sov_baltic_russification_text_visible = {
+				has_country_flag = russification_baltic_visible
+			}
+			gui_russification_baltic_map_1_visible = {
+				check_variable = {
+					baltic_russification < 50
+				}
+			}
+			gui_russification_baltic_map_2_visible = {
+				and = {
+					check_variable = {
+						baltic_russification > 49
+					}
+					check_variable = {
+						baltic_russification < 70
+					}
+				}
+			}
+			gui_russification_baltic_map_3_visible = {
+				and = {
+					check_variable = {
+						baltic_russification > 69
+					}
+					check_variable = {
+						baltic_russification < 90
+					}
+				}
+			}
+			gui_russification_baltic_map_4_visible = {
+				check_variable = {
+					baltic_russification > 89
+				}
+			}
+		}
+		effects = {
+			gui_russification_baltic_map_1_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_baltic_visible
+					}
+					clr_country_flag = russification_baltic_visible
+				}
+				else = {
+					set_country_flag = russification_baltic_visible
+				}
+			}
+			gui_russification_baltic_map_2_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_baltic_visible
+					}
+					clr_country_flag = russification_baltic_visible
+				}
+				else = {
+					set_country_flag = russification_baltic_visible
+				}
+			}
+			gui_russification_baltic_map_3_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_baltic_visible
+					}
+					clr_country_flag = russification_baltic_visible
+				}
+				else = {
+					set_country_flag = russification_baltic_visible
+				}
+			}
+			gui_russification_baltic_map_4_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_finland_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_baltic_visible
+					}
+					clr_country_flag = russification_baltic_visible
+				}
+				else = {
+					set_country_flag = russification_baltic_visible
+				}
+			}
+		}
+		
+		# Finland on map
+		
+		triggers = {
+			sov_finland_russification_text_visible = {
+				has_country_flag = russification_finland_visible
+			}
+			gui_russification_finland_map_1_visible = {
+				check_variable = {
+					finland_russification < 50
+				}
+			}
+			gui_russification_finland_map_2_visible = {
+				and = {
+					check_variable = {
+						finland_russification > 49
+					}
+					check_variable = {
+						finland_russification < 70
+					}
+				}
+			}
+			gui_russification_finland_map_3_visible = {
+				and = {
+					check_variable = {
+						finland_russification > 69
+					}
+					check_variable = {
+						finland_russification < 90
+					}
+				}
+			}
+			gui_russification_finland_map_4_visible = {
+				check_variable = {
+					finland_russification > 89
+				}
+			}
+		}
+		effects = {
+			gui_russification_finland_map_1_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_finland_visible
+					}
+					clr_country_flag = russification_finland_visible
+				}
+				else = {
+					set_country_flag = russification_finland_visible
+				}
+			}
+			gui_russification_finland_map_2_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_finland_visible
+					}
+					clr_country_flag = russification_finland_visible
+				}
+				else = {
+					set_country_flag = russification_finland_visible
+				}
+			}
+			gui_russification_finland_map_3_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_finland_visible
+					}
+					clr_country_flag = russification_finland_visible
+				}
+				else = {
+					set_country_flag = russification_finland_visible
+				}
+			}
+			gui_russification_finland_map_4_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_caucasus_visible
+				if = {
+					limit = {
+						has_country_flag = russification_finland_visible
+					}
+					clr_country_flag = russification_finland_visible
+				}
+				else = {
+					set_country_flag = russification_finland_visible
+				}
+			}
+		}
+		
+		# Caucasus on map
+		
+		triggers = {
+			sov_caucasus_russification_text_visible = {
+				has_country_flag = russification_caucasus_visible
+			}
+			gui_russification_caucasus_map_1_visible = {
+				check_variable = {
+					caucasus_russification < 50
+				}
+			}
+			gui_russification_caucasus_map_2_visible = {
+				and = {
+					check_variable = {
+						caucasus_russification > 49
+					}
+					check_variable = {
+						caucasus_russification < 70
+					}
+				}
+			}
+			gui_russification_caucasus_map_3_visible = {
+				and = {
+					check_variable = {
+						caucasus_russification > 69
+					}
+					check_variable = {
+						caucasus_russification < 90
+					}
+				}
+			}
+			gui_russification_caucasus_map_4_visible = {
+				check_variable = {
+					caucasus_russification > 89
+				}
+			}
+		}
+		effects = {
+			gui_russification_caucasus_map_1_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				if = {
+					limit = {
+						has_country_flag = russification_caucasus_visible
+					}
+					clr_country_flag = russification_caucasus_visible
+				}
+				else = {
+					set_country_flag = russification_caucasus_visible
+				}
+			}
+			gui_russification_caucasus_map_2_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				if = {
+					limit = {
+						has_country_flag = russification_caucasus_visible
+					}
+					clr_country_flag = russification_caucasus_visible
+				}
+				else = {
+					set_country_flag = russification_caucasus_visible
+				}
+			}
+			gui_russification_caucasus_map_3_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				if = {
+					limit = {
+						has_country_flag = russification_caucasus_visible
+					}
+					clr_country_flag = russification_caucasus_visible
+				}
+				else = {
+					set_country_flag = russification_caucasus_visible
+				}
+			}
+			gui_russification_caucasus_map_4_click = {
+				clr_country_flag = russification_russia_visible
+				clr_country_flag = russification_poland_visible
+				clr_country_flag = russification_ukraine_visible
+				clr_country_flag = russification_belarus_visible
+				clr_country_flag = russification_baltic_visible
+				clr_country_flag = russification_finland_visible
+				if = {
+					limit = {
+						has_country_flag = russification_caucasus_visible
+					}
+					clr_country_flag = russification_caucasus_visible
+				}
+				else = {
+					set_country_flag = russification_caucasus_visible
+				}
+			}
+		}
 		
 		
 		visible = {

@@ -413,10 +413,46 @@ ideas = {
 			}
 		}
 		
+		SOV_ineffective_administration = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.15
+				neutrality_drift = -0.02
+				war_stability_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
 		
+		SOV_fight_for_independence = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			cancel = {
+				has_war = no
+			}
+			picture = FRA_scw_intervention_republicans_focus
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				political_power_factor = 0.10
+				war_support_factor = 0.20
+			}
+		}
 		
 		
 	}
+	
 	hidden_ideas = {
 		fpw_alexander_ii = {
 			allowed = {

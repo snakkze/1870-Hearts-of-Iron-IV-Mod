@@ -1,0 +1,22 @@
+characters = {
+
+	POL_wladyslaw_czartoryski = {
+		name = POL_wladyslaw_czartoryski
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_POL_wladyslaw_czartoryski
+			}
+		}
+		country_leader = {
+			ideology = nationalism
+			traits = {
+				fpw_exiled_patriot
+			}
+			expire = "1956.01.01.01"
+			id = -1
+		}
+	}
+	
+	
+	
+}

@@ -3,18 +3,26 @@
 ## Russian Empire Branch
 
  SOV_state_of_the_empire: "State of the Empire"
+ SOV_state_of_the_empire_focus_tp: "§gUnlocks§! the §GRussification Decision Tab§!!"
  SOV_crush_polish_resistance_remnants: "Crush Polish Resistance Remnants"
  SOV_russification_programs: "Russification Programs"
+ SOV_russification_programs_focus_tp: "§gUnlocks§! various §RRepression§! decisions in the §GRussification§! tab, such as:\n §Y$ban_polish_language$\n $poland_introduce_martial_law$\n $poland_force_conscription$§!"
  SOV_undermine_national_identity: "Undermine National Identities"
+ SOV_undermine_national_identity_focus_tp: "§gUnlocks§! various §RPropaganda§! decisions in the §GRussification§! tab, such as:\n §Y$poland_promote_russian_culture$\n $raid_poland_culture_centers$§!\n\nThis will §Glower§! everyones §Ragitation§! by §C-10%§!"
  SOV_one_way_trip_to_siberia: "Deportations to Siberia"
+ SOV_one_way_trip_to_siberia_focus_tp: "§gUnlocks§! various §RDeportation§! decisions in the §GRussification§! tab, such as:\n §Y$deportation_of_poles$"
  SOV_integration_of_subjects: "Integration of Subjects"
+ SOV_integration_of_subjects_focus_tp: "Allows you to §GCore§! regions which have §Yrussification level§! on at least §C60%§!"
  SOV_finnish_question: "Finnish Question"
+ SOV_finnish_question_focus_tp: "§gUnlocks§! various §CFinnish§! decisions in the §GRussification§! tab!"
  SOV_finnish_integration: "Finnish Integration"
+ SOV_finnish_integration_focus_tp: "Allows you to §GCore§! §CFinland§! if the §Yrussification level§! is on at least §C60%§!"
  
  SOV_amnesty_for_polish_resistance: "Amnesty for Polish Resistance"
  SOV_finnish_autonomy: "Finnish Autonomy"
  SOV_stop_russification: "Stop Russification"
  SOV_congressional_kingdom: "Congressional Kingdom"
+ SOV_congressional_kingdom_focus_tp: "This will §Gincrease§! the Polish §Ccooperation§! by §C20%§!, and §Gdecrease§! their §Ragitation§! by §C20%§!!"
  SOV_promote_national_identity: "Promote National Identities"
  SOV_accessibility_of_culture: "Accessibility of Culture"
  SOV_federative_empire: "A Federal Empire?"
@@ -23,8 +31,8 @@
  
  SOV_tsars_regime: "The Tsar's Regime"
  SOV_tsars_regime_desc: "The Tsar is the legitimate ruler of the Russian Empire, and should keep his power."
- SOV_continue_reforms: "Continue Reforms"
- SOV_continue_reforms_desc: "Ending Serfdom was a great success. We shall continue these reforms in hope of a better future."
+ SOV_continue_reforms: "Slow Down the Reforms"
+ SOV_continue_reforms_desc: "Ending Serfdom was a great success, but conservative elemants in the country are deeply dissatisfied and want us to not go much further."
  SOV_free_state_serfs: "Free State Serfs"
  SOV_modify_sr_ns_intro: "Modify §Y$SOV_serfdom_remnants_dynamic_modifier$§! by"
  SOV_free_state_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+10.0%§! \nMax Factories in a State: §G+10.00%§! \n\n"    
@@ -43,10 +51,12 @@
  SOV_pay_of_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+10.0%§! \nMax Factories in a State: §G+20.00%§! \n\n"
  SOV_new_agricultural_economy: "New Agricultural Economy"
  SOV_new_agricultural_economy_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+5.0%§! \nProduction Efficiency Cap: §G+10.00%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§! \n\n"
+ SOV_new_agricultural_economy_focus_tp: "\nUnlocks §YDecisions§! that allow you to lower the §YConsumer Goods§! §RPenalty§!"
  SOV_liberalize_the_press: "Liberalize the Press"
  SOV_first_russian_constitution: "First Russian Constitution"
+ SOV_purge_the_old_gaurd: "Purge the Old Gaurd"
  SOV_democratic_russian_empire: "Democratic Russian Empire"
- 
+ SOV_democratic_russian_empire_focus_tp: "Will §Yreform§! the §G[SOV.GetAdjective]§! government based on its new §Cconstitution§!"
  
  SOV_plot_against_the_tsars: "Plot Against the Tsar"
  
@@ -66,6 +76,7 @@
  SOV_remember_austrian_betrayal: "Remember Austria's Betrayal"
  SOV_never_trust_germans: "Never Trust Germans"
  SOV_our_prussian_friends: "Our [PRS.GetAdjective] Friends"
+ SOV_friendship_treaty_with_prussia: "Friendship Treaty With [PRS.GetNameDef]"
  SOV_protector_of_poles: "Protector of Poles"
  
  SOV_asian_giant: "Asian Giant"
@@ -93,6 +104,7 @@
  SOV_ukrainian_wheat: "Ukrainian Wheat"
  SOV_civs_two: "[ENG.GetAdjective] Investors"
  SOV_mils_two: "[PRS.GetAdjective] Investors"
+ SOV_develop_alaska: "Develop Alaska"
  SOV_industry_upgrade_two: "Complete the Second Industrial Plan"
  SOV_industry_upgrade_three: "Complete the Third Industrial Plan"
  

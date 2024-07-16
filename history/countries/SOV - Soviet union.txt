@@ -66,16 +66,39 @@ set_oob = "SOV_1866"
 	set_garrison_strength = 1.0
 }
 
+set_variable = { russia_russification = 80 }
+set_variable = { poland_russification = 30 }
+set_variable = { finland_russification = 50 }
+set_variable = { ukraine_russification = 60 }
+set_variable = { belarus_russification = 70 }
+set_variable = { baltic_russification = 50 }
+set_variable = { caucasus_russification = 30 }
 
+set_variable = { russia_russification_coop = 90 }
+set_variable = { russia_russification_resist = 10 }
 
+set_variable = { poland_russification_coop = 30 }
+set_variable = { poland_russification_resist = 60 }
 
-#add_dynamic_modifier = { 
-#	modifier = fpw_underdeveloped_industry 
-#}
+set_variable = { ukraine_russification_coop = 50 }
+set_variable = { ukraine_russification_resist = 30 }
+
+set_variable = { belarus_russification_coop = 70 }
+set_variable = { belarus_russification_resist = 10 }
+
+set_variable = { baltic_russification_coop = 40 }
+set_variable = { baltic_russification_resist = 20 }
+
+set_variable = { finland_russification_coop = 20 }
+set_variable = { finland_russification_resist = 20 }
+
+set_variable = { caucasus_russification_coop = 20 }
+set_variable = { caucasus_russification_resist = 60 }
+
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1833.7.1"
+	last_election = "1860.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -84,21 +107,11 @@ set_popularities = {
 	communism = 2
 	neutrality = 88
 }
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = FIN
-		autonomous_state = autonomy_integrated_puppet
-		freedom_level = 0.2
-	}
-	else = {
-		puppet = FIN
-	}
+
+set_autonomy = {
+	target = FIN
+	autonomous_state = autonomy_integrated_puppet
+	freedom_level = 0.2
 }
 
 create_faction = fpw_russian_empire_faction
@@ -106,10 +119,16 @@ add_to_faction = SOV
 add_to_faction = FIN
 
 recruit_character = SOV_alexander_ii
+recruit_character = SOV_pavel_gagarin
+recruit_character = SOV_dmitry_tolstoy
+recruit_character = SOV_pyotr_shuvalov
+recruit_character = SOV_alexander_gorchakov
+recruit_character = SOV_nikolay_milyutin
+recruit_character = SOV_dmitry_milyutin
 
 #RUSSIAN ARMY 
 
-#	activate_mission = russia_military_situation_mission	# uncomment for relese
+#activate_mission = russia_military_situation_mission	# uncomment for relese
 set_variable = { russia_military_investments = 0 }
 
 
@@ -128,7 +147,7 @@ add_ideas = {
 	fpw_SOV_losers_of_the_crimean_war_1
 	underdeveloped_industry_1
 	orthodox_giant
-	russian_army_dynamic_mo
+	SOV_ineffective_administration
 }
 
 #SERFDOM REMNANTS SPIRIT
@@ -172,7 +191,7 @@ set_technology = {
 ####
 
 capital = 195
- oob = "SOV_1866"
+oob = "SOV_1866"
 
 starting_train_buffer = 3.0
 
@@ -213,7 +232,7 @@ if = {
 	}
 	set_technology = {
 
-}
+	}
 }
 if = {
 	limit = {
@@ -221,19 +240,19 @@ if = {
 	}
 	set_technology = {
 
-}
+	}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 
-}
+	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 
-}
+	}
 }
 
 if = {
@@ -242,7 +261,7 @@ if = {
 	}
 	set_technology = {
 
-}
+	}
 }
 
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag

@@ -63,9 +63,33 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 25
 			
+			set_country_flag = {
+				flag = SOV_ukrainian_passive_resistance_cooldown
+				days = 54
+				value = 1
+			}
+			set_country_flag = {
+				flag = SOV_belarusian_passive_resistance_cooldown
+				days = 156
+				value = 1
+			}
+			set_country_flag = {
+				flag = SOV_baltic_passive_resistance_cooldown
+				days = 80
+				value = 1
+			}
+			set_country_flag = {
+				flag = SOV_caucasus_passive_resistance_cooldown
+				days = 20
+				value = 1
+			}
+			
+			
+			add_stability = 0.05
+			add_political_power = 50
+			
+			custom_effect_tooltip = SOV_state_of_the_empire_focus_tp
 			
 		}
 	}
@@ -108,7 +132,30 @@ focus_tree = {
 			98 = { add_compliance = -10 add_resistance = -15 }
 			
 			
+			if = {
+				limit = {
+					check_variable = { poland_russification_resist < 91 }
+				}
+				add_to_variable = { poland_russification_resist = 10 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			else = {
+				set_variable = { poland_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
 			
+			if = {
+				limit = {
+					check_variable = { poland_russification_coop > 9 }
+				}
+				add_to_variable = { poland_russification_coop = -10 }
+				custom_effect_tooltip = lower_coop_by_10_tp
+			}
+			else = {
+				set_variable = { poland_russification_coop = 0 }
+				custom_effect_tooltip = lower_coop_by_10_tp
+			}
+			add_political_power = 25
 		}
 	}
 	
@@ -141,7 +188,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			add_political_power = 100
+			custom_effect_tooltip = SOV_russification_programs_focus_tp
 			
 			
 		}
@@ -176,7 +224,68 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
+			add_political_power = 80
+			custom_effect_tooltip = SOV_undermine_national_identity_focus_tp
 			
+			if = {
+				limit = {
+					check_variable = { poland_russification_resist > 9 }
+				}
+				add_to_variable = { poland_russification_resist = -10 }
+			}
+			else = {
+				set_variable = { poland_russification_resist = 0 }
+			}
+			
+			if = {
+				limit = {
+					check_variable = { finland_russification_resist > 9 }
+				}
+				add_to_variable = { finland_russification_resist = -10 }
+			}
+			else = {
+				set_variable = { finland_russification_resist = 0 }
+			}
+			
+			if = {
+				limit = {
+					check_variable = { ukraine_russification_resist > 9 }
+				}
+				add_to_variable = { ukraine_russification_resist = -10 }
+			}
+			else = {
+				set_variable = { ukraine_russification_resist = 0 }
+			}
+			
+			if = {
+				limit = {
+					check_variable = { belarus_russification_resist > 9 }
+				}
+				add_to_variable = { belarus_russification_resist = -10 }
+			}
+			else = {
+				set_variable = { belarus_russification_resist = 0 }
+			}
+			
+			if = {
+				limit = {
+					check_variable = { baltic_russification_resist > 9 }
+				}
+				add_to_variable = { baltic_russification_resist = -10 }
+			}
+			else = {
+				set_variable = { baltic_russification_resist = 0 }
+			}
+			
+			if = {
+				limit = {
+					check_variable = { caucasus_russification_resist > 9 }
+				}
+				add_to_variable = { caucasus_russification_resist = -10 }
+			}
+			else = {
+				set_variable = { caucasus_russification_resist = 0 }
+			}
 			
 			
 		}
@@ -211,8 +320,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
-			
+			add_political_power = 50
+			custom_effect_tooltip = SOV_one_way_trip_to_siberia_focus_tp
 			
 		}
 	}
@@ -247,7 +356,7 @@ focus_tree = {
 
 		completion_reward = {
 			
-			
+			custom_effect_tooltip = SOV_integration_of_subjects_focus_tp
 			
 		}
 	}
@@ -281,7 +390,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			add_political_power = 50
+			custom_effect_tooltip = SOV_finnish_question_focus_tp
 			
 			
 		}
@@ -319,7 +429,31 @@ focus_tree = {
 
 		completion_reward = {
 			
+			if = {
+				limit = {
+					check_variable = { finland_russification_resist < 81 }
+				}
+				add_to_variable = { finland_russification_resist = 20 }
+				custom_effect_tooltip = raise_resist_by_20_tp
+			}
+			else = {
+				set_variable = { finland_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_20_tp
+			}
 			
+			if = {
+				limit = {
+					check_variable = { finland_russification_coop < 91 }
+				}
+				add_to_variable = { finland_russification_coop = 10 }
+				custom_effect_tooltip = raise_coop_by_10_tp
+			}
+			else = {
+				set_variable = { finland_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_10_tp
+			}
+			
+			custom_effect_tooltip = SOV_finnish_integration_focus_tp
 			
 		}
 	}
@@ -363,6 +497,29 @@ focus_tree = {
 			98 = { add_resistance = -5 }
 			
 			
+			if = {
+				limit = {
+					check_variable = { poland_russification_resist > 9 }
+				}
+				add_to_variable = { poland_russification_resist = -10 }
+				custom_effect_tooltip = lower_resist_by_10_tp
+			}
+			else = {
+				set_variable = { poland_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification_coop < 91 }
+				}
+				add_to_variable = { poland_russification_coop = 10 }
+				custom_effect_tooltip = raise_coop_by_10_tp
+			}
+			else = {
+				set_variable = { poland_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_10_tp
+			}
 			
 		}
 	}
@@ -403,6 +560,29 @@ focus_tree = {
 				autonomous_state = autonomy_puppet
 			}
 			
+			if = {
+				limit = {
+					check_variable = { finland_russification_resist > 19 }
+				}
+				add_to_variable = { finland_russification_resist = -20 }
+				custom_effect_tooltip = lower_resist_by_20_tp
+			}
+			else = {
+				set_variable = { finland_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_20_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { finland_russification_coop < 81 }
+				}
+				add_to_variable = { finland_russification_coop = 20 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			else = {
+				set_variable = { finland_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
 			
 		}
 	}
@@ -481,25 +661,36 @@ focus_tree = {
 					transfer_state = 97
 					transfer_state = 814
 					add_ideas = fpw_alexander_ii
+					
 					set_country_flag = fpw_secondary_leader_pol_alexander_II
 				}
-				#create_country_leader = {
-				#	name = "Alexander II"
-				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-				#	picture = GFX_portrait_SOV_alexander_ii
-				#	expire = "1965.1.1"
-				#	ideology = aboslute_monarchy
-				#	traits = {
-				#	}
-				#}
 			}
-			#effect_tooltip = {
-			#	release_on_controlled = POL
-			#}
 			set_autonomy = {
 				target = POL
 				autonomous_state = autonomy_integrated_puppet
 			}
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification_resist > 19 }
+				}
+				add_to_variable = { poland_russification_resist = -20 }
+			}
+			else = {
+				set_variable = { poland_russification_resist = 0 }
+			}
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification_coop < 81 }
+				}
+				add_to_variable = { poland_russification_coop = 20 }
+			}
+			else = {
+				set_variable = { poland_russification_coop = 100 }
+			}
+			
+			custom_effect_tooltip = SOV_congressional_kingdom_focus_tp
 		}
 	}
 	
@@ -690,7 +881,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_goal_continuous_boost_freedom
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_continue_reforms focus = SOV_more_radical_reforms }
 		relative_position_id = SOV_continue_reforms
@@ -754,7 +945,11 @@ focus_tree = {
 
 		completion_reward = {
 			
+			add_political_power = 50
 			
+			add_stability = 0.05
+			
+			remove_ideas = SOV_ineffective_administration
 			
 		}
 	}
@@ -787,6 +982,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = dmitry_tolstoy
 			
 			
 			
@@ -978,14 +1175,16 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = russia_fpw.2
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = nikolay_milyutin
 			SOV_alexander_ii = {
 				remove_trait = {
 					ideology = aboslute_monarchy
-					trait = tsar_reformer
+					trait = fpw_tsar_reformer
 				}
 				add_trait = {
 					ideology = aboslute_monarchy
-					trait = tsar_reformer_radical
+					trait = fpw_tsar_reformer_radical
 				}
 			}
 			
@@ -997,7 +1196,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_focus_mex_privatisation
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_more_radical_reforms }
 		prerequisite = { focus = SOV_free_state_serfs }
@@ -1064,11 +1263,11 @@ focus_tree = {
 			#add_to_variable = { SOV_sr_production_factory_max_efficiency_factor = 0.10 }
 			#add_to_variable = { SOV_sr_industrial_capacity_factory = 0.10 }
 			#add_to_variable = { SOV_sr_industrial_capacity_dockyard = 0.10 }
-			#custom_effect_tooltip = SOV_new_agricultural_economy_effect_tt
 			hidden_effect = {
 				remove_dynamic_modifier = { modifier = SOV_serfdom_remnants_dynamic_modifier }
 			}
 			add_ideas = fpw_SOV_new_agricultural_economy
+			custom_effect_tooltip = SOV_new_agricultural_economy_focus_tp
 			
 		}
 	}
@@ -1078,7 +1277,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		#icon = GFX_
+		icon = GFX_goal_support_democracy
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_more_radical_reforms }
 		relative_position_id = SOV_more_radical_reforms
@@ -1110,15 +1309,55 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_first_russian_constitution
+		id = SOV_purge_the_old_gaurd
 		x = 0
-		y = 2
-		cost = 20
+		y = 1
+		cost = 10
 		
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_generic_conspiracy
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_liberalize_the_press }
 		relative_position_id = SOV_liberalize_the_press
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			
+			add_political_power = 50
+			
+			add_stability = 0.10
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.30
+			}
+		}
+	}
+	focus = {
+		id = SOV_first_russian_constitution
+		x = 0
+		y = 1
+		cost = 20
+		
+		icon = GFX_focus_ARG_defense_and_democracy
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_purge_the_old_gaurd }
+		relative_position_id = SOV_purge_the_old_gaurd
 		
 		ai_will_do = {
 			factor = 1
@@ -1196,6 +1435,27 @@ focus_tree = {
 					ruling_party = democratic
 					elections_allowed = no
 				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.20
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				SOV_pavel_gagarin = {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1880.1.1"
+							ideology = conservative_constitutional_monarchism
+							traits = {
+								silent_workhorse
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				add_ideas = fpw_alexander_ii
 			}
 			if = {
 				limit = {
@@ -1205,8 +1465,31 @@ focus_tree = {
 					ruling_party = fascism
 					elections_allowed = no
 				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+				SOV_nikolay_milyutin = {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1880.1.1"
+							ideology = liberal_constitutional_monarchism
+							traits = {
+								fpw_liberal_architect
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				add_ideas = fpw_alexander_ii
 			}
-			add_ideas = fpw_alexander_ii
+			else = {
+				custom_effect_tooltip = SOV_democratic_russian_empire_focus_tp
+			}
 			
 		}
 	}
@@ -1295,7 +1578,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_recovering_from_the_cimean_war
-		x = 0
+		x = 3
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -1351,13 +1634,13 @@ focus_tree = {
 		id = SOV_look_to_balkans
 		x = -4
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_focus_generic_balkans_focus
 		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_recovering_from_the_cimean_war }
-		relative_position_id = SOV_recovering_from_the_cimean_war
+		prerequisite = { focus = SOV_russian_diplomacy }
+		relative_position_id = SOV_russian_diplomacy
 		
 		ai_will_do = {
 			factor = 1
@@ -1469,13 +1752,13 @@ focus_tree = {
 		id = SOV_our_german_intrests
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_focus_PRS_hre_traditions
 		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_recovering_from_the_cimean_war }
-		relative_position_id = SOV_recovering_from_the_cimean_war
+		prerequisite = { focus = SOV_russian_diplomacy }
+		relative_position_id = SOV_russian_diplomacy
 		
 		ai_will_do = {
 			factor = 1
@@ -1596,6 +1879,50 @@ focus_tree = {
 			
 		}
 	}
+	
+	focus = {
+		id = SOV_friendship_treaty_with_prussia
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_focus_PRS_defending_the_fatherland
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_our_prussian_friends }
+		relative_position_id = SOV_our_prussian_friends
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			PRS = {
+				country_event = {
+					id = russia_fpw.16
+					days = 1
+				}
+			}
+			
+			
+			
+		}
+	}
+	
+	
 	focus = {
 		id = SOV_never_trust_germans 
 		x = 1
@@ -1687,13 +2014,13 @@ focus_tree = {
 		id = SOV_asian_giant
 		x = 6
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_focus_usa_focus_on_asia
 		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_recovering_from_the_cimean_war }
-		relative_position_id = SOV_recovering_from_the_cimean_war
+		prerequisite = { focus = SOV_russian_diplomacy }
+		relative_position_id = SOV_russian_diplomacy
 		
 		ai_will_do = {
 			factor = 1
@@ -1764,7 +2091,7 @@ focus_tree = {
 		id = SOV_consolidate_central_asia
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_goal_generic_position_armies
@@ -1942,7 +2269,7 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_ukraine_construct_infrastructure
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
@@ -1977,7 +2304,7 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_belarus_construct_infrastructure
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
@@ -2012,7 +2339,7 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_russia_construct_infrastructure
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
@@ -2784,6 +3111,51 @@ focus_tree = {
 			
 		}
 	}
+	
+	focus = {
+		id = SOV_develop_alaska
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		icon = GFX_focus_SOV_old_eastern_empire
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_civs_two focus = SOV_mils_two }
+		relative_position_id = SOV_civs_two
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 463
+		}
+		
+		bypass = {
+			NOT = { owns_state = 463 }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			463 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			
+			
+		}
+	}
+	
 	focus = {
 		id = SOV_industry_upgrade_two
 		x = 0
@@ -3018,7 +3390,7 @@ focus_tree = {
 		
 		icon = GFX_focus_generic_limited_social_mobilization
 		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_local_advisors focus = SOV_foreign_advisorss }
+		prerequisite = { focus = SOV_local_advisors focus = SOV_foreign_advisors }
 		relative_position_id = SOV_local_advisors
 		
 		ai_will_do = {
@@ -3804,6 +4176,11 @@ focus_tree = {
 				category = artillery
 			}
 			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = electronics
+			}
 			
 		}
 	}
