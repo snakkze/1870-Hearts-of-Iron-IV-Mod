@@ -1542,6 +1542,19 @@
 			}
 		}
 
+		available = {
+			hidden_trigger = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						is_historical_focus_on = yes
+					}
+				}
+			}
+		}
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1574,6 +1587,19 @@
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
+			}
+		}
+
+		available = {
+			hidden_trigger = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						is_historical_focus_on = yes
+					}
+				}
 			}
 		}
 
@@ -1717,6 +1743,19 @@
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
+			}
+		}
+
+		available = {
+			hidden_trigger = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						is_historical_focus_on = yes
+					}
+				}
 			}
 		}
 
