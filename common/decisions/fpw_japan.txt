@@ -6,6 +6,47 @@ fpw_societal_backlash_cat = {
 	
 }
 
+fpw_empire_of_jap_cat = {
+	
+	republic_of_ezo_mission = {
+    activation = {
+	JAP = {
+        has_country_flag = jap_attack_ezo
+		}
+    }
+	visible = {
+	EZO = {
+	exists = yes
+	}
+	JAP = {
+        has_country_flag = jap_attack_ezo
+		}
+	}
+	available = {
+		hidden_trigger = {
+		OR = {
+		JAP = {
+		has_war_with = EZO
+		}
+		EZO = {
+		is_puppet = yes
+		}
+		}
+		}
+		}
+    icon = GFX_decision_generic_prepare_civil_war
+    is_good = yes
+    war_with_on_timeout = EZO
+    days_mission_timeout = 90
+	complete_effect = {
 
-
-
+    }
+    timeout_effect = {
+        declare_war_on = {
+            target = EZO
+            type = annex_everything
+        }
+    }
+	}
+	
+}
