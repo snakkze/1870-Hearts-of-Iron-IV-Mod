@@ -2,14 +2,29 @@
  
  # Traits
  
- tsar_of_russia: "Tsar of Russia"
- tsar_reformer: "Tsar Reformer"
- tsar_reformer_radical: "Tsar Reformer"
+ fpw_tsar_of_russia: "Tsar of Russia"
+ fpw_tsar_reformer: "Tsar Reformer"
+ fpw_tsar_reformer_radical: "Tsar Reformer"
+ fpw_minister_of_national_enlightenment: "Minister of National Enlightenment"
+ fpw_minister_of_foreign_affairs: "Minister of Foreign Affairs"
+ fpw_liberal_architect: "Liberal Architect"
+ fpw_minister_of_war: "Minister of War"
+ 
+ fpw_exiled_patriot: "Exiled Patriot"
  
  # Characters
  
  SOV_alexander_ii: "Alexander II"
  SOV_nikolai_adlerberg: "Nikolai Adlerberg"
+ 
+ SOV_pavel_gagarin: "Pavel Gagarin"
+ SOV_dmitry_tolstoy: "Dmitry Tolstoy"
+ SOV_pyotr_shuvalov: "Pyotr Shuvalov"
+ SOV_alexander_gorchakov: "Alexander Gorchakov"
+ SOV_nikolay_milyutin: "Nikolay Milyutin"
+ SOV_dmitry_milyutin: "Dmitry Milyutin"
+ 
+ POL_wladyslaw_czartoryski: "Władysław Czartoryski"
  
  ENG_victoria:0 "Victoria"
  ENG_karl_marx:0 "Karl Marx"

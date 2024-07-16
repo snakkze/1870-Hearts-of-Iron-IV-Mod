@@ -23,7 +23,166 @@ guiTypes = {
 			spriteType = "GFX_russification_map"
 			position = { x = 148 y = -14 }
 		}
-
+		
+		# Russia
+		
+		iconType = {
+			name ="gui_russification_russia_map_1"
+			spriteType = "GFX_russification_russia_map_1"
+			position = { x = 148 y = -14 }
+		}
+		iconType = {
+			name ="gui_russification_russia_map_2"
+			spriteType = "GFX_russification_russia_map_2"
+			position = { x = 148 y = -14 }
+		}
+		iconType = {
+			name ="gui_russification_russia_map_3"
+			spriteType = "GFX_russification_russia_map_3"
+			position = { x = 148 y = -14 }
+		}
+		
+		# Ukraine
+		
+		iconType = {
+			name ="gui_russification_ukraine_map_1"
+			spriteType = "GFX_russification_ukraine_map_1"
+			position = { x = 213 y = 194 }
+		}
+		iconType = {
+			name ="gui_russification_ukraine_map_2"
+			spriteType = "GFX_russification_ukraine_map_2"
+			position = { x = 213 y = 194 }
+		}
+		iconType = {
+			name ="gui_russification_ukraine_map_3"
+			spriteType = "GFX_russification_ukraine_map_3"
+			position = { x = 213 y = 194 }
+		}
+		iconType = {
+			name ="gui_russification_ukraine_map_4"
+			spriteType = "GFX_russification_ukraine_map_4"
+			position = { x = 213 y = 194 }
+		}
+		
+		# Belarus 
+		
+		
+		iconType = {
+			name ="gui_russification_belarus_map_1"
+			spriteType = "GFX_russification_belarus_map_1"
+			position = { x = 205 y = 154 }
+		}
+		iconType = {
+			name ="gui_russification_belarus_map_2"
+			spriteType = "GFX_russification_belarus_map_2"
+			position = { x = 205 y = 154 }
+		}
+		iconType = {
+			name ="gui_russification_belarus_map_3"
+			spriteType = "GFX_russification_belarus_map_3"
+			position = { x = 205 y = 154 }
+		}
+		iconType = {
+			name ="gui_russification_belarus_map_4"
+			spriteType = "GFX_russification_belarus_map_4"
+			position = { x = 205 y = 154 }
+		}
+		
+		# Baltic
+		
+		iconType = {
+			name ="gui_russification_baltic_map_1"
+			spriteType = "GFX_russification_baltic_map_1"
+			position = { x = 195 y = 117 }
+		}
+		iconType = {
+			name ="gui_russification_baltic_map_2"
+			spriteType = "GFX_russification_baltic_map_2"
+			position = { x = 195 y = 117 }
+		}
+		iconType = {
+			name ="gui_russification_baltic_map_3"
+			spriteType = "GFX_russification_baltic_map_3"
+			position = { x = 195 y = 117 }
+		}
+		iconType = {
+			name ="gui_russification_baltic_map_4"
+			spriteType = "GFX_russification_baltic_map_4"
+			position = { x = 195 y = 117 }
+		}
+		
+		# Poland
+		
+		iconType = {
+			name ="gui_russification_poland_map_1"
+			spriteType = "GFX_russification_poland_map_1"
+			position = { x = 171 y = 171 }
+		}
+		iconType = {
+			name ="gui_russification_poland_map_2"
+			spriteType = "GFX_russification_poland_map_2"
+			position = { x = 171 y = 171 }
+		}
+		iconType = {
+			name ="gui_russification_poland_map_3"
+			spriteType = "GFX_russification_poland_map_3"
+			position = { x = 171 y = 171 }
+		}
+		iconType = {
+			name ="gui_russification_poland_map_4"
+			spriteType = "GFX_russification_poland_map_4"
+			position = { x = 171 y = 171 }
+		}
+		
+		# Finland
+		
+		iconType = {
+			name ="gui_russification_finland_map_1"
+			spriteType = "GFX_russification_finland_map_1"
+			position = { x = 195 y = -8 }
+		}
+		iconType = {
+			name ="gui_russification_finland_map_2"
+			spriteType = "GFX_russification_finland_map_2"
+			position = { x = 195 y = -8 }
+		}
+		iconType = {
+			name ="gui_russification_finland_map_3"
+			spriteType = "GFX_russification_finland_map_3"
+			position = { x = 195 y = -8 }
+		}
+		iconType = {
+			name ="gui_russification_finland_map_4"
+			spriteType = "GFX_russification_finland_map_4"
+			position = { x = 195 y = -8 }
+		}
+		
+		# Caucasus
+		
+		iconType = {
+			name ="gui_russification_caucasus_map_1"
+			spriteType = "GFX_russification_caucasus_map_1"
+			position = { x = 338 y = 277 }
+		}
+		iconType = {
+			name ="gui_russification_caucasus_map_2"
+			spriteType = "GFX_russification_caucasus_map_2"
+			position = { x = 338 y = 277 }
+		}
+		iconType = {
+			name ="gui_russification_caucasus_map_3"
+			spriteType = "GFX_russification_caucasus_map_3"
+			position = { x = 338 y = 277 }
+		}
+		iconType = {
+			name ="gui_russification_caucasus_map_4"
+			spriteType = "GFX_russification_caucasus_map_4"
+			position = { x = 338 y = 277 }
+		}
+		
+		# Text
+		
 		instantTextBoxType = {
 			name ="sov_russification_text"
 			position = { x = 0 y = 0 }
@@ -33,6 +192,68 @@ guiTypes = {
 			maxHeight = 24
 		}
 		
+		instantTextBoxType = {
+			name ="sov_russia_russification_text"
+			position = { x = 1 y = 275 }
+			font = "hoi_18mbs"
+			text = "SOV_russia_russification_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		instantTextBoxType = {
+			name ="sov_poland_russification_text"
+			position = { x = 1 y = 275 }
+			font = "hoi_18mbs"
+			text = "SOV_poland_russification_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		instantTextBoxType = {
+			name ="sov_ukraine_russification_text"
+			position = { x = 1 y = 275 }
+			font = "hoi_18mbs"
+			text = "SOV_ukraine_russification_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		instantTextBoxType = {
+			name ="sov_belarus_russification_text"
+			position = { x = 1 y = 275 }
+			font = "hoi_18mbs"
+			text = "SOV_belarus_russification_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		instantTextBoxType = {
+			name ="sov_baltic_russification_text"
+			position = { x = 1 y = 275 }
+			font = "hoi_18mbs"
+			text = "SOV_baltic_russification_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		instantTextBoxType = {
+			name ="sov_finland_russification_text"
+			position = { x = 1 y = 275 }
+			font = "hoi_18mbs"
+			text = "SOV_finland_russification_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		instantTextBoxType = {
+			name ="sov_caucasus_russification_text"
+			position = { x = 1 y = 275 }
+			font = "hoi_18mbs"
+			text = "SOV_caucasus_russification_text"
+			format = left
+			maxHeight = 24
+		}
 		
 		
 		

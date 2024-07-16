@@ -10,8 +10,8 @@ characters={
 		country_leader = {
 			ideology = aboslute_monarchy
 			traits = {
-				tsar_of_russia
-				tsar_reformer
+				fpw_tsar_of_russia
+				fpw_tsar_reformer
 			}
 			expire = "1956.01.01.01"
 			id = -1
@@ -21,7 +21,7 @@ characters={
 		name = SOV_nikolai_adlerberg
 		portraits = {
 			civilian = {
-				#large = GFX_portrait_SOV_nikolai_adlerberg
+				large = GFX_portrait_SOV_nikolai_adlerberg
 			}
 		}
 		country_leader = {
@@ -33,4 +33,171 @@ characters={
 			id = -1
 		}
 	}
+	
+	SOV_pavel_gagarin = {
+		name = SOV_pavel_gagarin
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_SOV_pavel_gagarin
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = pavel_gagarin
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				is_country_leader = no
+				
+			}
+			ai_will_do = {
+				factor = 201.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}	
+		
+	}
+	
+	SOV_dmitry_tolstoy = {
+		name = SOV_dmitry_tolstoy
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_SOV_dmitry_tolstoy
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = dmitry_tolstoy
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_judicial_system
+			}
+			ai_will_do = {
+				factor = 20.000
+			}
+			traits = {
+				fpw_minister_of_national_enlightenment 
+			}
+		}	
+		
+	}
+	
+	SOV_pyotr_shuvalov = {
+		name = SOV_pyotr_shuvalov
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_SOV_pyotr_shuvalov
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = pyotr_shuvalov
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				
+			}
+			ai_will_do = {
+				factor = 20.000
+			}
+			traits = {
+				war_industrialist
+			}
+		}	
+		
+	}
+	
+	SOV_alexander_gorchakov = {
+		name = SOV_alexander_gorchakov
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_SOV_alexander_gorchakov
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = alexander_gorchakov
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				
+			}
+			ai_will_do = {
+				factor = 20.000
+			}
+			traits = {
+				fpw_minister_of_foreign_affairs
+			}
+		}	
+		
+	}
+	
+	SOV_nikolay_milyutin = {
+		name = SOV_nikolay_milyutin
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_SOV_nikolay_milyutin
+				small="GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = nikolay_milyutin
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_more_radical_reforms
+				is_country_leader = no
+			}
+			ai_will_do = {
+				factor = 20.000
+			}
+			traits = {
+				fpw_liberal_architect
+			}
+		}	
+		
+	}
+	
+	SOV_dmitry_milyutin = {
+		name = SOV_dmitry_milyutin
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_SOV_dmitry_milyutin
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = dmitry_milyutin
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				
+			}
+			ai_will_do = {
+				factor = 20.000
+			}
+			traits = {
+				fpw_minister_of_war
+			}
+		}	
+		
+	}
+	
+	
+	
 }
