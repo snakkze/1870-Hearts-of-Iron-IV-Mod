@@ -1,0 +1,104 @@
+﻿
+### Regular Units
+
+
+division_template = {
+	name = "Partisans"
+	#division_names_group = 
+
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 0 y = 3}
+	}
+}
+
+
+division_template = {
+	name = "Cavalry"
+	#division_names_group = 
+
+	regiments = {
+		cavalry = { x = 0 y = 0}
+		cavalry = { x = 0 y = 1}
+		cavalry = { x = 1 y = 0}
+		cavalry = { x = 1 y = 1}
+	}
+}
+
+units = {
+		
+		division = {
+			name = "1st Infantry Division"
+			location = 9340
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		division = {
+			name = "1st Cavalry Division"
+			location = 9340
+			division_template = "Cavalry"
+			start_experience_factor = 0.3
+		}
+		
+		division = {
+			name = "2nd Infantry Division"
+			location = 310
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		division = {
+			name = "2nd Cavalry Division"
+			location = 310
+			division_template = "Cavalry"
+			start_experience_factor = 0.3
+		}
+		
+		division = {
+			name = "3rd Infantry Division"
+			location = 222
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		
+		division = {
+			name = "4th Infantry Division"
+			location = 10493
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		
+		division = {
+			name = "5th Infantry Division"
+			location = 6459
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		
+		division = {
+			name = "6th Infantry Division"
+			location = 319
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		
+		division = {
+			name = "7th Infantry Division"
+			location = 9262
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		
+		division = {
+			name = "8th Infantry Division"
+			location = 9275
+			division_template = "Partisans"
+			start_experience_factor = 0.3
+		}
+		
+		
+		
+		
+		
+}
