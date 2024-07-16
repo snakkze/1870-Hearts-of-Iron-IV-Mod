@@ -420,80 +420,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		
-		
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		jap_increase_societal_backlash = yes
 	
 	
-
+	
 		}
 		mutually_exclusive = { focus = JAP_conservative_approach }
 	}
@@ -513,74 +443,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
+		jap_decrease_societal_backlash = yes
 
 
 
@@ -634,79 +497,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		
-		
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		jap_increase_societal_backlash = yes
 			
-			remove_ideas = {
+		remove_ideas = {
 		jap_feudal_entrenchment
 			}
 			
@@ -731,79 +524,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		jap_increase_societal_backlash = yes
 		
 		
 		
-		
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
 		}
 	}
 	
@@ -821,76 +545,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		jap_increase_societal_backlash = yes
 		
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		
 		
 			every_core_state = {
 				limit = {
@@ -922,73 +579,10 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
+		jap_decrease_societal_backlash = yes
+		
+		
+		
 		}
 
 
@@ -1015,75 +609,10 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
+		jap_decrease_societal_backlash = yes
 		#Western Powers maybe get event to intervene? 
 		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
+		
 
 		}
 	}
@@ -1171,77 +700,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		jap_increase_societal_backlash = yes
 		
-		
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}	
+			
 		
 		add_ideas = {
 		civilian_economy
@@ -1591,67 +1052,10 @@ focus_tree = {
 			}
 		
 		set_country_flag = jap_saigo_rejected
+		custom_effect_tooltip = JAP_tt0
 		custom_effect_tooltip = JAP_tt7
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		custom_effect_tooltip = JAP_tt0
+		jap_increase_societal_backlash = yes
 		}
 		mutually_exclusive = { focus = JAP_perfect_justification_for_an_invasion }
 	}
@@ -1806,77 +1210,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		jap_increase_societal_backlash = yes
 
 
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		
 
 			remove_ideas = {
 			jap_underdeveloped_country
@@ -1928,76 +1265,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		jap_increase_societal_backlash = yes
+
 		
-
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
 			
 		add_ideas = {
 		jap_modern_medical_infrastructure
@@ -2085,75 +1355,8 @@ focus_tree = {
 				category = industry
 			}
 		
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		custom_effect_tooltip = JAP_tt0
+		jap_increase_societal_backlash = yes
 		
 		
 		
@@ -2427,74 +1630,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		jap_increase_societal_backlash = yes
 
 		add_timed_idea = {
 		idea = jap_currency_transition_period
@@ -2544,73 +1680,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			remove_ideas = {
-			jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_1
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_3
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_6
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_stability = 0.15
-			add_political_power = 150
-			}
+		jap_decrease_societal_backlash = yes
+		custom_effect_tooltip = JAP_tt0
+		add_stability = 0.1
+		add_political_power = 125
+		
 		}
 		mutually_exclusive = { focus = JAP_distribute_the_yen }
 	}
@@ -2630,80 +1704,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		
 		country_event = fpw_japan.40
 		custom_effect_tooltip = JAP_tt0
+		jap_increase_societal_backlash = yes
 		
 		
 		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
 		
 		
 		
@@ -2813,7 +1819,7 @@ focus_tree = {
 			}
 		
 			random_owned_controlled_state = {
-				prioritize = { 533 }
+				prioritize = { 528 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -2836,10 +1842,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4080,14 +3086,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		if = {
-			limit = {
-				has_idea = limited_conscription
-				}
-			add_ideas = { 
-			extensive_conscription
-			}
-			}
+		remove_ideas = {
+		jap_limited_military_mobilization
+		}
+		custom_effect_tooltip = JAP_tt0
 		if = {
 			limit = {
 				has_idea = volunteer_only
@@ -4104,78 +3106,11 @@ focus_tree = {
 			limited_conscription
 			}
 			}
+		custom_effect_tooltip = JAP_tt0
+		jap_increase_societal_backlash = yes
 		
 		
 		
-		
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
 		}
 	}
 	

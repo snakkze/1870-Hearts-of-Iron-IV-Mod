@@ -82,7 +82,7 @@ ideas = {
 				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
 				has_war_support > 0.1
 				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
+				NOT = { has_idea = jap_limited_military_mobilization }
 				if = {
 					limit = {
 						original_tag = AST
@@ -217,7 +217,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
+				NOT = { has_idea = jap_limited_military_mobilization }
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -422,7 +422,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 			NOT = { has_idea = undisturbed_isolation }
-			NOT = { has_idea = isolation }
+			NOT = { has_idea = jap_limited_military_mobilization }
 			AND = {
 				OR = {
 					has_government = communism
@@ -607,7 +607,7 @@ ideas = {
 				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
 				has_war = yes			
 				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
+				NOT = { has_idea = jap_limited_military_mobilization }
 				OR = {
 					has_war_support > 0.7
 					surrender_progress > 0
@@ -777,7 +777,7 @@ ideas = {
 				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
 				has_war = yes
 				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
+				NOT = { has_idea = jap_limited_military_mobilization }
 				OR = {
 					has_war_support > 0.85
 					surrender_progress > 0.25

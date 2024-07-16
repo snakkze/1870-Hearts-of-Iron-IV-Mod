@@ -24,9 +24,9 @@ guiTypes = {
 		#Background
 		
 		iconType = {
-			name ="societal_backlash_background"
+			name = "societal_backlash_background"
 			spriteType = "GFX_JAP_societal_backlash_background"
-			position = { x= 0	 y= -20 }
+			position = { x= -10	 y= -20 }
 		}
 
 		#ICONS

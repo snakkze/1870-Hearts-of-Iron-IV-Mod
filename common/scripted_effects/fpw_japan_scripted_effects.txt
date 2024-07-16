@@ -1,0 +1,212 @@
+jap_increase_societal_backlash = {
+if = {
+		limit = {
+				has_idea = jap_societal_backlash_6
+				}
+
+		add_stability = -0.1
+
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_6
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_4
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_3
+			}
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_1
+			add_idea = jap_societal_backlash_2
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_ideas = {
+			jap_societal_backlash_1
+			}
+			}
+}
+
+jap_increase_societal_backlash_twice = {
+if = {
+		limit = {
+				has_idea = jap_societal_backlash_6
+				}
+
+		add_stability = -0.2
+
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_6
+			}
+			add_stability = -0.1
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_6
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_4
+			}
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_1
+			add_idea = jap_societal_backlash_3
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_ideas = {
+			jap_societal_backlash_2
+			}
+			}
+}
+
+jap_decrease_societal_backlash = {
+	if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			remove_ideas = {
+			jap_societal_backlash_1
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_1
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_2
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_3
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_4
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_6
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_6
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_stability = 0.05
+			add_political_power = 75
+			}
+}

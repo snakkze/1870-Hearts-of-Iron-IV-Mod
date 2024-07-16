@@ -17,12 +17,10 @@
 			ai_chance = {
 				base = 10
 			}
+			custom_effect_tooltip = JAP_tt11
             JAP = {
-            declare_war_on = {
-                target = EZO
-                type = annex_everything
-            }
-        }
+			set_country_flag = jap_attack_ezo
+			}
 		}
         option = {
 			name = fpw_japan.1.b
@@ -34,7 +32,22 @@
 			remove_claim_by = JAP
 			}
 		}
-	}
+		}
+		option = {
+			name = fpw_japan.1.c
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			EZO = {
+				change_tag_from = ROOT
+			}
+			}
+			custom_effect_tooltip = JAP_tt12
+			JAP = {
+            set_country_flag = jap_attack_ezo
+			}
+		}
 	}
 	
 	country_event = {
@@ -895,74 +908,7 @@
 			}
 		set_country_flag = jap_saigo_rejected
 		custom_effect_tooltip = JAP_tt7
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_6
-				}
-
-		add_stability = -0.1
-
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_5
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_5
-			add_idea = jap_societal_backlash_6
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_4
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_4
-			add_idea = jap_societal_backlash_5
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_3
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_3
-			add_idea = jap_societal_backlash_4
-			}
-			}
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_2
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_2
-			add_idea = jap_societal_backlash_3
-			}
-			}	
-		if = {
-			limit = {
-				has_idea = jap_societal_backlash_1
-				}
-			swap_ideas = { 
-			remove_idea = jap_societal_backlash_1
-			add_idea = jap_societal_backlash_2
-			}
-			}
-		if = {
-			limit = {
-				NOT = {
-				has_idea = jap_societal_backlash_1
-				has_idea = jap_societal_backlash_2
-				has_idea = jap_societal_backlash_3
-				has_idea = jap_societal_backlash_4
-				has_idea = jap_societal_backlash_5
-				has_idea = jap_societal_backlash_6
-				}
-				}
-			add_ideas = {
-			jap_societal_backlash_1
-			}
-			}
+		jap_increase_societal_backlash = yes
 		}
 	}
 	
@@ -1887,5 +1833,135 @@
 			add_ideas = {
 			jap_upset_farmers
 			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.41
+		title = fpw_japan.41.t
+		desc = fpw_japan.41.desc
+		picture = GFX_report_event_bul_boris_with_muraviev
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.41.a
+			ai_chance = {
+				base = 10
+			}
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			ENG = {add_opinion_modifier = { target = JAP modifier = medium_increase }
+			}
+		}
+		option = {
+			name = fpw_japan.41.c
+			ai_chance = {
+				base = 0
+			}
+			add_stability = -0.1
+			custom_effect_tooltip = JAP_tt0
+			jap_increase_societal_backlash_twice = yes
+			ENG = {add_opinion_modifier = { target = JAP modifier = large_increase } 
+			}
+			custom_effect_tooltip = JAP_tt0
+			random_owned_controlled_state = {
+				prioritize = { 528 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 528 }
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+		option = {
+			name = fpw_japan.41.d
+			ai_chance = {
+				base = 0
+			}
+			add_stability = 0.05
+			add_political_power = 75
+			custom_effect_tooltip = JAP_tt0
+			jap_decrease_societal_backlash = yes
+			ENG = {
+			country_event = fpw_japan.42
+			add_opinion_modifier = { target = JAP modifier = large_decrease }
+			
+		}
+	}
+	}
+	
+	country_event = {
+		id = fpw_japan.42
+		title = fpw_japan.42.t
+		desc = fpw_japan.42.d
+		picture = GFX_report_event_bul_boris_with_muraviev
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.42.a
+			ai_chance = {
+				base = 10
+			}
+			send_embargo = JAP
+			JAP = {
+			add_opinion_modifier = { target = ENG modifier = large_decrease }
+			}
+		}
+		option = {
+			name = fpw_japan.42.b
+			ai_chance = {
+				base = 0
+			}
+			add_stability = -0.02
 		}
 	}
