@@ -37,6 +37,29 @@ fpw_rule_flag_options = {
 	}
 }
 
+fpw_rule_subject_colors_options = {
+	name = "FPW_RULE_FLAG_SUBJECT_COLORS"
+	group = "FPW_RULE_GROUP_MOD_CUSTOMIZATION"
+	icon = "GFX_guarantee_independence"
+	default = {
+		name = "FPW_RULE_OPTION_ALL_SUBJECTS"
+		text = FPW_RULE_OPTION_ALL_SUBJECTS
+		desc = FPW_RULE_OPTION_ALL_SUBJECTS_desc
+	}
+	option = {
+		name = "FPW_RULE_OPTION_LOW_AUTONOMY"
+		text = FPW_RULE_OPTION_LOW_AUTONOMY
+		desc = FPW_RULE_OPTION_LOW_AUTONOMY_desc
+		allow_achievements = yes
+	}
+	option = {
+		name = "FPW_RULE_OPTION_NO_SUBJECTS"
+		text = FPW_RULE_OPTION_NO_SUBJECTS
+		desc = FPW_RULE_OPTION_NO_SUBJECTS_desc
+		allow_achievements = yes
+	}
+}
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"

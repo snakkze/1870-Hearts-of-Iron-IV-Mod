@@ -328,9 +328,7 @@ ideas = {
 				original_tag = PRS
 			}
 			cancel = {
-                NOT = {
-					has_government = neutrality
-				}	
+				has_government = neutrality	
             }
 			on_add = {
                 set_country_flag = fpw_secondary_leader_prs_wilhelm_I

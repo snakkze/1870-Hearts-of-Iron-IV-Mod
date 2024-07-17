@@ -1,5 +1,87 @@
 autonomy_state = {
-	id = autonomy_dominion # protectorate
+	id = autonomy_dominion
+	
+	use_overlord_color = yes
+
+	min_freedom_level = 0.8
+	
+	manpower_influence = 0.2
+	
+	rule = {
+		desc = "RULE_DESC_IS_A_SUBJECT"
+	
+		can_decline_call_to_war = yes
+		can_be_spymaster = yes
+	}
+	
+	modifier = {
+		autonomy_manpower_share = 0.0
+		extra_trade_to_overlord_factor = 0.25
+		overlord_trade_cost_factor = -0.25
+		peace_score_ratio_transferred_to_overlord = 0.05
+		lend_lease_tension_with_overlord = -0.1
+	}
+	
+	ai_subject_wants_higher = {
+		factor = 0.0
+	}
+	
+	ai_overlord_wants_lower = {
+		factor = 1.0
+	}
+
+	ai_overlord_wants_garrison = {
+		always = no
+	}
+
+	allowed = {
+		has_dlc = "Together for Victory"
+		OR = {
+			has_game_rule = {
+				rule = fpw_rule_subject_colors_options
+				option = FPW_RULE_OPTION_ALL_SUBJECTS
+			}
+			has_game_rule = {
+				rule = fpw_rule_subject_colors_options
+				option = FPW_RULE_OPTION_LOW_AUTONOMY
+			}	
+		}
+	}
+
+	use_for_peace_conference_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			ROOT = {
+				OR = {
+					original_tag = EGY
+					original_tag = MOR
+					original_tag = PER
+					original_tag = AFG
+					original_tag = NEP
+					original_tag = BHU
+					original_tag = SIA
+					original_tag = KOR
+				}
+			}
+		}
+	}
+
+	allowed_levels_filter = {
+		autonomy_dominion
+		autonomy_puppet
+		autonomy_integrated_puppet
+	}
+	
+	can_take_level = {
+	}
+
+	can_lose_level = {
+	}
+}
+
+autonomy_state = {
+	id = autonomy_dominion 
 	
 	min_freedom_level = 0.8
 	
@@ -34,6 +116,10 @@ autonomy_state = {
 
 	allowed = {
 		has_dlc = "Together for Victory"
+		has_game_rule = {
+			rule = fpw_rule_subject_colors_options
+			option = FPW_RULE_OPTION_NO_SUBJECTS
+		}
 	}
 
 	use_for_peace_conference_weight = {

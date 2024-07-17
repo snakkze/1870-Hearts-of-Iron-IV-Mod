@@ -1,4 +1,20 @@
 ﻿l_english:
+ FPW_RULE_GROUP_MOD_CUSTOMIZATION:0 "Mod Customization"
+
+ FPW_RULE_FLAG_CUSTOMIZATION:0 "Flag Option Visibility"
+ FPW_NATION_ONLY_FLAG:0 "Show Option to Nation Only"
+ FPW_NATION_ONLY_FLAG_desc:0 "Any customizable flags will show for the player of the nation only."
+ FPW_PLAYERS_FLAG:0 "Show Option to Players"
+ FPW_PLAYERS_FLAG_desc:0 " §R(NOT RECOMMENDED FOR MULTIPLAYER)§!\n\nAny customizable flags will show for all players."
+
+ FPW_RULE_FLAG_SUBJECT_COLORS:0 "Colored Subjects"
+ FPW_RULE_OPTION_ALL_SUBJECTS:0 "All Subjects"
+ FPW_RULE_OPTION_ALL_SUBJECTS_desc:0 "All subjects regardless of autonomy will use their overlord's color."
+ FPW_RULE_OPTION_LOW_AUTONOMY:0 "Low Autonomy Only"
+ FPW_RULE_OPTION_LOW_AUTONOMY_desc:0 "Only subjects with low autonomy will use their overlord's color."
+ FPW_RULE_OPTION_NO_SUBJECTS:0 "No Subjects"
+ FPW_RULE_OPTION_NO_SUBJECTS_desc:0 "All subjects will not use their overlord's color."
+
  PRS_AI_BEHAVIOR:0 "@PRS Prussia"
  RULE_OPTION_MONARCHISM_PRS:0 "Monarchist - Wilhelm's Germany"
  RULE_OPTION_MONARCHISM_PRS_AI_DESC:0 ""
@@ -20,6 +36,7 @@
  RULE_OPTION_ITA_LIBERAL_PLAN_AI_DESC:0 ""
  RULE_OPTION_HISTORICAL_JAP_AI_DESC:0 ""
  RULE_OPTION_HISTORICAL_FRA_AI_DESC:0 ""
+
  
  SOV_AI_BEHAVIOR:1 "@SOV Russia"
  ENG_AI_BEHAVIOR:1 "@ENG United Kingdom"
