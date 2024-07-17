@@ -15,7 +15,7 @@ PRS_monarchist = {
 		}
 	}
 	abort = {
-		
+		has_completed_focus = PRS_bruderkrieg_ending
 	}
 
 	ai_national_focuses = {
@@ -26,8 +26,11 @@ PRS_monarchist = {
 		PRS_ally_with_italy
 		PRS_secure_russian_friendship
 		PRS_propose_federal_reform
+		PRS_annex_holstein
+		PRS_austro_prussian_victory
 		PRS_integrate_minor_austrian_lands
 		PRS_ultimatum_to_the_northern_reichsrat
+		PRS_towards_a_greater_prussia
 		PRS_kaisers_germany
 		PRS_cut_german_diplomatic_ties
 		PRS_the_unified_north
@@ -66,8 +69,8 @@ PRS_monarchist = {
 	}
 }
 
-PRS_nationalist = {
-	name = "Prussian alternate nationalist plan"
+PRS_socialist = {
+	name = "Prussian alternate socialist plan"
 	desc = ""
 
 	allowed = {
@@ -77,14 +80,13 @@ PRS_nationalist = {
 		OR = {		
 			has_game_rule = {
 				rule = PRS_ai_behavior
-				option = NATIONALIST
+				option = SOCIALIST
 			}
 			has_completed_focus = PRS_bruderkrieg_ending
-			has_country_flag = PRS_AI_RANDOM_NATIONALIST
 		}
 	}
 	abort = {
-		
+		has_completed_focus = PRS_austro_prussian_victory
 	}
 
 	ai_national_focuses = {
@@ -95,30 +97,360 @@ PRS_nationalist = {
 		PRS_ally_with_italy
 		PRS_secure_russian_friendship
 		PRS_propose_federal_reform
-		PRS_prussian_identity
+		PRS_annex_holstein
+		PRS_bruderkrieg_ending
+		PRS_dreams_of_equality
+		PRS_gather_public_support
+		PRS_unite_the_opposition
+		PRS_demand_a_referendum
+		PRS_focus_a_new_constitution
+		PRS_focus_proclaim_the_republic
+
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+PRS_const_monarchy = {
+	name = "Prussian alternate constitutional monarchy plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = CONST_MONARCHY
+			}
+			has_completed_focus = PRS_bruderkrieg_ending
+		}
+	}
+	abort = {
+		has_completed_focus = PRS_austro_prussian_victory
+	}
+
+	ai_national_focuses = {
+		PRS_lesser_german_solution
+		PRS_seek_german_support
+		PRS_seek_international_support
+		PRS_secure_french_peace
+		PRS_ally_with_italy
+		PRS_secure_russian_friendship
+		PRS_propose_federal_reform
+		PRS_annex_holstein
+		PRS_bruderkrieg_ending
+		PRS_dreams_of_equality
+		PRS_gather_public_support
+		PRS_unite_the_opposition
+		PRS_demand_a_referendum
+		PRS_focus_a_new_constitution
+		PRS_focus_proclaim_the_republic_monarchy
+
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+PRS_democratic = {
+	name = "Prussian alternate democratic plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = DEMOCRATIC
+			}
+			has_completed_focus = PRS_bruderkrieg_ending
+		}
+	}
+	abort = {
+		has_completed_focus = PRS_austro_prussian_victory
+	}
+
+	ai_national_focuses = {
+		PRS_lesser_german_solution
+		PRS_seek_german_support
+		PRS_seek_international_support
+		PRS_secure_french_peace
+		PRS_ally_with_italy
+		PRS_secure_russian_friendship
+		PRS_propose_federal_reform
+		PRS_annex_holstein
+		PRS_bruderkrieg_ending
+		PRS_dreams_of_equality
+		PRS_gather_public_support
+		PRS_unite_the_opposition
+		PRS_demand_a_referendum
+		PRS_focus_a_new_constitution
+		PRS_focus_proclaim_the_republic
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+PRS_avenger = {
+	name = "Prussian alternate avenger(Not marvel) plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = AVENGER
+			}
+			has_completed_focus = PRS_bruderkrieg_ending
+		}
+	}
+	abort = {
+		has_completed_focus = PRS_austro_prussian_victory
+	}
+
+	ai_national_focuses = {
+		PRS_lesser_german_solution
+		PRS_seek_german_support
+		PRS_seek_international_support
+		PRS_secure_french_peace
+		PRS_ally_with_italy
+		PRS_secure_russian_friendship
+		PRS_propose_federal_reform
+		PRS_annex_holstein
+		PRS_bruderkrieg_ending
+		PRS_suspend_parliament
 		PRS_towards_a_greater_prussia
-		PRS_inspect_the_kaisers_residence
-		PRS_plan_the_coup
-		PRS_overthrow_wilhelm
-		PRS_search_the_scrapegoat
-		PRS_dolchstosslegende
+		PRS_amend_the_1850_constitution
+		PRS_utilize_the_armies_loyalty
+		PRS_assume_power
 		PRS_fund_austrian_seperatists
-		PRS_seek_hungarian_support
-		PRS_segrete_the_lesser_germans
-		PRS_subhumans_in_the_workforce
-		PRS_prepare_our_infrastructure
-		PRS_ruhm_und_ehre_der_volksarmee
-		PRS_wacht_am_rhein
-		PRS_the_ruhrkampf
-		PRS_fight_the_remains_of_north_germany
-		PRS_italian_ally
 		PRS_defending_our_fatherland
+		PRS_seek_hungarian_support
 		PRS_fortify_silesia
+		PRS_prepare_our_infrastructure
 		PRS_gott_mit_uns
-		PRS_the_vengeance
-		PRS_unternehmen_germania
 		PRS_unternehmen_ostmark
-		PRS_form_the_greater_german_empire
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+PRS_hre = {
+	name = "Prussian alternate holy roman empire plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = HRE
+			}
+			has_completed_focus = PRS_austrian_enemy
+		}
+	}
+	abort = {
+		has_completed_focus = PRS_cooperate_with_austria
+	}
+
+	ai_national_focuses = {
+		PRS_greater_german_solution
+		PRS_austrian_enemy
+		PRS_northern_unification_play
+		PRS_pivot_to_the_past
+		PRS_secure_russian_friendship
+		PRS_split_austria
+		PRS_finish_the_habsburgs
+		PRS_integration_of_bohemia
+		PRS_national_reforms
+		PRS_integration_of_the_south
+		PRS_integration_of_austria
+		PRS_finalize_the_federation
+		PRS_embrace_holy_roman_traditions
+		PRS_fight_the_benelux
+		PRS_figth_the_frenchs
+		PRS_look_south
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+PRS_greater_german = {
+	name = "Prussian alternate greater germany plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PRS
+	}
+	enable = {
+		OR = {		
+			has_game_rule = {
+				rule = PRS_ai_behavior
+				option = GREATER_GERMAN
+			}
+			has_completed_focus = PRS_cooperate_with_austria
+		}
+	}
+	abort = {
+		has_completed_focus = PRS_austrian_enemy
+	}
+
+	ai_national_focuses = {
+		PRS_greater_german_solution
+		PRS_cooperate_with_austria
+		PRS_improve_the_nation_spirit
+		PRS_pivot_to_the_past
+		PRS_hohenzollern_schleswig_treaty
+		PRS_propose_the_nord_sued_idea
+		PRS_unify_the_north
+		PRS_national_reforms
+		PRS_start_unifaction_talks
+		PRS_finalize_the_federation
+		PRS_unify_the_state
+		PRS_unify_the_people
+		PRS_unify_the_army
+		PRS_unify_the_industry
+		PRS_complete_unification
+		PRS_the_franco_russian_threat
+		PRS_with_the_uk
 	}
 
 	research = {

@@ -472,9 +472,39 @@ PRS_ai_behavior = {
 		allow_achievements = yes
 	}
 	option = {
-		name = NATIONALIST
-		text = "RULE_OPTION_NATIONALIST_PRS"
-		desc = "RULE_OPTION_NATIONALIST_PRS_AI_DESC"
+		name = SOCIALIST
+		text = "RULE_OPTION_SOCIALIST_PRS"
+		desc = "RULE_OPTION_MSOCIALIST_PRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CONST_MONARCHY
+		text = "RULE_OPTION_CONST_MONARCHISM_PRS"
+		desc = "RULE_OPTION_CONST_MONARCHISM_PRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC_PRS"
+		desc = "RULE_OPTION_DEMOCRATIC_PRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = AVENGER
+		text = "RULE_OPTION_AVENGER_PRS"
+		desc = "RULE_OPTION_AVENGER_PRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HRE
+		text = "RULE_OPTION_HRE_PRS"
+		desc = "RULE_OPTION_HRE_PRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GREATER_GERMAN
+		text = "RULE_OPTION_GREATER_GERMAN_PRS"
+		desc = "RULE_OPTION_GREATER_GERMAN_PRS_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {

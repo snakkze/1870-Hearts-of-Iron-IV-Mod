@@ -1049,7 +1049,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = { focus = PRS_continue_bismarcks_plan focus = PRS_integrate_minor_austrian_lands }
+		prerequisite = { focus = PRS_continue_bismarcks_plan}
 		relative_position_id = PRS_continue_bismarcks_plan
 
 		offset = {
