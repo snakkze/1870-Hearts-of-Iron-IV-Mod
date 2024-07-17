@@ -9,16 +9,17 @@ state={
 		}
 		owner = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
-			infrastructure = 2 #was: 5
-		}
+			infrastructure = 3
+			infrastructure = 2
 
+		}
 		add_core_of = SOV
 		add_core_of = BLR
+
 	}
 
 	provinces={
-		215 304 331 360 386 3203 3293 3350 3507 3759 6319 6373 9249 11285 11313 
+		215 304 331 360 386 3203 3293 3350 3507 6319 6373 9249 11313 
 	}
 	manpower=541364
 	buildings_max_level_factor=1.000
