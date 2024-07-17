@@ -111,7 +111,46 @@ spriteTypes = {
 		name = "GFX_focus_jap_modernize_taxation"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_modernize_taxation.dds"
 	}	
-	
+	spriteType = {
+		name = "GFX_focus_jap_modern_ports"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_modern_ports.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_jap_royal_navy_traditions"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_royal_navy_traditions.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_conscription_act"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_conscription_act.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_modernize_military"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_modernize_military.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_focus_on_our_strengths"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_focus_on_our_strengths.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_army_general_staff"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_army_general_staff.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_reform_the_monetary_system"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_reform_the_monetary_system.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_an_european_style_military"
+		texturefile = "gfx/interface/goals/JAP/focus_an_european_style_military.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_our_sphere_of_influence"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_our_sphere_of_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_fortify_homeland"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_fortify_homeland.dds"
+	}
 }
 
 

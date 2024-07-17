@@ -619,7 +619,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_fortify_the_homeland
-		icon = GFX_
+		icon = GFX_focus_jap_fortify_homeland
 		prerequisite = { focus = JAP_guard_national_sovereignty }
 		relative_position_id = JAP_guard_national_sovereignty
 		x = -1
@@ -784,7 +784,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_our_sphere_of_influence
-		icon = GFX_focus_jap_strike_south
+		icon = GFX_focus_jap_our_sphere_of_influence
 		prerequisite = { focus = JAP_open_the_nation focus = JAP_guard_national_sovereignty }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
 		x = 0
@@ -1506,7 +1506,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_establish_modern_ports
-		icon = GFX_
+		icon = GFX_focus_jap_modern_ports
 		prerequisite = { focus = JAP_improve_national_infrastructure }
 		relative_position_id = JAP_improve_national_infrastructure
 		x = 0
@@ -1600,7 +1600,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_reform_the_monetary_system
-		icon = GFX_focus_jap_tokugawa_crest
+		icon = GFX_focus_jap_reform_the_monetary_system_shine
 		prerequisite = { focus = JAP_lay_foundations_for_industrialization }
 		relative_position_id = JAP_lay_foundations_for_industrialization
 		x = 3
@@ -2747,7 +2747,7 @@ focus_tree = {
   
   focus = {
 		id = JAP_modernize_the_military_system
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_jap_modernize_military
 		x = 48
 		y = 0
 		cost = 10
@@ -2770,7 +2770,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_an_european_style_military
-		icon = GFX_
+		icon = GFX_focus_an_european_style_military
 		
 		prerequisite = { focus = JAP_modernize_the_military_system }
 		relative_position_id = JAP_modernize_the_military_system
@@ -2832,7 +2832,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_create_the_army_general_staff_office
-		icon = GFX_
+		icon = GFX_focus_jap_army_general_staff
 		
 		prerequisite = { focus = JAP_an_european_style_military }
 		relative_position_id = JAP_an_european_style_military
@@ -3074,7 +3074,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_promulgate_the_conscription_act
-		icon = GFX_
+		icon = GFX_focus_jap_conscription_act
 		prerequisite = { focus = JAP_modernize_the_military_system }
 		relative_position_id = JAP_modernize_the_military_system
 		x = 0
@@ -3123,7 +3123,7 @@ focus_tree = {
   
   focus = {
 		id = JAP_focus_on_our_strengths
-		icon = GFX_
+		icon = GFX_focus_jap_focus_on_our_strengths
 		x = 57
 		y = 0
 		cost = 10
@@ -3471,7 +3471,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_adopt_royal_navy_traditions
-		icon = GFX_focus_jap_british_naval_mission
+		icon = GFX_focus_jap_royal_navy_traditions
 		prerequisite = { focus = JAP_british_naval_mission_to_japan }
 		relative_position_id = JAP_british_naval_mission_to_japan
 		x = 0
