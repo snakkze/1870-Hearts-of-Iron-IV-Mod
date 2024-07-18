@@ -809,7 +809,7 @@ focus_tree = {
 		id = SOV_tsars_regime
 		x = 14
 		y = 0
-		cost = 10
+		cost = 5
 		
 		icon = GFX_focus_generic_monarchy_1
 		mutually_exclusive = { focus = SOV_plot_against_the_tsars }
@@ -954,12 +954,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_judicial_system
+		id = SOV_battle_illiteracy
 		x = 2
 		y = 1
 		cost = 10
 		
-		icon = GFX_focus_generic_court
+		icon = GFX_focus_generic_university_1
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_continue_reforms focus = SOV_more_radical_reforms }
 		relative_position_id = SOV_continue_reforms
@@ -985,6 +985,51 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = dmitry_tolstoy
 			
+			add_political_power = 50
+			
+			add_to_variable = { SOV_sr_research_speed_factor = 0.05 }
+			
+			custom_effect_tooltip = SOV_battle_illiteracy_effect_tt
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_university_investments
+		x = -1
+		y = 1
+		cost = 10
+		
+		icon = GFX_focus_generic_university_2
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_battle_illiteracy }
+		prerequisite = { focus = SOV_administrative_reform }
+		relative_position_id = SOV_battle_illiteracy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+			add_political_power = 50
+			
+			add_to_variable = { SOV_sr_research_speed_factor = 0.05 }
+			
+			custom_effect_tooltip = SOV_battle_illiteracy_effect_tt
 			
 			
 		}
@@ -992,14 +1037,14 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_tighten_tsars_control
-		x = 1
+		x = 3
 		y = 1
 		cost = 10
 		
 		icon = GFX_goal_generic_political_pressure
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_administrative_reform }
-		prerequisite = { focus = SOV_judicial_system }
+		prerequisite = { focus = SOV_battle_illiteracy }
 		relative_position_id = SOV_administrative_reform
 		
 		ai_will_do = {
@@ -1230,7 +1275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_new_agricultural_economy
-		x = 1
+		x = 2
 		y = 1
 		cost = 10
 		
@@ -1238,6 +1283,7 @@ focus_tree = {
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_pay_of_serfs }
 		prerequisite = { focus = SOV_help_for_peasants }
+		prerequisite = { focus = SOV_university_investments }
 		relative_position_id = SOV_pay_of_serfs
 		
 		ai_will_do = {
@@ -1544,7 +1590,7 @@ focus_tree = {
 		id = SOV_russian_diplomacy
 		x = -2
 		y = 6
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_goal_generic_improve_relations
@@ -1578,10 +1624,10 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_recovering_from_the_cimean_war
-		x = 3
+		x = -2
 		y = 1
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT }
 		
 		icon = GFX_goal_generic_attack_allies
 		#mutually_exclusive = { focus =  }
@@ -1631,6 +1677,43 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SOV_sale_of_alaska
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_focus_SOV_old_eastern_empire
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_russian_diplomacy }
+		relative_position_id = SOV_russian_diplomacy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = russia_fpw.3
+			
+			
+			
+		}
+	}
+	
+	focus = {
 		id = SOV_look_to_balkans
 		x = -4
 		y = 1
@@ -1670,7 +1753,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_help_roman_imperialists
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 		
@@ -1711,15 +1794,14 @@ focus_tree = {
 			custom_effect_tooltip = SOV_roman_tt
 		}
 	}
-	
 	focus = {
-		id = SOV_promote_balkan_independence
-		x = 1
-		y = 1
+		id = SOV_claim_bulgarian_protectorate
+		x = 0
+		y = 2
 		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY }
 		
-		#icon = GFX_
+		icon = GFX_focus_generic_befriend_bulgaria
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_look_to_balkans }
 		relative_position_id = SOV_look_to_balkans
@@ -1742,11 +1824,296 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			104 = { add_resistance = 30 }
+			add_stability = 0.05
+			every_state = {
+				limit = {
+					is_core_of = BUL
+					is_owned_by = TUR
+				}
+				add_claim_by = SOV
+			}
+			custom_effect_tooltip = SOV_claim_bulgarian_protectorate_focus_tp
+		}
+	}
+	
+	focus = {
+		id = SOV_promote_balkan_independence
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY }
+		
+		icon = GFX_goal_generic_propaganda
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_look_to_balkans }
+		relative_position_id = SOV_look_to_balkans
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.05
+			give_guarantee = SER
+			if = {
+				limit = {
+					SER = {
+						is_subject = yes
+					}
+				}
+				SER = {
+					add_autonomy_score = {
+						value = 500
+						localization = SOV_promote_balkan_independence
+					}
+				}
+			}
+			give_guarantee = ROM
+			if = {
+				limit = {
+					ROM = {
+						is_subject = yes
+					}
+				}
+				ROM = {
+					add_autonomy_score = {
+						value = 500
+						localization = SOV_promote_balkan_independence
+					}
+				}
+			}
+			give_guarantee = GRE
+			if = {
+				limit = {
+					GRE = {
+						is_subject = yes
+					}
+				}
+				GRE = {
+					add_autonomy_score = {
+						value = 500
+						localization = SOV_promote_balkan_independence
+					}
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_support_western_balkan_separatists
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_goal_generic_demand_territory
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_promote_balkan_independence }
+		relative_position_id = SOV_promote_balkan_independence
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			if = {
+				limit = {
+					104 = {
+						is_core_of = TUR
+					}
+				}
+				104 = { 
+					remove_core_of = TUR
+					hidden_effect = {
+						start_resistance = yes
+						set_resistance = 40
+						set_compliance = 60
+						set_garrison_strength = 1.0
+					}
+				}
+			}
+			else = {
+				104 = { add_resistance = 30 }
+			}
+			
+			if = {
+				limit = {
+					804 = {
+						is_core_of = TUR
+					}
+				}
+				804 = { 
+					remove_core_of = TUR
+					hidden_effect = {
+						start_resistance = yes
+						set_resistance = 35
+						set_compliance = 50
+						set_garrison_strength = 1.0
+					}
+				}
+			}
+			else = {
+				804 = { add_resistance = 30 }
+			}
+			
+			if = {
+				limit = {
+					108 = {
+						is_core_of = TUR
+					}
+				}
+				108 = { 
+					remove_core_of = TUR
+					hidden_effect = {
+						start_resistance = yes
+						set_resistance = 40
+						set_compliance = 50
+						set_garrison_strength = 1.0
+					}
+				}
+			}
+			else = {
+				108 = { add_resistance = 30 }
+			}
+			
+			if = {
+				limit = {
+					105 = {
+						is_core_of = TUR
+					}
+				}
+				105 = { 
+					remove_core_of = TUR
+					hidden_effect = {
+						start_resistance = yes
+						set_resistance = 40
+						set_compliance = 50
+						set_garrison_strength = 1.0
+					}
+				}
+			}
+			else = {
+				105 = { add_resistance = 30 }
+			}
+			
+			if = {
+				limit = {
+					802 = {
+						is_core_of = TUR
+					}
+				}
+				802 = { 
+					remove_core_of = TUR
+					hidden_effect = {
+						start_resistance = yes
+						set_resistance = 35
+						set_compliance = 50
+						set_garrison_strength = 1.0
+					}
+				}
+			}
+			else = {
+				802 = { add_resistance = 30 }
+			}
+			
+			if = {
+				limit = {
+					934 = {
+						is_core_of = TUR
+					}
+				}
+				934 = { 
+					remove_core_of = TUR
+					hidden_effect = {
+						start_resistance = yes
+						set_resistance = 35
+						set_compliance = 50
+						set_garrison_strength = 1.0
+					}
+				}
+			}
+			else = {
+				934 = { add_resistance = 30 }
+			}
+			
 			
 			
 		}
 	}
+	focus = {
+		id = SOV_revenge_for_crimea
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		
+		icon = GFX_goal_generic_major_war
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_support_western_balkan_separatists }
+		relative_position_id = SOV_support_western_balkan_separatists
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_idea = fpw_SOV_losers_of_the_crimean_war_1
+				has_idea = fpw_SOV_losers_of_the_crimean_war_2
+				has_idea = fpw_SOV_losers_of_the_crimean_war_3
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+			add_war_support = 0.10
+			
+			create_wargoal = {
+				type = topple_government
+				target = TUR
+			}
+			
+			
+		}
+		
+	}
+	
 	
 	focus = {
 		id = SOV_our_german_intrests
@@ -1922,6 +2289,48 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SOV_galicia_for_allience
+		x = -1
+		y = 2
+		cost = 10
+		search_filters = { }
+		
+		icon = GFX_focus_befriend_austria
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_our_prussian_friends }
+		relative_position_id = SOV_our_prussian_friends
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = russia_fpw.25
+					days = 1
+				}
+			}
+			
+			
+			
+		}
+	}
+	
 	
 	focus = {
 		id = SOV_never_trust_germans 
@@ -1971,11 +2380,11 @@ focus_tree = {
 		id = SOV_protector_of_poles
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  }
 		
 		icon = GFX_focus_generic_polish_deal
-		mutually_exclusive = { focus = SOV_our_prussian_friends }
+		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_remember_austrian_betrayal}
 		prerequisite = { focus = SOV_never_trust_germans }
 		relative_position_id = SOV_remember_austrian_betrayal
@@ -2007,12 +2416,53 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = SOV_liberate_the_oppresed_slavs
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  }
+		
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_protector_of_poles}
+		relative_position_id = SOV_protector_of_poles
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = PRS
+			}
+			create_wargoal = {
+				type = liberate_wargoal
+				target = AUS
+			}
+			
+		}
+	}
 	
 	
 	
 	focus = {
 		id = SOV_asian_giant
-		x = 6
+		x = 4
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -2051,45 +2501,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_sale_of_alaska
-		x = -1
-		y = 1
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		
-		icon = GFX_focus_SOV_old_eastern_empire
-		#mutually_exclusive = { focus =  }
-		prerequisite = { focus = SOV_asian_giant }
-		relative_position_id = SOV_asian_giant
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			country_event = russia_fpw.3
-			
-			
-			
-		}
-	}
-	
-	focus = {
 		id = SOV_consolidate_central_asia
-		x = 1
+		x = 3
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -2135,6 +2548,90 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SOV_influance_over_china
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_focus_chi_one_china_policy
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_asian_giant }
+		relative_position_id = SOV_asian_giant
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = large_increase
+				}
+				give_military_access = SOV
+			}
+			add_opinion_modifier = {
+				target = CHI
+				modifier = medium_increase
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_demand_liaodong_peninsula
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
+		icon = GFX_goal_generic_political_pressure
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_influance_over_china }
+		relative_position_id = SOV_influance_over_china
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			CHI = {
+				country_event = {
+					id = russia_fpw.29
+					days = 1
+				}
+			}
+			
+			
+		}
+	}
 	
 	
 	
@@ -3194,7 +3691,7 @@ focus_tree = {
 				category = industry
 			}
 			swap_ideas = {
-				add_idea= new_russian_industry_1
+				add_idea = new_russian_industry_1
 				remove_idea = underdeveloped_industry_3
 			}
 			random_owned_state = {
@@ -3261,8 +3758,8 @@ focus_tree = {
 			}
 			add_research_slot = 1
 			swap_ideas = {
-				add_idea= new_russian_industry_1
-				remove_idea = underdeveloped_industry_3
+				add_idea= new_russian_industry_2
+				remove_idea = new_russian_industry_1
 			}
 			random_owned_state = {
 				limit = { is_core_of = SOV }
@@ -3312,6 +3809,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3353,6 +3854,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3395,6 +3900,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3433,6 +3942,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3476,6 +3989,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 		
 		available = {
@@ -3515,6 +4032,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3611,6 +4132,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3653,6 +4178,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3694,12 +4223,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		
 		icon = GFX_focus_generic_full_social_mobilization
-		mutually_exclusive = { focus = SOV_french_model }
+		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_prussian_model }
 		relative_position_id = SOV_prussian_model
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3738,6 +4271,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3785,6 +4322,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3824,6 +4365,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 		
 		available = {
@@ -3869,6 +4414,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3908,7 +4457,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 5
-		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT  }
 		
 		icon = GFX_focus_generic_black_sea_focus
 		#mutually_exclusive = { focus =  }
@@ -3917,6 +4466,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -3977,6 +4530,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4020,6 +4577,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4049,7 +4610,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT  }
 		
 		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
 		#mutually_exclusive = { focus =  }
@@ -4102,6 +4663,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4146,6 +4711,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4198,6 +4767,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4246,6 +4819,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4289,6 +4866,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4337,6 +4918,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4380,6 +4965,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {
@@ -4426,6 +5015,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
 		}
 
 		available = {

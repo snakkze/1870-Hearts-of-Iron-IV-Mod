@@ -1,0 +1,749 @@
+
+fpw_russification_cat = {
+	
+	
+	# Polish stuff
+	
+	
+	create_poland_university = {
+		fire_only_once = yes
+		icon = generic_research
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_accessibility_of_culture
+			
+		}
+		allowed = {
+			
+		}
+		cost = 80
+		complete_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification > 19 }
+				}
+				add_to_variable = { poland_russification = -20 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			else = {
+				
+				set_variable = { poland_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			
+			add_stability = 0.01
+			add_war_support = -0.01
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification_resist < 91 }
+				}
+				add_to_variable = { poland_russification_resist = 10 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			else = {
+				set_variable = { poland_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification_coop < 81 }
+				}
+				add_to_variable = { poland_russification_coop = 20 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			else = {
+				set_variable = { poland_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			
+		}
+		
+	}
+	
+	poland_promote_culture = {
+		fire_only_once = no
+		icon = eng_propaganda_campaigns
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_promote_national_identity
+			
+		}
+		allowed = {
+			
+		}
+		cost = 20
+		days_re_enable = 60
+		days_remove = 120
+		modifier = {
+			political_power_factor = -0.05
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { poland_russification > 4 }
+				}
+				add_to_variable = { poland_russification = -5 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			else = {
+				set_variable = { poland_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification_resist > 4 }
+				}
+				add_to_variable = { poland_russification_resist = -5 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			else = {
+				set_variable = { poland_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { poland_russification_coop < 96 }
+				}
+				add_to_variable = { poland_russification_coop = 5 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			else = {
+				set_variable = { poland_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			
+		}
+		
+	}
+	
+	create_ukraine_university = {
+		fire_only_once = yes
+		icon = generic_research
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_accessibility_of_culture
+			
+		}
+		allowed = {
+			
+		}
+		cost = 80
+		complete_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { ukraine_russification > 19 }
+				}
+				add_to_variable = { ukraine_russification = -20 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			else = {
+				
+				set_variable = { ukraine_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			
+			add_stability = 0.01
+			add_war_support = -0.01
+			
+			if = {
+				limit = {
+					check_variable = { ukraine_russification_resist < 91 }
+				}
+				add_to_variable = { ukraine_russification_resist = 10 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			else = {
+				set_variable = { ukraine_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { ukraine_russification_coop < 81 }
+				}
+				add_to_variable = { ukraine_russification_coop = 20 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			else = {
+				set_variable = { ukraine_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			
+		}
+		
+	}
+	
+	ukraine_promote_culture = {
+		fire_only_once = no
+		icon = eng_propaganda_campaigns
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_promote_national_identity
+			
+		}
+		allowed = {
+			
+		}
+		cost = 20
+		days_re_enable = 60
+		days_remove = 120
+		modifier = {
+			political_power_factor = -0.05
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { ukraine_russification > 4 }
+				}
+				add_to_variable = { ukraine_russification = -5 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			else = {
+				set_variable = { ukraine_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { ukraine_russification_resist > 4 }
+				}
+				add_to_variable = { ukraine_russification_resist = -5 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			else = {
+				set_variable = { ukraine_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { ukraine_russification_coop < 96 }
+				}
+				add_to_variable = { ukraine_russification_coop = 5 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			else = {
+				set_variable = { ukraine_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			
+		}
+		
+	}
+	
+	
+	create_belarus_university = {
+		fire_only_once = yes
+		icon = generic_research
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_accessibility_of_culture
+			
+		}
+		allowed = {
+			
+		}
+		cost = 80
+		complete_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { belarus_russification > 19 }
+				}
+				add_to_variable = { belarus_russification = -20 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			else = {
+				
+				set_variable = { belarus_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			
+			add_stability = 0.01
+			add_war_support = -0.01
+			
+			if = {
+				limit = {
+					check_variable = { belarus_russification_resist < 91 }
+				}
+				add_to_variable = { belarus_russification_resist = 10 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			else = {
+				set_variable = { belarus_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { belarus_russification_coop < 81 }
+				}
+				add_to_variable = { belarus_russification_coop = 20 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			else = {
+				set_variable = { belarus_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			
+		}
+		
+	}
+	
+	belarus_promote_culture = {
+		fire_only_once = no
+		icon = eng_propaganda_campaigns
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_promote_national_identity
+			
+		}
+		allowed = {
+			
+		}
+		cost = 20
+		days_re_enable = 60
+		days_remove = 120
+		modifier = {
+			political_power_factor = -0.05
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { belarus_russification > 4 }
+				}
+				add_to_variable = { belarus_russification = -5 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			else = {
+				set_variable = { belarus_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { belarus_russification_resist > 4 }
+				}
+				add_to_variable = { belarus_russification_resist = -5 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			else = {
+				set_variable = { belarus_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { belarus_russification_coop < 96 }
+				}
+				add_to_variable = { belarus_russification_coop = 5 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			else = {
+				set_variable = { belarus_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			
+		}
+		
+	}
+	
+	
+	create_baltic_university = {
+		fire_only_once = yes
+		icon = generic_research
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_accessibility_of_culture
+			
+		}
+		allowed = {
+			
+		}
+		cost = 80
+		complete_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { baltic_russification > 19 }
+				}
+				add_to_variable = { baltic_russification = -20 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			else = {
+				
+				set_variable = { baltic_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			
+			add_stability = 0.01
+			add_war_support = -0.01
+			
+			if = {
+				limit = {
+					check_variable = { baltic_russification_resist < 91 }
+				}
+				add_to_variable = { baltic_russification_resist = 10 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			else = {
+				set_variable = { baltic_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { baltic_russification_coop < 81 }
+				}
+				add_to_variable = { baltic_russification_coop = 20 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			else = {
+				set_variable = { baltic_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			
+		}
+		
+	}
+	
+	baltic_promote_culture = {
+		fire_only_once = no
+		icon = eng_propaganda_campaigns
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_promote_national_identity
+			
+		}
+		allowed = {
+			
+		}
+		cost = 20
+		days_re_enable = 60
+		days_remove = 120
+		modifier = {
+			political_power_factor = -0.05
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { baltic_russification > 4 }
+				}
+				add_to_variable = { baltic_russification = -5 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			else = {
+				set_variable = { baltic_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { baltic_russification_resist > 4 }
+				}
+				add_to_variable = { baltic_russification_resist = -5 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			else = {
+				set_variable = { baltic_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { baltic_russification_coop < 96 }
+				}
+				add_to_variable = { baltic_russification_coop = 5 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			else = {
+				set_variable = { baltic_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			
+		}
+		
+	}
+	
+	
+	create_finland_university = {
+		fire_only_once = yes
+		icon = generic_research
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_accessibility_of_culture
+			
+		}
+		allowed = {
+			
+		}
+		cost = 80
+		complete_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { finland_russification > 19 }
+				}
+				add_to_variable = { finland_russification = -20 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			else = {
+				
+				set_variable = { finland_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			
+			add_stability = 0.01
+			add_war_support = -0.01
+			
+			if = {
+				limit = {
+					check_variable = { finland_russification_resist < 91 }
+				}
+				add_to_variable = { finland_russification_resist = 10 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			else = {
+				set_variable = { finland_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { finland_russification_coop < 81 }
+				}
+				add_to_variable = { finland_russification_coop = 20 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			else = {
+				set_variable = { finland_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			
+		}
+		
+	}
+	
+	finland_promote_culture = {
+		fire_only_once = no
+		icon = eng_propaganda_campaigns
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_promote_national_identity
+			
+		}
+		allowed = {
+			
+		}
+		cost = 20
+		days_re_enable = 60
+		days_remove = 120
+		modifier = {
+			political_power_factor = -0.05
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { finland_russification > 4 }
+				}
+				add_to_variable = { finland_russification = -5 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			else = {
+				set_variable = { finland_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { finland_russification_resist > 4 }
+				}
+				add_to_variable = { finland_russification_resist = -5 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			else = {
+				set_variable = { finland_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { finland_russification_coop < 96 }
+				}
+				add_to_variable = { finland_russification_coop = 5 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			else = {
+				set_variable = { finland_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			
+		}
+		
+	}
+	
+	
+	create_caucasus_university = {
+		fire_only_once = yes
+		icon = generic_research
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_accessibility_of_culture
+			
+		}
+		allowed = {
+			
+		}
+		cost = 80
+		complete_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { caucasus_russification > 19 }
+				}
+				add_to_variable = { caucasus_russification = -20 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			else = {
+				
+				set_variable = { caucasus_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_20_tp
+			}
+			
+			add_stability = 0.01
+			add_war_support = -0.01
+			
+			if = {
+				limit = {
+					check_variable = { caucasus_russification_resist < 91 }
+				}
+				add_to_variable = { caucasus_russification_resist = 10 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			else = {
+				set_variable = { caucasus_russification_resist = 100 }
+				custom_effect_tooltip = raise_resist_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { caucasus_russification_coop < 81 }
+				}
+				add_to_variable = { caucasus_russification_coop = 20 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			else = {
+				set_variable = { caucasus_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_20_tp
+			}
+			
+		}
+		
+	}
+	
+	caucasus_promote_culture = {
+		fire_only_once = no
+		icon = eng_propaganda_campaigns
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_promote_national_identity
+			
+		}
+		allowed = {
+			
+		}
+		cost = 20
+		days_re_enable = 60
+		days_remove = 120
+		modifier = {
+			political_power_factor = -0.05
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { caucasus_russification > 4 }
+				}
+				add_to_variable = { caucasus_russification = -5 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			else = {
+				set_variable = { caucasus_russification = 0 }
+				custom_effect_tooltip = lower_russification_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { caucasus_russification_resist > 4 }
+				}
+				add_to_variable = { caucasus_russification_resist = -5 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			else = {
+				set_variable = { caucasus_russification_resist = 0 }
+				custom_effect_tooltip = lower_resist_by_5_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { caucasus_russification_coop < 96 }
+				}
+				add_to_variable = { caucasus_russification_coop = 5 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			else = {
+				set_variable = { caucasus_russification_coop = 100 }
+				custom_effect_tooltip = raise_coop_by_5_tp
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+}
+

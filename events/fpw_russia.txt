@@ -541,6 +541,7 @@ country_event = {
 				load_oob = "POL_uprising"
 				
 				clr_country_flag = fpw_secondary_leader_fin_alexander_II
+				remove_ideas = fpw_alexander_ii
 			}
 			IF = {
 				limit = {
@@ -555,7 +556,9 @@ country_event = {
 					}
 					remove_from_faction = POL
 				}
-				POL = { leave_faction = yes }
+				POL = { 
+					leave_faction = yes
+				}
 			}
 			set_variable = { poland_russification_resist = 0 }
 			set_variable = { poland_russification_coop = 0 }
@@ -643,6 +646,7 @@ country_event = {
 			}
 			FIN = {
 				clr_country_flag = fpw_secondary_leader_fin_alexander_II
+				remove_ideas = fpw_alexander_ii
 				set_nationality = {
 					target_country = SOV
 					character = SOV_nikolai_adlerberg
@@ -1116,3 +1120,230 @@ country_event = {
 	
 	
 }
+
+
+# Galicia for allience
+country_event = {
+	id = russia_fpw.25
+	title = russia_fpw.25.t
+	desc = russia_fpw.25.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.25.a
+		SOV = {
+			country_event = {
+				id = russia_fpw.26
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = SOV
+					value > 49
+				}
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.25.b
+		SOV = {
+			country_event = {
+				id = russia_fpw.27
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = SOV
+					value > -29
+				}
+				factor = 100
+			}
+		}
+	}
+	
+	
+}
+
+# Austria Agrees 
+country_event = {
+	id = russia_fpw.26
+	title = russia_fpw.26.t
+	desc = russia_fpw.26.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.26.a
+		
+		give_guarantee = AUS
+		AUS = {
+			give_guarantee = SOV
+		}
+		
+	}
+	
+	
+}
+
+# Austria Refuses
+country_event = {
+	id = russia_fpw.27
+	title = russia_fpw.27.t
+	desc = russia_fpw.27.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.6.a
+		
+		
+	}
+	
+}
+
+
+# Alaska Usefull
+country_event = {
+	id = russia_fpw.28
+	title = russia_fpw.28.t
+	desc = russia_fpw.28.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.28.a
+		
+		463 =  {
+			add_resource = {
+				type = oil
+				amount = 10
+			}
+			add_resource = {
+				type = tungsten
+				amount = 7
+			}
+		}
+		
+	}
+	
+	
+}
+
+
+# Galicia for allience
+country_event = {
+	id = russia_fpw.29
+	title = russia_fpw.29.t
+	desc = russia_fpw.29.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.29.a
+		SOV = {
+			country_event = {
+				id = russia_fpw.30
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = SOV
+					value > 49
+				}
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.29.b
+		SOV = {
+			country_event = {
+				id = russia_fpw.31
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 0
+			
+		}
+	}
+	
+	
+}
+
+# China Agrees 
+country_event = {
+	id = russia_fpw.30
+	title = russia_fpw.30.t
+	desc = russia_fpw.30.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.30.a
+		
+		transfer_state = 745
+		
+	}
+	
+	
+}
+
+# China Refuses
+country_event = {
+	id = russia_fpw.31
+	title = russia_fpw.31.t
+	desc = russia_fpw.31.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.31.a
+		
+		add_state_claim = 745
+		create_wargoal = {
+			type = take_claimed_state
+			target = CHI
+		}
+		
+	}
+	
+}
+
+

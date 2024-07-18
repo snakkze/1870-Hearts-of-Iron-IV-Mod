@@ -24,6 +24,50 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 			}
 		}
+		fpw_SOV_new_agricultural_economy2 = {
+			allowed = {
+				tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				global_building_slots_factor = 0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		fpw_SOV_new_agricultural_economy3 = {
+			allowed = {
+				tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				global_building_slots_factor = 0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
 		
 		
 		fpw_SOV_losers_of_the_crimean_war_1 = {
@@ -195,7 +239,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = man_five_year_plan_industry
+			picture = POL_succesful_four_year_plan
 			
 			modifier = {
 				consumer_goods_factor = -0.20
@@ -441,8 +485,8 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 			modifier = {
 				political_power_factor = 0.10

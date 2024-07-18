@@ -43,3 +43,17 @@ fpw_russia_military_cat = {
 		
 	}
 }
+fpw_russia_balkan_dominence_cat = {
+	priority = 9
+
+	#icon = GFX_decision_category_SOV_merge_designers
+	#picture = GFX_decision_category_franco_prussian_war
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_look_to_balkans
+	}
+}

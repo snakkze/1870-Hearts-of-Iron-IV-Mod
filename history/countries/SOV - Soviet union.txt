@@ -156,6 +156,7 @@ set_variable = { SOV_sr_global_building_slots_factor = -0.20 }
 set_variable = { SOV_sr_production_factory_max_efficiency_factor = -0.20 }
 set_variable = { SOV_sr_industrial_capacity_factory = -0.05 }
 set_variable = { SOV_sr_industrial_capacity_dockyard = -0.05 }
+set_variable = { SOV_sr_research_speed_factor = -0.10 }
 
 set_variable = { SOV_sr_local_resources_factor = 0 }
 set_variable = { SOV_sr_production_speed_buildings_factor = 0 }

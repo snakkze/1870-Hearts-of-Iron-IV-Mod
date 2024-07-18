@@ -101,20 +101,16 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_russia_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_one_way_trip_to_siberia
-			}
+			has_country_flag = russification_russia_visible
+			has_completed_focus = SOV_one_way_trip_to_siberia
+			
 			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 60
-		cost = 20
+		cost = 10
 		complete_effect = {
 			if = {
 				limit = {
@@ -236,19 +232,17 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_russia_visible
-					is_ai = yes
-				}
+			has_country_flag = russification_russia_visible
+			or = {
 				has_completed_focus = SOV_russification_programs
+				has_completed_focus = SOV_stop_russification
 			}
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 100
-		cost = 40
+		cost = 20
 		complete_effect = {
 			if = {
 				limit = {
@@ -294,6 +288,7 @@ fpw_russification_cat = {
 			
 		}
 		activation = {
+			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
 			SOV = {
 				NOT = { 
@@ -343,20 +338,16 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_one_way_trip_to_siberia
-			}
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_one_way_trip_to_siberia
+			
 			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 60
-		cost = 20
+		cost = 10
 		complete_effect = {
 			set_country_flag = {
 				flag = SOV_polish_passive_resistance_cooldown
@@ -463,13 +454,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -571,13 +558,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -589,7 +572,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -684,13 +667,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -702,7 +681,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 20
+		cost = 10
 		days_re_enable = 60
 		days_remove = 120
 		modifier = {
@@ -797,13 +776,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -815,7 +790,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 40
+		cost = 20
 		days_re_enable = 80
 		days_remove = 120
 		modifier = {
@@ -910,19 +885,18 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
+			has_country_flag = russification_poland_visible
+			or = {
 				has_completed_focus = SOV_russification_programs
+				has_completed_focus = SOV_stop_russification
 			}
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 100
-		cost = 80
+		cost = 40
 		complete_effect = {
 			#set_country_flag = {
 			#	flag = SOV_polish_passive_resistance_cooldown
@@ -966,13 +940,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -984,7 +954,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -1079,18 +1049,14 @@ fpw_russification_cat = {
 			check_variable = { poland_russification > 59 }
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_poland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_integration_of_subjects
-			}
+			has_country_flag = russification_poland_visible
+			has_completed_focus = SOV_integration_of_subjects
+			
 		}
 		allowed = {
 			
 		}
-		cost = 100
+		cost = 50
 		days_remove = 180
 		modifier = {
 			political_power_factor = -0.05
@@ -1164,6 +1130,7 @@ fpw_russification_cat = {
 			
 		}
 		activation = {
+			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
 			SOV = {
 				NOT = { 
@@ -1213,19 +1180,15 @@ fpw_russification_cat = {
 			has_completed_focus = SOV_finnish_question
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_one_way_trip_to_siberia
-			}
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_one_way_trip_to_siberia
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 60
-		cost = 20
+		cost = 10
 		complete_effect = {
 			set_country_flag = {
 				flag = SOV_finnish_passive_resistance_cooldown
@@ -1338,13 +1301,9 @@ fpw_russification_cat = {
 			has_completed_focus = SOV_finnish_question
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -1446,13 +1405,9 @@ fpw_russification_cat = {
 			has_completed_focus = SOV_finnish_question
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -1464,7 +1419,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -1559,13 +1514,9 @@ fpw_russification_cat = {
 			has_completed_focus = SOV_finnish_question
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -1577,7 +1528,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 20
+		cost = 10
 		days_re_enable = 60
 		days_remove = 120
 		modifier = {
@@ -1672,13 +1623,9 @@ fpw_russification_cat = {
 			has_completed_focus = SOV_finnish_question
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -1690,7 +1637,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 40
+		cost = 20
 		days_re_enable = 80
 		days_remove = 120
 		modifier = {
@@ -1785,19 +1732,18 @@ fpw_russification_cat = {
 			has_completed_focus = SOV_finnish_question
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
+			has_country_flag = russification_finland_visible
+			or = {
 				has_completed_focus = SOV_russification_programs
+				has_completed_focus = SOV_stop_russification
 			}
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 100
-		cost = 80
+		cost = 40
 		complete_effect = {
 			#set_country_flag = {
 			#	flag = SOV_finnish_passive_resistance_cooldown
@@ -1841,13 +1787,9 @@ fpw_russification_cat = {
 			has_completed_focus = SOV_finnish_question
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -1859,7 +1801,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -1954,18 +1896,14 @@ fpw_russification_cat = {
 			check_variable = { finland_russification > 59 }
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_finland_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_finnish_integration
-			}
+			has_country_flag = russification_finland_visible
+			has_completed_focus = SOV_finnish_integration
+			
 		}
 		allowed = {
 			
 		}
-		cost = 100
+		cost = 50
 		days_remove = 180
 		modifier = {
 			political_power_factor = -0.05
@@ -2056,6 +1994,7 @@ fpw_russification_cat = {
 			
 		}
 		activation = {
+			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
 			SOV = {
 				NOT = { 
@@ -2105,19 +2044,15 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_one_way_trip_to_siberia
-			}
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_one_way_trip_to_siberia
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 60
-		cost = 20
+		cost = 10
 		complete_effect = {
 			set_country_flag = {
 				flag = SOV_caucasus_passive_resistance_cooldown
@@ -2226,13 +2161,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -2334,13 +2265,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -2352,7 +2279,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -2447,13 +2374,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -2465,7 +2388,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 20
+		cost = 10
 		days_re_enable = 60
 		days_remove = 120
 		modifier = {
@@ -2560,13 +2483,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -2578,7 +2497,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 40
+		cost = 20
 		days_re_enable = 80
 		days_remove = 120
 		modifier = {
@@ -2673,19 +2592,18 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
+			has_country_flag = russification_caucasus_visible
+			or = {
 				has_completed_focus = SOV_russification_programs
+				has_completed_focus = SOV_stop_russification
 			}
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 100
-		cost = 80
+		cost = 40
 		complete_effect = {
 			#set_country_flag = {
 			#	flag = SOV_caucasus_passive_resistance_cooldown
@@ -2729,13 +2647,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -2747,7 +2661,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -2842,18 +2756,14 @@ fpw_russification_cat = {
 			check_variable = { caucasus_russification > 59 }
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_caucasus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_integration_of_subjects
-			}
+			has_country_flag = russification_caucasus_visible
+			has_completed_focus = SOV_integration_of_subjects
+			
 		}
 		allowed = {
 			
 		}
-		cost = 100
+		cost = 50
 		days_remove = 180
 		modifier = {
 			political_power_factor = -0.05
@@ -2926,6 +2836,7 @@ fpw_russification_cat = {
 			
 		}
 		activation = {
+			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
 			SOV = {
 				NOT = { 
@@ -2975,19 +2886,15 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_ukraine_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_one_way_trip_to_siberia
-			}
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_one_way_trip_to_siberia
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 60
-		cost = 20
+		cost = 10
 		complete_effect = {
 			set_country_flag = {
 				flag = SOV_ukrainian_passive_resistance_cooldown
@@ -3092,13 +2999,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_ukraine_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -3200,13 +3103,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_ukraine_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -3218,7 +3117,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -3313,13 +3212,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_ukraine_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -3331,7 +3226,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 20
+		cost = 10
 		days_re_enable = 60
 		days_remove = 120
 		modifier = {
@@ -3426,13 +3321,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_ukraine_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -3444,7 +3335,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 40
+		cost = 20
 		days_re_enable = 80
 		days_remove = 120
 		modifier = {
@@ -3539,19 +3430,18 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_ukraine_visible
-					is_ai = yes
-				}
+			has_country_flag = russification_ukraine_visible
+			or = {
 				has_completed_focus = SOV_russification_programs
+				has_completed_focus = SOV_stop_russification
 			}
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 100
-		cost = 80
+		cost = 40
 		complete_effect = {
 			#set_country_flag = {
 			#	flag = SOV_ukrainian_passive_resistance_cooldown
@@ -3595,13 +3485,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_ukraine_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_ukraine_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -3613,7 +3499,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -3715,6 +3601,7 @@ fpw_russification_cat = {
 			
 		}
 		activation = {
+			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
 			SOV = {
 				NOT = { 
@@ -3764,19 +3651,15 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_belarus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_one_way_trip_to_siberia
-			}
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_one_way_trip_to_siberia
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 60
-		cost = 20
+		cost = 10
 		complete_effect = {
 			set_country_flag = {
 				flag = SOV_belarusian_passive_resistance_cooldown
@@ -3881,13 +3764,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_belarus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -3989,13 +3868,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_belarus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -4007,7 +3882,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -4102,13 +3977,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_belarus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -4120,7 +3991,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 20
+		cost = 10
 		days_re_enable = 60
 		days_remove = 120
 		modifier = {
@@ -4215,13 +4086,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_belarus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -4233,7 +4100,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 40
+		cost = 20
 		days_re_enable = 80
 		days_remove = 120
 		modifier = {
@@ -4328,19 +4195,18 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_belarus_visible
-					is_ai = yes
-				}
+			has_country_flag = russification_belarus_visible
+			or = {
 				has_completed_focus = SOV_russification_programs
+				has_completed_focus = SOV_stop_russification
 			}
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 100
-		cost = 80
+		cost = 40
 		complete_effect = {
 			#set_country_flag = {
 			#	flag = SOV_belarusian_passive_resistance_cooldown
@@ -4384,13 +4250,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_belarus_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_belarus_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -4402,7 +4264,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -4504,6 +4366,7 @@ fpw_russification_cat = {
 			
 		}
 		activation = {
+			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
 			SOV = {
 				NOT = { 
@@ -4553,20 +4416,16 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_baltic_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_one_way_trip_to_siberia
-			}
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_one_way_trip_to_siberia
+			
 			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 60
-		cost = 20
+		cost = 10
 		complete_effect = {
 			set_country_flag = {
 				flag = SOV_baltic_passive_resistance_cooldown
@@ -4677,13 +4536,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_baltic_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -4785,13 +4640,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_baltic_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -4803,7 +4654,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {
@@ -4898,13 +4749,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_baltic_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_russification_programs
-			}
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_russification_programs
+			
 		}
 		allowed = {
 			NOT = {
@@ -4916,7 +4763,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 20
+		cost = 10
 		days_re_enable = 60
 		days_remove = 120
 		modifier = {
@@ -5011,13 +4858,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_baltic_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -5029,7 +4872,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 40
+		cost = 20
 		days_re_enable = 80
 		days_remove = 120
 		modifier = {
@@ -5124,19 +4967,18 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_baltic_visible
-					is_ai = yes
-				}
+			has_country_flag = russification_baltic_visible
+			or = {
 				has_completed_focus = SOV_russification_programs
+				has_completed_focus = SOV_stop_russification
 			}
+			
 		}
 		allowed = {
 			
 		}
 		days_re_enable = 100
-		cost = 80
+		cost = 40
 		complete_effect = {
 			#set_country_flag = {
 			#	flag = SOV_baltic_passive_resistance_cooldown
@@ -5180,13 +5022,9 @@ fpw_russification_cat = {
 			
 		}
 		visible = {
-			and = {
-				or = {
-					has_country_flag = russification_baltic_visible
-					is_ai = yes
-				}
-				has_completed_focus = SOV_undermine_national_identity
-			}
+			has_country_flag = russification_baltic_visible
+			has_completed_focus = SOV_undermine_national_identity
+			
 		}
 		allowed = {
 			NOT = {
@@ -5198,7 +5036,7 @@ fpw_russification_cat = {
 				
 			}
 		}
-		cost = 50
+		cost = 25
 		days_re_enable = 80
 		days_remove = 180
 		modifier = {

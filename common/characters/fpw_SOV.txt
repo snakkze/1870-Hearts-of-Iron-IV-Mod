@@ -80,7 +80,7 @@ characters={
 				has_completed_focus = SOV_judicial_system
 			}
 			ai_will_do = {
-				factor = 20.000
+				factor = 1.000
 			}
 			traits = {
 				fpw_minister_of_national_enlightenment 
@@ -107,7 +107,7 @@ characters={
 				
 			}
 			ai_will_do = {
-				factor = 20.000
+				factor = 1.000
 			}
 			traits = {
 				war_industrialist
@@ -134,7 +134,7 @@ characters={
 				
 			}
 			ai_will_do = {
-				factor = 20.000
+				factor = 1.000
 			}
 			traits = {
 				fpw_minister_of_foreign_affairs
@@ -162,7 +162,7 @@ characters={
 				is_country_leader = no
 			}
 			ai_will_do = {
-				factor = 20.000
+				factor = 1.000
 			}
 			traits = {
 				fpw_liberal_architect
@@ -189,7 +189,7 @@ characters={
 				
 			}
 			ai_will_do = {
-				factor = 20.000
+				factor = 1.000
 			}
 			traits = {
 				fpw_minister_of_war
