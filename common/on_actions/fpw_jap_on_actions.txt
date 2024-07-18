@@ -83,16 +83,12 @@ on_actions = {
 			}
 
 		}
-	on_weekly = {
+		on_weekly = {
 		effect = {
 			if = {
 					limit = {
 						original_tag = JAP
-							}
-				if = {
-					limit = {
-					ALL = {
-				country_exists = ENG
+						country_exists = ENG
 				JAP = {
 					has_country_flag = jap_western_guns
 							}
@@ -101,8 +97,8 @@ on_actions = {
 							has_government = fascism
 							}
 				date < 1870.1.1
-							}}
-				if = {
+							}
+			if = {
 					limit = {
 				ENG = {
 						has_tech = fpw_infantry_equipment_1
@@ -116,6 +112,25 @@ on_actions = {
 			}
 			}
 			}
+					}
+					}	
+		}
+		
+		on_weekly = {
+		effect = {
+			if = {
+					limit = {
+						original_tag = JAP
+						country_exists = ENG
+				JAP = {
+					has_country_flag = jap_western_guns
+							}
+				JAP = {
+							has_civil_war = yes 
+							has_government = fascism
+							}
+				date < 1870.1.1
+							}
 			if = {
 					limit = {
 					ALL = {
@@ -137,8 +152,8 @@ on_actions = {
 			}}
 					}
 					}
-					}
 		}
+		
 	on_monthly = {
 		effect = {
 			if = {

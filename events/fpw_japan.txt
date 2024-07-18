@@ -1830,6 +1830,7 @@
 				base = 0
 			}
 			custom_effect_tooltip = JAP_tt10
+			custom_effect_tooltip = JAP_tt0
 			add_ideas = {
 			jap_upset_farmers
 			}
@@ -1923,9 +1924,6 @@
 			ai_chance = {
 				base = 0
 			}
-			add_stability = 0.05
-			add_political_power = 75
-			custom_effect_tooltip = JAP_tt0
 			jap_decrease_societal_backlash = yes
 			ENG = {
 			country_event = fpw_japan.42
