@@ -70,6 +70,12 @@ leader_traits = {
 		}
 	}
 	
+	fpw_trait_wilhelm = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.075
+	}
+
 	fpw_trait_wilhelm_the_great = {
 		random = no
 		stability_factor = 0.15

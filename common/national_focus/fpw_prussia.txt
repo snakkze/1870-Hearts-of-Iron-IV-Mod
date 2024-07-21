@@ -201,6 +201,18 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = fpw_focus_austrian_victory_tt
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = fpw_PRS_prussian_general_staff }
+				}
+				remove_dynamic_modifier = { modifier = fpw_PRS_prussian_general_staff } 
+			}
+			if = {
+				limit = {
+					has_idea = fpw_prussian_norms
+				}
+				remove_ideas = fpw_prussian_norms	
+			}
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -300,8 +312,7 @@ focus_tree = {
    				idea = fpw_funding_austrian_seperatists
     			days = 180
 			}
-			custom_effect_tooltip = prs_fund_seperatist_bohemia_tt
-			custom_effect_tooltip = prs_fund_seperatist_hungary_tt
+			custom_effect_tooltip = prs_fund_seperatist_tt
 
 			hidden_effect = {
 				add_resistance_target = {
@@ -939,13 +950,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
-			set_popularities = {
+			custom_effect_tooltip = prs_focus_constitution_rework_tt
+			hidden_effect = {
+				set_popularities = {
 				democratic = 0
 				neutrality = 100
 				fascism = 0
 				communism = 0
+				}
 			}
-			custom_effect_tooltip = prs_focus_constitution_rework_tt
 		}
 	}
 	
@@ -956,7 +969,6 @@ focus_tree = {
 		prerequisite = { focus = PRS_support_pro_german_sentiments_in_the_south }
 		relative_position_id = PRS_support_pro_german_sentiments_in_the_south
 
-		search_filters = { FOCUS_FILTER_HISTORICAL }
 		x = 1
 		y = 1
 		cost = 10
@@ -973,7 +985,6 @@ focus_tree = {
 		completion_reward = {
 			set_cosmetic_tag = PRS_GER
 			add_stability = 0.1
-			remove_ideas = fpw_prs_kaisers_germany
 		}
 	}
 
@@ -3087,6 +3098,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 25
 			add_ideas = {
 				fpw_hre_traditions
 			}
@@ -3562,6 +3574,14 @@ focus = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 
 		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
+		offset = {
 			x = -16
 			y = 0
 			trigger = {
@@ -3973,6 +3993,14 @@ focus = {
 	focus = {
 		id = PRS_industrial_effort
 		icon = GFX_focus_generic_industry_2
+
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
 
 		offset = {
 			x = -17
@@ -4692,7 +4720,7 @@ focus = {
 		relative_position_id = PRS_extra_tech_slot
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
 	
@@ -4709,6 +4737,12 @@ focus = {
 		id = PRS_focus_status_of_the_army
 		icon = GFX_goal_generic_allies_build_infantry
 		
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		offset = {
 			x = -16
 			y = 0
@@ -4881,10 +4915,26 @@ focus = {
 		id = PRS_focus_new_general_staff
 		icon = GFX_focus_generic_military_dictatorship
 		
+		allow_branch = {
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = fpw_prs_formed_german_empire_tt
-				has_cosmetic_tag = PRS_GER
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = fpw_prs_formed_german_empire_tt
+					has_cosmetic_tag = PRS_GER
+				}	
+				custom_trigger_tooltip = {
+					tooltip = fpw_prs_formed_hre_tt
+					has_cosmetic_tag = HRE_UNIFIED
+				}
+				custom_trigger_tooltip = {
+					tooltip = fpw_formed_greater_germany_tt
+					has_cosmetic_tag = PRS_greater_germany
+				}
 			}	
 		}
 		
@@ -4910,6 +4960,9 @@ focus = {
 		
 		allow_branch = {
 			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
 		}
 
 		x = 2
@@ -4935,6 +4988,13 @@ focus = {
 		id = PRS_focus_expand_cavalry_core
 		icon = GFX_focus_generic_fascist_troops
 		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
 			
 		}
@@ -4957,6 +5017,13 @@ focus = {
 		id = PRS_focus_faster_armies
 		icon = GFX_focus_generic_fascist_troops
 		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
 			
 		}
@@ -4981,6 +5048,9 @@ focus = {
 		
 		allow_branch = {
 			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
 		}
 
 		x = -2
@@ -5006,6 +5076,13 @@ focus = {
 		id = PRS_focus_improve_training_quality
 		icon = GFX_focus_generic_fascist_troops
 		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
 		}
 		
@@ -5027,6 +5104,13 @@ focus = {
 		id = PRS_focus_quality_of_education
 		icon = GFX_focus_generic_fascist_troops
 		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
 		}
 		
@@ -5048,6 +5132,13 @@ focus = {
 		id = PRS_focus_amend_research_budget
 		icon = GFX_focus_generic_fascist_troops
 		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
 		}
 		
@@ -5069,6 +5160,13 @@ focus = {
 		id = PRS_focus_equipment_quality
 		icon = GFX_focus_generic_fascist_troops
 		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
 		}
 		
@@ -5095,6 +5193,13 @@ focus = {
 		id = PRS_focus_equipment_quantity
 		icon = GFX_focus_generic_fascist_troops
 		
+		allow_branch = {
+			is_debug = yes
+			NOT = {
+				has_completed_focus = PRS_bruderkrieg_ending
+			}
+		}
+
 		available = {
 		}
 		
@@ -5350,6 +5455,12 @@ focus = {
 		}
 
 		available = {
+			if = {
+				limit = {
+					is_debug = no
+				}
+				always = false
+			}
 		}
 
 		available_if_capitulated = yes
@@ -5451,13 +5562,26 @@ focus = {
 		}
 
 		available = {
-			OR = {
+			if = {
+				limit = {
+					has_country_flag = bop_democratic_branch	
+				}
+				fascism > 0.40
+			}
+			else_if = {
+				limit = {
+					has_country_flag = bop_socialist_branch	
+				}
+				communism > 0.40
+			}
+			else = {
 				fascism > 0.40
 				communism > 0.40
 			}	
 		}
 
 		available_if_capitulated = yes
+		cancel_if_invalid = yes
 		cost = 5
 		
 		x = -1

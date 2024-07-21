@@ -8,9 +8,10 @@ guiTypes = {
 		buttonType = {
 			name = "country_rankings_button"
 			quadTextureSprite ="GFX_country_ranking_button_all"
-			position = { x= 480 y = 258 }
+			position = { x= 479 y = 14 }
 			pdx_tooltip = "country_rankings_tooltip"
 			oversound = ui_menu_over
+			scale = 1.2
 		}
 	}
 

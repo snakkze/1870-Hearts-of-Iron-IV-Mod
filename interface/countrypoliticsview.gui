@@ -32,7 +32,7 @@ guiTypes = {
 
 		iconType ={
 			name ="production_header_bg"
-			spriteType = "GFX_header_bg"
+			spriteType = "GFX_pol_header_bg"
 			position = { x= 5 y = 07 }
 			Orientation = "UPPER_LEFT"
 		}	
@@ -511,7 +511,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -588%% y = 9 }
+			position = { x = -593%% y = 10 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -532,7 +532,8 @@ guiTypes = {
 		iconType = {
 			name = "rules"
 			spriteType = "GFX_rules_sum_icon"
-			position = { x = 460 y = 7 }
+			position = { x = 430 y = 11 }
+			scale = 0.9
 		}
 
 		buttonType = {

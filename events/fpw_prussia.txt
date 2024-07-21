@@ -1339,29 +1339,27 @@ country_event = {
 	option = { # Liberal
 		name = prussia_fpw.40.a
 		trigger = {
-			fascism > party_popularity@communism
+			has_country_flag = bop_democratic_branch
 		}
 
+		unlock_national_focus = PRS_focus_a_new_constitution
 		set_politics = {
     		ruling_party = fascism
     		elections_allowed = no
 		}
-		complete_national_focus = PRS_focus_a_new_constitution
-		country_event = prussia_fpw.41
 	}
 
 	option = { # Socialist
 		name = prussia_fpw.40.b
 		trigger = {
-			communism > party_popularity@fascism
+			has_country_flag = bop_socialist_branch
 		}
 
+		unlock_national_focus = PRS_focus_a_new_constitution
 		set_politics = {
     		ruling_party = communism
     		elections_allowed = no
 		}
-		complete_national_focus = PRS_focus_a_new_constitution
-		country_event = prussia_fpw.41
 	}
 }
 
