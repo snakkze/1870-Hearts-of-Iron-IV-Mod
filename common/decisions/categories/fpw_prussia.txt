@@ -57,3 +57,16 @@ PRS_reform_balance_of_power_category = {
 	visible = {
 	}
 }
+
+PRS_a_new_constitutional_category = {
+	#icon =
+	
+	allowed = {
+		original_tag = PRS
+	}
+	
+	priority = 90
+	
+	visible = {
+	}
+}

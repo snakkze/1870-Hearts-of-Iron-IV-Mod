@@ -1423,3 +1423,53 @@ country_event = {
 		country_event = fpw_flags.3
 	}
 }
+
+country_event = { # New Electorate System
+	id = prussia_fpw.42
+	title = prussia_fpw.42.t
+	desc = prussia_fpw.42.d
+	#picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = { # Every 2 Years
+		name = prussia_fpw.42.a
+
+		custom_effect_tooltip = fpw_option_2_years_tt
+		set_country_flag = fpw_option_2_years
+	}
+	option = { # Every 3 Years
+		name = prussia_fpw.42.b
+
+		custom_effect_tooltip = fpw_option_3_years_tt
+		set_country_flag = fpw_option_3_years
+	}
+	option = { # Every 4 Years
+		name = prussia_fpw.42.c
+
+		custom_effect_tooltip = fpw_option_4_years_tt
+		set_country_flag = fpw_option_4_years
+	}
+}
+
+country_event = { # Fate of the Monarchy
+	id = prussia_fpw.43
+	title = prussia_fpw.43.t
+	desc = prussia_fpw.43.d
+	#picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = { # Federal Republic
+		name = prussia_fpw.43.a
+
+		custom_effect_tooltip = fpw_option_federal_republic_tt
+		set_country_flag = fpw_option_federal_republic
+	}
+	option = { # Constitutional Monarchy
+		name = prussia_fpw.43.b
+
+		custom_effect_tooltip = fpw_option_constitutional_monarchy_tt
+		set_country_flag = fpw_option_constitutional_monarchy
+	}
+}

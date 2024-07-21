@@ -62,6 +62,130 @@ fpw_launch_unification_germany_cat = {
 	}
 }
 
+PRS_a_new_constitutional_category = {
+	fpw_constitution_reaffirm_the_peoples_rights = {
+
+		visible = {
+		}
+
+		available = {
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.04
+			}
+		}
+
+		remove_effect = {
+			add_stability = 0.1
+		}
+	}
+
+	fpw_constitution_new_electorate_system = {
+
+		visible = {
+		}
+
+		available = {
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+			country_event = prussia_fpw.42
+		}
+
+		remove_effect = {
+		}
+	}
+
+	fpw_constitution_fate_of_the_monarchy = {
+
+		visible = {
+		}
+
+		available = {
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+			country_event = prussia_fpw.43
+		}
+
+		remove_effect = {
+		}
+	}
+
+	fpw_constitution_new_government_structure = {
+
+		visible = {
+		}
+
+		available = {
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+		}
+	}
+
+	fpw_constitution_complete_reform = {
+
+		visible = {
+		}
+
+		available = {
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+		}
+	}
+}
+
 PRS_reform_the_government = {
 	fpw_reform_government = {
 
