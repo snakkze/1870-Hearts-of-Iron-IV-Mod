@@ -27,7 +27,7 @@ focus_tree = {
 #historical
     focus = {
 		id = JAP_denounce_shogun
-		icon = GFX_goal_continuous_suppression
+		icon = GFX_focus_jap_denounce_shogun
 		x = 11
 		y = 0
 		cost = 10
@@ -105,7 +105,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
 		
 
 		}
@@ -505,9 +504,7 @@ focus_tree = {
 		completion_reward = {
 		jap_increase_societal_backlash = yes
 			
-		remove_ideas = {
-		jap_feudal_fragmentation
-			}
+
 			
 			
 			
@@ -517,7 +514,7 @@ focus_tree = {
 	
 	
 	focus = {
-		id = JAP_abolish_the__han_system
+		id = JAP_abolish_the_han_system
 		icon = GFX_
 		prerequisite = { focus = JAP_a_strong_centralized_state }
 		relative_position_id = JAP_a_strong_centralized_state
@@ -531,8 +528,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		jap_increase_societal_backlash = yes
-		
-		
+		custom_effect_tooltip = JAP_tt0
+		remove_ideas = {
+		jap_feudal_fragmentation
+			}
 		
 		}
 	}
@@ -540,8 +539,8 @@ focus_tree = {
 	focus = {
 		id = JAP_promote_the_ownership_of_land
 		icon = GFX_
-		prerequisite = { focus = JAP_abolish_the__han_system }
-		relative_position_id = JAP_abolish_the__han_system
+		prerequisite = { focus = JAP_abolish_the_han_system }
+		relative_position_id = JAP_abolish_the_han_system
 		x = -1
 		y = 1
 		cost = 10
@@ -552,7 +551,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		jap_increase_societal_backlash = yes
-		
+		custom_effect_tooltip = JAP_tt0
 		
 		
 			every_core_state = {
@@ -575,8 +574,8 @@ focus_tree = {
 	focus = {
 		id = JAP_support_modern_agriculture
 		icon = GFX_
-		prerequisite = { focus = JAP_abolish_the__han_system }
-		relative_position_id = JAP_abolish_the__han_system
+		prerequisite = { focus = JAP_abolish_the_han_system }
+		relative_position_id = JAP_abolish_the_han_system
 		x = 1
 		y = 1
 		cost = 10
@@ -709,7 +708,7 @@ focus_tree = {
 		jap_increase_societal_backlash = yes
 		
 			
-		
+		custom_effect_tooltip = JAP_tt0
 		add_ideas = {
 		civilian_economy
 		}
@@ -1217,7 +1216,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		jap_increase_societal_backlash = yes
-
+		custom_effect_tooltip = JAP_tt0
 
 		
 
@@ -1272,7 +1271,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		jap_increase_societal_backlash = yes
-
+		custom_effect_tooltip = JAP_tt0
 		
 			
 		add_ideas = {
@@ -2790,8 +2789,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			swap_ideas = { 
-			remove_idea = jap_outdated_forces
-			add_idea = jap_outdated_forces2
+			remove_idea = jap_outdated_military
+			add_idea = jap_outdated_military2
 			}
 		}
 	}
@@ -2905,7 +2904,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		remove_ideas = {
-			jap_outdated_forces2
+			jap_outdated_military2
 			}
 		}
 	}
@@ -2942,6 +2941,9 @@ focus_tree = {
 		available = {
 		NOT = {
 		has_war_with = FRA
+		}
+		FRA = {
+		has_opinion = { target = JAP value > -11 }
 		}
 		}
 		ai_will_do = {
@@ -3019,6 +3021,9 @@ focus_tree = {
 		available = {
 		NOT = {
 		has_war_with = FRA
+		}
+		FRA = {
+		has_opinion = { target = JAP value > -11 }
 		}
 		}
 		ai_will_do = {
@@ -3352,6 +3357,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		show_mio_tooltip = JAP_yokosuka_naval_arsenal_organization
+		
 			navy_experience = 25
 			if = {
 				limit = {
@@ -3464,6 +3471,12 @@ focus_tree = {
 		available = {
 		NOT = {
 		has_war_with = ENG
+		}
+		NOT = {
+		has_idea = jap_upset_british_government
+		}
+		ENG = {
+		has_opinion = { target = JAP value > -1 }
 		}
 		}
 		ai_will_do = {

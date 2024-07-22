@@ -1,0 +1,171 @@
+
+########    ###    ##    ## ##    ##  ######  
+   ##      ## ##   ###   ## ##   ##  ##    ## 
+   ##     ##   ##  ####  ## ##  ##   ##       
+   ##    ##     ## ## ## ## #####     ######  
+   ##    ######### ##  #### ##  ##         ## 
+   ##    ##     ## ##   ### ##   ##  ##    ## 
+   ##    ##     ## ##    ## ##    ##  ######  
+
+
+ ######  ##     ## #### ########   ######  
+##    ## ##     ##  ##  ##     ## ##    ## 
+##       ##     ##  ##  ##     ## ##       
+ ######  #########  ##  ########   ######  
+      ## ##     ##  ##  ##              ## 
+##    ## ##     ##  ##  ##        ##    ## 
+ ######  ##     ## #### ##         ######  
+
+
+DEBUG_generic_task_force_ship_organization = {
+	include = generic_task_force_ship_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_battle_line_ship_organization = {
+	include = generic_battle_line_ship_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_escort_ship_organization = {
+	include = generic_escort_ship_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_raider_ship_organization = {
+	include = generic_raider_ship_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_submarine_organization = {
+	include = generic_submarine_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_black_sea_fleet_organization = {
+	include = generic_black_sea_fleet_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+
+
+########  ##          ###    ##    ## ########  ######  
+##     ## ##         ## ##   ###   ## ##       ##    ## 
+##     ## ##        ##   ##  ####  ## ##       ##       
+########  ##       ##     ## ## ## ## ######    ######  
+##        ##       ######### ##  #### ##             ## 
+##        ##       ##     ## ##   ### ##       ##    ## 
+##        ######## ##     ## ##    ## ########  ######  
+
+
+
+##     ##    ###    ######## ######## ########  #### ######## ##       
+###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
+#### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
+## ### ## ##     ##    ##    ######   ########   ##  ######   ##       
+##     ## #########    ##    ##       ##   ##    ##  ##       ##       
+##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
+##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
+
+
+DEBUG_generic_artillery_organization = {
+	include = generic_artillery_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_infantry_equipment_organization = {
+	include = generic_infantry_equipment_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_support_equipment_organization = {
+	include = generic_support_equipment_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_motorized_mechanized_organization = {
+	include = generic_motorized_mechanized_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}
+
+DEBUG_generic_armored_car_organization = {
+	include = generic_armored_car_organization
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		is_debug = yes
+	}
+
+	visible = { #TODO_Manu: All this needs to be removed later on
+		owner = { has_country_flag = mio_show_all_archetypes_flag }
+	}
+}

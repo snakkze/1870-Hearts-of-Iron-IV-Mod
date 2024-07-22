@@ -1,0 +1,98 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+POL_stocznia_gdynia_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_POL_stocznia_gdynia
+	allowed = {	
+		tag = POL
+		OR = {
+			has_dlc = "Poland: United and Ready"
+			has_dlc = "No Step Back"
+		}
+	}
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+POL_fb_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_POL_fb
+	allowed = {	
+		tag = POL
+		OR = {
+			has_dlc = "Poland: United and Ready"
+			has_dlc = "No Step Back"
+		}
+	}
+}
+POL_lrl_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_POL_lrl
+	allowed = {	
+		tag = POL
+		OR = {
+			has_dlc = "Poland: United and Ready"
+			has_dlc = "No Step Back"
+		}
+	}
+}
+POL_smpa_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_POL_smpa
+	allowed = {	
+		tag = POL
+		OR = {
+			has_dlc = "Poland: United and Ready"
+			has_dlc = "No Step Back"
+		}
+	}
+}
+
+### Foreign Subsidiaries
+
+### POL_USA_ford_motor_company_organization - Polish Ford -> see USA_organizations.txt 
+
+### POL_ENG_vauxhall_organization - Polish Vauxall -> see ENG_organizations.txt 
+
+### POL_FRA_somua_organization - Polish SOMUA -> see FRA_organizations.txt 

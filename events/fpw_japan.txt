@@ -1925,12 +1925,17 @@
 				base = 0
 			}
 			jap_decrease_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_timed_idea = {
+			idea = jap_upset_british_government
+			days = 3650
+			}
+			custom_effect_tooltip = JAP_tt0
 			ENG = {
 			country_event = fpw_japan.42
 			add_opinion_modifier = { target = JAP modifier = large_decrease }
-			
 		}
-	}
+		}
 	}
 	
 	country_event = {
@@ -1951,6 +1956,7 @@
 				base = 10
 			}
 			send_embargo = JAP
+			custom_effect_tooltip = JAP_tt0
 			JAP = {
 			add_opinion_modifier = { target = ENG modifier = large_decrease }
 			}

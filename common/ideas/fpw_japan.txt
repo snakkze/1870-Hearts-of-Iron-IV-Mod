@@ -45,7 +45,8 @@ ideas = {
 			picture = chi_war_of_resistance3
 
 			modifier = {
-				stability_factor = -0.2
+				stability_factor = -0.15
+				stability_weekly = -0.025
 				political_power_factor = -0.4
 				fascism_drift = 0.15
 			}
@@ -275,13 +276,13 @@ ideas = {
 			}
 		}
 		
-		jap_outdated_forces	= {
+		jap_outdated_military	= {
 				
 			allowed_civil_war = {
                 always = yes
             }
 
-			picture = chi_army_corruption
+			picture = JAP_outdated_military
 				
 			removal_cost = -1
 				
@@ -293,13 +294,13 @@ ideas = {
             }
 		}
 		
-		jap_outdated_forces2	= {
+		jap_outdated_military2	= {
 				
 			allowed_civil_war = {
                 always = yes
             }
 
-			picture = chi_army_corruption
+			picture = JAP_outdated_military
 				
 			removal_cost = -1
 				
@@ -702,7 +703,15 @@ ideas = {
             }
 		}
 		
-		
+		jap_upset_british_government	= {
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			opinion_gain_monthly_factor = -0.85
+            }
+		}
 		
 		
 		

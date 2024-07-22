@@ -1,0 +1,79 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+JAP_yokosuka_naval_arsenal_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_yokosuka_naval_arsenal
+	allowed = {	
+		original_tag = JAP
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+		has_completed_focus = JAP_yokosuka_naval_arsenal
+		}
+	}
+	
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+JAP_tokyo_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_tokyo_arsenal
+	allowed = {	
+		original_tag = JAP
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+JAP_osaka_army_arsenal_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_osaka_army_arsenal
+	allowed = {	
+		original_tag = JAP
+		has_dlc = "Arms Against Tyranny"
+	}
+} 

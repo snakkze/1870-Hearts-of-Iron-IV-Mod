@@ -155,6 +155,10 @@ spriteTypes = {
 		name = "GFX_focus_jap_new_military_plans"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_new_military_plans.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_jap_denounce_shogun"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_denounce_shogun.dds"
+	}
 }
 
 

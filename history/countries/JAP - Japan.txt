@@ -2,7 +2,7 @@ capital = 531
  oob = "JAP_1866"
 
 
-set_stability = 0.25 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.2
 set_war_support = 0.6
 
 set_province_name = { id = 1182 name = "Edo" }
@@ -14,7 +14,7 @@ add_ideas = {
 	jap_feudal_fragmentation
 	jap_isolationist_sentiment
 	jap_economic_backwardness
-	jap_outdated_forces
+	jap_outdated_military
 	jap_agrarian_society
 	jap_limited_military_mobilization
 }

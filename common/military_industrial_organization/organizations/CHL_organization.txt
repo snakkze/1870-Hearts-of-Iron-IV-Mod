@@ -1,0 +1,95 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+CHL_arsenales_de_marina_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_CHL_asmar
+	allowed = {	
+		has_dlc = "Trial of Allegiance"
+		tag = CHL 
+	}
+}
+
+CHL_csav_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_CHL_csav
+	allowed = {	
+		has_dlc = "Trial of Allegiance"
+		tag = CHL 
+	}
+}
+
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+CHL_famae_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_CHL_famae
+	allowed = { 
+		has_dlc = "Trial of Allegiance"
+		tag = CHL
+	}
+}
+
+CHL_famae_rama_de_artilleria_organization = {
+ 	include = generic_artillery_organization
+ 	icon = GFX_idea_CHL_famae
+ 	allowed = {	
+ 		has_dlc = "Trial of Allegiance"
+ 		tag = CHL 
+ 	}
+ }
+
+ CHL_willys_famae_corvo_organization = {
+ 	include = generic_motorized_mechanized_organization
+ 	icon = GFX_idea_CHL_corvo
+ 	allowed = {
+ 		has_dlc = "Trial of Allegiance"
+ 		tag = CHL
+ 	}
+ }
