@@ -1,7 +1,7 @@
 spriteTypes = {
 		
 	SpriteType = {
-		name = "GFX_focus_jap_charter_oath"
+		name = "GFX_focus_jap_charter_oath_shine"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_charter_oath.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -31,7 +31,7 @@ spriteTypes = {
 		}
 	}
 	SpriteType = {
-		name = "GFX_focus_jap_civil_war"
+		name = "GFX_focus_jap_civil_war_shine"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_civil_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -61,7 +61,7 @@ spriteTypes = {
 		}
 	}
 	SpriteType = {
-		name = "GFX_focus_jap_conservative_approach"
+		name = "GFX_focus_jap_conservative_approach_shine"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_conservative_approach.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -91,11 +91,11 @@ spriteTypes = {
 		}
 	}
 	SpriteType = {
-		name = "GFX_focus_jap_civil_war"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_civil_war.png"
+		name = "GFX_focus_jap_civil_war_shine"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_civil_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_civil_war.png"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_civil_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -108,7 +108,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_civil_war.png"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_civil_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -247,10 +247,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_cotton_shine"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_cotton.png"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_cotton.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_cotton.png"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_cotton.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -263,7 +263,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_cotton.png"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_cotton.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -278,10 +278,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_jap_centralized_state_shine"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_centralized_state.png"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_centralized_state.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_centralized_state.png"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_centralized_state.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -294,7 +294,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_centralized_state.png"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_centralized_state.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -556,37 +556,6 @@ spriteTypes = {
 		
 	}
 	SpriteType = {
-		name = "GFX_focus_jap_civil_war_shine"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_civil_war.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_civil_war.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_civil_war.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		
-	}
-	SpriteType = {
 		name = "GFX_focus_jap_samurai_spirit_shine"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_samurai_spirit.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -760,37 +729,6 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_import_western_technologies.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		
-	}
-	SpriteType = {
-		name = "GFX_focus_jap_shogunate_tradition_shine"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_shogunate_tradition.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_shogunate_tradition.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_shogunate_tradition.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1208,10 +1146,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_an_european_style_military_shine"
-		texturefile = "gfx/interface/goals/JAP/focus_an_european_style_military.dds"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_an_european_style_military.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_an_european_style_military.dds"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_an_european_style_military.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1224,7 +1162,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP/focus_an_european_style_military.dds"
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_an_european_style_military.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1287,6 +1225,68 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_fortify_homeland.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_jap_secure_western_armaments_shine"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_secure_western_armaments.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_secure_western_armaments.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_secure_western_armaments.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_jap_new_military_plans_shine"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_new_military_plans.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_new_military_plans.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/JAP/focus_jap_new_military_plans.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no

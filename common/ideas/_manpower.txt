@@ -51,7 +51,6 @@ ideas = {
 					NOT = { has_country_flag = DEN_had_volunteer_only_flag }
 				}
 				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
 			}
 
 			ai_will_do = {

@@ -4,10 +4,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/focus_jap_denounce_shogun.dds"
 	}	
 	spriteType = {
-		name = "GFX_focus_jap_shogunate_tradition"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_shogunate_tradition.dds"
-	}	
-	spriteType = {
 		name = "GFX_focus_jap_import_western_technologies"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_import_western_technologies.dds"
 	}	
@@ -33,7 +29,7 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_focus_jap_civil_war"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_civil_war.png"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_civil_war.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_jap_conservative_approach"
@@ -73,11 +69,11 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_focus_jap_centralized_state"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_centralized_state.png"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_centralized_state.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_jap_cotton"
-		texturefile = "gfx/interface/goals/JAP/focus_jap_cotton.png"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_cotton.dds"
 	}	
 	spriteType = {
 		name = "GFX_focus_jap_coal_mines"
@@ -141,7 +137,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_focus_an_european_style_military"
-		texturefile = "gfx/interface/goals/JAP/focus_an_european_style_military.dds"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_an_european_style_military.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_jap_our_sphere_of_influence"
@@ -150,6 +146,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_jap_fortify_homeland"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_fortify_homeland.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_secure_western_armaments"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_secure_western_armaments.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_new_military_plans"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_new_military_plans.dds"
 	}
 }
 

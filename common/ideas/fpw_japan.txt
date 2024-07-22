@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		jap_small_imperial_resistance = {
+		jap_small_imperial_opposition = {
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -11,13 +11,13 @@ ideas = {
 			picture = chi_war_of_resistance
 
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.1
 				political_power_factor = -0.15
 				fascism_drift = 0.05
 			}
 		}
 
-		jap_medium_imperial_resistance = {
+		jap_medium_imperial_opposition = {
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -28,13 +28,13 @@ ideas = {
 			picture = chi_war_of_resistance2
 
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.15
 				political_power_factor = -0.25
 				fascism_drift = 0.1
 			}
 		}
 		
-		jap_high_imperial_resistance = {
+		jap_high_imperial_opposition = {
 
 			allowed_civil_war = {
 				has_government = neutrality
@@ -45,13 +45,13 @@ ideas = {
 			picture = chi_war_of_resistance3
 
 			modifier = {
-				stability_factor = -0.15
-				political_power_factor = -0.35
+				stability_factor = -0.2
+				political_power_factor = -0.4
 				fascism_drift = 0.15
 			}
 		}
 		
-		jap_feudal_entrenchment	= {
+		jap_feudal_fragmentation	= {
 				
 			allowed_civil_war = {
 				always = yes
@@ -66,8 +66,10 @@ ideas = {
 			max_command_power = -120
 			army_speed_factor = -0.1
 			army_morale_factor = -0.1
+			conscription_factor = -0.25
 			}
 		}
+		
 		
 		jap_unequal_treaties	= {
 				
@@ -111,7 +113,7 @@ ideas = {
 			}
 		}
 		
-		jap_underdeveloped_country	= {
+		jap_economic_backwardness	= {
 				
 			allowed_civil_war = {
 				always = yes
@@ -336,7 +338,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.3
-				weekly_manpower = -500
+				weekly_manpower = -250
 				consumer_goods_factor = 0.2
 				stability_weekly = -0.002
 				neutrality_drift = -0.05
@@ -349,7 +351,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_agrarian_society
+			picture = JAP_agrarian_society
 				
 			removal_cost = -1
 				

@@ -40,7 +40,9 @@ focus_tree = {
 		mutually_exclusive = { focus = JAP_continue_the_shogunate_tradition }
 
 		completion_reward = {
-		add_stability = -0.05
+		add_ideas = {
+		jap_small_imperial_opposition
+		}
 		}
 	}
   
@@ -145,8 +147,8 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = { 
-		remove_idea = jap_medium_imperial_resistance
-		add_idea = jap_high_imperial_resistance
+		remove_idea = jap_small_imperial_opposition
+		add_idea = jap_medium_imperial_opposition
 		}
 		if = {
 		limit = {
@@ -169,7 +171,7 @@ focus_tree = {
   
 	focus = {
 		id = JAP_secure_western_armaments
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_focus_jap_secure_western_armaments
 		prerequisite = { focus = JAP_form_satcho_alliance }
 		relative_position_id = JAP_form_satcho_alliance
 		x = -2
@@ -257,6 +259,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+		swap_ideas = { 
+		remove_idea = jap_medium_imperial_opposition
+		add_idea = jap_high_imperial_opposition
+		}
 		531 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
 		set_demilitarized_zone = yes
@@ -329,7 +335,7 @@ focus_tree = {
 				date < 1867.1.30
 					}
 		create_country_leader = {
-		name = "Emperor Kōmei"
+		name = "Kōmei"
 		desc = "JAP_komei_desc"
 		picture = "GFX_Portrait_JAP_komei"
 		expire = "1965.1.1"
@@ -358,7 +364,7 @@ focus_tree = {
 		every_country_with_original_tag = {
 		original_tag_to_check = JAP 
 		remove_ideas = {
-		jap_high_imperial_resistance
+		jap_high_imperial_opposition
 		}
         IF = { 
 		limit = { Has_government = neutrality }
@@ -500,7 +506,7 @@ focus_tree = {
 		jap_increase_societal_backlash = yes
 			
 		remove_ideas = {
-		jap_feudal_entrenchment
+		jap_feudal_fragmentation
 			}
 			
 			
@@ -1216,7 +1222,7 @@ focus_tree = {
 		
 
 			remove_ideas = {
-			jap_underdeveloped_country
+			jap_economic_backwardness
 			}
 
 			
@@ -1312,7 +1318,7 @@ focus_tree = {
   
   	focus = {
 		id = JAP_continue_the_shogunate_tradition
-		icon = GFX_focus_jap_shogunate_tradition
+		icon = GFX_focus_jap_tokugawa_crest
 		x = 30
 		y = 0
 		cost = 5
@@ -2885,7 +2891,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_new_military_plans_and_strategies
-		icon = GFX_
+		icon = GFX_focus_jap_new_military_plans
 		
 		prerequisite = { focus = JAP_create_the_army_general_staff_office }
 		relative_position_id = JAP_create_the_army_general_staff_office
