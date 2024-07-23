@@ -2033,3 +2033,411 @@
 			}
 		}
 	}
+	
+	country_event = {
+		id = fpw_japan.45
+		title = fpw_japan.45.t
+		desc = fpw_japan.45.d
+		picture = GFX_report_event_NOR_storting
+		
+		is_triggered_only = yes
+		
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.45.a
+			ai_chance = {
+				base = 10
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_bimetallic_standard
+			days = 1095
+			}
+			}
+			
+			
+			
+			custom_effect_tooltip = JAP_tt14
+
+
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = FRA
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			original_tag = USA
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.45.b
+			ai_chance = {
+				base = 0
+			}
+			jap_decrease_societal_backlash = yes
+			
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.45.c
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_gold_standard
+			days = 1825
+			}
+			}
+			
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			custom_effect_tooltip = JAP_tt13
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+		 }
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			original_tag = FRA
+			original_tag = USA
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		}
+		}
+	
+	country_event = {
+		id = fpw_japan.46
+		title = fpw_japan.46.t
+		desc = fpw_japan.46.d
+		picture = GFX_report_event_NOR_storting
+		
+		is_triggered_only = yes
+		
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.46.a
+			ai_chance = {
+				base = 10
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_bimetallic_standard
+			days = 1095
+			}
+			}
+			custom_effect_tooltip = JAP_tt14
+
+
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = FRA
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			original_tag = USA
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.46.b
+			ai_chance = {
+				base = 0
+			}
+			jap_decrease_societal_backlash = yes
+			
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.46.c
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_gold_standard
+			days = 1825
+			}
+			}
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			custom_effect_tooltip = JAP_tt13
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+		 }
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			original_tag = FRA
+			original_tag = USA
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		}
+		}
+	
+	country_event = {
+		id = fpw_japan.47
+		title = fpw_japan.47.t
+		desc = fpw_japan.47.d
+		picture = GFX_fpw_japan_monetary_system
+		
+		is_triggered_only = yes
+		
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.47.a
+			ai_chance = {
+				base = 10
+			}
+			hidden_effect = {
+			uncomplete_national_focus = {
+			focus = JAP_keep_the_koban
+			uncomplete_children = no
+			refund_political_power = no
+			}}
+			complete_national_focus = JAP_distribute_the_yen
+			custom_effect_tooltip = JAP_tt0
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_timed_idea = {
+			idea = jap_currency_transition_period
+			days = 365
+			}
+			custom_effect_tooltip = JAP_tt0
+			custom_effect_tooltip = JAP_tt8
+		}
+		option = {
+			name = fpw_japan.47.b
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			uncomplete_national_focus = {
+			focus = JAP_distribute_the_yen
+			uncomplete_children = no
+			refund_political_power = no
+			}}
+			complete_national_focus = JAP_keep_the_koban
+			custom_effect_tooltip = JAP_tt0
+			jap_decrease_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_stability = 0.1
+			add_political_power = 125
+		}
+	}

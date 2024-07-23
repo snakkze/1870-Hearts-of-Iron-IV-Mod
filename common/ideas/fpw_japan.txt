@@ -3,7 +3,7 @@ ideas = {
 		jap_small_imperial_opposition = {
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = no
 			}
 
 			removal_cost = -1
@@ -20,7 +20,7 @@ ideas = {
 		jap_medium_imperial_opposition = {
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = no
 			}
 
 			removal_cost = -1
@@ -37,7 +37,7 @@ ideas = {
 		jap_high_imperial_opposition = {
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = no
 			}
 
 			removal_cost = -1
@@ -749,7 +749,7 @@ ideas = {
             }
 		}
 		
-		jap_upset_british_government	= {
+		jap_upset_british_government = {
 
 				
 			removal_cost = -1
@@ -759,7 +759,93 @@ ideas = {
             }
 		}
 		
+		jap_bimetallic_standard	= {
+
+				
+			removal_cost = -1
+				
+            modifier = {
+
+            }
+			
+			on_remove = {
+               add_stability = 0.05 
+			   random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+            }
+		}
 		
+		jap_gold_standard = {
+
+				
+			removal_cost = -1
+				
+            modifier = {
+
+            }
+			
+			on_remove = {
+               add_stability = 0.15 
+			   random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            }
+		}
 		
 		
 		

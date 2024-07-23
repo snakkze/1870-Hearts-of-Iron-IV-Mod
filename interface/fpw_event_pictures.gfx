@@ -18,4 +18,8 @@ spriteTypes = {
 		name = "GFX_fpw_japanese_flag"
 		texturefile = "gfx/event_pictures/fpw_japanese_flag.dds"
 	}
+	spriteType = {
+		name = "GFX_fpw_japan_monetary_system"
+		texturefile = "gfx/event_pictures/fpw_japan_monetary_system.dds"
+	}
 }
