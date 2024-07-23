@@ -1969,3 +1969,67 @@
 			add_stability = -0.02
 		}
 	}
+	
+	country_event = {
+		id = fpw_japan.43
+		title = fpw_japan.43.t
+		desc = fpw_japan.43.d
+		picture = GFX_report_event_generic_construction_site
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.43.a
+			ai_chance = {
+				base = 10
+			}
+	
+		}
+		option = {
+			name = fpw_japan.43.b
+			ai_chance = {
+				base = 0
+			}
+			add_timed_idea = {
+			idea = jap_200_ship_plan2
+			days = 365
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.44
+		title = fpw_japan.44.t
+		desc = fpw_japan.44.d
+		picture = GFX_report_event_generic_construction_site
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.44.a
+			ai_chance = {
+				base = 10
+			}
+	
+		}
+		option = {
+			name = fpw_japan.44.b
+			ai_chance = {
+				base = 0
+			}
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_timed_idea = {
+			idea = jap_200_ship_plan2
+			days = 365
+			}
+		}
+	}

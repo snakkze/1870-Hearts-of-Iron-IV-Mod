@@ -15,4 +15,8 @@ spriteTypes = {
 		name = "GFX_idea_JAP_outdated_military"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_outdated_military.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_jap_200_ship_plan"
+		texturefile = "gfx/interface/ideas/JAP/idea_jap_200_ship_plan.dds"
+	}
 }

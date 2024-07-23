@@ -562,6 +562,52 @@ ideas = {
 			#civilian_factory_use = -2
 			}
 		}
+		
+		jap_200_ship_plan = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = jap_200_ship_plan
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_dockyard_factor = 0.5 
+				industrial_capacity_dockyard = 0.5
+			}
+			on_remove = {
+			JAP = {
+			country_event = fpw_japan.43
+			}
+            }
+		}
+		
+		jap_200_ship_plan2 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = jap_200_ship_plan
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_dockyard_factor = 0.5 
+				industrial_capacity_dockyard = 0.5
+				production_lack_of_resource_penalty_factor = 0.2
+			}
+			on_remove = {
+			JAP = {
+			country_event = fpw_japan.44
+			}
+            }
+		}
+		
 }
 	hidden_ideas = {
 	
@@ -712,8 +758,6 @@ ideas = {
 			opinion_gain_monthly_factor = -0.85
             }
 		}
-		
-		
 		
 		
 		
