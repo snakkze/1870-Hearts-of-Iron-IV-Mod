@@ -339,28 +339,6 @@ austrian_surrender = {
 				transfer_state_to = ITA
 				remove_core_of = AUS
 			}
-			if = {
-				limit = {
-					any_war_score > 25
-				}
-				850 = {
-					transfer_state_to = ITA
-					remove_core_of = AUS
-				}
-			}
-			if = {
-				limit = {
-					any_war_score > 75
-				}
-				736 = {
-					transfer_state_to = ITA
-					remove_core_of = AUS
-				}
-				852 = {
-					transfer_state_to = ITA
-					remove_core_of = AUS
-				}
-			}
 		}
 	}
 	SOV = {
@@ -559,10 +537,28 @@ austrian_surrender_2 = {
 
 
 austrian_surrender_3 = {
+	ITA = {
+		if = {
+			limit = { 
+				has_war_with = AUS
+			}
+			country_event = austro_prussian_fpw.4 
+			160 = {
+				transfer_state_to = ITA
+				remove_core_of = AUS
+			}
+		}
+	}
+
 	every_country = {
 		limit = {
-			is_in_faction_with = PRS
-			is_faction_leader = yes
+			OR = {
+				AND = {
+					is_in_faction_with = PRS
+					is_faction_leader = yes
+				}
+				original_tag = ITA
+			}
 			has_war_with = AUS
 		}
 		# Austrian faction peace with prussian faction
@@ -576,7 +572,7 @@ austrian_surrender_3 = {
 			days = 90
 		}
 	}
-	
+
 	every_state = {
 		limit = {
 			is_core_of = AUS

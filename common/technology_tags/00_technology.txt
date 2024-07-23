@@ -2,6 +2,7 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	cavalry
 	light_air
 	medium_air
 	heavy_air
@@ -134,6 +135,9 @@ technology_folders = {
 		ledger = army
 	}
 	fpw_support_folder = {
+		ledger = army
+	}
+	fpw_cavalry_folder = {
 		ledger = army
 	}
 	fpw_artillery_folder = {

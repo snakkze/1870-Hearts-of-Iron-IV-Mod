@@ -1,4 +1,9 @@
 ﻿l_english:
+ # CAVALRY
+ fpw_cavalry_equipment_0:0 "Cavalry Equipment"
+ fpw_cavalry_equipment_0_short:0 "Cavalry Eq."
+ fpw_cavalry_equipment_0_desc:0 ""
+
  # ARTILLERY
  fpw_howitzer_artillery_equipment:0 "Howitzer Artillery"
  fpw_howitzer_artillery_equipment_short:0 "Howitzer Artillery"
@@ -163,10 +168,17 @@
 
  # FOLDERS #
  fpw_infantry_folder:0 "Infantry"
+ fpw_infantry_folder_desc:0 ""
  fpw_artillery_folder:0 "Artillery"
+ fpw_artillery_folder_desc:0 ""
+ fpw_cavalry_folder:0 "Cavalry"
+ fpw_cavalry_folder_desc:0 ""
  fpw_support_folder:0 "Support"
+ fpw_support_folder_desc:0 ""
  fpw_industry_folder:0 "Industry"
+ fpw_industry_folder_desc:0 ""
  fpw_naval_folder:0 "Navy"
+ fpw_naval_folder_desc:0 ""
 
  # TO DISABLE AIRPLANES #
  early_fighter:0 "Aircraft Technology"

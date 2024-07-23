@@ -1,0 +1,43 @@
+technologies = {
+	
+	@1860 = 0
+	@1862 = 2
+	@1864 = 4
+	@1866 = 6
+	@1868 = 8
+	@1870 = 10
+	@1872 = 12
+	@1874 = 14
+
+	# Model 1860 Spencer Rifle
+	fpw_cavalry_equipment = {
+
+		enable_equipments = {
+			fpw_cavalry_equipment_0
+		}
+		
+		enable_subunits = {
+			cavalry
+		}
+		
+		#path = {
+		#	leads_to_tech = fpw_infantry_weapons1
+		#	research_cost_coeff = 1
+		#}		
+
+		research_cost = 1.5
+		start_year = 1860
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			cavalry
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,5 +1,20 @@
 spriteTypes = {
 
+	### interface gfx ###
+	# folder tabs #
+	SpriteType = {
+		name = "GFX_fpw_cavalry_folder_tab"
+		texturefile = "gfx/interface/technologies/icons/fpw_techtree_cavalry_tab.dds"
+		noOfFrames = 2
+	}	
+
+	# folder background #
+	SpriteType = {
+		name = "GFX_fpw_cavalry_bg"
+		texturefile = "gfx/interface/technologies/fpw_cavalry_techtree_bg.png"
+	}	
+
+
 	### generic equipment archetypes ###
 	# trains #
 
@@ -18,6 +33,12 @@ spriteTypes = {
 	
 
 	# generic infantry archetypes #
+	# Cavalry
+	SpriteType = {
+		name = "GFX_fpw_cavalry_equipment_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_cavalry_equipment_0.dds"
+	}
+
 	# Support
 	SpriteType = {
 		name = "GFX_support_equipment_1_medium"
