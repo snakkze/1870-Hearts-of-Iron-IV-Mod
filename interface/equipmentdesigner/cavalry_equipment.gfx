@@ -1,0 +1,26 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_CAV_cavalry"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/generic_cavalry_blueprint.dds"
+	}
+	spriteType = {
+		name = "GFX_CAV_breed_highlight"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/generic_cavalry_blueprint_breed.dds"
+	}
+	spriteType = {
+		name = "GFX_CAV_hoof_highlight"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/generic_cavalry_blueprint_hoof.dds"
+	}
+	spriteType = {
+		name = "GFX_CAV_saddle_highlight"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/generic_cavalry_blueprint_saddle.dds"
+	}
+	spriteType = {
+		name = "GFX_CAV_weapon1_highlight"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/generic_cavalry_blueprint_weapon1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAV_weapon2_highlight"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/generic_cavalry_blueprint_weapon2.dds"
+	}
+}

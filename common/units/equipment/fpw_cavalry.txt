@@ -5,12 +5,98 @@ equipments = {
 	fpw_cavalry_equipment = {
 		year = 1860
 
+		group_by = archetype
 		is_archetype = yes
 		is_buildable = no
-		type = infantry
+		type = { armor cavalry }
 		group_by = archetype
 
 		interface_category = interface_category_land
+
+		module_slots = {
+			weapon_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					fpw_cavalry_weapons_category_type
+				}
+			}
+			weapon_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					fpw_cavalry_weapons_category_type
+				}
+			}
+			hoof_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					fpw_cavalry_hoofs_category_type
+				}
+			}
+			armor_type_slot = {
+				required = no
+				allowed_module_categories = {
+					fpw_cavalry_armor_category_type
+				}
+			}
+			horse_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					fpw_cavalry_breeds_category_type
+				}
+			}
+			saddle_slot = {
+				required = yes
+				allowed_module_categories = {
+					fpw_saddle_category_type
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					fpw_cavalry_communications_module
+					fpw_cavalry_tactics_module
+					fpw_saddlebag_category_type
+					fpw_stirrup_category_type
+					fpw_blankets_category_type
+					fpw_bedrolls_category_type
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					fpw_cavalry_communications_module
+					fpw_cavalry_tactics_module
+					fpw_saddlebag_category_type
+					fpw_stirrup_category_type
+					fpw_blankets_category_type
+					fpw_bedrolls_category_type
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					fpw_cavalry_communications_module
+					fpw_cavalry_tactics_module
+					fpw_saddlebag_category_type
+					fpw_stirrup_category_type
+					fpw_blankets_category_type
+					fpw_bedrolls_category_type
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					fpw_cavalry_communications_module
+					fpw_cavalry_tactics_module
+					fpw_saddlebag_category_type
+					fpw_stirrup_category_type
+					fpw_blankets_category_type
+					fpw_bedrolls_category_type
+				}
+			}
+		}
+
+		active = yes
 
 		reliability = 0.8
 		maximum_speed = 8
@@ -29,13 +115,28 @@ equipments = {
 		
 		build_cost_ic = 5
 		resources = {
-			steel = 1
 		}
 	}
 
 	fpw_cavalry_equipment_0 = {
 		year = 1860
 		archetype = fpw_cavalry_equipment
+
+		module_slots = inherit
+
+		default_modules = {
+			weapon_slot_1 = saber_weapon_cav
+			weapon_slot_2 = saber_weapon_cav
+			hoof_type_slot = standard_hoofs_cav
+			horse_type_slot = normal_breed_cav
+			saddle_slot = combat_saddle_cav
+			special_type_slot_1 = skirmish_tactic_cav
+			special_type_slot_2 = quick_release_saddlebag_cav
+			special_type_slot_3 = reinforced_stirrup_cav
+			special_type_slot_4 = light_blanket_cav
+		}
+
+		active = yes
 		priority = 05
 		visual_level = 0
 	}

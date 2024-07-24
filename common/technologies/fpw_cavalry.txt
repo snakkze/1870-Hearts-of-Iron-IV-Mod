@@ -19,6 +19,72 @@ technologies = {
 		enable_subunits = {
 			cavalry
 		}
+
+		# infantry
+		enable_equipment_modules = {
+			rifle_weapon_cav
+			pistol_weapon_cav
+		}
+
+		# support
+		enable_equipment_modules = {
+			pigeon_utility_cav
+			reconnaissance_tactic_cav
+		}
+
+		# tp be added further down
+		enable_equipment_modules = {
+			light_armor_cav
+			medium_armor_cav
+			heavy_armor_cav
+
+			rim_hoofs_cav
+			bar_hoofs_cav
+			heeled_hoofs_cav
+			rubber_hoofs_cav
+			combat_saddle_cav
+
+			light_saddle_cav
+			reinforced_saddle_cav
+
+			expanded_saddlebag_cav
+			quick_release_saddlebag_cav
+			waterproof_saddlebag_cav
+
+			light_stirrup_cav
+			reinforced_stirrup_cav
+
+			insulated_blanket_cav
+			light_blanket_cav
+			moisture_wicking_blanket_cav
+
+			compact_bedroll_cav
+			insulated_bedrolls_cav
+			waterproof_bedrolls_cav
+		}
+
+		# Not sure
+		enable_equipment_modules = {
+			shock_tactic_cav
+			defensive_tactic_cav
+			skirmish_tactic_cav
+			ambush_tactic_cav
+			flanking_tactic_cav
+		}
+
+		enable_equipment_modules = {
+			sword_weapon_cav
+			saber_weapon_cav
+			lance_weapon_cav
+			flare_gun_utility_cav
+			normal_breed_cav
+			light_breed_cav
+			heavy_breed_cav
+
+			arabian_breed_cav
+
+			standard_hoofs_cav
+		}
 		
 		#path = {
 		#	leads_to_tech = fpw_infantry_weapons1

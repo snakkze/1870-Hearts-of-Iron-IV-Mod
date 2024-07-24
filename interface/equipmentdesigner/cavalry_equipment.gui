@@ -1,12 +1,12 @@
 guiTypes = {
 	containerWindowType = {
-		name = "equipment_designer_cavalry_equipment"
+		name = "equipment_designer_fpw_cavalry_equipment"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_infantry_equipment"
+			spriteType = "GFX_CAV_cavalry"
 			position = { x=0 y=0 }
 		}
 
@@ -17,7 +17,7 @@ guiTypes = {
 
 			################# MODULE SLOT: Weapon 1 #################
 			containerWindowType = {
-				name = "main_armament_slot"
+				name = "weapon_slot_1"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 
@@ -34,7 +34,7 @@ guiTypes = {
 
 					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_destroyer_chassis_main_armament_slot_ger"
+						spriteType = "GFX_CAV_weapon1_highlight"
 						position = { x=0 y=0 }
 					}
 				}
@@ -60,11 +60,68 @@ guiTypes = {
 
 					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_destroyer_chassis_turret_type_slot_ger"
+						spriteType = "GFX_CAV_weapon2_highlight"
 						position = { x=0 y=0 }
 					}
 				}
 
+			}
+
+			################# MODULE SLOT: Saddle #################
+			containerWindowType = {
+				name = "saddle_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "saddle_slot"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				containerWindowType = {
+					name = "saddle_slot@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_CAV_saddle_highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Hoofs #################
+			containerWindowType = {
+				name = "hoof_type_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "hoof_type_slot"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				containerWindowType = {
+					name = "hoof_type_slot@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "blueprint_generic"
+						spriteType = "GFX_CAV_hoof_highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Armor #################
+			containerWindowType = {
+				name = "armor_type_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
 			}
 
 			################# MODULE SLOT: Horse Type #################
@@ -86,7 +143,7 @@ guiTypes = {
 
 					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_destroyer_chassis_turret_type_slot_ger"
+						spriteType = "GFX_CAV_breed_highlight"
 						position = { x=0 y=0 }
 					}
 				}
@@ -116,37 +173,12 @@ guiTypes = {
 
 				#### MODULE: Todo ####
 			}
-
-			################# MODULE SLOT: Armor #################
 			containerWindowType = {
-				name = "armor_type_slot"
+				name = "special_type_slot_4"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 
-				containerWindowType = {
-					name = "armor_type_slot"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-				}
-
-				containerWindowType = {
-					name = "armor_type_slot@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-
-					iconType = {
-						name = "blueprint_generic"
-						spriteType = "GFX_TM_tank_armor"
-						position = { x=0 y=0 }
-					}
-
-					iconType = {
-						name = "blueprint"
-						spriteType = "GFX_TM_light_tank_destroyer_chassis_armor_type_slot_ger"
-						position = { x=0 y=0 }
-					}
-				}
-
+				#### MODULE: Todo ####
 			}
 		}
 	}
