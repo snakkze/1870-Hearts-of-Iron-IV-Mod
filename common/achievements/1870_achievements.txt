@@ -1,0 +1,186 @@
+unique_id=1870_achievements
+
+germany_formed_achievement = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		OR = {
+			original_tag = AUS
+			original_tag = PRS
+			original_tag = ANH
+			original_tag = BAD
+			original_tag = BAV
+			original_tag = BRE
+			original_tag = BRU
+			original_tag = FRK
+			original_tag = HAM
+			original_tag = HEK
+			original_tag = HES
+			original_tag = HNV
+			original_tag = HOH
+			original_tag = LIP
+			original_tag = LUE
+			original_tag = MCK
+			original_tag = MKS
+			original_tag = NAS
+			original_tag = OLD
+			original_tag = SBG
+			original_tag = SBL
+			original_tag = SCG
+			original_tag = SXM
+			original_tag = SXW
+			original_tag = SXY
+			original_tag = WLD
+			original_tag = WRT
+		}
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = country_is_germany
+			OR = {
+				has_cosmetic_tag = PRS_GER
+				has_cosmetic_tag = GER
+				tag = GER
+			}
+		}
+	}
+}
+
+french_victory_achievement = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = FRA
+	}
+
+	happened = {
+		has_completed_focus = FRA_empire_triumphant
+	}
+}
+
+socialist_achievement = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+
+	happened = {
+		has_government = communism
+	}
+}
+
+colonial_achievement = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		capital_scope = { is_on_continent = europe }
+		NOT = {
+			original_tag = TUR
+			original_tag = FRA
+			original_tag = ENG
+		}
+	}
+
+	happened = {
+		any_state = {
+			is_on_continent = africa
+			is_owned_by = ROOT
+		}
+	}
+}
+
+hre = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		OR = {
+			original_tag = AUS
+			original_tag = PRS
+		}
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = country_is_hre
+			has_cosmetic_tag = HRE_UNIFIED
+		}
+	}
+}
+
+socialist_world_achievement = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+
+	happened = {
+		all_country = {
+			OR = {
+				has_government = communism
+				tag = TRB
+			}
+		}
+	}
+}
+
+tno_reference = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = PRS
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = country_is_ggr
+			has_cosmetic_tag = PRS_greater_germany
+		}
+	}
+}
+
+roman_return = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = ITA
+	}
+
+	happened = {
+		has_completed_focus = ITA_revive_the_empire
+	}
+}
+
+hearts_of_iron_achievement = {
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1866.1.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = AUS
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = austria_tt
+			fpw_prussia_lost_apw
+		}
+	}
+}
