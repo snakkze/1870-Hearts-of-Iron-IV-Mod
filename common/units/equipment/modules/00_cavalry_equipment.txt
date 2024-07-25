@@ -46,6 +46,28 @@ equipment_modules = {
 			steel = 2
 		}
 	}
+	saber_weapon_2_cav = {
+		category = fpw_cavalry_weapons_category_type
+
+		add_stats = {
+			#Defensive Abilities
+				defense = 20
+				breakthrough = 2
+
+			#Offensive Abilities
+				soft_attack = 3
+
+			#Misc Abilities
+				reliability = 0.9
+				build_cost_ic = 0.23
+		}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+			steel = 2
+		}
+	}
 
 	lance_weapon_cav = {
 		category = fpw_cavalry_weapons_category_type
@@ -71,6 +93,28 @@ equipment_modules = {
 	}
 
 	pistol_weapon_cav = {
+		category = fpw_cavalry_weapons_category_type
+
+		add_stats = {
+			#Defensive Abilities
+				defense = 203
+				breakthrough = 2
+
+			#Offensive Abilities
+				soft_attack = 3
+
+			#Misc Abilities
+				reliability = 0.9
+				build_cost_ic = 0.23
+		}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+			steel = 2
+		}
+	}
+	revolver_weapon_cav = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
@@ -441,28 +485,6 @@ equipment_modules = {
 	}
 
 	#Hoofs
-	standard_hoofs_cav = {
-		category = fpw_cavalry_hoofs_category_type
-
-		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
-		}
-		xp_cost = 0
-
-		build_cost_resources = {
-			steel = 2
-		}
-	}
-
 	rim_hoofs_cav = {
 		category = fpw_cavalry_hoofs_category_type
 
@@ -595,6 +617,7 @@ equipment_modules = {
 	}
 
 
+	# saddlebag
 	expanded_saddlebag_cav = {
 		category = fpw_saddlebag_category_type
 

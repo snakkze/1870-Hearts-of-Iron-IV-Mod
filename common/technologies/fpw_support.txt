@@ -364,6 +364,10 @@ technologies = {
 			armored_car_recon
 			light_tank_recon
 		}
+
+		enable_equipment_modules = {
+			reconnaissance_tactic_cav
+		}
 		
 		path = {
 			leads_to_tech = tech_recon2
@@ -1266,6 +1270,10 @@ technologies = {
 
 		enable_subunits = {
 			signal_company
+		}
+
+		enable_equipment_modules = {
+			pigeon_utility_cav
 		}
 		
 		path = {

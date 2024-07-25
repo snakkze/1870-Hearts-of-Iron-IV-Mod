@@ -1,0 +1,194 @@
+spriteTypes = {	
+	# weapons
+	spriteType = {
+		name = "GFX_EMI_sword_weapon_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/sword_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_saber_weapon_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/saber_weapon_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_saber_weapon_2_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/saber_weapon_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_lance_weapon_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/lance_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_pistol_weapon_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/pistol_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_revolver_weapon_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/revolver_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_rifle_weapon_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/rifle_weapon.dds"
+	}
+	# communications
+	spriteType = {
+		name = "GFX_EMI_fpw_cavalry_communications_module"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/communication_cat.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_pigeon_utility_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/pigeon_communication.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_flare_gun_utility_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/flare_gun_communication.dds"
+	}
+	# armor
+	spriteType = {
+		name = "GFX_EMI_light_armor_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/light_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_armor_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/medium_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/heavy_armor.dds"
+	}
+	# breeds
+	spriteType = {
+		name = "GFX_EMI_normal_breed_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/normal_breed.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_breed_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/light_breed.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_breed_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/heavy_breed.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_arabian_breed_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/arabian_breed.dds"
+	}
+	# tactics
+	spriteType = {
+		name = "GFX_EMI_fpw_cavalry_tactics_module"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/shock_tactic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_shock_tactic_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/shock_tactic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_skirmish_tactic_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/skirmish_tactic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_reconnaissance_tactic_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/reconnaissance_tactic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_defensive_tactic_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/defense_tactic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ambush_tactic_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/ambush_tactic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_flanking_tactic_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/flank_tactic.dds"
+	}
+	# hoofs
+	spriteType = {
+		name = "GFX_EMI_rim_hoofs_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/rim_hoof.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heeled_hoofs_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/straight_bar_hoof.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_rubber_hoofs_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/rubber_hoof.dds"
+	}
+	#saddle
+	spriteType = {
+		name = "GFX_EMI_combat_saddle_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/combat_saddle.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_saddle_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/light_saddle.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_reinforced_saddle_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/reinforced_saddle.dds"
+	}
+	#saddlebag
+	spriteType = {
+		name = "GFX_EMI_fpw_saddlebag_category_type"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/expanded_saddlebag.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_expanded_saddlebag_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/expanded_saddlebag.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_quick_release_saddlebag_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/small_saddlebag.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_waterproof_saddlebag_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/waterproof_saddlebag.dds"
+	}
+	#stirrup
+	spriteType = {
+		name = "GFX_EMI_fpw_stirrup_category_type"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/small_stirrup.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_stirrup_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/small_stirrup.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_reinforced_stirrup_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/reinforced_stirrup.dds"
+	}
+	#blankets
+	spriteType = {
+		name = "GFX_EMI_fpw_blankets_category_type"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/insulated_blanket_cat.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_insulated_blanket_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/insulated_blanket.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_blanket_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/light_blanket.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_moisture_wicking_blanket_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/moisture_blanket.dds"
+	}
+	# bedrolls
+	spriteType = {
+		name = "GFX_EMI_fpw_bedrolls_category_type"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/compact_bedroll_cat.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_compact_bedroll_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/compact_bedroll.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_insulated_bedrolls_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/insulated_bedroll.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_waterproof_bedrolls_cav"
+		texturefile = "gfx/interface/equipmentdesigner/cavalry/modules/waterproof_bedroll.dds"
+	}
+
+}

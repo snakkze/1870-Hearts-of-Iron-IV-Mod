@@ -20,87 +20,667 @@ technologies = {
 			cavalry
 		}
 
-		# infantry
 		enable_equipment_modules = {
-			rifle_weapon_cav
-			pistol_weapon_cav
-		}
-
-		# support
-		enable_equipment_modules = {
-			pigeon_utility_cav
-			reconnaissance_tactic_cav
-		}
-
-		# tp be added further down
-		enable_equipment_modules = {
-			light_armor_cav
-			medium_armor_cav
-			heavy_armor_cav
-
-			rim_hoofs_cav
-			heeled_hoofs_cav
-			rubber_hoofs_cav
-			combat_saddle_cav
-
-			light_saddle_cav
-			reinforced_saddle_cav
-
-			expanded_saddlebag_cav
-			quick_release_saddlebag_cav
-			waterproof_saddlebag_cav
-
-			light_stirrup_cav
-			reinforced_stirrup_cav
-
-			insulated_blanket_cav
-			light_blanket_cav
-			moisture_wicking_blanket_cav
-
-			compact_bedroll_cav
-			insulated_bedrolls_cav
-			waterproof_bedrolls_cav
-		}
-
-		# Not sure
-		enable_equipment_modules = {
-			shock_tactic_cav
-			defensive_tactic_cav
-			skirmish_tactic_cav
-			ambush_tactic_cav
-			flanking_tactic_cav
-		}
-
-		enable_equipment_modules = {
-			sword_weapon_cav
-			saber_weapon_cav
-			lance_weapon_cav
-			flare_gun_utility_cav
 			normal_breed_cav
 			light_breed_cav
 			heavy_breed_cav
 
 			arabian_breed_cav
 
-			standard_hoofs_cav
+			rim_hoofs_cav
+
+			combat_saddle_cav
 		}
-		
-		#path = {
-		#	leads_to_tech = fpw_infantry_weapons1
-		#	research_cost_coeff = 1
-		#}		
+
+		path = {
+			leads_to_tech = fpw_rider
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_horse
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1860
 		folder = {
 			name = fpw_cavalry_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
 			cavalry
 		}
 		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_horse = {
+
+		path = {
+			leads_to_tech = fpw_light_armor
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_light_tack
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_rim_hoofs
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_light_saddle
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_reinforced_saddle
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = 8 y = 2 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_light_tack = {
+
+		path = {
+			leads_to_tech = fpw_improved_and_expanded_tack
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			# small saddlebag
+			light_stirrup_cav
+			quick_release_saddlebag_cav
+			light_blanket_cav
+			compact_bedroll_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x =10 y = 4 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_improved_and_expanded_tack = {
+		
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x =10 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_rim_hoofs = {
+
+		path = {
+			leads_to_tech = fpw_heeled_hoofs
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			expanded_saddlebag_cav
+			waterproof_saddlebag_cav
+			reinforced_stirrup_cav
+			insulated_blanket_cav
+			moisture_wicking_blanket_cav
+			insulated_bedrolls_cav
+			waterproof_bedrolls_cav
+			
+		}
+
+		path = {
+			leads_to_tech = fpw_rubber_hoofs
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x =6 y = 4 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_heeled_hoofs = {
+
+		enable_equipment_modules = {
+			heeled_hoofs_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x =6 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_rubber_hoofs = {
+
+		enable_equipment_modules = {
+			rubber_hoofs_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x =7 y = 8 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_reinforced_saddle = {
+
+		enable_equipment_modules = {
+			reinforced_saddle_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x =14 y = 4 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_light_saddle = {
+
+		enable_equipment_modules = {
+			light_saddle_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = 12 y = 4 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_light_armor = {
+
+		enable_equipment_modules = {
+			light_armor_cav
+		}
+
+		path = {
+			leads_to_tech = fpw_med_armor
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_heavy_armor
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_med_armor = {
+
+		enable_equipment_modules = {
+			medium_armor_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = 1 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_heavy_armor = {
+
+		enable_equipment_modules = {
+			heavy_armor_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = 3 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_rider = {
+
+		path = {
+			leads_to_tech = fpw_lance
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_pistol
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_basic_tactics
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -8 y = 2 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_basic_tactics = {
+
+		enable_equipment_modules = {
+			defensive_tactic_cav
+			flanking_tactic_cav
+			ambush_tactic_cav
+		}
+
+		path = {
+			leads_to_tech = fpw_advanced_tactics
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -8 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_advanced_tactics = {
+
+		enable_equipment_modules = {
+			shock_tactic_cav
+			skirmish_tactic_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -8 y = 8 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_lance = {
+
+		enable_equipment_modules = {
+			lance_weapon_cav
+		}
+
+		path = {
+			leads_to_tech = fpw_saber
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_heavy_sword
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -10 y = 4 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_heavy_sword = {
+
+		enable_equipment_modules = {
+			sword_weapon_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -12 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_saber = {
+
+		enable_equipment_modules = {
+			saber_weapon_cav
+		}
+
+		path = {
+			leads_to_tech = fpw_saber_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -10 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_saber_2 = {
+
+		enable_equipment_modules = {
+			saber_weapon_2_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -10 y = 8 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_pistol = {
+
+		enable_equipment_modules = {
+			pistol_weapon_cav
+		}
+
+		path = {
+			leads_to_tech = fpw_flare_gun
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_single_revolver
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -4 y = 4 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_single_revolver = {
+
+		enable_equipment_modules = {
+			revolver_weapon_cav
+		}
+
+		path = {
+			leads_to_tech = fpw_dual_revolver
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -3 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_dual_revolver = {
+
+		# enable to allow double revolver
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -3 y = 8 }
+		}
+
+		categories = {
+			cavalry
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fpw_flare_gun = {
+
+		enable_equipment_modules = {
+			flare_gun_utility_cav
+		}
+
+		research_cost = 1.5
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_cavalry_folder
+			position = { x = -6 y = 6 }
+		}
+
+		categories = {
+			cavalry
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
