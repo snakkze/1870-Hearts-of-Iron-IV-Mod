@@ -5,22 +5,18 @@ equipment_modules = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 201
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.23
+			soft_attack = 6
+			hard_attack = 3
+			breakthrough = -0.1
+			maximum_speed = -0.5
+			reliability = 0.08
+			build_cost_ic = 0.15
 		}
 
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 
@@ -28,44 +24,34 @@ equipment_modules = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.23
+			soft_attack = 3
+			hard_attack = -0.5
+			breakthrough = 0.05
+			reliability = 0.09
+			build_cost_ic = 0.1
 		}
 
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	saber_weapon_2_cav = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.23
+			soft_attack = 5
+			hard_attack = -0.5
+			breakthrough = 0.15
+			reliability = 0.09
+			build_cost_ic = 0.2
 		}
 
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 
@@ -73,22 +59,20 @@ equipment_modules = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 202
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.23
+			soft_attack = 5
+			hard_attack = 0.2
+			breakthrough = 1
+			ap_attack = 0.2
+			reliability = 0.065
+			build_cost_ic = 0.2
+			#Should you be able to entrench as someone with a lance?
+			entrenchment = -1
 		}
 
 		xp_cost = 0
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 
@@ -96,16 +80,10 @@ equipment_modules = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 203
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.23
+			soft_attack = 2
+			hard_attack = 0.5
+			reliability = 0.095
+			build_cost_ic = 0.05
 		}
 
 		xp_cost = 0
@@ -118,16 +96,10 @@ equipment_modules = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 203
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.23
+			soft_attack = 4
+			hard_attack = 0.25
+			reliability = 0.09
+			build_cost_ic = 0.1
 		}
 
 		xp_cost = 0
@@ -141,16 +113,20 @@ equipment_modules = {
 		category = fpw_cavalry_weapons_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 204
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
+		
 			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			reliability = 0.09
+	
+			#Defensive Abilities
+			defense = 20
+			breakthrough = 2
+	
+			#Offensive Abilities
+			soft_attack = 3
+			hard_attack = 0.5
+			ap_attack = 1
+			
+			build_cost_ic = 0.43
 		}
 		xp_cost = 0
 
@@ -164,21 +140,14 @@ equipment_modules = {
 		category = fpw_cavalry_communications_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			recon = 1
+			reliability = 0.095
+			build_cost_ic = 0.1
 		}
-		xp_cost = 0
+	
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 
@@ -186,21 +155,16 @@ equipment_modules = {
 		category = fpw_cavalry_communications_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			# soft attack because i cant give org
+			soft_attack = 1.5
+			reliability = 0.09
+			build_cost_ic = 0.2
 		}
+
 		xp_cost = 0
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 
@@ -209,60 +173,55 @@ equipment_modules = {
 		category = fpw_cavalry_armor_category_type
 
 		add_stats = {
+			maximum_speed = -0.1
+			maximum_speed = 1
 			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
+			 defense = 1
 			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			 build_cost_ic = 0.01
 		}
+
 		xp_cost = 0
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	medium_armor_cav = {
 		category = fpw_cavalry_armor_category_type
 
 		add_stats = {
+			maximum_speed = -0.25
 			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
+			 defense = 3
+			 armor_value = 1
+			 hardness = 0.05
 			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			 build_cost_ic = 0.05
+			 weight = 0.1
 		}
-		xp_cost = 0
+
+		xp_cost = 3
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	heavy_armor_cav = {
 		category = fpw_cavalry_armor_category_type
 
 		add_stats = {
+			maximum_speed = -0.5
+
 			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			 defense = 4
+			 armor_value = 3
+			 hardness = 0.1
+			 build_cost_ic = 0.15
+			 weight = 0.15
 		}
-		xp_cost = 0
+
+		xp_cost = 5
 
 		build_cost_resources = {
 			steel = 2
@@ -274,63 +233,39 @@ equipment_modules = {
 		category = fpw_cavalry_breeds_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			reliability = 0.08
 		}
 		xp_cost = 0
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	light_breed_cav = {
 		category = fpw_cavalry_breeds_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.5
+			defense = -0.2
+			breakthrough = 0.2
+			reliability = 0.07
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	heavy_breed_cav = {
 		category = fpw_cavalry_breeds_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = -0.2
+			defense = 0.5
+			hardness = 0.2
+			reliability = 0.085
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	# Only for arabian countries # any state in continent middle east
@@ -338,21 +273,13 @@ equipment_modules = {
 		category = fpw_cavalry_breeds_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.4
+			reliability = 0.09
+			breakthrough = 0.1
 		}
-		xp_cost = 0
+		xp_cost = 3
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 
@@ -361,126 +288,73 @@ equipment_modules = {
 		category = fpw_cavalry_tactics_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			breakthrough = 1
+			defense = -0.2
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	skirmish_tactic_cav = {
 		category = fpw_cavalry_tactics_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.2
+			soft_attack = 0.5
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	reconnaissance_tactic_cav = {
 		category = fpw_cavalry_tactics_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			recon = 1
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	defensive_tactic_cav = {
 		category = fpw_cavalry_tactics_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			defense = 1
+			breakthrough = -0.2
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	ambush_tactic_cav = {
 		category = fpw_cavalry_tactics_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			soft_attack = 1
+			defense = 0.5
+			breakthrough = -0.1
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	flanking_tactic_cav = {
 		category = fpw_cavalry_tactics_module
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			breakthrough = 0.5
+			maximum_speed = 0.1
+			hard_attack = 0.5
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 
@@ -489,21 +363,14 @@ equipment_modules = {
 		category = fpw_cavalry_hoofs_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 1
+			reliability = 0.095
+			build_cost_ic = 0.1
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	
@@ -511,21 +378,14 @@ equipment_modules = {
 		category = fpw_cavalry_hoofs_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.5
+			reliability = 0.095
+			build_cost_ic = 0.05
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	
@@ -533,21 +393,14 @@ equipment_modules = {
 		category = fpw_cavalry_hoofs_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.2
+			reliability = 0.098
+			build_cost_ic = 0.15
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			rubber = 2
 		}
 	}
 
@@ -556,18 +409,11 @@ equipment_modules = {
 		category = fpw_saddle_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			defense = 0.5
+			reliability = 0.09
+			build_cost_ic = 0.3
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
 			steel = 2
@@ -577,39 +423,25 @@ equipment_modules = {
 		category = fpw_saddle_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.5
+			reliability = 0.095
+			build_cost_ic = 0.2
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	reinforced_saddle_cav = {
 		category = fpw_saddle_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			max_strength = 1
+			reliability = 0.09
+			build_cost_ic = 0.5
 		}
-		xp_cost = 0
+		xp_cost = 2
 
 		build_cost_resources = {
 			steel = 2
@@ -622,39 +454,25 @@ equipment_modules = {
 		category = fpw_saddlebag_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			max_strength = 0.5
+			reliability = 0.09
+			build_cost_ic = 0.2
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	quick_release_saddlebag_cav = {
 		category = fpw_saddlebag_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.2
+			reliability = 0.095
+			build_cost_ic = 0.1
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
 			steel = 2
@@ -664,21 +482,14 @@ equipment_modules = {
 		category = fpw_saddlebag_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			reliability = 0.097
+			build_cost_ic = 0.15
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
+			rubber = 1
 		}
 	}
 
@@ -688,42 +499,28 @@ equipment_modules = {
 		category = fpw_stirrup_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.2
+			reliability = 0.095
+			build_cost_ic = 0.1
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 	reinforced_stirrup_cav = {
 		category = fpw_stirrup_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			max_strength = 0.5
+			reliability = 0.09
+			build_cost_ic = 0.2
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 
@@ -733,63 +530,39 @@ equipment_modules = {
 		category = fpw_blankets_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			defense = 0.2
+			reliability = 0.095
+			build_cost_ic = 0.1
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	light_blanket_cav = {
 		category = fpw_blankets_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.1
+			reliability = 0.097
+			build_cost_ic = 0.05
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	moisture_wicking_blanket_cav = {
 		category = fpw_blankets_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			reliability = 0.098
+			build_cost_ic = 0.1
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			rubber =  1
 		}
 	}
 
@@ -799,63 +572,38 @@ equipment_modules = {
 		category = fpw_bedrolls_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			maximum_speed = 0.2
+			reliability = 0.095
+			build_cost_ic = 0.1
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	insulated_bedrolls_cav = {
 		category = fpw_bedrolls_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			reliability = 0.09
+			build_cost_ic = 0.2
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
 		}
 	}
 	waterproof_bedrolls_cav = {
 		category = fpw_bedrolls_category_type
 
 		add_stats = {
-			#Defensive Abilities
-				defense = 20
-				breakthrough = 2
-
-			#Offensive Abilities
-				soft_attack = 3
-
-			#Misc Abilities
-				reliability = 0.9
-				build_cost_ic = 0.43
+			reliability = 0.097
+			build_cost_ic = 0.15
 		}
-		xp_cost = 0
+		xp_cost = 1
 
 		build_cost_resources = {
-			steel = 2
+			rubber = 1
 		}
 	}
 
