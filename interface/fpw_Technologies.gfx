@@ -38,6 +38,94 @@ spriteTypes = {
 		name = "GFX_fpw_cavalry_equipment_medium"
 		texturefile = "gfx/interface/technologies/cavalry/fpw_cavalry_equipment_0.dds"
 	}
+	SpriteType = {
+		name = "GFX_fpw_horse_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_horse.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_light_tack_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_tack_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_improved_and_expanded_tack_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_tack_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_rim_hoofs_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_rim.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_heeled_hoofs_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_straight.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_rubber_hoofs_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_rubber.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_reinforced_saddle_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_saddle_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_light_saddle_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_saddle_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_light_armor_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_armor_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_med_armor_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_armor_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_heavy_armor_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_armor_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_rider_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_rider.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_basic_tactics_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_tactics_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_advanced_tactics_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_tactics_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_lance_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_lance.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_heavy_sword_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_sword.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_saber_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_saber_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_saber_2_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_saber_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_pistol_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_pistol.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_single_revolver_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_revolver.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_dual_revolver_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_revolver_dual.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_flare_gun_medium"
+		texturefile = "gfx/interface/technologies/cavalry/fpw_flare_gun.dds"
+	}
 
 	# Support
 	SpriteType = {
