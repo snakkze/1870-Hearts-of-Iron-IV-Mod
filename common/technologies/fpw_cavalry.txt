@@ -138,6 +138,16 @@ technologies = {
 
 	fpw_improved_and_expanded_tack = {
 		
+		enable_equipment_modules = {
+			expanded_saddlebag_cav
+			waterproof_saddlebag_cav
+			reinforced_stirrup_cav
+			insulated_blanket_cav
+			moisture_wicking_blanket_cav
+			insulated_bedrolls_cav
+			waterproof_bedrolls_cav
+		}
+
 		research_cost = 1.5
 
 		start_year = 1866
@@ -164,14 +174,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			expanded_saddlebag_cav
-			waterproof_saddlebag_cav
-			reinforced_stirrup_cav
-			insulated_blanket_cav
-			moisture_wicking_blanket_cav
-			insulated_bedrolls_cav
-			waterproof_bedrolls_cav
-			
+			rim_hoofs_cav
 		}
 
 		path = {
