@@ -418,7 +418,6 @@ technologies = {
 		enable_equipment_modules = {
 			defensive_tactic_cav
 			flanking_tactic_cav
-			ambush_tactic_cav
 		}
 
 		path = {
@@ -448,7 +447,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			shock_tactic_cav
-			skirmish_tactic_cav
 		}
 
 		research_cost = 1.5
