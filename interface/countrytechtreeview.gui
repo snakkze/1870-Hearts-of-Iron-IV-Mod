@@ -467,11 +467,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year1"
-					position = { x = 60 y = 2 }
+					position = { x = 60 y = 45 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1918"
+					text = "1860"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -480,11 +480,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year2"
-					position = { x = 60 y = 140 }
+					position = { x = 60 y = 185 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1934"
+					text = "1866"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -493,11 +493,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year3"
-					position = { x = 60 y = 278 }
+					position = { x = 60 y = 325 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1868"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -506,11 +506,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year4"
-					position = { x = 60 y = 420 }
+					position = { x = 60 y = 470 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1870"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -519,11 +519,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year5"
-					position = { x = 60 y = 560 }
+					position = { x = 60 y = 610 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1941"
+					text = "1872"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -532,24 +532,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year6"
-					position = { x = 60 y = 698 }
+					position = { x = 60 y = 745 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
-					maxWidth = 80
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "cavalry_year7"
-					position = { x = 60 y = 838 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1945"
+					text = "1874"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -565,12 +552,25 @@ guiTypes = {
 				orientation = upper_right
 
 				instantTextBoxType = {
-					name = "cavalry_year2_left"
-					position = { x = 0 y = 140 }
+					name = "cavalry_year1_left"
+					position = { x = 0 y = 45 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1934"
+					text = "1860"
+					maxWidth = 80
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "cavalry_year2_left"
+					position = { x = 0 y = 185 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1866"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -579,11 +579,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year3_left"
-					position = { x = 0 y = 278 }
+					position = { x = 0 y = 325 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1868"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -592,11 +592,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year4_left"
-					position = { x = 0 y = 420 }
+					position = { x = 0 y = 470 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1870"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -605,11 +605,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year5_left"
-					position = { x = 0 y = 560 }
+					position = { x = 0 y = 610 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1941"
+					text = "1872"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
@@ -618,24 +618,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cavalry_year6_left"
-					position = { x = 0 y = 698 }
+					position = { x = 0 y = 745 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
-					maxWidth = 80
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "cavalry_year7_left"
-					position = { x = 0 y = 838 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1945"
+					text = "1874"
 					maxWidth = 80
 					maxHeight = 32
 					format = left
