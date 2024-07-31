@@ -1,0 +1,39 @@
+state={
+	id=1012
+	name="STATE_1012"
+	resources={
+		oil=2.000
+	}
+	provinces={
+		1230 1304 1316 2222 4279 4335 4409 10282 12129 
+	}
+	history={
+		owner = LAN
+		add_core_of = LAN
+		victory_points = {
+
+		}
+		buildings = {
+			infrastructure = 1
+			10237 = {
+				naval_base = 3
+
+			}
+			1316 = {
+				naval_base = 1
+
+			}
+			10325 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			1316 1
+		}
+	}
+	manpower=99918
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

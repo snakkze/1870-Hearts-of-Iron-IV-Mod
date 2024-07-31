@@ -66,6 +66,7 @@ if = {
 			add_ideas = {
 			jap_societal_backlash_1
 			}
+			activate_mission = jap_societal_backlash_decrease_mission
 			}
 }
 
@@ -138,6 +139,7 @@ if = {
 			add_ideas = {
 			jap_societal_backlash_2
 			}
+			activate_mission = jap_societal_backlash_decrease_mission
 			}
 }
 

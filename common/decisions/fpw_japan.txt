@@ -1,10 +1,124 @@
 fpw_societal_backlash_cat = {
 	
+	jap_societal_backlash_decrease_mission = {
+	activation = {
+		original_tag = JAP
+			has_idea = jap_unobtainable
+    }
+	available = {
+	    hidden_trigger = {
+		NOT = {
+			has_idea = jap_societal_backlash_1
+			has_idea = jap_societal_backlash_2
+			has_idea = jap_societal_backlash_3
+			has_idea = jap_societal_backlash_4
+			has_idea = jap_societal_backlash_5
+			has_idea = jap_societal_backlash_6
+			}
+			}
+		}
+    icon = GFX_decision_generic_political_discourse
+    is_good = yes
+    war_with_on_timeout = EZO
+    days_mission_timeout = 30
+	complete_effect = {
+
+    }
+    timeout_effect = {
+        random_list = {
+		90 = { 
+		hidden_effect = {
+		if = {
+		limit = {
+		OR = {
+			has_idea = jap_societal_backlash_1
+			has_idea = jap_societal_backlash_2
+			has_idea = jap_societal_backlash_3
+			has_idea = jap_societal_backlash_4
+			has_idea = jap_societal_backlash_5
+			has_idea = jap_societal_backlash_6
+			}
+		}
+		activate_mission = jap_societal_backlash_decrease_mission2
+		}
+		}}
+		10 = { 
+		jap_decrease_societal_backlash = yes
+		hidden_effect = {
+		if = {
+		limit = {
+			OR = {
+			has_idea = jap_societal_backlash_1
+			has_idea = jap_societal_backlash_2
+			has_idea = jap_societal_backlash_3
+			has_idea = jap_societal_backlash_4
+			has_idea = jap_societal_backlash_5
+			has_idea = jap_societal_backlash_6
+			}
+		}
+		activate_mission = jap_societal_backlash_decrease_mission2
+		}}}}}}
 	
+	jap_societal_backlash_decrease_mission2 = {
+	activation = {
+		original_tag = JAP
+			has_idea = jap_unobtainable
+    }
+	available = {
+	    hidden_trigger = {
+		NOT = {
+			has_idea = jap_societal_backlash_1
+			has_idea = jap_societal_backlash_2
+			has_idea = jap_societal_backlash_3
+			has_idea = jap_societal_backlash_4
+			has_idea = jap_societal_backlash_5
+			has_idea = jap_societal_backlash_6
+			}
+			}
+		}
+    icon = GFX_decision_generic_political_discourse
+    is_good = yes
+    war_with_on_timeout = EZO
+    days_mission_timeout = 30
+	complete_effect = {
+
+    }
+    timeout_effect = {
+        random_list = {
+		90 = { 
+		hidden_effect = {
+		if = {
+		limit = {
+		OR = {
+			has_idea = jap_societal_backlash_1
+			has_idea = jap_societal_backlash_2
+			has_idea = jap_societal_backlash_3
+			has_idea = jap_societal_backlash_4
+			has_idea = jap_societal_backlash_5
+			has_idea = jap_societal_backlash_6
+			}
+		}
+		activate_mission = jap_societal_backlash_decrease_mission
+		}
+		}}
+		10 = { 
+		jap_decrease_societal_backlash = yes
+		hidden_effect = {
+		if = {
+		limit = {
+			OR = {
+			has_idea = jap_societal_backlash_1
+			has_idea = jap_societal_backlash_2
+			has_idea = jap_societal_backlash_3
+			has_idea = jap_societal_backlash_4
+			has_idea = jap_societal_backlash_5
+			has_idea = jap_societal_backlash_6
+			}
+		}
+		activate_mission = jap_societal_backlash_decrease_mission
+		}}}}}}
 	
-	
-	
-}
+	}
 
 fpw_empire_of_jap_cat = {
 	

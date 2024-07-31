@@ -1,14 +1,14 @@
 characters={
 
-	RYU_king_sho_tai={
-		name="Sho Tai"
+	LAN_liu_asheng={
+		name="Liu Asheng"
 		portraits={
 			civilian={
-				large=GFX_Portrait_RYU_king_sho_tai
+				large=GFX_Portrait_LAN_liu_asheng
 			}
 		}
 		country_leader={
-			ideology=monarchism
+			ideology=centrism
 			expire="1956.01.01.01"
 			id=-1
 		}

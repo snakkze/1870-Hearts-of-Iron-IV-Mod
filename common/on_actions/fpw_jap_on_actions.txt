@@ -173,21 +173,6 @@ on_actions = {
 		}		
 			}
 		}
-	on_monthly = {
-		effect = {
-				if = {
-					limit = {
-						original_tag = JAP
-							}
-		random_list = {
-		90 = { 	}
-		10 = { 
-		JAP = {
-		jap_decrease_societal_backlash = yes
-		}
-		}}}
-		}
-		}
 	on_state_control_changed = {
 				effect = {
 				if = {

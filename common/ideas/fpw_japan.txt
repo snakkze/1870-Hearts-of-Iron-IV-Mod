@@ -651,6 +651,19 @@ ideas = {
 			}
 		}
 		
+		jap_unobtainable	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+				
+			removal_cost = -1
+				
+            modifier = {
+
+            }
+		}
+		
 		jap_societal_backlash_1	= {
 				
 			allowed_civil_war = {
@@ -664,7 +677,7 @@ ideas = {
 			political_power_factor = -0.03
             }
 		}
-		
+
 		jap_societal_backlash_2	= {
 				
 			allowed_civil_war = {

@@ -15,28 +15,19 @@ fpw_societal_backlash_cat = {
 	}
 	visible_when_empty = yes
 	visible = {
-			OR = {
-			JAP = {
+		AND = {
+		original_tag = JAP
+		OR = {
 			has_idea = jap_societal_backlash_1
-			}
-			JAP = {
 			has_idea = jap_societal_backlash_2
-			}
-			JAP = {
 			has_idea = jap_societal_backlash_3
-			}
-			JAP = {
 			has_idea = jap_societal_backlash_4
-			}
-			JAP = {
 			has_idea = jap_societal_backlash_5
-			}
-			JAP = {
 			has_idea = jap_societal_backlash_6
 			}
-			}
 		}
-}
+		}
+	}
 
 	fpw_empire_of_jap_cat = {
 	priority = 100
@@ -55,4 +46,4 @@ fpw_societal_backlash_cat = {
         has_country_flag = jap_attack_ezo
 		}	
 		}
-}
+	}

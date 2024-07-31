@@ -19,14 +19,14 @@ guiTypes = {
 	containerWindowType = {
 		name = "jap_societal_backlash_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 330 }
+		size = { width = 100% height = 334 }
 
 		#Background
 		
 		iconType = {
 			name = "societal_backlash_background"
 			spriteType = "GFX_JAP_societal_backlash_background"
-			position = { x= -10	 y= -20 }
+			position = { x= 8	 y= -15 }
 		}
 
 		#ICONS

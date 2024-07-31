@@ -374,4 +374,10 @@ spriteTypes = {
 		name = "GFX_portrait_HAW_kamehameha_v"
 		texturefile = "gfx/leaders/HAW/Portrait_HAW_kamehameha_v.dds"
 	}
+	
+	#LAN
+	spriteType = {
+		name = "GFX_Portrait_LAN_liu_asheng"
+		texturefile = "gfx/leaders/LAN/Portrait_LAN_liu_asheng.dds"
+	}
 }
