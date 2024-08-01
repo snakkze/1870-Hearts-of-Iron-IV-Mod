@@ -2,11 +2,13 @@ capital = 531
  oob = "JAP_1866"
 
 
-set_stability = 0.2
+set_stability = 0.3
 set_war_support = 0.6
 
 set_province_name = { id = 1182 name = "Edo" }
 set_province_name = { id = 7087 name = "Sunpu" }
+
+
 
 add_ideas = {
 	fpw_komei

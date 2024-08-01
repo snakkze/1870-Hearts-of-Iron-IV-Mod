@@ -440,7 +440,7 @@ focus_tree = {
 		icon = GFX_focus_jap_charter_oath
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = -10
+		x = -9
 		y = 1
 		cost = 10
 
@@ -463,7 +463,7 @@ focus_tree = {
 		icon = GFX_focus_jap_conservative_approach
 		prerequisite = { focus = JAP_proclaim_emperor_meijis_restoration_to_full_power }
 		relative_position_id = JAP_proclaim_emperor_meijis_restoration_to_full_power
-		x = 10
+		x = 9
 		y = 1
 		cost = 10
 
@@ -489,7 +489,7 @@ focus_tree = {
 		icon = GFX_focus_jap_centralized_state
 		prerequisite = { focus = JAP_announce_the_charter_oath }
 		relative_position_id = JAP_announce_the_charter_oath
-		x = -1
+		x = -3
 		y = 1
 		cost = 10
 		available = {
@@ -501,20 +501,44 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		add_political_power = 120
+		add_political_power = 80
 		add_timed_idea = {
 		idea = jap_solidifying_imperial_command
-		days = 365
+		days = 720
 		}
 		}
 	}
 	
 	focus = {
-		id = JAP_dismantle_the_feudal_class_hierarchy
-		icon = GFX_focus_generic_farmland
+		id = JAP_abolish_the_han_system
+		icon = GFX_focus_jap_centralization
 		prerequisite = { focus = JAP_a_strong_centralized_state }
 		relative_position_id = JAP_a_strong_centralized_state
-		x = 1
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		jap_increase_societal_backlash_twice = yes
+		custom_effect_tooltip = JAP_tt0
+		swap_ideas = { 
+		remove_idea = jap_feudal_fragmentation
+		add_idea = jap_feudal_system
+		}
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_dismantle_the_feudal_class_hierarchy
+		icon = GFX_focus_jap_dismantle_feudal
+		prerequisite = { focus = JAP_abolish_the_han_system }
+		relative_position_id = JAP_abolish_the_han_system
+		x = -2
 		y = 1
 		cost = 10
 		available = {
@@ -527,62 +551,72 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 		jap_increase_societal_backlash = yes
-			
-
-			
-			
-			
-			
+		custom_effect_tooltip = JAP_tt0	
+		remove_ideas = {
+		jap_feudal_system
+		}	
+		custom_effect_tooltip = JAP_tt0	
+		custom_effect_tooltip = JAP_tt15		
+		hidden_effect = {
+		add_timed_idea = {
+		idea = jap_feudal_system_hidden
+		days = 1825
 		}
+		}
+		}
+		mutually_exclusive = { focus = JAP_preserve_the_feudal_class_hierarchy }
 	}
 	
-	
 	focus = {
-		id = JAP_abolish_the_han_system
-		icon = GFX_
-		prerequisite = { focus = JAP_a_strong_centralized_state }
-		relative_position_id = JAP_a_strong_centralized_state
-		x = -1
+		id = JAP_preserve_the_feudal_class_hierarchy
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = JAP_abolish_the_han_system }
+		relative_position_id = JAP_abolish_the_han_system
+		x = 2
 		y = 1
 		cost = 10
+		available = {
+
+		}
 
 		ai_will_do = {
 			factor = 2
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		jap_increase_societal_backlash = yes
-		custom_effect_tooltip = JAP_tt0
-		remove_ideas = {
-		jap_feudal_fragmentation
-			}
-		
+		jap_decrease_societal_backlash = yes
+		custom_effect_tooltip = JAP_tt0	
+		swap_ideas = { 
+		remove_idea = jap_feudal_system
+		add_idea = jap_feudal_system2
 		}
+				
+			
+			
+		}
+		mutually_exclusive = { focus = JAP_dismantle_the_feudal_class_hierarchy }
 	}
+	
 	
 	focus = {
 		id = JAP_promote_the_ownership_of_land
-		icon = GFX_
-		prerequisite = { focus = JAP_abolish_the_han_system }
+		icon = GFX_focus_jap_land_ownership
+		prerequisite = { focus = JAP_dismantle_the_feudal_class_hierarchy }
 		relative_position_id = JAP_abolish_the_han_system
 		x = -1
-		y = 1
+		y = 2
 		cost = 10
 
 		ai_will_do = {
 			factor = 2
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-		jap_increase_societal_backlash = yes
-		custom_effect_tooltip = JAP_tt0
-		
+		completion_reward = {		
 		
 			every_core_state = {
 				limit = {
 					is_controlled_by = JAP
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 			}
 		
 		
@@ -590,33 +624,79 @@ focus_tree = {
 		}
 
 
-		
-		mutually_exclusive = { focus = JAP_support_modern_agriculture }
-		
+				
 	}
 	
 	focus = {
 		id = JAP_support_modern_agriculture
-		icon = GFX_
-		prerequisite = { focus = JAP_abolish_the_han_system }
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = JAP_preserve_the_feudal_class_hierarchy }
 		relative_position_id = JAP_abolish_the_han_system
 		x = 1
-		y = 1
+		y = 2
 		cost = 10
 
 		ai_will_do = {
 			factor = 0
 		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}			
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-		jap_decrease_societal_backlash = yes
-		
-		
-		
+			random_owned_controlled_state = {
+				prioritize = { 528 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 
 		
-		mutually_exclusive = { focus = JAP_promote_the_ownership_of_land }
 		
 	}
 	
@@ -1242,11 +1322,23 @@ focus_tree = {
 		jap_increase_societal_backlash = yes
 		custom_effect_tooltip = JAP_tt0
 
-		
-
-			remove_ideas = {
-			jap_economic_backwardness
+		if = {
+		limit = {
+		has_idea = jap_economic_backwardness
+		}
+		swap_ideas = { 
+			remove_idea = jap_economic_backwardness
+			add_idea = jap_economic_backwardness2
 			}
+		}
+		if = {
+		limit = {
+		has_idea = jap_economic_backwardness3
+		}
+		remove_ideas = {
+		jap_economic_backwardness3
+		}
+		}
 
 			
 
@@ -1605,6 +1697,29 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+		
+
+		if = {
+		limit = {
+		has_idea = jap_economic_backwardness
+		}
+		swap_ideas = { 
+			remove_idea = jap_economic_backwardness
+			add_idea = jap_economic_backwardness3
+			}
+		}
+		if = {
+		limit = {
+		has_idea = jap_economic_backwardness2
+		}
+		remove_ideas = {
+		jap_economic_backwardness2
+		}
+		}
+		
+		
+		
+		
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

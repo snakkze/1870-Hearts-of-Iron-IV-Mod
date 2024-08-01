@@ -159,6 +159,18 @@ spriteTypes = {
 		name = "GFX_focus_jap_denounce_shogun"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_denounce_shogun.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_jap_centralization"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_centralization.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_dismantle_feudal"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_dismantle_feudal.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_land_ownership"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_land_ownership.dds"
+	}
 }
 
 
