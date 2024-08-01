@@ -2,7 +2,6 @@ unique_id=1870_achievements
 
 germany_formed_achievement = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -51,7 +50,6 @@ germany_formed_achievement = {
 
 french_victory_achievement = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -65,7 +63,6 @@ french_victory_achievement = {
 
 socialist_achievement = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -78,7 +75,6 @@ socialist_achievement = {
 
 colonial_achievement = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -87,6 +83,7 @@ colonial_achievement = {
 			original_tag = TUR
 			original_tag = FRA
 			original_tag = ENG
+			original_tag = SPR
 		}
 	}
 
@@ -100,7 +97,6 @@ colonial_achievement = {
 
 hre = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -120,7 +116,6 @@ hre = {
 
 socialist_world_achievement = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -138,7 +133,6 @@ socialist_world_achievement = {
 
 tno_reference = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -155,7 +149,6 @@ tno_reference = {
 
 roman_return = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_any_custom_difficulty_setting = no
 		game_rules_allow_achievements = yes
@@ -169,7 +162,6 @@ roman_return = {
 
 hearts_of_iron_achievement = {
 	possible = {
-		is_ironman = yes
 		difficulty > 1
 		has_start_date < 1866.1.2
 		has_any_custom_difficulty_setting = no
@@ -180,7 +172,82 @@ hearts_of_iron_achievement = {
 	happened = {
 		custom_trigger_tooltip = {
 			tooltip = austria_tt
-			fpw_prussia_lost_apw
+			fpw_prussia_lost_apw = yes
 		}
+	}
+}
+
+scotland_forever = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		NOT = {
+			original_tag = ENG
+		}
+	}
+
+	happened = {
+		SCO = {
+			exists = yes
+			is_subject = no
+		}
+	}
+}
+
+la_reconsquista = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = SPR
+	}
+
+	happened = {
+		# i aint coding this
+	}
+}
+
+spain_wq = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes # unique triggers down
+		original_tag = SPR
+	}
+
+	happened = {
+		all_state = {
+			owns_or_subject_of = yes
+		}
+	}
+}
+
+tenth_crusade = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes # unique triggers down
+		original_tag = SPR
+	}
+
+	happened = {
+		TUR = { has_capitulated = yes }
+		454 = {
+			owns_or_subject_of = yes
+		}
+	}
+}
+
+carlist_w = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = SPR
+	}
+
+	happened = {
+		# i aint coding this
 	}
 }
