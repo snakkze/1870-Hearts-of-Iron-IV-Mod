@@ -1,0 +1,23 @@
+state={
+	id=1015
+	name="STATE_1015"
+	resources={
+		
+	}
+	provinces={
+		985 6866 9839 9877 9917 11756 11780 13230
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = SPR
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+	manpower=264823
+	local_supplies=0.000
+}

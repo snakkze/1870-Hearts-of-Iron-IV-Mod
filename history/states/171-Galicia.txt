@@ -2,7 +2,7 @@
 state={
 	id=171
 	name="STATE_171"
-	manpower = 1193444
+	manpower = 409287
 	
 	state_category = city
 
@@ -12,22 +12,18 @@ state={
 		victory_points = {
 			758 5
 		}
-		victory_points = {
-			6734 3
-		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2
 			dockyard = 2
-			arms_factory = 1
 			758 = {
-				naval_base = 6
+				naval_base = 3
 			}
 		}
 		add_core_of = SPR
 	}
 
 	provinces={
-		729 758 3761 6734 6764 6955 9686 9689 11675 11677 11692 11710 11840 
+	    758 3761 6764 6955 11677 11692 11710 
 	}
 
 	local_supplies=0.0 

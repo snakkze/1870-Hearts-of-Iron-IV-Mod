@@ -1,0 +1,26 @@
+state={
+	id=1017
+	name="STATE_1017"
+	resources={
+		
+	}
+	provinces={
+		729 6734 9686 9689 11675 11677 11840
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = SPR
+		add_core_of = GLC
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			6734 3
+		}
+	}
+	manpower=843692
+	local_supplies=0.000
+}

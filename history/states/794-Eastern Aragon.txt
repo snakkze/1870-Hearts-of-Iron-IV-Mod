@@ -4,11 +4,12 @@ state={
 
 	history={
 		owner = SPR
+		
 		victory_points = {
-			3954 1 
+			9840 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 1 #was: 6
 
 		}
 		add_core_of = SPR
@@ -16,11 +17,11 @@ state={
 	}
 
 	provinces={
-		790 798 871 899 915 3909 3954 9813 11793 11819 11821 13222 13223 13225 
+	    899 915 9840 11793 11819 11821 11838 13225 
 	}
-	manpower=201430
+	manpower=223041
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 
 	local_supplies=0.0 
 }

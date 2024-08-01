@@ -8,8 +8,7 @@ state={
 			6832 1 
 		}
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 3 #was: 6
+			infrastructure = 1
 
 		}
 		add_core_of = SPR
@@ -17,7 +16,7 @@ state={
 	}
 
 	provinces={
-		3953 6800 6832 6896 9778 9828 9881 11863 12081 13229 
+		3953 6800 6832 6896 9778 9828 12081 
 	}
 	manpower=273990
 	buildings_max_level_factor=1.000

@@ -1,0 +1,26 @@
+state={
+	id=1021
+	name="STATE_1021"
+	resources={
+		
+	}
+	provinces={
+		832 3835 11807 11812
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = SPR
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			832 1
+		}
+	}
+	manpower=188613
+	local_supplies=0.000
+}

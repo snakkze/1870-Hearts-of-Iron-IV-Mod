@@ -1,0 +1,23 @@
+state={
+	id=1018
+	name="STATE_1018"
+	resources={
+		
+	}
+	provinces={
+		738 9703 11688
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = SPR
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+	manpower=237375
+	local_supplies=0.000
+}
