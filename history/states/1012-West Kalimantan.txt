@@ -11,7 +11,7 @@ state={
 		owner = LAN
 		add_core_of = LAN
 		victory_points = {
-
+			1316 1
 		}
 		buildings = {
 			infrastructure = 1
@@ -29,11 +29,9 @@ state={
 			}
 
 		}
-		victory_points = {
-			1316 1
-		}
 	}
 	manpower=99918
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }
