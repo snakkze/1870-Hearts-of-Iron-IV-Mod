@@ -227,7 +227,9 @@ ideas = {
 			}
 
 			on_remove = {
-                set_country_flag = fpw_jap_currency_transition_period_removed
+                add_ideas = {
+				jap_standardized_currency
+				}
             }
 		
 			picture = usa_great_depression
@@ -267,7 +269,9 @@ ideas = {
 			}
 
 			on_remove = {
-                set_country_flag = fpw_jap_tax_reform_period_removed
+                add_ideas = {
+				jap_reformed_tax_system
+				}
             }
 
 			picture = JAP_upset_farmers
@@ -409,7 +413,6 @@ ideas = {
 			picture = FIN_finnish_federation_of_trade_unions
 
 			modifier = {
-				conscription_factor = -0.3
 				weekly_manpower = -250
 				consumer_goods_factor = 0.2
 				stability_weekly = -0.002

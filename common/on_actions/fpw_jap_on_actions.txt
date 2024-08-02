@@ -3,7 +3,7 @@ on_actions = {
 		effect = {
 				if = {
 					limit = {
-					date = 1867.1.30 #Emperor Komei dies
+					date > 1867.1.29 #Emperor Komei dies
 					date < 1867.2.1
 							}
 				JAP = {			
@@ -18,7 +18,7 @@ on_actions = {
 		effect = {
 				if = {
 					limit = {
-					date = 1867.8.5 #Icarus Affair
+					date > 1867.8.4 #Icarus Affair
 					date < 1867.8.6
 							}
 				JAP = {			
@@ -33,7 +33,7 @@ on_actions = {
 		effect = {
 				if = {
 					limit = {
-					date = 1866.8.29 #Tokugawa Iemochi dies
+					date > 1866.8.28 #Tokugawa Iemochi dies
 							}
 			
 			if = {
@@ -73,7 +73,8 @@ on_actions = {
 							has_government = fascism
 							has_completed_focus = JAP_announce_the_charter_oath
 							}
-					date = 1870.2.27 #Flag Event
+					date > 1870.2.26 #Flag Event
+					date < 1870.2.28
 							}
 				JAP = {			
 				country_event = fpw_japan.16
@@ -83,23 +84,17 @@ on_actions = {
 			}
 
 		}
-		on_weekly = {
+	on_weekly_JAP = {
 		effect = {
 			if = {
 					limit = {
-						original_tag = JAP
 						country_exists = ENG
 				JAP = {
-					has_country_flag = jap_western_guns
-							}
-				JAP = {
-							has_civil_war = yes 
-							has_government = fascism
+						has_country_flag = jap_western_guns
+						has_civil_war = yes 
+						has_government = fascism
 							}
 				date < 1870.1.1
-							}
-			if = {
-					limit = {
 				ENG = {
 						has_tech = fpw_infantry_equipment_1
 				}
@@ -107,49 +102,39 @@ on_actions = {
 				JAP = {			
 					add_equipment_to_stockpile = {
 				type = fpw_infantry_equipment_1
-				amount = 100
+				amount = 200
 				producer = ENG
-			}
 			}
 			}
 					}
 					}	
 		}
 		
-		on_weekly = {
+	on_weekly_JAP = {
 		effect = {
 			if = {
 					limit = {
-						original_tag = JAP
 						country_exists = ENG
 				JAP = {
-					has_country_flag = jap_western_guns
-							}
-				JAP = {
-							has_civil_war = yes 
-							has_government = fascism
+						has_country_flag = jap_western_guns
+						has_civil_war = yes 
+						has_government = fascism
 							}
 				date < 1870.1.1
-							}
-			if = {
-					limit = {
-					ALL = {
+				
 				ENG = {
 					NOT = {
 						has_tech = fpw_infantry_equipment_1
-					}	
+					}			
 				}
-				ENG = {
-						has_tech = fpw_infantry_equipment_0
-				}
-					}}
+							}
 				JAP = {			
 					add_equipment_to_stockpile = {
-				type = fpw_infantry_equipment_0
-				amount = 100
+				type = fpw_infantry_equipment
+				amount = 200
 				producer = ENG
 			}
-			}}
+			}
 					}
 					}
 		}
@@ -173,10 +158,11 @@ on_actions = {
 		}		
 			}
 		}
-	on_state_control_changed = {
+	on_daily = {
 				effect = {
 				if = {
 					limit = {
+					AND = {
 					JAP = {
 							has_government = fascism
 							controls_state = 282
@@ -193,10 +179,10 @@ on_actions = {
 					}
 					any_country = {
 					original_tag = JAP
-    …                  controls_state = 536
+                    controls_state = 536
 					}
 					}
-							}		
+							}}		
 				536 = {
 				transfer_state_to = EZO
 				remove_core_of = TRB
@@ -206,9 +192,6 @@ on_actions = {
 				ezo_exiled_samurai
 				ezo_unstable_government
 				jap_isolationist_sentiment
-				}
-				add_dynamic_modifier = { 
-				modifier = fpw_JAP_isolated 
 				}
 				JAP = {
 				set_country_flag = jap_ezo_established
@@ -225,9 +208,10 @@ on_actions = {
 				effect = {
 				if = {
 					limit = {
+					ALL = {
 					JAP = {
 							has_government = fascism
-							controls_state = 282
+							has_country_flag = jap_ezo_established
 							}
 					EZO = {
 					controls_state = 536
@@ -240,13 +224,13 @@ on_actions = {
 					536 = {
 					is_claimed_by = JAP
 					}
+					}
 							}
 			EZO = {
 			add_manpower = 2000
 			division_template = {
-				name = "Ezo Infantry Brigade"
+				name = "Infantry Brigade"
 				priority = 1
-				division_names_group = EZO_INF_01
 				regiments = {
 					infantry = { x = 0 y = 0 }
 		
@@ -258,19 +242,19 @@ on_actions = {
 				prioritize = { 536 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
-					division = "name = \"Ezo Infantry Brigade\" division_template = \"Ezo Infantry Brigade\" start_experience_factor = 0.3" 
+					division = "name = \"1. Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
 					owner = PREV
 				}
 				create_unit = {
-					division = "name = \"Ezo Infantry Brigade\" division_template = \"Ezo Infantry Brigade\" start_experience_factor = 0.3" 
+					division = "name = \"2.  Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
 					owner = PREV
 				}
 				create_unit = {
-					division = "name = \"Ezo Infantry Brigade\" division_template = \"Ezo Infantry Brigade\" start_experience_factor = 0.3" 
+					division = "name = \"3.  Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
 					owner = PREV
 				}
 				create_unit = {
-					division = "name = \"Ezo Infantry Brigade\" division_template = \"Ezo Infantry Brigade\" start_experience_factor = 0.3" 
+					division = "name = \"4.  Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
 					owner = PREV
 				}
 			}}
@@ -303,46 +287,6 @@ on_actions = {
 				country_event = { id = fpw_japan.17 days = 365 random_days = 1460 }
 				clr_country_flag = jap_ezo_created
 				}
-				}
-			}
-		}
-	on_annex = {
-			effect = {
-				if = {
-				limit = {
-				JAP = {
-				NOT = {
-				has_country_flag = jap_ezo_created
-				}
-				}	
-				}
-				JAP = {
-				set_capital = {
-				state = 282
-				}
-				set_province_name = { id = 1182 name = "Tokyo" }
-				set_province_name = { id = 7087 name = "Shizuoka" }
-				clr_country_flag = jap_western_guns
-			}	
-
-				}
-			}
-		}
-	on_annex = {
-			effect = {
-				if = {
-				limit = {
-				JAP = {
-				has_country_flag = jap_attack_ezo
-				controls_state = 536
-				}	
-				EZO = {
-				exists = no
-				}
-				}
-				JAP = {
-				clr_country_flag = jap_attack_ezo
-				}	
 				}
 			}
 		}
@@ -408,7 +352,6 @@ on_actions = {
 			division_template = {
 				name = "Samurai Elite Guard"
 				priority = 1
-				division_names_group = SAT_INF_01
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
@@ -419,7 +362,6 @@ on_actions = {
 			division_template = {
 				name = "Daimyo Troops"
 				priority = 1
-				division_names_group = SAT_INF_01
 				regiments = {
 					irregular_infantry = { x = 0 y = 0 }
 					irregular_infantry = { x = 0 y = 1 }
@@ -584,65 +526,4 @@ on_actions = {
 		}
 		}}}
 		}
-		
-	on_daily = {
-		effect = {
-			every_country = {
-			limit = {
-			original_tag = JAP
-			has_completed_focus = JAP_distribute_the_yen
-			NOT = {
-			has_idea = {
-			jap_currency_transition_period
-			}
-			}
-			NOT = {
-			has_idea = {
-			jap_standardized_currency
-			}
-			}
-			has_country_flag = fpw_jap_currency_transition_period_removed
-			}
-			add_ideas = {
-			jap_standardized_currency
-			}
-			}		
-			}
-		}
-		
-	on_daily = {
-		effect = {
-			every_country = {
-			limit = {
-			original_tag = JAP
-			has_completed_focus = JAP_modernize_taxation
-			NOT = {
-			has_idea = {
-			jap_tax_reform_period
-			}
-			}
-			NOT = {
-			has_idea = {
-			jap_reformed_tax_system
-			}
-			}
-			has_country_flag = fpw_jap_tax_reform_period_removed
-			}
-			add_ideas = {
-			jap_reformed_tax_system
-			}
-			}		
-			}
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		}

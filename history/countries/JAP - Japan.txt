@@ -76,10 +76,10 @@ add_ideas = {
 	}
 	set_province_name = { id = 1182 name = "Tokyo" }
 	set_province_name = { id = 7087 name = "Shizuoka" }
+	
+	country_event = { id = fpw_japan.17 days = 365 random_days = 1095 }
+	set_country_flag = jap_ezo_established
 		
-	remove_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
-		}
 	add_ideas = {
 		civilian_economy
 		}
@@ -96,19 +96,21 @@ add_ideas = {
 	unlock_national_focus = JAP_proclaim_emperor_meijis_restoration_to_full_power
 	unlock_national_focus = JAP_open_the_nation
 	unlock_national_focus = JAP_announce_the_charter_oath
-	unlock_national_focus = JAP_create_a_centralized_state
+	unlock_national_focus = JAP_a_strong_centralized_state
 	unlock_national_focus = JAP_strengthen_local_administrations
 	unlock_national_focus = JAP_redistribute_land_to_peasants
 	unlock_national_focus = JAP_establish_the_kaitakushi
-	unlock_national_focus = JAP_lay_foundations_for_industrialization
-	unlock_national_focus = JAP_improve_national_infrastructure
-	unlock_national_focus = JAP_reform_the_monetary_system
-	unlock_national_focus = JAP_yokosuka_naval_arsenal
+	complete_national_focus = JAP_lay_foundations_for_industrialization
+	complete_national_focus = JAP_improve_national_infrastructure
+	complete_national_focus = JAP_yokosuka_naval_arsenal
 	complete_national_focus = JAP_modernize_the_military_system
 	complete_national_focus = JAP_invite_french_military_advisers
 	complete_national_focus = JAP_establish_the_heigakko
 	unlock_national_focus = JAP_british_naval_mission_to_japan
 	complete_national_focus = JAP_adopt_royal_navy_traditions
+	complete_national_focus = JAP_establish_the_imperial_guard
+	complete_national_focus = JAP_establish_modern_ports
+	complete_national_focus = JAP_import_western_technologies
 }
 
 set_research_slots = 3
@@ -118,6 +120,7 @@ add_ideas = {
 	volunteer_only
 	isolation
 }
+
 
 
 
@@ -277,4 +280,3 @@ if = {
 		nationalities = { JAP }
 	}
 }
-	

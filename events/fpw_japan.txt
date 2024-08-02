@@ -1840,7 +1840,7 @@
 	country_event = {
 		id = fpw_japan.41
 		title = fpw_japan.41.t
-		desc = fpw_japan.41.desc
+		desc = fpw_japan.41.d
 		picture = GFX_report_event_bul_boris_with_muraviev
 		
 		is_triggered_only = yes
@@ -1860,7 +1860,7 @@
 			}
 		}
 		option = {
-			name = fpw_japan.41.c
+			name = fpw_japan.41.b
 			ai_chance = {
 				base = 0
 			}
@@ -1920,7 +1920,7 @@
 				}
 		}
 		option = {
-			name = fpw_japan.41.d
+			name = fpw_japan.41.c
 			ai_chance = {
 				base = 0
 			}
