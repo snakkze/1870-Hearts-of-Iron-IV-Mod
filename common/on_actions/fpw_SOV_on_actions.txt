@@ -2,7 +2,12 @@ on_actions = {
 	
 	on_startup = {
 		effect = {
-			
+			SOV = {
+				country_event = {
+					id = russia_fpw.32
+					days = 93
+				}
+			}
 			
 		}
 		

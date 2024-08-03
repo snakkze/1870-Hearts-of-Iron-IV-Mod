@@ -1,5 +1,4 @@
 ﻿capital = 206 #Minsk
- oob = "BLR_1866"
 
 oob = "BLR_1866"
 
@@ -64,50 +63,6 @@ set_popularities = {
 	neutrality = 20
 	communism = 60
 	neutrality = 5
-}
-
-create_country_leader = {
-    name = "Vasil Zacharka"
-    desc = ""
-	picture = GFX_portrait_Vasil_Zacharka
-    expire = "1965.1.1"
-    ideology = centrism
-    traits = {
-        #
-    }
-}
-
-create_country_leader = {
-    name = "Radasłaŭ Astroŭski"
-    desc = ""
-	picture = GFX_portrait_Radasłau_Astrouski
-    expire = "1965.1.1"
-    ideology = fascism_ideology
-    traits = {
-        #
-    }
-}
-
-create_country_leader = {
-    name = "Panteleimon Ponomarenko"
-    desc = ""
-	picture = GFX_portrait_Panteleimon_Ponomarenko
-    expire = "1965.1.1"
-    ideology = stalinism
-    traits = {
-        #
-    }
-}
-
-create_country_leader = {
-    name = "Adam Stankievič"
-    desc = ""
-	picture = GFX_portrait_Adam_Stankievic
-    expire = "1965.1.1"
-    ideology = socialism
-    traits = {
-        #
-    }
 }
 
 

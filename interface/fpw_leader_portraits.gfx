@@ -104,10 +104,52 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SOV/Portrait_SOV_alexander_II.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_SOV_alexander_iii"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_alexander_iii.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_SOV_nikolai_adlerberg"
 		texturefile = "gfx/leaders/SOV/Portrait_SOV_nikolai_adlerberg.dds"
 	}
-
+	spriteType = {
+		name = "GFX_portrait_SOV_nicholas_nikolaevich"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_nicholas_nikolaevich.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_michael_nikolaevich"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_michael_nikolaevich.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_iosif_gurko"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_iosif_gurko.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_mikhail_loris_melikov"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_mikhail_loris_melikov.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_grigol_dadiani"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_grigol_dadiani.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_pyotr_vannovsky"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_pyotr_vannovsky.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_mikhail_dragomirov"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_mikhail_dragomirov.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_eduard_totleben"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_eduard_totleben.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_dmitry_milyutin"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_dmitry_milyutin.dds"
+	}
+	
+	
+	
 	# TUR
 	spriteType = {
 		name = "GFX_portrait_TUR_murad_v"

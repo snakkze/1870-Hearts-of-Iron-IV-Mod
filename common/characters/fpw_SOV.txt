@@ -17,6 +17,42 @@ characters={
 			id = -1
 		}
 	}
+	
+	SOV_alexander_iii = { # Well tsesarevich at the time
+		name = SOV_alexander_iii
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_alexander_iii
+				small="GFX_idea_europe_generic_land_3"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = alexander_iii
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		field_marshal = {
+			traits = { old_guard harsh_leader politically_connected media_personality }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}	
+		
+	}
+	
 	SOV_nikolai_adlerberg = {
 		name = SOV_nikolai_adlerberg
 		portraits = {
@@ -77,7 +113,10 @@ characters={
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_judicial_system
+				or = {
+					has_completed_focus = SOV_battle_illiteracy
+					has_completed_focus = SOV_school_reform
+				}
 			}
 			ai_will_do = {
 				factor = 1.000
@@ -175,7 +214,7 @@ characters={
 		name = SOV_dmitry_milyutin
 		portraits = {
 			civilian = {
-				#large = GFX_portrait_SOV_dmitry_milyutin
+				large = GFX_portrait_SOV_dmitry_milyutin
 				small="GFX_idea_generic_political_advisor_europe_5"
 			}
 		}
@@ -194,9 +233,329 @@ characters={
 			traits = {
 				fpw_minister_of_war
 			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
 		}	
 		
 	}
+	
+	SOV_savva_mamontov = {
+		name = SOV_savva_mamontov
+		portraits = {
+			civilian = {
+				#large = GFX_portrait_SOV_savva_mamontov
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = savva_mamontov
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				captain_of_industry
+			}
+		}	
+		
+	}
+	
+	# Generals
+	
+	SOV_nicholas_nikolaevich = {
+		name = SOV_nicholas_nikolaevich
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_nicholas_nikolaevich
+				small="GFX_idea_europe_generic_land_3"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = nicholas_nikolaevich
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		corps_commander = {
+			traits = { old_guard trait_cautious politically_connected media_personality }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}	
+		
+	}
+	
+	SOV_michael_nikolaevich = {
+		name = SOV_michael_nikolaevich
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_michael_nikolaevich
+				small="GFX_idea_europe_generic_land_4"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = michael_nikolaevich
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		corps_commander = {
+			traits = { old_guard politically_connected media_personality }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}	
+		
+	}
+	
+	
+	
+	
+	SOV_iosif_gurko = {
+		name = SOV_iosif_gurko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_iosif_gurko
+				small="GFX_idea_europe_generic_land_2"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = iosif_gurko
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		field_marshal = {
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}	
+		
+	}
+	
+	SOV_mikhail_loris_melikov = {
+		name = SOV_mikhail_loris_melikov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_mikhail_loris_melikov
+				small="GFX_idea_europe_generic_land_1"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = mikhail_loris_melikov
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}	
+		
+	}
+	
+	SOV_grigol_dadiani = {
+		name = SOV_grigol_dadiani
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_grigol_dadiani
+				small="GFX_idea_europe_generic_land_3"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = grigol_dadiani
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		corps_commander = {
+			traits = { old_guard infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}	
+		
+	}
+	
+	SOV_pyotr_vannovsky = {
+		name = SOV_pyotr_vannovsky
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_pyotr_vannovsky
+				small="GFX_idea_europe_generic_land_4"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = pyotr_vannovsky
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		corps_commander = {
+			traits = { old_guard infantry_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}	
+		
+	}
+	
+	SOV_mikhail_dragomirov = {
+		name = SOV_mikhail_dragomirov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_mikhail_dragomirov
+				small="GFX_idea_europe_generic_land_4"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = mikhail_dragomirov
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}	
+		
+	}
+	
+	SOV_eduard_totleben = {
+		name = SOV_eduard_totleben
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_eduard_totleben
+				small="GFX_idea_europe_generic_land_4"
+			}
+		}
+#		advisor={
+#			slot = 
+#			idea_token = eduard_totleben
+#			allowed = {
+#				original_tag = SOV
+#			}
+#			available = {
+#				
+#			}
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#			traits = {
+#				
+#			}
+#		}
+		corps_commander = {
+			traits = { old_guard engineer_officer war_hero  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}	
+		
+	}
+	
 	
 	
 	

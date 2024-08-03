@@ -1,4 +1,5 @@
 add_namespace = russia_fpw
+add_namespace = russia_news_fpw
 
 # Continue reforms
 country_event = {
@@ -1345,5 +1346,205 @@ country_event = {
 	}
 	
 }
+# Assassination attempt 1866
+country_event = {
+	id = russia_fpw.32
+	title = russia_fpw.32.t
+	desc = russia_fpw.32.d
+	picture = GFX_report_event_generic_military_parade
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.32.a
+		
+		add_stability = -0.01
+		
+		news_event = {
+			id = russia_news_fpw.32
+			hours = 12
+		}
+		
+	}
+	
+	
+}
+
+news_event = {
+	id = russia_news_fpw.32
+	title = russia_news_fpw.32.t
+	desc = russia_news_fpw.32.d
+	picture = GFX_news_event_generic_funeral
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_news_fpw.32.a
+		
+		
+	}
+	
+	
+}
+
+# serfdom question
+country_event = {
+	id = russia_fpw.33
+	title = russia_fpw.33.t
+	desc = russia_fpw.33.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.33.a
+		
+		add_to_variable = { SOV_sr_consumer_goods_factor = 0.15 }
+		add_to_variable = { SOV_sr_global_building_slots_factor = 0.20 }
+		add_to_variable = { SOV_sr_production_factory_max_efficiency_factor = 0.25 }
+		add_to_variable = { SOV_sr_local_resources_factor = 0.10 }
+		
+		custom_effect_tooltip = russia_fpw.33.a.effect
+		
+	}
+	option = {
+		name = russia_fpw.33.b
+		
+		remove_dynamic_modifier = { modifier = SOV_serfdom_remnants_dynamic_modifier }
+		
+		add_ideas = SOV_serfdom_back
+		
+	}
+	
+	
+}
+
+# Russia wants a antiaustrian allience
+country_event = {
+	id = russia_fpw.34
+	title = russia_fpw.34.t
+	desc = russia_fpw.34.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.34.a
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.35
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 2
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value > 50
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.34.b
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.36
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value < -10
+				}
+			}
+		}
+	}
+	
+	
+}
+# Prussia joins us
+country_event = {
+	id = russia_fpw.35
+	title = russia_fpw.35.t
+	desc = russia_fpw.35.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.30.a
+		
+		create_faction = SOV_ANTI_HABSBURG_ALLIENCE
+		add_to_faction = PRS
+		
+	}
+	
+	
+}
+# Prussia no
+country_event = {
+	id = russia_fpw.36
+	title = russia_fpw.36.t
+	desc = russia_fpw.36.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.6.a
+		
+		add_political_power = -10
+		
+		create_faction = SOV_ANTI_HABSBURG_ALLIENCE
+		
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

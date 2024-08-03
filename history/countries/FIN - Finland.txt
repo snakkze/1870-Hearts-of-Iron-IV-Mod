@@ -34,62 +34,6 @@ recruit_character = SOV_nikolai_adlerberg
 #	}
 #}
 
-### NAVY LEADERS
-recruit_character = FIN_ragnar_hakola
-recruit_character = FIN_svante_sundman
-
-### THEORISTS ###
-recruit_character = FIN_vaino_valve
-recruit_character = FIN_gustaf_magnusson
-recruit_character = FIN_torsti_verkkola
-if = {
-	limit = {
-		has_dlc = "Arms Against Tyranny"
-	}
-	#Communist
-	recruit_character = FIN_akseli_anttila
-}
-
-###ARMY CHIEFS ###
-recruit_character = FIN_lauri_malmberg
-recruit_character = FIN_hugo_osterman
-
-### NAVY CHIEFS ###
-recruit_character = FIN_olavi_arho
-recruit_character = FIN_eero_rahola
-
-### AIR CHIEFS ###
-recruit_character = FIN_jarl_lundqvist
-recruit_character = FIN_olavi_sarko
-
-### MILITARY HIGH COMMAND ###
-recruit_character = FIN_karl_oesch
-recruit_character = FIN_harald_ohquist
-recruit_character = FIN_valio_porvari
-recruit_character = FIN_lauri_tiainen
-recruit_character = FIN_frans_helminen
-recruit_character = FIN_alpo_marttinen
-recruit_character = FIN_kaarlo_somerto
-recruit_character = FIN_reino_hallamaa
-recruit_character = FIN_johan_arajuuri
-recruit_character = GER_nikolaus_von_falkenhorst #Defined in the German char file
-
-
-### POLITICAL ADVISORS ###
-recruit_character = FIN_ake_henrik_gartz
-recruit_character = FIN_aimo_lahti
-recruit_character = FIN_antti_hackzell
-recruit_character = FIN_rudolf_holsti
-recruit_character = FIN_aimo_cajander
-recruit_character = FIN_urho_kekkonen
-recruit_character = FIN_ralf_torngren
-recruit_character = FIN_ernst_von_born
-recruit_character = FIN_hilja_riipinen
-recruit_character = FIN_esko_riekki
-recruit_character = FIN_elias_simojoki
-recruit_character = FIN_ilmari_kianto
-recruit_character = FIN_miina_sillanpaa
-recruit_character = FIN_karl_august_fagerholm #Democratic Reformer
 
 #Set up flags for Civil Wars
 if = {

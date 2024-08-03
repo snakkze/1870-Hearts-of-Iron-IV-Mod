@@ -290,9 +290,11 @@ fpw_russification_cat = {
 		activation = {
 			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
+			check_variable = { poland_russification < 100 }
 			SOV = {
 				NOT = { 
 					has_country_flag = SOV_polish_passive_resistance_cooldown 
+					has_country_flag = has_stopped_russification
 				}
 			}
 		}
@@ -888,7 +890,7 @@ fpw_russification_cat = {
 			has_country_flag = russification_poland_visible
 			or = {
 				has_completed_focus = SOV_russification_programs
-				has_completed_focus = SOV_stop_russification
+				has_country_flag = has_stopped_russification
 			}
 			
 		}
@@ -915,7 +917,7 @@ fpw_russification_cat = {
 				custom_effect_tooltip = lower_russification_by_2_tp
 			}
 			
-			add_stability = -0.02
+			#add_stability = -0.02
 			
 			if = {
 				limit = {
@@ -1132,9 +1134,11 @@ fpw_russification_cat = {
 		activation = {
 			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
+			check_variable = { finland_russification < 100 }
 			SOV = {
 				NOT = { 
 					has_country_flag = SOV_finnish_passive_resistance_cooldown 
+					has_country_flag = has_stopped_russification
 				}
 			}
 		}
@@ -1735,7 +1739,7 @@ fpw_russification_cat = {
 			has_country_flag = russification_finland_visible
 			or = {
 				has_completed_focus = SOV_russification_programs
-				has_completed_focus = SOV_stop_russification
+				has_country_flag = has_stopped_russification
 			}
 			
 		}
@@ -1762,7 +1766,7 @@ fpw_russification_cat = {
 				custom_effect_tooltip = lower_russification_by_2_tp
 			}
 			
-			add_stability = -0.02
+			#add_stability = -0.02
 			
 			if = {
 				limit = {
@@ -1996,9 +2000,11 @@ fpw_russification_cat = {
 		activation = {
 			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
+			check_variable = { caucasus_russification < 100 }
 			SOV = {
 				NOT = { 
 					has_country_flag = SOV_caucasus_passive_resistance_cooldown 
+					has_country_flag = has_stopped_russification
 				}
 			}
 		}
@@ -2595,7 +2601,7 @@ fpw_russification_cat = {
 			has_country_flag = russification_caucasus_visible
 			or = {
 				has_completed_focus = SOV_russification_programs
-				has_completed_focus = SOV_stop_russification
+				has_country_flag = has_stopped_russification
 			}
 			
 		}
@@ -2622,7 +2628,7 @@ fpw_russification_cat = {
 				custom_effect_tooltip = lower_russification_by_2_tp
 			}
 			
-			add_stability = -0.02
+			#add_stability = -0.02
 			
 			if = {
 				limit = {
@@ -2838,9 +2844,11 @@ fpw_russification_cat = {
 		activation = {
 			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
+			check_variable = { ukraine_russification < 100 }
 			SOV = {
 				NOT = { 
 					has_country_flag = SOV_ukrainian_passive_resistance_cooldown 
+					has_country_flag = has_stopped_russification
 				}
 			}
 		}
@@ -3433,7 +3441,7 @@ fpw_russification_cat = {
 			has_country_flag = russification_ukraine_visible
 			or = {
 				has_completed_focus = SOV_russification_programs
-				has_completed_focus = SOV_stop_russification
+				has_country_flag = has_stopped_russification
 			}
 			
 		}
@@ -3460,7 +3468,7 @@ fpw_russification_cat = {
 				custom_effect_tooltip = lower_russification_by_2_tp
 			}
 			
-			add_stability = -0.02
+			#add_stability = -0.02
 			
 			if = {
 				limit = {
@@ -3603,9 +3611,11 @@ fpw_russification_cat = {
 		activation = {
 			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
+			check_variable = { belarus_russification < 100 }
 			SOV = {
 				NOT = { 
 					has_country_flag = SOV_belarusian_passive_resistance_cooldown 
+					has_country_flag = has_stopped_russification
 				}
 			}
 		}
@@ -4198,7 +4208,7 @@ fpw_russification_cat = {
 			has_country_flag = russification_belarus_visible
 			or = {
 				has_completed_focus = SOV_russification_programs
-				has_completed_focus = SOV_stop_russification
+				has_country_flag = has_stopped_russification
 			}
 			
 		}
@@ -4225,7 +4235,7 @@ fpw_russification_cat = {
 				custom_effect_tooltip = lower_russification_by_2_tp
 			}
 			
-			add_stability = -0.02
+			#add_stability = -0.02
 			
 			if = {
 				limit = {
@@ -4368,9 +4378,11 @@ fpw_russification_cat = {
 		activation = {
 			is_ai = no
 			has_completed_focus = SOV_state_of_the_empire
+			check_variable = { baltic_russification < 100 }
 			SOV = {
 				NOT = { 
 					has_country_flag = SOV_baltic_passive_resistance_cooldown 
+					has_country_flag = has_stopped_russification
 				}
 			}
 		}
@@ -4970,7 +4982,7 @@ fpw_russification_cat = {
 			has_country_flag = russification_baltic_visible
 			or = {
 				has_completed_focus = SOV_russification_programs
-				has_completed_focus = SOV_stop_russification
+				has_country_flag = has_stopped_russification
 			}
 			
 		}

@@ -137,8 +137,35 @@
  russia_fpw.30.d: ""
  russia_fpw.30.a: "Great"
  
- russia_fpw.30.t: "China Stands Defiant"
- russia_fpw.30.d: ""
- russia_fpw.30.b: "We will crush them in no time!"
+ russia_fpw.31.t: "China Stands Defiant"
+ russia_fpw.31.d: ""
+ russia_fpw.31.b: "We will crush them in no time!"
+ 
+ russia_fpw.32.t: "Assassination Attempt on the Tsar"
+ russia_fpw.32.d: ""
+ russia_fpw.32.a: "Thank God he's fine"
+ russia_fpw.32.b: "What a tragedy!"
+ russia_news_fpw.32.t: "Assassination Attempt on Alexander II"
+ russia_news_fpw.32.d: ""
+ russia_news_fpw.32.a: "Thank God he's fine"
+ 
+ russia_fpw.33.t: "The Serfdom Question"
+ russia_fpw.33.d: "Should we continue with Tsars Alexanders plans od dismantling rerfdom... or shall we bring it back...?"
+ russia_fpw.33.a: "Continue, we don't want a peasent revolt"
+ russia_fpw.33.a.effect: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+15.0%§! \nMax Factories in a State: §G+20.00%§! \nProduction Efficiency Cap: §G+25.00%§! \nResource Gain Efficiency: §G+10.00%§! \n\n"
+ russia_fpw.33.b: "Serfdom existed for a reason!"
+ 
+ russia_fpw.34.t: "Russia Proposes an Allience"
+ russia_fpw.34.d: "With the recent changes in the Russian government, so did change their forign policies. The new military regime took a hard anti-habsburg stance and wants us to form an allience directed at the Austrians. Should we agree?"
+ russia_fpw.34.a: "Join them"
+ russia_fpw.34.b: "We don't want to alienate our german brothers"
+ 
+ russia_fpw.35.t: "Prussia Agrees"
+ russia_fpw.35.d: "Prussia joins our anti-habsburg allience"
+ SOV_ANTI_HABSBURG_ALLIENCE: "Anti-Habsburg Allience"
+ 
+ russia_fpw.36.t: "Prussia Rejects"
+ russia_fpw.36.d: "Prussia doesn't want to join us"
+ 
  
  

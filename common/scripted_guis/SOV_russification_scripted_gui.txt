@@ -92,13 +92,13 @@ scripted_gui = {
 			}
 			gui_russification_poland_map_1_visible = {
 				check_variable = {
-					poland_russification < 50
+					poland_russification < 40
 				}
 			}
 			gui_russification_poland_map_2_visible = {
 				and = {
 					check_variable = {
-						poland_russification > 49
+						poland_russification > 39
 					}
 					check_variable = {
 						poland_russification < 70
@@ -200,13 +200,13 @@ scripted_gui = {
 			}
 			gui_russification_ukraine_map_1_visible = {
 				check_variable = {
-					ukraine_russification < 50
+					ukraine_russification < 40
 				}
 			}
 			gui_russification_ukraine_map_2_visible = {
 				and = {
 					check_variable = {
-						ukraine_russification > 49
+						ukraine_russification > 39
 					}
 					check_variable = {
 						ukraine_russification < 70
@@ -308,13 +308,13 @@ scripted_gui = {
 			}
 			gui_russification_belarus_map_1_visible = {
 				check_variable = {
-					belarus_russification < 50
+					belarus_russification < 40
 				}
 			}
 			gui_russification_belarus_map_2_visible = {
 				and = {
 					check_variable = {
-						belarus_russification > 49
+						belarus_russification > 39
 					}
 					check_variable = {
 						belarus_russification < 70
@@ -416,13 +416,13 @@ scripted_gui = {
 			}
 			gui_russification_baltic_map_1_visible = {
 				check_variable = {
-					baltic_russification < 50
+					baltic_russification < 40
 				}
 			}
 			gui_russification_baltic_map_2_visible = {
 				and = {
 					check_variable = {
-						baltic_russification > 49
+						baltic_russification > 39
 					}
 					check_variable = {
 						baltic_russification < 70
@@ -524,13 +524,13 @@ scripted_gui = {
 			}
 			gui_russification_finland_map_1_visible = {
 				check_variable = {
-					finland_russification < 50
+					finland_russification < 40
 				}
 			}
 			gui_russification_finland_map_2_visible = {
 				and = {
 					check_variable = {
-						finland_russification > 49
+						finland_russification > 39
 					}
 					check_variable = {
 						finland_russification < 70
@@ -632,13 +632,13 @@ scripted_gui = {
 			}
 			gui_russification_caucasus_map_1_visible = {
 				check_variable = {
-					caucasus_russification < 50
+					caucasus_russification < 40
 				}
 			}
 			gui_russification_caucasus_map_2_visible = {
 				and = {
 					check_variable = {
-						caucasus_russification > 49
+						caucasus_russification > 39
 					}
 					check_variable = {
 						caucasus_russification < 70

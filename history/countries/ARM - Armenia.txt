@@ -1,5 +1,4 @@
 ﻿capital = 230 #Yerevan, Armenia
- oob = "ARM_1866"
 
 oob = "AZR_1936"
 
@@ -62,38 +61,4 @@ set_popularities = {
 	democratic = 30
 	communism = 36
 }
-
-create_country_leader = {
-	name = "Drastamat Kanayan"
-	desc = ""
-	picture = GFX_portrait_Drastamat_Kanayan
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Hovhannes Kajaznuni"
-	desc = ""
-	picture = GFX_portrait_Hovhannes_Kajaznuni
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Grigor Harutyunyan"
-	desc = ""
-	picture = GFX_portrait_Grigor_Harutyunyan
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
-
 

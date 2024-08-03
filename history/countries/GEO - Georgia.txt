@@ -1,5 +1,4 @@
 ﻿capital = 231 #Tbilisi
- oob = "GEO_1866"
 
 oob = "GEO_1866"
 
@@ -63,26 +62,5 @@ set_popularities = {
 	neutrality = 10
 }
 
-create_country_leader = {
-	name = "Noe Zhordania"
-	desc = ""
-	picture = GFX_portrait_Noe_Zhordania
-	expire = "1953.3.1"
-	ideology = liberalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Kandid Charkviani"
-	desc = ""
-	picture = GFX_portrait_Kandid_Charkviani
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
 
 #couldnt find anything else, the commies simply forced everyone else into exile

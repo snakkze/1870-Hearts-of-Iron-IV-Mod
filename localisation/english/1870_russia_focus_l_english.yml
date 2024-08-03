@@ -6,11 +6,11 @@
  SOV_state_of_the_empire_focus_tp: "§gUnlocks§! the §GRussification Decision Tab§!!"
  SOV_crush_polish_resistance_remnants: "Crush Polish Resistance Remnants"
  SOV_russification_programs: "Russification Programs"
- SOV_russification_programs_focus_tp: "§gUnlocks§! various §RRepression§! decisions in the §GRussification§! tab, such as:\n §Y$ban_polish_language$\n $poland_introduce_martial_law$\n $poland_force_conscription$§!"
+ SOV_russification_programs_focus_tp: "§gUnlocks§! various §RRepression§! decisions in the §GRussification§! tab such as:\n §Y$ban_polish_language$\n $poland_introduce_martial_law$\n $poland_force_conscription$§!"
  SOV_undermine_national_identity: "Undermine National Identities"
- SOV_undermine_national_identity_focus_tp: "§gUnlocks§! various §RPropaganda§! decisions in the §GRussification§! tab, such as:\n §Y$poland_promote_russian_culture$\n $raid_poland_culture_centers$§!\n\nThis will §Glower§! everyones §Ragitation§! by §C-10%§!"
+ SOV_undermine_national_identity_focus_tp: "§gUnlocks§! various §RPropaganda§! decisions in the §GRussification§! tab such as:\n §Y$poland_promote_russian_culture$\n $raid_poland_culture_centers$§!\n\nThis will §Glower§! everyones §Ragitation§! by §C-10%§!"
  SOV_one_way_trip_to_siberia: "Deportations to Siberia"
- SOV_one_way_trip_to_siberia_focus_tp: "§gUnlocks§! various §RDeportation§! decisions in the §GRussification§! tab, such as:\n §Y$deportation_of_poles$"
+ SOV_one_way_trip_to_siberia_focus_tp: "§gUnlocks§! various §RDeportation§! decisions in the §GRussification§! tab such as:\n §Y$deportation_of_poles$"
  SOV_integration_of_subjects: "Integration of Subjects"
  SOV_integration_of_subjects_focus_tp: "Allows you to §GCore§! regions which have §Yrussification level§! on at least §C60%§!"
  SOV_finnish_question: "Finnish Question"
@@ -21,11 +21,15 @@
  SOV_amnesty_for_polish_resistance: "Amnesty for Polish Resistance"
  SOV_finnish_autonomy: "Finnish Autonomy"
  SOV_stop_russification: "Stop Russification"
+ SOV_stop_russification_focus_tp: "§gUnlocks§! decision in the §GRussification§! tab:\n §Y$stop_all_russification$§!"
  SOV_congressional_kingdom: "Congressional Kingdom"
  SOV_congressional_kingdom_focus_tp: "This will §Gincrease§! the Polish §Ccooperation§! by §C20%§!, and §Gdecrease§! their §Ragitation§! by §C20%§!!"
  SOV_promote_national_identity: "Promote National Identities"
+ SOV_promote_national_identity_focus_tp: "§gUnlocks§! decisions in the §GRussification§! tab such as:\n §Y$poland_invite_exiles$\n $poland_promote_culture$§!"
  SOV_accessibility_of_culture: "Accessibility of Culture"
+ SOV_accessibility_of_culture_focus_tp: "§gUnlocks§! decisions in the §GRussification§! tab such as:\n §Y$create_poland_university$\n $poland_fund_library$§!"
  SOV_federative_empire: "A Federal Empire?"
+ SOV_federative_empire_focus_tp: "§gUnlocks§! decisions to give §YAutonomy§! to all the §Rregions§! which have have their §GRussification§! level on at least §C10%§! or lower"
  
 ## Politics Branch
  
@@ -61,8 +65,33 @@
  SOV_democratic_russian_empire_focus_tp: "Will §Yreform§! the §G[SOV.GetAdjective]§! government based on its new §Cconstitution§!"
  
  SOV_plot_against_the_tsars: "Plot Against the Tsar"
+ SOV_gather_support: "Gather Support"
+ SOV_bribe_officials: "Bribe Officials"
+ SOV_infiltrate_military_bases: "Infiltrate Military Bases"
+ SOV_choose_a_side: "Choose a Side"
  
+ SOV_military_dictatorship: "Military Dictatorship"
+ SOV_neutrality_military_dictatorship: "Military Dictatorship" # New Party name
+ SOV_solidify_control: "Solidify Control"
+ SOV_military_in_the_government: "Military in the Government"
+ SOV_establish_secret_police: "Establish Secret Police"
+ SOV_reshuffle_the_government: "Reshuffle the Government"
+ SOV_envoy_to_prussia: "Envoy to Prussia"
+ SOV_serfdom_question: "Serfdom Question"
  
+ SOV_puppet_tsar: "Puppet Tsar"
+ SOV_puppet_tsar_focus_tp: "Brings back the Tsar as a puppet of our regime"
+ SOV_appeasing_conservatives: "Appeasing the Conservatives"
+ SOV_school_reform: "School Reform"
+ SOV_school_reform_effect_tt: "$SOV_modify_sr_ns_intro$ \nResearch Speed: §G+10.0%§!\n"
+ SOV_build_universities: "Build Universities"
+ 
+ SOV_western_principles: "Weastern Principles"
+ SOV_organizing_first_elections: "Organizing First Elections"
+ 
+ SOV_exile_tsar: "Exile the Tsar"
+ 
+ SOV_movement_of_the_people: "Movement of the People"
  
  ## Diplomacy Branch
  
@@ -118,8 +147,13 @@
  SOV_develop_alaska: "Develop Alaska"
  SOV_industry_upgrade_two: "Complete the Second Industrial Plan"
  SOV_industry_upgrade_three: "Complete the Third Industrial Plan"
+ SOV_polish_railways: "Polish Railways"
+ SOV_ukrainian_railways: "Ukrainian Railways"
+ SOV_baltic_railways: "Baltic Railways"
+ SOV_russian_railways: "Russian Railways"
+ SOV_connecting_railways: "Connecting Railways"
  
-  ## Military Branch
+ ## Military Branch
  
  SOV_russian_army: "Russian Army"
  SOV_local_advisors: "Local Advisors"

@@ -28,23 +28,53 @@ SOV_historical = {
 	}
 
 	ai_national_focuses = {
-		SOV_tsars_regime
+		# year 1
 		SOV_russian_diplomacy
-		SOV_recovering_from_the_cimean_war
+		SOV_asian_giant
+		SOV_consolidate_central_asia
 		SOV_state_of_the_empire
 		SOV_crush_polish_resistance_remnants
-		SOV_continue_reforms
-		SOV_asian_giant
+		SOV_russian_army
+		SOV_russification_programs
+		# year 2
+		SOV_tsars_regime
+		SOV_recovering_from_the_cimean_war
 		SOV_sale_of_alaska
-		SOV_finnish_question
-		SOV_finnish_autonomy
+		SOV_russian_economy
+		SOV_promote_industralization
+		SOV_local_advisors
+		SOV_new_military_equipment
+		SOV_continue_reforms
+		# year 3
 		SOV_free_state_serfs
+		SOV_finnish_question
 		SOV_administrative_reform
-		SOV_judicial_system
+		SOV_battle_illiteracy
+		SOV_military_research_institute
+		SOV_infrastracture_investments
+		# year 4
+		SOV_infrastracture_in_ukraine
+		SOV_one_way_trip_to_siberia
+		SOV_undermine_national_identity
 		SOV_tighten_tsars_control
+		SOV_study_the_crimean_war
+		SOV_look_to_balkans
+		# year 5
+		SOV_infrastracture_in_baltic_belarus
 		SOV_the_tsar_knows_best
-		SOV_help_for_peasants
+		SOV_foreign_investors
+		SOV_mils_one
+		SOV_improve_military_education
+		SOV_promote_balkan_independence
+		# year 6
+		SOV_infrastracture_in_central_russia
 		SOV_reformed_but_still_russia
+		SOV_industry_upgrade_one
+		SOV_doctrine_reform
+		SOV_universal_conscription
+		SOV_ukrainian_wheat
+		# year 7
+		
 		
 	}
 

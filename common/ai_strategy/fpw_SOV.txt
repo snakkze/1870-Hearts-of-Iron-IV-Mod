@@ -1,0 +1,78 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+
+SOV_war_central_asia_prep = {
+	allowed = { original_tag = SOV }
+	enable = {
+		focus_progress = {
+			focus = SOV_consolidate_central_asia
+			progress > 0.01
+		}
+		country_exists = BUK
+		country_exists = KHI
+	}
+
+	abort = {
+		OR = {
+			AND = {
+				NOT = { country_exists = BUK }
+				NOT = { country_exists = KHI }
+			}
+			AND = {
+				has_completed_focus = SOV_consolidate_central_asia
+				SOV = { 
+					has_war_with = BUK 
+					has_war_with = KHI 
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "BUK"
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "KHI"
+		value = 1000
+	}
+}
+
+SOV_war_central_asia = {
+	allowed = { original_tag = SOV }
+	enable = {
+		has_completed_focus = SOV_asian_giant
+		country_exists = BUK
+		country_exists = KHI
+	}
+
+	abort = {
+		NOT = { country_exists = BUK }
+		NOT = { country_exists = KHI }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "BUK"
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "KHI"
+		value = 500
+	}
+	
+	
+}

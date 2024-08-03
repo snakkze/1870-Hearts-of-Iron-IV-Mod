@@ -65,6 +65,9 @@ set_oob = "SOV_1866"
 	set_compliance = 60
 	set_garrison_strength = 1.0
 }
+set_rule = {
+    can_create_factions = yes
+}
 
 set_variable = { russia_russification = 80 }
 set_variable = { poland_russification = 30 }
@@ -125,6 +128,15 @@ recruit_character = SOV_pyotr_shuvalov
 recruit_character = SOV_alexander_gorchakov
 recruit_character = SOV_nikolay_milyutin
 recruit_character = SOV_dmitry_milyutin
+recruit_character = SOV_alexander_iii
+recruit_character = SOV_nicholas_nikolaevich
+recruit_character = SOV_michael_nikolaevich
+recruit_character = SOV_iosif_gurko
+recruit_character = SOV_mikhail_loris_melikov
+recruit_character = SOV_grigol_dadiani
+recruit_character = SOV_pyotr_vannovsky
+recruit_character = SOV_mikhail_dragomirov
+recruit_character = SOV_eduard_totleben
 
 #RUSSIAN ARMY 
 

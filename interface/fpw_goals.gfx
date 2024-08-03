@@ -277,6 +277,10 @@ spriteTypes = {
 		name = "GFX_goal_russia_construct_infrastructure"
 		texturefile = "gfx/interface/goals/goal_russia_construct_infrastructure.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SOV_russification"
+		texturefile = "gfx/interface/goals/russification.png"
+	}
 	
 }
 
