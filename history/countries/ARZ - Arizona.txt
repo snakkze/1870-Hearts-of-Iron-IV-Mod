@@ -1,0 +1,14 @@
+﻿capital = 377
+
+set_research_slots = 0
+
+recruit_character = USA_richard_c_mccormick
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+

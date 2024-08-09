@@ -13,15 +13,70 @@ characters={
 			id=-1
 		}
 	}
-	USA_grant={
+	USA_ulysses_s_grant={
 		name="Ulysses S. Grant"
 		portraits={
 			civilian={
-				large=GFX_portrait_USA_republican
+				large=GFX_portrait_USA_ulysses_s_grant
 			}
 		}
 		country_leader={
 			ideology=usa_republican
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+
+
+	USA_richard_c_mccormick={
+		name="Richard C. McCormick"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_richard_c_mccormick
+			}
+		}
+		country_leader={
+			ideology=interim_government
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	USA_jose_chaves={
+		name="José Chaves"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_jose_chaves
+			}
+		}
+		country_leader={
+			ideology=interim_government
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	USA_edward_moody_mccook={
+		name="Edward M. McCook"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_edward_moody_mccook
+			}
+		}
+		country_leader={
+			ideology=interim_government
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	USA_james_d_doty={
+		name="James D. Doty"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_james_d_doty
+			}
+		}
+		country_leader={
+			ideology=interim_government
 			expire="1956.01.01.01"
 			id=-1
 		}

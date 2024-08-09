@@ -183,8 +183,24 @@ spriteTypes = {
 		texturefile = "gfx/leaders/USA/Portrait_USA_andrew_johnson.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_USA_republican"
-		texturefile = "gfx/leaders/USA/Portrait_USA_republican.dds"
+		name = "GFX_portrait_USA_ulysses_s_grant"
+		texturefile = "gfx/leaders/USA/Portrait_USA_ulysses_s_grant.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_edward_moody_mccook"
+		texturefile = "gfx/leaders/USA/Territories/Portrait_USA_edward_moody_mccook.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_james_d_doty"
+		texturefile = "gfx/leaders/USA/Territories/Portrait_USA_james_d_doty.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_jose_chaves"
+		texturefile = "gfx/leaders/USA/Territories/Portrait_USA_jose_chaves.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_richard_c_mccormick"
+		texturefile = "gfx/leaders/USA/Territories/Portrait_USA_richard_c_mccormick.dds"
 	}
 
 	# TRB
