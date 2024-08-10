@@ -1,0 +1,24 @@
+
+state={
+	id=1747
+	name="STATE_542"
+	resources={
+		chromium=90.000
+	}
+
+	history={
+	set_variable = { tribal = 542 }
+		owner = TRB
+		add_core_of = TRB
+		
+		add_core_of = BOT
+		
+
+	}
+
+	provinces={ 14596 }
+	manpower=3150
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=2.000
+}

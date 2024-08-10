@@ -1,23 +1,20 @@
+
 state={
 	id=775
-	name="STATE_775" # BET - Borkou-Ennedi-Tibesti region
-	
-	state_category = wasteland
+	name="STATE_775"
 
 	history={
-owner = TRB
-add_core_of = TRB
+	set_variable = { tribal = 775 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = CHA
-		buildings = {
-			infrastructure = 0
-		}
+		
+
 	}
 
-	provinces={
-		4902 5136 10893
-	}
-	manpower=9747
+	provinces={ 13341 }
+	manpower=181
 	buildings_max_level_factor=1.000
-
-	local_supplies=1.0 
+	state_category=wasteland
+	local_supplies=1.000
 }

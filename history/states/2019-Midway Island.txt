@@ -1,0 +1,17 @@
+state=
+{
+	id=2019
+	name="STATE_631"
+	manpower=1071	
+	state_category = tiny_island
+
+	history={
+	set_variable = { tribal = 631 }
+		owner = TRB
+		add_core_of = TRB
+	}
+	
+	provinces={ 13052 }
+
+	local_supplies=0.0 
+}

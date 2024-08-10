@@ -1,0 +1,24 @@
+
+state={
+	id=2039
+	name="STATE_660"
+	resources={
+		rubber=3.000
+	}
+
+	history={
+	set_variable = { tribal = 660 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = CAR
+		
+		
+
+	}
+
+	provinces={ 12082 }
+	manpower=18810
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=2.000
+}

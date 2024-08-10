@@ -4,15 +4,14 @@ state={
 	name="STATE_858"
 
 	history={
+	set_variable = { tribal = 858 }
 		owner = TRB
 		add_core_of = TRB
 
 	}
 
-	provinces={
-		2029 2059 2103 4924 4976 12821 12894 13079 
-	}
-	manpower=36
+	provinces={ 2029 }
+	manpower=5
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

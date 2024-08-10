@@ -4,28 +4,17 @@ state={
 	name="STATE_773"
 
 	history={
-owner = TRB
-add_core_of = TRB
+	set_variable = { tribal = 773 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = CMR
-		victory_points = {
-			2080 1 
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			6039 = {
-				naval_base = 1
-
-			}
-
-		}
+		
+		
 
 	}
 
-	provinces={
-		2080 5054 6039 7963 9137 11194 
-	}
-	manpower=1531807
+	provinces={ 11987 }
+	manpower=54391
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

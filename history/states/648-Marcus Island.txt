@@ -6,19 +6,14 @@ state=
 	manpower=1
 	history=
 	{
+	set_variable = { tribal = 648 }
 		owner = TRB
 		add_core_of = TRB
 		add_core_of = GUM
-		buildings = {
-			13026 = {
-				naval_base = 1
-			}
-		}
+		
 
 	}
-	provinces=
-	{
-13026 	}
+	provinces={ 13026 }
 
 	local_supplies=0.0 
 }

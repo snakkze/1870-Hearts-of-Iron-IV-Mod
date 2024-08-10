@@ -1,0 +1,19 @@
+state=
+{
+	id=2038
+	name="STATE_648"
+	state_category = tiny_island
+	manpower=0
+	history=
+	{
+	set_variable = { tribal = 648 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = GUM
+		
+
+	}
+	provinces={ 13026 }
+
+	local_supplies=0.0 
+}

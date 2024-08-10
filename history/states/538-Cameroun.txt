@@ -5,25 +5,19 @@ state={
 	resources={
 		rubber=5.000
 	}
-	state_category = pastoral
-	manpower = 880866
 
 	history={
-owner = TRB
-add_core_of = TRB
-		buildings = {
-			infrastructure = 1
-
-		}
+	set_variable = { tribal = 538 }
+		owner = TRB
+		add_core_of = TRB
+		
 		add_core_of = COG
 
 	}
 
-	provinces={
-		988 7219 7931 8048 10071 10883 10951 12741 12824 
-	}
-	
+	provinces={ 13294 }
+	manpower=20634
 	buildings_max_level_factor=1.000
-	
+	state_category=pastoral
 	local_supplies=1.000
 }

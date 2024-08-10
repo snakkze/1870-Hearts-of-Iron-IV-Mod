@@ -1,0 +1,19 @@
+state={
+	id=2070
+	name="STATE_669"
+	manpower=5590
+
+	state_category = pastoral
+
+	history= {
+	set_variable = { tribal = 669 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = INS
+		
+		
+	}
+	provinces={ 1602 }
+
+	local_supplies=1.0 
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=2324
+	name="STATE_779"
+
+	history={
+	set_variable = { tribal = 779 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = IVO
+		
+		
+
+	}
+
+	provinces={ 13415 }
+	manpower=136953
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
+}

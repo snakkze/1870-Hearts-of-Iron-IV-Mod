@@ -1,0 +1,21 @@
+
+state={
+	id=2792
+	name="STATE_903"
+
+	history={
+	set_variable = { tribal = 903 }
+		owner = TRB
+		add_core_of = TRB
+		
+		add_core_of = KEN
+		add_core_of = SOM
+
+	}
+
+	provinces={ 13553 }
+	manpower=39076
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

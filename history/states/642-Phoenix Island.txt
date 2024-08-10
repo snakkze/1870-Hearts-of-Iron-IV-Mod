@@ -7,13 +7,12 @@ state={
 	state_category = tiny_island
 
 	history={
+	set_variable = { tribal = 642 }
 		owner = TRB
 		add_core_of = TRB
 	}
 
-	provinces={
-		13050 
-	}
+	provinces={ 13050 }
 
 	local_supplies=0.0 
 }

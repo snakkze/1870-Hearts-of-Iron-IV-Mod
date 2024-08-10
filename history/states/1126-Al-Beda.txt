@@ -1,0 +1,18 @@
+
+state={
+	id=1126
+	name="STATE_1029"
+
+	history={
+	set_variable = { tribal = 1029 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = UAE
+
+	}
+	provinces={ 2048 }
+	manpower=6317
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	local_supplies=0.000
+}

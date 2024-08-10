@@ -7,31 +7,19 @@ state={
 	}
 
 	history={
+	set_variable = { tribal = 286 }
 		add_core_of = TRB
 		owner = TRB
-		victory_points = {
-			4401 3 
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 2
-			4401 = {
-				naval_base = 4
-
-			}
-
-		}
+		
+		
 
 		1870.1.1 = {
 			owner = FRA
 		}
 	}
 
-	provinces={
-		1396 1423 4223 4284 4341 4401 7238 7303 7331 7347 10261 12133 12232 
-	}
-	manpower=2727400
+	provinces={ 1396 }
+	manpower=200955
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

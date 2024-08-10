@@ -1,0 +1,18 @@
+
+state={
+	id=1124
+	name="STATE_1028"
+
+	history={
+	set_variable = { tribal = 1028 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = OMA
+
+	}
+	provinces={ 2018 }
+	manpower=10658
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,18 @@
+
+state={
+	id=1088
+	name="STATE_1018"
+
+	history={
+	set_variable = { tribal = 1018 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = TZN
+
+	}
+	provinces={ 12940 }
+	manpower=3433
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

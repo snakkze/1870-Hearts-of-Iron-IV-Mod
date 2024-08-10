@@ -1,0 +1,21 @@
+
+state={
+	id=1882
+	name="STATE_547"
+
+	history={
+	set_variable = { tribal = 547 }
+		owner = TRB
+		add_core_of = TRB
+		
+		
+		add_core_of = KEN
+
+	}
+
+	provinces={ 13559 }
+	manpower=38799
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

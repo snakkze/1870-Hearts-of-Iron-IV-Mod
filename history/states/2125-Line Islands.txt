@@ -1,0 +1,16 @@
+state={
+	id=2125
+	name="STATE_727"
+	manpower=935
+	state_category = small_island
+
+	history={
+	set_variable = { tribal = 727 }
+		owner = TRB
+		add_core_of = TRB
+	}
+	
+	provinces={ 13049 }
+
+	local_supplies=0.0 
+}

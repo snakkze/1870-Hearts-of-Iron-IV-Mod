@@ -4,40 +4,11 @@ state={
 	name="STATE_835"
 
 	history={
-		set_variable = {
-			ETH_state_development_production_speed = -0.3
-
-		}
-		set_variable = {
-			ETH_state_development_local_building_slots_factor = -0.3
-
-		}
-		set_variable = {
-			ETH_text_chitet_var = 3
-
-		}
-		add_dynamic_modifier = {
-			modifier = ETH_state_development_dynamic_modifier
-
-		}
-		add_dynamic_modifier = {
-			modifier = ETH_state_decentralization_dynamic_modifier
-			scope = ETH
-
-		}
-		buildings = {
-			industrial_complex = 1
-
-		}
-		victory_points = {
-			7980 2 
-		}
-		victory_points = {
-			13249 3 
-		}
-		victory_points = {
-			12812 1 
-		}
+	set_variable = { tribal = 835 }
+		
+		
+		
+		
 		owner = TRB
 		add_core_of = TRB
 		add_core_of = ETH
@@ -51,10 +22,8 @@ state={
 
 	}
 
-	provinces={
-		12714 12757 12812 13253 
-	}
-	manpower=780000
+	provinces={ 13279 }
+	manpower=88040
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

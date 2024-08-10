@@ -1,0 +1,25 @@
+
+state={
+	id=1269
+	name="STATE_275"
+	resources={
+		steel=11.000
+		chromium=53.000
+	}
+
+	history={
+	set_variable = { tribal = 275 }
+		owner = TRB
+		add_core_of = TRB
+		
+		
+		add_core_of = SAF
+
+	}
+
+	provinces={ 14623 }
+	manpower=47677
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=2672
+	name="STATE_893"
+
+	history={
+	set_variable = { tribal = 893 }
+		owner = TRB
+		add_core_of = TRB
+		
+		add_core_of = SAF
+		add_core_of = NMB
+
+	}
+
+	provinces={ 4116 }
+	manpower=789
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

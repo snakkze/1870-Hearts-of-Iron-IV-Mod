@@ -1,0 +1,18 @@
+state={
+	id=2426
+	name="STATE_796"
+	history={
+	set_variable = { tribal = 796 }
+		owner = TRB
+		add_core_of = TRB
+		
+		
+		add_core_of = ANG
+	}
+	provinces={ 14536 }
+	manpower=13587
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

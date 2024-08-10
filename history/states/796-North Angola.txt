@@ -2,23 +2,15 @@ state={
 	id=796
 	name="STATE_796"
 	history={
+	set_variable = { tribal = 796 }
 		owner = TRB
 		add_core_of = TRB
-		buildings = {
-			infrastructure = 1
-			2115 = {
-				naval_base = 1
-			}
-		}
-		victory_points = {
-			2115 1 
-		}
+		
+		
 		add_core_of = ANG
 	}
-	provinces={
-		2115 10968
-	}
-	manpower=13000
+	provinces={ 14536 }
+	manpower=12766
 	buildings_max_level_factor=1.000
 	state_category=rural
 

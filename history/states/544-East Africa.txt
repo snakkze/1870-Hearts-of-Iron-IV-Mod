@@ -4,28 +4,17 @@ state={
 	name="STATE_544"
 
 	history={
+	set_variable = { tribal = 544 }
 		owner = TRB
 		add_core_of = TRB
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			8245 = {
-				naval_base = 1
-
-			}
-
-		}
-		victory_points = {
-			8245 1 
-		}
+		
+		
 		add_core_of = MZB
 
 	}
 
-	provinces={
-		5177 8245 
-	}
-	manpower=637520
+	provinces={ 13073 }
+	manpower=43034
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

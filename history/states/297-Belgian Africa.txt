@@ -4,12 +4,11 @@ state={
 	name="STATE_297"
 
 	history={
+	set_variable = { tribal = 297 }
 		owner = TRB
 		add_core_of = TRB
 		add_core_of = EQG
-		victory_points = {
-			1903 1 
-		}
+		
 		buildings = {
 			infrastructure = 1
 			1903 = {
@@ -25,11 +24,9 @@ state={
 
 	}
 
-	provinces={
-		8244 
-	}
-	manpower=96200
+	provinces={ 12025 }
+	manpower=5166
 	buildings_max_level_factor=1.000
-	state_category=enclave
+	state_category=wasteland
 	local_supplies=0.000
 }

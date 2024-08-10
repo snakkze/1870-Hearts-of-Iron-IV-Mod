@@ -2,27 +2,19 @@
 state={
 	id=776
 	name="STATE_776" # Benin/Dahomey
-	manpower = 702813
+	manpower=119162
 	
 	state_category = pastoral
 	history={
+	set_variable = { tribal = 776 }
 owner = TRB
 add_core_of = TRB
 		add_core_of = DAH
-		victory_points = {
-			10919 1
-		}
-		buildings = {
-			infrastructure = 2
-			10919 = {
-				naval_base = 1
-			}
-		}
+		
+		
 	}
 
-	provinces={
-		10919 12874 12762
-	}
+	provinces={ 11910 }
 
 	local_supplies=1.0 
 }

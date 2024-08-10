@@ -1,0 +1,12 @@
+scripted_gui = {
+
+	colonist_topbar = {
+		context_type = player_context
+		
+		window_name = "colonist_container"
+		
+		visible = {
+            always = yes
+		}
+	}
+}

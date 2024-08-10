@@ -1,24 +1,20 @@
+
 state={
 	id=887
 	name="STATE_887"
 
-	manpower = 157050
-	state_category = wasteland
-	
-	history = {
-owner = TRB
-add_core_of = TRB
+	history={
+	set_variable = { tribal = 887 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = SUD
-		buildings = {
-			infrastructure = 1
-		}
+		
 
 	}
 
-	provinces={
-		1960 5060 10857 
-	}
-	
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.000
+	provinces={ 13302 }
+	manpower=9230
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

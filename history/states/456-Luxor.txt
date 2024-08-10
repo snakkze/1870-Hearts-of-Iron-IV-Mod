@@ -1,33 +1,32 @@
-state=
-{
+
+state={
 	id=456
-	name="STATE_456" # Aswan
-	manpower = 2196748
-	
-	state_category = rural
-	
-	history = {
+	name="STATE_456"
+
+	history={
 		victory_points = {
-			11999 1
+			11999 1 
 		}
 		owner = TUR
 		buildings = {
 			infrastructure = 2
-		}
 
-		victory_points = {
-			12071 3
 		}
 		victory_points = {
-			11974 1
+			12071 3 
 		}
-
+		victory_points = {
+			11974 1 
+		}
 		add_core_of = EGY
 
 	}
-	provinces={
-		1028 1064 1151 1206 7030 7073 7144 10028 10097 10844 11974 11999 12044 12071 12771 
-	}
 
-	local_supplies=0.0 
+	provinces={
+		8124 8128 8133 8136 8138 8144 8244 9980 9983 10415 10442 10525 10538 
+	}
+	manpower=2196748
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
