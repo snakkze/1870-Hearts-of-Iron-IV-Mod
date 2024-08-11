@@ -45,16 +45,16 @@ give_guarantee = ARG
 give_guarantee = URG
 
 # Unorganized Territories
-OKL = { set_cosmetic_tag = OKL_36_territory } set_autonomy = { target = OKL autonomous_state = autonomy_unorganized_territory }
-NMX = { set_cosmetic_tag = NMX_36_territory } set_autonomy = { target = NMX autonomous_state = autonomy_unorganized_territory }
-ARZ = { set_cosmetic_tag = ARZ_36_territory } set_autonomy = { target = ARZ autonomous_state = autonomy_unorganized_territory }
-UTH = { set_cosmetic_tag = UTH_territory } set_autonomy = { target = UTH autonomous_state = autonomy_unorganized_territory }
-CLR = { set_cosmetic_tag = CLR_36_territory } set_autonomy = { target = CLR autonomous_state = autonomy_unorganized_territory }
-NEB = { set_cosmetic_tag = NEB_36_territory } set_autonomy = { target = NEB autonomous_state = autonomy_unorganized_territory }
-DAK = { set_cosmetic_tag = DAK_36_territory } set_autonomy = { target = DAK autonomous_state = autonomy_unorganized_territory }
-MTN = { set_cosmetic_tag = MTN_36_territory } set_autonomy = { target = MTN autonomous_state = autonomy_unorganized_territory }
-IDA = { set_cosmetic_tag = IDA_36_territory } set_autonomy = { target = IDA autonomous_state = autonomy_unorganized_territory }
-WAS = { set_cosmetic_tag = WAS_36_territory } set_autonomy = { target = WAS autonomous_state = autonomy_unorganized_territory }
+OKL = { set_cosmetic_tag = OKL_36_territory } OKL = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = OKL autonomous_state = autonomy_unorganized_territory }
+NMX = { set_cosmetic_tag = NMX_36_territory } NMX = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = NMX autonomous_state = autonomy_unorganized_territory }
+ARZ = { set_cosmetic_tag = ARZ_36_territory } ARZ = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = ARZ autonomous_state = autonomy_unorganized_territory }
+UTH = { set_cosmetic_tag = UTH_territory } UTH = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = UTH autonomous_state = autonomy_unorganized_territory }
+CLR = { set_cosmetic_tag = CLR_36_territory } CLR = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = CLR autonomous_state = autonomy_unorganized_territory }
+NEB = { set_cosmetic_tag = NEB_36_territory } NEB = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = NEB autonomous_state = autonomy_unorganized_territory }
+DAK = { set_cosmetic_tag = DAK_36_territory } DAK = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = DAK autonomous_state = autonomy_unorganized_territory }
+MTN = { set_cosmetic_tag = MTN_36_territory } MTN = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = MTN autonomous_state = autonomy_unorganized_territory }
+IDA = { set_cosmetic_tag = IDA_36_territory } IDA = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = IDA autonomous_state = autonomy_unorganized_territory }
+WAS = { set_cosmetic_tag = WAS_36_territory } WAS = { set_party_name = { ideology = neutrality name = interim_government_party long_name = interim_government_party } } set_autonomy = { target = WAS autonomous_state = autonomy_unorganized_territory }
 CIM = { set_cosmetic_tag = CIM_36_territory } set_autonomy = { target = CIM autonomous_state = autonomy_unorganized_territory }
 
 add_dynamic_modifier = { 
