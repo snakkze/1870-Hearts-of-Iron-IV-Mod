@@ -37,6 +37,29 @@ fpw_rule_flag_options = {
 	}
 }
 
+fpw_rule_scripted_peace_options = {
+	name = "FPW_RULE_FLAG_SCRIPTED_PEACE"
+	group = "FPW_RULE_GROUP_MOD_CUSTOMIZATION"
+	icon = "GFX_production_licenses"
+	default = {
+		name = "FPW_RULE_OPTION_SCRIPTED_PEACE_ENABLED"
+		text = FPW_RULE_OPTION_SCRIPTED_PEACE_ENABLED
+		desc = FPW_RULE_OPTION_SCRIPTED_PEACE_ENABLED_desc
+	}
+	option = {
+		name = "FPW_RULE_OPTION_SCRIPTED_PEACE_DISABLED"
+		text = FPW_RULE_OPTION_SCRIPTED_PEACE_DISABLED
+		desc = FPW_RULE_OPTION_SCRIPTED_PEACE_DISABLED_desc
+		allow_achievements = yes
+	}
+	option = {
+		name = "FPW_RULE_OPTION_SCRIPTED_PEACE_AI"
+		text = FPW_RULE_OPTION_SCRIPTED_PEACE_AI
+		desc = FPW_RULE_OPTION_SCRIPTED_PEACE_AI_desc
+		allow_achievements = yes
+	}
+}
+
 fpw_rule_subject_colors_options = {
 	name = "FPW_RULE_FLAG_SUBJECT_COLORS"
 	group = "FPW_RULE_GROUP_MOD_CUSTOMIZATION"

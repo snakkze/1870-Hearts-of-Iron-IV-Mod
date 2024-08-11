@@ -15,6 +15,15 @@
  FPW_RULE_OPTION_NO_SUBJECTS:0 "No Subjects"
  FPW_RULE_OPTION_NO_SUBJECTS_desc:0 "All subjects will not use their overlord's color."
 
+ FPW_RULE_FLAG_SCRIPTED_PEACE:0 "Scripted Peace Deals"
+ FPW_RULE_OPTION_SCRIPTED_PEACE_ENABLED:0 "Enabled"
+ FPW_RULE_OPTION_SCRIPTED_PEACE_ENABLED_desc:0 "Scripted peace deals will be forced to all nations when triggered."
+ FPW_RULE_OPTION_SCRIPTED_PEACE_AI:0 "Only for AI"
+ FPW_RULE_OPTION_SCRIPTED_PEACE_AI_desc:0 "Scripted peace deals will be forced on AI only when triggered."
+ FPW_RULE_OPTION_SCRIPTED_PEACE_DISABLED:0 "Disabled"
+ FPW_RULE_OPTION_SCRIPTED_PEACE_DISABLED_desc:0 "Scripted peace deals will be disabled for all nations when triggered."
+
+
  PRS_AI_BEHAVIOR:0 "@PRS Prussia"
  RULE_OPTION_MONARCHISM_PRS:0 "Monarchist - Wilhelm's Germany"
  RULE_OPTION_MONARCHISM_PRS_AI_DESC:0 ""
@@ -36,7 +45,5 @@
  RULE_OPTION_ITA_LIBERAL_PLAN_AI_DESC:0 ""
  RULE_OPTION_HISTORICAL_JAP_AI_DESC:0 ""
  RULE_OPTION_HISTORICAL_FRA_AI_DESC:0 ""
-
- 
  SOV_AI_BEHAVIOR:1 "@SOV Russia"
  ENG_AI_BEHAVIOR:1 "@ENG United Kingdom"
