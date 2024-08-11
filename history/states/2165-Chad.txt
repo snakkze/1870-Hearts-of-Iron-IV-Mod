@@ -4,17 +4,20 @@ state={
 	name="STATE_774"
 
 	history={
-	set_variable = { tribal = 774 }
+		set_variable = {
+			tribal = 774
+
+		}
 		owner = TRB
 		add_core_of = TRB
 		add_core_of = CHA
-		
-		
 
 	}
 
-	provinces={ 14376 }
-	manpower=29890
+	provinces={
+		13138 14376 
+	}
+	manpower=31041
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=3.000

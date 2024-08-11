@@ -1,18 +1,23 @@
 
 state={
 	id=1324
-	name="STATE_507" # Magallanes
-	manpower=3627
-	
-	state_category = pastoral
+	name="STATE_507"
 
 	history={
-	set_variable = { tribal = 507 }
+		set_variable = {
+			tribal = 507
+
+		}
 		owner = TRB
 		add_core_of = TRB
+
 	}
 
-	provinces={ 5209 }
-
-	local_supplies=0.0 
+	provinces={
+		5209 8913 
+	}
+	manpower=3577
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

@@ -13,24 +13,13 @@ state={
 		add_core_of = TRB
 		
 		
-		buildings = {
-			infrastructure = 2
-			1208 = {
-				naval_base = 1
-
-			}
-			7371 = {
-				naval_base = 2
-
-			}
-
-		}
+		
 		add_core_of = MAL
 
 	}
 
 	provinces={ 7443 }
-	manpower=24434
+	manpower=26931
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

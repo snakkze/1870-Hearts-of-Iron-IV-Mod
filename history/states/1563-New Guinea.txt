@@ -7,34 +7,14 @@ state={
 		add_core_of = PNG
 		owner = TRB
 		add_core_of = TRB
-		buildings = {
-			infrastructure = 1
-
-			4329 = {
-				naval_base = 3
-
-			}
-			12237 = {
-				naval_base = 2
-
-			}
-			12154 = {
-				naval_base = 1
-
-			}
-			12240 = {
-				naval_base = 1
-
-			}
-
-		}
+		
 		
 		
 
 	}
 
 	provinces={ 7333 }
-	manpower=13092
+	manpower=12873
 	buildings_max_level_factor=1
 	state_category="rural"
 

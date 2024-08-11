@@ -15,31 +15,14 @@ state={
 		
 		
 		
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			12299 = {
-				naval_base = 8
-				coastal_bunker = 3
-
-			}
-			7329 = {
-				naval_base = 1
-
-			}
-			10297 = {
-				naval_base = 5
-
-			}
-
-		}
+		
 		add_core_of = TRB
 		add_core_of = MAL
 
 	}
 
 	provinces={ 1348 }
-	manpower=68125
+	manpower=69491
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000
