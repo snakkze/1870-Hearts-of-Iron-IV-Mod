@@ -1,0 +1,24 @@
+
+state={
+	id=1862
+	name="STATE_548"
+	resources={
+		rubber=3.000
+	}
+
+	history={
+	set_variable = { tribal = 548 }
+		owner = TRB
+		add_core_of = TRB
+		
+		add_core_of = UGA
+		
+
+	}
+
+	provinces={ 14493 }
+	manpower=136715
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

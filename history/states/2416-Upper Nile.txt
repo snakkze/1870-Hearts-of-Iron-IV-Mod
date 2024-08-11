@@ -1,0 +1,20 @@
+
+state={
+	id=2416
+	name="STATE_884"
+
+	history={
+	set_variable = { tribal = 884 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = SUD
+		
+
+	}
+
+	provinces={ 14405 }
+	manpower=23349
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

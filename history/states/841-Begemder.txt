@@ -4,23 +4,6 @@ state={
 	name="STATE_841"
 
 	history={
-		set_variable = {
-			ETH_state_development_production_speed = -0.3
-
-		}
-		set_variable = {
-			ETH_state_development_local_building_slots_factor = -0.3
-
-		}
-		add_dynamic_modifier = {
-			modifier = ETH_state_development_dynamic_modifier
-
-		}
-		add_dynamic_modifier = {
-			modifier = ETH_state_decentralization_dynamic_modifier
-			scope = ETH
-
-		}
 		buildings = {
 
 		}
@@ -39,7 +22,7 @@ state={
 	}
 
 	provinces={
-		1984 2040 12723 13137 13241 13251 
+		4995
 	}
 	manpower=572000
 	buildings_max_level_factor=1.000

@@ -4,20 +4,16 @@ state={
 	name="STATE_899"
 
 	history={
-owner = TRB
-add_core_of = TRB
+	set_variable = { tribal = 899 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = MLI
-		buildings = {
-			infrastructure = 2
-
-		}
+		
 
 	}
 
-	provinces={
-		10812 10829 10915 12751 12838 
-	}
-	manpower=605110
+	provinces={ 13287 }
+	manpower=37133
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

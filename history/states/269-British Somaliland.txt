@@ -1,31 +1,22 @@
-state=
-{
+
+state={
 	id=269
 	name="STATE_269"
-	manpower = 179244
-	
-	state_category = enclave
-	
-	history= {
-owner = TRB
-add_core_of = TRB
-		victory_points = { 
-			10833 1
-		}
-		victory_points = { 
-			5068 1
-		}
+
+	history={
+	set_variable = { tribal = 269 }
+		owner = TRB
+		add_core_of = TRB
+		
+		
 		add_core_of = SOM
-		buildings = {
-			infrastructure = 2
-			10833 = {
-				naval_base = 1
-			}
-		}
-	}
-	provinces={
-		1905 5068 8094 10833 10921 12759 12814
+		
+
 	}
 
-	local_supplies=0.0 
+	provinces={ 5046 }
+	manpower=23427
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
 }

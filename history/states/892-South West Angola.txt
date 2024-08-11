@@ -5,6 +5,8 @@ state={
 
 	history={
 		owner = POR
+		add_core_of = POR
+		add_core_of = ANG
 		buildings = {
 			infrastructure = 1
 
@@ -17,7 +19,7 @@ state={
 	}
 
 	provinces={
-		10966 12958 
+		13281 13411 13651 13660 13767 13797 14027 14061 14075 14118 14556 14561 14564 14567 14568 14571 
 	}
 	manpower=499200
 	buildings_max_level_factor=1.000

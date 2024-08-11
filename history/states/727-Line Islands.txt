@@ -1,17 +1,16 @@
 state={
 	id=727
 	name="STATE_727"
-	manpower=2791
+	manpower=944
 	state_category = small_island
 
 	history={
+	set_variable = { tribal = 727 }
 		owner = TRB
 		add_core_of = TRB
 	}
 	
-	provinces={
-		13048 13049 13053 
-	}
+	provinces={ 13048 }
 
 	local_supplies=0.0 
 }

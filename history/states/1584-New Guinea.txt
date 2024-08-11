@@ -1,0 +1,22 @@
+state={
+	id=1584
+	name="STATE_523"
+
+	history={
+	set_variable = { tribal = 523 }
+		add_core_of = PNG
+		owner = TRB
+		add_core_of = TRB
+		
+		
+		
+
+	}
+
+	provinces={ 12193 }
+	manpower=12500
+	buildings_max_level_factor=1
+	state_category="rural"
+
+	local_supplies=0.0 
+}

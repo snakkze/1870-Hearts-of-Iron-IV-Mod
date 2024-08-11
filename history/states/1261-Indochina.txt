@@ -1,0 +1,26 @@
+
+state={
+	id=1261
+	name="STATE_286"
+	resources={
+		rubber=55.000
+	}
+
+	history={
+	set_variable = { tribal = 286 }
+		add_core_of = TRB
+		owner = TRB
+		
+		
+
+		1870.1.1 = {
+			owner = FRA
+		}
+	}
+
+	provinces={ 4341 }
+	manpower=211212
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

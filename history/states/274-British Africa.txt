@@ -9,27 +9,17 @@ state={
 	}
 
 	history={
+	set_variable = { tribal = 274 }
 owner = TRB
 add_core_of = TRB
 		add_core_of = GHA
-		victory_points = {
-			10862 1 
-		}
-		buildings = {
-			infrastructure = 2
-			10862 = {
-				naval_base = 2
-
-			}
-
-		}
+		
+		
 
 	}
 
-	provinces={
-		8039 8096 12785 12787 13136 
-	}
-	manpower=1645072
+	provinces={ 10988 }
+	manpower=174624
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

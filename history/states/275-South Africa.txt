@@ -8,25 +8,17 @@ state={
 	}
 
 	history={
+	set_variable = { tribal = 275 }
 		owner = TRB
 		add_core_of = TRB
-		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 5
-
-		}
-		victory_points = {
-			10400 10 
-		}
+		
+		
 		add_core_of = SAF
 
 	}
 
-	provinces={
-		1494 1509 1688 2171 2213 4556 5106 5217 5231 7900 8178 10400 10566 10668 12064 12648 
-	}
-	manpower=1913789
+	provinces={ 13300 }
+	manpower=48562
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

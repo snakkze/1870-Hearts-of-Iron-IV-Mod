@@ -4,27 +4,17 @@ state={
 	name="STATE_779"
 
 	history={
-owner = TRB
-add_core_of = TRB
+	set_variable = { tribal = 779 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = IVO
-		victory_points = {
-			10803 1 
-		}
-		buildings = {
-			infrastructure = 2
-			10803 = {
-				naval_base = 1
-
-			}
-
-		}
+		
+		
 
 	}
 
-	provinces={
-		5013 5070 8065 8122 10762 
-	}
-	manpower=2002382
+	provinces={ 13415 }
+	manpower=141045
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=1.000

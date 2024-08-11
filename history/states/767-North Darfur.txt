@@ -4,20 +4,16 @@ state={
 	name="STATE_767"
 
 	history={
-owner = TRB
-add_core_of = TRB
+	set_variable = { tribal = 767 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = SUD
-		buildings = {
-			infrastructure = 0
-
-		}
+		
 
 	}
 
-	provinces={
-		8103 
-	}
-	manpower=4234
+	provinces={ 13430 }
+	manpower=478
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

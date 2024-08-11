@@ -1,0 +1,22 @@
+
+state={
+	id=1057
+	name="STATE_1017"
+	resources={
+		chromium=17.000
+		tungsten=4.000
+	}
+
+	history={
+	set_variable = { tribal = 1017 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = ZAM
+
+	}
+	provinces={ 13586 }
+	manpower=19357
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

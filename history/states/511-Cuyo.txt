@@ -4,26 +4,21 @@ state={
 	name="STATE_511"
 
 	history={
+	set_variable = { tribal = 511 }
 		owner = TRB
 		add_core_of = TRB
 
 		1870.1.1 = {
-			buildings = {
-				infrastructure = 1
-			}
+			
 			owner = ARG
 			add_core_of = ARG
 		}
-		victory_points = {
-			12942 1 
-		}
+		
 
 	}
 
-	provinces={
-		1596 5184 8215 10418 10992 12970 
-	}
-	manpower=566942
+	provinces={ 1596 }
+	manpower=98276
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

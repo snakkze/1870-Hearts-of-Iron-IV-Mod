@@ -31,6 +31,47 @@ debug_decisions = {
 			clr_global_flag = show_debug_decisions_flag
 		}
 	}
+
+	debug_test_state_variable = {
+		priority = -1
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		complete_effect = {
+			2 = {
+				set_variable = { tribal = 5 }
+			}
+		}
+	}
+
+	debug_test__teststate_variable = {
+		priority = -1
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		complete_effect = {
+			2 = {
+				if = {
+					limit = {
+						any_neighbor_state = {
+							check_variable = { THIS.tribal = PREV.tribal }
+						}
+					}
+					log = "YES [?THIS.tribal], [THIS.GetName] equals [?var:PREV.tribal], [PREV.GetName]"
+				}
+			}
+		}
+	}
 	
 	research_all_tank_techs_nsb = {
 		icon = generic_tank

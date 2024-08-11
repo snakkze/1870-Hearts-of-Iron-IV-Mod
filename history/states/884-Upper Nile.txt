@@ -1,24 +1,20 @@
-state = {
+
+state={
 	id=884
-	name = "STATE_884"  # Upper Nile 
-	manpower = 540863
-	state_category = pastoral
+	name="STATE_884"
 
-	history = {
-owner = TRB
-add_core_of = TRB
+	history={
+	set_variable = { tribal = 884 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = SUD
-		buildings = {
-			infrastructure = 2
-
-		}
+		
 
 	}
 
-	provinces = {
-		2096 10859 10877 
-	}
-
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.000
+	provinces={ 13407 }
+	manpower=22654
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

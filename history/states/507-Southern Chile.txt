@@ -2,18 +2,17 @@
 state={
 	id=507
 	name="STATE_507" # Magallanes
-	manpower = 35720
+	manpower=3690
 	
 	state_category = pastoral
 
 	history={
+	set_variable = { tribal = 507 }
 		owner = TRB
 		add_core_of = TRB
 	}
 
-	provinces={
-		2161 5118 5159 5201 5209 5215 8198 8218 8913 10961 
-	}
+	provinces={ 2161 }
 
 	local_supplies=0.0 
 }

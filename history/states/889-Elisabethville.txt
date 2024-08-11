@@ -1,28 +1,23 @@
-state = {
-	id = 889
-	name = "STATE_889"
-	manpower = 368259
-	state_category = pastoral
 
+state={
+	id=889
+	name="STATE_889"
 	resources={
 		tungsten=2.000
 	}
 
-	history = {
-owner = TRB
-add_core_of = TRB
-		buildings = {
-			infrastructure = 1
-
-		}
+	history={
+	set_variable = { tribal = 889 }
+		owner = TRB
+		add_core_of = TRB
+		
 		add_core_of = COG
 
 	}
-	
-	provinces = {
-		191 1516 1817 1968 4515 12795 12907 
-	}
 
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.000
+	provinces={ 13306 }
+	manpower=13818
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

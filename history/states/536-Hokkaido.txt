@@ -2,35 +2,26 @@
 state = {
 	id = 536
 	name = "STATE_536"
-	manpower = 58571
+	manpower=4650
 	
 	state_category = rural
 
 	history = {
+	set_variable = { tribal = 536 }
 
 		owner = TRB
 		add_core_of = TRB
 		add_core_of = EZO
 		add_claim_by = JAP
 		
-		buildings = {
-			3962 = {
-				naval_base = 2
-			}
-		}
+		
 
-		victory_points = {
-			10444 15 # Sapporo
-		}
-		victory_points = {
-			3962 40 # Hakodate
-		}
+		
+		
 
 	}
 
-	provinces = {
-		1512 1642 3962 4576 4646 7532 7595 10444 10512 12352 12421 12493 
-	}
+	provinces={ 1512 }
 
 	local_supplies = 20.0 
 }

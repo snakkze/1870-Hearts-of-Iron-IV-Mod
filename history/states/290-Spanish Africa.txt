@@ -2,13 +2,8 @@
 state={
 	id=290
 	name="STATE_290"
-	manpower = 386880
-	
-	
-	state_category = rural
-	
 	resources={
-		steel=40 #was:23 was: 20 . Changed to 23 (from 15) due to Portugal Setup
+		steel=40.000
 	}
 
 	history={
@@ -16,28 +11,34 @@ state={
 		add_core_of = MOR
 		add_core_of = RIF
 		victory_points = {
-			9945 3
+			9945 3 
 		}
 		victory_points = {
-			12100 2
+			12100 2 
 		}
 		victory_points = {
-			12087 1
+			12087 1 
 		}
 		buildings = {
 			infrastructure = 2
 			12100 = {
 				naval_base = 3
+
 			}
 			9945 = {
 				naval_base = 3
+
 			}
+
 		}
+
 	}
 
-	provinces = {
-		4199 7215 9945 10113 12087 12100 
+	provinces={
+		191 988 989 1058 
 	}
-
-	local_supplies = 0.0 
+	manpower=386880
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

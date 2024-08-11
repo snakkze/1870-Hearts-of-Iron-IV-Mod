@@ -1,26 +1,26 @@
-state=
-{
+
+state={
 	id=457
-	name="STATE_457" # Arabian Desert
-	manpower = 1141
-	
-	state_category = wasteland
-	
-	history = {
+	name="STATE_457"
+
+	history={
 		owner = TUR
 		buildings = {
 			infrastructure = 1
-		}
 
+		}
 		victory_points = {
-			12002 1
+			12002 1 
 		}
-
 		add_core_of = EGY
-	}
-	provinces={
-		1080 4068 4910 5069 7156 9957 10126 12002 12889 
+
 	}
 
-	local_supplies=0.0 
+	provinces={
+		7987 7989 7992 7996 8006 8008 8015 8016 8019 8021 8116 8122 
+	}
+	manpower=1141
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

@@ -1,0 +1,22 @@
+state={
+	id=1981
+	name="STATE_634"
+
+	history={
+	set_variable = { tribal = 634 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = SOL
+		
+		
+		
+
+	}
+
+	provinces={ 10291 }
+	manpower=5807
+	buildings_max_level_factor=1
+	state_category="small_island"
+
+	local_supplies=0.0 
+}

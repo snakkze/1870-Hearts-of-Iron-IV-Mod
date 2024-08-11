@@ -4,21 +4,17 @@ state={
 	name="STATE_894"
 
 	history={
-owner = TRB
-add_core_of = TRB
-		buildings = {
-			infrastructure = 2
-
-		}
+	set_variable = { tribal = 894 }
+		owner = TRB
+		add_core_of = TRB
+		
 		add_core_of = SAF
 		add_core_of = NMB
 
 	}
 
-	provinces={
-		8138 8202 10957 10978 12921 12985 
-	}
-	manpower=36036
+	provinces={ 2229 }
+	manpower=1828
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

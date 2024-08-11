@@ -1,0 +1,21 @@
+
+state={
+	id=2095
+	name="STATE_770"
+
+	history={
+	set_variable = { tribal = 770 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = MLW
+		
+		
+
+	}
+
+	provinces={ 12826 }
+	manpower=96142
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

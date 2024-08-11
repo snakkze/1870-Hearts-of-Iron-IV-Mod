@@ -1,32 +1,23 @@
+
 state={
 	id=771
-	name="STATE_771" # Zambia
-	
-	state_category = rural
-
+	name="STATE_771"
 	resources={
-		chromium=35 # was: 64.000
-		tungsten=8 # was: 16.000
+		chromium=18.000
+		tungsten=4.000
 	}
 
 	history={
+	set_variable = { tribal = 771 }
 		owner = TRB
 		add_core_of = TRB
 		add_core_of = ZAM
-		victory_points = {
-			5199 1
-		}
-		buildings = {
-			infrastructure = 2
 
-		}
 	}
 
-	provinces={
-		697 1846 5199 7872 10538 10594 10930 12504 12677 13173
-	}
-	manpower=717646
+	provinces={ 12800 }
+	manpower=9370
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
+	state_category=rural
+	local_supplies=0.000
 }

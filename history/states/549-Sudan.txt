@@ -1,28 +1,20 @@
 
 state={
 	id=549
-	name="STATE_549" #Kurdufan / was "Sudan"
-	
-	manpower = 937109
+	name="STATE_549"
 
-	history = {
-owner = TRB
-add_core_of = TRB
-		victory_points = {
-			2096 1 
-		}
+	history={
+	set_variable = { tribal = 549 }
+		owner = TRB
+		add_core_of = TRB
+		
 		add_core_of = SUD
-		buildings = {
-			infrastructure = 2
-
-		}
+		
 
 	}
 
-	provinces={
-		2016 4033 8052 8084 10739 10827 10851 12744 
-	}
-
+	provinces={ 13289 }
+	manpower=30454
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

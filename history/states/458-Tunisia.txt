@@ -2,10 +2,8 @@
 state={
 	id=458
 	name="STATE_458"
-	manpower = 1031129
-	state_category = town
 	resources={
-		steel=31 #was 14 # was: 8
+		steel=31.000
 	}
 
 	history={
@@ -25,13 +23,18 @@ state={
 			industrial_complex = 1
 			9994 = {
 				naval_base = 8
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969 
+		1914 1929 1932 1958 1960 13145 13179 
 	}
-
-	local_supplies=0.0 
+	manpower=1031129
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

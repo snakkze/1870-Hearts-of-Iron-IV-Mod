@@ -1,22 +1,20 @@
+
 state={
 	id=902
 	name="STATE_902"
-	manpower = 172889
-	state_category = pastoral
 
 	history={
-owner = TRB
-add_core_of = TRB
+	set_variable = { tribal = 902 }
+		owner = TRB
+		add_core_of = TRB
 		add_core_of = NGA
-		buildings = {
-			infrastructure = 1
-		}
+		
+
 	}
 
-	provinces={
-		1891 1932 1969 2025 4938 4972 8021 
-	}
-	
+	provinces={ 11954 }
+	manpower=7621
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
