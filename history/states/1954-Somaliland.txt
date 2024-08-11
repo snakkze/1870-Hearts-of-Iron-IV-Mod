@@ -1,0 +1,24 @@
+
+state={
+	id=1954
+	name="STATE_559"
+	resources={
+		steel=1.000
+	}
+
+	history={
+	set_variable = { tribal = 559 }
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = SOM
+		
+		
+
+	}
+
+	provinces={ 5060 }
+	manpower=26473
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,20 @@
+
+state={
+	id=1748
+	name="STATE_545"
+
+	history={
+	set_variable = { tribal = 545 }
+		owner = TRB
+		add_core_of = TRB
+		
+		add_core_of = ZIM
+
+	}
+
+	provinces={ 13561 }
+	manpower=16962
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=3.000
+}

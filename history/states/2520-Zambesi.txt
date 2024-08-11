@@ -1,0 +1,23 @@
+
+state={
+	id=2520
+	name="STATE_891"
+	resources={
+		rubber=1.000
+	}
+
+	history={
+	set_variable = { tribal = 891 }
+		owner = TRB
+		add_core_of = TRB
+		
+		add_core_of = ANG
+
+	}
+
+	provinces={ 13329 }
+	manpower=7618
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=1799
+	name="STATE_546"
+	resources={
+		rubber=2.000
+	}
+
+	history={
+	set_variable = { tribal = 546 }
+		owner = TRB
+		add_core_of = TRB
+		
+		
+		add_core_of = TZN
+
+	}
+
+	provinces={ 10820 }
+	manpower=41873
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

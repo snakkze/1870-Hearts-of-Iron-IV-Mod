@@ -1,0 +1,33 @@
+
+state={
+	id=2384
+	name="STATE_837"
+	resources={
+		rubber=3.000
+	}
+
+	history={
+	set_variable = { tribal = 837 }
+		
+		
+		
+		
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = ETH
+		add_core_of = SID
+		add_core_of = ORO
+		1936.6.1 = {
+			owner = ITA
+			controller = ITA
+
+		}
+
+	}
+
+	provinces={ 7149 }
+	manpower=25127
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

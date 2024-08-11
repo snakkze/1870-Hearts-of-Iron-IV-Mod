@@ -1,0 +1,17 @@
+state={
+	id=2716
+	name="STATE_970"
+
+	history={
+	set_variable = { tribal = 970 }
+		owner = TRB
+		add_core_of = TRB
+		
+
+	}
+	provinces={ 10509 }
+	manpower=241628
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

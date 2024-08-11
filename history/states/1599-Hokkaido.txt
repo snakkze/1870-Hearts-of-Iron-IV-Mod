@@ -1,0 +1,27 @@
+
+state = {
+	id=1599
+	name = "STATE_536"
+	manpower=5084
+	
+	state_category = rural
+
+	history = {
+	set_variable = { tribal = 536 }
+
+		owner = TRB
+		add_core_of = TRB
+		add_core_of = EZO
+		add_claim_by = JAP
+		
+		
+
+		
+		
+
+	}
+
+	provinces={ 10512 }
+
+	local_supplies = 20.0 
+}
