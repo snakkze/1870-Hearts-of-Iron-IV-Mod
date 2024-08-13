@@ -126,10 +126,6 @@ fpw_colonization_category = {
 						set_country_flag = is_colonizing
 					}
                     #log = "Activated via repeat"
-
-					PREV = {
-						clear_variable = PREV.tribal
-					}
 				}
 				
 				ROOT = {
@@ -148,6 +144,15 @@ fpw_colonization_category = {
 						}
 						force_update_dynamic_modifier = yes
 					}
+				}
+
+				every_state = {
+					limit = {
+						check_variable = { tribal = FROM.tribal }
+						has_state_flag = tribe_state
+						is_owned_by = TRB
+					}
+					log = "[This.GetName] ([This.GetID]) is valid state"
 				}
 			}
 		}
