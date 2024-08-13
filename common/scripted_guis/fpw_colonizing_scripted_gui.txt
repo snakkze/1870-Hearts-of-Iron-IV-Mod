@@ -8,13 +8,30 @@ scripted_gui = {
             always = yes
         }
 
+        triggers = {
+            colonize_button_visible = {
+                has_state_flag = tribe_state
+                is_owned_by = TRB
+                OR = {
+                    # needs fix as province definition is wrong
+                    is_coastal = yes
+                    num_owned_neighbour_states = {
+                        owner = ROOT
+                        count > 0
+                    }
+                }
+            }
+        }
+
         effects = {
             colonize_button_click = {
+                # check if can be colonized
                 if = {
         			limit = {
                         NOT = {
                             ROOT = {
-                                has_country_flag = is_colonizing
+                                #has_country_flag = is_colonizing
+                                is_ai = yes
                             }
                         }
                         has_state_flag = tribe_state
@@ -40,9 +57,10 @@ scripted_gui = {
                             }
         				}
         			}
-                    set_variable = { ROOT.colonial_time = 250 }
+                    # calculate time
+                    set_variable = { ROOT.colonial_time = 50 }
                     set_variable = { ROOT.temp_population = state_population_k }
-				    divide_variable = { ROOT.temp_population = 1750 }
+				    divide_variable = { ROOT.temp_population = 50 }
                     add_to_variable = { ROOT.temp_population = 1 }
 
                     multiply_variable = {
@@ -50,26 +68,42 @@ scripted_gui = {
                         value = ROOT.temp_population
                     }
 
+                    # malaria
+                    # not has tech
+                    #multiply_variable = {
+                    #    var = ROOT.colonial_time
+                    #    value = 9
+                    #}
+
                     multiply_variable = {
                         var = ROOT.colonial_time
                         value = ROOT.extra_colonizing_speed
                     }
+
+                    # DEBUG, to be removed
+                    set_variable = { ROOT.colonial_time = 1 }
 			
-        		    #transfer_state_to = ROOT
 				    set_state_flag = colonizing_by_@ROOT
 
-                    set_variable = { THIS.integration_time = ROOT.colonial_time }
+                    #set_variable = { THIS.integration_time = ROOT.colonial_time }
+                    
+                    # start colonization
                     
                     ROOT = {
-                        activate_mission = colonization_descision
+                        activate_targeted_decision = {
+                            target = PREV
+                            decision = colonization_descision
+                        }
                         set_country_flag = is_colonizing
                     }
+                    #log = "Activated via button"
         		}
             }
         }
 
         ai_enabled = {
             always = no
+            #is_historical_focus_on = yes
         }
 
         ai_test_interval = 290  # The higher, the long it takes the ai to do actions

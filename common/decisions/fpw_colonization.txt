@@ -3,18 +3,25 @@ fpw_colonization_category = {
 	colonization_descision = {
 
 		visible = {
-			has_country_flag = is_colonizing
+			FROM = {
+				is_owned_by = TRB
+			}
 		}
 
 		available = {
-			always = no
+			FROM = {
+				NOT = {
+					is_owned_by = TRB
+				}
+			}
 		}
 
 		allowed = {
 			always = no
 		}
 
-		target_trigger = {
+		state_target = yes
+		target_root_trigger = {
 			FROM = {
 				original_tag = TRB
 			}
@@ -22,14 +29,16 @@ fpw_colonization_category = {
 
 		highlight_states = {
 			highlight_states_trigger = {
-				has_state_flag = colonizing_by_@ROOT
+				FROM = {
+					state = THIS
+				}
 			}
 		}
 
-		#on_map_mode = map_only
 		icon = GFX_decision_colonize
 		fire_only_once = no
-		days_remove = ROOT.colonial_time
+		days_mission_timeout = ROOT.colonial_time
+		#days_mission_timeout = 5
 
 		ai_will_do = {
 			factor = 200
@@ -39,28 +48,19 @@ fpw_colonization_category = {
 			}
 		}
 
-		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = colonizing_by_@ROOT
-				}
-				# State Population
+		timeout_effect = {
+			FROM = {
+				# now that we have multiple colonisations at the same time this limit has to be changed
+
+				# Calculate the debuff amount
 				set_variable = { ROOT.temp_debuff_population = state_population_k }
 				round_variable = ROOT.temp_debuff_population
-
-				# Calculation of the Function
 				set_variable = { ROOT.temp_num = 0.003 }
-				multiply_variable = { ROOT.temp_num = ROOT.temp_debuff_population } # times population_k
+				multiply_variable = { ROOT.temp_num = ROOT.temp_debuff_population }
 				add_to_variable = { ROOT.temp_num = 6 }
-
-				# Make Ready for usage
 				set_variable = { ROOT.temp_debuff = ROOT.temp_num }
 				round_variable = ROOT.temp_debuff
-
-				# Setup for Tooltip
 				add_to_variable = { ROOT.debuff_tt = ROOT.temp_debuff }
-
-				# Setup for usage in modifier(0.xx)
 				divide_variable = { ROOT.temp_debuff = 100 }
 
 				# Sum of all debuffs
@@ -77,10 +77,64 @@ fpw_colonization_category = {
 				clr_state_flag = colonizing_by_@ROOT
 				clr_state_flag = tribe_state
 				set_state_flag = is_colonized_by_@ROOT
-				#add_claim_by = ROOT Make it a integration Feature
-				remove_core_of = TRB
+
+				#log = "Phase 2: [THIS.GetID]"
+				
+				random_neighbor_state = {
+					limit = {
+						check_variable = { THIS.tribal = PREV.tribal }
+						has_state_flag = tribe_state
+						is_owned_by = TRB
+					}
+					#log = "Found new state to use: [THIS.GetID]"
+					set_variable = { ROOT.colonial_time = 50 }
+					set_variable = { ROOT.temp_population = state_population_k }
+					divide_variable = { ROOT.temp_population = 50 }
+					add_to_variable = { ROOT.temp_population = 1 }
+
+					multiply_variable = {
+						var = ROOT.colonial_time
+						value = ROOT.temp_population
+					}
+
+					# malaria
+					# not has tech
+					#multiply_variable = {
+					#    var = ROOT.colonial_time
+					#    value = 9
+					#}
+
+					multiply_variable = {
+						var = ROOT.colonial_time
+						value = ROOT.extra_colonizing_speed
+					}
+
+					set_variable = { ROOT.colonial_time = 1 }
+			
+					#transfer_state_to = ROOT
+					set_state_flag = colonizing_by_@ROOT
+
+					set_variable = { THIS.integration_time = ROOT.colonial_time }
+					
+					#log = "Phase 1: [THIS.GetID]"
+
+					ROOT = {
+						activate_targeted_decision = {
+							target = PREV
+							decision = colonization_descision
+						}
+						set_country_flag = is_colonizing
+					}
+                    #log = "Activated via repeat"
+
+					PREV = {
+						clear_variable = PREV.tribal
+					}
+				}
+				
 				ROOT = {
-                    clr_country_flag = is_colonizing
+					# remove
+					clr_country_flag = is_colonizing
 					if = {
 						limit = {
 							NOT = {
