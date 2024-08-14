@@ -147,8 +147,17 @@ spriteTypes = {
 		name = "GFX_portrait_SOV_dmitry_milyutin"
 		texturefile = "gfx/leaders/SOV/Portrait_SOV_dmitry_milyutin.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_SOV_friedrich_von_berg"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_friedrich_von_berg.dds"
+	}
 	
+	# POL
 	
+	spriteType = {
+		name = "GFX_portrait_POL_wladyslaw_czartoryski"
+		texturefile = "gfx/leaders/POL/Portrait_POL_wladyslaw_czartoryski.dds"
+	}
 	
 	# TUR
 	spriteType = {

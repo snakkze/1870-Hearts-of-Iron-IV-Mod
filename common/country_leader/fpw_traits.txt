@@ -162,5 +162,74 @@ leader_traits = {
 		army_core_defence_factor = 0.05
 	}
 	
+	fpw_russian_leader = {
+		random = no
+		war_support_factor = -0.20
+		stability_factor = -0.20
+		political_power_factor = 0.20
+	}
+	
+	fpw_education_minister = {
+		random = no
+		research_speed_factor = 0.05
+		political_power_factor = 0.05
+	}
+	
+	fpw_reform_proponent = {
+		random = no
+		democratic_drift = 0.05
+		political_power_factor = 0.15
+	}
+	
+	fpw_influential_lawyer = {
+		random = no
+		fascism_drift = 0.02
+		democratic_drift = 0.02
+		political_power_factor = 0.05
+		stability_factor = 0.10
+	}
+	
+	fpw_finance_minister = {
+		random = no
+		consumer_goods_factor = -0.1
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		
+	}
+	
+	fpw_socialist_writer = {
+		random = no
+		political_power_factor = 0.05
+		communism_drift = 0.10
+	}
+	
+	fpw_conservative_figure = {
+		random = no
+		political_power_factor = 0.05
+		democratic_drift = 0.10
+	}
+	
+	fpw_liberal_activist = {
+		random = no
+		political_power_factor = 0.05
+		fascism_drift = 0.10
+	}
+	
+	fpw_utopian_socialist = {
+		random = no
+		political_power_factor = 0.10
+		stability_factor = -0.05
+		research_speed_factor = 0.05
+		communism_drift = 0.05
+	}
+	
+	fpw_narodniks_philosopher = {
+		random = no
+		political_power_gain = 0.25
+		stability_factor = 0.05
+		communism_drift = 0.02
+	}
+	
 	
 }

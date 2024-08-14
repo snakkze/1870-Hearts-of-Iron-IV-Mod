@@ -53,7 +53,7 @@
  
  
  SOV_more_radical_reforms: "More Radical Reforms"
- SOV_pay_of_serfs: "Pay of Serfs"
+ SOV_pay_of_serfs: "Subsidies For Peasants"
  SOV_pay_of_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+10.0%§! \nMax Factories in a State: §G+20.00%§! \n\n"
  SOV_new_agricultural_economy: "New Agricultural Economy"
  SOV_new_agricultural_economy_effect_tt: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+5.0%§! \nProduction Efficiency Cap: §G+10.00%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§! \n\n"
@@ -66,11 +66,15 @@
  
  SOV_plot_against_the_tsars: "Plot Against the Tsar"
  SOV_gather_support: "Gather Support"
+ SOV_gather_support_tp: "Unlocks decisions:\n §Y$russia_gathering_support$§!"
  SOV_bribe_officials: "Bribe Officials"
  SOV_infiltrate_military_bases: "Infiltrate Military Bases"
+ SOV_infiltrate_military_bases_tp: "Unlocks decisions:\n §Y$russia_infiltrate_military$§!"
  SOV_choose_a_side: "Choose a Side"
+ SOV_choose_a_side_trigger_tp: "§RYou need at least 50% civil support to take this focus§!\n"
  
  SOV_military_dictatorship: "Military Dictatorship"
+ SOV_military_dictatorship_trigger_tp: "§RYou need at least 60% military support to take this focus§!\n"
  SOV_neutrality_military_dictatorship: "Military Dictatorship" # New Party name
  SOV_solidify_control: "Solidify Control"
  SOV_military_in_the_government: "Military in the Government"
@@ -88,10 +92,28 @@
  
  SOV_western_principles: "Weastern Principles"
  SOV_organizing_first_elections: "Organizing First Elections"
+ SOV_conservative_government: "Conservative Government"
+ SOV_conservative_government_party: "All-Russian Conservative Party"
+ SOV_treaty_of_the_two_empires: "Treaty of the Two Empires"
+ SOV_liberal_government: "Liberal Government"
+ SOV_liberal_government_party: "All-Russian Liberal Party"
+ SOV_free_press: "Freedom of Press"
+ SOV_constitutional_empire: "Constitutional Empire"
  
  SOV_exile_tsar: "Exile the Tsar"
+ SOV_rapid_liberalization: "Rapid Liberalization"
  
  SOV_movement_of_the_people: "Movement of the People"
+ SOV_movement_of_the_people_trigger_tp: "§RYou need at least 60% civil support to take this focus§!\n"
+ SOV_movement_of_the_people_effect_tp: "§RCompleting this focus will start a civil war!§!\n"
+ SOV_raise_the_masses: "Raise the Masses"
+ SOV_restructure_the_administration: "Restructure the Administration"
+ SOV_peasant_relief_program: "Peasant Relief Program"
+ SOV_peasant_relief_program_tp: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+25.0%§! \nMax Factories in a State: §G+30.00%§! \nProduction Efficiency Cap: §G+25.00%§! \nResource Gain Efficiency: §G+20.00%§! \nFactory Output: §G+5.00%§! \nDockyard Output: §G+5.00%§! \n\n"
+ SOV_get_rid_of_royalty: "Get Rid of Royalty"
+ SOV_common_education: "Common Education"
+ SOV_common_education_tp: "$SOV_modify_sr_ns_intro$ \nResearch Speed: §G+10.0%§! \n\n"
+ SOV_establish_a_new_government: "Establish a New Government"
  
  ## Diplomacy Branch
  
@@ -158,6 +180,7 @@
  SOV_russian_army: "Russian Army"
  SOV_local_advisors: "Local Advisors"
  SOV_universal_conscription: "Universal Conscription"
+ SOV_cossack_cavalery: "Cossack Cavalery"
  SOV_improve_military_education: "Improve Military Education"
  SOV_new_oficer_core: "New Officer Core"
  SOV_build_fortifications: "Build Fortifications"

@@ -137,6 +137,17 @@ recruit_character = SOV_grigol_dadiani
 recruit_character = SOV_pyotr_vannovsky
 recruit_character = SOV_mikhail_dragomirov
 recruit_character = SOV_eduard_totleben
+recruit_character = SOV_lev_tolstoy
+recruit_character = SOV_alexander_golovnin
+recruit_character = SOV_pyotr_valuyev
+recruit_character = SOV_sergei_zarudny
+recruit_character = SOV_michael_von_reutern
+recruit_character = SOV_pyotr_lavrov
+recruit_character = SOV_ivan_turgenev
+recruit_character = SOV_aleksandar_hilferding
+recruit_character = SOV_pyotr_rachkovsky
+recruit_character = SOV_nikolay_chernyshevsky
+recruit_character = SOV_nikolay_mikhaylovsky
 
 #RUSSIAN ARMY 
 
@@ -198,6 +209,51 @@ set_technology = {
 
 }
 
+add_ai_strategy = {
+    type = antagonize
+    id = POL
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = UKR
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = BLR
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = LIT
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = LAT
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = EST
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = GEO
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = ARM
+    value = 200
+}
+add_ai_strategy = {
+    type = antagonize
+    id = AZR
+    value = 200
+}
 
 ####
 #### VANILLA ####
@@ -239,45 +295,6 @@ set_technology = {
     tech_support = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-
-	}
-}
-
-set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
 set_convoys = 50
 

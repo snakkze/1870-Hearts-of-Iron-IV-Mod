@@ -147,7 +147,74 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_SOV_fresh_officer_core"
-		texturefile = "gfx/interface/ideas/idea_SOV_fresh_officer_core.dds"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_fresh_officer_core.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_SOV_iosif_gurko"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_iosif_gurko.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_alexander_iii"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_alexander_iii.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_dmitry_milyutin"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_dmitry_milyutin.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_eduard_totleben"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_eduard_totleben.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_grigol_dadiani"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_grigol_dadiani.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_michael_nikolaevich"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_michael_nikolaevich.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_nicholas_nikolaevich"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_nicholas_nikolaevich.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_mikhail_dragomirov"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_mikhail_dragomirov.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_mikhail_loris_melikov"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_mikhail_loris_melikov.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_pyotr_vannovsky"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_vannovsky.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_nikolay_milyutin"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_nikolay_milyutin.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_alexander_gorchakov"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_alexander_gorchakov.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_lev_tolstoy"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_lev_tolstoy.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_pavel_gagarin"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pavel_gagarin.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_dmitry_tolstoy"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_dmitry_tolstoy.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_pyotr_shuvalov"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_shuvalov.png"
+	}
+	
+	
 	
 }

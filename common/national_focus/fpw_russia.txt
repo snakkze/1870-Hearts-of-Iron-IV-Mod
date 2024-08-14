@@ -50,7 +50,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -111,7 +113,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -175,7 +179,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -211,7 +217,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -307,7 +315,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -342,7 +352,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -377,7 +389,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -415,7 +429,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -478,6 +494,9 @@ focus_tree = {
 			or = {
 				has_completed_focus = SOV_more_radical_reforms
 				has_completed_focus = SOV_western_principles
+				has_completed_focus = SOV_movement_of_the_people
+			}
+			NOT = {
 				has_completed_focus = SOV_movement_of_the_people
 			}
 		}
@@ -546,7 +565,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -606,7 +627,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -641,7 +664,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -713,7 +738,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -749,7 +776,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -786,7 +815,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
 		}
 		
 		bypass = {
@@ -884,6 +915,8 @@ focus_tree = {
 		completion_reward = {
 			country_event = russia_fpw.1
 			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = pyotr_valuyev
 			
 		}
 	}
@@ -1043,6 +1076,9 @@ focus_tree = {
 			add_to_variable = { SOV_sr_research_speed_factor = 0.05 }
 			
 			add_research_slot = 1
+			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = alexander_golovnin
 			
 			custom_effect_tooltip = SOV_battle_illiteracy_effect_tt
 			
@@ -1237,6 +1273,8 @@ focus_tree = {
 			country_event = russia_fpw.2
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = nikolay_milyutin
+			show_ideas_tooltip = pyotr_valuyev
+			show_ideas_tooltip = sergei_zarudny
 			SOV_alexander_ii = {
 				remove_trait = {
 					ideology = aboslute_monarchy
@@ -1496,6 +1534,11 @@ focus_tree = {
 					ruling_party = democratic
 					elections_allowed = no
 				}
+				set_party_name = {
+					ideology = democratic
+					long_name = SOV_conservative_government_party
+					name = SOV_conservative_government_party
+				}
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.20
@@ -1516,7 +1559,7 @@ focus_tree = {
 						promote_leader = yes
 					}
 				}
-				#add_ideas = fpw_alexander_ii
+				add_ideas = fpw_alexander_ii
 				set_country_flag = fpw_secondary_leader_sov_alexander_II
 			}
 			if = {
@@ -1527,6 +1570,11 @@ focus_tree = {
 					ruling_party = fascism
 					elections_allowed = no
 				}
+				set_party_name = {
+					ideology = fascism
+					long_name = SOV_liberal_government_party
+					name = SOV_liberal_government_party
+				}
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.10
@@ -1535,19 +1583,19 @@ focus_tree = {
 					ideology = fascism
 					popularity = 0.15
 				}
-				SOV_nikolay_milyutin = {
+				SOV_sergei_zarudny = {
 					add_country_leader_role = {
 						country_leader = {
 							expire = "1880.1.1"
 							ideology = liberal_constitutional_monarchism
 							traits = {
-								fpw_liberal_architect
+								fpw_influential_lawyer
 							}
 						}
 						promote_leader = yes
 					}
 				}
-				#add_ideas = fpw_alexander_ii
+				add_ideas = fpw_alexander_ii
 				set_country_flag = fpw_secondary_leader_sov_alexander_II
 			}
 			else = {
@@ -1605,6 +1653,8 @@ focus_tree = {
 				popularity = 0.05
 			}
 			
+			set_variable = { russia_civil_support = 0.05 }
+			set_variable = { russia_military_support = 0.02 }
 			
 		}
 	}
@@ -1639,7 +1689,31 @@ focus_tree = {
 
 		completion_reward = {
 			
+			custom_effect_tooltip = SOV_gather_support_tp
 			
+			if = {
+				limit = {
+					check_variable = { russia_civil_support < 0.91 }
+				}
+				add_to_variable = { russia_civil_support = 0.10 }
+				custom_effect_tooltip = raise_russia_civil_support_by_10_tp
+			}
+			else = {
+				set_variable = { russia_civil_support = 1 }
+				custom_effect_tooltip = raise_russia_civil_support_by_10_tp
+			}
+			
+			if = {
+				limit = {
+					check_variable = { russia_military_support < 0.97 }
+				}
+				add_to_variable = { russia_military_support = 0.04 }
+				custom_effect_tooltip = raise_russia_military_support_by_4_tp
+			}
+			else = {
+				set_variable = { russia_military_support = 1 }
+				custom_effect_tooltip = raise_russia_military_support_by_4_tp
+			}
 			
 		}
 	}
@@ -1676,6 +1750,18 @@ focus_tree = {
 			
 			add_political_power = 100
 			
+			if = {
+				limit = {
+					check_variable = { russia_civil_support < 0.81 }
+				}
+				add_to_variable = { russia_civil_support = 0.20 }
+				custom_effect_tooltip = raise_russia_civil_support_by_20_tp
+			}
+			else = {
+				set_variable = { russia_civil_support = 1 }
+				custom_effect_tooltip = raise_russia_civil_support_by_20_tp
+			}
+			
 		}
 	}
 	
@@ -1705,11 +1791,25 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
 			
+			army_experience = 20
 			
+			custom_effect_tooltip = SOV_infiltrate_military_bases_tp
+			
+			if = {
+				limit = {
+					check_variable = { russia_military_support < 0.86 }
+				}
+				add_to_variable = { russia_military_support = 0.15 }
+				custom_effect_tooltip = raise_russia_military_support_by_15_tp
+			}
+			else = {
+				set_variable = { russia_military_support = 1 }
+				custom_effect_tooltip = raise_russia_military_support_by_15_tp
+			}
 			
 		}
 	}
@@ -1732,6 +1832,7 @@ focus_tree = {
 		}
 
 		available = {
+			check_variable = { russia_civil_support > 0.49 }
 			
 		}
 		
@@ -1746,7 +1847,14 @@ focus_tree = {
 
 		completion_reward = {
 			
+			custom_effect_tooltip = SOV_choose_a_side_trigger_tp
+			
 			add_political_power = 50
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.20
+			}
 			
 		}
 	}
@@ -1759,7 +1867,7 @@ focus_tree = {
 		cost = 5
 		
 		icon = GFX_focus_generic_military_dictatorship
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = SOV_western_principles focus = SOV_movement_of_the_people }
 		prerequisite = { focus = SOV_choose_a_side }
 		relative_position_id = SOV_choose_a_side
 		
@@ -1768,7 +1876,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			check_variable = { russia_military_support > 0.59 }
 		}
 		
 		bypass = {
@@ -1781,6 +1889,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
+			
+			custom_effect_tooltip = SOV_military_dictatorship_trigger_tp
 			
 			set_politics = {
 				ruling_party = neutrality
@@ -1854,6 +1964,8 @@ focus_tree = {
 			
 			add_political_power = -100
 			
+			add_stability = 0.10
+			
 			swap_ideas = {
 				add_idea = SOV_military_dictatorship_idea_2
 				remove_idea = SOV_military_dictatorship_idea_1
@@ -1893,12 +2005,11 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
 			
-			add_stability = -0.05
-			army_experience = 50
+			army_experience = 20
 			
 			add_ideas = SOV_army_with_a_government
 			
@@ -2064,7 +2175,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -2116,6 +2227,9 @@ focus_tree = {
 			add_political_power = 50
 			
 			set_country_flag = fpw_secondary_leader_sov_alexander_II
+			hidden_effect = {
+				add_ideas = fpw_alexander_ii
+			}
 			custom_effect_tooltip = SOV_puppet_tsar_focus_tp
 			
 		}
@@ -2146,16 +2260,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
 			
 			add_war_support = 0.05
 			
+			add_stability = 0.05
+			
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
 			}
+			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = pyotr_valuyev
 			
 		}
 	}
@@ -2185,7 +2304,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
@@ -2233,6 +2352,8 @@ focus_tree = {
 			
 			add_research_slot = 1
 			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = alexander_golovnin
 			
 		}
 	}
@@ -2245,7 +2366,7 @@ focus_tree = {
 		cost = 5
 		
 		icon = GFX_goal_support_democracy
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = SOV_military_dictatorship focus = SOV_movement_of_the_people }
 		prerequisite = { focus = SOV_choose_a_side }
 		relative_position_id = SOV_choose_a_side
 		
@@ -2264,11 +2385,33 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			
-			add_political_power = 20
+			add_stability = 0.05
+			add_political_power = 50
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = nikolay_milyutin
+			show_ideas_tooltip = sergei_zarudny
+			
+			add_to_variable = { SOV_fc_political_power_gain = 0.25 }
+			add_to_variable = { SOV_fc_stability_factor = 0.04 }
+			add_to_variable = { SOV_fc_war_support_factor = 0.04 }
+			add_to_variable = { SOV_fc_civilian_advisor_cost_factor = -0.10 }
+			add_to_variable = { SOV_fc_high_command_advisor_cost_factor = -0.10 }
+			
+			
 			
 		}
 	}
@@ -2276,7 +2419,7 @@ focus_tree = {
 		id = SOV_organizing_first_elections
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		
 		icon = GFX_focus_generic_treaty
 		#mutually_exclusive = { focus =  }
@@ -2298,15 +2441,273 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_political_power = 100
+			
+			remove_ideas = SOV_ineffective_administration
+			
+		}
+	}
+	focus = {
+		id = SOV_conservative_government
+		x = -1
+		y = 1
+		cost = 5
+		
+		icon = GFX_goal_generic_defence
+		mutually_exclusive = { focus = SOV_liberal_government }
+		prerequisite = { focus = SOV_organizing_first_elections }
+		prerequisite = { focus = SOV_appeasing_conservatives }
+		relative_position_id = SOV_organizing_first_elections
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_stability = 0.05
+			
+			add_political_power = 50
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = SOV_conservative_government_party
+				name = SOV_conservative_government_party
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			SOV_pavel_gagarin = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1880.1.1"
+						ideology = conservative_constitutional_monarchism
+						traits = {
+							silent_workhorse
+						}
+					}
+					promote_leader = yes
+				}
+			}
+			
+			add_to_variable = { SOV_fc_stability_factor = 0.02 }
+			add_to_variable = { SOV_fc_democratic_drift = 0.03 }
+			
+		}
+	}
+	focus = {
+		id = SOV_treaty_of_the_two_empires
+		x = 0
+		y = 1
+		cost = 5
+		
+		icon = GFX_focus_chi_british_cooperation
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_conservative_government }
+		relative_position_id = SOV_conservative_government
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			
-			add_political_power = 20
+			add_war_support = 0.05
+			ENG = {
+				country_event = {
+					id = russia_fpw.37
+					days = 1
+				}
+			}
 			
 		}
 	}
 	
+	focus = {
+		id = SOV_liberal_government
+		x = 1
+		y = 1
+		cost = 5
+		
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = { focus = SOV_conservative_government }
+		prerequisite = { focus = SOV_organizing_first_elections }
+		prerequisite = { focus = SOV_rapid_liberalization }
+		relative_position_id = SOV_organizing_first_elections
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+			add_war_support = 0.05
+			
+			add_political_power = 50
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = SOV_liberal_government_party
+				name = SOV_liberal_government_party
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			SOV_sergei_zarudny = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1880.1.1"
+						ideology = liberalism
+						traits = {
+							fpw_influential_lawyer
+						}
+					}
+					promote_leader = yes
+				}
+			}
+			
+			add_to_variable = { SOV_fc_stability_factor = -0.02 }
+			add_to_variable = { SOV_fc_fascism_drift = 0.03 }
+			
+		}
+	}
+	focus = {
+		id = SOV_free_press
+		x = 0
+		y = 1
+		cost = 5
+		
+		icon = GFX_goal_generic_propaganda
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_liberal_government }
+		relative_position_id = SOV_liberal_government
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = press_freedom
+				days = 1460
+			}
+			
+		}
+	}
+	focus = {
+		id = SOV_constitutional_empire
+		x = -1
+		y = 1
+		cost = 5
+		
+		icon = GFX_goal_generic_forceful_treaty
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_free_press focus = SOV_treaty_of_the_two_empires }
+		relative_position_id = SOV_free_press
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_stability = 0.10
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			
+			add_dynamic_modifier = { modifier = SOV_first_constitution_dynamic_modifier }
+			
+			
+		}
+	}
 	
 	focus = {
 		id = SOV_exile_tsar
@@ -2342,6 +2743,51 @@ focus_tree = {
 			add_political_power = 100
 			
 			retire_character = SOV_alexander_ii
+			retire_character = SOV_alexander_iii
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_rapid_liberalization
+		x = -1
+		y = 1
+		cost = 5
+		
+		icon = GFX_focus_ARG_defense_and_democracy
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_exile_tsar }
+		relative_position_id = SOV_exile_tsar
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_completed_focus = SOV_movement_of_the_people
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_stability = -0.10
+			add_political_power = 50
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			
 			
 		}
 	}
@@ -2353,7 +2799,7 @@ focus_tree = {
 		cost = 5
 		
 		icon = GFX_goal_support_communism
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = SOV_military_dictatorship focus = SOV_western_principles }
 		prerequisite = { focus = SOV_choose_a_side }
 		relative_position_id = SOV_choose_a_side
 		
@@ -2362,7 +2808,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			check_variable = { russia_civil_support > 0.59 }
 		}
 		
 		bypass = {
@@ -2376,10 +2822,375 @@ focus_tree = {
 
 		completion_reward = {
 			
-			add_political_power = 20
+			custom_effect_tooltip = SOV_movement_of_the_people_trigger_tp
+			
+			add_political_power = 50
+			
+			custom_effect_tooltip = SOV_movement_of_the_people_effect_tp
+			
+			#set_politics = {
+			#	ruling_party = communism
+			#	elections_allowed = no
+			#}
+			
+			hidden_effect = { 
+				set_variable = { russia_opposition_military_support = 1 }
+				subtract_from_variable = {
+					var = russia_opposition_military_support
+					value = russia_military_support
+				}
+				
+				set_capital = {
+					state = 202
+					remember_old_capital = yes
+				}
+				
+				start_civil_war = {
+					ruling_party = communism
+					ideology = neutrality
+					
+					army_ratio = russia_opposition_military_support
+					
+					keep_all_characters = yes
+					PREV = {  # Original country
+						SOV_alexander_ii = { # Character
+							set_nationality = PREV.PREV
+							# Transfers to breakaway
+							promote_character = yes
+						}
+						SOV_alexander_iii = { # Character
+							set_nationality = PREV.PREV
+							# Transfers to breakaway
+						}
+					
+					}
+					capital = 195
+					states = {
+						195 208 244 263 209 246 210 247 219 264 242 243 205 223 254 207 810 206 96 255 239 257 258 222 401 829 217 260 265 245 351 248 253 252 216 879 880 214 825 262 581 397 400 833 256 250 399 249 251 241 224 398 573 651 652 407 406 236 237
+					}
+				}
+				
+				
+				SOV = {
+					set_autonomy = {
+						target = FIN
+						autonomous_state = autonomy_free
+					}
+					remove_from_faction = FIN
+				}
+				FIN = { 
+					leave_faction = yes 
+					clr_country_flag = fpw_secondary_leader_fin_alexander_II
+					remove_ideas = fpw_alexander_ii
+					set_nationality = {
+						target_country = SOV
+						character = SOV_nikolai_adlerberg
+					}
+				}
+				
+				random_other_country = {
+					limit = {
+						original_tag = SOV
+						has_government = neutrality
+					}
+					set_cosmetic_tag = SOV_tsarist
+				}
+				
+				set_cosmetic_tag = SOV_socialism_civil_war
+				
+				
+			}
+			
 			
 		}
 	}
+	
+	focus = {
+		id = SOV_raise_the_masses
+		x = 1
+		y = 1
+		cost = 10
+		
+		icon = GFX_goal_generic_war_with_comintern
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_movement_of_the_people }
+		relative_position_id = SOV_movement_of_the_people
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+
+		completion_reward = {
+			
+			add_ideas = SOV_mass_mobilization
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 20000
+				producer = SOV
+			}
+			
+			add_war_support = 0.15
+			
+		}
+		
+	}
+	
+	focus = {
+		id = SOV_restructure_the_administration
+		x = 3
+		y = 1
+		cost = 5
+		
+		icon = GFX_goal_generic_forceful_treaty
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_movement_of_the_people }
+		relative_position_id = SOV_movement_of_the_people
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			remove_ideas = SOV_ineffective_administration
+			
+			add_stability = 0.10
+			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			
+			
+		}
+	
+	}
+	
+	focus = {
+		id = SOV_peasant_relief_program
+		x = 1
+		y = 1
+		cost = 10
+		
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_raise_the_masses }
+		prerequisite = { focus = SOV_restructure_the_administration }
+		relative_position_id = SOV_raise_the_masses
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_stability = 0.05
+			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			
+			add_to_variable = { SOV_sr_consumer_goods_factor = 0.25 }
+			add_to_variable = { SOV_sr_global_building_slots_factor = 0.30 }
+			add_to_variable = { SOV_sr_production_factory_max_efficiency_factor = 0.25 }
+			add_to_variable = { SOV_sr_local_resources_factor = 0.20 }
+			add_to_variable = { SOV_sr_industrial_capacity_factory = 0.05 }
+			add_to_variable = { SOV_sr_industrial_capacity_dockyard = 0.05 }
+			
+			custom_effect_tooltip = SOV_peasant_relief_program_tp
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_common_education
+		x = 0
+		y = 1
+		cost = 10
+		
+		icon = GFX_goal_generic_propaganda
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_peasant_relief_program }
+		relative_position_id = SOV_peasant_relief_program
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			
+			add_to_variable = { SOV_sr_research_speed_factor = 0.10 }
+			
+			custom_effect_tooltip = SOV_common_education_tp
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_get_rid_of_royalty
+		x = -1
+		y = 1
+		cost = 5
+		
+		icon = GFX_goal_generic_major_war
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_raise_the_masses focus = SOV_exile_tsar }
+		relative_position_id = SOV_raise_the_masses
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_completed_focus = SOV_western_principles
+			}
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_stability = -0.05
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.10
+			}
+			
+			retire_character = SOV_nicholas_nikolaevich
+			retire_character = SOV_michael_nikolaevich
+			retire_character = SOV_iosif_gurko
+			
+		}
+		
+	}
+	
+	focus = {
+		id = SOV_establish_a_new_government
+		x = 0
+		y = 1
+		cost = 5
+		
+		icon = GFX_goal_generic_improve_relations
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_get_rid_of_royalty }
+		relative_position_id = SOV_get_rid_of_royalty
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			
+			add_stability = 0.10
+			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = nikolay_chernyshevsky
+			show_ideas_tooltip = nikolay_mikhaylovsky
+			
+		}
+		
+	}
+	
+	
+	
 	
 ##########################################################################
 #
@@ -3446,7 +4257,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_russian_economy
-		x = 11
+		x = 16
 		y = 0
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
@@ -4889,7 +5700,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_russian_army
-		x = -6
+		x = -2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
@@ -4926,6 +5737,11 @@ focus_tree = {
 			army_experience  = 10
 			country_event = russia_fpw.15
 			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = SOV
+			}
 			
 			
 		}
@@ -5016,6 +5832,49 @@ focus_tree = {
 			
 			#army_experience  = 20
 			add_ideas = SOV_universal_conscription
+			
+			
+		}
+	}
+	focus = {
+		id = SOV_cossack_cavalery
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ARMY_XP }
+		
+		icon = GFX_goal_generic_cavalry
+		#mutually_exclusive = { focus =  }
+		prerequisite = { focus = SOV_universal_conscription }
+		relative_position_id = SOV_universal_conscription
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = { russia_military_investments < 1 }
+				add = 1000
+			}
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_to_variable = { russia_military_investments = 1 }
+			
+			army_experience  = 20
+			
+			add_ideas = SOV_cossack_army
 			
 			
 		}

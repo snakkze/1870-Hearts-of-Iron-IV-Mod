@@ -163,10 +163,10 @@
  BAV_DEF:1 "the Kingdom of Bavaria"
  BAV_ADJ:0 "Bavarian"
  
- SOV:0 "Russian Empire"
- SOV_DEF:0 "the Russian Empire"
- SOV_socialism_ideology:0 "Soviet Union"
- SOV_socialism_ideology_DEF:0 "the Soviet Union"
+ SOV: "Russian Empire"
+ SOV_DEF: "the Russian Empire"
+ #SOV_socialism_ideology: "Soviet Union"
+ #SOV_socialism_ideology_DEF: "the Soviet Union"
 
  FIN_SOV_subject:0 "Grand Duchy of Finland"
  FIN_SOV_subject_DEF:0 "the Grand Duchy of Finland"

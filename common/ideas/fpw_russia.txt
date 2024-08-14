@@ -8,7 +8,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -30,7 +30,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -52,7 +52,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -76,7 +76,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -97,7 +97,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -118,7 +118,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -139,7 +139,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 			removal_cost = -1
 
 			picture = SPR_seize_the_gold_reserves
@@ -151,6 +155,10 @@ ideas = {
 		alaska_sold = {
 			allowed = {
 				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
 			}
 
 			removal_cost = -1
@@ -166,7 +174,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 			removal_cost = -1
 
 			picture = POL_disjointed_industry
@@ -184,6 +196,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -202,6 +219,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -220,6 +242,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -236,6 +263,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -253,6 +285,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -269,6 +306,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -285,6 +327,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -299,6 +346,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -313,6 +365,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -330,6 +387,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -349,6 +411,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -369,6 +436,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -384,6 +456,11 @@ ideas = {
 				always = no
 			}
 
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 			removal_cost = -1
 
 			picture = generic_research_bonus
@@ -404,6 +481,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -418,13 +500,18 @@ ideas = {
 			}
 			
 			modifier = {
-				
+				conscription = 0.005
 			}
 		}
 		SOV_fresh_officer_core = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -442,6 +529,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -461,6 +553,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 
@@ -477,6 +574,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -491,6 +593,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.10
 				war_support_factor = 0.20
+				conscription = 0.01
+				mobilization_speed = 0.2
 			}
 		}
 		
@@ -498,6 +602,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -518,6 +627,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -538,6 +652,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -558,6 +677,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -578,6 +702,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -598,6 +727,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -618,6 +752,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -639,6 +778,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -659,6 +803,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -681,6 +830,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -704,6 +858,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -728,6 +887,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -753,6 +917,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
 
 			removal_cost = -1
 			cancel = {
@@ -773,8 +942,88 @@ ideas = {
 			}
 		}
 		
+		SOV_cossack_army = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = ETH_national_studs
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				army_org_regain = 0.10
+			}
+		}
+		
+		SOV_mass_mobilization = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = MEX_politicised_army
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				conscription = 0.02
+				mobilization_speed = 0.4
+			}
+		}
+		
+		
+		
 	}
-	
+	industrial_concern = {
+		
+		SOV_moscow_merchant_bank = {
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				has_completed_focus = SOV_russian_economy
+			}
+
+			visible = {
+				
+			}
+
+			cost = 100
+
+			traits = { construction_company }
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				#production_speed_industrial_complex_factor = 0.05
+				#production_speed_arms_factory_factor = 0.05
+				#production_speed_dockyard_factor = 0.05
+			}
+		}
+	}
 	hidden_ideas = {
 		fpw_alexander_ii = {
 			allowed = {

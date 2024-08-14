@@ -1177,6 +1177,116 @@ fpw_russia_balkan_dominence_cat = {
 	
 	
 	
+}
+
+fpw_russia_plotting_agains_tsar_cat = {
+	
+	russia_gathering_support = {
+		fire_only_once = no
+		available = {
+			has_completed_focus = SOV_gather_support
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		
+		#icon = 
+		
+		#days_re_enable = 20
+		days_remove = 20
+		
+		cost = 10
+		modifier = {
+			neutrality_drift = -0.02
+		}
+		complete_effect = {
+			
+			
+		}
+		remove_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { russia_civil_support < 0.91 }
+				}
+				add_to_variable = { russia_civil_support = 0.10 }
+				custom_effect_tooltip = raise_russia_civil_support_by_10_tp
+			}
+			else = {
+				set_variable = { russia_civil_support = 1 }
+				custom_effect_tooltip = raise_russia_civil_support_by_10_tp
+			}
+			
+			
+			
+			if = {
+				limit = {
+					check_variable = { russia_military_support < 0.97 }
+				}
+				add_to_variable = { russia_military_support = 0.04 }
+				custom_effect_tooltip = raise_russia_military_support_by_4_tp
+			}
+			else = {
+				set_variable = { russia_military_support = 1 }
+				custom_effect_tooltip = raise_russia_military_support_by_4_tp
+			}
+			
+			
+		}
+		
+	}
+	
+	russia_infiltrate_military = {
+		fire_only_once = no
+		available = {
+			has_completed_focus = SOV_infiltrate_military_bases
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		
+		#icon = 
+		
+		#days_re_enable = 20
+		days_remove = 30
+		
+		cost = 10
+		modifier = {
+			political_power_cost = 0.10
+		}
+		complete_effect = {
+			
+			
+		}
+		remove_effect = {
+			
+			if = {
+				limit = {
+					check_variable = { russia_military_support < 0.96 }
+				}
+				add_to_variable = { russia_military_support = 0.05 }
+				custom_effect_tooltip = raise_russia_civil_support_by_5_tp
+			}
+			else = {
+				set_variable = { russia_military_support = 1 }
+				custom_effect_tooltip = raise_russia_civil_support_by_5_tp
+			}
+			
+			
+			
+		}
+		
+	}
+	
+	
 	
 	
 }
+
+

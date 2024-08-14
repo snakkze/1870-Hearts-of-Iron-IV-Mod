@@ -11,6 +11,16 @@
  fpw_minister_of_war: "Minister of War"
  fpw_military_leader: "Military Leader"
  fpw_exiled_patriot: "Exiled Patriot"
+ fpw_russian_leader: "Russian Leader"
+ fpw_education_minister: "Education Minister"
+ fpw_reform_proponent: "Reform Proponent"
+ fpw_influential_lawyer: "Influential Lawyer"
+ fpw_finance_minister: "Finance Minister"
+ fpw_socialist_writer: "Socialist Writer"
+ fpw_conservative_figure: "Conservative Figure"
+ fpw_liberal_activist: "Liberal Activist"
+ fpw_utopian_socialist: "Utopian Socialist"
+ fpw_narodniks_philosopher: "Narodniks Philosopher"
  
  # Characters
  
@@ -18,7 +28,7 @@
  SOV_alexander_iii: "Tsesarevich Alexander"
  
  SOV_nikolai_adlerberg: "Nikolai Adlerberg"
- 
+ SOV_friedrich_von_berg: "Friedrich von Berg"
  SOV_pavel_gagarin: "Pavel Gagarin"
  SOV_dmitry_tolstoy: "Dmitry Tolstoy"
  SOV_pyotr_shuvalov: "Pyotr Shuvalov"
@@ -26,10 +36,18 @@
  SOV_nikolay_milyutin: "Nikolay Milyutin"
  SOV_dmitry_milyutin: "Dmitry Milyutin"
  SOV_savva_mamontov: "Savva Mamontov"
+ SOV_lev_tolstoy: "Lev Tolstoy"
+ SOV_alexander_golovnin: "Alexander Golovin"
+ SOV_pyotr_valuyev: "Pyotr Valuyev"
+ SOV_sergei_zarudny: "Sergei Zarudny"
+ SOV_michael_von_reutern: "Mikhail von Reutern"
+ SOV_pyotr_lavrov: "Pyotr Lavrov"
+ SOV_ivan_turgenev: "Ivan Turgenev"
+ SOV_aleksandar_hilferding: "Alexander Hilferding"
+ SOV_pyotr_rachkovsky: "Pyotr Rachkovsky"
  
  SOV_nicholas_nikolaevich: "Grand Duke Nikolai"
  SOV_michael_nikolaevich: "Grand Duke Mikhail"
- 
  SOV_iosif_gurko: "Iosif Gurko"
  SOV_mikhail_loris_melikov: "Mikhail Loris-Melikov"
  SOV_grigol_dadiani: "Grigol Dadiani"
@@ -37,6 +55,8 @@
  SOV_mikhail_dragomirov: "Mikhail Dragomirov"
  SOV_eduard_totleben: "Eduard Totleben"
  
+ SOV_nikolay_chernyshevsky: "Nikolai Chernyshevsky"
+ SOV_nikolay_mikhaylovsky: "Nikolai Mikhaylovsky"
  
  POL_wladyslaw_czartoryski: "Władysław Czartoryski"
  

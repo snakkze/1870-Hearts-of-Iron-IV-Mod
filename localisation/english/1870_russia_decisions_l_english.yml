@@ -253,5 +253,19 @@
  
  russia_protectorate_of_bulgaria: "Establish the Protectorate of Bulgaria"
  
+ # 
+ 
+ fpw_russia_plotting_agains_tsar_cat: "Plotting Against the Tsar"
+ fpw_russia_plotting_agains_tsar_cat_desc: " \nCurrent Civil Support: [?russia_civil_support|%0+]\nCurrent Military Support: [?russia_military_support|%0+]\n"
+ 
+ raise_russia_civil_support_by_10_tp: "This will raise civil support by 10%"
+ raise_russia_civil_support_by_20_tp: "This will raise civil support by 20%"
+ 
+ raise_russia_military_support_by_4_tp: "This will raise military support by 4%"
+ raise_russia_civil_support_by_5_tp: "This will raise military support by 5%"
+ raise_russia_military_support_by_15_tp: "This will raise military support by 15%"
+ 
+ russia_gathering_support: "Gathering Support"
+ russia_infiltrate_military: "Infiltrate the Military"
  
  
