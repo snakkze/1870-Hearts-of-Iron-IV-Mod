@@ -28,10 +28,9 @@ scripted_gui = {
                 # check if can be colonized
                 if = {
         			limit = {
-                        NOT = {
-                            ROOT = {
-                                #has_country_flag = is_colonizing
-                                is_ai = yes
+                        ROOT = {
+                            check_variable = {
+                                THIS.colonists > 0
                             }
                         }
                         has_state_flag = tribe_state
@@ -57,53 +56,21 @@ scripted_gui = {
                             }
         				}
         			}
-                    # calculate time
-                    set_variable = { ROOT.colonial_time = 50 }
-                    set_variable = { ROOT.temp_population = state_population_k }
-				    divide_variable = { ROOT.temp_population = 50 }
-                    add_to_variable = { ROOT.temp_population = 1 }
-
-                    multiply_variable = {
-                        var = ROOT.colonial_time
-                        value = ROOT.temp_population
-                    }
-
-                    # malaria
-                    # not has tech
-                    #multiply_variable = {
-                    #    var = ROOT.colonial_time
-                    #    value = 9
-                    #}
-
-                    multiply_variable = {
-                        var = ROOT.colonial_time
-                        value = ROOT.extra_colonizing_speed
-                    }
-
-                    # DEBUG, to be removed
-                    set_variable = { ROOT.colonial_time = 1 }
-			
-				    set_state_flag = colonizing_by_@ROOT
-
-                    #set_variable = { THIS.integration_time = ROOT.colonial_time }
-                    
-                    # start colonization
-                    
-                    ROOT = {
-                        activate_targeted_decision = {
-                            target = PREV
-                            decision = colonization_descision
-                        }
-                        set_country_flag = is_colonizing
-                    }
-                    #log = "Activated via button"
+                    colonize_state = yes
         		}
             }
         }
 
         ai_enabled = {
-            always = no
-            #is_historical_focus_on = yes
+            is_historical_focus_on = no
+        }
+
+        ai_weights = {
+            colonize_button_click = {
+                ai_will_do = {
+                    factor = 0
+                }
+            }
         }
 
         ai_test_interval = 290  # The higher, the long it takes the ai to do actions

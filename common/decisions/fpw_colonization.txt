@@ -2,18 +2,12 @@ fpw_colonization_category = {
 
 	colonization_descision = {
 
-		visible = {
-			FROM = {
-				is_owned_by = TRB
-			}
+		activation = {
+			always = no
 		}
 
 		available = {
-			FROM = {
-				NOT = {
-					is_owned_by = TRB
-				}
-			}
+			always = no
 		}
 
 		allowed = {
@@ -21,9 +15,9 @@ fpw_colonization_category = {
 		}
 
 		state_target = yes
-		target_root_trigger = {
+		target_trigger = {
 			FROM = {
-				original_tag = TRB
+				is_owned_and_controlled_by = TRB
 			}
 		}
 
@@ -36,16 +30,17 @@ fpw_colonization_category = {
 		}
 
 		icon = GFX_decision_colonize
-		fire_only_once = no
+		fire_only_once = yes
+		is_good = yes
 		days_mission_timeout = ROOT.colonial_time
 		#days_mission_timeout = 5
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
+			#modifier = {
+			#	factor = 0
+			#	is_historical_focus_on = yes
+			#}
 		}
 
 		timeout_effect = {
@@ -74,63 +69,14 @@ fpw_colonization_category = {
 				}
 
 				transfer_state_to = ROOT
-				clr_state_flag = colonizing_by_@ROOT
 				clr_state_flag = tribe_state
-				set_state_flag = is_colonized_by_@ROOT
 
 				#log = "Phase 2: [THIS.GetID]"
-				
-				random_neighbor_state = {
-					limit = {
-						check_variable = { THIS.tribal = PREV.tribal }
-						has_state_flag = tribe_state
-						is_owned_by = TRB
-					}
-					#log = "Found new state to use: [THIS.GetID]"
-					set_variable = { ROOT.colonial_time = 50 }
-					set_variable = { ROOT.temp_population = state_population_k }
-					divide_variable = { ROOT.temp_population = 50 }
-					add_to_variable = { ROOT.temp_population = 1 }
 
-					multiply_variable = {
-						var = ROOT.colonial_time
-						value = ROOT.temp_population
-					}
-
-					# malaria
-					# not has tech
-					#multiply_variable = {
-					#    var = ROOT.colonial_time
-					#    value = 9
-					#}
-
-					multiply_variable = {
-						var = ROOT.colonial_time
-						value = ROOT.extra_colonizing_speed
-					}
-
-					set_variable = { ROOT.colonial_time = 1 }
-			
-					#transfer_state_to = ROOT
-					set_state_flag = colonizing_by_@ROOT
-
-					set_variable = { THIS.integration_time = ROOT.colonial_time }
-					
-					#log = "Phase 1: [THIS.GetID]"
-
-					ROOT = {
-						activate_targeted_decision = {
-							target = PREV
-							decision = colonization_descision
-						}
-						set_country_flag = is_colonizing
-					}
-                    #log = "Activated via repeat"
-				}
-				
 				ROOT = {
 					# remove
 					clr_country_flag = is_colonizing
+					add_to_variable = { THIS.colonists = 1 }
 					if = {
 						limit = {
 							NOT = {
@@ -145,14 +91,52 @@ fpw_colonization_category = {
 						force_update_dynamic_modifier = yes
 					}
 				}
-
-				every_state = {
+				
+				if = {
 					limit = {
-						check_variable = { tribal = FROM.tribal }
-						has_state_flag = tribe_state
-						is_owned_by = TRB
+						any_neighbor_state = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							is_coastal = yes
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+						}
 					}
-					log = "[This.GetName] ([This.GetID]) is valid state"
+					random_neighbor_state = {
+						limit = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							is_coastal = yes
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+						}
+						colonize_state = yes
+					}
+				} else_if = {
+					limit = {
+						any_neighbor_state = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							is_coastal = no
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+						}
+					}
+					random_neighbor_state = {
+						limit = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							is_coastal = no
+						}
+						colonize_state = yes
+					}
 				}
 			}
 		}
