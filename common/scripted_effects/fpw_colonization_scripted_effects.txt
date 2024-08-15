@@ -31,7 +31,10 @@ colonize_state = {
 
 	set_variable = { THIS.integration_time = ROOT.colonial_time }
 	
+	# Overall just to know
 	set_state_flag = is_colonized
+	# Specificly needed for the localisation
+	set_state_flag = is_colonized_by_@ROOT
 
 	ROOT = {
 		activate_targeted_decision = {

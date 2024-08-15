@@ -68,6 +68,11 @@ fpw_colonization_category = {
 					set_variable = { ROOT.debuff = 100 }
 				}
 
+				clamp_variable = {
+					var = ROOT.debuff
+					max = 100
+				}
+
 				transfer_state_to = ROOT
 				clr_state_flag = tribe_state
 
@@ -134,6 +139,19 @@ fpw_colonization_category = {
 							has_state_flag = tribe_state
 							is_owned_by = TRB
 							is_coastal = no
+						}
+						colonize_state = yes
+					}
+				}
+				else = {
+					random_state = {
+						limit = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							NOT = {
+								has_state_flag = is_colonizing
+							}
 						}
 						colonize_state = yes
 					}

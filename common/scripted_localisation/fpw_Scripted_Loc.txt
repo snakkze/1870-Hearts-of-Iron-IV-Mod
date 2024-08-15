@@ -1,4 +1,93 @@
 defined_text = {
+    name = fpw_colonize_button_tt_loc
+    text = {
+        trigger = {
+            THIS = {
+                NOT = {
+                    has_state_flag = is_colonized_by_@ROOT
+                }
+            }
+            has_state_flag = tribe_state
+        }
+        localization_key = fpw_button_start_colonize_localization_key
+    }
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = is_colonized_by_@ROOT
+            }
+        }
+        localization_key = fpw_button_stop_colonize_localization_key
+    }
+    text = {
+        trigger = {
+            ROOT = {
+                original_tag = PRS
+            }
+        }
+        localization_key = "test test"
+    }
+}
+
+defined_text = {
+    name = fpw_colonize_button_tt_long_loc
+    text = {
+        trigger = {
+            # NOT ENOUGH COLONISTS AVAILABLE
+            ROOT = {
+                check_variable = {
+                    THIS.colonists < 1
+                }
+            }
+            THIS = {
+                NOT = {
+                    has_state_flag = is_colonized
+                }
+            }
+        }
+        localization_key = fpw_button_colonize_colonists_localization_key
+    }
+    text = {
+        trigger = {
+            # STATE IS ALREADY BEING COLOIZED
+            THIS = {
+                has_state_flag = is_colonized
+                NOT = {
+                    has_state_flag = is_colonized_by_@ROOT
+                }
+            }
+        }
+        localization_key = fpw_button_colonize_other_localization_key
+    }
+    text = {
+        trigger = {
+            # STATE IS ALREADY BEING COLOIZED
+            THIS = {
+                has_state_flag = is_colonized
+                has_state_flag = is_colonized_by_@ROOT
+            }
+        }
+        localization_key = fpw_button_colonize_you_localization_key
+    }
+    text = {
+        trigger = {
+            # colonizable
+            ROOT = {
+                check_variable = {
+                    THIS.colonists > 0
+                }
+            }
+            THIS = {
+                NOT = {
+                    has_state_flag = is_colonized
+                }
+            }
+        }
+        localization_key = fpw_button_colonize_colonizable_localization_key
+    }
+}
+
+defined_text = {
     name = fpw_country_position_loc
     text = {
         trigger = {
