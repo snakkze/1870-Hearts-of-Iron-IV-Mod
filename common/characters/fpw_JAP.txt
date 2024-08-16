@@ -43,6 +43,186 @@ characters={
 			traits = { fpw_trait_emperor_meiji }
 		}
 	}	
+	
+	fpw_jap_federal_council={
+		name= fpw_jap_federal_council_name
+		portraits={
+			civilian={
+				large=GFX_portrait_SWI_federal_council
+			}
+		}
+		country_leader={
+			ideology=liberal_constitutional_monarchism	#liberal conservatism??
+			expire="1956.01.01.01"
+			id=-1
+			traits = { }
+		}
+	}	
+	
+	#ADVISORS
+	
+	JAP_okubo_toshimichiADV={
+		name="Ōkubo Toshimichi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_okubo_toshimichiADV
+			allowed = {
+
+			}
+			traits = {
+				fpw_jap_industrial_reformer
+			}
+		}		
+	}
+	
+	JAP_kido_takayoshiADV={
+		name="Kido Takayoshi"
+		portraits={
+			army={
+				small="GFX_idea_sanzo_nosaka"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_kido_takayoshiADV
+			available = {
+
+			}
+			allowed = {
+			
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+			traits = {
+				fpw_jap_educational_reformer
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	
+	JAP_saigo_takamoriADV={
+		name="Saigō Takamori"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_saigo_takamoriADV
+			allowed = {
+			
+			}
+			traits = {
+				fpw_jap_military_reformer
+			}
+			ai_will_do = {
+				factor = 0.300
+			}
+		}
+	}
+	
+	JAP_ito_hirobumiADV={
+		name="Itō Hirobumi"
+		portraits={
+			army={
+				small="GFX_idea_kijuro_shidehara"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_itō_hirobumiADV
+			available = {
+
+			}
+			allowed = {
+
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			traits = {
+				fpw_jap_westernization_advocate
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+
+	JAP_yamagata_aritomoADV={
+		name="Yamagata Aritomo"
+		portraits={
+			army={
+				small="GFX_idea_kingoro_hashimoto"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_yamagata_aritomoADV
+			available = {
+			
+			}
+			traits = {
+				fpw_jap_military_modernizer
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	JAP_fukuzawa_yukichiADV={
+		name="Fukuzawa Yukichi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_fukuzawa_yukichiADV
+			available = {
+			
+			}
+			traits = {
+				fpw_jap_social_reformer
+			}
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#GENERALS
+	
 
 	JAP_Saigo_Takamori = {		#1
         name = "Saigō Takamori"
@@ -293,7 +473,7 @@ characters={
     name = "Ōtori Keisuke"
     portraits = {
         army = {
-            large = "gfx/leaders/JAP/generals/Portrait_JAP_Tani_Tateki.dds"
+            large = "gfx/leaders/JAP/generals/Portrait_JAP_Otori_Keisuke.dds"
             small= "GFX_idea_gerd_von_rundstedt"
         }
     }

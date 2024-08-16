@@ -28,8 +28,22 @@
 				base = 0
 			}
 			EZO = {add_opinion_modifier = { target = JAP modifier = large_increase }
-			536 = {
+			effect_tooltip = { 
+			1593 = {
+			limit = {
+			is_core_of = EZO
+			}
 			remove_claim_by = JAP
+			}
+			}
+			hidden_effect = {
+			every_state = {
+			limit = {
+			is_core_of = EZO
+			}
+			remove_claim_by = JAP
+			remove_core_of = JAP
+			}
 			}
 		}
 		}
@@ -67,11 +81,30 @@
 			ai_chance = {
 				base = 10
 			}
-			537 = {
+			hidden_effect = {
+			655 = {
+			remove_claim_by = JAP
+			}
+			}
+			1603 = {
 			transfer_state_to = SOV
 			hidden_effect = {
 			remove_claim_by = JAP
 			remove_core_of = TRB
+			add_core_of = SOV
+			}
+			}
+			hidden_effect = {
+			537 = {
+			transfer_state_to = SOV
+			remove_claim_by = JAP
+			remove_core_of = TRB
+			add_core_of = SOV
+		
+			}
+			1604 = {
+			transfer_state_to = SOV
+			remove_core_of = JAP
 			add_core_of = SOV
 			}
 			}
@@ -100,10 +133,22 @@
 			ai_chance = {
 				base = 0
 			}
+			custom_effect_tooltip = JAP_tt2
 			537 = {
 			transfer_state_to = SOV
 			hidden_effect = {
 			remove_core_of = TRB
+			}
+			}
+			hidden_effect = {
+			1603 = {
+			transfer_state_to = SOV
+			hidden_effect = {
+			remove_core_of = TRB
+			}
+			}
+			1604 = {
+			transfer_state_to = SOV
 			}
 			}
 			JAP = {
@@ -150,7 +195,7 @@
 		option = {
 			name = fpw_japan.4.a
 			ai_chance = {
-				base = 10
+				base = 6
 			}
 		add_political_power = -50
 		add_stability = -0.02
@@ -158,7 +203,7 @@
         option = {
 			name = fpw_japan.4.b
 			ai_chance = {
-				base = 0
+				base = 4
 			}
 			
 		JAP = {
@@ -263,10 +308,21 @@
 			transfer_state_to = JAP
 			hidden_effect = {
 			remove_claim_by = SOV
+			remove_claim_by = JAP
 			remove_core_of = TRB
 			add_core_of = JAP
 			}
 			}
+		hidden_effect = {
+				1604 = {
+			remove_claim_by = SOV
+			}
+			1603 = {
+			transfer_state_to = JAP
+			remove_core_of = SOV
+			add_core_of = JAP
+			}
+		}
 		add_political_power = -50
 		add_stability = -0.02	
 			JAP = {
@@ -494,7 +550,7 @@
 			keep_unit_leaders_trigger = {
 			has_trait = jap_emperor_trait
 				}
-            states = { 530 531 532 533 534 535 537 555 282 536 989 }  # States controlled by the Tokugawa faction
+            states = { 530 531 532 533 534 535 555 282 989 }  # States controlled by the Tokugawa faction
             keep_political_leader = yes
             keep_political_party_members = yes
         }
@@ -1823,6 +1879,18 @@
 		}
 		custom_effect_tooltip = JAP_tt0
 		custom_effect_tooltip = JAP_tt9
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = 0.1
+			}
+			}
 		}
 		option = {
 			name = fpw_japan.40.b
@@ -1833,6 +1901,18 @@
 			custom_effect_tooltip = JAP_tt0
 			add_ideas = {
 			jap_upset_farmers
+			}
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = 0.15
+			}
 			}
 		}
 	}
@@ -2417,10 +2497,22 @@
 			custom_effect_tooltip = JAP_tt0
 			add_timed_idea = {
 			idea = jap_currency_transition_period
-			days = 365
+			days = 720
 			}
 			custom_effect_tooltip = JAP_tt0
 			custom_effect_tooltip = JAP_tt8
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = 0.1
+			}
+			}
 		}
 		option = {
 			name = fpw_japan.47.b
@@ -2439,5 +2531,150 @@
 			custom_effect_tooltip = JAP_tt0
 			add_stability = 0.1
 			add_political_power = 125
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = -0.05
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.48
+		title = fpw_japan.48.t
+		desc = fpw_japan.48.d
+		picture = GFX_report_event_baltic_entente_one
+		
+		is_triggered_only = yes
+		
+        fire_only_once=yes
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.48.a
+			ai_chance = {
+				base = 10
+			}
+			set_power_balance = {
+			id = fpw_JAP_bop
+			left_side = fpw_JAP_meiji_bop
+			right_side = fpw_JAP_council_of_advisors_bop
+			set_value = -0.1
+			}
+			hidden_effect = {
+			activate_advisor = JAP_okubo_toshimichiADV
+			activate_advisor = JAP_kido_takayoshiADV
+			activate_advisor = JAP_saigo_takamoriADV
+		}}
+	}
+	
+	country_event = {
+		id = fpw_japan.49
+		title = fpw_japan.49.t
+		desc = fpw_japan.49.d
+		picture = GFX_report_event_bul_troops_partisans_boat
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.49.a
+			ai_chance = {
+				base = 10
+			}
+			add_war_support = 0.02
+			set_country_flag = JAP_ryukyuan_sailors_killed
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.50
+		title = fpw_japan.50.t
+		desc = fpw_japan.50.d
+		picture = GFX_report_event_bul_troops_partisans_boat
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.50.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = fpw_japan.51
+			}
+			custom_effect_tooltip = JAP_tt0b
+			effect_tooltip = {
+			add_ideas = {
+			chi_japanese_payment
+			}
+			JAP = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.50.b
+			ai_chance = {
+				base = 0
+			}
+
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.51
+		title = fpw_japan.51.t
+		desc = fpw_japan.51.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = yes
+		
+		option = {
+			name = fpw_japan.51.a
+			ai_chance = {
+				base = 10
+			}
+			CHI = {
+			add_ideas = {
+			chi_japanese_payment
+			}
+			}
+			JAP = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			}
+			hidden_effect = {
+			CHI = {
+			set_province_controller = 12068
+			set_province_controller = 11914
+			set_province_controller = 1175
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.51.b
+			ai_chance = {
+				base = 0
+			}
+
 		}
 	}

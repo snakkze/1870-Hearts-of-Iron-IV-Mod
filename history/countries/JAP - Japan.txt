@@ -8,7 +8,9 @@ set_war_support = 0.6
 set_province_name = { id = 1182 name = "Edo" }
 set_province_name = { id = 7087 name = "Sunpu" }
 
-
+	every_unit_leader = {	
+		add_max_trait = 1
+			}
 
 add_ideas = {
 	fpw_komei
@@ -30,10 +32,14 @@ add_ideas = {
 	}
 	add_stability = 0.15
 	
-	536 = { 
-	transfer_state_to = JAP 
-	add_core_of = JAP
-	remove_core_of = TRB
+	
+	every_state = {
+		limit = {
+		is_core_of = EZO
+		}
+		transfer_state_to = JAP
+		add_core_of = JAP
+		remove_core_of = TRB
 	}
 	
 	set_politics = {
@@ -46,6 +52,18 @@ add_ideas = {
 	neutrality = 20
 	fascism = 80
 	}
+	
+#	set_power_balance = {
+#			id = fpw_JAP_bop
+#			left_side = fpw_JAP_meiji_bop
+#			right_side = fpw_JAP_council_of_advisors_bop
+#			set_value = -0.1
+#			}
+
+	activate_advisor = JAP_okubo_toshimichiADV
+	activate_advisor = JAP_kido_takayoshiADV
+	activate_advisor = JAP_saigo_takamoriADV
+
 	
 	create_country_leader = {
 		name = "Emperor Meiji"
@@ -205,20 +223,20 @@ recruit_character = FPW_meiji
 recruit_character = JAP_Saigo_Takamori
 recruit_character = JAP_Yamagata_Aritomo
 recruit_character = JAP_Arisugawa_Taruhito
-recruit_character = JAP_Kuroda_Kiyotaka
+#recruit_character = JAP_Kuroda_Kiyotaka
 recruit_character = JAP_Hijikata_Toshizo	    #Shogun
 recruit_character = JAP_Kirino_Toshiaki
-recruit_character = JAP_Miura_Goro
-recruit_character = JAP_Kawakami_Soroku
+#recruit_character = JAP_Miura_Goro
+#recruit_character = JAP_Kawakami_Soroku
 recruit_character = JAP_Kondo_Isami 			#Shogun
-recruit_character = JAP_Yamaji_Motoharu
+#recruit_character = JAP_Yamaji_Motoharu
 recruit_character = JAP_Otori_Keisuke	 		#Shogun
-recruit_character = JAP_Oshima_Hisanao
+#recruit_character = JAP_Oshima_Hisanao
 recruit_character = JAP_Oku_Yasukata
-recruit_character = JAP_Takashima_Tomonosuke
+#recruit_character = JAP_Takashima_Tomonosuke
 recruit_character = JAP_Matsudaira_Katamori 	#Shogun
-recruit_character = JAP_Nishi_Kanjiro
-recruit_character = JAP_Fukushima_Yasumasa
+#recruit_character = JAP_Nishi_Kanjiro
+#recruit_character = JAP_Fukushima_Yasumasa
 recruit_character = JAP_Tani_Tateki
 
 #NAVY COMMANDERS
@@ -227,6 +245,13 @@ recruit_character = JAP_Katsu_Kaishu			#Shogun
 recruit_character = JAP_Ito_Sukemaro
 recruit_character = JAP_Nakamuta_Kuranosuke
 
+#ADVISORS
+recruit_character = JAP_okubo_toshimichiADV
+recruit_character = JAP_kido_takayoshiADV
+recruit_character = JAP_saigo_takamoriADV
+recruit_character = JAP_ito_hirobumiADV
+recruit_character = JAP_yamagata_aritomoADV
+recruit_character = JAP_fukuzawa_yukichiADV
 
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
@@ -248,13 +273,8 @@ recruit_character = JAP_nishizo_tsukahara
 recruit_character = JAP_hajime_sugiyama
 recruit_character = JAP_chuichi_nagumo
 recruit_character = JAP_hino_kumazo
-recruit_character = JAP_mitsumasa_yonai
-recruit_character = JAP_takuo_godo
-recruit_character = JAP_chiune_sugihara
-recruit_character = JAP_kingoro_hashimoto
-recruit_character = JAP_sanzo_nosaka
-recruit_character = JAP_hiroshi_oshima
-recruit_character = JAP_kijuro_shidehara
+
+
 
 
 if = {
