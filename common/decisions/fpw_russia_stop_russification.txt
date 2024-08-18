@@ -54,6 +54,9 @@ fpw_russification_cat = {
 			has_country_flag = russification_poland_visible
 			has_completed_focus = SOV_accessibility_of_culture
 			
+			NOT = {
+				has_country_flag = poland_autonomy_flag
+			}
 		}
 		allowed = {
 			
@@ -115,6 +118,9 @@ fpw_russification_cat = {
 			has_country_flag = russification_poland_visible
 			has_completed_focus = SOV_promote_national_identity
 			
+			NOT = {
+				has_country_flag = poland_autonomy_flag
+			}
 		}
 		allowed = {
 			
@@ -176,6 +182,9 @@ fpw_russification_cat = {
 			has_country_flag = russification_poland_visible
 			has_completed_focus = SOV_promote_national_identity
 			
+			NOT = {
+				has_country_flag = poland_autonomy_flag
+			}
 		}
 		allowed = {
 			
@@ -237,6 +246,9 @@ fpw_russification_cat = {
 			has_country_flag = russification_poland_visible
 			has_completed_focus = SOV_accessibility_of_culture
 			
+			NOT = {
+				has_country_flag = poland_autonomy_flag
+			}
 		}
 		allowed = {
 			

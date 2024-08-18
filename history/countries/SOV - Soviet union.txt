@@ -114,7 +114,7 @@ set_popularities = {
 set_autonomy = {
 	target = FIN
 	autonomous_state = autonomy_integrated_puppet
-	freedom_level = 0.2
+	freedom_level = 0.5
 }
 
 create_faction = fpw_russian_empire_faction
@@ -151,7 +151,7 @@ recruit_character = SOV_nikolay_mikhaylovsky
 
 #RUSSIAN ARMY 
 
-#activate_mission = russia_military_situation_mission	# uncomment for relese
+activate_mission = russia_military_situation_mission
 set_variable = { russia_military_investments = 0 }
 
 

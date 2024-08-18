@@ -22,6 +22,23 @@ SOV_serfdom_remnants_dynamic_modifier = { #NATIONAL SPIRIT
 	
 	
 }
+SOV_peasant_relief_program_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+	
+	icon = GFX_idea_generic_agrarian_society
+	
+	consumer_goods_factor = SOV_sr_consumer_goods_factor
+	global_building_slots_factor = SOV_sr_global_building_slots_factor
+	production_factory_max_efficiency_factor = SOV_sr_production_factory_max_efficiency_factor
+	industrial_capacity_factory = SOV_sr_industrial_capacity_factory
+	industrial_capacity_dockyard = SOV_sr_industrial_capacity_dockyard
+	local_resources_factor = SOV_sr_local_resources_factor
+	production_speed_buildings_factor = SOV_sr_production_speed_buildings_factor
+	research_speed_factor = SOV_sr_research_speed_factor
+	
+	
+	
+}
 
 SOV_russian_army_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }

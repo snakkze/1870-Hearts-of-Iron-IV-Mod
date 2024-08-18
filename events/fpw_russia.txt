@@ -514,6 +514,7 @@ country_event = {
 	option = {
 		name = russia_fpw.18.b
 		
+		add_political_power = 10
 		
 	}
 	
@@ -1907,7 +1908,93 @@ country_event = {
 	
 }
 
-
+# Demand Galicia
+country_event = {
+	id = russia_fpw.40
+	title = russia_fpw.40.t
+	desc = russia_fpw.40.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = russia_fpw.40.a
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.41
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 2
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value > 50
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.41
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value < -10
+				}
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = russia_fpw.41
+	title = russia_fpw.41.t
+	desc = russia_fpw.41.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia_fpw.41.a
+		
+		transfer_state = 88
+		transfer_state = 89
+		transfer_state = 91
+		transfer_state = 80
+		
+	}
+	
+}
+country_event = {
+	id = russia_fpw.42
+	title = russia_fpw.42.t
+	desc = russia_fpw.42.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia_fpw.42.a
+		
+	}
+	
+}
 
 
 

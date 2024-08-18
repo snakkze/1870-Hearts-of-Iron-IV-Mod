@@ -618,7 +618,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.05
-				stability_weekly_factor = 0.001
+				stability_weekly = 0.001
 				war_support_factor = 0.05
 				compliance_gain = 0.01
 			}
@@ -643,7 +643,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.10
-				stability_weekly_factor = 0.002
+				stability_weekly = 0.002
 				war_support_factor = 0.10
 				compliance_gain = 0.02
 			}
@@ -668,7 +668,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.15
-				stability_weekly_factor = 0.003
+				stability_weekly = 0.003
 				war_support_factor = 0.15
 				compliance_gain = 0.03
 			}
@@ -693,7 +693,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.20
-				stability_weekly_factor = 0.004
+				stability_weekly = 0.004
 				war_support_factor = 0.20
 				compliance_gain = 0.04
 			}
@@ -718,7 +718,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.25
-				stability_weekly_factor = 0.005
+				stability_weekly = 0.005
 				war_support_factor = 0.25
 				compliance_gain = 0.05
 			}
@@ -743,7 +743,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.30
-				stability_weekly_factor = 0.006
+				stability_weekly = 0.006
 				war_support_factor = 0.30
 				compliance_gain = 0.06
 			}
@@ -768,7 +768,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.35
-				stability_weekly_factor = 0.007
+				stability_weekly = 0.007
 				war_support_factor = 0.35
 				compliance_gain = 0.07
 			}
@@ -979,7 +979,7 @@ ideas = {
 
 			removal_cost = -1
 			cancel = {
-				
+				has_war = no
 			}
 			picture = MEX_politicised_army
 			targeted_modifier = {

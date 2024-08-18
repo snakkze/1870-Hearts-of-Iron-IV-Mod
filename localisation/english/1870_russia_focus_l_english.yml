@@ -71,10 +71,10 @@
  SOV_infiltrate_military_bases: "Infiltrate Military Bases"
  SOV_infiltrate_military_bases_tp: "Unlocks decisions:\n §Y$russia_infiltrate_military$§!"
  SOV_choose_a_side: "Choose a Side"
- SOV_choose_a_side_trigger_tp: "§RYou need at least 50% civil support to take this focus§!\n"
+ SOV_choose_a_side_trigger_tp: "Has at least 50% civil support\n"
  
  SOV_military_dictatorship: "Military Dictatorship"
- SOV_military_dictatorship_trigger_tp: "§RYou need at least 60% military support to take this focus§!\n"
+ SOV_military_dictatorship_trigger_tp: "Has at least 60% military support\n"
  SOV_neutrality_military_dictatorship: "Military Dictatorship" # New Party name
  SOV_solidify_control: "Solidify Control"
  SOV_military_in_the_government: "Military in the Government"
@@ -99,21 +99,28 @@
  SOV_liberal_government_party: "All-Russian Liberal Party"
  SOV_free_press: "Freedom of Press"
  SOV_constitutional_empire: "Constitutional Empire"
+ SOV_a_new_russia: "A New Russia"
  
  SOV_exile_tsar: "Exile the Tsar"
  SOV_rapid_liberalization: "Rapid Liberalization"
  
  SOV_movement_of_the_people: "Movement of the People"
- SOV_movement_of_the_people_trigger_tp: "§RYou need at least 60% civil support to take this focus§!\n"
+ SOV_movement_of_the_people_trigger_tp: "Has at least 60% civil support\n"
  SOV_movement_of_the_people_effect_tp: "§RCompleting this focus will start a civil war!§!\n"
  SOV_raise_the_masses: "Raise the Masses"
+ SOV_take_back_finland: "Take Back Finland"
+ SOV_demand_galicia: "Demand Galicia"
  SOV_restructure_the_administration: "Restructure the Administration"
  SOV_peasant_relief_program: "Peasant Relief Program"
- SOV_peasant_relief_program_tp: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+25.0%§! \nMax Factories in a State: §G+30.00%§! \nProduction Efficiency Cap: §G+25.00%§! \nResource Gain Efficiency: §G+20.00%§! \nFactory Output: §G+5.00%§! \nDockyard Output: §G+5.00%§! \n\n"
+ SOV_peasant_relief_program_tp: "Replace §Y$SOV_serfdom_remnants_dynamic_modifier$§! with §Y$SOV_peasant_relief_program_dynamic_modifier$§! which grants: \nResource Gain Efficiency: §G+20.00%§! \nConsumer Goods Factories: §Y+15.0%§! \nMax Factories in a State: §G+10.00%§! \nProduction Efficiency Cap: §G+5.00%§! \nResearch Speed: §R-10.0%§! \n\n"
  SOV_get_rid_of_royalty: "Get Rid of Royalty"
  SOV_common_education: "Common Education"
- SOV_common_education_tp: "$SOV_modify_sr_ns_intro$ \nResearch Speed: §G+10.0%§! \n\n"
+ SOV_common_education_tp: "Modify §YPeasant Relief Program§! by \nResearch Speed: §G+10.0%§! \n"
  SOV_establish_a_new_government: "Establish a New Government"
+ SOV_free_peasants_communal_land: "Free Peasants, Communal Land"
+ SOV_free_peasants_communal_land_tp: "Modify §YPeasant Relief Program§! by \nConsumer Goods Factories: §Y+5.0%§! \nMax Factories in a State: §G+10.00%§! \nProduction Efficiency Cap: §G+5.00%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§! \n\n"
+ SOV_panslavic_socialism: "Panslavic Socialism"
+ SOV_unite_the_slavs: "Unite the Slavs"
  
  ## Diplomacy Branch
  
@@ -126,6 +133,7 @@
  SOV_promote_balkan_independence: "Promote Balkan Independence"
  SOV_support_western_balkan_separatists: "Support Western Balkan Separatists"
  SOV_revenge_for_crimea: "Revenge for Crimea"
+ SOV_revenge_for_crimea_trigger_tp: "Does not have national spirit §YLosers of the Crimean War§!"
  SOV_help_roman_imperialists: "Support Roman Imperialists"
  SOV_help_roman_imperialists_desc: "Studies show that many people in [ITA.GetNameDef] are willing to invade our main rival in the Balkans, [TUR.GetNameDef]. Helping these people get into government would increase the chances of a war between the [TUR.GetAdjective]s and the Christians."
  SOV_roman_tt: "Increases the chances of a war between §Y[ITA.GetNameDef]§! and §Y[TUR.GetNameDef]§! which we will be able to join."

@@ -29,6 +29,7 @@ fpw_russification_cat = {
 		has_completed_focus = SOV_state_of_the_empire
 		NOT = {
 			has_completed_focus = SOV_movement_of_the_people
+			has_idea = SOV_federal_empire7
 		}
 	}
 }

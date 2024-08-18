@@ -74,7 +74,7 @@
  russia_fpw.17.a: "YEY!"
  
  russia_fpw.18.t: "Some Russification Info"
- russia_fpw.18.d: ""
+ russia_fpw.18.d: "Your main goal should be increasing the §Glevel of russification§! in each region (or decreasing it if you took the wholesome empire path. I love you if you did <3). Note that these regions are not entirely historicly accurate.\nEvery decision you take, appart from changing the level of russification, will also affect two different values §RAgitation§! and §CCooperation§!.\n\nAgitation represents how strongly the population opposes your moves. If it gets high enough it will grant you a debuff towards increasing russification, and if it gets to 100% it will cause an uprising to happen in that region (that means if you want to play as a russia occupied nation you must get the agitation of that region to 100%).\n\nCooperation on the other hand mean, you guessed it, the willingness of the population to cooperation. Similarly to agitation, but not quite, if high enough it will grant you a buff towards gaining russification.\n\n\nTLDR; Russification - High(if wholesome empire then Low), Agitation - Low, Cooperation - High \nIf you want to play as a break away nation, take the agitation to 100%"       
  russia_fpw.18.a: "Understood"
  russia_fpw.18.b: "Nah, I ain't reading all of that"
  
@@ -180,5 +180,17 @@
  russia_fpw.39.d: ""
  russia_fpw.39.a: "Well, we tried"
  
+ russia_fpw.40.t: "[SOV.GetName] Demands Galicia"
+ russia_fpw.40.d: "Today the Russian delegation came to us demanding the transfer of the Galician teritorries mostly inhabited by poles and ukrainians. They said that if we do not give them the teritorries they will have to prepare a 'Special Military Operation'."
+ russia_fpw.40.a: "We must accept"
+ russia_fpw.40.b: "Never!"
+ 
+ russia_fpw.41.t: "[AUS.GetName] Folds"
+ russia_fpw.41.d: ""
+ russia_fpw.41.a: "Ah, Victory!"
+ 
+ russia_fpw.42.t: "[ENG.GetName] Rejects"
+ russia_fpw.42.d: ""
+ russia_fpw.42.a: "Shame"
  
  
