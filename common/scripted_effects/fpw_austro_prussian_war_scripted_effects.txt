@@ -147,6 +147,7 @@ prussian_surrender = {
 	}	
 	AUS = {
 		clr_country_flag = austro_prussian_war
+		complete_national_focus = AUS_victor_of_the_apw
 		add_dynamic_modifier = { 
 			modifier = fpw_PRS_victor_of_the_brothers_war
 		}
@@ -172,11 +173,51 @@ prussian_surrender = {
 		159 = {
 			transfer_state_to = AUS
 		}
-		puppet = SXY
-		puppet = HES
-		puppet = HEK
-		puppet = NAS
-		puppet = BAV
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Waking the Tiger"
+					has_dlc = "Together for Victory"
+				}
+			}
+			set_autonomy = {
+				target = SXY
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			set_autonomy = {
+				target = HES
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			set_autonomy = {
+				target = HEK
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			set_autonomy = {
+				target = NAS
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			set_autonomy = {
+				target = BAV
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+		else = {
+			add_to_faction = SXY
+			add_to_faction = HES
+			add_to_faction = HEK
+			add_to_faction = NAS
+			add_to_faction = BAV
+		}
 	}
 	# HNV should be able to be puppeted by the uk via the focus. Context either stand on yourself and be the opfer of prussia or be defended by the uk
 	HNV = {
@@ -195,7 +236,6 @@ prussian_surrender = {
 		}
 	}
 	SXY = {
-		set_cosmetic_tag = SXY_austrian_subject
 		60 = {
 			transfer_state_to = SXY
 			add_core_of = SXY
@@ -219,13 +259,10 @@ prussian_surrender = {
 	}
 	# CAN INCOOPERATE FRANKRURT IN FOCUS
 	HES = {
-		set_cosmetic_tag = NAS_austrian_subject
 	}
 	HEK = {
-		set_cosmetic_tag = HEK_austrian_subject
 	}
 	NAS = {
-		set_cosmetic_tag = HES_austrian_subject
 	}
 
 	BAV = {
@@ -302,9 +339,6 @@ prussian_surrender = {
 		}	
 	}
 
-	AUS = {
-		dismantle_faction = yes
-	}
 
 	PRS = {
 		dismantle_faction = yes

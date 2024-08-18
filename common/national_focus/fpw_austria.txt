@@ -7,144 +7,775 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
-	id = austrian_focus
+	id = austria_focus_austria_hungary
 	
 	country = {
 		factor = 0
 		
-		#modifier = {
-		#	add = 10
-		#	tag = AUS
-		#}
+		modifier = {
+			add = 100
+			AND = {
+				tag = AUS
+				is_debug = yes
+			}
+		}
 	}
+
+	continuous_focus_position = { x = 200 y = 1000 }
 	
 	default = no
-	
+
+
 	focus = {
-		id = AUS_review_domestic_affairs
-		x = 26
+		id = AUS_prepare_looming_conflict
+		x = 20
 		y = 0
-		cost = 10
+		cost = 5
+		icon = 
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available = {
-
+			has_war = no
 		}
 		
 		bypass = {
-
+			has_war_with = PRS
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-		
-			add_political_power = 50
-			add_stability = 0.01
-			add_war_support = -0.1
-		
+			#
 		}
 	}
 
 	focus = {
-		id = AUS_addressing_the_hungarian_crisis
-		x = -3
-		y = 1
-		cost = 10
-		
-		icon = GFX_hungarian_crisis
-		
-		prerequisite = { focus = AUS_review_domestic_affairs }
-		relative_position_id = AUS_review_domestic_affairs
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		
-			add_stability = 0.05
-		
-		}
-	}
-
-	focus = {
-		id = AUS_allow_for_a_compromise
-		x = -3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_addressing_the_hungarian_crisis }
-		relative_position_id = AUS_addressing_the_hungarian_crisis
-		
-		icon = GFX_allow_for_a_compromise
-		
-		mutually_exclusive = { focus = AUS_continue_the_occupation}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			add_political_power = 40
-			
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-			
-		}
-	}
-
-	#historic-monarch	
-	focus = {
-		id = AUS_restore_the_hungarian_constitution
+		id = AUS_mobilise_the_army
+		relative_position_id = AUS_prepare_looming_conflict
+		prerequisite = { focus = AUS_prepare_looming_conflict }
 		x = -2
 		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_allow_for_a_compromise }
-		relative_position_id = AUS_allow_for_a_compromise
-		
-		icon = GFX_hungarian_constitution
-		
-		mutually_exclusive = { focus = AUS_towards_complete_federation}
-		
+		cost = 5
+		icon = 
+
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+			has_war_with = PRS
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = civilian_economy
+						has_idea = low_economic_mobilisation
+					}
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_activating_the_reserves
+		relative_position_id = AUS_prepare_looming_conflict
+		prerequisite = { focus = AUS_prepare_looming_conflict }
+		x = 2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+			has_war_with = PRS
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_war_support = 0.15
+			#
+		}
+	}
+
+	focus = {
+		id = AUS_schleswig_question
+		relative_position_id = AUS_activating_the_reserves
+		prerequisite = { focus = AUS_mobilise_the_army }
+		prerequisite = { focus = AUS_activating_the_reserves }
+		x = -2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+			has_war_with = PRS
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = AUS_brothers_at_war
+		relative_position_id = AUS_schleswig_question
+		prerequisite = { focus = AUS_schleswig_question }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war_with = PRS
+		}
+		
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = AUS_halt_prussian_expansion
+		relative_position_id = AUS_brothers_at_war
+		prerequisite = { focus = AUS_brothers_at_war }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war_with = PRS
+		}
+		
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			PRS = {
+				add_stability = -0.1
+				add_war_support = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_ausgleich_negotiations
+		relative_position_id = AUS_halt_prussian_expansion
+		prerequisite = { focus = AUS_halt_prussian_expansion }
+		mutually_exclusive = { focus = AUS_victor_of_the_apw }
+		x = -4
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+			has_cosmetic_tag = AUS_austria_hungary
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			set_cosmetic_tag = AUS_austria_hungary
+		}
+	}
+
+	focus = {
+		id = AUS_victor_of_the_apw
+		relative_position_id = AUS_halt_prussian_expansion
+		prerequisite = { focus = AUS_halt_prussian_expansion }
+		mutually_exclusive = { focus = AUS_ausgleich_negotiations }
+		x = 4
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			load_focus_tree = austrian_focus_austria_hungary
+		}
+	}
+
+	focus = {
+		id = AUS_securing_our_new_order
+		relative_position_id = AUS_ausgleich_negotiations
+		prerequisite = { focus = AUS_ausgleich_negotiations }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = fpw_austria.7
+			    days = 20
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = AUS_reestablish_imperial_council
+		relative_position_id = AUS_securing_our_new_order 
+		prerequisite = { focus = AUS_securing_our_new_order }
+		x = -2
+		y = 1
+		cost = 3.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_ideas = {
+				AUS_czech_boycott
+				AUS_the_poland_club
+			}
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = AUS_serperate_taxation
+		relative_position_id = AUS_securing_our_new_order 
+		prerequisite = { focus = AUS_securing_our_new_order }
+		x = 0
+		y = 1
+		cost = 3.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = fpw_austria.4
+			    days = 20
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_restructure_hungarian_constitution
+		relative_position_id = AUS_securing_our_new_order 
+		prerequisite = { focus = AUS_securing_our_new_order }
+		x = 2
+		y = 1
+		cost = 3.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = fpw_AUS_hungarian_seperatism
+			    add_idea = AUS_deak_party_of_hungary
+			}
+			add_idea = AUS_croation_agitation
+		}
+	}
+
+	focus = {
+		id = AUS_a_duel_monarchy_with_dual_problems
+		relative_position_id = AUS_serperate_taxation
+		prerequisite = { focus = AUS_reestablish_imperial_council }
+		prerequisite = { focus = AUS_serperate_taxation }
+		prerequisite = { focus = AUS_restructure_hungarian_constitution }
+		x = 0
+		y = 1
+		cost = 8.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			## Unlocks Ethnic Management System
+			add_war_support = -0.2
+		}
+	}
+
+	focus = {
+		id = AUS_extablishing_the_common_ministries
+		relative_position_id = AUS_a_duel_monarchy_with_dual_problems
+		prerequisite = { focus = AUS_a_duel_monarchy_with_dual_problems }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			#
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = AUS_ministry_of_finance
+		relative_position_id = AUS_extablishing_the_common_ministries
+		prerequisite = { focus = AUS_extablishing_the_common_ministries }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_ministry_of_war
+		relative_position_id = AUS_ministry_of_finance
+		prerequisite = { focus = AUS_ministry_of_finance }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = AUS_cisleithanian_politics
+		relative_position_id = AUS_a_duel_monarchy_with_dual_problems
+		prerequisite = { focus = AUS_a_duel_monarchy_with_dual_problems }
+		x = -4
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = AUS_support_the_auersperg_cabinet
+		relative_position_id = AUS_cisleithanian_politics
+		prerequisite = { focus = AUS_cisleithanian_politics }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			## Effect on the Ethnic System
+		}
+	}
+
+	focus = {
+		id = AUS_constitutional_crisis_in_bohemia
+		relative_position_id = AUS_support_the_auersperg_cabinet
+		prerequisite = { focus = AUS_support_the_auersperg_cabinet }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			#
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = AUS_support_the_germans
+		relative_position_id = AUS_constitutional_crisis_in_bohemia
+		prerequisite = { focus = AUS_constitutional_crisis_in_bohemia }
+		mutually_exclusive = { focus = AUS_sponsor_the_czechs }
+		x = -2
+		y = 1
+		cost = 8.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = AUS_maintain_the_status_quo
+		relative_position_id = AUS_support_the_germans
+		prerequisite = { focus = AUS_support_the_germans }
+		x = 0
+		y = 1
+		cost = 8.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_franz_joseph_turns_czechs_down
+			    days = 5
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = AUS_cooerce_the_czechs_into_cooperation
+		relative_position_id = AUS_maintain_the_status_quo
+		prerequisite = { focus = AUS_maintain_the_status_quo }
+		x = 0
+		y = 1
+		cost = 8.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = AUS_czech_boycott
+			    add_idea = AUS_czech_relunctant_participaion
+			}
+			country_event = {
+			    id = AUS_taafe_in_imperial_council
+			    days = 5
+			}
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = AUS_sponsor_the_czechs
+		relative_position_id = AUS_constitutional_crisis_in_bohemia
+		prerequisite = { focus = AUS_constitutional_crisis_in_bohemia }
+		mutually_exclusive = { focus = AUS_support_the_germans }
+		x = 2
+		y = 1
+		cost = 8.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
 		}
 
 		available = {
@@ -161,26 +792,21 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			add_stability = 0.1
-
+			add_stability = 0.05
 		}
 	}
 
 	focus = {
-		id = AUS_found_the_common_army
-		x = -1
+		id = AUS_pass_the_fundimental_articles
+		relative_position_id = AUS_sponsor_the_czechs
+		prerequisite = { focus = AUS_sponsor_the_czechs }
+		x = 0
 		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_restore_the_hungarian_constitution }
-		relative_position_id = AUS_restore_the_hungarian_constitution
-		
-		icon = GFX_focus_chi_army_reform
-		
-		mutually_exclusive = { focus = AUS_towards_complete_federation}
-		
+		cost = 8.6
+		icon = 
+
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available = {
@@ -198,1431 +824,2933 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = fpw_AUS_divided_military
-				add_idea = fpw_AUS_diverse_military
+			    remove_idea = AUS_czech_boycott
+			    add_idea = AUS_german_irritation_in_bohemia
 			}
-			add_stability = 0.05
-
-		}
-	}
-
-	focus = {
-		id = AUS_seperate_taxation
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_found_the_common_army }
-		relative_position_id = AUS_found_the_common_army
-		
-		icon = GFX_seperate_taxations
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_establish_hungarian_parliament
-		x = 1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_found_the_common_army }
-		relative_position_id = AUS_found_the_common_army
-		
-		icon = GFX_focus_ETH_re-convene_the_parliament
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_ratify_the_augsleich
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_establish_hungarian_parliament }
-		prerequisite = { focus = AUS_seperate_taxation }
-		relative_position_id = AUS_establish_hungarian_parliament
-		
-		icon = GFX_ratify_ausgleich
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			if = {
-				limit = {
-					check_variable = { hungarian_approval > 50}
-				}
-				country_event = {
-					id = fpw_austria.6 
-				}
+			country_event = {
+			    id = AUS_franz_joseph_crowned_in_prague
+			    days = 5
 			}
-		}
-	}
-	
-	focus = {
-		id = AUS_aiding_hungary
-		x = -2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_ratify_the_augsleich }
-		relative_position_id = AUS_ratify_the_augsleich
-			
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
+			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = AUS_developing_slovak_steel
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_aiding_hungary }
-		relative_position_id = AUS_aiding_hungary
-			
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_utilise_hungarian_agriculture
-		x = 1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_aiding_hungary }
-		relative_position_id = AUS_aiding_hungary
-			
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_consolidate_the_empire
-		x = 1
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = AUS_ratify_the_augsleich }
-		relative_position_id = AUS_ratify_the_augsleich
-			
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_expanding_austrian_aqueducts
+		id = AUS_expanding_czech_autonomy
+		relative_position_id = AUS_pass_the_fundimental_articles
+		prerequisite = { focus = AUS_pass_the_fundimental_articles }
 		x = 0
 		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_utilise_hungarian_agriculture }
-		relative_position_id = AUS_utilise_hungarian_agriculture
-			
-		
-		ai_will_do = {
-			factor = 1
-		}
+		cost = 5
+		icon = 
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_expolit_czechoslovak_mining_industries
-		x = 0
-		y = 3
-		cost = 10
-		
-		prerequisite = { focus = AUS_developing_slovak_steel }
-		prerequisite = { focus = AUS_expanding_austrian_aqueducts }
-		relative_position_id = AUS_aiding_hungary
-			
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_entering_the_grunderzeit
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_expolit_czechoslovak_mining_industries }
-		prerequisite = { focus = AUS_consolidate_the_empire }
-		relative_position_id = AUS_expolit_czechoslovak_mining_industries
-			
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}	
-
-
-	#alt-hist dem
-	focus = {
-
-
-		
-		id = AUS_towards_complete_federation
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_allow_for_a_compromise }
-		relative_position_id = AUS_allow_for_a_compromise
-		
-		mutually_exclusive = { focus = AUS_restore_the_hungarian_constitution}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		
-			add_resource = {
-				type = steel
-				amount = 15
-				state = 664
-			}
-		
-		}
-	}
-	
-	focus = {
-		id = AUS_hungary_is_a_federal_state
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_towards_complete_federation }
-		relative_position_id = AUS_towards_complete_federation
-		
-
-		
-		mutually_exclusive = { focus = AUS_restore_the_hungarian_constitution}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			
-			release_autonomy = {
-				target = HUN
-				autonomy_state = autonomy_puppet
-				freedom_level = 0.5
-			}
-
-
-		}
-	}
-	
-	focus = {
-		id = AUS_liberal_want_red_white_red_flag
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_hungary_is_a_federal_state }
-		relative_position_id = AUS_hungary_is_a_federal_state
-		
-		mutually_exclusive = { focus = AUS_conservative_want_our_liberal_flag}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_liberal_want_our_emperial_flag
-		x = -3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_hungary_is_a_federal_state }
-		relative_position_id = AUS_hungary_is_a_federal_state
-		
-		mutually_exclusive = { focus = AUS_liberal_want_red_white_red_flag }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_tell_people_colonialism_bad
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_liberal_want_red_white_red_flag focus =  AUS_liberal_want_our_emperial_flag }
-		relative_position_id = AUS_liberal_want_our_emperial_flag
-		
-		mutually_exclusive = { focus =  }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_try_buy_bosnia
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_tell_people_colonialism_bad }
-		relative_position_id = AUS_tell_people_colonialism_bad
-		
-		mutually_exclusive = { focus =  AUS_fight_bosnia}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_fight_bosnia
-		x = -3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_tell_people_colonialism_bad }
-		relative_position_id = AUS_tell_people_colonialism_bad
-		
-		mutually_exclusive = { focus =  AUS_try_buy_bosnia}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_get_kattowitz_oberschlesien
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_try_buy_bosnia }
-		relative_position_id = AUS_try_buy_bosnia
-		
-		mutually_exclusive = { focus = AUS_offer_prussia_freiwaldau_for_guarantees focus = AUS_try_coup_in_prussia }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_offer_prussia_freiwaldau_for_guarantees
-		x = -5
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_try_buy_bosnia focus = AUS_fight_bosnia }
-		relative_position_id = AUS_try_buy_bosnia
-		
-		mutually_exclusive = { focus = AUS_get_kattowitz_oberschlesien focus = AUS_try_coup_in_prussia }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_create_faction_with_prussia
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_offer_prussia_freiwaldau_for_guarantees }
-		relative_position_id = AUS_offer_prussia_freiwaldau_for_guarantees
-		
-		mutually_exclusive = { focus =  }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_called_united_austrian_hungarian_states
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_create_faction_with_prussia }
-		relative_position_id = AUS_create_faction_with_prussia
-		
-		mutually_exclusive = { focus =  }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_rename_kattowitze
-		x = 0
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_get_kattowitz_oberschlesien}
-		relative_position_id = AUS_get_kattowitz_oberschlesien
-		
-		mutually_exclusive = { focus =  }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_austrians_dream_of_united_germany
-		x = 4
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_get_kattowitz_oberschlesien}
-		relative_position_id = AUS_get_kattowitz_oberschlesien
-		
-		mutually_exclusive = { focus =  }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_austria_improve_relation_south_germany
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_austrians_dream_of_united_germany focus = AUS_rename_kattowitze }
-		relative_position_id = AUS_austrians_dream_of_united_germany
-		
-		mutually_exclusive = { focus = }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_try_coup_in_prussia
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_try_buy_bosnia focus = AUS_fight_bosnia }
-		relative_position_id = AUS_try_buy_bosnia
-		
-		mutually_exclusive = { focus = AUS_offer_prussia_freiwaldau_for_guarantees focus = AUS_get_kattowitz_oberschlesien}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_coup_failed
-		x = -2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_try_coup_in_prussia}
-		relative_position_id = AUS_try_coup_in_prussia
-		
-		mutually_exclusive = { focus = AUS_offer_prussia_freiwaldau_for_guarantees focus = AUS_get_kattowitz_oberschlesien}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = false
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_coup_successful
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_try_coup_in_prussia}
-		relative_position_id = AUS_try_coup_in_prussia
-		
-		mutually_exclusive = { focus = AUS_offer_prussia_freiwaldau_for_guarantees focus = AUS_get_kattowitz_oberschlesien}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = false
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_the_germano-austrian_republic
-		x = 1
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = AUS_coup_successful}
-		relative_position_id = AUS_coup_successful
-		
-		mutually_exclusive = { focus = AUS_the_prussian_austrian_republic }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = false
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_the_prussian_austrian_republic
-		x = -2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_coup_successful}
-		relative_position_id = AUS_coup_successful
-		
-		mutually_exclusive = { focus = AUS_the_germano-austrian_republic }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = false
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_declare_war_on_prussia
-		x = 0
-		y = 2
-		cost = 10
-		
-		prerequisite = { focus = AUS_coup_failed}
-		relative_position_id = AUS_coup_failed
-		
-		mutually_exclusive = { }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = false
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	#alt-hist monarch
-	focus = {
-		id = AUS_continue_the_occupation
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_addressing_the_hungarian_crisis }
-		relative_position_id = AUS_addressing_the_hungarian_crisis
-		
-		mutually_exclusive = { focus = AUS_allow_for_a_compromise}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = AUS_second_hungarian_crisis
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_continue_the_occupation }
-		relative_position_id = AUS_continue_the_occupation
-		
-		mutually_exclusive = { focus = }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_crush_the_hungarians
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_second_hungarian_crisis }
-		relative_position_id = AUS_second_hungarian_crisis
-		
-		mutually_exclusive = { focus = AUS_compromise_with_hungary }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_compromise_with_hungary
-		x = 0
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_second_hungarian_crisis }
-		relative_position_id = AUS_second_hungarian_crisis
-		
-		mutually_exclusive = { focus = AUS_crush_the_hungarians}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_the_problem_with_the_croats
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_crush_the_hungarians }
-		relative_position_id = AUS_crush_the_hungarians
-		
-		mutually_exclusive = { focus = }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_release_the_croats
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_the_problem_with_the_croats }
-		relative_position_id = AUS_the_problem_with_the_croats
-		
-		mutually_exclusive = { focus = AUS_ignore_croats}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_ignore_croats
-		x = -1
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_the_problem_with_the_croats }
-		relative_position_id = AUS_the_problem_with_the_croats
-		
-		mutually_exclusive = { focus = AUS_release_the_croats}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_serbien_muss_sterbien
-		x = 5
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_ignore_croats focus = AUS_release_the_croats }
-		relative_position_id = AUS_ignore_croats
-		
-		mutually_exclusive = { focus = AUS_italian_Lombardia_is_austria}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_italian_Lombardia_is_austria!
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_ignore_croats focus = AUS_release_the_croats }
-		relative_position_id = AUS_ignore_croats
-		
-		mutually_exclusive = { focus = AUS_serbien_muss_sterbien}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_the_separation_of_austria
-		x = 2
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_compromise_with_hungary }
-		relative_position_id = AUS_compromise_with_hungary
-		
-		mutually_exclusive = { focus = }
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_remove_bosnian_mines
-		x = 3
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_italian_Lombardia_is_austria focus = AUS_serbien_muss_sterbien }
-		relative_position_id = AUS_italian_Lombardia_is_austria
-		
-		mutually_exclusive = { focus = AUS_add_bosnian_mines}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = AUS_add_bosnian_mines
-		x = 0
-		y = 1
-		cost = 10
-		
-		prerequisite = { focus = AUS_italian_Lombardia_is_austria focus = AUS_serbien_muss_sterbien }
-		relative_position_id = AUS_italian_Lombardia_is_austria
-		
-		mutually_exclusive = { focus = AUS_remove_bosnian_mines}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-
-
-	#Other Political focus
-	focus = {
-		id = AUS_schleswig_call_the_united_assembly
-		x = 4
-		y = 0
-		cost = 10
-		
-		
-		mutually_exclusive = { focus = AUS_allow_for_a_compromise}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_federal_resolution_of_june
-		icon = GFX_goal_unknown
-		prerequisite = { focus = AUS_schleswig_call_the_united_assembly }
-		x = 0
-		y = 1
-		relative_position_id = AUS_schleswig_call_the_united_assembly
-		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 
-		available_if_capitulated = yes
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
 
 		completion_reward = {
+			## effect ethnic system
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = AUS_federalism_and_fuedalism
+		relative_position_id = AUS_expanding_czech_autonomy
+		prerequisite = { focus = AUS_expanding_czech_autonomy focus = AUS_cooerce_the_czechs_into_cooperation }
+		x = -2
+		y = 1
+		cost = 8.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			## effect ethnic system
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = AUS_re_enter_the_world_stage
+		relative_position_id = AUS_federalism_and_fuedalism
+		prerequisite = { focus = AUS_federalism_and_fuedalism }
+		x = 0
+		y = 1
+		cost = 8.6
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_reentering_the_world_state
+			    days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_franco-prussian_war_opportunity
+		relative_position_id = AUS_re_enter_the_world_stage
+		prerequisite = { focus = AUS_re_enter_the_world_stage }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			or = {
+			PRS = { 
+				has_war_with = FRA
+			}
+			date > 1871.01.28
+			}
+		}
+		
+		bypass = {
+			date > 1871.01.28
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = AUS_support_andrassy
+		relative_position_id = AUS_franco-prussian_war_opportunity
+		prerequisite = { focus = AUS_franco-prussian_war_opportunity }
+		mutually_exclusive = { focus = AUS_support_beust }
+		x = -3
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_andrassy_speach_on_neutrality
+			    days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_balkan_interests
+		relative_position_id = AUS_support_andrassy
+		prerequisite = { focus = AUS_support_andrassy }
+		x = -2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			date > 1870.01.01
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = AUS_moving_in_the_west
+		relative_position_id = AUS_balkan_interests
+		prerequisite = { focus = AUS_balkan_interests }
+		x = -2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_completed_focus = AUS_sarajevo_and_belgrade
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_moving_in_the_west
+			    days = 5
+			}
+			add_opinion_modifier = {
+			    target = SER
+			    modifier = AUS_mod_moving_in_the_west ## +50 opinion serbia
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_sponsor_herzegovinian_uprising
+		relative_position_id = AUS_moving_in_the_west
+		prerequisite = { focus = AUS_moving_in_the_west }
+		x = -1s
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			date > 1874.01.01
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			activate_decision = herzegovinian_uprising
+		}
+	}
+
+	focus = {
+		id = AUS_occupy_bosnia
+		relative_position_id = AUS_sponsor_herzegovinian_uprising
+		prerequisite = { focus = AUS_sponsor_herzegovinian_uprising }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			country_exists = ROM
+			ROM = {
+				is_subject = no
+			}
+			country_exists = SER
+			SER = {
+				is_subject = no
+			}
+			country_exists = BOS
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			AUS = {
+				puppet = BOS
+				end_wars = yes
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_another_uprising
+		relative_position_id = AUS_occupy_bosnia
+		prerequisite = { focus = AUS_occupy_bosnia }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			date > 1881.01.01
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			## Unlocks in 1881 when Herzegovinian uprising against austria begins
+		}
+	}
+
+	focus = {
+		id = AUS_securing_serbian_interests
+		relative_position_id = AUS_moving_in_the_west
+		prerequisite = { focus = AUS_moving_in_the_west }
+		x = 1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_meeting_in_belgrade
+			    days = 5
+			}
+			add_political_power = 50
+			AUS = {
+				give_guarantee = SER
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_promise_macedonia
+		relative_position_id = AUS_securing_serbian_interests
+		prerequisite = { focus = AUS_securing_serbian_interests }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			106 = { add_claim_by = SER }
+			reverse_add_opinion_modifier = {
+			    target = SER
+			    modifier = AUS_mod_promise_macedonia ## +15 opinion serbia
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_sponsor_serbia
+		relative_position_id = AUS_promise_macedonia
+		prerequisite = { focus = AUS_promise_macedonia }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SER = { 
+				has_war_with = TUR
+			}	
+			has_equipment = {
+			    infantry_equipment > 999
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = SER
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_austro_serbian_convention
+		relative_position_id = AUS_sponsor_serbia
+		prerequisite = { focus = AUS_sponsor_serbia }
+		prerequisite = { focus = AUS_another_uprising }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SER = {
+				is_subject = no
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			AUS = {
+				puppet = SER
+				end_wars = yes
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_looking_to_the_east
+		relative_position_id = AUS_balkan_interests
+		prerequisite = { focus = AUS_balkan_interests }
+		x = 2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_romanian_reapproachment
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_ressolving_romanian_issues
+		relative_position_id = AUS_looking_to_the_east
+		prerequisite = { focus = AUS_looking_to_the_east }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_meeting_in_bucharest
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+			add_idea = AUS_romanian_allegance
+		}
+	}
+
+	focus = {
+		id = AUS_not_just_secure_neutrality
+		relative_position_id = AUS_ressolving_romanian_issues
+		prerequisite = { focus = AUS_ressolving_romanian_issues }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_but_to_secure_ally
+		relative_position_id = AUS_not_just_secure_neutrality
+		prerequisite = { focus = AUS_not_just_secure_neutrality }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_lingering_german_interest
+		relative_position_id = AUS_support_andrassy
+		prerequisite = { focus = AUS_support_andrassy }
+		x = 2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_our_place_in_german_politics
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_reapproachment_with_germany
+		relative_position_id = AUS_lingering_german_interest
+		prerequisite = { focus = AUS_lingering_german_interest }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_reapproachment_with_italy
+		relative_position_id =  AUS_reapproachment_with_germany
+		prerequisite = { focus =  AUS_reapproachment_with_germany }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_clashes_with_russia
+		relative_position_id =  AUS_reapproachment_with_italy
+		prerequisite = { focus =  AUS_reapproachment_with_italy }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_russian_interest_balkans
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_support_beust
+		relative_position_id = AUS_franco-prussian_war_opportunity
+		prerequisite = { focus = AUS_franco-prussian_war_opportunity }
+		mutually_exclusive = { focus = AUS_support_andrassy }
+		x = 3
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_buest_motion_intervene
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_another_humiliation
+		relative_position_id = AUS_support_beust
+		prerequisite = { focus = AUS_support_beust }
+		mutually_exclusive = { focus = AUS_intergration_of_silesia }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_another_humiliation_event
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_consolidate_our_losses
+		relative_position_id = AUS_another_humiliation
+		prerequisite = { focus = AUS_another_humiliation }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_strike_back_at_germany
+		relative_position_id = AUS_consolidate_our_losses
+		prerequisite = { focus = AUS_consolidate_our_losses }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_second_german_bruderkreig
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_intergration_of_silesia
+		relative_position_id = AUS_support_beust
+		prerequisite = { focus = AUS_support_beust }
+		mutually_exclusive = { focus = AUS_another_humiliation }
+		x = 1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_intergration_of_silesia_event
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_renew_french_alliance
+		relative_position_id = AUS_intergration_of_silesia
+		prerequisite = { focus = AUS_intergration_of_silesia }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_secure_danish_interests
+		relative_position_id = AUS_renew_french_alliance
+		prerequisite = { focus = AUS_renew_french_alliance }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_austriae_est_imperare
+		relative_position_id = AUS_secure_danish_interests
+		prerequisite = { focus = AUS_strike_back_at_germany focus = AUS_secure_danish_interests }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_aeiou
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_transleithanian_politics
+		relative_position_id = AUS_a_duel_monarchy_with_dual_problems
+		prerequisite = { focus = AUS_a_duel_monarchy_with_dual_problems }
+		x = 5
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_east_of_leitha_river
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_supporting_gyula_andrassys_term
+		relative_position_id = AUS_transleithanian_politics
+		prerequisite = { focus = AUS_transleithanian_politics }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_andrassy_aspirations
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_continue_croatian_opression
+		relative_position_id = AUS_supporting_gyula_andrassys_term
+		prerequisite = { focus = AUS_supporting_gyula_andrassys_term }
+		mutually_exclusive = { focus = AUS_comprimise_in_croatia }
+		x = -2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_riots_in_croatia
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_comprimise_in_croatia
+		relative_position_id = AUS_supporting_gyula_andrassys_term
+		prerequisite = { focus = AUS_supporting_gyula_andrassys_term }
+		mutually_exclusive = { focus = AUS_continue_croatian_opression }
+		x = 2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = AUS_croation_agitation
+			    add_idea = AUS_the_nagodba
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_ethnic_replacement_slovakia
+		relative_position_id = AUS_continue_croatian_opression
+		prerequisite = { focus = AUS_continue_croatian_opression }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = AUS_making_an_example_slovak
+		relative_position_id = AUS_ethnic_replacement_slovakia
+		prerequisite = { focus = AUS_ethnic_replacement_slovakia }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = AUS_harsh_magyarization
+		relative_position_id = AUS_making_an_example_slovak
+		prerequisite = { focus = AUS_making_an_example_slovak }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = AUS_force_hungarian_schools
+		relative_position_id = AUS_continue_croatian_opression
+		prerequisite = { focus = AUS_continue_croatian_opression focus = AUS_comprimise_in_croatia }
+		x = 2
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_backlash_in_transylvania
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_dominating_transylvania
+		relative_position_id = AUS_force_hungarian_schools
+		prerequisite = { focus = AUS_force_hungarian_schools }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_idea = AUS_romanian_contraversy
+		}
+	}
+
+	focus = {
+		id = AUS_1869_parlimentary_elections
+		relative_position_id = AUS_dominating_transylvania
+		prerequisite = { focus = AUS_dominating_transylvania }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_the_victory_of_hungarian_election
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_deak_party_victory
+		relative_position_id = AUS_1869_parlimentary_elections
+		prerequisite = { focus = AUS_1869_parlimentary_elections }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_dealing_rakovica_revolt
+		relative_position_id = AUS_deak_party_victory
+		prerequisite = { focus = AUS_deak_party_victory }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_abolish_military_frontier
+		relative_position_id = AUS_dealing_rakovica_revolt
+		prerequisite = { focus = AUS_dealing_rakovica_revolt }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_event_abolish_military_frontier
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_trading_with_serbia
+		relative_position_id = AUS_abolish_military_frontier
+		prerequisite = { focus = AUS_abolish_military_frontier }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_opinion_modifier = {
+			    target = AUS
+			    modifier = AUS_trading_with_serbia_mod
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_allinging_with_bosnia_catholics
+		relative_position_id = AUS_abolish_military_frontier
+		prerequisite = { focus = AUS_abolish_military_frontier }
+		x = 1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_support_catholic_bosnians
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = AUS_sarajevo_and_belgrade
+		relative_position_id = AUS_allinging_with_bosnia_catholics
+		prerequisite = { focus = AUS_allinging_with_bosnia_catholics }
+		prerequisite = { focus = AUS_trading_with_serbia }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			country_event = {
+			    id = AUS_sarajavo_and_belgrade_event
+			    days = 5
+			    random_hours = 12
+			    random_days = 5
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_economic_restructure
+		relative_position_id = AUS_deak_party_victory
+		prerequisite = { focus = AUS_deak_party_victory }
+		x = 3
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_elect_kalman_minister_finance
+		relative_position_id = AUS_economic_restructure
+		prerequisite = { focus = AUS_economic_restructure }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	## Industrial & Military Trees
+
+	## Civ Industrial Tree
+	
+	focus = {
+		id = AUS_revitalize_austrian_industry
+		x = 36
+		y = 0
+		cost = 5
+		icon = GFX_focus_generic_industry_1
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 2
+			    category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_civ_industry_focus
+		relative_position_id = AUS_revitalize_austrian_industry 
+		prerequisite = { focus = AUS_revitalize_austrian_industry }
+		x = -2
+		y = 1
+		cost = 5
+		icon = GFX_focus_generic_industry_2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			4 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+			43 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+			9 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+			add_timed_idea = {
+			    idea = AUS_civ_industry_buildup
+			    days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_industrial_revolution
+		relative_position_id = AUS_civ_industry_focus 
+		prerequisite = { focus = AUS_civ_industry_focus }
+		x = 0
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_industry_3
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_lang_factory
+		relative_position_id = AUS_industrial_revolution 
+		prerequisite = { focus = AUS_industrial_revolution }
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_construct_civ_factory
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			43 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_lokomotivfabrik_floridsdorf
+		relative_position_id = AUS_industrial_revolution 
+		prerequisite = { focus = AUS_industrial_revolution }
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_continuous_non_factory_construct
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			9 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_skoda_works
+		relative_position_id = AUS_lokomotivfabrik_floridsdorf
+		prerequisite = { focus = AUS_lokomotivfabrik_floridsdorf }
+		prerequisite = { focus = AUS_lang_factory }
+		x = -1
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_construction
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			9 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+		}
+	}
+
+	## Civ Industrial Tree
+
+	focus = {
+		id = AUS_arms_industry_focus
+		relative_position_id = AUS_revitalize_austrian_industry 
+		prerequisite = { focus = AUS_revitalize_austrian_industry }
+		x = 2
+		y = 1
+		cost = 10
+		icon = GFX_goal_generic_construct_mil_factory
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			add_timed_idea = {
+			    idea = AUS_military_industry_buildup
+			    days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_modernise_imperial_arms
+		relative_position_id = AUS_arms_industry_focus 
+		prerequisite = { focus = AUS_arms_industry_focus }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_focus_generic_modernize_industry
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = {
+			    idea = AUS_modernise_mil_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_steyr_arms
+		relative_position_id = AUS_modernise_imperial_arms
+		prerequisite = { focus = AUS_modernise_imperial_arms }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = {
+			    idea = AUS_steyr_arms_id
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_add_small_arms
+		relative_position_id = AUS_modernise_imperial_arms
+		prerequisite = { focus = AUS_modernise_imperial_arms }
+		x = 1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_war_machine
+		relative_position_id = AUS_add_small_arms
+		prerequisite = { focus = AUS_steyr_arms }
+		prerequisite = { focus = AUS_add_small_arms }
+		x = -1
+		y = 1
+		cost = 10
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_investing_in_unis
+		relative_position_id = AUS_skoda_works
+		prerequisite = { focus = AUS_war_machine }
+		prerequisite = { focus = AUS_skoda_works }
+		x = 2
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_university_2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = {
+			    idea = AUS_research_boost
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_expansion_of_vienna_uni
+		relative_position_id = AUS_investing_in_unis
+		prerequisite = { focus = AUS_investing_in_unis }
+		x = 0
+		y = 1
+		cost = 10
+		icon = GFX_focus_generic_university_3
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	## Fort Tree
+
+	focus = {
+		id = AUS_develop_defen_structures
+		relative_position_id = AUS_revitalize_austrian_industry 
+		prerequisite = { focus = AUS_increase_mil_capability focus = AUS_revitalize_austrian_industry }
+		x = 5
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_timed_idea = {
+			    idea = AUS_defensive_structures
+			    days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_erecting_new_strongholds
+		relative_position_id = AUS_develop_defen_structures
+		prerequisite = { focus = AUS_develop_defen_structures }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_construct_military
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			103 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						province = 6889
+						instant_build = yes
+				}
+			}
+			163 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						province = 3943
+						instant_build = yes
+				}
+			}
+			764 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						province = 3614
+						instant_build = yes
+				}
+			}
+			84 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						province = 690
+						instant_build = yes
+				}
+			}
+			91 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						province = 11479
+						instant_build = yes
+				}
+			}
+			88 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						province = 9427
+						instant_build = yes
+				}
+			}
+		}
+	}
+
+	## Military Tree
+
+	focus = {
+		id = AUS_increase_mil_capability
+		x = 46
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			army_experience = 5
+			navy_experience = 5
+		}
+	}
+
+	focus = {
+		id = AUS_archduke_albrecht 
+		relative_position_id = AUS_increase_mil_capability
+		prerequisite = { focus = AUS_increase_mil_capability }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_focus_generic_military_dictatorship
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_military_infastructure 
+		relative_position_id = AUS_archduke_albrecht 
+		prerequisite = { focus = AUS_archduke_albrecht }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			84 = {
+				add_building_construction = {
+				    type = supply_node
+				    level = 1
+				    instant_build = yes
+				    province = 690
+				}
+			}
+			random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_reform_general_staff
+		relative_position_id = AUS_archduke_albrecht 
+		prerequisite = { focus = AUS_archduke_albrecht }
+		x = 2
+		y = 1
+		cost = 5
+		icon = GFX_focus_generic_military_mission
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+			every_army_leader = { 
+			add_attack = 1
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_improve_officer_corps
+		relative_position_id = AUS_archduke_albrecht 
+		prerequisite = { focus = AUS_archduke_albrecht }
+		x = -2
+		y = 1
+		cost = 5
+		icon = GFX_focus_generic_military_academy
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_short_service_conscription
+		relative_position_id = AUS_military_infastructure 
+		prerequisite = { focus = AUS_improve_officer_corps }
+		prerequisite = { focus = AUS_reform_general_staff }
+		prerequisite = { focus = AUS_military_infastructure  }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = AUS_short_service_conscription
+		}
+	}
+
+	focus = {
+		id = AUS_dev_of_small_arms
+		relative_position_id = AUS_increase_mil_capability
+		prerequisite = { focus = AUS_increase_mil_capability }
+		x = 4
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 1
+			    category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_spec_equipment
+		relative_position_id = AUS_dev_of_small_arms
+		prerequisite = { focus = AUS_dev_of_small_arms }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				    bonus = 1
+				    uses = 2
+				    category = infantry_weapons
+				}
+		}
+	}
+
+	focus = {
+		id = AUS_upgrade_mil_equipment
+		relative_position_id = AUS_spec_equipment
+		prerequisite = { focus = AUS_spec_equipment }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons 
+			}
+		}
+	}
+
+	## Navy Tree
+
+	focus = {
+		id = AUS_expand_aus_navy
+		relative_position_id = AUS_increase_mil_capability
+		prerequisite = { focus = AUS_increase_mil_capability }
+		x = 7
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_construct_new_naval_facilities
+		relative_position_id = AUS_expand_aus_navy
+		prerequisite = { focus = AUS_expand_aus_navy }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_construct_naval_dockyard
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			103 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_small_ship_focus
+		relative_position_id = AUS_construct_new_naval_facilities
+		prerequisite = { focus = AUS_construct_new_naval_facilities }
+		mutually_exclusive = { focus = AUS_large_ship_focus }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+			add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_dev_of_small_ships
+		relative_position_id = AUS_small_ship_focus
+		prerequisite = { focus = AUS_small_ship_focus }
+		x = 0
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_large_ship_focus
+		relative_position_id = AUS_construct_new_naval_facilities
+		prerequisite = { focus = AUS_construct_new_naval_facilities }
+		mutually_exclusive = { focus = AUS_small_ship_focus }
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_navy_battleship
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = fleet_in_being_tree
+			}
+			add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 1
+				category = cv_tech 
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_ironclad_production
+		relative_position_id = AUS_large_ship_focus
+		prerequisite = { focus = AUS_large_ship_focus }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_continuous_naval_production
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_equipment_production = {
+			    equipment = {
+			        type = carrier_3
+			    }
+			    requested_factories = 5
+			    progress = 0
+			    amount = 3
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_kaiserliche_und_konigliche_kriegsmarine
+		relative_position_id = AUS_ironclad_production
+		prerequisite = { focus = AUS_ironclad_production  focus = AUS_dev_of_small_ships }
+		x = -1
+		y = 1
+		cost = 5
+		icon = 
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			navy_experience = 50
+			add_war_support = 0.05
+			every_navy_leader = { 
+			add_maneuver = 1
+			}
 		}
 	}
 

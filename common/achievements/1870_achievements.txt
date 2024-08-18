@@ -170,10 +170,7 @@ hearts_of_iron_achievement = {
 	}
 
 	happened = {
-		custom_trigger_tooltip = {
-			tooltip = austria_tt
-			fpw_prussia_lost_apw = yes
-		}
+		has_completed_focus = AUS_victor_of_the_apw
 	}
 }
 
