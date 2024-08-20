@@ -53,6 +53,7 @@
  STATE_986: "Alexander Archipelago"
  STATE_987: "Prince Edward Island"
  STATE_988:0 "Mainz"
+ STATE_989:0 "Southern Kurils"
  STATE_990:0 "Al Jazira"
  STATE_991:0 "Al Jouf"
  STATE_992:0 "Mafraq"
@@ -94,3 +95,7 @@
  STATE_1027:0 "French Congo"
  STATE_1028:0 "Omani Desert"
  STATE_1029:0 "Al-Beda"
+ # Number breaks because 1030-1319 are tribal states using old loc
+ STATE_1320:0 "Singapore"
+ STATE_1312:0 "Straits Settlements"
+ STATE_1317:0 "Dinding"
