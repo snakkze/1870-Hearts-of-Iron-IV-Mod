@@ -3,7 +3,6 @@ state={
 	id=672
 	name="STATE_672"
 	resources={
-		rubber=150.000
 		oil=12.000
 		aluminium=28.000
 	}
@@ -22,10 +21,6 @@ state={
 			industrial_complex = 1
 			4652 = {
 				naval_base = 3
-
-			}
-			1648 = {
-				naval_base = 1
 
 			}
 			12268 = {

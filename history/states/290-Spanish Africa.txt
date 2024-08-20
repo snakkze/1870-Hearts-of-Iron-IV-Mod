@@ -11,24 +11,10 @@ state={
 		add_core_of = MOR
 		add_core_of = RIF
 		victory_points = {
-			9945 3 
-		}
-		victory_points = {
-			12100 2 
-		}
-		victory_points = {
 			12087 1 
 		}
 		buildings = {
 			infrastructure = 2
-			12100 = {
-				naval_base = 3
-
-			}
-			9945 = {
-				naval_base = 3
-
-			}
 
 		}
 
