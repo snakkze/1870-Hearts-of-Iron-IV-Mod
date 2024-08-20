@@ -193,6 +193,11 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.4
 	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.1
+	}
 	else = {
 		puppet = RAJ
 		puppet = CAN
@@ -202,6 +207,7 @@ if = {
 		puppet = PEI
 		puppet = REU
 		puppet = SAF
+		puppet = MAL
 	}
 }
 
