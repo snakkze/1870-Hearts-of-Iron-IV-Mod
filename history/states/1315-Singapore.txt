@@ -8,19 +8,18 @@ state={
 
 	history={
 	set_variable = { tribal = 336 }
-		owner = TRB
+		owner = INS
 		
 		
 		
 		
-		add_core_of = TRB
 		add_core_of = MAL
 
 	}
 
 	provinces={ 12113 }
-	manpower=69811
+	manpower=85
 	buildings_max_level_factor=1.000
-	state_category=tiny_island
+	state_category=small_island
 	local_supplies=0.000
 }
