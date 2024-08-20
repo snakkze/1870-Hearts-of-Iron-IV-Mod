@@ -10,7 +10,6 @@ state={
 	}
 
 	history={
-	set_variable = { tribal = 336 }
 		owner = TRB
 		
 		
@@ -24,6 +23,6 @@ state={
 	provinces={ 1348 }
 	manpower=69491
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=pastoral
 	local_supplies=0.000
 }

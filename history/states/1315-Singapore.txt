@@ -1,12 +1,9 @@
 
 state={
 	id=1315
-	name="STATE_336"
+	name="STATE_1320"
 	resources={
-		rubber=342.000
-		steel=20.000
-		tungsten=189.000
-		aluminium=15.000
+		
 	}
 
 	history={
@@ -24,6 +21,6 @@ state={
 	provinces={ 12113 }
 	manpower=69811
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=tiny_island
 	local_supplies=0.000
 }
