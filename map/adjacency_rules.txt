@@ -12,8 +12,7 @@
 # The 'name' property is how you refer to the rule in adjacencies.csv
 
 #Suez Canal
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "SUEZ_CANAL"
 
 	contested =
@@ -45,7 +44,7 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 12049 1155 4073 9947 }
+	required_provinces = { 7983 1155 9947 }
 
 	is_disabled = {
 		OR = {
@@ -53,12 +52,14 @@ adjacency_rule =
 			has_global_flag = SUEZ_CANAL_BLOCKED
 			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
 			has_country_flag = SUEZ_SANCTIONS_FLAG
+			date < 1869.11.17 #should be removed once suez canal can be built + news
 		}
 		tooltip = suez_blocked_tt
 	}
+
 	
-	icon = 12049
-	offset = { 1 0 -6 }
+	icon = 7983
+	offset = { 1.3 0 0 }
 }
 
 #Gibraltar Strait
