@@ -329,36 +329,6 @@ leader_traits = {
 		}
 	}
 
-	famous_aviator = {
-		random = no
-		equipment_bonus = {
-			medium_plane_airframe = {
-				air_range = 0.01
-			}
-			small_plane_airframe = {
-				air_range = 0.01
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	spirit_of_genghis = {
-		random = no
-		cavalry_attack_factor = 0.05
-		equipment_bonus = {
-			small_plane_naval_bomber_airframe = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-
 	indomitable_perseverance = { # Ground units get 4 more Morale
 		random = no
 		sprite = 5
@@ -4349,12 +4319,6 @@ leader_traits = {
 				build_cost_ic = -0.15
 			}
 		}
-		equipment_bonus = {
-			motorized_equipment = {
-				instant = yes
-				build_cost_ic = -0.15
-			}
-		}
 
 	}
 
@@ -7017,24 +6981,11 @@ leader_traits = {
 	}
 
 
-	#Hess
-	amateur_aviator_hess = {
-		sprite = 1
-		political_power_factor = 0.15
-		equipment_bonus = {
-			medium_plane_fighter_airframe = {
-				build_cost_ic = -0.025
-			}
-		}
-	}
-
-
 	###
 
 	council_of_theorists = {
 		sprite = 14
 		experience_gain_army = 0.03
-		experience_gain_air = 0.03
 		experience_gain_navy = 0.03
 		land_doctrine_cost_factor = -0.05
 		air_doctrine_cost_factor = -0.05
@@ -7099,20 +7050,6 @@ leader_traits = {
 		}
 	}
 
-	dive_bomber = {
-		sprite = 14
-		equipment_bonus = {
-			small_plane_cas_airframe = {
-				instant = yes
-				air_ground_attack = 0.1
-			}
-		}
-		air_doctrine_cost_factor = -0.10
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	victory_through_airpower = {
 		sprite = 14
@@ -7177,22 +7114,6 @@ leader_traits = {
 		}
 	}
 
-	blitzkrieg_theorist = {
-		sprite = 14
-
-		equipment_bonus = {
-			armor = {
-				instant = yes
-				maximum_speed = 0.10
-			}
-		}
-		cat_mobile_warfare_cost_factor = -0.15
-
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
 	aircraft_manufacturer = {
 		random = no
 
@@ -7201,249 +7122,6 @@ leader_traits = {
 		}
 	}
 
-	light_aircraft_manufacturer = {
-		random = no
-		equipment_bonus = {
-			small_plane_airframe = {
-				air_agility = 0.1 maximum_speed = 0.1
-			}
-			cv_small_plane_airframe = {
-				air_agility = 0.1 maximum_speed = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	light_aircraft_manufacturer_2 = {
-		random = no
-		equipment_bonus = {
-			small_plane_airframe = {
-				air_agility = 0.2 maximum_speed = 0.1
-			}
-			cv_small_plane_airframe = {
-				air_agility = 0.2 maximum_speed = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-	}
-
-
-	CAS_manufacturer = {
-		random = no
-		equipment_bonus = {
-			small_plane_cas_airframe = {
-				air_ground_attack = 0.1 reliability = 0.1
-			}
-			cv_small_plane_cas_airframe = {
-				air_ground_attack = 0.1 reliability = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	medium_aircraft_manufacturer = {
-		random = no
-		equipment_bonus = {
-			medium_plane_fighter_airframe = {
-				reliability = 0.2
-			}
-			medium_plane_airframe = {
-				reliability = 0.2
-			}
-			medium_plane_scout_plane_airframe = {
-				reliability = 0.2
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	fuel_efficient_aircraft_manufacturer = {
-		random = no
-		equipment_bonus = {
-			small_plane_airframe = {
-				air_range = 0.1
-			}
-			medium_plane_fighter_airframe = {
-				air_range = 0.1
-				reliability = 0.2
-			}
-			medium_plane_airframe = {
-				reliability = 0.2
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	heavy_aircraft_manufacturer = {
-		random = no
-		equipment_bonus = {
-
-			large_plane_airframe = {
-				air_bombing = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	naval_aircraft_manufacturer = {
-		random = no
-		equipment_bonus = {
-			small_plane_naval_bomber_airframe = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
-			cv_small_plane_naval_bomber_airframe = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
-			cv_small_plane_airframe = {
-				air_range = 0.1 air_agility = 0.1
-			}
-			cv_small_plane_cas_airframe = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	multi_role_aircraft_manufacturer = {
-		random = no
-		equipment_bonus = {
-			small_plane_naval_bomber_airframe = {
-				reliability = 0.1
-			}
-			medium_plane_airframe = {
-				reliability = 0.1
-			}
-			small_plane_cas_airframe = {
-				reliability = 0.1
-			}
-			medium_plane_scout_plane_airframe = {
-				reliability = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	tank_refurbishment_plant = { #NSB
-		random = no
-		#generic
-
-		equipment_bonus = {
-			armor = {
-				reliability = 0.05
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	fast_tank_manufacturer = {
-		random = no
-		equipment_bonus = {
-			armor = {
-				maximum_speed = 0.05 reliability = 0.1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	armored_car_manufacturer = {
-		random = no
-		equipment_bonus = {
-			armored_car_equipment = {
-				maximum_speed = 0.05
-				soft_attack = 0.05
-				hard_attack = 0.05
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	infantry_tank_manufacturer = {
-		random = no
-		equipment_bonus = {
-			armor = {
-				soft_attack = 0.05
-				armor_value = 0.05
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	medium_tank_manufacturer = {
-		random = no
-		equipment_bonus = {
-			armor = {
-				reliability = 0.05 soft_attack = 0.05
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	heavy_tank_manufacturer = {
-		random = no
-		equipment_bonus = {
-			armor = {
-				armor_value = 0.05 hard_attack = 0.05
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	tank_manufacturer = {
-		random = no
-		#generic
-
-		equipment_bonus = {
-			armor = {
-				reliability = 0.05
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	repair_and_refurbishment_plant = { #NSB - Repairs & Refit
 		random = no

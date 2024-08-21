@@ -54,12 +54,12 @@ adjacency_rule = {
 			has_country_flag = SUEZ_SANCTIONS_FLAG
 			date < 1869.11.17 #should be removed once suez canal can be built + news
 		}
-		tooltip = suez_blocked_tt
+		tooltip = fpw_suez_blocked_tt
 	}
 
 	
 	icon = 7983
-	offset = { 1.3 0 0 }
+	offset = { 1.3 0 3 }
 }
 
 #Gibraltar Strait

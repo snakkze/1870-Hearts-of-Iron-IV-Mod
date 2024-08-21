@@ -243,3 +243,26 @@ defined_text = {
 		localization_key = communist_yes
 	}
 }
+
+defined_text = {
+	name = fpw_suez_blocked_ttSL
+	text = {
+		trigger = {
+			OR = {
+			has_country_flag = SUEZ_SANCTIONS_FLAG
+			has_global_flag = SUEZ_CANAL_BLOCKED
+			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
+			}
+		}
+		localization_key = fpw_suez_blocked_ttA
+	}
+	text = {
+		trigger = {
+			OR = {
+			has_global_flag = SUEZ_CANAL_NOT_BUILT
+			date < 1869.11.17 #should be removed once suez canal can be built + news
+		}
+		}
+		localization_key = fpw_suez_blocked_ttB
+	}
+}
