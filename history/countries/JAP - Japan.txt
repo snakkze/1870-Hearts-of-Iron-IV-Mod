@@ -144,9 +144,8 @@ add_ideas = {
 
 set_technology = {
 	fpw_infantry_weapons = 1
-	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
-    tech_support = 1
+	fpw_cavalry_equipment = 1
 }
 
 if = {

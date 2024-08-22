@@ -1,4 +1,4 @@
-    add_namespace = fpw_japan
+add_namespace = fpw_japan
 
 	country_event = {
 		id = fpw_japan.1
@@ -8,9 +8,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.1.a
@@ -72,9 +72,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.2.a
@@ -116,7 +116,7 @@
 			}
 			}
 			JAP = {
-			country_event = fpw_japan.6
+			country_event = { id = fpw_japan.6 days = 2 random_days = 3 }
 			}	
 		}
         option = {
@@ -124,7 +124,7 @@
 			ai_chance = {
 				base = 0
 			}
-			country_event = fpw_japan.3
+			country_event = { id = fpw_japan.3 days = 2 random_days = 3 }
 			JAP = {add_opinion_modifier = { target = JAP modifier = small_decrease }
 		}
 		}
@@ -132,6 +132,9 @@
 			name = fpw_japan.2.c
 			ai_chance = {
 				base = 0
+			}
+			hidden_effect = {
+			add_threat = 2
 			}
 			custom_effect_tooltip = JAP_tt2
 			537 = {
@@ -152,7 +155,7 @@
 			}
 			}
 			JAP = {
-			country_event = fpw_japan.4
+			country_event = { id = fpw_japan.4 days = 2 random_days = 3 }
 			}
 			JAP = {add_opinion_modifier = { target = JAP modifier = large_decrease }
 		}
@@ -167,9 +170,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.3.a
@@ -188,9 +191,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.4.a
@@ -222,9 +225,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.5.a
@@ -232,7 +235,7 @@
 				base = 10
 			}
 				SOV = {
-			country_event = fpw_japan.2
+			country_event = { id = fpw_japan.2 days = 2 random_days = 3 }
 			}
 		}
         option = {
@@ -241,7 +244,7 @@
 				base = 0
 			}
 			SOV = {
-			country_event = fpw_japan.7
+			country_event = { id = fpw_japan.7 days = 2 random_days = 3 }
 			}
 		
 		}	
@@ -263,9 +266,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.6.a
@@ -284,9 +287,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.7.a
@@ -295,7 +298,7 @@
 			}
 		custom_effect_tooltip = JAP_tt2
 		JAP = {
-			country_event = fpw_japan.9
+			country_event = { id = fpw_japan.9 days = 2 random_days = 3 }
 			}
 		
 		}
@@ -326,7 +329,7 @@
 		add_political_power = -50
 		add_stability = -0.02	
 			JAP = {
-			country_event = fpw_japan.8
+			country_event = { id = fpw_japan.8 days = 2 random_days = 3 }
 			}}	
 	}
 	
@@ -338,9 +341,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.8.a
@@ -359,9 +362,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.9.a
@@ -394,9 +397,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.10.a
@@ -408,7 +411,7 @@
 		}
 		hidden_effect = {
 		JAP = {
-			country_event = fpw_japan.12
+			country_event = { id = fpw_japan.12 days = 2 random_days = 3 }
 			}
 			}
 		}
@@ -418,7 +421,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.11
+			country_event = { id = fpw_japan.11 days = 2 random_days = 3 }
 			}	
 		}
 	}
@@ -431,9 +434,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.11.a
@@ -466,9 +469,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.12.a
@@ -486,9 +489,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.13.a
@@ -658,9 +661,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.14.a
@@ -686,9 +689,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.15.a
@@ -739,9 +742,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.16.a
@@ -769,9 +772,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.17.a
@@ -801,9 +804,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.18.a
@@ -811,7 +814,7 @@
 				base = 10
 			}
 			JAP = {
-			country_event = fpw_japan.19
+			country_event = { id = fpw_japan.19 days = 2 random_days = 3 }
 			}	
 		}
 		option = {
@@ -820,7 +823,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.20
+			country_event = { id = fpw_japan.20 days = 2 random_days = 3 }
 			}	
 			add_stability = -0.1
 		}
@@ -834,9 +837,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.19.a
@@ -844,7 +847,7 @@
 				base = 10
 			}
 			KOR = {
-			country_event = fpw_japan.21
+			country_event = { id = fpw_japan.21 days = 2 random_days = 3 }
 			}	
 		}
 		option = {
@@ -857,13 +860,10 @@
 			}
 			hidden_effect = {
 			JAP = {
-			country_event = fpw_japan.23
+			country_event = { id = fpw_japan.23 days = 2 random_days = 3 }
 			}	
 			KOR = {
-			country_event = fpw_japan.24
-			}
-			JAP = {
-			mark_focus_tree_layout_dirty = yes
+			country_event = { id = fpw_japan.24 days = 2 random_days = 3 }
 			}
 			}
 		}
@@ -877,9 +877,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.20.a
@@ -900,9 +900,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.21.a
@@ -910,7 +910,7 @@
 				base = 10
 			}
 			JAP = {
-			country_event = fpw_japan.22
+			country_event = { id = fpw_japan.22 days = 2 random_days = 3 }
 			}	
 			
 		}
@@ -920,7 +920,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.20			
+			country_event = { id = fpw_japan.20 days = 2 random_days = 3 }		
 			}	
 		}
 	}
@@ -933,9 +933,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.22.a
@@ -947,13 +947,10 @@
 			}
 			hidden_effect = {
 			JAP = {
-			country_event = fpw_japan.23
+			country_event = { id = fpw_japan.23 days = 2 random_days = 3 }
 			}	
 			KOR = {
-			country_event = fpw_japan.24
-			}
-			JAP = {
-			mark_focus_tree_layout_dirty = yes
+			country_event = { id = fpw_japan.24 days = 2 random_days = 3 }
 			}
 			}
 		}
@@ -976,15 +973,16 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.23.a
 			ai_chance = {
 				base = 10
 			}
+			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = JAP_ganghwa_island_accident	
 		}
 	}
@@ -997,9 +995,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.24.a
@@ -1018,9 +1016,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.25.a
@@ -1028,7 +1026,7 @@
 				base = 10
 			}
 			JAP = {
-			country_event = fpw_japan.26
+			country_event = { id = fpw_japan.26 days = 2 random_days = 3 }
 			}	
 		}
 		option = {
@@ -1037,7 +1035,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.27
+			country_event = { id = fpw_japan.27 days = 2 random_days = 3 }
 			}	
 		}
 		option = {
@@ -1046,7 +1044,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.28
+			country_event = { id = fpw_japan.28 days = 2 random_days = 3 }
 			}	
 		}
 	}
@@ -1059,9 +1057,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.26.a
@@ -1069,7 +1067,7 @@
 				base = 10
 			}
 			KOR = {
-			country_event = fpw_japan.30
+			country_event = { id = fpw_japan.30 days = 2 random_days = 3 }
 			}	
 		}
 		option = {
@@ -1078,7 +1076,7 @@
 				base = 0
 			}
 			KOR = {
-			country_event = fpw_japan.31
+			country_event = { id = fpw_japan.31 days = 2 random_days = 3 }
 			}	
 		}
 		option = {
@@ -1099,9 +1097,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.27.a
@@ -1109,7 +1107,7 @@
 				base = 10
 			}
 			KOR = {
-			country_event = fpw_japan.32
+			country_event = { id = fpw_japan.32 days = 2 random_days = 3 }
 			}	
 		}
 		option = {
@@ -1118,7 +1116,7 @@
 				base = 0
 			}
 			KOR = {
-			country_event = fpw_japan.33
+			country_event = { id = fpw_japan.33 days = 2 random_days = 3 }
 			}	
 		}
 	}
@@ -1131,9 +1129,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.28.a
@@ -1232,9 +1230,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.29.a
@@ -1306,9 +1304,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.30.a
@@ -1321,7 +1319,7 @@
 			}
 			}
 			JAP = {
-			country_event = fpw_japan.34
+			country_event = { id = fpw_japan.34 days = 2 random_days = 3 }
 			}	
 			JAP = {
 			add_ideas = {
@@ -1335,7 +1333,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.35
+			country_event = { id = fpw_japan.35 days = 2 random_days = 3 }
 			}	
 		}
 	}
@@ -1348,9 +1346,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.31.a
@@ -1363,7 +1361,7 @@
 			}
 			}
 			JAP = {
-			country_event = fpw_japan.34
+			country_event = { id = fpw_japan.34 days = 2 random_days = 3 }
 			}	
 			JAP = {
 			add_ideas = {
@@ -1377,7 +1375,7 @@
 				base = 2
 			}
 			JAP = {
-			country_event = fpw_japan.35
+			country_event = { id = fpw_japan.35 days = 2 random_days = 3 }
 			}	
 		}
 	}
@@ -1390,9 +1388,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.32.a
@@ -1400,7 +1398,7 @@
 				base = 10
 			}
 			JAP = {
-			country_event = fpw_japan.36
+			country_event = { id = fpw_japan.36 days = 2 random_days = 3 }
 			}
 			KOR = {
 			add_ideas = {
@@ -1419,7 +1417,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.37
+			country_event = { id = fpw_japan.37 days = 2 random_days = 3 }
 			}
 			KOR = {
 			add_ideas = {
@@ -1438,7 +1436,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.39
+			country_event = { id = fpw_japan.39 days = 2 random_days = 3 }
 			}
 		}
 	}
@@ -1451,9 +1449,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.33.a
@@ -1461,7 +1459,7 @@
 				base = 10
 			}
 			JAP = {
-			country_event = fpw_japan.26
+			country_event = { id = fpw_japan.26 days = 2 random_days = 3 }
 			}
 		}
 		option = {
@@ -1470,7 +1468,7 @@
 				base = 2
 			}
 			JAP = {
-			country_event = fpw_japan.28
+			country_event = { id = fpw_japan.28 days = 2 random_days = 3 }
 			}
 		}
 	}
@@ -1483,9 +1481,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.34.a
@@ -1538,9 +1536,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.35.a
@@ -1639,9 +1637,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.36.a
@@ -1665,7 +1663,7 @@
 				base = 0
 			}
 			KOR = {
-			country_event = fpw_japan.38
+			country_event = { id = fpw_japan.38 days = 2 random_days = 3 }
 			}
 			KOR = {
 			remove_ideas = {
@@ -1688,9 +1686,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.37.a
@@ -1718,9 +1716,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.38.a
@@ -1741,7 +1739,7 @@
 			}
 			
 			JAP = {
-			country_event = fpw_japan.37
+			country_event = { id = fpw_japan.37 days = 2 random_days = 3 }
 			}
 		}
 		option = {
@@ -1750,7 +1748,7 @@
 				base = 0
 			}
 			JAP = {
-			country_event = fpw_japan.35
+			country_event = { id = fpw_japan.35 days = 2 random_days = 3 }
 			}
 		}
 	}
@@ -1763,9 +1761,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.39.a
@@ -1864,9 +1862,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.40.a
@@ -1925,9 +1923,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.41.a
@@ -2012,7 +2010,7 @@
 			}
 			custom_effect_tooltip = JAP_tt0
 			ENG = {
-			country_event = fpw_japan.42
+			country_event = { id = fpw_japan.42 days = 2 random_days = 3 }
 			add_opinion_modifier = { target = JAP modifier = large_decrease }
 		}
 		}
@@ -2026,9 +2024,9 @@
 		
 		is_triggered_only = yes
 
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.42.a
@@ -2060,7 +2058,7 @@
 
         fire_only_once=yes
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.43.a
@@ -2091,7 +2089,7 @@
 		
         fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.44.a
@@ -2122,9 +2120,9 @@
 		
 		is_triggered_only = yes
 		
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.45.a
@@ -2301,9 +2299,9 @@
 		
 		is_triggered_only = yes
 		
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.46.a
@@ -2476,9 +2474,9 @@
 		
 		is_triggered_only = yes
 		
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.47.a
@@ -2554,9 +2552,9 @@
 		
 		is_triggered_only = yes
 		
-        fire_only_once=yes
+        fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.48.a
@@ -2586,7 +2584,7 @@
 		
         fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.49.a
@@ -2608,7 +2606,7 @@
 		
         fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.50.a
@@ -2616,24 +2614,27 @@
 				base = 10
 			}
 			JAP = {
-			country_event = fpw_japan.51
-			}
-			custom_effect_tooltip = JAP_tt0b
-			effect_tooltip = {
-			add_ideas = {
-			chi_japanese_payment
-			}
-			JAP = {
-			add_offsite_building = { type = industrial_complex level = 1 }
-			}
-			}
+            country_event = { id = fpw_japan.51 days = 2 random_days = 3 }
+            }
+            custom_effect_tooltip = JAP_tt0b
+            effect_tooltip = {
+            add_ideas = {
+            chi_japanese_payment
+            }
+            JAP = {
+            add_offsite_building = { type = industrial_complex level = 1 }
+            }
+            }
 		}
 		option = {
 			name = fpw_japan.50.b
 			ai_chance = {
 				base = 0
 			}
-
+			custom_effect_tooltip = JAP_tt2BB
+			JAP = {
+            country_event = { id = fpw_japan.59 days = 2 random_days = 3 }
+            }
 		}
 	}
 	
@@ -2647,7 +2648,7 @@
 		
         fire_only_once=no
 
-        major = yes
+        major = no
 		
 		option = {
 			name = fpw_japan.51.a
@@ -2659,14 +2660,18 @@
 			chi_japanese_payment
 			}
 			}
+			custom_effect_tooltip = JAP_tt0
 			JAP = {
 			add_offsite_building = { type = industrial_complex level = 1 }
 			}
 			hidden_effect = {
+			2715 = { transfer_state_to = CHI }
 			CHI = {
-			set_province_controller = 12068
-			set_province_controller = 11914
-			set_province_controller = 1175
+            country_event = { id = fpw_japan.53 days = 2 random_days = 3 }
+			}
+			delete_unit_template_and_units = {
+			division_template = "Colonial Assault Division"
+			disband = yes
 			}
 			}
 		}
@@ -2675,6 +2680,373 @@
 			ai_chance = {
 				base = 0
 			}
-
+			custom_effect_tooltip = JAP_tt2B
+			custom_effect_tooltip = JAP_tt0
+			hidden_effect = {
+			add_threat = 2
+			}
+			CHI = {
+            country_event = { id = fpw_japan.52 days = 2 random_days = 3 }
+            }
+			custom_effect_tooltip = JAP_tt0
+			CHI = {add_opinion_modifier = { target = JAP modifier = large_decrease } }
 		}
+		option = {
+			name = fpw_japan.51.c
+			ai_chance = {
+				base = 0
+			}
+			custom_effect_tooltip = JAP_tt2C
+			custom_effect_tooltip = JAP_tt0
+			hidden_effect = {
+			add_threat = 3
+			}
+			CHI = {
+            country_event = { id = fpw_japan.54 days = 2 random_days = 3 }
+            }
+			custom_effect_tooltip = JAP_tt0
+			CHI = {add_opinion_modifier = { target = JAP modifier = large_decrease } }
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.52
+		title = fpw_japan.52.t
+		desc = fpw_japan.52.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.52.a
+			ai_chance = {
+				base = 2
+				modifier = { has_stability > 0.5 add = 3 }
+				modifier = { has_war_support > 0.5 add = 5 }
+			}
+			effect_tooltip = {
+			JAP = {
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+			}
+			}
+			hidden_effect = {
+			JAP = {
+            country_event = { id = fpw_japan.55 days = 2 random_days = 3 }
+            }
+			}
+		}
+		option = {
+			name = fpw_japan.52.b
+			ai_chance = {
+				base = 5
+			}
+			JAP = {
+            country_event = { id = fpw_japan.56 days = 2 random_days = 3 }
+            }
+			add_political_power = -50
+			add_stability = -0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.53
+		title = fpw_japan.53.t
+		desc = fpw_japan.53.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.53.a
+			ai_chance = {
+				base = 10
+			}
+			
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.54
+		title = fpw_japan.54.t
+		desc = fpw_japan.54.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.54.a
+			ai_chance = {
+				base = 5
+				modifier = { has_stability > 0.5 add = 6 }
+				modifier = { has_war_support > 0.5 add = 10 }
+			}
+			effect_tooltip = {
+			JAP = {
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+			}
+			}
+			hidden_effect = {
+			JAP = {
+            country_event = { id = fpw_japan.57 days = 2 random_days = 3 }
+            }
+			}
+		}
+		option = {
+			name = fpw_japan.54.b
+			ai_chance = {
+				base = 5
+			}
+			effect_tooltip = {
+			524 = { transfer_state_to = JAP }
+			}
+			add_political_power = -50
+			add_stability = -0.02
+			hidden_effect = {
+			JAP = {
+            country_event = { id = fpw_japan.58 days = 2 random_days = 3 }
+            }
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.55
+		title = fpw_japan.55.t
+		desc = fpw_japan.55.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.55.a
+			ai_chance = {
+				base = 10
+			}
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.56
+		title = fpw_japan.56.t
+		desc = fpw_japan.56.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.56.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.57
+		title = fpw_japan.57.t
+		desc = fpw_japan.57.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.57.a
+			ai_chance = {
+				base = 10
+			}
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.58
+		title = fpw_japan.58.t
+		desc = fpw_japan.58.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.58.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.05
+			524 = { transfer_state_to = JAP }
+		}
+		
+		option = {
+			name = fpw_japan.58.b
+			ai_chance = {
+				base = 0
+			}
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CHI
+			expire = 90
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.59
+		title = fpw_japan.59.t
+		desc = fpw_japan.59.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.59.a
+			ai_chance = {
+				base = 10
+			}
+			effect_tooltip = {
+			CHI = {
+			create_wargoal = {
+            target = JAP
+            type = take_state_focus
+            generator = { 2715 }
+			}
+			}
+			}
+			hidden_effect = {
+			CHI = {
+            country_event = { id = fpw_japan.60 days = 2 random_days = 3 }
+			}
+			}
+		}
+		
+		option = {
+			name = fpw_japan.59.b
+			ai_chance = {
+				base = 0
+			}
+			2715 = { transfer_state_to = CHI }
+			hidden_effect = {
+			CHI = {
+            country_event = { id = fpw_japan.61 days = 2 random_days = 3 }
+			}
+			delete_unit_template_and_units = {
+			division_template = "Colonial Assault Division"
+			disband = yes
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.60
+		title = fpw_japan.60.t
+		desc = fpw_japan.60.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.60.a
+			ai_chance = {
+				base = 10
+			}
+			create_wargoal = {
+            target = JAP
+            type = take_state_focus
+            generator = { 2715 }
+			}
+		}
+
+	}
+	
+	country_event = {
+		id = fpw_japan.61
+		title = fpw_japan.61.t
+		desc = fpw_japan.61.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.61.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+		}
+
+	}
+	
+	country_event = {
+		id = fpw_japan.62
+		title = fpw_japan.62.t
+		desc = fpw_japan.62.d
+		picture = GFX_report_event_japanese_officers
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.62.a
+			ai_chance = {
+				base = 10
+			}
+			set_country_flag = fpw_jap_officers_return
+		}
+
 	}

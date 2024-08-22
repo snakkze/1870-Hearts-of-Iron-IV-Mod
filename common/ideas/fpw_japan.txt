@@ -214,7 +214,7 @@ ideas = {
 				
 			modifier = {
 			monthly_population = 0.5
-			recruitable_population_factor = 0.05
+			conscription_factor = 0.05
 			army_morale_factor = 0.1
 			production_speed_buildings_factor = 0.1
 			}
@@ -536,6 +536,223 @@ ideas = {
 				weekly_casualties_war_support = 0.001
 				offensive_war_stability_factor = 0.2
 				conscription = 0.015
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit2 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit3 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.2
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit3b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.1
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit4 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_attack_factor = 0.1
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.3
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit4b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_attack_factor = 0.1
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.2
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit5 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.4
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit5b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.3
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit6 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_core_defence_factor = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				war_stability_factor = 0.5
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.4
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit6b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_core_defence_factor = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				war_stability_factor = 0.5
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.3
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
 				surrender_limit = 0.2
 			}
 		}
@@ -951,7 +1168,19 @@ ideas = {
             }
 		}
 		
-		
+		chi_japanese_payment	= {	
+				
+			removal_cost = -1
+				
+			allowed = {
+			always = yes
+			}	
+				
+			modifier = {
+				civilian_factory_use = 1
+			}
+			
+		}
 		
 		}
 }

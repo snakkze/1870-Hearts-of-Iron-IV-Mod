@@ -33,6 +33,21 @@ on_actions = {
 		effect = {
 				if = {
 					limit = {
+					date > 1871.12.24 # ~ Ryukyu Soldiers killed
+					date < 1871.12.26
+							}
+				JAP = {			
+				country_event = fpw_japan.49
+				}
+					}
+					
+			}
+
+		}
+	on_daily_JAP = {
+		effect = {
+				if = {
+					limit = {
 					date > 1866.8.28 #Tokugawa Iemochi dies
 							}
 			

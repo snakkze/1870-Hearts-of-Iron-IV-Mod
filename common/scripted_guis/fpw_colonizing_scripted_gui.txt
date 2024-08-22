@@ -12,6 +12,9 @@ scripted_gui = {
             colonize_button_visible = {
                 has_state_flag = tribe_state
                 is_owned_by = TRB
+				NOT = {
+				state = 537
+				}
                 OR = {
                     # needs fix as province definition is wrong
                     is_coastal = yes

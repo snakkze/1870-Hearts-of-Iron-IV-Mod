@@ -3,6 +3,7 @@ capital = 500
 
 
 oob = "BRA_1866"
+set_country_flag = fpw_access_to_rubber_tree_saplings
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	else = {
