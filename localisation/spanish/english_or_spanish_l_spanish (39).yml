@@ -1,0 +1,142 @@
+﻿l_spanish:
+  
+ ## Russian Empire Branch 
+  
+ SOV_state_of_the_empire: "Estado del imperio" #NT!
+ SOV_state_of_the_empire_focus_tp: "§gUnlocks§! la §Gpestaña Decisión de rusificación§!!" #NT!
+ SOV_crush_polish_resistance_remnants: "Aplastar los restos de la resistencia polaca" #NT!
+ SOV_russification_programs: "Programas de rusificación" #NT!
+ SOV_russification_programs_focus_tp: "§gUnlocks§! varias §RRepression§! decisiones en la pestaña §GRussification§!, como:\n §Y$ban_polish_language$\n $poland_introduce_martial_law$\n $poland_force_conscription$§!" #NT!
+ SOV_undermine_national_identity: "Socavar las identidades nacionales" #NT!
+ SOV_undermine_national_identity_focus_tp: "§gUnlocks§! varias §RPropaganda§! decisiones en la pestaña §GRussification§!, como:\n §Y$poland_promote_russian_culture$\n $raid_poland_culture_centers$§!\n\nEsto hará que §Glower§! todos §Ragitation§! sean §C-10%§!" #NT!
+ SOV_one_way_trip_to_siberia: "Deportaciones a Siberia" #NT!
+ SOV_one_way_trip_to_siberia_focus_tp: "§gUnlocks§! varias §RDeportation§! decisiones en la pestaña §GRussification§!, como por ejemplo:\n §Y$deportation_of_poles$" #NT!
+ SOV_integration_of_subjects: "Integración de Asignaturas" #NT!
+ SOV_integration_of_subjects_focus_tp: "Le permite §GCore§! regiones que tienen §Ynivel de rusificación§! en al menos §C60%§!" #NT!
+ SOV_finnish_question: "Pregunta finlandesa" #NT!
+ SOV_finnish_question_focus_tp: "§gUnlocks§! varias §CFinnish§! decisiones en la pestaña §GRussification§!!" #NT!
+ SOV_finnish_integration: "Integración finlandesa" #NT!
+ SOV_finnish_integration_focus_tp: "Te permite §GCore§! §CFinland§! si el §Ynivel de rusificación§! está en al menos §C60%§!" #NT!
+  
+ SOV_amnesty_for_polish_resistance: "Amnistía para la resistencia polaca" #NT!
+ SOV_finnish_autonomy: "Autonomía finlandesa" #NT!
+ SOV_stop_russification: "Detener la rusificación" #NT!
+ SOV_congressional_kingdom: "Reino del Congreso" #NT!
+ SOV_congressional_kingdom_focus_tp: "¡Esto hará §Gincrease§! al polaco §Ccooperation§! por §C20%§!, y §Gdecrease§! a su §Ragitation§! por §C20%§!!" #NT!
+ SOV_promote_national_identity: "Promover las identidades nacionales" #NT!
+ SOV_accessibility_of_culture: "Accesibilidad de la cultura" #NT!
+ SOV_federative_empire: "¿Un imperio federal?" #NT!
+  
+ ## Politics Branch 
+  
+ SOV_tsars_regime: "El régimen del zar" #NT!
+ SOV_tsars_regime_desc: "El zar es el gobernante legítimo del Imperio ruso y debe conservar su poder." #NT!
+ SOV_continue_reforms: "Ralentizar las reformas" #NT!
+ SOV_continue_reforms_desc: "Poner fin a la servidumbre fue un gran éxito, pero los elementos conservadores del país están profundamente insatisfechos y no quieren que avancemos mucho más." #NT!
+ SOV_free_state_serfs: "Siervos del Estado Libre" #NT!
+ SOV_modify_sr_ns_intro: "Modificar §Y$SOV_serfdom_remnants_dynamic_modifier$§! por" #NT!
+ SOV_free_state_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nFábricas de bienes de consumo: §Y+10.0%§! \nMáximo de fábricas en un estado: §G+10.00%§! \n\n" #NT!
+ SOV_administrative_reform: "Reforma administrativa" #NT!
+ SOV_judicial_system: "Sistema judicial" #NT!
+ SOV_help_for_peasants: "Ayuda a los campesinos" #NT!
+ SOV_tighten_tsars_control: "Reforzar el control del zar" #NT!
+ SOV_the_tsar_knows_best: "El zar sabe más" #NT!
+ SOV_reformed_but_still_russia: "Reformada pero aún Rusia" #NT!
+ SOV_help_for_peasants: "Permitir la propiedad campesina" #NT!
+ SOV_help_for_peasants_effect_tt: "$SOV_modify_sr_ns_intro$ \nEficiencia de obtención de recursos: §G+10.00%§! \nFábricas de bienes de consumo: §Y+5.0%§! \nLímite de eficiencia de producción: §G+10.00%§! \n\n" #NT!
+  
+  
+ SOV_more_radical_reforms: "Reformas más radicales" #NT!
+ SOV_pay_of_serfs: "Pago de siervos" #NT!
+ SOV_pay_of_serfs_effect_tt: "$SOV_modify_sr_ns_intro$ \nFábricas de bienes de consumo: §Y+10.0%§! \nMáximo de fábricas en un estado: §G+20.00%§! \n\n" #NT!
+ SOV_new_agricultural_economy: "Nueva Economía Agrícola" #NT!
+ SOV_new_agricultural_economy_effect_tt: "$SOV_modify_sr_ns_intro$ \nFábricas de bienes de consumo: §Y+5.0%§! \nLímite de eficiencia de producción: §G+10.00%§! \nProducción de fábrica: §G+10.00%§! \nProducción del astillero: §G+10.00%§! \n\n" #NT!
+ SOV_new_agricultural_economy_focus_tp: "\nDesbloquea §YDecisions§! que te permiten reducir la §YBienes de consumo§! §RPenalización§!" #NT!
+ SOV_liberalize_the_press: "Liberalizar la prensa" #NT!
+ SOV_first_russian_constitution: "Primera Constitución rusa" #NT!
+ SOV_purge_the_old_gaurd: "Purgar a la vieja guardia" #NT!
+ SOV_democratic_russian_empire: "Imperio ruso democrático" #NT!
+ SOV_democratic_russian_empire_focus_tp: "¿§Yreform§! el §G[SOV.GetAdjective]§! gobierno se basará en su nuevo §Cconstitution§!" #NT!
+  
+ SOV_plot_against_the_tsars: "Complot contra el zar" #NT!
+  
+  
+  
+  ## Diplomacy Branch 
+  
+ SOV_russian_diplomacy: "Diplomacia rusa" #NT!
+ SOV_recovering_from_the_cimean_war: "Recuperándose de la guerra de Crimea" #NT!
+ SOV_look_to_balkans: "Miremos hacia los Balcanes" #NT!
+ SOV_promote_balkan_independence: "Promover la independencia de los Balcanes" #NT!
+ SOV_help_roman_imperialists: "Apoyar a los imperialistas romanos" #NT!
+ SOV_help_roman_imperialists_desc: "Los estudios muestran que muchas personas en [ITA.GetNameDef] están dispuestas a invadir a nuestro principal rival en los Balcanes, [TUR.GetNameDef]. Ayudar a estas personas a entrar en el gobierno aumentaría las posibilidades de una guerra entre los [TUR.GetAdjective] y los cristianos." #NT!
+ SOV_roman_tt: "Aumenta las posibilidades de una guerra entre §Y[ITA.GetNameDef]§! y §Y[TUR.GetNameDef]§! a la que podremos unirnos." #NT!
+  
+ SOV_our_german_intrests: "Nuestros intereses alemanes" #NT!
+ SOV_remember_austrian_betrayal: "Recordemos la traición de Austria" #NT!
+ SOV_never_trust_germans: "Nunca confíes en los alemanes" #NT!
+ SOV_our_prussian_friends: "Nuestros [PRS.GetAdjective] Amigos" #NT!
+ SOV_friendship_treaty_with_prussia: "Tratado de Amistad Con [PRS.GetNameDef]" #NT!
+ SOV_protector_of_poles: "Protector de los polacos" #NT!
+  
+ SOV_asian_giant: "Gigante asiático" #NT!
+ SOV_sale_of_alaska: "Venta de Alaska" #NT!
+ SOV_consolidate_central_asia: "Consolidar Asia Central" #NT!
+  
+  
+  ## Economy Branch 
+  
+ SOV_russian_economy: "[SOV.GetAdjective] Economía" #NT!
+ SOV_infrastracture_investments: "Inversiones en infraestructura" #NT!
+ SOV_infrastracture_in_ukraine: "Infraestructura en Ucrania" #NT!
+ SOV_infrastracture_in_ukraine_tp: "§g¡Desbloquea decisiones para invertir en §YInfrastracture§! en §GUkraine§!§!" #NT!
+ SOV_infrastracture_in_baltic_belarus: "Infraestructura en el Báltico y Bielorrusia" #NT!
+ SOV_infrastracture_in_baltic_belarus_tp: "§g¡Desbloquea decisiones para invertir en §YInfrastracture§! en §GBaltics§! y §GBelarus§!§!" #NT!
+ SOV_infrastracture_in_central_russia: "Infraestructura en Rusia Central" #NT!
+ SOV_infrastracture_in_central_russia_tp: "§g¡Desbloquea decisiones para invertir en §YInfrastracture§! en §GRusia Central§!§!" #NT!
+ SOV_build_upon_the_new_infrastracture: "Construir sobre la nueva infraestructura" #NT!
+ SOV_build_upon_the_new_infrastracture_tp: "§g¡Agrega algunas §YFábricas civiles§! en cada región previamente invertida!§! \n" #NT!
+ SOV_promote_industralization: "Promover la industrialización" #NT!
+ SOV_foreign_investors: "Inversores extranjeros" #NT!
+ SOV_civs_one: "Economía civil" #NT!
+ SOV_mils_one: "Economía militar" #NT!
+ SOV_industry_upgrade_one: "Completar el Primer Plan Industrial" #NT!
+ SOV_ukrainian_wheat: "Trigo ucraniano" #NT!
+ SOV_civs_two: "[ENG.GetAdjective] Inversionistas" #NT!
+ SOV_mils_two: "[PRS.GetAdjective] Inversores" #NT!
+ SOV_develop_alaska: "Desarrollar Alaska" #NT!
+ SOV_industry_upgrade_two: "Completar el Segundo Plan Industrial" #NT!
+ SOV_industry_upgrade_three: "Completar el Tercer Plan Industrial" #NT!
+  
+   ## Military Branch 
+  
+ SOV_russian_army: "ejército ruso" #NT!
+ SOV_local_advisors: "Asesores locales" #NT!
+ SOV_universal_conscription: "Servicio militar obligatorio universal" #NT!
+ SOV_improve_military_education: "Mejorar la educación militar" #NT!
+ SOV_new_oficer_core: "Nuevo núcleo de oficiales" #NT!
+ SOV_build_fortifications: "Construir fortificaciones" #NT!
+  
+ SOV_foreign_advisors: "Asesores extranjeros" #NT!
+ SOV_prussian_model: "[PRS.GetAdjective] Modelo" #NT!
+ SOV_new_mobilization_plan: "Nuevo Plan de Movilización" #NT!
+ SOV_french_model: "[FRA.GetAdjective] Modelo" #NT!
+ SOV_army_of_professionals: "Ejército de profesionales" #NT!
+ SOV_reeducate_the_officers: "Reeducar a los oficiales" #NT!
+  
+ SOV_mission_to_britain: "Misión a Gran Bretaña" #NT!
+ SOV_study_the_crimean_war: "Estudia la guerra de Crimea" #NT!
+ SOV_doctrine_reform: "Reforma de la doctrina" #NT!
+ SOV_preper_a_revenge: "Prepara una venganza" #NT!
+ SOV_new_army_spirit: "Nuevo espíritu militar" #NT!
+  
+ SOV_new_military_equipment: "Nuevo equipamiento militar" #NT!
+ SOV_military_research_institute: "Instituto de Investigaciones Militares" #NT!
+ SOV_expand_research_funding: "Ampliar la financiación de la investigación" #NT!
+ SOV_infantry_equipment_standardization: "Estandarización del equipamiento de infantería" #NT!
+ SOV_flooding_the_enemy: "Inundando al enemigo" #NT!
+ SOV_artillery_standardization: "Estandarización de la artillería" #NT!
+ SOV_artillery_supremacy: "Supremacía de la artillería" #NT!
+ SOV_arms_factories: "Fábricas de armas" #NT!
+  
+  

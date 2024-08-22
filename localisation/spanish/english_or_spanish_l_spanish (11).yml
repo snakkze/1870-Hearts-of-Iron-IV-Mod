@@ -1,0 +1,95 @@
+﻿l_spanish:
+ fpw_franco_prussian_war_category: "Guerra franco-prusiana" #NT!
+ fpw_franco_prussian_war_category_desc: "La Unificación de Alemania nunca ha sido más relevante; los [PRS.GetAdjective] han vencido a los [AUS.GetAdjective] en la guerra austro-prusiana. Ahora sólo queda unificarse con el resto de estados alemanes." #NT!
+ fpw_side_with_germany: "Ponte del lado de [PRS.GetNameDef]" #NT!
+ fpw_side_with_france: "Ponte del lado de [FRA.GetNameDef]" #NT!
+  
+ PRS_reform_the_government: "Reforma del gobierno" #NT!
+ PRS_reform_the_government_desc: "El parlamento de [PRS.GetAdjective] ha estado debatiendo fervientemente los cambios gubernamentales planeados por [PRS.GetLeader] para hacer realidad nuestro sueño de un estado alemán del tamaño del Sacro Imperio Romano Germánico. Si no avanzamos con estas reformas, los acalorados pueden iniciar un golpe de estado contra [PRS.GetLeader] para detener una mayor expansión e integración de territorios no prusianos." #NT!
+ fpw_reform_government: "Iniciar conversaciones de reforma" #NT!
+  
+ fpw_customization_category: "Personalización de la nación" #NT!
+ fpw_prussia_historical_flag_customization: "Bandera histórica de la PRSP" #NT!
+ fpw_prussia_republic_monarchy_historical_flag_customization: "Bandera histórica de la PRSP" #NT!
+ fpw_prussia_reset_flag: "Reiniciar la bandera @PRSPrussian" #NT!
+ fpw_prussia_republic_monarchy_reset_flag: "Reiniciar la bandera @PRSPrussian" #NT!
+ fpw_austro_hungarian_fleet_flag_customization: "@AUS@HUNA Bandera de alférez civil austro-húngaro" #NT!
+ fpw_austria_reset_flag: "Reiniciar la bandera de @AUSAustrian" #NT!
+ fpw_prussia_switch_historical_1_flag: "Cambiar la bandera histórica de @PRSPrussian" #NT!
+ fpw_prussia_republic_monarchy_switch_historical_1_flag: "Cambiar la bandera histórica de @PRSPrussian" #NT!
+ fpw_prussia_switch_historical_2_flag: "Cambiar la bandera histórica de @PRSPrussian" #NT!
+ fpw_prussia_republic_monarchy_switch_historical_2_flag: "Cambiar la bandera histórica de @PRSPrussian" #NT!
+ fpw_prussia_socialist_republic_switch_flag_1: "Cambiar la bandera de @PRSPrussian" #NT!
+ fpw_prussia_socialist_republic_switch_flag_2: "Cambiar la bandera de @PRSPrussian" #NT!
+  
+ fpw_france_debts_category: "Indemnizaciones francesas" #NT!
+ fpw_pay_debts_1: "Primer pago de indemnización prusiano" #NT!
+ fpw_pay_debts_2: "Segundo pago de indemnización prusiana" #NT!
+ fpw_pay_debts_3: "Tercer pago de indemnización prusiana" #NT!
+ fpw_pay_debts_4: "Último pago de indemnización prusiana" #NT!
+  
+  
+ fpw_treaty_of_frankfurt_category: "Tratado de Frankfurt" #NT!
+ fpw_treaty_of_frankfurt_category_desc: "Tras la victoria de [PRS.GetAdjective] en la guerra franco-prusiana y la declaración de la Tercera República, así como la unificación de Alemania, se firmó el Tratado de Frankfurt como acuerdo de paz entre Francia y el recién formado Estado alemán." #NT!
+ fpw_treaty_of_frankfurt_progress: "Ratificando el Tratado..." #NT!
+  
+ fpw_german_unification_category: "Guerra austro-prusiana" #NT!
+ fpw_german_unification_category_desc: "[get_austro_prussian_war_desc]" #NT!
+  
+ fpw_colonization_category: "Colonización" #NT!
+  
+ fpw_german_confederation_category: "Confederación Alemana" #NT!
+ fpw_german_confederation_category_desc: "Desde el Tratado de Viena, los alemanes volvieron a estar unidos bajo la Confederación Alemana, sucesora del Sacro Imperio Romano Germánico. Sin embargo, en toda la confederación hay opiniones diversas. Algunos quieren que la confederación se convierta en un solo país unificado, mientras que otros desean su disolución." #NT!
+  
+ fpw_austro_prussian_PRS_desc: "Desde que asumió como canciller alemán, Otto von Bismarck ha querido lograr la unificación alemana. Sin embargo, esto sólo será posible si Prusia logra demostrar a los demás estados alemanes, especialmente a Austria, que puede gobernar eficazmente los numerosos estados dentro de la esfera de influencia alemana." #NT!
+ fpw_austro_prussian_AUS_desc: "Desde la guerra germano-danesa de 1864, nuestro objetivo ha sido demostrar nuestro dominio sobre los demás estados alemanes. Ahora ha llegado el momento oportuno para afirmar nuestra supremacía ganando una guerra contra los formidables prusianos." #NT!
+ fpw_austro_prussian_desc: "En 1864, los estados alemanes de Prusia y Austria lucharon valientemente contra los daneses. Este conflicto se reconoce ahora como la Primera Guerra de Unificación Alemana y la posibilidad de una segunda guerra es inminente. Ahora nos toca a nosotros decidir a qué lado de la supremacía alemana dentro de la Confederación Alemana queremos apoyar." #NT!
+ fpw_austro_prussian_war_historical_peace: "Firma del Tratado de Viena" #NT!
+  
+ fpw_german_confederation: "Abandonar la Confederación Alemana" #NT!
+  
+ fpw_austro_prussian_war_escalation: "La escalada de la guerra austro-prusiana" #NT!
+  
+ fpw_side_with_prussia: "Ponte del lado de [PRS.GetNameDef]" #NT!
+ fpw_side_with_austria: "Ponte del lado de [AUS.GetNameDef]" #NT!
+  
+ colonization_descision: "Colonizando §Y[FROM.GetName]§!." #NT!
+ integration_descision: "Integra §Y[FROM.GetName]§!." #NT!
+  
+ ITA_government: "El Gobierno italiano" #NT!
+  
+ PRS_ally_saxony: "Influencia Sajonia" #NT!
+ PRS_ally_bavaria: "Influencia de Baviera" #NT!
+ PRS_ally_wurttemberg: "Influencia de Württemberg" #NT!
+ PRS_ally_baden: "Influencia de Baden" #NT!
+ PRS_ally_oldenburg: "Influencia de Oldemburgo" #NT!
+ PRS_ally_hanover: "Influencia Hannover" #NT!
+ PRS_ally_mecklenburg: "Influencia de Mecklemburgo" #NT!
+ PRS_ally_kassel: "Influencia de Hessen-Kassel" #NT!
+ PRS_ally_hessen: "Influencia Hessen-Darmstadt" #NT!
+ PRS_ally_nassau: "Influencia de Hessen-Nassau" #NT!
+ PRS_ally_sachsen_meiningen: "Influencia de Sajonia-Meiningen" #NT!
+ PRS_ally_sachsen_coburg: "Influencia de Sajonia-Coburgo-Gotha" #NT!
+ PRS_ally_sachsen_weimar: "Influencia de Sajonia-Weimar" #NT!
+ PRS_ally_sachsen_anhalt: "Influencia de Sajonia-Anhalt" #NT!
+ PRS_ally_brunswick: "Influencia Brunswick" #NT!
+ PRS_ally_waldeck: "Influencia de Waldeck" #NT!
+ PRS_ally_frankfurt: "Influencia de Frankfurt" #NT!
+ PRS_ally_strelitz: "Influencia de Mecklemburgo-Strelitz" #NT!
+ PRS_ally_lippe: "Influencia de Lippe" #NT!
+ PRS_ally_schaumburg: "Influencia Schaumburg-Lippe" #NT!
+ PRS_ally_schwarzburg: "Influencia Schwarzburg" #NT!
+ PRS_ally_bremen: "Influencia Bremen" #NT!
+ PRS_ally_hamburg: "Influencia de Hamburgo" #NT!
+ PRS_ally_luburg: "Influencia de Lübeck" #NT!
+  
+ ITA_conquer_venice: "Conquistar Venecia" #NT!
+ ITA_move_capital_to_rome: "Trasladar la capital a Roma" #NT!
+  
+ fpw_austro_prussian_war_category: "Influir en Alemania" #NT!
+ fpw_annex_holstein: "Proponer un pequeño Estado alemán" #NT!
+  
+ fpw_great_war_category: "Gran Guerra" #NT!
+ fpw_great_war_progress: "Progreso de la escalada" #NT!
+ fpw_side_with_initiator: "Lado con el lado iniciador" #NT!
+ fpw_side_with_target: "Lado con el lado objetivo" #NT!

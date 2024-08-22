@@ -1,0 +1,15 @@
+﻿l_german:
+ Get_Secondary_Leader_Name_loc: "[Get_Secondary_Leader_Name]" #NT!
+ fpw_secondary_leader_prs_wilhelm_I: "§YWilhelm I§!\nKönig von §Y@PRS[PRS.GetNameDefCap]§!\n\n§YWilhelm der Große§!\n- Stabilität: §G+15,00 %§!\n- Kriegsunterstützung: §G+20,00 %§!\n- Politischer Machtgewinn: §G+10,00 %§!" #NT!
+ fpw_secondary_leader_fra_napoleon_III: "§YNapoleon III.§!\nKaiser von §Y@FRA[FRA.GetNameDefCap]§!\n\n§YVerfassungsreformer§!\n- Kriegsunterstützung: §G+5,00 %§!\n- Akzeptanz autoritärer Diplomatie: §G+50§!" #NT!
+ fpw_secondary_leader_sov_alexander_II: "§YAlexander II.§!\nKaiser von §Y@SOV[SOV.GetNameDefCap]§!\n\n§YZar von Russland§!\n- :\n" #NT!
+ fpw_secondary_leader_fin_alexander_II: "§YAlexander II§!\nGroßherzog von §Y@FIN[FIN.GetNameDefCap]§!\n\n§YZar von Russland§!\n- Politischer Machtgewinn: §G+5%§!\n- Stabilität: §G+5,00%§!\n- Kriegsunterstützung: §G+10,00%§!" #NT!
+ fpw_secondary_leader_pol_alexander_II: "§YAlexander II§!\nKönig von §Y@POL[POL.GetNameDefCap]§!\n\n§YZar von Russland§!\n- Politischer Machtgewinn: §G+5%§!\n- Stabilität: §G+5,00%§!\n- Kriegsunterstützung: §G+10,00%§!" #NT!
+ fpw_secondary_leader_ita_vittorio_emanuele_III: "§YVittorio Emanuele III§!\nKönig von §Y@ITA[ITA.GetNameDefCap]§!\n\n§YVater des Vaterlandes§!\n- Kriegsunterstützung: §G+5,00 %§!\n- Akzeptanz autoritärer Diplomatie: §G+50§!" #NT!
+ fpw_secondary_leader_jap_komei: "§YKōmei§!\nKaiser von §Y@JAP[JAP.GetNameDefCap]§!\n\n§YKōmei Tennō§!\n- Stabilität: §G+15,00 %§!\n- Kriegsunterstützung: §G+20,00 %§!" #NT!
+ fpw_secondary_leader_jap_meiji: "§YMeiji§!\nKaiser von §Y@JAP[JAP.GetNameDefCap]§!\n\n§YVater des modernen Japan§!\n- Stabilität: §G+15,00 %§!\n- Kriegsunterstützung: §G+20,00 %§!" #NT!
+ fpw_secondary_leader_eng_victoria: "§YVictoria§!\nKönigin von §Y@ENG[ENG.GetNameDefCap]§!" #NT!
+ fpw_secondary_leader_kor_gojong_young: "§YGojong§!\nKönig von §Y@KOR[KOR.GetNameDefCap]§!" #NT!
+ fpw_secondary_leader_tur_abdulaziz: "§YAbdülaziz§!\nSultan von §Y@TUR[TUR.GetNameDefCap]§!" #NT!
+ fpw_secondary_leader_chi_tongzhi: "§YTongzhi§!\nKaiser von §Y@CHI[CHI.GetNameDefCap]§!" #NT!
+ no_secondary_leader: ""

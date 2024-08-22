@@ -1,0 +1,82 @@
+﻿l_spanish:
+ fpw_no_other_country_claimed_tt: "Ningún otro país puede influir en §Y[This.GetName]§!" #NT!
+ vienna_peace_tt: "Conferencia de Paz de Viena" #NT!
+ prague_peace_tt: "Conferencia de Paz de Praga" #NT!
+ paris_peace_tt: "Conferencia de Paz de París" #NT!
+ versailles_preliminary_peace_tt: "Paz preliminar de Versalles" #NT!
+ fpw_colonize_button_tt: "Colonizar §Y[This.GetName]§!." #NT!
+ fpw_colonize_debuff_modifier_tt: "¡Mantener tus colonias te está costando §R[?ROOT.debuff_tt]%§! de poder político!" #NT!
+ fpw_annex_and_integrate_tt: "Anexaremos y crearemos los siguientes Estados:" #NT!
+ fpw_annex_and_integrate_single_tt: "Anexaremos y consolidaremos el siguiente Estado:" #NT!
+ fpw_annex_tt: "Anexaremos los siguientes Estados:" #NT!
+ fpw_peace_deal_single_tt: "Cuando se firme el §YTratado de Frankfurt§! obtendremos el siguiente Estado:" #NT!
+ fpw_peace_deal_tt: "Cuando se firme el §YTratado de Frankfurt§! obtendremos los siguientes Estados:" #NT!
+ fpw_great_war_warning_tt: "§R¡Molestar demasiado a la comunidad internacional podría causar una gran guerra!§!" #NT!
+ fpw_mutiple_events: "Se solicita a los siguientes países que se unan al §YSchutz- und Trutzbüdniss§!" #NT!
+ fpw_seek_german_support: "Desbloquea la decisión §YInfluir en Alemania§!" #NT!
+ fpw_schutz_und_trutz: "§R¡Todos los países tienen que aceptar la invitación a tu Alianza para que se produzcan los efectos!§!" #NT!
+ fpw_france_austro_prussian_war: "§R¡Francia se unirá a la guerra austro-prusiana si no completamos este Focus!§!" #NT!
+ fpw_russia_austro_prussian_war: "§O¡Rusia tiene la oportunidad de unirse a la guerra austro-prusiana si no completamos este enfoque!§!" #NT!
+ continuous_focus_colonization_speed: "Velocidad de colonización: §G+20.00%§!" #NT!
+ fpw_influenced_country_tt: "¡estará influenciado por [PREV.GetNameDef]!" #NT!
+ fpw_branch_incomplete_tt: "§R¡ESTA RAMA ESTÁ INCOMPLETA!§!" #NT!
+ fpw_path_incomplete_tt: "§R¡ESTA RAMA ESTÁ PARCIALMENTE INCOMPLETA!§!" #NT!
+ fpw_focus_incomplete_tt: "§R¡ESTE ENFOQUE ES INCOMPLETO!§!" #NT!
+  
+ fpw_loads_socialist_branch_tt: "Cargar foco: §YPrusia: Socialista§!" #NT!
+ fpw_loads_democratic_monarchy_branch_tt: "Cargar foco: §YPrusia: Monarquía constitucional§!" #NT!
+ fpw_loads_democratic_branch_tt: "Cargar foco: §YPrusia: Democracia§!" #NT!
+  
+ fpw_historical_option_tt: "§4Opción histórica§!" #NT!
+ fpw_focus_autocomplete_tt: "§YEste Enfoque§! será §YCompletado§!" #NT!
+ fpw_focus_autocomplete_holstein_tt: "§YEste Enfoque§! será §YCompletado§! con la decisión §YProponer un Pequeño Estado Alemán§!" #NT!
+ fpw_focus_autocomplete_brotherwar_tt: "§YEste Focus§! será §YCompletado§! después de la §YGuerra de los Hermanos§!" #NT!
+ fpw_focus_autocomplete_glorious_rev_tt: "§YEste Enfoque§! será §YCompletado§! después de la §YRevolución Gloriosa Española§!" #NT!
+ fpw_focus_autocomplete_leopold_tt: "§YEste Focus§! será §YCompletado§! después de que §Y@SPR[SPR.GetNameDef]§! invite a §YLeopoldo de Hohenzollern§! al §YTrono español§!" #NT!
+ fpw_isabella_won_tt: "El Reino de España ganó la §YRevolución Gloriosa Española§!." #NT!
+ fpw_bismarck_ultimatum_tt: "Decidido sobre §YEl ultimátum de Bismarck§!." #NT!
+ fpw_prs_keep_moltke_tt: "§YHelmuth von Moltke§! permanecerá como §YJefe del Ejército§!" #NT!
+ fpw_prs_appoint_alfred_tt: "§YHelmuth von Moltke§! será §Reliminado§! como §YJefe del Ejército§! y §Yreemplazado§! por §YAlfred von Rauch§!, lo que otorga: (Ataque de Caballería: §G+15.0%§!, Defensa de Caballería: §G+15,0%§!)" #NT!
+ fpw_prs_moltke_plan_focus_tt: "\nCompleta el enfoque §YEl Plan Moltke§!" #NT!
+ fpw_prs_appoint_alfred_focus_tt: "Completa el enfoque §YNombrar a Alfred§!" #NT!
+ fpw_prs_prussian_discipline_focus_tt: "Modificar §YEstado Mayor Prusiano§!, que otorga (Ataque de división: §G+5.0%§!, Defensa de división: §G+5.0%§!)" #NT!
+ fpw_prs_expand_officer_academies_focus_tt: "Modificar §YEstado Mayor Prusiano§!, que otorga (Ganancia de experiencia del líder: §G+15.0%§!, Planificación máxima: §G+20.00%§!)" #NT!
+ fpw_prs_central_command_structure_tt: "Modifica §YEstado Mayor Prusiano§!, que otorga (Ganancia de Poder de Mando: §G+0.10%§!, Bonificación de Cifrado del Ejército Descifrado: §G+2%§!)" #NT!
+ fpw_prs_formed_german_empire_tt: "§YHa formado§! el §Y@GERImperio Alemán§!" #NT!
+ fpw_russian_friendship_tt: "§Y[SOV.GetNameDefCap]§! se unirá en nuestro nombre si §Y[FRA.GetNameDef]§! se une a la §YGuerra Austro-Prusiana§!." #NT!
+ fpw_prs_heinrich_abeken_tt: "Desbloquea al Asesor §YHeinrich Abeken§!, que otorga (Aumento de poder político: §G+5.0%§!, Mejorar la opinión de las relaciones: §G+15.0%§!, Defensa contra la deriva ideológica: §G+15.0%§!)" #NT!
+ fpw_focus_prussian_victory_tt: "Añade §YVencedor de la Guerra de los Hermanos§!, que otorga (Prestigio base del país: §G+15%§!)" #NT!
+ fpw_focus_austrian_victory_tt: "Añade §YPerdedor de la Guerra de los Hermanos§!, que otorga (Prestigio base del país: §R-15%§!)" #NT!
+ fpw_bismarcks_plan_new_tt: "§YOtto von Bismarck§! gana:\nModificador de estabilidad de penalización de guerra: §G+10.00%§!\nCosto de leyes comerciales: §G-25%§!\nCosto de leyes económicas: §G-25%§!" #NT!
+ fpw_disagree_with_bismarck_absolute: "§YWilhelm I§! se convierte en §YRey de @PRS[PRS.GetNameDefCap]§! como §YMonarca Absoluto§!" #NT!
+ fpw_russia_franco_prussian_war_tt: "§R[SOV.GetNameDefCap] se unirá a la guerra franco-prusiana si no completamos este Focus!§!" #NT!
+ fpw_bismarck_forced_resign_tt: "§YOtto von Bismarck§! se verá obligado a §Ydimitir§! y será §Yreemplazado§! por §YOtto zu Stolberg-Wernigerode§!" #NT!
+ fpw_suspended_parliament_1: "§YWilhelm I§! tomará §Y@PRSJefe de Estado§! indefinidamente\nAgrega §YLegitimación de Wilhelm§!:§R Baja§!, que otorga (Estabilidad: §R-15.00%§!, Defensa contra deriva ideológica: §R-10.00%§!, Ganancia de poder político: §R-2.00%§!)" #NT!
+ fpw_suspended_parliament_2: "Modifica la §YLegitimación de Wilhelm:§!§O Media§!, que otorga (Estabilidad: §R-8.00%§!, Defensa contra deriva ideológica: §R-5.50%§!, Ganancia de poder político: §R-1.00%§!)" #NT!
+ fpw_prs_jonas_evans_tt: "Desbloquea al asesor §YJonas Evans§!, que otorga (Apoyo socialista diario: §G+0.10§!)" #NT!
+ fpw_prs_john_white_tt: "Desbloquea al Asesor §YJohn White§!, que otorga (Apoyo liberal diario: §G+0.10§!)" #NT!
+ PRS_utilize_the_armies_loyalty_tt: "§G@PRSEl Ejército Real Prusiano respaldará a Guillermo§!" #NT!
+ NGC_tt: "§Y@PRS[PRS.GetNameDefCap]§! invitará a todas las §YNaciones de Alemania del Norte§! a unirse a la §YConfederación de Alemania del Norte§!.\nSeremos conocidos como §Yla Confederación de Alemania del Norte§!." #NT!
+ finalize_federation_tt: "Dependiendo de nuestra Rama elegida, seremos conocidos como §Yla Federación Alemana Unida§! o como §Yel Sacro Imperio Romano§!." #NT!
+ PRS_unification_play: "§Y[PRS.GetNameDefCap]§! declara la guerra a §Ytodos los estados del norte de Alemania§!." #NT!
+ PRS_utilize_the_armies_loyalty_tt: "§G@PRSEl Ejército Real Prusiano respaldará a Guillermo§!" #NT!
+ SOV_might_join_tt: "Completa el foco §YAsegurar amistad rusa§! para que §Y[SOV.GetNameDefCap]§! se una a tu lado." #NT!
+ SOV_will_join_tt: "§Y[SOV.GetNameDefCap]§! se unirá a la guerra §YPrusso-Austrian§! guerra." #NT!
+ fpw_prussia_won_apw_alt_tt: "Ganó la §YGuerra Pruso-Austríaca§!." #NT!
+ fpw_hre_benelux_tt: "Obtiene núcleo en §Ytodos los estados del Benelux§!.\n(§Y@PRS[PRS.GetNameDefCap]§!): Obtiene §YConquista (Enfoque)§! objetivo de guerra contra §Ytodos los estados del Benelux§!" #NT!
+ fpw_hre_south_tt: "Gana núcleo en §Ytodos los estados suizos§! y §Ytodos los estados del norte de Italia§!.\n(§Y@PRS[PRS.GetNameDefCap]§!): Gana §YConquista (Enfoque)§! objetivo de guerra contra §Y[ITA.GetNameDef]§! y §Y[SWI.GetNameDef]§!." #NT!
+ fpw_hre_france_tt: "Gana núcleo en §YSavoy§! y §YAlsace-Lorraine§!.\n(§Y@PRS[PRS.GetNameDefCap]§!): Obtiene §YConquista (Enfoque)§! objetivo de guerra contra §Y[FRA.GetNameDef]§!." #NT!
+ fpw_demand_puppet_habsburg: "Exigiremos a §Ytítere [AUS.GetNameDef]§! y §Y[CZE.GetNameDef]§!." #NT!
+ PRS_attack_south_tt: "(§Y@PRS[PRS.GetNameDefCap]§!): Obtiene §YConquista (Enfoque)§! objetivos de guerra contra §Ytodos los países del sur de Alemania§!." #NT!
+ change_to_fpc_tt: "§RCAMBIARÁS DE PAÍS Y JUGARÁS A LA COMUNA DE PARÍS§!." #NT!
+ bop_set_liberal_complete_tt: "Establezca §YInfluencia del gobierno de reforma§! en §YInfluencia liberal completa§!" #NT!
+ bop_set_socialist_complete_tt: "Establezca §YInfluencia del gobierno reformista§! en §YInfluencia socialista completa§!" #NT!
+ bop_socialist_branch_tt: "§tRama Socialista§!" #NT!
+ bop_democratic_branch_tt: "§CRama de la Monarquía Democrática y Constitucional§!" #NT!
+ prs_fund_seperatist_bohemia_tt: "¡Empieza §RResistance§! en §Y@CZEBohemian States§!" #NT!
+ prs_fund_seperatist_hungary_tt: "¡Comienza §RResistance§! en §Y@HUNHungarian States§!" #NT!
+ prs_hungary_revolt_tt: "§Y@HUN[HUN.GetNameDefCap]§! se rebelará contra §Y@AUS[AUS.GetNameDefCap]§! cuando vayamos a la guerra con ellos." #NT!
+ prs_focus_constitution_rework_tt: "§GLe daré el control completo a @PRSWilhelm I como Monarca Absoluto§!" #NT!
+ PRS_reform_civil_war: "\n(§YReformas Nacionales§!): Los partidarios del §YAutoritarismo§! inician una guerra civil." #NT!
+ fpw_prussia_lost_apw_tt: "([§Y@PRSPRS.GetNameDefCap]§!): Perdido §YLa Guerra de los Hermanos§!." #NT!
+ fpw_won_prusso_austrian_war_tt: "(§Y@PRS[PRS.GetNameDefCap]§!): Ha ganado la §Y Guerra Pruso-Austríaca§!." #NT!

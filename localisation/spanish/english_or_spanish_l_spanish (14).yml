@@ -1,0 +1,382 @@
+﻿l_spanish:
+ austro_prussian_fpw.1.t: "[From.GetName] se ha unido a nuestro lado!" #NT!
+ austro_prussian_fpw.1.d: "[From.GetName] ha decidido unirse a nosotros en la Guerra Austro-Prusiana, ofreciendo su apoyo contra nuestro enemigo común." #NT!
+ austro_prussian_fpw.1.a: "¡Grande!" #NT!
+  
+ austro_prussian_fpw.2.t: "¡Austria capitula!" #NT!
+ austro_prussian_fpw.2.d: "Tras la decisiva derrota en Königgrätz y las numerosas bajas sufridas, el Gobierno austriaco se ha puesto en contacto con nosotros para entablar negociaciones de paz." #NT!
+ austro_prussian_fpw.2.a: "¡Grande!" #NT!
+  
+ austro_prussian_fpw.3.t: "¡Prusia capitula!" #NT!
+ austro_prussian_fpw.3.d: "Tras una serie de derrotas aplastantes y una presión creciente, el Gobierno prusiano ha solicitado conversaciones de paz para poner fin al conflicto." #NT!
+ austro_prussian_fpw.3.a: "¡Grande!" #NT!
+  
+ austro_prussian_fpw.4.t: "¡Austria capitula!" #NT!
+ austro_prussian_fpw.4.d: "Tras sufrir una importante derrota, el Gobierno austriaco se rindió y pidió la paz." #NT!
+ austro_prussian_fpw.4.a: "¡Genial!" #NT!
+  
+ austro_prussian_fpw.5.t: "¡Prusia capitula!" #NT!
+ austro_prussian_fpw.5.d: "Prusia, ante dificultades insuperables y pérdidas devastadoras, se ha rendido y busca la paz en la guerra austro-prusiana." #NT!
+ austro_prussian_fpw.5.a: "¡Mierda!" #NT!
+  
+  
+ franco_prussian_fpw.1.t: "¡[FRA.GetName] ha capitulado!" #NT!
+ franco_prussian_fpw.1.d: "El líder [FRA.GetAdjective] [FRA.GetLeader] se ha comunicado con nuestro Canciller [PRS.GetName] para pedirnos paz en nuestra guerra. Creemos que es mejor aceptar esta paz preliminar, ya que no aceptar la paz ahora podría prolongar esta guerra aún más y causar más víctimas." #NT!
+ franco_prussian_fpw.1.a: "¡Excelente!" #NT!
+ franco_prussian_fpw.1.b: "¡LUCHAREMOS HASTA QUE TERMINE!" #NT!
+  
+ franco_prussian_fpw.2.t: "¡[PRS.GetName] ha capitulado!" #NT!
+ franco_prussian_fpw.2.d: "El líder prusiano [PRS.GetLeader] se ha acercado a nosotros y nos ha pedido la paz en nuestra guerra. Creemos que lo mejor es aceptar esta paz preliminar, ya que no llegar a la paz ahora podría prolongar aún más esta guerra y causar más víctimas." #NT!
+ franco_prussian_fpw.2.a: "¡Excelente!" #NT!
+ franco_prussian_fpw.2.b: "¡LUCHAREMOS HASTA QUE TERMINE!" #NT!
+  
+ franco_prussian_fpw.3.t: "Cuestión de la anexión de Alsacia-Lorena." #NT!
+ franco_prussian_fpw.3.d: "Tras la victoria sobre los [FRA.GetName] en la guerra franco-prusiana, ahora estamos en condiciones de tomar también territorios, además de entregar las deudas de los [FRA.GetAdjective] y tomar algún territorio hasta que se paguen las deudas. El primer territorio que podríamos tomar es el territorio de Alsacia, Lorena y Belfort. El Reichsheer ha dicho que esos territorios son necesarios para una mayor defensa en guerras posteriores contra Francia, mientras que el canciller Bismarck ha dicho que tomar territorio por parte de los [FRA.GetAdjective] provocará una mala relación que no deberíamos arriesgarnos ahora como un nuevo estado importante en el centro de Europa." #NT!
+ franco_prussian_fpw.3.a: "Bismarck tiene razón." #NT!
+ franco_prussian_fpw.3.b: "Podemos dejar Belfort a los franceses." #NT!
+ franco_prussian_fpw.3.c: "¡Lo tomaremos todo!" #NT!
+  
+ franco_prussian_fpw.4.t: "La cuestión de Nanzig-Epinal." #NT!
+ franco_prussian_fpw.4.d: "Tras la anexión y la integración de los nuevos territorios del Reich de Elsass-Lothringen, nos encontramos en una posición en la que también podríamos tomar los territorios de Nazig-Epinal, lo que haría que nuestra frontera fuera aún más defensiva, dice el Reichsheer, ya que tendríamos una frontera fluvial más larga. Bismarck sigue diciendo que no deberíamos tomar demasiado porque si lo hacemos, las relaciones no solo con [FRA.GetName] sino también con la comunidad internacional empeorarán hasta cierto punto. Si tomamos solo un metro más de tierra, estaremos en medio de una gran guerra de las potencias europeas." #NT!
+ franco_prussian_fpw.4.a: "Deberíamos escuchar a Moltke." #NT!
+ franco_prussian_fpw.4.b: "Bismarck tiene razón." #NT!
+  
+ franco_prussian_fpw.5.t: "Anexión de las colonias francesas." #NT!
+ franco_prussian_fpw.5.d: "Ahora, los altos mandos del Reichscheer, como Moltke, han pedido que se sigan anexionando todas las colonias africanas del [FRA.GetAdjective]. Bismarck nos advierte que hacerlo arruinaría definitivamente nuestras relaciones con Francia hasta el último grado, y también desencadenaría una gran guerra, que en ese momento sería inevitable." #NT!
+ franco_prussian_fpw.5.a: "¡No deberíamos arriesgarnos a una Gran Guerra!" #NT!
+ franco_prussian_fpw.5.b: "¿A quién le importa el escenario internacional?" #NT!
+  
+ franco_prussian_fpw.6.t: "Napoleón III capturado" #NT!
+ franco_prussian_fpw.6.d: "En un dramático giro de los acontecimientos, el emperador Napoleón III ha sido capturado por nuestras fuerzas. Es probable que este hecho altere el equilibrio de poder en el conflicto en curso, con importantes consecuencias políticas para Francia. Es posible que pronto se establezca un gobierno provisional." #NT!
+ franco_prussian_fpw.6.a: "Establecer un gobierno provisional" #NT!
+  
+ franco_prussian_fpw.7.t: "La caída de París" #NT!
+ franco_prussian_fpw.7.d: "París ha caído ante el avance de las fuerzas de Prusia. Nuestro gobierno está desorganizado. Lo mejor es que nuestro Gobierno renuncie." #NT!
+ franco_prussian_fpw.7.a: "Acepta la rendición..." #NT!
+  
+ franco_prussian_fpw.8.t: "La Comuna de París" #NT!
+ franco_prussian_fpw.8.d: "Tras la agitación y la captura de París, un gobierno socialista radical conocido como la Comuna de París tomó el control de la ciudad. Este nuevo gobierno se opone tanto al gobierno provisional francés como a nuestras fuerzas, lo que genera una mayor inestabilidad." #NT!
+ franco_prussian_fpw.8.a: "Disculpe, ¿qué?" #NT!
+ franco_prussian_fpw.8.b: "Juega como la Comuna de París" #NT!
+  
+ franco_prussian_fpw.9.t: "Prusia abandona París" #NT!
+ franco_prussian_fpw.9.d: "Tras un desfile triunfal por París, nuestras fuerzas se han retirado de la ciudad. Este acto simbólico marca el fin de nuestras operaciones militares en la región, consolida nuestra victoria y reconfigura el panorama político de Europa." #NT!
+ franco_prussian_fpw.9.a: "Retirarse de París" #NT!
+  
+  
+ italy_fpw.1.t: "[ITA.GetLeader] ofrece una alianza" #NT!
+ italy_fpw.1.d: "El primer ministro italiano [ITA.GetLeader] quiere hacer una alianza con nosotros debido a nuestro enemigo común, Austria. Nosotros estamos tratando de unificar Alemania y ellos están tratando de liberar Venecia, por lo que, naturalmente, tendría sentido entablar una amistad con ellos." #NT!
+ italy_fpw.1.a: "¡Por supuesto!" #NT!
+ italy_fpw.1.b: "Rechazar la oferta" #NT!
+ italy_fpw.2.t: "Italia pide a Venecia a cambio de su apoyo" #NT!
+ italy_fpw.2.d: "El primer ministro italiano [ITA.GetLeader] nos ha hecho una oferta interesante. El país nos ayudará en la próxima gran guerra, a cambio de que les entreguemos la región de Venecia. Esto nos haría perder territorio, pero evitaría el riesgo de luchar en dos frentes." #NT!
+ italy_fpw.2.a: "Seguro" #NT!
+ italy_fpw.2.b: "No, gracias" #NT!
+ italy_fpw.3.t: "¡Necesitamos conquistar Venecia!" #NT!
+ italy_fpw.3.d: "[PRS.GetNameDefCap] está en guerra con [AUS.GetNameDefCap], y esto nos brinda una gran oportunidad de liberar la región de Venecia de la opresión austríaca. Muchos políticos nacionalistas exigen que declaremos la guerra a Austria, ya que eso nos permitiría recuperar nuestro territorio legítimo en nombre de ayudar a Prusia." #NT!
+ italy_fpw.3.a: "Eh, está bien." #NT!
+ italy_fpw.3.b: "¡Declararemos la guerra a Austria inmediatamente!" #NT!
+ italy_fpw.4.t: "¡El Primer Ministro ha dimitido!" #NT!
+ italy_fpw.4.d: "Debido a su incapacidad para conquistar Venecia, el Primer Ministro [ROOT.GetLeader] se ha visto obligado a dimitir. Parece que Bettino Ricasoli es nuestro nuevo líder." #NT!
+ italy_fpw.4.a: "l" #NT!
+  
+ spain_fpw.1.t: "Revolución Gloriosa Española" #NT!
+ spain_fpw.1.d: ""
+ spain_fpw.1.a: "¡Purguemos esta escoria realista de nuestras tierras!" #NT!
+ spain_fpw.2.t: "[SPR.GetNameDefCap] busca una nueva Monarca" #NT!
+ spain_fpw.2.d: ""
+ spain_fpw.2.a: "Aceptar esta oferta" #NT!
+ spain_fpw.2.b: "Rechazar esta oferta" #NT!
+ spain_fpw.3.t: "[FROM.GetNameDefCap] aceptó nuestra oferta" #NT!
+ spain_fpw.3.d: ""
+ spain_fpw.3.a: "¡Buenas noticias!" #NT!
+ spain_fpw.4.t: "[FROM.GetNameDefCap] rechazó nuestra oferta" #NT!
+ spain_fpw.4.d: ""
+ spain_fpw.4.a: "¡Qué lamentable!" #NT!
+  
+ france_fpw.1.t: "Reacción prusiana al mensaje de Ems" #NT!
+ france_fpw.1.d: "[PRS.GetNameDefCap] ha respondido a nuestro ultimátum de manera burlona, ​​publicando una versión modificada del mismo en el periódico alemán más importante, haciéndonos parecer temerosos de ellos. Esto ha enfurecido aún más al público francés, dejándonos ante una elección crítica entre ir a la guerra o enfrentarnos a disturbios nacionales." #NT!
+ france_fpw.1.a: "¡Estos malditos prusianos!" #NT!
+ france_fpw.1.b: "Ignoraremos esto." #NT!
+  
+ france_fpw.2.t: "¿El rey pruso-español?" #NT!
+ france_fpw.2.d: "Tras la Gloriosa Revolución Española y el derrocamiento de Isabel II, España está buscando un nuevo monarca. Uno de los candidatos al que se han acercado es Leopoldo de Hohenzollern. Aunque Prusia declinó la oferta de enviar a uno de sus monarcas a España, debemos demostrar nuestra fuerza asegurándonos de que Prusia no considere acciones similares en el futuro." #NT!
+ france_fpw.2.a: "¡Tenemos que enviar un ultimátum a Prusia!" #NT!
+ france_fpw.2.b: "Dejemos que los españoles hagan lo que quieran." #NT!
+  
+ france_fpw.3.t: "[FRA.GetNameDefCap] Ofertas para comprar [LUX.GetNameDef]" #NT!
+ france_fpw.3.d: "El líder de [FRA.GetNameDefCap], [FRA.GetLeader], nos ofrece 5 millones para que les cedamos Luxemburgo. Esta podría ser una gran oportunidad, ya que estamos en graves problemas financieros y el enclave de Luxemburgo ya no es rentable después de que su territorio se redujera drásticamente." #NT!
+ france_fpw.3.a: "Acepta esta oferta" #NT!
+ france_fpw.3.b: "Rechazar" #NT!
+  
+ france_fpw.4.t: "[HOL.GetNameDefCap] ¡Acepta nuestra compra!" #NT!
+ france_fpw.4.d: "Nuestra compra de [LUX.GetNameDef] ha sido aceptada por [HOL.GetNameDef], quien se encontraba muy endeudado." #NT!
+ france_fpw.4.a: "¡Excelente!" #NT!
+  
+ france_fpw.5.t: "[HOL.GetNameDefCap] ¡Rechaza nuestra idea de compra!" #NT!
+ france_fpw.5.d: "Nuestra compra de [LUX.GetNameDef] ha sido rechazada por [HOL.GetNameDef]. Lamentablemente, hay poco que podamos hacer sin violar las leyes internacionales sobre la soberanía de las naciones." #NT!
+ france_fpw.5.a: "¡Sagrado azul!" #NT!
+  
+ france_fpw.6.t: "¡[FRA.GetNameDefCap] toma el control de [LUX.GetNameDef]!" #NT!
+ france_fpw.6.d: "Las últimas noticias indican que [FRA.GetNameDef] ha comprado [LUX.GetNameDef] a [HOL.GetNameDef] por unos 5 millones de florines. Aunque acordamos que Francia podría tomar el control de Luxemburgo, el público está indignado por el hecho de que un miembro de la ex Confederación Alemana haya perdido su soberanía ante nuestro mayor enemigo." #NT!
+ france_fpw.6.a: "¡Exige a Francia que lo devuelva!" #NT!
+ france_fpw.6.b: "Ignorar al público." #NT!
+  
+ france_fpw.7.t: "[PRS.GetNameDefCap] ¡Se opone a la Compra de Luxemburgo!" #NT!
+ france_fpw.7.d: "Tras nuestra compra de Luxemburgo, [PRS.GetNameDef] ha intervenido, posicionándose como protector de los países germánicos. A pesar de haber permitido dicha compra hace dos años, parece que han cambiado su postura. Esto podría derivar en un conflicto entre nosotros y los [PRS.GetAdjective]." #NT!
+ france_fpw.7.a: "¡Luxemburgo no merece una guerra!" #NT!
+ france_fpw.7.b: "Mantendremos [LUX.GetNameDef], pase lo que pase" #NT!
+  
+ egypt_fpw.1.t: "¡Canal de Suez construido!" #NT!
+ egypt_fpw.1.d: ""
+ egypt_fpw.1.a: "¡Mutqam!" #NT!
+  
+ prussia_fpw.1.t: "El ultimátum de Bismarck" #NT!
+ prussia_fpw.1.d: "Otto von Bismarck ha lanzado un ultimátum sobre la dirección futura de la política prusiana y su papel en la unificación alemana." #NT!
+ prussia_fpw.1.a: "No deberíamos arriesgarnos a Bismarck" #NT!
+ prussia_fpw.1.b: "El Bismarck es reemplazable" #NT!
+ prussia_fpw.2.t: "Propuesta Nord-Süd" #NT!
+ prussia_fpw.2.d: "Prusia ha propuesto una nueva estructura de alianza, con el objetivo de crear un eje Norte-Sur para fortalecer la unidad y la influencia alemanas." #NT!
+ prussia_fpw.2.a: "Großartig!" #NT!
+ prussia_fpw.3.t: "Invitación a unirse a la Confederación de Alemania del Norte" #NT!
+ prussia_fpw.3.d: "Prusia extiende una invitación para unirse a la Confederación Alemana del Norte, con el objetivo de consolidar el poder y unificar los estados del norte de Alemania." #NT!
+ prussia_fpw.3.a: "Únase a la Confederación de Alemania del Norte" #NT!
+ prussia_fpw.3.b: "Rechazar la oferta" #NT!
+ prussia_fpw.4.t: "[FROM.GetNameDefCap] acepta la oferta" #NT!
+ prussia_fpw.4.d: "El estado invitado ha aceptado la oferta de unirse a la Confederación Alemana del Norte, promoviendo así la causa de la unificación." #NT!
+ prussia_fpw.4.a: "¡Perfecto!" #NT!
+ prussia_fpw.5.t: "[FROM.GetNameDefCap] rechaza la oferta" #NT!
+ prussia_fpw.5.d: "El estado invitado rechazó la oferta de unirse a la Confederación Alemana del Norte." #NT!
+ prussia_fpw.5.a: "Ellos decidieron su destino" #NT!
+ prussia_fpw.8.t: "Seguridad y confianza" #NT!
+ prussia_fpw.8.d: "Se propone una alianza defensiva y ofensiva para fortalecer los lazos y la seguridad entre los estados prusianos y del sur de Alemania." #NT!
+ prussia_fpw.8.a: "Lo aceptaremos." #NT!
+ prussia_fpw.8.b: "Gracias, pero no." #NT!
+ prussia_fpw.9.t: "Un regalo de oro de [PRS.GetNameDef]" #NT!
+ prussia_fpw.9.d: "Prusia ha ofrecido un regalo significativo, un gesto para solidificar alianzas y fomentar la buena voluntad." #NT!
+ prussia_fpw.9.a: "Aceptemos este regalo" #NT!
+ prussia_fpw.10.t: "Revolución Gloriosa Española" #NT!
+ prussia_fpw.10.d: "La noticia de una revolución en España llega a Prusia, afectando potencialmente la dinámica europea." #NT!
+ prussia_fpw.10.a: "Es bueno saberlo" #NT!
+ prussia_fpw.11.t: "Despacho Ems modificado" #NT!
+ prussia_fpw.11.d: "El Envío Ems ha sido modificado para provocar una reacción de Francia, un movimiento estratégico de Bismarck." #NT!
+ prussia_fpw.11.a: "Veamos cómo reacciona [FRA.GetNameDef]" #NT!
+ prussia_fpw.12.t: "Carta del emperador" #NT!
+ prussia_fpw.12.d: "Se ha hecho una oferta para proclamar un nuevo emperador alemán, un paso crítico en el proceso de unificación." #NT!
+ prussia_fpw.12.a: "Aceptaremos esta oferta." #NT!
+ prussia_fpw.12.b: "¡Nunca!" #NT!
+ prussia_fpw.13.t: "[From.GetNameDefCap] acepta nuestra oferta" #NT!
+ prussia_fpw.13.d: "La oferta de unirse a los esfuerzos de unificación ha sido aceptada, acercando a Alemania a la unidad." #NT!
+ prussia_fpw.13.a: "¡La unificación está a sólo unos pasos!" #NT!
+ prussia_fpw.14.t: "[From.GetNameDefCap] rechaza nuestra oferta" #NT!
+ prussia_fpw.14.d: "La oferta de unirse a los esfuerzos de unificación ha sido rechazada, lo que supone un revés para los planes de Prusia." #NT!
+ prussia_fpw.14.a: "Ellos decidieron su destino" #NT!
+ prussia_fpw.15.t: "Unificación alemana" #NT!
+ prussia_fpw.15.d: "Se ha logrado la unificación de Alemania, marcando un hito histórico para la nación." #NT!
+ prussia_fpw.15.a: "¡Saludos en la corona de sierra!" #NT!
+ prussia_fpw.16.t: "[FROM.GetNameDefCap] acepta Schutz und Trutzbüdniss" #NT!
+ prussia_fpw.16.d: "El Estado ha aceptado la alianza defensiva y ofensiva propuesta por Prusia." #NT!
+ prussia_fpw.16.a: "Dios los proteja [From.GetNameDef]" #NT!
+ prussia_fpw.17.t: "[FROM.GetNameDefCap] rechaza Schutz und Trutzbüdniss" #NT!
+ prussia_fpw.17.d: "El estado ha rechazado la alianza propuesta y ha decidido no alinearse con Prusia." #NT!
+ prussia_fpw.17.a: "¡De todos modos no los necesitamos!" #NT!
+ prussia_fpw.19.t: "Austria pide permiso para movilizarse contra Prusia" #NT!
+ prussia_fpw.19.d: "Austria solicita permiso para movilizar sus fuerzas en respuesta a las acciones prusianas, intensificando el conflicto." #NT!
+ prussia_fpw.19.a: "¡Por supuesto!" #NT!
+ prussia_fpw.21.t: "[PRS.GetLeader] ofrece una alianza" #NT!
+ prussia_fpw.21.d: "El primer ministro prusiano [PRS.GetLeader] quiere hacer una alianza con nosotros para garantizar a cada una de nuestras grandes naciones en caso de una guerra en Europa." #NT!
+ prussia_fpw.21.a: "¡Por supuesto!" #NT!
+ prussia_fpw.21.b: "Rechazar la oferta" #NT!
+ prussia_fpw.22.t: "Situación del Ejército Real Prusiano" #NT!
+ prussia_fpw.22.d: "El Ejército Real Prusiano es la columna vertebral de nuestro gran Reino Prusiano. El ejército nos ha ayudado a elevarnos a la categoría de Gran Potencia Mundial, amenazando a quienes se atreven a desafiarnos. Sin embargo, nuestro ejército necesita una reforma. Dos teóricos principales son el Jefe Helmuth von Moltke, que se desempeña como nuestro actual Jefe de Estado Mayor, y el General de Caballería Alfred von Rauch. Ambos hombres tienen diferentes planes sobre cómo se deben utilizar nuestros ejércitos. Moltke: Como líder de confianza de nuestro Estado Mayor, Moltke se centra en la concentración de nuestras fuerzas para lograr una gran planificación organizada. Alfred: Aunque no ocupa un puesto de alto rango en nuestro personal, Alfred cree que deberíamos centrarnos en la guerra móvil para ganar nuestras batallas. La caballería sería de suma importancia para aplastar a nuestros enemigos. Ambos hombres tienen diferentes formas de pensar y deberíamos considerar nuestra elección sabiamente." #NT!
+ prussia_fpw.22.a: "Iremos con Moltke" #NT!
+ prussia_fpw.22.b: "Iremos con Alfred" #NT!
+ prussia_fpw_news.1.t: "Guillermo I afirma el gobierno absoluto" #NT!
+ prussia_fpw_news.1.d: "Después de una brutal derrota en la guerra austro-prusiana, Prusia se convirtió en una potencia mundial en decadencia y perdió su prestigio. Después de varias reformas, Guillermo I proclamó un nuevo gobierno. La monarquía absoluta volvió a ser como antes de 1848 en [PRS.GetNameDef]. El pueblo de Prusia espera que bajo el gobierno de Guillermo se recupere la sensación de estabilidad para hacer frente a los desafíos del pasado." #NT!
+ prussia_fpw_news.1.a: "¡Dios te salve, Rey Guillermo!" #NT!
+  
+ austria_fpw.1.t: "Idea del Norte-Sur" #NT!
+ austria_fpw.1.d: "Tras la propuesta de [PRS.GetAdjective] al Consejo Federal de Naciones Alemanas, el subcontinente de habla alemana quedó dividido en esferas de influencia, quedando el norte bajo la esfera prusiana y el sur bajo nuestro control." #NT!
+ austria_fpw.1.a: "Bien." #NT!
+ austria_fpw.2.t: "Intercambio Holstein-Hohenzollern" #NT!
+ austria_fpw.2.d: "[PRS.GetNameDefCap] ha solicitado que intercambiemos el territorio de Holstein por su territorio de Hohenzollern en el sur. Dadas las esferas de influencia divididas, no tenemos otra opción que aceptar esta propuesta, ya que declinarla probablemente nos llevaría a una guerra imposible de ganar." #NT!
+ austria_fpw.2.a: "Bueno." #NT!
+  
+ france_fpw.1.t: "Reacción prusiana al mensaje de Ems" #NT!
+ france_fpw.1.d: "[PRS.GetNameDefCap] ha respondido a nuestro ultimátum de manera burlona, ​​publicando una versión modificada del mismo en el periódico alemán más importante, haciéndonos parecer temerosos de ellos. Esto ha enfurecido aún más al público francés, dejándonos ante una elección crítica entre ir a la guerra o enfrentarnos a disturbios nacionales." #NT!
+ france_fpw.1.a: "¡Estos malditos prusianos!" #NT!
+ france_fpw.1.b: "Ignoraremos esto." #NT!
+  
+ france_fpw.2.t: "¿El rey prusiano-español?" #NT!
+ france_fpw.2.d: "Tras la Gloriosa Revolución Española y el derrocamiento de Isabel II, España está buscando un nuevo monarca. Uno de los candidatos al que se han acercado es Leopoldo de Hohenzollern. Aunque Prusia declinó la oferta de enviar a uno de sus monarcas a España, debemos demostrar nuestra fuerza asegurándonos de que Prusia no considere acciones similares en el futuro." #NT!
+ france_fpw.2.a: "¡Tenemos que enviar un ultimátum a Prusia!" #NT!
+ france_fpw.2.b: "Dejemos que los españoles hagan lo que quieran." #NT!
+  
+  
+ prussia_fpw.18.t: "Propuesta prusiana para la Confederación Alemana" #NT!
+ prussia_fpw.18.d: "[PRS.GetNameDefCap] ha propuesto la idea de la unificación alemana bajo el dominio prusiano, excluyéndonos deliberadamente de la nueva nación. Esta propuesta no es sólo una provocación sino también una pérdida de tiempo." #NT!
+ prussia_fpw.18.a: "Haga entonces la pregunta Schleswig-Holsteinische" #NT!
+  
+  
+ prussia_fpw.6.t: "La cuestión de Schleswig-Holstein" #NT!
+ prussia_fpw.6.d: "Tras nuestra propuesta de unificar Alemania excluyendo a Austria, Austria ha respondido poniendo en tela de juicio la validez de nuestros tratados sobre la cuestión de Schleswig-Holstein. Tras la propuesta de Prusia de crear un Estado alemán que nos excluya, Prusia ha decidido ahora anexionarse nuestra parte de Schleswig-Holstein. Se trata de un acto que no podemos tolerar y debemos actuar de inmediato." #NT!
+ prussia_fpw.6.a: "¡Anexionemos entonces Holstein!" #NT!
+ prussia_fpw.6.b: "¡No deberíamos arriesgarnos a una guerra!" #NT!
+  
+ prussia_fpw.7.t: "Prusia se anexiona Holstein" #NT!
+ prussia_fpw.7.d: "Prusia ha decidido anexionarse Holstein, una medida que podría aumentar las tensiones con Austria." #NT!
+ prussia_fpw.7.a: "Pidamos a Frankfurt permiso para movilizarse" #NT!
+  
+  
+ prussia_fpw.20.t: "Despacho de Ems" #NT!
+ prussia_fpw.20.d: "[FRA.GetNameDefCap] nos ha enviado un ultimátum, exigiendo que rechacemos cualquier posibilidad de un monarca prusiano en el trono español, y que nuestro líder [PRS.GetLeader] lo diga explícitamente. Deberíamos responder mostrando públicamente una versión modificada del ultimátum, burlándonos de ellos en el proceso." #NT!
+ prussia_fpw.20.a: "Seguro seguro" #NT!
+  
+  
+ prussia_fpw.23.t: "¡El norte de Alemania se unifica!" #NT!
+ prussia_fpw.23.d: "El Reino de Prusia está unificando el norte de Alemania siguiendo su propuesta de crear la región Nord-Süd Achse, que divide Alemania en zonas prusiana y austriaca. Debemos tomar medidas decisivas y buscar una alianza con Rusia para oponernos a la recién formada Confederación del Norte de Alemania." #NT!
+ prussia_fpw.23.a: "Preguntémosle a Rusia" #NT!
+  
+ prussia_fpw.24.t: "[FRA.GetLeader] ofrece una alianza" #NT!
+ prussia_fpw.24.d: "El líder francés [FRA.GetLeader] busca una alianza con nosotros en vista de la reciente unificación del norte de Alemania. Cree que es de mutuo interés unirnos contra nuestro enemigo común y expandir nuestras fronteras naturales." #NT!
+ prussia_fpw.24.a: "¡Por supuesto!" #NT!
+ prussia_fpw.24.b: "Rechazar la oferta" #NT!
+  
+ prussia_fpw.25.t: "[SOV.GetNameDefCap] acepta la oferta!" #NT!
+ prussia_fpw.25.d: "El líder ruso [SOV.GetLeader] ha aceptado nuestra oferta de alianza contra la Confederación Alemana del Norte." #NT!
+ prussia_fpw.25.a: "¡Excelente!" #NT!
+  
+ prussia_fpw.26.t: "[SOV.GetNameDefCap] acepta la oferta!" #NT!
+ prussia_fpw.26.d: "El líder ruso [SOV.GetLeader] ha rechazado nuestra oferta de alianza contra la Confederación Alemana del Norte." #NT!
+ prussia_fpw.26.a: "¡Sagrado Azul!" #NT!
+  
+ prussia_fpw.28.t: "[PRS.GetLeader] ofrece una alianza" #NT!
+ prussia_fpw.28.d: "El líder prusiano [PRS.GetLeader] busca una alianza con nosotros. Cree que nos conviene a todos unirnos contra nuestro enemigo común, Austria, y expandir nuestras fronteras naturales." #NT!
+ prussia_fpw.28.a: "¡Por supuesto!" #NT!
+ prussia_fpw.28.b: "Rechazar la oferta" #NT!
+  
+ prussia_fpw.29.t: "[SOV.GetNameDefCap] acepta la oferta!" #NT!
+ prussia_fpw.29.d: "El líder ruso [SOV.GetLeader] ha aceptado nuestra oferta de alianza contra Austria." #NT!
+ prussia_fpw.29.a: "¡Excelente!" #NT!
+  
+ prussia_fpw.30.t: "[SOV.GetNameDefCap] acepta la oferta!" #NT!
+ prussia_fpw.30.d: "El líder ruso [SOV.GetLeader] ha rechazado nuestra oferta de alianza contra Austria." #NT!
+ prussia_fpw.30.a: "¡Maldita sea!" #NT!
+  
+ prussia_fpw.31.t: "[FROM.GetNameDefCap] exigencias al títere [ROOT.GetNameDef]!" #NT!
+ prussia_fpw.31.d: "El líder [FROM.GetLeader] exige que nuestra nación se convierta en un estado títere bajo su control. Si rechazamos la oferta, nos enfrentaremos solos a ellos en una guerra." #NT!
+ prussia_fpw.31.a: "Echarse atrás..." #NT!
+ prussia_fpw.31.b: "¡Lucha por nuestra libertad!" #NT!
+  
+ prussia_fpw.32.t: "[FROM.GetNameDefCap] acepta ultimátum" #NT!
+ prussia_fpw.32.d: "El líder [FROM.GetLeader] aceptó nuestra oferta y se retractó, lo que resultó en que [FROM.GetNameDef] se convirtiera en nuestro estado títere." #NT!
+ prussia_fpw.32.a: "¡Excelente!" #NT!
+  
+ prussia_fpw.33.t: "[FROM.GetNameDefCap] rechaza el ultimátum!" #NT!
+ prussia_fpw.33.d: "El líder [FROM.GetLeader] ha rechazado nuestro ultimátum. En este punto, debemos actuar con decisión para afirmar nuestro dominio librando una guerra contra [FROM.GetNameDef]." #NT!
+ prussia_fpw.33.a: "¡Guerra es!" #NT!
+  
+ prussia_fpw.34.t: "[FROM.GetNameDefCap] exige anexar [ROOT.GetNameDef]!" #NT!
+ prussia_fpw.34.d: "El líder [FROM.GetLeader] exige que nuestra nación sea anexada por [FROM.GetNameDef]. Si rechazamos la oferta, nos enfrentaremos solos en una guerra." #NT!
+ prussia_fpw.34.a: "Echarse atrás..." #NT!
+ prussia_fpw.34.b: "¡Lucha por nuestra libertad!" #NT!
+  
+ prussia_fpw.35.t: "[FROM.GetNameDefCap] acepta el ultimátum" #NT!
+ prussia_fpw.35.d: "El líder [FROM.GetLeader] aceptó nuestra oferta y se retractó, lo que resultó en que [FROM.GetNameDef] fuera anexado e integrado a nuestra gran nación." #NT!
+ prussia_fpw.35.a: "¡Excelente!" #NT!
+  
+ prussia_fpw.36.t: "[FROM.GetNameDefCap] rechaza el ultimátum!" #NT!
+ prussia_fpw.36.d: "El líder [FROM.GetLeader] ha rechazado nuestro ultimátum. En este punto, debemos actuar con decisión para afirmar nuestro dominio librando una guerra contra [FROM.GetNameDef]." #NT!
+ prussia_fpw.36.a: "¡Guerra es!" #NT!
+  
+ prussia_fpw.37.t: "[FROM.GetNameDefCap] exige la unificación alemana" #NT!
+ prussia_fpw.37.d: "Prusia exige que nos unamos a [PRS.GetNameDef] para unificar finalmente el Gran Espacio Alemán bajo el gobierno de [PRS.GetAdjective]. Esta propuesta tiene como objetivo consolidar todos los territorios de habla alemana en una sola nación dominada por la influencia prusiana." #NT!
+ prussia_fpw.37.a: "¡Viva la Sagrada Alemania!" #NT!
+ prussia_fpw.37.b: "¡No bajo el dominio prusiano!" #NT!
+  
+ prussia_fpw.38.t: "[FROM.GetNameDefCap] acepta el ultimátum" #NT!
+ prussia_fpw.38.d: "[AUS.GetNameDefCap] ha aceptado nuestra exigencia de unificar el Gran Espacio Alemán bajo nuestro control. Este acuerdo histórico significa el fin de rivalidades de larga data y el comienzo de una nación alemana unificada, dominada por nuestro liderazgo." #NT!
+ prussia_fpw.38.a: "¡Viva la Sagrada Alemania!" #NT!
+  
+ prussia_fpw.39.t: "[FROM.GetNameDefCap] rechaza el ultimátum!" #NT!
+ prussia_fpw.39.d: "[AUS.GetNameDefCap] ha rechazado nuestra exigencia de unificar el Gran Espacio Alemán bajo nuestro control. Este rechazo significa una división continua dentro de los territorios de habla alemana y una clara negativa a someterse a nuestro liderazgo. No podemos permitir este rechazo, ya que un país no debería decidir el futuro de nuestra cultura compartida." #NT!
+ prussia_fpw.39.a: "¡Guerra es!" #NT!
+  
+ prussia_fpw.40.t: "Las demandas públicas" #NT!
+ prussia_fpw.40.d: "Con una indignación pública significativa después de la pérdida en la guerra austro-prusiana, muchos han criticado al gobierno por su fracaso en proveer a la gente.\n\nHabiendo tenido suficiente de esto, el movimiento reformista se ha convertido en el movimiento más popular en Prusia, y ahora el público quiere aquello por lo que ha estado protestando." #NT!
+ prussia_fpw.40.a: "Hacia una democracia adecuada" #NT!
+ prussia_fpw.40.b: "Hacia el socialismo" #NT!
+  
+ prussia_fpw.41.t: "El Frente Liberal prevalece" #NT!
+ prussia_fpw.41.d: ""
+ prussia_fpw.41.a: "Proclamar la @PRSRepublic" #NT!
+ prussia_fpw.41.b: "Proclamar el @PRSUnited Kingdom" #NT!
+ prussia_fpw.41.c: "Proclamar la República Socialista del @PRSS" #NT!
+  
+  
+ generic.26.t: "Advertencia" #NT!
+ generic.26.d: "Este mod es una versión preliminar, por lo que habrá algunos errores y faltarán algunos enfoques nacionales. Si encuentras algún error, infórmanos al servidor de Discord. Por ahora, solo recomendamos jugar como Prusia, Italia o Francia, con la IA histórica habilitada." #NT!
+ generic.26.a: "Estoy de acuerdo" #NT!
+  
+   ## Romania Events 
+  
+ fpw_romania.1.t: "El estado actual de la industria" #NT!
+ fpw_romania.1.d: "La situación actual de nuestra industria es deplorable. Nuestras fábricas funcionan muy por debajo de su capacidad y nuestra eficiencia de producción es abismalmente baja. Nuestras normas laborales están obsoletas e ineficientes, lo que nos deja muy por detrás de nuestros competidores en el escenario global. El Imperio Otomano, en su incesante búsqueda de dominio, está desviando nuestros recursos, paralizando aún más nuestras ya debilitadas capacidades industriales. Esta explotación no puede continuar sin control si esperamos asegurar un futuro próspero para nuestra nación." #NT!
+ fpw_romania.1.a: "Saldremos adelante con esto" #NT!
+ fpw_romania.1.b: "Nos rendimos (El juego termina para ti)" #NT!
+  
+ fpw_romania.2.t: "El presupuesto de educación" #NT!
+ fpw_romania.2.d: "Después de una extensa lluvia de ideas, hemos llegado a dos posibles soluciones para abordar la cuestión presupuestaria. En primer lugar, podríamos asignar una cantidad significativa de fondos para impulsar el sector de la educación. Este enfoque mejoraría enormemente la calidad y el alcance de la educación, pero requiere recursos considerables y puede ejercer presión sobre nuestro presupuesto general, lo que podría paralizar otros sectores esenciales. Como alternativa, podríamos asignar sólo el mínimo indispensable para mantener el sector de la educación. Esto daría como resultado un departamento más débil y menos eficaz, pero nos permitiría conservar recursos y mantener un presupuesto general más equilibrado. ¿Qué deberíamos hacer?" #NT!
+ fpw_romania.2.a: "Asignar grandes fondos" #NT!
+ fpw_romania.2.b: "Asignar el mínimo indispensable" #NT!
+  
+ fpw_romania.3.t: "La edad de oro de la educación" #NT!
+ fpw_romania.3.d: "Tras años de reformas dedicadas, inversiones estratégicas y una paciencia inquebrantable, nuestro país ha entrado sin lugar a dudas en una nueva era de la educación, una edad de oro, caracterizada por una de las tasas de educación per cápita más altas del mundo. Este logro monumental es un testimonio de nuestros esfuerzos colectivos y de nuestra visión de futuro. Ahora estamos orgullosos de cosechar los múltiples beneficios y oportunidades que nos ofrece este panorama educativo mejorado." #NT!
+ fpw_romania.3.a: "Un logro" #NT!
+ fpw_romania.3.b: "Abrir el champán" #NT!
+  
+ fpw_romania.4.t: "Departamento de Educación reformado" #NT!
+ fpw_romania.4.d: "Después de una considerable expectativa y numerosas reformas, podemos afirmar con confianza que el Departamento de Educación se ha transformado en una entidad confiable y estable. Este logro ha equilibrado eficazmente la disparidad entre los segmentos educados y no educados de nuestra población, asegurando que su influencia en nuestra economía ya no sea perjudicial. Con esta base establecida, estamos preparados para expandir aún más nuestras iniciativas educativas según sea necesario, marcando el comienzo de una nueva era de ilustración y progreso para nuestra nación." #NT!
+ fpw_romania.4.a: "Por fin está hecho" #NT!
+  
+ fpw_romania.5.t: "El sector industrial militar" #NT!
+ fpw_romania.5.d: "El estado actual del sector militar-industrial de nuestro país está gravemente subdesarrollado, lo que representa una brecha significativa en nuestras capacidades de defensa nacional y en nuestro potencial de crecimiento tecnológico y económico. Para abordar este problema, es imperativo que iniciemos una estrategia integral para construir y expandir este sector sin demora." #NT!
+ fpw_romania.5.a: "Iniciar la reforma" #NT!
+  
+ fpw_romania.6.t: "Fondo Industrial Militar" #NT!
+ fpw_romania.6.d: "Con la aprobación de la reforma en el sector militar-industrial se ha autorizado un fondo para apoyar esta iniciativa. Esta financiación nos permite empezar con ventaja en Valaquia o Moldavia. ¿A cuál de las dos debemos dar prioridad?" #NT!
+ fpw_romania.6.a: "Empecemos por Valaquia" #NT!
+ fpw_romania.6.b: "Empecemos por Moldavia" #NT!
+  
+ fpw_romania.7.t: "El proyecto está terminado" #NT!
+ fpw_romania.7.d: "A lo largo de un período caracterizado por numerosas iniciativas de industrialización, la región ha experimentado un importante desarrollo y modernización, que ha culminado con la exitosa culminación de la reforma militar-industrial." #NT!
+ fpw_romania.7.a: "Larga vida a la nación" #NT!
+  
+ fpw_romania.8.t: "La frontera ha sido asegurada" #NT!
+ fpw_romania.8.d: "La construcción de los búnkeres a lo largo de la frontera ha finalizado con éxito. Estas fortificaciones representan un logro significativo en nuestra estrategia de defensa, ya que nos permiten estar mejor preparados ante posibles amenazas." #NT!
+ fpw_romania.8.a: "Mantenlos afuera" #NT!
+  
+ fpw_romania.9.t: "El sector reformado" #NT!
+ fpw_romania.9.d: "El sector militar-industrial ha experimentado reformas amplias y transformadoras que han mejorado sustancialmente nuestras capacidades tecnológicas y eficiencias operativas, alineándolas con los estándares de otras grandes potencias mundiales. Mediante inversiones específicas, alianzas estratégicas y avances en investigación y desarrollo, hemos modernizado nuestra infraestructura de defensa." #NT!
+ fpw_romania.9.a: "Larga vida al Enclave...espera, ¿qué?" #NT!
+  
+ fpw_romania.10.t: "La frontera ha sido asegurada" #NT!
+ fpw_romania.10.d: "La construcción de los búnkeres a lo largo de la frontera ha finalizado con éxito. Estas fortificaciones representan un logro significativo en nuestra estrategia de defensa, ya que nos permiten estar mejor preparados ante posibles amenazas." #NT!
+ fpw_romania.10.a: "Mantenlos afuera" #NT!
+  
+ fpw_romania.11.t: "El proyecto está terminado" #NT!
+ fpw_romania.11.d: "A lo largo de un período caracterizado por numerosas iniciativas de industrialización, la región ha experimentado un importante desarrollo y modernización, que ha culminado con la exitosa culminación de la reforma militar-industrial." #NT!
+ fpw_romania.11.a: "Larga vida a la nación" #NT!
+  
+ fpw_flags.1.t: "Bandera prusiana histórica" #NT!
+ fpw_flags.1.d: "¿Preferirías usar la bandera histórica de esa época o usar la misma bandera histórica que fue mejorada para que sea más atractiva a la vista?\n\nSiempre puedes revertir los cambios más tarde." #NT!
+ fpw_flags.1.a: "La bandera histórica" #NT!
+ fpw_flags.1.b: "Bandera histórica mejorada" #NT!
+ fpw_flags.2.t: "Bandera histórica de Prusia" #NT!
+ fpw_flags.2.d: "¿Preferirías usar la bandera histórica de esa época o usar la misma bandera histórica que fue mejorada para que sea más atractiva a la vista?\n\nSiempre puedes revertir los cambios más tarde." #NT!
+ fpw_flags.2.a: "La bandera histórica" #NT!
+ fpw_flags.2.b: "Bandera histórica mejorada" #NT!
+ fpw_flags.3.t: "Bandera por una nueva Prusia" #NT!
+ fpw_flags.3.d: "(Bandera 1) Tradicional prusiana, de dos caras, en blanco y negro, tema comunista.\n\n(Bandera 2) Inspirada en la Primera Internacional, utiliza un fondo rojo con el escudo inspirado en el SDAP.\n\n\nSiempre puedes revertir los cambios más tarde." #NT!
+ fpw_flags.3.a: "Bandera 1" #NT!
+ fpw_flags.3.b: "Bandera 2" #NT!

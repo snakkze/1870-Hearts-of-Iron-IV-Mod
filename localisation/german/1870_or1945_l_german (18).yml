@@ -1,0 +1,262 @@
+﻿l_german:
+ continuous_colonial_expantion: "Kolonialbemühungen" #NT!
+ WHILE_FOCUSING: "Wenn Sie sich darauf konzentrieren, treten die folgenden Effekte auf:\n$EFF$" #NT!
+ generic_focus: "Nationaler Fokus" #NT!
+ army_effort: "Armeeeinsatz" #NT!
+ army_effort_desc: "Trotz der zunehmenden Möglichkeiten der Luft- und Seekriegsführung ist der Bodenkampf in den Kriegen von morgen immer noch von zentraler Bedeutung. Mit Vorbereitung können wir vermeiden, die Hölle der Schützengräben noch einmal zu erleben." #NT!
+ equipment_effort: "Ausrüstungsaufwand" #NT!
+ equipment_effort_desc: "Die Grenzen der Ausrüstung, die Infanterie tragen kann, werden ständig erweitert. Wir werden uns darauf konzentrieren, unseren Truppen die beste verfügbare Ausrüstung zur Verfügung zu stellen." #NT!
+ motorization_effort: "Motorisierungsaufwand" #NT!
+ motorization_effort_desc: "Mobilität und Schutz sind entscheidend, um Infanterie sicher ins Feld und wieder hinaus zu bringen. Wenn wir uns auf diese Entwicklungen konzentrieren, können wir schnell handeln." #NT!
+ doctrine_effort: "Lehrbemühungen" #NT!
+ doctrine_effort_desc: "Die militärischen Doktrinen, die den Bodenkampf im Ersten Weltkrieg definierten, sind überholt. Wir müssen unsere klügsten Köpfe mit der Aufgabe betrauen, das militärische Denken von morgen zu gestalten." #NT!
+ equipment_effort_2: "Ausrüstungsaufwand II" #NT!
+ equipment_effort_2_desc: "Wir werden unsere Bemühungen fortsetzen, sicherzustellen, dass unsere Infanterie- und Unterstützungstruppen mit der bestmöglichen Ausrüstung unserer Zeit ausgestattet sind." #NT!
+ mechanization_effort: "Mechanisierungsaufwand" #NT!
+ mechanization_effort_desc: "Indem wir die Möglichkeiten der motorisierten Infanterie überdenken, können wir die Grenzen dessen erweitern, was heute an Fahrzeugen gebaut werden kann." #NT!
+ doctrine_effort_2: "Lehrbemühung II" #NT!
+ doctrine_effort_2_desc: "Das Schlachtfeld hat sich nicht nur in der Zwischenkriegszeit verändert, sondern auch im Laufe der jüngsten Konflikte. Wir müssen unsere Doktrinen kontinuierlich neu bewerten, um dies widerzuspiegeln." #NT!
+ equipment_effort_3: "Ausrüstungsaufwand III" #NT!
+ equipment_effort_3_desc: "Anstatt ausländische Ausrüstung zu imitieren oder zu kaufen, sollten wir darauf abzielen, weltweit führend bei Infanteriewaffen zu werden." #NT!
+ armor_effort: "Rüstungsaufwand" #NT!
+ armor_effort_desc: "Indem wir das anwenden, was wir bei der Mechanisierung unserer Infanterie gelernt haben, können wir auch unsere Panzerfahrzeuge verbessern." #NT!
+ special_forces: "Spezialeinheiten" #NT!
+ special_forces_desc: "Wir brauchen Elitetruppen; Gebirgsjäger und Fallschirmjäger sollten unsere Priorität sein." #NT!
+ naval_effort: "Marinebemühungen" #NT!
+ naval_effort_tt: "Nicht genügend Bauplätze für §YMarinewerften§!" #NT!
+ naval_effort_desc: "Der Ausbau unserer Marine sollte unsere oberste Priorität sein. Alle verfügbaren Ressourcen sollten neuen Werften und der Erforschung leichter Überwasserschiffe zugewiesen werden." #NT!
+ GER_naval_effort2: "Erweiterung der Werftanlagen" #NT!
+ GER_naval_effort2_desc: "Um wirklich eine nennenswerte Marine wieder aufzubauen, müssen wir unsere Schiffsbaukapazitäten erheblich erweitern." #NT!
+ flexible_navy: "Flexibles Marineblau" #NT!
+ flexible_navy_desc: "Die Neugestaltung der Seekriegsführung unter Berücksichtigung der Fortschritte in der U-Boot-Technologie wird es uns ermöglichen, feindliche Konvois wirksam anzugreifen." #NT!
+ large_navy: "Große Marine" #NT!
+ large_navy_desc: "Wenn wir unsere Marinedoktrinen so anpassen, dass sie großen Schiffen Platz bieten und die Sicherheit unserer Handelskonvois gewährleisten, werden wir viel darüber lernen, welche Art von Schiffen wir benötigen." #NT!
+ submarine_effort: "U-Boot-Anstrengungen" #NT!
+ submarine_effort_desc: "Der U-Boot-Krieg ist die aufregendste Marineentwicklung seit der Erfindung des Torpedoboots. Wir täten gut daran, uns nicht nur vor U-Booten zu schützen, sondern sie auch gegen feindliche Schiffe einzusetzen." #NT!
+ cruiser_effort: "Kreuzer-Anstrengung" #NT!
+ cruiser_effort_desc: "Bevor wir in die Forschung zu fortgeschrittenen Schlachtschiffen einsteigen können, müssen die kleineren Kreuzer ersetzt werden." #NT!
+ destroyer_effort: "Zerstörer-Anstrengung" #NT!
+ destroyer_effort_desc: "Durch das Studium der Konstruktion und des strategischen Einsatzes von U-Booten haben wir auch gelernt, wie wir diesen Strategien entgegentreten können. Zerstörer werden dabei eine entscheidende Rolle spielen." #NT!
+ capital_ships_effort: "Großkampfschiff-Anstrengung" #NT!
+ capital_ships_effort_desc: "Die Nation mit den meisten Schlachtschiffen wird die Ozeane beherrschen. Schlachtschiffe und Flugzeugträger repräsentieren die alte und die neue Seeüberlegenheit." #NT!
+ industrial_effort: "Industrielle Anstrengung" #NT!
+ industrial_effort_desc: "Konzentrieren Sie alle unsere politischen Anstrengungen darauf, die zivile Industrie mit großen Schritten auszubauen." #NT!
+ industrial_effort_2: "Industrielle Anstrengung II" #NT!
+ industrial_effort_2_desc: "Mit eisernem Willen und einer unermüdlichen Arbeitsmoral können wir die Menschen zu einer weiteren großen industriellen Anstrengung mobilisieren." #NT!
+ construction_effort: "Bauaufwand" #NT!
+ construction_effort_tt: "Nicht genug Bauplätze für §YZivilfabriken§!" #NT!
+ construction_effort_desc: "Auch wenn weltweit ein Krieg droht, darf die zivile Industriekapazität nicht unterschätzt werden." #NT!
+ production_effort: "Rüstungsanstrengungen" #NT!
+ production_effort_tt: "Nicht genügend Bauplätze für §YMilitärfabrik§!" #NT!
+ production_effort_desc: "Wer Traktoren bauen kann, kann auch Panzer bauen! Wir dürfen nicht zulassen, dass unsere militärische Produktionskapazität zurückbleibt." #NT!
+ construction_effort_2: "Baumaßnahme II" #NT!
+ construction_effort_2_desc: "Durch den weiteren Ausbau unserer Fabriken können wir die Produktion von Waren für den Handel und weitere Bauvorhaben beschleunigen." #NT!
+ production_effort_2: "Rüstungsanstrengung II" #NT!
+ production_effort_2_desc: "Der Versuch, zivile Fabriken für die Produktion militärischer Ausrüstung umzurüsten, ist ineffizient. Wir sollten uns jetzt auf die Vorbereitung der militärischen Produktion konzentrieren." #NT!
+ production_effort_3: "Rüstungsanstrengung III" #NT!
+ production_effort_3_desc: "Um den Bedarf an neuer Ausrüstung decken zu können, sind kontinuierliche Anstrengungen zum Ausbau unserer Rüstungsfabriken erforderlich." #NT!
+ infrastructure_effort: "Infrastrukturaufwand" #NT!
+ infrastructure_effort_desc: "Ein Land ohne entsprechende Infrastruktur kann keine fortschrittlichen Projekte oder Bauvorhaben durchführen." #NT!
+ infrastructure_effort_tt: "Nicht genügend Bauplätze für §YInfrastructure§!" #NT!
+ synth_oil_effort_tt: "Nicht genügend Bauplätze für §YSynthetische Raffinerie§!" #NT!
+ infrastructure_effort_2: "Infrastrukturbemühungen II" #NT!
+ infrastructure_effort_2_desc: "Der weitere Ausbau unserer Infrastruktur wird die Transport- und Kommunikationsdienste ermöglichen, die für geheime High-Tech-Projekte erforderlich sind." #NT!
+ construction_effort_3: "Baumaßnahme III" #NT!
+ construction_effort_3_desc: "Durch den Ausbau unseres Infrastrukturnetzes haben wir unsere Baukapazitäten deutlich verbessert." #NT!
+ nuclear_effort: "Nukleare Anstrengungen" #NT!
+ nuclear_effort_desc: "Wir stehen am Rande einer weltverändernden Entdeckung und können nicht zulassen, dass andere das Feuer entfachen, das eines Tages die Erde vernichten könnte." #NT!
+ extra_tech_slot: "Zusätzlicher Forschungsslot" #NT!
+ extra_tech_slot_desc: "Unsere industrielle Expansion und andere aktuelle Fortschritte könnten es uns ermöglichen, parallel mehr F&E durchzuführen." #NT!
+ extra_tech_slot_2: "Zusätzlicher Forschungsplatz II" #NT!
+ extra_tech_slot_2_desc: "Die schnelle Industrialisierung unseres Landes hat neue Möglichkeiten in Forschung und Entwicklung eröffnet, die wir nutzen sollten." #NT!
+ technology_sharing: "Technologieaustausch" #NT!
+ technology_sharing_desc: "Indem wir unsere Verbündeten an den technologischen Fortschritt weitergeben, kann unsere gesamte Fraktion ihre Forschung und Entwicklung im Kriegsfall effizienter durchführen." #NT!
+ secret_weapons: "Geheimwaffen" #NT!
+ secret_weapons_desc: "Es ist verlockend, alle zusätzlichen Ressourcen in die Entwicklung von Panzern und Flugzeugen zu stecken, doch das Geheimnis zum Gewinnen von Kriegen liegt in völlig neuen Wissenschaftsbereichen: der Elektronik, Raketentechnik und Nuklearforschung." #NT!
+ political_effort: "Politische Anstrengung" #NT!
+ political_effort_desc: "Um Veränderungen in der Welt herbeizuführen, müssen wir in der Lage sein, Veränderungen in unserem eigenen Land herbeizuführen. Die Stärkung unserer politischen Position sollte dabei an erster Stelle stehen." #NT!
+ support_the_landowners: "Unterstützen Sie die Landbesitzer" #NT!
+ support_the_landowners_desc: "Indem wir die Landbesitzer unterstützen, können wir Stabilität in einer sich schnell verändernden Welt gewährleisten." #NT!
+ crack_down_on_dissent: "Hartes Vorgehen gegen Andersdenkende" #NT!
+ appoint_conservative_bureaucrats: "Ernennung konservativer Bürokraten" #NT!
+ absolute_monarchy: "Absolute Monarchie" #NT!
+ support_the_bourgeoisie: "Unterstützen Sie die Bourgeoisie" #NT!
+ support_the_bourgeoisie_desc: "Die Unterstützung der Kapitalisten und Industriellen käme unserer Wirtschaft zugute, während wir gleichzeitig unsere Gesetze modernisieren." #NT!
+ privatize_agriculture: "Privatisierung der Landwirtschaft" #NT!
+ privatize_the_industries: "Privatisierung der Industrien" #NT!
+ limited_democracy: "Begrenzte Demokratie" #NT!
+ universal_suffrage: "Allgemeines Wahlrecht" #NT!
+ support_the_proletariat: "Unterstützt das Proletariat" #NT!
+ support_the_proletariat_desc: "Die Arbeiterklasse hat viel zu lange gelitten. Wir müssen das konservative Establishment stürzen, uns die Produktionsmittel sichern und eine sozialistische Politik verfolgen." #NT!
+ invite_karl_marx: "Laden Sie Karl Marx ein" #NT!
+ bolster_the_trade_unions: "Stärkung der Gewerkschaften" #NT!
+ vanguard_state: "Avantgarde-Staat" #NT!
+ our_place_in_the_world: "Unser Platz in der Welt" #NT!
+ our_place_in_the_world_desc: "Die Welt verändert sich schnell. Wie sollte sich [ROOT.GetNameDef] vor Bedrohungen von außen schützen?" #NT!
+ nuetrality: "Neutralität" #NT!
+ nuetrality_desc: "Der beste Schutz für uns besteht darin, Konflikte im Ausland zu vermeiden." #NT!
+ imperialism: "Imperialismus" #NT!
+ imperialism_desc: "Vergesst den Frieden, die [ROOT.GetAdjectiveCap] werden die Welt erobern und auf ein [ROOT.GetAdjectiveCap]-Imperium hinarbeiten." #NT!
+ national_militarism: "[ROOT.GetAdjectiveCap] Militarismus" #NT!
+ national_militarism_desc: "Unsere Soldaten werden die größten Soldaten der Welt sein, wenn sie von Land zu Land marschieren und unerbittlich diejenigen töten, die sich uns widersetzen." #NT!
+ colonial_effort: "Koloniale Anstrengungen" #NT!
+ colonial_effort_desc: "Während die Expansion auf unserem eigenen Kontinent schwierig sein könnte, gibt es einen völlig unerforschten Kontinent, der darauf wartet, von uns verschlungen zu werden: Afrika. Wir können ihn leicht erobern und einige Kolonien gründen." #NT!
+ manifest_destiny: "Manifest Destiny" #NT!
+ manifest_destiny_desc: "Das [ROOT.GetAdjectiveCap]-Imperium wird von Tag zu Tag stärker und bald werden wir das größte Land sein, das die Welt je gesehen hat." #NT!
+ loyalty_to_the_confederation: "Loyalität zur Eidgenossenschaft" #NT!
+ alliance_with_prussia: "Stärken Sie Ihre Bindungen mit [PRS.GetNameDef]" #NT!
+ alliance_with_prussia_desc: "Es scheint, dass wir von einer Verbesserung der Beziehungen zu den [PRS.GetAdjectiveCap]ern sehr profitieren könnten, und zwar nicht nur wegen ihres Wunsches, Deutschland zu vereinen, sondern auch wegen ihrer starken militärischen Fähigkeiten." #NT!
+ alliance_with_austria: "Stärken Sie die Beziehungen zu den [AUS.GetAdjectiveCap]s" #NT!
+ alliance_with_austria_desc: "[AUS.GetNameDefCap] ist der würdige Führer des deutschen Volkes und es wäre nur logisch, sich vor ihm zu verneigen." #NT!
+ befriend_neighbouring_countries: "Freundschaft mit benachbarten Mitgliedstaaten schließen" #NT!
+ befriend_neighbouring_countries_desc: "Wir können mit den Nachbarstaaten, die dem Deutschen Bund angehören, Freundschaft schließen." #NT!
+ aftermath_of_prussian_w: "Nachwirkungen des Brüderkriegs" #NT!
+ aftermath_of_prussian_w_completion_tt: "Automatisch vervollständigt nach einem preußischen Sieg im §YBrüderkrieg§!" #NT!
+ home_of_the_revolution: "[ROOT.GetNonIdeologyName], Heimat der Revolution" #NT!
+ home_of_the_revolution_desc: "Dem [ROOT.GetAdjectiveCap] Volk ist es gelungen, das tyrannische Regime der Bourgeoisie zu stürzen und es wird nun seinen Einfluss auf andere Nationen ausdehnen." #NT!
+ loyalty_to_the_leader_and_state: "Loyalität gegenüber dem Führer und dem Staat" #NT!
+ loyalty_to_the_leader_and_state_desc: "Wir bleiben der Republik, dem [ROOT.GetRulingParty] und natürlich dem [ROOT.GetLeader] treu, denn ohne das [ROOT.GetLeader.GetHerHim] wäre das nicht möglich." #NT!
+ the_socialist_crusade: "Der sozialistische Kreuzzug" #NT!
+ the_socialist_crusade_desc: "Wir werden alle kapitalistischen Nationen vergewaltigen, da ihre bösen Ansichten auf diesem Planeten keine Existenzberechtigung haben." #NT!
+ create_defensive_militia: "Defensive Miliz erstellen" #NT!
+ create_defensive_militia_desc: "Wir werden die [ROOT.GetAdjectiveCap] Heimatschutzmiliz gründen, um uns vor ausländischen Invasoren zu schützen." #NT!
+ counter_intelligence_effort: "Spionageabwehr" #NT!
+ counter_intelligence_effort_desc: "Der Einsatz von Spionen, die auf Spionageabwehr spezialisiert sind, wird militaristische Nationen daran hindern, uns auszuspionieren." #NT!
+ denounce_the_new_confederation: "Den neuen Bund anprangern" #NT!
+ denounce_the_new_confederation_desc: "Der Norddeutsche Bund ist ein unrechtmäßiger Ersatz für die ursprüngliche Version, da er den Preußen lediglich eine Möglichkeit bietet, nicht als „die Bösen“ dazustehen. Wir werden uns weigern, uns diesen Tyrannen anzuschließen, und stattdessen mit [FRA.GetLeader] zusammenarbeiten, um sie zu vernichten." #NT!
+ alliance_with_france: "Bündnis mit Frankreich" #NT!
+ alliance_with_france_desc: "[FRA.GetNameDefCap] ist mit unseren Feinden in [PRS.GetNameDef] rivalisierend, daher wäre es sehr klug, ein Bündnis mit ihnen anzustreben." #NT!
+ join_the_confederation: "Treten Sie der Konföderation bei" #NT!
+ join_the_confederation_desc: "Endlich ist die Zeit gekommen, dem Norddeutschen Bund beizutreten." #NT!
+ confederation_trigger: "Der §YNorddeutsche Bund§! besteht" #NT!
+ reich_trigger: "Das §YDeutsche Reich§! existiert" #NT!
+ spanish_glorious_revolution: "Spanische Glorreiche Revolution" #NT!
+ spanish_glorious_revolution_desc: "Die glorreiche Revolution, die von diesen tapferen Rebellen inszeniert wurde, markiert einen neuen Morgen für Spanien und ist ein Beweis für die Widerstandskraft und den Geist unseres Volkes! Indem wir diese Welle der Veränderung annehmen, sind wir bereit, eine bessere Zukunft zu schmieden, vereint unter dem Banner des Fortschritts und der Freiheit." #NT!
+ invite_a_bonaparte: "Laden Sie einen Bonaparte ein" #NT!
+ invite_a_bonaparte_desc: "„Einen Bonaparte an unsere Höfe einzuladen ist eine Verhöhnung der Geschichte und Souveränität unserer Nation. Wir werden uns nicht den Launen ausländischer Mächte beugen, die uns zu ihrem eigenen Vorteil manipulieren wollen. Unsere Loyalität gilt unserem eigenen Volk, nicht den selbsternannten Erben eines längst untergegangenen Imperiums.“" #NT!
+ invite_a_british: "Laden Sie einen Briten ein" #NT!
+ invite_a_british_desc: "Allein die Vorstellung, einen britischen Herrscher einzuladen, unser Land zu regieren, ist eine Beleidigung unserer Unabhängigkeit und unseres Erbes. Wir weigern uns, unsere Autonomie ausländischen Interessen zu überlassen, insbesondere nicht denen der britischen Imperialisten. Unsere Loyalität gilt unserem eigenen Volk, nicht irgendeinem fernen Monarchen jenseits des Meeres." #NT!
+ invite_a_savoyan: "Laden Sie einen Savoyer ein" #NT!
+ invite_a_savoyan_desc: "Die Einladung eines Herrschers aus Savoyen würdigt unsere reiche Geschichte und Tradition und bietet die Möglichkeit für Einheit und Stabilität unter einer angesehenen Linie. Wir nehmen das Erbe Italiens an und öffnen unsere Arme für einen Führer, der unsere Werte und Bestrebungen versteht." #NT!
+ invite_a_hohenzollern: "Hohenzollern einladen" #NT!
+ invite_a_hohenzollern_desc: "Die Einladung an einen Hohenzollern, uns zu führen, spiegelt den Geist von Leopolds Kandidatur wider und bietet einen Weg zu Stärke und Widerstandskraft in diesen unsicheren Zeiten. Inspiriert von einem Erbe an Führungsstärke sind wir bereit, einen Herrscher anzunehmen, der unsere Vision einer blühenden Zukunft teilt." #NT!
+  
+ PRS_focus_status_of_the_army: "Status der Königlich Preußischen Armee" #NT!
+ PRS_focus_status_of_the_army_desc: ""
+ PRS_focus_moltke_plan: "Der Moltke-Plan" #NT!
+ PRS_focus_moltke_plan_desc: ""
+ PRS_focus_the_prussian_norms: "Unsere preußischen Normen" #NT!
+ PRS_focus_the_prussian_norms_desc: ""
+ PRS_focus_prussian_discipline: "Erzwingen Sie die preußische Disziplin" #NT!
+ PRS_focus_prussian_discipline_desc: ""
+ PRS_focus_expand_officer_academies: "Offiziersakademien erweitern" #NT!
+ PRS_focus_expand_officer_academies_desc: ""
+ PRS_focus_central_command_structure: "Zentralisieren Sie die Befehlsstruktur" #NT!
+ PRS_focus_central_command_structure_desc: ""
+ PRS_focus_appoint_alfred: "Ernennung von Alfred" #NT!
+ PRS_focus_appoint_clausewitz_desc: ""
+ PRS_focus_new_general_staff: "Ein neuer Generalstab" #NT!
+ PRS_focus_new_general_staff_desc: ""
+ PRS_focus_concentration_of_forces: "Konzentration der Kräfte" #NT!
+ PRS_focus_concentration_of_forces_desc: ""
+ PRS_focus_prioritize_extensive_planning: "Priorisieren Sie die Kriegsplanung" #NT!
+ PRS_focus_prioritize_extensive_planning_desc: ""
+ PRS_focus_grand_planning: "Große Planung" #NT!
+ PRS_focus_grand_planning_desc: ""
+ PRS_focus_mobile_warfare: "Mobile Kriegsführung" #NT!
+ PRS_focus_mobile_warfare_desc: ""
+ PRS_focus_expand_cavalry_core: "Erweitern Sie den Kavalleriekern" #NT!
+ PRS_focus_expand_cavalry_core_desc: ""
+ PRS_focus_faster_armies: "Schnellere Armeen" #NT!
+ PRS_focus_faster_armies_desc: ""
+ PRS_focus_grand_planning: "Große Planung" #NT!
+ PRS_focus_grand_planning_desc: ""
+ PRS_focus_improve_training_quality: "Verbessern Sie die Trainingsqualität" #NT!
+ PRS_focus_improve_training_quality_desc: ""
+ PRS_focus_quality_of_education: "Qualität der Ausbildung" #NT!
+ PRS_focus_quality_of_education_desc: ""
+ PRS_focus_amend_research_budget: "Änderung des Forschungsbudgets der Armee" #NT!
+ PRS_focus_amend_research_budget_desc: ""
+ PRS_focus_equipment_quality: "Gerätequalität" #NT!
+ PRS_focus_equipment_quality_desc: ""
+ PRS_focus_equipment_quantity: "Ausstattungsmenge" #NT!
+ PRS_focus_equipment_quantity_desc: ""
+ PRS_focus_blame_the_king: "Beschuldige den König" #NT!
+ PRS_focus_blame_the_king_desc: "Unsere Niederlage im österreichisch-preußischen Krieg war auf die Unfähigkeit des Königs zurückzuführen, eine Regierung zu führen. Es ist klar, dass wir einen solchen Mann nicht länger als Oberhaupt des Volkes einsetzen können." #NT!
+ PRS_focus_secure_army_support: "Sichern Sie sich die Unterstützung der Armee" #NT!
+ PRS_focus_secure_army_support_desc: "Die Armee steht stark unter dem Einfluss des Königs und seiner Regierung. Wenn wir eine Chance haben wollen, die Macht zu ergreifen, müssen wir sie bestechen, damit sie sich unserer Bewegung anschließen. Im Gegenzug müssen wir möglicherweise Reparationszahlungen und andere Forderungen akzeptieren." #NT!
+ PRS_focus_the_real_scapegoat: "Der wahre Sündenbock" #NT!
+ PRS_focus_the_real_scapegoat_desc: "Die Sozialisten sind der Grund für unseren Niedergang; sie haben nichts anderes im Sinn als unser Volk aus diesem Land zu vertreiben. Sie müssen entlarvt und für unsere Bewegung instrumentalisiert werden." #NT!
+ PRS_focus_promises_of_prosperity: "Versprechen des Wohlstands" #NT!
+ PRS_focus_promises_of_prosperity_desc: "Preußen hat eine Niederlage gegen die österreichische Nation erlitten. Es ist klar, dass das Volk Versprechen einer großen Zukunft braucht und nach Rache für unsere Gebiete dürstet." #NT!
+ PRS_focus_treitschke_leads_us: "Treitschke führt uns" #NT!
+ PRS_focus_treitschke_leads_us_desc: "Treitschke ist ein vertrauenswürdiger und beliebter Politiker, der uns zu unseren Zielen führen und unserer Bewegung Legitimität verleihen kann. Seine Etablierung einer neuen Ideologie wird der Wendepunkt zum Sieg sein." #NT!
+ PRS_focus_power_to_the_army: "Macht der Armee" #NT!
+ PRS_focus_power_to_the_army_desc: "Wir können keiner zivilen Regierung mehr vertrauen. Das Militär wurde viel zu lange kontrolliert und braucht einen eigenen Staat. Wir müssen die Armee im Staat Wirklichkeit werden lassen." #NT!
+ PRS_governmental_reform: "Ein Aufruf zur Reform" #NT!
+ PRS_governmental_reform_desc: "Es ist klar, dass Bismarck und seine konservative Politik nicht funktionieren und uns den Verlust unseres Volkes und unseres Landes gekostet haben. Wir müssen versuchen, den Staat zu reformieren und eine bessere Regierung zu schaffen." #NT!
+ PRS_dreams_of_equality: "Träume von Gleichheit" #NT!
+ PRS_dreams_of_equality_desc: "Preußen war im Laufe seiner Geschichte unter der Kontrolle autoritärer Regime. Wir müssen uns zu einem richtigen Staat reformieren, der von Gleichheit für alle träumt." #NT!
+ PRS_gather_public_support: "Öffentliche Unterstützung sammeln" #NT!
+ PRS_gather_public_support_desc: "Die Menschen sind das Wichtigste einer Nation; wir müssen sie zusammenbringen und unsere Träume von einem besseren Leben in Preußen teilen." #NT!
+ PRS_unite_the_opposition: "Vereint die Opposition" #NT!
+ PRS_unite_the_opposition_desc: "Wenn wir gegen eine so mächtige Regierung gewinnen wollen, müssen wir uns trotz unserer Differenzen zu einer Volksfront zusammenschließen und den Wandel vorantreiben." #NT!
+ PRS_demand_a_referendum: "Fordern Sie ein Referendum" #NT!
+ PRS_demand_a_referendum_desc: "Das Volk hat sich zu einer starken Bewegung zusammengeschlossen und es ist an der Zeit, dem König direkt entgegenzutreten und ein Referendum zur Reform der Verfassung zu fordern." #NT!
+ PRS_suspend_parliament: "Das Parlament suspendieren" #NT!
+ PRS_suspend_parliament_desc: "Das politische System funktioniert offensichtlich nicht, und die Spaltung unserer Regierung ist auf das Parlament zurückzuführen. Wir müssen seine Macht „vorübergehend“ aussetzen, damit wir ohne Eingreifen Reformen durchführen können." #NT!
+ PRS_amend_the_1850_constitution: "Änderung der Verfassung von 1850" #NT!
+ PRS_amend_the_1850_constitution_desc: "Die Verfassung von 1850 war eine Änderung der ursprünglichen Verfassung und gewährte dem Volk viele Rechte und Macht. Um ein starkes Preußen zu erhalten, musste die Verfassung reformiert werden, um dem Regierungschef mehr Exekutivbefugnisse zu gewähren und einige Rechte zu widerrufen." #NT!
+ PRS_utilize_the_armies_loyalty: "Nutzen Sie die Loyalität der Armee" #NT!
+ PRS_utilize_the_armies_loyalty_desc: "Die preußische Armee ist das Rückgrat unseres Landes und unterstützt die Monarchie in hohem Maße. Wir müssen ihre Loyalität nutzen, um unsere Kontrolle zu sichern." #NT!
+ PRS_assume_power: "Übernehmen Sie die Macht" #NT!
+ PRS_assume_power_desc: "Wir haben die Regierung zu einer mächtigen und stabilen Kraft reformiert, die Preußen zugute kommt. Es ist an der Zeit, Wilhelm wieder als absoluten Herrscher einzusetzen, wie Preußen es zuvor war." #NT!
+ PRS_focus_the_coup: "Der Putsch" #NT!
+ PRS_focus_the_coup_desc: "Wir haben beträchtliche Unterstützung vom Militär und der Bevölkerung erhalten, sodass ein Putsch zur Wiederherstellung der Ordnung im Land einfach erscheint." #NT!
+ PRS_focus_a_new_constitution: "Eine neue Verfassung" #NT!
+ PRS_focus_a_new_constitution_desc: ""
+ PRS_focus_proclaim_the_socialist_republic: "Proklamation der Preußischen Sozialistischen Republik" #NT!
+ PRS_focus_proclaim_the_socialist_republic_desc: ""
+ PRS_focus_proclaim_the_republic_monarchy: "Proklamation des Vereinigten Königreichs Preußen" #NT!
+ PRS_focus_proclaim_the_republic_monarchy_desc: ""
+ PRS_focus_proclaim_the_republic: "Proklamation der Preußischen Republik" #NT!
+ PRS_focus_proclaim_the_republic_desc: ""
+  
+ fra_naval_effort: "Marinebemühungen" #NT!
+ fra_naval_effort_desc: "Der Ausbau unserer Marine sollte unsere oberste Priorität sein. Alle verfügbaren Ressourcen sollten neuen Werften und der Erforschung leichter Überwasserschiffe zugewiesen werden." #NT!
+ fra_flexible_navy: "Flexibles Marineblau" #NT!
+ fra_flexible_navy_desc: "Die Neugestaltung der Seekriegsführung unter Berücksichtigung der Fortschritte in der U-Boot-Technologie wird es uns ermöglichen, feindliche Konvois wirksam anzugreifen." #NT!
+ fra_large_navy: "Große Marine" #NT!
+ fra_large_navy_desc: "Wenn wir unsere Marinedoktrinen so anpassen, dass sie großen Schiffen Platz bieten und die Sicherheit unserer Handelskonvois gewährleisten, werden wir viel darüber lernen, welche Art von Schiffen wir benötigen." #NT!
+ fra_submarine_effort: "U-Boot-Anstrengungen" #NT!
+ fra_submarine_effort_desc: "Der U-Boot-Krieg ist die aufregendste Marineentwicklung seit der Erfindung des Torpedoboots. Wir täten gut daran, uns nicht nur vor U-Booten zu schützen, sondern sie auch gegen feindliche Schiffe einzusetzen." #NT!
+ fra_cruiser_effort: "Kreuzer-Anstrengung" #NT!
+ fra_cruiser_effort_desc: "Bevor wir in die Forschung zu fortgeschrittenen Schlachtschiffen einsteigen können, müssen die kleineren Kreuzer ersetzt werden." #NT!
+ fra_destroyer_effort: "Zerstörer-Anstrengung" #NT!
+ fra_destroyer_effort_desc: "Durch das Studium der Konstruktion und des strategischen Einsatzes von U-Booten haben wir auch gelernt, wie wir diesen Strategien entgegentreten können. Zerstörer werden dabei eine entscheidende Rolle spielen." #NT!
+ fra_capital_ships_effort: "Großkampfschiff-Anstrengung" #NT!
+ fra_capital_ships_effort_desc: "Die Nation mit den meisten Schlachtschiffen wird die Ozeane beherrschen. Schlachtschiffe und Flugzeugträger repräsentieren die alte und die neue Seeüberlegenheit." #NT!
+ fra_industrial_effort: "Industrielle Anstrengung" #NT!
+ fra_industrial_effort_desc: "Konzentrieren Sie alle unsere politischen Anstrengungen darauf, die zivile Industrie mit großen Schritten auszubauen." #NT!
+ fra_industrial_effort_2: "Industrielle Anstrengung II" #NT!
+ fra_industrial_effort_2_desc: "Mit eisernem Willen und einer unermüdlichen Arbeitsmoral können wir die Menschen zu einer weiteren großen industriellen Anstrengung mobilisieren." #NT!
+ fra_construction_effort: "Bauaufwand" #NT!
+ fra_construction_effort_desc: "Auch wenn weltweit ein Krieg droht, darf die zivile Industriekapazität nicht unterschätzt werden." #NT!
+ fra_production_effort: "Rüstungsanstrengungen" #NT!
+ fra_production_effort_desc: "Wer Traktoren bauen kann, kann auch Panzer bauen! Wir dürfen nicht zulassen, dass unsere militärische Produktionskapazität zurückbleibt." #NT!
+ fra_construction_effort_2: "Baumaßnahme II" #NT!
+ fra_construction_effort_2_desc: "Durch den weiteren Ausbau unserer Fabriken können wir die Produktion von Waren für den Handel und weitere Bauvorhaben beschleunigen." #NT!
+ fra_production_effort_2: "Rüstungsanstrengung II" #NT!
+ fra_production_effort_2_desc: "Der Versuch, zivile Fabriken für die Produktion militärischer Ausrüstung umzurüsten, ist ineffizient. Wir sollten uns jetzt auf die Vorbereitung der militärischen Produktion konzentrieren." #NT!
+ fra_production_effort_3: "Rüstungsanstrengung III" #NT!
+ fra_production_effort_3_desc: "Um den Bedarf an neuer Ausrüstung decken zu können, sind kontinuierliche Anstrengungen zum Ausbau unserer Rüstungsfabriken erforderlich." #NT!
+ fra_infrastructure_effort: "Infrastrukturaufwand" #NT!
+ fra_infrastructure_effort_desc: "Ein Land ohne entsprechende Infrastruktur kann keine fortschrittlichen Projekte oder Bauvorhaben durchführen." #NT!
+ fra_infrastructure_effort_2: "Infrastrukturbemühungen II" #NT!
+ fra_infrastructure_effort_2_desc: "Der weitere Ausbau unserer Infrastruktur wird die Transport- und Kommunikationsdienste ermöglichen, die für geheime High-Tech-Projekte erforderlich sind." #NT!
+ fra_construction_effort_3: "Baumaßnahme III" #NT!
+ fra_construction_effort_3_desc: "Durch den Ausbau unseres Infrastrukturnetzes haben wir unsere Baukapazitäten deutlich verbessert." #NT!
+ fra_extra_tech_slot: "Zusätzlicher Forschungsslot" #NT!
+ fra_extra_tech_slot_desc: "Unsere industrielle Expansion und andere aktuelle Fortschritte könnten es uns ermöglichen, parallel mehr F&E durchzuführen." #NT!
+ fra_extra_tech_slot_2: "Zusätzlicher Forschungsplatz II" #NT!
+ fra_extra_tech_slot_2_desc: "Die schnelle Industrialisierung unseres Landes hat neue Möglichkeiten in Forschung und Entwicklung eröffnet, die wir nutzen sollten." #NT!

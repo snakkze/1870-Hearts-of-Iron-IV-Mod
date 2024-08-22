@@ -1,0 +1,88 @@
+﻿l_spanish:
+  
+ #focuses 
+ AUS_allow_for_a_compromise: "Permitir un compromiso" #NT!
+ AUS_continue_the_occupation: "Continuar la ocupación" #NT!
+  
+  
+ #decisions 
+ fpw_austro_hungarian_compromise: "El compromiso austrohúngaro" #NT!
+ fpw_austro_hungarian_compromise_desc: "Tras nuestras recientes derrotas en Prusia e Italia, los húngaros han vuelto a dejar claro su deseo de autonomía. Esta vez, debemos enmendar los errores del pasado y permitir cierta medida de libertad para Hungría.\n\nPodemos hacerlo mediante una serie de reformas que debilitarán a los estados húngaros para permitir la estabilidad política.\n\n§RDebemos mantener la Aprobación de las Reformas Húngaras por encima de 50 para que las reformas tengan éxito§!\n\nActual §CAprobación de las Reformas Húngaras§!: §Y[?AUS.hungarian_approval]%§!" #NT!
+ AUS_hungarian_states: "Estados húngaros afectados por la reforma" #NT!
+  
+ #ideas 
+  
+ fpw_AUS_hungarian_seperatism: "Separatismo húngaro" #NT!
+ fpw_AUS_hungarian_seperatism_desc: "Desde la fallida revolución húngara de 1848, el irredentismo en Hungría ha aumentado de forma constante. Junto con las crecientes tensiones entre otras minorías étnicas dentro del imperio, el separatismo húngaro afectará a la estabilidad de nuestro imperio. O se llega a un compromiso, o nuestro ejército debe estar preparado para enfrentar otra revolución..." #NT!
+ fpw_AUS_divided_military: "Ejército dividido" #NT!
+ fpw_AUS_divided_military_desc: "Aunque el ejército austríaco ha dominado a lo largo de los siglos, las recientes pérdidas en Prusia han sacado a la luz algunas de las debilidades del ejército austríaco.\n\nEn particular, la gran cantidad de minorías dentro del imperio está causando tensiones en la eficacia y las organizaciones de nuestros militares; será necesario cumplir compromisos para enmendar esto." #NT!
+ fpw_AUS_stagnant_economy: "Economía estancada" #NT!
+ fpw_AUS_stagnant_economy_desc: "La industrialización del hierro, los textiles y el carbón permitió a Austria superar en producción a los demás estados alemanes a principios del siglo XIX y experimentar un crecimiento económico espectacular. Sin embargo, desde entonces se ha producido un período de estancamiento económico, causado en gran medida por las derrotas militares contra los prusianos y la pérdida de las tierras de Silesia, ricas en recursos. La economía se ha paralizado, lo que ha permitido a los prusianos superar nuestra productividad." #NT!
+ fpw_AUS_progressive_education: "Educación progresista" #NT!
+ fpw_AUS_progressive_education_desc: "El nivel de alfabetización en Austria se convirtió en uno de los más altos del reino de los Habsburgo tras las reformas educativas que establecieron la educación obligatoria tanto para niños como para niñas." #NT!
+ fpw_AUS_diverse_military: "Militares diversos" #NT!
+ fpw_AUS_diverse_military_desc: "Gracias a la fundación del ejército común, ahora existe un ejército que sirve tanto a los austriacos como a los húngaros. Sin embargo, con la enorme cantidad de etnicidades dentro del reino austriaco, será en gran medida imposible enmendar esto." #NT!
+  
+ #events 
+  
+ fpw_austria.1.t: "¡Los húngaros exigen un compromiso!" #NT!
+ fpw_austria.1.d: "Tras nuestra reciente derrota en Italia y Prusia, nuestra economía está al borde del colapso y nuestro ejército está en ruinas. Los húngaros han aprovechado esta oportunidad para exigir un compromiso, para que no corramos el riesgo de que las llamas de la revolución vuelvan a arder." #NT!
+ fpw_austria.1.a: "Debemos iniciar las negociaciones." #NT!
+ fpw_austria.1.b: "¡No nos rendiremos!" #NT!
+ austria_1a_desc: "§GOpción histórica§!\n§Entraremos en un período de negociaciones con los húngaros, concediéndoles derechos y más autonomía a expensas de Austria§!" #NT!
+ austria_1b_desc: "§ROpción no histórica§!\n§YLos húngaros organizarán revueltas en varias partes de Hungría, que debemos sofocar para evitar una revolución mayor...§!" #NT!
+ fpw_austria.2.t: "La cuestión del parlamento" #NT!
+ fpw_austria.2.d: "Con el inminente compromiso, el parlamento húngaro se ha vuelto más agresivo con su legislatura y ahora se plantea la cuestión de si el parlamento húngaro será independiente de Austria o si existirá por debajo de Austria." #NT!
+ fpw_austria.2.a: "Debemos permitir la libertad" #NT!
+ fpw_austria.2.b: "¡La ley austriaca reinará suprema!" #NT!
+ austria_2a_desc: "§GOpción histórica§!\n§YLa desventaja del "Estado autónomo" húngaro empeorará, pero la aprobación de la reforma húngara aumentará ligeramente§!" #NT!
+ austria_2b_desc: "§ROpción no histórica§!\n§YLa aprobación húngara empeorará profundamente§!" #NT!
+ fpw_austria.3.t: "La cuestión del poder judicial" #NT!
+ fpw_austria.3.d: "El sistema judicial húngaro ha mostrado su protesta por seguir la legislación austriaca y pronto comenzará a seguir la legislación húngara en lugar de la austriaca. ¿Debemos permitir que los jueces húngaros sigan la legislación húngara o prevalecerán las leyes austriacas?" #NT!
+ fpw_austria.3.a: "Debemos permitir la libertad" #NT!
+ fpw_austria.3.b: "¡Los jueces austriacos tendrán la última palabra!" #NT!
+ austria_3a_desc: "§GOpción histórica§!\n§YLa desventaja del "Estado autónomo" húngaro empeorará, pero la aprobación de la reforma húngara aumentará ligeramente§!" #NT!
+ austria_3b_desc: "§ROpción no histórica§!\n§YLa aprobación húngara empeorará§!" #NT!
+ fpw_austria.4.t: "La cuestión fiscal" #NT!
+ fpw_austria.4.d: "Para permitir la libertad financiera de Austria, debemos decidir sobre las leyes tributarias del nuevo imperio: ¿debe implementarse un sistema tributario a nivel imperial o debe dividirse entre los reinos húngaro y austriaco?" #NT!
+ fpw_austria.4.a: "Debemos permitir la libertad" #NT!
+ fpw_austria.4.b: "¡Los impuestos son un asunto común!" #NT!
+ austria_4a_desc: "§GOpción histórica§!\n§YLa desventaja del "Estado autónomo" húngaro empeorará, pero la aprobación de la reforma húngara aumentará ligeramente§!" #NT!
+ austria_4b_desc: "§ROpción no histórica§!\n§YLa aprobación húngara empeorará un poco§!" #NT!
+ fpw_austria.5.t: "El debate sobre el territorio" #NT!
+ fpw_austria.5.d: "El debate final que debe tener lugar antes de ratificar el Augsleich es el de las tierras que Hungría administrará en virtud de su nueva libertad. ¿Deberían limitarse a las tierras centrales húngaras, se les debería permitir administrar Transilvania o deberían tener libertad para administrar sus fronteras naturales?" #NT!
+ fpw_austria.5.a: "Los bordes naturales son los más apropiados" #NT!
+ fpw_austria.5.b: "Deberían limitarse a Transilvania." #NT!
+ fpw_austria.5.c: "¡Sólo tierras húngaras fundamentales!" #NT!
+ austria_5a_desc: "§GOpción histórica§!\n§YLa desventaja del "Estado autónomo" húngaro empeorará, pero la aprobación de la reforma húngara aumentará ligeramente§!" #NT!
+ austria_5b_desc: "§ROpción no histórica§!\n§YLa aprobación húngara empeorará profundamente§!" #NT!
+ austria_5c_desc: "§ROpción no histórica§!\n§YLa aprobación húngara empeorará §Rirreversiblemente§!§!" #NT!
+ fpw_austria.6.t: "¡Hungría aprueba las reformas!" #NT!
+ fpw_austria.6.d: "Hungría ha aprobado las reformas incluidas en el compromiso austro-húngaro, ¡lo que nos permite ratificar sus términos!" #NT!
+ fpw_austria.6.a: "¡Estamos entrando en una nueva era de paz!" #NT!
+ fpw_austria.7.t: "¡Augsleich ha sido ratificado!" #NT!
+ fpw_austria.7.d: "Tras arduas negociaciones con los representantes húngaros, finalmente se llegó a un compromiso: Hungría ganará mucha autonomía y el Imperio austríaco se transformará en la monarquía dual de Austria-Hungría. Este compromiso se renovará cada diez años." #NT!
+ fpw_austria.7.a: "¡Viva el Imperio!" #NT!
+  
+ #custom cost texts 
+  
+  
+ #custom effect tooltips 
+  
+  
+  
+  
+ #custom modifier tooltips 
+  
+ #scripted gui text 
+ AUS_hungarians_name_text: "Húngaros" #NT!
+ AUS_croats_name_text: "Croatas" #NT!
+ AUS_slovak_name_text: "Eslovacos" #NT!
+ AUS_czech_name_text: "Checos" #NT!
+  
+ #leaders 
+  
+ #opinion modifiers 
+  
+  
+  #cosmetic nation/ideology names 
