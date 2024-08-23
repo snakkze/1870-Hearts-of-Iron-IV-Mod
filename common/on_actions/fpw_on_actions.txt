@@ -99,7 +99,12 @@ on_actions = {
 			}
 
 			every_country = {
-				set_variable = { THIS.colonists = 1 }
+				if = {
+					limit = {
+						is_debug = yes
+					}
+					set_variable = { THIS.colonists = 100 }
+				} else = { set_variable = { THIS.colonists = 1 } }
 			}
 
 			if = {
