@@ -1440,7 +1440,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = {
-			has_civil_war = no
+
 		}
 
 		ai_will_do = {
@@ -3554,10 +3554,10 @@ focus_tree = {
 		available = {
 		OR = {
 		PRS = {
-		has_opinion = { target = GRE value > -1 }
+		has_opinion = { target = ROOT value > -1 }
 		}
 		FRA = {
-		has_opinion = { target = GRE value > -1 }
+		has_opinion = { target = ROOT value > -1 }
 		}
 		}
 		}
@@ -3587,10 +3587,10 @@ focus_tree = {
 		available = {
 		OR = {
 		PRS = {
-		has_opinion = { target = GRE value > -1 }
+		has_opinion = { target = ROOT value > -1 }
 		}
 		FRA = {
-		has_opinion = { target = GRE value > -1 }
+		has_opinion = { target = ROOT value > -1 }
 		}
 		}
 		}
@@ -3698,7 +3698,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_selective_recruitment
-		icon = focus_jap_selective
+		icon = GFX_focus_jap_selective
 		prerequisite = { focus = JAP_reinforce_samurai_traditions }
 		x = -1
 		y = 1

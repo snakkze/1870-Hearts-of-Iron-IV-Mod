@@ -82,15 +82,8 @@ ideas = {
 						has_completed_focus = USA_limited_intervention
 					}
 				}
-				AND = {
-						NOT = {
-						has_focus_tree = japanese_focus
-						}
-				}
-				AND = {
-						NOT = {
-						original_tag = JAP
-						}
+				NOT = {
+				original_tag = JAP
 				}
 			}
 

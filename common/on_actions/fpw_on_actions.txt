@@ -289,4 +289,28 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_state_control_changed = { #RUBBER SAPLINGS
+		effect = {
+			IF = {
+				limit = {
+					FROM.FROM = { 
+						has_resources_amount = {
+						resource = rubber
+						amount > 1
+						}		
+					}
+					ROOT = {
+						NOT = {
+						has_country_flag = fpw_access_to_rubber_tree_saplings
+						}
+					}
+				}
+				ROOT = {
+				set_country_flag = fpw_access_to_rubber_tree_saplings
+				}
+			}
+		}
+	}
+	
 }

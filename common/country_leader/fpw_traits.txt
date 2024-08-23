@@ -234,24 +234,20 @@ leader_traits = {
 	fpw_jap_industrial_reformer = {
 		random = no
 		production_speed_industrial_complex_factor = 0.1
-		political_power_gain = 0.2
 		army_org_factor = -0.05
-		stability_factor = -0.05
 	}
 	
 	fpw_jap_educational_reformer = {
 		random = no
-		political_power_gain = 0.1
-		experience_gain_army_factor = -0.1
-		consumer_goods_factor = 0.05
+		political_power_factor = 0.05
+		research_speed_factor = 0.1
 	}
 	
-	fpw_jap_military_reformer = {
+	fpw_jap_military_traditionalist = {
 		random = no
 		army_attack_factor = 0.1
 		conscription_factor = 0.05
 		industrial_capacity_factory = -0.05
-		political_power_gain = -0.05
 	}
 	
 	fpw_jap_westernization_advocate = {
@@ -259,24 +255,19 @@ leader_traits = {
 		trade_opinion_factor = 0.1
 		custom_modifier_tooltip = prestige_modifier_jap_1
 		stability_factor = -0.05
-		industrial_capacity_factory = -0.05
 	}
 	
 	fpw_jap_military_modernizer = {
 		random = no
-		experience_gain_army_factor = 0.1
+		experience_gain_army_factor = 0.15
 		production_speed_arms_factory_factor = 0.1 
-		army_morale_factor = 0.05
 		production_speed_industrial_complex_factor = -0.05
-		political_power_gain = -0.1
 	}
 	
-	fpw_jap_social_reformer = {
+	fpw_jap_progressive_visionary = {
 		random = no
-		research_speed_factor = 0.1
 		stability_factor = 0.05
-		army_org_factor = -0.05
-		experience_gain_army_factor = -0.05
+		political_power_factor = 0.15
 	}
 	
 	
