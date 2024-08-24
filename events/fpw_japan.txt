@@ -564,9 +564,6 @@ add_namespace = fpw_japan
 		hidden_effect = {
 		retire_character = JAP_Enomoto_Takeaki
 		retire_character = JAP_Katsu_Kaishu
-		add_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
-		}
 		add_stability = 0.2
 		if = {
 			limit = {
@@ -600,9 +597,6 @@ add_namespace = fpw_japan
 		original_tag_to_check = JAP 
 		remove_ideas = {
 		jap_high_imperial_resistance
-		}
-		add_dynamic_modifier = { 
-		modifier = fpw_JAP_isolated 
 		}
         IF = { 
 		limit = { Has_government = neutrality }
