@@ -1,4 +1,8 @@
 state={
+resources={
+wood=3
+}
+
 	id=89
 	name="STATE_89"
 
@@ -29,3 +33,4 @@ add_core_of = AUS
 
 	local_supplies=0.0 
 }
+

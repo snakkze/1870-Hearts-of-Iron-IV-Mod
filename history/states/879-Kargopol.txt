@@ -1,5 +1,9 @@
 
 state = {
+resources={
+wood=14
+}
+
 	id = 879
 	name = "STATE_879" # Kargopol
 	manpower = 109292
@@ -29,3 +33,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

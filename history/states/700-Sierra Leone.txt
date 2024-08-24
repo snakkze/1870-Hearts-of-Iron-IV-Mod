@@ -3,8 +3,12 @@ state={
 	id=700
 	name="STATE_700"
 	resources={
+
 		steel=32.000
-	}
+	
+
+wood=2
+}
 
 	history={
 		owner = ENG
@@ -24,3 +28,4 @@ state={
 	state_category=pastoral
 	local_supplies=0.000
 }
+

@@ -3,8 +3,12 @@ state={
 	id=27
 	name="STATE_27"
 	resources={
+
 		aluminium=11.000
-	}
+	
+
+wood=3
+}
 
 	history={
 		owner = FRA
@@ -35,3 +39,4 @@ state={
 	state_category=city
 	local_supplies=0.000
 }
+

@@ -1,4 +1,8 @@
 state = {
+resources={
+wood=5
+}
+
 	id = 928
 	name = "STATE_928" #KYME
 
@@ -34,4 +38,5 @@ state = {
 	
 	local_supplies = 0.0
 }
+
 

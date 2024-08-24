@@ -1,4 +1,8 @@
 state={
+resources={
+wood=1
+}
+
 	id=1015
 	name="STATE_1015"
 
@@ -15,3 +19,4 @@ state={
 	state_category=wasteland
 	local_supplies=0.000
 }
+

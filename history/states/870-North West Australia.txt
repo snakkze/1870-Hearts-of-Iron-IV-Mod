@@ -1,4 +1,8 @@
 state={
+resources={
+wood=4
+}
+
 	id=870
 	name="STATE_870"
 	provinces={
@@ -17,3 +21,4 @@ state={
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
+

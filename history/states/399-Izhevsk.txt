@@ -4,9 +4,13 @@ state = {
 	name = "STATE_399"
 	manpower = 688966
 	state_category = rural
-	resources = {
-		chromium = 18 # was: 24
-	}
+	resources={
+
+
+	
+
+wood=8
+}
 
 	history = {
 		owner = SOV
@@ -27,3 +31,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

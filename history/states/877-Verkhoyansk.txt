@@ -1,4 +1,8 @@
 state = {
+resources={
+wood=3
+}
+
 	id = 877
 	name = "STATE_877" # Verkhoyansk
 
@@ -24,3 +28,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

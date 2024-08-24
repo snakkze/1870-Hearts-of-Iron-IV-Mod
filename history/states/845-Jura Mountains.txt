@@ -4,8 +4,12 @@ state={
 	name="STATE_845"
 	manpower = 1074994
 	resources={
+
 		aluminium=18 # was: 28 #CarloTODO
-	}
+	
+
+wood=1
+}
 	state_category = large_town
 	history={
 		owner = SWI
@@ -23,3 +27,4 @@ state={
 	}
 	local_supplies=0.0 
 }
+

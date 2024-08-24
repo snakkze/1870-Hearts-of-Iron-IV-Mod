@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=8
+}
+
 	id=362
 	name="STATE_362"
 
@@ -43,3 +47,4 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }
+

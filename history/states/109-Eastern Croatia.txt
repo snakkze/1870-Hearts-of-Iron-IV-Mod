@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=3
+}
+
 	id=109
 	name="STATE_109" # Croatia
 	manpower = 1156688
@@ -26,3 +30,4 @@ add_core_of = AUS
 
 	local_supplies=0.0 
 }
+

@@ -1,4 +1,8 @@
 state = {
+resources={
+wood=2
+}
+
 	id = 915
 	name = "STATE_915" # Bohuslän
 	manpower = 50030
@@ -23,3 +27,4 @@ state = {
 
 	local_supplies=0.000
 }
+

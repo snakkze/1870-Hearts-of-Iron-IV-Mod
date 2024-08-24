@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=9
+}
+
 	id=245
 	name="STATE_245" # Millerovo
 	manpower = 396120
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=8.0 
 }
+

@@ -462,7 +462,10 @@ apply_prestige_modifier_effetcs = {
 			multiply_temp_variable = { prestige_to_remove = 0.25 }
 			subtract_from_variable = { THIS.country_base_prestige = prestige_to_remove }
 		}
-		
+		if = {
+			limit = {
+			tag = JAP
+			}
 		if = {
 			limit = {
 				JAP_ito_hirobumiADV = {	
@@ -472,6 +475,7 @@ apply_prestige_modifier_effetcs = {
 			set_temp_variable = { prestige_to_add = 150 }
 			multiply_temp_variable = { prestige_to_add = 0.15 }
 			add_to_variable = { THIS.country_base_prestige = prestige_to_add }
+		}
 		}
 	}
 }

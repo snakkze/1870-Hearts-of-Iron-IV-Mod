@@ -3,9 +3,13 @@ state = {
 	name = "STATE_922"
 	manpower = 206141
 	state_category = town
-	resources = {
+	resources={
+
 		aluminium = 5
-	}
+	
+
+wood=7
+}
 	
 
 	history = {
@@ -34,3 +38,4 @@ add_core_of = SWE
 
 	local_supplies = 0.000
 }
+

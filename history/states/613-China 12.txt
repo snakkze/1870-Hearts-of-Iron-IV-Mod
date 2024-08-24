@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=2
+}
+
 	id=613
 	name="STATE_613" # Shanghai
 	manpower = 8998652
@@ -41,3 +45,4 @@ state={
 
 	local_supplies=0.0 
 }
+

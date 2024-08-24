@@ -5,8 +5,12 @@ state={
 	manpower = 79040
 
 	resources={
+
 		aluminium=60 # was: 104
-	}	
+	
+
+wood=3
+}	
 	
 	state_category = rural
 
@@ -31,3 +35,4 @@ state={
 
 	local_supplies=0.0 
 }
+

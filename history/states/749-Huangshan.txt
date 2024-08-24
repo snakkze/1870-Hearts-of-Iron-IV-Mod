@@ -1,4 +1,8 @@
 state={
+resources={
+wood=3
+}
+
 	id=749
 	name="STATE_749"
 	provinces={
@@ -36,3 +40,4 @@ state={
 
 	local_supplies=0.0 
 }
+

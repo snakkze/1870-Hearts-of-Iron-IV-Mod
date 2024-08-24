@@ -5,10 +5,14 @@ state = {
 	manpower = 2204800 # (Campania 3697k + Basilicato 543k )  # was 5333611 before Puglia state was added
 	
 	state_category = city
-	resources = { #TODO_Manu: Check resource split (Puglia is now a different state)
+	resources={
+ #TODO_Manu: Check resource split (Puglia is now a different state)
 		aluminium = 10 # was: 16 (TODO_Manu: This WAS before my time. Check)
 		steel = 15 # was: 24 (TODO_Manu: This WAS before my time. Check)
-	}
+	
+
+wood=1
+}
 
 	history = {
 		owner = ITA
@@ -40,3 +44,4 @@ state = {
 
 	local_supplies = 13.0 
 }
+

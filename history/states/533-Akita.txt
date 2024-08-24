@@ -5,8 +5,12 @@ state={
 	manpower = 3637816
 	state_category = large_city
 	resources={
+
 		steel=27 # was: 35
-	}
+	
+
+wood=3
+}
 
 	history={
 		owner = JAP
@@ -37,3 +41,4 @@ state={
 
 	local_supplies=25.0 
 }
+

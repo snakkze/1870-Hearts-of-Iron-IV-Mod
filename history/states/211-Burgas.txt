@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=3
+}
+
 	id=211
 	name="STATE_211"
 	manpower = 706365
@@ -44,3 +48,4 @@ add_core_of = TUR
 
 	local_supplies=4.0 
 }
+

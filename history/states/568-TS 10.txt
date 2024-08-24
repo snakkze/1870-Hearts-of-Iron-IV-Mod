@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=11
+}
+
 	id=568
 	name="STATE_568" # Krasnoyarsk
 	manpower = 897742
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=0.0 
 }
+

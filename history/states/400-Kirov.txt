@@ -3,9 +3,13 @@ state = {
 	id = 400
 	name = "STATE_400"
 	manpower = 1100047
-	resources = {
+	resources={
+
 		aluminium = 14 # was: 20
-	}
+	
+
+wood=35
+}
 
 	state_category = town
 
@@ -26,3 +30,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

@@ -1,5 +1,9 @@
 state=
 {
+resources={
+wood=1
+}
+
 	id=102
 	name="STATE_102"
 	manpower = 421746 # was 1144300 before Ljubljana split
@@ -24,3 +28,4 @@ add_core_of = AUS
 	
 	local_supplies=0.0 
 }
+

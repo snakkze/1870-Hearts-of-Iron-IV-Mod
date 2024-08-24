@@ -2,11 +2,14 @@
 state = {
 	id = 44
 	name = "STATE_44"
-	resources = {
+	resources={
+
 		aluminium = 1.000
-		chromium = 1.000
 		oil = 4.000
-	}
+	
+
+wood=1
+}
 
 	history = {
 		owner = TUR
@@ -54,3 +57,4 @@ add_core_of = TUR
 	state_category = town
 	local_supplies = 5.000
 }
+

@@ -302,7 +302,7 @@ on_actions = {
 					FROM.FROM = { 
 						has_resources_amount = {
 						resource = rubber
-						amount > 1
+						amount > 0
 						}		
 					}
 					ROOT = {

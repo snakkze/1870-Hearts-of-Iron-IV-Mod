@@ -3,7 +3,11 @@ state={
 	id=2520
 	name="STATE_891"
 	resources={
-	}
+
+	
+
+wood=1
+}
 
 	history={
 	set_variable = { tribal = 891 }
@@ -20,3 +24,4 @@ state={
 	state_category=pastoral
 	local_supplies=0.000
 }
+

@@ -3,8 +3,12 @@ state={
 	id=288
 	name="STATE_288"
 	resources={
+
 		tungsten=92.000
-	}
+	
+
+wood=22
+}
 
 	history={
 		add_core_of = BRM
@@ -33,3 +37,4 @@ state={
 	state_category=town
 	local_supplies=0.000
 }
+

@@ -2,8 +2,12 @@ state={
 	id=357
 	name="STATE_357"
 	resources={
+
 		steel=12 # was: 20.000
-	}
+	
+
+wood=13
+}
 
 	state_category = metropolis
 
@@ -46,3 +50,4 @@ state={
 
 	local_supplies=0.0 
 }
+

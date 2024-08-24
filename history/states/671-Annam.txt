@@ -3,9 +3,12 @@ state={
 	id=671
 	name="STATE_671"
 	resources={
-		chromium=6.000
+
 		tungsten=27.000
-	}
+	
+
+wood=11
+}
 
 	history={
 		add_core_of = VIN
@@ -33,3 +36,4 @@ state={
 	state_category=town
 	local_supplies=0.000
 }
+

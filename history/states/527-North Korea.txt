@@ -5,9 +5,13 @@ state={
 	manpower = 3522584
 	state_category = town
 	resources={
+
 		steel=18 # was: 30
 		tungsten=28 # was: 52
-	}
+	
+
+wood=5
+}
 
 	history={
 		owner = KOR
@@ -29,3 +33,4 @@ state={
 
 	local_supplies=0.0 
 }
+

@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=4
+}
+
 	id=807
 	name="STATE_807"
 	manpower = 370952
@@ -35,3 +39,4 @@ add_core_of = PRS
 
 	local_supplies=0.0 
 }
+

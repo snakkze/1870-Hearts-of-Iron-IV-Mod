@@ -1,4 +1,8 @@
 state={
+resources={
+wood=12
+}
+
 	id=600
 	name="STATE_600"
 
@@ -41,3 +45,4 @@ state={
 
 	local_supplies=3.0 
 }
+

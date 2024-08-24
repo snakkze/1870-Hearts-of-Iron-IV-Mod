@@ -2,8 +2,12 @@ state={
 	id=602
 	name="STATE_602"
 	resources={
+
 		tungsten=6.000
-	}
+	
+
+wood=3
+}
 
 	history={
 		owner = CHI
@@ -37,3 +41,4 @@ state={
 
 	local_supplies=0.0 
 }
+

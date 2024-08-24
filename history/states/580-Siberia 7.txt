@@ -1,5 +1,9 @@
 
 state = {
+resources={
+wood=7
+}
+
 	id = 580
 	name = "STATE_580" # Tobolsk
 	manpower = 45826
@@ -25,3 +29,4 @@ state = {
 
 	local_supplies = 3.0 
 }
+

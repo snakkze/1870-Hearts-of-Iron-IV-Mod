@@ -3,9 +3,13 @@ state={
 	id=495
 	name="STATE_495"
 	resources={
+
 		aluminium = 4.000
 		rubber = 143
-	}
+	
+
+wood=15
+}
 
 	history={
 		owner = BRA
@@ -25,3 +29,4 @@ state={
 	state_category=pastoral
 	local_supplies=0.000
 }
+

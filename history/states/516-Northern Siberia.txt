@@ -1,5 +1,9 @@
 
 state = {
+resources={
+wood=4
+}
+
 	id = 516
 	name = "STATE_516" # Taymyria / Dudinka
 	manpower = 3122
@@ -24,3 +28,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

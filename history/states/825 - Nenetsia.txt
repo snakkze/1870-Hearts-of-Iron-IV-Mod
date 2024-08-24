@@ -6,9 +6,13 @@ state = {
 	
 	state_category = rural
 	
-	resources = {
+	resources={
+
 		oil = 7 # was: 8
-	}
+	
+
+wood=2
+}
 
 	history = {
 		victory_points = {
@@ -32,3 +36,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

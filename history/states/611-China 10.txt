@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=2
+}
+
 	id=611
 	name="STATE_611" # South Chahar
 	manpower = 764400
@@ -27,3 +31,4 @@ add_core_of = CHI
 
 	local_supplies=0.0 
 }
+

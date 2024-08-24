@@ -7,8 +7,12 @@ state={
 	
 	manpower = 694205
 	resources={
+
 		oil=41 # was: 58
-	}
+	
+
+wood=2
+}
 
 	history={
 		owner = VEN
@@ -36,3 +40,4 @@ state={
 
 	local_supplies=0.0 
 }
+

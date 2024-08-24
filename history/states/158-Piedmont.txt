@@ -5,12 +5,15 @@ state = {
 	manpower = 2478048
 	
 	state_category = metropolis
-	resources = {
+	resources={
+
 		steel = 24 # was: 40
 		aluminium = 16 # was: 28
-		chromium = 2 # was: 4
 		tungsten = 1 # was: 2
-	}
+	
+
+wood=1
+}
 
 	history = {
 		owner = ITA
@@ -46,3 +49,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

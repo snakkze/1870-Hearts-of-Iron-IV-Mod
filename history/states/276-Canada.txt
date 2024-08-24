@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=18
+}
+
 	id=276
 	name="STATE_276" # Southern Ontario
 	manpower = 1620849
@@ -30,3 +34,4 @@ state={
 
 	local_supplies=0.0 
 }
+

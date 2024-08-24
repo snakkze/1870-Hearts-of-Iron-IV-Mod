@@ -1,4 +1,8 @@
 state={
+resources={
+wood=1
+}
+
 	id=707
 	name="STATE_707"
 	manpower = 210318
@@ -21,3 +25,4 @@ state={
 
 	local_supplies=0.0 
 }
+

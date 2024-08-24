@@ -1,0 +1,54 @@
+equipments = {
+
+	convoy = {
+		year = 1800
+
+		is_archetype = yes
+		type = convoy
+		picture = archetype_convoy		
+		group_by = archetype
+		sprite = convoy
+		
+		interface_category = interface_category_other_ships
+
+		# Unused by convoys
+		surface_detection = 10
+		sub_detection = 0
+
+		fuel_consumption = 0
+
+		# Combat abilities
+		lg_armor_piercing = 0.5
+		armor_value = 0
+		reliability = 0.7
+		surface_visibility = 16
+
+		torpedo_attack = 0
+		lg_attack = 0.1
+		naval_speed = 10
+		max_strength = 40
+		max_organisation = 25
+
+
+        #Space taken in convoy
+        lend_lease_cost = 0
+		
+		# (Describes combat behaviour - hidden stat)
+		offensive_weapons = no
+		
+		build_cost_ic = 50
+		resources = {
+			#oil = 1
+			wood = 3
+		}
+	}
+
+	convoy_1 = {
+		year = 1800
+
+		archetype = convoy
+		active = yes
+		priority = 10
+	}
+}
+

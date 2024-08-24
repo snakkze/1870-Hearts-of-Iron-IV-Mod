@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=14
+}
+
 	id=653
 	name="STATE_653" # Sverdlovsk
 	manpower = 1124058
@@ -29,3 +33,4 @@ state={
 
 	local_supplies=0.0 
 }
+

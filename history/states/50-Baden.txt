@@ -3,8 +3,12 @@ state={
 	id=50
 	name="STATE_50"
 	resources={
+
 		aluminium=6.000
-	}
+	
+
+wood=4
+}
 
 	history={
 		owner = WRT
@@ -31,3 +35,4 @@ state={
 	state_category=large_city
 	local_supplies=0.000
 }
+

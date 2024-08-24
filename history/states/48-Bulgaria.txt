@@ -4,8 +4,12 @@ state={
 	name="STATE_48"
 	manpower = 876714
 	resources={
+
 		aluminium = 2
-	}
+	
+
+wood=1
+}
 	
 	
 	state_category = city
@@ -32,3 +36,4 @@ add_core_of = TUR
 
 	local_supplies=0.0 
 }
+

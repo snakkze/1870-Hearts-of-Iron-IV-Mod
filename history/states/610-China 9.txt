@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=10
+}
+
 	id=610
 	name="STATE_610" # Jehol
 	manpower = 1027196
@@ -24,3 +28,4 @@ add_core_of = CHI
 
 	local_supplies=0.0 
 }
+

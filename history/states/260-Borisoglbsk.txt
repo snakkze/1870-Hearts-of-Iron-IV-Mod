@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=10
+}
+
 	id=260
 	name="STATE_260" # Voronezh
 	manpower = 1335351
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=9.0 
 }
+

@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=3
+}
+
 	id=437
 	name="STATE_437" # Indore
 	manpower = 4369300
@@ -22,3 +26,4 @@ state={
 
 	local_supplies=0.0 
 }
+

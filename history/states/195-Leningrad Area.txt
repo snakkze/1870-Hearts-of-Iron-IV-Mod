@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=3
+}
+
 	id=195
 	name="STATE_195"
 
@@ -32,3 +36,4 @@ state={
 	state_category=metropolis
 	local_supplies=11.000
 }
+

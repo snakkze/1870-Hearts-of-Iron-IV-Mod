@@ -3,10 +3,13 @@ state={
 	id=599
 	name="STATE_599"
 	resources={
+
 		tungsten=15.000
 		steel=15.000
-		chromium=3.000
-	}
+	
+
+wood=2
+}
 
 	history={
 		owner = CHI
@@ -33,3 +36,4 @@ state={
 	state_category=town
 	local_supplies=0.000
 }
+

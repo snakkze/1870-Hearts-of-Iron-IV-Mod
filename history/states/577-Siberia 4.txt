@@ -3,9 +3,13 @@ state = {
 	id = 577 # Surgut
 	manpower = 15235
 	name = "STATE_577"
-	resources = {
+	resources={
+
 		oil=13 # was: 14
-	}
+	
+
+wood=9
+}
 	
 	state_category = pastoral
 
@@ -24,3 +28,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

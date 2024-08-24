@@ -3,8 +3,12 @@ state={
 	name="STATE_723"
 	manpower = 284543
 	resources={
+
 		tungsten=4 # was: 6
-	}
+	
+
+wood=2
+}
 
 	state_category = rural
 
@@ -31,3 +35,4 @@ state={
 
 	local_supplies=0.0 
 }
+

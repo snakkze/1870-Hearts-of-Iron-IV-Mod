@@ -3,9 +3,12 @@ state={
 	id=330
 	name="STATE_330"
 	resources={
+
 		steel=2.000
-		chromium=3.000
-	}
+	
+
+wood=3
+}
 
 	history={
 		owner = CHI
@@ -34,3 +37,4 @@ add_core_of = CHI
 	state_category=large_town
 	local_supplies=0.000
 }
+

@@ -1,4 +1,8 @@
 state = {
+resources={
+wood=4
+}
+
 	id = 926
 	name = "STATE_926" #TURKU AND PORI
 
@@ -42,3 +46,4 @@ state = {
 	
 	local_supplies = 0.0
 }
+

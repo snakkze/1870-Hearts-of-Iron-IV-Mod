@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=2
+}
+
 	id=614
 	name="STATE_614" # Hebei
 	manpower = 9586148
@@ -25,3 +29,4 @@ state={
 
 	local_supplies=0.0 
 }
+

@@ -1,4 +1,8 @@
 state = {
+resources={
+wood=2
+}
+
 	id = 875
 	name = "STATE_875" #Chukchi Peninsula
 
@@ -28,3 +32,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

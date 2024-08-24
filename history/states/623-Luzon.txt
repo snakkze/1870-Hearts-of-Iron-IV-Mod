@@ -6,7 +6,11 @@ state= {
 	state_category = city
 	
 	resources={
-	}
+
+	
+
+wood=10
+}
 
 	history= {
 		owner = PHI
@@ -35,3 +39,4 @@ state= {
 
 	local_supplies=0.0 
 }
+

@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=1
+}
+
 	id=481
 	name="STATE_481" # Durango
 	manpower = 652649
@@ -34,3 +38,4 @@ state={
 
 	local_supplies=6.0 
 }
+

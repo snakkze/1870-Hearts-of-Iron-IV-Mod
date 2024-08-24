@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=1
+}
+
 	id=306
 	name="STATE_306" # Cundinamarca
 	manpower = 2575585
@@ -26,3 +30,4 @@ state={
 
 	local_supplies=4.0 
 }
+

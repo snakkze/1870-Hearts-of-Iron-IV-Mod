@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=5
+}
+
 	id=193
 	name="STATE_193" # Chernihiv
 	manpower = 714291
@@ -24,3 +28,4 @@ state={
 
 	local_supplies=0.0 
 }
+

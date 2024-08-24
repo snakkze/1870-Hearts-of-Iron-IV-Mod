@@ -3,10 +3,14 @@ state={
 	id=1309
 	name="STATE_336"
 	resources={
+
 		steel=20.000
 		tungsten=189.000
 		aluminium=15.000
-	}
+	
+
+wood=1
+}
 
 	history={
 		set_variable = { tribal = 336 }
@@ -26,3 +30,4 @@ state={
 	state_category=pastoral
 	local_supplies=0.000
 }
+

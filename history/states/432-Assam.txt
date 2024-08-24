@@ -3,8 +3,12 @@ state={
 	id=432
 	name="STATE_432"
 	resources={
+
 		oil=5.000
-	}
+	
+
+wood=5
+}
 
 	history={
 		owner = RAJ
@@ -24,3 +28,4 @@ state={
 	state_category=town
 	local_supplies=0.000
 }
+
