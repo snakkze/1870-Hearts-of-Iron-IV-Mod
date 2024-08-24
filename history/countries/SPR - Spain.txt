@@ -1,5 +1,5 @@
 capital = 41
- oob = "SPR_1866"
+oob = "SPR_1866"
 
 set_cosmetic_tag = SPR_kingdom
 
@@ -28,62 +28,9 @@ add_ideas = {
 	fpw_SPR_corrupted_government
 }
 
-1870.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		elections_allowed = no
-	}
-	
-	add_ideas = {
-		fpw_SPR_bankrupted_country
-		fpw_SPR_corrupted_government
-	}
-	set_cosmetic_tag = SPR_revolutionaries 
-	SPR_prov_gov = {
-		add_country_leader_role = {
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = conservatism
-			}
-			promote_leader = yes
-		}
-	}
-	remove_ideas = {
-		fpw_SPR_bankrupted_country
-		fpw_SPR_corrupted_government
-	}
-	add_timed_idea = {
-		idea = fpw_SPR_aftermath_of_the_civilwar
-		months = 4
-	}
-	complete_national_focus = spanish_glorious_revolution
-}
-1866.1.1 = {
-	if = {
-		limit = {
-			OR = {
-				has_dlc = "Together for Victory"
-				has_dlc = "Man the Guns"
-			}
-		}
-		set_autonomy = {
-			target = PHI
-			autonomous_state = autonomy_colony
-			freedom_level = 0.0
-		}
-		set_autonomy = {
-			target = CUB
-			autonomous_state = autonomy_colony
-			freedom_level = 0.4
-		}
-		else = {
-			puppet = CUB
-			puppet = PHI
-		}
-	}	
-}
 
-oob = "SPR_1866"
+
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SPR_1866_naval_mtg"
@@ -91,11 +38,7 @@ if = {
 		set_naval_oob = "SPR_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-	}
-}
+
 
 if = {
 	limit = {
@@ -286,14 +229,7 @@ set_technology = {
 	fpw_basic_train = 1
     tech_support = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -310,152 +246,7 @@ if = {
 set_convoys = 150
 set_stability = 0.5
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	if = {
-		limit = {
-			NOT = { has_dlc = "La Resistance" }
-		}
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = large_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-
-		set_politics = {
-			ruling_party = neutrality
-			last_election = "1934.3.26"
-			election_frequency = 60
-			elections_allowed = no
-		}
-		set_popularities = {
-			democratic = 22
-			neutrality = 76
-			communism = 2
-		}
-	}
-
-	if = {
-		limit = {
-			has_dlc = "La Resistance"
-		}
-		add_manpower = -250000
-		remove_ideas = {
-			SPR_military_disloyalty
-			SPR_political_violence
-			SPR_national_strikes_3
-		}
-		set_country_flag = SPR_nationalist_spain_flag
-		set_cosmetic_tag = SPR_nationalist_spain
-		unlock_national_focus = SPA_a_great_spain
-		unlock_national_focus = SPA_hand_over_the_ceda_campaign_chest
-		unlock_national_focus = SPA_negotiate_carlist_support
-		unlock_national_focus = SPA_the_army_of_africa
-		unlock_national_focus = SPA_secure_the_northern_garrisons
-		complete_national_focus = SPA_con_paquito
-		unlock_national_focus = SPA_unify_the_nationalist_front
-		unlock_national_focus = SPA_save_the_alcazar
-		unlock_national_focus = SPA_martyrdom_for_primo_de_rivera
-		complete_national_focus = SPA_caudillo_of_spain
-		unlock_national_focus = SPA_consolidate_the_north
-		complete_national_focus = SPA_foment_a_carlist_split
-		unlock_national_focus = SPA_a_methodical_approach
-		unlock_national_focus = SPA_tackle_the_vulnerable_fronts
-		unlock_national_focus = SPA_portuguese_aid
-		complete_national_focus = SPA_extol_the_martyrs_of_the_war
-		complete_national_focus = SPA_banish_the_party_leaders
-		complete_national_focus = SPA_expand_conscription
-		complete_national_focus = SPA_safeguard_the_freedom_of_worship
-		complete_national_focus = SPA_fuse_the_parties
-		complete_national_focus = SPA_integrate_the_requetes
-		complete_national_focus = SPA_utilize_the_intellectuals
-		every_unit_leader = {
-			limit = {
-				NOT = { has_trait = trait_SPA_nationalist_sympathies }
-			}
-			retire = yes
-		}
-		every_unit_leader = {
-			limit = {
-				has_trait = trait_SPA_nationalist_sympathies
-			}
-			remove_unit_leader_trait = trait_SPA_nationalist_sympathies
-		}
-		set_politics = {
-			ruling_party = neutrality
-			last_election = "1934.3.26"
-			election_frequency = 60
-			elections_allowed = no
-		}
-		set_popularities = {
-			democratic = 17
-			neutrality = 38
-			neutrality = 45
-		}
-	}
-	
-	oob = "SPA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SPA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SPA_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-			set_technology = {
-
-}
-		}
-	}
-	load_oob = "unlock_tanks"
-	
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-
-}
-}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-
-}
-	}
-
-	set_global_flag = spanish_civil_war
-	set_global_flag = scw_over
-	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
-}
 
 if = {
 	limit = {
@@ -661,81 +452,6 @@ if = {
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "General Mola Class"							# purchased from Italy
-			type = ship_hull_submarine_2
-			name_group = SPR_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_torpedo_sub_1
-			}
-			obsolete = yes
-		}
-		# Destroyers #
-		create_equipment_variant = {
-			name = "Melilla Class"								# purchased from Italy				
-			type = ship_hull_light_1
-			name_group = SPR_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_mine_layer_1
-				rear_1_custom_slot = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Melilla Class" 			# purchased from Italy
-			type = ship_hull_light_1
-			name_group = SPR_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = empty
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_mine_layer_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Eolo Class"									# minelayer
-			type = ship_hull_light_2
-			name_group = SPR_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = empty
-				mid_1_custom_slot = ship_mine_layer_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
 		}
 	}
 }

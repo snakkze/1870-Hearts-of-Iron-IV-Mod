@@ -1,7 +1,6 @@
-﻿capital = 741
- oob = "CAM_1866"
-
+capital = 741
 oob = "CAM_1866"
+
 
 set_research_slots = 3
 
@@ -13,35 +12,10 @@ set_technology = {
 	fpw_cannon_artillery = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 
 if = {
 	limit = {
@@ -73,20 +47,11 @@ set_popularities = {
 	neutrality = 35
 }
 
-create_country_leader = {
-	name = "Pol Pot" 
-	desc = ""
-	picture = GFX_portrait_Pol_Pot
-	expire = "1953.3.1"
-	ideology = anarchist_communism #insanity
-	traits = {
-		
-	}
-}
+
 
 #non standard english alphabet character
 create_country_leader = {
-	name = "Sisowath Youtévong"
+	name = "Sisowath Yout�vong"
 	desc = ""
 	picture = GFX_portrait_Sisowath_Youtevong
 	expire = "1953.3.1"
@@ -108,4 +73,3 @@ create_country_leader = {
 }
 
 #couldnt find anything historical on fascism
-

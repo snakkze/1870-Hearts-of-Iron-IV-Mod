@@ -1,31 +1,9 @@
 capital = 64
- oob = "GER_1866"
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "GER_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "GER_1866"
-}
+oob = "GER_1866"
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
 
-}
-	}
-}
+
 
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
@@ -40,22 +18,8 @@ set_technology = {
 	fpw_basic_train = 1
     tech_support = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

@@ -1,7 +1,6 @@
-﻿capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
- oob = "LAO_1866"
-
+capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
 oob = "LAO_1866"
+
 
 set_research_slots = 3
 
@@ -13,35 +12,10 @@ set_technology = {
 	fpw_cannon_artillery = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 
 if = {
 	limit = {
@@ -66,16 +40,7 @@ set_popularities = {
 	neutrality = 40
 }
 
-create_country_leader = {
-	name = "Souphanouvong"
-	desc = ""
-	picture = GFX_portrait_Souphanouvong
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
+
 
 create_country_leader = {
 	name = "Sisavang Vong"

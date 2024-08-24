@@ -1,10 +1,9 @@
-﻿capital = 44
- oob = "ALB_1866"
-
+capital = 44
 OOB = "ALB_1936"
 
+
 set_technology = {
-	fpw_fpw_fpw_infantry_weapons = 1
+	fpw_infantry_weapons = 1
 }
 
 recruit_character = ALB_king_zog
@@ -44,4 +43,3 @@ set_popularities = {
 }
 
 set_convoys = 5
-

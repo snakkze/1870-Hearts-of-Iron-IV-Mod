@@ -1,7 +1,6 @@
 capital = 110
- oob = "NOR_1866"
-
 oob = "NOR_1866"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "NOR_1866_naval_mtg"
@@ -9,14 +8,7 @@ if = {
 		set_naval_oob = "NOR_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
 #Country Leaders 
 recruit_character = NOR_johan_nygaardsvold
 recruit_character = NOR_vidkun_quisling
@@ -148,85 +140,7 @@ if = {
 }
 
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	if = {
-		limit = {
-			has_aat = yes 
-		}
-		complete_national_focus = NOR_continue_nygaardsvold_government
-		complete_national_focus = NOR_broken_gun_policies
-		complete_national_focus = NOR_leaving_the_hard_thirties_behind
-		complete_national_focus = NOR_cut_military_budget
-		complete_national_focus = NOR_bail_out_towns
-		complete_national_focus = NOR_print_more_money
-		complete_national_focus = NOR_social_incrementalism
-		complete_national_focus = NOR_restart_public_investment
-		complete_national_focus = NOR_restore_public_trust_in_the_storting
-		complete_national_focus = NOR_building_an_independent_norway
-		complete_national_focus = NOR_hurtigruten
-		complete_national_focus = NOR_norwegian_school_of_economics
-		complete_national_focus = NOR_weathering_the_storm_to_come
-		complete_national_focus = NOR_the_neutrality_guard
-		complete_national_focus = NOR_rearm_for_defense
-		complete_national_focus = NOR_patrol_our_coast
-		complete_national_focus = NOR_fortify_norway
-		complete_national_focus = NOR_coastal_defense
-		complete_national_focus = NOR_start_rearmament
-		complete_national_focus = NOR_drobak_coastal_fort
-		complete_national_focus = NOR_kickstart_military_industry
-	}
-	if = {
-		limit = {
-			has_aat = no 
-		}
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = large_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-		complete_national_focus = NOR_norges_tekniske_hogskole
-	}
-	
-	oob = "NOR_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "NOR_1939_naval_mtg"
-		else = {
-			set_naval_oob = "NOR_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-		}
-	}
-
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-
-}
-	}
-	set_convoys = 400		# 4th biggest merchant marine in the world
-	set_stability = 0.8
-}
 
 
 set_politics = {
@@ -241,20 +155,7 @@ set_popularities = {
 	communism = 2
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.10.19"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 84
-		neutrality = 2
-		communism = 2
-		neutrality = 12
-	}
-}
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -344,8 +245,6 @@ if = {
 	}
 }
 
-# 1939 Start #
-1939.1.1 = {
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		# Ship variants #

@@ -1,26 +1,18 @@
-Ôªøcapital = 305
- oob = "ECU_1866"
-
+capital = 305
 oob = "ECU_1866"
+
 
 # Starting tech
 set_technology = {
 	fpw_infantry_weapons = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-recruit_character = ECU_federico_p√°ez
+recruit_character = ECU_federico_p·ez
 recruit_character = ECU_juan_toro
-recruit_character = ECU_andr√©s_guilarte
-recruit_character = ECU_jos√©_la_mar
+recruit_character = ECU_andrÈs_guilarte
+recruit_character = ECU_josÈ_la_mar
 recruit_character = ECU_cosme_renella_barbatto
 recruit_character = ECU_benigno_andrade_flores
 recruit_character = ECU_uriarte_fanquil_del_ponte
@@ -47,29 +39,7 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "ECU_1939"
-	set_technology = {
-		fpw_cannon_artillery = 1
-		fpw_infantry_weapons1 = 1
-		fpw_infantry_weapons2 = 1
-}
-}
 
 set_politics = {
 	ruling_party = democratic
@@ -79,10 +49,4 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 100
-}
-
-1939.1.1 = {
-	recruit_character = ECU_aurelio_mosquera
-	promote_character = ECU_aurelio_mosquera
-	retire_character = ECU_federico_p√°ez
 }

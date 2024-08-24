@@ -1,32 +1,8 @@
 capital = 64
 oob = "PRS_1866"
 
-oob = "PRS_1866"
 
-1870.1.1 = {
-	set_cosmetic_tag = GER_north_germany
 
-	unlock_national_focus = PRS_lesser_german_solution
-	unlock_national_focus = PRS_seek_german_support
-	unlock_national_focus = PRS_propose_federal_reform
-	unlock_national_focus = PRS_annex_holstein
-	unlock_national_focus = PRS_austro_prussian_victory
-	unlock_national_focus = PRS_continue_bismarcks_plan
-	unlock_national_focus = PRS_invite_remaing_nothern_states
-	unlock_national_focus = PRS_annex_hostile_nothern_states
-	unlock_national_focus = PRS_finalize_the_north_german_confederation
-	unlock_national_focus = PRS_spanish_glorious_revolution
-	unlock_national_focus = PRS_towards_a_unified_germany
-	unlock_national_focus = PRS_spanish_glorious_revolution
-	unlock_national_focus = PRS_seek_international_support
-	unlock_national_focus = PRS_secure_french_peace
-	unlock_national_focus = PRS_ally_with_italy
-
-	
-	add_dynamic_modifier = { 
-		modifier = fpw_PRS_victor_of_the_brothers_war
-	}
-}
 
 add_ideas = {
 	fpw_kaiser_wilhelm
@@ -138,5 +114,3 @@ recruit_character = PRS_Adalbert_of_Prussia
 recruit_character = PRS_heinrich_abeken
 
 activate_advisor = PRS_Helmuth_von_Moltke_carm
-
-

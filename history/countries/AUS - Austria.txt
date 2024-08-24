@@ -1,31 +1,15 @@
 capital = 4
- oob = "AUS_1866"
+oob = "AUS_1866"
 
 set_cosmetic_tag = AUS_austrian_empire
 
-1870.1.1 = {
-	set_cosmetic_tag = AUS_austria_hungary
-	add_dynamic_modifier = { 
-		modifier = fpw_AUS_loser_of_the_brotherswar
-	}
-}
 
-oob = "AUS_1866"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
 
-}
-	}
-}
 set_research_slots = 3
 
 set_technology = {
-	fpw_fpw_fpw_infantry_weapons = 1
+	fpw_infantry_weapons = 1
 	fpw_fpw_fpw_infantry_weapons1 = 1
 	fpw_basic_train = 1
     tech_support = 1

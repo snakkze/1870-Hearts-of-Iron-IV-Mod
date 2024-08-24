@@ -1,7 +1,6 @@
-﻿capital = 335 #Jakarta
- oob = "INS_1866"
-
+capital = 335 #Jakarta
 oob = "INS_1866"
+
 
 set_research_slots = 2
 
@@ -10,14 +9,7 @@ set_research_slots = 2
 set_technology = {
 	fpw_infantry_weapons = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
 if = {
 	limit = {
@@ -46,46 +38,4 @@ set_popularities = {
 }
 
 set_cosmetic_tag = INS_HOL # Netherlands East Indies
-
-1939.1.1 = {
-	add_political_power = 1198
-	add_command_power = 100
-
-	oob = "INS_1939" #straight copy of INS 1936
-
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = {
-			
-			has_dlc = "No Step Back"
-			
-		}
-		set_technology = {
-
-}
-	}
-}
 

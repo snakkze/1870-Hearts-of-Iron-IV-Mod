@@ -1,5 +1,5 @@
 capital = 797
- oob = "TUR_1866"
+oob = "TUR_1866"
 
 add_dynamic_modifier = { 
 	modifier = fpw_victors_of_the_crimean_war 
@@ -13,20 +13,8 @@ add_ideas = {
 fpw_abdulaziz
 }
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "TUR_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "TUR_1866"
-}
+
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "TUR_1866_naval_mtg"
@@ -34,14 +22,7 @@ if = {
 		set_naval_oob = "TUR_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
 
 ###################
 #### 3D MODELS ####
@@ -67,22 +48,8 @@ set_technology = {
 	fpw_basic_train = 1
     tech_support = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -392,29 +359,6 @@ if = {
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Saldiray Class"				
-			type = ship_hull_submarine_2
-			name_group = TUR_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
 		}
 	}
 }

@@ -1,5 +1,5 @@
 capital = 126
- oob = "ENG_1866"
+oob = "ENG_1866"
 
 set_cosmetic_tag = ENG_democratic
 give_guarantee = BEL
@@ -26,33 +26,10 @@ add_ideas = {
 	fpw_victoria
 }
 
-1870.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1868.12.7"
-		election_frequency = 48
-		elections_allowed = yes ##suspended through duration of war, which is handled via event
-	}
-	set_popularities = {
-		fascism = 61
-		democratic = 39
-	}
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ENG_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ENG_1866"
-}
+
+
+
 
 starting_train_buffer = 4
 
@@ -66,17 +43,7 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 
 load_oob = "ENG_Motorized"
 
@@ -95,22 +62,8 @@ set_technology = {
     tech_support = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 
 if = {
 	limit = {
@@ -229,15 +182,7 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-1870.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-}
 
 give_military_access = RAJ
 
@@ -403,107 +348,7 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
-		name = "Light Tank Mk. IV"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_christie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_ENG_basic_light_tank_medium"
-		obsolete = yes #used for oob
-	}
-	create_equipment_variant = {
-		name = "Light Tank Mk. VI"
-		type = light_tank_chassis_1
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = smoke_launchers
-		}
-		icon = "GFX_ENG_basic_light_tank_medium"
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
-		}
-	}
 
-	create_equipment_variant = {
-		name = "Medium Mk. II"
-		type = medium_tank_chassis_0
-		design_team = mio:ENG_vickers_armstrong_eng_organization
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_medium_three_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 1
-			tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_ENG_basic_light_tank_medium"
-	}
-
-	create_equipment_variant = {
-		name = "Vickers 6 ton A"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = secondary_turret_hmg
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 3
-			tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_ENG_light_BAB_camo"
-		obsolete = yes #export only
-	}
-
-	create_equipment_variant = {
-		name = "Vickers 6 ton B"
-		type = light_tank_chassis_0
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 3
-			tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_ENG_light_BAB_camo"
-		obsolete = yes #export only
-	}
-}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	### Variants ###

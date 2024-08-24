@@ -1,7 +1,6 @@
-﻿capital = 300
- oob = "URG_1866"
-
+capital = 300
 oob = "URG_1866"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "URG_1866_naval_mtg"
@@ -15,14 +14,7 @@ set_technology = {
 	fpw_infantry_weapons = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -38,7 +30,7 @@ if = {
 
 recruit_character = URG_gabriel_terra
 recruit_character = URG_venancio_flores
-recruit_character = URG_bernardo_gonzález
+recruit_character = URG_bernardo_gonz�lez
 recruit_character = URG_juan_manuel_aguirre
 recruit_character = URG_ernesto_sanchez_elizondo
 recruit_character = URG_rafael_marques_ayala
@@ -64,41 +56,7 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 5
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.3.28"
-		election_frequency = 48
-		elections_allowed = yes
-	}
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "URG_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "URG_1939_naval_mtg"
-		else = {
-			set_naval_oob = "URG_1939_naval_legacy"
-		}
-	}
-
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-}
-}
 
 set_politics = {
 	ruling_party = democratic
@@ -111,18 +69,7 @@ set_popularities = {
 	communism = 3
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.3.28"
-		election_frequency = 48
-		elections_allowed = yes
-	}
 
-	recruit_character = URG_alfredo_baldomir_ferrari
-	promote_character = URG_alfredo_baldomir_ferrari
-	retire_character = URG_gabriel_terra
-}
 
 ### VARIANTS ###
 # 1936 Start #

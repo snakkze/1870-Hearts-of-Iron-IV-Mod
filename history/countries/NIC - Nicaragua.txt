@@ -1,7 +1,6 @@
-ï»¿capital = 317
- oob = "NIC_1866"
-
+capital = 317
 oob = "NIC_1866"
+
 
 # Starting tech
 set_technology = {
@@ -9,19 +8,12 @@ set_technology = {
 	fpw_cannon_artillery = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
 recruit_character = NIC_juan_bautista_sacasa
-recruit_character = NIC_anastasio_somoza_garcÃ­a
+recruit_character = NIC_anastasio_somoza_garcía
 recruit_character = NIC_francisco_leiva
-recruit_character = NIC_josÃ©_francisco_leiva
+recruit_character = NIC_josé_francisco_leiva
 recruit_character = NIC_joel_garcia_zaldana
 recruit_character = NIC_toribio_fermin
 recruit_character = NIC_augusto_caraval_antonio
@@ -40,27 +32,7 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 10
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "NIC_1939"
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -73,13 +45,4 @@ set_popularities = {
 	neutrality = 5
 	communism = 10
 	neutrality = 70
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.12.8"
-		election_frequency = 48
-		elections_allowed = no
-	}
 }

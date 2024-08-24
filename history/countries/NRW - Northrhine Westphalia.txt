@@ -1,5 +1,9 @@
 capital = 51
- oob = "NRW_1866"
+oob = "NRW_1866"
+
+set_technology = {
+    fpw_infantry_weapons = 1
+}
 
 set_politics = {
 	ruling_party = neutrality

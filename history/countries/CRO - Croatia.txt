@@ -1,9 +1,8 @@
-﻿capital = 109
- oob = "CRO_1866"
+capital = 109
+oob = "CRO_1866"
 
 set_research_slots = 2
 
-oob = "CRO_1866"
 
 set_technology = {
 	fpw_infantry_weapons = 1
@@ -30,26 +29,7 @@ if = {
 set_convoys = 5
 
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-}
-}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.6.9"
@@ -62,19 +42,10 @@ set_popularities = {
 	communism = 10
 }
 
-create_country_leader = {
-	name = "Ante Pavelic"
-	desc = "ANTE_PAVELIC_DESC"
-	picture = GFX_portrait_Ante_Pavelic
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+
 
 create_country_leader = {
-	name = "Vladko Maček"
+	name = "Vladko Macek"
 	picture = GFX_portrait_Vladko_Macek
 	expire = "1965.1.1"
 	ideology = centrism
@@ -84,7 +55,7 @@ create_country_leader = {
 }
 
 add_country_leader_role = { #This replaces the commented script below - fixing a character duplicate error on launch
-	character = "CRO_vladko_maček"
+	character = "CRO_vladko_macek"
 	country_leader = {
 	  ideology=socialism
 	  traits = {
@@ -96,7 +67,7 @@ add_country_leader_role = { #This replaces the commented script below - fixing a
 }
 
 #create_country_leader = { 
-#	name = "Vladko Maček"
+#	name = "Vladko Macek"
 #	picture = "portrait_CRO_vladko_macek.dds"
 #	expire = "1965.1.1"
 #	ideology = socialism

@@ -1,41 +1,15 @@
-﻿capital = 554
- oob = "PAL_1866"
+capital = 554
+oob = "PAL_1866"
 
 # Starting tech
 set_technology = {
 	fpw_infantry_weapons = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
 
 set_convoys = 5
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		fpw_cannon_artillery = 1
-}
-}
 
 
 set_politics = {
@@ -60,15 +34,7 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Amin al-Husseini"
-	desc = ""
-	picture = GFX_portrait_Amin_al_Husseini
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+
 
 create_country_leader = {
 	name = "Prince Henry"
@@ -80,12 +46,3 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Bulus Farah"
-	desc = ""
-	picture = GFX_portrait_Bulus_Farah
-	ideology = leninism
-	traits = {
-		#
-	}
-}

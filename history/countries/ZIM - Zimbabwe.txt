@@ -1,7 +1,6 @@
-﻿capital = 545
- oob = "ZIM_1866"
-
+capital = 545
 oob = "ZIM_1866"
+
 
 # Starting tech
 set_technology = {
@@ -31,24 +30,8 @@ recruit_character = ZIM_acgs
 recruit_character = ZIM_aa2
 recruit_character = ZIM_democratic_guy
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 
-# A colongy of Italy in 1939, however if independent it would have the same politics as in 1936
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -59,12 +42,3 @@ set_popularities = {
 	neutrality = 100
 }
 
-create_country_leader = {
-	name = " Marcus James Hugins"
-	picture = GFX_portrait__Marcus_James_Hugins
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = { 
-		prince_of_terror
-	}
-}

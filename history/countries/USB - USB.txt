@@ -1,7 +1,6 @@
-﻿capital = 361
- oob = "USB_1866"
-
+capital = 361
 oob = "USA_1936"
+
 
 set_research_slots = 3
 set_stability = 0.75
@@ -20,31 +19,10 @@ set_technology = {
 	fpw_cannon_artillery = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 
 recruit_character = USB_georges_vereecken
 recruit_character = USB_rene_lagrou
@@ -65,65 +43,7 @@ recruit_character = USB_leon_degrelle
 recruit_character = USB_jules_iserentant
 
 
-1939.1.1 = {
 
-	add_political_power = 1199
-	add_command_power = 100
-	
-	#adding ministers
-	add_ideas = {
-		army_ordnance_department
-		general_electric
-		USA_prepare_intervention
-
-		#laws
-		isolation
-		volunteer_only
-
-		new_deal
-	}
-
-	#focuses
-
-	oob = "USA_1939"
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-
-}
-		create_equipment_variant = {
-			name = "Martin M166"
-			type = tac_bomber_equipment_0
-			upgrades = {
-				plane_tac_bomb_upgrade = 2
-				plane_range_upgrade = 1
-				plane_engine_upgrade = 2
-				plane_reliability_upgrade = 3
-			}
-		}
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-
-}
-	}
-}
 
 
 
@@ -150,14 +70,6 @@ add_ideas = {
 	neutrality_idea
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 
 

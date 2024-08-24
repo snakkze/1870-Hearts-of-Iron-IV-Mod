@@ -1,15 +1,7 @@
 capital = 291
- oob = "IRQ_1866"
-
 oob = "IRQ_1866"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
+
 
 # Starting tech
 set_technology = {
@@ -53,33 +45,7 @@ recruit_character = IRQ_nuri_as_said
 
 
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "IRQ_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-		}
-	}
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-		fpw_cannon_artillery = 1
-}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -90,21 +56,4 @@ set_politics = {
 set_popularities = {
 	neutrality = 20
 	neutrality = 80
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		neutrality = 30
-		neutrality = 70
-	}
-
-	recruit_character = IRQ_faisal_ii
-	promote_character = IRQ_faisal_ii
-	retire_character = IRQ_ghazi_i
 }

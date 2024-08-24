@@ -1,3 +1,5 @@
+capital = 195
+oob = "SOV_1866"
 
 ####
 #### NO STEP BACK
@@ -259,8 +261,6 @@ add_ai_strategy = {
 #### VANILLA ####
 ####
 
-capital = 195
-oob = "SOV_1866"
 
 starting_train_buffer = 3.0
 
@@ -271,17 +271,7 @@ if = {
 		set_naval_oob = "SOV_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 
 set_research_slots = 3
 set_stability = 0.20
@@ -332,7 +322,6 @@ if = {
 
 ### VARIANTS ###
 # 1936 Start #
-
 
 
 

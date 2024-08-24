@@ -1,5 +1,5 @@
 capital = 46
- oob = "ROM_1866"
+oob = "ROM_1866"
 
 set_politics = {
 	ruling_party = democratic
@@ -15,20 +15,8 @@ set_popularities = {
 	communism = 2
 }
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ROM_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ROM_1866"
-}
+
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "ROM_1866_naval_mtg"
@@ -36,17 +24,7 @@ if = {
 		set_naval_oob = "ROM_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 
 set_research_slots = 1
 set_stability = 0.4
@@ -71,22 +49,8 @@ add_ideas = {
 	fpw_ROM_national_illiteracy
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

@@ -1,7 +1,6 @@
-﻿capital = 757
- oob = "TIB_1866"
-
+capital = 757
 oob = "TIB_1866"
+
 
 # Starting tech
 set_technology = {
@@ -29,28 +28,7 @@ recruit_character = TIB_jigme_taring
 recruit_character = TIB_reting_rimpoche
 recruit_character = TIB_taktra_rinpoche
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "TIB_1939"
-	set_technology = {
-
-}
-}
 
 set_politics = {
 	ruling_party = neutrality

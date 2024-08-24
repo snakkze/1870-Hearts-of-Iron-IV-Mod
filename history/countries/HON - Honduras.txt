@@ -1,14 +1,13 @@
-﻿capital = 312
- oob = "HON_1866"
-
+capital = 312
 oob = "HON_1866"
+
 
 # Starting tech
 set_technology = {
 	fpw_infantry_weapons = 1
 }
 
-recruit_character = HON_tiburcio_carías_andino
+recruit_character = HON_tiburcio_car�as_andino
 recruit_character = HON_lorenzo_ferrera
 recruit_character = HON_pedro_figueroa
 recruit_character = HON_lisandro_machado
@@ -37,27 +36,7 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 10
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "HON_1939"
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-}
-}
 
 set_politics = {
 	ruling_party = democratic
@@ -67,13 +46,4 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 100
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.3.28"
-		election_frequency = 48
-		elections_allowed = yes
-	}
 }

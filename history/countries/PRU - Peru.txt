@@ -1,15 +1,7 @@
 capital = 303
- oob = "PRU_1866"
-
 oob = "PRU_1866"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "PRU_1866_naval_mtg"
@@ -67,44 +59,7 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 5
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "PRU_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "PRU_1939_naval_mtg"
-		else = {
-			set_naval_oob = "PRU_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-			set_technology = {
-
-}
-		}
-	}
-
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-		fpw_infantry_weapons2 = 1
-}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -117,11 +72,7 @@ set_popularities = {
 	neutrality = 51
 }
 
-1939.1.1 = {
-	recruit_character = PRU_manuel_prado_ugarteche
-	promote_character = PRU_manuel_prado_ugarteche
-	retire_character = PRU_Óscar_benavides
-}
+
 
 
 ### VARIANTS ###

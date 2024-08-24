@@ -1,7 +1,6 @@
-﻿capital = 328
- oob = "MAN_1866"
-
+capital = 328
 oob = "MAN_1866"
+
 
 set_technology = {
 	fpw_infantry_weapons = 1
@@ -36,13 +35,7 @@ recruit_character = MAN_hesehn_tiemei
 recruit_character = MAN_xian_yuan
 recruit_character = MAN_guan_xingde
 recruit_character = MAN_megata_toshiro
-if = {
-	limit = { has_dlc = "No Step Back" }
-	recruit_character = SOV_grigory_semyonov
-	SOV_grigory_semyonov = { 
-		set_character_flag = SOV_exiled_army_leader
-	}
-}
+
 
 set_convoys = 5
 
@@ -62,60 +55,7 @@ set_convoys = 5
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
-1939.1.1 = {
 
-	add_to_war = {
-		targeted_alliance = JAP
-		enemy = CHI
-		hostility_reason = puppet
-	}
-	
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-
-
-	if = {
-		limit = { has_dlc = "Waking the Tiger" }
-
-		
-		#No bandits
-		unlock_national_focus = MAN_pacify_the_countryside
-		remove_ideas = MAN_banditry
-
-		complete_national_focus = MAN_army_modernization
-		complete_national_focus = MAN_mukden_military_academy
-		complete_national_focus = MAN_law_university
-		complete_national_focus = MAN_obedience
-
-		#Five year plan
-		unlock_national_focus = MAN_first_five_year_plan
-		add_timed_idea = { days = 1275 idea = MAN_five_year_plan_industry }
-
-		complete_national_focus = MAN_trade_delegation
-		complete_national_focus = MAN_expand_the_textile_industry
-		complete_national_focus = MAN_hoankyoku
-		complete_national_focus = MAN_invite_japanese_investors
-		complete_national_focus = MAN_expand_the_railways
-		complete_national_focus = MAN_develop_aluminum_sources
-		complete_national_focus = MAN_social_research_unit
-	}
-	
-	oob = "MAN_1939"
-	set_technology = {
-
-}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -126,7 +66,4 @@ set_politics = {
 set_popularities = {
 	neutrality = 80
 	neutrality = 20
-}
-
-1939.1.1 = {
 }

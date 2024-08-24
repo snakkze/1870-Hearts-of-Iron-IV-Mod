@@ -1,9 +1,12 @@
 capital = 141	
- oob = "SWE_1866"
+oob = "SWE_1866"
+
+set_technology = {
+    fpw_infantry_weapons = 1
+}
 
 set_cosmetic_tag = SWE_norway_union
 
-oob = "SWE_1866"
 
 set_research_slots = 3
 

@@ -1,15 +1,14 @@
-Ôªøcapital = 316
- oob = "COS_1866"
-
+capital = 316
 oob = "COS_1866"
+
 
 # Starting tech
 set_technology = {
 	fpw_infantry_weapons = 1
 }
 
-recruit_character = COS_ricardo_jim√©nez_oreamuno
-recruit_character = COS_jos√©_mar√≠a_barahona
+recruit_character = COS_ricardo_jimÈnez_oreamuno
+recruit_character = COS_josÈ_marÌa_barahona
 recruit_character = COS_lisandro_barillas
 recruit_character = COS_jorge_peralta
 recruit_character = COS_baptista_e_gutierrez
@@ -36,27 +35,7 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 10
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "COS_1939"
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-}
-}
 
 set_politics = {
 	ruling_party = democratic
@@ -68,23 +47,4 @@ set_politics = {
 set_popularities = {
 	democratic = 98
 	neutrality = 2
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.2.9"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-
-	set_popularities = {
-		democratic = 95
-		communism = 5
-	}
-
-	recruit_character = COS_leon_cortes_castro
-	promote_character = COS_leon_cortes_castro
-	retire_character = COS_ricardo_jim√©nez_oreamuno
-
 }

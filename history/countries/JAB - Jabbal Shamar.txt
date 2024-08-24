@@ -1,5 +1,9 @@
-﻿capital = 837
- oob = "JAB_1866"
+capital = 837
+oob = "JAB_1866"
+
+set_technology = {
+    fpw_infantry_weapons = 1
+}
 
 set_politics = {
 	ruling_party = neutrality

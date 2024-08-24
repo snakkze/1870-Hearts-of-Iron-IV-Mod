@@ -1,25 +1,17 @@
-Ôªøcapital = 314
- oob = "ELS_1866"
-
+capital = 314
 oob = "ELS_1866"
+
 
 # Starting tech
 set_technology = {
 	fpw_infantry_weapons = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-recruit_character = ELS_maximiliano_hern√°ndez_mart√≠nez
+recruit_character = ELS_maximiliano_hern·ndez_martÌnez
 recruit_character = ELS_victoriano_ubico
 recruit_character = ELS_benito_ubico
-recruit_character = ELS_bartolom√©_vasconcelos
+recruit_character = ELS_bartolomÈ_vasconcelos
 recruit_character = ELS_hector_escobar_serrano
 recruit_character = ELS_milton_andrade_cabrera
 recruit_character = ELS_humbert_aberle
@@ -43,26 +35,7 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5
 
-1939.1.1 = {
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "ELS_1939"
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-}
-}
+
 
 set_politics = {
 	ruling_party = neutrality
@@ -72,13 +45,4 @@ set_politics = {
 }
 set_popularities = {
 	neutrality = 100
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1939.1.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
 }

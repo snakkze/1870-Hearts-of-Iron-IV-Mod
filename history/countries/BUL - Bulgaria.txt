@@ -1,13 +1,8 @@
 capital = 48
- oob = "BUL_1866"
+oob = "BUL_1866" #VANILLA & DLC
 
 #TROOPS
-oob = "BUL_1866" #VANILLA & DLC
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-	}
-}
+
 set_convoys = 5 #VANILLA & DLC
 
 #You don't want Bulgarian party names? Just remove these lines
@@ -327,146 +322,8 @@ set_technology = {
 	fpw_basic_train = 1
     tech_support = 1
 }
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "By Blood Alone"
-		}
-	}
-	set_technology = {
 
-}
-}
 
 
 ##############
-#### 1939 ####
 ##############
-1939.1.1 = {
-	
-	#POLIICS
-	set_popularities = { #VANILLA & DLC //  # Will get +7 from Italian focus: Potential Allies in the Balkans
-		democratic = 5
-		neutrality = 35
-		neutrality = 60
-	}
-	set_politics = { #VANILLA & DLC
-		ruling_party = neutrality
-		last_election = "1938.3.27"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
-	add_political_power = 1198
-	add_command_power = 100
-
-	#FOCUS AND IDEAS
-	if = { #DLC
-		limit = {
-			has_dlc = "Battle for the Bosporus"
-		}
-		complete_national_focus = BUL_power_to_the_tsar
-		complete_national_focus = BUL_dissolve_the_military_union
-		complete_national_focus = BUL_acquire_modern_tools
-		unlock_national_focus = BUL_negotiate_bulgarian_rearmament
-		complete_national_focus = BUL_the_tsars_regime
-		complete_national_focus = BUL_improve_the_road_system
-		complete_national_focus = BUL_restore_the_tarnovo_constitution
-		complete_national_focus = BUL_freedom_of_press
-		complete_national_focus = BUL_invigorate_national_industry
-		complete_national_focus = BUL_promote_bulgarian_nationalism
-		complete_national_focus = BUL_limited_womens_suffrage
-		complete_national_focus = BUL_expand_sofia_university
-		complete_national_focus = BUL_bulgarian_irredentism
-		complete_national_focus = BUL_approach_germany
-		complete_national_focus = BUL_reorganize_the_military_industry
-		complete_national_focus = BUL_illusions_of_a_non_partisan_system
-
-		#Remove Army Restrictions NS and all limitations 								Negotiate Bulgarian Rearmament
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			remove_ideas = BUL_army_restrictions_aat
-		}
-		if = {
-			limit = {
-				NOT = {	has_dlc = "Arms Against Tyranny" }
-			}
-			remove_ideas = BUL_army_restrictions
-		}
-		remove_ideas = BUL_zveno_ns
-		#Destroy Zveno 																 	Dissolve the Military Union
-		set_country_flag = BUL_disposed_of_zveno_generals_flag
-		set_country_flag = BUL_zveno_leaders_imprisoned_flag
-		set_country_flag = BUL_raided_zveno_supporters_flag
-		every_unit_leader = {
-			limit = {
-				has_trait = trait_BUL_zveno_member
-			}
-			retire = yes
-		}
-		set_country_flag = BUL_zveno_destroyed_flag
-		#Freedom of Press was taken more than a year ago, so clr flag 					Freedom of Press
-		clr_country_flag = BUL_freedom_of_press_flag
-		#Simulate German influence events and good relations with Bulgaria 				Approach Germany + Events
-		set_country_flag = BUL_german_aircraft_donation_flag
-		add_opinion_modifier = { 
-			target = GER
-			modifier = BUL_donated_aircraft
-		}
-
-		else = { #VANILLA
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-	
-	#TROOPS
-	
-
-	#TECHNOLOGY
-	set_technology = {
-		fpw_cannon_artillery = 1
-		fpw_infantry_weapons2 = 1
-}
-
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-
-}
-		set_oob = "BUL_1939"
-	}
-	if = {
-		limit = {
-			
-			has_dlc = "No Step Back"
-			
-		}
-		set_technology = {
-
-}
-		set_oob = "BUL_1939_nsb"
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-			set_technology = {
-
-}
-		}
-	}
-
-	
-}

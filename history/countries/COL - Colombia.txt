@@ -1,7 +1,6 @@
 capital = 306
- oob = "COL_1866"
-
 oob = "COL_1866"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "COL_1866_naval_mtg"
@@ -9,14 +8,7 @@ if = {
 		set_naval_oob = "COL_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
 
 # Starting tech
 set_technology = {
@@ -65,41 +57,7 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 10
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "COL_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "COL_1939_naval_mtg"
-		else = {
-			set_naval_oob = "COL_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-		}
-	}
-
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-		fpw_infantry_weapons2 = 1
-}
-}
 
 set_convoys = 5
 set_politics = {
@@ -114,22 +72,7 @@ set_popularities = {
 }
 
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.5.1"
-		election_frequency = 48  
-		elections_allowed = yes
-	}
 
-	set_popularities = {
-		democratic = 100
-	}
-
-	recruit_character = COL_eduardo_santos
-	promote_character = COL_eduardo_santos
-	retire_character = COL_alfonso_lópez_pumarejo
-}
 
 
 ### VARIANTS ###

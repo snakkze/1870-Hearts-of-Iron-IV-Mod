@@ -1,5 +1,5 @@
 capital = 162
- oob = "ITA_1866"
+oob = "ITA_1866"
 
 recruit_character = ITA_alfonso_ferrero
 recruit_character = ITA_bettino_ricasoli
@@ -35,39 +35,10 @@ set_popularities = {
 	neutrality = 3
 }
 
-1870.1.1 = {
-	unlock_national_focus = ITA_start
-	unlock_national_focus = ITA_ally_prussia
-	unlock_national_focus = ITA_prussian_military_cooperation
-	unlock_national_focus = ITA_the_war_with_austria	
-	unlock_national_focus = ITA_mountain_defence
-	unlock_national_focus = ITA_w
-	unlock_national_focus = ITA_economics
-	unlock_national_focus = ITA_develop_north
-	unlock_national_focus = ITA_construct_more_factories
-	unlock_national_focus = ITA_produce_cheese
-	unlock_national_focus = ITA_even_more_factories
-	unlock_national_focus = ITA_expanding_military_industry
-	unlock_national_focus = ITA_lombardy_weapons
-	unlock_national_focus = ITA_venice_weapons
-	unlock_national_focus = ITA_seek_allies
-	unlock_national_focus = ITA_ally_germany
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ITA_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ITA_1866"
-}
+
+
+
 
 starting_train_buffer = 1.5
 
@@ -113,17 +84,7 @@ if = {
 	set_naval_oob = "ITA_1866_naval_mtg"
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 set_convoys = 200
 
 

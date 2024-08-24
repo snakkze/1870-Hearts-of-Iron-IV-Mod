@@ -1,5 +1,5 @@
-﻿capital = 85 #Danzig
- oob = "DNZ_1866"
+capital = 85 #Danzig
+oob = "DNZ_1866"
 
 set_research_slots = 3
 
@@ -9,34 +9,9 @@ set_technology = {
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -68,16 +43,7 @@ set_popularities = { #popularities based on 1933 election statistics.
 	neutrality = 10
 }
 
-create_country_leader = {
-	name = "Albert Forster"
-	desc = ""
-	picture = "GFX_portrait_DNZ_Albert_Forster"
-	expire = "1953.3.1"
-	ideology = nazism
-	traits = {
-		
-	}
-}
+
 
 create_country_leader = {
 	name = "Arthur Brill"
@@ -90,16 +56,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Anton Plenikowski"
-	desc = ""
-	picture = GFX_portrait_Anton_Plenikowski #TODO
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
 
 
 

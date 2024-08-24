@@ -1,14 +1,7 @@
 capital = 812
-
 oob = "EST_1866"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
+
 
 if = {
 	limit = { has_dlc = "Arms Against Tyranny" }

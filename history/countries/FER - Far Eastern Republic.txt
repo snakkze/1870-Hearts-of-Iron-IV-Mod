@@ -1,7 +1,6 @@
-﻿capital = 563 #Chita
- oob = "FER_1866"
+capital = 563 #Chita
+oob = "FER_1866"
 
-#oob = "FER_1866"
 
 set_research_slots = 3
 
@@ -12,31 +11,10 @@ set_technology = {
 	fpw_cannon_artillery = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -65,7 +43,6 @@ set_popularities = {
 	neutrality = 0
 	communism = 40
 }
-
 
 
 

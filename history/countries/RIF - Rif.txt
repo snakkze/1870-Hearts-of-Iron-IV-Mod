@@ -1,5 +1,5 @@
-﻿capital = 290
- oob = "RIF_1866"
+capital = 290
+oob = "RIF_1866"
 
 IF = {
 	limit = {has_dlc = "By Blood Alone"}
@@ -14,23 +14,7 @@ set_technology = {
 
 set_convoys = 10
 
-1939.1.1 = {
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		fpw_cannon_artillery = 1
-}
-}
+
 
 
 set_politics = {

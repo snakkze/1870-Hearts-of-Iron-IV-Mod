@@ -1,7 +1,6 @@
-﻿capital = 547
- oob = "KEN_1866"
-
+capital = 547
 oob = "KEN_1866"
+
 
 # Starting tech
 set_technology = {
@@ -31,24 +30,8 @@ recruit_character = KEN_coi
 recruit_character = KEN_democratic_guy
 recruit_character = KEN_acd2
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 
-# A colony of Italy in 1939.  However, if independent it would have the same politics as in 1936
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -70,4 +53,3 @@ create_country_leader = {
 		#
 	}
 }
-

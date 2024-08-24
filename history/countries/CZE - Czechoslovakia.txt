@@ -1,31 +1,9 @@
 capital = 9
- oob = "CZE_1866"
+oob = "CZE_1866"
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "CZE_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "CZE_1866"
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
 
-}
-	}
-}
+
 
 set_technology = {
 	fpw_infantry_weapons = 1

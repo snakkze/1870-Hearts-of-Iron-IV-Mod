@@ -1,7 +1,6 @@
 capital = 7
- oob = "HOL_1866"
-
 oob = "HOL_1866"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "HOL_1866_naval_mtg"
@@ -9,17 +8,7 @@ if = {
 		set_naval_oob = "HOL_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 
 add_ideas = {
 HOL_Dutch_east_indies
@@ -82,18 +71,7 @@ if = {
 		puppet = INS
 	}
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_autonomy = {
-		target = LUX
-		autonomous_state = autonomy_personal_union
-	}
-	else = {
-		puppet = LUX
-	}
-}
+
 
 add_ideas = {
 	HOL_wilhelmina
@@ -145,76 +123,7 @@ recruit_character = HOL_dirk_jan_de_geer
 recruit_character = HOL_pieter_sjoerds_gerbrandy
 recruit_character = HOL_wilhelmina
 
-1939.1.1 = {
-	add_ideas = {
-		limited_conscription
-	}
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	remove_ideas = HOL_weak_government
-
-	complete_national_focus = HOL_obtain_foreign_colonial_investments	
-	complete_national_focus = HOL_the_crown_jewel_colony				
-	complete_national_focus = HOL_the_western_possessions				
-	complete_national_focus = HOL_abandon_the_gold_standard			
-	complete_national_focus = HOL_continue_the_public_works			
-	complete_national_focus = HOL_finish_the_noordoostpolder			
-	complete_national_focus = HOL_the_maastunnel						
-	complete_national_focus = HOL_expand_the_artillerieinrichtingen	
-	complete_national_focus = HOL_philips_focus							
-	complete_national_focus = HOL_expand_RD_facilities				
-	complete_national_focus = HOL_overturn_military_budget_cuts		
-	complete_national_focus = HOL_prepare_naval_expansion				
-	complete_national_focus = HOL_cornerstone_of_colonial_defense		
-	complete_national_focus = HOL_modernize_the_cruiser_fleet			
-	complete_national_focus = HOL_expand_curacao_oil_refineries		
-	complete_national_focus = HOL_prepare_the_inundation_lines		
-	complete_national_focus = HOL_germany_is_the_greater_threat		
-	complete_national_focus = HOL_antilles_defenses					
-	complete_national_focus = HOL_form_new_government	
-	
-	oob = "HOL_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "HOL_1939_naval_mtg"
-		else = {
-			set_naval_oob = "HOL_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_technology = {
-
-}
-		else = {
-			set_technology = {
-
-}
-		}
-	}
-
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-
-}
-	}
-	HOL_dirk_jan_de_geer = {
-		promote_character = { ideology = conservatism }
-	}
-}
 
 set_politics = {
 	ruling_party = fascism

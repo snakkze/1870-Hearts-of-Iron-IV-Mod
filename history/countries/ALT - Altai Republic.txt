@@ -1,43 +1,17 @@
-﻿capital = 654 #Oyrot/Gorno-Altaysk
- oob = "ALT_1866"
+capital = 654 #Oyrot/Gorno-Altaysk
+oob = "ALT_1866"
 
-#oob = "ALT_1866"
 
 set_research_slots = 2
 
 # Starting tech
 set_technology = {
-	fpw_fpw_fpw_infantry_weapons = 1
+	fpw_infantry_weapons = 1
 	fpw_fpw_fpw_infantry_weapons1 = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -70,7 +44,6 @@ set_popularities = {
 
 recruit_character = ALT_grigory_gurkin
 recruit_character = ALT_samuil_yufit
-
 
 
 

@@ -1,6 +1,9 @@
 capital = 47
 oob = "GRE_1866"
-oob = "GRE_1866"
+
+set_technology = {
+    fpw_infantry_weapons = 1
+}
 
 set_politics = {
 	ruling_party = neutrality

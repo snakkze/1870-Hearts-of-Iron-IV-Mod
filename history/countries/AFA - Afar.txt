@@ -1,11 +1,10 @@
-﻿capital = 908
- oob = "AFA_1866"
-
+capital = 908
 OOB = "AFA_1936"
+
 
 # Starting tech
 set_technology = {
-	fpw_fpw_fpw_infantry_weapons = 1
+	fpw_infantry_weapons = 1
 }
 
 add_manpower = 15000
@@ -16,23 +15,7 @@ add_ideas = {
 
 set_convoys = 10
 
-1939.1.1 = {
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 
 recruit_character = AFA_sultan_mohamed_yayyo_of_aussa
 

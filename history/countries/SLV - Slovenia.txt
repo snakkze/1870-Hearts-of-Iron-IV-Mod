@@ -1,5 +1,5 @@
-﻿capital = 102
- oob = "SLV_1866"
+capital = 102
+oob = "SLV_1866"
 
 set_research_slots = 3
 
@@ -9,14 +9,7 @@ set_technology = {
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns" }
@@ -25,22 +18,8 @@ if = {
 
 }
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 
 set_politics = {
 	ruling_party = democratic

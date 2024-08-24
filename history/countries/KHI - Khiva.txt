@@ -1,9 +1,12 @@
-﻿capital = 831 #Khiva
- oob = "KHI_1866"
+capital = 831 #Khiva
+oob = "KHI_1866"
+
+set_technology = {
+    fpw_infantry_weapons = 1
+}
 
 set_cosmetic_tag = KHI_fpw_cosmetic
 
-#oob = "KHI_1866"
 
 set_research_slots = 2
 
@@ -22,6 +25,5 @@ set_popularities = {
 
 recruit_character = KHI_nedirbay_aytakov
 recruit_character = KHI_junaid_khan
-
 
 

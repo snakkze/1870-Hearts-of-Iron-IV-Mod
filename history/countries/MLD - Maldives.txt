@@ -1,7 +1,6 @@
-﻿capital = 281
- oob = "MLD_1866"
+capital = 281
+oob = "MLD_1866"
 
-#oob = ""
 
 # Starting tech
 set_technology = {
@@ -31,22 +30,7 @@ recruit_character = MLD_stc
 recruit_character = MLD_ai2
 recruit_character = MLD_ncs
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
@@ -71,17 +55,3 @@ set_popularities = {
 #	}
 #}
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}	
-	set_popularities = {
-		democratic = 38
-		neutrality = 6
-		communism = 6
-		neutrality = 50
-	}
-}

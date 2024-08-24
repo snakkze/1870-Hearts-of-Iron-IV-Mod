@@ -1,5 +1,5 @@
-﻿capital = 100 #Iceland
- oob = "ICE_1866"
+capital = 100 #Iceland
+oob = "ICE_1866"
 
 set_oob = "ICE_1866"
 
@@ -106,59 +106,7 @@ IF = {
 	recruit_character = ICE_king_knud	
 	recruit_character = ICE_werner_gerlach
 }
-1939.1.1 = {
-	IF = {
-		limit = {
-			has_dlc = "Arms Against Tyranny"
-		}
-		#drop_cosmetic_tag = yes
-		add_political_power = 1198
-		add_command_power = 100
 
-		complete_national_focus = ICE_expand_the_fishing_industry
-		complete_national_focus = ICE_the_kingdom_of_iceland
-		complete_national_focus = ICE_hydroelectric_power
-		complete_national_focus = ICE_declare_absolute_neutrality
-		complete_national_focus = ICE_infrastructure_projects
-		complete_national_focus = ICE_gardhur_airfield
-		complete_national_focus = ICE_the_icelandic_police_force
-		complete_national_focus = ICE_engineering_projects
-		complete_national_focus = ICE_the_merchant_fleet
-
-		set_oob = "ICE_1939"
-		set_technology = {
-			fpw_cannon_artillery = 1
-			fpw_infantry_weapons2 = 1
-}
-	}
-	IF = {
-		limit = {
-			NOT = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-		#drop_cosmetic_tag = yes
-		add_political_power = 1198
-		add_command_power = 100
-		
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = large_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-		
-		set_oob = "ICE_1939"
-		set_technology = {
-			fpw_cannon_artillery = 1
-			fpw_infantry_weapons2 = 1
-}
-	}
-}
 
 set_convoys = 30
 set_stability = 0.65
@@ -175,27 +123,14 @@ set_popularities = {
 	communism = 2
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.10.19"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 84
-		neutrality = 2
-		communism = 2
-		neutrality = 12
-	}
-}
+
 
 IF = {
 	limit = {
 		NOT = { has_dlc = "Arms Against Tyranny" }
 	}
 	create_country_leader = {
-		name = "Sveinn Björnsson"
+		name = "Sveinn Bj�rnsson"
 		desc = ""
 		picture = GFX_portrait_Sveinn_Bjornsson
 		expire = "1965.1.1"
@@ -205,16 +140,7 @@ IF = {
 		}
 	}
 
-	create_country_leader = {
-		name = "Johannes Valurson"
-		desc = ""
-		picture = GFX_portrait_Johannes_Valurson
-		expire = "1965.1.1"
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
-	}
+	
 
 	create_country_leader = {
 		name = "Haraldur Gudmunsson"
@@ -227,14 +153,5 @@ IF = {
 		}
 	}
 
-	create_country_leader = {
-		name = "Einar Olgeirsson"
-		desc = ""
-		picture = GFX_portrait_Einar_Olgeirsson
-		expire = "1965.1.1"
-		ideology = marxism
-		traits = {
-			#
-		}
-	}
+	
 }

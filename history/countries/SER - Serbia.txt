@@ -1,5 +1,5 @@
-﻿capital = 107
- oob = "SER_1866"
+capital = 107
+oob = "SER_1866"
 
 set_research_slots = 3
 
@@ -7,31 +7,10 @@ set_technology = {
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 
 if = {
 	limit = {
@@ -69,7 +48,7 @@ set_popularities = {
 set_stability = 0.6
 
 create_country_leader = {
-	name = "Mihailo Obrenović"
+	name = "Mihailo Obrenovic"
 	desc = ""
 	picture = GFX_portrait_SER_prince
 	expire = "1965.1.1"
