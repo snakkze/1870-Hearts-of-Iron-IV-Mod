@@ -508,7 +508,7 @@ add_namespace = fpw_japan
 		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
 		expire = "1965.1.1"
 		ideology = jap_tokugawa
-		traits = { }
+		traits = { fpw_trait_shogun_yoshinobu }
 		}
 		}
 		option = {
@@ -564,7 +564,6 @@ add_namespace = fpw_japan
 		hidden_effect = {
 		retire_character = JAP_Enomoto_Takeaki
 		retire_character = JAP_Katsu_Kaishu
-		add_stability = 0.2
 		if = {
 			limit = {
 				date < 1867.1.30
@@ -606,7 +605,7 @@ add_namespace = fpw_japan
 		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
 		expire = "1965.1.1"
 		ideology = jap_tokugawa
-		traits = { }
+		traits = { fpw_trait_shogun_yoshinobu }
 		}
 		load_focus_tree = { tree = japanese_focus keep_completed = yes }
 		uncomplete_national_focus = {
@@ -674,7 +673,7 @@ add_namespace = fpw_japan
 		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
 		expire = "1965.1.1"
 		ideology = jap_tokugawa
-		traits = { }
+		traits = { fpw_trait_shogun_yoshinobu }
 		}	
 		}
 	}
@@ -697,17 +696,41 @@ add_namespace = fpw_japan
 				base = 10
 			}
 
-			
+		if = {
+		limit = {
+		has_government = fascism
+		}
 		create_country_leader = {
 		name = "Emperor Meiji"
 		desc = "JAP_meiji_desc"
 		picture = "GFX_Portrait_JAP_meiji"
 		expire = "1965.1.1"
 		ideology = jap_imperial
-		traits = {
+		traits = {  
 		fpw_trait_emperor_meiji
 		}
 		}
+		}
+		if = {
+		limit = {
+		NOT = {
+		has_government = fascism
+		}
+		}
+		create_country_leader = {
+		name = "Emperor Meiji"
+		desc = "JAP_meiji_desc"
+		picture = "GFX_Portrait_JAP_meiji"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = {  
+		
+		}
+		}
+		}
+
+		
+		
 		hidden_effect = {
 			clr_country_flag = fpw_secondary_leader_jap_komei
 			}

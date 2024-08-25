@@ -917,8 +917,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = 0.15
-				war_support_factor = 0.2
+			stability_factor = -0.1
+			war_support_factor = 0.15
 			}
 		}
 		
@@ -937,8 +937,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = 0.15
-				war_support_factor = 0.2
+			stability_factor = -0.1
+			war_support_factor = 0.15
 			}
 		}
 		

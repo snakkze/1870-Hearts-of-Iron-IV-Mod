@@ -3,8 +3,12 @@ oob = "AUS_1866"
 
 set_cosmetic_tag = AUS_austrian_empire
 
-
-
+1870.1.1 = {
+	set_cosmetic_tag = AUS_austria_hungary
+	add_dynamic_modifier = { 
+		modifier = fpw_AUS_loser_of_the_brotherswar
+	}
+}
 
 set_research_slots = 3
 
@@ -45,7 +49,6 @@ recruit_character = AUS_franz_bohme
 recruit_character = AUS_eugen_beyer
 recruit_character = AUS_julius_raab
 recruit_character = AUS_leopold_figl
-
 
 set_politics = {
 	ruling_party = democratic

@@ -351,7 +351,6 @@ focus_tree = {
 		hidden_effect = {
 		retire_character = JAP_Enomoto_Takeaki
 		retire_character = JAP_Katsu_Kaishu
-		add_stability = 0.1
 		
 		if = {
 			limit = {
@@ -373,6 +372,21 @@ focus_tree = {
 		hidden_effect = {
 			clr_country_flag = fpw_secondary_leader_jap_meiji
 			}
+					}
+		if = {
+			limit = {
+				date > 1867.1.29
+					}
+		create_country_leader = {
+		name = "Emperor Meiji"
+		desc = "JAP_meiji_desc"
+		picture = "GFX_Portrait_JAP_meiji"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = {  
+		fpw_trait_emperor_meiji
+		}
+		}
 					}
 		
 		set_capital = {
@@ -397,7 +411,7 @@ focus_tree = {
 		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
 		expire = "1965.1.1"
 		ideology = jap_tokugawa
-		traits = { }
+		traits = { fpw_trait_shogun_yoshinobu }
 		}
 		
 		load_focus_tree = { tree = japanese_focus keep_completed = yes }

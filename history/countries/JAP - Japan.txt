@@ -2,8 +2,8 @@ capital = 531
 oob = "JAP_1866"
 
 
-set_stability = 0.3
-set_war_support = 0.6
+set_stability = 0.6
+set_war_support = 0.5
 
 set_province_name = { id = 1182 name = "Edo" }
 set_province_name = { id = 7087 name = "Sunpu" }
@@ -23,7 +23,113 @@ add_ideas = {
 	jap_limited_military_mobilization
 }
 
+1870.1.1 = {
+	set_country_flag = jap_ezo_established
+	remove_ideas = {
+	jap_medium_imperial_resistance
+	jap_unequal_treaties
+	fpw_komei
+	}
+	add_stability = 0.15
+	
+	
+	every_state = {
+		limit = {
+		is_core_of = EZO
+		}
+		transfer_state_to = JAP
+		add_core_of = JAP
+		remove_core_of = TRB
+	}
+	
+	set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+	}
+	set_popularities = {
+	neutrality = 20
+	fascism = 80
+	}
+	
+#	set_power_balance = {
+#			id = fpw_JAP_bop
+#			left_side = fpw_JAP_meiji_bop
+#			right_side = fpw_JAP_council_of_advisors_bop
+#			set_value = -0.1
+#			}
 
+	activate_advisor = JAP_okubo_toshimichiADV
+	activate_advisor = JAP_kido_takayoshiADV
+	activate_advisor = JAP_saigo_takamoriADV
+
+	
+	create_country_leader = {
+		name = "Emperor Meiji"
+		desc = "JAP_meiji_desc"
+		picture = "GFX_Portrait_JAP_meiji"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = {
+		fpw_trait_emperor_meiji
+		}
+		}
+		
+	create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { }
+		}	
+	
+	
+	#Change Capital to Tokyo for 1870(was Kyoto in 1866)
+	JAP = {
+		set_capital = {
+		state = 282
+		}
+	}
+	set_province_name = { id = 1182 name = "Tokyo" }
+	set_province_name = { id = 7087 name = "Shizuoka" }
+	
+	country_event = { id = fpw_japan.17 days = 365 random_days = 1095 }
+	set_country_flag = jap_ezo_established
+		
+	add_ideas = {
+		civilian_economy
+		}
+	add_ideas = {
+		export_focus
+		}
+
+	unlock_national_focus = JAP_denounce_shogun
+	unlock_national_focus = JAP_form_satcho_alliance
+	unlock_national_focus = JAP_secure_western_armaments
+	unlock_national_focus = JAP_consolidate_imperial_loyalties
+	unlock_national_focus = JAP_secure_daimyo_allegiances
+	unlock_national_focus = JAP_seize_imperial_palace
+	unlock_national_focus = JAP_proclaim_emperor_meijis_restoration_to_full_power
+	unlock_national_focus = JAP_open_the_nation
+	unlock_national_focus = JAP_announce_the_charter_oath
+	unlock_national_focus = JAP_a_strong_centralized_state
+	unlock_national_focus = JAP_strengthen_local_administrations
+	unlock_national_focus = JAP_redistribute_land_to_peasants
+	unlock_national_focus = JAP_establish_the_kaitakushi
+	complete_national_focus = JAP_lay_foundations_for_industrialization
+	complete_national_focus = JAP_improve_national_infrastructure
+	complete_national_focus = JAP_yokosuka_naval_arsenal
+	complete_national_focus = JAP_modernize_the_military_system
+	complete_national_focus = JAP_invite_french_military_advisers
+	complete_national_focus = JAP_establish_the_heigakko
+	unlock_national_focus = JAP_british_naval_mission_to_japan
+	complete_national_focus = JAP_adopt_royal_navy_traditions
+	complete_national_focus = JAP_establish_the_imperial_guard
+	complete_national_focus = JAP_establish_modern_ports
+	complete_national_focus = JAP_import_western_technologies
+}
 
 set_research_slots = 3
 set_fuel_ratio = 1.0
