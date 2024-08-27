@@ -479,7 +479,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = fpw_muzzle4
+			leads_to_tech = fpw_muzzle5
 			research_cost_coeff = 1
 		}
 
@@ -513,11 +513,6 @@ technologies = {
 			fpw_muzzle_artillery_equipment_2
 		}
 
-		path = {
-			leads_to_tech = fpw_muzzle5
-			research_cost_coeff = 1
-		}
-
 		research_cost = 1
 
 		start_year = 1874
@@ -549,6 +544,11 @@ technologies = {
 		}
 		muzzle_brigade = {
 			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_muzzle4
+			research_cost_coeff = 1
 		}
 
 		research_cost = 1
