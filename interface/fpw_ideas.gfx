@@ -214,7 +214,10 @@ spriteTypes = {
 		name = "GFX_idea_SOV_pyotr_shuvalov"
 		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_shuvalov.png"
 	}
-	
+	SpriteType = {
+		name = "GFX_idea_eng_raes"
+		texturefile = "gfx/interface/ideas/eng_raes.png"
+	}
 	
 	
 }
