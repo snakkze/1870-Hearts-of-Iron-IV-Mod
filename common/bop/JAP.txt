@@ -1,0 +1,134 @@
+#NOT IMPLEMENTED AS OF NOW
+#JUST ADDED BECAUSE OF ERROR LOG
+#NOT SURE IF EVER GETS ADDED
+
+
+fpw_JAP_bop = {	    
+
+
+
+	initial_value = 1
+	left_side = SWI_centralization_bop_council 
+	right_side = SWI_centralization_bop_canton
+	decision_category = JAP_centralization_power_balance_decisions
+
+	side = {
+		id = fpw_JAP_council_of_advisors_bop
+		icon = GFX_bop_SWI_centralization_council_side
+		range = {
+			id = fpw_JAP_centralization_bop_fully_emperor
+			min = -1
+			max = -0.75
+			modifier = {
+				political_advisor_cost_factor = 0.5	
+				army_org_factor = 0.1		
+				stability_factor = 0.1
+				research_speed_factor = -0.1
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = 0.1 
+				war_support_factor = 0.2
+			}
+			on_activate = {
+				promote_character = fpw_meiji
+			}
+		}
+
+		range = {
+			id = fpw_JAP_centralization_bop_very_emperor
+			min = -0.75
+			max = -0.4
+			modifier = {
+				political_advisor_cost_factor = 0.25
+				army_org_factor = 0.05		
+				stability_factor = 0.05
+				research_speed_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.05
+				war_support_factor = 0.1
+			}
+			on_activate = {
+				promote_character = fpw_meiji
+			}
+		}
+		
+		range = {
+			id = fpw_JAP_centralization_bop_little_emperor
+			min = -0.4
+			max = -0.1
+			modifier = {
+				political_advisor_cost_factor = 0.1
+				army_org_factor = 0.02		
+				stability_factor = 0.02
+				research_speed_factor = -0.02
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = 0.02
+				war_support_factor = 0.05
+			}
+		}
+	}
+	
+	range = { #Balanced Range, neither Emperor nor Council
+		id = fpw_JAP_centralization_bop_balanced 
+		min = -0.1
+		max = 0.1
+		modifier = {
+			surrender_limit	= 0.1
+		}
+	}
+	
+	side = {
+		id = fpw_JAP_meiji_bop
+		icon = GFX_bop_JAP_meiji
+		range = {
+			id = fpw_JAP_centralization_bop_little_council
+			min = 0.1
+			max = 0.4
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				research_speed_factor = 0.02
+				army_org_factor = -0.02
+				stability_factor = -0.02
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.02
+				war_support_factor = -0.05
+			}
+		}
+		
+		range = {
+			id = fpw_JAP_centralization_bop_very_council
+			min = 0.4
+			max = 0.75
+			modifier = {
+				political_advisor_cost_factor = -0.5
+				research_speed_factor = 0.05
+				army_org_factor = -0.05
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.05
+				war_support_factor = -0.1
+			}
+			on_activate = {
+				promote_character = fpw_jap_federal_council
+			}
+		}
+		
+		range = {
+			id = fpw_JAP_centralization_bop_fully_council
+			min = 0.75
+			max = 1
+			modifier = {
+				political_advisor_cost_factor = -1
+				research_speed_factor = 0.1
+				army_org_factor = -0.1
+				stability_factor = -0.1
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = -0.1
+				war_support_factor = -0.2
+			}
+			on_activate = {
+				promote_character = fpw_jap_federal_council
+			}
+		}
+		
+	}
+} 

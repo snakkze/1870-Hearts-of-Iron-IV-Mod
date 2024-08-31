@@ -1,11 +1,6 @@
 capital = 914
 oob = "JAN_1866"
 
-if = {
-	limit = { has_aat = yes }
-	recruit_character = JAN_grand_admiral_johan_mayen 
-}
-
 
 # Starting tech
 set_technology = {

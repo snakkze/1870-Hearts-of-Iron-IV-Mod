@@ -8,27 +8,6 @@ set_technology = {
 }
 
 
-recruit_character = CUB_josé_agripino_barnet
-recruit_character = CUB_guillermo_cabral
-recruit_character = CUB_wenceslao_carmona
-recruit_character = CUB_gregorio_morales
-recruit_character = CUB_fidel_castro
-recruit_character = CUB_enrique_c_rolas
-recruit_character = CUB_palaez_menendez
-recruit_character = CUB_domingo_r_del_toro
-recruit_character = CUB_eduardo_chibas
-recruit_character = CUB_juan_blas_hernandez
-recruit_character = CUB_sergio_carbo
-recruit_character = CUB_fulgencio_batista
-recruit_character = CUB_rodrigo_a_fuentes
-recruit_character = CUB_sandalio_junco
-recruit_character = CUB_salvador_castaneda_castro
-recruit_character = CUB_angel_gonzalez
-recruit_character = CUB_julio_sanguily
-recruit_character = CUB_carlos_prio
-recruit_character = CUB_gerardo_machado
-recruit_character = CUB_eugenio_molinet_castro
-
 
 set_country_flag = monroe_doctrine
 set_war_support = 0.1
@@ -46,3 +25,4 @@ set_popularities = {
 	democratic = 98
 	communism = 2
 }
+

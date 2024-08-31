@@ -99,27 +99,6 @@ NOR_akers_mekaniske_verksted_organization = {
         limit_to_equipment_type = { screen_ship }
     }
 
-    trait = {
-        token = NOR_mio_trait_convoy_production
-        name = NOR_shipping_capitalist
-        icon = GFX_generic_mio_trait_icon_supply_consumption
-        special_trait_background  = yes
-
-        position = { x=0 y=0 }
-        limit_to_equipment_type = { convoy }
-        
-        production_bonus = {
-            production_capacity_factor = 0.1
-        }   
-
-        available = {
-            FROM = {
-                NOR_johan_ludwig_mowinckel = {
-                    is_political_advisor = yes 
-                }
-            }
-        }
-    }
 }
 
 NOR_karljohansvern_verft_organization = {

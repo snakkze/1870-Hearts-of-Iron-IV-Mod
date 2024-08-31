@@ -9,36 +9,6 @@ set_technology = {
 set_stability = 0.6
 set_war_support = 0.7
 
-recruit_character = PRC_mao_zedong
-recruit_character = PRC_zhu_de
-recruit_character = PRC_chen_yi
-recruit_character = PRC_peng_dehuai
-recruit_character = PRC_lin_biao
-recruit_character = PRC_kwong_hu
-recruit_character = PRC_luo_zhao
-recruit_character = PRC_liang_ma
-recruit_character = PRC_ma_jin
-recruit_character = PRC_ziao_jingguang
-recruit_character = PRC_nie_rongzhen
-recruit_character = PRC_su_yu
-recruit_character = PRC_liu_bocheng
-recruit_character = PRC_chen_geng
-recruit_character = PRC_gao_qiu
-recruit_character = PRC_liang_shen
-recruit_character = PRC_otto_braun
-recruit_character = PRC_gao_gang
-recruit_character = PRC_fang_zeyi
-recruit_character = PRC_xu_xiangqian
-recruit_character = PRC_deng_ye_peng
-recruit_character = PRC_ye_jianying
-recruit_character = PRC_hsia_tian
-recruit_character = PRC_zhang_wei
-recruit_character = PRC_zhou_enlai
-recruit_character = PRC_liu_shaoqi
-recruit_character = PRC_lin_bojiu
-recruit_character = PRC_dong_biwu
-recruit_character = PRC_he_yuandang
-
 
 save_global_event_target_as = WTT_communist_china
 
@@ -59,18 +29,6 @@ add_ideas = {
 	closed_economy
 	service_by_requirement
 	partial_economic_mobilisation
-}
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_the_long_march_1
-		PRC_low_popular_support_3
-		PRC_power_struggles
-		PRC_red_army_weakened
-	}
 }
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }

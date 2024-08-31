@@ -104,7 +104,7 @@ recruit_character = PRS_Friedrich_Graf_von_Wrangel
 recruit_character = PRS_Helmuth_von_Moltke
 recruit_character = PRS_Alfred_von_Rauch
 recruit_character = PRS_Eduard_Vogel_von_Falckenstein
-recruit_character = PRS_James_Hobrecht
+#recruit_character = PRS_James_Hobrecht #COMMENTED OUT BECAUSE: history/countries/PRS - Preußen.txt:107: recruit_character: Unknown character 
 recruit_character = PRS_Hans_Wilhelm_von_Kotze
 recruit_character = PRS_Friedrich_Karl_of_Prussia
 recruit_character = PRS_Gustav_von_Stiehle
@@ -136,3 +136,4 @@ recruit_character = PRS_Adalbert_of_Prussia
 recruit_character = PRS_heinrich_abeken
 
 activate_advisor = PRS_Helmuth_von_Moltke_carm
+
