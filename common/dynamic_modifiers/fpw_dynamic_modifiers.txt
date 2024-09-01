@@ -8,7 +8,7 @@ fpw_colonial_debuff = {
 
 fpw_victors_of_the_crimean_war = {
 	enable = { always = yes }
-	icon = GFX_idea_wip
+	icon = idea_victor_of_crimean_war
 	
 	custom_modifier_tooltip = prestige_modifier_crimean_victors
 }
