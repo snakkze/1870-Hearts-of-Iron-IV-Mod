@@ -5,6 +5,11 @@ spriteTypes = {
 		textureFile = "/gfx/interface/superevents/superevent_APW.png"
 	}
 	spriteType = {
+		name = "GFX_superevents_fpw"
+		textureFile = "/gfx/interface/superevents/superevent_FPW.png"
+	}
+
+	spriteType = {
 		name = "GFX_superevents_window_background"
 		textureFile = "/gfx/interface/superevents/superevent.png"
 	}

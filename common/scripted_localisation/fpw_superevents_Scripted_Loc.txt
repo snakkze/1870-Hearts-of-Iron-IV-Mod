@@ -8,6 +8,13 @@ defined_text = {
         }
         localization_key = "SuperEvent_APW"
     }
+    text = {
+        trigger = {
+            has_global_flag = fpw_fpw
+        }
+        localization_key = "SuperEvent_FPW"
+    }
+
 }
 	
 #Description
@@ -20,6 +27,14 @@ defined_text = {
         }
         localization_key = "SuperEvent_APW_DESCRIPTION"
     }
+
+    text = { 
+        trigger = {
+            has_global_flag = fpw_fpw
+        }
+        localization_key = "SuperEvent_FPW_DESCRIPTION"
+    }
+
 }
 	
 #Quotes
@@ -28,8 +43,8 @@ defined_text = {
 
     text = {
         trigger = {
-            has_global_flag = fpw_APW
+            has_global_flag = fpw_fpw
         }
-        localization_key = "SuperEvent_APW_REMARK"
+        localization_key = "SuperEvent_FPW_REMARK"
     }
 }
