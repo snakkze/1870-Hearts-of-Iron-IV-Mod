@@ -8,16 +8,7 @@ division_template = {
 	}
 }
 units = {
-## Infanterieregiment ##
-	#1. Infanterie-Division
-	division = {
-		#1. Infanterieregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 1
-		}
-		location = 9320
-		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
-	}
+
+
+
 }
