@@ -95,6 +95,37 @@ debug_decisions = {
 		}
 	}
 
+	colo_event= {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			1030 = {
+				ROOT = {
+					country_event = fpw_generic.1
+				}
+			}
+		}
+	}
+
 	schutz_und_trutz_NEIN= {
 
 		icon = eng_trade_unions_demand

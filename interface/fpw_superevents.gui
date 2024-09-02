@@ -1,0 +1,55 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "superevents_gui_window"
+		position = { x = 0 y = 0 }	
+		size = { width = 1200 height = 800 }
+		orientation = center
+		origo = center
+		moveable = yes
+		click_to_front = yes
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_superevents_window_background"
+		}
+		iconType = {
+			name = "Super_Event_Image_APW"
+			spriteType = "GFX_superevents_apw"
+			position = {x = 0 y = 0}
+		}
+		instantTextBoxType = {
+			name = "superevent_description"
+			position = { x = 135 y = 350 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_description]"
+			maxWidth = 540
+			maxHeight = 1000
+			fixedsize = yes	
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "superevent_title"
+			position = { x = 135 y = 300 }
+			font = "hoi_30header"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "superevent_close"
+			spriteType = "GFX_event_option_entry"
+			position = { x = 220 y = 675 }
+			clicksound = click_close
+			text = "[get_super_event_remark]"
+			buttonFont = "hoi_18mbs"
+		}
+	}
+}

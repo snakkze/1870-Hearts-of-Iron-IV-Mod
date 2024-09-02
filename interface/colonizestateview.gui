@@ -12,5 +12,13 @@ guiTypes = {
 			pdx_tooltip = "fpw_colonize_button_tt"
 			pdx_tooltip_delayed = "fpw_colonize_button_long_tt"
 		}	
+
+		buttonType = {
+			name = "integrate_button"
+			quadTextureSprite ="GFX_integrate_button"
+			position = { x= 13 y = -11 }
+			pdx_tooltip = "fpw_integrate_button_tt"
+			pdx_tooltip_delayed = "fpw_colonize_integrate_long_tt"
+		}	
 	}
 }
