@@ -18,9 +18,9 @@ wood=5
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
-			industrial_complex = 1
-			dockyard = 2
-			6325 = {
+			industrial_complex = 2
+			dockyard = 1
+			6349 = {
 				naval_base = 1
 
 			}
@@ -37,7 +37,7 @@ wood=5
 	provinces={
 		526 3271 6218 6263 6298 6325 6349 6377 6513 9264 
 	}
-	manpower=1267909
+	manpower=1029506
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

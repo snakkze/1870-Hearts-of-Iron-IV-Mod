@@ -19,9 +19,9 @@ wood=4
 			11499 3 
 		}
 		buildings = {
-			infrastructure = 4
-			arms_factory = 5
-			industrial_complex = 1
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
 
 		}
 		add_core_of = WRT
@@ -30,7 +30,7 @@ wood=4
 	provinces={
 		694 3690 6555 6934 9517 9545 9655 11486 11499 13126 
 	}
-	manpower=2645164
+	manpower=1845164
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

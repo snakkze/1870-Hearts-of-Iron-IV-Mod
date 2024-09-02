@@ -10,7 +10,8 @@ wood=2
 		owner = NAS
      		buildings = {
       		      infrastructure = 2
-     	 	      industrial_complex = 1
+     	 	      industrial_complex = 2
+				  arms_factory = 1
 		}
 		victory_points = {
 			6444 5 
@@ -25,7 +26,7 @@ wood=2
 	provinces={
 		6444 6488 9486 
 	}
-	manpower=104000
+	manpower=467000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=large_town

@@ -52,7 +52,11 @@ division_template = {
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		cannon_brigade = { x = 0 y = 2 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		muzzle_brigade = { x = 2 y = 0 }
+		muzzle_brigade = { x = 2 y = 1 }
+		muzzle_brigade = { x = 2 y = 2 }
 	}
 }
 
@@ -325,6 +329,72 @@ units = {
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
+	#23. Infanterie-Division
+	division = {
+		#17. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 17
+		}
+		location = 9457
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#24. Infanterie-Division
+	division = {
+		#18. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 18
+		}
+		location = 478
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#25. Infanterie-Division
+	division = {
+		#19. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 19
+		}
+		location = 9547
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#26. Infanterie-Division
+	division = {
+		#20. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 20
+		}
+		location = 3384
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#27. Infanterie-Division
+	division = {
+		#21. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 21
+		}
+		location = 11359
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#28. Infanterie-Division
+	division = {
+		#22. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 22
+		}
+		location = 9532
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
 
 	## Landwehr ##
 	#1. Landwehr-Regiment
@@ -379,6 +449,72 @@ units = {
 			name_order = 5
 		}
 		location = 6402
+		division_template = "Landwehr-Regiment"
+		start_experience_factor = 0.1
+	}
+	#6. Landwehr-Regiment
+	division = {
+		#1. Preußisches Landwehr-Regiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 444
+		division_template = "Landwehr-Regiment"
+		start_experience_factor = 0.1
+	}
+	#7. Landwehr-Regiment
+	division = {
+		#2. Preußisches Landwehr-Regiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 3488
+		division_template = "Landwehr-Regiment"
+		start_experience_factor = 0.1
+	}
+	#8. Landwehr-Regiment
+	division = {
+		#3. Preußisches Landwehr-Regiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 3
+		}
+		location = 11346
+		division_template = "Landwehr-Regiment"
+		start_experience_factor = 0.1
+	}
+	#9. Landwehr-Regiment
+	division = {
+		#4. Preußisches Landwehr-Regiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 4
+		}
+		location = 6582
+		division_template = "Landwehr-Regiment"
+		start_experience_factor = 0.1
+	}
+	#10. Landwehr-Regiment
+	division = {
+		#5. Preußisches Landwehr-Regiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 5
+		}
+		location = 3381
+		division_template = "Landwehr-Regiment"
+		start_experience_factor = 0.1
+	}
+	#11. Landwehr-Regiment
+	division = {
+		#5. Preußisches Landwehr-Regiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 5
+		}
+		location = 11444
 		division_template = "Landwehr-Regiment"
 		start_experience_factor = 0.1
 	}

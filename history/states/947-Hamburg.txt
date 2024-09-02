@@ -6,7 +6,12 @@ state={
 		owner = HAM
      		buildings = {
       		      infrastructure = 2
-     	 	      industrial_complex = 1
+     	 	      industrial_complex = 3
+				  dockyard = 2
+				  	9347 = {
+				naval_base = 1
+
+			}
 		}
 		victory_points = {
 			9347 20 
@@ -21,7 +26,7 @@ state={
 	provinces={
 		9347 
 	}
-	manpower=416000
+	manpower=171022
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=city

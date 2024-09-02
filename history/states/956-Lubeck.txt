@@ -9,8 +9,7 @@ state={
 		owner = LUE
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			dockyard = 2
+			industrial_complex = 1
 
 		}
 		add_core_of = LUE
@@ -25,7 +24,7 @@ state={
 	provinces={
 		9320 
 	}
-	manpower=112943
+	manpower=50943
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=city

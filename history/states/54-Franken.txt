@@ -12,6 +12,7 @@ wood=5
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+			arms_factory = 1
 
 		}
 		victory_points = {
@@ -24,7 +25,7 @@ wood=5
 	provinces={
 		561 3474 6421 6594 9416 9557 9572 11404 11417 11529 11544 13116 
 	}
-	manpower=1304243
+	manpower=1594243
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

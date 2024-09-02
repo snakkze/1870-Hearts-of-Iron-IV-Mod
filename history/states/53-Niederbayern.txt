@@ -6,7 +6,7 @@ wood=6
 
 	id=53
 	name="STATE_53"
-	manpower = 755750
+	manpower = 885750
 	
 	state_category = city
 
@@ -14,6 +14,8 @@ wood=6
 		owner = BAV
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
 		}
 		add_core_of = BAV
 		victory_points = {

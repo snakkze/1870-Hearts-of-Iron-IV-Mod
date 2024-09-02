@@ -10,8 +10,7 @@ wood=1
 		owner = SXW
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-
+			industrial_complex = 2
 		}
 		victory_points = {
 			425 5 
@@ -27,7 +26,7 @@ wood=1
 	provinces={
 		425 538 
 	}
-	manpower=39000
+	manpower=251648
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

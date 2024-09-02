@@ -1,4 +1,3 @@
-
 state={
 	id=965
 	name="STATE_965"
@@ -9,7 +8,7 @@ state={
 			3574 10 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 		}
 		add_core_of = HES
@@ -19,7 +18,7 @@ state={
 	provinces={
 		3574 
 	}
-	manpower=169240
+	manpower=95079
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
