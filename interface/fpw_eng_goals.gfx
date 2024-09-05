@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_generic_hold_election"
+		texturefile = "gfx/interface/goals/generic_election.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_encourage_the_people_to_rise_up"
+		texturefile = "gfx/interface/goals/focus_ENG_encourage_the_people_to_rise_up.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_increased_wine_production_in_cape_colony"
+		texturefile = "gfx/interface/goals/ENG_increased_wine_production_in_cape_colony.png"
+	}
+	spriteType = {
+		name = "GFX_focus_supress_india"
+		texturefile = "gfx/interface/goals/supress_india.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_motherland_in_danger"
+		texturefile = "gfx/interface/goals/ENG_motherland_in_danger.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_royal_aeronautical_society"
+		texturefile = "gfx/interface/goals/ENG_royal_aeronautical_society.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_british_patriotism"
+		texturefile = "gfx/interface/goals/british_patriotism.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_australia"
+		texturefile = "gfx/interface/goals/australia_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_india"
+		texturefile = "gfx/interface/goals/india_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_malaysia"
+		texturefile = "gfx/interface/goals/malaysia_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_africa"
+		texturefile = "gfx/interface/goals/africa_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ENG_oceania"
+		texturefile = "gfx/interface/goals/oceania_focus.png"
+	}
+}
