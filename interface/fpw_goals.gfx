@@ -281,6 +281,10 @@ spriteTypes = {
 		name = "GFX_focus_SOV_russification"
 		texturefile = "gfx/interface/goals/russification.png"
 	}
+	spriteType = {
+		name = "GFX_focus_crimean_war"
+		texturefile = "gfx/interface/goals/focus_crimean_war.png"
+	}
 	
 }
 

@@ -91,7 +91,7 @@ characters={
 		name = SOV_pavel_gagarin
 		portraits = {
 			civilian = {
-				#large = GFX_portrait_SOV_pavel_gagarin
+				large = GFX_portrait_SOV_pavel_gagarin
 				small="GFX_idea_SOV_pavel_gagarin"
 			}
 		}
@@ -354,8 +354,8 @@ characters={
 		name = SOV_pyotr_valuyev
 		portraits = {
 			civilian = {
-				#large = GFX_portrait_SOV_savva_mamontov
-				small = "GFX_idea_europe_generic_2" #"GFX_idea_SOV_pyotr_valuyev"
+				large = GFX_portrait_SOV_pyotr_valuev
+				small = "GFX_idea_SOV_pyotr_valuev"
 			}
 		}
 		advisor={
@@ -389,8 +389,8 @@ characters={
 		name = SOV_sergei_zarudny
 		portraits = {
 			civilian = {
-				#large = GFX_portrait_SOV_sergei_zarudny
-				small = "GFX_idea_europe_generic_3" #"GFX_idea_SOV_sergei_zarudny"
+				large = GFX_portrait_SOV_sergei_zarudny
+				small = "GFX_idea_SOV_sergei_zarudny"
 			}
 		}
 		advisor={
@@ -446,8 +446,8 @@ characters={
 		name = SOV_pyotr_lavrov
 		portraits = {
 			civilian = {
-				#large = GFX_portrait_SOV_pyotr_lavrov
-				small = "GFX_idea_europe_generic_5" #"GFX_idea_SOV_pyotr_lavrov"
+				large = GFX_portrait_SOV_pyotr_lavrov
+				small = "GFX_idea_SOV_pyotr_lavrov"
 			}
 		}
 		advisor={
@@ -508,8 +508,8 @@ characters={
 		name = SOV_aleksandar_hilferding
 		portraits = {
 			civilian = {
-				#large = GFX_portrait_SOV_aleksandar_hilferding
-				small = "GFX_idea_europe_generic_land_1" #"GFX_idea_SOV_aleksandar_hilferding"
+				large = GFX_portrait_SOV_aleksandar_hilferding
+				small = "GFX_idea_SOV_alexander_hilferding"
 			}
 		}
 		advisor={
