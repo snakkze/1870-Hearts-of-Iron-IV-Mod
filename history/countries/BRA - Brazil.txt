@@ -1,9 +1,16 @@
 capital = 500
+ oob = "BRA_1866"
+
+
 oob = "BRA_1866"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	else = {
+		set_technology = {
 
-
-set_country_flag = fpw_access_to_rubber_tree_saplings
-
+}
+	}
+}
 # Starting tech
 set_technology = {
 	fpw_infantry_weapons = 1
@@ -11,8 +18,22 @@ set_technology = {
 	fpw_basic_train = 1	
     tech_support = 1
 }
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
 
+}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
 
+}
+}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns"}
@@ -32,26 +53,78 @@ if = {
 set_country_flag = monroe_doctrine
 
 
+1939.1.1 = {
 
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "BRA_1939"
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		else = {
+		}
+	}
+	set_technology = {
+		fpw_infantry_weapons1 = 1
+		fpw_infantry_weapons2 = 1
+}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+
+}
+		set_naval_oob = "BRA_1939_naval_legacy"
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+
+}
+		set_naval_oob = "BRA_1939_naval"
+	}
+}
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1934.7.17"
+	ruling_party = fascism
+	last_election = "1822.9.7"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 75
-        fascism = 5
-        democratic = 20
-        
-}
+	neutrality = 20
+	democratic = 20
+	fascism = 50
+	
+
+
+recruit_character = BRA_dom_pedro_ii
 
 
 set_convoys = 40
 
-
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1934.7.17"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
 
 if = {
 	limit = {
@@ -118,6 +191,26 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		create_equipment_variant = {
+			name = "Tupi Class"
+			type = ship_hull_submarine_2
+			name_group = BRA_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
 		}
 	}
 }
