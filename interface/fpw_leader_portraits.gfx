@@ -499,4 +499,10 @@ spriteTypes = {
 		name = "GFX_Portrait_LAN_liu_asheng"
 		texturefile = "gfx/leaders/LAN/Portrait_LAN_liu_asheng.dds"
 	}
+
+       # BRA
+	spriteType = {
+	   name = "GFX_portrait_BRA_dom_pedro_ii"
+	   texturefile = "gfx/leaders/BRA/Portrait_BRA_dom_pedro_ii.dds"
+    }
 }
