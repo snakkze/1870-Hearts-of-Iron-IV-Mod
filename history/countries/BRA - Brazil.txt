@@ -96,7 +96,7 @@ set_country_flag = monroe_doctrine
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1822.9.7"
 	election_frequency = 48
 	elections_allowed = no
@@ -104,11 +104,11 @@ set_politics = {
 
 set_popularities = {
 	neutrality = 20
-	democratic = 20
-	fascism = 60
+	democratic = 50
+	fascism = 30
 	
-
-
+ }
+ 
 recruit_character = BRA_dom_pedro_ii
 
 
