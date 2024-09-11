@@ -239,6 +239,9 @@
  LAN_DEF:1 "the Lanfang Republic"
  LAN_ADJ:0 "Lanfang"
 
- BRA_fascism: "Empire of Brazil"
- BRA_fascism_DEF:0 "The Empire of Brazil"
- BRA_fascism_ADJ:0 "Empire of Brazil"
+ 
+ BRA_democratic_party_long:0 "Partido Liberal"
+ BRA_democratic_party:0 "PL"
+ BRA_fascism_party_long:0 "Movimento Republicano"
+ BRA_fascism_party:0 "MR"
+ 
