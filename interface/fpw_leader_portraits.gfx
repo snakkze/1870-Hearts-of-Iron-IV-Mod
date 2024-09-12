@@ -500,9 +500,20 @@ spriteTypes = {
 		texturefile = "gfx/leaders/LAN/Portrait_LAN_liu_asheng.dds"
 	}
 
-       # BRA
+        # BRA & PARAGUAY 
 	spriteType = {
 	   name = "GFX_portrait_BRA_dom_pedro_ii"
 	   texturefile = "gfx/leaders/BRA/Portrait_BRA_dom_pedro_ii.dds"
     }
+	spriteType = {
+	   name = "GFX_portrait_PAR_solano"
+	   texturefile = "gfx/leaders/PAR/portrait_PAR_solano.dds"
+    }
+	   
+	 #ARG
+	 spriteType = {
+	   name = "GFX_portrait_ARG_bartoleme_mitre"
+	   texturefile = "gfx/leaders/ARG/portrait_ARG_bartolome_mitre.dds"
+    }
+
 }
