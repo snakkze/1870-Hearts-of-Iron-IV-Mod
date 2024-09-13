@@ -9,6 +9,9 @@ characters={
 		}
 		country_leader={
 			ideology=conservative_constitutional_monarchism
+			traits = {
+			    fpw_bra_wise_emperor
+			}
 			expire="1956.01.01.01"
 			id=-1
 		}
