@@ -1,7 +1,8 @@
 
 capital = 301
 oob = "PAR_1866"
-
+set_war_support = 0.5
+add_manpower = 35000
 
 set_technology = {
     fpw_infantry_weapons = 1
@@ -27,7 +28,6 @@ set_popularities = {
 
 recruit_character = PAR_solano_lopez
     
-
 declare_war_on = {
     target = BRA
     type = annex_everything
@@ -42,3 +42,6 @@ declare_war_on = {
     target = ARG
     type = annex_everything
 }
+
+add_ideas = limited_conscription
+add_ideas = limited_exports
