@@ -287,6 +287,12 @@ leader_traits = {
 		stability_factor = 0.05
 		political_power_factor = 0.15
 	}
-	
+
+	 fpw_bra_wise_emperor = {
+	 random = no
+	 stability_factor = 0.05
+	 war_support_factor = -0.1
+	 political_power_factor = 0.1
+    }
 	
 }
