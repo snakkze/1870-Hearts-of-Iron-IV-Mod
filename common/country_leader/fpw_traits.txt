@@ -278,6 +278,16 @@ leader_traits = {
 		army_org_factor = -0.05
 		experience_gain_army_factor = -0.05
 	}
+	fpw_self_proclaimed_emir = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.1
+	}
+	fpw_rightful_emir = {
+		random = no
+		stability_factor = 0.1
+		war_support_factor = 0.1
+	}
 	
 	
 }

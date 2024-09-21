@@ -28,9 +28,9 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 10896
 		}
-		location = 12788
+		location = 10
 		division_template = "Militia-Division"
 		start_experience_factor = 0.1
 	}
@@ -39,7 +39,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 10813
+		location = 7984
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -48,7 +48,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 1978
+		location = 7916
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -57,7 +57,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 5064
+		location = 12769
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -66,7 +66,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 5064
+		location = 5082
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -75,7 +75,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 5064
+		location = 12831
+		division_template = "Infantry-Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10826
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}

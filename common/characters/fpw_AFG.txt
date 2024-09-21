@@ -1,0 +1,16 @@
+characters={
+
+	AFG_sher_ali_khan={
+		name= "Sher Ali Khan"
+		portraits={
+			civilian={
+				large = "gfx/leaders/AFG/Portrait_AFG_sher_ali_khan.dds"
+			}
+		}
+		country_leader={
+			ideology= monarchism
+			expire="1956.01.01.01"
+			traits = { fpw_rightful_emir }
+		}
+	}
+}

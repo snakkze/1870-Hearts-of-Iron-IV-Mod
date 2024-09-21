@@ -1,0 +1,16 @@
+characters={
+
+	AFZ_mohammad_afzal_khan={
+		name= "Mohammad Afzal Khan"
+		portraits={
+			civilian={
+				# large=GFX_portrait
+			}
+		}
+		country_leader={
+			ideology= monarchism
+			expire="1956.01.01.01"
+			traits = { fpw_self_proclaimed_emir }
+		}
+	}
+}
