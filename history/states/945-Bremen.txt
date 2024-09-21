@@ -6,7 +6,7 @@ state={
 		owner = BRE
      		buildings = {
       		      infrastructure = 2
-     	 	      industrial_complex = 1
+     	 	      industrial_complex = 2
 		}
 		victory_points = {
 			3326 5 
@@ -21,7 +21,7 @@ state={
 	provinces={
 		3326 
 	}
-	manpower=520000
+	manpower=80046
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=city

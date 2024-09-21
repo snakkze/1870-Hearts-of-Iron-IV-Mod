@@ -1,46 +1,21 @@
-﻿capital = 105 # Montenegro
- oob = "MNT_1866"
-
+capital = 105 # Montenegro
 oob = "MNT_1866"
+
 
 set_research_slots = 3
 
 # Starting tech
 # clone of Yugoslavia
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 
 if = {
 	limit = {
@@ -71,10 +46,6 @@ set_popularities = {
 	neutrality = 33
 	communism = 34
 }
-
-recruit_character = MNT_kristo_popovic
-recruit_character = MNT_blazo_jovanovic
-recruit_character = MNT_blazo_dukanovic
 
 
 

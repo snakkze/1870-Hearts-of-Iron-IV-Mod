@@ -1,4 +1,8 @@
 state={
+resources={
+wood=3
+}
+
 	id=591
 	name="STATE_591"
 	manpower = 2262000
@@ -41,3 +45,4 @@ add_core_of = CHI
 
 	local_supplies=1.0 
 }
+

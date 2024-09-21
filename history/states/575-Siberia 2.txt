@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=13
+}
+
 	id=575
 	name="STATE_575" # Kirensk
 	manpower = 76177
@@ -20,3 +24,4 @@ state={
 
 	local_supplies=5.0 
 }
+

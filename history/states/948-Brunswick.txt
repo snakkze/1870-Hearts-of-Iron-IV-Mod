@@ -1,4 +1,8 @@
 state={
+resources={
+wood=2
+}
+
 	id=948
 	name="STATE_948"
 
@@ -6,7 +10,8 @@ state={
 		owner = BRU
      		buildings = {
       		      infrastructure = 2
-     	 	      industrial_complex = 1
+     	 	      industrial_complex = 2
+				  arms_factory = 1
 		}
 		victory_points = {
 			9375 5 
@@ -21,8 +26,9 @@ state={
 	provinces={
 		9375 11402 11493 
 	}
-	manpower=130000
+	manpower=303267
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=large_town
 }
+

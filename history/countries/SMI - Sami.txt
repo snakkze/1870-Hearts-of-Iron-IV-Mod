@@ -1,41 +1,19 @@
-﻿capital = 148 #TODO_Manu: Other states in other countries?
- oob = "SMI_1866"
+capital = 148 #TODO_Manu: Other states in other countries?
+oob = "SMI_1866"
 
-#oob = ""
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
 set_convoys = 20
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -49,12 +27,7 @@ set_popularities = {
 	communism = 10
 }
 
-create_country_leader = {
-	name = SMI_communism_council
-	picture = GFX_portrait_SMI_sami_council
-	expire = "1965.1.1"
-	ideology = marxism
-}
+
 
 create_country_leader = {
 	name = SMI_democratic_council
@@ -70,9 +43,3 @@ create_country_leader = {
 	ideology = centrism
 }
 
-create_country_leader = {
-	name = SMI_fascism_council
-	picture = GFX_portrait_SMI_sami_council
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-}

@@ -537,6 +537,10 @@ spriteTypes = {
 		name = "GFX_colonize_button"
 		textureFile = "gfx/interface/colonize_button.dds"
 	}
+	spriteType = {
+		name = "GFX_integrate_button"
+		textureFile = "gfx/interface/integrate_button.dds"
+	}
 	
 	### STATE MODIFIERS ###
 	

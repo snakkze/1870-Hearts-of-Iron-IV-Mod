@@ -6,9 +6,13 @@ state={
 	}
 	manpower=520000
 	resources={
+
 		steel=19 # was: 60
 		aluminium=7 # was: 20
-	}
+	
+
+wood=1
+}
 	state_category = city
 	history={
 		victory_points = {
@@ -26,3 +30,4 @@ add_core_of = PRS
 
 	local_supplies=0.0 
 }
+

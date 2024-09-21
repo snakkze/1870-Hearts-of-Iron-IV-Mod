@@ -2,13 +2,13 @@ fpw_colonial_debuff = {
 	enable = { always = yes }
 	icon = GFX_modifier_colonization_debuff
 	
-	political_power_factor = ROOT.debuff
+	industrial_capacity_factory = ROOT.debuff
 	custom_modifier_tooltip = fpw_colonize_debuff_modifier_tt
 }
 
 fpw_victors_of_the_crimean_war = {
 	enable = { always = yes }
-	icon = GFX_idea_wip
+	icon = idea_victor_of_crimean_war
 	
 	custom_modifier_tooltip = prestige_modifier_crimean_victors
 }

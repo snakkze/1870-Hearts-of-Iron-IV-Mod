@@ -6,9 +6,13 @@ state = {
 	
 	state_category = large_town
 	
-	resources = {
+	resources={
 
-	}
+
+	
+
+wood=2
+}
 
 	history = {
 		victory_points = {
@@ -39,3 +43,4 @@ add_core_of = SWE
 
 	local_supplies=0.0 
 }
+

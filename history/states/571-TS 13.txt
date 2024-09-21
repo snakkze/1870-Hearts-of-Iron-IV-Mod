@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=5
+}
+
 	id=571
 	name="STATE_571" # Omsk
 	manpower = 684922
@@ -28,3 +32,4 @@ state={
 
 	local_supplies=8.0 
 }
+

@@ -1,0 +1,50 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+
+    text = {
+        trigger = {
+            has_global_flag = fpw_apw
+        }
+        localization_key = "SuperEvent_APW"
+    }
+    text = {
+        trigger = {
+            has_global_flag = fpw_fpw
+        }
+        localization_key = "SuperEvent_FPW"
+    }
+
+}
+	
+#Description
+defined_text = {
+    name = get_super_event_description
+
+    text = { 
+        trigger = {
+            has_global_flag = fpw_APW
+        }
+        localization_key = "SuperEvent_APW_DESCRIPTION"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = fpw_fpw
+        }
+        localization_key = "SuperEvent_FPW_DESCRIPTION"
+    }
+
+}
+	
+#Quotes
+defined_text = {
+    name = get_super_event_remark
+
+    text = {
+        trigger = {
+            has_global_flag = fpw_fpw
+        }
+        localization_key = "SuperEvent_FPW_REMARK"
+    }
+}

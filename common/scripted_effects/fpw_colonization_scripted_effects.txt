@@ -1,9 +1,14 @@
 colonize_state = {
 
-	set_variable = { ROOT.colonial_time = 50 }
+	set_variable = { ROOT.colonial_time = 40 }
 	set_variable = { ROOT.temp_population = state_population_k }
-	divide_variable = { ROOT.temp_population = 50 }
+	divide_variable = { ROOT.temp_population = 25 }
 	add_to_variable = { ROOT.temp_population = 1 }
+
+	clamp_variable = {
+		var = ROOT.temp_population
+		max = 2
+	}
 
 	multiply_variable = {
 		var = ROOT.colonial_time
@@ -21,6 +26,8 @@ colonize_state = {
 		var = ROOT.colonial_time
 		value = ROOT.extra_colonizing_speed
 	}
+
+	round_variable = ROOT.colonial_time
 
 	if = {
 		limit = {

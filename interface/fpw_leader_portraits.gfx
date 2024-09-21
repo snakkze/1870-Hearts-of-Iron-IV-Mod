@@ -80,6 +80,10 @@ spriteTypes = {
 		name = "GFX_portrait_ENG_karl_marx"
 		texturefile = "gfx/leaders/ENG/Portrait_ENG_karl_marx.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_ENG_edward_smith-stanley"
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_edward_smith-stanley.dds"
+	}
 
 	# FRA
 	spriteType = {
@@ -150,6 +154,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_SOV_friedrich_von_berg"
 		texturefile = "gfx/leaders/SOV/Portrait_SOV_friedrich_von_berg.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_sergei_zarudny"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_sergei_zarudny.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_pyotr_valuev"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_pyotr_valuev.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_pyotr_lavrov"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_pyotr_lavrov.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_pavel_gagarin"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_pavel_gagarin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_alexander_hilferding"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_alexander_hilferding.dds"
 	}
 	
 	# POL
@@ -481,4 +505,20 @@ spriteTypes = {
 		name = "GFX_Portrait_AFG_sher_ali_khan"
 		texturefile = "gfx/leaders/AFG/Portrait_AFG_sher_ali_khan.dds"
 	}
+  # BRA & PARAGUAY 
+	spriteType = {
+	   name = "GFX_portrait_BRA_dom_pedro_ii"
+	   texturefile = "gfx/leaders/BRA/Portrait_BRA_dom_pedro_ii.dds"
+    }
+	spriteType = {
+	   name = "GFX_portrait_PAR_solano"
+	   texturefile = "gfx/leaders/PAR/portrait_PAR_solano.dds"
+    }
+	   
+	 #ARG
+	 spriteType = {
+	   name = "GFX_portrait_ARG_bartoleme_mitre"
+	   texturefile = "gfx/leaders/ARG/portrait_ARG_bartolome_mitre.dds"
+    }
+    
 }

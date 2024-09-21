@@ -1,0 +1,1946 @@
+﻿focus_tree = {
+	id = british_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 6000 y = 1200}
+
+
+	focus = {
+		id = ENG_continue_colonization_around_the_world
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+		x = 55
+		y = 0
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ENG_indian_focus
+		icon = GFX_focus_ENG_india
+		x = -4
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_continue_colonization_around_the_world }
+		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = 10
+					localization = "Indian Focus"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_reinforce_land_revenue_system
+		icon = GFX_unknown
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_trade }
+		relative_position_id = ENG_indian_trade
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_ideas = fpw_eng_land_revenue_system
+			}
+			add_ideas = fpw_eng_land_revenue_system_benefit
+		}
+	}
+	focus = {
+		id = ENG_build_infastructure_in_india
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 2
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_reinforce_land_revenue_system }
+		relative_position_id = ENG_indian_trade
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				swap_ideas = {
+					remove_idea = fpw_eng_resource_exploitation
+					add_idea = fpw_eng_resource_exploitation_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_indian_trade
+		icon = GFX_focus_generic_british_trade
+		x = -1
+		y = 1
+		cost = 2
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_focus }
+		relative_position_id = ENG_indian_focus
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_ideas = fpw_eng_resource_exploitation
+			}
+		}
+	}
+	focus = {
+		id = ENG_supression_of_indian_freedom
+		icon = GFX_focus_supress_india
+		x = 1
+		y = 1
+		cost = 2
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_focus }
+		relative_position_id = ENG_indian_focus
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = -20
+					localization = "Supression of Freedom"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_increase_indian_garrisons
+		icon = GFX_unknown
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_supression_of_indian_freedom }
+		relative_position_id = ENG_supression_of_indian_freedom
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = -20
+					localization = "British Garrisons"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_indian_council_act
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_increase_indian_garrisons }
+		relative_position_id = ENG_increase_indian_garrisons
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = -20
+					localization = "Indian Council Act"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_indian_industrialization
+		icon = GFX_focus_generic_modernize_industry
+		x = 0
+		y = 4
+		cost = 2
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_council_act }
+		prerequisite = { focus = ENG_build_infastructure_in_india }
+		relative_position_id = ENG_indian_focus
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_african_focus
+		icon = GFX_focus_ENG_africa
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_continue_colonization_around_the_world }
+		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+			any_state = {
+				is_on_continent = africa
+				OR = {
+					is_owned_by = ENG
+					owner = {
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			SAF = {
+				add_autonomy_score = {
+					value = 10
+					localization = "African Focus"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_nigerian_oil
+		icon = GFX_focus_generic_resource_extraction
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_african_focus }
+		relative_position_id = ENG_african_focus
+
+		available = {
+			controls_state = 961
+		}
+		
+		completion_reward = {
+			961 = {
+				add_resource = {
+					type = Oil
+					amount = 18
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_grain_production_in_the_cape_colony
+		icon = GFX_focus_generic_farmland
+		x = 0
+		y = 2
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_nigerian_oil }
+		relative_position_id = ENG_african_focus
+
+		available = {
+			controls_state = 961
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_grain_from_cape
+			SAF = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_increased_wine_production
+		icon = GFX_focus_ENG_increased_wine_production_in_cape_colony
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_grain_production_in_the_cape_colony }
+		relative_position_id = ENG_grain_production_in_the_cape_colony
+
+		available = {
+			country_exists = SAF
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = SAF
+			}
+		}
+		
+		completion_reward = {
+			SAF = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_africa_doing_well
+		icon = GFX_focus_generic_africa_factory
+		x = 0
+		y = 2
+		cost = 2
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_increased_wine_production }
+		relative_position_id = ENG_grain_production_in_the_cape_colony
+
+		available = {
+			country_exists = SAF
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = SAF
+			}
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			SAF = {
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = ENG_oceania_focus
+		icon = GFX_focus_ENG_oceania
+		x = 4
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_continue_colonization_around_the_world }
+		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+			OR = {
+				1320 = { is_owned_by = ENG }
+				1320 = {
+					owner = {
+						is_subject_of = ENG
+					}
+				}
+			}
+			AST = {
+				all_core_states = {
+					is_owned_by = ENG
+				}
+			}
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = INS
+						tag = PHI
+						tag = SIA
+					}
+				}
+				country_event = news_fpw.5
+			}
+		}
+	}
+	focus = {
+		id = ENG_australia
+		icon = GFX_focus_ENG_australia
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_oceania_focus }
+		relative_position_id = ENG_oceania_focus
+
+		available = {
+			AST = {
+				all_core_states = {
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = AST
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = AST
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_economic_growth_in_southeast_australia
+		icon = GFX_unknown
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_displace_australian_natives }
+		relative_position_id = ENG_displace_australian_natives
+
+		available = {
+			AST = {
+				all_core_states = {
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = AST
+		}
+		
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_displace_australian_natives
+		icon = GFX_unknown
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_australia }
+		relative_position_id = ENG_australia
+
+		available = {
+			AST = {
+				all_core_states = {
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = AST
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = AST
+					industrial_complex > 2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = -2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = AST
+					industrial_complex > 2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = -2
+					instant_build = yes
+				}
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = ENG_malaysia
+		icon = GFX_focus_ENG_malaysia
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_oceania_focus }
+		relative_position_id = ENG_oceania_focus
+
+		available = {
+			MAL = {
+				all_core_states = {
+					limit = {
+						OR = {
+							state = 1320
+							state = 1312
+							state = 1310
+						}
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = MAL
+		}
+		
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = MAL
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_grant_straits_settlements_a_colonial_constitution
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_malaysia }
+		relative_position_id = ENG_malaysia
+
+		available = {
+			MAL = {
+				all_core_states = {
+					limit = {
+						OR = {
+							state = 1320
+							state = 1312
+							state = 1310
+						}
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = MAL
+		}
+		
+		historical_ai = 4.2.1867
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_crown_colony_of_the_straits_settlements
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_grant_straits_settlements_a_colonial_constitution }
+		relative_position_id = ENG_grant_straits_settlements_a_colonial_constitution
+
+		available = {
+			MAL = {
+				all_core_states = {
+					limit = {
+						OR = {
+							state = 1320
+							state = 1312
+							state = 1310
+						}
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = MAL
+		}
+		
+		historical_ai = 1.4.1867
+		
+		completion_reward = {
+			MAL = {
+				every_state = {
+					limit = {
+						is_core_of = MAL
+						OR = {
+							is_owned_by = ENG
+							owner = { is_subject_of = ENG }
+						}
+					}
+					transfer_state_to = MAL
+				}
+			}
+			puppet = MAL
+		}
+	}
+	focus = {
+		id = ENG_progress_in_oceania
+		icon = GFX_unknown
+		x = 0
+		y = 4
+		cost = 2
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_economic_growth_in_southeast_australia }
+		prerequisite = { focus = ENG_crown_colony_of_the_straits_settlements }
+		relative_position_id = ENG_oceania_focus
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_the_empire_is_booming
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 0
+		y = 1
+		cost = 2
+
+		search_filters = {  FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_africa_doing_well }
+		prerequisite = { focus = ENG_progress_in_oceania }
+		prerequisite = { focus = ENG_indian_industrialization }
+		relative_position_id = ENG_africa_doing_well
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+				}
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+	}
+	##################
+	##Diplomacy Tree##
+	##################
+	focus = {
+		id = ENG_found_raes
+		icon = GFX_focus_ENG_royal_aeronautical_society
+		x = 12
+		y = 0
+		cost = 2
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_royal_aeronautical_society
+		}
+	}
+	focus = {
+		id = ENG_parliamentary_reform_proposal
+		icon = GFX_focus_generic_hold_election
+		x = 12
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_found_raes }
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			country_event = britain_fpw.1
+			custom_effect_tooltip = prp_tt
+		}
+	}
+	focus = {
+		id = ENG_russel_stays
+		icon = GFX_unknown
+		x = 8
+		y = 2
+		cost = 3
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		mutually_exclusive = { focus = ENG_russel_resigns }
+		
+		prerequisite = { focus = ENG_parliamentary_reform_proposal }
+
+		available = {
+			always = false
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_russel_resigns
+		icon = GFX_unknown
+		x = 16
+		y = 2
+		cost = 3
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		mutually_exclusive = { focus = ENG_russel_stays }
+		
+		prerequisite = { focus = ENG_parliamentary_reform_proposal }
+
+		available = {
+			always = false
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_british_patriotism
+		icon = GFX_focus_ENG_british_patriotism
+		x = 0
+		y = 2
+		cost = 3
+
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_russel_resigns }
+		relative_position_id = ENG_russel_resigns
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_ideas = fpw_eng_imperial_pride
+		}
+	}
+	focus = {
+		id = ENG_limited_reform
+		icon = GFX_focus_generic_offer_token_connciusen
+		x = 0
+		y = 1
+		cost = 1
+
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_british_patriotism }
+		relative_position_id = ENG_british_patriotism
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = unlock_other_focuses_tt
+		}
+	}
+	focus = {
+		id = ENG_second_reform_act
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		cost = 4
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_limited_reform }
+		relative_position_id = ENG_limited_reform
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_industrial_and_economic_development
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -2
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_limited_reform }
+		relative_position_id = ENG_limited_reform
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.025
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = no
+					}
+					is_core_of = ENG
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_apeal_to_workers
+		icon = GFX_focus_generic_workers
+		x = 2
+		y = 1
+		cost = 6
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_limited_reform }
+		relative_position_id = ENG_limited_reform
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.06
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ENG_disraeli_leads
+		icon = GFX_unknown
+		x = 0
+		y = 3
+		cost = 6
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_limited_reform }
+		relative_position_id = ENG_limited_reform
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_stop_public_excecutions
+		icon = GFX_unknown
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_disraeli_leads }
+		relative_position_id = ENG_disraeli_leads
+
+		available = {
+			#disraeli is the leader
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = ENG_parliamentary_elections_act
+		icon = GFX_focus_generic_treaty
+		x = -1
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_disraeli_leads }
+		relative_position_id = ENG_disraeli_leads
+
+		available = {
+			#disraeli is the leader
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_scottish_health_act
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_disraeli_leads }
+		relative_position_id = ENG_disraeli_leads
+
+		available = {
+			#disraeli is the leader
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_1870_elections
+		icon = GFX_focus_generic_hold_election
+		x = -4
+		y = 5
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = ENG_disraeli_leads
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	##################
+	## Economy Tree ##
+	##################
+	focus = {
+		id = ENG_british_economy
+		icon = GFX_unknown
+		x = 34
+		y = 0
+		cost = 1
+		
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			country_event = news_fpw.6
+		}
+	}
+	focus = {
+		id = ENG_collapse_of_gurney_and_co
+		icon = GFX_unknown
+		x = 0
+		y = 1
+		cost = 3
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_british_economy}
+		relative_position_id = ENG_british_economy
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_earl_of_derby
+		icon = GFX_unknown
+		x = 4
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_collapse_of_gurney_and_co }
+		relative_position_id = ENG_collapse_of_gurney_and_co
+
+		available = {
+			has_completed_focus = ENG_russel_resigns
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = unlock_other_focuses_tt
+		}
+	}
+	focus = {
+		id = ENG_restore_confidence_in_the_economy
+		icon = GFX_unknown
+		x = 4
+		y = 4
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_limit_public_spending }
+		relative_position_id = ENG_collapse_of_gurney_and_co
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_2
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_4
+					remove_idea = fpw_eng_economic_downfall_2
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_3
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_2
+					remove_idea = fpw_eng_economic_downfall_3
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_4
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_5
+					remove_idea = fpw_eng_economic_downfall_4
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_limit_public_spending
+		icon = GFX_unknown
+		x = 4
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_earl_of_derby }
+		relative_position_id = ENG_collapse_of_gurney_and_co
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			swap_ideas = {
+				add_idea = fpw_eng_economic_downfall_3
+				remove_idea = fpw_eng_economic_downfall
+			}
+		}
+	}
+	focus = {
+		id = ENG_encourage_small_businesses
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_limit_public_spending }
+		relative_position_id = ENG_limit_public_spending
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_2
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_4
+					remove_idea = fpw_eng_economic_downfall_2
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_3
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_2
+					remove_idea = fpw_eng_economic_downfall_3
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_4
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_5
+					remove_idea = fpw_eng_economic_downfall_4
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_suspend_bank_charter_act
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 2
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_limit_public_spending }
+		relative_position_id = ENG_limit_public_spending
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_2
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_4
+					remove_idea = fpw_eng_economic_downfall_2
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_3
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_2
+					remove_idea = fpw_eng_economic_downfall_3
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = fpw_eng_economic_downfall_4
+				}
+				swap_ideas = {
+					add_idea = fpw_eng_economic_downfall_5
+					remove_idea = fpw_eng_economic_downfall_4
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_trust_restored
+		icon = GFX_unknown
+		x = 0
+		y = 2
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_restore_confidence_in_the_economy }
+		prerequisite = { focus = ENG_suspend_bank_charter_act }
+		prerequisite = { focus = ENG_encourage_small_businesses }
+		relative_position_id = ENG_limit_public_spending
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = fpw_eng_economic_downfall_6
+				remove_idea = fpw_eng_economic_downfall_5
+			}
+		}
+	}
+	focus = {
+		id = ENG_full_recovery
+		icon = GFX_unknown
+		x = 0
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_trust_restored }
+		relative_position_id = ENG_limit_public_spending
+
+		available = {
+			date > 1887.1.1
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = fpw_eng_debts
+				remove_idea = fpw_eng_economic_downfall_6
+			}
+		}
+	}
+	focus = {
+		id = ENG_free_trade
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 3
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_earl_of_derby focus = ENG_earl_russel }
+		relative_position_id = ENG_collapse_of_gurney_and_co
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = free_trade
+		}
+	}
+	focus = {
+		id = ENG_earl_russel
+		icon = GFX_unknown
+		x =-4
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_collapse_of_gurney_and_co }
+		relative_position_id = ENG_collapse_of_gurney_and_co
+		mutually_exclusive = { focus = ENG_earl_of_derby }
+
+		available = {
+			has_completed_focus = ENG_russel_stays
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = unlock_other_focuses_tt
+		}
+	}
+	#################
+	## At War Tree ##
+	#################
+	focus = {
+		id = ENG_the_motherland_in_danger
+		icon = GFX_focus_ENG_motherland_in_danger
+		x = 34
+		y = 11
+		cost = 4
+		
+		available_if_capitulated = yes
+		
+		#prerequisite = { focus =  }
+		#relative_position_id = 
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war_with_major = yes
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_wartime_conscription
+		icon = GFX_focus_generic_manpower
+		x = 0
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_the_motherland_in_danger }
+		relative_position_id = ENG_the_motherland_in_danger
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war_with_major = yes
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			IF = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+				add_ideas = limited_conscription
+			}
+			IF = {
+				limit = {
+					has_idea = volunteer_only
+				}
+				add_ideas = limited_conscription
+			}
+			IF = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				add_ideas = extensive_conscription
+			}
+			IF = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = disarmed_nation
+							has_idea = volunteer_only
+							has_idea = limited_conscription
+						}
+					}
+				}
+				add_political_power = 150
+			}
+		}
+	}
+	focus = {
+		id = ENG_war_propaganda
+		icon = GFX_goal_generic_propaganda
+		x = -2
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_the_motherland_in_danger }
+		relative_position_id = ENG_the_motherland_in_danger
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war_with_major = yes
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ENG_food_rationing
+		icon = GFX_goal_generic_neutrality_focus
+		x = 2
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_the_motherland_in_danger }
+		relative_position_id = ENG_the_motherland_in_danger
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war_with_major = yes
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_food_rationing
+		}
+	}
+	focus = {
+		id = ENG_develop_new_guns
+		icon = GFX_goal_generic_small_arms
+		x =0
+		y = 2
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_wartime_conscription }
+		prerequisite = { focus = ENG_food_rationing }
+		prerequisite = { focus = ENG_war_propaganda }
+		relative_position_id = ENG_the_motherland_in_danger
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war_with_major = yes
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = ENG_activate_emergency_reserves
+		icon = GFX_focus_generic_military_academy
+		x = -4
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_the_motherland_in_danger }
+		relative_position_id = ENG_the_motherland_in_danger
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war = yes
+			any_core_state = {
+				controller = {
+					has_war_with = ENG
+				}
+			}
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					controller = {
+						has_war_with = ENG
+					}
+				}
+				random_neighbor_state = {
+					limit = {
+						is_controlled_by = ENG
+					}
+					create_unit = {
+						division = "name = \"Reserve Division\" division_template = \"Militia-Division\" start_experience_factor = 0.1 start_equipment_factor = 0.4"
+						owner = ENG
+						count = 2
+					}
+				}
+				random_neighbor_state = {
+					limit = {
+						is_controlled_by = ENG
+					}
+					create_unit = {
+						division = "name = \"Reserve Division\" division_template = \"Militia-Division\" start_experience_factor = 0.1 start_equipment_factor = 0.4"
+						owner = ENG
+						count = 2
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_encourage_the_people_to_rise_up
+		icon = GFX_focus_ENG_encourage_the_people_to_rise_up
+		x = 4
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_the_motherland_in_danger }
+		relative_position_id = ENG_the_motherland_in_danger
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war = yes
+			any_core_state = {
+				controller = {
+					has_war_with = ENG
+				}
+			}
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					controller = {
+						has_war_with = ENG
+					}
+				}
+				add_resistance = 40
+				add_resistance_target = 82
+			}
+		}
+	}
+	focus = {
+		id = ENG_fortify_the_cornwall_coast
+		icon = GFX_focus_generic_coastal_fort
+		x = 0
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_develop_new_guns }
+		relative_position_id = ENG_the_motherland_in_danger
+		#mutually_exclusive = { focus =  }
+
+		available = {
+			has_war_with_major = yes
+			controls_state = 123
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 3422
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 3463
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 3
+				instant_build = yes
+				province = 540
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 6526
+			}
+		}
+	}
+}

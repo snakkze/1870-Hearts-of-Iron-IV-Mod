@@ -1,0 +1,19 @@
+characters={
+
+	BRA_dom_pedro_ii={
+		name="Dom Pedro II"
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_dom_pedro_ii
+			}
+		}
+		country_leader={
+			ideology=conservative_constitutional_monarchism
+			traits = {
+			    fpw_bra_wise_emperor
+			}
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

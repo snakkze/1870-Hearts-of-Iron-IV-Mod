@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=5
+}
+
 	id=228
 	name="STATE_228" # Voroshilovgrad
 	manpower = 1127054
@@ -24,3 +28,4 @@ state={
 
 	local_supplies=0.0 
 }
+

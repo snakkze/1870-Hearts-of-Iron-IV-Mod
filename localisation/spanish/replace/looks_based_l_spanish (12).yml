@@ -1,0 +1,1585 @@
+﻿l_spanish:
+ cc_leader: "General" #NT!
+ fm_leader: "Mariscal de campo" #NT!
+ navy_leader: "Almirante" #NT!
+ operative_skill_1: "Recluta" #NT!
+ operative_skill_2: "Agente" #NT!
+ communist_revolutionary: "Socialista revolucionario" #NT!
+ communist_revolutionary_desc: "§LUn partidario de la revolución internacional con la esperanza de ayudar a la transición del país, y eventualmente del mundo, a una sociedad socialista.§!" #NT!
+ democratic_reformer: "Reformador conservador" #NT!
+ democratic_reformer_desc: "§LUn firme creyente en el derecho del pueblo a gobernarse a sí mismo, este político considera que empoderarlos es la primera prioridad y aspira a que el país sea gobernado con su mandato.§!" #NT!
+ fascist_demagogue: "Reformador liberal" #NT!
+ fascist_demagogue_desc: "§LUn firme creyente en el derecho del pueblo a gobernarse a sí mismo, este político considera que empoderarlos es la primera prioridad y aspira a que el país sea gobernado con su mandato.§!" #NT!
+ staunch_monarchist: "Autoritario acérrimo" #NT!
+ staunch_monarchist_desc: "§LImpulsado por la voluntad de unir al pueblo bajo un estado fuerte, este político o monarca enfatiza la retórica nacionalista, monárquica o militarista.§!" #NT!
+ ideological_crusader: "Cruzado ideológico" #NT!
+ shadow_of_calles: "La sombra de Calles" #NT!
+ social_reformer: "Reformador social" #NT!
+ red_army_organizer: "Organizador del Ejército Rojo" #NT!
+ ambitious_union_boss: "Ambicioso jefe sindical" #NT!
+ syncretic_revanchist: "Revanchista sincrético" #NT!
+ popular_figurehead: "Figura decorativa popular" #NT!
+ silent_workhorse: "Caballo de batalla silencioso" #NT!
+ compassionate_gentleman: "Caballero compasivo" #NT!
+ economist: "Economista" #NT!
+ editor: "Editor" #NT!
+ reluctant_interventionist: "Intervencionista renuente" #NT!
+ tenacious_negotiator: "Negociador tenaz" #NT!
+ retired_officer: "Oficial retirado" #NT!
+ eager_collaborator: "Colaborador entusiasta" #NT!
+ duke_of_orleans: "Duque de Orleans" #NT!
+ count_of_paris: "Conde de París" #NT!
+ reluctant_veteran: "Veterano renuente" #NT!
+ proletariat_internationalist: "Proletariado Internacionalista" #NT!
+ hawk: "Halcón" #NT!
+ emergency_powers: "Poderes de emergencia" #NT!
+ technocrat: "Tecnócrata" #NT!
+ national_integralist: "Integralista nacional" #NT!
+ american_caesar: "César americano" #NT!
+ great_architect: "Gran arquitecto" #NT!
+ constitutional_monarch: "Monarca constitucional" #NT!
+ constitutional_monarch_minor: "Monarca constitucional" #NT!
+ prince_of_terror: "Príncipe del terror" #NT!
+ backroom_backstabber: "Traidor de trastienda" #NT!
+ smooth_talking_charmer: "Encantador de habla suave" #NT!
+ fortification_engineer: "Ingeniero de fortificación" #NT!
+ war_industrialist: "Industrial de guerra" #NT!
+ captain_of_industry: "Magnate" #NT!
+ famous_aviator: "Aviador famoso" #NT!
+ financial_expert: "Experto financiero" #NT!
+ armaments_organizer: "Organizador de armamentos" #NT!
+ quartermaster_general: "Intendente general" #NT!
+ rocket_scientist: "Científico de cohetes" #NT!
+ nuclear_scientist: "Científico nuclear" #NT!
+ propaganda_bungler: "El chapucero de la propaganda" #NT!
+ silent_mule: "Mula silenciosa" #NT!
+ baron_of_terror: "Barón del terror" #NT!
+ compassionate_commoner: "Plebeyo compasivo" #NT!
+ backroom_windbag: "Charlatán de trastienda" #NT!
+ smooth_talking_con_man: "Estafador que habla suavemente" #NT!
+ ideological_groupie: "Groupie ideológica" #NT!
+ fortification_armchair_general: "Sillón Fortificación General" #NT!
+ war_profiteer: "Especulador de la guerra" #NT!
+ lieutenant_of_industry: "Teniente de Industria" #NT!
+ finance_graduate: "Licenciado en Finanzas" #NT!
+ armaments_aficionado: "Aficionado a los armamentos" #NT!
+ quartermaster_trainee: "Aprendiz de intendencia" #NT!
+ little_rocket_man: "Pequeño hombre cohete" #NT!
+ nuclear_enthusiast: "Entusiasta nuclear" #NT!
+ blitzkrieg_theorist: "Teórico del Blitzkrieg" #NT!
+ council_of_theorists: "Consejo de Teóricos" #NT!
+ military_theorist: "Teórico militar" #NT!
+ air_warfare_theorist: "Teórico de la guerra aérea" #NT!
+ dive_bomber: "Bombardero en picado" #NT!
+ victory_through_airpower: "La victoria a través del poder aéreo" #NT!
+ close_air_support_proponent: "Proponente de apoyo aéreo cercano" #NT!
+ assault_avaition: "Aviación de asalto" #NT!
+ naval_theorist: "Teórico naval" #NT!
+ naval_aviation_pioneer: "Pionero de la aviación naval" #NT!
+ grand_fleet_proponent: "Proponente de la Gran Flota" #NT!
+ submarine_specialist: "Especialista en submarinos" #NT!
+ tank_manufacturer: "Diseñador de tanques" #NT!
+ artillery_manufacturer: "Diseñador de artillería" #NT!
+ infantry_equipment_manufacturer: "Diseñador de equipamiento de infantería" #NT!
+ support_equipment_manufacturer: "Diseñador de equipos de soporte" #NT!
+ motorized_equipment_manufacturer: "Diseñador de equipos motorizados" #NT!
+ naval_manufacturer: "Diseñador de barcos" #NT!
+ industrial_concern: "Preocupación industrial" #NT!
+ railway_company: "Compañía ferroviaria" #NT!
+ construction_company: "Empresa constructora" #NT!
+ electronics_concern: "Preocupación por la electrónica" #NT!
+ electronics_developer: "Desarrollador de electrónica" #NT!
+ army_chief_defensive_1: "Defensa del Ejército (Especialista)" #NT!
+ army_chief_defensive_2: "Defensa del Ejército (Experto)" #NT!
+ army_chief_defensive_3: "Defensa del ejército (genio)" #NT!
+ army_chief_offensive_1: "Ofensiva del ejército (especialista)" #NT!
+ army_chief_offensive_2: "Ofensiva del ejército (experto)" #NT!
+ army_chief_offensive_3: "Ofensiva del ejército\n(Genio)" #NT!
+ army_chief_planning_1: "Planificación del ejército (especialista)" #NT!
+ army_chief_planning_2: "Planificación del ejército (experto)" #NT!
+ army_chief_planning_3: "Planificación del ejército (genialidad)" #NT!
+ army_chief_drill_1: "Ejercicio militar\n(especialista)" #NT!
+ army_chief_drill_2: "Ejercicio militar (experto)" #NT!
+ army_chief_drill_3: "Ejercicio militar\n(Genio)" #NT!
+ army_chief_reform_1: "Reformador del ejército (especialista)" #NT!
+ army_chief_reform_2: "Reformador del ejército (experto)" #NT!
+ army_chief_reform_3: "Reformador del ejército (genio)" #NT!
+ army_chief_organizational_1: "Organización del ejército (especialista)" #NT!
+ army_chief_organizational_2: "Organización del ejército (experto)" #NT!
+ army_chief_organizational_3: "Organización del ejército (genio)" #NT!
+ army_chief_morale_1: "Moral del ejército (especialista)" #NT!
+ army_chief_morale_2: "Moral del ejército (experto)" #NT!
+ army_chief_morale_3: "Moral del ejército (genio)" #NT!
+ army_chief_maneuver_1: "Maniobra del ejército\n(Especialista)" #NT!
+ army_chief_maneuver_2: "Maniobra del ejército\n(Experto)" #NT!
+ army_chief_maneuver_3: "Maniobra del ejército (genialidad)" #NT!
+ army_chief_old_guard: "Vieja Guardia" #NT!
+ army_entrenchment_1: "Atrincheramiento\n(Especialista)" #NT!
+ army_entrenchment_2: "Atrincheramiento\n(Experto)" #NT!
+ army_entrenchment_3: "Atrincheramiento\n(Genio)" #NT!
+ army_armored_1: "Armadura\n(Especialista)" #NT!
+ army_armored_2: "Armadura\n(Experto)" #NT!
+ army_armored_3: "Armadura\n(Genio)" #NT!
+ army_artillery_1: "Artillería (especialista)" #NT!
+ army_artillery_2: "Artillería\n(Experto)" #NT!
+ army_artillery_3: "Artillería\n(Genio)" #NT!
+ army_infantry_1: "Infantería\n(Especialista)" #NT!
+ army_infantry_2: "Infantería\n(Experto)" #NT!
+ army_infantry_3: "Infantería\n(Genio)" #NT!
+ army_commando_1: "Comando\n(Especialista)" #NT!
+ army_commando_2: "Comando\n(Experto)" #NT!
+ army_commando_3: "Comando\n(Genio)" #NT!
+ army_cavalry_1: "Caballería\n(Especialista)" #NT!
+ army_cavalry_2: "Caballería\n(Experto)" #NT!
+ army_cavalry_3: "Caballería\n(Genio)" #NT!
+ army_CombinedArms_1: "Armas combinadas (especialista)" #NT!
+ army_CombinedArms_2: "Armas combinadas (experto)" #NT!
+ army_CombinedArms_3: "Armas combinadas (genialidad)" #NT!
+ army_regrouping_1: "Reagrupamiento del ejército (especialista)" #NT!
+ army_regrouping_2: "Reagrupamiento del ejército (experto)" #NT!
+ army_regrouping_3: "Reagrupamiento del ejército (genialidad)" #NT!
+ army_concealment_1: "Ocultación\n(Especialista)" #NT!
+ army_concealment_2: "Ocultación\n(Experto)" #NT!
+ army_concealment_3: "Ocultación\n(Genio)" #NT!
+ army_logistics_1: "Logística del ejército (especialista)" #NT!
+ army_logistics_2: "Logística del ejército (experto)" #NT!
+ army_logistics_3: "Logística del ejército (Genial)" #NT!
+ air_chief_reform_1: "Reformador de aire (especialista)" #NT!
+ air_chief_reform_2: "Reformador de aire (experto)" #NT!
+ air_chief_reform_3: "Reformador del aire\n(Genio)" #NT!
+ air_chief_safety_1: "Seguridad aérea (especialista)" #NT!
+ air_chief_safety_2: "Seguridad aérea (Experto)" #NT!
+ air_chief_safety_3: "Seguridad aérea\n(Genio)" #NT!
+ air_chief_night_operations_1: "Operaciones nocturnas\n(Especialista)" #NT!
+ air_chief_night_operations_2: "Operaciones nocturnas\n(Experto)" #NT!
+ air_chief_night_operations_3: "Operaciones nocturnas (Genial)" #NT!
+ air_chief_ground_support_1: "Apoyo terrestre (especialista)" #NT!
+ air_chief_ground_support_2: "Apoyo terrestre (experto)" #NT!
+ air_chief_ground_support_3: "Apoyo terrestre (Genio)" #NT!
+ air_chief_all_weather_1: "Para todo clima (especialista)" #NT!
+ air_chief_all_weather_2: "Para todo clima (experto)" #NT!
+ air_chief_all_weather_3: "Para todo clima (genial)" #NT!
+ air_chief_old_guard: "Vieja Guardia" #NT!
+ air_air_combat_training_1: "Entrenamiento de combate aéreo (especialista)" #NT!
+ air_air_combat_training_2: "Entrenamiento de combate aéreo (experto)" #NT!
+ air_air_combat_training_3: "Entrenamiento de combate aéreo (Genius)" #NT!
+ air_naval_strike_1: "Ataque naval\n(Especialista)" #NT!
+ air_naval_strike_2: "Ataque naval (experto)" #NT!
+ air_naval_strike_3: "Ataque naval (genial)" #NT!
+ air_bomber_interception_1: "Intercepción de bombarderos (especialista)" #NT!
+ air_bomber_interception_2: "Intercepción de bombarderos (experto)" #NT!
+ air_bomber_interception_3: "Intercepción de bombarderos (genial)" #NT!
+ air_air_superiority_1: "Superioridad aérea (especialista)" #NT!
+ air_air_superiority_2: "Superioridad aérea (Experto)" #NT!
+ air_air_superiority_3: "Superioridad aérea (genialidad)" #NT!
+ air_close_air_support_1: "Apoyo aéreo cercano (especialista)" #NT!
+ air_close_air_support_2: "Apoyo aéreo cercano\n(Experto)" #NT!
+ air_close_air_support_3: "Apoyo aéreo cercano (genial)" #NT!
+ air_strategic_bombing_1: "Bombardeo estratégico (especialista)" #NT!
+ air_strategic_bombing_2: "Bombardeo estratégico (experto)" #NT!
+ air_strategic_bombing_3: "Bombardeo estratégico (genial)" #NT!
+ air_tactical_bombing_1: "Bombardeo táctico (especialista)" #NT!
+ air_tactical_bombing_2: "Bombardeo táctico (experto)" #NT!
+ air_tactical_bombing_3: "Bombardeo táctico (genial)" #NT!
+ air_airborne_1: "Asalto aéreo (especialista)" #NT!
+ air_airborne_2: "Asalto aéreo (experto)" #NT!
+ air_airborne_3: "Asalto aéreo (genial)" #NT!
+ navy_chief_naval_aviation_1: "Aviación Naval (Especialista)" #NT!
+ navy_chief_naval_aviation_2: "Aviación Naval (Experto)" #NT!
+ navy_chief_naval_aviation_3: "Aviación naval (genio)" #NT!
+ navy_chief_decisive_battle_1: "Batalla decisiva (especialista)" #NT!
+ navy_chief_decisive_battle_2: "Batalla decisiva (Experto)" #NT!
+ navy_chief_decisive_battle_3: "Batalla decisiva\n(Genio)" #NT!
+ navy_chief_commerce_raiding_1: "Incursión comercial (especialista)" #NT!
+ navy_chief_commerce_raiding_2: "Incursión comercial (experto)" #NT!
+ navy_chief_commerce_raiding_3: "Incursión comercial (genio)" #NT!
+ navy_chief_reform_1: "Reformador naval (especialista)" #NT!
+ navy_chief_reform_2: "Reformador naval (experto)" #NT!
+ navy_chief_reform_3: "Reformador naval\n(Genio)" #NT!
+ navy_chief_maneuver_1: "Maniobra naval (especialista)" #NT!
+ navy_chief_maneuver_2: "Maniobra naval (Experto)" #NT!
+ navy_chief_maneuver_3: "Maniobra naval (genialidad)" #NT!
+ navy_chief_old_guard: "Vieja Guardia" #NT!
+ navy_anti_submarine_1: "Antisubmarino (especialista)" #NT!
+ navy_anti_submarine_2: "Antisubmarino (Experto)" #NT!
+ navy_anti_submarine_3: "Antisubmarino\n(Genio)" #NT!
+ navy_naval_air_defense_1: "Defensa Aérea Naval (Especialista)" #NT!
+ navy_naval_air_defense_2: "Defensa Aérea Naval (Experto)" #NT!
+ navy_naval_air_defense_3: "Defensa aérea naval\n(Genio)" #NT!
+ navy_fleet_logistics_1: "Logística de flotas (especialista)" #NT!
+ navy_fleet_logistics_2: "Logística de flotas (Experto)" #NT!
+ navy_fleet_logistics_3: "Logística de flotas (Genius)" #NT!
+ navy_amphibious_assault_1: "Asalto anfibio (especialista)" #NT!
+ navy_amphibious_assault_2: "Asalto anfibio (experto)" #NT!
+ navy_amphibious_assault_3: "Asalto anfibio (genial)" #NT!
+ navy_submarine_1: "Submarinos\n(Especialista)" #NT!
+ navy_submarine_2: "Submarinos\n(Experto)" #NT!
+ navy_submarine_3: "Submarinos\n(Genio)" #NT!
+ navy_destroyer_1: "Destructores\n(Especialista)" #NT!
+ navy_destroyer_2: "Destructores\n(Experto)" #NT!
+ navy_destroyer_3: "Destructores\n(Genio)" #NT!
+ navy_cruiser_1: "Cruceros\n(Especialista)" #NT!
+ navy_cruiser_2: "Cruceros\n(Experto)" #NT!
+ navy_cruiser_3: "Cruceros\n(Genio)" #NT!
+ navy_battleship_1: "Acorazados\n(Especialista)" #NT!
+ navy_battleship_2: "Acorazados\n(Experto)" #NT!
+ navy_battleship_3: "Acorazados\n(Genio)" #NT!
+ navy_capital_ship_1: "Naves capitales\n(Especialista)" #NT!
+ navy_capital_ship_2: "Buques capitales (experto)" #NT!
+ navy_capital_ship_3: "Buques capitales (genial)" #NT!
+ navy_screen_1: "Pantallas\n(Especialista)" #NT!
+ navy_screen_2: "Pantallas\n(Experto)" #NT!
+ navy_screen_3: "Pantallas\n(Genius)" #NT!
+ navy_carrier_1: "Transportistas\n(Especialista)" #NT!
+ navy_carrier_2: "Transportistas\n(Experto)" #NT!
+ navy_carrier_3: "Portadores\n(Genio)" #NT!
+ seawolf: "Lobo marino" #NT!
+ seawolf_desc: "§LEl lobo marino es particularmente hábil en los asaltos a convoyes§!" #NT!
+ superior_tactician: "Táctico superior" #NT!
+ superior_tactician_desc: "§LUn maestro del posicionamiento de flotas.§!" #NT!
+ old_guard: "Vieja Guardia" #NT!
+ old_guard_desc: "§LAunque no es el oficial más brillante, es poco probable que cause problemas.§!" #NT!
+ old_guard_navy: "Vieja Guardia" #NT!
+ old_guard_navy_desc: "§LAunque no es el oficial más brillante, es poco probable que cause problemas.§!" #NT!
+ trickster: "Embaucador" #NT!
+ trickster_desc: "§LHacer lo inesperado en combate puede darte una gran ventaja.§!" #NT!
+ logistics_wizard: "Asistente de logística" #NT!
+ logistics_wizard_desc: "§LLos suministros nunca llegan tarde ni antes de lo previsto. Llegan exactamente cuando quiero.§!" #NT!
+ defensive_doctrine: "Doctrina defensiva" #NT!
+ defensive_doctrine_desc: "§LEspecialmente hábil en el combate a la defensiva.§!" #NT!
+ offensive_doctrine: "Doctrina ofensiva" #NT!
+ offensive_doctrine_desc: "§LMás ofensivo que la mayoría.§!" #NT!
+ winter_specialist: "Especialista de invierno" #NT!
+ winter_specialist_desc: "§LPosee una comprensión intuitiva de las dificultades de luchar en condiciones de frío.§!" #NT!
+ trait_engineer: "Ingeniero" #NT!
+ trait_engineer_desc: "§LExperto en las artes de cruzar ríos y construir fortificaciones de campaña.§!" #NT!
+ fortress_buster: "Destructor de fortalezas" #NT!
+ fortress_buster_desc: "§LAsaltar un fuerte no supone ningún terror para este oficial.§!" #NT!
+ panzer_leader: "Líder Panzer" #NT!
+ panzer_leader_desc: "§LUn natural con tanques y fuerzas mecanizadas.§!" #NT!
+ commando: "Comando" #NT!
+ commando_desc: "§LExperto en operaciones anfibias, asaltos aéreos y condiciones climáticas frías, el comando es un hombre con muchos talentos.§!" #NT!
+ fast_planner: "Planificador rápido" #NT!
+ fast_planner_desc: "§LConoce todos los atajos al prepararse para la batalla: ¡la eficiencia es clave!§!" #NT!
+ thorough_planner: "Planificador minucioso" #NT!
+ thorough_planner_desc: "§LUn genio estratégico. Con el tiempo, el plan bien diseñado será el más sólido.§!" #NT!
+ organisational_leader: "La organización primero" #NT!
+ organisational_leader_desc: "§LConoce todos los trucos para conseguir refuerzos más rápido que nadie.§!" #NT!
+ inspirational_leader: "Carismático" #NT!
+ inspirational_leader_desc: "§LUn líder natural. Los hombres se enfrentarán a sus peores miedos cuando estén respaldados por un líder poderoso.§!" #NT!
+ desert_fox: "zorro del desierto" #NT!
+ desert_fox_desc: "§LMe siento completamente a gusto cuando lucho en el desierto.§!" #NT!
+ swamp_fox: "Zorro de pantano" #NT!
+ swamp_fox_desc: "§LAunque está algo empapado, el Zorro del Pantano conoce bien los pantanos y marismas.§!" #NT!
+ trait_mountaineer: "Alpinista" #NT!
+ trait_mountaineer_desc: "§LUn excelente escalador y experto en la guerra de montaña.§!" #NT!
+ hill_fighter: "Luchador de la colina" #NT!
+ hill_fighter_desc: "§LSe destaca en el combate en terreno montañoso.§!" #NT!
+ jungle_rat: "Rata de la jungla" #NT!
+ jungle_rat_desc: "§LNo se deja intimidar por roedores de tamaño inusual y es hábil en la guerra en la jungla.§!" #NT!
+ ranger: "Guardabosque" #NT!
+ ranger_desc: "§LLos guardabosques lideran el camino, especialmente cuando se trata de luchar en los bosques.§!" #NT!
+ urban_assault_specialist: "Especialista en asaltos urbanos" #NT!
+ urban_assault_specialist_desc: "§LUn experto en pelear en la casa de alguien y causar estragos en las calles de la gente.§!" #NT!
+ blockade_runner: "Corredor de bloqueos" #NT!
+ blockade_runner_desc: "§LCapaz de retirarse rápidamente del combate naval.§!" #NT!
+ spotter: "Observador" #NT!
+ spotter_desc: "§LEl observador presta especial atención a estar atento a las flotas enemigas.§!" #NT!
+ fly_swatter: "Matamoscas" #NT!
+ fly_swatter_desc: "§LAl darse cuenta del peligro que representan los aviones incluso para nuestras naves más poderosas, el Matamoscas elimina rápidamente todo lo que vuela.§!" #NT!
+ ironside: "Lado de hierro" #NT!
+ ironside_desc: "§LDecididos a defender nuestras aguas nacionales con los barcos más poderosos que nuestra armada pueda reunir.§!" #NT!
+ air_controller: "Controlador de aire" #NT!
+ air_controller_desc: "§LUn experto en el campo naciente de la aviación naval, el controlador aéreo es una elección natural para comandar portaaviones.§!" #NT!
+ naval_invader: "Invasor" #NT!
+ naval_invader_desc: "§LUn experto en realizar invasiones navales. El tipo perfecto para preparar una invasión a una playa hostil y llevarla a cabo.§!" #NT!
+ bearer_of_artillery: "Portador de Artillería" #NT!
+ bearer_of_artillery_desc: "§L¡Nunca dejes caer una caja!§!" #NT!
+ dictator: "Dictador" #NT!
+ CAS_manufacturer: "Diseñador CAS" #NT!
+ light_aircraft_manufacturer: "Diseñador de aviones ligeros" #NT!
+ light_aircraft_manufacturer_2: "Diseñador de aeronaves centrado en la agilidad" #NT!
+ fuel_efficient_aircraft_manufacturer: "Diseñador de aeronaves centrado en el alcance" #NT!
+ medium_aircraft_manufacturer: "Diseñador de aeronaves medianas" #NT!
+ heavy_aircraft_manufacturer: "Diseñador de aviones pesados" #NT!
+ naval_aircraft_manufacturer: "Diseñador de aeronaves navales" #NT!
+ fast_tank_manufacturer: "Diseñador de tanques móviles" #NT!
+ medium_tank_manufacturer: "Diseñador de tanques medianos" #NT!
+ heavy_tank_manufacturer: "Diseñador de tanques pesados" #NT!
+ infantry_tank_manufacturer: "Diseñador de tanques de infantería" #NT!
+ armored_car_manufacturer: "Diseñador de vehículos blindados" #NT!
+ pacific_fleet_naval_manufacturer: "Diseñador de la flota del Pacífico" #NT!
+ atlantic_fleet_naval_manufacturer: "Diseñador de la flota atlántica" #NT!
+ raiding_fleet_naval_manufacturer: "Diseñador de flotas de asalto" #NT!
+ convoy_escort_naval_manufacturer: "Diseñador de flotas de escolta" #NT!
+ coastal_defence_naval_manufacturer: "Diseñador de flotas de defensa costera" #NT!
+ mediterranean_naval_manufacturer: "Diseñador de la flota del Mediterráneo" #NT!
+ battlefleet_designer: "Diseñador de flotas de batalla" #NT!
+ refinery_concern: "Preocupación por la refinación" #NT!
+ political_dancer: "Maestro Maniobrador" #NT!
+ political_dancer_desc: "§LConoce los movimientos cuando se trata de maniobras políticas en el tapete de baile de Europa.§!" #NT!
+ mobile_warfare_expert: "Experto en guerra móvil" #NT!
+ superior_firepower_expert: "Experto en potencia de fuego superior" #NT!
+ grand_battle_plan_expert: "Gran experto en planes de batalla" #NT!
+ mass_assault_expert: "Experto en asaltos masivos" #NT!
+ warrior_code: "Código del guerrero" #NT!
+ imperial_sanction: "Sanción Imperial" #NT!
+ emperor_showa: "Emperador Showa" #NT!
+ dislikes_germany: "No le gusta Alemania" #NT!
+ staunch_constitutionalist: "Constitucionalista acérrimo" #NT!
+ cornered_fox: "Zorro acorralado" #NT!
+ stout_defender: "Defensor robusto" #NT!
+ warmonger: "Belicista" #NT!
+ permanent_revolutionary: "Revolucionario permanente" #NT!
+ triumphant_revolutionary: "Revolucionario triunfante" #NT!
+ exiled_revolutionary: "Revolucionario exiliado" #NT!
+ railroad_enthusiast: "Entusiasta del ferrocarril" #NT!
+ strongman_of_san_luis_potosi: "El hombre fuerte de San Luis Potosí" #NT!
+ revolutionary_general: "General revolucionario" #NT!
+ primate_of_mexico: "Primado de México" #NT!
+ el_jefe_maximo: "El Jefe Máximo" #NT!
+ fascist_militia_leader: "Líder de la milicia liberal" #NT!
+ cristero_general: "General Cristero" #NT!
+ protector_of_the_campesinos: "Protector de los Campesinos" #NT!
+ refounder_of_mexico: "Refundador de México" #NT!
+ the_gentleman_president: "El señor presidente" #NT!
+ the_silver_president: "El presidente de plata" #NT!
+ the_dean_of_mexican_marxism: "El decano del marxismo mexicano" #NT!
+ staunch_stalinist: "Estalinista acérrimo" #NT!
+ devoted_trotskyist: "Trotskista devoto" #NT!
+ inexperienced_imperialist: "Imperialista inexperto" #NT!
+ autocratic_imperialist: "Imperialista autocrático" #NT!
+ cabinet_crisis: "Crisis del gabinete" #NT!
+ spirit_of_genghis: "Espíritu de Genghis" #NT!
+ stalins_puppet: "La marioneta de Stalin" #NT!
+ stalins_puppet_desc: "§LPor más leal que sea, jamás traicionará a la Internacional, ni la situación de los trabajadores, ni a su patria. En ese orden.§!" #NT!
+ exiled: "Exiliado" #NT!
+ exiled_desc: "§LBajo amenaza de persecución han pasado gran parte de los últimos años de agitación política en el extranjero.§!" #NT!
+ indomitable_perseverance: "Perseverancia indomable" #NT!
+ anti_communist: "Anticomunista" #NT!
+ fascist_sympathies: "Simpatías liberalistas" #NT!
+ hedonist: "hedonista" #NT!
+ camarilla_leader: "Líder de la Camarilla" #NT!
+ propaganda_expert: "Maestro de la propaganda" #NT!
+ appeaser: "Humilde apaciguador" #NT!
+ organizer: "Organizador" #NT!
+ organizer_desc: "§LCapaz de planificar y organizar el movimiento de grandes ejércitos.§!" #NT!
+ first_lady: "Primera Dama de la República" #NT!
+ dealbroker: "Corredor de negocios" #NT!
+ dealbroker_desc: "§LA la gente no le gusta ver cómo se hacen las salchichas y las leyes. Este hombre sabe por qué.§!" #NT!
+ panzer_expert: "Experto blindado" #NT!
+ panzer_expert_desc: "§LLa experiencia y el entrenamiento hacen de este líder un experto en el mando de tanques.§!" #NT!
+ combined_arms_expert: "Experto en armas combinadas" #NT!
+ combined_arms_expert_short: "Experto en armas de combate" #NT!
+ combined_arms_expert_desc: "§LCapaz de combinar las fortalezas tanto de la armadura como de la infantería.§!" #NT!
+ cavalry_leader: "Líder de caballería" #NT!
+ cavalry_leader_desc: "§LExperto en el uso de fuerzas móviles para lograr la victoria.§!" #NT!
+ cavalry_expert: "Experto en caballería" #NT!
+ cavalry_expert_desc: "§LUn experto en el uso de la velocidad y la movilidad en la batalla.§!" #NT!
+ infantry_leader: "Líder de infantería" #NT!
+ infantry_leader_desc: "§LExperto en liderar infantería en combate.§!" #NT!
+ infantry_expert: "Experto en infantería" #NT!
+ infantry_expert_desc: "§LUn verdadero experto en liderar infantería.§!" #NT!
+ unyielding_defender: "Defensor inquebrantable" #NT!
+ unyielding_defender_desc: "§LRetirarse no es una opción.§!" #NT!
+ aggressive_assaulter: "Agresor agresivo" #NT!
+ aggressive_assaulter_short: "Agresión agresiva" #NT!
+ aggressive_assaulter_desc: "§LLa mejor defensa es un fuerte ataque.§!" #NT!
+ scavenger: "Basurero" #NT!
+ scavenger_desc: "§LEs más probable que recolecten y reparen equipos capturados para que los usen sus propias tropas.§!" #NT!
+ ambusher: "Emboscado" #NT!
+ ambusher_desc: "§LExperto en engañar a las fuerzas enemigas para que hagan emboscadas.§!" #NT!
+ invader_ii: "Anfibio" #NT!
+ invader_ii_desc: "§LLas invasiones navales pueden requerir que se luche durante mucho tiempo antes de que llegue el reabastecimiento.§!" #NT!
+ naval_liason: "Enlace Naval" #NT!
+ naval_liason_desc: "§LUna buena relación con la marina garantizará que el apoyo de fuego naval sea más abundante.§!" #NT!
+ expert_improviser: "Experto en improvisación" #NT!
+ expert_improviser_short: "Experto en improvisación" #NT!
+ expert_improviser_desc: "§LUn experto en resolver problemas con cualquier medio disponible.§!" #NT!
+ guerilla_fighter: "Guerrillero" #NT!
+ guerilla_fighter_desc: "§LEl guerrillero experto es un experto en utilizar el terreno natural y los obstáculos a su favor.§!" #NT!
+ winter_expert: "Experto en invierno" #NT!
+ winter_expert_desc: "§LLa experiencia ganada con esfuerzo le ha enseñado a este líder a luchar en las duras condiciones invernales.§!" #NT!
+ skilled_staffer: "Personal calificado" #NT!
+ skilled_staffer_desc: "§LRodeado de uno de los mejores empleados, este líder es capaz de organizar y gestionar una mayor cantidad de unidades.§!" #NT!
+ adaptable: "Adaptable" #NT!
+ adaptable_desc: "§LUna comprensión natural de cómo luchar en diversos terrenos y adaptarse a diferentes entornos.§!" #NT!
+ terrain_traits: "Características del terreno" #NT!
+ traits: "Rasgos" #NT!
+ basic_traits: "Rasgos adquiridos" #NT!
+ field_marshal_traits: "Rasgos del mariscal de campo" #NT!
+ assignable_traits: "Rasgos generales" #NT!
+ ASSIGNABLE_ADMIRAL_TRAITS: "Rasgos del almirante" #NT!
+ ASSIGNABLE_ADMIRAL_TRAITS_DESC: "Los rasgos de almirante son los rasgos que se pueden asignar manualmente a un almirante." #NT!
+ background: "Fondo" #NT!
+ LEADER_DETAILS_TITLE: "Detalles del líder" #NT!
+ OPEN_LEADER_DETAILS: "Mostrar detalles del líder." #NT!
+ anti_democrat: "Antidemócrata" #NT!
+ great_war_hero: "Gran héroe de guerra" #NT!
+ popular_figurehead2: "Figura decorativa popular" #NT!
+ popular_figurehead3: "$popular_figurehead$" #NT!
+ imperial_connections: "Conexiones imperiales" #NT!
+ kaiserin_of_the_people: "Kaiserin del pueblo" #NT!
+ victoria_iii: "Victoria III" #NT!
+ incognito: "Incógnito" #NT!
+ nationalist_symbol: "Símbolo nacionalista" #NT!
+ generallissimo: "Generalísimo" #NT!
+ ENABLES_ABILITY: "Habilita la habilidad: $NAME|H$" #NT!
+ ABILITY_DESC: "$NAME|H$: $DETAILS$" #NT!
+ TRAIT_NOT_ASSIGNABLE: "Los rasgos adquiridos solo se pueden desbloquear adquiriendo experiencia o mediante eventos." #NT!
+ TRAIT_ASSIGNABLE_TO_UNIT_MARSHALS: "Los rasgos de Mariscal de campo solo se pueden asignar a Mariscales de campo." #NT!
+ ALREADY_HAS_MAX_ALLOWED_ASSIGNABLE_TRAITS: "El general ya tiene la cantidad máxima de rasgos asignables." #NT!
+ TRAIT_NOT_ALLOWED: "El rasgo no está permitido." #NT!
+ TRAIT_NO_PREREQUISITES: "No se han completado todos los requisitos previos." #NT!
+ MUTUALLY_EXCLUSIVE_TRAIT_ALREADY_ASSIGNED: "Ya se ha asignado un rasgo mutuamente excluyente." #NT!
+ TRAIT_NEED_ALL_PARENTS: "Todos los rasgos principales deben estar desbloqueados para poder asignar este rasgo." #NT!
+ TRAIT_NEED_SOME_PARENTS: "Necesitas al menos $NUM$ rasgos principales desbloqueados para poder asignar este rasgo.\n" #NT!
+ SKILL_ATTACK: "§HAttack§!" #NT!
+ SKILL_ATTACK_DESC: "§LLa habilidad de ataque aumenta las estadísticas ofensivas de las unidades lideradas por el general.§!" #NT!
+ SKILL_DEFENSE: "§HDefense§!" #NT!
+ SKILL_DEFENSE_DESC: "§LLa habilidad de defensa aumenta las estadísticas defensivas de las unidades lideradas por el general.§!" #NT!
+ SKILL_PLANNING: "§HPlanning§!" #NT!
+ SKILL_PLANNING_DESC: "§LHabilidad de planificación: planificación de la velocidad de las unidades dirigidas por el general.§!" #NT!
+ SKILL_LOGISTICS: "§HLogistics§!" #NT!
+ SKILL_LOGISTICS_DESC: "§LLa habilidad logística reduce el uso de suministros de las unidades lideradas por el general.§!" #NT!
+ SKILL_NAVY_LEADER_ATTACK: "§HAttack§!" #NT!
+ SKILL_NAVY_LEADER_ATTACK_DESC: "§LLa habilidad de ataque aumenta las estadísticas ofensivas de los barcos liderados por el almirante.§!" #NT!
+ SKILL_NAVY_LEADER_DEFENSE: "§HDefense§!" #NT!
+ SKILL_NAVY_LEADER_DEFENSE_DESC: "§LLa habilidad de defensa aumenta las estadísticas defensivas de los barcos liderados por el almirante.§!" #NT!
+ SKILL_NAVY_LEADER_MANEUVERING: "§HManeuvering§!" #NT!
+ SKILL_NAVY_LEADER_MANEUVERING_DESC: "§LLa habilidad de maniobra aumenta las capacidades de combate de los barcos liderados por el almirante.§!" #NT!
+ SKILL_NAVY_LEADER_COORDINATION: "§HCoordination§!" #NT!
+ SKILL_NAVY_LEADER_COORDINATION_DESC: "§LLa habilidad de coordinación aumenta el alcance y la eficiencia de la misión de los barcos que dirige el almirante. También le permite al almirante controlar una flota más grande.§!" #NT!
+ SKILL_LEVEL_MAX: "El líder ya está en el nivel máximo." #NT!
+ SKILL_LEVEL_NEXT_AMOUNT: "Tu general necesita $VALUE|H$ experiencia para avanzar al siguiente nivel." #NT!
+ SKILL_NAVY_LEADER_LEVEL_NEXT_AMOUNT: "Tu almirante necesita $VALUE|H$ de experiencia para avanzar al siguiente nivel." #NT!
+ SKILL_LEVEL_CURRENT_PROGRESS: "Progreso actual: $VALUE|H%0$" #NT!
+ SKILL_LEVEL_DETAILS: "Después de subir de nivel, un general gana 3 puntos de estadísticas al azar. El tipo de rasgos que posee un general aumenta las posibilidades de ganar un punto en las estadísticas relevantes." #NT!
+ SKILL_NAVY_LEADER_LEVEL_DETAILS: "Después de subir de nivel, un almirante obtiene 3 puntos de estadísticas al azar. El tipo de rasgos que posee un almirante aumenta las posibilidades de obtener un punto en las estadísticas correspondientes." #NT!
+ PICK_TRAIT: "Elegir rasgo" #NT!
+ BASIC_TRAITS_DESC: "Los rasgos adquiridos son aquellos que no se pueden asignar manualmente, pero que se pueden obtener adquiriendo experiencia en áreas relevantes o mediante eventos." #NT!
+ ASSIGNABLE_TRAITS_DESC: "Los rasgos generales son los rasgos que se pueden asignar manualmente a un general." #NT!
+ FIELD_MARSHAL_TRAITS_DESC: "Los rasgos de Mariscal de campo solo se pueden asignar a Mariscales de campo. Los Mariscales de campo también pueden usar rasgos normales, pero sus efectos se reducirán al comandar más de un ejército." #NT!
+ TERRAIN_TRAITS_DESC: "Los rasgos del terreno otorgan bonificaciones a los generales que luchan en terrenos específicos. Se pueden asignar manualmente o adquirir a través de la experiencia, como los rasgos adquiridos." #NT!
+ CONFIRMTRAITASSIGNMENT: "Asignar rasgo a $TITLE$" #NT!
+ CONFIRMTRAITASSIGNMENT_DESC: "¿Estás seguro de que deseas asignar $TRAIT|H$ a $LEADER|H$?" #NT!
+ CONFIRMTRAITASSIGNMENT_DESC_REMAINING: "Después de asignar este rasgo, tendrás $NUM|H$ espacios de rasgo más disponibles para asignar a este $TITLE$." #NT!
+ CONFIRMTRAITASSIGNMENT_DESC_REMAINING_NONE: "Después de asignar este rasgo, tendrás §Rno§! espacios de rasgo disponibles para asignar para este $TITLE$." #NT!
+ JAP_samurai_lineage: "Linaje samurái" #NT!
+ JAP_samurai_lineage_desc: "§LEste hombre proviene de un orgulloso linaje de samuráis y se mantiene fiel a las antiguas tradiciones y lealtades.§!" #NT!
+ JAP_communist_sympathizer: "Simpatizante socialista" #NT!
+ JAP_communist_sympathizer_desc: "§LPartidario de la causa socialista.§!" #NT!
+ BOOST_ATTACK_FACTOR: "Es más probable que obtengas la habilidad §HAttack§! al subir de nivel" #NT!
+ BOOST_DEFENCE_FACTOR: "Es más probable que obtengas la habilidad §HDefense§! al subir de nivel" #NT!
+ BOOST_LOGISTICS_FACTOR: "¡Es más probable que obtengas la habilidad §HLogistics§! al subir de nivel" #NT!
+ BOOST_PLANNING_FACTOR: "Es más probable que obtengas la habilidad §HPlanning§! al subir de nivel" #NT!
+ BOOST_MANEUVERING_FACTOR: "¡Es más probable que gane §HManeuvering§! habilidad al subir de nivel" #NT!
+ BOOST_COORDINATION_FACTOR: "Es más probable que obtengas la habilidad §HCoordination§! al subir de nivel" #NT!
+ INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE: "Mayor probabilidad de ejecutar las tácticas §HBlitz§! y §HEncirclement§!" #NT!
+ INCREASED_COUNTERATTACK_CHANCE: "¡Mayor probabilidad de ejecutar §HCounterattack§! táctica" #NT!
+ INCREASED_ASSAULT_AND_SHOCK_CHANCE: "Mayor probabilidad de ejecutar las tácticas §HAssault§! y §HShock§!" #NT!
+ skirmisher: "Tirador escondido" #NT!
+ skirmisher_desc: "§LHábil en el uso de ataques de sondeo para probar la fuerza del enemigo y desgastarlo.§!" #NT!
+ camouflage_expert: "Experto en camuflaje" #NT!
+ camouflage_expert_desc: "§LEl uso adecuado del camuflaje puede reducir significativamente la amenaza de ataques aéreos enemigos.§!" #NT!
+ needs_at_least_one_terrain: "Al menos 1 rasgo del terreno" #NT!
+ TRAIT_PREREQUISITES: "§HPrerequisites§!\n" #NT!
+ expert_delegator: "Delegante experto" #NT!
+ expert_delegator_desc: "§LEl arte de delegar permite a este líder comandar eficazmente varios ejércitos.§!" #NT!
+ trait_bonus_all: "Todas las estadísticas: $VAL|+=0$" #NT!
+ trait_bonus_attack: "Ataque: $VAL|+=0$" #NT!
+ trait_bonus_defense: "Defensa: $VAL|+=0$" #NT!
+ trait_bonus_planning: "Planificación: $VAL|+=0$" #NT!
+ trait_bonus_logistics: "Logística: $VAL|+=0$" #NT!
+ trait_bonus_maneuvering: "Maniobras: $VAL|+=0$" #NT!
+ trait_bonus_coordination: "Coordinación: $VAL|+=0$" #NT!
+ sick: "Enfermo" #NT!
+ sick_desc: "§LConfinado en cama debido a una enfermedad grave.§!" #NT!
+ wounded: "Herido" #NT!
+ wounded_desc: "§LUna herida grave tardará un tiempo en curarse.§!" #NT!
+ reassigned: "Reasignado" #NT!
+ reassigned_desc: "§LEste líder está regresando de un puesto lejano al que el gobierno le había asignado para evitar que conspirara.§!" #NT!
+ disgruntled: "Descontento" #NT!
+ disgruntled_desc: "§LEste hombre no es feliz y no lo oculta.§!" #NT!
+ demoted: "Degradado" #NT!
+ demoted_desc: "§LSer degradado no hará feliz a nadie y este líder no es la excepción.§!" #NT!
+ substance_abuser: "Abusador de sustancias" #NT!
+ substance_abuser_desc: "§LLa adicción puede ser algo malo, pero está bajo control. De verdad.§!" #NT!
+ substance_addict: "Adicto a sustancias" #NT!
+ substance_addict_desc: "§LLa adicción de este hombre claramente está afectando su juicio, y no de una buena manera.§!" #NT!
+ brilliant_strategist: "Estratega brillante" #NT!
+ brilliant_strategist_desc: "§LUn estratega nato que es capaz de adaptarse a la dinámica del campo de batalla.§!" #NT!
+ inflexible_strategist: "Estratega inflexible" #NT!
+ inflexible_strategist_desc: "§LHábil pero obstinado. Un plan lo suficientemente bueno puede sobrevivir al contacto con el enemigo.§!" #NT!
+ politically_connected: "Conectado políticamente" #NT!
+ politically_connected_desc: "§LEste líder tiene conexiones políticas que han allanado el camino para su carrera. Quizás demasiado rápido.§!" #NT!
+ war_hero: "Héroe de guerra" #NT!
+ war_hero_desc: "§LAclamado como un héroe por sus acciones en la guerra.§!" #NT!
+ career_officer: "Oficial de carrera" #NT!
+ career_officer_desc: "§LDedicado a la vida como oficial, con ambiciones a la altura.§!" #NT!
+ trait_cautious: "Precavido" #NT!
+ trait_cautious_desc: "§LSe toma su tiempo y planifica con cuidado.§!" #NT!
+ trait_reckless: "Imprudente" #NT!
+ trait_reckless_desc: "§LUn buen oficial debe liderar desde el frente.§!" #NT!
+ media_personality: "Personalidad de los medios" #NT!
+ media_personality_desc: "§LEste general hará todo lo posible para hablar con los medios y siempre intentará estar en el centro de atención.§!" #NT!
+ harsh_leader: "Líder severo" #NT!
+ harsh_leader_desc: "§LLa disciplina es necesaria para liderar un ejército, pero algunos líderes la llevan un poco demasiado lejos.§!" #NT!
+ infantry_officer: "Oficial de infantería" #NT!
+ infantry_officer_desc: "§LEntrenamiento como oficial de infantería.§!" #NT!
+ cavalry_officer: "Oficial de caballería" #NT!
+ cavalry_officer_desc: "§LEntrenado como oficial de caballería.§!" #NT!
+ armor_officer: "Oficial de armadura" #NT!
+ armor_officer_desc: "§LEntrenado como oficial de armadura.§!" #NT!
+ engineer_officer: "Oficial de ingenieros" #NT!
+ engineer_officer_desc: "§LFormado como oficial ingeniero.§!" #NT!
+ irregulars_officer: "Oficial de irregulares" #NT!
+ irregulars_officer_desc: "§LExperto en liderar unidades irregulares en combate.§!" #NT!
+ ascari_officer: "Oficial de Ascari" #NT!
+ ascari_officer_desc: "§LEntrenado para liderar unidades coloniales en combate.§!" #NT!
+ militias_officer: "Oficial de milicia" #NT!
+ militias_officer_desc: "§LEntrenado para liderar unidades de milicia en combate.§!" #NT!
+ UNIT_LEADER_ASSIGN_TRAIT_COST_TOOLTIP: "Costará $VAL|R$ £command_power asignar este rasgo." #NT!
+ UNIT_LEADER_TRAIT_XP: "§HExperience:§! $CUR|.0$/$MAX|.0$" #NT!
+ UNIT_LEADER_TRAIT_GAIN_XP_WHEN: "§HExperiencia obtenida mientras:§!" #NT!
+ hidden_sympathies: "Simpatías ocultas" #NT!
+ hidden_sympathies_desc: "§LEste general ha expresado algunas opiniones desleales en esferas privadas y muy probablemente prestará su apoyo a insurrecciones iniciadas por elementos subversivos.§!" #NT!
+ is_using_battle_plans: "¿Está utilizando planes de batalla?" #NT!
+ cavalary_ratio_over_40: "Relación caballería, motorizada y mecanizada > §H40%§!" #NT!
+ infantry_ratio_over_80: "Relación de infantería > §H80%§!" #NT!
+ armored_ratio_over_40: "Relación de blindaje > §H40%§!" #NT!
+ has_flanked: "Está flanqueando al enemigo o siendo flanqueado por él." #NT!
+ fighting_with_enough_units: "Controlando al menos §H24§! ejércitos" #NT!
+ fighting_with_enough_units_field_marshal: "Controlando al menos §H100§! ejércitos" #NT!
+ TRAIT_OPEN_WIKI: "Haga clic para leer más en la web" #NT!
+ trait_xp_factor: "$NAME|H$ factor de experiencia: $VAL|H%.0$" #NT!
+ recently_promoted: "Recientemente ascendido" #NT!
+ recently_promoted_desc: "§LAdaptándose a las responsabilidades del nuevo rango.§!" #NT!
+ TRAIT_WILL_EXPIRE: "El rasgo expirará en $DAYS|H$ días." #NT!
+ TRAIT_NOT_ACTIVE_WHEN_COMMANDING_AN_ARMY: "§RRasgo no activo al comandar un ejército.§!" #NT!
+ TRAIT_TITLE: "§Y$TRAITNAME$§!" #NT!
+ TRAIT_UNLOCKED_BY: "Desbloqueado por: §Y$TRAITNAME$§!\n\n" #NT!
+ TRAIT_UNLOCKED_BY_MIN_RANK: "¡Se requiere un nivel de habilidad de al menos §Y$RANK$§! para convertirse en asesor." #NT!
+ TRAIT_UNLOCKS_ADVISOR_ROLE: "Desbloquea §Y$ADVISORSLOT$§! rol: §Y$ADVISORNAME$§!\n" #NT!
+ TRAIT_MODIFIER_FOR_ADVISOR_RANK: "En habilidad §Y$RANK$§!:\n\n$TEXT$" #NT!
+ TRAIT_PARENT_PRECONDITION_ALL_OF_TITLE: "§YRequiere todo lo siguiente:§!" #NT!
+ TRAIT_PARENT_PRECONDITION_N_OF_TITLE: "§YRequiere $NUMBER$ de los siguientes:§!" #NT!
+ TRAIT_PARENT_PRECONDITION_OR_SUB_ENTRY: "- Uno de los siguientes:" #NT!
+ TRAIT_PARENT_PRECONDITION_PARENT: "- $NAME$" #NT!
+ expert_improviser_movement_bonus_on_land: "Bonificación de movimiento en tierra: §G+10.0%§!" #NT!
+ anti_communist_crusader: "Cruzado antisocialista" #NT!
+ exiled_leader: "Líder exiliado" #NT!
+ exiled_leader_desc: "Este oficial siguió luchando después de la derrota de su patria. Se destaca por comandar a otros exiliados que comparten su empuje y entusiasmo por la lucha." #NT!
+ champion_of_peace_1: "Campeón de la paz" #NT!
+ champion_of_peace_2: "Campeón de la paz" #NT!
+ champion_of_peace_3: "Campeón de la paz" #NT!
+ champion_of_peace_4: "Campeón de la paz" #NT!
+ champion_of_peace_5: "Campeón de la paz" #NT!
+ economic_reformer: "Reformador económico" #NT!
+ inshore_fighter: "Caza costero" #NT!
+ inshore_fighter_desc: "§LUn experto en luchar cerca de la costa, este oficial sabe cómo esconderse detrás de islas y fiordos para hacer llover destrucción sobre el enemigo.§!" #NT!
+ green_water_expert: "Experto en Agua Verde" #NT!
+ green_water_expert_desc: "§LLuchar en aguas poco profundas tiene sus propios desafíos. Este oficial los ha dominado.§!" #NT!
+ blue_water_expert: "Experto en agua azul" #NT!
+ blue_water_expert_desc: "§LEste oficial es un experto en la lucha en alta mar.§!" #NT!
+ arctic_water_expert: "Experto en agua fría" #NT!
+ arctic_water_expert_desc: "§LEste oficial ha pasado mucho tiempo en aguas árticas y aprendió a evitar la mayoría de los icebergs.§!" #NT!
+ fleet_protector: "Protector de flota" #NT!
+ fleet_protector_desc: "§LUn experto en mantener a los barcos pequeños alejados de los barcos grandes.§!" #NT!
+ silent_hunter: "Cazador silencioso" #NT!
+ silent_hunter_desc: "§LUn maestro del sigilo, este oficial submarino ha aprendido a escapar de sus perseguidores.§!" #NT!
+ lancer: "Lancero" #NT!
+ lancer_desc: "§LEste oficial conoce los torpedos como ningún otro y es capaz de sacarles el máximo partido.§!" #NT!
+ destroyer_leader: "Líder destructor" #NT!
+ destroyer_leader_desc: "§LEquilibrando audacia y discreción, este oficial se ha convertido en el comandante ideal para las fuerzas ligeras.§!" #NT!
+ lone_wolf: "Lobo solitario" #NT!
+ lone_wolf_desc: "§LSi bien organizar una flota grande es una tarea difícil, también lo es utilizar una fuerza pequeña a su máximo potencial.§!" #NT!
+ concealment_expert: "Experto en ocultamiento" #NT!
+ concealment_expert_desc: "§LEste oficial ha completado el curso de capacitación obligatorio por el gobierno sobre cómo no ser visto.§!" #NT!
+ mine_sweeper: "Buscaminas" #NT!
+ mine_sweeper_desc: "§LCualquier barco puede ser un dragaminas una vez. Hacer que barra varias minas requiere habilidad.§!" #NT!
+ mine_layer: "Capa de minas" #NT!
+ mine_layer_desc: "§LArrojar minas altamente explosivas diseñadas para hundir barcos desde un barco en el que te encuentres requiere cierta fortaleza mental. Este oficial tiene mucha de ella.§!" #NT!
+ mine_craft: "Manualidades de mina" #NT!
+ mine_craft_desc: "§LTodos los marineros conocen el terror de estas armas sigilosas, el silbido bajo de la mecha y la explosión repentina. §!" #NT!
+ cruiser_captain: "Capitán de crucero" #NT!
+ cruiser_captain_desc: "§LEste oficial ha demostrado una gran habilidad en la operación de cruceros.§!" #NT!
+ big_guns_expert: "Experto en armas grandes" #NT!
+ big_guns_expert_desc: "§LA este oficial le gustan las armas grandes y es incapaz de mentir.§!" #NT!
+ ground_pounder: "Machacador de tierra" #NT!
+ ground_pounder_desc: "§LDisparar a un objetivo fijo en tierra con artillería naval es casi antideportivo. Casi.§!" #NT!
+ safety_first: "Seguridad ante todo" #NT!
+ safety_first_desc: "§LNo hay nada malo con nuestros malditos barcos. ¡Ni hoy, ni mañana, ni nunca!§!" #NT!
+ flight_deck_manager: "Gerente de cabina de vuelo" #NT!
+ flight_deck_manager_desc: "§LDespegar un avión desde la cubierta de un barco es bastante sencillo. El problema es despegar las otras dos docenas al mismo tiempo.§!" #NT!
+ smoke_screen_expert: "Especialista en cortinas de humo" #NT!
+ smoke_screen_expert_desc: "§LSi se usa correctamente, fumar puede salvar vidas.§!" #NT!
+ torpedo_expert: "Experto en torpedos" #NT!
+ torpedo_expert_desc: "§LChocar contra un barco que se mueve a una velocidad de 25 nudos con un ángulo relativo de 72 grados a una distancia de 8 kilómetros es en realidad solo un poco de matemática simple.§!" #NT!
+ loading_drill_master: "Cargando Drill Master" #NT!
+ loading_drill_master_desc: "§L"¡Dispárales otra vez, aún no están muertos!"§!" #NT!
+ hunter_killer: "Cazador-asesino" #NT!
+ hunter_killer_desc: "§LEn el juego mortal del gato y el ratón, este oficial es sin duda el gato.§!" #NT!
+ marksman: "Tirador escondido" #NT!
+ marksman_desc: "§L"Pon la siguiente salva medio metro a popa, directo a su cargador".§!" #NT!
+ crisis_magician: "Mago de crisis" #NT!
+ crisis_magician_desc: "§L"Los tubos del condensador están rotos, capitán. La reparación tardará al menos 6 semanas. Pero puedo hacerlo en 3 horas".§!" #NT!
+ fighter_director: "Director de combate" #NT!
+ fighter_director_desc: "§LEste oficial garantiza cielos amistosos, o al menos neutrales.§!" #NT!
+ torpedo_bomber: "Bombardero torpedero" #NT!
+ torpedo_bomber_desc: "§LLas bombas hacen agujeros por los que entra el aire. Los torpedos hacen agujeros por los que entra el agua. ¿Adivina cuál hunde un barco más rápido?§!" #NT!
+ search_pattern_expert: "Experto en patrones de búsqueda" #NT!
+ search_pattern_expert_desc: "§L¡La información es munición!§!" #NT!
+ gentlemanly: "Caballeroso" #NT!
+ gentlemanly_desc: "§LEste oficial infunde un sentido de respeto tanto en sus subordinados como en sus enemigos.§!" #NT!
+ gunnery_expert: "Experto en artillería" #NT!
+ gunnery_expert_desc: "§LEste oficial ha estudiado el fino arte de la balística.§!" #NT!
+ cuts_corners: "Cortar atajos" #NT!
+ cuts_corners_desc: "§L¿Qué es lo peor que podría pasar?§!" #NT!
+ chief_engineer: "Ingeniero jefe" #NT!
+ chief_engineer_desc: "§LEste oficial sabe cómo funciona realmente el barco.§!" #NT!
+ bold: "Atrevido" #NT!
+ bold_desc: "§LLa diferencia entre un ataque audaz y un ataque estúpido es que el ataque audaz tiene éxito.§!" #NT!
+ navy_career_officer: "Oficial de carrera" #NT!
+ navy_career_officer_desc: "§LDedicado a la vida como oficial, con ambiciones a la altura.§!" #NT!
+ battleship_adherent: "Partidario del acorazado" #NT!
+ battleship_adherent_desc: "§LEl poder aéreo naval nunca será una alternativa viable a las armas grandes.§!" #NT!
+ aviation_enthusiast: "Entusiasta de la aviación" #NT!
+ aviation_enthusiast_desc: "§LEl poder aéreo naval es la alternativa superior a los cañones grandes.§!" #NT!
+ caustic_personality: "Personalidad cáustica" #NT!
+ caustic_personality_desc: "§LEste oficial es un poco más salado que la mayoría de la gente.§!" #NT!
+ craven: "Cobarde" #NT!
+ craven_desc: "§L"Enfréntate al enemigo menos de cerca. Mucho menos de cerca".§!" #NT!
+ naval_lineage: "Linaje Naval" #NT!
+ naval_lineage_desc: "§LSe necesitan 3 años para construir un barco. Se necesitan 300 años para construir una tradición.§!" #NT!
+ navy_media_personality: "Personalidad de los medios" #NT!
+ navy_media_personality_desc: "§LEste almirante tiene un don para darle la cita correcta a la persona correcta.§!" #NT!
+ air_pilot_training_1: "Formación de pilotos (especialista)" #NT!
+ air_pilot_training_2: "Formación de pilotos (expertos)" #NT!
+ air_pilot_training_3: "Entrenamiento de pilotos (Genio)" #NT!
+ strict_austerity_adherent: "Partidario de la estricta austeridad" #NT!
+ dive_bomber_desc: "§LUn experto en el uso de bombarderos en picado.§!" #NT!
+ defeatist: "Derrotista" #NT!
+ little_churchill: ""El pequeño Churchill"" #NT!
+ wilhelmina: "Guillermina" #NT!
+ disdain_for_politicians_1: "Desprecio por los políticos" #NT!
+ disdain_for_politicians_2: "Desprecio por los políticos" #NT!
+ queen_of_the_people: "Reina del Pueblo" #NT!
+ adventurous_daredevil: "Temerario aventurero" #NT!
+ princess_of_terror: "Princesa del terror" #NT!
+ socialist_novelist: "Novelista socialista" #NT!
+ red_suffragette: "Sufragista roja" #NT!
+ royalist_bulldog: "Bulldog realista" #NT!
+ economic_organizer: "Reformador económico" #NT!
+ old_figurehead: "Mascarón de proa antiguo" #NT!
+ council_communist: "Consejo Comunista" #NT!
+ resistance_banker: "Banquero de la resistencia" #NT!
+ colonial_communist: "Comunista colonial" #NT!
+ unpopular_monarch: "Monarca impopular" #NT!
+ socialite_connections: "Conexiones sociales" #NT!
+ wallis_fancy_title: "Su Majestad la Reina Wallis, Primera de Su Nombre, por la Gracia de Dios, Reina de las Américas, Gran Almirante de la Marina Real Americana, Duquesa de Wallington, Duquesa de Manhattan, Duquesa de Long Island, Condesa de Orange, Condesa de O'ahu, Marquesa de Nueva Orleans, Baronesa de Springfield, Baronesa de Hollywood, Baronesa de Central Park, Gran Socialité, Protectora de la Libertad, Vanguardia del Noroeste de Alaska, Vengadora del Motín del Té de Boston, Terror de Wallington, D.C." #NT!
+ inexperienced_monarch: "Monarca inexperto" #NT!
+ headstrong: "Voluntarioso" #NT!
+ popular_queen: "Reina popular" #NT!
+ heels_nipper: "Alicates para tacones" #NT!
+ snuggler: "Acurrucador" #NT!
+ face_licker: "Lamedor de cara" #NT!
+ stammer: "Balbucear" #NT!
+ humble: "Humilde" #NT!
+ SEAWOLF_TRIGGER_TT: "Más del 80% de submarinos en la flota." #NT!
+ FLEET_PROTECTOR_TRIGGER_TT: "Más del 50% de los buques de la flota son inspeccionados" #NT!
+ SUPERIOR_TACTICIAN_TRIGGER_TT: "Tener la ventaja en el combate" #NT!
+ SPOTTER_TRIGGER_TT: "Detectando al enemigo" #NT!
+ FLY_SWATTER_TRIGGER_TT: "Lucha contra unidades aéreas enemigas" #NT!
+ IRONSIDE_TRIGGER_TT: "Comandar o luchar contra naves capitales" #NT!
+ BLOCKADE_RUNNER_TRIGGER_TT: "Tener un grupo de trabajo en combate donde cada barco tenga una velocidad de más de 37 nudos." #NT!
+ leider: "Leider" #NT!
+ comintern_workhorse: "El caballo de batalla del Comintern" #NT!
+ veteran_communist: "Comunista veterano" #NT!
+ british_bulldog: "Bulldog británico" #NT!
+ chamberlain_appeaser: "Apaciguador" #NT!
+ rearmer: "Rearmador" #NT!
+ conservative_grandee: "Grande conservador" #NT!
+ conservative_nationalist: "Nacionalista conservador" #NT!
+ conservative_nationalist_lar: "Nacionalista conservador" #NT!
+ genial_anti_revolutionary: "Genial antirrevolucionario" #NT!
+ liberal_journalist: "Periodista liberal" #NT!
+ anti_fascist_agent: "Agente antiliberal" #NT!
+ monarchist_media_mogul: "Magnate de los medios monárquicos" #NT!
+ connected_citizen: "Ciudadano conectado" #NT!
+ trait_SPA_nationalist_sympathies: "Simpatías nacionalistas" #NT!
+ trait_SPA_nationalist_sympathies_desc: "Este líder alberga simpatías por la causa nacionalista." #NT!
+ trait_SPA_falangist_loyalties: "Lealtades falangistas" #NT!
+ trait_SPA_falangist_loyalties_desc: "Este líder es leal a la Falange." #NT!
+ trait_SPA_carlist_loyalties: "Lealtades carlistas" #NT!
+ trait_SPA_carlist_loyalties_desc: "Este líder es leal a los carlistas." #NT!
+ trait_SPR_republican_loyalties: "Lealtades republicanas" #NT!
+ trait_SPR_republican_loyalties_desc: "Este líder es leal al gobierno republicano conservador." #NT!
+ trait_SPR_stalinist_loyalties: "Lealtades estalinistas" #NT!
+ trait_SPR_stalinist_loyalties_desc: "Este líder es leal a los comunistas estalinistas." #NT!
+ trait_SPR_anti_stalinist_loyalties: "Lealtades antiestalinistas" #NT!
+ trait_SPR_anti_stalinist_loyalties_desc: "Este líder es leal a los comunistas antiestalinistas." #NT!
+ the_director: "El Director" #NT!
+ empire_builder: "Constructor de imperios" #NT!
+ jefe: "Jefe" #NT!
+ indecisive: "Indeciso" #NT!
+ figurehead_president: "Presidente figura decorativa" #NT!
+ great_survivor: "Gran superviviente" #NT!
+ sins_of_the_father: "Pecados del padre" #NT!
+ caudillo_1: "Caudillo" #NT!
+ caudillo_2: "Caudillo" #NT!
+ the_lion_of_the_rif: "León del Rif" #NT!
+ the_sacred_king: "El rey sagrado" #NT!
+ disgraced_monarch: "Monarca caído en desgracia" #NT!
+ the_legitimist: "El legitimista" #NT!
+ divided_interests: "Intereses divididos" #NT!
+ our_right_to_survive: "Nuestro derecho a sobrevivir" #NT!
+ anarchist_zeal: "Celo anarquista" #NT!
+ militant_socialist: "Socialista militante" #NT!
+ education_reformer: "Reformador de la educación" #NT!
+ voice_of_restraint: "La voz de la moderación" #NT!
+ gran_carabinero: "Gran Carabinero" #NT!
+ la_pasionaria: "La Pasionaria" #NT!
+ social_revolutionary: "Social Revolucionario" #NT!
+ revolutionary_culture_minister: "Ministro de Cultura Revolucionaria" #NT!
+ collectivization_specialist: "Especialista en colectivización" #NT!
+ nkvd_rezident: "Rezidente del NKVD" #NT!
+ traditionalist_theorist: "Teórico tradicionalista" #NT!
+ lifelong_carlist: "Carlista de toda la vida" #NT!
+ falangist_industrialist: "Falangista industrial" #NT!
+ falangist_syndicalist: "Falangista Sindicalista" #NT!
+ leftist_freemason: "Masón de izquierda" #NT!
+ loyal_falangist: "Falangista leal" #NT!
+ falangist_figurehead: "Mascarón de proa falangista" #NT!
+ carlist_intellectual: "Intelectual carlista" #NT!
+ regional_traditionalist_leader: "Líder tradicionalista regional" #NT!
+ operative_commando: "Comando" #NT!
+ operative_commando_desc: "Este operativo ha completado el curso de entrenamiento de comando." #NT!
+ operative_seducer: "Seductor" #NT!
+ operative_seducer_desc: "Este agente ha demostrado tener la capacidad de meterse en la cabeza de las personas, a veces a través del dormitorio." #NT!
+ operative_infiltrator: "Infiltrador" #NT!
+ operative_infiltrator_desc: "Este operativo se adapta rápidamente a cualquier entorno y es capaz de integrarse perfectamente." #NT!
+ operative_master_interrogator: "Maestro interrogador" #NT!
+ operative_master_interrogator_desc: "Este operativo tiene formas de hacer hablar a la gente." #NT!
+ operative_linguist: "Lingüista" #NT!
+ operative_linguist_desc: "Este operativo tiene un don natural para aprender nuevos idiomas.\n\n §GMayor probabilidad§! de adquirir la nacionalidad objetivo al completar una operación." #NT!
+ operative_double_agent: "Agente doble" #NT!
+ operative_double_agent_desc: "Este agente ha pasado del enemigo a nuestro servicio." #NT!
+ operative_tough: "Difícil" #NT!
+ operative_tough_desc: "El puño del torturador se romperá antes que este Operativo." #NT!
+ operative_safe_cracker: "Cracker de cajas fuertes" #NT!
+ operative_safe_cracker_desc: "Este Operativo ha llegado a nuestra atención por su aptitud para abrir cajas fuertes y otras cerraduras." #NT!
+ operative_well_groomed: "bien arreglado" #NT!
+ operative_well_groomed_desc: "Este operativo mantiene un guardarropa de ropa elegante y un régimen de aseo meticuloso." #NT!
+ operative_natural_orator: "Orador natural" #NT!
+ operative_natural_orator_desc: "Este agente tiene un don para encontrar las palabras adecuadas." #NT!
+ operative_escape_artist: "Artista del escape" #NT!
+ operative_escape_artist_desc: "La prisión que pueda albergar a este Operativo aún no se ha construido." #NT!
+ operative_demolition_expert: "Experto en demolición" #NT!
+ operative_demolition_expert_desc: "Este operativo es competente en todas las diferentes formas en las que se pueden hacer explotar cosas." #NT!
+  
+ devoted_corporatist: "Corporativista devoto" #NT!
+ resolute_social_democrat: "Socialdemócrata decidido" #NT!
+ gifted_shipping_magnate: "Magnate naviero talentoso" #NT!
+ sharp_tongued_lawyer: "Abogado de lengua afilada" #NT!
+ national_socialist_paramilitarist: "Paramilitarista nacionalsocialista" #NT!
+ marxist_academic: "Académico marxista" #NT!
+ marxist_priest: "Sacerdote marxista" #NT!
+ guerilla_warfare_expert: "Experto en guerra de guerrillas" #NT!
+ army_chief_entrenchment_expert: "Experto en atrincheramiento" #NT!
+ british_industrial_benefactor: "Benefactor industrial británico" #NT!
+ german_technological_patron: "Mecenas tecnológico alemán" #NT!
+ monarchist_puppet: "Marioneta real" #NT!
+ elected_monarchist_puppet: "Títere monárquico electo" #NT!
+ divisive_absolute_monarch: "Monarca absoluto divisorio" #NT!
+ professional_crisis_solver: "Solucionador de crisis profesional" #NT!
+ the_banker: "El banquero" #NT!
+ the_young_magnate: "El joven magnate" #NT!
+ arkhigos: "Arkhigos" #NT!
+ ethnarch: "Etnarca" #NT!
+ polemarch: "polemarca" #NT!
+ likes_turkey: "Le gusta el pavo" #NT!
+ archon_basileus: "Arconte" #NT!
+ autokrator: "Autocratōr" #NT!
+ basileus: "Basileo" #NT!
+ the_council_on_the_management_of_turkish_debt: "Consejo de Deuda Turca" #NT!
+ turkish_public_debt_administration: "Administración de la deuda pública turca" #NT!
+ linchpin_of_infrastructure: "Eje de la infraestructura" #NT!
+ industrial_monopoly: "Monopolio industrial" #NT!
+  
+ trait_GRE_stauch_monarchist: "Monárquico acérrimo" #NT!
+ trait_GRE_stauch_monarchist_desc: "Este líder respeta y venera a la monarquía como institución griega." #NT!
+ trait_GRE_venezelist_loyalist: "Leal Venezolano" #NT!
+ trait_GRE_venezelist_loyalist_desc: "Este líder es un creyente en las doctrinas políticas del archirrepublicano Eleftherios Venizelos." #NT!
+ trait_GRE_marxist_acolyte: "Acólito marxista" #NT!
+ trait_GRE_marxist_acolyte_desc: "Este líder es un socialista que cree en las teorías defendidas por Karl Marx." #NT!
+ trait_GRE_fascist_sympathizer: "Simpatizante liberal" #NT!
+ trait_GRE_fascist_sympathizer_desc: "Este líder simpatiza con los principios del liberalismo." #NT!
+  
+ inventive_genius: "Genio inventivo" #NT!
+ father_of_the_turks: "Padre de los turcos" #NT!
+ father_of_the_turks_1: "padre de los turcos" #NT!
+ father_of_the_turks_2: "Padre de los turcos" #NT!
+ father_of_the_turks_3: "Padre de los turcos" #NT!
+ father_of_the_turks_4: "Padre de los turcos" #NT!
+ the_absentee_president: "El presidente ausente" #NT!
+ infirm: "Enfermizo" #NT!
+ gentle_scholar: "Gentil erudito" #NT!
+ caliph: "Califa" #NT!
+ calipha: "Califa" #NT!
+ crown_regent: "Regente de la corona" #NT!
+ sultana: "La primera sultana otomana" #NT!
+ man_of_the_nation: "Hombre de la Nación" #NT!
+ liberal_democratic_paragon: "Modelo liberal democrático" #NT!
+ maresal: "Mareşal" #NT!
+ milli_sef: "Millî Sef" #NT!
+ the_statist: "El estatista" #NT!
+ the_academic: "El Académico" #NT!
+ celebrity_junta_leader: "Líder de la junta de celebridades" #NT!
+ reluctant_stalinist: "Estalinista renuente" #NT!
+ freedom_fighter: "Luchador por la libertad" #NT!
+ experienced_insurgent: "Insurgente experimentado" #NT!
+  
+ the_humbled_knyaz: "El humilde Knyaz" #NT!
+  
+ prime_minister_inonu: "Primer ministro" #NT!
+ prime_minister_cakmak: "Primer ministro" #NT!
+ prime_minister_bayar: "Primer ministro" #NT!
+ prime_minister_okyar: "Primer ministro" #NT!
+ prime_minister_saracoglu: "Primer ministro" #NT!
+ prime_minister_peker: "Primer ministro" #NT!
+ prime_minister_aydemir: "Primer ministro" #NT!
+ prime_minister_husnu: "Presidente" #NT!
+ prime_minister_menderes: "Primer ministro" #NT!
+ prime_minister_demirag: "Primer ministro" #NT!
+ prime_minister_atsiz: "Primer ministro" #NT!
+ grand_vizier_nursi: "gran visir" #NT!
+ feminist_ultranationalist: "Ultranacionalista feminista" #NT!
+ pan_turkic_doyen: "Decano panturco" #NT!
+ vatan_ideologue: "Ideólogo de Vatan" #NT!
+ irredentist_academic: "Académico irredentista" #NT!
+ avid_turanist: "Turanista ávido" #NT!
+ revolutionary_author: "Autor revolucionario" #NT!
+  
+ trait_TUR_kemalist_champion: "Campeón kemalista" #NT!
+ trait_TUR_kemalist_champion_desc: "Este líder es un fiel partidario de los principios del kemalismo y luchará para defenderlos." #NT!
+  
+ underage_monarch: "Monarca menor de edad" #NT!
+ legitimate_heir: "Heredero legítimo" #NT!
+ collaborator_king: "Rey colaborador" #NT!
+  
+ trait_BUL_zveno_member: "Miembro de Zveno" #NT!
+ trait_BUL_zveno_member_desc: "Este líder es miembro de Zveno y se pondrá del lado de esta facción si estalla el conflicto." #NT!
+ trait_BUL_tsar_loyalist: "Leal al zar" #NT!
+ trait_BUL_tsar_loyalist_desc: "Este líder es leal al Zar y se pondrá del lado del gobierno monárquico si estalla un conflicto." #NT!
+ trait_BUL_ff_sympathizer: "Simpatizante del Frente Patria" #NT!
+ trait_BUL_ff_sympathizer_desc: "Este líder simpatiza con el Frente de la Patria y se pondrá del lado de esta organización si estalla un conflicto." #NT!
+ tsar_unifier: "Zar unificador" #NT!
+ tsars_puppet: "La marioneta del zar" #NT!
+ leader_of_the_agrarian_union: "Dirigente de la Unión Agraria" #NT!
+ industry_reformer: "Reformador de la industria" #NT!
+ womens_rights_activist: "Activista por los derechos de las mujeres" #NT!
+ marxist_philosopher: "Filósofo marxista" #NT!
+ statism_adept: "Adepto al estatismo" #NT!
+ nazi_sympathizer: "Simpatizante nazi" #NT!
+ ambitious_negotiator_neutrality: "Negociador ambicioso" #NT!
+ ambitious_negotiator_fascism: "Negociador ambicioso" #NT!
+ old_coup_maker: "El viejo golpista" #NT!
+ dreams_of_a_new_byzantium: "Sueños de un nuevo Bizancio" #NT!
+ BUL_ferdinand_subjects_modifier_tt: "- Fábricas militares y civiles adicionales de los sujetos: §G+40%§!" #NT!
+ the_bloody_professor: "El profesor sangriento" #NT!
+ hardened_officer: "Oficial endurecido" #NT!
+ BUL_bogdan_filov_ideology_neutrality_tt: "(Será reemplazado por Apoyo diario al liberalismo si Bulgaria adopta el liberalismo)\n$BUL_bogdan_filov_negotiations_tt$" #NT!
+ BUL_bogdan_filov_ideology_fascism_tt: "(Será reemplazado por el Apoyo diario para los no alineados si Bulgaria pasa a ser no alineada)\n$BUL_bogdan_filov_negotiations_tt$" #NT!
+ BUL_bogdan_filov_negotiations_tt: "\nBogdan Filov aumenta las posibilidades de éxito al negociar con el Eje y las disminuye cuando negocia con los Aliados." #NT!
+ incompetent_leader: "Líder incompetente" #NT!
+ no_designated_regency: "Sin regencia designada" #NT!
+ the_hero_of_the_leipzig_trials: "El héroe de los procesos de Leipzig" #NT!
+ political_manipulator: "Manipulador político" #NT!
+ elected_regency_council: "Consejo de regencia electo" #NT!
+ elected_regency_council_pro_axis: "Consejo de regencia electo" #NT!
+ elected_regency_council_pro_allies: "Consejo de regencia electo" #NT!
+ the_bloody_professor_regency_council: "Tsankov preside el Consejo de Regencia" #NT!
+ hardened_officer_regency_council: "Lukov preside el Consejo de Regencia" #NT!
+ political_manipulator_regency_council: "Filov preside el Consejo de Regencia" #NT!
+ appeaser_regency_council: "Mushanov preside el Consejo de Regencia" #NT!
+ morges_champion: "Campeón del Frente Morges" #NT!
+ polish_peasant_champion: "Héroe campesino" #NT!
+ BALTIC_ex_russian: "Veterano del Imperio Ruso" #NT!
+ BALTIC_ex_russian_desc: "§LEx miembro del ejército imperial ruso.§!" #NT!
+ BALTIC_anti_bolshevik: "Veterano antibolchevique" #NT!
+ BALTIC_anti_bolshevik_desc: "§LHa luchado contra elementos socialistas y volverá a hacerlo.§!" #NT!
+ POL_sanation_left_leader: "Líder de izquierda del saneamiento" #NT!
+ POL_sanation_left_leader_desc: "§LSeguidor de Walery Sławek y de la izquierda sanitaria.§!" #NT!
+ POL_sanation_right_leader: "Líder de la derecha en materia de saneamiento" #NT!
+ POL_sanation_right_leader_desc: "§LPartidario de Edward Rydz-Śmigły y del derecho al saneamiento.§!" #NT!
+ peasant_sympathiser: "Simpatizante campesino" #NT!
+ peasant_sympathiser_desc: "§LSiente simpatía por los campesinos y la clase trabajadora de Polonia.§!" #NT!
+ he_who_bears_the_throne: "El que lleva el trono" #NT!
+ ETH_hero_of_ethiopia: "Héroe de Etiopía" #NT!
+ ETH_hero_of_ethiopia_desc: "§LUno de los verdaderos héroes del país§!" #NT!
+  
+ stalin_political_paranoia: "Paranoia política" #NT!
+ SOV_paranoia_modifier_increase_effect_tt: "- ¡La paranoia política aumenta en §R1§! semanalmente" #NT!
+ stalin_political_paranoia_advanced: "$stalin_political_paranoia$" #NT!
+ SOV_paranoia_advance_modifier_increase_effect_tt: "- ¡La paranoia política aumenta en §R2§! semanalmente" #NT!
+ stalin_heart_of_steel: "Corazón de acero" #NT!
+ stalin_heart_of_steel_opposition: "$stalin_heart_of_steel$" #NT!
+ stalin_inheritor_of_lenin: "Heredero del manto de Lenin" #NT!
+ stalin_inheritor_of_lenin_genius: "$stalin_inheritor_of_lenin$" #NT!
+ stalin_inheritor_of_lenin_leader: "$stalin_inheritor_of_lenin$" #NT!
+ stalin_inheritor_of_lenin_final: "$stalin_inheritor_of_lenin$" #NT!
+ stalin_servant_of_lenin: "Fiel servidor de Lenin" #NT!
+ stalin_servant_of_lenin_worship: "$stalin_servant_of_lenin$" #NT!
+ stalin_servant_of_lenin_leader: "$stalin_servant_of_lenin$" #NT!
+ stalin_servant_of_lenin_final: "$stalin_servant_of_lenin$" #NT!
+ stalin_great_commander: "Gran comandante" #NT!
+ stalin_architect_of_communism: "Arquitecto del socialismo" #NT!
+ stalin_father_of_nations: "Padre de las Naciones" #NT!
+ stalin_authority_undermined: "Autoridad socavada" #NT!
+ SOV_paranoia_modifier_increase_2_effect_tt: "- ¡La paranoia política aumenta en §R2§! semanalmente" #NT!
+ the_siberian_lenin: "El Lenin siberiano" #NT!
+ strong_party_discipline: "Disciplina de partido fuerte" #NT!
+ defender_of_the_peasantry: "Defensor del campesinado" #NT!
+ hero_of_the_peasantry: "Héroe del campesinado" #NT!
+ the_faded_star: "La estrella desvanecida" #NT!
+ born_agitator: "Agitador nato" #NT!
+ unscrupulous_orchestrator: "Orquestador sin escrúpulos" #NT!
+ unscrupulous_orchestrator_no_lar: "$unscrupulous_orchestrator$" #NT!
+ head_directorate_of_new_buildings: "Jefe de la Dirección de Nuevos Edificios" #NT!
+ soviet_economist: "Economista soviético" #NT!
+ ecomonist_publicist: "Economista y publicista" #NT!
+ international_revolutionary: "Revolucionario Internacional" #NT!
+ peoples_commissar_for_posts_and_telegraphs: "Comisario de Correos y Telégrafos" #NT!
+ labor_defense_organizer: "Organizador del Trabajo y la Defensa" #NT!
+ pc_military_naval_affairs: "Comisario para las Fuerzas Armadas y la Marina" #NT!
+ economy_reformer: "Reformador de la economía" #NT!
+ left_trade_unionist: "Sindicalista de izquierda" #NT!
+ right_trade_unionist: "Sindicalista de derecha" #NT!
+ chair_of_the_unions: "Presidente de los sindicatos" #NT!
+ communist_theorist: "Teórico socialista" #NT!
+ appeasing_technocrat: "Tecnócrata apaciguador" #NT!
+ anti_stalinist_propagandist: "Propagandista antiestalinista" #NT!
+ peoples_commissar_of_finance: "Comisario del Pueblo de Finanzas" #NT!
+ internal_rivalry: "Rivalidad interna" #NT!
+ ataman_transbaikal_host: "Atamán de la Hueste Transbaikal" #NT!
+ trait_SOV_cowed_by_stalin_army: "Intimidado por Stalin" #NT!
+ trait_SOV_cowed_by_stalin_army_desc: "Este personaje se siente amenazado por las purgas de Stalin y no realizará su trabajo libremente por miedo a ser acusado de traición. Su actuación se ve afectada significativamente." #NT!
+ trait_SOV_cowed_by_stalin_navy: "$trait_SOV_cowed_by_stalin_army$" #NT!
+ trait_SOV_cowed_by_stalin_navy_desc: "$trait_SOV_cowed_by_stalin_army_desc$" #NT!
+ SOV_cowed_by_stalin_trait_tt: "Este rasgo se eliminará una vez completado el enfoque §Y$SOV_lessons_of_war$§!." #NT!
+ trait_SOV_determined: "Determinado" #NT!
+ trait_SOV_monarchist_sympathizer: "Simpatizante monárquico" #NT!
+ trait_SOV_stalinist: "estalinista" #NT!
+ trait_SOV_stalinist_desc: "Este personaje es leal a Stalin y no se dejará influenciar por ningún grupo de oposición.\n§REste personaje aún puede ser purgado.§!" #NT!
+ trait_SOV_trotskyist: "Trotskista" #NT!
+ trait_SOV_trotskyist_desc: "Este personaje es leal a la causa trotskista y se aliará con los trotskistas en caso de una guerra civil." #NT!
+ trait_SOV_bukharinist: "Bujarinista" #NT!
+ trait_SOV_bukharinist_desc: "Este personaje es leal a Bujarin y sus seguidores y se pondrá de su lado en caso de una guerra civil." #NT!
+  
+ tank_refurbishment_plant: "Planta de reacondicionamiento de tanques" #NT!
+ repair_and_refurbishment_plant: "Planta de Reparación y Rehabilitación" #NT!
+ black_sea_naval_manufacturer: "Diseñador naval del Mar Negro" #NT!
+ submarine_manufacturer: "Diseñador de submarinos" #NT!
+ submarine_manufacturer_2: "$submarine_manufacturer$" #NT!
+ multi_role_aircraft_manufacturer: "Diseñador de aeronaves multifunción" #NT!
+  
+ head_of_the_nkvd: "Jefe de la NKVD" #NT!
+ head_of_the_nkvd_yagoda_initial: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_yagoda: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_yagoda_no_paranoia: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_yezhov_initial: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_yezhov: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_yezhov_no_paranoia: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_beriya_initial: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_beriya: "$head_of_the_nkvd$" #NT!
+ head_of_the_nkvd_beriya_no_paranoia: "$head_of_the_nkvd$" #NT!
+ SOV_head_of_the_nkvd_locked_tt: "\n§YEl jefe del NKVD no puede ser reemplazado manualmente ni removido de su cargo hasta que haya concluido la Gran Purga.§!" #NT!
+ SOV_head_of_the_nkvd_yagoda_tt: "¡La paranoia política aumenta en un §R1§ extra! semanalmente" #NT!
+ SOV_head_of_the_nkvd_yezhov_tt: "¡La paranoia política aumenta en un §R2§ extra! semanalmente" #NT!
+ SOV_head_of_the_nkvd_beriya_tt: "¡La paranoia política aumenta en un §R2§ extra! semanalmente" #NT!
+ iron_lazar: "Lázaro de hierro" #NT!
+ political_commissar: "Comisario político" #NT!
+ pc_for_foreign_affairs_molotov: "Comisario del Pueblo para Asuntos Exteriores" #NT!
+ pc_for_foreign_affairs_litvinov: "$pc_for_foreign_affairs_molotov$" #NT!
+ patriarch_of_moscow_and_all_russia: "Patriarca de Moscú y de toda Rusia" #NT!
+ regular_trait_tab_title: "Rasgos" #NT!
+ advisor_trait_tab_title: "Funciones del cuerpo de oficiales" #NT!
+ advisor_slot_title: "$NAME$" #NT!
+ advisor_trait_specialist: "(Especialista)" #NT!
+ advisor_trait_expert: "(Experto)" #NT!
+ advisor_trait_genius: "(Genio)" #NT!
+ officer_corps: "Cuerpo de oficiales" #NT!
+ pick_advisor_role: "Rol de asesor disponible" #NT!
+ political_chameleon: "Camaleón político" #NT!
+ mladorossi_theorist: "Teórico de Mladorossi" #NT!
+ the_foreign_connection: "La conexión extranjera" #NT!
+ defier_of_the_sun_god: "Desafiador del Dios Sol" #NT!
+ emperor_and_autocrat_of_all_the_russias: "Emperador y Autócrata de todas las Rusias" #NT!
+ supreme_representative_of_god_on_earth: "Representante Supremo de Dios en la Tierra" #NT!
+ fascist_orchestrator: "Orquestador liberal" #NT!
+ theocratic_diplomat: "Diplomático teocrático" #NT!
+ orthodox_rabblerouser: "Agitador ortodoxo" #NT!
+ driver_of_the_faithful: "Conductor de los fieles" #NT!
+ the_masses_opium: "El opio de las masas" #NT!
+ emigre_connections: "Conexiones de emigrados" #NT!
+ desperate_gambit: "Gambito desesperado" #NT!
+ dysfunctional_assembly: "Ensamblaje disfuncional" #NT!
+ army_chief_entrenchment_1: "Especialista en atrincheramiento" #NT!
+ army_chief_entrenchment_2: "Experto en atrincheramiento" #NT!
+ army_chief_entrenchment_3: "El genio del atrincheramiento" #NT!
+ devoted_marxist: "Marxista devoto" #NT!
+ leftist_independent: "Izquierdista independiente" #NT!
+ soviet_thaw: "Prosoviético" #NT!
+ LAT_military_dictator: "Dictador militar" #NT!
+ amateur_aviator_hess: "Primero entre iguales" #NT!
+ promoted_from_the_ranks: "Promovido desde las filas" #NT!
+ promoted_from_the_ranks_desc: "HACER" #NT!
+  
+ king_of_kings: "Por el León Conquistador de la Tribu de Judá, Su Majestad Imperial Haile Selassie I, Rey de Reyes, Señor de Señores, Elegido de Dios." #NT!
+ king_of_kings_2: "$king_of_kings$" #NT!
+ king_of_kings_3a: "$king_of_kings$" #NT!
+ king_of_kings_3b: "$king_of_kings$" #NT!
+ king_of_kings_4: "$king_of_kings$" #NT!
+ imperator_absentis: "Emperador ausente" #NT!
+ god_of_the_rastafari: "Dios de los rastafaris" #NT!
+ crowned_adder: "La víbora coronada" #NT!
+ crowned_adder_2: "La víbora coronada" #NT!
+ tainted_ras: "El Ras Manchado" #NT!
+ tainted_ras_2: "El Ras Manchado" #NT!
+ inexperienced_sultan: "Sultán inexperto" #NT!
+ inexperienced_sultan_2: "Sultán inexperto" #NT!
+ the_red_ras: "El Ras Rojo" #NT!
+ king_of_ethiopia: "Rey de Etiopía" #NT!
+ gallant_doctor: "Doctor valiente" #NT!
+ modernist_and_reformer: "Modernista y reformista" #NT!
+ staunch_loyalist: "Leal acérrimo" #NT!
+ archbishop_of_ethiopian_orthodox_tewahedo_church: "Arzobispo de la Iglesia Tewahedo" #NT!
+ international_anarchist: "Anarquista internacional" #NT!
+ minister_of_the_interior: "Ministro del Interior" #NT!
+ minister_of_the_interior_aregai: "$minister_of_the_interior$" #NT!
+ minister_of_the_interior_aregai_no_lar: "$minister_of_the_interior$" #NT!
+ minister_of_the_interior_abate: "$minister_of_the_interior$" #NT!
+ japanizer: "Japones" #NT!
+ anti_unionist_pure_anarchist: "Anarquista puro anti-unionista" #NT!
+ transnational_anarchist: "Anarquista transnacional" #NT!
+ commander_of_the_fetno_derash: "Comandante del Fetno-Derash" #NT!
+ commander_of_the_fetno_derash_no_lar: "Comandante del Fetno-Derash" #NT!
+ modernizer_and_diplomat: "Modernizador y diplomático" #NT!
+ minister_of_finance_deressa: "Ministro de Finanzas" #NT!
+ minister_of_finance_mariyam: "Ministro de Finanzas" #NT!
+ patroness_of_ethiopian_red_cross: "Patrona de la Cruz Roja Etíope" #NT!
+ collaborationist_arch_bishop: "Arzobispo colaboracionista" #NT!
+ arch_bishop_of_gojjam: "Arzobispo de Gojjam" #NT!
+ rebellious_educator: "Educador rebelde" #NT!
+ rebellious_educator_tt: "§YEducador rebelde:§! \n -$MODIFIER_RESEARCH_SPEED_FACTOR$: §G+5%§! \n -$MODIFIERS_ARMY_CORE_DEFENCE_FACTOR$: §G+5%§!" #NT!
+ imprisoned_emperor: "Emperador encarcelado" #NT!
+ rich_sultan: "El sultán rico" #NT!
+ liberator_of_eth_jofir: "Libertador de Jimma" #NT!
+ liberator_of_eth_gugsa: "Libertador de Etiopía" #NT!
+ liberator_of_eth_haymanot: "Libertador de Gojjam" #NT!
+ anarcho_communist_council: "Anarcosocialismo" #NT!
+ revolutionary_council: "Consejo revolucionario" #NT!
+  
+ il_duce: "El Duce" #NT!
+ il_duce_laws_cost_tt: "- Leyes de Economía, Comercio y Reclutamiento Costo: §G-15%§!" #NT!
+ il_duce_providence: "$il_duce$" #NT!
+ il_duce_strengthen: "$il_duce$" #NT!
+ il_duce_providence_strengthen: "$il_duce$" #NT!
+ il_duce_devotion: "$il_duce$" #NT!
+ il_duce_heroes: "$il_duce$" #NT!
+ lion_tamer: "Domador de leones" #NT!
+ lion_tamer_2: "$lion_tamer$" #NT!
+ capo_supremo: "Cejilla suprema" #NT!
+ the_soldier_king: "El rey soldado" #NT!
+ king_of_albania: "Rey de Albania" #NT!
+ emperor_of_ethiopia: "Emperador de Etiopía" #NT!
+ eager_commander: "Comandante ansioso" #NT!
+ the_grand_council: "El Gran Consejo" #NT!
+ aviation_hero: "Héroe de la aviación" #NT!
+ ITA_aviation_hero_tt: "- $air_equipment_research$: §G+5%§!" #NT!
+ military_modernizer: "Modernizador militar" #NT!
+ silver_tongue: "Lengua de plata" #NT!
+ silver_tongue_no_lar: "$silver_tongue$" #NT!
+ father_of_the_empire: "Padre del Imperio" #NT!
+ political_reformer_1: "Reformador político" #NT!
+ political_reformer_2_no_lar: "$political_reformer_1$" #NT!
+ political_reformer_2: "$political_reformer_1$" #NT!
+ ITA_political_reformer_tt: "Todos los asesores Costo: §G-25%§!" #NT!
+ hierarch_minister_of_foreign_affairs: "Jerarca - Ministro de Asuntos Exteriores" #NT!
+ hierarch_minister_of_justice: "Jerarca - Ministro de Justicia" #NT!
+ hierarch_minister_of_education: "Jerarca - Ministro de Educación" #NT!
+ hierarch_minister_of_corporations: "Jerarca - Ministro de Corporaciones" #NT!
+ mussolini_minister_of_foreign_affairs: "Ministro de Asuntos Exteriores (en funciones)" #NT!
+ mussolini_minister_of_justice: "Ministro de Justicia (en funciones)" #NT!
+ mussolini_minister_of_education: "Ministro de Educación (interino)" #NT!
+ mussolini_minister_of_corporations: "Ministro de Corporaciones (en funciones)" #NT!
+ ITA_hierarch_bop_tt: "Al ser contratado el §Y$ITA_power_balance$§! se mueve §Y15%§! hacia §YEl Gran Consejo del Liberalismo§!." #NT!
+ minister_of_peasants: "Ministro de Campesinos" #NT!
+ partisans_organizer: "Organizador de partisanos" #NT!
+ gallo: "El gallo" #NT!
+ minister_of_posts_and_telegraphs: "Ministro de Correos y Telégrafos" #NT!
+ liberal_professor: "Profesor liberal" #NT!
+ anti_fascist_chaplain: "Capellán antiliberalista" #NT!
+ duke_of_aosta: "Tercer duque de Aosta" #NT!
+ viceroy_of_aoi: "Virrey de África Orientale Italiana" #NT!
+ iron_duke: "El duque de hierro" #NT!
+ scholar_of_ethiopian_and_somali_studies: "Académico de estudios etíopes y somalíes" #NT!
+ ITA_tomislav_of_croatia: "Tomislav II, rey de Croacia" #NT!
+ BBA_ALB_fascist_lawyer: "El abogado liberal" #NT!
+ ITA_head_of_the_national_committee: "Jefe del Comité Nacional" #NT!
+ indisposed_political_scientist: "Politólogo indispuesto" #NT!
+ indisposed_political_scientist_tt: "Antonio Gramsci necesita tiempo para recuperarse de su grave enfermedad, rasgo que mejorará notablemente en el futuro." #NT!
+ cultural_hegemony_theorist: "Teórico de la hegemonía cultural" #NT!
+ supreme_pontiff: "Sumo Pontífice" #NT!
+ temperamental: "Temperamental" #NT!
+ grand_master_of_the_equestrian_order_of_the_holy_sepulcher_of_jerusalem: "Gran Maestre de la Orden Ecuestre del Santo Sepulcro de Jerusalén" #NT!
+ master_of_politics: "Maestría en Política" #NT!
+ resistance_leader: "Líder de la resistencia" #NT!
+ moderate_reformist: "Reformista moderado" #NT!
+ anti_fascist_committee: "Comité Antiliberal" #NT!
+ conservative_communist: "Comunista conservador" #NT!
+ staunch_anti_fascist: "Antifascista acérrimo" #NT!
+  
+ ############################################### 
+ ################# SWISS TRAITS ################ 
+ ############################################### 
+  
+ SWI_commander_in_chief: "comandante en jefe" #NT!
+ SWI_radical_democrat: "Demócrata radical" #NT!
+ SWI_democratic_capitalist: "Capitalista conservador" #NT!
+ SWI_cantonal_conservative: "Conservador cantonal" #NT!
+ SWI_anarchist: "Anarquista" #NT!
+ SWI_independent: "Independiente" #NT!
+ SWI_federalist: "Federalista" #NT!
+ SWI_trade_unionist: "Sindicalista" #NT!
+ SWI_anti_communist: "Comunista" #NT!
+ SWI_anti_fascist: "Antifascista" #NT!
+ SWI_fascist_appeaser: "Liberal apaciguador" #NT!
+ SWI_fascist: "Fascista" #NT!
+ SWI_fascist_propagandist: "Propagandista liberal" #NT!
+ SWI_fascist_recruiter: "Reclutador liberal" #NT!
+ SWI_corporatist: "Corporativista" #NT!
+ SWI_social_democrat: "Socialdemócrata" #NT!
+ SWI_socialist_pacifist: "Pacifista socialista" #NT!
+ SWI_communist: "Comunista" #NT!
+ SWI_pragmatic_democrat: "Demócrata pragmático" #NT!
+ SWI_conservative_democrat: "Demócrata conservador" #NT!
+ SWI_militaristic_democrat: "Demócrata militarista" #NT!
+ SWI_militaristic_nationalist: "Nacionalista militarista" #NT!
+ SWI_nationalistic_industrialist: "Industrialista nacionalista" #NT!
+ SWI_diplomat: "Diplomático" #NT!
+ SWI_technocrat: "Tecnócrata" #NT!
+ SWI_intelligence_officer: "Oficial de inteligencia" #NT!
+ SWI_humanitarian: "Humanitario" #NT!
+ SWI_small_arms_designer: "Diseñador de armas" #NT!
+ SWI_guisan_leader_trait: "Dictador popular" #NT!
+ SWI_weapons_designer: "Diseñador de armas" #NT!
+ SWI_soviet_spy: "Espía soviético" #NT!
+  
+ constitutional_philosopher: "Filósofo constitucional" #NT!
+ democratic_firebrand: "Incitador conservador" #NT!
+ communist_orator: "Orador de la Resistencia" #NT!
+ harsh_propagandist: "Propagandista severo" #NT!
+ SWI_brandy_the_st_bernard_trait: "Concejal incompetente" #NT!
+  
+ evans_deakin_trait: "Empresa del Pacífico" #NT!
+ cockatoo_trait: "Especialista en buques ligeros" #NT!
+  
+  # FINLAND 
+ jaeger: "El veterano Jaeger" #NT!
+ jaeger_desc: "§LExperto en guerra de guerrillas y operaciones de sabotaje tras las líneas enemigas.§!" #NT!
+  
+ mining_company: "Compañía minera" #NT!
+ telephone_company: "Compañía telefónica" #NT!
+  
+ kokoomus_policies: "Políticas de Kokoomus" #NT!
+ member_of_the_suojeluskunta: "Miembro de Suojeluskunta" #NT!
+ member_of_the_suojeluskunta_improved: "$member_of_the_suojeluskunta$" #NT!
+ paasikivi_doctrine: "Doctrina Paasikivi" #NT!
+ paasikivi_doctrine_improved: "$paasikivi_doctrine$" #NT!
+ backed_by_political_coalition: "Con el respaldo de una coalición política" #NT!
+ white_liberal_leader: "$white_liberal$" #NT!
+ white_liberal_leader_improved: "$white_liberal$" #NT!
+ expansionist_policies: "Políticas expansionistas" #NT!
+ FIN_expansionist_policies_take_states_tt: "\n§YCosto reducido§! para la acción §YTomar Estados§! en §Y[SOV.GetFlag][SOV.GetAdjective] núcleos§! en Conferencias de Paz." #NT!
+ sotamarsalkka: "Sotamarsalkka" #NT!
+ sotamarsalkka_improved: "$sotamarsalkka$" #NT!
+ personal_agenda: "Agenda personal" #NT!
+ personal_agenda_svinhufvud: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_kallio: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_ryti: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_mannerheim: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_paasikivi: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_annala: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_tanner: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_aaltonen: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_leino: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_kuusinen: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ personal_agenda_von_hesse: "\n£GFX_power_balance_texticon §Y$personal_agenda$§!" #NT!
+ losing_soverignty_threatened_tt: "§RLa soberanía finlandesa amenazada§!: Perder el control sobre un estado central finlandés disminuirá la £GFX_power_balance_texticon §YConfianza pública§!." #NT!
+ FIN_personal_agenda_svinhufvud_tt: "§GErradicar el socialismo§!: Tener menos del §Y1%§! de apoyo a las ideologías $democratic$ y $communism$ aumentará £GFX_power_balance_texticon §Yla confianza pública§!. \n - §REn cuanto al apoyo a los socialistas§!: Tener más del §Y9%§! de apoyo a las ideologías $democratic$ o $communism$ disminuirá £GFX_power_balance_texticon §Yla confianza pública§!. \n - §!6" #NT!
+ FIN_personal_agenda_kallio_tt: "§GErradicar a los extremistas§!: Tener menos del §Y1%§! de apoyo a las ideologías $fascism$ y $communism$ aumentará £GFX_power_balance_texticon §Yla confianza pública§!. \n - §REn cuanto al apoyo a los extremistas§!: Tener más del §Y9%§! de apoyo a las ideologías $fascism$ o $communism$ disminuirá £GFX_power_balance_texticon §Yla confianza pública§!. \n - §!6" #NT!
+ FIN_personal_agenda_ryti_tt: "§GSueño de la Gran Finlandia§!: Ocupar los estados centrales finlandeses que están en manos de un enemigo aumentará la £GFX_power_balance_texticon §YConfianza Pública§!. \n - §REn cuanto al apoyo a los socialistas§!: Tener más del §Y9%§! de apoyo a $democratic$ o $communism$ ideologías disminuirá la £GFX_power_balance_texticon §YConfianza Pública§!. \n - §!3" #NT!
+ FIN_personal_agenda_mannerheim_tt: "§GLíder confiable§!: Estar en guerra aumentará £GFX_power_balance_texticon §YConfianza pública§!. \n - §RRegente designado§!: Estar en paz disminuirá £GFX_power_balance_texticon §YConfianza pública§!." #NT!
+ FIN_personal_agenda_paasikivi_tt: "§GConservador realista§!: Tener más de §Y95%§! £GFX_stability_texticon $stability$ aumentará £GFX_power_balance_texticon §YConfianza pública§!. \n - §RCaretaker§!: Tener menos de §Y60%§! £GFX_stability_texticon $stability$ disminuirá £GFX_power_balance_texticon §YConfianza pública§!. \n - §!5" #NT!
+ FIN_personal_agenda_annala_tt: "§GNación fuerte§!: Tener más de §Y300.000§! £GFX_manpower_texticon  $MANPOWER$ en el campo y menos del §Y5%§! Progreso de rendición mientras se está en guerra aumentará £GFX_power_balance_texticon §YConfianza pública§!. \n - §REn cuanto al apoyo a los socialistas§!: Tener más del §Y9%§! de apoyo a §!2 o §!3 ideologías disminuirá £GFX_power_balance_texticon §YConfianza pública§!. \n - §!7" #NT!
+ FIN_personal_agenda_tanner_tt: "§GNaciones Unidas§!: Controlar §YKarjala§! y todos los estados que posee mientras tiene más del §Y95%§! de apoyo para la ideología $democratic$ aumentará £GFX_power_balance_texticon §YConfianza pública§!. \n - §REn cuanto al apoyo a los extremistas§!: Tener más del §Y9%§! de apoyo para §!1 o §!2 ideologías disminuirá £GFX_power_balance_texticon §YConfianza pública§!. \n - §!6" #NT!
+ FIN_personal_agenda_aaltonen_tt: "§GCruzada antiliberal§!: Tener una contribución de más del §Y10%§! Participación en la guerra en todas las guerras activas y menos del §Y5%§! Progreso de rendición mientras se está en guerra contra un país liberal aumentará £GFX_power_balance_texticon §YConfianza pública§!. \n - §RProletariado dividido§!: Tener menos del §Y80%§! apoyo a la ideología §!0 disminuirá £GFX_power_balance_texticon §YConfianza pública§!. \n - §!4" #NT!
+ FIN_personal_agenda_leino_tt: "§GLiberalismo europeo aniquilado§!: Tener menos del §Y1%§! de apoyo a la ideología $fascism$ mientras se mantiene a Europa libre de gobiernos liberales aumentará la £GFX_power_balance_texticon §YConfianza pública§!. \n - §RProletariado dividido§!: Tener menos del §Y80%§! de apoyo a la ideología §!0 disminuirá la £GFX_power_balance_texticon §YConfianza pública§!. \n - §!4" #NT!
+ FIN_personal_agenda_kuusinen_tt: "§GUn sistema solar de organizaciones§!: Tener todos los estados centrales §YEscandinavos§! y §YBálticos§! controlados por Finlandia o un aliado aumentará £GFX_power_balance_texticon §YConfianza pública§!. \n - §RFino-Carelianos olvidados§!: No controlar los estados de §YKarjala§!, §YKola§!, §YOnega§! y §YOlonets§! disminuirá £GFX_power_balance_texticon §YConfianza pública§!. \n - §!7" #NT!
+ FIN_personal_agenda_von_hesse_tt: "§GSueño de la Gran Finlandia§!: Ocupar los estados centrales finlandeses que están en manos de un enemigo aumentará la £GFX_power_balance_texticon §YConfianza Pública§!. \n - §REn cuanto al apoyo a los socialistas§!: Tener más del §Y9%§! de apoyo a $democratic$ o $communism$ ideologías disminuirá la £GFX_power_balance_texticon §YConfianza Pública§!. \n - §!3" #NT!
+ grandpa_vainamoinen: "Abuelo Väinämöinen" #NT!
+ tribal_warrior: "Guerrero tribal" #NT!
+ veteran_guerrilla_fighter: "Guerrillero veterano" #NT!
+ architect_of_finnish_coporatism: "Arquitecto del corporativismo finlandés" #NT!
+ pragmatic_socialist: "Socialista pragmático" #NT!
+ champion_of_national_cooperation: "Campeón de la cooperación nacional" #NT!
+ committed_anti_fascist: "Antifascista comprometido" #NT!
+ unbreakable_anti_fascist: "Antifascista inquebrantable" #NT!
+ committed_anti_fascist_no_lar: "$committed_anti_fascist$" #NT!
+ unbreakable_anti_fascist_no_lar: "$unbreakable_anti_fascist$" #NT!
+ devoted_communist: "Comunista devoto" #NT!
+ FIN_stalins_puppet_kuusinen: "$stalins_puppet$" #NT!
+ FIN_stalins_puppet_kuusinen_ns_tt: "- Los productos finlandeses fluirán a la Unión Soviética, lo que les garantizará bonificaciones temporales en bienes de consumo y suministros." #NT!
+ international_communist: "Comunista Internacional" #NT!
+ crown_prince_of_finland: "Príncipe heredero de Finlandia" #NT!
+ FIN_crown_prince_of_finland_tt: "- Se ha reducido el coste de §Y§! para la acción §YTomar Estados§! en las Conferencias de Paz. Se ha reducido aún más el coste de §YNúcleos estonios§!." #NT!
+  
+ FIN_communist_revolutionary_leino: "$communist_revolutionary$" #NT!
+ FIN_communist_revolutionary_leino_tt: "Desbloquea decisiones en preparación para una guerra civil: §Y$FIN_gather_popular_support$§!, §Y$FIN_crack_down_on_fascists$§! y §Y$FIN_crack_down_on_the_military$§!" #NT!
+ FIN_technocrat_saarinen: "$technocrat$" #NT!
+ FIN_technocrat_saarinen_tt: "Desbloquea decisiones en preparación para una guerra civil: §Y$FIN_prepare_construction_workers_actions$§! y §Y$FIN_align_the_trade_unions$§!" #NT!
+ FIN_patriotic_socialist_kuusinen: "$patriotic_socialist$" #NT!
+ FIN_patriotic_socialist_kuusinen_tt: "Desbloquea decisiones en preparación para una guerra civil: §Y$FIN_purchase_soviet_equipment$§! y §Y$FIN_infiltrate_soviet_commandos$§!" #NT!
+ FIN_democratic_reformer_fagerholm: "$democratic_reformer$" #NT!
+ FIN_democratic_reformer_fagerholm_tt: "¡Desbloquea la decisión §Y$FIN_call_to_union_activism$§!" #NT!
+ FIN_humble_appeaser_tanner: "$appeaser$" #NT!
+ FIN_humble_appeaser_tanner_tt: "¡Desbloquea la decisión §Y$FIN_push_for_cabinet_participation$§!" #NT!
+ FIN_champion_of_equality_sillanpaa: "$champion_of_equality$" #NT!
+ FIN_champion_of_equality_sillanpaa_tt: "¡Desbloquea la decisión §Y$FIN_gather_funds_for_womens_shelters$§!" #NT!
+ white_liberal: "Liberal blanco" #NT!
+ fascist_corporatist: "Corporatista liberalista" #NT!
+ model_cajander: "Modelo Cajander" #NT!
+ hurja_hilja: "Hurja Hilja" #NT!
+ nationalist_lutheran_priest: "Sacerdote luterano nacionalista" #NT!
+ maan_turva_headman: "Jefe de Maan Turva" #NT!
+ white_chaplain: "Capellán blanco" #NT!
+ karelian_irredentist_writer: "Escritor irredentista de Carelia" #NT!
+ agrarian_nationalist: "Nacionalista Agrario" #NT!
+ champion_of_equality: "Campeón de la igualdad" #NT!
+ kautskyian_socialist: "Socialista kautskiano" #NT!
+ socialist_journalist: "Periodista socialista" #NT!
+ veteran_trade_unionist: "Sindicalista veterano" #NT!
+ former_leader_of_red_finland: "Ex líder de Finlandia Roja" #NT!
+ anti_soviet_socialist: "Socialista antisoviético" #NT!
+ master_armorer: "Maestro armero" #NT!
+ army_radio_intelligence_1: "Inteligencia de radio (especialista)" #NT!
+ army_radio_intelligence_2: "Inteligencia de radio (experto)" #NT!
+ army_radio_intelligence_3: "Inteligencia de radio (genialidad)" #NT!
+ army_german_ground_commander: "Comandante alemán (genio)" #NT!
+  
+ #DENMARK 
+ DEN_socialdemokrat: "Político socialista" #NT!
+ DEN_venstre: "Político liberal" #NT!
+ DEN_kommunist: "Político socialista" #NT!
+ DEN_konservativ: "Político conversador" #NT!
+ DEN_rightwing_populist: "Populista de derecha" #NT!
+ DEN_fascist_militarist: "Militarista liberal" #NT!
+ DEN_fascist_populist: "LiberalistaPopulista" #NT!
+ DEN_the_king: "Soberano de Elefantordenen" #NT!
+ DEN_freedom_council_traits: "Unidad política" #NT!
+ DEN_plenipotentiary: "[?DEN.DEN_overlord_nation.GetAdjective] Plenipotenciario" #NT!
+  
+ udenrigsminister: "Ministro de Asuntos Exteriores" #NT!
+ landbrugsminister: "Ministro del Landbrugs" #NT!
+ forsvarsminister: "Ministro de Defensa" #NT!
+ undervisningsminister: "Subsecretario" #NT!
+ finansminister: "Ministro de Finanzas" #NT!
+ welfare_architect: "Arquitecto de bienestar" #NT!
+ disarmament_proponent: "Proponente del desarme" #NT!
+ rearmament_proponent: "Proponente del rearme" #NT!
+ industry_magnate: "Magnate de la industria" #NT!
+  
+ SWE_fallen_riksdag_trait: "Caos y confusión" #NT!
+ SWE_reluctant_towards_rearmament: "Reticente al rearme" #NT!
+ SWE_solidified_mandate: "Mandato consolidado" #NT!
+ SWE_solidified_mandate_upgraded: "Mandato del pueblo" #NT!
+ SWE_rearnament_proponent: "Proponente del rearme" #NT!
+ SWE_rearnament_proponent_upgraded_tt: "§YEquipo de infantería§!:\n £GFX_production_cost Costo de producción: §G-5%§!" #NT!
+ SWE_rearnament_proponent_upgraded: "Partidario del rearme" #NT!
+ SWE_minor_opposition_party_in_power: "Un pequeño partido de oposición en el poder" #NT!
+ SWE_support_party_in_power: "Partido de apoyo en el poder" #NT!
+ SWE_minister_of_trade: "Ministro de Comercio" #NT!
+ SWE_minister_of_justice: "Ministro de Justicia" #NT!
+ SWE_minister_of_state: "Ministro de Estado" #NT!
+ SWE_minister_of_supply: "Ministro de Abastecimiento" #NT!
+ SWE_suffragette: "Sufragista" #NT!
+ SWE_suffragette_research: "Mujeres pioneras" #NT!
+ SWE_suffragette_production: "La nueva fuerza laboral" #NT!
+ SWE_suffragette_clout: "Igualdad en la política" #NT!
+ SWE_suffragette_rfsu: "Institución RFSU" #NT!
+ SWE_committee_against_the_finnish_white_terror: "Comité contra el Terror Blanco Finlandés" #NT!
+ SWE_minister_of_agriculture: "Ministro de Agricultura" #NT!
+ SWE_interventionist_firebrand: "Instigador intervencionista" #NT!
+ SWE_family_oriented_sociologist: "Sociólogo orientado a la familia" #NT!
+ SWE_anti_nazi_interdisciplinary_social_scientist: "Científico social antinazi" #NT!
+ SWE_partners_in_a_dangerous_time_gunnar: "Socios en tiempos peligrosos" #NT!
+ SWE_partners_in_a_dangerous_time_alva: "$SWE_partners_in_a_dangerous_time_gunnar$" #NT!
+ SWE_minister_of_defense: "Ministro de Defensa" #NT!
+ anti_stalinist_marxist: "Marxista antiestalinista" #NT!
+ national_socialist_sympathizer: "Simpatizante nacionalsocialista" #NT!
+ minister_of_ecclesiastical_affairs: "Ministro de Educación" #NT!
+ minister_of_ecclesiastical_affairs_upgraded: "$minister_of_ecclesiastical_affairs$" #NT!
+ national_socialist_veterinarian: "Veterinario nacionalsocialista" #NT!
+ munckska_karens_member: "Miembro de Munckska Kårens" #NT!
+ socialist_writer: "Escritor socialista" #NT!
+ protector_of_cultural_heritage: "Protector del Patrimonio Cultural" #NT!
+ humanist: "Humanista" #NT!
+ SWE_wounded_in_protests: "Heridos por alborotadores" #NT!
+ SWE_wounded_in_protests_desc: "Este general ha resultado herido intentando contener a los alborotadores" #NT!
+ SWE_disillusioned_with_the_government: "Desilusionado con el gobierno" #NT!
+ SWE_disillusioned_with_the_government_desc: "Este general está profundamente desilusionado con el gobierno." #NT!
+ SWE_minister_of_transport: "Ministro de Transporte" #NT!
+ SWE_promoted_away_from_power: "Promovidos lejos del poder" #NT!
+ SWE_promoted_away_from_power_desc: "Este general ha sido colocado en una posición en la que tiene una influencia política y militar limitada y ocupa un lugar más bajo en las prioridades de suministro." #NT!
+ SWE_former_autocrat: "Ex Autócrata" #NT!
+ dislikes_soviet: "No le gusta la URSS" #NT!
+ likes_germany: "Le gusta Alemania" #NT!
+ likes_allies: "Le gustan los aliados" #NT!
+ SWE_close_ties_to_the_military: "Estrechos vínculos con el ejército" #NT!
+ SWE_landsfader: "Desvanecedor de tierras" #NT!
+ SWE_respectful_occupier: "Ocupante respetuoso" #NT!
+ SWE_education_for_all: "Educación para todos" #NT!
+ SWE_every_barrel_counts: "Cada barril cuenta" #NT!
+ SWE_admiral_of_industry: "Almirante de la industria" #NT!
+ SWE_ardent_conservative: "Conservador ardiente" #NT!
+ the_spider: "la araña" #NT!
+ the_spider_desc: "Este líder se ha interesado especialmente en los ataques nocturnos, ganándose el apodo de "la Araña"." #NT!
+ untethered: "Sin ataduras" #NT!
+ unbreakable: "Irrompible" #NT!
+ hyena: "Hiena" #NT!
+ mild_mannered: "De modales apacibles" #NT!
+ mild_mannered_no_lar: "$mild_mannered$" #NT!
+ lucky: "Afortunado" #NT!
+ amnesiac: "Amnésico" #NT!
+ trusty: "Fiel" #NT!
+ trusty_no_lar: "$trusty$" #NT!
+ SWE_the_great: "El Grande" #NT!
+ SWE_the_eternal: "El eterno" #NT!
+ special_envoy: "Enviado especial" #NT!
+ SWE_high_defense_budget: "Alto presupuesto de defensa" #NT!
+ #### NORWAY #### 
+  
+ NOR_royal_chamberlain: "Chambelán real" #NT!
+ NOR_shrewd_regent: "Regente astuto" #NT!
+ NOR_queen_of_norway: "Soberano de los noruegos" #NT!
+ NOR_aristocratic_industrialist: "Industrial aristocrático" #NT!
+ NOR_democratic_powerhouse: "Poder conservador" #NT!
+ NOR_pacifist_diplomat: "Diplomático pacifista" #NT!
+ NOR_shipping_capitalist: "El capitalismo naviero" #NT!
+ NOR_stern_communist: "Comunista severo" #NT!
+ NOR_conciliatory_socialist: "Socialista conciliador" #NT!
+ NOR_communist_agitator: "Agitador socialista" #NT!
+ NOR_radical_trade_unionist: "Sindicalista radical" #NT!
+ NOR_permanent_revolutionary: "Revolucionario permanente" #NT!
+ NOR_fascist_lackey: "Lacayo liberalista" #NT!
+ NOR_fascist_dilettante: "Diletante liberal" #NT!
+ NOR_fascist_landssviker: "Liberalista Landssviker" #NT!
+ NOR_fascist_judiciary: "Poder judicial liberal" #NT!
+ NOR_fascist_advocate: "Defensor liberal" #NT!
+ NOR_callous_engineer: "Ingeniero insensible" #NT!
+ NOR_tobacco_industrialist: "Industrial del tabaco" #NT!
+ NOR_compliant_politician: "Político complaciente" #NT!
+ NOR_conservative_businessman: "Hombre de negocios conservador" #NT!
+ NOR_germanophile_officer: "Oficial germanófilo" #NT!
+ NOR_defeatist_commander_in_chief: "Comandante derrotista" #NT!
+ NOR_ruthless_police_captain: "Capitán de policía despiadado" #NT!
+ NOR_clueless_defense_minister: "Ministro de Defensa despistado" #NT!
+ NOR_minister_of_agriculture: "Ministro de Agricultura" #NT!
+ NOR_hydroelectric_company_trait: "Preocupación hidroeléctrica" #NT!
+ NOR_nationalized_hydroelectric_company_trait: "Empresa hidroeléctrica nacional" #NT!
+ NOR_oppportunistic_officer: "Oficial oportunista" #NT!
+ NOR_pragmatic_defense_minister: "Ministro de Defensa Pragmático" #NT!
+ NOR_vigilant_fort_commander: "Comandante del Fuerte Vigilante" #NT!
+ NOR_ruthless_administrator: "Administrador despiadado" #NT!
+ JAN_polarizing_leader: "Líder polarizador" #NT!
+  
+  # ICELAND 
+ ICE_hot_tempered_reformer: "Reformador de temperamento caliente" #NT!
+ ICE_national_romanticist: "Romanticismo nacional" #NT!
+ ICE_revolutionary_educator: "Educador revolucionario" #NT!
+ ICE_the_strict_regent: "El regente estricto" #NT!
+ ICE_independence_advocate: "Defensor de la Independencia" #NT!
+ ICE_the_navy_king: "El rey de la marina" #NT!
+ ICE_transportation_enthusiast: "Entusiasta del transporte" #NT!
+ ICE_minister_of_healthcare_and_finance: "Ministro de Salud y Finanzas" #NT!
+ ICE_internationalist_guardian: "Guardián internacionalista" #NT!
+ ICE_minister_of_finance_moller: "Ministro de Finanzas" #NT!
+ ICE_judge_and_editor: "Juez y editor de periódico" #NT!
+ ICE_travel_enthusiast: "Entusiasta de los viajes" #NT!
+ ICE_travel_enthusiast_tt: "$air_equipment$ Velocidad de investigación: §G+15%§!" #NT!
+ ICE_progressive_doctor: "Doctor progresista" #NT!
+ ICE_trade_unionist: "sindicalista" #NT!
+ ICE_german_consul: "Cónsul alemán" #NT!
+ ICE_shipping_concern: "Preocupación por el envío" #NT!
+ cautious_arbiter: "Árbitro cauteloso" #NT!
+ viceroy_emeritus: "Virrey Emérito" #NT!
+ viceroy_emeritus_desc: "Lord Halifax ejerció como virrey de la India durante un período prolongado. Su mandato como gobernador no estuvo exento de controversias, pero su talento diplomático parece dar resultados." #NT!
+ viceroy_emeritus_tt: "\nSi §HLord Halifax§! es el líder de nuestro país, los efectos de autonomía de este enfoque se duplicarán." #NT!
+ viceroy_emeritus_downside_tt: "\nDebido a la controvertida historia de Lord Halifax en la India:" #NT!
+  
+  ### Canada ### 
+ CAN_liberal_corporatist: "Corporativista liberal" #NT!
+ CAN_father_of_the_canadian_welfare_state: "Padre del Estado de bienestar canadiense" #NT!
+ CAN_canadian_fuhrer: "El Führer canadiense" #NT!
+ CAN_social_gospel: "Pionero del Evangelio Social Canadiense" #NT!
+  
+  ### ARGENTINA ### 
+ ARG_fraudulent_industrialist: "Industrial fraudulento" #NT!
+ ARG_radical_antipersonnel: "Antipersonal radical" #NT!
+ ARG_conservative_traditionalist: "Tradicionalista conservador" #NT!
+ ARG_moderate_dictator: "Dictador moderado" #NT!
+ ARG_brigadier_general: "General de brigada" #NT!
+ ARG_argentine_nationalist: "Nacionalista argentino" #NT!
+ ARG_harsh_democrat: "Demócrata severo" #NT!
+ ARG_feminist_revolutionary: "Feminista revolucionaria" #NT!
+ ARG_communist_insurrectionist: "Insurreccional socialista" #NT!
+ ARG_anarchosyndicalist: "Anarcosindicalista" #NT!
+ ARG_socialist_feminist: "Feminista socialista" #NT!
+ ARG_university_rector: "Rector de la Universidad" #NT!
+ ARG_nobel_peace_prize_winner: "Ganador del Premio Nobel de la Paz" #NT!
+ ARG_bolivar_agent: "Agente Bolívar" #NT!
+ ARG_prominent_centrist: "Centrista destacado" #NT!
+ ARG_father_of_argentine_democracy: "Padre del conservadurismo argentino" #NT!
+ ARG_peronism_trait: "$ARG_peronism$" #NT!
+ ARG_womans_peronist: "Defensora de las Mujeres Peronistas" #NT!
+  
+  # Brazil 
+ BRA_father_of_the_poor: "Padre de los pobres" #NT!
+ BRA_reluctant_integralist: "Integralista renuente" #NT!
+ BRA_authoritarian_populist: "Populista autoritario" #NT!
+ BRA_supreme_court_justice: "Juez de la Corte Suprema" #NT!
+ BRA_political_fox: "Zorro político" #NT!
+ BRA_modernist_architect: "Arquitecto modernista" #NT!
+ BRA_distinguished_diplomat: "Distinguido diplomático" #NT!
+ BRA_minister_of_transport: "Ministro de Transporte" #NT!
+ BRA_right_wing_ideologue: "Ideólogo de derecha" #NT!
+ BRA_head_of_political_police: "Jefe de la Policía Política" #NT!
+ BRA_nobel_peace_prize_nominee: "Candidato al Premio Nobel de la Paz" #NT!
+ BRA_deposed_former_president: "Expresidente depuesto" #NT!
+ BRA_renowned_ambassador: "Embajador de renombre" #NT!
+ BRA_anti_authoritarian: "Antiautoritario" #NT!
+ BRA_academic_writer: "Escritor académico" #NT!
+ BRA_education_pioneer: "Pionero de la educación" #NT!
+ BRA_democratic_engineer: "Ingeniero conservador" #NT!
+ BRA_sugar_king: "Rey del azúcar" #NT!
+ BRA_minister_of_defense: "Ministro de Defensa" #NT!
+ BRA_politically_educated: "Educado políticamente" #NT!
+ BRA_the_white_dove: "La paloma blanca" #NT!
+ BRA_militant_communist: "Comunista militante" #NT!
+ BRA_soviet_spy: "Espía soviético" #NT!
+ BRA_emperor_trait: "Emperador de Brasil" #NT!
+ BRA_coffee_king: "Rey del café" #NT!
+ BRA_vengeful_industrialist: "Industrial vengativo" #NT!
+ BRA_controversial_academic: "Académico polémico" #NT!
+  
+  # Chile 
+ batllista_traditionalist: "Tradicionalista Batllista" #NT!
+ the_german_connection: "La conexión alemana" #NT!
+ pan_americanist_caudillo: "Caudillo panamericanista" #NT!
+ pro_allied_politician: "Político pro-aliado" #NT!
+ JUNO_the_lion_of_tarapaca: "León de Tarapacá" #NT!
+ JUNO_el_jefe: "El jefe" #NT!
+ JUNO_el_jefe_advisor_trait: "El jefe" #NT!
+ JUNO_father_of_industrialization: "Padre de la industrialización" #NT!
+ JUNO_gobernar_es_educar: "Gobernar es educar" #NT!
+ JUNO_easter_island_socialist: "Isla de Pascua Socialista" #NT!
+ JUNO_minister_trade_development: "Ministro de Comercio y Desarrollo" #NT!
+ JUNO_president_of_the_senate: "Presidente del Senado" #NT!
+ JUNO_president_of_the_senate_2: "Presidente del Senado" #NT!
+ JUNO_stock_market_financier: "Financiero del mercado de valores" #NT!
+ JUNO_minister_of_finance: "Ministro de Finanzas" #NT!
+ JUNO_the_workers_president: "El presidente de los trabajadores" #NT!
+ JUNO_the_miners_representative: "El representante de los mineros" #NT!
+ JUNO_the_general_president: "El Presidente General" #NT!
+ JUNO_ibanismo: "Ibanismo" #NT!
+ JUNO_national_socialist_vanguard: "La vanguardia nacionalsocialista" #NT!
+ JUNO_pan_hispanic_theorist: "Teórico panhispánico" #NT!
+ JUNO_fascist_educator: "Educador liberal" #NT!
+ JUNO_devoted_trotskyist: "Trotskista devoto" #NT!
+ JUNO_minister_of_public_works: "Ministro de Obras Públicas" #NT!
+ JUNO_spearhead_of_the_alianza_democratica: "Punta de lanza de la Alianza Democrática de Chile" #NT!
+ JUNO_popular_lawyer: "Abogado popular" #NT!
+ JUNO_friend_of_healthcare: "Amigo de la sanidad" #NT!
+ JUNO_minister_of_public_health: "Ministro de Salud Pública" #NT!
+ JUNO_sovereign_of_patagonia_1: "Rey de Araucania y de la Patagonia" #NT!
+ JUNO_sovereign_of_patagonia_2: "Rey de Araucania y de la Patagonia" #NT!
+ JUNO_sovereign_of_patagonia_3: "Rey de Araucania y de la Patagonia" #NT!
+ JUNO_defender_of_araucanian_soverighnty: "Defensor de la Soberanía Araucana" #NT!
+ JUNO_defender_of_araucania: "Defensor de la Araucanía" #NT!
+ JUNO_modern_abajino_lonko: "Lonko abajino moderno" #NT!
+ JUNO_mapuche_economist: "Economista mapuche" #NT!
+ JUNO_the_legacy_of_1881: "El legado de 1881" #NT!
+ JUNO_minister_of_defense: "Ministro de Defensa" #NT!
+ JUNO_defender_of_the_race: "Defensor de la raza" #NT!
+ JUNO_militant_communist: "Comunista militante" #NT!
+ JUNO_radical_suffragette: "Sufragista radical" #NT!
+ JUNO_reformist_minister_of_health: "Ministro de Salud reformista" #NT!
+ JUNO_conservative_businessman: "Hombre de negocios conservador" #NT!
+ JUNO_apostlic_prefect_of_araucania: "Prefecto Apostólico de la Araucanía" #NT!
+ JUNO_famous_soprano: "Soprano famosa" #NT!
+ JUNO_popular_latinian_poet: "Poeta popular latino" #NT!
+ JUNO_socialist_economist: "Economista socialista" #NT!
+ JUNO_minister_of_defense_emilio: "Ministro de Defensa" #NT!
+ JUNO_minister_of_foreign_affairs: "Ministro de Asuntos Exteriores" #NT!
+ JUNO_agricultural_national_socialist: "Nacional Socialista Agrícola" #NT!
+ JUNO_minister_of_social_assistance: "Ministro de Asistencia Social" #NT!
+ JUNO_president_of_the_central_bank: "Presidente del Banco Central" #NT!
+ JUNO_mapuche_traditionalist: "Tradicionalista Mapuche" #NT!
+ JUNO_anarcho_socialist: "Anarcosocialista" #NT!
+ JUNO_the_national_falange: "La Falange Nacional" #NT!
+ JUNO_university_fascist: "Universidad fascista" #NT!
+ JUNO_christian_democrat: "Demócrata cristiano influyente" #NT!
+ CHL_minister_of_transport: "Ministro de Transporte" #NT!
+ JUNO_anti_communist_action: "Acción Antisocialista Chilena" #NT!
+ JUNO_miister_of_lands_and_colonization: "Ministro de Tierras y Colonización" #NT!
+ JUNO_miister_of_lands_and_colonization_2: "Ministro de Tierras y Colonización" #NT!
+ JUNO_housing_front_champion: "Campeón del Frente Nacional de Vivienda" #NT!
+ JUNO_national_socialist_occultist: "Ocultista nacionalsocialista" #NT!
+ JUNO_educational_reformer: "Reformador educativo" #NT!
+ JUNO_miniter_of_economy_and_commerce: "Ministro de Economía y Comercio" #NT!
+ JUNO_unpopular_economist: "Economista impopular" #NT!
+ JUNO_bolivian_falange: "Fundador de la Falange Socialista Boliviana" #NT!
+ JUNO_military_socialist: "Socialista militar" #NT!
+ JUNO_nationalizing_foreign_minister: "Ministro de Asuntos Exteriores" #NT!
+ JUNO_revolutionary_writer: "Escritor revolucionario" #NT!
+ JUNO_revolutionary_feberista_hero: "Héroe revolucionario febrerista" #NT!
+ JUNO_red_banner_leader: "Líder de la Bandera Roja" #NT!
+ JUNO_president_of_victory: "El presidente de la victoria" #NT!
+ JUNO_popular_among_the_people: "Popular entre la gente" #NT!
+ JUNO_feminist_editor: "Editora feminista" #NT!
+ rapa_nui_ariki: "Rapa Nui 'Ariki" #NT!
+ cultural_preserver: "Preservador cultural y erudito" #NT!
+ communist_council_trait: "Consejo Revolucionario del Pueblo" #NT!
+ non_aligned_council_trait: "Consejo Popular Unido de Libertad" #NT!
+ democratic_council_trait: "Consejo Popular Republicano" #NT!
+ fascist_council_trait: "Consejo Asesor Corporativista" #NT!
+ emperor_of_france_and_the_americas: "El verdadero emperador de Francia y de las Américas" #NT!
+ JUNO_ibanist_prime_minister: "El padre del ibañismo" #NT!
+ JUNO_king_of_chile: "Gran Rey de la Patria Chilena" #NT!
+ JUNO_fascist_theologian: "Teólogo liberal" #NT!
+ JUNO_military_sapa_inca: "Sapa Inca" #NT!
+ JUNO_king_of_el_dorado: "Rey resplandeciente de El Dorado" #NT!
+ JUNO_high_chief_of_hispaniola: "Gran Jefe de La Española" #NT!
+ JUNO_mapuche_journalist: "Periodista mapuche" #NT!
+ JUNO_alianca_nacional_libertadora_council: "Consejo de la ANL" #NT!
+ JUNO_aligned_with_stalin: "Alineado con Stalin" #NT!
+ JUNO_the_permanent_leader: "El líder permanente" #NT!
+ JUNO_cult_of_personality: "Culto a la personalidad" #NT!
+ BRA_bandit_revolutionary: "Bandido revolucionario" #NT!
+ JUNO_unpopular: "Impopular" #NT!
+ JUNO_minister_of_war_and_navy: "Ministro de Guerra y Marina" #NT!
+ JUNO_mayor_of_the_city_of_asuncion: "Alcalde de la Ciudad de Asunción" #NT!
+ JUNO_emergency_powers: "Titular de poderes de emergencia" #NT!
+ JUNO_uruguyan_revisionist: "Revisionista uruguayo" #NT!

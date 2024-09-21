@@ -1,14 +1,7 @@
 capital = 812
-
 oob = "EST_1866"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
+
 
 if = {
 	limit = { has_dlc = "Arms Against Tyranny" }
@@ -18,6 +11,7 @@ set_research_slots = 3
 
 
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1

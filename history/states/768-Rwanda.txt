@@ -3,8 +3,12 @@ state={
 	id=768
 	name="STATE_768"
 	resources={
+
 		tungsten=3.000
-	}
+	
+
+wood=1
+}
 
 	history={
 		owner = FRA
@@ -25,3 +29,4 @@ state={
 	state_category=pastoral
 	local_supplies=1.000
 }
+

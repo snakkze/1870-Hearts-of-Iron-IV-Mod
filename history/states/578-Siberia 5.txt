@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=12
+}
+
 	id=578
 	name="STATE_578" # Tomsk
 	manpower = 316838
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=0.0 
 }
+

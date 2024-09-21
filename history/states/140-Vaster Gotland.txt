@@ -4,9 +4,13 @@ state = {
 	name = "STATE_140" # Västra Götaland
 	manpower = 462780
 	state_category = town
-	resources = {
+	resources={
+
 		steel = 2
-	}
+	
+
+wood=5
+}
 
 	history = {
 		owner = SWE
@@ -36,3 +40,4 @@ state = {
 	
 	local_supplies = 0.000
 }
+

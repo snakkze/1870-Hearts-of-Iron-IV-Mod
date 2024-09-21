@@ -3,9 +3,13 @@ state={
 	id = 657
 	name = "STATE_657" # Birobidzhan
 	manpower = 160358
-	resources = {
+	resources={
+
 		steel=18 # was: 24
-	}
+	
+
+wood=9
+}
 
 
 	state_category = pastoral
@@ -25,3 +29,4 @@ state={
 
 	local_supplies = 0.0 
 }
+

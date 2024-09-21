@@ -1,24 +1,17 @@
-﻿capital = 8
- oob = "LUX_1866"
-
+capital = 8
 oob = "LUX_1866"
+
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 	fpw_basic_train = 1
     tech_support = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
 set_party_name = { # for victor de dornaco as he was independent
     ideology = democratic
@@ -30,57 +23,10 @@ set_war_support = 0.1
 set_stability = 0.8
 
 recruit_character = LUX_victor_de_tornaco
-recruit_character = LUX_gustave_lebeau
-recruit_character = LUX_frédéric_nagelmackers
-recruit_character = LUX_jean_pirson
-recruit_character = LUX_damien_roeser
-recruit_character = LUX_florent_destriveaux
-recruit_character = LUX_alexander_von_falkenhausen
-recruit_character = LUX_pierre_fischbach
-recruit_character = LUX_guillaume_soisson
-recruit_character = LUX_alex_federspiel
-recruit_character = LUX_henri_ahnen
-recruit_character = LUX_emile_speller
-recruit_character = LUX_francois_schammel
-recruit_character = LUX_aloyse_glodt
-recruit_character = LUX_nicolas_de_dixmude
-recruit_character = LUX_paul_medinger
-recruit_character = LUX_nicholas_diedrich
-recruit_character = LUX_pierre_dupong
-recruit_character = LUX_pierre_krier
-recruit_character = LUX_martin_karp
 
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "LUX_1939"
-	set_technology = {
 
-}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-
-}
-	}
-}
 
 set_politics = {
 	ruling_party = democratic
@@ -94,13 +40,3 @@ set_popularities = {
 	communism = 5
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1937.6.6"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	promote_character = LUX_pierre_dupong
-	retire_character = LUX_joseph_bech
-}

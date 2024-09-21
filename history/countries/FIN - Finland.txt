@@ -1,5 +1,5 @@
 capital = 111
- oob = "FIN_1866"
+oob = "FIN_1866"
 
 set_oob = "FIN_1866"
 
@@ -35,116 +35,13 @@ recruit_character = SOV_nikolai_adlerberg
 #}
 
 
-#Set up flags for Civil Wars
-if = {
-	limit = {
-		has_dlc = "Arms Against Tyranny"
-	}
-	#From decisions targetting fascists
-	FIN_vilho_annala = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_elias_simojoki = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_vilho_helanen = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_paavo_susitaival = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_reino_ala_kulju = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_erik_heinrichs = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_lauri_malmberg = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_hugo_osterman = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_alpo_marttinen = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-
-	#Country Leaders
-	FIN_risto_ryti = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_kyosti_kallio = {
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	FIN_carl_mannerheim = {
-		set_character_flag = FIN_anti_communist_character_flag
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-
-
-	##Unit Leaders
-	FIN_aksel_airo = {
-		set_character_flag = FIN_anti_communist_character_flag
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	
-	FIN_woldemar_hagglund = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_aarne_juutilainen = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_wiljo_einar_tuompo = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_kurt_martti_wallenius = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_fanni_luukkonen = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_paavo_talvela = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_lauri_torni = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_juho_heiskanen = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	FIN_karl_oesch = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-	GER_nikolaus_von_falkenhorst = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-
-	
-	FIN_aarne_sihvo = {
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	FIN_akseli_anttila = {
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	FIN_emil_vaateri = {
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	FIN_eyolf_mattsson = {
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	FIN_toivo_antikainen = {
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-
-}
-
-
 add_ideas = {
 	limited_conscription
 	fpw_alexander_ii
 }
 
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1			
@@ -166,107 +63,7 @@ if = {
 
 set_convoys = 5
 
-1939.1.1 = {
-	add_political_power = 1198
-	add_command_power = 100
 
-	### TECH ###
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-
-	# TECH ADJUSTMENTS
-	set_technology = {
-
-}
-
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-
-}
-	}
-
-	# These templates would otherwise not be unlocked
-	load_oob = "unlock_motorized"
-	load_oob = "unlock_tanks_mot"
-	
-	### FOCUS TREE ###
-	#1936
-	complete_national_focus = FIN_finnish_neutrality
-	complete_national_focus = FIN_enhance_southern_infrastructure
-	unlock_national_focus = FIN_industrial_development #Timed idea should be gone
-	unlock_national_focus = FIN_vaisala_radiosonde_tests #35 #tech bonus should be consumed
-	complete_national_focus = FIN_increase_military_budget #35
-	complete_national_focus = FIN_suomen_maavoimat
-
-	#1937
-	complete_national_focus = FIN_reach_out_to_scandinavia #35
-	complete_national_focus = FIN_moderate_politics #35
-	complete_national_focus = FIN_mannerheim_line
-	complete_national_focus = FIN_national_unity
-	complete_national_focus = FIN_outokumpu_for_defence_industry
-	complete_national_focus = FIN_industrial_upgrade_in_harjavalta #35
-	complete_national_focus = FIN_janiskoski_power_plant #35 (1938 historically)
-
-	#1938
-	complete_national_focus = FIN_political_unity
-	complete_national_focus = FIN_railways_and_infrastructure
-	complete_national_focus = FIN_repurpose_small_industries
-	complete_national_focus = FIN_extra_refresher_exercises # (ASAP - gated behind WT)
-	complete_national_focus = FIN_weapon_caches #35 (ASAP - gated behind WT)
-	complete_national_focus = FIN_the_cold_front #35
-	
-	#1939 (Nov -> Winter War)
-	complete_national_focus = FIN_defense_in_depth
-	complete_national_focus = FIN_jaeger_movement
-	complete_national_focus = FIN_salvaged_and_retooled
-	complete_national_focus = FIN_motti_tactics #35
-
-	# FOCUS ADJUSTMENTS
-
-	#FIN_industrial_development
-	remove_ideas = FIN_infrastructure_effort #Timed idea should be gone by 1939
-
-	#FIN_vaisala_radiosonde_tests
-	111 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-
-	# BOP & COUNTRY LEADER ADJUSTMENTS
-	set_power_balance = {
-		id = FIN_power_balance
-		left_side = FIN_bad_side
-		right_side = FIN_good_side
-		set_value = 0 #Adding FIN_sisu_2 idea below
-	}
-	add_ideas = FIN_sisu_3
-
-	retire_country_leader = yes
-	#Set Maalaisliitto (Agrarian League) as Non-Aligned party
-	set_party_name = {
-		ideology = neutrality
-		name = FIN_neutrality_party
-		long_name = FIN_neutrality_party_long
-	}
-
-	oob = "FIN_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-			set_technology = {
-
-}
-		}
-	}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -286,20 +83,7 @@ set_stability = 0.60
 country_event = { id = AAT_finland_political.02 days = 426 }
 
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1864.3.1"
-		election_frequency = 72
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 4
-		fascism = 15
-		communism = 1
-		neutrality = 80
-	}
-}
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -358,72 +142,8 @@ if = {
 
 ### TANKS
 
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "FT mod. 31"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 2
-		}
-		obsolete = yes
-		icon = "GFX_FIN_gw_tank_renault_medium"
-	}
-
-	add_equipment_to_stockpile = { 
-		type = light_tank_chassis_0
-		variant_name = "FT mod. 31"
-		amount = 34
-		producer = FRA
-	}
-}
 
 
 
-1939.1.1 = {
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_country_flag = FIN_vickers_template_created_flag
-		create_equipment_variant = {
-			name = "Vickers Mark E Tpye B"
-			type = light_tank_chassis_0
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon
-				turret_type_slot = tank_light_one_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = secondary_turret_hmg
-			}
-			upgrades = {
-				tank_nsb_armor_upgrade = 3
-				tank_nsb_engine_upgrade = 2
-			}
-			obsolete = yes
-			icon = "GFX_FIN_gw_tank_destroyer_vickers_medium"
-			model = "commonwealth_gfx_light_armor_entity"
-		}
 
-		add_equipment_to_stockpile = { 
-			type = light_tank_chassis_0
-			variant_name = "Vickers 6 ton A"
-			amount = 26
-			producer = ENG
-		}
-	}
-}
 

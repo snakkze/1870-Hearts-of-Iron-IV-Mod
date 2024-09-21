@@ -120,6 +120,323 @@ fpw_societal_backlash_cat = {
 	
 	}
 
+
+#NOT IMPLEMENTED AS OF NOW
+#JUST ADDED BECAUSE OF ERROR LOG
+#NOT SURE IF EVER GETS ADDED
+
+JAP_centralization_power_balance_decisions = {
+
+	JAP_compromise_with_ = {
+		
+		icon = GFX_decision_JAP_focus_on_swiss_unity
+
+		priority = 99 
+
+		allowed = { original_tag = JAP }
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			is_power_balance_in_range = {
+				id = fpw_JAP_bop
+				range = fpw_JAP_centralization_bop_balanced 
+			}
+		}
+
+		days_remove = 30 	
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = fpw_JAP_bop
+				value = 0.2
+			}		
+		}
+
+		remove_effect = {
+			add_political_power = 150
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 150
+				JAP_is_historical_ai = yes 
+				NOT = {
+					is_power_balance_in_range  = {
+						id = fpw_JAP_bop
+						range = JAP_centralization_bop_fully_cantons
+					}
+				}
+			}
+			modifier = {
+				factor = 5 
+				power_balance_value = {
+					id = fpw_JAP_bop
+					value < 0
+				}	
+			}
+		}
+	}
+
+	JAP_consolidate_XXX_power = {
+
+		icon = GFX_decision_JAP_consolidate_council_power
+
+		priority = 98 
+
+		allowed = { original_tag = JAP }
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			is_power_balance_in_range = {
+				id = fpw_JAP_bop
+				range = JAP_centralization_bop_very_council
+			}
+		}
+
+		days_remove = 30 	
+
+		cost = 80
+
+		complete_effect = {
+		
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = fpw_JAP_bop
+				value = -0.2
+			}			
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				JAP_is_historical_ai = no 
+			}
+			modifier = {
+				add = 50
+				NOT = {
+					is_power_balance_in_range  = {
+						id = fpw_JAP_bop
+						range = JAP_centralization_bop_fully_council
+					}
+				}
+			}
+			modifier = {
+				add = 100 
+				is_power_balance_in_range  = {
+					id = fpw_JAP_bop
+					range = JAP_centralization_bop_fully_cantons
+				}	
+			}
+			modifier = {
+				add = 200 
+				has_political_power > 700
+			}
+		}	
+	}
+
+	JAP_push_for_centralization = {
+	
+		icon = GFX_decision_JAP_elect_confederation_president
+
+		priority = 97
+		
+		days_remove = 45 
+
+		cost = 100
+
+		available = {
+			is_power_balance_in_range = {
+				id = fpw_JAP_bop
+				range = JAP_centralization_bop_balanced
+			}
+		}
+
+		complete_effect = {
+			add_stability = -0.3
+		}
+
+		remove_Effect = {
+			add_power_balance_value = {
+				id = fpw_JAP_bop
+				value = -0.4
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				JAP_is_historical_ai = no 
+			}
+		}		
+	}
+
+	JAP_strengthen_military_high_command = {
+
+		icon = GFX_decision_JAP_guisan_speech
+
+		priority = 96 
+
+		days_remove = 30
+
+		cost = 150
+
+		remove_effect = {	
+			add_power_balance_value = {
+				id = fpw_JAP_bop
+				value = -0.30
+			}
+			add_command_power = 50
+			army_experience = 25
+		}
+
+		ai_will_do = {
+			base = 50
+			modifier = {
+				add = 50
+				JAP_is_historical_ai = no 
+			}
+			modifier = {
+				add = 200 
+				has_political_power > 400
+			}
+			modifier = {
+				add = 100
+				NOT = {
+					has_completed_focus = JAP_withdraw_from_the_league_of_nations
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_power_balance_in_range  = {
+					id = fpw_JAP_bop
+					range = JAP_centralization_bop_fully_council
+				}	
+			}
+		}
+	}
+
+	JAP_rally_XXX_defense = { #Make it available only when certain ranges are active. 
+		
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		priority = 95 
+
+		available = {
+			NOT = {
+				is_power_balance_in_range = {
+					id = fpw_JAP_bop
+					range = JAP_centralization_bop_fully_council
+				}
+			}
+		} 
+		days_remove = 30
+
+		cost = 50  
+		
+		remove_effect = {
+			add_power_balance_value = {
+				id = fpw_JAP_bop
+				value = 0.15
+			}
+			add_command_power = 50 
+			JAP_mr_lowest_increase = yes
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				JAP_is_historical_ai = yes 
+			}
+			modifier = {
+				add = 150 
+				has_political_power > 700
+			}
+			modifier = {
+				factor = 0 
+				is_power_balance_in_range = {
+					id = fpw_JAP_bop
+					range = JAP_centralization_bop_fully_cantons
+				}
+			}
+
+			modifier = {
+				add = 100
+				has_completed_focus = JAP_withdraw_from_the_league_of_nations
+			}
+		}
+	}
+
+	JAP_XXX_diplomatic_effort = {
+
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		priority = 80 
+
+		cost = var:JAP_diplomatic_effort_cost
+
+		days_remove = JAP_diplomatic_effort_cost
+
+		remove_effect = {
+			every_other_country = {
+				limit = {
+					JAP_is_country_to_balance = yes
+				}			
+				add_opinion_modifier = {
+					target = ROOT 
+					modifier = JAP_mild_appeasement
+				}
+			}
+			add_power_balance_value = {
+				id = fpw_JAP_bop
+				value = -0.15
+			}
+			if = {
+				limit = { 
+					check_variable = { JAP_diplomatic_effort_cost < 90 }
+				}
+				add_to_variable = {
+					var = JAP_diplomatic_effort_cost
+					value = 10
+					tooltip = JAP_increasing_cost_of_council_diplomatic_effort
+				}
+			}
+		}
+		ai_will_do = {
+			base = 50 
+			modifier = {
+				add = 100 
+				JAP_is_historical_ai = no 
+			}
+			modifier = {
+				factor = 0.1 
+				NOT = {
+					is_power_balance_in_range = {
+						id = fpw_JAP_bop
+						range = JAP_centralization_bop_fully_cantons
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				NOT = {
+					has_completed_focus = JAP_withdraw_from_the_league_of_nations
+				}
+			}
+		}
+	}
+}
+
 fpw_empire_of_jap_cat = {
 	
 	republic_of_ezo_mission = {
@@ -149,6 +466,7 @@ fpw_empire_of_jap_cat = {
 		}
 		}
     icon = GFX_decision_generic_prepare_civil_war
+	fire_only_once = yes
     is_good = yes
     war_with_on_timeout = EZO
     days_mission_timeout = 90

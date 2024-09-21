@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=8
+}
+
 	id=244
 	name="STATE_244" # Volkhov
 	manpower = 101569
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=0.0 
 }
+

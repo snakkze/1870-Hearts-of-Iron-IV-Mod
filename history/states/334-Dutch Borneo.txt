@@ -3,8 +3,12 @@ state={
 	id=334
 	name="STATE_334"
 	resources={
+
 		oil=3.000
-	}
+	
+
+wood=24
+}
 
 	history={
 		owner = INS
@@ -35,3 +39,4 @@ state={
 	state_category=rural
 	local_supplies=0.000
 }
+

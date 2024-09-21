@@ -7,9 +7,13 @@ state={
 	state_category = town
 
 	resources={
+
 		oil=9
 		#steel=2 moved to Guerrero
-	}
+	
+
+wood=2
+}
 	
 	history={
 		owner = MEX
@@ -34,3 +38,4 @@ state={
 
 	local_supplies=0.0 
 }
+

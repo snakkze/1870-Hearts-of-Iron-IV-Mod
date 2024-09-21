@@ -1,9 +1,13 @@
-﻿capital = 830 #Bukhara
- oob = "BUK_1866"
+capital = 830 #Bukhara
+oob = "BUK_1866"
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+    fpw_infantry_weapons = 1
+}
 
 set_cosmetic_tag = BUK_fpw_cosmetic
 
-#oob = "BUK_1866"
 
 set_research_slots = 2
 
@@ -19,9 +23,6 @@ set_popularities = {
 	communism = 6
 	neutrality = 72
 }
-
-recruit_character = BUK_mohammed_alim_khan
-recruit_character = BUK_polat_usmon
 
 
 

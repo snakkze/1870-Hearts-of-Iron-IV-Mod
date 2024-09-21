@@ -6789,7 +6789,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT  }
 		
-		icon = GFX_focus_generic_black_sea_focus
+		icon = GFX_focus_crimean_war
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_local_advisors focus = SOV_foreign_advisors }
 		relative_position_id = SOV_local_advisors

@@ -6,7 +6,11 @@ state={
 	
 	state_category = enclave
 	resources={
-	}
+
+	
+
+wood=2
+}
 	history={
 		owner = POR
 		add_core_of = GNB
@@ -21,3 +25,4 @@ state={
 
 	local_supplies=0.0 
 }
+

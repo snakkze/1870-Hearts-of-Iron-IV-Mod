@@ -1,52 +1,16 @@
-﻿capital = 459
- oob = "ALG_1866"
+capital = 459
+oob = "ALG_1866"
 
 # Starting tech
 set_technology = {
-	fpw_fpw_fpw_infantry_weapons = 1
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
 }
-
-recruit_character = ALG_ar
-recruit_character = ALG_acr
-recruit_character = ALG_mt
-recruit_character = ALG_stc
-recruit_character = ALG_aa2
-recruit_character = ALG_acgs
-recruit_character = ALG_ncm
-recruit_character = ALG_nccr
-recruit_character = ALG_coi
-recruit_character = ALG_democratic_guy
-recruit_character = ALG_acd2
-recruit_character = ALG_acas
-recruit_character = ALG_communist_guy
-recruit_character = ALG_ncs
-recruit_character = ALG_awt
-recruit_character = ALG_pot
-recruit_character = ALG_fascist_guy
-recruit_character = ALG_ai2
-recruit_character = ALG_nt
-recruit_character = ALG_aco2
 
 
 set_convoys = 20
 
-1939.1.1 = {
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 
 
 set_politics = {
@@ -63,20 +27,7 @@ set_popularities = {
 	neutrality = 50
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 25
-		neutrality = 20
-		communism = 5
-		neutrality = 50
-	}
-}
+
 
 create_country_leader = {
 	name = "Ahmed Ben Bella"

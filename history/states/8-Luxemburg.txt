@@ -7,8 +7,12 @@ state=
 	
 	manpower = 153269
 	resources={
+
 		steel=5 # was: 8
-	}
+	
+
+wood=1
+}
 
 	history=
 	{
@@ -28,3 +32,4 @@ state=
 
 	local_supplies=0.0 
 }
+

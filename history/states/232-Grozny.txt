@@ -6,9 +6,13 @@ state={
 	
 	state_category = rural
 	
-	resources = {
+	resources={
+
 		oil = 10 # was: 26 and then 19, but was split into 2 different states
-	}
+	
+
+wood=2
+}
 
 	history = {
 		owner = SOV
@@ -28,3 +32,4 @@ state={
 
 	local_supplies = 0.0 
 }
+

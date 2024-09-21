@@ -1,5 +1,9 @@
 
 state = {
+resources={
+wood=5
+}
+
 	id=651
 	name = "STATE_651" # Ufa
 	manpower = 1327079
@@ -29,3 +33,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

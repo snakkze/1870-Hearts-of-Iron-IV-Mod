@@ -1179,45 +1179,49 @@ form_commonwealth_category = {
 			is_subject = no
 			# Lithuania
 			custom_trigger_tooltip = {
-				tooltip = form_country_lithuania_required_states_tt
+				tooltip = form_country_lithuania_in_russia_required_states_tt
 				controls_state = 11
 				controls_state = 189
+				controls_state = 784
+				controls_state = 95
+				controls_state = 814
+				controls_state = 815
 			}
 			# Poland
 			custom_trigger_tooltip = {
-				tooltip = form_country_poland_required_states_tt
-				controls_state = 86
+				tooltip = form_country_poland_in_russia_required_states_tt
 				controls_state = 87
-				controls_state = 88
 				controls_state = 90
 				controls_state = 98
 				controls_state = 10
 				controls_state = 97
 				controls_state = 92
-				controls_state = 91
-				controls_state = 89
-				controls_state = 93
-				controls_state = 94
-				controls_state = 95
-				controls_state = 96
-				controls_state = 784
+				controls_state = 983
+				#controls_state = 88
+				#controls_state = 86
+				#controls_state = 91
+				#controls_state = 89
+				#controls_state = 93
+				#controls_state = 94
+				#controls_state = 95
+				#controls_state = 96
 			}
-			OR = {
-				AND = {
-					original_tag = POL
-					core_compliance = {
-						occupied_country_tag = LIT
-						value > 80
-					}
-				}
-				AND = {
-					original_tag = LIT
-					core_compliance = {
-						occupied_country_tag = POL
-						value > 80
-					}
-				}
-			}
+#			OR = {
+#				AND = {
+#					original_tag = POL
+#					core_compliance = {
+#						occupied_country_tag = LIT
+#						value > 80
+#					}
+#				}
+#				AND = {
+#					original_tag = LIT
+#					core_compliance = {
+#						occupied_country_tag = POL
+#						value > 80
+#					}
+#				}
+#			}
 		}
 
 		visible = {
@@ -1236,7 +1240,53 @@ form_commonwealth_category = {
 			else = {
 				set_cosmetic_tag = PLC_UNIFIED
 			}
-			POL_basic_form_commonwealth = yes
+			custom_effect_tooltip = form_country_poland_coring_states_tt
+			hidden_effect = {
+				10 = { add_core_of = ROOT }
+				90 = { add_core_of = ROOT }
+				92 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				86 = { add_core_of = ROOT }
+				807 = { add_core_of = ROOT }
+				85 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				983 = { add_core_of = ROOT }
+				#762 = { add_core_of = ROOT }
+			}
+			custom_effect_tooltip = form_country_lithuania_coring_states_tt
+			hidden_effect = {
+				11 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				814 = { add_core_of = ROOT }
+				815 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				188 = { add_core_of = ROOT }
+			}
+			custom_effect_tooltip = form_country_belarus_coring_states_tt
+			hidden_effect = {
+				94 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+			}
+			custom_effect_tooltip = form_country_west_ukraine_no_kiev_coring_states_tt
+			hidden_effect = {
+				93 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+			}
+			190 = { add_core_of = ROOT }
+			809 = { add_core_of = ROOT }
+			810 = { add_core_of = ROOT }
 		}
 
 		ai_will_do = {

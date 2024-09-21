@@ -1,44 +1,19 @@
-﻿capital = 564 #Ulan Ude in Buryatia
- oob = "BYA_1866"
+capital = 564 #Ulan Ude in Buryatia
+oob = "BYA_1866"
 
-#oob = "BYA_1866"
 
 set_research_slots = 2
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -69,8 +44,6 @@ set_popularities = {
 	neutrality = 50
 }
 
-recruit_character = BYA_seymon_ignatyev
-recruit_character = BYA_bidia_dandaron
 
 
 

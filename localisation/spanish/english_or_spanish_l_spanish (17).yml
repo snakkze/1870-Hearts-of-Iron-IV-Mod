@@ -1,0 +1,201 @@
+﻿l_spanish:
+ FRA_internal_politics: "Política interna de [FRA.GetNameDef]" #NT!
+ FRA_internal_politics_desc: "Como el imperio sigue siendo un Estado autoritario, los liberales que iniciaron la revolución están indignados y ahora han creado la Unión Liberal. ¿Apoyaremos este resurgimiento de la libertad o continuará la tiranía de Napoleón?" #NT!
+ FRA_support_the_union_liberale: "Liberté, Égalité, Fraternité" #NT!
+ FRA_support_the_union_liberale_desc: "Hemos decidido apoyar a la Unión Liberal." #NT!
+ FRA_draft_the_constitution: "Redactar la Constitución" #NT!
+ FRA_draft_the_constitution_desc: "Esperamos reformar el imperio y convertirlo en una monarquía constitucional, por lo que necesitamos una constitución. Nuestros redactores prepararán un borrador." #NT!
+ FRA_align_moderate_conservatives: "Alinear a los conservadores moderados" #NT!
+ FRA_align_moderate_conservatives_desc: "Muchos de los llamados conservadores no están contentos con la dictadura de Napoleón. Sería prudente alinearlos con nuestra causa." #NT!
+ FRA_alliance_with_legitimists: "Alianza con los legitimistas" #NT!
+ FRA_alliance_with_legitimists_desc: "El enemigo de nuestro enemigo es nuestro amigo. Por eso, nos alinearemos con aquellos que deseen restaurar la Monarquía Borbónica." #NT!
+ FRA_implement_new_constitution: "Implementar la nueva Constitución" #NT!
+ FRA_implement_new_constitution_desc: "Una vez escrita la constitución, deberíamos intentar convencer al Emperador de que integre estas reformas." #NT!
+ FRA_our_first_election: "Nuestra primera elección" #NT!
+ FRA_our_first_election_desc: "Nuestras primeras elecciones comenzarán para decidir quién será nuestro Primer Ministro." #NT!
+ FRA_government_of_national_defence: "El Gobierno de Defensa Nacional" #NT!
+ FRA_government_of_national_defence_desc: "Cuando llegó a París la noticia de la rendición de Napoleón III en Sedán, el Segundo Imperio fue derrocado por un levantamiento popular. Jules Favre, Léon Gambetta y el general Louis-Jules Trochu proclamaron un gobierno provisional llamado Gobierno de Defensa Nacional." #NT!
+ FRA_national_defence: "Se completa automáticamente después de que §YNapoleon III§! es capturado en §YSedan§!" #NT!
+ FRA_restore_bourbon_monarchy: "Restaurar la monarquía borbónica" #NT!
+ FRA_restore_bourbon_monarchy_desc: "La dinastía de los Borbones es la única heredera real del trono de Francia. Se convertirán en nuestra nueva (y antigua) familia real." #NT!
+ FRA_third_french_republic: "La Tercera República" #NT!
+ FRA_third_french_republic_desc: "Los parisinos se indignan cada vez más ante la idea de otro reino. ¡Proclamaremos la Tercera República Francesa!" #NT!
+ FRA_strengthen_bonaparte_dynasty: "Apoya a Napoleón III" #NT!
+ FRA_strengthen_bonaparte_dynasty_desc: "¡Napoleón III salvará el mundo!" #NT!
+ FRA_purge_republican_revolutionaries: "Purgar a los revolucionarios republicanos" #NT!
+ FRA_purge_republican_revolutionaries_desc: "Debemos purgar a los revolucionarios republicanos para asegurar la estabilidad del imperio." #NT!
+ FRA_the_red_scare: "El miedo rojo" #NT!
+ FRA_the_red_scare_desc: "El socialismo es una amenaza aún mayor que el liberalismo. Debemos detenerlo por todos los medios necesarios." #NT!
+ FRA_crack_down_on_colonies: "Toma de medidas drásticas contra las colonias" #NT!
+ FRA_crack_down_on_colonies_desc: "Un levantamiento colonial podría resultar peligroso para nuestro imperio. Debemos detenerlo también." #NT!
+ FRA_construct_high_secrurity_prison: "Construir una prisión de alta seguridad" #NT!
+ FRA_construct_high_secrurity_prison_desc: "Terroristas y opositores políticos serán detenidos y torturados en esta nueva unidad penitenciaria." #NT!
+ FRA_flood_imperial_reservoir: "Embalse Imperial de Inundación" #NT!
+ FRA_flood_imperial_reservoir_desc: "Por alguna razón inundaremos el embalse Imperial." #NT!
+ FRA_construct_giant_napoleon_III_statue: "Construye una estatua gigante de Napoleón III" #NT!
+ FRA_construct_giant_napoleon_III_statue_desc: "Esto mejorará la popularidad del Emperador." #NT!
+ FRA_foreign_policies: "El corazón de Europa" #NT!
+ FRA_foreign_policies_desc: "Nuestra magnífica victoria en la guerra de Crimea demuestra una vez más que somos la nación más grande que el mundo haya visto jamás. ¡Viva el Imperio!" #NT!
+ FRA_franco_prussian_war: "La guerra franco-prusiana" #NT!
+ FRA_franco_prussian_war_desc: "[PRS.GetNameDefCap] se hace cada día más fuerte. Debemos acabar con este peligroso país." #NT!
+ FRA_war_tt: "Autocompletado al comienzo de la §YGuerra Franco-Prusiana§!" #NT!
+ FRA_empire_triumphant: "El imperio triunfante" #NT!
+ FRA_empire_triumphant_desc: "El Imperio ha vencido a los alemanes. Es hora de expandirse aún más por el continente." #NT!
+ FRA_triumph: "Se completa automáticamente después de ganar la §YGuerra Franco-Prusiana§! si §YNapoleón III§! sigue siendo emperador" #NT!
+ FRA_expanding_colonial_empire: "Expandiendo nuestro imperio colonial" #NT!
+ FRA_expanding_colonial_empire_desc: "África, Vietnam, las Indias, Malasia, Patagonia... ¡No podemos resistirnos a esta oportunidad!" #NT!
+ FRA_strike_the_east: "Ataque al este" #NT!
+ FRA_strike_the_east_desc: "Atacar el este de Asia nos permitiría recolectar más caucho y mano de obra barata." #NT!
+ FRA_malacca_strategy: "La estrategia de Malaca" #NT!
+ FRA_malacca_strategy_desc: "Si atacáramos Malasia, prácticamente controlaríamos el estrecho de Malaca y además tendríamos un mejor acceso a Siam. Una guerra con los Países Bajos por las Indias tampoco vendría mal." #NT!
+ FRA_attack_dai_nam: "Ataque a Đai Nam" #NT!
+ FRA_attack_dai_nam_desc: "Uniremos nuestra colonia indochina." #NT!
+ FRA_to_the_mekong: "¡Al Mekong!" #NT!
+ FRA_to_the_mekong_desc: "¿Territorios no colonizados en el este de Asia? ¡Por supuesto que no!" #NT!
+ FRA_strike_africa: "Huelga en África" #NT!
+ FRA_strike_africa_desc: "La lucha por África se aproxima. No podemos quedarnos de brazos cruzados, ¡es hora de conquistar el continente!" #NT!
+ FRA_defeat_morocco: "Derrotar a Marruecos" #NT!
+ FRA_defeat_morocco_desc: "Para conquistar el Sahara Occidental, debemos atacar a los reinos que controlan estas tierras. Ya hemos conquistado a los argelinos, es hora de hacer lo mismo con los marroquíes." #NT!
+ FRA_colonise_ethiopia: "Colonizar Etiopía" #NT!
+ FRA_colonise_ethiopia_desc: "adiós" #NT!
+ FRA_army_reforms: "Reformas del ejército" #NT!
+ FRA_army_reforms_desc: "Para convertirnos en un gran imperio, necesitamos tener un ejército similar al de los prusianos. De lo contrario, toda nuestra nación podría caer en manos de una tiranía extranjera." #NT!
+ FRA_cavalry_focus: "Enfoque de caballería" #NT!
+ FRA_cavalry_focus_desc: "Enfoque de caballería porque los caballos son cabras" #NT!
+ FRA_rifle_focus: "Enfoque del rifle" #NT!
+ FRA_rifle_focus_desc: "No podemos permitir que los prusianos posean fusiles superiores a los nuestros. Necesitamos fabricar el fusil más potente de todos los tiempos si queremos tener la capacidad de ganar conflictos futuros." #NT!
+ FRA_seek_revenge: "Busca venganza" #NT!
+ FRA_seek_revenge_desc: "Los alemanes destruyeron nuestro imperio. Sin embargo, no debemos restaurar al idiota de Luis Napoleón en su trono. En lugar de eso, nos convertiremos en una república que jura lealtad al nacionalismo." #NT!
+ FRA_defeat: "Derrota en la §YGuerra Franco-Prusiana§!" #NT!
+ FRA_eternal_republic: "La República Eterna" #NT!
+ FRA_eternal_republic_desc: "Sin el emperador, podemos mantener nuestro sueño de una República Francesa pacífica y democrática." #NT!
+ FRA_work_with_the_commune: "Cooperar con la Comuna de París" #NT!
+ FRA_work_with_the_commune_desc: "La revolución está apareciendo rápidamente. Siguiendo las ideas de Karl Marx, podemos permitirnos abrazar el socialismo." #NT!
+ FRA_natural_borders: "Las fronteras naturales de Francia" #NT!
+ FRA_natural_borders_desc: "¡Francia controlará todos los territorios hasta el Rin!" #NT!
+ FRA_sway_bonapartists: "Influencia de los bonapartistas" #NT!
+ FRA_sway_bonapartists_desc: "Los bonapartistas probablemente podrían unirse a nuestro partido si les diéramos un pequeño empujón." #NT!
+ FRA_invade_the_commune: "Invadir la Comuna" #NT!
+ FRA_invade_the_commune_desc: "La Comuna de París, un estado rebelde que desafía nuestra soberanía, debe ser sometida. Nuestros estrategas militares han planeado una invasión decisiva para aplastar sus defensas y liberar a los ciudadanos oprimidos. Esta ofensiva tiene como objetivo reunificar nuestra nación, asegurar recursos vitales y demostrar nuestra fuerza. Los comuneros serán aplastados y nuestra bandera ondeará nuevamente sobre París." #NT!
+ FRA_guillotine_for_socialists: "Guillotina para los socialistas" #NT!
+ FRA_guillotine_for_socialists_desc: "¡Los socialistas que prosperaron en la Comuna de París serán ejecutados por la República por traición!" #NT!
+ FRA_return_stability: "Devolver la estabilidad al país" #NT!
+ FRA_crackdown_on_radicalism: "Reprimir el radicalismo" #NT!
+ FRA_thiers_presidency: "Presidencia de Adolphe Thiers" #NT!
+ FRA_republic_reform: "Reformar la Tercera República" #NT!
+ FRA_moderate_approach: "Enfoque moderado" #NT!
+ FRA_sway_conservatives: "Influir en los conservadores" #NT!
+ FRA_continue_reforms: "Continuar con las reformas" #NT!
+ FRA_radical_approach: "Enfoque radical" #NT!
+ FRA_bastion_of_democracy: "Bastión de la democracia" #NT!
+ FRA_macmahons_presidency: "Presidencia de Patrice de MacMahon" #NT!
+ FRA_never_another_sedan: "Nunca más un sedán" #NT!
+ FRA_rally_the_far_right: "Unir a la extrema derecha" #NT!
+ FRA_ban_labour_unions: "Prohibir los sindicatos" #NT!
+ FRA_suspend_the_parliament: "Suspender el Parlamento" #NT!
+ FRA_create_national_rally: "Crear el Rally Nacional" #NT!
+ FRA_organize_labour_unions: "Organizar sindicatos" #NT!
+ FRA_allow_strikes: "Permitir huelgas" #NT!
+ FRA_spread_radicalist_ideals: "Difundir ideas radicales" #NT!
+ FRA_establish_workers_parliament: "Crear el Parlamento Obrero" #NT!
+ FRA_grant_macmahon_emergency_powers: "Otorgar poderes de emergencia a MacMahon" #NT!
+ FRA_establish_french_state: "Establecer el Estado francés" #NT!
+ FRA_luxembourg_crisis: "La crisis de Luxemburgo" #NT!
+ FRA_lux_tt: "Completado automáticamente después de que ¡comienza la crisis de Luxemburgo!" #NT!
+ FRA_attack_belgium: "Ataque Bélgica" #NT!
+ FRA_warning: "§R¡Recuerde que el Reino Unido garantiza la soberanía belga!§!" #NT!
+ FRA_limburg_or_war: "Limburgo o la guerra" #NT!
+ FRA_round_2: "La venganza contra los alemanes" #NT!
+ FRA_form_the_continental_alliance: "Establecer la Alianza Continental" #NT!
+ FRA_invade_spain: "Toma el trono español" #NT!
+ FRA_disunite_italy: "Desunirse [ITA.GetNameDef]" #NT!
+ FRA_revenge_for_1815: "La venganza por 1815" #NT!
+ not_reich_trigger: "§YEl Imperio Alemán§! no existe" #NT!
+  
+  
+  # Commune # 
+ FPC_army_effort: "Movilizar a la juventud" #NT!
+ FPC_army_effort_desc: "A pesar de las crecientes posibilidades de la guerra aérea y naval, el combate terrestre sigue siendo clave en las guerras del futuro. Con preparación, podemos evitar revivir el infierno de las trincheras." #NT!
+ FPC_equipment_effort: "Esfuerzo del equipo" #NT!
+ FPC_equipment_effort_desc: "Los límites del equipamiento que puede llevar la infantería se superan constantemente. Nos concentraremos en brindar a nuestras tropas las mejores herramientas disponibles." #NT!
+ FPC_motorization_effort: "Esfuerzo de motorización" #NT!
+ FPC_motorization_effort_desc: "La movilidad y la protección son fundamentales para que la infantería pueda entrar y salir del campo de batalla de forma segura. Si nos centramos en estos avances, podremos actuar con rapidez." #NT!
+ FPC_doctrine_effort: "Esfuerzo de doctrina" #NT!
+ FPC_doctrine_effort_desc: "Las doctrinas militares que definieron el combate terrestre en la Gran Guerra han quedado obsoletas. Debemos poner a nuestras mentes más brillantes a trabajar para moldear el pensamiento militar del mañana." #NT!
+ FPC_equipment_effort_2: "Esfuerzo de equipo II" #NT!
+ FPC_equipment_effort_2_desc: "Continuaremos nuestros esfuerzos para garantizar que nuestra infantería y tropas de apoyo estén armadas con el mejor equipo posible de nuestro tiempo." #NT!
+ FPC_mechanization_effort: "Esfuerzo de mecanización" #NT!
+ FPC_mechanization_effort_desc: "Al repensar las posibilidades de la infantería motorizada, podemos ampliar los límites de los vehículos que se pueden construir hoy en día." #NT!
+ FPC_doctrine_effort_2: "Esfuerzo de doctrina II" #NT!
+ FPC_doctrine_effort_2_desc: "El campo de batalla ha cambiado no sólo en los años de entreguerras, sino también en el transcurso de los conflictos recientes. Debemos reevaluar continuamente nuestras doctrinas para reflejar esto." #NT!
+ FPC_equipment_effort_3: "Esfuerzo de equipo III" #NT!
+ FPC_equipment_effort_3_desc: "En lugar de imitar o comprar equipos extranjeros, deberíamos aspirar a convertirnos en líderes mundiales en armas de infantería." #NT!
+ FPC_armor_effort: "Esfuerzo de armadura" #NT!
+ FPC_armor_effort_desc: "Aplicando lo que hemos aprendido al mecanizar nuestra infantería, también podemos mejorar nuestros vehículos blindados." #NT!
+ FPC_special_forces: "Fuerzas especiales" #NT!
+ FPC_special_forces_desc: "Necesitamos fuerzas de élite; las tropas de montaña y los paracaidistas deberían ser nuestra prioridad." #NT!
+ FPC_naval_effort: "Esfuerzo naval" #NT!
+ FPC_naval_effort_desc: "La expansión de nuestra armada debería ser nuestra prioridad número uno. Asignar todos los recursos disponibles a nuevos astilleros e investigar sobre buques de superficie ligeros." #NT!
+ FPC_flexible_navy: "Marina flexible" #NT!
+ FPC_flexible_navy_desc: "Reinventar la guerra naval para tener en cuenta los avances en la tecnología submarina nos permitirá atacar eficazmente los convoyes enemigos." #NT!
+ FPC_large_navy: "Gran Marina" #NT!
+ FPC_large_navy_desc: "Adaptar nuestras doctrinas navales para dar cabida a grandes buques y garantizar la seguridad de nuestros convoyes comerciales nos enseñará mucho sobre el tipo de buques que necesitamos." #NT!
+ FPC_submarine_effort: "Esfuerzo submarino" #NT!
+ FPC_submarine_effort_desc: "La guerra submarina es el desarrollo naval más apasionante desde la invención del torpedero. Sería bueno no sólo protegernos de los submarinos, sino también usarlos contra los barcos enemigos." #NT!
+ FPC_cruiser_effort: "Esfuerzo de crucero" #NT!
+ FPC_cruiser_effort_desc: "Antes de incursionar en la investigación avanzada de acorazados, los cruceros más pequeños necesitan ser reemplazados." #NT!
+ FPC_destroyer_effort: "Esfuerzo destructor" #NT!
+ FPC_destroyer_effort_desc: "Al estudiar el diseño y el uso estratégico de los submarinos, también hemos aprendido cómo contrarrestar esas estrategias. Los destructores serán cruciales para ello." #NT!
+ FPC_capital_ships_effort: "Esfuerzo de buque capital" #NT!
+ FPC_capital_ships_effort_desc: "La nación con más acorazados dominará los océanos. Los acorazados y los portaaviones representan lo antiguo y lo nuevo en superioridad naval." #NT!
+ FPC_industrial_effort: "Esfuerzo industrial" #NT!
+ FPC_industrial_effort_desc: "Centrar todos nuestros esfuerzos políticos en construir la industria civil dando un gran salto adelante." #NT!
+ FPC_industrial_effort_2: "Esfuerzo industrial II" #NT!
+ FPC_industrial_effort_2_desc: "Con una voluntad de hierro y una ética de trabajo incansable, podemos movilizar a la gente en otro gran esfuerzo industrial." #NT!
+ FPC_construction_effort: "Esfuerzo de construcción" #NT!
+ FPC_construction_effort_desc: "No se debe subestimar la capacidad industrial civil ni siquiera cuando la guerra se cierne sobre el mundo." #NT!
+ FPC_production_effort: "Esfuerzo armamentista" #NT!
+ FPC_production_effort_desc: "Si se pueden construir tractores, se pueden construir tanques. No debemos permitir que nuestra capacidad de producción militar se quede atrás." #NT!
+ FPC_construction_effort_2: "Esfuerzo de construcción II" #NT!
+ FPC_construction_effort_2_desc: "La ampliación continua de nuestras fábricas nos permitirá acelerar la producción de bienes para el comercio y continuar con los esfuerzos de construcción." #NT!
+ FPC_production_effort_2: "Esfuerzo armamentístico II" #NT!
+ FPC_production_effort_2_desc: "Intentar adaptar fábricas civiles para producir equipamiento militar es ineficiente. Deberíamos centrarnos ahora en preparar la producción militar." #NT!
+ FPC_production_effort_3: "Esfuerzo armamentístico III" #NT!
+ FPC_production_effort_3_desc: "Son necesarios esfuerzos continuos para ampliar nuestras fábricas militares para satisfacer la demanda de nuevos equipos." #NT!
+ FPC_infrastructure_effort: "Esfuerzo en materia de infraestructura" #NT!
+ FPC_infrastructure_effort_desc: "Un país sin la infraestructura adecuada no puede llevar adelante proyectos o construcciones avanzadas." #NT!
+ FPC_infrastructure_effort_2: "Esfuerzo de infraestructura II" #NT!
+ FPC_infrastructure_effort_2_desc: "Ampliar aún más nuestra infraestructura permitirá el transporte y las comunicaciones necesarios para proyectos clandestinos de alta tecnología." #NT!
+ FPC_construction_effort_3: "Esfuerzo de construcción III" #NT!
+ FPC_construction_effort_3_desc: "La ampliación de nuestra red de infraestructura ha mejorado significativamente nuestra capacidad de construcción." #NT!
+ FPC_extra_tech_slot: "Ranura de investigación adicional" #NT!
+ FPC_extra_tech_slot_desc: "Nuestra expansión industrial y otros avances recientes podrían permitirnos realizar más I+D en paralelo." #NT!
+ FPC_extra_tech_slot_2: "Espacio de investigación adicional II" #NT!
+ FPC_extra_tech_slot_2_desc: "La rápida industrialización de nuestra nación ha abierto nuevas oportunidades en I+D que debemos aprovechar." #NT!
+ FPC_start_the_revolution: "Comienza la revolución" #NT!
+ FPC_cooperate_with_the_republic: "Cooperar con [FRA.GetNameDef]" #NT!
+ FPC_join_the_republic: "Únete [FRA.GetNameDef]" #NT!
+ FPC_focus_on_the_attack: "Centrarse en el ataque" #NT!
+ FPC_defence_first: "La defensa primero" #NT!
+ FPC_victory: "¡Victoria!" #NT!
+ FPC_establish_government: "Establecer el Gobierno" #NT!
+ FPC_integrate_the_rest: "Integrar al resto del país" #NT!
+ FPC_socialism_knows_no_borders: "[socialism_or_anarchism] No se conocen fronteras" #NT!
+ socialist_yes: "Socialismo" #NT!
+ anarchist_yes: "Anarquismo" #NT!
+ communist_yes: "Comunismo" #NT!
+ FPC_liberate_benelux_workers: "Liberar a los trabajadores del Benelux" #NT!
+ FPC_borders_france: "¡Comparte frontera con §Y[FRA.GetNameDef]§!" #NT!
+ FPC_workers_of_iberia_unite: "¡Trabajadores de Iberia, uníos!" #NT!
+ FPC_save_the_peninsula: "Salvemos la península" #NT!
+ FPC_short_lived_reich: "El efímero Reich" #NT!
+ FPC_disunite_the_uk: "Desunirse [ENG.GetNameDef]" #NT!
+ FPC_form_the_eu: "Europa unida" #NT!
+ FPC_communard_politics: "[ROOT.GetAdjective] Política" #NT!
+ FPC_anarchy: "Abolir el gobierno" #NT!
+ FPC_democracy: "Celebrar elecciones" #NT!
+ FPC_dictatorship_of_the_proletariat: "La dictadura del proletariado" #NT!
+ FPC_abolish_capital_punishment: "Abolir la pena capital" #NT!
+ FPC_bastion_of_democracy: "Bastión de la democracia" #NT!
+ FPC_comintern: "Crear el Comintern" #NT!
+ FPC_global_defence_council: "Crear el Consejo de Defensa Global" #NT!

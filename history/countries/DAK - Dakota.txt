@@ -1,4 +1,9 @@
-﻿capital = 389
+capital = 389
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+}
 
 set_research_slots = 0
 

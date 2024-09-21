@@ -1,4 +1,9 @@
-﻿capital = 837
+set_technology = {
+    fpw_cavalry_equipment = 1
+}
+
+capital = 837
+
 
 add_manpower = 15000
 
@@ -13,3 +18,4 @@ set_popularities = {
 }
 
 recruit_character = TRB_local_tribes
+

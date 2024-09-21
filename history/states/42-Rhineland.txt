@@ -3,9 +3,13 @@ state={
 	id=42
 	name="STATE_42"
 	resources={
+
 		steel=50.000
 		aluminium=14.000
-	}
+	
+
+wood=4
+}
 
 	history={
 		owner = PRS
@@ -32,3 +36,4 @@ state={
 	state_category=metropolis
 	local_supplies=0.000
 }
+

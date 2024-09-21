@@ -1,4 +1,8 @@
 state={
+resources={
+wood=1
+}
+
 	id=938
 	name="STATE_938"
 
@@ -21,8 +25,9 @@ state={
 	provinces={
 		3258 
 	}
-	manpower=20800
+	manpower=104800
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=town
 }
+

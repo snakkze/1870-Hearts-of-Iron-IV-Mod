@@ -1,4 +1,8 @@
 state={
+resources={
+wood=1
+}
+
 	id=126
 	name="STATE_126"
 	manpower=5108634
@@ -15,7 +19,6 @@ state={
 			arms_factory = 3
 			industrial_complex = 3
 			dockyard = 1
-			radar_station = 1
 			11374 = {
 				naval_base = 10
 			}
@@ -35,3 +38,4 @@ state={
 
 	local_supplies=0.0 
 }
+

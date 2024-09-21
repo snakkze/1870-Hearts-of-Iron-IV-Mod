@@ -3,9 +3,12 @@ state = {
 	id = 409
 	name = "STATE_409"
 	manpower = 153715
-	resources = {
-		chromium = 9 # was: 12
-	}
+	resources={
+
+	
+
+wood=2
+}
 	
 	state_category = rural
 
@@ -32,3 +35,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

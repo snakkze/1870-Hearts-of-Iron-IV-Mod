@@ -6,9 +6,13 @@ state={
 	
 	state_category = city
 	resources={
+
 		oil = 1 # was: 1
 		aluminium=60 # moved from Northern Hungary
-	}
+	
+
+wood=6
+}
 	history={
 		owner = AUS
 		victory_points = {
@@ -29,3 +33,4 @@ state={
 
 	local_supplies=0.0 
 }
+

@@ -3,8 +3,12 @@ state={
 	id=520
 	name="STATE_520"
 	resources={
+
 		steel=22.000
-	}
+	
+
+wood=19
+}
 
 	history={
 		owner = ENG
@@ -32,3 +36,4 @@ state={
 
 	local_supplies=0.0 
 }
+

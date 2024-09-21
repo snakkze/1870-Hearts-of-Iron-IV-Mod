@@ -1,0 +1,114 @@
+division_template = {
+	name = "Infanterieregiment"
+	division_names_group = PRS_LWR_01
+	is_locked = no
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+# Infantry 2x
+division_template = {
+	name = "Feldartillerieregiment"
+	division_names_group = PRS_LWR_01
+	is_locked = no
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		cannon_artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kavallerieregiment"
+	division_names_group = PRS_KAV_01
+	is_locked = no
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	## Infanterieregiment ##
+	#1. Infanterie-Division
+	division = {
+		#1. Infanterieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 694
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.3
+	}
+	#2. Infanterieregiment
+	division = {
+		#2. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 9517
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.3
+	}
+
+	### KAVALLERIE ###
+	# 1. kavallerie-Division
+	division = {
+		#1. Kavallerieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 6555
+		division_template = "Kavallerieregiment"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_rifle_1
+			creator = "BAD"
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = uniform_equipment_2
+			creator = "BAD"
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cavalry_equipment_0
+			creator = "BAD"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = rifled_cannon_equipment_0
+			creator = "BAD"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
+	}
+}

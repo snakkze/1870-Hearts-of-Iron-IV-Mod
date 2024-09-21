@@ -1,44 +1,19 @@
-﻿capital = 216 #Olonets (Petrozavodsk)
- oob = "KAR_1866"
+capital = 216 #Olonets (Petrozavodsk)
+oob = "KAR_1866"
 
-#oob = "KAR_1866"
 
 set_research_slots = 3
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -70,9 +45,6 @@ set_popularities = {
 	neutrality = 0
 }
 
-recruit_character = KAR_peteris_irklis
-recruit_character = KAR_ukki_vainamoinen
-recruit_character = KAR_jalmari_takkinen
 
 
 

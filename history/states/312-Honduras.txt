@@ -4,8 +4,11 @@ state=
 	name="STATE_312"
 	manpower=447076
 	resources={
-		chromium=1 # was: 1
-	}
+
+	
+
+wood=1
+}
 	
 	state_category = town
 	history=
@@ -34,3 +37,4 @@ state=
 
 	local_supplies=0.0 
 }
+

@@ -7,9 +7,12 @@ state = {
 	state_category = rural
 	
 	resources={
+
 		steel=7 # was: 8
-		chromium=2 # was: 2
-	}
+	
+
+wood=24
+}
 	history={
 		owner = FIN
 		victory_points = { #Kemi
@@ -46,3 +49,4 @@ state = {
 
 	local_supplies = 3.0 
 }
+

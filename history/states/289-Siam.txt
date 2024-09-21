@@ -2,8 +2,12 @@ state={
 	id=289
 	name="STATE_289"
 	resources={
+
 		tungsten=2.000
-	}
+	
+
+wood=7
+}
 
 	history={
 		owner = SIA
@@ -34,3 +38,4 @@ state={
 	state_category=city
 	local_supplies=0.000
 }
+

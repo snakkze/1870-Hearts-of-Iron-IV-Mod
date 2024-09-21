@@ -1,7 +1,6 @@
-﻿capital = 361
- oob = "USB_1866"
-
+capital = 361
 oob = "USA_1936"
+
 
 set_research_slots = 3
 set_stability = 0.75
@@ -15,115 +14,13 @@ set_variable = { var = quorum_medium value = 49 }
 set_variable = { var = quorum_high value = 58 }
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-
-}
-}
-
-recruit_character = USB_georges_vereecken
-recruit_character = USB_rene_lagrou
-recruit_character = USB_gaston_eyskens
-recruit_character = USB_victor_strydonck_burkel
-recruit_character = USB_paul_van_zeeland
-recruit_character = USB_fritz_lob
-recruit_character = USB_yvan_gerard
-recruit_character = USB_jules_pire
-recruit_character = USB_georges_deffontaine
-recruit_character = USB_oscar_michiels
-recruit_character = USB_raoul_overstraeten
-recruit_character = USB_fritz_conrad
-recruit_character = USB_victor_van_strydonck_de_burkel
-recruit_character = USB_paul-henri_spaak
-recruit_character = USB_charles_bastin
-recruit_character = USB_leon_degrelle
-recruit_character = USB_jules_iserentant
-
-
-1939.1.1 = {
-
-	add_political_power = 1199
-	add_command_power = 100
-	
-	#adding ministers
-	add_ideas = {
-		army_ordnance_department
-		general_electric
-		USA_prepare_intervention
-
-		#laws
-		isolation
-		volunteer_only
-
-		new_deal
-	}
-
-	#focuses
-
-	oob = "USA_1939"
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-
-}
-		create_equipment_variant = {
-			name = "Martin M166"
-			type = tac_bomber_equipment_0
-			upgrades = {
-				plane_tac_bomb_upgrade = 2
-				plane_range_upgrade = 1
-				plane_engine_upgrade = 2
-				plane_reliability_upgrade = 3
-			}
-		}
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-
-}
-	}
-}
 
 
 
@@ -146,18 +43,9 @@ add_ideas = {
 	civilian_economy
 	limited_conscription
 	free_trade
-	home_of_the_free
 	neutrality_idea
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 
 

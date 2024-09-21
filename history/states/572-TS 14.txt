@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=3
+}
+
 	id=572
 	name="STATE_572" # Chelyabinsk
 	manpower = 1078965
@@ -25,3 +29,4 @@ state={
 
 	local_supplies=0.0 
 }
+

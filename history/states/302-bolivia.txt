@@ -3,9 +3,13 @@ state={
 	id=302
 	name="STATE_302"
 	resources={
+
 		tungsten=60.000
 		steel=2.000
-	}
+	
+
+wood=2
+}
 
 	history={
 		owner = BOL
@@ -30,3 +34,4 @@ state={
 	state_category=city
 	local_supplies=0.000
 }
+

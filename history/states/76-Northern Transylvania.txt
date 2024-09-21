@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=3
+}
+
 	id=76
 	name="STATE_76"
 	manpower=1223404
@@ -27,3 +31,4 @@ add_core_of = AUS
 
 	local_supplies=9.0 
 }
+

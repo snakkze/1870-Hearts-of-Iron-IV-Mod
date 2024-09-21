@@ -1,20 +1,9 @@
 capital = 985
+
 # oob = "CAN_1866"
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "CAN_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "CAN_1866"
-}
+
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_naval_oob = "CAN_1866_naval_mtg"
@@ -22,13 +11,7 @@ if = {
 		set_naval_oob = "CAN_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
-}
-	else = {
-	}
-}
+
 
 set_research_slots = 1
 set_country_flag = monroe_doctrine
@@ -38,37 +21,17 @@ set_war_support = 0.1
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 	fpw_basic_train = 1
     tech_support = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

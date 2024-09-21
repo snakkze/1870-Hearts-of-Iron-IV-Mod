@@ -7,8 +7,12 @@ state={
 	state_category = large_city
 	
 	resources={
+
 		aluminium=12 # was: 18
-	}
+	
+
+wood=6
+}
 
 
 	history={
@@ -36,3 +40,4 @@ state={
 
 	local_supplies=7.0 
 }
+

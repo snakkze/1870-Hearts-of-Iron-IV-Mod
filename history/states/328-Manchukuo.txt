@@ -7,8 +7,12 @@ state={
 	state_category = rural
 
 	resources={
+
 		aluminium=7 # was: 10
-	}
+	
+
+wood=5
+}
 
 	history={
 		owner = CHI
@@ -35,3 +39,4 @@ add_core_of = CHI
 
 	local_supplies=0.0 
 }
+

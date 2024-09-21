@@ -7,8 +7,12 @@ state={
 	state_category = rural
 
 	resources={
+
 		oil=8
-	}
+	
+
+wood=3
+}
 	
 	history={
 		owner = MEX
@@ -34,3 +38,4 @@ state={
 
 	local_supplies=8.0 
 }
+

@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=14
+}
+
 	id=284
 	name="STATE_284" # North Island
 	manpower = 467915
@@ -34,3 +38,4 @@ state={
 
 	local_supplies=0.0 
 }
+

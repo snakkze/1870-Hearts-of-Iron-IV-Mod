@@ -1,6 +1,11 @@
 capital = 415
 oob = "AFG_1866"
 
+set_technology = {
+    fpw_cavalry_equipment = 1
+    fpw_infantry_weapons = 1
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -13,8 +18,10 @@ set_popularities = {
 	communism = 10
 	neutrality = 75
 }
+
 recruit_character = AFG_sher_ali_khan
 add_ideas = {
 	fpw_AFZ_AFG_lack_of_national_identity
 	fpw_AFG_our_chance_is_now
 }
+

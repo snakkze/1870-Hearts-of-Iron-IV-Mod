@@ -1,4 +1,8 @@
 state={
+resources={
+wood=3
+}
+
 	id=91
 	name="STATE_91" # Lwow
 	manpower = 1678456
@@ -28,3 +32,4 @@ add_core_of = AUS
 
 	local_supplies=0.0 
 }
+

@@ -1,31 +1,12 @@
 capital = 945
- oob = "BRE_1866"
+oob = "BRE_1866"
 
-1939.1.1 = {
+set_technology = {
+    fpw_cavalry_equipment = 1
+    fpw_infantry_weapons = 1
+}
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "AFG_1939"
-		set_technology = {
 
-}
-	set_technology = {
-		fpw_cannon_artillery = 1
-}
-}
 
 recruit_character = BRE_arnold_duckwitz
 

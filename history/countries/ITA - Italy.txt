@@ -1,5 +1,5 @@
 capital = 162
- oob = "ITA_1866"
+oob = "ITA_1866"
 
 recruit_character = ITA_alfonso_ferrero
 recruit_character = ITA_bettino_ricasoli
@@ -54,20 +54,6 @@ set_popularities = {
 	unlock_national_focus = ITA_ally_germany
 }
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ITA_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ITA_1866"
-}
 
 starting_train_buffer = 1.5
 
@@ -84,6 +70,7 @@ add_ideas = {
 #######################################
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
@@ -113,17 +100,7 @@ if = {
 	set_naval_oob = "ITA_1866_naval_mtg"
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 set_convoys = 200
 
 

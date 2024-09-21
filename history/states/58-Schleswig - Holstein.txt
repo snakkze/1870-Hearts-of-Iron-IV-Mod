@@ -10,8 +10,9 @@ state={
 		owner = AUS
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
 			arms_factory = 1
-			dockyard = 6
+			dockyard = 1
 			6389 = {
 				naval_base = 8
 
@@ -31,7 +32,7 @@ state={
 	provinces={
 		3368 6257 6389 11331 3231
 	}
-	manpower=1609728
+	manpower=487254
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

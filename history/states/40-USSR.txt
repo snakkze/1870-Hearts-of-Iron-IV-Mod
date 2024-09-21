@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=5
+}
+
 	id=40
 	name="STATE_40" # Barnaul
 	manpower = 1095875
@@ -29,3 +33,4 @@ state={
 
 	local_supplies=5.0 
 }
+

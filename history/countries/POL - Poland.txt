@@ -1,10 +1,12 @@
 capital = 10
 
 
+
 set_research_slots = 3
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
@@ -31,7 +33,7 @@ set_popularities = {
 
 recruit_character = SOV_friedrich_von_berg
 recruit_character = POL_wladyslaw_czartoryski
-recruit_character = POL_wojtek
+#recruit_character = POL_wojtek
 
 
 if = {
@@ -57,90 +59,11 @@ if = {
 		nationalities = { POL }
 	}
 }
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "By Blood Alone"
-		}
-	}
-	create_equipment_variant = {
-		name = "PZL P.24"
-		type = fighter_equipment_0
-		upgrades = {
-			plane_gun_upgrade = 3
-			plane_range_upgrade = 0  
-			plane_engine_upgrade = 1
-			plane_reliability_upgrade = 3
-		}
-	}
-}
+
 
 ### VARIANTS ###
 # 1936 Start #
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "TKS"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 1
-			tank_nsb_engine_upgrade = 1
-		}
-		obsolete = yes #used for oob
-		icon = "GFX_POL_basic_light_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "7TP dw"
-		type = light_tank_chassis_0
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = secondary_turret_hmg
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 2
-			tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_POL_improved_light_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "7TP jw"
-		type = light_tank_chassis_0
-		parent_version = 2
-		modules = {
-			main_armament_slot = tank_high_velocity_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = empty
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 2
-			tank_nsb_engine_upgrade = 2
-		}
-		icon = "GFX_POL_improved_light_tank_medium"
-	}
-#	add_equipment_to_stockpile = {
-#		type = light_tank_chassis_0
-#		amount = 550
-#		variant_name = "TKS"
-#	}
-}
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###

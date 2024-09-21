@@ -22,5 +22,281 @@ ideas = {
 			modifier = {
 			}
 		}
-	}	
+	}
+	country = {
+		fpw_eng_grain_from_cape = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		fpw_eng_land_revenue_system = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = raj_risk_of_famine
+
+			modifier = {
+				consumer_goods_factor = 0.3
+			}
+		}
+		fpw_eng_land_revenue_system_benefit = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = raj_all_india_forward_bloc
+
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+		fpw_eng_resource_exploitation = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_caved_to_the_british
+
+			modifier = {
+				autonomy_gain_trade_factor = -0.6
+				extra_trade_to_overlord_factor = 0.4
+			}
+		}
+		fpw_eng_resource_exploitation_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_caved_to_the_british
+
+			modifier = {
+				autonomy_gain_trade_factor = -0.6
+				extra_trade_to_overlord_factor = 0.5
+			}
+		}
+		fpw_eng_economic_downfall = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.5
+			}
+		}
+		fpw_eng_economic_downfall_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+		fpw_eng_economic_downfall_3 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.5
+			}
+		}
+		fpw_eng_economic_downfall_4 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
+		fpw_eng_economic_downfall_5 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.10
+			}
+		}
+		fpw_eng_economic_downfall_6 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		fpw_eng_debts = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		fpw_eng_food_rationing = {
+			allowed = {
+				has_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				supply_combat_penalties_on_core_factor = -0.1
+				monthly_population = -0.05
+				stability_factor = -0.05
+			}
+		}
+		fpw_eng_imperial_pride = {
+			allowed = {
+				tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = eng_guided_by_britain
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+				offence = 0.15
+				defence = 0.15
+			}
+		}
+		fpw_eng_royal_aeronautical_society = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = eng_raes
+
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+	}
 }

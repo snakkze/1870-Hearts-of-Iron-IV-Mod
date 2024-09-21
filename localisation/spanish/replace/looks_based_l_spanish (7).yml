@@ -1,0 +1,2708 @@
+﻿l_spanish:
+ vittorio_emanuele: "Víctor Manuel II" #NT!
+ vittorio_emanuele_desc: "Vittorio Emanuele II, el maravilloso rey de Italia, une al pueblo bajo una figura común." #NT!
+ fascist_influence: "Influencia liberalista" #NT!
+ fascist_influence_desc: "La presión liberal ha hecho que el liberalismo sea muy popular y el país es susceptible de alinearse con otros liberales." #NT!
+ communist_influence: "Influencia socialista" #NT!
+ communist_influence_desc: "La presión socialista ha hecho que el socialismo sea muy popular y el país es susceptible de alinearse con otros socialistas." #NT!
+ democratic_influence: "Influencia conservadora" #NT!
+ democratic_influence_desc: "La presión conservadora ha hecho que el conservadurismo sea muy popular y el país es susceptible de alinearse con otros conservadores." #NT!
+ neutrality_influence: "Influencia autoritaria" #NT!
+ neutrality_influence_desc: "La presión autoritaria ha generado un nuevo respeto por aquellos con gobiernos fuertes y casas reales nobles, y el país es susceptible de alinearse con otros gobiernos autoritarios." #NT!
+ soviet_german_friendship: "Amistad soviético-alemana" #NT!
+ soviet_german_friendship_desc: "El Reich alemán y la Unión Soviética se han unido en amistad contra el Occidente decadente." #NT!
+ sour_loser: "Perdedor amargado" #NT!
+ sour_loser_desc: "La amargura por la derrota en la Gran Guerra domina la política de esta nación." #NT!
+ received_attache: "Recibido adjunto" #NT!
+ received_attache_desc: "Agregados militares extranjeros residentes en nuestro país." #NT!
+ ATTACHE_LIST: "Hemos recibido agregados militares de $LIST$. Y nos dan los siguientes efectos:" #NT!
+ porsche: "Porsche" #NT!
+ porsche_desc: "Porsche prefiere los tanques con blindaje pesado." #NT!
+ henschel: "Henschel" #NT!
+ henschel_desc: "Henschel fue responsable de todos los modelos Tiger producidos en serie, tanques que, después de resolverse los primeros problemas de confiabilidad, funcionaron notablemente bien." #NT!
+ GER_MAN: "HOMBRE" #NT!
+ GER_MAN_desc: "Más conocido por el tanque Panther, MAN también participó en el diseño y producción de modelos Panzer anteriores." #NT!
+ rheinmetall: "Metal del Rin" #NT!
+ rheinmetall_desc: "Rheinmetall diseña y construye todo tipo de cañones y armas de gran tamaño." #NT!
+ mauser: "máuser" #NT!
+ mauser_desc: "Mauser diseña y construye todo tipo de armas pequeñas." #NT!
+ ig_faben: "Colores IG" #NT!
+ ig_faben_desc: "IG Farben está muy interesado en la investigación industrial." #NT!
+ messerschmitt: "Messerschmitt" #NT!
+ messerschmitt_desc: "Messerschmitt se centra en el diseño de aviones ligeros, como los cazas." #NT!
+ focke_wulf: "Focke Wulf" #NT!
+ focke_wulf_desc: "Focke Wulf tiene un interés especial en el diseño de aviones medianos, como los cazas pesados." #NT!
+ junkers: "Junkers" #NT!
+ junkers_desc: "Junkers es más famoso por haber desarrollado el bombardero en picado Stuka." #NT!
+ todt: "Fritz Todt" #NT!
+ todt_desc: "Fritz Todt, un ingeniero alemán, fue el fundador de la Organización Todt. Aumentará la velocidad de construcción de proyectos industriales civiles." #NT!
+ speer: "Albert Speer" #NT!
+ speer_desc: "Albert Speer fue un arquitecto alemán que fue Ministro de Armamento y Producción Bélica entre 1942 y 1945. A menudo reconocido como el "milagro del armamento", su nombramiento aumentará la eficiencia industrial." #NT!
+ raeder: "Erich Raeder" #NT!
+ raeder_desc: "Erich Raeder fue un almirante alemán que favoreció el uso de buques de superficie tradicionales y la doctrina de la Flota en Ser." #NT!
+ donitz: "Karl Dönitz" #NT!
+ donitz_desc: "Karl Dönitz fue un almirante alemán con afición por los submarinos y la doctrina de interdicción comercial." #NT!
+ goering: "Hermann Göring" #NT!
+ goering_desc: "Hermann Göring fue un as de la lucha durante la Gran Guerra que se convirtió en uno de los principales partidarios de Hitler. Si bien no es el mejor en su trabajo, es devotamente leal." #NT!
+ walther_wever: "Walther Wever" #NT!
+ walther_wever_desc: "Walther Wever fue uno de los primeros defensores de la teoría del bombardeo estratégico." #NT!
+ ritter_von_greim: "El caballero de Greim" #NT!
+ ritter_von_greim_desc: "Ritter von Greim es un defensor de la interdicción táctica." #NT!
+ ernst_udet: "Ernst Udet" #NT!
+ ernst_udet_desc: "Ernst Udet influyó en la adopción de técnicas de bombardeo en picado, así como del bombardero en picado Stuka." #NT!
+ werner_von_fritsch: "Werner von Fritsch" #NT!
+ werner_von_fritsch_desc: "Werner von Fritsch, un general de la vieja guardia, está a favor de centrarse en la infantería." #NT!
+ ludwig_beck: "Luis Beck" #NT!
+ ludwig_beck_desc: "Ludwig Beck concede especial importancia al suministro." #NT!
+ franz_halder: "Franz Halder" #NT!
+ franz_halder_desc: "Franz Halder cree en el poder de impacto de la artillería en el ataque." #NT!
+ heinz_guderian: "Heinz Guderian" #NT!
+ wilhelm_keitel: "Wilhelm Keitel" #NT!
+ wilhelm_keitel_desc: "Wilhelm Keitel, general de la Vieja Guardia, prefiere la infantería. Lo que le falta en habilidad lo compensa con lealtad." #NT!
+ ferdinand_schorner: "Fernando Schörner" #NT!
+ ferdinand_schorner_desc: "Ferdinand Schörner es experto en defensa y lucha en condiciones climáticas frías." #NT!
+ general_staff: "Estado Mayor" #NT!
+ general_staff_desc: "El Estado Mayor alemán era responsable del estudio continuo de todos los aspectos de la guerra, incluida la elaboración y revisión de planes de movilización o campaña. Esto contribuía a un mayor nivel de organización en el ejército." #NT!
+ v_weapons: "Armas de venganza" #NT!
+ v_weapons_desc: "Los cohetes de bombardeo de largo alcance serían armas de venganza ideales contra nuestros enemigos." #NT!
+ hermann_gortz: "Hermann Görtz" #NT!
+ hermann_gortz_desc: "§HHermann Görtz§! es un hábil espía alemán." #NT!
+ elyesa_bazna: "Elyesa Bazna" #NT!
+ elyesa_bazna_desc: "§HElyesa Bazna§! es ampliamente conocido bajo su nombre clave Cicero." #NT!
+ marina_lee: "Marina Lee" #NT!
+ marina_lee_desc: "§HMarina Lee§! es una bailarina que se especializa en robar planes de batalla." #NT!
+ german_advisors: "Asesores militares alemanes" #NT!
+ german_advisors_desc: "Una misión militar alemana dirigida por Alexander von Falkenhausen está presente en China, y sus asesores nos están ayudando a poner nuestro ejército a la altura de los estándares occidentales." #NT!
+ walther_von_brauchitsch: "W. von Brauchitsch" #NT!
+ erwin_rommel: "Erwin Rommel" #NT!
+ gerd_von_rundstedt: "Gerd von Rundstedt" #NT!
+ albert_kesselring: "Albert Kesselring" #NT!
+ hugo_sperrle: "Hugo Sperrle" #NT!
+ erhard_milch: "Erhard Milch" #NT!
+ kurt_student: "Estudiante Kurt" #NT!
+ erich_bey: "Erich Bey" #NT!
+ gunther_lutjens: "Gunther Lütjens" #NT!
+ viktor_schutze: "Viktor Schütze" #NT!
+ wolfram_von_richthofen: "W. von Richthofen" #NT!
+ alfred_saalwachter: "Alfred Saalwächter" #NT!
+ otto_ciliax: "Otto Ciliax" #NT!
+ joseph_goebbels: "José Goebbels" #NT!
+ heinrich_himmler: "Heinrich Himmler" #NT!
+ martin_bormann: "Martín Bormann" #NT!
+ joachim_von_ribbentrop: "J. von Ribbentrop" #NT!
+ konstantin_von_neurath: "K. von Neurath" #NT!
+ hjalmar_schacht: "Hjalmar Schacht" #NT!
+ walther_funk: "Funk de Walther" #NT!
+ mitsubishi: "Mitsubishi" #NT!
+ aichi: "Aichi" #NT!
+ nakajima: "Nakajima" #NT!
+ kawasaki: "Kawasaki" #NT!
+ tokyo_arsenal: "Arsenal de Tokio" #NT!
+ nissan: "Nissan" #NT!
+ osaka_army_arsenal: "Arsenal del ejército de Osaka" #NT!
+ kure_naval_arsenal: "Arsenal Naval de Kure" #NT!
+ yokosuka_naval_arsenal: "Arsenal naval de Yokosuka" #NT!
+ maizuru_naval_arsenal: "Arsenal naval de Maizuru" #NT!
+ sasebo_naval_arsenal: "Arsenal naval de Sasebo" #NT!
+ sumitomo: "Sumitomo" #NT!
+ renault_fra: "Renault" #NT!
+ renault_bel: "Renault" #NT!
+ somua: "SOMUA" #NT!
+ mas: "MÁS" #NT!
+ schneider: "Schneider" #NT!
+ morane_saulnier: "Morane-Saulnier" #NT!
+ bloch: "Bloqueo" #NT!
+ amiot: "Amiot" #NT!
+ fcm: "FCM" #NT!
+ famh: "FAMH" #NT!
+ fiat: "Fíat" #NT!
+ beretta: "Beretta" #NT!
+ lancia: "Lancia" #NT!
+ breda: "Breda" #NT!
+ macchi: "Macchi" #NT!
+ savoia_marchetti: "Saboya-Marchetti" #NT!
+ caproni: "Caproni" #NT!
+ crda: "CRDA" #NT!
+ mig_design_bureau: "Oficina de diseño MiG" #NT!
+ ilyushin_design_bureau: "Oficina de diseño Ilyushin" #NT!
+ tupolev_design_bureau: "Oficina de diseño de Tupolev" #NT!
+ grabin_design_bureau: "Oficina de diseño Grabin" #NT!
+ morozov_design_bureau: "Oficina de Diseño Morozov" #NT!
+ astrov_design_bureau: "Oficina de diseño Astrov" #NT!
+ okmo: "OKMO" #NT!
+ stalingrad_tractor_factory: "Fábrica de tractores de Stalingrado" #NT!
+ leningrad_polytechnical_institute: "Instituto Industrial de Leningrado" #NT!
+ tula_arms_plant: "Planta de armas de Tula" #NT!
+ gaz: "GAS" #NT!
+ nevskoye_design_bureau: "Oficina de diseño de Nevskoye" #NT!
+ rsaf_enfield: "Fuerza Aérea de los Estados Unidos Enfield" #NT!
+ vauxhall: "Vauxhall" #NT!
+ royal_arsenal: "Real Arsenal" #NT!
+ supermarine: "Supermarino" #NT!
+ hawker: "Aviones Hawker" #NT!
+ de_havilland: "De Havilland" #NT!
+ avro: "Avro" #NT!
+ vickers_armstrong_bel: "Vickers-Armstrong" #NT!
+ vickers_armstrong_eng: "Vickers-Armstrong" #NT!
+ vickers_armstrong_can: "Vickers-Armstrong" #NT!
+ yarrow_shipbuilders: "Constructores de barcos Yarrow" #NT!
+ harland_wolff: "Harland y Wolff" #NT!
+ cammell_laird: "Cammel Laird" #NT!
+ john_brown_company: "John Brown y compañía" #NT!
+ aioc: "Organización Internacional de Coordinación de Asuntos Exteriores (AIOC)" #NT!
+ english_electric: "Eléctrico inglés" #NT!
+ springfield_armory: "Armería de Springfield" #NT!
+ ford_motor_company: "Compañía Ford Motor" #NT!
+ standard_oil_california: "Aceite estándar de California" #NT!
+ general_electric: "electricidad general" #NT!
+ marmon_herrington: "Marmon-Herrington" #NT!
+ chrysler: "Chrysler" #NT!
+ army_ordnance_department: "Departamento de Artillería del Ejército" #NT!
+ rock_island_arsenal: "Arsenal de la isla de la roca" #NT!
+ grumman: "Gruman" #NT!
+ bell: "Campana" #NT!
+ lockheed: "Bloqueo" #NT!
+ douglas_aircraft_company: "Compañía Aeronáutica Douglas" #NT!
+ boeing: "Boeing" #NT!
+ north_american_aviation: "Aviación norteamericana" #NT!
+ norfolk_naval_yard: "Astillero naval de Norfolk" #NT!
+ brooklyn_naval_yard: "Patio naval de Brooklyn" #NT!
+ newport_news_shipbuilding: "Construcción naval de Newport News" #NT!
+ electric_boat_company: "Compañía de barcos eléctricos" #NT!
+ krupp: "Krupp" #NT!
+ germaniawerft: "Contrato de Alemania" #NT!
+ blohm_und_voss: "Blohm y Voss" #NT!
+ siemens: "Siemens" #NT!
+ opel: "Opel" #NT!
+ heinkel: "Heinkel" #NT!
+ dornier: "Dornier" #NT!
+ yokosuka: "Yokosuka" #NT!
+ levasseur: "Levasseur" #NT!
+ piaggio: "Piaggio" #NT!
+ fairey_aviation: "Aviación Fairey" #NT!
+ yakovlev_design_bureau: "Oficina de diseño de Yakovlev" #NT!
+ consolidated_aircraft: "Aeronaves consolidadas" #NT!
+ von_braun: "Wernher von Braun" #NT!
+ heisenberg: "Werner Heisenberg" #NT!
+ guderian: "Heinz Guderian" #NT!
+ manstein: "Erich von Manstein" #NT!
+ sanzo_nosaka: "Sanzo Nosaka" #NT!
+ kijuro_shidehara: "Kijuro Shidehara" #NT!
+ kingoro_hashimoto: "Kingoro Hashimoto" #NT!
+ maurice_thorez: "Maurice Thorez" #NT!
+ leon_blum: "León Blum" #NT!
+ marcel_bucard: "Marcel Bucard" #NT!
+ amadeo_bordiga: "Amadeo Bordiga" #NT!
+ ivanoe_bonomi: "Ivanoe Bonomi" #NT!
+ carlo_scorza: "Carlos Scorza" #NT!
+ mikhail_kalinin: "Mijaíl Kalinin" #NT!
+ nikita_khrushchev: "Nikita Jruschov" #NT!
+ alexander_kerensky: "Aleksandr Kerenski" #NT!
+ konstantin_rodzaevsky: "Konstantín Rodzaevski" #NT!
+ george_v: "Rey Jorge V" #NT!
+ george_v_desc: "Reunidos en torno al Rey del Reino Unido y los Dominios Británicos, así como al Emperador de la India, el pueblo británico se mantiene unido y orgulloso de su legado imperial." #NT!
+ harry_pollitt: "Harry Pollitt" #NT!
+ clement_attlee: "Clemente Attlee" #NT!
+ clement_attlee_desc: "Un hombre modesto con muchos motivos para ser modesto." #NT!
+ john_beckett: "Juan Beckett" #NT!
+ earl_browder: "Conde Browder" #NT!
+ harold_ickes: "Harold L. Ickes" #NT!
+ charles_coughlin: "Charles Coughlin" #NT!
+ ernst_thalmann: "Ernst Thaelmann" #NT!
+ kurt_schumacher: "Kurt Schumacher" #NT!
+ rudolf_hess: "Rodolfo Hess" #NT!
+ flight_of_hess: "Rudolf Hess ha realizado su famoso vuelo" #NT!
+ kanin_kotohito: "Príncipe Kan'in Kotohito" #NT!
+ hajime_sugiyama: "Hajime Sugiyama" #NT!
+ hideki_tojo: "Hideki Tojo" #NT!
+ hitoshi_imamura: "Hitoshi Imamura" #NT!
+ yasuji_okamura: "Yasuji Okamura" #NT!
+ shunroku_hata: "Shunroku Hata" #NT!
+ torashiro_kawabe: "Torashiro Kawabe" #NT!
+ korechika_anami: "Korechika Anami" #NT!
+ kenji_doihara: "Kenji Doihara" #NT!
+ mitsuo_fuchida: "Mitsuo Fuchida" #NT!
+ nishizo_tsukahara: "Nishizo Tsukahara" #NT!
+ tateo_kato: "Tateo Kato" #NT!
+ fushimi_hiroyasu: "Prince Fushimi Hiroyasu" #NT!
+ osami_nagano: "Osami Nagano" #NT!
+ shigetaro_shimada: "Shigetaro Shimada" #NT!
+ soemu_toyoda: "Soemu Toyoda" #NT!
+ matome_ugaki: "Matome Ugaki" #NT!
+ chuichi_nagumo: "Chuichi Nagumo" #NT!
+ douglas_macarthur: "Douglas MacArthur" #NT!
+ george_marshall: "George Marshall" #NT!
+ dwight_eisenhower: "Dwight D. Eisenhower" #NT!
+ courtney_hodges: "Courtney Hodges" #NT!
+ joseph_stilwell: "José Stilwell" #NT!
+ mark_clark: "Mark W. Clark" #NT!
+ henry_arnold: "Henry Arnold" #NT!
+ carl_spaatz: "Carl Spaatz" #NT!
+ george_kenney: "George Kenney" #NT!
+ jimmy_doolittle: "Jimmy Doolittle" #NT!
+ john_cannon: "John K. Cannon" #NT!
+ claire_lee_chennault: "Claire Lee Chennault" #NT!
+ ernest_king: "Ernesto Rey" #NT!
+ chester_nimitz: "Chester W. Nimitz" #NT!
+ william_halsey: "William Halsey Jr." #NT!
+ raymond_spruance: "Raymond Spruance" #NT!
+ frank_jack_fletcher: "Frank Jack Fletcher" #NT!
+ thomas_kinkaid: "Thomas C. Kinkaid" #NT!
+ john_vereker: "Juan Vereker" #NT!
+ edmund_ironside: "Edmund Ironside" #NT!
+ alan_brooke: "Alan Brooke" #NT!
+ archibald_wavell: "Archibald Wavell" #NT!
+ claude_auchinleck: "Claude Auchinleck" #NT!
+ kenneth_anderson: "Kenneth Anderson" #NT!
+ cyril_newall: "Cyril Newall" #NT!
+ charles_portal: "Portal de Carlos" #NT!
+ edward_ellington: "Edward Ellington" #NT!
+ sholto_douglas: "Sholto Douglas" #NT!
+ trafford_leigh_mallory: "Trafford Leigh Mallory" #NT!
+ frederick_bowhill: "Federico Bowhill" #NT!
+ ernle_chatfield: "Ernle Chatfield" #NT!
+ dudley_pound: "Libra Dudley" #NT!
+ andrew_cunningham: "Andrew Cunningham" #NT!
+ louis_mountbatten: "Luis Mountbatten" #NT!
+ henry_harwood: "Henry Harwood" #NT!
+ max_horton: "Max Horton" #NT!
+ semyon_timoshenko: "Semión Timoshenko" #NT!
+ kliment_voroshilov: "Clemente Voroshilov" #NT!
+ alexander_yegorov: "Alexander Yegórov" #NT!
+ vasily_blucher: "Vasili Blücher" #NT!
+ ivan_konev: "Iván Kónev" #NT!
+ ivan_konev_desc: "Según Sergo Beria, Ivan Konev tiene unos ojos pequeños y traviesos, una cabeza rapada que parece una calabaza y una expresión llena de engreimiento." #NT!
+ SOV_konev_civil_war: "Konev no apoya una guerra civil contra la Unión Soviética." #NT!
+ aleksandr_vasilevsky: "Aleksandr Vasilevski" #NT!
+ konstantin_rokossovsky: "Konstantín Rokossovsky" #NT!
+ alexander_novikov: "Aleksandr Novikov" #NT!
+ konstantin_vershinin: "Konstantín Vershinin" #NT!
+ yakov_smushkevich: "Yakov Smushkevich" #NT!
+ pavel_rychagov: "Pavel Rychagov" #NT!
+ pavel_zhigarev: "Pavel Zhigarev" #NT!
+ sergei_khudyakov: "Serguéi Khudyakov" #NT!
+ stepan_krasovsky: "Stepán Krasovsky" #NT!
+ pyotr_smirnov: "Piotr Smirnov" #NT!
+ mikhail_frinovsky: "Mijail Frinovski" #NT!
+ nikolay_kuznetsov: "Nikolai Kuznetsov" #NT!
+ ivan_yumashev: "Iván Yumashev" #NT!
+ vladimir_kasatonov: "Vladimir Kasatonov" #NT!
+ gordey_levchenko: "Gordey Levchenko" #NT!
+ arseniy_golovko: "Arseni Golovko" #NT!
+ maurice_gamelin: "Maurice Gamelin" #NT!
+ maxime_weygand: "Maxime Weygand" #NT!
+ alphonse_georges: "Alfonso Georges" #NT!
+ rene_prioux: "René Prioux" #NT!
+ charles_huntziger: "Charles Huntziger" #NT!
+ philippe_leclerc: "Philippe Leclerc" #NT!
+ joseph_vuillemin: "José Vuillemin" #NT!
+ robert_odic: "Robert Odic" #NT!
+ philippe_fequant: "Phillipe Féquant" #NT!
+ alfred_heurtaux: "Alfred Heurtaux" #NT!
+ martial_valin: "Valin marcial" #NT!
+ jean_francois_jannekeyn: "Jean-François Jannekeyn" #NT!
+ francois_darlan: "François Darlan" #NT!
+ marcel_gensoul: "Marcel Gensoul" #NT!
+ jean_marie_abrial: "Jean-Marie Abrial" #NT!
+ jean_de_laborde: "Jean de Laborde" #NT!
+ emile_muselier: "Émile Muselier" #NT!
+ rene_emile_godfroy: "René-Émile Godfroy" #NT!
+ pietro_badoglio: "Pietro Badoglio" #NT!
+ ugo_cavallero: "Ugo Cavallero" #NT!
+ emilio_de_bono: "Emilio De Bono" #NT!
+ mario_roatta: "Mario Roatta" #NT!
+ vittorio_ambrosio: "Vittorio Ambrosio" #NT!
+ alfredo_guzzoni: "Alfredo Guzzoni" #NT!
+ italo_balbo: "Italo Balbo" #NT!
+ rino_corso_fougier: "Rino Corso Fougier" #NT!
+ francesco_pricolo: "Francisco Pricolo" #NT!
+ ettore_muti: "Ettore Muti" #NT!
+ marziale_cerutti: "Marcial Cerutti" #NT!
+ silvio_scaroni: "Silvio Scaroni" #NT!
+ domenico_cavagnari: "Domenico Cavagnari" #NT!
+ arturo_riccardi: "Arturo Riccardi" #NT!
+ inigo_campioni: "Íñigo Campioni" #NT!
+ alberto_da_zara: "Alberto Da Zara" #NT!
+ carlo_bergamini: "Carlos Bergamini" #NT!
+ luigi_mascherpa: "Luigi Mascherpa" #NT!
+ tomoyuki_yamashita: "Tomoyuki Yamashita" #NT!
+ hisaichi_terauchi: "Hisaichi Terauchi" #NT!
+ isoroku_yamamoto: "Isoroku Yamamoto" #NT!
+ minoru_genda: "Minoru Genda" #NT!
+ yoshitoshi_tokugawa: "Yoshitoshi Tokugawa" #NT!
+ hino_kumazo: "Hino Kumazo" #NT!
+ yoshio_nishina: "Yoshio Nishina" #NT!
+ hideo_itokawa: "Hideo Itokawa" #NT!
+ charles_de_gaulle: "Charles de Gaulle" #NT!
+ henri_giraud: "Henri Giraud" #NT!
+ louis_kahn: "Luis Kahn" #NT!
+ jean_decoux: "Jean Découx" #NT!
+ victor_denain: "Víctor Denain" #NT!
+ jean_marie_bergeret: "Jean-Marie Bergeret" #NT!
+ frederic_irene_joliot_curie: "Frédéric e Iréne Joliot-Curie" #NT!
+ giovanni_messe: "Feria Giovanni" #NT!
+ rodolfo_graziani: "Rodolfo Graziani" #NT!
+ guiseppe_fioravanzo: "Giuseppe Fioravanzo" #NT!
+ angelo_iachino: "Ángel Iachino" #NT!
+ amedeo_mecozzi: "Amedeo Mecozzi" #NT!
+ renato_sandalli: "Renato Sandalli" #NT!
+ gaetano_crocco: "Gaetano Crocco" #NT!
+ omar_bradley: "Omar Bradley" #NT!
+ george_patton: "George S. Patton" #NT!
+ dewitt_clinton_ramsey: "DeWitt Clinton Ramsey" #NT!
+ marc_mitscher: "Marc Mitscher" #NT!
+ curtis_lemay: "Curtis LeMay" #NT!
+ harold_mcclelland: "Harold McClelland" #NT!
+ robert_oppenheimer: "Robert Oppenheimer" #NT!
+ robert_goddard: "Robert H. Goddard" #NT!
+ bernard_montgomery: "Bernardo Montgomery" #NT!
+ bernard_montgomery_desc: "En la derrota invencible, en la victoria insoportable" #NT!
+ harold_alexander: "Harold Alejandro" #NT!
+ james_somerville: "James Somerville" #NT!
+ tom_phillips: "Tom Phillips" #NT!
+ hugh_dowding: "Hugh Dowding" #NT!
+ arthur_harris: "Arturo Harris" #NT!
+ james_chadwick: "James Chadwick" #NT!
+ frank_whittle: "Frank Whittle" #NT!
+ mikhail_tukhachevsky: "Mijail Tujachevski" #NT!
+ boris_shaposhnikov: "Boris Shaposhnikov" #NT!
+ georgy_zhukov: "Georgi Zhukov" #NT!
+ sergey_gorshkov: "Serguéi Gorshkov" #NT!
+ vladimir_tributs: "Tributos de Vladimir" #NT!
+ sergei_rudenko: "Serguéi Rudenko" #NT!
+ alexander_golovanov: "Aleksandr Golovanov" #NT!
+ igor_kurchatov: "Ígor Kurchátov" #NT!
+ sergei_korolev: "Serguéi Korolev" #NT!
+ undisturbed_isolation: "Aislamiento imperturbable" #NT!
+ undisturbed_isolation_desc: "El país, que todavía se está recuperando de la Gran Depresión y de la hambruna causada por el Dust Bowl, está reconstruyendo lentamente su infraestructura. Las industrias estadounidenses están, en la mayoría de los casos, trabajando a la mitad de su capacidad y seguirán haciéndolo a menos que acontecimientos importantes saquen al país de su letargo." #NT!
+ isolation: "Aislamiento" #NT!
+ civilian_economy: "Economía civil" #NT!
+ low_economic_mobilisation: "Movilización temprana" #NT!
+ partial_economic_mobilisation: "Movilización parcial" #NT!
+ war_economy: "Economía de guerra" #NT!
+ tot_economic_mobilisation: "Movilización total" #NT!
+ new_economic_policy: "Nueva política económica" #NT!
+ idea_group_mobilization_laws: "Leyes de reclutamiento" #NT!
+ disarmed_nation: "Nación desarmada" #NT!
+ volunteer_only: "Solo voluntarios" #NT!
+ limited_conscription: "Servicio militar obligatorio limitado" #NT!
+ extensive_conscription: "Reclutamiento extensivo" #NT!
+ service_by_requirement: "Servicio por requerimiento" #NT!
+ all_adults_serve: "Todos los adultos sirven" #NT!
+ scraping_the_barrel: "Raspando el barril" #NT!
+ #generic_communist_revolutionary: "Político socialista" #NT!
+ #generic_democratic_reformer: "Político conservador" #NT!
+ #generic_fascist_demagogue: "Político liberal" #NT!
+ generic_army_chief_offensive: "Jefe del ejército ofensivo" #NT!
+ generic_army_chief_defensive: "Jefe del ejército defensivo" #NT!
+ generic_army_chief_reform: "Jefe del ejército innovador" #NT!
+ generic_navy_chief_decisive_battle: "Artillero Jefe de la Marina" #NT!
+ generic_navy_chief_commerce_raiding: "Jefe de la Armada asaltante" #NT!
+ generic_navy_chief_reform: "Jefe de la Marina Innovador" #NT!
+ generic_air_chief_safety: "Jefe del Aire Meticuloso" #NT!
+ generic_air_chief_ground_support: "Jefe de apoyo aéreo" #NT!
+ generic_air_chief_reform: "Jefe del Aire Innovador" #NT!
+ generic_army_entrenchment: "General de trinchera" #NT!
+ generic_army_regrouping: "General organizado" #NT!
+ generic_army_logistics: "Logística General" #NT!
+ generic_navy_amphibious_assault: "Almirante de la invasión" #NT!
+ generic_navy_naval_air_defense: "Almirante antiaéreo" #NT!
+ generic_navy_fleet_logistics: "Almirante de logística" #NT!
+ generic_air_air_superiority: "Aviador de superioridad" #NT!
+ generic_air_close_air_support: "Soporte Aviator" #NT!
+ generic_air_air_combat_training: "Instructor de pilotos" #NT!
+ generic_land_doctrine: "Visionario terrestre" #NT!
+ generic_naval_doctrine: "Visionario naval" #NT!
+ generic_air_doctrine: "Visionario aéreo" #NT!
+ generic_tank_manufacturer: "Compañía de armaduras" #NT!
+ generic_motorized_equipment_manufacturer: "Empresa de motorización" #NT!
+ generic_infantry_equipment_manufacturer: "Compañía de armas pequeñas" #NT!
+ generic_artillery_manufacturer: "Compañía de artillería" #NT!
+ generic_light_aircraft_manufacturer: "Compañía de aire ligero" #NT!
+ generic_medium_aircraft_manufacturer: "Compañía Aérea Mediana" #NT!
+ generic_heavy_aircraft_manufacturer: "Compañía Aérea Pesada" #NT!
+ generic_naval_aircraft_manufacturer: "Compañía Aérea Naval" #NT!
+ generic_naval_manufacturer: "Compañía Naval" #NT!
+ generic_industrial_concern: "Empresa industrial" #NT!
+ generic_electronics_concern: "Empresa de electrónica" #NT!
+ generic_spy_intel: "El Tinkerer" #NT!
+ generic_spy_political: "El sastre" #NT!
+ generic_spy_coup: "El soldado" #NT!
+ idea_group_army_chief: "Jefe del Ejército" #NT!
+ idea_group_air_chief: "Jefe de la Fuerza Aérea" #NT!
+ idea_group_navy_chief: "Jefe de la Marina" #NT!
+ idea_group_tank_manufacturer: "Diseñador de tanques" #NT!
+ idea_group_naval_manufacturer: "Diseñador naval" #NT!
+ idea_group_light_aircraft_manufacturer: "Diseñador de aviones ligeros" #NT!
+ idea_group_industrial_concern: "Preocupación industrial" #NT!
+ idea_category_country: "País" #NT!
+ idea_category_country_desc: "Adoptar ideas/contratar ministros para ayudar a dirigir su país" #NT!
+ idea_category_political: "Asesores políticos" #NT!
+ idea_category_political_desc: "Adoptar ideas/contratar ministros para ayudar a dirigir su país" #NT!
+ idea_category_military: "Personal militar" #NT!
+ idea_category_military_desc: "Adoptar ideas/contratar ministros para ayudar a dirigir su ejército" #NT!
+ idea_category_economic: "Ideas económicas" #NT!
+ idea_category_economic_desc: "Adoptar ideas/contratar ministros para ayudar a dirigir su economía" #NT!
+ idea_category_technology: "Tecnología e investigación" #NT!
+ idea_category_technology_desc: "Adoptar ideas/contratar ministros y empresas para ayudar a dirigir sus desarrollos tecnológicos" #NT!
+ idea_category_espionage: "Espionaje" #NT!
+ idea_category_espionage_desc: "Adoptar ideas/contratar ministros y espías para ayudar en su espionaje." #NT!
+ idea_group_political_reform: "Reforma política" #NT!
+ idea_group_political_reform_desc: "Personas e ideas con potencial para cambiar el panorama político de la nación." #NT!
+ idea_group_economy: "Leyes económicas" #NT!
+ idea_group_economic_desc: "Adopte una de estas ideas o contrate a uno de estos ministros para que le ayude a dirigir su economía" #NT!
+ idea_group_armor: "Armadura" #NT!
+ idea_group_armor_desc: "Ideas y personas que impulsan la producción y la investigación de unidades blindadas" #NT!
+ idea_group_artillery: "Artillería" #NT!
+ idea_group_artillery_desc: "Ideas y personas que impulsan la producción y la investigación en artillería" #NT!
+ idea_group_infantry: "Infantería" #NT!
+ idea_group_infantry_desc: "Ideas y personas que impulsan la producción y la investigación en infantería." #NT!
+ idea_group_light_air: "Aviones ligeros" #NT!
+ idea_group_light_air_desc: "Ideas y personas que impulsan la producción y la investigación en aviones ligeros" #NT!
+ idea_group_medium_air: "Aeronaves medianas" #NT!
+ idea_group_medium_air_desc: "Ideas y personas que impulsan la producción y la investigación en aviones medianos" #NT!
+ idea_group_heavy_air: "Aviones pesados" #NT!
+ idea_group_heavy_air_desc: "Ideas y personas que impulsan la producción y la investigación en aviones pesados" #NT!
+ idea_group_industry: "Industria" #NT!
+ idea_group_industry_desc: "Ideas y personas que impulsan la producción y la investigación en la industria" #NT!
+ idea_group_naval: "Naval" #NT!
+ idea_group_naval_desc: "Ideas y personas que impulsan la producción y la investigación naval" #NT!
+ idea_group_electronics: "Electrónica" #NT!
+ idea_group_electronics_desc: "Ideas y personas que impulsan la producción y la investigación en electrónica" #NT!
+ idea_group_motorized: "Motorizado" #NT!
+ idea_group_motorized_desc: "Ideas y personas que impulsan la producción y la investigación de unidades motorizadas" #NT!
+ idea_group_rocketry: "Cohetería" #NT!
+ idea_group_rocketry_desc: "Ideas y personas que impulsan la producción y la investigación en cohetería" #NT!
+ idea_group_nuclear: "Nuclear" #NT!
+ idea_group_nuclear_desc: "Ideas y personas que impulsan la producción y la investigación nuclear" #NT!
+ idea_group_army: "Ejército" #NT!
+ idea_group_army_desc: "Ideas y personas que impulsan la producción y la investigación del ejército" #NT!
+ idea_group_air_warfare: "Guerra aérea" #NT!
+ idea_group_air_warfare_desc: "Ideas y personas que impulsan la investigación y la participación en la guerra aérea" #NT!
+ idea_group_medium_aircraft_manufacturer: "Diseñador de aeronaves medianas" #NT!
+ idea_group_heavy_aircraft_manufacturer: "Diseñador de aviones pesados" #NT!
+ idea_group_trade_laws: "Leyes comerciales" #NT!
+ idea_group_trade_laws_desc: "Elijamos una Ley de Comercio para nuestra nación" #NT!
+ free_trade: "Venta libre" #NT!
+ export_focus: "Enfoque exportador" #NT!
+ limited_exports: "Exportaciones limitadas" #NT!
+ closed_economy: "Economía cerrada" #NT!
+ ENROUTE: "Hemos enviado una solicitud diplomática. No podemos molestarlos con otra hasta el §Y$DATE$§!." #NT!
+ pzinz_rom: "PZinż" #NT!
+ POL_fb: "pensión completa" #NT!
+ POL_lrl: "LRL" #NT!
+ POL_smpa: "Asociación Médica Sudafricana" #NT!
+ POL_pzinz: "PZinż" #NT!
+ POL_pkp: "PKP" #NT!
+ POL_ava: "AVA" #NT!
+ POL_pws: "PWS" #NT!
+ rwd: "Tracción trasera" #NT!
+ POL_pzl: "PZL" #NT!
+ POL_stocznia_gdynia: "Ciudad de Gdynia" #NT!
+ casa: "CASA" #NT!
+ secn: "SECN" #NT!
+ camco: "CAMCO" #NT!
+ jiangnan_shipyard_group: "Jiangnan Shipyard Group" #NT!
+ mw_aircraft: "Aeronave M.W." #NT!
+ iar: "IAR" #NT!
+ constanta_shipyard: "Astillero de Constanta" #NT!
+ dar: "DAR" #NT!
+ crichton: "Crichton-Vulcan OY" #NT!
+ valtion_lentokonetehdas: "Valtion lenticonetehdas" #NT!
+ marinvarkstaderna: "Edificio de construcción naval" #NT!
+ gotaverken: "AB Götaverken" #NT!
+ bofors: "Bofors" #NT!
+ husqvarna: "Fábrica de vapor Husqvarna AB" #NT!
+ kockums: "Cocteles" #NT!
+ landsverk: "AB Landsverk" #NT!
+ #zbrojovka_brno: "Calle Zbrojovka de Brno" #NT!
+ #avia: "Aviación" #NT!
+ #letov: "LETOV" #NT!
+ scania: "Scania Vabis" #NT!
+ #aero: "aero" #NT!
+ #praga: "Praga" #NT!
+ CZE_zbrojovka_brno: "Calle Zbrojovka de Brno" #NT!
+ CZE_avia: "Aviación" #NT!
+ CZE_letov: "LETOV" #NT!
+ CZE_aero: "aero" #NT!
+ CZE_praga: "Praga" #NT!
+ #skoda: "Skoda" #NT!
+ CZE_skoda_artillery: "Artillería Skoda" #NT!
+ #ckd: "enfermedad renal crónica" #NT!
+ CZE_ckd: "enfermedad renal crónica" #NT!
+ CZE_tatra: "Tatras" #NT!
+ CZE_skoda_armor: "Armadura de Skoda" #NT!
+ CZE_ckd_praga: "CKD-Praga" #NT!
+ CZE_elektra: "Electricidad" #NT!
+ CZE_skoda_works_2: "Skoda" #NT!
+ CZE_skoda_shipyards: "Astilleros Skoda" #NT!
+ ikarus: "Ícaro" #NT!
+ jadransko_brodogradiliste: "El jardinero de Jadransko" #NT!
+ rogozarski: "Rogozarski" #NT!
+ zmaj: "Zmaj" #NT!
+ zastava_arms: "Armas de Zastava" #NT!
+ artillerie_inrichtingen: "A. I. Hembrug" #NT!
+ fokker: "Fokker" #NT!
+ hih_siderius: "H. I. H. Siderius" #NT!
+ koolhoven: "Koolhoven" #NT!
+ nsm_amsterdam: "NSM Ámsterdam" #NT!
+ wilton_fijenoord: "Wilton Fijenoord" #NT!
+ golcuk_nsy: "Gölcük NSY" #NT!
+ thk: "Gracias" #NT!
+ ktf: "KTF" #NT!
+ istanbul_military_industries: "Industrias militares de Estambul" #NT!
+ royal_hellenic_naval_shipyard: "Astillero naval real helénico" #NT!
+ gnaf: "Fuerza Aérea Griega" #NT!
+ horten_naval_yard: "Astillero Naval de Horten" #NT!
+ kjeller_flyfabrikk: "Fábrica de moscas Kjeller" #NT!
+ kongsberg: "Fábrica de vapor de Kongsberg" #NT!
+ raufoss_ammunisjonsfabrikker: "Fábrica de municiones Raufoss" #NT!
+ burmeister_wain: "Burmeister y Wain" #NT!
+ disa: "DISA" #NT!
+ htk_orlogsvaerftet: "Reloj HTK" #NT!
+ ogme: "OGM" #NT!
+ ogme_desc: "Oficinas Gerais de Material de Engenharia - Talleres Generales de Material de Ingeniería" #NT!
+ ogma: "OGM" #NT!
+ ogma_desc: "Oficinas Gerais de Material Aeronáutico - Talleres Generales de Material Aeronáutico" #NT!
+ fma: "Fábrica de Munições de Artilharia, Armamento e Viaturas" #NT!
+ fnmal: "Fábrica Nacional de Municipios de Armas Ligeiras" #NT!
+ arsenal_alfeite: "Arsenal de Alfeite" #NT!
+ fabrica_material_guerra: "Fabrica de Material de Guerra" #NT!
+ companhia_uniao_fabril: "Compañía Unión Fabril" #NT!
+ tga: "TGA" #NT!
+ fabrica_nacional_armas: "Fábrica Nacional de Armas" #NT!
+ comesa: "COMESA" #NT!
+ kingston_shipbuilding: "Compañía constructora naval de Kingston" #NT!
+ havilland_canada: "De Havilland Canadá" #NT!
+ halifax_shipyard_limited: "Astillero Halifax Limited" #NT!
+ canadian_car_foundry: "Fundición y automóviles canadienses" #NT!
+ steyr_daimler_puch: "Steyr-Daimler-Puch" #NT!
+ anbo: "ANBO" #NT!
+ arsenal: "Arsenal de Tallin" #NT!
+ paldiski_port: "Puerto de Paldiski" #NT!
+ vef: "VEF" #NT!
+ lkod: "LKOD" #NT!
+ cockerill: "gallo" #NT!
+ avions_fairey: "Aviones Fairey" #NT!
+ fn_herstol: "Fabrique Nationale d'Armes de Guerre" #NT!
+ renard: "Renard Constructions Aeronatiques" #NT!
+ fascist_assault_divisions: "Divisiones de Asalto Liberalistas" #NT!
+ communist_partisans_recruiting: "Reclutamiento de partisanos socialistas" #NT!
+ democratic_opposition_voicing_protests: "La oposición conservadora expresa sus protestas" #NT!
+ sisu: "Sisu" #NT!
+ sisu_desc: "Sisu es la expresión típica finlandesa que describe la resiliencia de su pueblo. Finlandia ha afrontado duras adversidades y volverá a hacerlo." #NT!
+ winter_war_ns: "La guerra de invierno" #NT!
+ winter_war_ns_desc: "$finland.10.d$" #NT!
+ great_depression: "La Gran Depresión" #NT!
+ great_depression_desc: "Aunque fue un fenómeno mundial, la Gran Depresión comenzó con una caída del mercado de valores en Estados Unidos y ha provocado que las tasas de desempleo se disparen y los ingresos fiscales se desplomen. El pueblo estadounidense y su gobierno tienen suficientes motivos de preocupación como para verse involucrados en otra guerra." #NT!
+ new_deal: "Nuevo trato" #NT!
+ new_deal_desc: "Un conjunto de políticas y programas iniciados por Franklin D. Roosevelt, una reacción a las dificultades sufridas durante la Gran Depresión." #NT!
+ wilkies_new_deal: "El nuevo trato de Willkie" #NT!
+ wilkies_new_deal_desc: "Aunque Wendell Willkie se opuso a algunas de las sugerencias de FDR para ampliar el New Deal, algunos aspectos fueron apoyados y conservados por el nuevo presidente." #NT!
+ full_employment: "Pleno empleo" #NT!
+ isolationism_idea: "Aislacionismo" #NT!
+ limited_interventionism: "Intervencionismo limitado" #NT!
+ lend_lease_idea: "Préstamo y arriendo" #NT!
+ arsenal_of_democracy: "Arsenal de la democracia" #NT!
+ GER_air_innovations_2_idea: "Innovaciones aéreas alemanas" #NT!
+ GER_rocketry_idea: "Cohetería alemana" #NT!
+ triumphant_will: "Voluntad triunfante" #NT!
+ militarized_schools: "Escuelas militarizadas" #NT!
+ collectivist_ethos_focus: "Ethos colectivista" #NT!
+ liberty_ethos_focus: "Ethos de la libertad" #NT!
+ militarism_focus: "Militarismo" #NT!
+ military_youth_focus: "Juventud militar" #NT!
+ paramilitarism_focus: "Paramilitarismo" #NT!
+ neutrality_idea: "Política exterior neutral" #NT!
+ neutrality_idea_desc: "La neutralidad a veces es vista como una postura cobarde, pero esta nación confía en que cuando el polvo se asiente, aquellos que no tomaron partido pueden estar en mejor situación que aquellos que lo hicieron." #NT!
+ anti_soviet_pact: "Pacto antisoviético" #NT!
+ anti_soviet_pact_refused_call: "Se negó a honrar el pacto antisoviético" #NT!
+ anti_soviet_pact_refused_call_desc: "Esta nación no respetó el Pacto Antisoviético cuando fue llamada a la guerra, lo que ha provocado que la gente dude del gobierno actual y ha estimulado el aumento de los partidarios del socialismo." #NT!
+ anti_soviet_pact_desc: "Si un país del pacto es atacado por la Unión Soviética, todos los demás miembros serán llamados a la guerra. Los miembros que ya estén en guerra con la Unión Soviética no serán llamados." #NT!
+ ideological_fanaticism_focus: "Fanatismo ideológico" #NT!
+ political_commissars_focus: "Comisarios políticos" #NT!
+ wartime_industry_focus: "Industria en tiempos de guerra" #NT!
+ bureau_of_ships_focus: "Oficina de Buques" #NT!
+ government: "Leyes y Gobierno" #NT!
+ research_production: "Investigación y producción" #NT!
+ military_staff: "Personal militar" #NT!
+ political_advisor: "Asesor político" #NT!
+ mobilization_laws: "Ley de reclutamiento" #NT!
+ trade_laws: "Derecho comercial" #NT!
+ economy: "Derecho Económico" #NT!
+ aircraft_manufacturer: "Diseñador de aviones" #NT!
+ materiel_manufacturer: "Diseñador de materiales" #NT!
+ industry_concern: "Preocupación de la industria" #NT!
+ army_chief: "jefe del ejército" #NT!
+ navy_chief: "Jefe de la Marina" #NT!
+ air_chief: "Jefe de la Fuerza Aérea" #NT!
+ high_command: "Alto Mando Militar" #NT!
+ theorist: "Teórico" #NT!
+ british_austerity_idea: "Austeridad británica" #NT!
+ nationalism: "Nacionalismo" #NT!
+ nationalism_desc: "Los corazones de nuestro pueblo arden de orgullo nacionalista y lucharán duro para proteger nuestra patria." #NT!
+ british_fighter_discount: "Grupo de producción de aeronaves" #NT!
+ british_arms_discount: "Compañía de armas pequeñas de Birmingham" #NT!
+ british_convoy_discount: "Prioridad del sistema de convoyes" #NT!
+ internationalism: "Internacionalismo" #NT!
+ internationalism_desc: "Creemos firmemente que la ideología trasciende las fronteras nacionales y no nos sentimos limitados a cruzar esas fronteras." #NT!
+ combined_bomber_offensive: "Ofensiva combinada de bombarderos" #NT!
+ the_long_lance: "La lanza larga" #NT!
+ the_long_lance_desc: "§LEl torpedo Tipo 93, conocido comúnmente como Lanza Larga, fue el torpedo más avanzado de la época. Fue desarrollado por Japón y nunca fue igualado por Occidente, lo que le dio a los barcos más pequeños una forma efectiva de dañar a los buques de guerra más grandes y blindados a distancia.§!" #NT!
+ volunteer_corps_focus: "Cuerpo de voluntarios" #NT!
+ foreign_expeditions_focus: "Expediciones al extranjero" #NT!
+ why_we_fight_focus: "Por qué luchamos" #NT!
+ partisan_suppression_focus: "Represión partidista" #NT!
+ imperial_austerity_idea: "Austeridad imperial" #NT!
+ student_mobilization_idea: "Movilización estudiantil" #NT!
+ spiritual_mobilization_idea: "Movilización espiritual" #NT!
+ spiritual_mobilization_idea_desc: ""¡El lujo es nuestro enemigo!" Al elevarse el ahorro, la higiene y el trabajo duro a la categoría de virtudes nacionales, se pone a disposición más mano de obra para el esfuerzo bélico." #NT!
+ office_of_strategic_services: "Oficina de Servicios Estratégicos" #NT!
+ office_of_strategic_services_desc: "§LLa Oficina de Servicios Estratégicos (OSS) fue una agencia de inteligencia de los Estados Unidos formada durante la Segunda Guerra Mundial. Fue la agencia de inteligencia en tiempos de guerra y predecesora de la Agencia Central de Inteligencia (CIA).§!" #NT!
+ nkvd: "NKVD" #NT!
+ nkvd_desc: "§LNKVD, El Comisariado del Pueblo para Asuntos Internos era una agencia policial de la Unión Soviética que ejecutaba directamente el gobierno del poder del Partido Socialista de Toda la Unión. También se le encomendó la protección de las fronteras soviéticas y el espionaje, lo que incluía asesinatos políticos en el extranjero, influenciar a gobiernos extranjeros y hacer cumplir la política estalinista dentro de los movimientos socialistas en otros países.§!" #NT!
+ nkvd_2: "NKVD" #NT!
+ nkvd_2_desc: "§LNKVD, El Comisariado del Pueblo para Asuntos Internos era una agencia policial de la Unión Soviética que ejecutaba directamente el gobierno del poder del Partido Socialista de Toda la Unión. También se le encomendó la protección de las fronteras soviéticas y el espionaje, lo que incluía asesinatos políticos en el extranjero, influenciar a gobiernos extranjeros y hacer cumplir la política estalinista dentro de los movimientos socialistas en otros países.§!" #NT!
+ idea_political_correctness: "Corrección política" #NT!
+ idea_political_correctness_desc: "Las personas que piensan correctamente son mucho más difíciles de influenciar para las potencias extranjeras." #NT!
+ imperial_glory_idea: "Gloria imperial" #NT!
+ warrior_traditions_idea: "Tradiciones guerreras" #NT!
+ for_the_emperor_idea: "¡Por el Emperador!" #NT!
+ indian_independence_promised_idea: "Se promete la independencia de la India" #NT!
+ war_bonds_focus: "Bonos de guerra" #NT!
+ liberty_ships_focus: "Barcos Liberty" #NT!
+ air_war_plans_division_focus: "División de Planes de Guerra Aérea" #NT!
+ air_war_plans_division_focus_desc: "Sólo mediante la supremacía en el aire se podrá derrotar a las potencias del Eje. Los planes a largo plazo para la producción y el despliegue de cazas y bombarderos estratégicos hacen que esto no sólo sea posible, sino alcanzable." #NT!
+ air_support_focus: "Apoyo aéreo" #NT!
+ strategic_bombing_focus: "Bombardeo estratégico" #NT!
+ escort_effort_focus: "Esfuerzo de escolta" #NT!
+ comintern_influence: "Influencia del Comintern" #NT!
+ progress_cult_focus: "Culto al progreso" #NT!
+ communist_science_focus: "Ciencia socialista" #NT!
+ peoples_commissariat_focus: "Comisariado del Pueblo de la Industria de Defensa" #NT!
+ home_of_revolution: "Casa de la revolución" #NT!
+ home_of_revolution_desc: "Camaradas, con la derrota de los viles contrarrevolucionarios trotskistas pudimos concentrarnos en la defensa de la revolución. Nuestro objetivo, nuestra esperanza, nuestra consigna es el socialismo en un solo país. Construiremos una generosa utopía socialista aquí en la Unión Soviética y el resto del mundo la abrazará inevitablemente." #NT!
+ en_svensk_tiger: "En Svensk Tiger" #NT!
+ en_svensk_tiger_desc: "Si Suecia ha de ser como un tigre al acecho, quienes nos espían no deben saber lo que hacemos. En estos tiempos de conflicto y de lucha, el deber patriótico de todo sueco es permanecer en silencio." #NT!
+ state_shintoism: "Sintoísmo estatal" #NT!
+ state_shintoism_desc: "Desde la Restauración Meiji hemos intentado utilizar el culto en los santuarios sintoístas para promover la lealtad imperial y ayudar a la construcción de la nación. Esto nos ha permitido construir un país dispuesto a sacrificar mucho en nombre del Estado." #NT!
+ vittoria_mutilata: "Victoria Mutilata" #NT!
+ vittoria_mutilata_desc: "§LNuestros aliados traicionaron a Italia y nos apuñalaron por la espalda cuando rompieron el Pacto de Londres. Sacrificamos tanta sangre en el Isonzo por su victoria y ellos a su vez nos negaron lo que era nuestro por derecho. Ahora Italia tomará su destino en sus propias manos y se asegurará de que se haga justicia.§!" #NT!
+ stiff_upper_lip: "Estoicismo británico" #NT!
+ stiff_upper_lip_desc: "Si puedes mantener la cabeza cuando todos a tu alrededor la están perdiendo y te culpan de ello, si puedes enfrentar el Triunfo y el Desastre y tratar a esos dos impostores de la misma manera, tuya es la Tierra y todo lo que hay en ella, y, lo que es más, serás un hombre, hijo mío." #NT!
+ trotskyite_plot: "¿Complot trotskista?" #NT!
+ trotskyite_plot_desc: "La paranoia y la desconfianza patológica que surgen de antiguas luchas de poder afectan el liderazgo de esta nación." #NT!
+ trotskyite_plot_purged: "¿Se depuró el complot trotskista?" #NT!
+ trotskyite_plot_purged_desc: "A pesar de las purgas, el miedo a la traición persiste." #NT!
+ officers_purged: "Oficiales purgados" #NT!
+ officers_purged_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del ejército rojo, y la dirección tardará años en reponerse." #NT!
+ officers_purged_2: "Oficiales purgados" #NT!
+ officers_purged_2_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del Ejército Rojo, y pasarán años antes de que la dirigencia se reponga." #NT!
+ officers_purged_3: "Oficiales purgados" #NT!
+ officers_purged_3_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del Ejército Rojo, y pasarán años antes de que la dirigencia se reponga." #NT!
+ officers_purged_4: "Oficiales purgados" #NT!
+ officers_purged_4_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del ejército rojo, y la dirección tardará años en reponerse." #NT!
+ officers_purged_5: "Oficiales purgados" #NT!
+ officers_purged_5_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del ejército rojo, y la dirección tardará años en reponerse." #NT!
+ officers_purged_6: "Oficiales purgados" #NT!
+ officers_purged_6_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del Ejército Rojo, y pasarán años antes de que la dirigencia se reponga." #NT!
+ officers_purged_7: "Oficiales purgados" #NT!
+ officers_purged_7_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del Ejército Rojo, y pasarán años antes de que la dirigencia se reponga." #NT!
+ officers_purged_8: "Oficiales purgados" #NT!
+ officers_purged_8_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del ejército rojo, y la dirección tardará años en reponerse." #NT!
+ officers_purged_9: "Oficiales purgados" #NT!
+ officers_purged_9_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del Ejército Rojo, y pasarán años antes de que la dirigencia se reponga." #NT!
+ officers_purged_10: "Oficiales purgados" #NT!
+ officers_purged_10_desc: "La purga de los "quintacolumnistas" ha dejado grandes cicatrices en las filas de los oficiales del Ejército Rojo, y pasarán años antes de que la dirigencia se reponga." #NT!
+ SOV_great_patriotic_war: "Gran Guerra Patria" #NT!
+ SOV_great_patriotic_war_2: "Gran Guerra Patria" #NT!
+ SOV_great_patriotic_war_3: "Gran Guerra Patria" #NT!
+ SOV_great_patriotic_war_4: "Gran Guerra Patria" #NT!
+ SOV_great_patriotic_war_5: "Gran Guerra Patria" #NT!
+ rehabilitated_military_focus: "Militar rehabilitado" #NT!
+ workers_culture: "Cultura del trabajador" #NT!
+ POL_roman_dmowski: "Romano Dmowski" #NT!
+ POL_stanislaw_radkiewicz: "Estanislao Radkiewicz" #NT!
+ POL_mieczyslaw_michalowicz: "Mieczyslaw Michalowicz" #NT!
+ POL_mieczyslaw_michalowicz_nsb: "Mieczyslaw Michalowicz" #NT!
+ POL_jozef_beck: "Józef Beck" #NT!
+ POL_eugeniusz_kwiatkowiski: "Eugeniusz Kwiatkowski" #NT!
+ POL_jozef_haller: "Józef Haller" #NT!
+ POL_wladyslaw_kalkus: "Wladyslaw Kalkus" #NT!
+ POL_stanislaw_pawluc: "Stanisław Pawluć" #NT!
+ POL_wladyslaw_anders: "Wladyslaw Anders" #NT!
+ POL_tomislaw_lupaszko: "Tomislaw Łupaszko" #NT!
+ POL_edward_rydz_smigly: "Edward Rydz-Śmigły" #NT!
+ POL_kazimierz_sosnkowski: "Kazimierz Sosnkowski" #NT!
+ POL_jozef_zajac: "Józef Zając" #NT!
+ POL_ludomil_rayski: "Ludomił Rayski" #NT!
+ POL_josef_unrug: "Józef Unrug" #NT!
+ POL_xawery_czernicki: "Xawery Czernicki" #NT!
+ POL_zygmunt_buhusz_szysko: "Zygmunt Bohusz-Szyszko" #NT!
+ POL_stanislav_maczek: "Stanislaw Maczek" #NT!
+ #HUN_generic_fascist_demagogue: "Gyula Gömbös de Jakfa" #NT!
+ HUN_gyula_gombos_de_jakfa: "Gyula Gömbös de Jákfa" #NT!
+ #HUN_generic_democratic_reformer: "József Széll" #NT!
+ HUN_jozsef_szell: "József Széll" #NT!
+ #HUN_generic_communist_revolutionary: "Lasso Rajk" #NT!
+ HUN_laszlo_rajk: "Laszlo Rajk" #NT!
+ HUN_kalman_kanya: "Camino del Calvario" #NT!
+ #HUN_tihamer_fabinyi: "Tihamér Fabinyi" #NT!
+ HUN_kalman_daranyi: "Kálmán Darányi" #NT!
+ HUN_zoltan_tildy: "Zoltán Tildy" #NT!
+ HUN_hugo_sonyi: "Hugo Sónyi" #NT!
+ HUN_ferenc_szombathelyi: "Ferenc Szombathelyi" #NT!
+ HUN_bela_rakosi: "Béla Rákosi" #NT!
+ #HUN_gottfried_von_banfield: "Gottfried Freiherr von Banfield" #NT!
+ HUN_jeno_ratz: "Jenő Rátz" #NT!
+ #HUN_edgar_keksz: "Edgar Keksz" #NT!
+ HUN_gyorgy_jendrassik: "György Jendrassik" #NT!
+ #HUN_istvan_shvoy: "Istvan Shvoy" #NT!
+ HUN_shvoy_kalman: "Shvoy Kalmán" #NT!
+ HUN_gusztav_jany: "Gusztáv Jany" #NT!
+ HUN_dezso_laszlo: "Dezso László" #NT!
+ HUN_henrik_werth: "Henrik Werth" #NT!
+ HUN_sandor_magyarossy: "Sándor Magyarossy" #NT!
+ HUN_francois_deak: "François Deak" #NT!
+ HUN_reszo_kastner: "Reszö Kastner" #NT!
+ HUN_lajos_remenyi_schneller: "Lajos Reményi-Schneller" #NT!
+ HUN_vilmos_roder: "Vilmos Roder" #NT!
+ HUN_ganz_danubius: "Todo el Danubio" #NT!
+ HUN_mavag: "MÁVAG" #NT!
+ HUN_femaru_fegyver_es_gepgyar: "Fegyver-és Gépgyár" #NT!
+ SPR_dolores_ibarruri: "Dolores Ibarruri" #NT!
+ SPR_generic_democratic_reformer: "Lluís Companys" #NT!
+ SPR_generic_fascist_demagogue: "Lorenzo Ruiz" #NT!
+ SPR_augusto_barcia_trelles: "Augusto Barcia Trelles" #NT!
+ SPR_diego_martinez_barrio: "Diego Martínez Barrio" #NT!
+ SPR_francisco_largo_caballero: "Francisco Largo Caballero" #NT!
+ SPR_carlos_masquelet_lacaci: "Carlos Masquelet Lacaci" #NT!
+ SPR_vincente_rojo_lluch: "Vicente Rojo Lluch" #NT!
+ SPR_fransisco_franco: "Francisco Franco Bahamonde" #NT!
+ spr_franco_unavailable_tooltip: "Franco no apoyará un régimen socialista." #NT!
+ SPR_ignacio_hidalgo_cisneros: "Ignacio Hidalgo de Cisneros" #NT!
+ SPR_andres_garcia_calle: "Andrés García La Calle" #NT!
+ SPR_jose_miaja: "José Miaja Menant" #NT!
+ SPR_andres_saborit_colomer: "Andrés Saborit Colomer" #NT!
+ SPR_nicolas_molero: "Nicolás Molero" #NT!
+ SPR_antonio_azarola_gresillon: "Antonio Azarola Gresillón" #NT!
+ SPR_diego_hidalgo_duran: "Diego Hidalgo Durán" #NT!
+ SPR_indalecio_prieto_tuero: "Indalecio Prieto Tuero" #NT!
+ SPA_generic_fascist_demagogue: "José Luis de Arrese" #NT!
+ SPA_generic_democratic_reformer: "Ramiro de Maeztu" #NT!
+ SPA_generic_communist_revolutionary: "José Díaz Ramos" #NT!
+ SPA_emilio_herrera: "Emilio Herrera" #NT!
+ SPA_jose_enrique_varela: "José Enrique Varela" #NT!
+ SPA_luis_valdes_cavanillas: "Luis Valdés Cavanillas" #NT!
+ SPA_tomas_garciano_goni: "Tomás Garciano Goñi" #NT!
+ SPA_fidel_davila_arrondo: "Fidel Dávila Arrondo" #NT!
+ SPA_miguel_cabanellas_ferrer: "Miguel Cabanellas Ferrer" #NT!
+ SPA_ricardo_rada: "Ricardo de Rada y Peral" #NT!
+ SPA_emilio_mola_vidal: "Emilio Mola Vidal" #NT!
+ SPA_emilio_esteban_infantes: "Emilio Esteban Infantes Martín" #NT!
+ SPA_agustin_munoz_grandes: "Agustín Muñoz Grandes" #NT!
+ SPA_joaquin_garcia_morato: "Joaquín García-Morato y Castaño" #NT!
+ SPA_alfredo_kindelan_duany: "Alfredo Kindelán Duany" #NT!
+ SPA_juan_yague_blanco: "Juan Yagüe Blanco" #NT!
+ SPA_salvador_moreno_fernandez: "Salvador Moreno Fernández" #NT!
+ SPA_fransisco_moreno_fernandez: "Francisco Moreno Fernández" #NT!
+ SPA_luis_carrero_blanco: "Luis Carrero Blanco" #NT!
+ SPA_angel_salas_larrazabal: "Ángel Salas Larrazábal" #NT!
+ SPA_recovering_from_civil_war: "Recuperándose de la guerra civil" #NT!
+ SPA_recovering_from_civil_war_desc: "España está actualmente centrada en reconstruir el país y menos dispuesta a unirse a una facción." #NT!
+ CHI_generic_democratic_reformer: "Kwong Jiang" #NT!
+ CHI_generic_fascist_demagogue: "Tan Huang" #NT!
+ CHI_zhu_de: "Zhu De" #NT!
+ CHI_chen_jitang: "Chen Jitang" #NT!
+ CHI_li_zongren: "Li Zongren" #NT!
+ CHI_he_yingqin: "He Yingqin" #NT!
+ CHI_bai_chongxi: "Bai Chongxi" #NT!
+ CHI_chen_shaokuan: "Chen Shaokuan" #NT!
+ CHI_zhou_zhirou: "Zhou Zhirou" #NT!
+ CHI_wang_shuming: "Wang Shu-ming" #NT!
+ CHI_xiao_jinguang: "Xiao Jinguang" #NT!
+ CHI_chen_yi: "Chen Yi" #NT!
+ CHI_bo_yibo: "Bo Yibo" #NT!
+ CHI_gao_zhihang: "Gao Zhihang" #NT!
+ CHI_fang_zeyi: "Fang Zeyi" #NT!
+ CHI_xiao_yisu: "Xiao Yisu" #NT!
+ CHI_chen_cheng: "Chen Cheng" #NT!
+ CHI_huang_shen: "Huang Shen" #NT!
+ CHI_yu_hanmou: "Yu Hanmou" #NT!
+ CHI_civil_war_deserters: "Desertores de la Guerra Civil" #NT!
+ CHI_communist_uprisings: "Levantamientos socialistas" #NT!
+ CHI_communist_uprisings_desc: "Las tensiones entre socialistas y nacionalistas están presentes en todos los rincones del país. Si el apoyo socialista en el país aumenta demasiado, los socialistas tomarán el control de un estado." #NT!
+ ROM_mihail_sturdza: "Mihail Sturdza" #NT!
+ #ROM_generic_democratic_reformer: "Julio Maniu" #NT!
+ ROM_iuliu_maniu: "Julio Maniu" #NT!
+ #ROM_generic_communist_revolutionary: "Gheorghe Gheorghiu-Dej" #NT!
+ ROM_gheorghe_gheorghiu_dej: "Gheorghe Gheorghiu-Dej" #NT!
+ ROM_armand_calinescu: "Armand Calinescu" #NT!
+ ROM_gheorghe_argeseanu: "Gheorghe Argeseanu" #NT!
+ ROM_petru_groza: "Petru Groza" #NT!
+ ROM_gheorghe_potopeanu: "Gheorghe Potopeanu" #NT!
+ ROM_gheorghe_mihail: "Gheorghe Mihail" #NT!
+ ROM_ermil_gheorghiu: "Ermil Gheorghiu" #NT!
+ ROM_gheorghe_vasiliu: "Gheorghe Vasiliu" #NT!
+ ROM_constantin_sanatescu: "Constantin Sanatescu" #NT!
+ ROM_gheorghe_jienescu: "Gheorghe Jienescu" #NT!
+ ROM_paul_teodorescu: "Pablo Teodorescu" #NT!
+ ROM_emanoil_ionescu: "Emanoil Ionescu" #NT!
+ ROM_horia_macellariu: "Horia Macellariu" #NT!
+ ROM_nicolae_sova: "Nicolae Sova" #NT!
+ ROM_ion_antonescu: "Ion Antonescu" #NT!
+ ROM_gheorghe_avramescu: "Gheorghe Avramescu" #NT!
+ FIN_generic_fascist_demagogue: "Bruno Salmiala" #NT!
+ FIN_generic_democratic_reformer: "Onni A. Hiltunen" #NT!
+ FIN_generic_communist_revolutionary: "Otto Ville Kuusinen" #NT!
+ FIN_hugo_osterman: "Hugo Österman" #NT!
+ FIN_carl_mannerheim: "Carl G. Mannerheim" #NT!
+ FIN_lauri_malmberg: "Lauri Malmberg" #NT!
+ FIN_jarl_lundqvist: "Jarl Lundqvist" #NT!
+ FIN_karl_oesch: "Karl Oesch" #NT!
+ FIN_valio_porvari: "Valio Porvari" #NT!
+ FIN_olavi_sarko: "Olavi Sarko" #NT!
+ FIN_olavi_arho: "Olavi Arho" #NT!
+ FIN_eero_rahola: "Eero Rahola" #NT!
+ FIN_lauri_tiainen: "Lauri Tiainen" #NT!
+ FIN_harald_ohquist: "Harald Ohquist" #NT!
+ FIN_ralf_torngren: "Ralf Törngren" #NT!
+ FIN_ake_henrik_gartz: "Por Ake Henrik Gartz" #NT!
+ FIN_antti_hackzell: "Antti Hackzell" #NT!
+ FIN_vaino_valve: "Válvula Väinö" #NT!
+ FIN_akseli_anttila: "Akseli Anttila" #NT!
+ BUL_hristo_lukov: "Cristobal Lukov" #NT!
+ BUL_vasil_boydev: "Vasil Boydev" #NT!
+ BUL_nikola_hadzipetkov: "Nikola Hadzipetkov" #NT!
+ BUL_stoyan_stoyanov: "Stoyan Stoyanov" #NT!
+ BUL_generic_fascist_demagogue: "Aleksandur Tsankov" #NT!
+ BUL_generic_democratic_reformer: "Nikola Dimitrov Petkov" #NT!
+ BUL_generic_communist_revolutionary: "Vasil Petrov Kolarov" #NT!
+ BUL_konstantin_muraviev: "Konstantin Muraviev" #NT!
+ BUL_dobri_bozhilov: "Dobri Bozhilov" #NT!
+ BUL_georgi_ivanov_kyoseivanov: "Georgi Ivanov Kyoseivanov" #NT!
+ BUL_kiril_stanchev: "Kiril Stanchev" #NT!
+ BUL_ivan_gaidimitriv: "Iván Gaidimitriv" #NT!
+ BUL_georgi_petsov: "Georgi Petsov" #NT!
+ BUL_asen_dobrev_nikolov: "Asen Dobrev Nikolov" #NT!
+ BUL_blagoi_ivanov: "Blagoi Ivanov" #NT!
+ BUL_nikola_totev_markov: "Nikola Totev Markov" #NT!
+ BUL_bonyu_stoev_pironkov: "Bonyu Stoev Pironkov" #NT!
+ BUL_kiril_dimitrov_yanchule: "Kiril Dimitrov Yanchule" #NT!
+ BUL_atanas_pavlov_zhilkov: "Atanas Pavlov Zhilkov" #NT!
+ ROM_revenge_against_soviet: "Buscando venganza contra la Unión Soviética" #NT!
+ ROM_revenge_against_germany: "Buscando venganza contra Alemania" #NT!
+ SWE_generic_fascist_demagogue: "Por Engdahl" #NT!
+ SWE_generic_democratic_reformer: "Tage Erlander" #NT!
+ SWE_generic_communist_revolutionary: "Hilding Hagberg" #NT!
+ SWE_thorwald_bergquist: "Thorwald Bergquist" #NT!
+ SWE_osten_unden: "Östen Undén" #NT!
+ SWE_helge_jung: "Helge Jung" #NT!
+ SWE_ernst_wigforss: "Ernst Wigforss" #NT!
+ SWE_erik_palmstierna: "Erik Palmstierna" #NT!
+ SWE_oscar_nygren: "Oscar Nygren" #NT!
+ SWE_per_sylvan: "Por Sylvan" #NT!
+ SWE_olof_thornell: "Olof Thörnell" #NT!
+ SWE_ivar_holmquist: "Ivar Holmquist" #NT!
+ SWE_archibald_douglas: "Archibald Douglas" #NT!
+ SWE_torsten_friis: "Torsten Friis" #NT!
+ SWE_bengt_nordenskiold: "Bengt Nordenskiöld" #NT!
+ SWE_charles_de_champs: "Carlos de Campos" #NT!
+ SWE_fabian_tamm: "Fabián Tamm" #NT!
+ SWE_gosta_ehrensvard: "Gösta Ehrensvärd" #NT!
+ SWE_axel_ljungdahl: "Axel Ljungdahl" #NT!
+ SWE_axel_rappe: "Axel Rappe" #NT!
+ SWE_helge_stromback: "Helge Strömbäck" #NT!
+ CZE_ludvik_svoboda: "Ludvik Svoboda" #NT!
+ CZE_rudolf_viest: "Rudolf Viest" #NT!
+ CZE_ludvik_krejci: "Ludvík Krejčí" #NT!
+ CZE_karel_janousek: "Karel Janoušek" #NT!
+ CZE_jan_golian: "Jan Golian" #NT!
+ CZE_josef_frantisek: "Josef Frantisek" #NT!
+ CZE_karel_kuttelwascher: "Karel Kuttelwascher" #NT!
+ #CZE_generic_fascist_demagogue: "Konrad Henlein" #NT!
+ CZE_konrad_henlein: "Konrad Henlein" #NT!
+ #CZE_generic_democratic_reformer: "Stefan Osusky" #NT!
+ CZE_stefan_osusky: "Stefan Osusky" #NT!
+ #CZE_generic_communist_revolutionary: "Gustav Husák" #NT!
+ CZE_gustav_husak: "Gustav Husák" #NT!
+ CZE_vojtech_tuka: "Vojtech Tuka" #NT!
+ CZE_ferdinand_catlos: "Fernando Catlos" #NT!
+ CZE_jozef_tiso: "Józef Tiso" #NT!
+ CZE_jaroslav_fajfr: "Jaroslav Fajfr" #NT!
+ #CZE_josef_adam: "José Adán" #NT!
+ CZE_alois_vicherek: "Alois Vicherek" #NT!
+ CZE_karel_vaclav_petrik: "Karel Václav Petrik" #NT!
+ CZE_frantisek_havel: "Frantisek Havel" #NT!
+ CZE_antonin_hasal: "Antonin Hasal" #NT!
+ CZE_klement_gottwald: "Klement Gottwald" #NT!
+ NOR_otto_ruge: "Otto Ruge" #NT!
+ NOR_kristian_laake: "Kristian Laake" #NT!
+ NOR_bjarne_oen: "Bjarne Øen" #NT!
+ NOR_ole_reistad: "Viejo Reistad" #NT!
+ NOR_hjalmar_riiser_larsen: "Hjalmar Riiser-Larsen" #NT!
+ NOR_wilhelm_von_tangen_hansteen: "Guillermo de Tangen Hansteen" #NT!
+ NOR_henry_diesen: "Henry Diesen" #NT!
+ NOR_edgar_otto: "Édgar Otón" #NT!
+ NOR_generic_fascist_demagogue: "Rolf Jørgen Fuglesang" #NT!
+ NOR_generic_democratic_reformer: "mentira haakon" #NT!
+ NOR_generic_communist_revolutionary: "Henry Wilhelm Kristiansen" #NT!
+ NOR_halvdan_koht: "Halvdan Koht" #NT!
+ NOR_adolf_indrebo: "Adolf Indrebo" #NT!
+ NOR_trygve_halvdan_lie: "Mentira de Trygve Halvdan" #NT!
+ NOR_alfred_roscher_lund: "Alfred Roscher-Lund" #NT!
+ NOR_konrad_sundlo: "Konrad Sundlo" #NT!
+ NOR_oscar_torp: "Óscar Torp" #NT!
+ NOR_tryggve_gran: "Tryggve Gran" #NT!
+ NOR_skule_storheil: "Esqueleto de tormenta" #NT!
+ NOR_jacob_von_der_lippe: "Jacob von der Lippe" #NT!
+ NOR_birger_ljungberg: "Birger Ljungberg" #NT!
+ NOR_marinens_flyvebaatfabrikk: "Fábrica de trajes de baño para marineros" #NT!
+ NOR_honefoss_karosserifabrikk: "Hønefoss Karosserifabrikk" #NT!
+ NOR_tandbergs_radiofabrikk: "Fábrica de radio Tandbergs" #NT!
+ NOR_norsk_hydro: "Norsk Hydro" #NT!
+ #YUG_generic_fascist_demagogue: "Dimitrije Ljotic" #NT!
+ YUG_dimitrije_ljotic: "Dimitri Ljotić" #NT!
+ #YUG_generic_democratic_reformer: "Milovan Djilas" #NT!
+ YUG_milovan_djilas: "Milovan Djilas" #NT!
+ #YUG_generic_communist_revolutionary: "Ivo Lola Ribar" #NT!
+ YUG_ivo_lola_ribar: "Ivo Lola Ribar" #NT!
+ YUG_draza_mihailovic: "Draža Mihailović" #NT!
+ YUG_josip_broz_tito: "Josip Broz Tito" #NT!
+ tito_is_not_dead_tt: "A Tito no lo han matado" #NT!
+ YUG_milutin_nedic: "Milutin Nedic" #NT!
+ YUG_dusan_simovic: "Dusan Simovic" #NT!
+ YUG_petar_vukcevic: "Petar Vukcevic" #NT!
+ YUG_bogoljub_ilic: "Bogoljub Ilic" #NT!
+ YUG_petar_kosic: "Petar Kosić" #NT!
+ YUG_slobodan_jovanovic: "Slobodan Jovanović" #NT!
+ YUG_ljubomir_maric: "Ljubomir Marić" #NT!
+ YUG_marijan_polic: "Marijan Polić" #NT!
+ #YUG_arsa_jovanovic: "Arsa Jovanovic" #NT!
+ YUG_arso_jovanovic: "Arso Jovanović" #NT!
+ YUG_mihajlo_lukic: "Mihajlo Lukić" #NT!
+ YUG_danilo_kalafatovic: "Danilo Kalafatović" #NT!
+ YUG_borivoje_mirkovic: "Borivoje Mirković" #NT!
+ YUG_ivan_ribar: "Iván Ribar" #NT!
+ YUG_milan_nedic: "Milán Nedic" #NT!
+ TUR_generic_fascist_demagogue: "Nihal Atsiz" #NT!
+ TUR_generic_democratic_reformer: "Abbas Cevat" #NT!
+ TUR_generic_communist_revolutionary: "Pertev Naili Boratav" #NT!
+ TUR_rauf_orbay: "Rauf Orbay" #NT!
+ TUR_kazim_orbay: "Kazim Orbay" #NT!
+ TUR_fevzi_cakmak: "Fevzi Cakmak" #NT!
+ TUR_mehmet_ali_ulgen: "Mehmet Ali Ülgen" #NT!
+ TUR_ali_orlungat: "Ali Örlungat" #NT!
+ TUR_memduh_tagmac: "Miembro Tagmac" #NT!
+ TUR_sabiha_gokcen: "Sabiha Gökçen" #NT!
+ TUR_abdurrahman_gurman: "Abdurrahman Gürman" #NT!
+ TUR_ali_fuat_cebesoy: "Ali Fuat Cebesoy" #NT!
+ TUR_erkan_gataly: "Erkan Gataly" #NT!
+ TUR_refik_saydam: "Refik Saydam" #NT!
+ TUR_mumtaz_okmen: "Mümtaz Ökmen" #NT!
+ TUR_hassan_saka: "Hassan Saka" #NT!
+ TUR_kazim_ozalp: "Kazim Ozalp" #NT!
+ TUR_mehmet_gunaltay: "Mehmet Günaltay" #NT!
+ MEX_generic_fascist_demagogue: "Luis G. Quintana" #NT!
+ MEX_generic_democratic_reformer: "Genaro Estrada" #NT!
+ MEX_generic_communist_revolutionary: "Mariano Pontón" #NT!
+ MEX_eduardo_hay: "Eduardo Hay" #NT!
+ MEX_plutarco_e_calles: "Plutarco E. Calles" #NT!
+ MEX_manuel_avila_camacho: "Manuel Ávila Camacho" #NT!
+ MEX_enrique_estrada: "Enrique Estrada" #NT!
+ MEX_agustin_olachea: "Agustín Olachea" #NT!
+ MEX_jesus_garza_siller: "Jesús Garza Siller" #NT!
+ MEX_hector_meixueiro: "Héctor Meixueiro" #NT!
+ MEX_pablo_macias: "Pablo Macías" #NT!
+ MEX_matias_ramos: "Matías Ramos" #NT!
+ MEX_antonio_cardenas_rodriguez: "Antonio Cárdenas Rodríguez" #NT!
+ MEX_gilberto_limon: "Gilberto R. Limón" #NT!
+ MEX_matias_santos_ramos: "Matías Santos Ramos" #NT!
+ MEX_heriberto_jara_corona: "Heriberto Jara Corona" #NT!
+ MEX_victor_tapia_briones: "Víctor Tapia Briones" #NT!
+ MEX_efrain_rodriguez_berrios: "Éfrain Rodríguez Berríos" #NT!
+ POR_generic_fascist_demagogue: "Alberto Monsaraz" #NT!
+ POR_generic_democratic_reformer: "Jaime Zuzarte Cortesano" #NT!
+ POR_generic_communist_revolutionary: "Álvaro Cunhal" #NT!
+ POR_vieira_da_rocha: "Vieira da Rocha" #NT!
+ POR_domingos_oliveira: "Domingos Oliveira" #NT!
+ POR_rolao_preto: "Francisco de Barcelos Rolão Preto" #NT!
+ POR_lobato_guerra: "Lobato Guerra" #NT!
+ POR_humberto_carmona: "Humberto Carmona" #NT!
+ POR_antonio_oscar_carmona: "Antonio Óscar Carmona" #NT!
+ POR_francisco_da_costa_gomes: "Francisco da Costa Gomes" #NT!
+ POR_jaime_afreixo: "Jaime Afreixo" #NT!
+ POR_manuel_gouveia: "Manuel Gouveia" #NT!
+ POR_americo_tomas: "Américo Thomaz" #NT!
+ POR_humberto_delgado: "Humberto Delgado" #NT!
+ POR_francisco_craveiro_lopes: "Francisco Craveiro Lopes" #NT!
+ POR_fernando_dos_santos_costa: "Fernando dos Santos Costa" #NT!
+ POR_jaime_cortesao: "Jaime Cortesao" #NT!
+ POR_augusto_de_vasconcelos: "Augusto de Vasconcelos" #NT!
+ POR_jose_manuel_sarmento_de_beires: "José Manuel Sarmento de Beires" #NT!
+ POR_manuel_ortins_torres_de_bettencourt: "Manuel Ortins Torres de Bettencourt" #NT!
+ POR_manuel_quintao_meireles: "Manuel Quintão Meireles" #NT!
+ POR_jose_adriano_pequito_rebelo: "José Adriano Pequito Rebelo" #NT!
+ POR_jose_norton_de_matos: "José Norton de Matos" #NT!
+ POR_jose_filipe_de_barros_rodrigues: "José Filipe de Barros Rodrigues" #NT!
+ POR_francisco_da_cunha_leal: "Francisco da Cunha Leal" #NT!
+ POR_bento_de_jesus_caraca: "Bento de Jesús Caraça" #NT!
+ POR_alberto_monsaraz: "Alberto Monsaraz" #NT!
+ POR_duarte_jose_pacheco: "Duarte José Pacheco" #NT!
+ POR_alfredo_da_silva: "Alfredo da Silva" #NT!
+ POR_maria_lamas: "María Lamas" #NT!
+ POR_joao_francisco_de_barbosa_azevedo: "João Francisco de Barbosa Azevedo" #NT!
+ POR_joao_de_azevedo_coutinho: "João de Azevedo Coutinho" #NT!
+ POR_julio_botelho_moniz: "Julio Botelho Moniz" #NT!
+ POR_manuel_goncalves_cerejeira: "Manuel Gonçalves Cerejeira" #NT!
+ POR_alvaro_cunhal: "Álvaro Cunhal" #NT!
+ POR_agostinho_lourenco: "Agostinho Lourenço" #NT!
+ CAN_chuck_crate: "Cajón de chuck" #NT!
+ CAN_robert_manion: "Roberto Manion" #NT!
+ CAN_william_kashtan: "William Kashtan" #NT!
+ CAN_harry_crerar: "Harry Crerar" #NT!
+ CAN_guy_simonds: "Chico Simonds" #NT!
+ CAN_andrew_mcnaughton: "Andrew McNaughton" #NT!
+ CAN_george_pearkes: "George Pearkes" #NT!
+ CAN_percy_nelles: "Percy W. Nelles" #NT!
+ CAN_lloyd_samuel_breadner: "Lloyd Samuel Breadner" #NT!
+ CAN_george_croil: "Jorge Croil" #NT!
+ CAN_ian_a_mackenzie: "Ian A. Mackenzie" #NT!
+ CAN_r_b_bennett: "R. B. Bennett" #NT!
+ CAN_newton_wesley_rowell: "Newton Wesley Rowell" #NT!
+ CAN_kenneth_stuart: "Kenneth Stuart" #NT!
+ CAN_tasker_cook: "Cocinero Tasker" #NT!
+ CAN_gino_verchiella: "Gino Verchiella" #NT!
+ CAN_john_murchie: "Juan Murchie" #NT!
+ CAN_frederick_m_w_harvey: "Frederick M. W. Harvey" #NT!
+ CAN_george_volkoff: "George Volkoff" #NT!
+ CAN_harold_edwards: "Harold Edwards" #NT!
+ CAN_leo_richer_lafleche: "Léo Richer Lafleche" #NT!
+ CAN_james_ilsley: "James Ilsley" #NT!
+ CAN_louis_st_laurent: "Luis San Lorenzo" #NT!
+ CAN_robert_leckie: "Robert Leckie" #NT!
+ CAN_raymond_collishaw: "Raymond Collishaw" #NT!
+ CAN_george_jones: "George Jones" #NT!
+ CAN_alasdair_murray: "Alasdair Murray" #NT!
+ CAN_fairchild_aircraft_ltd: "Compañía Aeronáutica Fairchild Ltd." #NT!
+ CAN_handley_page: "Página de Handley" #NT!
+ CAN_great_depression_1: "Gran depresión" #NT!
+ CAN_great_depression_2: "Gran depresión" #NT!
+ CAN_conscription_crisis: "Crisis del reclutamiento entre los francocanadienses" #NT!
+ CAN_conscription_crisis_mended: "Se solucionó la crisis del reclutamiento" #NT!
+ CAN_defence_of_canada_regulations_democratic: "Reglamento de Defensa de Canadá" #NT!
+ CAN_defence_of_canada_regulations_fascism: "Regulaciones de defensa de Canadá" #NT!
+ CAN_defence_of_canada_regulations_communism: "Reglamento de Defensa de Canadá" #NT!
+ CAN_war_bonds_1: "Bonos de guerra" #NT!
+ CAN_war_bonds_2: "Bonos de guerra" #NT!
+ CAN_c_d_howe: "CD. Howe" #NT!
+ CAN_swastika_clubs_2: "Clubes de esvástica" #NT!
+ CAN_swastika_clubs_skewer: "Clubes de esvástica" #NT!
+ CAN_communist_ideals: "Ideales socialistas" #NT!
+ CAN_communist_ideals_2: "Ideales socialistas" #NT!
+ CAN_communist_ideals_3: "Ideales socialistas" #NT!
+ CAN_communist_ideals_4: "Ideales socialistas" #NT!
+ CAN_canadian_citizenship: "La Ley de ciudadanía canadiense" #NT!
+ canadian_pacific_railway: "Ferrocarril del Pacífico Canadiense" #NT!
+ CAN_consumer_goods_for_newfoundland: "Compensación para Terranova" #NT!
+ CAN_dominion_rifle_association_idea: "Asociación de Rifles del Dominio de Canadá" #NT!
+ AUS_eduard_freiherr: "Eduard Freiherr" #NT!
+ AUS_alexander_lohr: "Alejandro Löhr" #NT!
+ AUS_lothar_rendulic: "Dr. Lothar Rendulic" #NT!
+ AUS_franz_bohme: "Franz Böhme" #NT!
+ AUS_odilo_globocnik: "Odilo Globocnik" #NT!
+ AUS_ernst_kaltenbrunner: "Ernst Kaltenbrunner" #NT!
+ AUS_generic_fascist_demagogue: "Guillermo Miklas" #NT!
+ AUS_generic_democratic_reformer: "Adolf Schärf" #NT!
+ AUS_generic_communist_revolutionary: "Franz Koritschoner" #NT!
+ AUS_arthur_seyss-inquart: "Arthur Seyss-Inquart" #NT!
+ AUS_leopold_figl: "Leopoldo Figl" #NT!
+ AUS_julius_raab: "Julio Raab" #NT!
+ AUS_otto_schobel: "Otto Schöbel" #NT!
+ AUS_julius_yllam: "Julio Yllam" #NT!
+ AUS_otto_meixner_von_zweienstamm: "Otto Meixner de Zweienstamm" #NT!
+ AUS_viktor_seebauer: "Víctor Seebauer" #NT!
+ AUS_wilhelm_zehner: "Wilhelm Zehner" #NT!
+ AUS_eugen_beyer: "Eugen Beyer" #NT!
+ AUS_paul_von_hegedus: "Paul von Hegedüs" #NT!
+ AUS_josef_teufl: "José Teufl" #NT!
+ AUS_hirtenberger: "Hirtenberger" #NT!
+ VIC_jean_francois_darlan: "Jean-François Darlan" #NT!
+ VIC_jean_marie_abrial: "Jean-Marie Abrial" #NT!
+ VIC_jean_romatet: "Jean Romatet" #NT!
+ VIC_jean_marie_bergeret: "Jean-Marie Bergeret" #NT!
+ VIC_eugene_bridoux: "Eugenio Bridoux" #NT!
+ VIC_lucien_lacaze: "Lucien Lacaze" #NT!
+ VIC_rene_bousquet: "René Bousquet" #NT!
+ VIC_marius_viple: "Mario Viple" #NT!
+ VIC_maxime_weygand: "Maxime Weygand" #NT!
+ VIC_charles_huntziger: "Charles Huntziger" #NT!
+ VIC_jean_francois_jannekeyn: "Jean-François Jannekeyn" #NT!
+ VIC_jean_de_laborde: "Jean de Laborde" #NT!
+ VIC_marcel_bruno_gensoul: "Marcel Bruno Gensoul" #NT!
+ VIC_pierre_le_gloan: "Pierre Le Gloan" #NT!
+ AST_generic_fascist_demagogue: "Fergus Foster Munro" #NT!
+ AST_arthur_calwell: "Arthur Calwell" #NT!
+ AST_lance_sharkey: "Lanzamiento Sharkey" #NT!
+ AST_arthur_drakeford: "Arthur Drakeford" #NT!
+ AST_frank_forde: "franco forde" #NT!
+ AST_john_lavarack: "Juan Lavarack" #NT!
+ AST_jack_beasley: "Jack Beasley" #NT!
+ AST_jack_piddington: "Jack Piddington" #NT!
+ AST_sydney_rowell: "Sidney Rowell" #NT!
+ AST_vernon_sturdee: "Vernon Sturdee" #NT!
+ AST_richard_williams: "Richard Williams" #NT!
+ AST_charles_burnett: "Charles Burnett" #NT!
+ AST_ragnar_colvin: "Ragnar Colvin" #NT!
+ AST_jack_crace: "Jack Crace" #NT!
+ AST_edmund_herring: "Edmund Herring" #NT!
+ AST_john_collins: "Juan Collins" #NT!
+ AST_clive_caldwell: "Clive Caldwell" #NT!
+ AST_arthur_allen: "Arthur Allen" #NT!
+ AST_james_fairbairn: "James Fairbairn" #NT!
+ AST_norman_makin: "Normando haciendo" #NT!
+ AST_alexander_hore_ruthven: "Alexander Hore-Ruthven" #NT!
+ AST_robert_g_menzies: "Robert G. Menzies" #NT!
+ AST_ben_chifley: "Ben Chifley" #NT!
+ AST_herbert_v_evatt: "Herbert V. Evatt" #NT!
+ AST_cederic_hicks: "Cedric Hicks" #NT!
+ AST_great_depression_1: "Gran depresión" #NT!
+ AST_great_depression_2: "Gran depresión" #NT!
+ AST_great_depression_3: "Gran Depresión" #NT!
+ AST_invest_in_victory_2: "Invertir en la victoria" #NT!
+ AST_all_in: "¡Todo incluido!" #NT!
+ AST_abandon_the_westminster_system_communism: "Abandone el sistema de Westminster" #NT!
+ AST_abandon_the_westminster_system_fascism: "Abandone el sistema de Westminster" #NT!
+ AST_arms_for_the_revolution: "Armas para la revolución" #NT!
+ IRE_generic_fascist_demagogue: "Thomas F. O'Higgins" #NT!
+ IRE_generic_democratic_reformer: "Donal Buckley" #NT!
+ IRE_generic_communist_revolutionary: "Bill Scott" #NT!
+ IRE_sean_lemass: "Sean Lemass" #NT!
+ IRE_douglas_hyde: "Douglas Hyde" #NT!
+ IRE_sean_ceallaigh: "Seán T. O'Ceallaigh" #NT!
+ IRE_liam_archer: "Liam Arquero" #NT!
+ IRE_michael_brennan: "Michael Brennan" #NT!
+ IRE_dan_mckenna: "Daniel McKenna" #NT!
+ IRE_oscar_traynor: "Óscar Traynor" #NT!
+ IRE_michael_joe_costello: "Michael Joe Costello" #NT!
+ IRE_h_t_green: "HT. Verde" #NT!
+ IRE_p_a_mulcahy: "P. A. Mulcahy" #NT!
+ IRE_john_byrne: "Juan O'Byrne" #NT!
+ IRE_s_muiris: "S. O'Muiris" #NT!
+ IRE_frank_fahy: "Frank Fahy" #NT!
+ IRE_richard_james_mulcahy: "Richard James Mulcahy" #NT!
+ IRE_a_t_lawlor: "A. T. Lawlor" #NT!
+ GRE_generic_fascist_demagogue: "Demóstenes Nicoladis" #NT!
+ GRE_generic_democratic_reformer: "Temístocles Sófoulis" #NT!
+ GRE_generic_communist_revolutionary: "Nikos Zachariadis" #NT!
+ GRE_petros_voulgaris: "Petros Voulgaris" #NT!
+ GRE_alexandros_sakellariou: "Alexandros Sakellariou" #NT!
+ GRE_konstantinos_ventiris: "Constantinos Ventiris" #NT!
+ GRE_alexander_papagos: "Alejandro Papagos" #NT!
+ GRE_aris_velouchiotis: "Aris Veluchotis" #NT!
+ GRE_napoleon_zervas: "Napoleón Zervas" #NT!
+ GRE_panagiotis_gazis: "Panagiotis Gazis" #NT!
+ GRE_vasilios_tsarpalis: "Vasilios Tsarpalis" #NT!
+ GRE_nikolaos_plastiras: "Nikolaos Plastiras" #NT!
+ GRE_eleftherios_venizelos: "Eleftherios Venizelos" #NT!
+ GRE_aristeidis_moraitinis: "Aristeidis Moraitinis" #NT!
+ GRE_nikos_beloyannis: "Nikos Beloyannis" #NT!
+ GRE_evripidis_bakirtris: "Evripidis Bakirtris" #NT!
+ GRE_damaskinos: "Damaskinos" #NT!
+ GRE_georgios_papandreou: "Georgios Papandreu" #NT!
+ HOL_hein_ter_poorten: "Hein ter Poorten" #NT!
+ HOL_henri_winkelman: "Henri Winkelman" #NT!
+ HOL_izaak_rijnders: "Isaac Rijnders" #NT!
+ HOL_hendrik_van_oyen: "Hendrik van Oyen" #NT!
+ HOL_karel_doorman: "karel portero" #NT!
+ HOL_conrad_helfrich: "Conrad Helfrich" #NT!
+ HOL_generic_fascist_demagogue: "Mi Rost de Tonningen" #NT!
+ HOL_generic_democratic_reformer: "Andries Dirk de Graaf" #NT!
+ HOL_generic_communist_revolutionary: "Willem van Ravesteyn" #NT!
+ HOL_willem_schermerhorn: "Willem Schermerhorn" #NT!
+ HOL_andries_de_graaf: "Andries de Graaf" #NT!
+ HOL_willem_van_ravesteyn: "Willem van Ravesteyn" #NT!
+ HOL_meinout_rost_van_tonningen: "Mi Rost de Tonningen" #NT!
+ HOL_saul_de_groot: "Saúl de Groot" #NT!
+ HOL_louis_beel: "Luis Beel" #NT!
+ HOL_petrus_wilhelmus_best: "Petrus Wilhelmus Mejor" #NT!
+ HOL_maarten_belzer: "Martín Belzer" #NT!
+ HOL_charles_douw_van_der_krap: "Charles Douw van der Krap" #NT!
+ HOL_izaak_reynders: "Isaac Reynders" #NT!
+ HOL_johannes_furstner: "Johannes Fürstner" #NT!
+ HOL_marius_raaijmakers: "Marius Raaijmakers" #NT!
+ HOL_bernhard_coltof: "Bernhard Coltof" #NT!
+ HOL_nico_van_straten: "Nico van Straaten" #NT!
+ HOL_royal_dutch_shell: "Concha real holandesa" #NT!
+ HOL_philips: "Philips" #NT!
+ DEN_ebbe_gortz: "Ebbe Gørtz" #NT!
+ DEN_paul_sommer: "Paul Sommer" #NT!
+ DEN_kaj_birksted: "Kaj Birksted" #NT!
+ DEN_aage_vedel: "A. H. Vedel" #NT!
+ DEN_carl_hammerich: "Carl Hammerich" #NT!
+ DEN_generic_fascist_demagogue: "Cayo Lembcke" #NT!
+ DEN_generic_democratic_reformer: "Alsing Andersen" #NT!
+ DEN_generic_communist_revolutionary: "En Nørlund" #NT!
+ DEN_viggo_kampman: "Viggo Kampmann" #NT!
+ DEN_ejnar_warum: "Agua de Ejnar" #NT!
+ DEN_knud_kristensen: "Knud Kristensen" #NT!
+ DEN_hans_a_rolsted: "Hans A. Rolsted" #NT!
+ DEN_christian_frederik_von_schalburg: "Christian Frederik von Schalburg" #NT!
+ DEN_hjalmar_rechnitzer: "Hjalmar Rechnitzer" #NT!
+ DEN_poul_sommer: "Paul Sommer" #NT!
+ DEN_hans_lunding: "Hans Lunding" #NT!
+ DEN_william_wain_prior: "Prior William Wain" #NT!
+ LIT_generic_fascist_demagogue: "Vladas Mironas" #NT!
+ LIT_generic_democratic_reformer: "Pranas Dovydaitis" #NT!
+ LIT_generic_communist_revolutionary: "Mecislovas Gedvilas" #NT!
+ LIT_vladas_karvelis: "Vladas Karvelis" #NT!
+ LIT_feliksas_baltusis: "Feliksas Baltusis-Zemaitis" #NT!
+ LIT_stasys_rastikis: "Stasys Raštikis" #NT!
+ LIT_antanas_gustaitis: "Antanas Gustaitis" #NT!
+ LIT_antanas_kaskelis: "Antanas Kaskelis" #NT!
+ LIT_vladas_jurgutis: "Vladas Jurgutis" #NT!
+ LIT_leonas_bistras: "Leonas Bistras" #NT!
+ LIT_mykolas_slezevicius: "Nikolas Slezevicius" #NT!
+ LIT_jonas_Cernius: "Jonas Černius" #NT!
+ LIT_vincentas_latozaite: "Vincentas Latozaite" #NT!
+ LIT_juoza_barzda_bradauskas: "Juoza Barzda-Bradauskas" #NT!
+ LIT_albinas_cepas: "Albinas Cepas" #NT!
+ LIT_kazys_musteikis: "Kazys Musteikis" #NT!
+ LIT_adolfas_ramanauskas: "Adolfas Ramanauskas" #NT!
+ LIT_juozas_ambrazevicius: "Juozas Ambrazevičius" #NT!
+ EST_johan_laidoner: "Johan Laidoner" #NT!
+ EST_alfons_rebane: "Alfons Rebane" #NT!
+ EST_richard_tomberg: "Richard Tomberg" #NT!
+ EST_oskar_eiriksson: "Oskar Eiriksson" #NT!
+ EST_generic_fascist_demagogue: "Johannes Vares-Barbaruse" #NT!
+ EST_generic_democratic_reformer: "Kaarel Liidak" #NT!
+ EST_generic_communist_revolutionary: "Johannes Lauristin" #NT!
+ EST_boris_kumm: "Boris Kumm" #NT!
+ EST_august_rei: "agosto rey" #NT!
+ EST_juri_uluots: "Juri Uluots" #NT!
+ EST_leo_sepp: "León Sepp" #NT!
+ EST_alfred_vendt: "Alfred Vendt" #NT!
+ EST_richard_veermaa: "Richard Veermaa" #NT!
+ EST_alexander_jaakson: "Alexander Jaakson" #NT!
+ EST_nikolay_g_karotamm: "Nikolai G. Karotamm" #NT!
+ EST_voldemar_mere: "Voldemar Mere" #NT!
+ EST_alex_nirk: "Alex Nirk" #NT!
+ EST_juhan_tuuling: "Juhan Tuuling" #NT!
+ LAT_generic_fascist_demagogue: "Alberts Kviesis" #NT!
+ LAT_generic_democratic_reformer: "Kārlis Zariņš" #NT!
+ LAT_generic_communist_revolutionary: "Ernests Kreišmanis" #NT!
+ LAT_fricis_celmins: "Fricis Celmiņš" #NT!
+ LAT_rudolfs_kocins: "Rūdolfs Kociņš" #NT!
+ LAT_arturs_sprogis: "Artūrs Sproģis" #NT!
+ LAT_konstantins_cakste: "Constataciones de la época" #NT!
+ LAT_tomas_spade: "Teodors Spade" #NT!
+ LAT_teodors_zvejnieks: "Teodor Zvejnieks" #NT!
+ LAT_rudolfs_kandis: "El Kandis de Rodolfo" #NT!
+ LAT_ludvigs_bolsteins: "Ludwig Bolstein" #NT!
+ LAT_vilis_lacis: "Vilis Lacis" #NT!
+ LAT_janis_kaminskis: "Janis Kaminskis" #NT!
+ LAT_vilhelms_munters: "Munters de Vilhelm" #NT!
+ LAT_kornelijs_veidnieks: "Cornelius Veidnieks (Cornelijs Veidnieks)" #NT!
+ LAT_otto_hellmich: "Otto Hellmich" #NT!
+ LAT_krisjanis_berkis: "Krisjanis Beris" #NT!
+ LAT_janis_berzins: "Jānis Bērziņš" #NT!
+ LAT_arturs_silgailis: "Artūrs Silgailis" #NT!
+ BEL_victor_strydonck_burkel: "Víctor van Strydonck de Burkel" #NT!
+ BEL_leon_degrelle: "León Degrelle" #NT!
+ BEL_jules_iserentant: "Julio Iserentant" #NT!
+ BEL_raoul_overstraeten: "Raoul Van Overstraeten" #NT!
+ BEL_fritz_conrad: "Fritz Conrad" #NT!
+ BEL_charles_bastin: "Carlos Bastin" #NT!
+ BEL_generic_fascist_demagogue: "Joris Van Severen" #NT!
+ BEL_generic_democratic_reformer: "Achille Van Acker" #NT!
+ BEL_generic_communist_revolutionary: "Julien Lahaut" #NT!
+ BEL_paul_van_zeeland: "Paul Van Zeeland" #NT!
+ BEL_paul-henri_spaak: "Paul-Henri Spaak" #NT!
+ BEL_gaston_eyskens: "Gastón Eyskens" #NT!
+ BEL_georges_vereecken: "Georges Vereecken" #NT!
+ BEL_victor_van_strydonck_de_burkel: "Víctor van Strydonck de Burkel" #NT!
+ BEL_jules_pire: "Julio Piré" #NT!
+ BEL_fritz_lob: "Fritz Löb" #NT!
+ BEL_georges_deffontaine: "Georges Deffontaine" #NT!
+ BEL_oscar_michiels: "Óscar Michiels" #NT!
+ BEL_rene_lagrou: "René Lagrou" #NT!
+ BEL_yvan_gerard: "Yvan Gerard" #NT!
+ SWI_generic_fascist_demagogue: "Jacob Lorenz" #NT!
+ SWI_generic_democratic_reformer: "Marcel Pilet-Golaz" #NT!
+ SWI_generic_communist_revolutionary: "Rudolf Gelpke" #NT!
+ SWI_giuseppe_motta: "Giuseppe Motta" #NT!
+ SWI_johannes_baumann: "Johannes Baumann" #NT!
+ SWI_roger_masson: "Roger Masson" #NT!
+ SWI_ernst_wetter: "Ernst Wetter" #NT!
+ SWI_oskar_bider: "Oskar Bider" #NT!
+ SWI_werner_jenni: "Werner Jenni" #NT!
+ SWI_johann_august_sutter: "Juan Augusto Sutter" #NT!
+ SWI_ernst_laur: "Ernesto Laurel" #NT!
+ SWI_carl_jacob_burckhardt: "Carl Jacob Burckhardt" #NT!
+ SWI_j_d_de_montenach: "J. D. de Montenach" #NT!
+ SWI_rene_von_graffenried: "René von Graffenried" #NT!
+ SWI_hans_peter_bichsel_sohn: "Hans Peter Bichsel-Sohn" #NT!
+ SWI_hermann_hessel_lorenz: "Hermann Hessel-Lorenz" #NT!
+ SWI_jean_de_muralt: "Juan de Muralt" #NT!
+ SWI_eugen_bircher: "Eugen Bircher" #NT!
+ SWI_etienne_primault: "Étienne Primault" #NT!
+ SWI_hans_oehler: "Hans Oehler" #NT!
+ IRQ_ali_abn_hussein: "Ali Abn Hussein" #NT!
+ IRQ_nuri_as_said: "Nuri como dijo" #NT!
+ IRQ_amir_al_illah: "Amir al-Illah" #NT!
+ IRQ_generic_fascist_demagogue: "Rashid Ali al-Gaylani" #NT!
+ IRQ_generic_democratic_reformer: "Abdul Latif Salah" #NT!
+ IRQ_generic_communist_revolutionary: "Arshad al Umari" #NT!
+ IRQ_fawsi_al_kaukji: "Fawsi al Kaukji" #NT!
+ IRQ_abdullah: "Abdullah" #NT!
+ IRQ_khaled_al_dalabeeh: "Khaled al Dalabeeh" #NT!
+ IRQ_abdullah_al-tell: "Abdullah al-Tell" #NT!
+ IRQ_jamil_al_midfai: "Jamil al Midfai" #NT!
+ IRQ_hamdi_al_pachachi: "Hamdi al Pachachi" #NT!
+ IRQ_ali_mahmud_al_shaykh: "Ali Mahmud al Shaykh" #NT!
+ IRQ_fahmi_said: "Fahmi Said" #NT!
+ IRQ_bakr_sidqi: "Bakr Sidqi" #NT!
+ IRQ_taha_al_ahmani: "Taha al Ahmani" #NT!
+ IRQ_mustafa_al_quidsi: "Mustafa al-Qudsi" #NT!
+ IRQ_iskandar_al-shami: "Iskandar al-Shami" #NT!
+ IRQ_ali_ben_jawad: "Alí ben Jawad" #NT!
+ ARG_generic_fascist_demagogue: "Carlos Alberto Pueyrredón" #NT!
+ ARG_generic_democratic_reformer: "Alberto Gilbert" #NT!
+ ARG_generic_communist_revolutionary: "Juan Domingo Perón" #NT!
+ ARG_ramon_castillo: "Ramón Castillo" #NT!
+ ARG_luis_podesta_costa: "Luis Podesta Costa" #NT!
+ ARG_manuel_maria_de_iriondo: "Manuel María de Iriondo" #NT!
+ ARG_agustin_pedro_justo: "Agustín Pedro Justo" #NT!
+ ARG_manuel_a_rodriguez: "Manuel A. Rodríguez" #NT!
+ ARG_pedro_s_casal: "Pedro S. Casal" #NT!
+ ARG_pedro_pablo_ramirez: "Pedro Pablo Ramírez" #NT!
+ ARG_antonio_parodi: "Antonio Parodi" #NT!
+ ARG_jose_tamborni: "José Tamborni" #NT!
+ ARG_heriberto_la_galine: "Heriberto La Galín" #NT!
+ ARG_francisco_m_velez: "Francisco M. Vélez" #NT!
+ ARG_thomas_martinez: "Thomas Martínez" #NT!
+ ARG_uribaldi_diaz_brittenberg: "Uribaldi Díaz Brittenberg" #NT!
+ ARG_eleazar_videla: "Eleazar Videla" #NT!
+ ARG_edelmiro_julian_farrell: "Edelmiro Julián Farrell" #NT!
+ ARG_hortensio_quijano: "Hortensio Quijano" #NT!
+ AFG_generic_fascist_demagogue: "Abdul Majid" #NT!
+ AFG_generic_democratic_reformer: "Abdul Hossein Aziz" #NT!
+ AFG_generic_communist_revolutionary: "Noor Mohammad Taraki" #NT!
+ AFG_haji_faiz_muhammed_zikeria: "Haji Faiz Muhammad Zikeria" #NT!
+ AFG_mohammad_hashim_khan: "Mohamed Hashim Khan" #NT!
+ AFG_muhammed_nowroz: "Nowroz de Muhammad" #NT!
+ AFG_mahmud_khan: "Mahmud Khan" #NT!
+ AFG_muhammad_amin_bughra: "Muhammad Amin Bughra" #NT!
+ AFG_mohammed_daoud_khan: "Mohammed Daoud Khan" #NT!
+ AFG_mohammed_etemadi_khan: "Mohammed Etemadi Khan" #NT!
+ AFG_renato_bardolucci: "Renato Bardolucci" #NT!
+ AFG_azam_ataullah: "Azam Ataullah" #NT!
+ AFG_aalem_daana: "Aalem Daana" #NT!
+ AFG_hares_muzafar: "Liebres Muzafar" #NT!
+ AFG_asadullah_seraj_khan: "Asadullah Seraj Khan" #NT!
+ AFG_wazir_akbar_khan: "Wazir Akbar Khan" #NT!
+ AFG_ali_muhammed_khan: "Ali Muhammad Khan" #NT!
+ AFG_gholam_wali: "Wali Gholam" #NT!
+ AFG_nasirullah_husain: "Nasirullah Husain" #NT!
+ BOL_generic_fascist_demagogue: "Butrón Alemán" #NT!
+ BOL_generic_democratic_reformer: "Moritz Hochschild" #NT!
+ BOL_generic_communist_revolutionary: "Guillermo Lora" #NT!
+ BOL_jose_maria_gutierrez: "José María Gutiérrez" #NT!
+ BOL_enrique_finot: "Enrique Finot" #NT!
+ BOL_german_busch_beccera: "Busch Beccera Alemán" #NT!
+ BOL_gualberto_villarroel_lopez: "Gualberto Villarroel López" #NT!
+ BOL_roberto_hinojosa: "Roberto Hinojosa" #NT!
+ BOL_jose_santos_quinteros: "José Santos Quinteros" #NT!
+ BOL_david_toro_ruilova: "David Toro Ruilova" #NT!
+ BOL_gil_ibarra_juarez: "Gil Ibarra Juárez" #NT!
+ BOL_eusebio_ayala: "Eusebio Ayala" #NT!
+ BOL_tomas_monje_gutierrez: "Tomás Monje Gutiérrez" #NT!
+ BOL_carlos_altamirano: "Carlos Altamirano" #NT!
+ BOL_fabian_vaca_chavez: "Fabián Vaca Chávez" #NT!
+ BOL_julian_montellano_carrasco: "Julián Montellano Carrasco" #NT!
+ BOL_enrique_baldivieso_aparicio: "Enrique Baldivieso Aparicio" #NT!
+ BOL_hector_bilbao_roja: "Héctor Bilbao Roja" #NT!
+ BOL_alberto_ostria_gutierrez: "Alberto Ostria Gutiérrez" #NT!
+ BRA_generic_fascist_demagogue: "Tarcísio Padilha" #NT!
+ BRA_generic_democratic_reformer: "Raúl Fernandes" #NT!
+ BRA_generic_communist_revolutionary: "Henry Berger" #NT!
+ BRA_washington_luis_pereira: "Washington Luis Pereira" #NT!
+ BRA_osvaldo_aranha: "Osvaldo Aranha" #NT!
+ BRA_afranio_de_mello_franco: "Afranio de Mello Franco" #NT!
+ BRA_newton_cavalcanti: "Newton Cavalcanti" #NT!
+ BRA_eduardo_gomes: "Eduardo Gomes" #NT!
+ BRA_joao_neves_da_fontoura: "João Neves da Fontoura" #NT!
+ BRA_nero_fiuza_de_castro: "Nerón Fiuza de Castro" #NT!
+ BRA_salgado_filho: "Salgado Hijo" #NT!
+ BRA_ismael_motta_paes: "Ismael Motta Paes" #NT!
+ BRA_aristides_guilhem: "Arístides Guilhem" #NT!
+ BRA_jorge_martins: "Jorge Martins" #NT!
+ BRA_floriano_peixoto: "Floriano Peixoto" #NT!
+ BRA_epaminondas_dos_santos: "Epaminondas de los Santos" #NT!
+ BRA_agliberto_vieira: "Agliberto Vieira" #NT!
+ BRA_artur_da_costa_e_silva: "Artur da Costa es Silva" #NT!
+ BRA_moreira_lima: "Moreira Lima" #NT!
+ CHL_generic_fascist_demagogue: "Misael Galleguillos" #NT!
+ CHL_generic_democratic_reformer: "Antonio J. Ríos Morales" #NT!
+ CHL_generic_communist_revolutionary: "Agustín Edwards" #NT!
+ #CHL_gustavo_ross_santa_maria: "Gustavo Ross Santa María" #NT!
+ #CHL_miguel_cruchaga_tacomal: "Miguel Cruchaga Tacomal" #NT!
+ #CHL_luis_alamos_barros: "Luis Álamos Barros" #NT!
+ #CHL_julio_allard_pinto: "Julio Allard Pinto" #NT!
+ #CHL_e_novoa_fuentes: "E. Novoa Fuentes" #NT!
+ #CHL_dario_mujica_gamboa: "Darío Mujica Gamboa" #NT!
+ #CHL_marmaduke_grove: "Arboleda Marmaduke" #NT!
+ #CHL_c_j_de_la_motte: "C. J. de la Motte" #NT!
+ #CHL_francisco_o_ryan_orrego: "Francisco O'Ryan Orrego" #NT!
+ #CHL_ernesto_m_orlando: "Ernesto M. Orlando" #NT!
+ #CHL_arturo_espinoza_mujica: "Arturo Espinoza Mujica" #NT!
+ #CHL_jose_luis_sanchez_besa: "José Luis Sánchez Besa" #NT!
+ #CHL_carlos_puga_monsalve: "Carlos Puga Monsalve" #NT!
+ #CHL_gustavo_silva: "Gustavo Silva" #NT!
+ #CHL_carlos_fuentes_rabe: "Carlos Fuentes Rabe" #NT!
+ #CHL_dario_cellejas_rojas: "Darío Cellejas Rojas" #NT!
+ #CHL_ariosto_herrera: "Ariosto Herrera" #NT!
+ COL_generic_fascist_demagogue: "Julio Valdez" #NT!
+ COL_generic_democratic_reformer: "Ulpiano Rengifo Cárdenas." #NT!
+ COL_generic_communist_revolutionary: "León de Greiff" #NT!
+ COL_raphael_hollmann: "Rafael Hollmann" #NT!
+ COL_jose_ellis_quinsado: "José Ellis Quinsado" #NT!
+ COL_m_e_rojas_de_moreno: "M. E. Rojas de Moreno" #NT!
+ COL_jorge_lopez_suyo: "Jorge López Suyo" #NT!
+ COL_mauricio_soto_gomez: "Mauricio Soto Gómez" #NT!
+ COL_camilo_daza_alvarez: "Camilo Daza Álvarez" #NT!
+ COL_guillermo_padilla_manrique: "Guillermo Padilla Manrique" #NT!
+ COL_gabriel_paris_gordillo: "Gabriel París Gordillo" #NT!
+ COL_enrico_diaz_carias: "Enrico Díaz Carias" #NT!
+ COL_manuel_quinones: "Manuel Quiñones" #NT!
+ COL_eduardo_poirier_escobar: "Eduardo Poirier Escobar" #NT!
+ COL_luis_acevedo: "Luis Acevedo" #NT!
+ COL_querista_sellor: "Querista Sellor" #NT!
+ COL_german_olano_moreno: "Germán Olano Moreno." #NT!
+ COL_luis_bernardo_andrade: "Luis Bernardo Andrade" #NT!
+ COL_luis_rodriguez: "Luis Rodríguez" #NT!
+ COL_ruben_piedrahita_arango: "Rubén Piedrahita Arango" #NT!
+ COL_salvador_tiaga_gonzalez: "Salvador Tiaga González" #NT!
+ SAF_j_f_van_rensburg_fascist: "JF van Rensburg" #NT!
+ SAF_sir_patrick_duncan: "Señor Patrick Duncan" #NT!
+ SAF_generic_communist_revolutionary: "Markus B. Lawrence" #NT!
+ SAF_nicolaas_havenga: "Nicolás Havenga" #NT!
+ SAF_d_f_malan: "D. F. Malan" #NT!
+ SAF_e_g_jansen: "E. G. Jansen" #NT!
+ iscor: "Iscor" #NT!
+ SAF_james_mitchell_baker: "James Mitchell-Baker" #NT!
+ SAF_leonard_beyers: "Leonard Beyers" #NT!
+ SAF_adolf_malan: "Adolfo Malan" #NT!
+ SAF_pierre_van_ryneveld: "Pierre van Ryneveld" #NT!
+ SAF_pierre_oliver_knoll: "Pierre Oliver-Knoll" #NT!
+ SAF_cornelis_van_zuigenbrogge: "Cornelis van Zuigenbrogge" #NT!
+ SAF_robert_palmer: "Robert Palmer" #NT!
+ SAF_c_de_weenburg_du_toit: "C. de Weenburg du Toit" #NT!
+ SAF_marinus_van_osterkamp: "Marinus van Osterkamp" #NT!
+ SAF_jeannot_de_la_tourier: "Jeannot de la Tourier" #NT!
+ SAF_j_f_van_rensburg: "J. F. van Rensburg" #NT!
+ SAF_abram_fischer: "Abram Fischer" #NT!
+ SAF_s_p_le_roux: "S.P.Le Roux" #NT!
+ SAF_ossewabrandwag: "Carro de la marca Ossewa" #NT!
+ SAF_ossewabrandwag_2: "Carro de la marca Ossewa" #NT!
+ SAF_ossewabrandwag_fascism: "Carro de la marca Ossewa" #NT!
+ SAF_gold_exports: "Exportaciones de oro" #NT!
+ SAF_voortrekker_monument_2: "Monumento Voortrekker" #NT!
+ SAF_cheap_labor_1: "Mano de obra barata" #NT!
+ SAF_cheap_labor_2: "Mano de obra barata" #NT!
+ SAF_cheap_labor_3: "Mano de obra barata" #NT!
+ SAF_king_edward: "Eduardo VIII" #NT!
+ SAF_abandon_westminster_fascism: "Abandonemos Westminster" #NT!
+ SAF_abandon_westminster_communism: "Abandonemos Westminster" #NT!
+ SAF_history_of_segregation: "Historia de la segregación" #NT!
+ SAF_history_of_segregation_2: "Historia de la segregación" #NT!
+ SAF_soviet_advisers: "Asesores soviéticos" #NT!
+ SAF_black_volunteers: "Voluntarios negros" #NT!
+ SAF_equal_opportunities: "Igualdad de oportunidades" #NT!
+ SAF_spanish_volunteers: "Voluntarios españoles" #NT!
+ SAF_scw_veterans: "Veteranos de la Guerra Civil Española" #NT!
+ SAU_generic_fascist_demagogue: "Alyan Othman Nour" #NT!
+ SAU_generic_democratic_reformer: "Hussein al Qahtani" #NT!
+ SAU_generic_communist_revolutionary: "Mubarak al-Yami" #NT!
+ SAU_moukhled_al_asmari: "Moukhled al Asmari" #NT!
+ SAU_sa_ad_shaddad_al_outaibi: "Saad Shaddad al Outaibi" #NT!
+ SAU_salih_al_rajihi: "Salih al Rajihi" #NT!
+ SAU_saud_al_saud: "Saud al Saud" #NT!
+ SAU_crown_prince_saud: "Príncipe Saud" #NT!
+ SAU_harry_st_john_philby: "Harry St. John Philby" #NT!
+ SAU_hamed_al_sabani: "Hamed al-Sabani" #NT!
+ SAU_youssef_al_bishi: "Youssef al-Bishi" #NT!
+ SAU_faisal_saud: "Faisal Saud" #NT!
+ SAU_karim_nassar: "Karim Nassar" #NT!
+ SAU_faisal_al_saud: "Faisal al-Saud" #NT!
+ SAU_ismail_ali_al_salhi: "Ismail Ali al-Salhi" #NT!
+ SAU_arthur_dawkins: "Arthur Dawkins" #NT!
+ SAU_bassam_abu_khadar: "Bassam Abu Khadar" #NT!
+ SAU_hamadan_al_odha: "Hamadan al-Odha" #NT!
+ SAU_philip_gordon_lee: "Philip Gordon-Lee" #NT!
+ SAU_ali_muhammed_khan: "Ali Muhammad Khan" #NT!
+ SAU_gholam_wali: "Wali Gholam" #NT!
+ TAN_generic_fascist_demagogue: "Viacheslav Vasiliev" #NT!
+ TAN_generic_democratic_reformer: "Nikolai Sidorov" #NT!
+ TAN_generic_communist_revolutionary: "Valerie Mejlauk" #NT!
+ TAN_s_t_perilenko: "S. T. Perilenko" #NT!
+ TAN_sodmon_balchor: "Sodmón Balchor" #NT!
+ TAN_vladimir_sokoline: "Vladimir Sokolin" #NT!
+ TAN_ruzhenko: "Ruzhenko" #NT!
+ TAN_alaverdov: "Alaverdov" #NT!
+ TAN_kechir_ool: "Kechir-ool" #NT!
+ TAN_homushku_churguj_ool: "Iglesia Homushku Churguj-ool" #NT!
+ TAN_tulberdiev: "Tulberdiev" #NT!
+ TAN_rugalinskij: "Rugalinski" #NT!
+ TAN_tanchak_shoma: "Tanchak Shoma" #NT!
+ TAN_konstantinov: "Konstantinov" #NT!
+ TAN_i_p_rugalinskij: "I. P. Rugalinski" #NT!
+ TAN_grinchik: "Grinchik" #NT!
+ TAN_v_i_kulikovskij: "V. I. Kulikovskij" #NT!
+ VEN_generic_fascist_demagogue: "Adolfo Melgarejo" #NT!
+ VEN_generic_democratic_reformer: "Rómulo Betancourt" #NT!
+ VEN_generic_communist_revolutionary: "Manuel Díaz Rodríguez" #NT!
+ VEN_manuel_diaz_rodriguez: "Manuel Díaz Rodríguez" #NT!
+ VEN_romulo_gallegos_freire: "Rómulo Gallegos Freire" #NT!
+ VEN_isidoro_ruiz_tuerro: "Isidoro Ruiz Tuerro" #NT!
+ VEN_isaias_medina_angarita: "Isaías Medina Angarita" #NT!
+ VEN_tomas_contreras_villalobos: "Tomás Contreras Villalobos" #NT!
+ VEN_david_lopez_henriques: "David López Henriques" #NT!
+ VEN_miguel_diaz_fraile: "Miguel Díaz Fraile" #NT!
+ VEN_humberto_santabria_villa: "Villa Humberto Santabria" #NT!
+ VEN_carlos_molina_talavayo: "Carlos Molina Talavayo" #NT!
+ VEN_victor_sanchez_croes: "Víctor Sánchez Croes" #NT!
+ VEN_carlos_delgado_chalbaud: "Carlos Delgado Chalbaud" #NT!
+ VEN_roberto_de_luca_varesano: "Roberto de Luca Varesano" #NT!
+ VEN_carlos_ramos_diaz: "Carlos Ramos Diaz" #NT!
+ VEN_carlos_garcia_mendoza: "Carlos García Mendoza" #NT!
+ VEN_antonio_casas_gonzalez: "Antonio Casas González" #NT!
+ VEN_jose_polares_pavon: "José Polares Pavón" #NT!
+ CRO_generic_fascist_demagogue: "Milán Budak" #NT!
+ CRO_generic_democratic_reformer: "Vladko Macek" #NT!
+ CRO_generic_communist_revolutionary: "Janko Mohorovicic" #NT!
+ CRO_ivan_subasic: "Iván Subasic" #NT!
+ CRO_alojzije_stepinac: "Alojzije Stepinac" #NT!
+ CRO_gaspar_njegovan: "Gaspar Njegován" #NT!
+ CRO_vladimir_laxa: "Vladimir Laxa" #NT!
+ CRO_fedor_dragojlov: "Fedor Dragojlov" #NT!
+ CRO_friedrich_navratil: "Friedrich Navratil" #NT!
+ CRO_adalbert_rogulja: "Adalberto Rogulja" #NT!
+ CRO_edgar_angeli: "Edgar Angeli" #NT!
+ CRO_nikola_steinfl: "Nikola Steinfl" #NT!
+ CRO_slavko_stancer: "Slavko Stancer" #NT!
+ CRO_vilko_begic: "Vilko Begic" #NT!
+ CRO_slavko_kvaternik: "Slavko Kvaternik" #NT!
+ CRO_vladimir_kren: "Vladimir Kren" #NT!
+ CRO_djuro_jakcin: "Djuro Jakcin" #NT!
+ CRO_sismundo_pejacevic: "Sismundo Pejacevic" #NT!
+ CRO_ivan_crnkovic: "Iván Crnkovic" #NT!
+ CRO_mihajlo_tomasic: "Mihajlo Tomasic" #NT!
+ RAJ_subhas_chanda_bose: "Subhas Chandra Bose" #NT!
+ RAJ_bhimrao_ramji_ambedkar: "Bhimrao Ramji Ambedkar" #NT!
+ RAJ_karam_singh_mann: "Hombre Karam Singh" #NT!
+ RAJ_chakravarti_rajagopalachari: "Chakravarti Rajagopalachari" #NT!
+ RAJ_john_edward_golightly: "John Edward Golightly" #NT!
+ RAJ_george_h_douglas: "George H. Douglas" #NT!
+ RAJ_mahatma_mohandas_gandhi: "Mahatma Mohandas Gandhi" #NT!
+ RAJ_john_mathai: "Juan Mathai" #NT!
+ RAJ_sir_mohammed_iqbal: "Señor Muhammad Iqbal" #NT!
+ RAJ_agha_khan_iii: "Aga Khan III" #NT!
+ RAJ_rajendra_prasad: "Rajendra Prasad" #NT!
+ RAJ_anyang_bhula: "Anyang Bhula" #NT!
+ RAJ_bahadur_jayla_of_khoch_bahur: "Bahadur Jayla de Khoch Bahur" #NT!
+ RAJ_ram_singh_thakur: "Ram Singh Thakuri" #NT!
+ RAJ_arjan_singh_vibhusan: "Arjan Singh" #NT!
+ RAJ_aspy_merwan_engineer: "Ingeniero Aspy Merwan" #NT!
+ RAJ_mehar_singh: "Mehar Singh" #NT!
+ RAJ_w_h_gould_bradford: "W.H. Gould-Bradford" #NT!
+ RAJ_arthur_a_barrett: "Arthur A. Barrett" #NT!
+ RAJ_archibald_wavell: "Archibald Wavell" #NT!
+ RAJ_sir_frank_messervy: "Señor Frank Messervy" #NT!
+ RAJ_reginald_savory: "Reginald Savory" #NT!
+ RAJ_kodandera_cariappa: "Kodandera cariappa" #NT!
+ RAJ_mohan_singh: "Mohan Singh" #NT!
+ RAJ_bruce_w_mcpherson: "Bruce W. McPherson" #NT!
+ RAJ_subroto_mukherjee: "Subroto Mukherjee" #NT!
+ RAJ_ravindra_darshan_singh: "Ravindra Darshan Singh" #NT!
+ RAJ_louis_mountbatten: "Luis Mountbatten" #NT!
+ RAJ_william_e_parry: "William E. Parry" #NT!
+ RAJ_bhaskar_soman: "Soman de Bhaskar" #NT!
+ RAJ_ram_dass_katari: "Ram Dass Katari" #NT!
+ RAJ_azad_hind: "Azad Hind" #NT!
+ RAJ_azad_hind_desc: "El gobierno de la India Libre, apoyado por los enemigos de los británicos, está trabajando por la liberación de la India. Están trabajando con Japón para subvertir el dominio europeo, con la esperanza de establecer un estado indio autónomo." #NT!
+ RAJ_marginalized_muslim_community: "Comunidad musulmana marginada" #NT!
+ RAJ_marginalized_muslim_community_angry: "Comunidad musulmana marginada" #NT!
+ RAJ_marginalized_muslim_community_happy: "Comunidad musulmana marginada" #NT!
+ RAJ_risk_of_famine: "Riesgo de hambruna" #NT!
+ RAJ_risk_of_famine_desc: "El sistema indio de producción de alimentos es muy frágil. Incluso una pequeña interrupción podría provocar un colapso." #NT!
+ RAJ_famine: "Hambruna" #NT!
+ RAJ_famine_desc: "La incompetencia, la indiferencia y la corrupción flagrante del gobierno colonial y de los ferrocarriles indios han convertido una situación difícil en una catástrofe total. El país sufrirá por ello durante los próximos meses." #NT!
+ RAJ_princely_states: "Estados principescos" #NT!
+ RAJ_princely_states_election: "Estados principescos" #NT!
+ RAJ_princely_states_donations: "Estados principescos" #NT!
+ RAJ_princely_states_donations_troops: "Estados principescos" #NT!
+ RAJ_homi_j_bhabha: "Homi J. Bhabha" #NT!
+ RAJ_all_india_forward_bloc_communism: "Bloque de Avanzada de toda la India" #NT!
+ RAJ_all_india_forward_bloc_fascism: "Bloque de Avanzada de toda la India" #NT!
+ RAJ_agrarian_society: "Sociedad Agraria" #NT!
+ RAJ_agrarian_society_desc: "Los administradores locales creen que su estilo de vida agrario ha hecho que una gran parte de la población india simplemente no sea apta para el servicio militar o la guerra de cualquier tipo. Sostienen que sólo debemos reclutar entre las llamadas "tribus marciales". Esta creencia está tan extendida y arraigada que se necesitará al menos una generación o una importante inversión rural para superarla." #NT!
+ RAJ_agrarian_society_dynamic: "$RAJ_agrarian_society$" #NT!
+ RAJ_agrarian_society_dynamic_desc: "$RAJ_agrarian_society_desc$" #NT!
+ PRC_generic_fascist_demagogue: "Luo Wu Sun" #NT!
+ PRC_generic_democratic_reformer: "Tan Kenon" #NT!
+ PRC_generic_communist_revolutionary: "Zhang Guotao" #NT!
+ PRC_lin_bojiu: "Lin Bojiu" #NT!
+ PRC_zhou_enlai: "Zhou Enlai" #NT!
+ PRC_he_yuandang: "He Yuandang" #NT!
+ PRC_zhu_de: "Zhu De" #NT!
+ PRC_ma_jin: "Ma Jin" #NT!
+ PRC_fang_zeyi: "Fang Zeyi" #NT!
+ PRC_gao_gang: "Gao Gang" #NT!
+ PRC_ziao_jingguang: "Ziao Jingguang" #NT!
+ PRC_gao_qiu: "Gao Qiu" #NT!
+ PRC_dong_biwu: "Dong Biwu" #NT!
+ PRC_xu_xiangqian: "Xu Xiangqian" #NT!
+ PRC_chen_yi: "Chen Yi" #NT!
+ PRC_liang_shen: "Liang Shen" #NT!
+ PRC_liu_shaoqi: "Liu Shaoqi" #NT!
+ PRC_liu_bocheng: "Liu Bocheng" #NT!
+ PRC_deng_ye_peng: "Deng Ye Peng" #NT!
+ PRC_kwong_sun_ma: "Kwong Sun Ma" #NT!
+ PRC_hsia_tian: "Hsia Tian" #NT!
+ PRC_chen_geng: "Chen Geng" #NT!
+ PRC_zhang_wei: "Zhang Wei" #NT!
+ LUX_generic_fascist_demagogue: "Damián Kratzenberg" #NT!
+ LUX_generic_democratic_reformer: "René Blum" #NT!
+ LUX_generic_communist_revolutionary: "Pablo Medinger" #NT!
+ LUX_pierre_dupong: "Pierre Dupong" #NT!
+ LUX_martin_karp: "Martín Karp" #NT!
+ LUX_pierre_krier: "Pierre Krier" #NT!
+ LUX_emile_speller: "Émile Speller" #NT!
+ LUX_guillaume_soisson: "Guillermo Soisson" #NT!
+ LUX_nicholas_diedrich: "Nicolás Diedrich" #NT!
+ LUX_paul_medinger: "Pablo Medinger" #NT!
+ LUX_henri_ahnen: "Henri Ahnen" #NT!
+ LUX_francois_schammel: "François Schammel" #NT!
+ LUX_aloyse_glodt: "Aloyse Glodt" #NT!
+ LUX_damien_roeser: "Damien Roeser" #NT!
+ LUX_pierre_fischbach: "Pierre Fischbach" #NT!
+ LUX_alex_federspiel: "Alex Federspiel" #NT!
+ LUX_nicolas_de_dixmude: "Nicolás de Dixmude" #NT!
+ LUX_florent_destriveaux: "Florent Destriveaux" #NT!
+ ALB_generic_fascist_demagogue: "Mustafa Merlika-Kruja" #NT!
+ ALB_generic_democratic_reformer: "Xhafer Bej Ypi" #NT!
+ ALB_generic_communist_revolutionary: "Mehmet Shehu" #NT!
+ ALB_midhat_frasheri: "Frashëri de Midhat" #NT!
+ ALB_jocelyn_percy: "Jocelyn Percy" #NT!
+ ALB_fiqri_dine: "Cena Fiqri" #NT!
+ ALB_qemal_komani: "Qemal Komani" #NT!
+ ALB_xhelal_mitrovica: "Xhelal Mitrovica" #NT!
+ ALB_hajre_fetahu: "Fetahu de Hajrë" #NT!
+ ALB_selim_moishiou: "Selim Moishiou" #NT!
+ ALB_alexander_mori: "Alejandro Mori" #NT!
+ ALB_kristo_cajupi: "Cristo Cajupi" #NT!
+ ALB_halil_nergutti: "Halil Nergutti" #NT!
+ ALB_kol_bibe_mirakaj: "Kol Bibë Mirakaj" #NT!
+ ALB_prenk_pervizi: "Prenk Pervizi" #NT!
+ ALB_eqrem_libohova: "Eqrem Libohova" #NT!
+ ALB_zuhdi_shabani: "Zuhdi Shabani" #NT!
+ ALB_aziz_sulejmani: "Aziz Sulejmani" #NT!
+ ALB_rexhep_mitrovica: "Rexhep Mitrovica" #NT!
+ ALB_hasan_begolli: "Hasan Begolli" #NT!
+ ALB_ismael_ghaxa: "ismael gaxa" #NT!
+ BHU_sonam_tobgay_dorji: "Sonam Tobgay Dorji" #NT!
+ BHU_jigme_palden_dorji: "Dorji de Jigme Palden" #NT!
+ BHU_mang_pos_bhur_bai: "Mang-pos Bhur-ba'i" #NT!
+ BHU_reginald_b_stevens: "Reginald B. Stevens" #NT!
+ BHU_jigme_dorji_wangchuck: "Jigme Dorji Wangchuck" #NT!
+ BHU_namgyal_bahadur: "Namgyal Bahadur" #NT!
+ BHU_dorji_yeshey: "Yeshey Dorji" #NT!
+ BHU_ugyen_tenzin: "Ugyen Tenzin" #NT!
+ BHU_tommy_gould: "Tommy Gould" #NT!
+ BHU_sonam_pradukha: "Sonam Pradukha" #NT!
+ BHU_dechen_sonam: "Dechen Sonam" #NT!
+ BHU_bill_collett: "Bill Collett" #NT!
+ BHU_gendun_shakabpa: "Gendün Shakabpa" #NT!
+ BHU_tsepon_shatra: "Shatra Tsepon" #NT!
+ BHU_chamba_wangyal: "Chamba Wangyal" #NT!
+ BHU_tsarong_rinpoche: "Tsarong Rinpoche" #NT!
+ BHU_generic_fascist_demagogue: "Ram Tshering" #NT!
+ BHU_generic_democratic_reformer: "Lado de Yeshey" #NT!
+ BHU_generic_communist_revolutionary: "Hemal Ngawang" #NT!
+ SLO_generic_fascist_demagogue: "Tido Gaspar" #NT!
+ SLO_generic_democratic_reformer: "Daniel Ertl" #NT!
+ SLO_generic_communist_revolutionary: "Gustaf Husak" #NT!
+ SLO_frano_kral: "Frano Kral" #NT!
+ SLO_janko_jesensky: "Janko Jesensky" #NT!
+ SLO_stefan_tiso: "Stefan Tiso" #NT!
+ SLO_jaroslav_kratochvil: "Jaroslav Kratochvil" #NT!
+ SLO_karol_sidor: "Karol Sidor" #NT!
+ SLO_emil_lendvay: "Emil Lendvay" #NT!
+ SLO_vojtech_daubner: "Vojtech Daubner" #NT!
+ SLO_jozef_hora: "Jozef Hora" #NT!
+ SLO_jozef_snejdarek: "Józef Snejdarek" #NT!
+ SLO_frantisek_sadek: "Frantisek Sadek" #NT!
+ SLO_fritz_gejza: "Fritz Gejza" #NT!
+ SLO_cyril_kuchta: "Cirilo Kuchta" #NT!
+ SLO_ferdinand_catlos: "Fernando Catlos" #NT!
+ SLO_gustav_malar: "Gustav Mälar" #NT!
+ SLO_rudolf_viest: "Rodolfo Viest" #NT!
+ SLO_anton_pulanick: "Antón Pulanick" #NT!
+ SLO_frantisek_straka: "Frantisek Straka" #NT!
+ SLO_jindrich_honzl: "Jindrich Hönzl" #NT!
+ SLO_jozef_turanec: "Józef Turanec" #NT!
+ COS_generic_fascist_demagogue: "Fallas de Calufa Sinaja" #NT!
+ COS_generic_democratic_reformer: "Miguel Ramírez Alcántara" #NT!
+ COS_generic_communist_revolutionary: "Gustaf Husak" #NT!
+ COS_julio_acosta_garcia: "Julio Acosta García" #NT!
+ COS_otto_cortes_fernandez: "Otto Cortes Fernández" #NT!
+ COS_roberto_brenes_mesen: "Roberto Brenes Mesen" #NT!
+ COS_chico_orlich_bolmarich: "Chico Orlich Bolmarich" #NT!
+ COS_jose_figueres_ferrer: "José Figueres Ferrer" #NT!
+ COS_luis_fernandez_rodriguez: "Luis Fernández Rodríguez" #NT!
+ COS_tobias_picado_cortes: "Tobias Picado Cortes" #NT!
+ COS_francisco_rosendo_arguello: "Francisco Rosendo Argüello" #NT!
+ COS_guillermo_macho_nunez: "Guillermo Macho Núñez" #NT!
+ COS_carlos_uribe_alpoveda: "Carlos Uribé Alpoveda" #NT!
+ COS_hugo_siedler_mendoza: "Hugo Siedler Mendoza" #NT!
+ COS_hugo_montes_ramirez: "Hugo Montes Ramírez" #NT!
+ COS_jorge_volio_jimenez: "Jorge Volio Jiménez" #NT!
+ COS_baptista_e_gutierrez: "Baptista E. Gutiérrez" #NT!
+ COS_manuel_mora_valverde: "Manuel MoraValverde" #NT!
+ COS_oscar_padilla_sellean: "Oscar Padilla Sellean" #NT!
+ COS_roberto_juarez_camposino: "Roberto Juárez Camposino" #NT!
+ COS_felipe_abreu_castro: "Felipe Abreu Castro" #NT!
+ NIC_generic_fascist_demagogue: "Felipe Santiago" #NT!
+ NIC_generic_democratic_reformer: "Julián Irias Navarro" #NT!
+ NIC_generic_communist_revolutionary: "Juan Y. Masquez" #NT!
+ NIC_leonardo_arguello_vargas: "Leonardo Argüello Vargas" #NT!
+ NIC_carlos_brenes_jarquin: "Carlos Brenes Jarquín" #NT!
+ NIC_benjamin_lacayo_sacasa: "Benjamín Lacayo Sacasa" #NT!
+ NIC_augusto_caraval_antonio: "Augusto CaravalAntonio" #NT!
+ NIC_victor_roman_y_reyes: "Víctor Román y Reyes" #NT!
+ NIC_guillermo_r_cuadra: "Guillermo R. Cuadra" #NT!
+ NIC_joel_garcia_zaldana: "Joel García Zaldana" #NT!
+ NIC_gustavo_flores_mendienta: "Gustavo Flores Mendienta" #NT!
+ NIC_noel_esto_nino_miranda: "Navidad Este Niño Miranda" #NT!
+ NIC_manuel_roque_garcia: "Manuel Roque García" #NT!
+ NIC_manuel_corovel_kirsch: "Manuel Corovél Kirsch" #NT!
+ NIC_bernardo_doroteo: "Bernardo Doroteo" #NT!
+ NIC_juan_pablo_esquerra: "Juan Pablo Esquerra" #NT!
+ NIC_maximiliano_benito: "Maximiliano Benito" #NT!
+ NIC_toribio_fermin: "Toribio Fermín" #NT!
+ NIC_sebastian_morazan: "Sebastián Morazán" #NT!
+ ELS_generic_fascist_demagogue: "Marco A Molina" #NT!
+ ELS_generic_democratic_reformer: "Andrés Ignacio Menéndez" #NT!
+ ELS_generic_communist_revolutionary: "Franco Hernández Ávila" #NT!
+ ELS_salvador_castaneda_castro: "Salvador Castañeda Castro" #NT!
+ ELS_jose_maria_cuellar: "José María Cuéllar" #NT!
+ ELS_oscar_a_bolanos: "Oscar A. Bolaños" #NT!
+ ELS_osmin_aguirre_y_salinas: "Osmín Aguirre y Salinas" #NT!
+ ELS_manuel_de_jesus_cordova: "Manuel de Jesús Córdova" #NT!
+ ELS_humbert_aberle: "Humbert Aberle" #NT!
+ ELS_ricardo_abrego_abrego: "Ricardo Abrego Abrego" #NT!
+ ELS_raul_rodolfi_sanchez: "Raúl Rodolfí Sánchez" #NT!
+ ELS_horacio_carnejo_ibanez: "Horacio Carnejo Ibañez" #NT!
+ ELS_hector_escobar_serrano: "Héctor Escobar Serrano" #NT!
+ ELS_mauro_espinola_castro: "Mauro Espínola Castro" #NT!
+ ELS_milton_andrade_cabrera: "Milton Andrade Cabrera" #NT!
+ ELS_humberto_costa: "Humberto Costa" #NT!
+ ELS_augustin_farabundo_marti: "Agustín Farabundo Martí" #NT!
+ ELS_manuel_jose_maria_lemus_lopez: "Manuel José María Lemus López" #NT!
+ ELS_reinaldo_galindo_pohl: "Reinaldo Galindo Pohl" #NT!
+ ELS_jose_angel_castillo: "José Ángel Castillo" #NT!
+ ECU_generic_fascist_demagogue: "Jorge Luna Yepes" #NT!
+ ECU_generic_democratic_reformer: "Isidro Ayora Cueva" #NT!
+ ECU_generic_communist_revolutionary: "Enrique Gil Gilbert" #NT!
+ ECU_davide_flores: "Davide Flores" #NT!
+ ECU_carlos_arosemena_tola: "Carlos Arosemena Tola" #NT!
+ ECU_carlos_arroyo_del_rio: "Carlos Arroyo del Río" #NT!
+ ECU_juan_pablo_martinez_iguarte: "Juan Pablo Martínez Iguarte" #NT!
+ ECU_federico_paez_chiriboaga: "Federico Páez Chiriboaga" #NT!
+ ECU_hugo_endara_penaherrera: "Hugo Endara Peñaherrera" #NT!
+ ECU_juan_bayardo_tobar: "Juan Bayardo Tobar" #NT!
+ ECU_jorge_escobedo_duarte: "Jorge Escobedo Duarte" #NT!
+ ECU_ramon_moran_valverde: "Ramón Morán Valverde" #NT!
+ ECU_carlos_hidalgo_garcia: "Carlos Hidalgo García" #NT!
+ ECU_ramon_baquerizo_davila: "Ramón Baquerizo Dávila" #NT!
+ ECU_benigno_andrade_flores: "Benigno Andrade Flores" #NT!
+ ECU_luis_cabrera_sevilla: "Luis Cabrera Sevilla" #NT!
+ ECU_gilberto_enriquez_gallo: "Gilberto Enriquez Gallo" #NT!
+ ECU_uriarte_fanquil_del_ponte: "Uriarte Fanquil del Puente" #NT!
+ ECU_cosme_renella_barbatto: "Cosme Renella Barbatto" #NT!
+ ECU_julio_salem_gallegos: "Julio Salém Gallegos" #NT!
+ ECU_ramon_castro_jijon: "Ramón Castro Jíjon" #NT!
+ ECU_juan_ramon_castro: "Juan Ramón Castro" #NT!
+ ECU_gustavo_becerra_paz: "Gustavo Becerra Paz" #NT!
+ NZL_generic_fascist_demagogue: "Campo Arthur Nelson" #NT!
+ NZL_generic_democratic_reformer: "Adán Hamilton" #NT!
+ NZL_generic_communist_revolutionary: "Fred Freeman" #NT!
+ NZL_a_e_davy: "A. E. Davy" #NT!
+ NZL_w_a_veitch_milne: "W. A. ​​Veitch-Milne" #NT!
+ NZL_walter_nash: "Walter Nash" #NT!
+ NZL_keith_j_holyoake: "Keith J. Holyoake" #NT!
+ NZL_r_a_cochrane: "R. A. Cochrane" #NT!
+ NZL_arthur_dawes: "Arthur Dawes" #NT!
+ NZL_norris_stephen_falla: "Norris Stephen Falla" #NT!
+ NZL_j_c_nichols: "J. C. Nichols" #NT!
+ NZL_h_d_mcgregor: "HD McGregor" #NT!
+ NZL_trevor_handley: "Trevor Handley" #NT!
+ NZL_william_sinclair_burgess: "William Sinclair-Burgess" #NT!
+ NZL_edward_puttick: "Edward Puttick" #NT!
+ NZL_j_e_duigan: "J.E. Duigan" #NT!
+ NZL_n_weir: "N. Vertedero" #NT!
+ NZL_a_j_stallworthy: "A. J. Stallworthy" #NT!
+ NZL_l_p_peterson: "L. P. Peterson" #NT!
+ NZL_h_e_horan: "Su Excelencia Horan" #NT!
+ NZL_w_h_stratton: "W. H. Stratton" #NT!
+ NZL_eric_prendergast: "Eric Prendergast" #NT!
+ NZL_stomp_out_pacifism: "Acabemos con el pacifismo" #NT!
+ NZL_first_labor_government: "Primer gobierno laborista" #NT!
+ NZL_the_workers_party_1: "El Partido de los Trabajadores" #NT!
+ NZL_the_workers_party_2: "El Partido de los Trabajadores" #NT!
+ ETH_generic_fascist_demagogue: "Haile Selassie Gugsa" #NT!
+ ETH_generic_democratic_reformer: "Hoja de Zawde Belaineh" #NT!
+ ETH_generic_communist_revolutionary: "Berhanu Makonnen" #NT!
+ ETH_bedjironde_tekle_hawariate: "Bedjironde Tekle Hawariate" #NT!
+ ETH_ras_imru_haile_selassie: "Imru Haile Selassie" #NT!
+ ETH_makonnen_endelkatchew: "Maíz dulce Endelkachew" #NT!
+ ETH_desta_damtew: "Desta Damtew" #NT!
+ ETH_ras_kassa: "Casa Haile Darge" #NT!
+ ETH_john_robinson: "Juan Robinson" #NT!
+ ETH_mesfin_sileshi: "Mesfin Sileshi" #NT!
+ ETH_ras_seyum: "Ras Seyum" #NT!
+ ETH_lij_johannes: "Libro de Johannes" #NT!
+ ETH_woldemeskal_tariku: "Tariku de Woldemeskal" #NT!
+ ETH_haile_abba_mersa: "Salve Abba Mersa" #NT!
+ ETH_lij_abiye_abebe: "Lij Abiye Abebe" #NT!
+ ETH_fitauri_zawde_gobena: "Fitauri Zawde Gobena" #NT!
+ ETH_dedja_zinatch_nadeon: "Dedja Zinatch Nadeon" #NT!
+ ETH_ras_kebbede: "Ras Kebbede" #NT!
+ ETH_wondossen_kassa: "Caja de Wondossen" #NT!
+ ETH_gabriel_zawde_gilaneh: "Gabriel Zawde Gilaneh" #NT!
+ PHI_generic_fascist_demagogue: "José P. Laurel" #NT!
+ PHI_generic_democratic_reformer: "Elpidio Quirino" #NT!
+ PHI_generic_communist_revolutionary: "Crisanto Evangelista" #NT!
+ PHI_sergio_osmena: "Sergio Osmeña" #NT!
+ PHI_emilio_aguinaldo: "Emilio Aguinaldo" #NT!
+ PHI_juan_sumulong: "Juan Sumulong" #NT!
+ PHI_leoncio_s_tan: "Leoncio S. Tan" #NT!
+ PHI_basilio_j_valdez: "Basilio J. Valdez" #NT!
+ PHI_pelagio_cruz: "Pelagio Cruz" #NT!
+ PHI_edwin_andrews: "Edwin Andrews" #NT!
+ PHI_santiago_nuval: "Santiago Nuval" #NT!
+ PHI_eustacio_orobia: "Eustacio Orobia" #NT!
+ PHI_vicente_p_lim: "Vicente P. Lim" #NT!
+ PHI_heraclio_alano: "Heraclio Alano" #NT!
+ PHI_basilio_fernando: "Basilio Fernando" #NT!
+ PHI_jose_v_andrada: "José V. Andrada" #NT!
+ PHI_benito_n_ebuen: "Benito N. Ebuen" #NT!
+ PHI_ramon_a_alcaraz: "Ramón A. Alcaraz" #NT!
+ PHI_victor_h_dizon: "Víctor H. Dizon" #NT!
+ PRU_generic_fascist_demagogue: "Raúl Ferrero Rebagliati" #NT!
+ PRU_generic_democratic_reformer: "Manuel Cisneros Sánchez" #NT!
+ PRU_generic_communist_revolutionary: "Jorge del Prada" #NT!
+ PRU_armando_reveredo_iglesias: "Armando Reveredo Iglesias" #NT!
+ PRU_oscar_miro_quesada: "Oscar Miró Quesada" #NT!
+ PRU_reynaldo_vinatea: "Reynaldo Vinatea" #NT!
+ PRU_jose_bustamante_y_rivero: "José Bustamante y Rivero." #NT!
+ PRU_luis_ramirez_ortiz: "Luis Ramírez Ortiz" #NT!
+ PRU_romulo_frias: "Rómulo Frías" #NT!
+ PRU_ernesto_scroth: "Ernesto Scroth" #NT!
+ PRU_eloy_g_ureta: "Eloy G. Ureta" #NT!
+ PRU_rafael_escardo: "Rafael Escardo" #NT!
+ PRU_eduardo_montero_rojas: "Eduardo Montero Rojas" #NT!
+ PRU_luis_navarrete: "Luis Navarrete" #NT!
+ PRU_fernando_m_quesada_blanco: "Fernando M. Quesada Blanco" #NT!
+ PRU_alberto_lopez_flores: "Alberto López Flores" #NT!
+ PRU_oscar_benavides_larrea: "Óscar Benavides Larrea" #NT!
+ PRU_oscar_gilardi: "Óscar Gilardi" #NT!
+ PRU_vladimiro_lopez_trigoso: "Vladimiro López Trigoso" #NT!
+ PRU_manuel_odria_amoretti: "Manuel Odría Amoretti" #NT!
+ PRU_paul_de_beaudiez: "Pablo de Beaudiez" #NT!
+ PRU_eduardo_cantabria_gomez: "Eduardo Cantabria Gómez" #NT!
+ PRU_alberto_roque_saldias: "Alberto Roque Saldías" #NT!
+ PRU_felipe_tudela: "Felipe Tudela" #NT!
+ YEM_generic_fascist_demagogue: "Abu Bakr al-Hijazi" #NT!
+ YEM_generic_democratic_reformer: "Salem Bashami" #NT!
+ YEM_generic_communist_revolutionary: "Ali ibn Halil" #NT!
+ YEM_nae_m_al_abdul: "Nae'm al-Abdul" #NT!
+ YEM_cecil_barrington_hurst: "Cecil Barrington Hurst" #NT!
+ YEM_ahmad_al_hamid: "Ahmad al Hamid" #NT!
+ YEM_ahmad_bin_yaha: "Ahmad bin Yahya" #NT!
+ YEM_mansur_al_badr: "Mansur al Badr" #NT!
+ YEM_burkan_salem: "Burkan Salem" #NT!
+ YEM_jabir_khaldun: "Jabir Jaldún" #NT!
+ YEM_abd_al_husseini: "Abd al Husseini" #NT!
+ YEM_ali_halukeh: "Ali Halukeh" #NT!
+ YEM_hisham_ibn_salim: "Hisham ibn Salim" #NT!
+ YEM_hisham_ibn_uthman: "Hisham ibn Uthman" #NT!
+ YEM_ja_far_al_hijazi: "Jafar al-Hijazi" #NT!
+ YEM_sa_ud_ibn_umar: "Saud ibn Umar" #NT!
+ YEM_yusuf_ibn_khalid: "Yusuf ibn Jalid" #NT!
+ YEM_khalid_ibn_yusuf: "Jalid ibn Yusuf" #NT!
+ YEM_fuad_ibn_falil: "Fuad ibn Falil" #NT!
+ SIA_generic_fascist_demagogue: "Wichit Wichitwathakarn" #NT!
+ SIA_generic_democratic_reformer: "Seni Pramoja" #NT!
+ SIA_generic_communist_revolutionary: "Vajiravudh Chichalerm" #NT!
+ SIA_phot_bhahalyodin: "Foto Bhahalyodin" #NT!
+ SIA_kuang_abhayavongsa: "Kuang Abhayavongsa" #NT!
+ SIA_thawee_punyaketu: "Thawee Punyaketu" #NT!
+ SIA_luang_phibunsongkhram: "La isla Phibun Songkhram" #NT!
+ SIA_phraya_chitnasongkhla: "Phraya Chitnasongkhla" #NT!
+ SIA_phra_vechayanrangsarit: "El templo Vechayanrangsarit" #NT!
+ SIA_phraya_chalermarkiart: "Arte de Phraya Chalermarki" #NT!
+ SIA_phraya_wichcitcholathai: "Phraya Wichcitcholathai" #NT!
+ SIA_thawon_thamrongnawasawat: "Thawon Thamrongnawasawat" #NT!
+ SIA_tianliang_huntrakool: "Escuela de caza Tianliang" #NT!
+ SIA_sindhu_kamalanavin: "Sindhu Kamalanavin" #NT!
+ SIA_phraya_thayarnpikart: "Phraya Thayarnpikart" #NT!
+ SIA_luang_sinthusongkhramchai: "Iglesia de San Tusong Khram Chai" #NT!
+ SIA_pridi_phanomyong: "Pridi Phanomyong" #NT!
+ SIA_phraya_preechacholayudha: "Phraya Preechacholayudha" #NT!
+ SIA_manphya_khanphialong: "Manphya Khanphia a lo largo" #NT!
+ SIA_sawat_phutianands: "Phutianands de Sawat" #NT!
+ SIA_phra_silpasakrakorn: "Frase de Silpasakrakorn" #NT!
+ OMA_generic_fascist_demagogue: "Hadi Nejem" #NT!
+ OMA_generic_democratic_reformer: "Gada Saab" #NT!
+ OMA_generic_communist_revolutionary: "Fouad El-Amin" #NT!
+ OMA_khalfan_bin_master: "Khalfan bin Master" #NT!
+ OMA_marhoon_muhaid: "Marhoon Muhaid" #NT!
+ OMA_rashid_al_kharusi: "Rashid al-Kharusi" #NT!
+ OMA_musa_al_saif: "Musa al-Saif" #NT!
+ OMA_fayur_kassis: "Kassis de Fayur" #NT!
+ OMA_abdul_rahal: "Abdul Rahal" #NT!
+ OMA_abdallah_ibn_timur: "Abdullah ibn Tamerlán" #NT!
+ OMA_nasser_bazzi: "Nasser Bazzi" #NT!
+ OMA_jassim_bin_hani: "Jassim bin Hani" #NT!
+ OMA_zahir_ibn_timur: "Zahir ibn Tamerlán" #NT!
+ OMA_said_ibn_timur: "Said ibn Tamerlán" #NT!
+ OMA_angus_douglas_hamilton: "Angus Douglas Hamilton" #NT!
+ OMA_suleiman_al_ryami: "Suleiman al Ryami" #NT!
+ OMA_fawzi_ibn_timur: "Fawzi ibn Tamerlán" #NT!
+ OMA_geoffrey_claydon: "Geoffrey Claydon" #NT!
+ OMA_hafs_mohammed: "Hafs Mohammed" #NT!
+ OMA_ghassan_aly: "Ghassan Aly" #NT!
+ SIK_generic_fascist_demagogue: "Liang Wei" #NT!
+ SIK_generic_democratic_reformer: "Zhu Peng" #NT!
+ SIK_generic_communist_revolutionary: "Deng Ma" #NT!
+ SIK_isa_yusuf_alptekin: "Isa Yusuf Alptekin" #NT!
+ SIK_habibullah_huseinov: "Habibullah Huseinov" #NT!
+ SIK_zhang_xiliang: "Zhang Xiliang" #NT!
+ SIK_yol_bars: "Barras de Yol" #NT!
+ SIK_piotr_orlov: "Piotr Orlov" #NT!
+ SIK_sa_zhenbing: "Sa Zhenbing" #NT!
+ SIK_tan_ma: "Tan Ma" #NT!
+ SIK_xie_peng: "Xie Peng" #NT!
+ SIK_gao_jiang: "Gao Jiang" #NT!
+ SIK_ma_wei: "Ma Wei" #NT!
+ SIK_yang_tian: "Tian Yang" #NT!
+ SIK_deng_tian: "Deng Tian" #NT!
+ SIK_cheng_fang: "Cheng Fang" #NT!
+ SIK_mao_wu: "Mao Wu" #NT!
+ SIK_yu_wei: "Yu Wei" #NT!
+ SIK_kwong_tian: "Kwong Tian" #NT!
+ YUN_generic_fascist_demagogue: "Li Zhao" #NT!
+ YUN_generic_democratic_reformer: "Zhang Wu" #NT!
+ YUN_generic_communist_revolutionary: "Chen Dong" #NT!
+ YUN_zhou_zhirou: "Zhou Zhirou" #NT!
+ YUN_liu_wenhui: "Liu Wenhui" #NT!
+ YUN_ding_zhipan: "Ding Zhipan" #NT!
+ YUN_lu_han: "Lu Han" #NT!
+ YUN_li_jiang: "Li Jiang" #NT!
+ YUN_zhang_wu: "Zhang Wu" #NT!
+ YUN_liu_zhao: "Liu Zhao" #NT!
+ YUN_chen_zhao: "Chen Zhao" #NT!
+ YUN_huang_dong: "Huang Dong" #NT!
+ YUN_liang_peng: "Liang Peng" #NT!
+ YUN_hu_wei: "Hu Wei" #NT!
+ YUN_luo_sun: "Luo Sun" #NT!
+ YUN_wang_jiang: "Wang Jiang" #NT!
+ YUN_pan_tian: "Pan Tian" #NT!
+ YUN_zhu_hu: "Zhu Hu" #NT!
+ YUN_liao_fang: "Liao Fang" #NT!
+ URG_generic_fascist_demagogue: "Luis Santiago Reguera" #NT!
+ URG_generic_democratic_reformer: "A. Dres Gustavo" #NT!
+ URG_generic_communist_revolutionary: "Calixto Aroyo Tabaorda" #NT!
+ URG_alfredo_baldomir: "Alfredo Baldomir" #NT!
+ URG_emilio_frugoni: "Emilio Frugoni" #NT!
+ URG_horacio_arredondo: "Horacio Arredondo" #NT!
+ URG_paulo_ortega_frusci: "Paulo Ortega Frusci" #NT!
+ URG_vittorio_amato_masso: "Vittorio Amato Masso" #NT!
+ URG_ernesto_sanchez_elizondo: "Ernesto Sánchez Elizondo" #NT!
+ URG_hector_lopez_camara: "Héctor López Cámara" #NT!
+ URG_eleazar_diaz_caminate: "Eleazar Díaz Caminate" #NT!
+ URG_teo_bucardi_ramos: "Teo Bucardí Ramos" #NT!
+ URG_cosme_alvarez_berisso: "Cosme Álvarez Berisso" #NT!
+ URG_valentin_gomez: "Valentín Gómez" #NT!
+ URG_carlos_jackson_urribe: "Carlos Jackson Urribé" #NT!
+ URG_jorge_eloi_mendoza: "Jorge Eloi Mendoza" #NT!
+ URG_cantido_quintio_reyes: "Cantido Quintio Reyes" #NT!
+ URG_enrico_amancias_rodriguez: "Enrico Amancias Rodríguez" #NT!
+ URG_manuel_heinz_azpurua: "Manuel Heinz Azpurúa" #NT!
+ URG_a_martin_de_la_flores: "A. Martín de la Flores" #NT!
+ URG_carlos_neves_ochoa: "Carlos Neves Ochoa" #NT!
+ URG_rafael_marques_ayala: "Rafael Marques Ayala" #NT!
+ MON_generic_fascist_demagogue: "Canción Songgotu" #NT!
+ MON_generic_democratic_reformer: "Tsengubal Badrach" #NT!
+ MON_generic_communist_revolutionary: "Perro de caza Luvsanshara" #NT!
+ MON_dansrabilegyin_dogsam: "Perros bailando rabiosos" #NT!
+ MON_yundunwangcug: "Yundunwangcug" #NT!
+ MON_pai_yun_ti: "Pai Yun-ti" #NT!
+ MON_horloogiyn_choybalsan: "Reloj de pared Choybalsan" #NT!
+ MON_olziytrygyn_badrak: "Aceite de oliva para el baño" #NT!
+ MON_gomgchigryn_bumtsend: "El bumtsend de Gomgchigryn" #NT!
+ MON_sukhbaataryn_yanjmaa: "Sükhbaataryn Yanjmaa" #NT!
+ MON_vg_pyrselov: "V. G. Pyrselov" #NT!
+ MON_dashdorj: "Dashdorj" #NT!
+ MON_lee_shou_hsin: "Lee Shou-hsin" #NT!
+ MON_chimid: "Chimi" #NT!
+ MON_buyannmeh: "Buyannmeh" #NT!
+ MON_haidav: "Haidav" #NT!
+ MON_dagva: "Dagva" #NT!
+ MON_ganbaatar: "Ganbaatar" #NT!
+ MON_ulanhu: "Ulanhu" #NT!
+ MEN_generic_fascist_demagogue: "Deng Zhanshan" #NT!
+ MEN_generic_democratic_reformer: "Santuario de Mingzhu" #NT!
+ MEN_generic_communist_revolutionary: "Hesehn Shangzhi" #NT!
+ MEN_megata_toshiro: "Megata Toshiro" #NT!
+ MEN_nalan_kang_an: "Nalan Kang'an" #NT!
+ MEN_songgotu_zhanshan: "Songgotu Zhanshan" #NT!
+ MEN_guan_xingde: "Guan Xingde" #NT!
+ MEN_nakajima_kesago: "Nakajima Kesago" #NT!
+ MEN_yonimitsu_kasahara: "Yonimitsu Kasahara" #NT!
+ MEN_kyoiji_tomonaga: "Kyoiji Tomonaga" #NT!
+ MEN_hesehn_tiemei: "Hesehn Tiemei" #NT!
+ MEN_hung_zhehuang: "Hung Zhehuang" #NT!
+ MEN_deng_linge: "Deng Linge" #NT!
+ PAR_generic_fascist_demagogue: "Jesús Álvarez" #NT!
+ PAR_generic_democratic_reformer: "A. Dres Gustavo" #NT!
+ PAR_generic_communist_revolutionary: "Calixto Aroyo Tabaorda" #NT!
+ PAR_riccardo_odriosola: "Ricardo Odriosola" #NT!
+ PAR_remigio_bastia_martin: "Remigio Bastia Martín" #NT!
+ PAR_francisco_esculies: "Francisco Esculies" #NT!
+ PAR_juan_natalicio_gonzalez: "Juan Natalicio González" #NT!
+ PAR_higenio_morinigo_martinez: "Higenio Morinigo Martínez" #NT!
+ PAR_isaias_baez_allende: "Isaías Báez Allende" #NT!
+ PAR_amancio_pampliega: "Amancio Pampliega" #NT!
+ PAR_alfred_stroessner_matiauda: "Alfred Stroessner Matiauda" #NT!
+ PAR_vicente_almonacid: "Vicente Almonacid" #NT!
+ PAR_juan_manuel_frutos: "Juan Manuel Frutos" #NT!
+ PAR_manuel_t_aponte: "Manuel T. Aponte" #NT!
+ PAR_hernan_rojas_baltassare: "Hernan Rojas Baltassare" #NT!
+ PAR_hector_velasquez: "Héctor Velasquez" #NT!
+ PAR_jesus_g_arraza: "Jesús G. Arraza" #NT!
+ PAR_juan_stefanich: "Juan Stefanich" #NT!
+ CUB_generic_fascist_demagogue: "Juan Martines-Villera" #NT!
+ CUB_generic_democratic_reformer: "Miguel Campa y Caraveda" #NT!
+ CUB_generic_communist_revolutionary: "Antonio G. Holmes" #NT!
+ CUB_carlos_prio: "Carlos Prío" #NT!
+ CUB_gerardo_machado: "Gerardo Machado" #NT!
+ CUB_eugenio_molinet_castro: "Eugenio Molinet Castro" #NT!
+ CUB_salvador_castaneda_castro: "Salvador Castañeda Castro" #NT!
+ CUB_fulgencio_batista: "Fulgencio Batista" #NT!
+ CUB_palaez_menendez: "Palaez Menéndez" #NT!
+ CUB_domingo_r_del_toro: "Domingo R. del Toro" #NT!
+ CUB_rodrigo_a_fuentes: "Rodrigo A. Fuentes" #NT!
+ CUB_sandalio_junco: "Sandalia Junco" #NT!
+ CUB_juan_blas_hernandez: "Juan Blas Hernández" #NT!
+ CUB_fidel_castro: "Fidel Castro" #NT!
+ CUB_enrique_c_rolas: "Enrique C. Rolas" #NT!
+ CUB_angel_gonzalez: "Ángel González" #NT!
+ CUB_eduardo_chibas: "Eduardo Chibas" #NT!
+ CUB_julio_sanguily: "Julio Sanguily" #NT!
+ CUB_sergio_carbo: "Sergio Carbó" #NT!
+ GXC_generic_fascist_demagogue: "Zhao Ping" #NT!
+ GXC_generic_democratic_reformer: "El hombre de Wencheng" #NT!
+ GXC_generic_communist_revolutionary: "Liang Tao" #NT!
+ GXC_li_jishen: "Li Jishen" #NT!
+ GXC_li_zongren: "Li Zongren" #NT!
+ GXC_lei_zhong: "Lei Zhong" #NT!
+ GXC_yu_hanmou: "Yu Hanmou" #NT!
+ GXC_bai_yeung: "Bai Yeung" #NT!
+ GXC_heng_lo: "Heng Lo" #NT!
+ GXC_yang_hulin: "Yang Hulin" #NT!
+ GXC_do_liang: "Do Liang" #NT!
+ GXC_teng_qingshan: "Teng Qingshan" #NT!
+ GXC_zha_zemin: "Zha Zemin" #NT!
+ GXC_chen_jitang: "Chen Jitang" #NT!
+ GXC_huang_shaohong: "Huang Shaohong" #NT!
+ GXC_wang_shuming: "Wang Shuming" #NT!
+ GXC_niu_keung: "Niu Keung" #NT!
+ GXC_bai_chongxi: "Bai Chongxi" #NT!
+ GXC_huo_duyi: "Huo Duyi" #NT!
+ SHX_generic_fascist_demagogue: "Luo Jiang" #NT!
+ SHX_generic_democratic_reformer: "Dong Qiu Jiang" #NT!
+ SHX_generic_communist_revolutionary: "Deng Li Dong" #NT!
+ SHX_wang_zuanxu: "Wang Zuanxu" #NT!
+ SHX_fu_zuoyi: "Fu Zuoyi" #NT!
+ SHX_qu_yangke: "Qu Yangke" #NT!
+ SHX_yan_xishan: "Yan Xishan" #NT!
+ SHX_kong_fang: "Kong Fang" #NT!
+ SHX_yang_lu: "Yang Lu" #NT!
+ SHX_cheng_zhao: "Cheng Zhao" #NT!
+ SHX_huang_peng: "Huang Peng" #NT!
+ SHX_zhang_shen: "Zhang Shen" #NT!
+ SHX_min_lan_tung_tin: "Min Lang Tung Estaño" #NT!
+ SHX_tan_fang: "Tan Fang" #NT!
+ SHX_zhu_ting: "Zhu Ting" #NT!
+ SHX_xie_wei: "Xie Wei" #NT!
+ SHX_ma_tian: "Ma Tian" #NT!
+ SHX_wang_li_sun: "Wang Li Sun" #NT!
+ SHX_sun_li: "Sol Li" #NT!
+ SHX_peng_dong: "Pengdong" #NT!
+ XSM_generic_fascist_demagogue: "Mei Fai" #NT!
+ XSM_generic_democratic_reformer: "To Guowei" #NT!
+ XSM_generic_communist_revolutionary: "Jun Hsu" #NT!
+ XSM_fang_jing: "Fang Jing" #NT!
+ XSM_zi_shen: "Zi Shen" #NT!
+ XSM_li_shiqun: "Li Shiqun" #NT!
+ XSM_keng_shoushan: "Keng Shoushan" #NT!
+ XSM_ma_hongkui: "Ma Hongkui" #NT!
+ XSM_ma_donghai: "Ma Donghai" #NT!
+ XSM_wu_qi: "Wu Qi" #NT!
+ XSM_au_yongrui: "Au Yongrui" #NT!
+ XSM_ho_tengfei: "Ho Tengfei" #NT!
+ XSM_ma_hongbin: "Ma Hongbin" #NT!
+ XSM_ma_buqing: "Ma Buqing" #NT!
+ XSM_may_chongan: "Mayo Chongan" #NT!
+ XSM_chun_minsheng: "Chun Minsheng" #NT!
+ XSM_lian_zenguang: "Lian Zenguang" #NT!
+ XSM_keng_gui: "Keng Gui" #NT!
+ GUA_generic_fascist_demagogue: "Manuel Arroyo" #NT!
+ GUA_generic_democratic_reformer: "Enrique Muñoz Meany" #NT!
+ GUA_generic_communist_revolutionary: "Carlos Argumedo Salazar" #NT!
+ GUA_eduardo_villagran_ariza: "Eduardo Villagrán Ariza" #NT!
+ GUA_juan_arevalo_bermejo: "Juan Arévalo Bermejo" #NT!
+ GUA_manuel_arroyo: "Manuel Arroyo" #NT!
+ GUA_federico_ponce_vaides: "Federico Ponce Vaides" #NT!
+ GUA_jacopo_arbenz_guzman: "Jacopo Arbenz Guzmán." #NT!
+ GUA_r_buenaventure_pineda: "R. Buenaventura Pineda" #NT!
+ GUA_francisco_javier_arana: "Francisco Javier Arana" #NT!
+ GUA_tomas_mendoza_urribe: "Tomás Mendoza Urribe" #NT!
+ GUA_jorge_torriello_garrido: "Jorge Torriello Garrido" #NT!
+ GUA_manuel_orellana: "Manuel Orellana" #NT!
+ GUA_carlos_diaz_de_leon: "Carlos Díaz de León" #NT!
+ GUA_miguel_garcia_granados: "Miguel García Granados" #NT!
+ GUA_jose_ezuira_abel: "José Ezuira Abel" #NT!
+ GUA_m_ydigaras_fuentes: "M. Ydigaras Fuentes" #NT!
+ GUA_w_tesch_orlando: "W. Tesch Orlando" #NT!
+ HON_generic_fascist_demagogue: "Enzo Coito" #NT!
+ HON_generic_democratic_reformer: "Nerón Meléndez" #NT!
+ HON_generic_communist_revolutionary: "José Chavarín" #NT!
+ HON_carlos_alberto_ucles: "Carlos Alberto Uclés" #NT!
+ HON_roberto_michelleti_bain: "Roberto Michelleti Bain" #NT!
+ HON_orlando_rodriguez_jimino: "Orlando Rodríguez Jimino" #NT!
+ HON_abraham_williams_calderon: "Abraham Williams Calderón" #NT!
+ HON_hernan_fernandez_silva: "Hernán Fernández Silva" #NT!
+ HON_juan_b_valladares: "Juan B. Valladares" #NT!
+ HON_rufio_villegas: "Rufio Villegas" #NT!
+ HON_carlos_molina_dejonje: "Carlos Molina Dejonje" #NT!
+ HON_gustavo_schmidt: "Gustavo Schmidt" #NT!
+ HON_neto_britto: "Neto Britto" #NT!
+ HON_oswaldo_lopez_arellano: "Oswaldo López Arellano" #NT!
+ HON_teodore_alberto: "Teodoro Alberto" #NT!
+ HON_raimundo_stochler_garcia: "Raimundo Stochler García" #NT!
+ HON_jose_zuniga_huete: "José Zúñiga Huete" #NT!
+ HON_enrique_doll_rojas: "Enrique Muñeca Rojas" #NT!
+ HON_didier_masson: "Didier Masson" #NT!
+ HON_miguel_angel_sevilla: "Miguel Ángel Sevilla" #NT!
+ HON_carlos_vaupel_comeza: "Carlos Vaupel Comeza" #NT!
+ HON_francisco_s_tapio_toro: "Francisco S. Tapio Toro" #NT!
+ NEP_generic_fascist_demagogue: "Aakash Pariyar" #NT!
+ NEP_generic_democratic_reformer: "Bikash Tharu" #NT!
+ NEP_generic_communist_revolutionary: "Tamang Ramchandra" #NT!
+ NEP_sidney_r_planter: "Sidney R. Planter" #NT!
+ NEP_w_r_parker_gill: "W.R. Parker-Gill" #NT!
+ NEP_william_stevenson_meyer: "William Stevenson Meyer" #NT!
+ NEP_robert_mainwaring: "Robert Mainwaring" #NT!
+ NEP_gehendra_rana: "Rana Gehendra" #NT!
+ NEP_h_t_s_collins: "HTS Collins" #NT!
+ NEP_khusbu_singh: "Khusbu Singh" #NT!
+ NEP_birsha_gurung: "Gurung de Birsha" #NT!
+ NEP_hira_rana: "Rana Hira" #NT!
+ NEP_gagan_lama: "Lama Gagan" #NT!
+ NEP_mohan_rana: "Rana de Mohan" #NT!
+ NEP_baber_rana: "Rana bebé" #NT!
+ NEP_l_m_potter: "L. M. Potter" #NT!
+ NEP_kiran_rana: "Rana Kiran" #NT!
+ NEP_walter_morriano: "Walter Morriano" #NT!
+ NEP_rudra_rana: "Rana Rudra" #NT!
+ NEP_alaap_lokesh: "Alaap Lokesh" #NT!
+ LIB_generic_fascist_demagogue: "Ebenezer Cailloux" #NT!
+ LIB_generic_democratic_reformer: "Clarence L. Simpson" #NT!
+ LIB_generic_communist_revolutionary: "Robert Ratcliff" #NT!
+ LIB_william_s_tubman: "William Tubman" #NT!
+ LIB_albert_porte: "Albert Puerta" #NT!
+ LIB_arthur_sweetser: "Arthur Sweetser" #NT!
+ LIB_benjamin_o_davis: "Benjamín O. Davis" #NT!
+ LIB_iver_virgin: "Virgen de Iver" #NT!
+ LIB_won_loy_chan: "Ganó Loy Chan" #NT!
+ LIB_george_remond: "George Remond" #NT!
+ LIB_reginald_brandon: "Reginald Brandon" #NT!
+ LIB_james_brooks: "James Brooks" #NT!
+ LIB_john__r_fox: "Juan R. Fox" #NT!
+ LIB_edgar_cailloux: "Edgar Cailloux" #NT!
+ LIB_benton_stukes: "Estucos de Benton" #NT!
+ LIB_samuel_nell: "Samuel Nell" #NT!
+ LIB_andre_fields: "André Campos" #NT!
+ LIB_aaron_pinn: "Aarón Pinn" #NT!
+ LIB_stewart_holland: "Stewart Holanda" #NT!
+ LIB_joseph_smith: "José Smith" #NT!
+ LIB_edgar_veale: "Edgar Veale" #NT!
+ PAN_generic_fascist_demagogue: "Diego Miedo" #NT!
+ PAN_generic_democratic_reformer: "Juan Deag" #NT!
+ PAN_generic_communist_revolutionary: "Héctor Sanches" #NT!
+ PAN_nicolas_ardito_barletta: "Nicolás Ardito Barletta" #NT!
+ PAN_victor_pareja: "Víctor Pareja" #NT!
+ PAN_jose_pezet: "José Pezet" #NT!
+ PAN_enrique_jimenez_brin: "Enrique Jiménez Brín" #NT!
+ PAN_marcos_a_gelabert: "Marcos A. Gelabert" #NT!
+ PAN_arturo_osborne_irraga: "Arturo Osborne Irragá" #NT!
+ PAN_omar_torrijos: "Omar Torrijos" #NT!
+ PAN_bolivar_villarino: "Bolívar Villarino" #NT!
+ PAN_margarita_belloso_jimenez: "Margarita Belloso Jiménez" #NT!
+ PAN_nestor_urribe_suarez: "Néstor Urribe Suárez" #NT!
+ PAN_juan_jose_parada: "Juan José Parada" #NT!
+ PAN_enrico_fabrego_paz: "Enrico Fabrego Paz" #NT!
+ PAN_manuel_rios_urribe: "Manuel Ríos Urribe" #NT!
+ PAN_juan_remon: "Juan Remón" #NT!
+ PAN_carlos_zavala: "Carlos Zavala" #NT!
+ PAN_juan_a_hernandez: "Juan A. Hernández" #NT!
+ PAN_ferdinando_hernandez_ytuarte: "Ferdinando Hernández Ytuarte" #NT!
+ PER_generic_fascist_demagogue: "Ahmad Matin-Daftary" #NT!
+ PER_generic_democratic_reformer: "Mohammed Ali Foroughi" #NT!
+ PER_generic_communist_revolutionary: "Mohammed Reza Mansour" #NT!
+ PER_ali_zohayli: "Ali Zohayli" #NT!
+ PER_mahmud_jam: "Jamón Mahmud" #NT!
+ PER_ali_khan_mansour: "Ali Khan Mansur" #NT!
+ PER_abdolreza_afkhami: "Abdolreza Afkhami" #NT!
+ PER_hassan_majid_firooz: "Hassan Majid Firooz" #NT!
+ PER_ahmad_khan_nakhjavan: "Ahmad Khan Nakhjavan" #NT!
+ PER_mohammed_nakhjavani: "Mohammed Nakhjavani" #NT!
+ PER_ahmad_khan_nakhjaavan: "Ahmad Khan Nakhjaavan" #NT!
+ PER_reza_mizani: "Reza Mizani" #NT!
+ PER_mir_afkhami: "Mir Afkhami" #NT!
+ PER_fazlollah_zahedi: "Fazlollah Zahedi" #NT!
+ PER_ali_razmara: "Ali Razmara" #NT!
+ PER_ahmad_mira_khosravani: "Ahmad Mira Khosravani" #NT!
+ PER_mohammed_reza_pahlavi: "Mohamed Reza Pahlavi" #NT!
+ PER_hossein_afkhami: "Hossein Afkhami" #NT!
+ PER_ali_akbar_deiva: "Deiva Ali Akbar" #NT!
+ TIB_generic_fascist_demagogue: "Yonten Rinpoche" #NT!
+ TIB_generic_democratic_reformer: "Gyaltsen Tenzin Namdak" #NT!
+ TIB_generic_communist_revolutionary: "Jampa Namdrol" #NT!
+ TIB_taktra_rinpoche: "Taktra Rinpoché" #NT!
+ TIB_jigme_taring: "Jigme Taring" #NT!
+ TIB_reting_rimpoche: "Reting Rimpoché" #NT!
+ TIB_gyato_wangdu: "Gyato Wangdu" #NT!
+ TIB_sampo_tsewang_rigzin: "Sampo Tsewang Rigzin" #NT!
+ TIB_chama_samphe: "Chama Samphe" #NT!
+ TIB_khemey_sonam_wangdi: "Khemey Sonam Wangdi" #NT!
+ TIB_chaghoe_namgyal_dorje: "Dorje de Chaghoe Namgyal" #NT!
+ TIB_tenpa_jamyang: "Tenpa Jamyang" #NT!
+ TIB_jamyang_rabten: "Rabten de Jamyang" #NT!
+ TIB_lobsang_tenzin: "Padre Yeshe" #NT!
+ TIB_jampal_rabgye_rinpoche: "Jampal Rabgyé Rinpoche" #NT!
+ TIB_bapa_yeshe: "Padre Yeshe" #NT!
+ TIB_chodak_karma: "Karma Chodak" #NT!
+ TIB_lhalu_tsewang_dorje: "Dorje de Lhalu Tsewang" #NT!
+ TIB_sogyal_rinpoche: "Sogyal Rimpoché" #NT!
+ DOM_generic_fascist_demagogue: "Mariano Henríquez" #NT!
+ DOM_generic_democratic_reformer: "Juan Bosch" #NT!
+ DOM_generic_communist_revolutionary: "Francisco Prats Ramírez" #NT!
+ DOM_jacinto_bienvenido_peynado: "Jacinto Bienvenido Peynado" #NT!
+ DOM_elias_brache: "Elías Brache" #NT!
+ DOM_manuel_de_jesus_troncoso: "Manuel de Jesús Troncoso" #NT!
+ DOM_victor_vinas_roman: "Víctor Viñas Román" #NT!
+ DOM_domingo_de_los_santos_ortiz: "Domingo de los Santos Ortiz" #NT!
+ DOM_anibal_vallejo_sosa: "Aníbal Vallejo Sosa" #NT!
+ DOM_julio_ortega_frier: "Julio Ortega Frier" #NT!
+ DOM_humberto_rojas: "Humberto Rojas" #NT!
+ DOM_honoracio_yuna_robles: "Honoracio Yuna Robles" #NT!
+ DOM_jesus_da_costa_ruiz: "Jesús da Costa-Ruiz" #NT!
+ DOM_edgar_martinez: "Edgar Martínez" #NT!
+ DOM_diego_trabajo_ruiz: "Diego Trabajo Ruiz" #NT!
+ DOM_frank_feliz_miranda: "Frank Feliz Miranda" #NT!
+ DOM_manuel_pena_battle: "Batalla de Manuel Peña" #NT!
+ DOM_gerardo_espaillat: "Gerardo Espaillat" #NT!
+ DOM_jose_miguel_moncada: "José Miguel Moncada" #NT!
+ HAI_generic_fascist_demagogue: "David Dacelus" #NT!
+ HAI_generic_democratic_reformer: "Stevenson Ilorsaint" #NT!
+ HAI_generic_communist_revolutionary: "Najac Pierre" #NT!
+ HAI_luis_dabtes_bellegarde: "Luis Dabtes Bellegarde" #NT!
+ HAI_louis_dejoie: "Luis Dejoie" #NT!
+ HAI_demosthenes_calixte: "Demóstenes Calixte" #NT!
+ HAI_emilie_lescot: "Émilie Lescot" #NT!
+ HAI_pascale_b_g_guillaume: "Pascalé B. G. Guillaume" #NT!
+ HAI_georges_leger: "Georges Leger" #NT!
+ HAI_ernst_severe: "Ernst Severo" #NT!
+ HAI_paul_magloire: "Pablo Magloire" #NT!
+ HAI_andre_dumont: "André Dumont" #NT!
+ HAI_belmeau_max_pierre: "Belmeau Max-Pierre" #NT!
+ HAI_franck_lavaud: "Franck Lavaud" #NT!
+ HAI_antoine_levelt: "Antoine Levelt" #NT!
+ HAI_g_edouard_roy: "G.Edouard Roy" #NT!
+ HAI_charles_h_forbin: "Charles H. Forbin" #NT!
+ HAI_andre_sainte_frederic: "André Sainté Frederic" #NT!
+ HAI_raymond_gassner: "Raymond Gassner" #NT!
+ FRA_AMX: "AMX" #NT!
+ FRA_AMX_desc: "Taller de construcción de Issy-les-Moulineaux" #NT!
+ FRA_gaston_henry_haye: "Gastón Henry-Haye" #NT!
+ FRA_jacques_duclos: "Jacques Duclos" #NT!
+ FRA_paul_baudouin: "Pablo Balduino" #NT!
+ FRA_zivony_peshkov: "Zivoni Peshkov" #NT!
+ FRA_felix_gouin: "Félix Gouin" #NT!
+ FRA_charles_tillon: "Charles Tillon" #NT!
+ FRA_paul_reynaud: "Pablo Reynaud" #NT!
+ FRA_henri_marie_auguste_bineau: "Henri Marie Auguste Bineau" #NT!
+ FRA_pierre_alombert_goget: "Pierre Alombert Goget" #NT!
+ FRA_support_the_left_focus: "Apoyar a la izquierda" #NT!
+ FRA_national_mobilization_focus: "Movilización nacional" #NT!
+ FRA_support_the_centre_focus: "Apoye al Centro" #NT!
+ FRA_strengthen_government_support_focus: "Fortalecer el apoyo gubernamental" #NT!
+ FRA_scw_intervention_republicans_focus: "Intervención en la Guerra Civil Española" #NT!
+ FRA_victors_of_wwi: "Vencedores de la Gran Guerra" #NT!
+ FRA_victors_of_wwi_desc: "Tras salir victorioso de la Gran Guerra, el ejército ha desarrollado una actitud peligrosamente complaciente que hace que los avances estratégicos se produzcan lentamente y con cierta renuencia." #NT!
+ FRA_disjointed_government: "Gobierno desarticulado" #NT!
+ FRA_disjointed_government_desc: "La situación de la política francesa dista mucho de ser estable. Si bien las reformas son necesarias y bienvenidas, la nación está dividida y verse arrastrada a un conflicto la pondría en gran riesgo." #NT!
+ FRA_protected_by_the_maginot_line: "Protegido por la Línea Maginot" #NT!
+ FRA_protected_by_the_maginot_line_desc: "Haber fortificado la frontera le da a Francia la oportunidad de planificar y prepararse cuidadosamente, pero sacrifica cierta flexibilidad en caso de que ocurra algo inesperado." #NT!
+ FRA_support_the_right_focus: "Apoyar el derecho" #NT!
+ FRA_scw_intervention_nationalists_focus: "Intervención en la Guerra Civil Española" #NT!
+ FRA_army_of_aggression_focus: "Ejército de agresión" #NT!
+ FRA_factory_strikes: "Huelgas en fábricas" #NT!
+ FRA_matignon_agreements: "Acuerdos de Matignon" #NT!
+ FRA_communism_banned: "SocialismoProhibido" #NT!
+ ENG_colonial_elite: "Élite colonial" #NT!
+ ENG_king_edward: "Eduardo VIII" #NT!
+ ENG_king_edward_fascism: "Eduardo VIII" #NT!
+ ENG_george_vi: "Jorge VI" #NT!
+ ENG_george_vi_desc: "El primer jefe de la Commonwealth y último emperador de la India sigue siendo considerado heredero de un gran legado. Al igual que su padre, es una figura popular y unificadora del pueblo británico." #NT!
+ ENG_continuation_of_politics: "Continuación de la política" #NT!
+ ENG_guided_by_britain: "Guiados por Gran Bretaña" #NT!
+ ENG_the_mosley_memorandum_idea: "El memorando de Mosley" #NT!
+ ENG_david_stirling: "David Stirling" #NT!
+ ENG_continuation_of_politics_desc: "Ha resultado fácil obtener el apoyo de la gente para la intervención en países clave donde las tendencias políticas difieren de las nuestras. Podemos usar esto a nuestro favor." #NT!
+ SELECT_DESIGN_COMPANY_DESC: "Al seleccionar esta §YEmpresa de diseño§! afectarán permanentemente las capacidades de todos los equipos investigados mientras estén contratados.\n" #NT!
+ DESIGN_COMPANY_DESC: "\nEsta §YCompañía de Diseño§! afectará permanentemente las capacidades de todos los equipos investigados mientras estén activos." #NT!
+ SOV_lavrentiy_beria: "Lavrenti Beria" #NT!
+ SOV_beria_idea: "Nikolai Yezhov destituido del gobierno\n" #NT!
+ SOV_vyacheslav_molotov: "Viacheslav Molotov" #NT!
+ SOV_nikolai_voznesensky: "Nikolai Voznesenski" #NT!
+ SOV_nikolai_yezhov: "Nikolai Yezhov" #NT!
+ SOV_molotov_ribbentrop_pact: "Pacto Molotov-Ribbentrop" #NT!
+ SOV_scientist_defect: "Los científicos desertan" #NT!
+ USA_robert_taft: "Roberto Taft" #NT!
+ USA_john_winant: "Juan Winant" #NT!
+ USA_cordell_hull: "Casco Cordell" #NT!
+ USA_henry_stimson: "Henry Stimson" #NT!
+ USA_donald_nelson: "Donald Nelson" #NT!
+ USA_william_regnery: "William H. Regnery" #NT!
+ USA_joseph_patterson: "José Patterson" #NT!
+ USA_world_police: "Destino manifiesto" #NT!
+ american_influence_defence_democratic: "Influencia de EE.UU." #NT!
+ american_influence_drift_democratic: "Influencia de EE.UU." #NT!
+ american_protection_drift_democratic: "Bajo protección de EE.UU." #NT!
+ american_protection_drift_democratic_desc: "Si un país americano declara la guerra a este país @USA §YUnited States§! puede intervenir." #NT!
+ american_protection_defence_democratic: "Bajo protección de EE.UU." #NT!
+ american_protection_defence_democratic_desc: "Si un país americano declara la guerra a este país @USA §YUnited States§! puede intervenir." #NT!
+ american_influence_defence_communism: "Influencia de EE.UU." #NT!
+ american_influence_drift_communism: "Influencia de EE.UU." #NT!
+ american_protection_drift_communism: "Bajo protección de EE.UU." #NT!
+ american_protection_drift_communism_desc: "Si un país americano declara la guerra a este país @USA §YUnited States§! puede intervenir." #NT!
+ american_protection_defence_communism: "Bajo protección de EE.UU." #NT!
+ american_protection_defence_communism_desc: "Si un país americano declara la guerra a este país @USA §YUnited States§! puede intervenir." #NT!
+ american_influence_defence_fascism: "Influencia de EE.UU." #NT!
+ american_influence_drift_fascism: "Influencia de EE.UU." #NT!
+ american_protection_drift_fascism: "Bajo protección de EE.UU." #NT!
+ american_protection_drift_fascism_desc: "Si un país americano declara la guerra a este país @USA §YEstados Unidos§! puede intervenir." #NT!
+ american_protection_defence_fascism: "Bajo protección de EE.UU." #NT!
+ american_protection_defence_fascism_desc: "Si un país americano declara la guerra a este país @USA §YUnited States§! puede intervenir." #NT!
+ ITA_giovanni_marinelli: "Giovanni Marinelli" #NT!
+ ITA_gian_galeazzo_ciano: "Gian Galeazzo Ciano" #NT!
+ ITA_roberto_farinacci: "Roberto Farinacci" #NT!
+ ITA_dino_grandi: "Dino Grandi" #NT!
+ ITA_serafino_mazzolini: "Serafino Mazzolini" #NT!
+ ITA_giacomo_acerbo: "Giacomo Acerbo" #NT!
+ ITA_luigi_einaudi: "Luigi Einaudi" #NT!
+ ITA_junio_valerio_borghese: "Junio ​​Valerio Borghese" #NT!
+ ITA_paolo_thaon_di_revel: "Pablo Thaon de Revel" #NT!
+ ITA_german_millitary_cooperation_focus: "Cooperación militar alemana" #NT!
+ JAP_mitsumasa_yonai: "Mitsumasa Yonai" #NT!
+ JAP_hiroshi_oshima: "Hiroshi Oshima" #NT!
+ JAP_chiune_sugihara: "Chiune Sugihara" #NT!
+ JAP_idemitsu_kosan: "Idemitsu Kosan" #NT!
+ ENG_philip_kerr: "Philip Kerr" #NT!
+ ENG_nevile_henderson: "Nevile Henderson" #NT!
+ ENG_maxwell_aitken: "Maxwell Aitken" #NT!
+ ENG_leslie_hore_belisha: "Leslie Hore" #NT!
+ ENG_ernest_bevin: "Ernesto Bevin" #NT!
+ ENG_the_war_to_end_all_wars: "La guerra que acabaría con todas las guerras" #NT!
+ ENG_the_war_to_end_all_wars_desc: "Con la Gran Guerra en la memoria reciente, tanto los habitantes como los líderes del país se muestran reacios a enviar a otra generación a morir en las trincheras." #NT!
+ communist_pressure: "Presión socialista" #NT!
+ rhineland_challenge_met: "Desafío de Renania superado" #NT!
+ rhineland_challenge_met_desc: "Tras las predicciones de que Renania podría ser remilitarizada sin la intervención de los Aliados, Alemania acabó siendo presionada a dar marcha atrás después de que esto resultó ser un error." #NT!
+ kaiser_challenge_met: "Desafío Kaiser cumplido" #NT!
+ kaiser_challenge_met_desc: "Después de las predicciones de que el Káiser podría liberarse de los Países Bajos sin la intervención de los Aliados, Alemania terminó siendo presionada a dar marcha atrás después de que esto resultó ser un error." #NT!
+ fascist_revolutionaries: "Revolucionarios liberales" #NT!
+ fascist_revolutionaries_desc: "Si el apoyo al liberalismo supera el 70%, el país se hundirá en una guerra civil. Si el apoyo al liberalismo cae por debajo del 30%, la actividad revolucionaria se detendrá." #NT!
+ communist_revolutionaries: "Revolucionarios socialistas" #NT!
+ communist_revolutionaries_desc: "Si el apoyo al socialismo supera el 70%, el país se verá sumido en una guerra civil. Si el apoyo al socialismo cae por debajo del 30%, la actividad revolucionaria se detendrá." #NT!
+ democratic_revolutionaries: "Revolucionarios conservadores" #NT!
+ democratic_revolutionaries_desc: "Si el apoyo al conservadurismo supera el 70%, el país se verá sumido en una guerra civil. Si el apoyo al conservadurismo cae por debajo del 30%, la actividad revolucionaria se detendrá." #NT!
+ home_of_the_free: "Hogar de la libertad" #NT!
+ home_of_the_free_desc: "Estados Unidos se considera un bastión y tal vez incluso la cuna del conservadurismo y la libertad. Sea cual sea su elección, sus valores son difíciles de transigir, por muy tentadoras que puedan parecer algunas oportunidades." #NT!
+ closed_economy_TT: "No se exportarán recursos.\n\n" #NT!
+ danieli: "Danieli" #NT!
+ fascism_defeated: "El liberalismo derrotado" #NT!
+ fascism_defeated_desc: "El conservadurismo ha triunfado sobre el liberalismo totalitario y los partidos conservadores están unidos contra esta vieja amenaza." #NT!
+ communism_defeated: "El socialismo derrotado" #NT!
+ communism_defeated_desc: "El conservadurismo ha triunfado sobre el socialismo totalitario y los partidos conservadores están unidos contra esta vieja amenaza." #NT!
+ reign_of_terror: "El reinado del terror" #NT!
+ reign_of_terror_desc: "El régimen actual, que recientemente llegó al poder, es implacable en la persecución de sus enemigos y elimina la oposición antes de que surja." #NT!
+ anti_german_military: "Militares antialemanes" #NT!
+ anti_german_military_desc: "Algunas facciones dentro de la Fuerza Aérea Yugoslava se oponen a cooperar con Alemania. Pueden intentar derrocar al régimen si el país abre sus fronteras o entra en una alianza con el Tercer Reich." #NT!
+ anti_nazi_coup: "Golpe de Estado Antinazi" #NT!
+ anti_nazi_coup_desc: "Tras derrocar al Príncipe Pablo para impedir la cooperación con Alemania, el nuevo régimen se opone a la diplomacia proliberalista." #NT!
+ AST_indonesian_nationalists: "Nacionalistas indonesios" #NT!
+ shattered_government: "Gobierno destrozado" #NT!
+ synarchist_support_surge: "Aumento del apoyo sinarquista" #NT!
+ BLR_generic_fascist_demagogue: "Fabián Akinczyc" #NT!
+ BLR_generic_communist_revolutionary: "Alexéi Volkov" #NT!
+ BLR_generic_democratic_reformer: "Mikola Abramchyk" #NT!
+ BLR_boris_berman: "Boris Berman" #NT!
+ BLR_jozeph_ryzhykov: "José Ryzhykov" #NT!
+ BLR_aleksei_antonov: "Alexéi Antonov" #NT!
+ BLR_stepan_krasovsky: "Stepán Krasovsky" #NT!
+ BLR_vasily_sokolovsky: "Vasili Sokolovski" #NT!
+ BLR_ivan_yakubovsky: "Iván Yakubovsky" #NT!
+ BLR_ivan_pstygo: "Iván Pstygo" #NT!
+ BLR_fedor_dobysh: "Fedor Dobysh" #NT!
+ BLR_valentin_drozd: "Valentín Drozd" #NT!
+ BLR_georgy_holostyakov: "Georgiy Golostiakov" #NT!
+ BLR_piotr_kozlov: "Piotr Kozlov" #NT!
+ BLR_alexander_akulich: "Alejandro Akulich" #NT!
+ BLR_maksim_antonyuk: "Maxim Antonyuk" #NT!
+ MAN_megata_toshiro: "Megata Toshiro" #NT!
+ MAN_nalan_kang_an: "Nalan Kang-an" #NT!
+ MAN_songgotu_zhanshan: "Songgotu Zhanshan" #NT!
+ MAN_guan_xingde: "Guan Xingde" #NT!
+ MAN_nakajima_kesago: "Nakajima Kesago" #NT!
+ MAN_yonimitsu_kasahara: "Yonimitsu Kasahara" #NT!
+ MAN_kyoiji_tomonaga: "Kyoiji Tomonaga" #NT!
+ MAN_hesehn_tiemei: "Hesehn Tiemei" #NT!
+ MAN_hung_zhehuang: "Hung Zhehuang" #NT!
+ MAN_deng_linge: "Deng Linge" #NT!
+ MAN_yin_zuoqian: "Yin Zuoqian" #NT!
+ ishapore_rifle_factory: "Fábrica de fusiles de Ishapore" #NT!
+ ordnance_factories_board: "Junta de fábricas de artillería" #NT!
+ hindustan_aircraft: "Corporación Aeronáutica Hindustan" #NT!
+ scindia_shipyard: "Astillero Scindia" #NT!
+ garden_reach_shipbuilders: "Constructores navales de Garden Reach" #NT!
+ mazagon_dock_limited: "Muelle de Mazagon Limitada" #NT!
+ NZL_wairarapa_ranches: "Ranchos Wairarapa" #NT!
+ NZL_st_mary_bay_ship: "Construcción naval de la bahía de Santa María" #NT!
+ NZL_port_chalmers_shipbuilding: "Construcción naval de Port Chalmers" #NT!
+ NZL_charlton_mw: "Talleres de automóviles Charlton" #NT!
+ NZL_nz_railways: "Ferrocarriles de Nueva Zelanda" #NT!
+ NZL_christchurch_workshops: "Talleres en Christchurch" #NT!
+ lithgow_saf: "Fábrica de armas pequeñas de Lithgow" #NT!
+ lysaghts_works: "Obras de Lysagth" #NT!
+ new_south_wales_rc: "Compañía de Ferrocarriles de Nueva Gales del Sur" #NT!
+ bhp_steel: "Acero BHP" #NT!
+ Cockatoo_doe: "Muelles y Ingeniería de Cockatoo" #NT!
+ evans_deakin_co: "Evans Deakin & Compañía" #NT!
+ montreal_lab: "Laboratorio de Montreal" #NT!
+ polymer_corporation: "Corporación de polímeros" #NT!
+ inglis_company: "John Inglis y compañía" #NT!
+ small_arms_limited: "Armas pequeñas limitadas" #NT!
+ communism_banned: "SocialismoProhibido" #NT!
+ fascism_banned: "El liberalismo prohibido" #NT!
+ takuo_godo: "Takuo Godo" #NT!
+ race_for_the_bomb: "Carrera por la bomba" #NT!
+ race_for_the_bomb_desc: "Hemos asumido la responsabilidad de ser la primera nación en desplegar con éxito un arma atómica." #NT!
+ race_for_the_bomb_outclassed: "La bomba se escapa" #NT!
+ race_for_the_bomb_outclassed_desc: "Otra nación nos ha ganado de mano. Debemos redoblar nuestros esfuerzos a cualquier precio para lograr la seguridad estratégica y reducir la vergüenza nacional." #NT!
+ GER_atlantikwall_idea: "Construcción de Atlanticwall" #NT!
+ GER_autarky_idea: "Autarquía" #NT!
+ GER_ostwall_idea: "Construcción Ostwall" #NT!
+ GER_align_hungary_unaligned: "Alinear Hungría" #NT!
+ GER_align_hungary_democratic: "Alinear Hungría" #NT!
+ GER_align_romania_unaligned: "Alinear Rumania" #NT!
+ GER_align_romania_democratic: "Alinear Rumania" #NT!
+ GER_rebuild_the_nation2: "Reconstruir la nación" #NT!
+ GER_rebuild_the_nation3: "Reconstruir la nación" #NT!
+ GER_rebuild_the_nation4: "Reconstruir la nación" #NT!
+ GER_rebuild_the_nation5: "Baluarte contra el bolchevismo" #NT!
+ GER_national_revitalization: "Revitalización nacional" #NT!
+ GER_national_revitalization2: "Revitalización Nacional" #NT!
+ GER_national_revitalization3: "Revitalización nacional" #NT!
+ GER_national_revitalization4: "Revitalización nacional" #NT!
+ GER_revive_the_kaiserreich2: "Revivir el Kaiserreich" #NT!
+ GER_communist_refugees: "Refugiados socialistas" #NT!
+ GER_redirecting_naval_production: "Reorientación de la producción naval" #NT!
+ GER_wilhelm_iii: "Guillermo III" #NT!
+ GER_preparing_ITA_coup: "Crecientes sentimientos monárquicos" #NT!
+ GER_preparing_ITA_coup2: "Crecientes sentimientos monárquicos" #NT!
+ GER_soviet_protect_our_sphere: "Proteger nuestra esfera de influencia" #NT!
+ GER_reinstated_nazi_leadership: "Liderazgo nazi reinstaurado" #NT!
+ GER_jaegernotprogramm: "Programa Jägernot" #NT!
+ GER_barbarossa: "Empresa Barbarroja" #NT!
+ GER_dismantle_maginot: "Desmantelar la Línea Maginot" #NT!
+ GER_dismantle_czechoslovakian_forts: "Desmantelar los fuertes checoslovacos" #NT!
+ GER_FIN_industrial_support: "Apoyo industrial alemán" #NT!
+ fascism_drift_ARG: "Influencias liberales" #NT!
+ GER_mefo_bills: "Facturas de MEFO" #NT!
+ GER_mefo_bills_desc: "Los billetes MEFO eran pagarés creados por Hjalmar Schacht para permitir al gobierno financiar el rearme, actuando a través de la entidad de balance Metallurgische Forschungsgesellschaft para ocultar este rearme a los ojos franceses y británicos. Estas facturas deberán prorrogarse por períodos de seis meses, o de lo contrario habrá que pagar a sus destinatarios cuando venzan." #NT!
+ GER_mefo_bills_instant_desc: "\n§RIr a la guerra eliminará la dependencia de las facturas MEFO, además de retrasar el requisito de pagarlas hasta que concluya la guerra.§!" #NT!
+ GER_mefo_bills_ended: "Pagos de facturas de MEFO" #NT!
+ CHI_hanyan_arsenal: "Arsenal de Hanyan" #NT!
+ dagu_shipyard: "Astillero Dagu" #NT!
+ CHI_liaoning_arsenal: "Arsenal de Liaoning" #NT!
+ CHI_mukden_arsenal: "Arsenal de Mukden" #NT!
+ MAN_manshu: "Manshu" #NT!
+ MAN_south_manchuria_railway_company: "Compañía ferroviaria del sur de Manchuria" #NT!
+ MAN_western_refinery: "Refinería occidental" #NT!
+ MAN_showa_steel_works: "Acerías Anshan" #NT!
+ CHI_illegal_regime: "Régimen ilegal" #NT!
+ USA_henry_morgenthau: "Henry Morgenthau Jr." #NT!
+ great_depression_2: "Recuperación lenta" #NT!
+ great_depression_3: "Crecimiento económico lento" #NT!
+ USA_joseph_mccarthy: "José McCarthy" #NT!
+ USA_charles_lindbergh: "Charles Lindbergh" #NT!
+ USA_general_motors: "Motores generales" #NT!
+ USA_union_pacific_railway: "Ferrocarril Union Pacific" #NT!
+ detroit_arsenal: "Arsenal de Detroit" #NT!
+ tank_destroyer_board: "Tablero del destructor de tanques" #NT!
+ USA_adjusted_compensation_payment: "Pago de compensación ajustado" #NT!
+ USA_great_depression_down_tt: "Reduce el efecto de la Gran Depresión." #NT!
+ USA_state_funds_refused: "Fondos estatales retenidos" #NT!
+ USA_the_pentagon: "El pentágono" #NT!
+ USA_banking_sector_deregulation: "Sector bancario desregulado" #NT!
+ USA_privatization: "Privatización de empresas estatales" #NT!
+ USA_gold_standard: "Sobre el patrón oro" #NT!
+ CSA_spirit_of_rebellion: "Espíritu de rebelión" #NT!
+ harry_white: "Harry blanco" #NT!
+ victor_perlo: "Víctor Perlo" #NT!
+ whittaker_chambers: "Cámaras Whittaker" #NT!
+ walter_krueger: "Walter Krueger" #NT!
+ USA_armed_forces_desegregation: "Desegregación en las Fuerzas Armadas" #NT!
+ ENG_mary_sophia_allen: "María Sofía Allen" #NT!
+ ENG_george_orwell: "George Orwell" #NT!
+ ENG_sylvia_pankhurst: "Sylvia Pankhurst" #NT!
+ ENG_winston_churchill: "Winston Churchil" #NT!
+ ENG_oswald_mosley: "Oswald Mosley" #NT!
+ ENG_david_lloyd_george: "David Lloyd George" #NT!
+ ENG_corgis_2: "Galleta" #NT!
+ ENG_corgis_3: "Jane" #NT!
+ ENG_corgis_1: "Galletas" #NT!
+ ENG_jfc_fuller: "J. F. C. Fuller" #NT!
+ HOL_jan_goudriaan: "Jan Goudriaan" #NT!
+ HOL_cornelis_van_geelkerken: "Cornelis van Geelkerken" #NT!
+ HOL_jacob_adriaan_de_wilde: "Jacob Adrian de Wilde" #NT!
+ HOL_antonie_pannekoek: "Antonie Pannekoek" #NT!
+ HOL_adriaan_dijxhoorn: "Adriaan Dijxhoorn" #NT!
+ HOL_walraven_van_hall: "Walraven van Hall" #NT!
+ HOL_anton_de_kom: "Antón de Kom" #NT!
+ HOL_izaak_reijnders: "Izaak Reijnders" #NT!
+ HOL_adrianus_rudolphus_van_den_bent: "Adrianus Rudolphus van den Bent" #NT!
+ HOL_johan_furstner: "Johan Fürstner" #NT!
+ HOL_godfried_van_voorst_tot_voorst: "Godfried van Voorst tot Voorst" #NT!
+ HOL_hendrik_seyffardt: "Hendrik Seyffardt" #NT!
+ MTG_naval_treaty_adherent: "Firmante del Tratado Naval de Londres" #NT!
+ MTG_naval_treaty_adherent_desc: "Hemos firmado el Tratado Naval de Londres y, en consecuencia, estamos limitados en el tamaño de nuestros buques capitales." #NT!
+ MTG_naval_treaty_adherent_reduced: "Cláusula de escalabilidad invocada" #NT!
+ MTG_naval_treaty_adherent_reduced_desc: "Después de que algunos signatarios del Tratado Naval de Washington abandonaron el Tratado Naval de Londres, hemos invocado la Cláusula de Escalada, reduciendo las restricciones sobre el tamaño y el armamento de nuestros buques capitales." #NT!
+ GER_western_trade_cooperation: "Cooperación comercial europea" #NT!
+ GER_western_trade_cooperation_tt: "Agrega un sitio externo $arms_factory$ y un sitio externo $industrial_complex$" #NT!
+ GER_air_safety_regulations: "Normas de seguridad aérea" #NT!
+ GER_hans_oster: "Hans Oster" #NT!
+ GER_alfred_hugenberg: "Alfred Hugenberg" #NT!
+ GER_carl_friedrich_goerdeler: "Carl Friedrich Goerdeler" #NT!
+ GER_julius_leber: "Julio Leber" #NT!
+ GER_theodor_heuss: "Teodoro Heuss" #NT!
+ POR_unreliable_army: "Ejército poco fiable" #NT!
+ POR_unreliable_army_desc: "Con los constantes golpes y contragolpes desde la instauración de la República en 1910, los oficiales del Ejército están más preocupados por la política que por mantener la disciplina y promover la formación en el ejército. La tropa está desmoralizada, mal equipada y mal entrenada." #NT!
+ POR_unstable_republic: "República inestable" #NT!
+ POR_unstable_republic_desc: "La era de la República instalada en 1910 fue descrita como una de "anarquía continua, corrupción gubernamental, disturbios y saqueos, asesinatos, encarcelamientos arbitrarios y persecución religiosa". Fue testigo de la toma de posesión de nueve presidentes, 44 reorganizaciones de gabinetes y 21 revoluciones. Incluso después del golpe militar de 1926, ha habido varios intentos revolucionarios fallidos." #NT!
+ POR_british_influence: "Influencia británica" #NT!
+ POR_british_influence_desc: "El gobierno británico está invirtiendo en la explotación de los recursos de nuestro país. Se trata de una valiosa oportunidad para impulsar nuestros avances en I+D." #NT!
+ POR_hydroelectric_power: "Energía hidroeléctrica" #NT!
+ POR_hydroelectric_power_desc: "Gracias a las inversiones realizadas en el Norte y Centro de Portugal, finalmente hemos construido una red de presas que producen electricidad y regulan los caudales de los ríos." #NT!
+ POR_colonial_assimilation_policy: "Política de asimilación colonial" #NT!
+ POR_colonial_army: "Ejército colonial" #NT!
+ POR_national_syndicalism: "Nacional sindicalismo" #NT!
+ POR_the_fifth_empire: "El quinto imperio" #NT!
+ POR_endless_sea: "Mar infinito" #NT!
+ POR_estado_novo: "Estado Nuevo" #NT!
+ POR_volunteers_in_the_war: "Voluntarios en la guerra" #NT!
+ POR_volunteers_in_the_war_desc: "Los pueblos de España están en plena guerra civil. Les prestaremos ayuda militar organizando una fuerza de voluntarios que luchará por el bando legítimo." #NT!
+ POR_a_new_industry: "Una nueva industria" #NT!
+ POR_improved_production: "Producción mejorada" #NT!
+ POR_improved_production_desc: "Gracias a las regulaciones estatales que nuestro gobierno implementó después de años de situación financiera precaria hemos logrado estabilizar nuestra situación económica y estamos invirtiendo en más proyectos públicos para estimular nuestra infraestructura." #NT!
+ POR_nation_in_arms: "Nación en armas" #NT!
+ POR_iberian_workers_united: "Trabajadores Ibéricos Unidos" #NT!
+ POR_iberian_workers_united_desc: "Debemos proclamar la unidad del proletariado ibérico contra toda tiranía y redoblar el apoyo a nuestros camaradas españoles en su guerra civil. ¡Nuestros sacrificios serán recompensados, porque ésta es una causa justa!" #NT!
+ POR_monarchists_on_the_rise: "Los monárquicos en ascenso" #NT!
+ POR_monarchists_on_the_rise2: "Los monárquicos en ascenso" #NT!
+ POR_convoy_build_efficiency: "Eficiencia en la construcción de convoyes" #NT!
+ POR_convoy_build_efficiency_desc: "Necesitamos construir una gran flota mercante capaz de transportar todos los recursos que necesita nuestra economía. Esto se puede lograr construyendo barcos mercantes en astilleros más pequeños." #NT!
+ POR_jose_hipolito_raposo: "José Hipólito Raposo" #NT!
+ POR_unified_youth_wings: "Alas juveniles unificadas" #NT!
+ POR_spread_communism_overseas: "Difundir el socialismo en el extranjero" #NT!
+ POR_iberian_communism_pressure: "Socialismo IbéricoPresión" #NT!
+ POR_unstable_monarchy: "Monarquía inestable" #NT!
+ POR_the_portuguese_empire: "El imperio portugués" #NT!
+ TUR_generic_head_of_intelligence: "Elyesa Bazna" #NT!
+ SWE_generic_head_of_intelligence: "Carl Petersen" #NT!
+ KUR_nuri_dersimi: "Nuri Dersimi" #NT!
+ KUR_kamuran_ali_bedirxan: "Kamuran Ali Bedirxan" #NT!
+ KUR_haji_baba: "El padre Haji" #NT!
+ KUR_ahmed_barzani: "Ahmed Barzani" #NT!
+ KUR_ihsan_nuri: "Ihsan Nuri" #NT!
+ NEP_royal_army: "Ejército Real de Nepal" #NT!
+ SPIRIT_ADD_IDEA: "§GHaga clic para agregar $GROUP|H$§!" #NT!
+ tactic_elastic_defense_preferred_weight_factor: "§YDefensa elástica adicional§! Oportunidad táctica si es táctica preferida" #NT!
+ tactic_overwhelming_fire_preferred_weight_factor: "Oportunidad de táctica adicional §YFuego abrumador§! si es la táctica preferida" #NT!
+ tactic_seize_bridge_preferred_weight_factor: "Adicional §YTomar el puente§! Oportunidad táctica si es la táctica preferida" #NT!
+ tactic_infantry_charge_preferred_weight_factor: "Adicional §YAsalto de infiltración§! Probabilidad de táctica si es táctica preferida" #NT!
+ tactic_delay_preferred_weight_factor: "¡Adicional §YDelay§! Posibilidad de táctica si es táctica preferida" #NT!
+ tactic_human_wave_tactics_preferred_weight_factor: "§YCarga masiva adicional§! Oportunidad táctica si es la táctica preferida" #NT!
+ tactic_unexpected_thrust_preferred_weight_factor: "Oportunidad de táctica adicional §YImpulso inesperado§! si es la táctica preferida" #NT!
+ tactic_barrage_preferred_weight_factor: "§YBombardeo supresor§! Oportunidad de táctica adicional si es la táctica preferida" #NT!
+ tactic_planned_attack_preferred_weight_factor: "§YAtaque bien planificado§! probabilidad de táctica adicional si es la táctica preferida" #NT!
+ tactic_relentless_assault_preferred_weight_factor: "Oportunidad de táctica adicional §YAsalto implacable§! si es la táctica preferida" #NT!
+ CHI_kwong_jiang: "Kwong Jiang" #NT!
+ TUR_mumtaz_okmen_bftb: "Madre Ökmen" #NT!
+ TUR_kazim_ozalp_bftb: "Kazim Ozalp" #NT!
+ TUR_rauf_orbay_bftb: "Rauf Orbay" #NT!
+ TUR_mehmet_fahri_engin_bftb: "Mehmet Fahri Engin" #NT!
+ ALREADY_HAS_ADVISOR_WITH_TRAIT: "Ya existe un asesor designado con esta característica." #NT!
+ POL_investments_monarchist: "Inversiones monárquicas" #NT!
+ CHANGE_ADVISOR: "\nPuede reemplazar este asesor haciendo clic aquí y seleccionando un reemplazo." #NT!
+ league_of_nations_member_idea: "Miembro de la Sociedad de Naciones" #NT!
+ LoN_disbanded_flag: "La Sociedad de Naciones ya no está activa" #NT!
+  
+ organization_of_african_unity_member_idea: "Miembro de la Organización de la Unidad Africana" #NT!
+ RAJ_industrialized_personnel: "Fuerza laboral rural integrada" #NT!
+ ROM_white_squadron: "Escuadrón blanco" #NT!
+ ROM_white_squadron_desc: "El escuadrón blanco es un servicio de ambulancias aéreas piloteado exclusivamente por mujeres. La sola idea de que el rescate pueda estar cerca mantiene a nuestros soldados con el ánimo en alto." #NT!
+ MAN_hoankyoku_idea: "Hoankyoku" #NT!
+ MAN_hoankyoku_idea_desc: "Una organización secreta dedicada a lidiar con elementos no deseados en la sociedad." #NT!
+ AST_central_bureau_idea: "Oficina central" #NT!
+ AST_central_bureau_idea_desc: "Un grupo de trabajo conjunto de inteligencia establecido y coordinado con los EE.UU., cuyo objetivo es contrarrestar los esfuerzos de nuestros enemigos en el teatro del Pacífico." #NT!
+ SWE_historical_trade_with_Germany_dummy_instant_desc: "(§YSweden§!) Coste comercial del país de destino: §G-20%§!)\n(§YSweden§!) Modificador de opinión comercial: §G+50§!)\n§YNuestro acero nacional es de baja calidad y necesita acero de alta calidad mezclado para ser completamente efectivo. Importar pequeñas cantidades de acero extranjero aumentará drásticamente la producción de recursos de nuestra producción nacional de acero§!\n" #NT!
+ ROM_national_christian_party_in_power: "Partido Nacional Cristiano" #NT!
+  
+ CAN_unified_communist_party: "El Pueblo Unido" #NT!
+ CAN_unified_communist_party_desc: "Se han reparado viejas grietas y se han reparado las relaciones. Sin embargo, nuestra tolerancia al servicio de un destino compartido es vista con recelo por quienes sólo hablan de ello de palabra, impulsados ​​por la más baja de las motivaciones: la búsqueda del poder." #NT!
+ CAN_true_revolution: "La verdadera revolución" #NT!
+ CAN_booming_economy: "Economía en auge" #NT!
+ CAN_booming_economy_desc: "Ahora que la Gran Depresión ya es cosa del pasado, nuestra economía ha comenzado a mejorar ante las importantes exigencias de la situación mundial actual." #NT!
+ GEN_cheaper_amphib: "Diseños anfibios mejorados" #NT!
+ GER_german_swedish_trade_agreement: "Acuerdo comercial entre Alemania y Suecia" #NT!
+  
+ will_turn_to: "Se convertirá en" #NT!
+ upon_timeout: "Al expirar el tiempo" #NT!

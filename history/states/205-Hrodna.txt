@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=4
+}
+
 	id=205
 	name="STATE_205" # Kaluga
 	manpower = 582922
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=10.0 
 }
+

@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=2
+}
+
 	id=241
 	name="STATE_241" # Gomel
 	manpower = 490579
@@ -24,3 +28,4 @@ state={
 
 	local_supplies=0.0 
 }
+

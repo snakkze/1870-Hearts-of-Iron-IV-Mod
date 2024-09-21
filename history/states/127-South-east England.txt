@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=1
+}
+
 	id=127
 	name="STATE_127" # Sussex
 	manpower = 1660559
@@ -15,7 +19,6 @@ state={
 			industrial_complex = 1
 			dockyard = 2
 			fuel_silo = 1
-			radar_station = 1
 			3501 = {
 				naval_base = 6
 				coastal_bunker = 3
@@ -39,3 +42,4 @@ state={
 
 	local_supplies=16.0 
 }
+

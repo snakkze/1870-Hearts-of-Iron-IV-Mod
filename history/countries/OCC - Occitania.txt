@@ -1,43 +1,18 @@
-﻿capital = 31
- oob = "OCC_1866"
+capital = 31
+oob = "OCC_1866"
 
-#oob = ""
 
 set_research_slots = 3
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
@@ -61,64 +36,8 @@ if = {
 
 set_convoys = 20
 
-recruit_character = OCC_ncm
-recruit_character = OCC_acd2
-recruit_character = OCC_democratic_guy
-recruit_character = OCC_fascist_guy
-recruit_character = OCC_coi
-recruit_character = OCC_ar
-recruit_character = OCC_aa2
-recruit_character = OCC_awt
-recruit_character = OCC_acgs
-recruit_character = OCC_mt
-recruit_character = OCC_nccr
-recruit_character = OCC_aco2
-recruit_character = OCC_nt
-recruit_character = OCC_communist_guy
-recruit_character = OCC_pot
-recruit_character = OCC_acas
-recruit_character = OCC_acr
-recruit_character = OCC_stc
-recruit_character = OCC_ai2
-recruit_character = OCC_ncs
 
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-
-}
-	}
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"

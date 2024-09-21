@@ -281,6 +281,10 @@ spriteTypes = {
 		name = "GFX_focus_SOV_russification"
 		texturefile = "gfx/interface/goals/russification.png"
 	}
+	spriteType = {
+		name = "GFX_focus_crimean_war"
+		texturefile = "gfx/interface/goals/focus_crimean_war.png"
+	}
 	
 }
 
@@ -365,7 +369,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_rom_fortify_border_m1"
 		texturefile = "gfx/interface/goals/focus_rom_fortify_border_m1.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_focus_generic_offer_token_connciusen"
+		texturefile = "gfx/interface/goals/generic_offer_token_connciusen.png"
+	}
 	
 	
 }

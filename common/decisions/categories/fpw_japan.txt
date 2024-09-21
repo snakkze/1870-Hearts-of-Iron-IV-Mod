@@ -28,6 +28,19 @@ fpw_societal_backlash_cat = {
 		}
 		}
 	}
+	
+	JAP_centralization_power_balance_decisions = {
+	priority = 12
+
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		#has_completed_focus = SWI_swiss_guiding_principles
+		#Not = { has_country_flag = SWI_elected_centralized_president }
+	}
+	}
 
 	fpw_empire_of_jap_cat = {
 	priority = 100

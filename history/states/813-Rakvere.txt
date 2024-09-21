@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=5
+}
+
 	id=813
 	name="STATE_813"
 
@@ -31,3 +35,4 @@ add_core_of = SOV
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
+

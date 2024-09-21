@@ -3,11 +3,14 @@ state = {
 	name = "STATE_918" # Västerbotten
 	manpower = 163855
 	state_category = rural
-	resources = {
+	resources={
+
 		tungsten = 35
 		steel = 39
-		chromium = 15
-	}
+	
+
+wood=28
+}
 
 	history = {
 		victory_points = {
@@ -36,3 +39,4 @@ state = {
 
 	local_supplies=0.000
 }
+

@@ -7,9 +7,13 @@ state={
 	state_category = metropolis
 	
 	resources={
+
 		oil=180 # was: 350
 		aluminium=8 # was: 14
-	}
+	
+
+wood=1
+}
 
 	history={
 		owner = USA
@@ -57,3 +61,4 @@ state={
 
 	local_supplies=0.0 
 }
+

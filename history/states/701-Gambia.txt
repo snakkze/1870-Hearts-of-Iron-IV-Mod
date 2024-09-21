@@ -1,5 +1,9 @@
 	
 state={
+resources={
+wood=1
+}
+
 	id=701
 	name="STATE_701"
 
@@ -21,3 +25,4 @@ state={
 	state_category=enclave
 	local_supplies=0.000
 }
+

@@ -1,10 +1,11 @@
 capital = 808
-
 oob = "LAT_1866"
 
 
 
+
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
@@ -43,9 +44,7 @@ set_popularities = {
 }
 
 # probably needs some adjustment before nazi occupation in 1940
-1939.1.1 = {
-	#
-}
+
 
 ### VARIANTS ###
 # 1936 Start #

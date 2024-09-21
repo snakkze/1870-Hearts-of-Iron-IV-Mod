@@ -1,5 +1,9 @@
 
 state = {
+resources={
+wood=11
+}
+
 	id = 880
 	name = "STATE_880" # Kotlas
 	manpower = 136615
@@ -28,3 +32,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

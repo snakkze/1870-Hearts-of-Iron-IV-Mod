@@ -171,6 +171,20 @@ spriteTypes = {
 		name = "GFX_focus_jap_land_ownership"
 		texturefile = "gfx/interface/goals/JAP/focus_jap_land_ownership.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_JAP_taiwanese_campaign"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_taiwanese_campaign.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_cavalry"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_cavalry.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_selective"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_selective.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_volunteer"
+		texturefile = "gfx/interface/goals/JAP/focus_jap_volunteer.dds"
+	}
 }
-
-

@@ -1,42 +1,21 @@
-Ôªøcapital = 671 #Hanoi
- oob = "VIN_1866"
-
+capital = 671 #Hanoi
 oob = "VIN_1866"
+
 
 set_research_slots = 3
 
 # Starting tech
 # clone of France
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 
 if = {
 	limit = {
@@ -70,45 +49,16 @@ set_popularities = {
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
 
-create_country_leader = {
-	name = "Phan B√¥i Ch√¢u" 
-	desc = ""
-	picture = GFX_portrait_Phan_Boi_Chau
-	expire = "1953.3.1"
-	ideology = fascism_ideology 
-	traits = {
-		
-	}
-}
+
+
+
 
 create_country_leader = {
-	name = "Ho Ch√≠ Minh" 
+	name = "NgÙ –Ïnh DiÍm"
 	desc = ""
-	picture = GFX_portrait_Ho_Chi_Minh
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ng√¥ ƒê√¨nh Di√™m"
-	desc = ""
-	picture = GFX_portrait_Ngo_ƒêinh_Diem
+	picture = GFX_portrait_Ngo_–inh_Diem
 	expire = "1953.3.1"
 	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Nguyen Tuong Tam"
-	desc = ""
-	picture = GFX_portrait_Nguyen_Tuong_Tam
-	expire = "1953.3.1"
-	ideology = moderatism
 	traits = {
 		
 	}

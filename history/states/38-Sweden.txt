@@ -1,5 +1,9 @@
 
 state = {
+resources={
+wood=23
+}
+
 	id = 38
 	name = "STATE_38" # Gävleborg
 	manpower = 484617
@@ -29,3 +33,4 @@ state = {
 	
 	local_supplies=0.000
 }
+

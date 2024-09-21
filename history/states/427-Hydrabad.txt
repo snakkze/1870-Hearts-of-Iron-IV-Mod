@@ -6,8 +6,11 @@ state={
 	state_category = town
 	
 	resources={
-		chromium=6 # was: 8
-	}
+
+	
+
+wood=4
+}
 
 	history={
 		owner = RAJ
@@ -28,3 +31,4 @@ state={
 
 	local_supplies=7.0 
 }
+

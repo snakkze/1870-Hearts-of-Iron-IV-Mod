@@ -1,41 +1,20 @@
-﻿capital = 232 #Machakala
- oob = "DAG_1866"
+capital = 232 #Machakala
+oob = "DAG_1866"
 
-#oob = "DAG_1866"
 
 set_research_slots = 3
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -67,7 +46,7 @@ set_popularities = {
 }
 
 
-recruit_character = DAG_khair_hajji_uzunsky
-recruit_character = DAG_adil_girey_takhtarov
+
+
 
 

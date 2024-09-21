@@ -1,22 +1,15 @@
-﻿capital = 101 #Nuuk
- oob = "GRN_1866"
-
+capital = 101 #Nuuk
 oob = "ICE_1936"
+
 
 set_research_slots = 2
 
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

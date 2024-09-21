@@ -7,8 +7,12 @@ state = {
 	state_category = rural
 	
 	resources={
+
 		steel=3 # was: 4
-	}
+	
+
+wood=21
+}
 	history={
 		owner = FIN
 		add_core_of = FIN
@@ -42,3 +46,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

@@ -83,7 +83,7 @@
   fpw_japan.17.b:0 "Execute them"
 
   fpw_japan.18.t:0 "Japanese Envoy Arrives in Korea"
-  fpw_japan.18.d:0 "A japanese envoy has arrived in Korea carrying a letter requesting to establish a goodwill mission between our two countries. The letter contains the seal of the Meiji government rather than the seals authorized by the Korean Court for the Sō family to use. It also uses the character '(ko)' to refer to the Japanese emperor. This symbol is usually reserved for the Chinese emperor and implies ceremonial superiority to the Korean monarch."
+  fpw_japan.18.d:0 "A japanese envoy has arrived in Korea carrying a letter requesting to establish a goodwill mission between our two countries. The letter contains the seal of the Meiji government rather than the seals authorized by the Korean Court to use. It also uses the character '(ko)' to refer to the Japanese emperor. This symbol is usually reserved for the Chinese emperor and implies ceremonial superiority over the Korean monarch."
   fpw_japan.18.a:0 "What an impudence"
   fpw_japan.18.b:0 "Better not anger the Japanese"
   
@@ -97,12 +97,12 @@
   fpw_japan.20.a:0 "Great"
   
   fpw_japan.21.t:0 "Japanese Emperor's Status"  #Attempt Negotiations Again
-  fpw_japan.21.d:0 "Japan has sent an envoy requesting to establish a goodwill mission, using the character '(ko)' to refer to their emperor. This implies a superior status that traditionally only the Chinese emperor holds. Should we recognize this claim? "
-  fpw_japan.21.a:0 "Refuse the envoy"
+  fpw_japan.21.d:0 "Japan sent a second envoy to request the establishment of a goodwill mission, again using the character '(ko)' to refer to its emperor. This implies a higher status, traditionally held only by the Chinese emperor. "
+  fpw_japan.21.a:0 "Refuse the envoy again"
   fpw_japan.21.b:0 "Accept Japanese Emperor as equal"
   
   fpw_japan.22.t:0 "Korea Refused Our Envoy Again" 
-  fpw_japan.22.d:0 "After careful consideration, the Korean court has chosen to reject our envoy again. Several of our senior government officials are now calling for sending a mission to survey Korean waters and to put further pressure on the Korean government.  "
+  fpw_japan.22.d:0 "After some consideration, the Korean court has chosen to reject our envoy again. Several of our senior government officials are now calling for sending a mission to survey Korean waters and to put further pressure on the Korean government. "
   fpw_japan.22.a:0 "Assert Japanese strength"
   fpw_japan.22.b:0 "Back off"
   
@@ -233,3 +233,70 @@
   fpw_japan.47.d:0 "With the recent advancements in our nation's economic policies, we stand at a crossroads regarding our currency system. Our current koban currency has served us well, but if we strive for modernization and international trade competitiveness, a decision must be made. Should we adopt the newly proposed yen, aligning our monetary system with modern standards, or should we retain the traditional koban, preserving our historical financial practices? Adopting the yen will modernize our economy and enhance our global standing, though it may bring initial struggles and resistance. On the other hand, keeping the koban will reduce societal backlash and maintain continuity, but may limit our long-term economic potential. "
   fpw_japan.47.a:0 "Distribute the yen"
   fpw_japan.47.b:0 "Keep the koban"
+  
+  fpw_japan.48.t:0 "A Tug of War for Japan's Future"      #NOT IN GAME
+  fpw_japan.48.d:0 "With the defeat of the Tokugawa Shogunate, Japan stands on the threshold of a new era. However, Emperor Meiji's position is far from unchallenged. The victory was not solely his, but also that of the powerful daimyōs and leaders of the Imperial forces who rallied to his cause during the civil war. These influential figures possess considerable power and have their own visions for Japan's future. The Emperor symbolizes the unity and spiritual authority of the nation, but his authority is underpinned by the very men who helped him ascend to power. The Genrō, the elder statesmen of our new regime, with their experience in both governance and warfare, advocate for rapid modernization and Westernization, believing that this is the only path to secure Japan’s place among the great powers. Attempting to centralize power under the Emperor could lead to internal resistance because of these influential men. Empowering the Genrō could ensure swift modernization, but it may also diminish the Emperor's authority, leading to a future where the throne is overshadowed by the ambitions of politicans. "
+  fpw_japan.48.a:0 "Let’s See Who Pulls Harder"
+  
+  fpw_japan.49.t:0 "Ryukyuan Sailors Killed in Taiwan"
+  fpw_japan.49.d:0 "A shocking incident has occurred near the southwestern tip of Taiwan. A group of 54 Ryukyuan sailors, shipwrecked on the island’s coast, have been brutally murdered by the local Paiwan aborigines. While the Ryukyu Kingdom maintains tributary relations with the Qing Dynasty, its deep historical ties with Japan cannot be overlooked. This attack on Ryukyuans is a direct affront to our nation's honor and undermines Japan's standing in the region. This incident is also a unique opportunity to expand our influence in Taiwan and challenge the Qing Dynasty's authority in the region. "
+  fpw_japan.49.a:0 "We will seek retribution "
+  
+  fpw_japan.50.t:0 "Japan Occupies Southern Taiwan"
+  fpw_japan.50.d:0 "Japanese forces have occupied Southern Taiwan following a punitive expedition against aboriginal tribes for the killing of 54 Ryukyuan sailors. While the occupation is allegedly temporary, the situation threatens the sovereignty of Chinese territory. How should we respond to this Japanese aggression? "
+  fpw_japan.50.a:0 "Offer to pay them to avoid conflict "
+  fpw_japan.50.b:0 "Demand immediate Japanese withdrawal! "
+  
+  fpw_japan.51.t:0 "China Offers Compensation for Withdrawal"
+  fpw_japan.51.d:0 "Following our military expedition to Taiwan, the Qing Dynasty has made an offer to prevent further conflict. China is willing to pay a significant indemnity in exchange for our immediate withdrawal from Taiwan and the cessation of hostilities. Accepting this offer could bolster Japan’s financial and diplomatic standing, while also providing us with the leverage to assert greater influence over the Ryukyu Islands. "
+  fpw_japan.51.a:0 "Seems good "
+  fpw_japan.51.b:0 "We will keep Southern Taiwan! "
+  fpw_japan.51.c:0 "Demand all of Taiwan! "
+  
+ fpw_japan.52.t:0 "Japan Rejects Offer"
+ fpw_japan.52.d:0 "Our diplomats have reported that Japan has rejected our offer of compensation and instead has declared the annexation of Southern Taiwan. This aggressive move marks a clear violation of our sovereignty and is a direct challenge to the Qing Dynasty's authority in East Asia. The situation is dire, and we must decide how to respond to this unprecedented act of aggression."
+ fpw_japan.52.a:0 "Prepare for war!"
+ fpw_japan.52.b:0 "Abandon Southern Taiwan to avoid war"
+ 
+ fpw_japan.53.t:0 "Japan Withdraws from Taiwan"
+ fpw_japan.53.d:0 "Japan has accepted our offer of compensation and has begun withdrawing its forces from Taiwan. This retreat marks a significant diplomatic victory, as we have managed to preserve our sovereignty over Taiwan without resorting to war. The people of China can now breathe a sigh of relief."
+ fpw_japan.53.a:0 "We should focus on internal stability"
+ 
+ fpw_japan.54.t:0 "Japan Demands All of Taiwan"
+ fpw_japan.54.d:0 "In a bold and audacious move, Japan has rejected our offer of compensation and is now demanding the full cession of Taiwan. This ultimatum represents a severe challenge to the Qing Dynasty’s sovereignty and threatens to destabilize the entire region. The Japanese insist that our refusal will result in immediate military action to secure their claim. We must now decide how to respond to this unprecedented aggression."
+ fpw_japan.54.a:0 "We will fight to defend Taiwan!"
+ fpw_japan.54.b:0 "Cede Taiwan to avoid war"
+ 
+ fpw_japan.55.t:0 "China Refuses Our Demands"
+ fpw_japan.55.d:0 "The Qing Dynasty has outright refused to accept our annexation of Southern Taiwan. This refusal leaves us with no alternative but to resort to military force to secure our objectives. "
+ fpw_japan.55.a:0 "This leaves us no choice"
+
+ fpw_japan.56.t:0 "China Abandons Southern Taiwan"
+ fpw_japan.56.d:0 "The Qing Dynasty has made the difficult decision to cede Southern Taiwan to us in order to avoid a larger conflict. This concession is a significant victory for our military and diplomatic efforts, as we now have control over the southern part of the island. "
+ fpw_japan.56.a:0 "Great"
+ 
+ fpw_japan.57.t:0 "China Refuses Our Demands"
+ fpw_japan.57.d:0 "The Qing Dynasty has outright refused our demands for the cession of Taiwan. This refusal leaves us with no alternative but to resort to military force to secure our objectives. "
+ fpw_japan.57.a:0 "This leaves us no choice"
+ 
+ fpw_japan.58.t:0 "China Abandons Taiwan"
+ fpw_japan.58.d:0 "The Qing Dynasty has made the difficult decision to cede Taiwan to us in order to avoid a larger conflict. This is a monumental victory for our nation, granting us full control over the island without the need for any bloodshed. "
+ fpw_japan.58.a:0 "Celebrate our victory "
+ fpw_japan.58.b:0 "Exploit their weakness "
+ 
+ fpw_japan.59.t:0 "China Demands Immediate Withdrawal"
+ fpw_japan.59.d:0 "China has issued a stern demand for the immediate withdrawal of our forces from Taiwan. The Qing Dynasty views our presence as an intolerable violation of their sovereignty and has threatened serious repercussions if we do not comply. This ultimatum leaves us at a crossroads: we can either retreat to avoid conflict or stand our ground and risk war. "
+ fpw_japan.59.a:0 "We cannot back down now!"
+ fpw_japan.59.b:0 "Withdraw to avoid war"
+
+ fpw_japan.60.t:0 "Japan Refuses to Withdraw"
+ fpw_japan.60.d:0 "Japan has defied our demand and refuses to withdraw its forces from Taiwan. This blatant act of aggression cannot be ignored, as it represents a serious threat to our sovereignty and regional stability. The stage is now set for a confrontation that could determine the future balance of power in East Asia. "
+ fpw_japan.60.a:0 "Prepare for war!"
+ 
+ fpw_japan.61.t:0 "Japan Withdraws from Taiwan"
+ fpw_japan.61.d:0 "In response to our firm demand, Japan has agreed to withdraw its forces from Taiwan. This decision marks a significant victory for the Qing Dynasty, as we have successfully defended our sovereignty without resorting to war. However, this confrontation has highlighted the growing ambitions of Japan, and we must remain vigilant."
+ fpw_japan.61.a:0 "China stands firm"
+
+ fpw_japan.62.t:0 "The Return of the Prussian-Trained Officers"
+ fpw_japan.62.d:0 "After several years of rigorous study and training in Prussia, our officers have returned home, bringing with them a wealth of knowledge about the Prussian military system. They have absorbed the lessons of the Prussian victories and now advocate for the integration of these doctrines into our army. Their proposals include the adoption of Prussian infantry tactics, a more efficient logistics system, and the establishment of a centralized general staff. This marks a crucial step forward in our efforts to modernize the Japanese military and secure our place among the great powers of the world. "
+ fpw_japan.62.a:0 "Let's get to work!"

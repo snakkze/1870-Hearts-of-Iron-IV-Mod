@@ -1,0 +1,16 @@
+characters={
+
+	PAR_solano_lopez={
+		name="Solano Lopez"
+		portraits={
+			civilian={
+				large=GFX_portrait_PAR_solano
+			}
+		}
+		country_leader={
+			ideology=socialist_semi_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

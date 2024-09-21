@@ -214,7 +214,31 @@ spriteTypes = {
 		name = "GFX_idea_SOV_pyotr_shuvalov"
 		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_shuvalov.png"
 	}
+	SpriteType = {
+		name = "GFX_idea_SOV_alexander_hilferding"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_alexander_hilferding.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_pyotr_lavrov"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_lavrov.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_pyotr_valuev"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_valuev.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOV_sergei_zarudny"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_sergei_zarudny.png"
+	}
 	
+	SpriteType = {
+		name = "GFX_idea_eng_raes"
+		texturefile = "gfx/interface/ideas/eng_raes.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_victor_of_crimean_war"
+		texturefile = "gfx/interface/ideas/idea_winner_of_crimea_war.dds"
+	}
 	
 	
 }

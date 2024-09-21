@@ -1,14 +1,18 @@
 
 state={
+resources={
+wood=1
+}
+
 	id=55
 	name="STATE_55"
 
 	history={
 		owner = HES
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
 
 		}
 		add_core_of = HES
@@ -23,8 +27,9 @@ state={
 	provinces={
 		3397 
 	}
-	manpower=831082
+	manpower=468900
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=15.000
 }
+

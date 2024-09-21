@@ -7,8 +7,12 @@ state={
 	state_category = town
 	
 	resources={
+
 		oil=35 # was: 126
-	}
+	
+
+wood=3
+}
 
 	history={
 		owner = VEN
@@ -32,3 +36,4 @@ state={
 
 	local_supplies=6.0 
 }
+

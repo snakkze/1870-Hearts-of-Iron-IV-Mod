@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=6
+}
+
 	id=209
 	name="STATE_209" # Pskov
 	manpower = 332585
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=0.0 
 }
+

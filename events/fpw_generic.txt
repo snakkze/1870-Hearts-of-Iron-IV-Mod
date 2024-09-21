@@ -1,0 +1,20 @@
+add_namespace = fpw_generic
+
+# colonization finished
+country_event = {
+	id = fpw_generic.1
+	title = fpw_generic.1.t
+	desc = fpw_generic.1.d
+	picture = GFX_fpw_report_event_002
+
+	is_triggered_only = yes
+
+	fire_only_once=no
+
+	major = no
+
+	option = {
+		name = fpw_generic.1.a 
+	}
+}
+

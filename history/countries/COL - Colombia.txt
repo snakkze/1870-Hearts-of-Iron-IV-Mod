@@ -1,7 +1,6 @@
 capital = 306
- oob = "COL_1866"
-
 oob = "COL_1866"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "COL_1866_naval_mtg"
@@ -9,17 +8,11 @@ if = {
 		set_naval_oob = "COL_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_cannon_artillery = 1
 }
@@ -36,70 +29,12 @@ if = {
 }
 }
 
-recruit_character = COL_alfonso_lópez_pumarejo
-recruit_character = COL_mariano_ospina_pérez
-recruit_character = COL_gustavo_rojas_pinilla
-recruit_character = COL_david_de_vidal
-recruit_character = COL_isidoro_sotomayor
-recruit_character = COL_eduardo_poirier_escobar
-recruit_character = COL_luis_bernardo_andrade
-recruit_character = COL_luis_rodriguez
-recruit_character = COL_luis_acevedo
-recruit_character = COL_enrico_diaz_carias
-recruit_character = COL_guillermo_padilla_manrique
-recruit_character = COL_gabriel_paris_gordillo
-recruit_character = COL_mauricio_soto_gomez
-recruit_character = COL_salvador_tiaga_gonzalez
-recruit_character = COL_querista_sellor
-recruit_character = COL_camilo_daza_alvarez
-recruit_character = COL_manuel_quinones
-recruit_character = COL_german_olano_moreno
-recruit_character = COL_ruben_piedrahita_arango
-recruit_character = COL_jose_ellis_quinsado
-recruit_character = COL_m_e_rojas_de_moreno
-recruit_character = COL_raphael_hollmann
-recruit_character = COL_jorge_lopez_suyo
-
 
 set_country_flag = monroe_doctrine
 
 set_convoys = 10
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "COL_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "COL_1939_naval_mtg"
-		else = {
-			set_naval_oob = "COL_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-		}
-	}
-
-	set_technology = {
-		fpw_infantry_weapons1 = 1
-		fpw_infantry_weapons2 = 1
-}
-}
 
 set_convoys = 5
 set_politics = {
@@ -114,22 +49,7 @@ set_popularities = {
 }
 
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.5.1"
-		election_frequency = 48  
-		elections_allowed = yes
-	}
 
-	set_popularities = {
-		democratic = 100
-	}
-
-	recruit_character = COL_eduardo_santos
-	promote_character = COL_eduardo_santos
-	retire_character = COL_alfonso_lópez_pumarejo
-}
 
 
 ### VARIANTS ###

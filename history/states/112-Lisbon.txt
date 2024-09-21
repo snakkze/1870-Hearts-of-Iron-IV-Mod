@@ -2,8 +2,12 @@ state={
 	id=112
 	name="STATE_112"
 	resources={
+
 		tungsten= 32 #was: 50.000
-	}
+	
+
+wood=2
+}
 
 	history={
 		owner = POR
@@ -35,3 +39,4 @@ state={
 
 	local_supplies=12.0 
 }
+

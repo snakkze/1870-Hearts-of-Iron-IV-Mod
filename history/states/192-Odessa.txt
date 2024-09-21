@@ -1,5 +1,9 @@
 
 state = {
+resources={
+wood=2
+}
+
 	id = 192
 	name = "STATE_192"
 	manpower = 668844 #1 8th removed due to Balta-Tiraspol
@@ -33,3 +37,4 @@ state = {
 
 	local_supplies = 6.0 
 }
+

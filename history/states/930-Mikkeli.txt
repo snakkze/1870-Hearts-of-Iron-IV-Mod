@@ -1,4 +1,8 @@
 state={
+resources={
+wood=8
+}
+
 	id=930
 	name="STATE_930" #MIKKELI
 
@@ -30,3 +34,4 @@ state={
 	
 	local_supplies = 0.0
 }
+

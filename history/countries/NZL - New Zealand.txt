@@ -1,41 +1,20 @@
 capital = 284
- oob = "NZL_1866"
-
 oob = "NZL_1866"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	else = {
-		set_technology = {
 
-}
-	}
-}
+
 
 # Starting tech
 set_stability = 0.8
 set_war_support = 0.3
 
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -49,35 +28,6 @@ if = {
 }
 }
 
-recruit_character = NZL_michael_joseph_savage
-recruit_character = NZL_sidney_holland
-recruit_character = NZL_john_ormond
-recruit_character = NZL_elsie_farrelly
-recruit_character = NZL_bernard_freyberg
-recruit_character = NZL_robert_row
-recruit_character = NZL_william_stevens
-recruit_character = NZL_edmund_rupert_drummond
-recruit_character = NZL_peter_phipps
-recruit_character = NZL_r_a_cochrane
-recruit_character = NZL_l_p_peterson
-recruit_character = NZL_j_c_nichols
-recruit_character = NZL_n_weir
-recruit_character = NZL_j_e_duigan
-recruit_character = NZL_edward_puttick
-recruit_character = NZL_norris_stephen_falla
-recruit_character = NZL_trevor_handley
-recruit_character = NZL_keith_j_holyoake
-recruit_character = NZL_a_j_stallworthy
-recruit_character = NZL_eric_prendergast
-recruit_character = NZL_arthur_dawes
-recruit_character = NZL_william_sinclair_burgess
-recruit_character = NZL_h_e_horan
-recruit_character = NZL_h_d_mcgregor
-recruit_character = NZL_w_h_stratton
-recruit_character = NZL_a_e_davy
-recruit_character = NZL_walter_nash
-recruit_character = NZL_w_a_veitch_milne
-recruit_character = NZL_peter_fraser
 
 
 if = {
@@ -86,93 +36,7 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-	oob = "NZL_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		else = {
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "NZL_1939_naval_mtg"
-		else = {
-			set_naval_oob = "NZL_1939_naval_legacy"
-		}
-	}
-	
-	if = {
-		limit = { has_dlc = "Together for Victory" }
-		complete_national_focus = NZL_army_reforms
-		complete_national_focus = NZL_charlton_automatic_rifle
-		complete_national_focus = NZL_domestic_arms_industry
-		complete_national_focus = NZL_expand_the_nzpaf
-		complete_national_focus = NZL_form_the_rnzaf
-		complete_national_focus = NZL_national_roads_board
-		complete_national_focus = NZL_new_zealand_steel
-		complete_national_focus = NZL_taranaki_oil
-		complete_national_focus = NZL_bureau_of_industry 
-		
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = large_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-
-	add_ideas = {
-		#laws
-		low_economic_mobilisation
-		limited_conscription
-	}
-
-	
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = {
-			
-			has_dlc = "No Step Back"
-			
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-
-}
-	}
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.11.27"
@@ -185,19 +49,7 @@ set_popularities = {
 
 set_convoys = 70
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.10.15"
-		election_frequency = 60
-		elections_allowed = yes
-	}
 
-	# Didn't take office until '40, added for flavor
-	promote_character = NZL_peter_fraser
-	retire_character = NZL_michael_joseph_savage
-	set_convoys = 80
-}
 
 
 ### VARIANTS ###
@@ -233,35 +85,6 @@ if = {
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Light Cruisers #
-		create_equipment_variant = {
-			name = "Leander Class"
-			type = ship_hull_cruiser_2
-			name_group = NZL_CL_HISTORICAL
-			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_1
-				front_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_torpedo_1
-				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_light_medium_battery_1
-			}
 		}
 	}
 }

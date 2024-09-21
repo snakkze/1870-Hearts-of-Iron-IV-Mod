@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=2
+}
+
 	id=654
 	name="STATE_654" # Gorno-Altaysk
 	manpower = 79825
@@ -24,3 +28,4 @@ state={
 
 	local_supplies=2.0 
 }
+

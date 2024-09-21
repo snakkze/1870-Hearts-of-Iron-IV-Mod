@@ -6,7 +6,8 @@ state={
 		owner = OLD
      		buildings = {
       		      infrastructure = 2
-     	 	      industrial_complex = 1
+     	 	      industrial_complex = 2
+				  arms_factory = 1
 		}
 		victory_points = {
 			309 5 
@@ -21,7 +22,7 @@ state={
 	provinces={
 		241 247 309 336 
 	}
-	manpower=1300000
+	manpower=292171
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=town

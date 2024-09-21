@@ -2,8 +2,11 @@ state={
 	id=317
 	name="STATE_317"
 	resources={
-		chromium=1 # was: 1
-	}
+
+	
+
+wood=2
+}
 
 	state_category = town
 
@@ -34,3 +37,4 @@ state={
 
 	local_supplies=0.0 
 }
+

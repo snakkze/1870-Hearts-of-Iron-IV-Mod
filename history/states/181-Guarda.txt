@@ -7,8 +7,12 @@ state={
 	state_category = town
 	
 	resources={
+
 		tungsten=95 #was 150 # was: 300
-	}
+	
+
+wood=2
+}
 
 	history={
 		owner = POR
@@ -31,3 +35,4 @@ state={
 
 	local_supplies=0.0 
 }
+

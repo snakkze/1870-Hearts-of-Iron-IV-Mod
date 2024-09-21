@@ -45,38 +45,43 @@ fpw_colonization_category = {
 
 		timeout_effect = {
 			FROM = {
-				# now that we have multiple colonisations at the same time this limit has to be changed
-
-				# Calculate the debuff amount
-				set_variable = { ROOT.temp_debuff_population = state_population_k }
-				round_variable = ROOT.temp_debuff_population
-				set_variable = { ROOT.temp_num = 0.003 }
-				multiply_variable = { ROOT.temp_num = ROOT.temp_debuff_population }
-				add_to_variable = { ROOT.temp_num = 6 }
-				set_variable = { ROOT.temp_debuff = ROOT.temp_num }
-				round_variable = ROOT.temp_debuff
-				add_to_variable = { ROOT.debuff_tt = ROOT.temp_debuff }
-				divide_variable = { ROOT.temp_debuff = 100 }
-
-				# Sum of all debuffs
-				subtract_from_variable = { ROOT.debuff = ROOT.temp_debuff }
-
-				if= {
+				if = {
 					limit = {
-						check_variable = { ROOT.debuff > 100 }
+						NOT = {
+							is_claimed_by = ROOT
+							is_core_of = ROOT
+						}
 					}
-					set_variable = { ROOT.debuff = 100 }
-				}
+					# Calculate the debuff amount
+					set_variable = { ROOT.temp_debuff_population = state_population_k }
+					divide_variable = { ROOT.temp_debuff_population = 25 }
+	
+					add_to_variable = { ROOT.debuff_tt = ROOT.temp_debuff_population }
+					# For whatever reason dividing trough 100 directly doesnt work but dividing two times by 10 does?
+					divide_variable = { ROOT.temp_debuff_population = 10 }
+					divide_variable = { ROOT.temp_debuff_population = 10 }
+	
+					# Shouldnt be too high thats why a max of 5% per tile
+					clamp_variable = {
+						var = ROOT.temp_debuff_population
+						max = 5
+					}
+	
+					set_variable = { THIS.admin_cost = ROOT.temp_debuff_population }
 
-				clamp_variable = {
-					var = ROOT.debuff
-					max = 100
+					# Sum of all debuffs
+					# ROOT.debuff is a variable we use to get the negative value to use in the modifier
+					subtract_from_variable = { ROOT.debuff = ROOT.temp_debuff_population }
+	
+					clamp_variable = {
+						var = ROOT.debuff
+						max = 100
+					}
 				}
 
 				transfer_state_to = ROOT
+				set_state_flag = can_be_integrated
 				clr_state_flag = tribe_state
-
-				#log = "Phase 2: [THIS.GetID]"
 
 				ROOT = {
 					# remove
@@ -142,8 +147,50 @@ fpw_colonization_category = {
 						}
 						colonize_state = yes
 					}
+				} else_if = {
+					limit = {
+						ROOT = {
+							any_controlled_state = {
+								any_neighbor_state = {
+									check_variable = { THIS.tribal = PREVPREV.tribal }
+									has_state_flag = tribe_state
+									is_owned_by = TRB
+									is_coastal = no
+									NOT = {
+										has_state_flag = is_colonizing
+									}
+								}
+							}
+						}
+					}
+					ROOT = {
+						random_controlled_state = {
+							limit = {
+								check_variable = { THIS.tribal = PREVPREV.tribal }
+							}
+							random_neighbor_state = {
+								limit = {
+									check_variable = { THIS.tribal = PREVPREV.tribal }
+									has_state_flag = tribe_state
+									is_owned_by = TRB
+									is_coastal = no
+								}
+								colonize_state = yes
+							}
+						}
+					}
 				}
-				else = {
+				else_if = {
+					limit = {
+						any_state = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+						}
+					}
 					random_state = {
 						limit = {
 							check_variable = { THIS.tribal = PREV.tribal }
@@ -156,93 +203,11 @@ fpw_colonization_category = {
 						colonize_state = yes
 					}
 				}
-			}
-		}
-	}
-
-	integration_descision = {
-
-		visible = {
-			if = {
-				limit = {
-					any_owned_state = {
-						has_state_flag = is_colonized_by_@ROOT
+				else = {
+					ROOT = {
+						country_event = fpw_generic.1
 					}
 				}
-			}
-		}
-
-		available = {
-			NOT = {
-				has_country_flag = is_integrating
-			}
-		}
-
-		allowed = {
-			if = {
-				limit = {
-					any_owned_state = {
-						has_state_flag = is_colonized_by_@ROOT
-					}
-				}
-			}	
-		}
-
-		state_target = yes
-		target_trigger = {
-			FROM = {
-				has_state_flag = is_colonized_by_@ROOT
-			}
-		}
-
-		icon = GFX_decision_integration
-		fire_only_once = no
-		days_remove = THIS.integration_time
-		#days_remove = 5
-
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-
-		complete_effect = {
-			ROOT = {
-				set_country_flag = is_integrating
-			}
-		}
-
-		remove_effect = {
-			FROM = {
-				clr_state_flag = is_colonized_by_@ROOT
-				add_claim_by = ROOT 
-
-				set_variable = { ROOT.temp_debuff_population_to_remove = state_population_k }
-				round_variable = ROOT.temp_debuff_population_to_remove
-
-				# Calculation of the Function
-				set_variable = { ROOT.temp_num_to_remove = 0.003 }
-				multiply_variable = { ROOT.temp_num_to_remove = ROOT.temp_debuff_population_to_remove } # times population_k
-				add_to_variable = { ROOT.temp_num_to_remove = 6 }
-
-				# Make Ready for usage
-				set_variable = { ROOT.temp_debuff_to_remove = ROOT.temp_num_to_remove }
-				round_variable = ROOT.temp_debuff_to_remove
-
-				# Setup for Tooltip
-				subtract_from_variable = { ROOT.debuff_tt = ROOT.temp_debuff_to_remove }
-
-				# Setup for usage in modifier(0.xx)
-				divide_variable = { ROOT.temp_debuff_to_remove = 100 }
-
-				# Sum of all debuffs
-				add_to_variable = { ROOT.debuff = ROOT.temp_debuff_to_remove }
-			}
-			ROOT = {
-				clr_country_flag = is_integrating
-				force_update_dynamic_modifier = yes
 			}
 		}
 	}

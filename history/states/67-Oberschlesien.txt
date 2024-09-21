@@ -3,9 +3,13 @@ state={
 	id=67
 	name="STATE_67"
 	resources={
+
 		steel=8.000
 		aluminium=6.000
-	}
+	
+
+wood=3
+}
 
 	history={
 		victory_points = {
@@ -35,3 +39,4 @@ state={
 	state_category=city
 	local_supplies=4.000
 }
+

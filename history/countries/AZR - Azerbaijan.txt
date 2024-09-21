@@ -1,44 +1,20 @@
-﻿capital = 229 #Baku
-
+capital = 229 #Baku
 oob = "AZR_1866"
+
 
 set_research_slots = 3
 
 # Starting tech
 set_technology = {
-	fpw_fpw_fpw_infantry_weapons = 1
-	fpw_fpw_fpw_infantry_weapons1 = 1
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -61,6 +37,5 @@ set_popularities = {
 	communism = 40
 	neutrality = 30
 }
-
 
 

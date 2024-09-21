@@ -1,18 +1,4 @@
 division_template = {
-	name = "Leibgrenadierregiment"
-	division_names_group = PRS_INF_01
-	is_locked = no
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-
-division_template = {
 	name = "Infanterieregiment"
 	division_names_group = PRS_LWR_01
 	is_locked = no
@@ -45,25 +31,10 @@ division_template = {
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
 	}
 }
 
 units = {
-	### INFANTERIE ###
-	## Leibgrenadierregiment ##
-	#1. Garde-Infanterie-Division
-	division = {
-		#1. Leibgrenadierregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 1
-		}
-		location = 3530
-		division_template = "Leibgrenadierregiment"
-		start_experience_factor = 1
-	}
-
 	## Infanterieregiment ##
 	#1. Infanterie-Division
 	division = {
@@ -72,66 +43,9 @@ units = {
 			is_name_ordered	= yes
 			name_order = 1
 		}
-		location = 6581
+		location = 6542
 		division_template = "Infanterieregiment"
 		start_experience_factor = 0.3
-	}
-	#2. Infanterieregiment
-	division = {
-		#2. Preußische Infanterie-Division
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 2
-		}
-		location = 6568s
-		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
-	}
-	#3. Infanterieregiment
-	division = {
-		#3. Preußische Infanterie-Division
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 3
-		}
-		location = 11640
-		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
-	}
-	#4. Infanterieregiment
-	division = {
-		#4. Preußische Infanterie-Division
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 4
-		}
-		location = 6581
-		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
-	}
-
-	## Feldartillerieregiment ##
-	#1. Feldartillerieregiment-Regiment
-	division = {
-		#1. Feldartillerieregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 1
-		}
-		location = 3530
-		division_template = "Feldartillerieregiment"
-		start_experience_factor = 0.1
-	}
-	#2. Feldartillerieregiment-Regiment
-	division = {
-		#2. Feldartillerieregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 2
-		}
-		location = 6568
-		division_template = "Feldartillerieregiment"
-		start_experience_factor = 0.1
 	}
 
 	### KAVALLERIE ###
@@ -143,28 +57,6 @@ units = {
 			name_order = 1
 		}
 		location = 6712
-		division_template = "Kavallerieregiment"
-		start_experience_factor = 0.5
-	}
-	# 2. kavallerie-Division
-	division = {
-		#2. Kavallerieregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 2
-		}
-		location = 6581
-		division_template = "Kavallerieregiment"
-		start_experience_factor = 0.3
-	}
-	# 3. kavallerie-Division
-	division = {
-		#3. Kavallerieregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 3
-		}
-		location = 11640
 		division_template = "Kavallerieregiment"
 		start_experience_factor = 0.3
 	}

@@ -6,8 +6,12 @@ state={
 	
 	state_category = megalopolis
 	resources={
+
 		steel=16 # was: 28
-	}
+	
+
+wood=14
+}
 
 	history={
 		owner = SOV
@@ -28,3 +32,4 @@ state={
 
 	local_supplies=6.0 
 }
+

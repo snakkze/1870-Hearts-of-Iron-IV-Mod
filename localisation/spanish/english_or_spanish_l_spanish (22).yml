@@ -1,0 +1,141 @@
+﻿l_spanish:
+ WHILE_FOCUSING: "Mientras se concentra en esto, se producirán los siguientes efectos:\n$EFF$" #NT!
+ ITA_is_monarchy: "¡Italia es un §YMonarchy§!" #NT!
+ ITA_owns_croatia: "¡Posee §YCroatia§!" #NT!
+ ITA_owns_bulgaria: "¡Posee §YBulgaria§!" #NT!
+ ITA_owns_caucasus: "¡Posee toda la región del §YCaucasus§!" #NT!
+ ITA_habsburg_real: "§YAustria§! tiene un gran imperio" #NT!
+ PAP_catholic_tradition: "Mantener la tradición católica" #NT!
+ PAP_austria: "Pacto secreto con los Habsburgo" #NT!
+ PAP_italian_compromise: "El compromiso italiano" #NT!
+ PAP_attack_italy: "Liberando la Patria" #NT!
+ ITA_start: "[ROOT.GetNameDefCap]" #NT!
+ ITA_start_desc: "El Reino de Italia se convirtió en una nación unida en 1861, después de derrotar con éxito a los Borbones en Sicilia y a los Habsburgo en Austria y sus otros estados. El futuro de nuestra nación parece prometedor, mientras esperamos con ansias lo que nos depararán las próximas décadas." #NT!
+ ITA_ally_prussia: "Alianza con Prusia" #NT!
+ ITA_ally_prussia_desc: ""El enemigo de mi enemigo es mi amigo", dicen, y ciertamente tenemos un enemigo común. Dado que el estallido de la guerra entre Prusia y Austria parece inminente, sería lógico buscar una alianza con ellos." #NT!
+ ITA_prussian_military_cooperation: "[PRE.GetAdjective] Cooperación militar" #NT!
+ ITA_prussian_military_cooperation_desc: "Nosotros y los [PRE.GetAdjective] tenemos un ejército muy fuerte, por lo que sería genial ayudarnos mutuamente a través de la investigación militar." #NT!
+ ITA_venice_for_support: "Venecia en busca de apoyo" #NT!
+ ITA_venice_for_support_desc: "La guerra es demasiado violenta y mortal y los austriacos tienen un ejército débil. Quizás si les ofrecemos ayuda en una guerra próxima, podrían darnos parte de la tierra que merecemos por derecho." #NT!
+ ITA_formalise_habsburg_alliance: "Formalizar la alianza de los Habsburgo" #NT!
+ ITA_formalise_habsburg_alliance_desc: "Ahora que hemos establecido buenas relaciones con los austriacos, podríamos fortalecernos a ambos formando una alianza." #NT!
+ ITA_the_war_with_austria: "La guerra con Austria" #NT!
+ ITA_the_war_with_austria_desc: "Con los prusianos luchando por la unificación de Alemania, sería correcto honrar nuestra alianza con ellos, como podrían hacer con un poco de ayuda." #NT!
+ ITA_austria_info: "La §YGuerra de los Hermanos§! continúa" #NT!
+ ITA_browars_info: "Estamos luchando en la §YGuerra de Hermanos§!" #NT!
+ ITA_venice_offensive: "La ofensiva de Venecia" #NT!
+ ITA_venice_offensive_desc: "La ciudad de Venecia será para siempre parte de la nación italiana. Ya es hora de que liberemos la ciudad de la opresión de los Habsburgo utilizando tácticas rápidas para conquistar territorio rápidamente." #NT!
+ ITA_mountain_defence: "Defensa de la montaña" #NT!
+ ITA_mountain_defence_desc: "Pensar que podemos atacar al poderoso [AUS.GetName] es estúpido y ridículo. En cambio, deberíamos centrarnos en aprovechar el terreno a nuestro favor y dejar que nuestro aliado más fuerte, Prusia, haga todo el trabajo." #NT!
+ ITA_will_be_removed: "§RSe eliminará al final de la Guerra de los Hermanos§!" #NT!
+ ITA_w: "El reino victorioso" #NT!
+ ITA_w_desc: "Con nuestra gran derrota sobre los austriacos, hemos creado una nación que existirá para siempre en el mundo. Verdaderamente, uno de los reinos de todos los tiempos: Italia." #NT!
+ ITA_w_trigger: "Se completó automáticamente después de ganar la §YGuerra de hermanos§!" #NT!
+ ITA_l: "Abajo la monarquía" #NT!
+ ITA_l_desc: "Nuestra nación ha sufrido una dolorosa derrota en los Alpes y está claro que la culpa la tiene el Rey. Lo ejecutaremos y destruiremos sus restos, creando un nuevo estado, uno que sea lo suficientemente estable como para resistir las malvadas monarquías como la de los Habsburgo." #NT!
+ ITA_l_trigger: "Se completó automáticamente después de perder la §YGuerra de Hermanos§!" #NT!
+ ITA_conservative_politics: "Política conservadora" #NT!
+ ITA_conservative_politics_desc: "El [ROOT.GetRulingParty] es el partido líder en la Cámara de Diputados y adopta [ROOT.GetRulingIdeology] políticas." #NT!
+ ITA_proclaim_the_republic: "Proclamar la Nueva República" #NT!
+ ITA_proclaim_the_republic_desc: "La monarquía ha caído. ¡Viva la República!" #NT!
+ ITA_counter_coup: "Contragolpe" #NT!
+ ITA_counter_coup_desc: "Los estúpidos liberales han tomado el control de nuestro país. ¡Bajo el liderazgo de Alfonso Ferrero la Marmora, derrocaremos a estos idiotas y restauraremos el orden!" #NT!
+ ITA_counter_coup_trigger: "El §YPartido Nacional Italiano§! existe" #NT!
+ ITA_counter_coup_effect: "§R¡El Partido Nacional tomará el control del gobierno y destruirá la democracia!§!" #NT!
+ ITA_kill_socialists: "Eliminar a los traidores socialistas" #NT!
+ ITA_kill_socialists_desc: "Los socialistas no son más que traidores al glorioso país que hemos construido. Son enemigos del pueblo y deben morir inmediatamente." #NT!
+ ITA_unexpected_consequences: "§R¡Esto puede tener consecuencias inesperadas!§!" #NT!
+ ITA_concessions_to_socialists: "Concesiones a los trabajadores socialistas" #NT!
+ ITA_concessions_to_socialists_desc: "Simplemente quieren ganar un salario justo, que podemos ofrecerles. No son muy diferentes a nosotros." #NT!
+ ITA_royal_parade: "El desfile real" #NT!
+ ITA_royal_parade_desc: "Un desfile en [ROOT.Capital.GetCapitalVictoryPointName] podría aumentar el apoyo a la monarquía [ROOT.GetAdjectiveCap]." #NT!
+ ITA_monarchist_propaganda: "Difundir propaganda monárquica" #NT!
+ ITA_monarchist_propaganda_desc: "El público en general puede ser fácilmente influenciado por la propaganda, por lo que al mostrar el sentimiento monárquico en carteles y similares, podemos destruir lentamente el republicanismo en Italia." #NT!
+ ITA_crush_republican_opposition: "Aplastar a la oposición republicana" #NT!
+ ITA_crush_republican_opposition_desc: "Es el momento." #NT!
+ ITA_find_a_queen: "encontrar una reina" #NT!
+ ITA_find_a_queen_desc: "Todo rey necesita una reina, pero nuestro rey aún no la tiene. Una reina italiana podría reforzar la legitimidad de la monarquía." #NT!
+ ITA_find_a_queen_effect: "Inicia una §Ycadena de eventos§! para encontrarle una esposa a Vittorio Emanuele. Esto podría mejorar las relaciones con otros países." #NT!
+ ITA_seek_allies: "Busca aliados" #NT!
+ ITA_seek_allies_desc: "Ahora que nos hemos establecido como una gran potencia en Europa, podríamos encontrar más aliados para protegernos de nuestros enemigos." #NT!
+ ITA_expansionism: "Expansionismo italiano" #NT!
+ ITA_expansionism_desc: "Es hora de que el pueblo italiano ocupe el lugar que le corresponde en el escenario mundial. Debemos recuperar nuestro espíritu imperial y crear un imperio italiano." #NT!
+ ITA_take_the_capital: "Tomar la capital" #NT!
+ ITA_take_the_capital_desc: "Roma fue la capital del Imperio Romano y oficialmente es la capital de Italia. Lamentablemente, el Papa aún controla la ciudad, así como el resto del Lacio. Podemos aprovechar la Guerra Franco-Prusiana para recuperarla, gracias a que Francia retiró sus guarniciones de la ciudad." #NT!
+ ITA_take_the_capital_effect: "§RSi Francia no está en guerra con una nación importante, lo más probable es que tenga tropas estacionadas en Roma. Ten esto en cuenta, ya que el objetivo de guerra caducará si no se usa dentro de los 3 meses posteriores a completar el objetivo.§!" #NT!
+ ITA_focus_on_the_mediterranean: "El Mediterráneo en el punto de mira" #NT!
+ ITA_focus_on_the_mediterranean_desc: "Reviviremos el Imperio Romano y estableceremos nuestro dominio sobre el Mar Mediterráneo." #NT!
+ ITA_colonial_empire: "Colonialismo italiano" #NT!
+ ITA_colonial_empire_desc: "Países como Francia, Gran Bretaña y Portugal se han expandido hacia África en esta nueva ola de colonialismo conocida como "Nuevo Imperialismo". Deberíamos seguir esta tendencia estableciendo nuestras propias colonias." #NT!
+ ITA_ott: "El §YImperio Otomano§! existe" #NT!
+ ITA_n_ott: "El §YImperio Otomano§! no existe" #NT!
+ ITA_plotting_against_the_ottomans: "Conspiración contra los otomanos" #NT!
+ ITA_plotting_against_the_ottomans_desc: "Libia, Grecia, Albania, Montenegro, Constantinopla. Si queremos revivir el Imperio Romano, necesitamos conquistar estas regiones históricas. Muchos otros países buscan liberarse a sí mismos o a sus tierras cercanas del imperio ilegal que domina los Balcanes. Es hora de contraatacar." #NT!
+ ITA_betray_the_habsburgs: "Traicionar a los Habsburgo" #NT!
+ ITA_betray_the_habsburgs_desc: "Los Habsburgo pensaban que ahora éramos amigos. Sin embargo, siguen persiguiendo a las minorías y debemos detenerlos. Con la ayuda de los rusos, los alemanes y otros grupos militares, disolveremos finalmente el Imperio de los Habsburgo." #NT!
+ ITA_mto: "Formar la Organización del Tratado del Mediterráneo" #NT!
+ ITA_mto_desc: "Para evitar una guerra en el mar Mediterráneo, se podría crear la OMT para mantener la paz en la región." #NT!
+ ITA_proclaim_greater_italy: "Proclamar la Gran Italia" #NT!
+ ITA_roman_ambition: "Ambición romana" #NT!
+ ITA_roman_info: "Desbloquea un árbol de enfoque oculto del §YImperio Romano§!." #NT!
+ ITA_claim_libya: "Reclamar Libia" #NT!
+ ITA_prevent_diseases: "Prevenir enfermedades" #NT!
+ ITA_establish_the_african_colonies: "Establecer colonias africanas" #NT!
+ ITA_establish_italian_east_asia: "Establecer colonias asiáticas" #NT!
+ ITA_conquer_dai_nam: "Conquistar Đai Nam" #NT!
+ ITA_claim_french_colonies: "Reclamación de colonias francesas en Asia" #NT!
+ ITA_proclaim_empire: "Proclamar el Imperio Italiano" #NT!
+ ITA_ally_france: "Seguir siendo leal a Francia" #NT!
+ ITA_ally_germany: "Favor [PRS.GetNameDef]" #NT!
+ ITA_fpw_trigger: "La §YGuerra Franco-Prusiana§! continúa" #NT!
+ ITA_franco_prussian_war: "La guerra franco-prusiana" #NT!
+ ITA_claim_the_french_coast: "Reclama la costa francesa" #NT!
+ ITA_the_left: "Política de izquierda" #NT!
+ ITA_the_left_desc: "Tras las elecciones, la izquierda consiguió un gobierno mayoritario en la Cámara de Diputados." #NT!
+ ITA_left_trigger: "El §YLeft§! es el partido gobernante" #NT!
+ ITA_solidify_control: "Solidificar el control" #NT!
+ ITA_presidential_election: "Nuestra primera elección presidencial" #NT!
+ ITA_presidential_election_desc: "Un presidente de la república mantendría el orden y la estabilidad en estos tiempos traicioneros." #NT!
+ ITA_ban_monarchism: "Prohibir el regreso de las monarcas" #NT!
+ ITA_ban_monarchism_desc: "Para evitar que otro monarca retome el trono, prohibiremos la entrada de la realeza a la nación." #NT!
+ ITA_bastion_of_democracy: "Bastión de la democracia" #NT!
+ ITA_bastion_of_democracy_desc: "¡Todos somos libertad!" #NT!
+ ITA_united_against_prussia: "Unidos contra el totalitarismo prusiano" #NT!
+ ITA_attack_ethiopia: "Destruir [ETH.GetNameDef]" #NT!
+ ITA_destroy_french_empire: "Destruir [FRA.GetNameDef]" #NT!
+ ITA_spread_democracy_to_spain: "Extender la democracia a España" #NT!
+ ITA_push_to_the_danube: "Empuje hacia el Danubio" #NT!
+ ITA_attack_istanbul: "La marcha sobre Atenas" #NT!
+ ITA_take_care_of_iberia: "Cuida a Iberia" #NT!
+ ITA_revive_the_empire: "Restauración del Imperio Romano" #NT!
+ ITA_conquer_turkey_and_levant: "Conquistar Turquía y el Levante" #NT!
+ ITA_finish_morocco: "Terminar Marruecos" #NT!
+ ITA_finish_egypt: "Terminar Egipto" #NT!
+ ITA_selected: "§YCuando se selecciona:§!" #NT!
+ ITA_completed: "§YCuando se complete:§!" #NT!
+ ITA_create_faction: "Crear facción - §YAlianza Cristiana de Liberación§!" #NT!
+ ITA_divide: "Se invitará a varias naciones a dividir este imperio." #NT!
+ ITA_economics: "[ROOT.GetAdjective] Economía" #NT!
+ ITA_develop_north: "Continúan los desarrollos en el norte" #NT!
+ ITA_develop_south: "Centrarse en el Sur" #NT!
+ ITA_expanding_military_industry: "Ampliar la industria militar" #NT!
+ ITA_lombardy_weapons: "Producción de armas en Lombardía" #NT!
+ ITA_venice_weapons: "Fabricación de armas en Venecia" #NT!
+ ITA_southern_arms_industries: "Industrias de armas del sur" #NT!
+ ITA_start_mobilisation: "Empecemos a movilizar nuestra economía" #NT!
+ ITA_produce_olive_oil: "Producir aceite de oliva" #NT!
+ ITA_produce_wine: "La industria del vino en Italia" #NT!
+ ITA_produce_ice_cream: "Producir helado napolitano" #NT!
+ ITA_produce_ice_cream_desc: "Sí, sé que se inventó en Prusia, ¿de acuerdo?" #NT!
+ ITA_construct_more_factories: "Construir más fábricas" #NT!
+ ITA_even_more_factories: "Fábricas de Toscana y Cerdeña" #NT!
+ ITA_produce_cheese: "Producir [ROOT.GetAdjective] Queso" #NT!
+ ITA_navy: "El [ROOT.GetAdjective] Militar" #NT!
+ ITA_rival_the_uk: "Desafiar la supremacía naval británica" #NT!
+ ITA_borrow_ideas_from_uk: "Centrarse en asuntos más importantes" #NT!
+ ITA_artillery_focus: "Artillería mejorada" #NT!
+ ITA_cavalry_focus: "Cavalli Italiani" #NT!
+ ITA_rifle_focus: "Modernicemos nuestros fusiles" #NT!
+ ITA_doctrine_effort: "Doctrinas militares terrestres reales [ROOT.GetAdjective]" #NT!
+ ITA_special_forces: "Fuerzas especiales" #NT!
+ ITA_special_forces_desc: "Los equipos de educación física en la escuela pueden ser así:" #NT!

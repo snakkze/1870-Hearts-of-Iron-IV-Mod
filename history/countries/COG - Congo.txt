@@ -1,33 +1,17 @@
-﻿capital = 295
- oob = "COG_1866"
-
+capital = 295
 oob = "COG_1866"
+
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 }
 
 set_convoys = 5
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 
-# A colony of Italy in 1939.  However, if independent it would have the same as its 1936 politics
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -40,7 +24,7 @@ set_popularities = {
 
 create_country_leader = {
 	
-	name = "François Tolenga"
+	name = "Fran�ois Tolenga"
 	picture = GFX_portrait_Francois_Tolenga
 	expire = "1965.1.1"
 	ideology = despotism
@@ -48,24 +32,5 @@ create_country_leader = {
 		compassionate_gentleman
 	}
 }
-create_country_leader = {
-	
-	name = "Lumumba Lomendja"
-	picture = GFX_portrait_Lumumba_Lomendja
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		silent_workhorse
-	}
-}
 
-create_country_leader = {
-	
-	name = "David Manera"
-	picture = GFX_portrait_David_Manera
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
+

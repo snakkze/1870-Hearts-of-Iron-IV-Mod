@@ -380,3 +380,8 @@
   fpw_flags.3.d: "(Flag 1) Traditional Prussian two-sided black and white, communist theme\n\n(Flag 2) Inspired by the First International, uses a red background with eblem inspired by the SDAP.\n\n\nYou can always revert your changes later."
   fpw_flags.3.a: "Flag 1"
   fpw_flags.3.b: "Flag 2"
+
+  fpw_generic.1.t:0 "Colonization finished!"
+  fpw_generic.1.d:0 "Our settlers have reported back to our colonization administration in [ROOT.capital.GetName] that the region is now fully colonized, and the settlers have returned to the mainland. These settlers can now colonize another region!"
+  fpw_generic.1.a:0 "Great!"
+

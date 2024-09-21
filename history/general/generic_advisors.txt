@@ -41,13 +41,6 @@ every_possible_country = {
 					has_completed_focus = PRS_gather_public_support
 				}
 				IF = {
-					limit = { 
-						original_tag = NZL
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = NZL_the_lee_affair
-				}
-				IF = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
@@ -97,10 +90,6 @@ every_possible_country = {
 					limit = { 
 						original_tag = NZL
 						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = NZL_strengthen_the_commonwealth
-						has_completed_focus = NZL_constitution_amendment_act
 					}
 				}
 				IF = {

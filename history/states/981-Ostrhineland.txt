@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=3
+}
+
 	id=981
 	name="STATE_981"
 	provinces={
@@ -22,3 +26,4 @@ state={
 	state_category=megalopolis
 	local_supplies=0.000
 }
+

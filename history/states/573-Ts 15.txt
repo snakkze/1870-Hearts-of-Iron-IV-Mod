@@ -6,8 +6,11 @@ state={
 	
 	state_category = pastoral
 	resources={
-		chromium=23 # was: 32
-	}
+
+	
+
+wood=2
+}
 
 	history={
 		victory_points = {
@@ -27,3 +30,4 @@ state={
 
 	local_supplies=7.0 
 }
+

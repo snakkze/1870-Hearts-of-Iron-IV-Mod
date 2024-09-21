@@ -1,4 +1,8 @@
 state = {
+resources={
+wood=4
+}
+
 	id = 820
 	name = "STATE_820"
 	provinces = {
@@ -27,3 +31,4 @@ add_core_of = CHI
 	state_category = pastoral
 	local_supplies = 0.000
 }
+

@@ -1,0 +1,182 @@
+﻿l_german:
+  
+  # Economy 
+  
+ fpw_russia_economy_cat: "Russische Wirtschaft" #NT!
+ investing_in_infrastracture: "Investitionen in die Infrastruktur werden bereits getätigt" #NT!
+ russia_infrastracture_northern_baltics: "Infrastruktur im nördlichen Baltikum" #NT!
+ russia_infrastracture_southern_baltics: "Infrastruktur im südlichen Baltikum" #NT!
+ russia_infrastracture_belarus: "Infrastruktur in Weißrussland" #NT!
+ russia_infrastracture_western_ukraine: "Infrastruktur in der Westukraine" #NT!
+ russia_infrastracture_southern_ukraine: "Infrastruktur in der Südukraine" #NT!
+ russia_infrastracture_northern_ukraine: "Infrastruktur in der Nordukraine" #NT!
+ russia_infrastracture_smolensk_region: "Infrastruktur in der Region Smolensk" #NT!
+ russia_infrastracture_central_russia: "Infrastruktur in Zentralrussland" #NT!
+ russia_infrastracture_novogrod_region: "Infrastruktur in der Region Novogrod" #NT!
+  
+  # Military 
+  
+ fpw_russia_military_cat: "Der Zustand des Militärs" #NT!
+ fpw_russia_military_cat_desc: "\n Jeden §Yyear§! ändert sich die Situation im Militär, je nachdem, wie sehr du dich darum kümmerst. Wenn du komplett §Cignore§! die Armee konzentriert, wird sich dein §YRussische Armee§! §RGeist verschlechtern!§! Wenn du mindestens §Cignore§1einen§! Armeefokus abschließt, bleibt dein §YRussische Armee§! §gGeist wie er ist.§! Aber wenn du §Cignore§1zwei oder mehr§! Fokusse abschließt, wird sich der §YRussische Armee§! §Cignore§5Geist verbessern!§!\n(Beachte, dass das Abschließen von mehr als zwei Fokussen §Cignore§1keine zusätzlichen Buffs§! gewährt)\n(Die positiven Buffs §Cignore§1haben eine Obergrenze§! von dem 2-fachen Upgrade des Geistes)\n" #NT!
+ russia_military_situation_mission: "Veränderte militärische Lage" #NT!
+ russia_military_situation_mission_good_tp: "§GDie [SOV.GetAdjective] Armee ist ihrer Zeit voraus!§!\nÄndere §Y$SOV_russian_army_dynamic_modifier$§! durch\nErfahrungsgewinn der Armee: §G+5,0 %§!\nDivisionsangriff: §G+5,0 %§!\nDivisionsverteidigung: §G+5,0 %§!\nTäglicher Gewinn an Kommandostärke: §G+0,05§!" #NT!
+ russia_military_situation_mission_ok_tp: "§gDas [SOV.GetAdjective] Militär war nicht innovativ und blieb auch nicht zurück, daher wird der §Y$SOV_russian_army_dynamic_modifier$§! Nationalgeist nicht verändert.§!" #NT!
+ russia_military_situation_mission_bad_tp: "§RDie [SOV.GetAdjective] Armee fällt zurück!§!\nÄndere §Y$SOV_russian_army_dynamic_modifier$§! durch\nErfahrungsgewinn der Armee: §R-5,0 %§!\nDivisionsangriff: §R-5,0 %§!\nDivisionsverteidigung: §R-5,0 %§!\nTäglicher Gewinn an Kommandostärke: §R-0,05§!" #NT!
+  
+  # Russification 
+  
+ fpw_russification_cat: "Russifizierung" #NT!
+ fpw_russification_cat_desc: ""
+  
+ russification_info: "Russifizierungsinfo" #NT!
+ imminent_uprising: "Bevorstehender Aufstand" #NT!
+ imminent_uprising_desc: "M-m-mein Zar ... wir haben ein bisschen verrücktes UWU gemacht" #NT!
+  
+ raise_russification_by_10_tp: "Dies wird §Graise§! §YRussification§! bis §C10%§!" #NT!
+ raise_russification_by_5_tp: "Dies wird §Graise§! §YRussification§! bis §C5%§!" #NT!
+ raise_russification_by_2_tp: "Dies wird §Graise§! §YRussification§! bis §C2%§!" #NT!
+ lower_russification_by_10_tp: "Dies wird §Rlower§! §YRussification§! bis §C-10%§!" #NT!
+ lower_russification_by_5_tp: "Dies wird §Rlower§! §YRussification§! bis §C-5%§!" #NT!
+ lower_russification_by_2_tp: "Dies wird §Rlower§! §YRussification§! bis §C-2%§!" #NT!
+  
+ russification_bonus_good: "Durch §Ghigh§! Kooperation erhältst Du einen §YRussification§! Bonus von §C2%§!" #NT!
+ russification_bonus_bad: "Aufgrund von §Rhigh§! Aufregung erleidest Du einen §YRussification§! Debuff von §C-2%§!" #NT!
+  
+  
+ raise_resist_by_20_tp: "Dies wird §Rraise§! §YAgitation§! bis §C20%§!" #NT!
+ raise_resist_by_10_tp: "Dies wird §Rraise§! §YAgitation§! bis §C10%§!" #NT!
+ raise_resist_by_5_tp: "Dies wird §Rraise§! §YAgitation§! bis §C5%§!" #NT!
+ lower_resist_by_20_tp: "Dies wird §Glower§! §YAgitation§! bis §C-20%§!" #NT!
+ lower_resist_by_10_tp: "Dies wird §Glower§! §YAgitation§! bis §C-10%§!" #NT!
+ lower_resist_by_5_tp: "Dies wird §Glower§! §YAgitation§! bis §C-5%§!" #NT!
+  
+ raise_coop_by_20_tp: "Dies wird §Graise§! §YCooperation§! bis §C20%§!" #NT!
+ raise_coop_by_10_tp: "Dies wird §Graise§! §YCooperation§! bis §C10%§!" #NT!
+ raise_coop_by_5_tp: "Dies wird §Graise§! §YCooperation§! bis §C5%§!" #NT!
+ lower_coop_by_20_tp: "Dies wird §Rlower§! §YCooperation§! bis §C-20%§!" #NT!
+ lower_coop_by_10_tp: "Dies wird §Rlower§! §YCooperation§! bis §C-10%§!" #NT!
+ lower_coop_by_5_tp: "Dies wird §Rlower§! §YCooperation§! bis §C-5%§!" #NT!
+  
+  
+ SOV_russification_text: "In [SOV.GetNameDef] leben viele verschiedene Völker und Nationalitäten, das ist nicht wünschenswert. Um das zu lösen, müssen wir das Russifizierungsprogramm durchführen und das Imperium vereinen\n§GRussifizierungsstufen:§!\n §YRussland§!: [?russia_russification]%\n §YPolen§!: [?poland_russification]%\n §YUkraine§!: [?ukraine_russification]%\n §YWeißrussland§!: §G0%\n §YBaltikum§!: §G2%\n §YFinnland§!: §G4%\n §YKaukasus§!: §G6%" #NT!
+ SOV_russia_russification_text: "§YRussian§! Kooperation: §C[?russia_russification_coop]%§!\n§YRussian§! Aufregung: §R[?russia_russification_resist]%§!" #NT!
+ SOV_poland_russification_text: "§YPolish§! Kooperation: §C[?poland_russification_coop]%§!\n§YPolish§! Aufregung: §R[?poland_russification_resist]%§!" #NT!
+ SOV_ukraine_russification_text: "§YUkrainian§! Kooperation: §C[?ukraine_russification_coop]%§!\n§YUkrainian§! Aufregung: §R[?ukraine_russification_resist]%§!" #NT!
+ SOV_belarus_russification_text: "§YBelarusian§! Kooperation: §C[?belarus_russification_coop]%§!\n§YBelarusian§! Aufregung: §R[?belarus_russification_resist]%§!" #NT!
+ SOV_baltic_russification_text: "§YBaltics§! Kooperation: §C[?baltic_russification_coop]%§!\n§YBaltics§! Aufregung: §R[?baltic_russification_resist]%§!" #NT!
+ SOV_finland_russification_text: "§YFinnish§! Kooperation: §C[?finland_russification_coop]%§!\n§YFinnish§! Aufregung: §R[?finland_russification_resist]%§!" #NT!
+ SOV_caucasus_russification_text: "§YCaucasian§! Kooperation: §C[?caucasus_russification_coop]%§!\n§YCaucasian§! Aufregung: §R[?caucasus_russification_resist]%§!" #NT!
+  
+ cooperate_with_nobility: "Mit dem Adel zusammenarbeiten" #NT!
+ deportation_of_minorities: "Deportation russischer Minderheiten" #NT!
+  
+ polish_passive_resistance_mission: "Passiver polnischer Widerstand" #NT!
+ polish_passive_resistance_tp: "§RLowers§! der §YPolish§! Russifizierungsgrad durch §G2%§!" #NT!
+ deportation_of_poles: "Deportation von Polen nach Sibirien" #NT!
+ deportation_of_poles_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ ban_polish_language: "Verbot der Verwendung der polnischen Sprache" #NT!
+ poland_introduce_martial_law: "Einführung des Kriegsrechts in Polen" #NT!
+ poland_introduce_martial_law_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+ poland_force_conscription: "Zwangsrekrutierung in Polen" #NT!
+ poland_force_conscription_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ cooperate_with_polish_nobility: "Zusammenarbeit mit dem polnischen Adel" #NT!
+ cooperate_with_polish_nobility_desc: "Diese Entscheidung wird nach 100 Tagen erneut erscheinen" #NT!
+ poland_promote_russian_culture: "Förderung der russischen Kultur" #NT!
+ poland_promote_russian_culture_desc: "Diese Entscheidung wird nach 30 Tagen erneut angezeigt" #NT!
+ raid_poland_culture_centers: "Razzien in polnischen Kulturzentren" #NT!
+ raid_poland_culture_centers_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+  
+ finnish_passive_resistance_mission: "Passiver finnischer Widerstand" #NT!
+ finnish_passive_resistance_tp: "§RLowers§! der §YFinnish§! Russifizierungsgrad durch §G2%§!" #NT!
+ deportation_of_finns: "Deportation von Finnen nach Sibirien" #NT!
+ deportation_of_finns_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ ban_finnish_language: "Verbot der Verwendung der finnischen Sprache" #NT!
+ finland_introduce_martial_law: "Einführung des Kriegsrechts in Finnland" #NT!
+ finland_introduce_martial_law_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+ finland_force_conscription: "Zwangsrekrutierung in Finnland" #NT!
+ finland_force_conscription_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ cooperate_with_finnish_nobility: "Zusammenarbeit mit dem finnischen Adel" #NT!
+ cooperate_with_finnish_nobility_desc: "Diese Entscheidung wird nach 100 Tagen erneut erscheinen" #NT!
+ finland_promote_russian_culture: "Förderung der russischen Kultur" #NT!
+ finland_promote_russian_culture_desc: "Diese Entscheidung wird nach 30 Tagen erneut angezeigt" #NT!
+ raid_finland_culture_centers: "Razzien in finnischen Kulturzentren" #NT!
+ raid_finland_culture_centers_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+  
+ caucasus_passive_resistance_mission: "Passiver kaukasischer Widerstand" #NT!
+ caucasus_passive_resistance_tp: "§RLowers§! der §YCaucasus§! Russifizierungsgrad durch §G2%§!" #NT!
+ deportation_of_caucasians: "Deportation von Kaukasiern nach Sibirien" #NT!
+ deportation_of_caucasians_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ ban_caucasus_language: "Verbot der Verwendung von Sprachen der kaukasischen Region" #NT!
+ caucasus_introduce_martial_law: "Einführung des Kriegsrechts in der Kaukasusregion" #NT!
+ caucasus_introduce_martial_law_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+ caucasus_force_conscription: "Zwangsrekrutierung in der Kaukasusregion" #NT!
+ caucasus_force_conscription_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ cooperate_with_caucasian_nobility: "Zusammenarbeit mit dem kaukasischen Adel" #NT!
+ cooperate_with_caucasian_nobility_desc: "Diese Entscheidung wird nach 100 Tagen erneut erscheinen" #NT!
+ caucasus_promote_russian_culture: "Förderung der russischen Kultur" #NT!
+ caucasus_promote_russian_culture_desc: "Diese Entscheidung wird nach 30 Tagen erneut angezeigt" #NT!
+ raid_caucasus_culture_centers: "Razzien in kaukasischen Kulturzentren" #NT!
+ raid_caucasus_culture_centers_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+  
+ ukrainian_passive_resistance_mission: "Passiver ukrainischer Widerstand" #NT!
+ ukrainian_passive_resistance_tp: "§RLowers§! der §YUkrainian§! Russifizierungsgrad durch §G2%§!" #NT!
+ deportation_of_ukrains: "Deportation von Ukrainern nach Sibirien" #NT!
+ deportation_of_ukrains_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ ban_ukrainian_language: "Verbot der Verwendung der ukrainischen Sprache" #NT!
+ ukraine_introduce_martial_law: "Einführung des Kriegsrechts in der Ukraine" #NT!
+ ukraine_introduce_martial_law_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+ ukraine_force_conscription: "Zwangsrekrutierung in der Ukraine" #NT!
+ ukraine_force_conscription_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ cooperate_with_ukrainian_nobility: "Zusammenarbeit mit dem ukrainischen Adel" #NT!
+ cooperate_with_ukrainian_nobility_desc: "Diese Entscheidung wird nach 100 Tagen erneut erscheinen" #NT!
+ ukraine_promote_russian_culture: "Förderung der russischen Kultur" #NT!
+ ukraine_promote_russian_culture_desc: "Diese Entscheidung wird nach 30 Tagen erneut angezeigt" #NT!
+ raid_ukraine_culture_centers: "Razzien in ukrainischen Kulturzentren" #NT!
+ raid_ukraine_culture_centers_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+  
+ belarusian_passive_resistance_mission: "Passiver belarussischer Widerstand" #NT!
+ belarusian_passive_resistance_tp: "§RLowers§! der §YBelarusian§! Russifizierungsgrad durch §G2%§!" #NT!
+ deportation_of_belarusians: "Deportation von Weißrussen nach Sibirien" #NT!
+ deportation_of_belarusians_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ ban_belarusian_language: "Verbot der Verwendung der belarussischen Sprache" #NT!
+ belarus_introduce_martial_law: "Einführung des Kriegsrechts in Belarus" #NT!
+ belarus_introduce_martial_law_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+ belarus_force_conscription: "Zwangsrekrutierung in Weißrussland" #NT!
+ belarus_force_conscription_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ cooperate_with_belarusian_nobility: "Zusammenarbeit mit dem belarussischen Adel" #NT!
+ cooperate_with_belarusian_nobility_desc: "Diese Entscheidung wird nach 100 Tagen erneut erscheinen" #NT!
+ belarus_promote_russian_culture: "Förderung der russischen Kultur" #NT!
+ belarus_promote_russian_culture_desc: "Diese Entscheidung wird nach 30 Tagen erneut angezeigt" #NT!
+ raid_belarus_culture_centers: "Razzien in belarussischen Kulturzentren" #NT!
+ raid_belarus_culture_centers_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+  
+ baltic_passive_resistance_mission: "Passiver baltischer Widerstand" #NT!
+ baltic_passive_resistance_tp: "§RLowers§! der §YBaltic§! Russifizierungsgrad durch §G2%§!" #NT!
+ deportation_of_baltics: "Deportation von Baltic nach Sibirien" #NT!
+ deportation_of_baltics_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ ban_baltic_language: "Verbot der Verwendung baltischer Sprachen" #NT!
+ baltic_introduce_martial_law: "Einführung des Kriegsrechts im Baltikum" #NT!
+ baltic_introduce_martial_law_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+ baltic_force_conscription: "Zwangsrekrutierung im Baltikum" #NT!
+ baltic_force_conscription_desc: "Diese Entscheidung wird nach 60 Tagen erneut angezeigt" #NT!
+ cooperate_with_baltic_nobility: "Zusammenarbeit mit dem baltischen Adel" #NT!
+ cooperate_with_baltic_nobility_desc: "Diese Entscheidung wird nach 100 Tagen erneut erscheinen" #NT!
+ baltic_promote_russian_culture: "Förderung der russischen Kultur" #NT!
+ baltic_promote_russian_culture_desc: "Diese Entscheidung wird nach 30 Tagen erneut angezeigt" #NT!
+ raid_baltic_culture_centers: "Razzia in baltischen Kulturzentren" #NT!
+ raid_baltic_culture_centers_desc: "Diese Entscheidung wird nach 80 Tagen erneut erscheinen" #NT!
+  
+  # Integration 
+  
+ russification_integration_tp: "Sie benötigen mindestens §C60%§! §GRussification§!, um diese Entscheidung zu treffen" #NT!
+  
+ integrate_poland_region: "Polen integrieren" #NT!
+ integrate_poland_region_desc: "Sie benötigen mindestens §C60%§! §GRussification§!, um diese Entscheidung zu treffen" #NT!
+ integrate_finland_region: "Finnland integrieren" #NT!
+ integrate_finland_region_desc: "Sie benötigen mindestens §C60%§! §GRussification§!, um diese Entscheidung zu treffen" #NT!
+ integrate_caucasus_region: "Kaukasus integrieren" #NT!
+ integrate_caucasus_region_desc: "Sie benötigen mindestens §C60%§! §GRussification§!, um diese Entscheidung zu treffen" #NT!
+  
+  
+  
+  

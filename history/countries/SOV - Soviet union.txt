@@ -1,3 +1,5 @@
+capital = 195
+oob = "SOV_1866"
 
 ####
 #### NO STEP BACK
@@ -206,6 +208,7 @@ set_variable = { SOV_fc_fascism_drift = 0 }
 
 #Add synthetic refineries tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 
 }
 
@@ -259,8 +262,6 @@ add_ai_strategy = {
 #### VANILLA ####
 ####
 
-capital = 195
-oob = "SOV_1866"
 
 starting_train_buffer = 3.0
 
@@ -271,17 +272,7 @@ if = {
 		set_naval_oob = "SOV_1866_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 
 set_research_slots = 3
 set_stability = 0.20
@@ -290,9 +281,13 @@ set_war_support = 0.10
 set_technology = {
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
-	fpw_cannon_artillery = 1
 	fpw_basic_train = 1
     tech_support = 1
+	fpw_cannon_artillery = 1
+	fpw_cannon2 = 1
+	fpw_cannon3 = 1
+	fpw_howitzer_artillery = 1
+	fpw_breech_artillery = 1
 }
 
 
@@ -332,7 +327,6 @@ if = {
 
 ### VARIANTS ###
 # 1936 Start #
-
 
 
 

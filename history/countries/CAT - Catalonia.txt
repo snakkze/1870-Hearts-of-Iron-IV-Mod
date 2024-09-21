@@ -1,41 +1,19 @@
-﻿capital = 165
- oob = "CAT_1866"
+capital = 165
+oob = "CAT_1866"
 
-#oob = ""
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
 set_convoys = 20
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
 
-}
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
@@ -48,29 +26,19 @@ set_popularities = {
 	communism = 47
 }
 
-create_country_leader = {
-	name = "Andreu Nin i Pérez"
-	picture = GFX_portrait_Andreu_Nin_i_Perez
-	expire = "1965.1.1"
-	ideology = marxism
-}
+
 
 create_country_leader = {
-	name = "Lluís Companys i Jover"
+	name = "Llu�s Companys i Jover"
 	picture = GFX_portrait_Lluis_Companys_i_Jover
 	expire = "1965.1.1"
 	ideology = liberalism
 }
 
-create_country_leader = {
-	name = "Daniel Cardona i Civit"
-	picture = GFX_portrait_Daniel_Cardona_i_Civit
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-}
+
 
 create_country_leader = {
-	name = "Francesc Cambó i Batlle"
+	name = "Francesc Camb� i Batlle"
 	picture = GFX_portrait_Francesc_Cambo_i_Batlle
 	expire = "1965.1.1"
 	ideology = centrism

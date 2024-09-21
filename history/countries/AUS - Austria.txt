@@ -1,5 +1,5 @@
 capital = 4
- oob = "AUS_1866"
+oob = "AUS_1866"
 
 set_cosmetic_tag = AUS_austrian_empire
 
@@ -10,25 +10,20 @@ set_cosmetic_tag = AUS_austrian_empire
 	}
 }
 
-oob = "AUS_1866"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
-
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 set_research_slots = 3
 
 set_technology = {
-	fpw_fpw_fpw_infantry_weapons = 1
-	fpw_fpw_fpw_infantry_weapons1 = 1
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
 	fpw_basic_train = 1
     tech_support = 1
+	fpw_cannon_artillery = 1
+	fpw_cannon2 = 1
+	fpw_howitzer_artillery = 1
+	fpw_howitzer2 = 1
+	fpw_breech_artillery = 1
+	fpw_breech2 = 1
 }
 
 add_ideas = {
@@ -39,29 +34,6 @@ add_ideas = {
 }
 
 recruit_character = AUS_franz_joseph_I
-
-recruit_character = AUS_kurt_schuschnigg
-recruit_character = AUS_karl_renner
-recruit_character = AUS_arthur_seyss-inquart
-recruit_character = AUS_alfred_klahr
-recruit_character = AUS_karl_eglseer
-recruit_character = AUS_odilo_globocnik
-recruit_character = AUS_alexander_lohr
-recruit_character = AUS_paul_von_hegedus
-recruit_character = AUS_julius_yllam
-recruit_character = AUS_otto_meixner_von_zweienstamm
-recruit_character = AUS_wilhelm_zehner
-recruit_character = AUS_josef_teufl
-recruit_character = AUS_otto_schobel
-recruit_character = AUS_viktor_seebauer
-recruit_character = AUS_lothar_rendulic
-recruit_character = AUS_ernst_kaltenbrunner
-recruit_character = AUS_eduard_freiherr
-recruit_character = AUS_franz_bohme
-recruit_character = AUS_eugen_beyer
-recruit_character = AUS_julius_raab
-recruit_character = AUS_leopold_figl
-
 
 set_politics = {
 	ruling_party = democratic

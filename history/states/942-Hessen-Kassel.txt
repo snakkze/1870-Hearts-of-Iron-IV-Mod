@@ -1,4 +1,8 @@
 state={
+resources={
+wood=5
+}
+
 	id=942
 	name="STATE_942"
 
@@ -6,7 +10,8 @@ state={
 		owner = HEK
      		buildings = {
       		      infrastructure = 2
-     	 	      industrial_complex = 1
+     	 	      industrial_complex = 3
+				  arms_factory = 2
 		}
 		victory_points = {
 			564 3 
@@ -21,8 +26,9 @@ state={
 	provinces={
 		564 3524 6549 9524 11445 11533 
 	}
-	manpower=104000
+	manpower=743521
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=large_town
 }
+

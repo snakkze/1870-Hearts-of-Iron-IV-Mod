@@ -8,9 +8,13 @@ state={
 	state_category = town
 	
 	resources={
+
 		steel=27 #was:70 was: 136
 		aluminium=50 # was: 96
-	}
+	
+
+wood=1
+}
 
 	history={
 		owner = FRA
@@ -31,3 +35,4 @@ state={
 
 	local_supplies=12.0 
 }
+

@@ -7,8 +7,12 @@ state={
 	state_category = city
 	
 	resources={
+
 		oil=10 # was: 16
-	}
+	
+
+wood=1
+}
 
 	history={
 		owner = INS
@@ -39,3 +43,4 @@ state={
 
 	local_supplies=5.0 
 }
+

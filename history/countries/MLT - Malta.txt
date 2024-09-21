@@ -1,52 +1,16 @@
-﻿capital = 116
- oob = "MLT_1866"
+capital = 116
+oob = "MLT_1866"
 
-#oob = ""
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 }
 
 set_convoys = 5
 
-recruit_character = MLT_aco2
-recruit_character = MLT_nt
-recruit_character = MLT_communist_guy
-recruit_character = MLT_pot
-recruit_character = MLT_acas
-recruit_character = MLT_acr
-recruit_character = MLT_stc
-recruit_character = MLT_ai2
-recruit_character = MLT_ncs
-recruit_character = MLT_ncm
-recruit_character = MLT_acd2
-recruit_character = MLT_democratic_guy
-recruit_character = MLT_fascist_guy
-recruit_character = MLT_coi
-recruit_character = MLT_ar
-recruit_character = MLT_aa2
-recruit_character = MLT_awt
-recruit_character = MLT_acgs
-recruit_character = MLT_mt
-recruit_character = MLT_nccr
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-}
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"

@@ -1,10 +1,10 @@
-﻿capital = 525 #South Korea - Seoul or Busan
- oob = "KOR_1866"
-
+capital = 525 #South Korea - Seoul or Busan
 oob = "KOR_1866"
+
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 }
 
@@ -27,4 +27,3 @@ set_popularities = {
 
 recruit_character = fpw_heungseon_daewongun
 recruit_character = fpw_gojong_older
-

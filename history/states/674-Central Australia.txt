@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=1
+}
+
 	id=674
 	name="STATE_674"
 	impassable = yes
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=0.0 
 }
+

@@ -1,0 +1,954 @@
+﻿l_german:
+ STATE_1: "Korsika" #NT!
+ STATE_2: "Latium" #NT!
+ STATE_3: "Schweizer Mittelland" #NT!
+ STATE_4: "Niederösterreich" #NT!
+ STATE_5: "Ermland-Masuren" #NT!
+ STATE_6: "Flandern" #NT!
+ STATE_7: "Holland" #NT!
+ STATE_8: "Luxemburg" #NT!
+ STATE_9: "Böhmen" #NT!
+ STATE_10: "Warschau" #NT!
+ STATE_11: "Kaunas" #NT!
+ STATE_12: "Vidzeme" #NT!
+ STATE_13: "Pärnu" #NT!
+ STATE_14: "Bretagne" #NT!
+ STATE_15: "Normandie" #NT!
+ STATE_16: "Île-de-France" #NT!
+ STATE_17: "Franche-Comte" #NT!
+ STATE_18: "Sekt" #NT!
+ STATE_19: "Aquitanien" #NT!
+ STATE_20: "Rhone" #NT!
+ STATE_21: "Bouches-du-Rhône" #NT!
+ STATE_22: "Languedoc" #NT!
+ STATE_23: "Poitou" #NT!
+ STATE_24: "Center" #NT!
+ STATE_25: "Limousin" #NT!
+ STATE_26: "Auvergne" #NT!
+ STATE_27: "Burgund" #NT!
+ STATE_28: "Elsass-Lothringen" #NT!
+ STATE_29: "Nord-Pas-de-Calais" #NT!
+ STATE_30: "Loire" #NT!
+ STATE_31: "Midi-Pyrenäen" #NT!
+ STATE_32: "Alpen" #NT!
+ STATE_33: "Zentrum-Süd" #NT!
+ STATE_34: "Wallonie" #NT!
+ STATE_35: "Brabant" #NT!
+ STATE_36: "Friesland" #NT!
+ STATE_37: "Seeland" #NT!
+ STATE_38: "Gävleborg" #NT!
+ STATE_39: "Südtirol" #NT!
+ STATE_40: "Region Altai" #NT!
+ STATE_41: "Madrid" #NT!
+ STATE_42: "Moselland" #NT!
+ STATE_43: "Nordungarn" #NT!
+ STATE_44: "Albanien" #NT!
+ STATE_45: "Vojvodina" #NT!
+ STATE_46: "Große Walachei" #NT!
+ STATE_47: "Attika" #NT!
+ STATE_48: "Sofia" #NT!
+ STATE_49: "Ankara" #NT!
+ STATE_50: "Württemberg" #NT!
+ STATE_51: "Rheinland" #NT!
+ STATE_52: "Oberbayern" #NT!
+ STATE_53: "Niederbayern" #NT!
+ STATE_54: "Franken" #NT!
+ STATE_55: "Hessen" #NT!
+ STATE_56: "Weser-Ems" #NT!
+ STATE_57: "Westfalen" #NT!
+ STATE_58: "Holstein" #NT!
+ STATE_58_DEN: "Holsten" #NT!
+ STATE_59: "Hannover" #NT!
+ STATE_60: "Thüringen" #NT!
+ STATE_61: "Mecklenburg" #NT!
+ STATE_62: "Vorpommern" #NT!
+ STATE_63: "Hinterpommern" #NT!
+ STATE_64: "Brandenburg" #NT!
+ STATE_65: "Sachsen" #NT!
+ STATE_66: "Niederschlesien" #NT!
+ STATE_67: "Oberschlesien" #NT!
+ STATE_68: "Ostmark" #NT!
+ STATE_69: "Sudetenland" #NT!
+ STATE_70: "Westslowakei" #NT!
+ STATE_71: "Ostslowakei" #NT!
+ STATE_72: "Zaolzie" #NT!
+ STATE_73: "Karpatenruthenien" #NT!
+ STATE_74: "Ostsudetenland" #NT!
+ STATE_75: "Mähren" #NT!
+ STATE_76: "Nord-Siebenbürgen" #NT!
+ STATE_77: "Südliche Dobrudscha" #NT!
+ STATE_78: "Bessarabien" #NT!
+ STATE_79: "Moldawien" #NT!
+ STATE_80: "Bukowina" #NT!
+ STATE_81: "Oltenien" #NT!
+ STATE_82: "Banat" #NT!
+ STATE_83: "Crisana" #NT!
+ STATE_84: "Siebenbürgen" #NT!
+ STATE_85: "Danzig" #NT!
+ STATE_86: "Posen" #NT!
+ STATE_87: "Lodz: Flug nach Lodz" #NT!
+ STATE_88: "Krakau" #NT!
+ STATE_89: "Stanislau" #NT!
+ STATE_90: "Kielce" #NT!
+ STATE_91: "Lemberg" #NT!
+ STATE_91: "Lemberg" #NT!
+ STATE_92: "Lublin" #NT!
+ STATE_93: "Wołyn" #NT!
+ STATE_94: "Polesie" #NT!
+ STATE_95: "Nowogródek" #NT!
+ STATE_96: "Mogiljow" #NT!
+ STATE_97: "Suwalki" #NT!
+ STATE_98: "Plock" #NT!
+ STATE_99: "Jütland" #NT!
+ STATE_100: "Island" #NT!
+ STATE_101: "Grönland" #NT!
+ STATE_102: "Nordslowenien" #NT!
+ STATE_103: "Dalmatien" #NT!
+ STATE_104: "Bosnien" #NT!
+ STATE_105: "Montenegro" #NT!
+ STATE_106: "Mazedonien" #NT!
+ STATE_107: "Serbien" #NT!
+ STATE_108: "Morava" #NT!
+ STATE_109: "Kroatien" #NT!
+ STATE_110: "Oslofjord" #NT!
+ STATE_111: "Uusimaa" #NT!
+ STATE_111_SWE: "Nyland" #NT!
+ STATE_112: "Lissabon" #NT!
+ STATE_113: "Leinster" #NT!
+ STATE_114: "Sardinien" #NT!
+ STATE_115: "Sizilien" #NT!
+ STATE_116: "Malta" #NT!
+ STATE_117: "Kampanien" #NT!
+ STATE_118: "Gibraltar" #NT!
+ STATE_119: "Nordirland" #NT!
+ STATE_120: "Schottisches Hochland" #NT!
+ STATE_121: "Lothian" #NT!
+ STATE_122: "Wales" #NT!
+ STATE_123: "Südwestengland" #NT!
+ STATE_124: "Gotland" #NT!
+ STATE_125: "Ostanglien" #NT!
+ STATE_126: "Großraum London" #NT!
+ STATE_127: "Sussex" #NT!
+ STATE_128: "Westliche Midlands" #NT!
+ STATE_129: "Östliche Midlands" #NT!
+ STATE_130: "Yorkshire" #NT!
+ STATE_130_DEN: "Jorvik" #NT!
+ STATE_131: "Northumberland" #NT!
+ STATE_132: "Lancashire" #NT!
+ STATE_133: "Lanark" #NT!
+ STATE_134: "Connaught" #NT!
+ STATE_135: "Münster" #NT!
+ STATE_136: "Aberdeenshire" #NT!
+ STATE_137: "Krim" #NT!
+ STATE_138: "Schonen" #NT!
+ STATE_138_DEN: "Skanelanden" #NT!
+ STATE_139: "Småland" #NT!
+ STATE_140: "Västergötland" #NT!
+ STATE_141: "Södermanland" #NT!
+ STATE_142: "Vestlandet" #NT!
+ STATE_143: "Trøndelag" #NT!
+ STATE_144: "Nordland" #NT!
+ STATE_145: "Åland" #NT!
+ STATE_146: "Karjala" #NT!
+ STATE_146_SWE: "Karelen" #NT!
+ STATE_147: "Salla" #NT!
+ STATE_148: "Lappi" #NT!
+ STATE_148_SWE: "Lappland" #NT!
+ STATE_149: "Vaasa" #NT!
+ STATE_149_SWE: "Wasa" #NT!
+ STATE_150: "Kuopio" #NT!
+ STATE_151: "Ostschweizer Alpen" #NT!
+ STATE_152: "Oberösterreich" #NT!
+ STATE_153: "Tirol" #NT!
+ STATE_154: "Alföld" #NT!
+ STATE_155: "Transdanubien" #NT!
+ STATE_156: "Kalabrien" #NT!
+ STATE_157: "Abruzzen" #NT!
+ STATE_158: "Piemont" #NT!
+ STATE_159: "Lombardei" #NT!
+ STATE_160: "Venetien" #NT!
+ STATE_161: "Emilia-Romagna" #NT!
+ STATE_162: "Toskana" #NT!
+ STATE_163: "Zadar" #NT!
+ STATE_163_ITA: "Zara" #NT!
+ STATE_164: "Dodekanes" #NT!
+ STATE_164_ITA: "Dodekanes" #NT!
+ STATE_165: "Katalonien" #NT!
+ STATE_166: "Westliches Aragonien" #NT!
+ STATE_167: "Valencia" #NT!
+ STATE_168: "Murcia" #NT!
+ STATE_169: "Sevilla" #NT!
+ STATE_170: "Extremadura" #NT!
+ STATE_171: "Galicien" #NT!
+ STATE_172: "Navarra" #NT!
+ STATE_173: "Granada" #NT!
+ STATE_174: "León" #NT!
+ STATE_175: "Ciudad Real" #NT!
+ STATE_176: "Burgos" #NT!
+ STATE_177: "Baleareninseln" #NT!
+ STATE_178: "Kanarische Inseln" #NT!
+ STATE_179: "Beja" #NT!
+ STATE_180: "Porto" #NT!
+ STATE_181: "Guarda" #NT!
+ STATE_182: "Kreta" #NT!
+ STATE_183: "Zypern" #NT!
+ STATE_184: "Thrakien" #NT!
+ STATE_185: "Epirus" #NT!
+ STATE_186: "Peloponnes" #NT!
+ STATE_187: "Ägäische Inseln" #NT!
+ STATE_188: "Memel" #NT!
+ STATE_189: "Zemaitija" #NT!
+ STATE_190: "Kurzeme" #NT!
+ STATE_191: "Tartu" #NT!
+ STATE_192: "Odessa" #NT!
+ STATE_193: "Tschernigow" #NT!
+ STATE_194: "Mosyr" #NT!
+ STATE_195: "Sankt Petersburg" #NT!
+ STATE_195_FIN: "Pietari" #NT!
+ STATE_196: "Cherson" #NT!
+ STATE_197: "Mykolajiw" #NT!
+ STATE_198: "Winnyzja" #NT!
+ STATE_199: "Chmelnyzkyj" #NT!
+ STATE_200: "Saporosch" #NT!
+ STATE_201: "Schytomyr" #NT!
+ STATE_202: "Kiew" #NT!
+ STATE_203: "Tscherkassy" #NT!
+ STATE_204: "Bobrujsk" #NT!
+ STATE_205: "Kaluga" #NT!
+ STATE_206: "Minsk" #NT!
+ STATE_207: "Witebsk" #NT!
+ STATE_208: "Luga" #NT!
+ STATE_209: "Pskow" #NT!
+ STATE_210: "Nevel" #NT!
+ STATE_211: "Burgas" #NT!
+ STATE_212: "Plovdiv" #NT!
+ STATE_213: "Murmansk" #NT!
+ STATE_213_FIN: "Kuolan Niemimaa" #NT!
+ STATE_214: "Archangelsk" #NT!
+ STATE_215: "Onega" #NT!
+ STATE_216: "Olonez" #NT!
+ STATE_217: "Zarizyn" #NT!
+ STATE_218: "Rostow" #NT!
+ STATE_219: "Moskau" #NT!
+ STATE_220: "Kursk" #NT!
+ STATE_221: "Charkow" #NT!
+ STATE_222: "Orel" #NT!
+ STATE_223: "Tula" #NT!
+ STATE_224: "Brjansk" #NT!
+ STATE_225: "Sumy" #NT!
+ STATE_226: "Jekatierinoslaw" #NT!
+ STATE_227: "Alexandrowka" #NT!
+ STATE_228: "Luhansk" #NT!
+ STATE_229: "Aserbaidschan" #NT!
+ STATE_230: "Armenien" #NT!
+ STATE_231: "Georgia" #NT!
+ STATE_232: "Dagestan" #NT!
+ STATE_233: "Sotschi" #NT!
+ STATE_234: "Jekatierinoda" #NT!
+ STATE_235: "Stawropol" #NT!
+ STATE_236: "Astrachan" #NT!
+ STATE_237: "Kalmückien" #NT!
+ STATE_238: "Wolgodonsk" #NT!
+ STATE_239: "Saratow" #NT!
+ STATE_240: "Belgorod" #NT!
+ STATE_241: "Homel – Die Reise" #NT!
+ STATE_242: "Smolensk" #NT!
+ STATE_243: "Roslawl" #NT!
+ STATE_244: "Wolchow" #NT!
+ STATE_245: "Millerowo" #NT!
+ STATE_246: "Rschew" #NT!
+ STATE_247: "Twier" #NT!
+ STATE_248: "Jaroslawl" #NT!
+ STATE_249: "Kasan" #NT!
+ STATE_250: "Uljanowsk" #NT!
+ STATE_251: "Kuibyschew" #NT!
+ STATE_252: "Nischni Nowgorod" #NT!
+ STATE_253: "Iwanowo" #NT!
+ STATE_254: "Rjasan" #NT!
+ STATE_255: "Pensa" #NT!
+ STATE_256: "Tschuwaschien" #NT!
+ STATE_257: "Tambow" #NT!
+ STATE_258: "Lipezk" #NT!
+ STATE_259: "Poltawa" #NT!
+ STATE_260: "Woronesch" #NT!
+ STATE_261: "Ohio" #NT!
+ STATE_262: "Petschora" #NT!
+ STATE_263: "Nowgorod" #NT!
+ STATE_264: "Tichwin" #NT!
+ STATE_265: "Michailowka" #NT!
+ STATE_266: "Teheran" #NT!
+ STATE_267: "Kabul" #NT!
+ STATE_268: "Französisch-Somaliland" #NT!
+ STATE_269: "Britisch-Somaliland" #NT!
+ STATE_270: "Pitcairninseln" #NT!
+ STATE_271: "Shewa" #NT!
+ STATE_272: "Senegal" #NT!
+ STATE_273: "Libysche Wüste" #NT!
+ STATE_274: "Ghana" #NT!
+ STATE_275: "Transvaal" #NT!
+ STATE_276: "Süd-Ontario" #NT!
+ STATE_277: "Mexiko-Stadt" #NT!
+ STATE_278: "Pampas" #NT!
+ STATE_279: "Santiago" #NT!
+ STATE_280: "Mato Grosso" #NT!
+ STATE_281: "Malediven" #NT!
+ STATE_282: "Kanto" #NT!
+ STATE_283: "Gansu" #NT!
+ STATE_284: "Nordinsel" #NT!
+ STATE_285: "Neusüdwales" #NT!
+ STATE_286: "Südindochina" #NT!
+ STATE_287: "Taklamakan" #NT!
+ STATE_288: "Birma" #NT!
+ STATE_289: "Siam" #NT!
+ STATE_290: "Spanisch-Afrika" #NT!
+ STATE_291: "Bagdad" #NT!
+ STATE_292: "Nejd" #NT!
+ STATE_293: "Jemen" #NT!
+ STATE_294: "Oman" #NT!
+ STATE_295: "Leopoldville" #NT!
+ STATE_296: "Portugiesisch-Guinea" #NT!
+ STATE_297: "Äquatorialguinea" #NT!
+ STATE_298: "Liberia" #NT!
+ STATE_299: "Falklandinseln" #NT!
+ STATE_300: "Uruguay" #NT!
+ STATE_301: "Paraguay" #NT!
+ STATE_302: "La Paz" #NT!
+ STATE_303: "Lima" #NT!
+ STATE_304: "Panama" #NT!
+ STATE_305: "Ecuador" #NT!
+ STATE_306: "Cundinamarca" #NT!
+ STATE_307: "Miranda" #NT!
+ STATE_308: "Inseln unter dem Winde" #NT!
+ STATE_309: "Suriname" #NT!
+ STATE_310: "Französisch-Guayana" #NT!
+ STATE_311: "Britisch-Honduras" #NT!
+ STATE_312: "Honduras" #NT!
+ STATE_313: "Guatemala" #NT!
+ STATE_314: "El Salvador" #NT!
+ STATE_315: "Kuba" #NT!
+ STATE_316: "Costa Rica" #NT!
+ STATE_317: "Nicaragua" #NT!
+ STATE_318: "Haiti" #NT!
+ STATE_319: "Dominikanische Republik" #NT!
+ STATE_320: "Französisch-Indien" #NT!
+ STATE_321: "Goa" #NT!
+ STATE_322: "Nagqu" #NT!
+ STATE_323: "Nepal" #NT!
+ STATE_324: "Bhutan" #NT!
+ STATE_325: "Yunnan" #NT!
+ STATE_326: "Hongkong" #NT!
+ STATE_327: "Manila" #NT!
+ STATE_328: "Kirin" #NT!
+ STATE_329: "Tannu Tuva" #NT!
+ STATE_330: "Ulan Bator" #NT!
+ STATE_331: "Neufundland" #NT!
+ STATE_332: "Labrador" #NT!
+ STATE_333: "Nord-Borneo" #NT!
+ STATE_334: "Kalimantan" #NT!
+ STATE_335: "Java" #NT!
+ STATE_336: "Singapur" #NT!
+ STATE_337: "Färöer Inseln" #NT!
+ STATE_338: "Gloucestershire" #NT!
+ STATE_339: "Izmir" #NT!
+ STATE_340: "Schleimbeutel" #NT!
+ STATE_341: "Edirne" #NT!
+ STATE_342: "Antalya" #NT!
+ STATE_343: "Afyon" #NT!
+ STATE_344: "Malatya" #NT!
+ STATE_345: "Mersin" #NT!
+ STATE_346: "Konya" #NT!
+ STATE_347: "Izmit" #NT!
+ STATE_348: "Kayseri" #NT!
+ STATE_349: "Sivas" #NT!
+ STATE_350: "Diyarbakır" #NT!
+ STATE_351: "Wologda" #NT!
+ STATE_352: "Hakkari" #NT!
+ STATE_353: "Tunceli" #NT!
+ STATE_354: "Trabzon" #NT!
+ STATE_355: "Samsun" #NT!
+ STATE_356: "Kastamonu" #NT!
+ STATE_357: "Neuengland" #NT!
+ STATE_358: "New York" #NT!
+ STATE_359: "New Jersey" #NT!
+ STATE_360: "Pennsylvania" #NT!
+ STATE_361: "Maryland" #NT!
+ STATE_362: "Virginia" #NT!
+ STATE_363: "North Carolina" #NT!
+ STATE_364: "South Carolina" #NT!
+ STATE_365: "Georgia" #NT!
+ STATE_366: "Florida" #NT!
+ STATE_367: "Alabama" #NT!
+ STATE_368: "Tennessee" #NT!
+ STATE_369: "Kentucky" #NT!
+ STATE_370: "Mississippi" #NT!
+ STATE_371: "Louisiana" #NT!
+ STATE_372: "Arkansas" #NT!
+ STATE_373: "Missouri" #NT!
+ STATE_374: "Nicht zugewiesene Länder" #NT!
+ STATE_375: "Texas" #NT!
+ STATE_376: "New-Mexiko" #NT!
+ STATE_377: "Arizona" #NT!
+ STATE_378: "Kalifornien" #NT!
+ STATE_379: "Nevada" #NT!
+ STATE_380: "Utah" #NT!
+ STATE_381: "Wyoming" #NT!
+ STATE_382: "Colorado" #NT!
+ STATE_383: "Kansas" #NT!
+ STATE_384: "Nebraska" #NT!
+ STATE_385: "Oregon" #NT!
+ STATE_386: "Washington" #NT!
+ STATE_387: "Idaho" #NT!
+ STATE_388: "Montana" #NT!
+ STATE_389: "North Dakota" #NT!
+ STATE_390: "Süddakota" #NT!
+ STATE_391: "Minnesota" #NT!
+ STATE_392: "Iowa" #NT!
+ STATE_393: "Michigan" #NT!
+ STATE_394: "Wisconsin" #NT!
+ STATE_395: "Illinois" #NT!
+ STATE_396: "Indiana" #NT!
+ STATE_397: "Syktywkar" #NT!
+ STATE_398: "Dauerwelle" #NT!
+ STATE_399: "Udmurtien" #NT!
+ STATE_400: "Kirow" #NT!
+ STATE_401: "Balakowo" #NT!
+ STATE_402: "Achtubinsk" #NT!
+ STATE_403: "Tjumen" #NT!
+ STATE_404: "Kysyl Orda" #NT!
+ STATE_405: "Taschkent" #NT!
+ STATE_406: "Gurjew" #NT!
+ STATE_407: "Uralsk" #NT!
+ STATE_408: "Wladiwostok" #NT!
+ STATE_409: "Chabarowsk" #NT!
+ STATE_410: "Sistan" #NT!
+ STATE_411: "Isfahan" #NT!
+ STATE_412: "Fars" #NT!
+ STATE_413: "Chuzestan" #NT!
+ STATE_414: "Kerman" #NT!
+ STATE_415: "Herat" #NT!
+ STATE_416: "Chorasan" #NT!
+ STATE_417: "Hamadan" #NT!
+ STATE_418: "Semnan" #NT!
+ STATE_419: "Tibidabo" #NT!
+ STATE_420: "Gilan" #NT!
+ STATE_421: "Kurdistan" #NT!
+ STATE_422: "Ceylon" #NT!
+ STATE_423: "Madurai" #NT!
+ STATE_424: "Madras" #NT!
+ STATE_425: "Mysore" #NT!
+ STATE_426: "Orissa" #NT!
+ STATE_427: "Hyderabad" #NT!
+ STATE_428: "Gujarat" #NT!
+ STATE_429: "Bombay" #NT!
+ STATE_430: "Ostbengalen" #NT!
+ STATE_431: "Westbengalen" #NT!
+ STATE_432: "Assam" #NT!
+ STATE_433: "Rajasthan: Reisetipps für Rajasthan" #NT!
+ STATE_434: "Zangnan" #NT!
+ STATE_435: "Bihar" #NT!
+ STATE_436: "Jabalpur" #NT!
+ STATE_437: "Indore" #NT!
+ STATE_438: "Lucknow" #NT!
+ STATE_439: "Delhi" #NT!
+ STATE_440: "Punjab" #NT!
+ STATE_441: "Kaschmir" #NT!
+ STATE_442: "Peschawar" #NT!
+ STATE_443: "Sind" #NT!
+ STATE_444: "Belutschistan" #NT!
+ STATE_445: "Quetta" #NT!
+ STATE_446: "Suez" #NT!
+ STATE_447: "Alexandria" #NT!
+ STATE_448: "Tripolis" #NT!
+ STATE_449: "El Agheila" #NT!
+ STATE_450: "Bengasi" #NT!
+ STATE_451: "Derna" #NT!
+ STATE_452: "Matruh" #NT!
+ STATE_453: "Sinai" #NT!
+ STATE_454: "Palästina" #NT!
+ STATE_455: "Jordanien" #NT!
+ STATE_456: "Assuan" #NT!
+ STATE_457: "Östliche Wüste" #NT!
+ STATE_458: "Tunesien" #NT!
+ STATE_459: "Algier" #NT!
+ STATE_460: "Konstantin" #NT!
+ STATE_461: "Casablanca" #NT!
+ STATE_462: "Marrakesch" #NT!
+ STATE_463: "Alaska" #NT!
+ STATE_464: "Neuschottland" #NT!
+ STATE_465: "Neubraunschweig" #NT!
+ STATE_466: "Norden von Québec" #NT!
+ STATE_467: "Manitoba" #NT!
+ STATE_468: "Sankt Laurentius" #NT!
+ STATE_469: "Saskatchewan" #NT!
+ STATE_470: "Alberta" #NT!
+ STATE_471: "Oberes British Columbia" #NT!
+ STATE_472: "Nordwest-Territorien" #NT!
+ STATE_473: "Britisch-Kolumbien" #NT!
+ STATE_474: "Yucatán" #NT!
+ STATE_475: "Chiapas" #NT!
+ STATE_476: "Oaxaca" #NT!
+ STATE_477: "Veracruz" #NT!
+ STATE_478: "Jalisco" #NT!
+ STATE_479: "Das Hotel liegt in Tamaulipas, 1,7 km vom Strand Tamaulipas entfernt." #NT!
+ STATE_480: "Coahuila" #NT!
+ STATE_481: "Durango" #NT!
+ STATE_482: "Chihuahua" #NT!
+ STATE_483: "Sonora" #NT!
+ STATE_484: "Baja California" #NT!
+ STATE_485: "Guerrero" #NT!
+ STATE_486: "Meta" #NT!
+ STATE_487: "Santa Cruz" #NT!
+ STATE_488: "Bolívar" #NT!
+ STATE_489: "Zulia" #NT!
+ STATE_490: "Pastaza" #NT!
+ STATE_491: "Loreto" #NT!
+ STATE_492: "Arequipa" #NT!
+ STATE_493: "La Libertad" #NT!
+ STATE_494: "Ucayali" #NT!
+ STATE_495: "Amazonas" #NT!
+ STATE_496: "Minas Gerais" #NT!
+ STATE_497: "Maranhão" #NT!
+ STATE_498: "Rio Grande do Norte" #NT!
+ STATE_499: "Bahia" #NT!
+ STATE_500: "Rio de Janeiro" #NT!
+ STATE_501: "São Paulo" #NT!
+ STATE_502: "Rio Grande do Sul" #NT!
+ STATE_503: "Santa Catarina" #NT!
+ STATE_504: "Iguaçu" #NT!
+ STATE_505: "Goiás" #NT!
+ STATE_506: "Antofagasta" #NT!
+ STATE_507: "Magallanes" #NT!
+ STATE_508: "Tucuman" #NT!
+ STATE_509: "Chaco Austral" #NT!
+ STATE_510: "Mesopotamien" #NT!
+ STATE_511: "Mendoza" #NT!
+ STATE_512: "Patagonien" #NT!
+ STATE_513: "Tlemcen" #NT!
+ STATE_514: "Algerische Wüste" #NT!
+ STATE_515: "Südsahara" #NT!
+ STATE_516: "Dudinka" #NT!
+ STATE_517: "Viktoria" #NT!
+ STATE_518: "Tasmanien" #NT!
+ STATE_519: "Südaustralien" #NT!
+ STATE_520: "Nördliches Territorium" #NT!
+ STATE_521: "Queensland" #NT!
+ STATE_522: "Westaustralien" #NT!
+ STATE_523: "Papua" #NT!
+ STATE_524: "Taiwan" #NT!
+ STATE_525: "Südkorea" #NT!
+ STATE_526: "Ryukyu-Inseln" #NT!
+ STATE_527: "Nordkorea" #NT!
+ STATE_528: "Kyushu" #NT!
+ STATE_529: "中回" #NT!
+ STATE_530: "Shikoku" #NT!
+ STATE_531: "Kansai" #NT!
+ STATE_532: "Tokai" #NT!
+ STATE_533: "Tohoku" #NT!
+ STATE_534: "Hokuriku" #NT!
+ STATE_535: "Koshinetsu" #NT!
+ STATE_536: "Hokkaido" #NT!
+ STATE_537: "Südsachalin" #NT!
+ STATE_538: "Coquilhatville" #NT!
+ STATE_539: "Gabun" #NT!
+ STATE_540: "Luanda" #NT!
+ STATE_541: "Khomas" #NT!
+ STATE_542: "Betschuanaland" #NT!
+ STATE_543: "Madagaskar" #NT!
+ STATE_544: "Lourenço Marques" #NT!
+ STATE_545: "Rhodesien" #NT!
+ STATE_546: "Tanganjika" #NT!
+ STATE_547: "Nairobi" #NT!
+ STATE_548: "Uganda" #NT!
+ STATE_549: "Kurdufan" #NT!
+ STATE_550: "Eritrea" #NT!
+ STATE_551: "Khartum" #NT!
+ STATE_552: "Westliche Wüste" #NT!
+ STATE_553: "Libanon" #NT!
+ STATE_554: "Damaskus" #NT!
+ STATE_555: "Nördliche Kurilen" #NT!
+ STATE_556: "Bamako" #NT!
+ STATE_557: "Mauretanien" #NT!
+ STATE_558: "Lagos" #NT!
+ STATE_559: "Somaliland" #NT!
+ STATE_560: "Nikolajewsk" #NT!
+ STATE_561: "Amur" #NT!
+ STATE_562: "Ochotsk" #NT!
+ STATE_563: "Tschita" #NT!
+ STATE_564: "Burjatien" #NT!
+ STATE_565: "Bodaybo" #NT!
+ STATE_566: "Irkutsk" #NT!
+ STATE_567: "Bratsk" #NT!
+ STATE_568: "Krasnojarsk" #NT!
+ STATE_569: "Chakassien" #NT!
+ STATE_570: "Nowosibirsk" #NT!
+ STATE_571: "Omsk" #NT!
+ STATE_572: "Tscheljabinsk" #NT!
+ STATE_573: "Slatoust" #NT!
+ STATE_574: "Jakutsk" #NT!
+ STATE_575: "Kirensk" #NT!
+ STATE_576: "Jenisseisk" #NT!
+ STATE_577: "Surgut" #NT!
+ STATE_578: "Tomsk" #NT!
+ STATE_579: "Salechard" #NT!
+ STATE_580: "Tobolsk" #NT!
+ STATE_581: "Nördlicher Ural" #NT!
+ STATE_582: "Magnitogorsk" #NT!
+ STATE_583: "Kostanay" #NT!
+ STATE_584: "Aschchabad" #NT!
+ STATE_585: "Navoi" #NT!
+ STATE_586: "Alma Ata" #NT!
+ STATE_587: "Ust-Urt" #NT!
+ STATE_588: "Semipalatinsk" #NT!
+ STATE_589: "Ayaguz" #NT!
+ STATE_590: "Akmolinsk" #NT!
+ STATE_591: "Hainan" #NT!
+ STATE_592: "Guangzhou" #NT!
+ STATE_593: "Guangdong" #NT!
+ STATE_594: "Nanning" #NT!
+ STATE_595: "Fujian" #NT!
+ STATE_596: "Zhejiang" #NT!
+ STATE_597: "Shandong" #NT!
+ STATE_598: "Jiangsu" #NT!
+ STATE_599: "Guangxi" #NT!
+ STATE_600: "Jiangxi" #NT!
+ STATE_601: "Xikang" #NT!
+ STATE_602: "Hunan" #NT!
+ STATE_603: "Guizhou" #NT!
+ STATE_604: "Qinghai" #NT!
+ STATE_605: "Sichuan" #NT!
+ STATE_606: "Anhui" #NT!
+ STATE_607: "Henan" #NT!
+ STATE_608: "Peking" #NT!
+ STATE_609: "Ost-Hebei" #NT!
+ STATE_610: "Jehol" #NT!
+ STATE_611: "Süd-Chahar" #NT!
+ STATE_612: "Chahar" #NT!
+ STATE_613: "Schanghai" #NT!
+ STATE_614: "Hebei" #NT!
+ STATE_615: "Shanxi" #NT!
+ STATE_616: "Ningxia" #NT!
+ STATE_617: "Ürümqi" #NT!
+ STATE_618: "Dsungarien" #NT!
+ STATE_619: "Yarkand" #NT!
+ STATE_620: "Hubei" #NT!
+ STATE_621: "Suiyuan" #NT!
+ STATE_622: "Shaanxi" #NT!
+ STATE_623: "Luzon" #NT!
+ STATE_624: "Zentrale Inseln" #NT!
+ STATE_625: "Samar" #NT!
+ STATE_626: "Palawan" #NT!
+ STATE_627: "Mindanao" #NT!
+ STATE_628: "Cebu" #NT!
+ STATE_629: "Hawaii" #NT!
+ STATE_630: "Johnston Atoll" #NT!
+ STATE_631: "Midwayinseln" #NT!
+ STATE_632: "Wake Island" #NT!
+ STATE_633: "Marshallinseln" #NT!
+ STATE_634: "Salomon-Inseln" #NT!
+ STATE_635: "Neukaledonien" #NT!
+ STATE_636: "Fidschi" #NT!
+ STATE_637: "Kamtschatka" #NT!
+ STATE_638: "Guam" #NT!
+ STATE_639: "Gilbertinseln" #NT!
+ STATE_640: "Mandalay" #NT!
+ STATE_641: "Tahiti" #NT!
+ STATE_642: "Phoenix-Insel" #NT!
+ STATE_643: "Ellice-Inseln" #NT!
+ STATE_644: "Kolyma" #NT!
+ STATE_645: "Bonin-Inseln" #NT!
+ STATE_646: "Saipan" #NT!
+ STATE_647: "Palau" #NT!
+ STATE_648: "Marcus Island" #NT!
+ STATE_649: "Galapagosinseln" #NT!
+ STATE_650: "Attu-Insel" #NT!
+ STATE_651: "Ufa" #NT!
+ STATE_652: "Orenburg" #NT!
+ STATE_653: "Swerdlowsk" #NT!
+ STATE_654: "Oyrot Region" #NT!
+ STATE_655: "Nord-Sachalin" #NT!
+ STATE_656: "Kuwait" #NT!
+ STATE_657: "Birobidschan" #NT!
+ STATE_658: "Abu Dhabi" #NT!
+ STATE_659: "Aden" #NT!
+ STATE_660: "Äquatorialafrika" #NT!
+ STATE_661: "Tripolitanien" #NT!
+ STATE_662: "Sirte" #NT!
+ STATE_663: "Cyrenaika" #NT!
+ STATE_664: "Südslowakei" #NT!
+ STATE_665: "Gabès" #NT!
+ STATE_666: "Norrbotten" #NT!
+ STATE_667: "Kleine Sundainseln" #NT!
+ STATE_668: "Die Molukken" #NT!
+ STATE_669: "West-Papua" #NT!
+ STATE_670: "Laos" #NT!
+ STATE_671: "Tonkin" #NT!
+ STATE_672: "Sumatra" #NT!
+ STATE_673: "Sulawesi" #NT!
+ STATE_674: "Zentralaustralien" #NT!
+ STATE_675: "Al-Hajara" #NT!
+ STATE_676: "Mossul" #NT!
+ STATE_677: "Aleppo" #NT!
+ STATE_678: "Rub al-Chali" #NT!
+ STATE_679: "Medina" #NT!
+ STATE_680: "Deir-az-Zur" #NT!
+ STATE_681: "Kap" #NT!
+ STATE_682: "Nördliches Ontario" #NT!
+ STATE_683: "Nunavut" #NT!
+ STATE_684: "Karolinen" #NT!
+ STATE_685: "Panamakanal" #NT!
+ STATE_686: "Puerto Rico" #NT!
+ STATE_687: "Britisch-Guyana" #NT!
+ STATE_688: "Chaco Boreal" #NT!
+ STATE_689: "Jamaika" #NT!
+ STATE_690: "Nördliche Bahamas" #NT!
+ STATE_691: "Trinidad" #NT!
+ STATE_692: "Inseln über dem Winde" #NT!
+ STATE_693: "Südliche Bahamas" #NT!
+ STATE_694: "Französische Karibik" #NT!
+ STATE_695: "Curaçao" #NT!
+ STATE_696: "Bermuda" #NT!
+ STATE_697: "Madeira" #NT!
+ STATE_698: "Azoren" #NT!
+ STATE_699: "Rio de Oro" #NT!
+ STATE_700: "Sierra Leone" #NT!
+ STATE_701: "Gambia" #NT!
+ STATE_702: "Kap Verde" #NT!
+ STATE_703: "Aufstieg" #NT!
+ STATE_704: "St. Helena" #NT!
+ STATE_705: "São Tomé" #NT!
+ STATE_706: "Wiedervereinigung" #NT!
+ STATE_707: "Mauritius" #NT!
+ STATE_708: "Komoren" #NT!
+ STATE_709: "Seychellen" #NT!
+ STATE_710: "Diego Garcia" #NT!
+ STATE_711: "Weihnachtsinsel" #NT!
+ STATE_712: "Kokosinseln" #NT!
+ STATE_713: "Kerguelen" #NT!
+ STATE_714: "Heilungkiang" #NT!
+ STATE_715: "Liaoning" #NT!
+ STATE_716: "Liaotung" #NT!
+ STATE_717: "Sungkiang" #NT!
+ STATE_718: "Stanleyville" #NT!
+ STATE_719: "Natal" #NT!
+ STATE_720: "Südgeorgien" #NT!
+ STATE_721: "Portugiesisch-Timor" #NT!
+ STATE_722: "Petsamo" #NT!
+ STATE_723: "Südinsel" #NT!
+ STATE_724: "Nordmalaiisch" #NT!
+ STATE_725: "Nauru" #NT!
+ STATE_726: "Samoa" #NT!
+ STATE_727: "Linieninseln" #NT!
+ STATE_728: "Guangzhouwan" #NT!
+ STATE_729: "Macau" #NT!
+ STATE_730: "St. Pierre und Miquelon" #NT!
+ STATE_731: "Zentralmakedonien" #NT!
+ STATE_732: "Pamir" #NT!
+ STATE_733: "Andaman" #NT!
+ STATE_734: "Nendo" #NT!
+ STATE_735: "Wirsing" #NT!
+ STATE_736: "Küstenregion" #NT!
+ STATE_737: "Bismarck" #NT!
+ STATE_738: "Aru-Inseln" #NT!
+ STATE_739: "Haida Gwaii" #NT!
+ STATE_740: "Vancouver Island" #NT!
+ STATE_741: "Kambodscha" #NT!
+ STATE_742: "Chudschand" #NT!
+ STATE_743: "Qingdao" #NT!
+ STATE_744: "Xian" #NT!
+ STATE_745: "Dalian" #NT!
+ STATE_746: "Ordos" #NT!
+ STATE_747: "Dali" #NT!
+ STATE_748: "Zunyi" #NT!
+ STATE_749: "Huangshan" #NT!
+ STATE_75: "Mähren" #NT!
+ STATE_751: "Liangshan" #NT!
+ STATE_752: "Ganzi" #NT!
+ STATE_753: "Gannan" #NT!
+ STATE_754: "Golog" #NT!
+ STATE_755: "Haixi" #NT!
+ STATE_756: "Jiuquan" #NT!
+ STATE_757: "Shigatse" #NT!
+ STATE_758: "Ngari" #NT!
+ STATE_759: "Kunlun Shan" #NT!
+ STATE_760: "Dabancheng" #NT!
+ STATE_761: "Hulun Buir (dt.: Hulun Buir)" #NT!
+ STATE_762: "Kattowitz" #NT!
+ STATE_763: "Königsberg" #NT!
+ STATE_764: "Westbanat" #NT!
+ STATE_765: "Katar" #NT!
+ STATE_766: "Südbessarabien" #NT!
+ STATE_767: "Nord-Darfur" #NT!
+ STATE_768: "Ruanda" #NT!
+ STATE_769: "Burundi" #NT!
+ STATE_770: "Malawi" #NT!
+ STATE_771: "Sambia" #NT!
+ STATE_772: "Mittel-Kongo" #NT!
+ STATE_773: "Kamerun" #NT!
+ STATE_774: "Tschad" #NT!
+ STATE_775: "WETTE." #NT!
+ STATE_776: "Dahomey" #NT!
+ STATE_777: "Togo" #NT!
+ STATE_778: "Obervolta" #NT!
+ STATE_779: "Elfenbeinküste" #NT!
+ STATE_780: "Guinea" #NT!
+ STATE_781: "Niger" #NT!
+ STATE_782: "Timbuktu" #NT!
+ STATE_783: "Sidi Ifni" #NT!
+ STATE_784: "Wilna" #NT!
+ STATE_785: "Picardie" #NT!
+ STATE_786: "Mauretanische Wüste" #NT!
+ STATE_787: "Nordkaschmir" #NT!
+ STATE_788: "Salamanca" #NT!
+ STATE_789: "Córdoba" #NT!
+ STATE_790: "Asturien" #NT!
+ STATE_791: "Valladolid" #NT!
+ STATE_792: "Baskenland" #NT!
+ STATE_793: "Guadalajara" #NT!
+ STATE_794: "Ost-Aragonien" #NT!
+ STATE_795: "Santarém" #NT!
+ STATE_796: "Nordangola" #NT!
+ STATE_797: "Konstantinopel" #NT!
+ STATE_798: "Amasya" #NT!
+ STATE_799: "Hatay" #NT!
+ STATE_800: "Lieferwagen" #NT!
+ STATE_801: "Mösien" #NT!
+ STATE_802: "Kosovo" #NT!
+ STATE_803: "Südserbien" #NT!
+ STATE_804: "Herzegowina" #NT!
+ STATE_805: "Nördliches Epirus" #NT!
+ STATE_806: "Pyrénées-Atlantiques" #NT!
+ STATE_807: "Gdingen" #NT!
+ STATE_808: "Riga" #NT!
+ STATE_809: "Zemgale" #NT!
+ STATE_810: "Lettgallen" #NT!
+ STATE_811: "Saaremaa" #NT!
+ STATE_812: "Harju" #NT!
+ STATE_813: "Virumaa" #NT!
+ STATE_814: "Suduva" #NT!
+ STATE_815: "Aukštaitija" #NT!
+ STATE_816: "West Virginia" #NT!
+ STATE_817: "Gobi" #NT!
+ STATE_818: "Chowd" #NT!
+ STATE_819: "Dornod" #NT!
+ STATE_820: "Khövsgöl" #NT!
+ STATE_821: "Tschetschenien-Inguschetien" #NT!
+ STATE_822: "Tschukotka" #NT!
+ STATE_823: "Karakalpakistan" #NT!
+ STATE_824: "Jamalia" #NT!
+ STATE_825: "Nenzen" #NT!
+ STATE_826: "Abchasien" #NT!
+ STATE_827: "Kabardino-Balkarien" #NT!
+ STATE_828: "Nordossetien" #NT!
+ STATE_829: "Pokrowskaja Sloboda" #NT!
+ STATE_830: "Buchara" #NT!
+ STATE_831: "Chiwa" #NT!
+ STATE_832: "Tashauz" #NT!
+ STATE_833: "Maria El" #NT!
+ STATE_834: "Balta-Tiraspol" #NT!
+ STATE_835: "Hararghe" #NT!
+ STATE_836: "Ballen" #NT!
+ STATE_837: "Sidamo" #NT!
+ STATE_838: "Illubabor-Kaffa" #NT!
+ STATE_839: "Welega" #NT!
+ STATE_840: "Gojjam" #NT!
+ STATE_841: "Begemder" #NT!
+ STATE_842: "Tigray" #NT!
+ STATE_843: "Wello" #NT!
+ STATE_844: "Jubaland" #NT!
+ STATE_845: "Juragebirge" #NT!
+ STATE_846: "Tessin" #NT!
+ STATE_847: "Westliche Schweizer Alpen" #NT!
+ STATE_848: "Vorarlberg" #NT!
+ STATE_849: "Apulien" #NT!
+ STATE_850: "Trentino" #NT!
+ STATE_851: "Var" #NT!
+ STATE_852: "Istrien" #NT!
+ STATE_853: "Laibach" #NT!
+ STATE_854: "Dschinn" #NT!
+ STATE_855: "Tabuk" #NT!
+ STATE_856: "Asir-Mekka" #NT!
+ STATE_857: "Al-Qassim" #NT!
+ STATE_858: "Najiran" #NT!
+ STATE_859: "Dammam" #NT!
+ STATE_860: "Côte-Nord" #NT!
+ STATE_861: "Saguenay" #NT!
+ STATE_862: "Westen von Québec" #NT!
+ STATE_863: "Maurice" #NT!
+ STATE_864: "Yukon-Territorium" #NT!
+ STATE_865: "Nördliches Saskatchewan" #NT!
+ STATE_866: "Bezirke von Ontario" #NT!
+ STATE_867: "Nördliches Manitoba" #NT!
+ STATE_868: "Ich bin" #NT!
+ STATE_869: "Lanna" #NT!
+ STATE_870: "Nordwestaustralien" #NT!
+ STATE_871: "Südwestaustralien" #NT!
+ STATE_872: "Nord-Queensland" #NT!
+ STATE_873: "Südwest-Queensland" #NT!
+ STATE_874: "Magadan" #NT!
+ STATE_875: "Tschuktschen-Halbinsel" #NT!
+ STATE_876: "Udatschny" #NT!
+ STATE_877: "Werchojansk" #NT!
+ STATE_878: "Khatangsky" #NT!
+ STATE_879: "Kargopol" #NT!
+ STATE_880: "Kotlas" #NT!
+ STATE_881: "Karaganda" #NT!
+ STATE_882: "Pawlodar" #NT!
+ STATE_883: "Kassala" #NT!
+ STATE_884: "Oberer Nil" #NT!
+ STATE_885: "Bahr al Ghazal" #NT!
+ STATE_886: "Blauer Nil" #NT!
+ STATE_887: "Süd-Darfur" #NT!
+ STATE_888: "Lusambo" #NT!
+ STATE_889: "Elisabethville" #NT!
+ STATE_890: "Costermansville" #NT!
+ STATE_891: "Sambesi" #NT!
+ STATE_892: "Südwestangola" #NT!
+ STATE_893: "Karas" #NT!
+ STATE_894: "Kunene" #NT!
+ STATE_895: "Otjozondjupa" #NT!
+ STATE_896: "Manica e Sofala" #NT!
+ STATE_897: "Sambesia-Mosambik" #NT!
+ STATE_898: "Gao" #NT!
+ STATE_899: "Kayes-Koulikoro" #NT!
+ STATE_900: "Benue" #NT!
+ STATE_901: "Borno" #NT!
+ STATE_902: "Sokoto" #NT!
+ STATE_903: "Garissa" #NT!
+ STATE_904: "Nyanza-Rift Valley" #NT!
+ STATE_905: "Mombasa" #NT!
+ STATE_906: "Sokotra" #NT!
+ STATE_907: "Kairo" #NT!
+ STATE_908: "In der Ferne" #NT!
+ STATE_909: "Südschleswig" #NT!
+ STATE_909_DEN: "Südslesvig" #NT!
+ STATE_910: "Bornholm" #NT!
+ STATE_911: "Fünen" #NT!
+ STATE_912: "Nordschleswig" #NT!
+ STATE_913: "Östergötland" #NT!
+ STATE_914: "Jan Mayen" #NT!
+ STATE_915: "Bohuslän" #NT!
+ STATE_916: "Dalarna" #NT!
+ STATE_917: "Jämtland" #NT!
+ STATE_918: "Västerbotten" #NT!
+ STATE_919: "Värmland" #NT!
+ STATE_920: "Opplandene" #NT!
+ STATE_921: "Telemark" #NT!
+ STATE_922: "Agder" #NT!
+ STATE_923: "Helgeland" #NT!
+ STATE_924: "Troms" #NT!
+ STATE_925: "Finnmark" #NT!
+ STATE_926: "Turku" #NT!
+ STATE_926_SWE: "Åbo" #NT!
+ STATE_927: "Häme" #NT!
+ STATE_927_SWE: "Tammerfors" #NT!
+ STATE_928: "Kymi" #NT!
+ STATE_928_SWE: "Villmanstrand" #NT!
+ STATE_929: "Oulu" #NT!
+ STATE_929_SWE: "Uleåborg" #NT!
+ STATE_930: "Mikkeli" #NT!
+ STATE_930_SWE: "St Michel" #NT!
+ STATE_931: "Cumbria" #NT!
+ STATE_932: "Isle of Man" #NT!
+ STATE_933: "Shetlandinseln" #NT!
+ STATE_934: "Shkodra" #NT!
+ STATE_989: "Südliche Kurilen" #NT!

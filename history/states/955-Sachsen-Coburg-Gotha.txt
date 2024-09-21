@@ -1,13 +1,17 @@
 state={
+resources={
+wood=1
+}
+
 	id=955
 	name="STATE_955"
 
 	history={
 		owner = SCG
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
 			13274 3
@@ -23,8 +27,9 @@ state={
 	provinces={
 		9497 13274 
 	}
-	manpower=10400
+	manpower=174803
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
 }
+

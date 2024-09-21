@@ -2,8 +2,12 @@ state={
 	id=1012
 	name="STATE_1012"
 	resources={
+
 		oil=2.000
-	}
+	
+
+wood=8
+}
 	provinces={
 		1230 1304 1316 2222 4279 4335 4409 10282 12129 
 	}
@@ -27,3 +31,4 @@ state={
 	state_category=rural
 	local_supplies=0.000
 }
+

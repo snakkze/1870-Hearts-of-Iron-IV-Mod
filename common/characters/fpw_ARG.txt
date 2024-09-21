@@ -1,0 +1,16 @@
+characters = {
+
+	ARG_bartolome_mitre={ 
+		name = "Bartolomé Mitre"
+		portraits={
+			civilian={
+			    large=GFX_portrait_ARG_bartoleme_mitre
+			}
+		}
+		country_leader={
+			ideology =autocratic_republic
+			expire = "1956.01.01" 
+			id = -1 
+		}
+	}
+}

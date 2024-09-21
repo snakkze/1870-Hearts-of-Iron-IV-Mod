@@ -4,10 +4,13 @@ state={
 	manpower = 9274304
 	state_category = city
 	resources={
+
 		tungsten=8 # was: 10
 		steel= 15 # was: 20
-		chromium = 3 # was: 4
-	}
+	
+
+wood=4
+}
 
 	history={
 		owner = CHI
@@ -54,4 +57,5 @@ add_core_of = CHI
 
 	local_supplies=1.0 
 }
+
 

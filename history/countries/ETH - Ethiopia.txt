@@ -1,5 +1,10 @@
-﻿capital = 271
+capital = 271
 oob = "ETH_1866"
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+    fpw_infantry_weapons = 1
+}
 
 set_politics = {
 	ruling_party = neutrality

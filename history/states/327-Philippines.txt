@@ -1,5 +1,9 @@
 state=
 {
+resources={
+wood=3
+}
+
 	id=327
 	name="STATE_327" # Luzon
 	manpower = 1845316
@@ -31,3 +35,4 @@ state=
 
 	local_supplies=0.0 
 }
+

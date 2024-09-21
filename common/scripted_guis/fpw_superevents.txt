@@ -1,0 +1,48 @@
+scripted_gui = {
+    superevents_gui = {
+        window_name = "superevents_gui_window"
+        context_type = player_context
+
+        visible = {
+            has_global_flag = super_visible
+        }
+
+        effects = {
+            superevent_close_click = {
+                clr_global_flag = super_visible
+                if = {
+                    limit = {
+                        has_global_flag = fpw_apw
+                    }
+                    clr_global_flag = fpw_apw
+		    }
+		}
+                if = {
+                    limit = {
+                        has_global_flag = fpw_fpw
+                    }
+                    clr_global_flag = fpw_fpw
+		    }
+		}
+
+            } 
+        }
+
+        triggers = {
+            Super_Event_Image_APW_visible = {
+                has_global_flag = fpw_apw
+            }
+            Super_Event_Image_FPW_visible = {
+                has_global_flag = fpw_fpw
+            }
+
+        }
+
+        ai_enabled = {
+            always = no
+        }
+
+        ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+        ai_test_variance = 0.5
+    }
+}

@@ -1,9 +1,9 @@
 capital = 531
- oob = "JAP_1866"
+oob = "JAP_1866"
 
 
-set_stability = 0.3
-set_war_support = 0.6
+set_stability = 0.6
+set_war_support = 0.5
 
 set_province_name = { id = 1182 name = "Edo" }
 set_province_name = { id = 7087 name = "Sunpu" }
@@ -144,29 +144,12 @@ add_ideas = {
 
 set_technology = {
 	fpw_infantry_weapons = 1
-	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
-    tech_support = 1
+	fpw_cavalry_equipment = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
 
-}
-	set_oob = "JAP_1866"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
 
-}
-	set_oob = "JAP_1866"
-}
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -183,17 +166,7 @@ if = {
 }
 	set_naval_oob = "JAP_1866_naval_legacy"
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_technology = {
 
-}
-	else = {
-		set_technology = {
-
-}
-	}
-}
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -252,27 +225,6 @@ recruit_character = JAP_saigo_takamoriADV
 recruit_character = JAP_ito_hirobumiADV
 recruit_character = JAP_yamagata_aritomoADV
 recruit_character = JAP_fukuzawa_yukichiADV
-
-recruit_character = JAP_tetsu_katayama
-recruit_character = JAP_kyuichi_tokuda
-recruit_character = JAP_yoshitoshi_tokugawa
-recruit_character = JAP_fushimi_hiroyasu
-recruit_character = JAP_korechika_anami
-recruit_character = JAP_mitsuo_fuchida
-recruit_character = JAP_minoru_genda
-recruit_character = JAP_tateo_kato
-recruit_character = JAP_osami_nagano
-recruit_character = JAP_torashiro_kawabe
-recruit_character = JAP_shigetaro_shimada
-recruit_character = JAP_yoshio_nishina
-recruit_character = JAP_hideo_itokawa
-recruit_character = JAP_kanin_kotohito
-recruit_character = JAP_hideki_tojo
-recruit_character = JAP_matome_ugaki
-recruit_character = JAP_nishizo_tsukahara
-recruit_character = JAP_hajime_sugiyama
-recruit_character = JAP_chuichi_nagumo
-recruit_character = JAP_hino_kumazo
 
 
 

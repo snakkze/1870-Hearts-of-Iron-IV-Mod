@@ -1,5 +1,9 @@
 
 state={
+resources={
+wood=54
+}
+
 	id=351
 	name="STATE_351" # Vologda
 	manpower = 1223092
@@ -23,3 +27,4 @@ state={
 
 	local_supplies=0.0 
 }
+

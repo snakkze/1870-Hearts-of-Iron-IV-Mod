@@ -1,58 +1,17 @@
-﻿capital = 119
- oob = "NIR_1866"
+capital = 119
+oob = "NIR_1866"
 
 set_research_slots = 3
 
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 }
 
 set_convoys = 10
 
-recruit_character = NIR_aa2
-recruit_character = NIR_awt
-recruit_character = NIR_coi
-recruit_character = NIR_stc
-recruit_character = NIR_acgs
-recruit_character = NIR_nccr
-recruit_character = NIR_ncs
-recruit_character = NIR_nt
-recruit_character = NIR_communist_guy
-recruit_character = NIR_acr
-recruit_character = NIR_pot
-recruit_character = NIR_aco2
-recruit_character = NIR_mt
-recruit_character = NIR_ar
-recruit_character = NIR_fascist_guy
-recruit_character = NIR_acd2
-recruit_character = NIR_ncm
-recruit_character = NIR_ai2
-recruit_character = NIR_acas
-recruit_character = NIR_democratic_guy
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "IRE_1939"
-	set_technology = {
-		fpw_cannon_artillery = 1
-		fpw_infantry_weapons2 = 1
-}
-}
 
 set_politics = {
 	ruling_party = democratic
@@ -66,11 +25,3 @@ set_popularities = {
 	communism = 1
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.6.17"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}

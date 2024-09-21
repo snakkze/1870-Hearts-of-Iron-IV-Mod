@@ -1,11 +1,11 @@
-﻿capital = 14
- oob = "BRI_1866"
+capital = 14
+oob = "BRI_1866"
 
-#oob = ""
 
 set_research_slots = 3
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
@@ -13,35 +13,10 @@ set_technology = {
     tech_support = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
@@ -65,74 +40,8 @@ if = {
 
 set_convoys = 20
 
-recruit_character = BRI_fascist_guy
-recruit_character = BRI_coi
-recruit_character = BRI_acr
-recruit_character = BRI_nccr
-recruit_character = BRI_ai2
-recruit_character = BRI_ncm
-recruit_character = BRI_acas
-recruit_character = BRI_aco2
-recruit_character = BRI_acd2
-recruit_character = BRI_pot
-recruit_character = BRI_stc
-recruit_character = BRI_aa2
-recruit_character = BRI_acgs
-recruit_character = BRI_nt
-recruit_character = BRI_communist_guy
-recruit_character = BRI_ar
-recruit_character = BRI_democratic_guy
-recruit_character = BRI_mt
-recruit_character = BRI_ncs
-recruit_character = BRI_awt
 
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-
-}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-
-}
-	}
-}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -146,12 +55,7 @@ set_popularities = {
 	neutrality = 30
 }
 
-create_country_leader = {
-	name = "Yann-Morvan Gefflot"
-	picture = GFX_portrait_Yann_Morvan_Gefflot
-	expire = "1965.1.1"
-	ideology = stalinism
-}
+
 
 create_country_leader = {
 	name = "Morvan Marchal"
@@ -160,12 +64,7 @@ create_country_leader = {
 	ideology = socialism
 }
 
-create_country_leader = {
-	name = "Olier Mordrel"
-	picture = GFX_portrait_Olier_Mordrel
-	expire = "1965.1.1"
-	ideology = nazism
-}
+
 
 create_country_leader = {
 	name = "Maurice Duhamel"

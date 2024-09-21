@@ -1,5 +1,5 @@
 capital = 37
- oob = "DEN_1866"
+oob = "DEN_1866"
 
 add_ideas = {
 	lost_schleswig
@@ -28,6 +28,7 @@ set_research_slots = 3
 set_stability = 0.9
 set_war_support = 0.1
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1

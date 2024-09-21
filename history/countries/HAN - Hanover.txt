@@ -1,42 +1,18 @@
-﻿capital = 59
- oob = "HAN_1866"
+capital = 59
+oob = "HAN_1866"
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
 	fpw_cannon_artillery = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
 
-}
-}
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
 
-}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
 
-}
-}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -61,20 +37,7 @@ set_research_slots = 3
 set_convoys = 50
 set_stability = 0.75
 
-1939.1.1 = {
 
-	add_political_power = 1197
-	add_command_power = 100
-	
-
-	#BUILDINGS
-	
-
-	set_technology = {
-		fpw_infantry_weapons2 = 1
-		improved_fpw_infantry_weapons = 1
-}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -109,7 +72,6 @@ add_ideas = {
 #	name = "Otto Wels"
 #	desc = "POLITICS_OTTO_WELS_DESC"
 #	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
 #	ideology = socialism
 #	traits = {
 #		exiled
@@ -117,17 +79,5 @@ add_ideas = {
 #	}
 #}
 #
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
-
+#
 

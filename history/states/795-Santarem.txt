@@ -2,8 +2,11 @@ state={
 	id=795
 	name="STATE_795"
 	resources={
-		chromium=20.000 #added due to portugal setup
-	}
+
+	
+
+wood=5
+}
 	history={
 		owner = POR
 		victory_points = {
@@ -30,3 +33,4 @@ state={
 
 	local_supplies=0.0 
 }
+
