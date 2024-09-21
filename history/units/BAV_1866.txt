@@ -41,7 +41,7 @@ units = {
 		}
 		location = 9666
 		division_template = "Feldartillerieregiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
@@ -49,15 +49,6 @@ units = {
 			name_order = 2
 		}
 		location = 3688
-		division_template = "Feldartillerieregiment"
-		start_experience_factor = 0.1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 13116
 		division_template = "Feldartillerieregiment"
 		start_experience_factor = 0.3
 	}
@@ -114,7 +105,7 @@ units = {
 		}
 		location = 586
 		division_template = "Kavallerieregiment"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	# 2. kavallerie-Division
 	division = {

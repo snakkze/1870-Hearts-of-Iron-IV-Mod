@@ -33,6 +33,7 @@ set_stability = 0.2
 set_war_support = 0.5
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_cannon_artillery = 1
 	fpw_basic_train = 1

@@ -79,7 +79,6 @@ set_technology = {
 	fpw_breech4 = 1
 	fpw_muzzle_artillery = 1
 	fpw_basic_train = 1
-    tech_support = 1
     fpw_cavalry_equipment = 1
 
 	# Supposed to be added to every country
@@ -108,6 +107,18 @@ set_technology = {
 	basic_fire_control_system = 1
 	basic_dp_light_battery = 1
 
+}
+
+add_equipment_to_stockpile = {
+    type = fpw_breech_artillery_equipment
+    amount = 300
+    producer = PRS
+}
+
+add_equipment_to_stockpile = {
+    type = fpw_infantry_equipment_1
+    amount = 5000
+    producer = PRS
 }
 
 recruit_character = PRS_otto_von_bismarck

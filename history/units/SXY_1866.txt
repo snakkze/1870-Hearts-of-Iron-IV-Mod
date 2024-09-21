@@ -38,20 +38,6 @@ division_template = {
 }
 
 units = {
-	### INFANTERIE ###
-	## Feldartillerieregiment ##
-	#1. Garde-Infanterie-Division
-	division = {
-		#1. Feldartillerieregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 1
-		}
-		location = 3535
-		division_template = "Feldartillerieregiment"
-		start_experience_factor = 1
-	}
-
 	## Infanterieregiment ##
 	#1. Infanterie-Division
 	division = {
@@ -97,7 +83,7 @@ units = {
 		}
 		location = 9471
 		division_template = "Feldartillerieregiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 	}
 
 	### KAVALLERIE ###
@@ -110,7 +96,7 @@ units = {
 		}
 		location = 573
 		division_template = "Kavallerieregiment"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 }
 

@@ -60,19 +60,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 
-	## Feldartillerieregiment ##
-	#1. Feldartillerieregiment-Regiment
-	division = {
-		#1. Feldartillerieregiment
-		division_name = {
-			is_name_ordered	= yes
-			name_order = 1
-		}
-		location = 11499
-		division_template = "Feldartillerieregiment"
-		start_experience_factor = 0.1
-	}
-
 	### KAVALLERIE ###
 	# 1. kavallerie-Division
 	division = {
@@ -83,7 +70,7 @@ units = {
 		}
 		location = 6555
 		division_template = "Kavallerieregiment"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 }
 

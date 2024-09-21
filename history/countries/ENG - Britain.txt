@@ -76,11 +76,18 @@ add_command_power = 20
 
 # Starting tech
 set_technology = {
+    fpw_cavalry_equipment = 1
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
-	fpw_cannon_artillery = 1
 	fpw_basic_train = 1
     tech_support = 1
+	fpw_cannon_artillery = 1
+	fpw_cannon2 = 1
+	fpw_howitzer_artillery = 1
+	fpw_howitzer2 = 1
+	fpw_breech_artillery = 1
+	fpw_breech2 = 1
+	fpw_breech3 = 1
 }
 
 
