@@ -19,4 +19,26 @@ ideas = {
 		}
 
 	}
+
+	country = {
+		fpw_AFG_entirely_war_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.50
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+	}
 }

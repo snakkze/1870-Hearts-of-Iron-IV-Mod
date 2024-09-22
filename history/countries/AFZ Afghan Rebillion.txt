@@ -19,4 +19,16 @@ recruit_character = AFZ_mohammad_afzal_khan
 add_ideas = {
 	fpw_AFZ_AFG_drawn_out_civil_war
 	fpw_AFZ_AFG_lack_of_national_identity
+	fpw_AFZ_tribal_economy
+}
+1866.1.1 = {
+	create_wargoal = {
+    	target = AFG
+    	type = conquer
+	}
+
+	declare_war_on = {
+    	target = AFG
+    	type = conquest
+	}
 }
