@@ -24,11 +24,11 @@ add_ideas = {
 1866.1.1 = {
 	create_wargoal = {
     	target = AFG
-    	type = conquer
+    	type = annex_everything
 	}
 
 	declare_war_on = {
     	target = AFG
-    	type = conquest
+    	type = annex_everything
 	}
 }
