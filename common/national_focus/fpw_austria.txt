@@ -14,10 +14,8 @@ focus_tree = {
 		
 		modifier = {
 			add = 100
-			AND = {
-				tag = AUS
-				is_debug = yes
-			}
+			original_tag = AUS
+			is_debug = yes
 		}
 	}
 
@@ -229,7 +227,7 @@ focus_tree = {
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_victor_of_the_apw }
-		x = -4
+		x = -5
 		y = 1
 		cost = 5
 		icon = g
@@ -261,7 +259,7 @@ focus_tree = {
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_ausgleich_negotiations }
-		x = 4
+		x = 5
 		y = 1
 		cost = 5
 		icon = g
@@ -284,7 +282,801 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			load_focus_tree = austrian_focus_austria_hungary
+
+		}
+	}
+
+	focus = {
+		id = AUS_crown_of_the_habsburg
+		relative_position_id = AUS_victor_of_the_apw
+		prerequisite = { focus = AUS_victor_of_the_apw }
+		mutually_exclusive = { focus = AUS_multiculturism }
+		x = -3
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# dismantle the empire into austria and hungary
+		}
+	}
+
+	focus = {
+		id = AUS_centralize_power
+		relative_position_id = AUS_crown_of_the_habsburg
+		prerequisite = { focus = AUS_crown_of_the_habsburg }
+		x = -1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_staged_terrorism
+		relative_position_id = AUS_centralize_power
+		prerequisite = { focus = AUS_centralize_power }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_declare_the_state_of_emergency
+		relative_position_id = AUS_staged_terrorism
+		prerequisite = { focus = AUS_staged_terrorism }
+		x = 1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_rewrite_the_constitution
+		relative_position_id = AUS_declare_the_state_of_emergency
+		prerequisite = { focus = AUS_declare_the_state_of_emergency }
+		prerequisite = { focus = AUS_our_old_empire }
+		x = 2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_world_hegemony
+		relative_position_id = AUS_crown_of_the_habsburg
+		prerequisite = { focus = AUS_crown_of_the_habsburg }
+		x = 2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_the_new_evidenzbureau
+		relative_position_id = AUS_world_hegemony
+		prerequisite = { focus = AUS_world_hegemony }
+		x = 1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_our_old_empire
+		relative_position_id = AUS_the_new_evidenzbureau
+		prerequisite = { focus = AUS_the_new_evidenzbureau }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_state_our_goals
+		relative_position_id = AUS_rewrite_the_constitution
+		prerequisite = { focus = AUS_rewrite_the_constitution }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# newspaper austria declares that they want to reunite old habsburg territory, including italy, netherlands and spain
+			# major nation forms with spain, prussia, netherlands, italy
+			# event about the faction(They demand austria to give up south german confederation)
+		}
+	}
+
+	focus = {
+		id = AUS_back_out_of_sg
+		relative_position_id = AUS_state_our_goals
+		prerequisite = { focus = AUS_state_our_goals }
+		x = -1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# idea: scared austria
+		}
+	}
+
+	focus = {
+		id = AUS_never_back_down
+		relative_position_id = AUS_state_our_goals
+		prerequisite = { focus = AUS_state_our_goals }
+		x = 2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# war between austria and the alliance
+		}
+	}
+
+	focus = {
+		id = AUS_sacred_austria
+		relative_position_id = AUS_never_back_down
+		prerequisite = { focus = AUS_never_back_down }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			# won the great war
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# idea sacred austria
+		}
+	}
+
+	focus = {
+		id = AUS_annex_the_sgc
+		relative_position_id = AUS_sacred_austria
+		prerequisite = { focus = AUS_sacred_austria }
+		x = -3
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			# won the great war
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_colonial_administration
+		relative_position_id = AUS_sacred_austria
+		prerequisite = { focus = AUS_sacred_austria }
+		x = -1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			# won the great war
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_evenge_maximilian
+		relative_position_id = AUS_colonial_administration
+		prerequisite = { focus = AUS_colonial_administration }
+		x = -2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# wargoal mexico
+		}
+	}
+
+	# Austrian East India Company
+	focus = {
+		id = AUS_revival_of_the_aeic
+		relative_position_id = AUS_colonial_administration
+		prerequisite = { focus = AUS_colonial_administration }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# wargoal india
+		}
+	}
+
+	focus = {
+		id = AUS_bosnian_colony
+		relative_position_id = AUS_colonial_administration
+		prerequisite = { focus = AUS_colonial_administration }
+		x = 2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# core on bosnia and herzegovina and wargoal
+		}
+	}
+
+	focus = {
+		id = AUS_march_trough_the_alps
+		relative_position_id = AUS_never_back_down
+		prerequisite = { focus = AUS_never_back_down }
+		x = -2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_multiculturism
+		relative_position_id = AUS_victor_of_the_apw
+		prerequisite = { focus = AUS_victor_of_the_apw }
+		mutually_exclusive = { focus = AUS_crown_of_the_habsburg }
+		x = 3
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# balkan league
+		}
+	}
+
+
+	focus = {
+		id = AUS_focus_on_the_balkan
+		relative_position_id = AUS_multiculturism
+		prerequisite = { focus = AUS_multiculturism }
+		x = 1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			#spirit extra attack on balkan territory
+		}
+	}
+
+
+	focus = {
+		id = AUS_adress_the_hungarian_situation
+		relative_position_id = AUS_focus_on_the_balkan
+		prerequisite = { focus = AUS_focus_on_the_balkan }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			#remove hungarian seperatism
+			#buffs to austria cause hungary is ok since won
+		}
+	}
+
+
+	focus = {
+		id = AUS_annexation_of_bosnia
+		relative_position_id = AUS_adress_the_hungarian_situation
+		prerequisite = { focus = AUS_adress_the_hungarian_situation }
+		x = -2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			#spirit extra attack on balkan territory
+		}
+	}
+
+
+	focus = {
+		id = AUS_assassination_of_the_sultan
+		relative_position_id = AUS_annexation_of_bosnia
+		prerequisite = { focus = AUS_annexation_of_bosnia }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# this will cause turkey to go into a civil war and the balkan to balkanize
+			# revolutions across the balkan with bulgaria, greece, montenegro, albania, serbia and romania
+		}
+	}
+
+
+	focus = {
+		id = AUS_interventions_in_the_balkan_war
+		relative_position_id = AUS_assassination_of_the_sultan
+		prerequisite = { focus = AUS_assassination_of_the_sultan }
+		x = 1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = AUS_revenge_for_1529
+		relative_position_id = AUS_interventions_in_the_balkan_war
+		prerequisite = { focus = AUS_interventions_in_the_balkan_war }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = AUS_support_on_the_russian_front
+		relative_position_id = AUS_adress_the_hungarian_situation
+		prerequisite = { focus = AUS_adress_the_hungarian_situation }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# estonian, lithuania and latvia independence when war starts support austria
+			#
+		}
+	}
+
+
+	focus = {
+		id = AUS_poland_for_territory
+		relative_position_id = AUS_adress_the_hungarian_situation
+		prerequisite = { focus = AUS_adress_the_hungarian_situation }
+		x = 2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+			# poland recieves all polish territory including sileasia and will join the war on your side
+		}
+	}
+
+
+	focus = {
+		id = AUS_besserabia_or_war
+		relative_position_id = AUS_support_on_the_russian_front
+		prerequisite = { focus = AUS_support_on_the_russian_front focus = AUS_poland_for_territory }
+		x = 1
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = AUS_the_balkan_federation
+		relative_position_id = AUS_revenge_for_1529
+		prerequisite = { focus = AUS_besserabia_or_war }
+		prerequisite = { focus = AUS_revenge_for_1529 }
+		x = 2
+		y = 1
+		cost = 5
+		icon = g
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			# owns balkan
+		}
+		
+		bypass = {
+
+		}
+		search_filters = {  }
+
+		completion_reward = {
+
 		}
 	}
 

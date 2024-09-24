@@ -302,12 +302,15 @@ prussian_surrender = {
 	}
 	# CAN INCOOPERATE FRANKRURT IN FOCUS
 	HES = {
+		annex_country = {
+			target = HEK
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = NAS
+			transfer_troops = yes
+		}
 	}
-	HEK = {
-	}
-	NAS = {
-	}
-
 	BAV = {
 		set_cosmetic_tag = BAV_SGC
 		annex_country = {
