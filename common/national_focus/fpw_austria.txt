@@ -662,7 +662,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_evenge_maximilian
+		id = AUS_avenge_maximilian
 		relative_position_id = AUS_colonial_administration
 		prerequisite = { focus = AUS_colonial_administration }
 		x = -2
@@ -941,7 +941,7 @@ focus_tree = {
 
 
 	focus = {
-		id = AUS_revenge_for_1529
+		id = AUS_avenge_1529
 		relative_position_id = AUS_interventions_in_the_balkan_war
 		prerequisite = { focus = AUS_interventions_in_the_balkan_war }
 		x = 0
@@ -1054,9 +1054,9 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_balkan_federation
-		relative_position_id = AUS_revenge_for_1529
+		relative_position_id = AUS_avenge_1529
 		prerequisite = { focus = AUS_besserabia_or_war }
-		prerequisite = { focus = AUS_revenge_for_1529 }
+		prerequisite = { focus = AUS_avenge_1529 }
 		x = 2
 		y = 1
 		cost = 5
@@ -2191,7 +2191,10 @@ focus_tree = {
 			    random_hours = 12
 			    random_days = 5
 			}
-			add_idea = AUS_romanian_allegance
+			swap_ideas = {
+			    remove_idea = AUS_romanian_contraversy
+			    add_idea = AUS_romanian_allegance
+			}
 		}
 	}
 

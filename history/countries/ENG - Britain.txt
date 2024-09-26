@@ -91,40 +91,6 @@ set_technology = {
 }
 
 
-
-
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = {
-
-}
-}
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-
-}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-
-	}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-
-}
-}
-
 set_convoys = 1000
 
 # DIPLOMACY

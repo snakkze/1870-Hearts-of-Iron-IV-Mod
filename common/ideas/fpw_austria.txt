@@ -83,6 +83,253 @@ ideas = {
 			}
 		}
 
+		AUS_deak_party_of_hungary = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		AUS_croation_agitation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.1
+			}
+		}
+
+		AUS_czech_relunctant_participaion = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.1
+			}
+		}
+
+		AUS_czech_boycott = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+
+			}
+		}
+
+		AUS_the_poland_club = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor  = 0.05
+
+			}
+		}
+
+
+ 		AUS_german_irritation_in_bohemia = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.05
+				
+			}
+		}
+
+		AUS_romanian_allegance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+
+		AUS_the_nagodba = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+
+		AUS_romanian_contraversy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				political_power_factor = -0.15
+			}
+		}
+
+		AUS_modernise_mil_equipment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				equipment_conversion_speed = 0.1 
+				consumer_goods_factor -0.1
+			}
+		}
+
+		AUS_steyr_arms_id = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		AUS_research_boost = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+
+			}
+		}
+
+		AUS_short_service_conscription = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = g
+
+			modifier = {
+
+			}
+		}
+
 		fpw_AUS_progressive_education = {
 			allowed = {
 				always = no
