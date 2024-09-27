@@ -1,5 +1,27 @@
 spriteTypes = {	
 
+	### 1870 decisions
+	spriteType = {
+		name = "GFX_decision_faction_hungary"
+		texturefile = "gfx/interface/aus_cultures_gui/hungarians.png"
+	}
+	spriteType = {
+		name = "GFX_decision_faction_croat"
+		texturefile = "gfx/interface/aus_cultures_gui/croats.png"
+	}
+	spriteType = {
+		name = "GFX_decision_faction_slovak"
+		texturefile = "gfx/interface/aus_cultures_gui/slovaks.png"
+	}
+	spriteType = {
+		name = "GFX_decision_faction_czech"
+		texturefile = "gfx/interface/aus_cultures_gui/czechs.png"
+	}
+
+
+	
+
+
 	### categories
 	
 

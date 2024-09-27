@@ -10,6 +10,17 @@ set_cosmetic_tag = AUS_austrian_empire
 	}
 }
 
+set_variable = { var = AUS_hungarians_loyalty value = -1 }
+set_variable = { var = AUS_croats_loyalty value = 1 }
+set_variable = { var = AUS_slovaks_loyalty value = 0 }
+set_variable = { var = AUS_czechs_loyalty value = 1 }
+AUS_population_of_the_empire_update_effect = yes
+
+add_dynamic_modifier = {
+    modifier = fpw_AUS_political_instability
+}
+
+
 set_research_slots = 3
 
 set_technology = {

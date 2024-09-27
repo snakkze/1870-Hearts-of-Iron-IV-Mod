@@ -34,6 +34,14 @@ fpw_AUS_autonomous_state4 = {
 	state_production_speed_arms_factory_factor = -0.1
 }
 
+fpw_AUS_political_instability = {
+	enable = { always = yes }
+	icon = gre_political_instability
+
+	stability_factor = AUS_political_instability_stability_factor
+	recruitable_population_factor = AUS_political_instability_recruitable_pop_factor
+}
+
 fpw_AUS_loser_of_the_brotherswar = {
 	enable = { always = yes }
 	icon = GFX_idea_wip

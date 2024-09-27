@@ -177,10 +177,17 @@
 #custom modifier tooltips
 
 #scripted gui text
+ fpw_austria_populations_of_the_empire:0 "Population of the Empire"
+
  AUS_hungarians_name_text:0 "Hungarians"
  AUS_croats_name_text:0 "Croats"
  AUS_slovak_name_text:0 "Slovaks"
  AUS_czech_name_text:0 "Czechs"
+
+ AUS_attitude_loyal:0 "§GLoyal§!"
+ AUS_attitude_friendly:0 "§GFriendly§!"
+ AUS_attitude_neutral:0 "§YNeutral§!"
+ AUS_attitude_hostile:0 "§RHostile§!"  
 
 #leaders
 

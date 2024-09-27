@@ -19,7 +19,7 @@ guiTypes = {
 		#ICONS
 		iconType = {
 			name ="hungarian_icon"
-			spriteType = "GFX_decision_faction_gre_monarchist"
+			spriteType = "GFX_decision_faction_hungary"
 			position = { x = @FACTION_ICONS_X y = 45 }
 		}
 
@@ -34,7 +34,7 @@ guiTypes = {
 
 		iconType = {
 			name ="croat_icon"
-			spriteType = "GFX_decision_faction_gre_venezelist"
+			spriteType = "GFX_decision_faction_croat"
 			position = { x = @FACTION_ICONS_X y = 90 }
 		}
 
@@ -49,7 +49,7 @@ guiTypes = {
 
 		iconType = {
 			name ="slovak_icon"
-			spriteType = "GFX_decision_faction_gre_communist"
+			spriteType = "GFX_decision_faction_slovak"
 			position = { x = @FACTION_ICONS_X y = 135 }
 		}
 
@@ -64,7 +64,7 @@ guiTypes = {
 
 		iconType = {
 			name ="czech_icon"
-			spriteType = "GFX_decision_faction_gre_fascist"
+			spriteType = "GFX_decision_faction_czech"
 			position = { x = @FACTION_ICONS_X y = 180 }
 		}
 
@@ -89,37 +89,37 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name ="GRE_monarchists_attitude_status"
+			name ="AUS_hungarians_attitude_status"
 			position = { x = @ATTITUDE_TEXT_X y = 55 }
 			font = "hoi_18mbs"
-			text = "GRE_monarchists_attitude_status_amount"
+			text = "[fpw_hungarian_population_attitude]"
 			format = center
 			maxwidth = 110
 		}
 
 		instantTextBoxType = {
-			name ="GRE_republicans_attitude_status"
+			name ="AUS_croats_attitude_status"
 			position = { x = @ATTITUDE_TEXT_X y = 100 }
 			font = "hoi_18mbs"
-			text = "GRE_republicans_attitude_status_amount"
+			text = "[fpw_croat_population_attitude]"
 			format = center
 			maxwidth = 110
 		}
 
 		instantTextBoxType = {
-			name ="GRE_communists_attitude_status"
+			name ="AUS_slovaks_attitude_status"
 			position = { x = @ATTITUDE_TEXT_X y = 145 }
 			font = "hoi_18mbs"
-			text = "GRE_communists_attitude_status_amount"
+			text = "[fpw_slovak_population_attitude]"
 			format = center
 			maxwidth = 110
 		}
 
 		instantTextBoxType = {
-			name ="GRE_fascists_attitude_status"
+			name ="AUS_czechs_attitude_status"
 			position = { x = @ATTITUDE_TEXT_X y = 190 }
 			font = "hoi_18mbs"
-			text = "GRE_fascists_attitude_status_amount"
+			text = "[fpw_czech_population_attitude]"
 			format = center
 			maxwidth = 110
 		}
@@ -142,37 +142,37 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name ="GRE_monarchists_stability_status"
+			name ="AUS_hungarians_stability_status"
 			position = { x = @STABILITY_TEXT_X y = 55 }
 			font = "hoi_18mbs"
-			text = "GRE_monarchists_stability_status_amount"
+			text = "[?AUS_hungarians_stability|.0%%+]"
 			format = center
 			maxwidth = 110
 		}
 
 		instantTextBoxType = {
-			name ="GRE_republicans_stability_status"
+			name ="AUS_croats_stability_status"
 			position = { x = @STABILITY_TEXT_X y = 100 }
 			font = "hoi_18mbs"
-			text = "GRE_republicans_stability_status_amount"
+			text = "[?AUS_croats_stability|.0%%+]"
 			format = center
 			maxwidth = 110
 		}
 
 		instantTextBoxType = {
-			name ="GRE_communists_stability_status"
+			name ="AUS_slovaks_stability_status"
 			position = { x = @STABILITY_TEXT_X y = 145 }
 			font = "hoi_18mbs"
-			text = "GRE_communists_stability_status_amount"
+			text = "[?AUS_slovaks_stability|.0%%+]"
 			format = center
 			maxwidth = 110
 		}
 
 		instantTextBoxType = {
-			name ="GRE_fascists_stability_status"
+			name ="AUS_czechs_stability_status"
 			position = { x = @STABILITY_TEXT_X y = 190 }
 			font = "hoi_18mbs"
-			text = "GRE_fascists_stability_status_amount"
+			text = "[?AUS_czechs_stability|.0%%+]"
 			format = center
 			maxwidth = 110
 		}
@@ -184,7 +184,7 @@ guiTypes = {
 			format = center
 			maxwidth = 100
 			maxHeight = 205
-			pdx_tooltip = GRE_STABILITY_TOOLTIP
+			pdx_tooltip = AUS_STABILITY_TOOLTIP
 		}
 
 		#MANPOWER
@@ -195,37 +195,37 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name ="GRE_monarchists_manpower_status"
+			name ="AUS_hungarians_manpower_status"
 			position = { x = @MANPOWER_TEXT_X y = 55 }
 			font = "hoi_18mbs"
-			text = "GRE_monarchists_manpower_status_amount"
+			text = "[?AUS_hungarians_manpower|.0%%+]"
 			format = center
 			maxwidth = 120
 		}
 
 		instantTextBoxType = {
-			name ="GRE_republicans_manpower_status"
+			name ="AUS_croats_manpower_status"
 			position = { x = @MANPOWER_TEXT_X y = 100 }
 			font = "hoi_18mbs"
-			text = "GRE_republicans_manpower_status_amount"
+			text = "[?AUS_croats_manpower|.0%%+]"
 			format = center
 			maxwidth = 120
 		}
 
 		instantTextBoxType = {
-			name ="GRE_communists_manpower_status"
+			name ="AUS_slovaks_manpower_status"
 			position = { x = @MANPOWER_TEXT_X y = 145 }
 			font = "hoi_18mbs"
-			text = "GRE_communists_manpower_status_amount"
+			text = "[?AUS_slovaks_manpower|.0%%+]"
 			format = center
 			maxwidth = 120
 		}
 
 		instantTextBoxType = {
-			name ="GRE_fascists_manpower_status"
+			name ="AUS_czechs_manpower_status"
 			position = { x = @MANPOWER_TEXT_X y = 190 }
 			font = "hoi_18mbs"
-			text = "GRE_fascists_manpower_status_amount"
+			text = "[?AUS_czechs_manpower|.0%%+]"
 			format = center
 			maxwidth = 120
 		}
@@ -237,7 +237,7 @@ guiTypes = {
 			format = center
 			maxwidth = 100
 			maxHeight = 205
-			pdx_tooltip = GRE_MANPOWER_TOOLTIP
+			pdx_tooltip = AUS_MANPOWER_TOOLTIP
 		}
 	}
 }

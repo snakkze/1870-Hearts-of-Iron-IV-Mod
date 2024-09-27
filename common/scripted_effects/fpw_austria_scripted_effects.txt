@@ -1,3 +1,150 @@
+AUS_population_of_the_empire_update_effect = {
+	set_variable = { var = AUS_political_instability_stability_factor value = 0 }
+	set_variable = { var = AUS_political_instability_recruitable_pop_factor	value = 0 }
+
+	### hungarians
+	if = {
+		limit = {
+			check_variable = { var = AUS_hungarians_loyalty value = 2 }
+		}
+		set_variable = { var = AUS_hungarians_stability value = 10 }
+		set_variable = { var = AUS_hungarians_manpower value = 20 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_hungarians_loyalty value = 1 }
+		}
+		set_variable = { var = AUS_hungarians_stability value = 5 }
+		set_variable = { var = AUS_hungarians_manpower value = 15 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_hungarians_loyalty value = 0 }
+		}
+		set_variable = { var = AUS_hungarians_stability value = 0 }
+		set_variable = { var = AUS_hungarians_manpower value = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_hungarians_loyalty value = -1 }
+		}
+		set_variable = { var = AUS_hungarians_stability value = -15 }
+		set_variable = { var = AUS_hungarians_manpower value = -10 }
+		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
+		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
+	}
+	### croats
+	if = {
+		limit = {
+			check_variable = { var = AUS_croats_loyalty value = 2 }
+		}
+		set_variable = { var = AUS_croats_stability value = 10 }
+		set_variable = { var = AUS_croats_manpower value = 20 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_croats_loyalty value = 1 }
+		}
+		set_variable = { var = AUS_croats_stability value = 5 }
+		set_variable = { var = AUS_croats_manpower value = 15 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_croats_loyalty value = 0 }
+		}
+		set_variable = { var = AUS_croats_stability value = 0 }
+		set_variable = { var = AUS_croats_manpower value = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_croats_loyalty value = -1 }
+		}
+		set_variable = { var = AUS_croats_stability value = -15 }
+		set_variable = { var = AUS_croats_manpower value = -10 }
+		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
+		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
+	}
+	### slovaks
+	if = {
+		limit = {
+			check_variable = { var = AUS_slovaks_loyalty value = 2 }
+		}
+		set_variable = { var = AUS_slovaks_stability value = 10 }
+		set_variable = { var = AUS_slovaks_manpower value = 20 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_slovaks_loyalty value = 1 }
+		}
+		set_variable = { var = AUS_slovaks_stability value = 5 }
+		set_variable = { var = AUS_slovaks_manpower value = 15 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_slovaks_loyalty value = 0 }
+		}
+		set_variable = { var = AUS_slovaks_stability value = 0 }
+		set_variable = { var = AUS_slovaks_manpower value = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_slovaks_loyalty value = -1 }
+		}
+		set_variable = { var = AUS_slovaks_stability value = -15 }
+		set_variable = { var = AUS_slovaks_manpower value = -10 }
+		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
+		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
+	}
+	if = {
+		limit = {
+			check_variable = { var = AUS_czechs_loyalty value = 2 }
+		}
+		set_variable = { var = AUS_czechs_stability value = 10 }
+		set_variable = { var = AUS_czechs_manpower value = 20 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_czechs_loyalty value = 1 }
+		}
+		set_variable = { var = AUS_czechs_stability value = 5 }
+		set_variable = { var = AUS_czechs_manpower value = 15 }
+		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
+		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_czechs_loyalty value = 0 }
+		}
+		set_variable = { var = AUS_czechs_stability value = 0 }
+		set_variable = { var = AUS_czechs_manpower value = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = AUS_czechs_loyalty value = -1 }
+		}
+		set_variable = { var = AUS_czechs_stability value = -15 }
+		set_variable = { var = AUS_czechs_manpower value = -10 }
+		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
+		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
+	}
+
+	force_update_dynamic_modifier = yes
+}
+
 debug_dissolve_austria = {
 	if = {
 		limit = {
