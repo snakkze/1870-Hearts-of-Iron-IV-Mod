@@ -27,6 +27,50 @@ defined_text = {
 }
 
 defined_text = {
+    name = fpw_decreased_hungarian_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_hungarians_loyalty value = 2 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_hungarians_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_hungarians_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_hostile
+    }
+}
+
+defined_text = {
+    name = fpw_increased_hungarian_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_hungarians_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_loyal
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_hungarians_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_hungarians_loyalty value = -1 }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+}
+
+defined_text = {
     name = fpw_croat_population_attitude
     text = {
         trigger = {
@@ -53,6 +97,51 @@ defined_text = {
         localization_key = AUS_attitude_hostile
     }
 }
+
+defined_text = {
+    name = fpw_decreased_croat_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_croats_loyalty value = 2 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_croats_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_croats_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_hostile
+    }
+}
+
+defined_text = {
+    name = fpw_croat_increased_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_croats_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_loyal
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_croats_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_croats_loyalty value = -1 }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+}
+
 
 defined_text = {
     name = fpw_slovak_population_attitude
@@ -83,6 +172,50 @@ defined_text = {
 }
 
 defined_text = {
+    name = fpw_decreased_slovak_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_slovaks_loyalty value = 2 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_slovaks_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_slovaks_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_hostile
+    }
+}
+
+defined_text = {
+    name = fpw_slovak_increased_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_slovaks_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_loyal
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_slovaks_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_slovaks_loyalty value = -1 }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+}
+
+defined_text = {
     name = fpw_czech_population_attitude
     text = {
         trigger = {
@@ -107,5 +240,49 @@ defined_text = {
             check_variable = { var = AUS_czechs_loyalty value = -1 }
         }
         localization_key = AUS_attitude_hostile
+    }
+}
+
+defined_text = {
+    name = fpw_decreased_czech_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_czechs_loyalty value = 2 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_czechs_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_czechs_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_hostile
+    }
+}
+
+defined_text = {
+    name = fpw_czech_increased_population_attitude
+    text = {
+        trigger = {
+            check_variable = { var = AUS_czechs_loyalty value = 1 }
+        }
+        localization_key = AUS_attitude_loyal
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_czechs_loyalty value = 0 }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+            check_variable = { var = AUS_czechs_loyalty value = -1 }
+        }
+        localization_key = AUS_attitude_neutral
     }
 }

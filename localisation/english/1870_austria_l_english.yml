@@ -111,6 +111,15 @@
  fpw_austro_hungarian_compromise:0 "The Austro-Hungarian Compromise"
  fpw_austro_hungarian_compromise_desc:0 "After our recent defeats in Prussia and Italy, the Hungarians have once more made clear their desire for autonomy. This time, we must amend the mistakes of the past and allow for some measure of Hungarian freedom.\n\nWe can do this through a number of reforms, which will debuff Hungarian states to allow for political stability.\n\n§RWe must keep Hungarian Reform Approval above 50 for the reforms to succeed§!\n\nCurrent §CHungarian Reform Approval§!: §Y[?AUS.hungarian_approval]%§!"
  AUS_hungarian_states:0 "Hungarian States affected by reform"
+
+AUS_befriend_hungarians:0 "Pro-Hungarian Policies"
+AUS_crush_hungarians:0 "Anti-Hungarian Policies"
+AUS_befriend_croats:0 "Pro-Croat Policies"
+AUS_crush_croats:0 "Anti-Croat Policies"
+AUS_befriend_slovak:0 "Pro-Slovak Policies"
+AUS_crush_slovaks:0 "Anti-Slovak Policies"
+AUS_befriend_czechs:0 "Pro-Czech Policies"
+AUS_crush_czechs:0 "Anti-Czech Policies"
  
 #ideas
  
@@ -170,8 +179,26 @@
  
  
 #custom effect tooltips
- 
+fpw_befriend_hungarians_tt:0 "Hungarian-focused policies will improve Hungarian attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_increased_hungarian_population_attitude]" 
 
+fpw_befriend_croats_tt:0 "Croatian-focused policies will improve Croation attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_croat_increased_population_attitude]" 
+
+fpw_befriend_slovaks_tt:0 "Slovak-focused policies will improve Slovak attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_slovak_increased_population_attitude]"
+ 
+fpw_befriend_czechs_tt:0 "Czech-focused policies will improve Czech attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_czech_increased_population_attitude]" 
+
+
+fpw_crush_hungarians_tt:0 "Anti-Hungarian policies will decrease Hungarian attitudes, reducing their support from [fpw_hungarian_population_attitude] to [fpw_decreased_hungarian_population_attitude]"
+fpw_civil_war_hungarians_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Hungary§!"
+
+fpw_crush_croats_tt:0 "Anti-Croat policies will decrease Croation attitudes, reducing their support from [fpw_croat_population_attitude] to [fpw_decreased_croat_population_attitude]"
+fpw_civil_war_croats_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Croatia§!"
+
+fpw_crush_slovaks_tt:0 "Anti-Slovak policies will decrease Slovak attitudes, reducing their support from [fpw_slovak_population_attitude] to [fpw_decreased_slovak_population_attitude]"
+fpw_civil_war_slovaks_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Slovakia§!"
+
+fpw_crush_czechs_tt:0 "Anti-Czech policies will decrease Czech attitudes, reducing their support from [fpw_czech_population_attitude] to [fpw_decreased_czech_population_attitude]"
+fpw_civil_war_czechs_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Bohemia§!"
  
  
 #custom modifier tooltips
