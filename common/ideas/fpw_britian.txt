@@ -281,21 +281,28 @@ ideas = {
 				defence = 0.15
 			}
 		}
-		fpw_eng_royal_aeronautical_society = {
+		fpw_eng_equality_of_gender_and_race = {
 			allowed = {
-				always = yes
+				has_government = communism
 			}
 
 			allowed_civil_war = {
-				always = no
+				has_government = communism
 			}
 
 			removal_cost = -1
 
 			picture = eng_raes
-
+			
 			modifier = {
-				research_speed_factor = 0.03
+				conscription_factor = 0.2
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = 0.15
+			}
+			rule = {
+				can_generate_female_aces = yes
+				can_generate_female_country_leaders = yes
+				can_generate_female_unit_leaders = yes
 			}
 		}
 	}
