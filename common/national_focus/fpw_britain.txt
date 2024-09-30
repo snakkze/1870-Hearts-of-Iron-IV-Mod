@@ -69,7 +69,7 @@
 		icon = GFX_unknown
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -97,7 +97,7 @@
 		icon = GFX_goal_generic_construct_infrastructure
 		x = -1
 		y = 2
-		cost = 5
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -157,7 +157,7 @@
 		icon = GFX_focus_generic_british_trade
 		x = -1
 		y = 1
-		cost = 2
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -184,7 +184,7 @@
 		icon = GFX_focus_supress_india
 		x = 1
 		y = 1
-		cost = 2
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -244,7 +244,7 @@
 		icon = GFX_focus_generic_treaty
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -274,7 +274,7 @@
 		icon = GFX_focus_generic_modernize_industry
 		x = 0
 		y = 4
-		cost = 2
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -364,7 +364,7 @@
 		icon = GFX_focus_generic_resource_extraction
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		
@@ -391,7 +391,7 @@
 		icon = GFX_focus_generic_farmland
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		
@@ -429,7 +429,7 @@
 		icon = GFX_focus_ENG_increased_wine_production_in_cape_colony
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -472,7 +472,7 @@
 		icon = GFX_focus_generic_africa_factory
 		x = 0
 		y = 2
-		cost = 2
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_STABILITY }
 		
@@ -590,7 +590,7 @@
 		icon = GFX_unknown
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -864,7 +864,7 @@
 		icon = GFX_focus_eng_the_sun_never_sets
 		x = 0
 		y = 1
-		cost = 2
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		
@@ -915,7 +915,7 @@
 		}
 		
 		completion_reward = {
-			add_ideas = fpw_eng_royal_aeronautical_society
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -991,7 +991,7 @@
 		icon = GFX_focus_ENG_british_patriotism
 		x = 0
 		y = 2
-		cost = 3
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
@@ -1047,7 +1047,7 @@
 		icon = GFX_focus_generic_treaty
 		x = 0
 		y = 1
-		cost = 4
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
@@ -1067,7 +1067,7 @@
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.05
+				popularity = 0.02
 			}
 			add_stability = 0.05
 		}
@@ -1095,10 +1095,6 @@
 		}
 		
 		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.025
-			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1121,7 +1117,7 @@
 		icon = GFX_focus_generic_workers
 		x = 2
 		y = 1
-		cost = 6
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		
@@ -1139,10 +1135,6 @@
 		}
 		
 		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.06
-			}
 			add_stability = 0.1
 		}
 	}
@@ -1281,6 +1273,794 @@
 			custom_effect_tooltip = autocomplete_by_event_tt
 		}
 	}
+	focus = {
+		id = ENG_round_two
+		icon = GFX_goal_generic_political_pressure
+		x = -2
+		y = 1
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_1870_elections }
+		relative_position_id = ENG_1870_elections
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_liberal_victory
+		icon = GFX_goal_support_democracy
+		x = 2
+		y = 1
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_1870_elections }
+		relative_position_id = ENG_1870_elections
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_victorias_dream
+		icon = GFX_focus_generic_home_defense
+		x = -6
+		y = 1
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_1870_elections }
+		relative_position_id = ENG_1870_elections
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_marxist_upset
+		icon = GFX_goal_support_communism
+		x = 6
+		y = 1
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_1870_elections }
+		relative_position_id = ENG_1870_elections
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
+		}
+	}
+	focus = {
+		id = ENG_rally_the_people
+		icon = GFX_focus_generic_support_the_left_right
+		x = 3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_marxist_upset }
+		relative_position_id = ENG_marxist_upset
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_birthplace_of_socialism
+		icon = GFX_unknown
+		x = 0
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_marxist_upset }
+		relative_position_id = ENG_marxist_upset
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_true_equality
+		icon = GFX_unknown
+		x = 0
+		y = 2
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_birthplace_of_socialism }
+		relative_position_id = ENG_marxist_upset
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_equality_of_gender_and_race
+		}
+	}
+	focus = {
+		id = ENG_eliminate_the_opposition
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = -1
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_true_equality }
+		relative_position_id = ENG_marxist_upset
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = ENG_concessions_to_irish_farmers
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_eliminate_the_opposition }
+		relative_position_id = ENG_eliminate_the_opposition
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			every_state = {
+				limit = {
+					is_core_of = IRE
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_ENG_irish_concessions
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_autonomy_for_oceania
+		icon = GFX_focus_generic_concessions
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_eliminate_the_opposition }
+		relative_position_id = ENG_eliminate_the_opposition
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			country_exists = AST
+			country_exists = NZL
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+				transfer_state_to = NZL
+			}
+			puppet = NZL
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = NZL
+					autonomous_state = autonomy_colony
+				}
+				else = {
+					puppet = NZL
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = AST
+				}
+				transfer_state_to = AST
+			}
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = AST
+					autonomous_state = autonomy_colony
+				}
+				else = {
+					puppet = AST
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_second_industrial_revolution
+		icon = GFX_focus_generic_communist_industry
+		x = -1
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_autonomy_for_oceania focus = ENG_concessions_to_irish_farmers }
+		relative_position_id = ENG_eliminate_the_opposition
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_political_purge
+		icon = GFX_focus_SOV_the_last_purge
+		x = -1
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_second_industrial_revolution}
+		relative_position_id = ENG_eliminate_the_opposition
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_manpower = -2000000
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+		}
+	}
+	focus = {
+		id = ENG_socialist_foreign_policies
+		icon = GFX_unknown
+		x = 1
+		y = 3
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_true_equality }
+		relative_position_id = ENG_marxist_upset
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ENG_the_second_international
+		icon = GFX_goal_support_fourth_int
+		x = 4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_socialist_foreign_policies }
+		relative_position_id = ENG_socialist_foreign_policies
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			set_party_rule = {
+				ideology = communism
+				can_create_factions = yes
+			}
+			create_faction = "Internationale"
+			every_country = {
+				limit = {
+					has_government = communism
+				}
+				country_event = generic.5
+			}
+			add_named_threat = {
+				threat = 1
+				name = "Foundation of the Internationale"
+			}
+		}
+	}
+	focus = {
+		id = ENG_the_workers_cry_for_help
+		icon = GFX_unknown
+		x = 1
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_socialist_foreign_policies }
+		relative_position_id = ENG_socialist_foreign_policies
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			set_major = yes
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				add_opinion_modifier = {
+					target = ENG
+					modifier = condemn_aggression
+				}
+			}
+			every_country = {
+				limit = {
+					has_government = communism
+				}
+				add_opinion_modifier = {
+					target = ENG
+					modifier = our_liberators
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_denounce_capitalism
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = -1
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_the_workers_cry_for_help }
+		relative_position_id = ENG_the_workers_cry_for_help
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_named_threat = {
+				threat = 2
+				name = "Britain Denounces Capitalism"
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = fascism
+					}
+				}
+				reverse_add_opinion_modifier = {
+					target = ENG
+					modifier = anti_capitalist_diplomacy_capitalists
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_prepare_for_liberation_of_the_world
+		icon = GFX_focus_ger_great_red_menace
+		x = 1
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_the_workers_cry_for_help }
+		relative_position_id = ENG_the_workers_cry_for_help
+
+		available = {
+			has_government = communism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			IF = {
+				limit = {
+					has_idea = war_economy
+				}
+				add_ideas = tot_economic_molbilisation
+			}
+			ELSE = {
+				add_ideas = war_economy
+			}
+		}
+	}
+	focus = {
+		id = ENG_another_hundred_years
+		icon = GFX_focus_attack_france
+		x = 3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_prepare_for_liberation_of_the_world }
+		relative_position_id = ENG_prepare_for_liberation_of_the_world
+
+		available = {
+			
+		}
+		
+		bypass = {
+			16 = {
+				owner = {
+					has_government = communism
+				}
+			}
+		}
+		
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = "Britian Attacks France"
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+		}
+	}
+	focus = {
+		id = ENG_greater_paris_commune
+		icon = GFX_unknown
+		x = 0
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_another_hundred_years }
+		relative_position_id = ENG_another_hundred_years
+
+		available = {
+			controls_state = 16
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			FRA = {
+				every_core_state = {
+					limit = {
+						controller = {
+							is_ally_with = ENG
+						}
+					}
+					set_state_controller_to = FPC
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_karls_return_home
+		icon = GFX_focus_attack_germany
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_prepare_for_liberation_of_the_world }
+		relative_position_id = ENG_prepare_for_liberation_of_the_world
+
+		available = {
+			
+		}
+		
+		bypass = {
+			PRS = {
+				has_government = communism
+			}
+		}
+		
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = "Britian Attacks Germany"
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PRS
+			}
+		}
+	}
+	focus = {
+		id = ENG_finish_the_habsburgs
+		icon = GFX_focus_attack_austria
+		x = -2
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_prepare_for_liberation_of_the_world }
+		relative_position_id = ENG_prepare_for_liberation_of_the_world
+
+		available = {
+			
+		}
+		
+		bypass = {
+			AUS = {
+				has_government = communism
+			}
+		}
+		
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = "Britian Attacks Austria"
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = AUS
+			}
+		}
+	}
+	focus = {
+		id = ENG_liberate_american_workers
+		icon = GFX_focus_generic_attack_usa
+		x = 0
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_prepare_for_liberation_of_the_world }
+		relative_position_id = ENG_prepare_for_liberation_of_the_world
+
+		available = {
+			
+		}
+		
+		bypass = {
+			USA = {
+				has_government = communism
+			}
+		}
+		
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = "Britian Attacks America"
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = USA
+			}
+		}
+	}
+	focus = {
+		id = ENG_second_boston_massacre
+		icon = GFX_focus_eng_crush_the_dream
+		x = 1
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_political_purge }
+		prerequisite = { focus = ENG_liberate_american_workers }
+		relative_position_id = ENG_eliminate_the_opposition
+
+		available = {
+			OR = {
+				has_subject = USA
+				controls_state = 357
+			}
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			USA = {
+				add_manpower = -1000
+					add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_end_the_russian_empire
+		icon = GFX_focus_generic_attack_russia
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_prepare_for_liberation_of_the_world }
+		relative_position_id = ENG_prepare_for_liberation_of_the_world
+
+		available = {
+			
+		}
+		
+		bypass = {
+			SOV = {
+				has_government = communism
+			}
+		}
+		
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = "Britian Attacks Russia"
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+	}
+	
 	##################
 	## Economy Tree ##
 	##################
@@ -1358,7 +2138,7 @@
 		icon = GFX_unknown
 		x = 4
 		y = 4
-		cost = 5
+		cost = 10
 		
 		available_if_capitulated = yes
 		
@@ -1409,7 +2189,7 @@
 		icon = GFX_unknown
 		x = 4
 		y = 3
-		cost = 5
+		cost = 10
 		
 		available_if_capitulated = yes
 		
@@ -1537,7 +2317,7 @@
 		icon = GFX_unknown
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		
 		available_if_capitulated = no
 		
@@ -1566,7 +2346,7 @@
 		icon = GFX_unknown
 		x = 0
 		y = 3
-		cost = 5
+		cost = 13
 		
 		available_if_capitulated = no
 		
@@ -1574,7 +2354,7 @@
 		relative_position_id = ENG_limit_public_spending
 
 		available = {
-			date > 1887.1.1
+			date > 1887.6.1
 		}
 		
 		bypass = {
