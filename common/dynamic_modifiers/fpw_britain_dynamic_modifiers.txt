@@ -4,3 +4,16 @@ fpw_ENG_sun_never_sets = {
 	
 	custom_modifier_tooltip = prestige_modifier_sun_never_sets
 }
+fpw_ENG_irish_concessions = {
+	remove_trigger = {
+		NOT = {
+			is_owned_by = ENG
+		}
+	}
+	
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	local_manpower = -0.25
+	state_production_speed_buildings_factor = -0.10
+	local_resources = -0.5
+}
