@@ -231,7 +231,7 @@ news_event = {
 news_event = {
 	id = news_fpw.9
 	title = "100th Aniversary of the Boston Massacre"
-	desc = news_fpw.7.d
+	desc = news_fpw.9.d
 	picture = GFX_fpw_boston_massacre
 
 	trigger = {
@@ -254,6 +254,46 @@ news_event = {
 		trigger = {
 			NOT = {
 				original_tag = USA
+			}
+		}
+	}
+}
+news_event = {
+	id = news_fpw.10
+	title = "Edward Smith-Stanley Retires"
+	desc = news_fpw.10.d
+	
+	trigger = {
+		ENG = {
+			has_government = democratic
+		}
+		date > 1868.02.25
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "He Has Done Well."
+		trigger = {
+			original_tag = ENG
+		}
+		complete_national_focus = ENG_disraeli_leads
+		add_country_leader_role = {
+			character = ENG_benjamin_disraeli
+			promote_leader = yes
+			country_leader = {
+				ideology = conservative_constitutional_monarchism
+				expire = "1881.4.19.4"
+			}
+		}
+	}
+	option = {
+		name = "Ok"
+		trigger = {
+			NOT = {
+				original_tag = ENG
 			}
 		}
 	}
