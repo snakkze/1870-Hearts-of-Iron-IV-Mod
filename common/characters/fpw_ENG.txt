@@ -10,6 +10,7 @@ characters={
 		country_leader={
 			ideology=aboslute_monarchy
 			expire="1956.01.01.01"
+			traits = { popular_queen }
 			id=-1
 		}
 	}
@@ -53,6 +54,15 @@ characters={
 			ideology=conservative_constitutional_monarchism
 			expire="1956.01.01.01"
 			id=-1
+		}
+	}
+
+	ENG_benjamin_disraeli={
+		name=ENG_benjamin_disraeli
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_benjamin_disraeli
+			}
 		}
 	}
 }
