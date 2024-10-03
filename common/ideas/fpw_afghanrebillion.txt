@@ -56,4 +56,25 @@ ideas = {
 		}
 
 	}
+
+		country = {
+		fpw_AFZ_AFG_Afghan_Civil_War = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			modifier = {
+				planning_speed = 0.2
+				max_planning_factor = 0.2
+				dig_in_speed_factor = 0.05
+				terrain_penalty_reduction = 0.3
+			}
+		}
+
+	}
 }

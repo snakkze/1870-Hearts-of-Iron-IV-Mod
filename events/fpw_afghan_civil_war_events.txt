@@ -1,0 +1,55 @@
+add_namespace = fpw_afghan
+
+country_event = {
+	id = fpw_afghan.1
+	title = afghan_fpw.1.t
+	desc = afghan_fpw.1.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "For Afghanistan!"
+		ai_chance = { factor = 100}
+		add_ideas = fpw_AFZ_AFG_Afghan_Civil_War
+	}
+}
+country_event = {
+	id = fpw_afghan.2
+	title = afghan_fpw.2.t
+	desc = afghan_fpw.2.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "A Quick Victory"
+		ai_chance = { factor = 50}
+		add_ideas = fpw_AFG_finally_end_the_civilwar
+		war_support_factor = 0.1
+	}
+	option = {
+		name = "Be Patient"
+		ai_chance = { factor = 50}
+		add_ideas = fpw_AFG_careful_planning
+		stability_factor_factor = 0.1
+	}
+}
+country_event = {
+	id = fpw_afghan.3
+	title = afghan_fpw.3.t
+	desc = afghan_fpw.3.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Afghan Civil War Over!!!"
+		ai_chance = { factor = 100}
+		remove_ideas = fpw_AFG_finally_end_the_civilwar
+		remove_ideas = fpw_AFG_careful_planning
+		remove_ideas = fpw_AFZ_AFG_Afghan_Civil_War
+		remove_ideas = fpw_AFG_entirely_war_economy
+		war_support_factor = 0.1
+		add_ideas = fpw_AFG_post_war_economy
+	}
+
+}

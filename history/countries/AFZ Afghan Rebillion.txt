@@ -10,9 +10,9 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 0
-	communism = 0
-	neutrality = 100
+	neutrality = 23
+	communism = 2
+	neutrality = 75
 }
 
 recruit_character = AFZ_mohammad_afzal_khan
@@ -20,6 +20,7 @@ add_ideas = {
 	fpw_AFZ_AFG_drawn_out_civil_war
 	fpw_AFZ_AFG_lack_of_national_identity
 	fpw_AFZ_tribal_economy
+	fpw_AFG_AFZ_illiterate_state
 }
 1866.1.1 = {
 	create_wargoal = {
@@ -32,3 +33,4 @@ add_ideas = {
     	type = annex_everything
 	}
 }
+add_manpower = 10000

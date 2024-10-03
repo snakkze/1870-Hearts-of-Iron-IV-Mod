@@ -1,0 +1,43 @@
+﻿focus_tree = {
+	id = afghanistan_focus
+	
+	default = no
+	
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			AND = {
+				tag = AFG
+				is_debug = yes
+			}
+		}
+	}
+	
+	continuous_focus_position = { x = 25 y = 680 }
+
+	
+	focus = {
+		id = afg_ongoing_civil_war
+		icon = GFX_goal_unknown
+		
+		x = 25
+		y = 0
+		
+		cost = 1
+		
+		available = {
+		}
+		
+		completion_reward = {	
+			add_political_power = 50	
+			country_event = fpw_afghan.2
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
