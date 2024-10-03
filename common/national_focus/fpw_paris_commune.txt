@@ -1633,6 +1633,9 @@ focus_tree = {
 			OR = {
 				country_exists = ENG
 			}
+			NOT = {
+				is_ally_with = ENG
+			}
 		}
 		x = 0
 		y = 2
