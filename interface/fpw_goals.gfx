@@ -242,6 +242,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_attack_commune.png"
 	}
 	spriteType = {
+		name = "GFX_focus_generic_deal_with_debt"
+		texturefile = "gfx/interface/goals/Generic_deal_with_debt.png"
+	}
+	spriteType = {
 		name = "GFX_focus_generic_anarchy"
 		texturefile = "gfx/interface/goals/focus_generic_anarchy.png"
 	}
