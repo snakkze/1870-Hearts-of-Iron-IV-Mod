@@ -863,6 +863,11 @@ focus_tree = {
 
 		completion_reward = {
 			# balkan league
+			add_stability = -0.2
+			add_timed_idea = {
+				idea = fpw_AUS_mutlti_culturism
+				days = 365
+			}
 		}
 	}
 
@@ -891,6 +896,65 @@ focus_tree = {
 
 		completion_reward = {
 			#spirit extra attack on balkan territory
+			custom_effect_tooltip = focused_on_the_balkans
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = BUL
+					}
+					add_dynamic_modifier = {
+						modifier = fpw_AUS_focused_on_balkan
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRE
+					}
+					add_dynamic_modifier = {
+						modifier = fpw_AUS_focused_on_balkan
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ROM
+					}
+					add_dynamic_modifier = {
+						modifier = fpw_AUS_focused_on_balkan
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SER
+					}
+					add_dynamic_modifier = {
+						modifier = fpw_AUS_focused_on_balkan
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BOS
+					}
+					add_dynamic_modifier = {
+						modifier = fpw_AUS_focused_on_balkan
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ALB
+					}
+					add_dynamic_modifier = {
+						modifier = fpw_AUS_focused_on_balkan
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MON
+					}
+					add_dynamic_modifier = {
+						modifier = fpw_AUS_focused_on_balkan
+					}
+				}
+			}
 		}
 	}
 

@@ -48,3 +48,13 @@ fpw_AUS_loser_of_the_brotherswar = {
 	
 	custom_modifier_tooltip = prestige_modifier_loser_of_brotherswar
 }
+
+fpw_AUS_focused_on_balkan = {
+	enable = { always = yes }
+	icon = GFX_idea_wip
+
+	attacker_modifier = yes
+
+	army_attack_factor = 0.1
+
+}

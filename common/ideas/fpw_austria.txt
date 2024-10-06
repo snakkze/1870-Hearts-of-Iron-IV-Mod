@@ -349,5 +349,46 @@ ideas = {
 			}
 		}
 
+		fpw_AUS_mutlti_culturism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = progressive_education
+
+			modifier = {
+				stability_weekly = 0.011
+			}
+		}
+
+		#fpw_AUS_balkan_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			#picture = progressive_education
+
+			modifier = {
+				
+			}
+
+			dynamic_modifier = {
+				modifier = fpw_AUS_focused_on_balkan
+				states = { 79 766 980 46 81 77 81 211 801 48 107 104 804 105 108 802 934 44 805 106 212 985 341 797 212 184 731 185 47 186  }
+			}
+		}
+
 	}
 }

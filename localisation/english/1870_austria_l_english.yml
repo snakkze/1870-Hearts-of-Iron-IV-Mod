@@ -105,7 +105,8 @@
  AUS_large_ship_focus:0 "Large Ship Focus"
  AUS_ironclad_production:0 "Ironclad Production"
  AUS_kaiserliche_und_konigliche_kriegsmarine:0 "Kaiserliche und Königliche Kriegsmarine"
-
+ AUS_focus_on_the_balkan:0 "Focus on The Balkan"
+ AUS_multiculturism:0 "Multiculturism"
 
 #decisions
  fpw_austro_hungarian_compromise:0 "The Austro-Hungarian Compromise"
@@ -199,6 +200,8 @@ fpw_civil_war_slovaks_tt:0 "Enacting this policy will lead to a §Rcivil war§! 
 
 fpw_crush_czechs_tt:0 "Anti-Czech policies will decrease Czech attitudes, reducing their support from [fpw_czech_population_attitude] to [fpw_decreased_czech_population_attitude]"
 fpw_civil_war_czechs_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Bohemia§!"
+
+focused_on_the_balkans:0 "§GYou will gain 10% attack on all balkan states§!"
  
  
 #custom modifier tooltips
