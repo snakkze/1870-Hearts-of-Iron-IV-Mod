@@ -40,4 +40,29 @@
 			factor = 5
 		}
 	}
+	focus = {
+		id = afg_cheaper_guns
+		icon = GFX_goal_unknown
+		
+		x = 25
+		y = 2
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_ongoing_civil_war }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			add_timed_idea = {
+				idea = fpw_AFG_cheaper_guns
+				days = 730
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
 }
