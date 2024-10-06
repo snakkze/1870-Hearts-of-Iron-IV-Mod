@@ -510,6 +510,7 @@ austrian_surrender = {
 	}	
 	AUS = {
 		dismantle_faction = yes
+		complete_national_focus = AUS_ausgleich_negotiations
 		clr_country_flag = austro_prussian_war
 		add_dynamic_modifier = { 
 			modifier = fpw_AUS_loser_of_the_brotherswar

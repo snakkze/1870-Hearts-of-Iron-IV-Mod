@@ -140,6 +140,7 @@ fpw_german_unification_category = {
 					target = PRS
 					type = topple_government
 				}
+				complete_national_focus = AUS_brothers_at_war
 			}
 			if = {
 				limit = {
@@ -463,8 +464,15 @@ fpw_austro_prussian_war_category = {
 		}
 
 		complete_effect = {
-			AUS = {
-				country_event = { id = prussia_fpw.18 }
+			effect_tooltip = {
+				AUS = {
+					country_event = { id = prussia_fpw.18 }
+				}
+			}
+			hidden_effect = {
+				AUS = {
+					complete_national_focus = AUS_schleswig_question
+				}
 			}
 		}
 	}

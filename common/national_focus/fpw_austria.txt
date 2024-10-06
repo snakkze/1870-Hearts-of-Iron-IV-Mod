@@ -141,11 +141,14 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = no
+			always = no
+			# autocompletes
 		}
 		
 		bypass = {
-			has_war_with = PRS
+			PRS = {
+				has_completed_focus = PRS_greater_german_solution
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -154,7 +157,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			#
+			country_event = { id = prussia_fpw.18 }
 		}
 	}
 
@@ -172,11 +175,14 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with = PRS
+			always = no
+			# autocompletes
 		}
 		
 		bypass = {
-			#
+			PRS = {
+				has_completed_focus = PRS_greater_german_solution
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -208,7 +214,12 @@ focus_tree = {
 		}
 		
 		bypass = {
-			#
+			NOT = {
+				OR = {
+					has_war_with = PRS
+					has_global_flag = austro_prussian_war
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -239,7 +250,8 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = no
+			always = no
+			#autocompletes
 		}
 		
 		bypass = {
