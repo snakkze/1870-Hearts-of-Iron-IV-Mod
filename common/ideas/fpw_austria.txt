@@ -62,7 +62,7 @@ ideas = {
 			}
 		}
 
-		fpw_AUS_stagnant_economy = {
+		fpw_AUS_stagnant_economy1 = {
 			allowed = {
 				always = no
 			}
@@ -83,6 +83,27 @@ ideas = {
 			}
 		}
 
+		fpw_AUS_stagnant_economy2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = stagnant_economy
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
 		AUS_deak_party_of_hungary = {
 			allowed = {
 				always = no
@@ -390,5 +411,23 @@ ideas = {
 			}
 		}
 
+		fpw_AUS_grunderzeit = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = FRA_market_dynamism
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
 	}
 }

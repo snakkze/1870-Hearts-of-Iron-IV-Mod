@@ -10,7 +10,7 @@ state={
 wood=4
 }
 	
-	state_category = large_city
+	state_category = metropolis
 	
 	history={
 		owner = AUS
@@ -20,17 +20,12 @@ wood=4
 		victory_points = { 583 3 }
 		buildings = {
 			infrastructure = 4
-			arms_factory = 6
-			industrial_complex = 1
+			arms_factory = 4
+			industrial_complex = 5
 		}
 		add_core_of = CZE
 		add_core_of = AUS
 
-
-		1939.3.14 = {
-			owner = GER
-			controller = GER
-		}
 	}
 
 	provinces={

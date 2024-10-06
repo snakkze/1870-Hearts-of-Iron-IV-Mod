@@ -3438,11 +3438,191 @@ focus_tree = {
 	## Civ Industrial Tree
 	
 	focus = {
-		id = AUS_revitalize_austrian_industry
+		id = AUS_grunderzeit
 		x = 36
 		y = 0
+		cost = 10
+		icon = GFX_focus_spa_save_the_alcazar
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.025
+			add_ideas = fpw_AUS_grunderzeit
+		}
+	}
+
+	focus = {
+		id = AUS_civ_industry_focus
+		relative_position_id = AUS_grunderzeit 
+		prerequisite = { focus = AUS_grunderzeit }
+		x = -2
+		y = 1
 		cost = 5
-		icon = gGFX_focus_generic_industry_1
+		icon = GFX_focus_generic_agricultural_subsidies
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			155 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+				}
+			43 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					    }
+					}
+				}
+			154 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+		    }
+		}
+	}
+
+	focus = {
+		id = AUS_resuscitate_the_economy
+		relative_position_id = AUS_civ_industry_focus 
+		prerequisite = { focus = AUS_civ_industry_focus focus = AUS_arms_industry_focus }
+		x = 2
+		y = 1
+		cost = 12
+		icon = GFX_focus_DEN_limited_regulations
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+        has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_stability = 0.05
+            swap_ideas = { 
+                remove_idea = fpw_AUS_stagnant_economy1
+                add_idea = fpw_AUS_stagnant_economy2
+            }
+		}
+	}
+
+	focus = {
+		id = AUS_upper_styria_industrial_core_region
+		relative_position_id = AUS_civ_industry_focus 
+		prerequisite = { focus = AUS_civ_industry_focus }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_focus_generic_steel
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			152 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+					    }
+				    }
+			    }
+			152 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					    }
+				    }
+			    }
+		}
+	}
+
+	focus = {
+		id = AUS_advance_technical_progress
+		relative_position_id = AUS_upper_styria_industrial_core_region
+		prerequisite = { focus = AUS_upper_styria_industrial_core_region }
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_generic_production2
 
 		ai_will_do = {
 			factor = 10
@@ -3471,77 +3651,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_civ_industry_focus
-		relative_position_id = AUS_revitalize_austrian_industry 
-		prerequisite = { focus = AUS_revitalize_austrian_industry }
-		x = -2
-		y = 1
-		cost = 5
-		icon = gGFX_focus_generic_industry_2
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			4 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
-					}
-				}
-			43 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
-					}
-				}
-			9 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
-					}
-				}
-			add_timed_idea = {
-			    idea = AUS_civ_industry_buildup
-			    days = 365
-			}
-		}
-	}
-
-	focus = {
-		id = AUS_industrial_revolution
-		relative_position_id = AUS_civ_industry_focus 
-		prerequisite = { focus = AUS_civ_industry_focus }
-		x = 0
+		id = AUS_bohemian_heavy_industries
+		relative_position_id = AUS_upper_styria_industrial_core_region
+		prerequisite = { focus = AUS_upper_styria_industrial_core_region }
+		x = 1
 		y = 1
 		cost = 10
-		icon = gGFX_focus_generic_industry_3
+		icon = GFX_focus_generic_industry_3
 
 		ai_will_do = {
 			factor = 10
@@ -3561,56 +3677,27 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
+			9 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
 						instant_build = yes
-					}
+				}
 			}
-		}
-	}
-
-	focus = {
-		id = AUS_lang_factory
-		relative_position_id = AUS_industrial_revolution 
-		prerequisite = { focus = AUS_industrial_revolution }
-		x = -1
-		y = 1
-		cost = 5
-		icon = gGFX_goal_generic_construct_civ_factory
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			43 = {
-					add_extra_state_shared_building_slots = 1
+			69 = {
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
+						instant_build = yes
+				}
+			}
+			75 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
 						instant_build = yes
 				}
 			}
@@ -3618,59 +3705,21 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_lokomotivfabrik_floridsdorf
-		relative_position_id = AUS_industrial_revolution 
-		prerequisite = { focus = AUS_industrial_revolution }
-		x = 1
-		y = 1
-		cost = 5
-		icon = gGFX_goal_continuous_non_factory_construct
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			9 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = AUS_skoda_works
-		relative_position_id = AUS_lokomotivfabrik_floridsdorf
-		prerequisite = { focus = AUS_lokomotivfabrik_floridsdorf }
-		prerequisite = { focus = AUS_lang_factory }
+		id = AUS_second_industrial_revolution
+		relative_position_id = AUS_bohemian_heavy_industries
+		prerequisite = { focus = AUS_bohemian_heavy_industries }
+		prerequisite = { focus = AUS_advance_technical_progress }
 		x = -1
 		y = 1
 		cost = 10
-		icon = gGFX_goal_generic_construction
+		icon = GFX_focus_generic_railroad
 
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
-
+        date > 1870.01.01
 		}
 		
 		bypass = {
@@ -3683,7 +3732,17 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			9 = {
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 1
+			    category = industry
+			}
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 1
+			    category = electronics
+			}
+			4 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -3698,8 +3757,9 @@ focus_tree = {
 
 	focus = {
 		id = AUS_arms_industry_focus
-		relative_position_id = AUS_revitalize_austrian_industry 
-		prerequisite = { focus = AUS_revitalize_austrian_industry }
+		relative_position_id = AUS_grunderzeit 
+		prerequisite = { focus = AUS_grunderzeit }
+		prerequisite = { focus = AUS_increase_mil_capability }
 		x = 2
 		y = 1
 		cost = 10
@@ -3903,14 +3963,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_investing_in_unis
-		relative_position_id = AUS_skoda_works
+		id = AUS_economic_recovery
+		relative_position_id = AUS_second_industrial_revolution
 		prerequisite = { focus = AUS_war_machine }
-		prerequisite = { focus = AUS_skoda_works }
+		prerequisite = { focus = AUS_second_industrial_revolution }
+		prerequisite = { focus = AUS_resuscitate_the_economy }
 		x = 2
 		y = 1
 		cost = 10
-		icon = gGFX_focus_generic_university_2
+		icon = GFX_focus_ITA_devaluate_the_lire
 
 		ai_will_do = {
 			factor = 10
@@ -3930,20 +3991,20 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			add_ideas = {
-			    idea = AUS_research_boost
+			remove_ideas = {
+			    idea = fpw_AUS_stagnant_economy2
 			}
 		}
 	}
 
 	focus = {
 		id = AUS_expansion_of_vienna_uni
-		relative_position_id = AUS_investing_in_unis
-		prerequisite = { focus = AUS_investing_in_unis }
+		relative_position_id = AUS_economic_recovery
+		prerequisite = { focus = AUS_economic_recovery }
 		x = 0
 		y = 1
 		cost = 10
-		icon = gGFX_focus_generic_university_3
+		icon = GFX_focus_generic_university_3
 
 		ai_will_do = {
 			factor = 10
@@ -3971,8 +4032,8 @@ focus_tree = {
 
 	focus = {
 		id = AUS_develop_defen_structures
-		relative_position_id = AUS_revitalize_austrian_industry 
-		prerequisite = { focus = AUS_increase_mil_capability focus = AUS_revitalize_austrian_industry }
+		relative_position_id = AUS_grunderzeit 
+		prerequisite = { focus = AUS_increase_mil_capability focus = AUS_grunderzeit }
 		x = 5
 		y = 1
 		cost = 5
