@@ -1251,7 +1251,7 @@
 		}
 	}
 	focus = {
-		id = ENG_1870_elections
+		id = ENG_1868_elections
 		icon = GFX_focus_generic_hold_election
 		x = -4
 		y = 5
@@ -1282,8 +1282,8 @@
 		
 		available_if_capitulated = yes
 		
-		prerequisite = { focus = ENG_1870_elections }
-		relative_position_id = ENG_1870_elections
+		prerequisite = { focus = ENG_1868_elections }
+		relative_position_id = ENG_1868_elections
 
 		available = {
 			always = no
@@ -1306,8 +1306,8 @@
 		
 		available_if_capitulated = yes
 		
-		prerequisite = { focus = ENG_1870_elections }
-		relative_position_id = ENG_1870_elections
+		prerequisite = { focus = ENG_1868_elections }
+		relative_position_id = ENG_1868_elections
 
 		available = {
 			always = no
@@ -1330,8 +1330,8 @@
 		
 		available_if_capitulated = yes
 		
-		prerequisite = { focus = ENG_1870_elections }
-		relative_position_id = ENG_1870_elections
+		prerequisite = { focus = ENG_1868_elections }
+		relative_position_id = ENG_1868_elections
 
 		available = {
 			always = no
@@ -1346,6 +1346,680 @@
 		}
 	}
 	focus = {
+		id = ENG_strategic_rebuttal
+		icon = GFX_goal_continuous_def_against_influence
+		x = 0
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_victorias_dream }
+		relative_position_id = ENG_victorias_dream
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = ENG_remind_people_of_past_glory
+		icon = GFX_focus_ENG_encourage_the_people_to_rise_up
+		x = -4
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_victorias_dream }
+		relative_position_id = ENG_victorias_dream
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = ENG_cut_public_spending
+		icon = GFX_goal_generic_military_deal
+		x = 2
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_remind_people_of_past_glory }
+		prerequisite = { focus = ENG_increase_military_spending }
+		relative_position_id = ENG_remind_people_of_past_glory
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_lack_of_social_spending
+		}
+	}
+	focus = {
+		id = ENG_increase_military_spending
+		icon = GFX_focus_SWI_issue_war_bonds
+		x = 1
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_strategic_rebuttal }
+		relative_position_id = ENG_victorias_dream
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 3
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 4
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_deal_with_debt
+		icon = GFX_focus_generic_deal_with_debt
+		x = 1
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_increase_military_spending }
+		relative_position_id = ENG_victorias_dream
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			remove_ideas = fpw_eng_debts
+		}
+	}
+	focus = {
+		id = ENG_ultramonarchism
+		icon = GFX_focus_generic_monarchy_2
+		x = -1
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_deal_with_debt }
+		relative_position_id = ENG_deal_with_debt
+		mutually_exclusive = { focus = ENG_conservative_approach }
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_country_leader_trait = dictator
+		}
+	}
+	focus = {
+		id = ENG_destroy_parliament
+		icon = GFX_focus_generic_monarchy_1
+		x = -1
+		y = 1
+		cost = 13
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_ultramonarchism }
+		prerequisite = { focus = ENG_cut_public_spending }
+		relative_position_id = ENG_ultramonarchism
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = ENG_strengthen_the_royal_prerogative
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 0
+		y = 2
+		cost = 13
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_ultramonarchism }
+		relative_position_id = ENG_ultramonarchism
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ENG_protect_her_majesty
+		icon = GFX_goal_generic_defence
+		x = -2
+		y = 3
+		cost = 35
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_destroy_parliament }
+		prerequisite = { focus = ENG_strengthen_the_royal_prerogative }
+		relative_position_id = ENG_ultramonarchism
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ENG_costs_of_a_monarchy
+		icon = GFX_focus_CZE_german_puppet
+		x = 0
+		y = 3
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_remind_people_of_past_glory }
+		relative_position_id = ENG_remind_people_of_past_glory
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_costs_of_a_monarchy
+		}
+	}
+	focus = {
+		id = ENG_motivate_the_workers
+		icon = GFX_focus_generic_workers
+		x = 0
+		y = 6
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_costs_of_a_monarchy }
+		relative_position_id = ENG_remind_people_of_past_glory
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = fpw_eng_costs_of_a_monarchy_2
+				remove_idea = fpw_eng_costs_of_a_monarchy
+			}
+		}
+	}
+	focus = {
+		id = ENG_concessions_for_workers
+		icon = GFX_focus_generic_concessions
+		x = -3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_costs_of_a_monarchy }
+		relative_position_id = ENG_costs_of_a_monarchy
+		mutually_exclusive = { focus = ENG_force_the_workers_to_work }
+
+		available = {
+			has_government = neutrality
+			has_completed_focus = ENG_conservative_approach
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = fpw_eng_costs_of_a_monarchy_2
+				remove_idea = fpw_eng_costs_of_a_monarchy
+			}
+		}
+	}
+	focus = {
+		id = ENG_force_the_workers_to_work
+		icon = GFX_unknown
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_costs_of_a_monarchy }
+		relative_position_id = ENG_costs_of_a_monarchy
+		mutually_exclusive = { focus = ENG_concessions_for_workers }
+
+		available = {
+			has_government = neutrality
+			has_completed_focus = ENG_ultramonarchism
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = fpw_eng_costs_of_a_monarchy_2
+				remove_idea = fpw_eng_costs_of_a_monarchy
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = ENG_the_main_show
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_protect_her_majesty }
+		prerequisite = { focus = ENG_motivate_the_workers }
+		relative_position_id = ENG_protect_her_majesty
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			set_major = yes
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ENG_anti-american_propoganda
+		icon = GFX_focus_ARG_anti_american_propaganda
+		x = -4
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_the_main_show }
+		relative_position_id = ENG_the_main_show
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_legacy_of_1812
+		}
+	}
+	focus = {
+		id = ENG_revenge_for_1776
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_anti-american_propoganda }
+		relative_position_id = ENG_anti-american_propoganda
+
+		available = {
+			
+		}
+		
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = USA
+				}
+				has_subject = USA
+			}
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = USA
+			}
+		}
+	}
+	focus = {
+		id = ENG_another_hundred_years
+		icon = GFX_focus_attack_france
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_the_main_show }
+		relative_position_id = ENG_the_main_show
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			16 = {
+				owner = {
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_benelux_friendship
+		icon = GFX_focus_fight_benelux
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_the_main_show }
+		relative_position_id = ENG_the_main_show
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = HOL
+						tag = BEL
+						tag = LUX
+					}
+				}
+				country_event = generic.5
+			}
+		}
+	}
+	focus = {
+		id = ENG_take_in_portugal
+		icon = GFX_focus_generic_befriend_portugal
+		x = 0
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_benelux_friendship }
+		relative_position_id = ENG_the_main_show
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			POR = {
+				country_event = generic.20
+			}
+		}
+	}
+	focus = {
+		id = ENG_retake_hannover
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_the_main_show }
+		relative_position_id = ENG_the_main_show
+		mutually_exclusive = { focus = ENG_befriend_hannover }
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			59 = {
+				owner = {
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 59 }
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_befriend_hannover
+		icon = GFX_goal_generic_alliance
+		x = 4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_the_main_show }
+		relative_position_id = ENG_the_main_show
+		mutually_exclusive = { focus = ENG_retake_hannover }
+
+		available = {
+			country_exists = HNV
+		}
+		
+		bypass = {
+			has_subject = HNV
+		}
+		
+		completion_reward = {
+			HNV = {
+				country_event = generic.5
+			}
+		}
+	}
+	focus = {
+		id = ENG_disunite_germany
+		icon = GFX_focus_attack_germany
+		x = 3
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		prerequisite = { focus = ENG_retake_hannover focus = ENG_befriend_hannover }
+		relative_position_id = ENG_the_main_show
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Prussia has formed the North German Confederation"
+				PRS = {
+					has_cosmetic_tag = GER_north_germany
+				}
+			}
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			PRS = {
+				country_event = britain_fpw.5
+			}
+		}
+	}
+	focus = {
+		id = ENG_conservative_approach
+		icon = GFX_focus_rom_handle_king
+		x = 1
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_deal_with_debt }
+		relative_position_id = ENG_deal_with_debt
+		mutually_exclusive = { focus = ENG_ultramonarchism }
+
+		available = {
+			has_government = neutrality
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
 		id = ENG_marxist_upset
 		icon = GFX_goal_support_communism
 		x = 6
@@ -1354,8 +2028,8 @@
 		
 		available_if_capitulated = yes
 		
-		prerequisite = { focus = ENG_1870_elections }
-		relative_position_id = ENG_1870_elections
+		prerequisite = { focus = ENG_1868_elections }
+		relative_position_id = ENG_1868_elections
 
 		available = {
 			always = no
@@ -1395,7 +2069,7 @@
 	}
 	focus = {
 		id = ENG_birthplace_of_socialism
-		icon = GFX_unknown
+		icon = GFX_goal_tfv_burn_the_royal_portraits
 		x = 0
 		y = 1
 		cost = 5
@@ -1447,7 +2121,7 @@
 	}
 	focus = {
 		id = ENG_eliminate_the_opposition
-		icon = GFX_goal_tfv_burn_the_royal_portraits
+		icon = GFX_focus_por_workers_of_iberia
 		x = -1
 		y = 3
 		cost = 5
@@ -1482,7 +2156,7 @@
 	}
 	focus = {
 		id = ENG_concessions_to_irish_farmers
-		icon = GFX_focus_generic_workers_and_farmers_rise
+		icon = GFX_focus_ireland_treaty
 		x = -1
 		y = 1
 		cost = 10
@@ -1574,7 +2248,7 @@
 		}
 	}
 	focus = {
-		id = ENG_second_industrial_revolution
+		id = ENG_socialist_industry
 		icon = GFX_focus_generic_communist_industry
 		x = -1
 		y = 3
@@ -1594,6 +2268,7 @@
 		}
 		
 		completion_reward = {
+			remove_ideas = fpw_eng_debts
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1629,7 +2304,7 @@
 		
 		available_if_capitulated = no
 		
-		prerequisite = { focus = ENG_second_industrial_revolution}
+		prerequisite = { focus = ENG_socialist_industry }
 		relative_position_id = ENG_eliminate_the_opposition
 
 		available = {
@@ -1650,7 +2325,7 @@
 	}
 	focus = {
 		id = ENG_socialist_foreign_policies
-		icon = GFX_unknown
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		x = 1
 		y = 3
 		cost = 3
@@ -1705,14 +2380,14 @@
 				country_event = generic.5
 			}
 			add_named_threat = {
-				threat = 1
+				threat = 10
 				name = "Foundation of the Internationale"
 			}
 		}
 	}
 	focus = {
 		id = ENG_the_workers_cry_for_help
-		icon = GFX_unknown
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		x = 1
 		y = 1
 		cost = 5
@@ -1824,11 +2499,12 @@
 			ELSE = {
 				add_ideas = war_economy
 			}
+			add_country_leader_trait = international_communist
 		}
 	}
 	focus = {
-		id = ENG_another_hundred_years
-		icon = GFX_focus_attack_france
+		id = ENG_fate_of_france
+		icon = GFX_focus_PRS_fight_france
 		x = 3
 		y = 1
 		cost = 10
@@ -1851,14 +2527,32 @@
 		}
 		
 		completion_reward = {
-			add_named_threat = {
-				threat = 5
-				name = "Britian Attacks France"
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = FRA
-			}
+			country_event = britain_fpw.2
+		}
+	}
+	focus = {
+		id = ENG_attack_france
+		icon = GFX_focus_attack_france
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_fate_of_france }
+		relative_position_id = ENG_fate_of_france
+		mutually_exclusive = { focus = ENG_second_french_revolution }
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
 		}
 	}
 	focus = {
@@ -1870,8 +2564,8 @@
 		
 		available_if_capitulated = no
 		
-		prerequisite = { focus = ENG_another_hundred_years }
-		relative_position_id = ENG_another_hundred_years
+		prerequisite = { focus = ENG_attack_france }
+		relative_position_id = ENG_attack_france
 
 		available = {
 			controls_state = 16
@@ -1892,6 +2586,31 @@
 					set_state_controller_to = FPC
 				}
 			}
+		}
+	}
+	focus = {
+		id = ENG_second_french_revolution
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = ENG_fate_of_france }
+		relative_position_id = ENG_fate_of_france
+		mutually_exclusive = { focus = ENG_attack_france }
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = autocomplete_by_event_tt
 		}
 	}
 	focus = {
@@ -2029,7 +2748,7 @@
 	}
 	focus = {
 		id = ENG_end_the_russian_empire
-		icon = GFX_focus_generic_attack_russia
+		icon = GFX_focus_attack_russia
 		x = 1
 		y = 1
 		cost = 10
@@ -2424,7 +3143,7 @@
 		id = ENG_the_motherland_in_danger
 		icon = GFX_focus_ENG_motherland_in_danger
 		x = 34
-		y = 11
+		y = 13
 		cost = 4
 		
 		available_if_capitulated = yes
@@ -2443,6 +3162,22 @@
 		
 		completion_reward = {
 			add_war_support = 0.05
+			IF = {
+				limit = {
+					has_idea = fpw_eng_imperial_pride
+				}
+				add_timed_idea = {
+					idea = fpw_eng_volunteer_rush
+					days = 30
+				}
+			}
+			custom_effect_tooltip = fpw_eng_volunteer_rush_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = fpw_eng_volunteer_rush
+					days = 30
+				}
+			}
 		}
 	}
 	focus = {
@@ -2554,7 +3289,7 @@
 		icon = GFX_goal_generic_small_arms
 		x =0
 		y = 2
-		cost = 5
+		cost = 10
 		
 		available_if_capitulated = yes
 		
@@ -2575,7 +3310,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -2679,7 +3414,7 @@
 		icon = GFX_focus_generic_coastal_fort
 		x = 0
 		y = 3
-		cost = 5
+		cost = 10
 		
 		available_if_capitulated = no
 		
