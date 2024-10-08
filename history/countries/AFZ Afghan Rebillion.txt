@@ -2,7 +2,7 @@ capital = 267
 oob = "AFZ_1866"
 
 set_politics = {
-	ruling_party = neutrality 
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -10,12 +10,12 @@ set_politics = {
 }
 
 set_popularities = {
+	neutrality = 23
 	communism = 2
-	neutrality = 98
+	neutrality = 75
 }
 
 recruit_character = AFZ_mohammad_afzal_khan
-
 add_ideas = {
 	fpw_AFZ_AFG_drawn_out_civil_war
 	fpw_AFZ_AFG_lack_of_national_identity

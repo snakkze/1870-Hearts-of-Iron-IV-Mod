@@ -1,13 +1,5 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_focus_ireland_treaty"
-		texturefile = "gfx/interface/goals/ireland_treaty.png"
-	}
-	spriteType = {
-		name = "GFX_focus_attack_russia"
-		texturefile = "gfx/interface/goals/attack_russia.png"
-	}
-	spriteType = {
 		name = "GFX_focus_generic_hold_election"
 		texturefile = "gfx/interface/goals/generic_election.png"
 	}

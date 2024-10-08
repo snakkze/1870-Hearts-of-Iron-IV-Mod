@@ -118,23 +118,4 @@ ideas = {
 			}
 		}
 	}
-	country = {
-		fpw_AFG_cheaper_guns = {
-			allowed = {
-				always = no
-			}
-
-
-			removal_cost = -1
-
-			picture = generic_infantry_bonus
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.15
-					reliability = -0.15
-					instant = yes
-				}
-			}
-		}
-	}
 }
