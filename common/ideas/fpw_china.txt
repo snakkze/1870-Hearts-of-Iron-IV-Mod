@@ -1,6 +1,6 @@
 ideas = {
     country = {
-        fpw_CHI_instable_country = {
+        fpw_CHI_widespread_corruption = {
             allowed = {
 				original_tag = CHI
 			}
@@ -8,16 +8,18 @@ ideas = {
 			available = {
 			}
 
-            picture = chi_warlord_integration
+            picture = generic_disjointed_gov
 
             removal_cost = -1
             modifier = {
-                stability_factor = -0.25
-                political_power_factor = -0.15
+                political_power_cost = 0.5
+                stability_factor = -0.2
+                consumer_goods_factor = 0.5
+                research_speed_factor = -0.2
             }
         }
         
-        fpw_CHI_outdated_military = {
+        fpw_CHI_ineffective_bannermen = {
             allowed = {
 				original_tag = CHI
 			}
@@ -29,9 +31,46 @@ ideas = {
             
             removal_cost = -1
             modifier = {
-                army_org_regain = -0.2
-                army_morale_factor = -0.2
+                army_speed_factor = -0.15
                 army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                army_org_factor = -0.3
+                experience_gain_army = -0.15
+            }
+        }
+        fpw_CHI_century_of_humiliation = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+            
+            picture = man_low_legitimacy
+            
+            removal_cost = -1
+            modifier = {
+                surrender_limit = -0.25
+                stability_weekly = -0.002
+                war_support_weekly = -0.002
+            }
+        }
+        fpw_CHI_disjointed_naval_vessels = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+            
+            picture = hol_de_vaarplicht
+            
+            removal_cost = -1
+            modifier = {
+                naval_coordination = -0.2
+                naval_morale_factor = -0.2
+                navy_org_factor = -0.3
+                positioning = -0.1
             }
         }
     }
