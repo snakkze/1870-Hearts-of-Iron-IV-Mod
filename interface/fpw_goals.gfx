@@ -1,6 +1,19 @@
 # PRUSSIA #
 spriteTypes = {
 	spriteType = {
+		name = "GFX_focus_PRS_luederitz"
+		texturefile = "gfx/interface/goals/focus_PRS_namibia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_weltpolitiks"
+		texturefile = "gfx/interface/goals/focus_PRS_weltpolitik.png"
+	}
+	spriteType = {
+		name = "GFX_focus_befriend_spain"
+		texturefile = "gfx/interface/goals/befriend_spain.png"
+	}
+
+	spriteType = {
 		name = "GFX_focus_PRS_league_of_three_emperors"
 		texturefile = "gfx/interface/goals/focus_PRS_league_of_three_emperors.png"
 	}
