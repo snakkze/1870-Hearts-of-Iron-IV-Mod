@@ -21,7 +21,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 200 y = 1000 }
+	continuous_focus_position = { x = 4175 y = 800 }
 	
 	default = no
 
@@ -240,7 +240,7 @@ focus_tree = {
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_victor_of_the_apw }
-		x = -5
+		x = -6
 		y = 1
 		cost = 5
 		icon = g
@@ -273,7 +273,7 @@ focus_tree = {
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_ausgleich_negotiations }
-		x = 5
+		x = 6
 		y = 1
 		cost = 5
 		icon = GFX_focus_ger_revive_kaiserreich
