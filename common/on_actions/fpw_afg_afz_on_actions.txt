@@ -27,4 +27,18 @@ on_actions = {
             }
         }
     }
+
+	on_daily_AFZ = {
+		effect = {
+			if = {
+			limit = {
+				date > 1869.2.1
+				date < 1869.2.3
+			}
+			AFZ = {
+				country_event = fpw_afghan.7
+			}
+			}
+		}
+	}
 }

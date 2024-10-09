@@ -118,4 +118,72 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		fpw_AFG_cheaper_guns = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					reliability = -0.15
+					instant = yes
+				}
+			}
+		}
+	}
+country = {
+		fpw_AFG_extended_use_of_propoganda = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = -0.1
+			}
+		}
+	}
+
+country = {
+		fpw_AFG_supporting_afghanistan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+country = {
+		fpw_AFG_munitys_in_the_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.3
+			}
+		}
+	}
 }
+

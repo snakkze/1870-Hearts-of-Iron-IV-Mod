@@ -23,7 +23,10 @@ country_event = {
 	option = {
 		name = "A Quick Victory"
 		ai_chance = { factor = 50}
-		add_ideas = fpw_AFG_finally_end_the_civilwar
+		add_timed_idea = {
+			idea = fpw_AFG_finally_end_the_civilwar
+			days = 730
+		}
 		war_support_factor = 0.1
 	}
 	option = {
@@ -53,3 +56,97 @@ country_event = {
 	}
 
 }
+
+country_event = {
+	id = fpw_afghan.4
+	title = afghan_fpw.4.t
+	desc = afghan_fpw.4.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Anything for an anti British nation"
+		ai_chance = { factor = 50}
+		add_timed_idea = {
+			idea = fpw_AFG_supporting_afghanistan
+			days = 100
+		}
+		415 = {
+					if = {
+					    add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+					}
+				}
+		}
+		diplomatic_relation = {
+   			country = AFG
+    		relation = non_aggression_pact
+    		active = yes
+		}
+		AFG = {
+			country_event = fpw_afghan.6
+		}
+
+	}
+	option = {
+		name = "We are not allies"
+		ai_chance = { factor = 50}
+		AFG = {
+			country_event = fpw_afghan.5
+		}
+	}
+
+}
+
+
+country_event = {
+	id = fpw_afghan.5
+	title = afghan_fpw.5.t
+	desc = afghan_fpw.5.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "What did we expect?"
+		}
+
+
+}
+
+country_event = {
+	id = fpw_afghan.6
+	title = afghan_fpw.6.t
+	desc = afghan_fpw.6.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We will repay the favor by crushing the British!!!"
+		}
+
+
+}
+
+country_event = {
+	id = fpw_afghan.7
+	title = afghan_fpw.7.t
+	desc = afghan_fpw.7.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Well Shit"
+		add_ideas = fpw_AFG_munitys_in_the_army
+		}
+
+
+}
+
+
