@@ -149,15 +149,20 @@ spriteTypes = {
 		name = "GFX_idea_SOV_fresh_officer_core"
 		texturefile = "gfx/interface/ideas/SOV/idea_SOV_fresh_officer_core.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SOV_fresh_officer_core"
+		texturefile = "gfx/interface/ideas/SOV/idea_SOV_fresh_officer_core.dds"
+	}
 	
 	SpriteType = {
-		name = "GFX_idea_SOV_iosif_gurko"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_iosif_gurko.png"
+		name = "GFX_idea_SOV_loser_of_the_crimean_war"
+		texturefile = "gfx/interface/ideas/SOV/loser_of_the_crimean_war.png"
 	}
 	SpriteType = {
 		name = "GFX_idea_SOV_alexander_iii"
 		texturefile = "gfx/interface/ideas/SOV/idea_SOV_alexander_iii.png"
 	}
+	
 	SpriteType = {
 		name = "GFX_idea_SOV_dmitry_milyutin"
 		texturefile = "gfx/interface/ideas/SOV/idea_SOV_dmitry_milyutin.png"

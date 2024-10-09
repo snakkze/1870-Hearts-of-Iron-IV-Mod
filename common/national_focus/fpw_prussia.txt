@@ -1715,7 +1715,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_weltpolitik
-		icon = picture
+		icon = GFX_focus_PRS_weltpolitiks
 		prerequisite = { focus = PRS_heil_dir_im_siegerkranz }
 		relative_position_id = PRS_heil_dir_im_siegerkranz
 
@@ -1774,7 +1774,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_tsingdao_incedent
-		icon = picture
+		icon = GFX_focus_jap_manchurian_project
 		prerequisite = { focus = PRS_kolonialamt_asien }
 		relative_position_id = PRS_kolonialamt_asien
 		x = -2
@@ -1799,7 +1799,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_approach_spain
-		icon = picture
+		icon = GFX_focus_befriend_spain
 		prerequisite = { focus = PRS_kolonialamt_asien }
 		relative_position_id = PRS_kolonialamt_asien
 		x = 0
@@ -1850,7 +1850,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_luederitz_expedition
-		icon = picture
+		icon = GFX_focus_PRS_luederitz
 		prerequisite = { focus = PRS_weltpolitik }
 		relative_position_id = PRS_weltpolitik
 		x = 4
@@ -1875,7 +1875,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_increase_colonial_funding
-		icon = picture
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = PRS_weltpolitik }
 		relative_position_id = PRS_weltpolitik
 		x = 0

@@ -21,7 +21,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 200 y = 1000 }
+	continuous_focus_position = { x = 4175 y = 800 }
 	
 	default = no
 
@@ -240,7 +240,7 @@ focus_tree = {
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_victor_of_the_apw }
-		x = -5
+		x = -6
 		y = 1
 		cost = 5
 		icon = g
@@ -273,7 +273,7 @@ focus_tree = {
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_ausgleich_negotiations }
-		x = 5
+		x = 6
 		y = 1
 		cost = 5
 		icon = GFX_focus_ger_revive_kaiserreich
@@ -3594,10 +3594,14 @@ focus_tree = {
 			152 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
-					    add_extra_state_shared_building_slots = 2
+						add_resource = {
+		                    type = steel
+		                    amount = 12
+	                    }
+					    add_extra_state_shared_building_slots = 1
 						add_building_construction = {
 							type = industrial_complex
-							level = 2
+							level = 1
 							instant_build = yes
 					    }
 				    }
@@ -3756,14 +3760,52 @@ focus_tree = {
 	## Civ Industrial Tree
 
 	focus = {
-		id = AUS_arms_industry_focus
+		id = AUS_found_g_roth_ag
 		relative_position_id = AUS_grunderzeit 
 		prerequisite = { focus = AUS_grunderzeit }
 		prerequisite = { focus = AUS_increase_mil_capability }
 		x = 2
 		y = 1
-		cost = 10
-		icon = gGFX_goal_generic_construct_mil_factory
+		cost = 5
+		icon = GFX_focus_hol_the_foundations_of_defense
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+        has_completed_focus = AUS_ausgleich_negotiations
+		}
+		
+		bypass = {
+        has_completed_focus = AUS_victor_of_the_apw
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			70 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_finance_steyr_daimler_puch
+		relative_position_id = AUS_found_g_roth_ag
+		prerequisite = { focus = AUS_found_g_roth_ag }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_focus_SWI_issue_war_bonds
 
 		ai_will_do = {
 			factor = 10
@@ -3791,61 +3833,24 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 			}
-			add_timed_idea = {
-			    idea = AUS_military_industry_buildup
-			    days = 365
-			}
 		}
 	}
 
 	focus = {
-		id = AUS_modernise_imperial_arms
-		relative_position_id = AUS_arms_industry_focus 
-		prerequisite = { focus = AUS_arms_industry_focus }
-		x = 0
-		y = 1
-		cost = 5
-		icon = gGFX_focus_generic_modernize_industry
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			add_ideas = {
-			    idea = AUS_modernise_mil_equipment
-			}
-		}
-	}
-
-	focus = {
-		id = AUS_steyr_arms
-		relative_position_id = AUS_modernise_imperial_arms
-		prerequisite = { focus = AUS_modernise_imperial_arms }
+		id = AUS_steyr_small_arms
+		relative_position_id = AUS_finance_steyr_daimler_puch
+		prerequisite = { focus = AUS_finance_steyr_daimler_puch }
 		x = -1
 		y = 1
 		cost = 5
-		icon = g
+		icon = GFX_goal_generic_construct_mil_factory
 
 		ai_will_do = {
 			factor = 10
@@ -3863,22 +3868,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {  }
-
-		completion_reward = {
-			add_ideas = {
-			    idea = AUS_steyr_arms_id
-			}
-		}
 	}
 
 	focus = {
-		id = AUS_add_small_arms
-		relative_position_id = AUS_modernise_imperial_arms
-		prerequisite = { focus = AUS_modernise_imperial_arms }
+		id = AUS_skoda_works_artillery
+		relative_position_id = AUS_finance_steyr_daimler_puch
+		prerequisite = { focus = AUS_finance_steyr_daimler_puch }
 		x = 1
 		y = 1
-		cost = 5
-		icon = g
+		cost = 10
+		icon = GFX_focus_SWE_let_fly_all_guns
 
 		ai_will_do = {
 			factor = 10
@@ -3918,9 +3917,9 @@ focus_tree = {
 
 	focus = {
 		id = AUS_war_machine
-		relative_position_id = AUS_add_small_arms
-		prerequisite = { focus = AUS_steyr_arms }
-		prerequisite = { focus = AUS_add_small_arms }
+		relative_position_id = AUS_skoda_works_artillery
+		prerequisite = { focus = AUS_steyr_small_arms }
+		prerequisite = { focus = AUS_skoda_works_artillery }
 		x = -1
 		y = 1
 		cost = 10
