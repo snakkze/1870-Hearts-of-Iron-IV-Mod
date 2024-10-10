@@ -3462,8 +3462,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			add_stability = 0.025
 			add_ideas = fpw_AUS_grunderzeit
+			add_stability = 0.025
 		}
 	}
 
@@ -3504,17 +3504,7 @@ focus_tree = {
 							instant_build = yes
 					}
 				}
-			43 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-					    add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-					    }
-					}
-				}
+			}
 			154 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
@@ -3523,7 +3513,6 @@ focus_tree = {
 							type = industrial_complex
 							level = 1
 							instant_build = yes
-					    }
 				    }
 			    }
 		    }
@@ -3533,7 +3522,7 @@ focus_tree = {
 	focus = {
 		id = AUS_resuscitate_the_economy
 		relative_position_id = AUS_civ_industry_focus 
-		prerequisite = { focus = AUS_civ_industry_focus focus = AUS_arms_industry_focus }
+		prerequisite = { focus = AUS_civ_industry_focus focus = AUS_found_g_roth_ag }
 		x = 2
 		y = 1
 		cost = 12
@@ -3689,14 +3678,6 @@ focus_tree = {
 						instant_build = yes
 				}
 			}
-			69 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-				}
-			}
 			75 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -3711,8 +3692,7 @@ focus_tree = {
 	focus = {
 		id = AUS_second_industrial_revolution
 		relative_position_id = AUS_bohemian_heavy_industries
-		prerequisite = { focus = AUS_bohemian_heavy_industries }
-		prerequisite = { focus = AUS_advance_technical_progress }
+		prerequisite = { focus = AUS_bohemian_heavy_industries focus = AUS_advance_technical_progress }
 		x = -1
 		y = 1
 		cost = 10
@@ -3825,21 +3805,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-			}
+			add_ideas = fpw_AUS_steyr_daimler_puch
 		}
 	}
 
@@ -3868,6 +3834,44 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {  }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+            add_tech_bonus = {
+	            bonus = 0.5
+	            uses = 2
+	            category = infantry_weapons
+			}
+		}
 	}
 
 	focus = {
@@ -3912,18 +3916,37 @@ focus_tree = {
 						instant_build = yes
 					}
 			}
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+            add_tech_bonus = {
+	            bonus = 0.75
+	            uses = 1
+	            category = artillery
+			}
 		}
 	}
 
 	focus = {
-		id = AUS_war_machine
+		id = AUS_full_employment
 		relative_position_id = AUS_skoda_works_artillery
-		prerequisite = { focus = AUS_steyr_small_arms }
-		prerequisite = { focus = AUS_skoda_works_artillery }
+		prerequisite = { focus = AUS_steyr_small_arms focus = AUS_skoda_works_artillery }
 		x = -1
 		y = 1
 		cost = 10
-		icon = g
+		icon = GFX_focus_generic_full_employment
 
 		ai_will_do = {
 			factor = 10
@@ -3943,28 +3966,51 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+			add_ideas = {
+				fpw_AUS_full_employment
 			}
+		}
+	}
+
+	focus = {
+		id = AUS_economic_transition
+		relative_position_id = AUS_second_industrial_revolution
+		prerequisite = { focus = AUS_second_industrial_revolution }
+		prerequisite = { focus = AUS_advance_technical_progress }
+		x = -1
+		y = 1
+		cost = 10
+		icon = GFX_focus_DEN_no_regulations
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_AUS_agricultural_state
+                add_idea = fpw_AUS_industrialising_state
+            }
 		}
 	}
 
 	focus = {
 		id = AUS_economic_recovery
 		relative_position_id = AUS_second_industrial_revolution
-		prerequisite = { focus = AUS_war_machine }
+		prerequisite = { focus = AUS_full_employment }
 		prerequisite = { focus = AUS_second_industrial_revolution }
 		prerequisite = { focus = AUS_resuscitate_the_economy }
 		x = 2
@@ -3993,6 +4039,9 @@ focus_tree = {
 			remove_ideas = {
 			    idea = fpw_AUS_stagnant_economy2
 			}
+			hidden_effect = {
+	            add_ideas = fpw_AUS_rising_working_class
+            }
 		}
 	}
 

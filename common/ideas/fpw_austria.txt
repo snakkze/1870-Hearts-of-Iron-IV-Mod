@@ -104,6 +104,69 @@ ideas = {
 			}
 		}
 		
+		fpw_AUS_agricultural_state = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.3
+				monthly_population = 0.1
+				supply_consumption_factor = -0.04
+				stability_factor = -0.1
+			}
+		}
+
+		fpw_AUS_industrialising_state = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.10
+				monthly_population = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		fpw_AUS_full_employment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ARG_construction_guilds
+
+			modifier = {
+				industrial_capacity_dockyard = 0.075
+				industrial_capacity_factory = 0.075
+				conscription_factor = -0.1
+			}
+		}
+
 		AUS_deak_party_of_hungary = {
 			allowed = {
 				always = no
@@ -370,6 +433,44 @@ ideas = {
 			}
 		}
 
+	    fpw_AUS_grunderzeit = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = FRA_market_dynamism
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+	    fpw_AUS_rising_working_class = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			modifier = {
+				stability_factor = -0.1
+				communism_drift = 0.02
+			}
+		}
+
 		fpw_AUS_mutlti_culturism = {
 			allowed = {
 				always = no
@@ -412,9 +513,10 @@ ideas = {
 		#}
 
 	}
+
 	industrial_concern = {
 		
-		fpw_AUS_grunderzeit = {
+		fpw_AUS_steyr_daimler_puch = {
 			allowed = {
 				original_tag = AUS
 			}
@@ -423,13 +525,20 @@ ideas = {
 				has_government = neutrality
 			}
 
+			available = {
+				has_completed_focus = AUS_finance_steyr_daimler_puch
+			}
+
 			removal_cost = -1
 
-			picture = FRA_market_dynamism
+			picture = generic_infantry_equipment_manufacturer_3
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		
