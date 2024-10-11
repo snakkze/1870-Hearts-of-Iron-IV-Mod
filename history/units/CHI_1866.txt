@@ -31,20 +31,6 @@ division_template = {
     cavalry = { x = 1 y = 1 }
   }
 }
-division_template = {
-  name = "Artillery-Division"
-  is_locked = no
-
-  regiments = {
-    infantry = { x = 0 y = 0 }
-    infantry = { x = 0 y = 1 }
-    infantry = { x = 1 y = 0 }
-    infantry = { x = 1 y = 1 }
-  }
-  support = {
-    cannon_artillery = { x = 0 y = 0 }
-  }
-}
 units = {
 	division = {
 		division_name = {
@@ -96,7 +82,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 12015
+		location = 7025
 		division_template = "Militia-Division"
 		start_experience_factor = 0.1
 	}
@@ -132,7 +118,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 4325
+		location = 7294
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -159,7 +145,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 4783
+		location = 11913
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -177,7 +163,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 4729
+		location = 9843
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -195,7 +181,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 4077
+		location = 1319
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -231,7 +217,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		location = 4519
+		location = 7019
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -240,7 +226,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 4937
+		location = 10726
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -258,7 +244,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 7823
+		location = 4801
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -267,7 +253,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 11926
+		location = 10776
 		division_template = "Infantry-Division"
 		start_experience_factor = 0.3
 	}
@@ -294,7 +280,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 8059
+		location = 4568
 		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
@@ -303,7 +289,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 4467
+		location = 2015
 		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
@@ -321,7 +307,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 10039
+		location = 8023
 		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
@@ -339,7 +325,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 12053
+		location = 5033
 		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
@@ -348,7 +334,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 9971
+		location = 1029
 		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
@@ -367,7 +353,7 @@ units = {
 			name_order = 1
 		}
 		location = 6937
-		division_template = "Artillery-Division"
+		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -375,8 +361,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 4480
-		division_template = "Artillery-Division"
+		location = 12262
+		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -384,8 +370,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 4114
-		division_template = "Artillery-Division"
+		location = 608
+		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -394,7 +380,7 @@ units = {
 			name_order = 4
 		}
 		location = 13150
-		division_template = "Artillery-Division"
+		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -402,8 +388,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 1838
-		division_template = "Artillery-Division"
+		location = 4709
+		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -412,7 +398,7 @@ units = {
 			name_order = 6
 		}
 		location = 10490
-		division_template = "Artillery-Division"
+		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
 }

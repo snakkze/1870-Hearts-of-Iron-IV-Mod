@@ -73,6 +73,25 @@ ideas = {
                 positioning = -0.1
             }
         }
+        fpw_CHI_ongoing_famine = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+
+            picture = ENG_the_war_to_end_all_wars
+
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.2
+                monthly_population = -0.55
+                war_support_factor = -0.2
+                supply_factor = -0.1
+                attrition = 0.08
+            }
+        }
     }
 	
 	hidden_ideas = {
