@@ -89,7 +89,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 7
 		}
 		location = 12300
 		division_template = "Infantry-Division"
@@ -98,7 +98,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 8
 		}
 		location = 4313
 		division_template = "Infantry-Division"
@@ -107,7 +107,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 3
+			name_order = 9
 		}
 		location = 12141
 		division_template = "Infantry-Division"
@@ -116,7 +116,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 10
 		}
 		location = 7294
 		division_template = "Infantry-Division"
@@ -125,7 +125,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 5
+			name_order = 11
 		}
 		location = 10757
 		division_template = "Infantry-Division"
@@ -134,7 +134,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 6
+			name_order = 12
 		}
 		location = 927
 		division_template = "Infantry-Division"
@@ -143,7 +143,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 7
+			name_order = 13
 		}
 		location = 11913
 		division_template = "Infantry-Division"
@@ -152,7 +152,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 8
+			name_order = 14
 		}
 		location = 11850
 		division_template = "Infantry-Division"
@@ -161,7 +161,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 9
+			name_order = 15
 		}
 		location = 9843
 		division_template = "Infantry-Division"
@@ -170,7 +170,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 10
+			name_order = 16
 		}
 		location = 5025
 		division_template = "Infantry-Division"
@@ -179,7 +179,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 11
+			name_order = 17
 		}
 		location = 1319
 		division_template = "Infantry-Division"
@@ -188,7 +188,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 12
+			name_order = 18
 		}
 		location = 10854
 		division_template = "Infantry-Division"
@@ -197,7 +197,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 13
+			name_order = 19
 		}
 		location = 6964
 		division_template = "Infantry-Division"
@@ -206,7 +206,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 14
+			name_order = 20
 		}
 		location = 12084
 		division_template = "Infantry-Division"
@@ -215,7 +215,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 15
+			name_order = 21
 		}
 		location = 7019
 		division_template = "Infantry-Division"
@@ -224,7 +224,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 16
+			name_order = 22
 		}
 		location = 10726
 		division_template = "Infantry-Division"
@@ -233,7 +233,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 17
+			name_order = 23
 		}
 		location = 1458
 		division_template = "Infantry-Division"
@@ -242,7 +242,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 18
+			name_order = 24
 		}
 		location = 4801
 		division_template = "Infantry-Division"
@@ -251,7 +251,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 19
+			name_order = 25
 		}
 		location = 10776
 		division_template = "Infantry-Division"
@@ -260,7 +260,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 20
+			name_order = 26
 		}
 		location = 4130
 		division_template = "Infantry-Division"
@@ -350,7 +350,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 10
 		}
 		location = 6937
 		division_template = "Cavalry-Division"
@@ -359,7 +359,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 11
 		}
 		location = 12262
 		division_template = "Cavalry-Division"
@@ -368,16 +368,16 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 3
+			name_order = 12
 		}
-		location = 608
+		location = 7137
 		division_template = "Cavalry-Division"
 		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 13
 		}
 		location = 13150
 		division_template = "Cavalry-Division"
@@ -386,7 +386,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 5
+			name_order = 14
 		}
 		location = 4709
 		division_template = "Cavalry-Division"
@@ -395,7 +395,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 6
+			name_order = 15
 		}
 		location = 10490
 		division_template = "Cavalry-Division"
