@@ -5,11 +5,11 @@ guiTypes = {
 	containerWindowType = {
 		name = "fpw_great_war_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 255 }
+		size = { width = 100% height= 380 }
 
 		instantTextBoxType = {
 			name ="fpw_initiator_title"
-			position = { x = -60 y = -3 }
+			position = { x = -73 y = -3 }
 			font = "hoi_36header"
 			text = "Initiator"
 			format = centre
@@ -19,13 +19,50 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="fpw_target_title"
-			position = { x = 160 y = -3 }
+			position = { x = 180 y = -3 }	
 			font = "hoi_36header"
 			text = "Target"
 			format = centre
 			maxWidth = 400
 			maxHeight = 25
 		}
+
+		iconType = {
+			name = map_knife
+			spriteType = "GFX_great_war_map_knife"
+			position = {
+				x = 215%
+				y = 10
+			}
+		}
+
+		containerWindowType = {
+			name = "category_filters_bg"
+			position = { x= -2% y = 135}
+			size = {width=51% height=66%}
+			clipping = no
+			Orientation = UPPER_LEFT
+		
+			background = {
+				name = "filters_bg"
+				quadTextureSprite ="GFX_tiled_decisions_bg_small"		
+				alwaystransparent = yes
+			}
+		}	
+
+		containerWindowType = {
+			name = "category_filterss_bg"
+			position = { x= 47% y = 135}
+			size = {width=51% height=66%}
+			clipping = no
+			Orientation = UPPER_LEFT
+		
+			background = {
+				name = "filterss_bg"
+				quadTextureSprite ="GFX_tiled_decisions_bg_small"		
+				alwaystransparent = yes
+			}
+		}	
 		
 		containerWindowType = {
 			name = "fpw_list_grid_container"
@@ -40,21 +77,45 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "fpw_initiator_list_grid"
-				position = { x = -315 y = 35 }
+				position = { x = -250 y = 30 }
 				padding = { top = 0 bottom = 15 }
 				size = { width = 100%% height = 100% }
 				slotsize = { width = 110 height = 65 }
-				max_slots_horizontal = 2
+				max_slots_horizontal = 1
+				max_slots_vertical = 1
 				add_horizontal = yes
 			}
 
 			gridboxtype = {
 				name = "fpw_target_list_grid"
-				position = { x = 130 y = 35 }
+				position = { x = 250 y = 30 }
 				padding = { top = 0 bottom = 15 }
 				size = { width = 100%% height = 100% }
 				slotsize = { width = 110 height = 65 }
+				max_slots_horizontal = 1
+				max_slots_vertical = 1
+				add_horizontal = yes
+			}
+
+			gridboxtype = {
+				name = "fpw_initiator_supporters_list_grid"
+				position = { x = -335 y = 155 }
+				padding = { top = 0 bottom = 15 }
+				size = { width = 100%% height = 100% }
+				slotsize = { width = 105 height = 65 }
 				max_slots_horizontal = 2
+				max_slots_vertical = 3
+				add_horizontal = yes
+			}
+
+			gridboxtype = {
+				name = "fpw_target_supporters_list_grid"
+				position = { x = 165 y = 155 }
+				padding = { top = 0 bottom = 15 }
+				size = { width = 100%% height = 100% }
+				slotsize = { width = 105 height = 65 }
+				max_slots_horizontal = 2
+				max_slots_vertical = 3
 				add_horizontal = yes
 			}
 		}
@@ -68,13 +129,13 @@ guiTypes = {
 		buttonType = {
 			name = "fpw_list_flag_button"
 			position = { x = 0 y = 4 }
-			quadTextureSprite = "GFX_shield_medium"
-			pdx_tooltip = "fpw_list_flag_button_tt"
+			quadTextureSprite = "GFX_flag_large"
+			pdx_tooltip = "fpw_initiator_tt"
 		}
 		iconType = {
 			name = "fpw_list_flag_frame"
-			position = { x =-12 y = -6 }
-			quadTextureSprite = "GFX_diplo_countrylist_flag_large_frame"
+			position = { x =-12 y = -10 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_big_frame"
 			alwaystransparent = yes
 		}
 	}
@@ -87,12 +148,91 @@ guiTypes = {
 		buttonType = {
 			name = "fpw_list_flag_button"
 			position = { x = 0 y = 4 }
+			quadTextureSprite = "GFX_flag_large"
+			pdx_tooltip = "fpw_target_tt"
+		}
+		iconType = {
+			name = "fpw_list_flag_frame"
+			position = { x =-12 y = -10 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_big_frame"
+			alwaystransparent = yes
+		}
+
+	}
+
+
+	containerWindowType = {
+		name = "fpw_initiator_supporters_entry"
+		position = { x = 0 y = 0 }	
+		size = { width = 150 height = 30 }
+		
+		buttonType = {
+			name = "fpw_list_flag_button"
+			position = { x = 0 y = 4 }
 			quadTextureSprite = "GFX_shield_medium"
-			pdx_tooltip = "fpw_list_flag_button_tt"
+			pdx_tooltip = "fpw_great_war_entries_tt"
 		}
 		iconType = {
 			name = "fpw_list_flag_frame"
 			position = { x =-12 y = -6 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_large_frame"
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "fpw_initiator_supporters_entry_center"
+		position = { x = 0 y = 0 }	
+		size = { width = 150 height = 30 }
+		
+		buttonType = {
+			name = "fpw_list_flag_button"
+			position = { x = 50 y = 4 }
+			quadTextureSprite = "GFX_shield_medium"
+			pdx_tooltip = "fpw_great_war_entries_tt"
+		}
+		iconType = {
+			name = "fpw_list_flag_frame"
+			position = { x =38 y = -6 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_large_frame"
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "fpw_target_supporters_entry"
+		position = { x = 0 y = 0 }	
+		size = { width = 150 height = 30 }
+		
+		buttonType = {
+			name = "fpw_list_flag_button"
+			position = { x = 0 y = 4 }
+			quadTextureSprite = "GFX_shield_medium"
+			pdx_tooltip = "fpw_great_war_entries_tt"
+		}
+		iconType = {
+			name = "fpw_list_flag_frame"
+			position = { x =-12 y = -6 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_large_frame"
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "fpw_target_supporters_entry_center"
+		position = { x = 0 y = 0 }	
+		size = { width = 150 height = 30 }
+		
+		buttonType = {
+			name = "fpw_list_flag_button"
+			position = { x = 50 y = 4 }
+			quadTextureSprite = "GFX_shield_medium"
+			pdx_tooltip = "fpw_great_war_entries_tt"
+		}
+		iconType = {
+			name = "fpw_list_flag_frame"
+			position = { x =38 y = -6 }
 			quadTextureSprite = "GFX_diplo_countrylist_flag_large_frame"
 			alwaystransparent = yes
 		}

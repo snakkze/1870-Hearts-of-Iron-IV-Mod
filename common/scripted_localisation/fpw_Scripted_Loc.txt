@@ -4,7 +4,13 @@ defined_text = {
         trigger = {
             THIS = {
                 NOT = {
-                    has_state_flag = is_colonized_by_@ROOT
+                    OR = {
+                        has_state_flag = is_colonized_by_@ROOT
+                        any_state = {
+                            check_variable = { THIS.tribal = PREV.tribal }
+                            has_state_flag = is_colonized_by_@ROOT
+                        }
+                    }
                 }
             }
             has_state_flag = tribe_state
@@ -14,18 +20,59 @@ defined_text = {
     text = {
         trigger = {
             THIS = {
-                has_state_flag = is_colonized_by_@ROOT
+                OR = {
+                    has_state_flag = is_colonized_by_@ROOT
+                    any_state = {
+                        check_variable = { THIS.tribal = PREV.tribal }
+                        has_state_flag = is_colonized_by_@ROOT
+                    }
+                }
             }
         }
         localization_key = fpw_button_stop_colonize_localization_key
     }
+}
+defined_text = {
+    name = fpw_initiator_supporters_entry_loc
+    
     text = {
         trigger = {
-            ROOT = {
-                original_tag = PRS
-            }
+            set_temp_variable = { temp = global.gw_initiator_supporters_array^num }
+            modulo_temp_variable = { temp = 2 }
+            NOT = { check_variable = { temp = 0 } }
+            set_temp_variable = { last_index = global.gw_initiator_supporters_array^num }
+            subtract_from_temp_variable = { last_index = 1 }
+            check_variable = { i = last_index }
         }
-        localization_key = "test test"
+        localization_key = "fpw_initiator_supporters_entry_center"
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = "fpw_initiator_supporters_entry"
+    }
+}
+
+defined_text = {
+    name = fpw_target_supporters_entry_loc
+    
+    text = {
+        trigger = {
+            set_temp_variable = { temp = global.gw_target_supporters_array^num }
+            modulo_temp_variable = { temp = 2 }
+            NOT = { check_variable = { temp = 0 } }
+            set_temp_variable = { last_index = global.gw_target_supporters_array^num }
+            subtract_from_temp_variable = { last_index = 1 }
+            check_variable = { i = last_index }
+        }
+        localization_key = "fpw_target_supporters_entry_center"
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = "fpw_target_supporters_entry"
     }
 }
 
@@ -63,8 +110,13 @@ defined_text = {
         trigger = {
             # STATE IS ALREADY BEING COLOIZED
             THIS = {
-                has_state_flag = is_colonized
-                has_state_flag = is_colonized_by_@ROOT
+                OR = {
+                    has_state_flag = is_colonized_by_@ROOT
+                    any_state = {
+                        check_variable = { THIS.tribal = PREV.tribal }
+                        has_state_flag = is_colonized_by_@ROOT
+                    }
+                }
             }
         }
         localization_key = fpw_button_colonize_you_localization_key

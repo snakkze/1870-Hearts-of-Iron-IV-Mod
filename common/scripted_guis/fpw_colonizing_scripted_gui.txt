@@ -59,7 +59,13 @@ scripted_gui = {
                         }
                         has_state_flag = tribe_state
                         NOT = {
-                            has_state_flag = is_colonized
+                            OR = {
+                                has_state_flag = is_colonized
+                                any_state = {
+                                    check_variable = { THIS.tribal = PREV.tribal }
+                                    has_state_flag = is_colonized_by_@ROOT
+                                }
+                            }
                         }
         				OR = {
                             AND = {
@@ -87,8 +93,13 @@ scripted_gui = {
         		}
                 else_if = {
                     limit = {
-                        has_state_flag = is_colonized
-                        has_state_flag = is_colonized_by_@ROOT
+                        OR = {
+                            has_state_flag = is_colonized_by_@ROOT
+                            any_state = {
+                                check_variable = { THIS.tribal = PREV.tribal }
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                        }
                     }
                     ROOT = {
                         remove_targeted_decision = {
@@ -103,13 +114,117 @@ scripted_gui = {
         }
 
         ai_enabled = {
-            is_historical_focus_on = no
+            #is_historical_focus_on = no
+            always = yes
         }
 
         ai_weights = {
             colonize_button_click = {
                 ai_will_do = {
-                    factor = 0
+                    base = 0
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 269 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            ROOT = {
+                                original_tag = ENG
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 1019 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            ROOT = {
+                                original_tag = LIB
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 891 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            ROOT = {
+                                original_tag = POR
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 514 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            ROOT = {
+                                original_tag = FRA
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 1024 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            all_state = {
+                                check_variable = { tribal = 514 }
+                                OR = {
+                                    is_controlled_by = ROOT
+                                    is_owned_by = ROOT
+                                }
+                            }
+                            ROOT = {
+                                original_tag = FRA
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 1013 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            ROOT = {
+                                original_tag = SPR
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 511 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            ROOT = {
+                                original_tag = ARG
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 297 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            ROOT = {
+                                original_tag = FRA
+                            }
+                        }
+                        add = 4000
+                    }
                 }
             }
         }

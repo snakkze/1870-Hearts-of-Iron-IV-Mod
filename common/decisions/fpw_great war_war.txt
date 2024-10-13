@@ -52,17 +52,20 @@ fpw_great_war_category = {
 		}
 
 		complete_effect = {
-			clear_array = global.gw_initiators_array
-			clear_array = global.gw_targets_array
+			clear_array = global.gw_initiator_array
+			clear_array = global.gw_target_array
+			clear_array = global.gw_initiator_supporters_array
+			clear_array = global.gw_target_supporters_array
 
-			add_to_array = { global.gw_initiators_array = ENG }
-			add_to_array = { global.gw_initiators_array = FRA }
-			add_to_array = { global.gw_initiators_array = SOV }
-			add_to_array = { global.gw_initiators_array = USA }
-			add_to_array = { global.gw_initiators_array = CHI }
+			add_to_array = { global.gw_initiator_array = ENG }
+			add_to_array = { global.gw_target_array = PRS }
 
-			add_to_array = { global.gw_targets_array = PRS }
-			add_to_array = { global.gw_targets_array = ITA }
+			add_to_array = { global.gw_initiator_supporters_array = FRA }
+			add_to_array = { global.gw_initiator_supporters_array = SOV }
+			add_to_array = { global.gw_initiator_supporters_array = USA }
+
+			add_to_array = { global.gw_target_supporters_array = AUS }
+			add_to_array = { global.gw_target_supporters_array = ITA }
 		}
 	}
 
