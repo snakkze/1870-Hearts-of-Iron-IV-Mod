@@ -1,0 +1,33 @@
+capital = 747
+oob = "PIN_1866"
+
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	
+	name = "Tshekedi Khama"
+	picture = GFX_portrait_Tshekedi_Khama
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}

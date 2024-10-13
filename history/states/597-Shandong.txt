@@ -8,24 +8,18 @@ state=
 	
 	history=
 	{
-		owner = CHI
+		owner = NIA
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = NIA
 		victory_points = {
-			1069 3 
+			1069 5
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			4205 = {
 				naval_base = 2
-				coastal_bunker = 1
-				bunker = 1
 			}
-		}
-
-		1938.10.25 = {
-			controller = JAP
 		}
 	}
 	provinces={

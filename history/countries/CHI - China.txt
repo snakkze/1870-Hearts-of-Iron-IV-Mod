@@ -1,6 +1,17 @@
 capital = 608 # Beijing
 oob = "CHI_1866"
 
+set_autonomy = {
+	target = KOR
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.5
+}
+
+create_faction = fpw_qing_faction
+add_to_faction = CHI
+add_to_faction = KOR
+add_to_faction = VIN
+
 set_cosmetic_tag = CHI_qing
 
 add_dynamic_modifier = { 
@@ -14,6 +25,7 @@ add_ideas = {
 	fpw_CHI_ineffective_bannermen
 	fpw_CHI_century_of_humiliation
 	fpw_CHI_disjointed_naval_vessels
+	fpw_CHI_ongoing_famine
 }
 
 if = {
@@ -31,7 +43,7 @@ recruit_character = CHI_tongzhi
 
 
 
-set_stability = 0.2
+set_stability = 0.5
 set_war_support = 0.5
 # Starting tech
 set_technology = {
@@ -124,6 +136,16 @@ if = {
 save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
+
+declare_war_on = {
+	target = NIA
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = PIN
+	type = annex_everything
+}
 
 
 
