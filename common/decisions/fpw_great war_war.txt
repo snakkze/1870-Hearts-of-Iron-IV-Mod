@@ -33,6 +33,293 @@ fpw_great_war_category = {
 		}
 	}
 
+	make_war = {
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+
+			#################
+			### INITIATOR ###
+			#################
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}		
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = yes
+					}
+					every_country = {
+						limit = {
+							is_in_faction_with = PREV
+						}
+						leave_faction = yes
+						random_country = {
+							limit = {
+								is_in_array = {
+									array = global.gw_initiator_array
+									value = THIS
+								}
+							}
+							add_to_faction = PREV
+						}
+					}
+					dismantle_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else_if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+					leave_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else = {
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+			}
+
+			##############
+			### TARGET ###
+			##############
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}		
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = yes
+					}
+					every_country = {
+						limit = {
+							is_in_faction_with = PREV
+						}
+						leave_faction = yes
+						random_country = {
+							limit = {
+								is_in_array = {
+									array = global.gw_target_array
+									value = THIS
+								}
+							}
+							add_to_faction = PREV
+						}
+					}
+					dismantle_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else_if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+					leave_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else = {
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+			}
+
+			###########
+			### WAR ###
+			###########
+
+			
+			random_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				random_country = {
+					limit = {
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+					}
+					declare_war_on = {
+						target = PREV
+						type = topple_government
+					}
+				}
+			}
+
+			random_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_array = {
+							array = global.gw_initiator_supporters_array
+							value = THIS
+						}		
+					}
+					declare_war_on = {
+						target = PREV
+						type = topple_government
+					}
+				}
+			}
+
+		}
+	}
+
+
+	test_clear_flag = {
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			clr_global_flag = crisis_trigger
+		}
+	}
+
+
+	test_trigger = {
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {	
+			AND = {
+				NOT = {
+					has_global_flag = crisis_trigger
+				}
+				any_country = {
+					AND = {
+						is_in_array = {
+							array = global.top_seven_prestige_array
+							value = THIS
+						}
+						original_tag = PRS
+						#check_variable = { has_added_tension_amount > 49 }
+						#threat > 0.5
+					}
+				}
+			}
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = global.top_seven_prestige_array
+						value = THIS
+					}
+					NOT = {
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+					}
+				}
+			}
+			PREV = {
+				country_event = fpw_crisis.1
+			}
+			set_global_flag = crisis_trigger
+		}
+	}
+
 	test = {
 
 		icon = fwp_franco_prussian_war_sided
