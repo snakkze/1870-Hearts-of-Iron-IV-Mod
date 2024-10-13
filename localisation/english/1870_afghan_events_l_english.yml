@@ -20,7 +20,8 @@
 
  afghan_fpw.7.t:0 "Army Rebillions"
  afghan_fpw.7.d:0 "We have taken too long to win the civil war and people and the tribes are losing hope. They are now rebbeling and refusing to fight."
-
+ fpw_afghan.8:0 "Afghan calls for help"
+ fpw_afghan.8:0 "Afghanistan has come calling for help with their civil war"
 
 
 
@@ -39,3 +40,8 @@ afg_heavy_use_of_propoganda:0 "Use of Propaganda"
 afg_heavy_use_of_propoganda_desc:0 "We must use propoganda to increase support for the war and conscription."
 afg_ask_russia_for_help:0 "Reach Out To Russia"
 afg_ask_russia_for_help_desc:0 "We need all the help we can get for the civil war, so why not ask the giant state to our north."
+
+
+#### Custom Tooltips
+
+fpw_afg_investments:0 = "§G This focus will unlock investment decisions §!"

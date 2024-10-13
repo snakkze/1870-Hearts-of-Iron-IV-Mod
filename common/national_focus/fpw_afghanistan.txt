@@ -112,4 +112,31 @@
 			factor = 5
 		}
 	}
+
+	focus = {
+		id = afg_investments
+		icon = GFX_goal_unknown
+		
+		x = 28
+		y = 4
+		
+		cost = 10
+		
+		prerequisite = { focus = afg_ask_russia_for_help }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			custom_effect_tooltip = fpw_afg_investments
+			add_decision = {
+            	decision = fpw_investment_chances
+            	target = ROOT
+        	}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
 }
