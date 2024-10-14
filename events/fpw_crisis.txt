@@ -1,0 +1,166 @@
+add_namespace = fpw_crisis
+
+# crisis triggered
+country_event = {
+	id = fpw_crisis.1
+	title = fpw_crisis.1.t
+	desc = fpw_crisis.1.d
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	# Do something
+	option = {
+		name = fpw_crisis.1.a 
+		ai_chance = {
+			base = 50 
+		}
+		if = {
+			limit = {
+				any_country = {
+					is_in_array = {
+						array = global.gw_initiator_array
+						value = THIS
+					}
+				}
+			}
+			add_to_array = { global.gw_initiator_supporters_array = THIS }
+
+			random_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_initiator_array
+						value = THIS
+					}
+				}
+				country_event = fpw_crisis.2 
+			}
+		} else = {
+			random_country = {
+				limit = {
+					AND = {
+						is_in_array = {
+							array = global.top_seven_prestige_array
+							value = THIS
+						}
+						original_tag = PRS
+						#check_variable = { has_added_tension_amount > 49 }
+						#threat > 0.5
+					}
+				}
+				add_to_array = { global.gw_target_array = THIS }
+				country_event = fpw_crisis.3 
+				if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = yes
+					}
+					set_faction_name = "[THIS.GetAdjectiveCap]-Defensive Alliance"
+				}
+				else = {
+					if = {
+						limit = { 
+							is_in_faction = yes
+							is_faction_leader = no
+						}
+						leave_faction = yes
+						create_faction = "[THIS.GetAdjectiveCap]-Defensive Alliance"
+					}
+					else = {
+						create_faction = "[THIS.GetAdjectiveCap]-Defensive Alliance"
+					}
+				}
+			}
+			add_to_array = { global.gw_initiator_array = THIS }
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+				set_faction_name = "Anti-xyx Alliance"
+			}
+			else = {
+				if = {
+					limit = { 
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+					leave_faction = yes
+					create_faction = "Anti-xyx Alliance"
+				}
+				else = {
+					create_faction = "Anti-xyx Alliance"
+				}
+			}
+		}
+	}
+
+	# Join target side
+	option = {
+		name = fpw_crisis.1.b
+		ai_chance = {
+			base = 25 
+		}
+		trigger = {
+			# When theres an initiator, theres and target that you can support
+			any_country = {
+				is_in_array = {
+					array = global.gw_initiator_array
+					value = THIS
+				}
+			}
+		}
+		add_to_array = { global.gw_target_supporters_array = THIS }
+
+		random_country = {
+			limit = {
+				is_in_array = {
+					array = global.gw_target_array
+					value = THIS
+				}
+			}
+			country_event = fpw_crisis.2 
+		}
+	}
+
+	# Do nothing
+	option = {
+		name = fpw_crisis.1.c
+		ai_chance = {
+			base = 0 
+		}
+		
+	}
+}
+
+# xy joins your support
+country_event = {
+	id = fpw_crisis.2
+	title = fpw_crisis.2.t
+	desc = fpw_crisis.2.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = fpw_crisis.2.a 
+		# FROM has decided to support you in the ongoing international crisis between you and initiator.GetNameDefCap
+	}
+}
+
+# xy starts an crisis against you
+country_event = {
+	id = fpw_crisis.3
+	title = fpw_crisis.3.t
+	desc = fpw_crisis.3.d
+	picture = GFX_report_event_generic_defensive_preparations
+
+	is_triggered_only = yes
+
+	# We will fight to the death
+	option = {
+		name = fpw_crisis.3.a 
+	}
+}
+

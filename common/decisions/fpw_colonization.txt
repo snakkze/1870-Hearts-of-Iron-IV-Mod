@@ -23,9 +23,7 @@ fpw_colonization_category = {
 
 		highlight_states = {
 			highlight_states_trigger = {
-				FROM = {
-					state = THIS
-				}
+				state = FROM
 			}
 		}
 
@@ -171,7 +169,7 @@ fpw_colonization_category = {
 							random_neighbor_state = {
 								limit = {
 									check_variable = { THIS.tribal = PREVPREV.tribal }
-									has_state_flag = tribe_state
+									has_state_flag = tribe_state	
 									is_owned_by = TRB
 									is_coastal = no
 								}

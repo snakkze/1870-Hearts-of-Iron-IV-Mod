@@ -10,4 +10,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/diplo_countrylist_flag_large_frame.dds"
 	}
 
+	spriteType = {
+		name = "GFX_diplo_countrylist_flag_big_frame"
+		texturefile = "gfx/interface/diplo_countrylist_flag_big_frame.png"
+	}
+
+
 }

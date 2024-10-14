@@ -235,7 +235,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = g
+			picture = FRA_matignon_agreements
 
 			modifier = {
 				stability_factor = -0.15
@@ -255,7 +255,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = g
+			picture = generic_volunteer_expedition_bonus
 
 			modifier = {
 				stability_factor = 0.05
@@ -486,6 +486,62 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.011
+			}
+		}
+		
+		fpw_AUS_activating_the_reserves = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				non_core_manpower = 0.1
+				mobilization_speed = 0.3
+			}
+		}
+		
+		fpw_AUS_hungarian_compromise = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil
+
+			modifier = {
+				non_core_manpower = 0.1
+			}
+		}
+		
+		fpw_AUS_austria-hungary = {
+			allowed = {
+				has_cosmetic_tag = AUS_austria_hungary
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil
+
+			modifier = {
+				non_core_manpower = 0.1
+				political_power_gain = 0.1
 			}
 		}
 

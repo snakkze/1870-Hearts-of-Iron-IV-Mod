@@ -1,0 +1,27 @@
+fpw_investment_chances = {
+	fpw_ask_britain = {
+		available = {
+			has_war_with = AFZ
+		}
+
+		visible = {
+			always = no
+		}
+
+		allowed = {
+			original_tag = AFG
+			has_completed_focus = afg_investments
+		}
+
+		icon = mission_icon
+		
+		complete_effect = {
+			ENG = {
+				country_event = fpw_afghan.8
+			}
+		}
+	}
+
+	
+}
+

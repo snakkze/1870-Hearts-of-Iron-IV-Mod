@@ -1,0 +1,78 @@
+add_namespace = brazil_fpw
+
+country_event = {
+	id = brazil_fpw.1
+	title = "[BOL.GetName] Proposes Border Treaty"
+	desc = brazil_fpw.1.d
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1867.03.26
+	}
+	
+	fire_only_once=yes
+	
+	major = yes
+
+	option = {
+		name = "We must accept"
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = 25
+				is_historical_focus_on = no
+			}
+		}
+		custom_effect_tooltip = historical_choice_tt
+		transfer_state = 967
+		add_offsite_building = { type = industrial_complex level = -2 }
+		BOL = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+
+	option = {
+		name = "Never!"
+		ai_chance = {
+			base = 0 
+			modifier = {
+				add = 25
+				is_historical_focus_on = no
+			}
+		}
+		BOL = {
+			country_event = brazil_fpw.2
+		}
+	}
+}
+country_event = {
+	id = brazil_fpw.2
+	title = "[BRA.GetName] Declines Our Offer!"
+	desc = brazil_fpw.2.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Join Paraguay"
+		ai_chance = {
+			base = 80
+		}
+		add_war_support = 0.1
+		declare_war_on = {
+			target = BRA
+			type = annex_everything
+		}
+	}
+
+	option = {
+		name = "Back Down"
+		ai_chance = {
+			base = 20
+		}
+	}
+}

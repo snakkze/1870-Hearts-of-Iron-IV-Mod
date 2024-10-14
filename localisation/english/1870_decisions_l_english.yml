@@ -89,10 +89,13 @@
   fpw_austro_prussian_war_category:0 "Influencing Germany"
   fpw_annex_holstein:0 "Propose a Lesser German State"
 
-  fpw_great_war_category:0 "Great War"
+  fpw_great_war_category:0 "International Crisis"
   fpw_great_war_progress:0 "Escalation Progress"
   fpw_side_with_initiator:0 "Side with Initiator Side"
   fpw_side_with_target:0 "Side with Target Side"
+  fpw_initiator_tt:0 "§YInitiator§!: §Y[This.GetNameDefCap]§!"
+  fpw_target_tt:0 "§YTarget§!: §Y[THIS.GetNameDefCap]§!"
+  fpw_great_war_entries_tt:0 "§Y[THIS.GetNameDefCap]§!"
 
   PRS_a_new_constitutional_category:0 "A New Constitution"
   PRS_a_new_constitutional_category_desc:0 "test"

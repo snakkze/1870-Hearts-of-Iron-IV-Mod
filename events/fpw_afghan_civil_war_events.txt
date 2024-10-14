@@ -127,7 +127,7 @@ country_event = {
 
 
 	option = {
-		name = "We will repay the favor by crushing the British!!!"
+		name = "You will not regret this!"
 		}
 
 
@@ -149,4 +149,42 @@ country_event = {
 
 }
 
+country_event = {
+	id = fpw_afghan.8
+	title = afghan_fpw.8.t
+	desc = afghan_fpw.8.d
+	
+	is_triggered_only = yes
 
+
+	option = {
+		name = "I guess we can spare something"
+		ai_chance = { factor = 50}
+		add_timed_idea = {
+			idea = fpw_AFG_supporting_afghanistan
+			days = 100
+		}
+		415 = {
+					if = {
+					    add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+					}
+				}
+		}
+		AFG = {
+			country_event = fpw_afghan.6
+		}
+
+	}
+	option = {
+		name = "We are not allies"
+		ai_chance = { factor = 50}
+		AFG = {
+			country_event = fpw_afghan.5
+		}
+	}
+
+}
