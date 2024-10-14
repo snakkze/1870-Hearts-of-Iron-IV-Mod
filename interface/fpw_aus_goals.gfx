@@ -23,4 +23,20 @@ spriteTypes = {
 		name = "GFX_seperate_taxations"
 		texturefile = "gfx/interface/goals/seperate_taxations.dds"
 	}
+	spriteType = {
+		name = "GFX_aus_cisleitania_politics"
+		texturefile = "gfx/interface/goals/aus_cisleitania_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_transleitania_politics"
+		texturefile = "gfx/interface/goals/aus_transleitania_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_auersperg"
+		texturefile = "gfx/interface/goals/aus_auersperg.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_bohemian_army"
+		texturefile = "gfx/interface/goals/aus_bohemian_army.dds"
+	}
 }
