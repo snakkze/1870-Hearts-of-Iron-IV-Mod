@@ -15,11 +15,33 @@ state=
 			1069 5
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
 			4205 = {
 				naval_base = 2
 			}
+		}
+
+		1866.1.1 = {
+			CHI = {
+				set_province_controller = 11962
+				set_province_controller = 7189
+				set_province_controller = 1069
+				set_province_controller = 1084
+				set_province_controller = 10102
+				set_province_controller = 12093
+				set_province_controller = 4089
+				set_province_controller = 12074
+				set_province_controller = 1184
+				set_province_controller = 7105
+				set_province_controller = 1104
+				set_province_controller = 1200
+				set_province_controller = 10018
+				set_province_controller = 4186
+				set_province_controller = 4205
+
+			}
+
 		}
 	}
 	provinces={

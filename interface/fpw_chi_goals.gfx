@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_support_yixin"
+		texturefile = "gfx/interface/goals/support_yixin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_support_cixi"
+		texturefile = "gfx/interface/goals/support_cixi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_xinyou_coup"
+		texturefile = "gfx/interface/goals/xinyou_coup.png"
+	}
+}

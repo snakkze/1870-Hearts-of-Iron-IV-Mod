@@ -1,0 +1,41 @@
+on_actions = {
+	
+on_capitulation = {
+    effect = {
+        if = {
+            Limit = {
+                ROOT = {
+                    original_tag = PIN
+                }
+                FROM = {
+                    original_tag = CHI
+                }
+            }
+            CHI = {
+                annex_country = {
+                    target = PIN
+                    transfer_troops = no
+                }
+            }
+        }
+    }
+    effect = {
+        if = {
+            Limit = {
+                ROOT = {
+                    original_tag = NIA
+                }
+                FROM = {
+                    original_tag = CHI
+                }
+            }
+            CHI = {
+                annex_country = {
+                    target = NIA
+                    transfer_troops = no
+				    }
+                }
+            }
+        }
+    }
+}

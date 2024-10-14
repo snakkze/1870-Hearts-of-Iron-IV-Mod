@@ -1,0 +1,277 @@
+﻿#!gfx:interface\fpw_goals.gfx
+
+focus_tree = {
+	id = chinese_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = CHI
+			}
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 1500 y = 1500 }
+
+	initial_show_position = {
+		focus = industrial_effort
+	}
+
+	focus = {
+		id = CHI_aftermath_xinyou_coup
+		icon = GFX_focus_xinyou_coup
+		x = 15
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_restore_yixin_as_prince_regent
+		icon = GFX_focus_support_yixin
+		prerequisite = { focus = CHI_aftermath_xinyou_coup }
+		mutually_exclusive = { focus = CHI_regency_of_dowager_cixi }
+		relative_position_id = CHI_aftermath_xinyou_coup
+		x = -8
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_regency_of_dowager_cixi
+		icon = GFX_focus_support_cixi
+		prerequisite = { focus = CHI_aftermath_xinyou_coup }
+		mutually_exclusive = { focus = CHI_restore_yixin_as_prince_regent }
+		relative_position_id = CHI_aftermath_xinyou_coup
+		x = 8
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_government_reforms
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = CHI_regency_of_dowager_cixi focus = CHI_restore_yixin_as_prince_regent}
+		relative_position_id = CHI_restore_yixin_as_prince_regent
+		x = 8
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_address_humanitarian_crisis
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = CHI_government_reforms }
+		relative_position_id = CHI_government_reforms
+		x = -3
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_construct_large_embankments
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = CHI_address_humanitarian_crisis }
+		relative_position_id = CHI_address_humanitarian_crisis
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			597 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					    }
+				    }
+			    }
+			607 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					    }
+				    }
+			    }
+			615 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					    }
+				    }
+			    }
+			622 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					    }
+				    }
+			    }
+		}
+	}
+	focus = {
+		id = CHI_invest_in_relief_efforts
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		prerequisite = { focus = CHI_address_humanitarian_crisis }
+		relative_position_id = CHI_address_humanitarian_crisis
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_immediate_response
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = CHI_address_humanitarian_crisis }
+		relative_position_id = CHI_address_humanitarian_crisis
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_prevent_spread_of_disease
+		icon = GFX_focus_generic_field_hostpital
+		prerequisite = { focus = CHI_construct_large_embankments }
+		prerequisite = { focus = CHI_invest_in_relief_efforts }
+		relative_position_id = CHI_construct_large_embankments
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { idea = fpw_CHI_anti_transmission_measures  days = 365 }
+		}
+	}
+	focus = {
+		id = CHI_national_recovery
+		icon = GFX_focus_SWE_refuge_from_war
+		prerequisite = { focus = CHI_invest_in_relief_efforts }
+		prerequisite = { focus = CHI_prevent_spread_of_disease }
+		prerequisite = { focus = CHI_immediate_response }
+		prerequisite = { focus = CHI_construct_large_embankments }
+		relative_position_id = CHI_invest_in_relief_efforts
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CHI_empower_self_strengthening_movement
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CHI_government_reforms }
+		relative_position_id = CHI_government_reforms
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			base = 100
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+}

@@ -8,15 +8,13 @@ state=
 	
 	history=
 	{
-		owner = NIA
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = NIA
 		victory_points = {
 			10000 5 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			infrastructure = 2 #was: 5
 			10000 = {
 				naval_base = 5
 			}

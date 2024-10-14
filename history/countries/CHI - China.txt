@@ -25,7 +25,8 @@ add_ideas = {
 	fpw_CHI_ineffective_bannermen
 	fpw_CHI_century_of_humiliation
 	fpw_CHI_disjointed_naval_vessels
-	fpw_CHI_ongoing_famine
+	fpw_CHI_ongoing_famine1
+	fpw_CHI_self_strengthening_movement1
 }
 
 if = {
@@ -137,14 +138,26 @@ save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
 
-declare_war_on = {
-	target = NIA
-	type = annex_everything
+if = {
+	limit = {
+		has_start_date < 1870.01.01
+	}
+
+	declare_war_on = {
+		target = NIA
+		type = annex_everything
+	}
 }
 
-declare_war_on = {
-	target = PIN
-	type = annex_everything
+if = {
+	limit = {
+		has_start_date < 1870.01.01
+	}
+
+	declare_war_on = {
+		target = PIN
+		type = annex_everything
+	}
 }
 
 

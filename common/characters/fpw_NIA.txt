@@ -1,0 +1,16 @@
+characters={
+	
+	NIA_wenguang={
+		name="Lai Wenguang"
+		portraits={
+			civilian={
+				large=GFX_portrait_NIA_wenguang
+			}
+		}
+		country_leader={
+			ideology=social_anarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}
