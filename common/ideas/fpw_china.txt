@@ -73,7 +73,7 @@ ideas = {
                 positioning = -0.1
             }
         }
-        fpw_CHI_ongoing_famine = {
+        fpw_CHI_ongoing_famine1 = {
             allowed = {
 				original_tag = CHI
 			}
@@ -90,6 +90,76 @@ ideas = {
                 war_support_factor = -0.2
                 supply_factor = -0.1
                 attrition = 0.08
+            }
+        }
+        fpw_CHI_ongoing_famine2 = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+
+            picture = ENG_the_war_to_end_all_wars
+
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.1
+                monthly_population = -0.55
+                war_support_factor = -0.1
+                supply_factor = -0.075
+                attrition = 0.05
+            }
+        }
+        fpw_CHI_self_strengthening_movement1 = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+
+            picture = chi_chinese_support
+
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                research_speed_factor = 0.05
+                industrial_capacity_factory = 0.025
+                industrial_capacity_dockyard = 0.025
+            }
+        }
+        fpw_CHI_self_strengthening_movement2 = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+
+            picture = chi_chinese_support
+
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                research_speed_factor = 0.075
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        fpw_CHI_anti_transmission_measures = {
+            allowed = {
+				original_tag = CHI
+			}
+
+			available = {
+			}
+
+            picture = generic_neutrality_drift_bonus
+
+            removal_cost = -1
+            modifier = {
+                stability_weekly = 0.004
             }
         }
     }

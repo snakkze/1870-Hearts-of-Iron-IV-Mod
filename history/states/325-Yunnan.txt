@@ -14,15 +14,13 @@ wood=1
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = YUN
-		add_core_of = CHI
-		add_core_of = PRC
 		victory_points = {
 			1319 10 
 		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 1
 
 		}
 	}

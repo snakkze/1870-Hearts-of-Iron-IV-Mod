@@ -61,6 +61,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/CHI/Portrait_CHI_cixi.dds"
 	}
 
+	# NIA
+	spriteType = {
+		name = "GFX_portrait_NIA_wenguang"
+		texturefile = "gfx/leaders/NIA/Portrait_NIA_wenguang.dds"
+	}
+
 	# AUS
 	spriteType = {
 		name = "GFX_portrait_AUS_franz_joseph_i"

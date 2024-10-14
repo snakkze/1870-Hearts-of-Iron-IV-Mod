@@ -10,9 +10,9 @@ wood=5
 }
 
 	history={
-		owner = CHI
+		owner = NIA
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = NIA
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -21,12 +21,14 @@ wood=5
 		victory_points = {
 			7222 1 
 		}
-		1938.10.25 = {
-			controller = JAP
-			buildings = {
-				industrial_complex = 3
-				infrastructure = 3 #was: 6
-				arms_factory = 1
+		1866.1.1 = {
+			CHI = {
+				set_province_controller = 11994
+				set_province_controller = 10017
+				set_province_controller = 4203
+				set_province_controller = 12061
+				set_province_controller = 1083
+			    set_province_controller = 7035
 
 			}
 

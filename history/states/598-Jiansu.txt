@@ -12,14 +12,29 @@ wood=2
 	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 
 		}
 
-		1938.10.25 = {
-			controller = JAP
+		1866.1.1 = {
+			NIA = {
+				set_province_controller = 7025
+				set_province_controller = 9956
+				set_province_controller = 7200
+				set_province_controller = 11973
+				set_province_controller = 12055
+				set_province_controller = 1076
+				set_province_controller = 1121
+				set_province_controller = 1161
+				set_province_controller = 1001
+				set_province_controller = 4123
+				set_province_controller = 4148
+				set_province_controller = 4005
+				set_province_controller = 13144
+
+			}
+
 		}
 	}
 

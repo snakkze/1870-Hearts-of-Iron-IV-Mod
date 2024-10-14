@@ -14,19 +14,13 @@ wood=4
 
 	history={
 		owner = CHI
-add_core_of = CHI
 		add_core_of = GXC
 		add_core_of = CHI
-		add_core_of = PRC
 		
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
 			1047 = {
 				naval_base = 5
-				coastal_bunker = 1
-				bunker = 1
 			}
 
 		}
@@ -34,21 +28,6 @@ add_core_of = CHI
 			1047 5
 		}
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = GXC
-				CHI = { transfer_state = PREV }
-			}
-			JAP = {
-				set_province_controller = 1047
-				set_province_controller = 7152
-				set_province_controller = 11938
-				set_province_controller = 11941
-			} 			
-		}
 	}
 
 	provinces={

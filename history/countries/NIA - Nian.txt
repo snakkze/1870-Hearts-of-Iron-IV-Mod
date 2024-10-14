@@ -10,6 +10,8 @@ set_technology = {
 
 set_convoys = 5
 
+recruit_character = NIA_wenguang
+
 
 set_politics = {
 	ruling_party = communism
@@ -19,15 +21,4 @@ set_politics = {
 }
 set_popularities = {
 	communism = 100
-}
-
-create_country_leader = {
-	
-	name = "Tshekedi Khama"
-	picture = GFX_portrait_Tshekedi_Khama
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
 }

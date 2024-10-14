@@ -121,8 +121,27 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = fpw_AUS_activating_the_reserves
+				days = 90
+			}
 			add_war_support = 0.15
-			#
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Reserve Division\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+					owner = AUS
+					count = 2
+					id = 101
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Reserve Division\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+					owner = AUS
+					count = 2
+					id = 102
+				}
+			}
 		}
 	}
 
@@ -168,7 +187,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		icon = g
+		icon = GFX_focus_attack_prussia
 
 		ai_will_do = {
 			factor = 10
@@ -265,6 +284,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_cosmetic_tag = AUS_austria_hungary
+			add_ideas = fpw_AUS_hungarian_compromise
 		}
 	}
 
@@ -1242,9 +1262,12 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = fpw_austria.7
-			    days = 20
+			    days = 60
 			}
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = fpw_AUS_hungarian_compromise
+				add_idea = fpw_AUS_austria-hungary
+			}
 		}
 	}
 

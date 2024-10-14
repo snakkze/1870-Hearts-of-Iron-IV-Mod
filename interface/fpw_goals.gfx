@@ -196,6 +196,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_befriend_prussia"
 		texturefile = "gfx/interface/goals/befriend_prussia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_attack_prussia"
+		texturefile = "gfx/interface/goals/focus_attack_prussia.png"
 	}	
 	spriteType = {
 		name = "GFX_focus_claim_libya"
