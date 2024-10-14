@@ -1,3 +1,4 @@
+#Divisions
 division_template = {
   name = "Militia-Division"
   is_locked = no
@@ -9,113 +10,240 @@ division_template = {
     irregular_infantry = { x = 1 y = 1 }
   }
 }
-division_template = {
-  name = "Infantry-Division"
-  is_locked = no
+
+division_template = { 
+  name = "Voluntarios da Patría"
+  is_locked = yes
 
   regiments = {
-    infantry = { x = 0 y = 0 }
-    infantry = { x = 0 y = 1 }
-    infantry = { x = 1 y = 0 }
-    infantry = { x = 1 y = 1 }
+    infantry = { x = 0 y = 0 } 
   }
 }
-division_template = {
-  name = "Cavalry-Division"
-  is_locked = no
 
-  regiments = {
-    cavalry = { x = 0 y = 0 }
-    cavalry = { x = 0 y = 1 }
-    cavalry = { x = 1 y = 0 }
-    cavalry = { x = 1 y = 1 }
-  }
-}
-division_template = {
-  name = "Artillery-Division"
-  is_locked = no
-
-  regiments = {
-    infantry = { x = 0 y = 0 }
-    infantry = { x = 0 y = 1 }
-    infantry = { x = 1 y = 0 }
-    infantry = { x = 1 y = 1 }
-  }
-  support = {
-    cannon_artillery = { x = 0 y = 0 }
-  }
-}
+  #Units 
 units = {
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 8242
-		division_template = "Militia-Division"
-		start_experience_factor = 0.1
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 4617
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5208
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 10946
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 10945
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 10947
-		division_template = "Cavalry-Division"
-		start_experience_factor = 0.3
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 2185
-		division_template = "Cavalry-Division"
-		start_experience_factor = 0.3
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 5182
-		division_template = "Artillery-Division"
-		start_experience_factor = 0.3
+		name = Voluntarios da Patría
+		location = 8224
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
 	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 4587
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 4587
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 4587
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 4587
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 4587
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5178
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5178
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+		division = {
+		name = Voluntarios da Patría
+		location = 5178
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7	
+	}
+
+		division = {
+		name = Voluntarios da Patría
+		location = 5178
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7	
+	}
+	
+		division = {
+		name = Voluntarios da Patría
+		location = 5178
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7	
+	}
+	
+		division = {
+		name = Voluntarios da Patría
+		location = 5178
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	
+		division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		name = Voluntarios da Patría
+		location = 5200
+		division_template = "Voluntarios da Patría"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+   }
 }
+          
