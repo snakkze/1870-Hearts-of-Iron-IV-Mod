@@ -15,6 +15,17 @@ country_event = {
 		ai_chance = {
 			base = 50 
 		}
+		trigger = {
+			NOT = {
+				any_country = {
+					check_variable = { has_added_tension_amount > 50 }
+					PREV = {
+						is_in_faction_with = PREV
+					}
+				}
+			}
+		}
+		set_country_flag = crisis_chosen_side
 		if = {
 			limit = {
 				any_country = {
@@ -43,7 +54,7 @@ country_event = {
 							array = global.top_seven_prestige_array
 							value = THIS
 						}
-						original_tag = PRS
+						check_variable = { has_added_tension_amount > 50 }
 						#check_variable = { has_added_tension_amount > 49 }
 						#threat > 0.5
 					}
@@ -72,6 +83,7 @@ country_event = {
 				}
 			}
 			add_to_array = { global.gw_initiator_array = THIS }
+			set_global_flag = fpw_great_war
 			if = {
 				limit = {
 					is_in_faction = yes
@@ -92,6 +104,25 @@ country_event = {
 					create_faction = "Anti-xyx Alliance"
 				}
 			}
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = global.top_seven_prestige_array
+						value = THIS
+					}
+					NOT = {
+						# threat > 0.5, thus being the targetted country
+						# not threat, it is has_added_tension_amount variable
+						# in faction with target
+						has_country_flag = fpw_crisis_triggered
+						check_variable = { has_added_tension_amount > 50 }
+					}
+				}		
+				set_country_flag = fpw_crisis_triggered
+				# newspaper flavor event for the ai, i know sounds weird but to inform the player and the ai the newspaper will say something like "xy has started an international crisis against xy and parliaments all over the world are currently
+				# scripted loc for multiplayer, if there is a initiator already the loc will say to join them, player gets immediet event stating what happened cause not bothered complicating this
+				country_event = { id = fpw_crisis.1 days = 1 random_days = 3 } 
+			}
 		}
 	}
 
@@ -110,6 +141,7 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = crisis_chosen_side
 		add_to_array = { global.gw_target_supporters_array = THIS }
 
 		random_country = {
@@ -129,7 +161,47 @@ country_event = {
 		ai_chance = {
 			base = 0 
 		}
-		
+		set_country_flag = crisis_chosen_side
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_in_array = {
+						array = global.top_seven_prestige_array
+						value = THIS
+					}
+					NOT = {
+						# threat > 0.5, thus being the targetted country
+						# not threat, it is has_added_tension_amount variable
+						# in faction with target
+						has_country_flag = fpw_crisis_triggered
+						check_variable = { has_added_tension_amount > 50 }
+						
+						# Countries in faction with the target wont get the event as they should support the target
+						# Those will not be dragged into the supporter side to not make player have to be in a great war if they arent the target
+						any_country = {
+							# Target
+							# For my future self, we just need to check for the threat as we are already scoped into the array
+							check_variable = { has_added_tension_amount > 50 }
+							PREV = {
+								is_in_faction_with = PREV
+							}
+						}
+					}
+				}
+				set_country_flag = fpw_crisis_triggered
+				country_event = fpw_crisis.1
+			}
+		}
 	}
 }
 

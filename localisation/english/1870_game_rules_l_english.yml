@@ -1,6 +1,12 @@
 ﻿l_english:
  FPW_RULE_GROUP_MOD_CUSTOMIZATION:0 "Mod Customization"
 
+ FPW_RULE_FLAG_CRISIS:0 "International Crisis"
+ FPW_RULE_OPTION_CRISIS_ENABLED:0 "Enabled"
+ FPW_RULE_OPTION_CRISIS_ENABLED_desc:0 "International Crises will be triggered at a certain generated World Tension of a Great Power"
+ FPW_RULE_OPTION_CRISIS_DISABLED:0 "Disabled"
+ FPW_RULE_OPTION_CRISIS_DISABLED_desc:0 "International Crises are disabled won't trigger."
+
  FPW_RULE_FLAG_CUSTOMIZATION:0 "Flag Option Visibility"
  FPW_NATION_ONLY_FLAG:0 "Show Option to Nation Only"
  FPW_NATION_ONLY_FLAG_desc:0 "Any customizable flags will show for the player of the nation only."

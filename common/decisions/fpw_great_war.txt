@@ -13,45 +13,20 @@ fpw_great_war_category = {
 			always = no
 		}
 
+		# Currently it can only fire once per game, might change it but not certain as too many crisis isnt the point of the mechanic, the point is one last war that is big
 		fire_only_once = yes
 
 		cancel_trigger = {
-			PRS = {
-				has_war_with = FRA
-			}
 			NOT = {
 				has_global_flag = fpw_great_war
 			}
 		}
 		is_good = no
 		# 90 Days(Or 60 days idk)
-		days_mission_timeout = 90
+		#days_mission_timeout = 90
+		days_mission_timeout = 10
 		selectable_mission = no
 		timeout_effect = {
-			#fpw_treaty_of_frankfurt = yes
-			clr_global_flag = fpw_great_war
-		}
-	}
-
-	make_war = {
-		icon = fwp_franco_prussian_war_sided
-
-		allowed = {
-			
-		}
-
-		cost = 0
-
-		available = {
-			always = yes
-		}
-		
-		visible = {
-			always = yes
-		}
-
-		complete_effect = {
-
 			#################
 			### INITIATOR ###
 			#################
@@ -238,121 +213,7 @@ fpw_great_war_category = {
 					}
 				}
 			}
-
-		}
-	}
-
-
-	test_clear_flag = {
-		icon = fwp_franco_prussian_war_sided
-
-		allowed = {
-			
-		}
-
-		cost = 0
-
-		available = {
-			always = yes
-		}
-		
-		visible = {
-			always = yes
-		}
-
-		complete_effect = {
-			clr_global_flag = crisis_trigger
-		}
-	}
-
-
-	test_trigger = {
-		icon = fwp_franco_prussian_war_sided
-
-		allowed = {
-			
-		}
-
-		cost = 0
-
-		available = {	
-			AND = {
-				NOT = {
-					has_global_flag = crisis_trigger
-				}
-				any_country = {
-					AND = {
-						is_in_array = {
-							array = global.top_seven_prestige_array
-							value = THIS
-						}
-						original_tag = PRS
-						#check_variable = { has_added_tension_amount > 49 }
-						#threat > 0.5
-					}
-				}
-			}
-		}
-		
-		visible = {
-			always = yes
-		}
-
-		complete_effect = {
-			every_country = {
-				limit = {
-					is_in_array = {
-						array = global.top_seven_prestige_array
-						value = THIS
-					}
-					NOT = {
-						is_in_array = {
-							array = global.gw_initiator_array
-							value = THIS
-						}
-					}
-				}
-			}
-			PREV = {
-				country_event = fpw_crisis.1
-			}
-			set_global_flag = crisis_trigger
-		}
-	}
-
-	test = {
-
-		icon = fwp_franco_prussian_war_sided
-
-		allowed = {
-			
-		}
-
-		cost = 0
-
-		available = {
-			always = yes
-		}
-		
-		visible = {
-			always = yes
-		}
-
-		complete_effect = {
-			clear_array = global.gw_initiator_array
-			clear_array = global.gw_target_array
-			clear_array = global.gw_initiator_supporters_array
-			clear_array = global.gw_target_supporters_array
-
-			add_to_array = { global.gw_initiator_array = ENG }
-			add_to_array = { global.gw_target_array = PRS }
-
-			add_to_array = { global.gw_initiator_supporters_array = FRA }
-			add_to_array = { global.gw_initiator_supporters_array = SOV }
-			add_to_array = { global.gw_initiator_supporters_array = USA }
-
-			add_to_array = { global.gw_target_supporters_array = AUS }
-			add_to_array = { global.gw_target_supporters_array = ITA }
+			clr_global_flag = fpw_great_war
 		}
 	}
 
@@ -367,83 +228,73 @@ fpw_great_war_category = {
 		cost = 0
 		priority = 98
 
-		highlight_states = {
-			highlight_states_trigger = {
-				is_owned_by = PRS
-			}
-		}
-
 		available = {
-			NOT = {
-				has_country_flag = fwp_franco_prussian_war_sided
-			}
-			FRA = {
-				has_war_with = PRS
+			AND = {
+				is_in_array = {
+					array = global.top_seven_prestige_array
+					value = THIS
+				}
+				any_country = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				has_country_flag = crisis_chosen_side
+				NOT = {
+					OR = {				
+						is_in_array = {
+							array = global.gw_initiator_supporters_array
+							value = THIS
+						}
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						OR = {				
+							is_in_array = {
+								array = global.gw_target_supporters_array
+								value = THIS
+							}
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+					}
+				}
 			}
 		}
 		
 		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					NOT = {
-				has_country_flag = fwp_franco_prussian_war_sided
-				OR = {
-					original_tag = PRS
-					original_tag = FRA
-					is_subject_of = PRS
-					is_subject_of = FRA
-				}
-			}
-				}
-			}
+			always = yes
 		}
 
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 100
-				ROOT = {
-					OR = {
-						tag = WRT
-						tag = BAV
-						tag = BAD
-						tag = HES
-					}
-				}
-			}
+			base = 50
 		}
 
 		complete_effect = {
-			set_country_flag = fwp_franco_prussian_war_sided
 			if = {
 				limit = {
-					PRS = {
-						is_in_faction = no
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
 					}
 				}
-				PRS = {
-					create_faction = prussian_faction
+				remove_from_array = {
+					array = global.gw_target_supporters_array
+					value = THIS
 				}
 			}
-			# created faction if not already
-			if = {
-				limit = {
-					ROOT = {
-						is_in_faction = no
-					}
-				}
-				PRS = {
-					add_to_faction = ROOT
-				}
-			}
-			ROOT = {
-				add_to_war = {
-					targeted_alliance = PRS
-					enemy = FRA
-					hostility_reason = asked_to_join
-				}
-			}
+			add_to_array = { global.gw_initiator_supporters_array = THIS }
 		}
 	}
 
@@ -458,72 +309,162 @@ fpw_great_war_category = {
 		cost = 0
 		priority = 97
 
-		highlight_states = {
-			highlight_states_trigger = {
-				is_owned_by = FRA
-			}
-		}
-
 		available = {
-			NOT = {
-				has_country_flag = fwp_franco_prussian_war_sided
-			}
-			FRA = {
-				has_war_with = PRS
-			}
-		}
-		
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
+			AND = {
+				is_in_array = {
+					array = global.top_seven_prestige_array
+					value = THIS
+				}
+				any_country = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				has_country_flag = crisis_chosen_side
+				NOT = {
+					OR = {
+						is_in_array = {
+							array = global.gw_target_supporters_array
+							value = THIS
+						}
+						is_in_array = {
+							array = global.gw_target_array
+							value = THIS
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_ai = yes
+					}
 					NOT = {
-						has_country_flag = fwp_franco_prussian_war_sided
-						OR = {
-							original_tag = PRS
-							original_tag = FRA
-							is_subject_of = PRS
-							is_subject_of = FRA
+						OR = {				
+							is_in_array = {
+								array = global.gw_initiator_supporters_array
+								value = THIS
+							}
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
 						}
 					}
 				}
 			}
 		}
+		
+		visible = {
+			always = yes
+		}
 
 		ai_will_do = {
-			factor = 0
+			base = 50
+		}
+
+		complete_effect = {		
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				remove_from_array = {
+					array = global.gw_initiator_supporters_array
+					value = THIS
+				}
+			}
+			add_to_array = { global.gw_target_supporters_array = THIS }
+		}
+	}
+	
+	debug_add_threat = {
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
 		}
 
 		complete_effect = {
-			set_country_flag = fwp_franco_prussian_war_sided
-			# created faction if not already
-			if = {
-				limit = {
-					FRA = {
-						is_in_faction = no
+			PRS = {
+				add_named_threat = {
+					threat = 100
+					name = "Testing Threat"
+				}
+			}
+		}
+	}
+
+	debug_clear_arrays = {
+
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			clear_array = global.gw_initiator_array
+			clear_array = global.gw_target_array
+			clear_array = global.gw_initiator_supporters_array
+			clear_array = global.gw_target_supporters_array
+		}
+	}
+
+	debug_update_list = {
+
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			clear_array = global.prestige_list_array
+			every_country = {
+				if = {
+					limit = {
+						NOT = { is_in_array = { global.prestige_list_array = THIS } }
 					}
-				}
-				FRA = {
-					create_faction = prussian_faction
+					add_to_array = { global.prestige_list_array = THIS }
 				}
 			}
-			if = {
-				limit = {
-					ROOT = {
-						is_in_faction = no
-					}
-				}
-				FRA = {
-					add_to_faction = ROOT
-				}
+			calculate_prestige = yes
+			TRB = {
+				set_variable = { THIS.country_prestige = 0 }
 			}
-			ROOT = {
-				add_to_war = {
-					targeted_alliance = FRA
-					enemy = PRS
-					hostility_reason = asked_to_join
-				}
-			}
+			update_position = yes
 		}
 	}
 }
