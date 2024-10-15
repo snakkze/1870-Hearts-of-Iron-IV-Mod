@@ -33,6 +33,30 @@ defined_text = {
     }
 }
 defined_text = {
+    name = fpw_crisis_event_description_loc
+    
+    text = {
+        trigger = {
+            NOT = {   
+                any_country = {
+                    is_in_array = {
+                        array = global.gw_initiator_array
+                        value = THIS
+                    }
+                }
+            }
+        }
+        localization_key = fpw_crisis.1.d.1
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = fpw_crisis.1.d.2
+    }
+}
+
+defined_text = {
     name = fpw_initiator_supporters_entry_loc
     
     text = {
