@@ -193,4 +193,29 @@
  russia_fpw.42.d: ""
  russia_fpw.42.a: "Shame"
  
+ peace_poland_uprising_tt: "Poland has won the uprising and it's independence."
+ peace_finland_uprising_tt: "Finland has won the uprising and it's independence."
+ peace_ukraine_uprising_tt: "Ukraine has won the uprising and it's independence."
+ peace_belarus_uprising_tt: "Belarus has won the uprising and it's independence."
+ peace_lithuania_uprising_tt: "Lithuania has won the uprising and it's independence."
+ peace_latvia_uprising_tt: "Latvia has won the uprising and it's independence."
+ peace_estonia_uprising_tt: "Estonia has won the uprising and it's independence."
+ peace_georgia_uprising_tt: "Georgia has won the uprising and it's independence."
+ peace_armenia_uprising_tt: "Armenia has won the uprising and it's independence."
+ peace_azerbaijan_uprising_tt: "Azerbaijan has won the uprising and it's independence."
+ 
+ russia_fpw.43.t: "Admitting Defeat"
+ russia_fpw.43.d: "Should we admit our defeat against the poles?"
+ russia_fpw.43.a: "Let's make peace..."
+ russia_fpw.44.d: "Should we admit our defeat against the finns?"
+ russia_fpw.45.d: "Should we admit our defeat against the ukrainians?"
+ russia_fpw.46.d: "Should we admit our defeat against the belarusians?"
+ russia_fpw.47.d: "Should we admit our defeat against the baltics?"
+ russia_fpw.48.d: "Should we admit our defeat against the caucasians?"
+ 
+ 
+ russia_fpw.1000.t: "Seeking Peace With [SOV.GetName]"
+ russia_fpw.1000.d: "After capturing [195.GetName] and [219.GetName] we think it's time to demands peace."
+ russia_fpw.1000.a: "Let's send our demands"
+ 
  

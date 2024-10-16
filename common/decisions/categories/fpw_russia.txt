@@ -33,6 +33,20 @@ fpw_russification_cat = {
 		}
 	}
 }
+fpw_russia_uprising_cat = {
+	priority = 99
+
+	#icon = GFX_decision_category_SOV_merge_designers
+	#picture = GFX_
+	
+	allowed = {
+		original_tag = SOV
+	}
+	#visible_when_empty = yes
+	visible = {
+		
+	}
+}
 fpw_russia_military_cat = {
 	priority = 11
 

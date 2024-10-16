@@ -36,7 +36,7 @@
  
  russification_info: "Russification Info"
  imminent_uprising: "Imminent Uprising"
- imminent_uprising_desc: "M-m-my Tsar... we did a wittle fucky wucky UWU"
+ imminent_uprising_desc: "M-my Tsar... we may have fucked up a little"
  
  raise_russification_by_20_tp: "This will §Graise§! §YRussification§! by §C20%§!"
  raise_russification_by_10_tp: "This will §Graise§! §YRussification§! by §C10%§!"
@@ -246,6 +246,16 @@
  caucasus_autonomy: "Caucasian Autonomy"
  caucasus_autonomy_desc: "§W§YCaucasian§! §GRussification§! level needs to be at least §C10%§! or lower§!"
  caucasus_autonomy_tp: "§YGovernorate of Caucasia§! becomes §YAutonomous Territory§! of §YRussian Empire§!"
+ 
+ # Uprisings
+ 
+ fpw_russia_uprising_cat: "Dealing With Uprisings"
+ end_poland_uprising: "Crush Poland"
+ end_ukraine_uprising: "Crush Ukraine"
+ end_belarus_uprising: "Crush Belarus"
+ end_baltic_uprising: "Crush Baltics"
+ end_caucasus_uprising: "Crush Caucasus"
+ end_finland_uprising: "Crush Finland"
  
  # Balkan Dominance
  

@@ -578,7 +578,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			on_add = {
+				set_rule = {
+					can_join_factions = no
+				}
+			}
+			on_remove = {
+				set_rule = {
+					can_join_factions = yes
+				}
+			}
 
 			removal_cost = -1
 			cancel = {
