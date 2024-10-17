@@ -8,7 +8,7 @@ fpw_colonial_debuff = {
 
 fpw_victors_of_the_crimean_war = {
 	enable = { always = yes }
-	icon = idea_victor_of_crimean_war
+	icon = victor_of_crimean_war
 	
 	custom_modifier_tooltip = prestige_modifier_crimean_victors
 }
@@ -18,4 +18,15 @@ fpw_underdeveloped_industry = {
 	icon = GFX_idea_wip
 	
 	custom_modifier_tooltip = prestige_modifier_underdeveloped_country
+}
+
+fpw_outdated_military = {
+    icon = generic_army_problems
+    enable = { always = yes }
+    
+    breakthrough_factor = -0.2
+	army_morale_factor = -0.15
+	army_org_factor = -0.15
+    	army_attack_factor = -0.2
+	army_defence_factor = -0.1
 }
