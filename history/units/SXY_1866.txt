@@ -7,6 +7,7 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 }
 
@@ -20,6 +21,7 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 	support = {
 		cannon_artillery = { x = 0 y = 0 }
@@ -34,6 +36,8 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
 	}
 }
 
@@ -83,7 +87,7 @@ units = {
 		}
 		location = 9471
 		division_template = "Feldartillerieregiment"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.4
 	}
 
 	### KAVALLERIE ###
@@ -95,6 +99,16 @@ units = {
 			name_order = 1
 		}
 		location = 573
+		division_template = "Kavallerieregiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		#2. Kavallerieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 514
 		division_template = "Kavallerieregiment"
 		start_experience_factor = 0.3
 	}

@@ -6,6 +6,8 @@ division_template = {
   regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
   }
 }
 division_template = {
@@ -16,6 +18,8 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 	support = {
 		cannon_artillery = { x = 0 y = 0 }
@@ -39,7 +43,7 @@ units = {
 		}
 		location = 9281
 		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.4
 	}
 	division = {
 		division_name = {
@@ -48,7 +52,7 @@ units = {
 		}
 		location = 6325
 		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.4
 	}
 	division = {
 		division_name = {
@@ -57,7 +61,7 @@ units = {
 		}
 		location = 11388
 		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.4
 	}
 	division = {
 		division_name = {
@@ -66,7 +70,7 @@ units = {
 		}
 		location = 11360
 		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.4
 	}
 	division = {
 		division_name = {
@@ -75,7 +79,7 @@ units = {
 		}
 		location = 6377
 		division_template = "Infanterieregiment"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.4
 	}
 	division = {
 		#1. Kavallerieregiment
@@ -84,6 +88,16 @@ units = {
 			name_order = 1
 		}
 		location = 6349
+		division_template = "Kavallerieregiment"
+		start_experience_factor = 0.4
+	}
+	division = {
+		#2. Kavallerieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 6513
 		division_template = "Kavallerieregiment"
 		start_experience_factor = 0.3
 	}
