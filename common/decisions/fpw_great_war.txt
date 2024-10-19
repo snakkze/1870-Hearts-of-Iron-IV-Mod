@@ -1,0 +1,617 @@
+fpw_great_war_category = {
+	fpw_great_war_progress = {
+
+		icon = GFX_decision_SWI_consolidate_council_power
+
+		activation = {
+			has_global_flag = fpw_great_war
+		}
+
+		priority = 99
+
+		available = {
+			always = no
+		}
+
+		# Currently it can only fire once per game, might change it but not certain as too many crisis isnt the point of the mechanic, the point is one last war that is big
+		fire_only_once = yes
+
+		cancel_trigger = {
+			NOT = {
+				has_global_flag = fpw_great_war
+			}
+		}
+		is_good = no
+		# 90 Days(Or 60 days idk)
+		#days_mission_timeout = 90
+		days_mission_timeout = 10
+		selectable_mission = no
+		timeout_effect = {
+			#################
+			### INITIATOR ###
+			#################
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}		
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = yes
+					}
+					every_country = {
+						limit = {
+							is_in_faction_with = PREV
+						}
+						leave_faction = yes
+						random_country = {
+							limit = {
+								is_in_array = {
+									array = global.gw_initiator_array
+									value = THIS
+								}
+							}
+							add_to_faction = PREV
+						}
+					}
+					dismantle_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else_if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+					leave_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else = {
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+			}
+
+			##############
+			### TARGET ###
+			##############
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}		
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = yes
+					}
+					every_country = {
+						limit = {
+							is_in_faction_with = PREV
+						}
+						leave_faction = yes
+						random_country = {
+							limit = {
+								is_in_array = {
+									array = global.gw_target_array
+									value = THIS
+								}
+							}
+							add_to_faction = PREV
+						}
+					}
+					dismantle_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else_if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+					leave_faction = yes
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+				else = {
+					random_country = {
+						limit = {
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+						add_to_faction = PREV
+					}
+				}
+			}
+
+			###########
+			### WAR ###
+			###########
+
+			
+			random_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				random_country = {
+					limit = {
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+					}
+					declare_war_on = {
+						target = PREV
+						type = topple_government
+					}
+				}
+			}
+
+			random_country = {
+				limit = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_array = {
+							array = global.gw_initiator_supporters_array
+							value = THIS
+						}		
+					}
+					declare_war_on = {
+						target = PREV
+						type = topple_government
+					}
+				}
+			}
+			
+			random_country = {
+				limit = {
+					original_tag = ENG
+					has_idea = fpw_eng_splendid_isolation
+					OR = {
+						is_in_array = {
+							array = global.gw_initiator_supporters_array
+							value = THIS
+						}	
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}	
+						is_in_array = {
+							array = global.gw_target_supporters_array
+							value = THIS
+						}	
+						is_in_array = {
+							array = global.gw_target_array
+							value = THIS
+						}	
+					}
+				}
+				remove_ideas = fpw_eng_splendid_isolation
+			}
+			
+			clr_global_flag = fpw_great_war
+		}
+	}
+
+	fpw_side_with_initiator = {
+
+		icon = GFX_decision_generic_protection
+
+		allowed = {
+			
+		}
+
+		cost = 0
+		priority = 98
+
+		available = {
+			AND = {
+				is_in_array = {
+					array = global.top_seven_prestige_array
+					value = THIS
+				}
+				any_country = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				has_country_flag = crisis_chosen_side
+				NOT = {
+					OR = {				
+						is_in_array = {
+							array = global.gw_initiator_supporters_array
+							value = THIS
+						}
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+						is_in_array = {
+							array = global.gw_target_array
+							value = THIS
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						OR = {				
+							is_in_array = {
+								array = global.gw_target_supporters_array
+								value = THIS
+							}
+							is_in_array = {
+								array = global.gw_target_array
+								value = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		ai_will_do = {
+			base = -1000000
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = fpw_great_war_initiator_side
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				remove_from_array = {
+					array = global.gw_target_supporters_array
+					value = THIS
+				}
+			}
+			add_to_array = { global.gw_initiator_supporters_array = THIS }
+		}
+	}
+
+	fpw_side_with_target = {
+
+		icon = GFX_decision_generic_protection
+
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		priority = 97
+
+		available = {
+			AND = {
+				is_in_array = {
+					array = global.top_seven_prestige_array
+					value = THIS
+				}
+				any_country = {
+					is_in_array = {
+						array = global.gw_target_array
+						value = THIS
+					}
+				}
+				has_country_flag = crisis_chosen_side
+				NOT = {
+					OR = {
+						is_in_array = {
+							array = global.gw_target_supporters_array
+							value = THIS
+						}
+						is_in_array = {
+							array = global.gw_target_array
+							value = THIS
+						}
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						OR = {				
+							is_in_array = {
+								array = global.gw_initiator_supporters_array
+								value = THIS
+							}
+							is_in_array = {
+								array = global.gw_initiator_array
+								value = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		ai_will_do = {
+			base = -1000000
+		}
+
+		complete_effect = {		
+			custom_effect_tooltip = fpw_great_war_target_side
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				remove_from_array = {
+					array = global.gw_initiator_supporters_array
+					value = THIS
+				}
+			}
+			add_to_array = { global.gw_target_supporters_array = THIS }
+		}
+	}
+	
+	fpw_back_down = {
+
+		icon = GFX_decision_generic_protection
+
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		priority = 96
+
+		available = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = fpw_backed_out_tt
+					NOT = {
+						has_country_flag = backed_out
+					}
+				}
+				OR = {
+					is_in_array = {
+						array = global.gw_initiator_array
+						value = THIS
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+			}
+		}
+		
+		visible = {
+			OR = {
+				is_in_array = {
+					array = global.gw_initiator_array
+					value = THIS
+				}
+				is_in_array = {
+					array = global.gw_initiator_supporters_array
+					value = THIS
+				}
+				is_in_array = {
+					array = global.gw_target_supporters_array
+					value = THIS
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {	
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.gw_initiator_array
+						value = THIS
+					}
+				}
+				add_timed_idea = {
+					idea = fpw_coward_behaviour
+					years = 2
+				}
+
+				clr_global_flag = fpw_great_war
+
+				clear_array = global.gw_initiator_array
+				clear_array = global.gw_target_array
+				clear_array = global.gw_initiator_supporters_array
+				clear_array = global.gw_target_supporters_array
+			} else = {
+				if = {
+					limit = {
+						is_in_array = {
+							array = global.gw_initiator_supporters_array
+							value = THIS
+						}
+					}
+					remove_from_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+					custom_effect_tooltip = fpw_great_war_initiator_back_down
+				}
+				else_if = {
+					limit = {
+						is_in_array = {
+							array = global.gw_target_supporters_array
+							value = THIS
+						}
+					}
+					remove_from_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+					custom_effect_tooltip = fpw_great_war_target_back_down
+				}
+			}
+			set_country_flag = backed_out
+		}
+	}
+	
+	debug_add_threat = {
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			PRS = {
+				add_named_threat = {
+					threat = 100
+					name = "Testing Threat"
+				}
+			}
+		}
+	}
+
+	debug_clear_arrays = {
+
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			clr_global_flag = fpw_great_war
+
+			clear_array = global.gw_initiator_array
+			clear_array = global.gw_target_array
+			clear_array = global.gw_initiator_supporters_array
+			clear_array = global.gw_target_supporters_array
+		}
+	}
+
+	debug_update_list = {
+
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			clear_array = global.prestige_list_array
+			every_country = {
+				if = {
+					limit = {
+						NOT = { is_in_array = { global.prestige_list_array = THIS } }
+					}
+					add_to_array = { global.prestige_list_array = THIS }
+				}
+			}
+			calculate_prestige = yes
+			TRB = {
+				set_variable = { THIS.country_prestige = 0 }
+			}
+			update_position = yes
+		}
+	}
+}

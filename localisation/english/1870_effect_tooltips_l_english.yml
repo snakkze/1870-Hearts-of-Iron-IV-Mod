@@ -1,4 +1,9 @@
 ﻿l_english:
+  fpw_backed_out_tt:0 "Has not §Ybacked out§! before."
+  fpw_great_war_initiator_side:0 "§Y[THIS.GetNameDefCap]§! becomes a Supporter of the §YInitiator Side.§!"
+  fpw_great_war_target_side:0 "§Y[THIS.GetNameDefCap]§! becomes a Supporter of the §YTarget Side.§!"
+  fpw_great_war_initiator_back_down:0 "§Y[THIS.GetNameDefCap]§! will no longer be a Supporter of the §YInitiator Side.§!"
+  fpw_great_war_target_back_down:0 "§Y[THIS.GetNameDefCap]§! will no longer be a Supporter of the §YTarget Side.§!"
   fpw_no_other_country_claimed_tt:0 "No other country is able to influence §Y[This.GetName]§!"
   vienna_peace_tt:0 "Vienna Peace Confrence"
   prague_peace_tt:0 "Prague Peace Confrence"

@@ -11,7 +11,7 @@ guiTypes = {
 			name ="fpw_initiator_title"
 			position = { x = -73 y = -3 }
 			font = "hoi_36header"
-			text = "Initiator"
+			text = "fpw_initiator_title"
 			format = centre
 			maxWidth = 400
 			maxHeight = 25
@@ -21,7 +21,7 @@ guiTypes = {
 			name ="fpw_target_title"
 			position = { x = 180 y = -3 }	
 			font = "hoi_36header"
-			text = "Target"
+			text = "fpw_target_title"
 			format = centre
 			maxWidth = 400
 			maxHeight = 25

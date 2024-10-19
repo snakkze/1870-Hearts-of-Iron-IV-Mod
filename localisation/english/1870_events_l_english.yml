@@ -1,18 +1,21 @@
 ﻿l_english:
   fpw_crisis.1.t:0 "Parliament's Heated Debate!"
-  fpw_crisis.1.d:0 "A fiery debate has erupted in Parliament today over the rapid expansion pursued by the German Empire in recent events. Politicians from all parties, alongside military advisors, are urging us to intervene to preserve the balance of power and check Germany’s ambitions."
-  fpw_crisis.1.a:0 "Intervene to curb the German Empire's expansion"
-  fpw_crisis.1.b:0 "Support the German Empire's ambitions"
+  fpw_crisis.1.d.1:0 "A fiery debate has erupted in Parliament today over the rapid expansion pursued by [gw_target.GetNameDef] in recent events. Politicians from all parties, alongside military advisors, are urging us to intervene to preserve the balance of power and check [gw_target.GetAdjectiveCap] ambitions."
+
+  fpw_crisis.1.d.2:0 "A fiery debate has erupted in Parliament today over the rapid expansion pursued by [gw_target.GetNameDef] and the by that caused the current International Crisis. Politicians from all parties, alongside military advisors, are urging us to intervene similar to other Nations to preserve the balance of power and check [gw_target.GetAdjectiveCap] ambitions."
+
+  fpw_crisis.1.a:0 "Intervene to stop the [gw_target.GetAdjectiveCap] expansion"
+  fpw_crisis.1.b:0 "Support the [gw_target.GetAdjectiveCap] ambitions"
   fpw_crisis.1.c:0 "Stay out of this conflict"
 
   fpw_crisis.2.t:0 "[FROM.GetNameDefCap] Backs Our Side"
   fpw_crisis.2.d:0 "We have received word that [FROM.GetNameDefCap] has publicly announced their support for us in the current crisis. If war breaks out, they will stand by our side."
   fpw_crisis.2.a:0 "Excellent!"
 
-  fpw_crisis.3.t:0 "The United Kingdom Issues a Dire Warning!"
-  fpw_crisis.3.d:0 "Our recent expansions have provoked the United Kingdom to threaten war. This ultimatum has escalated the    situation into an international crisis, and backing down is no longer an option!"
+  fpw_crisis.3.t:0 "[FROM.GetNameDefCap] Issues a Dire Warning!"
+  fpw_crisis.3.d:0 "Our recent expansions have provoked [FROM.GetNameDef] to threaten war. This ultimatum has escalated the    situation into an international crisis, and backing down is no longer an option!"
 
-fpw_crisis.3.a:0 "There's no turning back now!"
+  fpw_crisis.3.a:0 "There's no turning back now!"
 
   austro_prussian_fpw.1.t:0 "[From.GetName] has joined our Side!"
   austro_prussian_fpw.1.d:0 "[From.GetName] has decided to join us in the Austro-Prussian War, offering their support against our common enemy."
@@ -399,4 +402,19 @@ fpw_crisis.3.a:0 "There's no turning back now!"
   fpw_generic.1.t:0 "Colonization finished!"
   fpw_generic.1.d:0 "Our settlers have reported back to our colonization administration in [ROOT.capital.GetName] that the region is now fully colonized, and the settlers have returned to the mainland. These settlers can now colonize another region!"
   fpw_generic.1.a:0 "Great!"
+
+  fpw_generic.2.t:0 "[FROM.GetLeader] offers an Alliance."
+  fpw_generic.2.d:0 "Today news have reached out to us that [FROM.GetLeader], the current Leader of [FROM.GetNameDef] have invited us to their Faction, the [FROM.GetFactionName]."
+  fpw_generic.2.a:0 "Accept this Offer"
+  fpw_generic.2.b:0 "Decline"
+
+  fpw_generic.3.t: "[From.GetNameDefCap] accepts our offer"
+  fpw_generic.3.d: "The offer to [FROM.GetNameDefCap] has been accepted and the country is now part of our glorious Alliance, the [ROOT.GetFactionName]."
+  fpw_generic.3.a: "Great news!"
+  fpw_generic.4.t: "[From.GetNameDefCap] declines our offer"
+  fpw_generic.4.d: "The offer to [FROM.GetNameDefCap] has been declined."
+  fpw_generic.4.a: "How unfortunate."
+
+
+
 

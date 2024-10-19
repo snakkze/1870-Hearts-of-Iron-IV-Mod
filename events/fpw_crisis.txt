@@ -4,17 +4,344 @@ add_namespace = fpw_crisis
 country_event = {
 	id = fpw_crisis.1
 	title = fpw_crisis.1.t
-	desc = fpw_crisis.1.d
+	desc = "[fpw_crisis_event_description_loc]"
 	picture = GFX_report_event_romania_parliament
 
 	is_triggered_only = yes
 
-	# Do something
+	# Do something against target
 	option = {
 		name = fpw_crisis.1.a 
 		ai_chance = {
-			base = 50 
+			base = 0
+			###############
+			### OPINION ###
+			###############
+			modifier = {
+				add = 10 
+				has_opinion = {
+					target = event_target:gw_initiator
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = event_target:gw_initiator
+					value > 20
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = event_target:gw_initiator
+					value > 30
+				}
+			}
+
+			###################
+			### FRIENDSHIPS ###
+			###################
+			modifier = {
+				add = 150
+				event_target:gw_initiator = {
+					OR = {
+						original_tag = FRA
+						original_tag = ENG
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+
+			modifier = {
+				add = 100
+				event_target:gw_initiator = {
+					OR = {
+						original_tag = PRS
+						original_tag = ITA
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = ITA
+				}
+			}
+
+			modifier = {
+				add = 35
+				event_target:gw_initiator = {
+					OR = {
+						original_tag = PRS
+						original_tag = SOV
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = SOV
+				}
+			}
+
+			modifier = {
+				add = 35
+				event_target:gw_initiator = {
+					OR = {
+						original_tag = FRA
+						original_tag = SOV
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = SOV
+				}
+			}
+
+			modifier = {
+				add = -30
+				event_target:gw_initiator = {
+					OR = {
+						original_tag = AUS
+						original_tag = PRS
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = PRS
+				}
+			}
+			modifier = {
+				add = -30
+				event_target:gw_initiator = {
+					OR = {
+						original_tag = AUS
+						original_tag = TUR
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = TUR
+				}
+			}
+			modifier = {
+				add = -30
+				event_target:gw_initiator = {
+					OR = {
+						original_tag = SOV
+						original_tag = TUR
+					}
+				}
+				OR = {
+					original_tag = SOV
+					original_tag = TUR
+				}
+			}
+
+
+			#############################
+			### FRIENDSHIPS (SUPPORT) ###
+			#############################
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						original_tag = FRA
+						original_tag = ENG
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						original_tag = PRS
+						original_tag = ITA
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = ITA
+				}
+			}
+			modifier = {
+				add = 15
+				any_country = {
+					OR = {
+						original_tag = PRS
+						original_tag = SOV
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = SOV
+				}
+			}
+			modifier = {
+				add = 15
+				any_country = {
+					OR = {
+						original_tag = FRA
+						original_tag = SOV
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = SOV
+				}
+			}
+			modifier = {
+				add = -30
+				any_country = {
+					OR = {
+						original_tag = AUS
+						original_tag = PRS
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = PRS
+				}
+			}
+			modifier = {
+				add = -30
+				any_country = {
+					OR = {
+						original_tag = AUS
+						original_tag = TUR
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = TUR
+				}
+			}
+			modifier = {
+				add = -30
+				any_country = {
+					OR = {
+						original_tag = TUR
+						original_tag = SOV
+					}
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = TUR
+					original_tag = SOV
+				}
+			}
+
+			##################
+			### FUN FACTOR ###
+			##################
+			# More likely to join target if neighbors arent to create intesting scenario + they could benefit when winning
+			modifier = {
+				any_neighbor_country = {
+					original_tag = event_target:gw_target
+				}
+				add = 50
+			}
+			modifier = {
+				any_neighbor_country = {
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				add = 35
+			}
+			modifier = {
+				# Brits be doing shit as always
+				original_tag = ENG
+				add = 50
+			}
+
+			########################
+			### STRATEGIC FACTOR ###
+			########################
+			modifier = {
+				add = 100 
+				event_target:gw_initiator = {
+					set_temp_variable = {
+						var = event_target:gw_initiator.temp_army_size
+						value = num_armies
+					}
+				}
+				all_country = {
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+					add_to_temp_variable = { event_target:gw_initiator.temp_army_size = num_armies }
+				}
+
+				event_target:gw_target = {
+					set_temp_variable = {
+						var = event_target:gw_target.temp_army_size
+						value = num_armies
+					}
+				}
+				all_country = {
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+					add_to_temp_variable = { event_target:gw_target.temp_army_size = num_armies }
+				}
+				# If the Target Site are stronger then the Initiator Site the AI is more likely to support the Initiator to balance things out
+				check_variable = { event_target:gw_initiator.army_size < event_target:gw_target.temp_army_size }
+			}
+
+			#####################
+			### FACTION BONUS ###
+			#####################
+			modifier = {
+				factor = 10 
+				is_in_faction_with = event_target:gw_initiator
+			}
+        }
+		trigger = {
+			NOT = {
+				any_country = {
+					check_variable = { has_added_tension_amount > 50 }
+					PREV = {
+						is_in_faction_with = PREV
+					}
+				}
+			}
 		}
+		set_country_flag = crisis_chosen_side
 		if = {
 			limit = {
 				any_country = {
@@ -43,19 +370,19 @@ country_event = {
 							array = global.top_seven_prestige_array
 							value = THIS
 						}
-						original_tag = PRS
+						check_variable = { has_added_tension_amount > 50 }
 						#check_variable = { has_added_tension_amount > 49 }
 						#threat > 0.5
 					}
 				}
 				add_to_array = { global.gw_target_array = THIS }
-				country_event = fpw_crisis.3 
+				country_event = { id = fpw_crisis.3 } 
 				if = {
 					limit = {
 						is_in_faction = yes
 						is_faction_leader = yes
 					}
-					set_faction_name = "[THIS.GetAdjectiveCap]-Defensive Alliance"
+					set_faction_name = "fpw_crisis_target_faction"
 				}
 				else = {
 					if = {
@@ -64,20 +391,22 @@ country_event = {
 							is_faction_leader = no
 						}
 						leave_faction = yes
-						create_faction = "[THIS.GetAdjectiveCap]-Defensive Alliance"
+						create_faction = "fpw_crisis_target_faction"
 					}
 					else = {
-						create_faction = "[THIS.GetAdjectiveCap]-Defensive Alliance"
+						create_faction = "fpw_crisis_target_faction"
 					}
 				}
 			}
 			add_to_array = { global.gw_initiator_array = THIS }
+			save_global_event_target_as = gw_initiator
+			set_global_flag = fpw_great_war
 			if = {
 				limit = {
 					is_in_faction = yes
 					is_faction_leader = yes
 				}
-				set_faction_name = "Anti-xyx Alliance"
+				set_faction_name = "fpw_crisis_initiator_faction"
 			}
 			else = {
 				if = {
@@ -86,11 +415,40 @@ country_event = {
 						is_faction_leader = no
 					}
 					leave_faction = yes
-					create_faction = "Anti-xyx Alliance"
+					create_faction = "fpw_crisis_initiator_faction"
 				}
 				else = {
-					create_faction = "Anti-xyx Alliance"
+					create_faction = "fpw_crisis_initiator_faction"
 				}
+			}
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = global.top_seven_prestige_array
+						value = THIS
+					}
+					NOT = {
+						# threat > 0.5, thus being the targetted country
+						# not threat, it is has_added_tension_amount variable
+						# in faction with target
+						has_country_flag = fpw_crisis_triggered
+						check_variable = { has_added_tension_amount > 50 }
+					}
+				}		
+				set_country_flag = fpw_crisis_triggered
+				# newspaper flavor event for the ai, i know sounds weird but to inform the player and the ai the newspaper will say something like "xy has started an international crisis against xy and parliaments all over the world are currently
+				# scripted loc for multiplayer, if there is a initiator already the loc will say to join them, player gets immediet event stating what happened cause not bothered complicating this
+                random_country = {
+					limit = {
+						is_in_array = {
+							array = global.gw_target_array
+							value = THIS
+						}
+					}
+					PREV = {
+						country_event = { id = fpw_crisis.1 days = 1 random_days = 3 } 
+					}
+                }
 			}
 		}
 	}
@@ -99,7 +457,336 @@ country_event = {
 	option = {
 		name = fpw_crisis.1.b
 		ai_chance = {
-			base = 25 
+			base = 0
+			###############
+			### OPINION ###
+			###############
+			modifier = {
+				add = 10 
+				has_opinion = {
+					target = event_target:gw_target
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = event_target:gw_target
+					value > 20
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = event_target:gw_target
+					value > 30
+				}
+			}
+
+			###################
+			### FRIENDSHIPS ###
+			###################
+			modifier = {
+				add = 150
+				event_target:gw_target = {
+					OR = {
+						original_tag = FRA
+						original_tag = ENG
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+
+			modifier = {
+				add = 100
+				event_target:gw_target = {
+					OR = {
+						original_tag = PRS
+						original_tag = ITA
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = ITA
+				}
+			}
+
+			modifier = {
+				add = 35
+				event_target:gw_target = {
+					OR = {
+						original_tag = PRS
+						original_tag = SOV
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = SOV
+				}
+			}
+
+			modifier = {
+				add = 35
+				event_target:gw_target = {
+					OR = {
+						original_tag = FRA
+						original_tag = SOV
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = SOV
+				}
+			}
+
+			modifier = {
+				add = -30
+				event_target:gw_target = {
+					OR = {
+						original_tag = AUS
+						original_tag = PRS
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = PRS
+				}
+			}
+			modifier = {
+				add = -30
+				event_target:gw_target = {
+					OR = {
+						original_tag = AUS
+						original_tag = TUR
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = TUR
+				}
+			}
+			modifier = {
+				add = -30
+				event_target:gw_target = {
+					OR = {
+						original_tag = SOV
+						original_tag = TUR
+					}
+				}
+				OR = {
+					original_tag = SOV
+					original_tag = TUR
+				}
+			}
+
+
+			#############################
+			### FRIENDSHIPS (SUPPORT) ###
+			#############################
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						original_tag = FRA
+						original_tag = ENG
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						original_tag = PRS
+						original_tag = ITA
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = ITA
+				}
+			}
+			modifier = {
+				add = 15
+				any_country = {
+					OR = {
+						original_tag = PRS
+						original_tag = SOV
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = PRS
+					original_tag = SOV
+				}
+			}
+			modifier = {
+				add = 15
+				any_country = {
+					OR = {
+						original_tag = FRA
+						original_tag = SOV
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = FRA
+					original_tag = SOV
+				}
+			}
+			modifier = {
+				add = -30
+				any_country = {
+					OR = {
+						original_tag = AUS
+						original_tag = PRS
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = PRS
+				}
+			}
+			modifier = {
+				add = -30
+				any_country = {
+					OR = {
+						original_tag = AUS
+						original_tag = TUR
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = AUS
+					original_tag = TUR
+				}
+			}
+			modifier = {
+				add = -30
+				any_country = {
+					OR = {
+						original_tag = TUR
+						original_tag = SOV
+					}
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+				}
+				OR = {
+					original_tag = TUR
+					original_tag = SOV
+				}
+			}
+
+			##################
+			### FUN FACTOR ###
+			##################
+			# More likely to join target if neighbors arent to create intesting scenario + they could benefit when winning
+			modifier = {
+				any_neighbor_country = {
+					original_tag = event_target:gw_initiator
+				}
+				add = 50
+			}
+			modifier = {
+				any_neighbor_country = {
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+				}
+				add = 35
+			}
+
+			########################
+			### STRATEGIC FACTOR ###
+			########################
+			modifier = {
+				add = 100 
+				event_target:gw_initiator = {
+					set_temp_variable = {
+						var = event_target:gw_initiator.temp_army_size
+						value = num_armies
+					}
+				}
+				all_country = {
+					is_in_array = {
+						array = global.gw_initiator_supporters_array
+						value = THIS
+					}
+					add_to_temp_variable = { event_target:gw_initiator.temp_army_size = num_armies }
+				}
+
+				event_target:gw_target = {
+					set_temp_variable = {
+						var = event_target:gw_target.temp_army_size
+						value = num_armies
+					}
+				}
+				all_country = {
+					is_in_array = {
+						array = global.gw_target_supporters_array
+						value = THIS
+					}
+					add_to_temp_variable = { event_target:gw_target.temp_army_size = num_armies }
+				}
+				# If the Target Site are stronger then the Initiator Site the AI is more likely to support the Initiator to balance things out
+				check_variable = { event_target:gw_initiator.army_size > event_target:gw_target.temp_army_size }
+			}
+
+			#####################
+			### FACTION BONUS ###
+			#####################
+			modifier = {
+				factor = 10 
+				is_in_faction_with = event_target:gw_target
+			}
+			modifier = {
+				factor = 10 
+				has_guaranteed = event_target:gw_target
+			}
+
+			#######################
+			### MONROE DOCTRINE ###
+			#######################
+			modifier = {
+				factor = 10
+				original_tag = USA
+				event_target:gw_target.capital_scope = {
+					OR = {
+						is_on_continent = north_america
+						is_on_continent = south_america
+					}
+				}
+			}
 		}
 		trigger = {
 			# When theres an initiator, theres and target that you can support
@@ -110,6 +797,7 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = crisis_chosen_side
 		add_to_array = { global.gw_target_supporters_array = THIS }
 
 		random_country = {
@@ -127,9 +815,71 @@ country_event = {
 	option = {
 		name = fpw_crisis.1.c
 		ai_chance = {
-			base = 0 
+			base = 0
+			# Monroe doctrine
+			modifier = {
+				add = 500
+				original_tag = USA
+				event_target:gw_target.capital_scope = {
+					NOT = {
+						is_on_continent = north_america
+						is_on_continent = south_america
+					}
+				}
+			}
+        }
+		set_country_flag = crisis_chosen_side
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						is_in_array = {
+							array = global.gw_initiator_array
+							value = THIS
+						}
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_in_array = {
+						array = global.top_seven_prestige_array
+						value = THIS
+					}
+					NOT = {
+						# threat > 0.5, thus being the targetted country
+						# not threat, it is has_added_tension_amount variable
+						# in faction with target
+						has_country_flag = fpw_crisis_triggered
+						check_variable = { has_added_tension_amount > 50 }
+						
+						# Countries in faction with the target wont get the event as they should support the target
+						# Those will not be dragged into the supporter side to not make player have to be in a great war if they arent the target
+						any_country = {
+							# Target
+							# For my future self, we just need to check for the threat as we are already scoped into the array
+							check_variable = { has_added_tension_amount > 50 }
+							PREV = {
+								is_in_faction_with = PREV
+							}
+						}
+					}
+				}
+				set_country_flag = fpw_crisis_triggered
+                random_country = {
+					limit = {
+						check_variable = { has_added_tension_amount > 50 }	
+						is_in_array = {
+							array = global.top_seven_prestige_array
+							value = THIS
+						}
+					}
+					PREV = {
+						country_event = fpw_crisis.1
+					}
+                }
+			}
 		}
-		
 	}
 }
 

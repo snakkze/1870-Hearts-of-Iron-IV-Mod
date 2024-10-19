@@ -1,5 +1,101 @@
 ideas = {
 	country = {
+		fpw_TUR_multi_ethnic_state = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+			modifier = {
+				stability_factor = -0.4
+				conscription = -0.005
+				conscription_factor = -0.15
+				experience_gain_army_factor = -0.1
+			}
+		}
+
+		fpw_TUR_dated_army = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_problems
+
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_morale_factor = -0.3
+				army_org_factor = -0.3
+				breakthrough_factor = -0.15
+				max_planning_factor = -0.1
+				max_planning_factor = -0.5
+			}
+		}
+
+		fpw_TUR_on_going_reform = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+
+			modifier = {
+				experience_gain_army_factor = 0.25
+				land_doctrine_cost_factor = -0.25
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		fpw_TUR_over_sized_navy = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				convoy_escort_efficiency = -0.25
+				convoy_raiding_efficiency_factor = -0.25
+				mines_planting_by_fleets_factor = -0.25
+				mines_sweeping_by_fleets_factor = -0.25
+				naval_accidents_chance = 0.35
+				naval_coordination = -0.5
+				naval_damage_factor = -0.45
+				naval_defense_factor = -0.3
+				naval_detection = -0.15
+				naval_hit_chance = -0.3
+				naval_night_attack = -0.8
+				navy_org_factor = -0.3
+				positioning = -0.25
+				spotting_chance = -0.3
+				industrial_capacity_dockyard = -1.0
+			}
+		}
 }
 	hidden_ideas = {
 	

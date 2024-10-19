@@ -1290,3 +1290,253 @@ fpw_russia_plotting_agains_tsar_cat = {
 }
 
 
+fpw_russia_uprising_cat = {
+	
+	
+	russia_uprising_debug = {
+		fire_only_once = no
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+		}
+		allowed = {
+			
+		}
+		
+		#icon = 
+		
+		complete_effect = {
+			activate_mission = end_poland_uprising
+			activate_mission = end_finland_uprising
+			activate_mission = end_ukraine_uprising
+			activate_mission = end_belarus_uprising
+			activate_mission = end_baltic_uprising
+			activate_mission = end_caucasus_uprising
+			
+		}
+		
+	}
+	
+	
+	end_poland_uprising = {
+		is_good = no
+		available = {
+			#hidden_trigger = { always = no }
+			NOT = { country_exists = POL }
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		activation = {
+			always = no
+		}
+		
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		
+		icon = generic_prepare_civil_war
+		
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			
+		}
+		timeout_effect = {
+			add_stability = -0.10
+			add_war_support = -0.10
+			country_event = russia_fpw.43
+		}
+		
+	}
+	end_finland_uprising = {
+		is_good = no
+		available = {
+			#hidden_trigger = { always = no }
+			NOT = { country_exists = FIN }
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		activation = {
+			always = no
+		}
+		
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		
+		icon = generic_prepare_civil_war
+		
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			
+		}
+		timeout_effect = {
+			add_stability = -0.10
+			add_war_support = -0.10
+			country_event = russia_fpw.44
+		}
+		
+	}
+	end_ukraine_uprising = {
+		is_good = no
+		available = {
+			#hidden_trigger = { always = no }
+			NOT = { country_exists = UKR }
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		activation = {
+			always = no
+		}
+		
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		
+		icon = generic_prepare_civil_war
+		
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			
+		}
+		timeout_effect = {
+			add_stability = -0.10
+			add_war_support = -0.10
+			country_event = russia_fpw.45
+		}
+		
+	}
+	end_belarus_uprising = {
+		is_good = no
+		available = {
+			#hidden_trigger = { always = no }
+			NOT = { country_exists = BLR }
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		activation = {
+			always = no
+		}
+		
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		
+		icon = generic_prepare_civil_war
+		
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			
+		}
+		timeout_effect = {
+			add_stability = -0.10
+			add_war_support = -0.10
+			country_event = russia_fpw.46
+		}
+		
+	}
+	end_baltic_uprising = {
+		is_good = no
+		available = {
+			#hidden_trigger = { always = no }
+			NOT = { country_exists = LIT }
+			NOT = { country_exists = LAT }
+			NOT = { country_exists = EST }
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		activation = {
+			always = no
+		}
+		
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		
+		icon = generic_prepare_civil_war
+		
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			
+		}
+		timeout_effect = {
+			add_stability = -0.10
+			add_war_support = -0.10
+			country_event = russia_fpw.47
+		}
+		
+	}
+	end_caucasus_uprising = {
+		is_good = no
+		available = {
+			#hidden_trigger = { always = no }
+			NOT = { country_exists = GEO }
+			NOT = { country_exists = ARM }
+			NOT = { country_exists = AZR }
+		}
+		visible = {
+			
+		}
+		allowed = {
+			
+		}
+		activation = {
+			always = no
+		}
+		
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		
+		icon = generic_prepare_civil_war
+		
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			
+		}
+		timeout_effect = {
+			add_stability = -0.10
+			add_war_support = -0.10
+			country_event = russia_fpw.48
+		}
+		
+	}
+	
+	
+	
+	
+}
+

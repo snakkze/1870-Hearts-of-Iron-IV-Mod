@@ -1612,7 +1612,6 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = PRS_greater_german_solution
 			}
-			is_debug = yes
 		}
 
 		x = 4
@@ -1658,7 +1657,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+				set_faction_name = fpw_league_of_three_emeperors
+			} else = { create_faction = fpw_league_of_three_emeperors }
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = SOV
+						original_tag = AUS 
+					}
+				}
+				country_event = {
+					id = fpw_generic.2
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -1709,7 +1726,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+				set_faction_name = fpw_central_powers
+			} else = { create_faction = fpw_central_powers }
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = ITA
+						original_tag = AUS 
+					}
+				}
+				country_event = {
+					id = fpw_generic.2
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -1723,7 +1758,6 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = PRS_greater_german_solution
 			}
-			is_debug = yes
 		}
 
 		x = -4
@@ -2357,19 +2391,20 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				is_ally_with = ENG
-				is_guaranteed_by = ENG
-				NOT = {
-					country_exists = ENG
-				}
-			}
+			is_ally_with = ENG
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+				set_faction_name = fpw_british_prussian
+			} else = { create_faction = fpw_british_prussian }
 			ENG = { 
 				country_event = {
-					id = prussia_fpw.21
+					id = fpw_generic.2
 					days = 1
 				}
 			}
@@ -2394,19 +2429,20 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				is_ally_with = ITA
-				is_guaranteed_by = ITA
-				NOT = {
-					country_exists = ITA
-				}
-			}
+			is_ally_with = ITA
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+				set_faction_name = fpw_italo_prussian
+			} else = { create_faction = fpw_italo_prussian }
 			ITA = { 
 				country_event = {
-					id = prussia_fpw.21
+					id = fpw_generic.2
 					days = 1
 				}
 			}

@@ -1519,7 +1519,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 5
-		icon = g
+		icon = GFX_aus_cisleitania_politics
 
 		ai_will_do = {
 			factor = 10
@@ -1550,7 +1550,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		icon = g
+		icon = GFX_aus_auersperg
 
 		ai_will_do = {
 			factor = 10
@@ -1581,7 +1581,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		icon = g
+		icon = GFX_aus_bohemian_army
 
 		ai_will_do = {
 			factor = 10
@@ -2833,7 +2833,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		cost = 5
-		icon = g
+		icon = GFX_aus_transleitania_politics
 
 		ai_will_do = {
 			factor = 10
