@@ -39,4 +39,24 @@ spriteTypes = {
 		name = "GFX_aus_bohemian_army"
 		texturefile = "gfx/interface/goals/aus_bohemian_army.dds"
 	}
+	spriteType = {
+		name = "GFX_austria_vs_serbia"
+		texturefile = "gfx/interface/goals/austria_vs_serbia.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_occupy_bosnia"
+		texturefile = "gfx/interface/goals/AUS_occupy_bosnia.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_woman_patriot"
+		texturefile = "gfx/interface/goals/aus_woman.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_west_balkan"
+		texturefile = "gfx/interface/goals/west_balkan_focus.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_east_balkan"
+		texturefile = "gfx/interface/goals/east_balkan_focus.png"
+	}
 }

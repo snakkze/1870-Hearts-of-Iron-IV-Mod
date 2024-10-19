@@ -3,7 +3,7 @@ spriteTypes = {
 
 
 	SpriteType = {
-		name = "GFX_allow_for_a_compromise"
+		name = "GFX_allow_for_a_compromise_shine"
 		texturefile = "gfx/interface/goals/allow_for_a_compromise.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -34,7 +34,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_hungarian_constitution"
+		name = "GFX_hungarian_constitution_shine"
 		texturefile = "gfx/interface/goals/hungarian_constitution.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -65,7 +65,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_hungarian_crisis"
+		name = "GFX_hungarian_crisis_shine"
 		texturefile = "gfx/interface/goals/hungarian_crisis.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -96,7 +96,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_ratify_ausgleich"
+		name = "GFX_ratify_ausgleich_shine"
 		texturefile = "gfx/interface/goals/ratify_ausgleich.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -127,7 +127,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_seperate_taxations"
+		name = "GFX_seperate_taxations_shine"
 		texturefile = "gfx/interface/goals/seperate_taxations.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -158,7 +158,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_aus_cisleitania_politics"
+		name = "GFX_aus_cisleitania_politics_shine"
 		texturefile = "gfx/interface/goals/aus_cisleitania_politics.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -189,7 +189,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_aus_transleitania_politics"
+		name = "GFX_aus_transleitania_politics_shine"
 		texturefile = "gfx/interface/goals/aus_transleitania_politics.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -220,7 +220,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_aus_auersperg"
+		name = "GFX_aus_auersperg_shine"
 		texturefile = "gfx/interface/goals/aus_auersperg.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -251,7 +251,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_aus_bohemian_army"
+		name = "GFX_aus_bohemian_army_shine"
 		texturefile = "gfx/interface/goals/aus_bohemian_army.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -269,6 +269,161 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/aus_bohemian_army.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_AUS_west_balkan_shine"
+		texturefile = "gfx/interface/goals/west_balkan_focus.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/west_balkan_focus.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/west_balkan_focus.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_AUS_east_balkan_shine"
+		texturefile = "gfx/interface/goals/east_balkan_focus.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/east_balkan_focus.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/east_balkan_focus.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_AUS_woman_patriot_shine"
+		texturefile = "gfx/interface/goals/aus_woman.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/aus_woman.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/aus_woman.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_AUS_occupy_bosnia_shine"
+		texturefile = "gfx/interface/goals/AUS_occupy_bosnia.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUS_occupy_bosnia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUS_occupy_bosnia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_austria_vs_serbia_shine"
+		texturefile = "gfx/interface/goals/austria_vs_serbia.png"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/austria_vs_serbia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/austria_vs_serbia.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
