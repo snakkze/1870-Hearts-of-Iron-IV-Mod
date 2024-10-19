@@ -40,6 +40,68 @@ ideas = {
 				army_attack_factor = -0.25
 			}
 		}
+
+		fpw_AUS_divided_military2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = divided_military
+
+			modifier = {
+				army_org_regain = -0.1
+				army_morale_factor = -0.2
+				army_attack_factor = -0.15
+			}
+		}
+
+		fpw_AUS_divided_military3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = divided_military
+
+			modifier = {
+				recruitable_population_factor = -0.1
+				army_org_regain = -0.2
+				army_morale_factor = -0.2
+				army_attack_factor = -0.25
+			}
+		}
+
+		fpw_AUS_divided_military4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = divided_military
+
+			modifier = {
+				recruitable_population_factor = -0.1
+				army_org_regain = -0.1
+				army_morale_factor = -0.1
+				army_attack_factor = -0.1
+			}
+		}
 	
 		fpw_AUS_diverse_military = {
 			allowed = {
@@ -452,7 +514,7 @@ ideas = {
 			}
 		}
 
-	    fpw_AUS_rising_working_class = {
+	    fpw_AUS_bloated_military_budget = {
 			allowed = {
 				always = no
 			}
@@ -463,11 +525,31 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = FIN_finnish_federation_of_trade_unions
+			picture = MEX_callistas
 
 			modifier = {
-				stability_factor = -0.1
-				communism_drift = 0.02
+				consumer_goods_factor = 0.1
+				experience_gain_army = 0.15
+				experience_gain_navy = 0.15
+			}
+		}
+
+	    fpw_AUS_kuk_kriegsschule = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				experience_gain_army = 0.05
+				army_leader_start_level = 2
 			}
 		}
 

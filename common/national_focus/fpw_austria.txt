@@ -3766,7 +3766,7 @@ focus_tree = {
 		id = AUS_found_g_roth_ag
 		relative_position_id = AUS_grunderzeit 
 		prerequisite = { focus = AUS_grunderzeit }
-		prerequisite = { focus = AUS_increase_mil_capability }
+		prerequisite = { focus = AUS_increase_mil_spending }
 		x = 2
 		y = 1
 		cost = 5
@@ -4059,11 +4059,12 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			remove_ideas = {
-			    idea = fpw_AUS_stagnant_economy2
-			}
+			remove_ideas = fpw_AUS_stagnant_economy2
 			hidden_effect = {
-	            add_ideas = fpw_AUS_rising_working_class
+			    add_popularity = {
+                    ideology = communism
+                    popularity = 0.2
+				}
             }
 		}
 	}
@@ -4099,127 +4100,14 @@ focus_tree = {
 		}
 	}
 
-	## Fort Tree
-
-	focus = {
-		id = AUS_develop_defen_structures
-		relative_position_id = AUS_grunderzeit 
-		prerequisite = { focus = AUS_increase_mil_capability focus = AUS_grunderzeit }
-		x = 5
-		y = 1
-		cost = 5
-		icon = g
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			add_timed_idea = {
-			    idea = AUS_defensive_structures
-			    days = 365
-			}
-		}
-	}
-
-	focus = {
-		id = AUS_erecting_new_strongholds
-		relative_position_id = AUS_develop_defen_structures
-		prerequisite = { focus = AUS_develop_defen_structures }
-		x = 0
-		y = 1
-		cost = 5
-		icon = gGFX_goal_generic_construct_military
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			103 = {
-				add_building_construction = {
-						type = bunker
-						level = 4
-						province = 6889
-						instant_build = yes
-				}
-			}
-			163 = {
-				add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3943
-						instant_build = yes
-				}
-			}
-			764 = {
-				add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3614
-						instant_build = yes
-				}
-			}
-			84 = {
-				add_building_construction = {
-						type = bunker
-						level = 4
-						province = 690
-						instant_build = yes
-				}
-			}
-			91 = {
-				add_building_construction = {
-						type = bunker
-						level = 4
-						province = 11479
-						instant_build = yes
-				}
-			}
-			88 = {
-				add_building_construction = {
-						type = bunker
-						level = 4
-						province = 9427
-						instant_build = yes
-				}
-			}
-		}
-	}
-
 	## Military Tree
 
 	focus = {
-		id = AUS_increase_mil_capability
-		x = 46
+		id = AUS_increase_mil_spending
+		x = 44
 		y = 0
 		cost = 5
+		icon = GFX_focus_mex_privatisation
 
 		ai_will_do = {
 			factor = 10
@@ -4239,16 +4127,16 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			army_experience = 5
-			navy_experience = 5
+			add_timed_idea = { idea = fpw_AUS_bloated_military_budget  days = 720 }
 		}
 	}
 
 	focus = {
 		id = AUS_archduke_albrecht 
-		relative_position_id = AUS_increase_mil_capability
-		prerequisite = { focus = AUS_increase_mil_capability }
-		x = 0
+		relative_position_id = AUS_increase_mil_spending
+		prerequisite = { focus = AUS_increase_mil_spending }
+		mutually_exclusive = { focus = AUS_friedrich_beck }
+		x = 2.5
 		y = 1
 		cost = 5
 		icon = gGFX_focus_generic_military_dictatorship
@@ -4281,13 +4169,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_military_infastructure 
+		id = AUS_conservative_reforms
 		relative_position_id = AUS_archduke_albrecht 
 		prerequisite = { focus = AUS_archduke_albrecht }
 		x = 0
 		y = 1
-		cost = 5
-		icon = g
+		cost = 10
+		icon = GFX_focus_generic_treaty
 
 
 		ai_will_do = {
@@ -4308,28 +4196,15 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			84 = {
-				add_building_construction = {
-				    type = supply_node
-				    level = 1
-				    instant_build = yes
-				    province = 690
-				}
+			swap_ideas = {
+			    remove_idea = fpw_AUS_divided_military
+			    add_idea = fpw_AUS_divided_military2
 			}
-			random_owned_controlled_state = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-			}
-			random_owned_controlled_state = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-			}
+			add_stability = 0.025
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
 		}
 	}
 
@@ -4373,13 +4248,78 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_improve_officer_corps
+		id = AUS_kuk_kriegsschule
 		relative_position_id = AUS_archduke_albrecht 
-		prerequisite = { focus = AUS_archduke_albrecht }
+		prerequisite = { focus = AUS_archduke_albrecht focus = AUS_friedrich_beck}
 		x = -2
 		y = 1
 		cost = 5
-		icon = gGFX_focus_generic_military_academy
+		icon = GFX_focus_generic_military_academy
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = fpw_AUS_kuk_kriegsschule
+		}
+	}
+
+	focus = {
+		id = AUS_short_service_conscription
+		relative_position_id = AUS_conservative_reforms
+		prerequisite = { focus = AUS_kuk_kriegsschule }
+		prerequisite = { focus = AUS_reform_general_staff }
+		prerequisite = { focus = AUS_conservative_reforms  }
+		x = 0
+		y = 1
+		cost = 5
+		icon = g
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = AUS_short_service_conscription
+		}
+	}
+
+	focus = {
+		id = AUS_friedrich_beck
+		relative_position_id = AUS_increase_mil_spending
+		prerequisite = { focus = AUS_increase_mil_spending }
+		mutually_exclusive = { focus = AUS_archduke_albrecht }
+		x = -2.5
+		y = 1
+		cost = 5
+		icon = gGFX_focus_generic_military_dictatorship
 
 		ai_will_do = {
 			factor = 10
@@ -4409,22 +4349,21 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_short_service_conscription
-		relative_position_id = AUS_military_infastructure 
-		prerequisite = { focus = AUS_improve_officer_corps }
-		prerequisite = { focus = AUS_reform_general_staff }
-		prerequisite = { focus = AUS_military_infastructure  }
+		id = AUS_radical_reforms
+		relative_position_id = AUS_friedrich_beck
+		prerequisite = { focus = AUS_friedrich_beck }
 		x = 0
 		y = 1
-		cost = 5
-		icon = g
-		
+		cost = 10
+		icon = GFX_goal_generic_forceful_treaty
+
+
 		ai_will_do = {
 			factor = 10
 		}
 
 		available = {
-
+        has_army_experience > 100
 		}
 		
 		bypass = {
@@ -4437,15 +4376,20 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			add_ideas = AUS_short_service_conscription
+			swap_ideas = {
+			    remove_idea = fpw_AUS_divided_military
+			    add_idea = fpw_AUS_divided_military4
+			}
+			add_political_power = -50
+			army_experience = -100
 		}
 	}
 
 	focus = {
 		id = AUS_dev_of_small_arms
-		relative_position_id = AUS_increase_mil_capability
-		prerequisite = { focus = AUS_increase_mil_capability }
-		x = 4
+		relative_position_id = AUS_increase_mil_spending
+		prerequisite = { focus = AUS_increase_mil_spending }
+		x = 10
 		y = 1
 		cost = 5
 		icon = g
@@ -4550,8 +4494,8 @@ focus_tree = {
 
 	focus = {
 		id = AUS_expand_aus_navy
-		relative_position_id = AUS_increase_mil_capability
-		prerequisite = { focus = AUS_increase_mil_capability }
+		relative_position_id = AUS_increase_mil_spending
+		prerequisite = { focus = AUS_increase_mil_spending }
 		x = 7
 		y = 1
 		cost = 5
