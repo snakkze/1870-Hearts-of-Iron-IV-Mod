@@ -2,28 +2,19 @@ state={
 	id=907
 	name="STATE_907"
 	manpower = 3356530
-	state_category=town
+	state_category=large_city
 
 	history={
-		owner = TUR
+		owner = EGY
+		add_core_of = EGY
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			
-
+			industrial_complex = 4
+			arms_factory = 2
 		}
 		victory_points = {
-			7011 20 
+			7985 20 
 		}
-		
-		victory_points = {
-			3996 5 
-		}
-		
-		victory_points = {
-			1068 3 
-		}
-		add_core_of = EGY
 
 	}
 	provinces={

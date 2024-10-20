@@ -4,7 +4,7 @@ state={
 	name="STATE_271"
 
 	history={
-		owner = TUR
+		owner = HAR
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
@@ -17,13 +17,7 @@ state={
 		victory_points = {
 			8036 1 
 		}
-		add_core_of = ETH
-		add_core_of = ORO
-		1936.6.1 = {
-			owner = ITA
-			controller = ITA
-
-		}
+		add_core_of = HAR
 
 	}
 

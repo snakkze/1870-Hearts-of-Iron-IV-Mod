@@ -92,7 +92,12 @@ if = {
 		target = ROM
 		autonomous_state = autonomy_puppet
 	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_puppet
+	}
 	else = {
+		puppet = EGY
 		puppet = SER
 		puppet = ROM
 	}
