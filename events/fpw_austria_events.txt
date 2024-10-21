@@ -561,6 +561,567 @@ country_event = {
 			}
 	}
 }
+country_event = {
+	id = fpw_austria.8
+	title = "West of the Leitha River"
+	desc = fpw_austria.8.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Ok"
+	}
+}
+country_event = {
+	id = fpw_austria.9
+	title = "East of the Leitha River"
+	desc = fpw_austria.9.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Ok"
+	}
+}
+country_event = {
+	id = fpw_austria.10
+	title = "Andrassy's Speech on Neutrality"
+	desc = fpw_austria.10.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Never another 1867!"
+	}
+}
+country_event = {
+	id = fpw_austria.11
+	title = "Beust's Motion to Intervene!"
+	desc = fpw_austria.11.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Declare War Quick, we must utilize the Element of Surprise!"
+		declare_war_on = {
+            target = PRS
+            type = topple_government
+        }
+	}
+	option = {
+		name = "Demand them disunite!"
+		PRS = { country_event = britain_fpw.5 }
+	}
+}
+country_event = {
+	id = fpw_austria.12
+	title = "Another Humiliation"
+	desc = fpw_austria.12.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Bruh"
+		add_war_support = -0.2
+	}
+}
+country_event = {
+	id = fpw_austria.13
+	title = "Mending Ties with Italy"
+	desc = fpw_austria.13.d
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Make a Small Effort to Secure their Allegiance."
+		add_opinion_modifier = {
+			target = ITA
+			modifier = medium_increase
+		}
+	}
+	option = {
+		name = "Make a Large Effort to Secure their Allegiance."
+		add_opinion_modifier = {
+			target = ITA
+			modifier = medium_increase
+		}
+		give_guarantee = ITA
+		ITA = { give_guarantee = AUS }
+		add_political_power = -100
+	}
+}
+country_event = {
+	id = fpw_austria.14
+	title = "Russian Interest in the Balkans?"
+	desc = fpw_austria.14.d
+	picture = GFX_report_event_gre_balkan_pact
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "A New Challenger Approaches..."
+		add_opinion_modifier = {
+			target = SOV
+			modifier = small_decrease
+		}
+	}
+}
+country_event = {
+	id = fpw_austria.15
+	title = "Our Place in German Politics"
+	desc = fpw_austria.15.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Austria will be the Leader of the Germans once again!"
+	}
+}
+country_event = {
+	id = fpw_austria.16
+	title = "fpw_austria.16.t"
+	desc = fpw_austria.16.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = "Puppet Silesia, give Schlesiwig to Denmark for an alliance."
+		create_faction = german_confederation
+		#restoration
+		BAV = {
+			all_core_state = {
+				transfer_state_to = BAV
+			}
+			load_oob = "BAV_1866"
+		}
+		WRT = {
+			all_core_state = {
+				transfer_state_to = WRT
+			}
+			load_oob = "WRT_1866"
+		}
+		SXY = {
+			all_core_state = {
+				transfer_state_to = SXY
+			}
+			load_oob = "SXY_1866"
+		}
+		HNV = {
+			all_core_state = {
+				transfer_state_to = HNV
+			}
+			load_oob = "HNV_1866"
+		}
+		HES = {
+			all_core_state = {
+				transfer_state_to = HES
+			}
+			load_oob = "HES_1866"
+		}
+		BAD = {
+			all_core_state = {
+				transfer_state_to = BAD
+			}
+			load_oob = "BAD_1866"
+		}
+		FRK = {
+			all_core_state = {
+				transfer_state_to = FRK
+			}
+		}
+		#silesia and austria
+		67 = { transfer_state_to = SIL }
+		762 = { transfer_state_to = SIL }
+		947 = { transfer_state_to = AUS }
+		58 = { transfer_state_to = AUS }
+		puppet = SIL
+		#rhine
+		42 = { transfer_state_to = FRA }
+		51 = { transfer_state_to = FRA }
+		1009 = { transfer_state_to = FRA }
+		981 = { transfer_state_to = FRA }
+		939 = { transfer_state_to = BAV }
+		#saxony
+		937 = { transfer_state_to = SXY add_core_of = SXY }
+		954 = { transfer_state_to = SXY add_core_of = SXY }
+		955 = { transfer_state_to = SXY add_core_of = SXY }
+		60 = { transfer_state_to = SXY add_core_of = SXY }
+		953 = { transfer_state_to = SXY add_core_of = SXY }
+		#hesse
+		941 = { transfer_state_to = HES add_core_of = HES }
+		942 = { transfer_state_to = HES add_core_of = HES }
+		57 = { transfer_state_to = HES add_core_of = HES }
+		951 = { transfer_state_to = HES add_core_of = HES }
+		943 = { transfer_state_to = HES add_core_of = HES }
+		#hannover
+		948 = { transfer_state_to = HNV add_core_of = HNV }
+		944 = { transfer_state_to = HNV add_core_of = HNV }
+		950 = { transfer_state_to = HNV add_core_of = HNV }
+		945 = { transfer_state_to = HNV add_core_of = HNV }
+		946 = { transfer_state_to = HNV add_core_of = HNV }
+		#denmark
+		912 = { transfer_state_to = DEN add_core_of = DEN }
+		909 = { transfer_state_to = DEN add_core_of = DEN }
+		DEN = {
+			remove_ideas = lost_schleswig
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = BAV
+					tag = WRT
+					tag = BAD
+					tag = HES
+					tag = HNV
+					tag = DEN
+					tag = SXY
+					tag = FRK
+				}
+			}
+			AUS = { add_to_faction = PREV }
+		}
+		release_puppet = PRS
+	}
+	option = {
+		name = "Annex Silesia, annex Schlesiwig"
+		create_faction = german_confederation
+		#restoration
+		BAV = {
+			all_core_state = {
+				transfer_state_to = BAV
+			}
+			load_oob = "BAV_1866"
+		}
+		WRT = {
+			all_core_state = {
+				transfer_state_to = WRT
+			}
+			load_oob = "WRT_1866"
+		}
+		SXY = {
+			all_core_state = {
+				transfer_state_to = SXY
+			}
+			load_oob = "SXY_1866"
+		}
+		HNV = {
+			all_core_state = {
+				transfer_state_to = HNV
+			}
+			load_oob = "HNV_1866"
+		}
+		HES = {
+			all_core_state = {
+				transfer_state_to = HES
+			}
+			load_oob = "HES_1866"
+		}
+		BAD = {
+			all_core_state = {
+				transfer_state_to = BAD
+			}
+			load_oob = "BAD_1866"
+		}
+		FRK = {
+			all_core_state = {
+				transfer_state_to = FRK
+			}
+		}
+		#silesia and austria
+		67 = { transfer_state_to = AUS }
+		762 = { transfer_state_to = AUS }
+		947 = { transfer_state_to = AUS }
+		58 = { transfer_state_to = AUS }
+		#rhine
+		42 = { transfer_state_to = FRA }
+		51 = { transfer_state_to = FRA }
+		1009 = { transfer_state_to = FRA }
+		981 = { transfer_state_to = FRA }
+		939 = { transfer_state_to = BAV }
+		#saxony
+		937 = { transfer_state_to = SXY add_core_of = SXY }
+		954 = { transfer_state_to = SXY add_core_of = SXY }
+		955 = { transfer_state_to = SXY add_core_of = SXY }
+		60 = { transfer_state_to = SXY add_core_of = SXY }
+		953 = { transfer_state_to = SXY add_core_of = SXY }
+		#hesse
+		941 = { transfer_state_to = HES add_core_of = HES }
+		942 = { transfer_state_to = HES add_core_of = HES }
+		57 = { transfer_state_to = HES add_core_of = HES }
+		951 = { transfer_state_to = HES add_core_of = HES }
+		943 = { transfer_state_to = HES add_core_of = HES }
+		#hannover
+		948 = { transfer_state_to = HNV add_core_of = HNV }
+		944 = { transfer_state_to = HNV add_core_of = HNV }
+		950 = { transfer_state_to = HNV add_core_of = HNV }
+		945 = { transfer_state_to = HNV add_core_of = HNV }
+		946 = { transfer_state_to = HNV add_core_of = HNV }
+		#denmark
+		912 = { transfer_state_to = AUS }
+		909 = { transfer_state_to = AUS }
+		every_country = {
+			limit = {
+				OR = {
+					tag = BAV
+					tag = WRT
+					tag = BAD
+					tag = HES
+					tag = HNV
+					tag = DEN
+					tag = SXY
+					tag = FRK
+				}
+			}
+			AUS = { add_to_faction = PREV }
+		}
+		release_puppet = PRS
+	}
+	option = {
+		name = "Create a South German Confederation, Annex Schlesiwig"
+		create_faction = german_confederation
+		#restoration
+		BAV = {
+			all_core_state = {
+				transfer_state_to = BAV
+			}
+			load_oob = "BAV_1866"
+			set_cosmetic_tag = BAV_SGC
+			952 = { transfer_state_to = BAV }
+		}
+		WRT = {
+			all_core_state = {
+				transfer_state_to = WRT
+			}
+			load_oob = "WRT_1866"
+		}
+		SXY = {
+			all_core_state = {
+				transfer_state_to = SXY
+			}
+			load_oob = "SXY_1866"
+		}
+		HNV = {
+			all_core_state = {
+				transfer_state_to = HNV
+			}
+			load_oob = "HNV_1866"
+		}
+		HES = {
+			all_core_state = {
+				transfer_state_to = HES
+			}
+			load_oob = "HES_1866"
+		}
+		BAD = {
+			all_core_state = {
+				transfer_state_to = BAD
+			}
+			load_oob = "BAD_1866"
+		}
+		FRK = {
+			all_core_state = {
+				transfer_state_to = FRK
+			}
+		}
+		BAV = {
+			annex_country = {
+				target = WRT
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = BAD
+				transfer_troops = yes
+			}
+		}
+		#silesia and austria
+		947 = { transfer_state_to = AUS }
+		58 = { transfer_state_to = AUS }
+		#rhine
+		42 = { transfer_state_to = FRA }
+		51 = { transfer_state_to = FRA }
+		1009 = { transfer_state_to = FRA }
+		981 = { transfer_state_to = FRA }
+		939 = { transfer_state_to = BAV }
+		#saxony
+		937 = { transfer_state_to = SXY add_core_of = SXY }
+		954 = { transfer_state_to = SXY add_core_of = SXY }
+		955 = { transfer_state_to = SXY add_core_of = SXY }
+		60 = { transfer_state_to = SXY add_core_of = SXY }
+		953 = { transfer_state_to = SXY add_core_of = SXY }
+		#hesse
+		941 = { transfer_state_to = HES add_core_of = HES }
+		942 = { transfer_state_to = HES add_core_of = HES }
+		57 = { transfer_state_to = HES add_core_of = HES }
+		951 = { transfer_state_to = HES add_core_of = HES }
+		943 = { transfer_state_to = HES add_core_of = HES }
+		#hannover
+		948 = { transfer_state_to = HNV add_core_of = HNV }
+		944 = { transfer_state_to = HNV add_core_of = HNV }
+		950 = { transfer_state_to = HNV add_core_of = HNV }
+		945 = { transfer_state_to = HNV add_core_of = HNV }
+		946 = { transfer_state_to = HNV add_core_of = HNV }
+		#denmark
+		912 = { transfer_state_to = AUS }
+		909 = { transfer_state_to = AUS }
+		every_country = {
+			limit = {
+				OR = {
+					tag = BAV
+					tag = WRT
+					tag = BAD
+					tag = HES
+					tag = HNV
+					tag = DEN
+					tag = SXY
+					tag = FRK
+				}
+			}
+			AUS = { add_to_faction = PREV }
+		}
+		release_puppet = PRS
+	}
+	option = {
+		name = "Puppet Silesia, Create a South German Confederation."
+		create_faction = german_confederation
+		#restoration
+		BAV = {
+			all_core_state = {
+				transfer_state_to = BAV
+			}
+			load_oob = "BAV_1866"
+			set_cosmetic_tag = BAV_SGC
+			952 = { transfer_state_to = BAV }
+		}
+		WRT = {
+			all_core_state = {
+				transfer_state_to = WRT
+			}
+			load_oob = "WRT_1866"
+		}
+		SXY = {
+			all_core_state = {
+				transfer_state_to = SXY
+			}
+			load_oob = "SXY_1866"
+		}
+		HNV = {
+			all_core_state = {
+				transfer_state_to = HNV
+			}
+			load_oob = "HNV_1866"
+		}
+		HES = {
+			all_core_state = {
+				transfer_state_to = HES
+			}
+			load_oob = "HES_1866"
+		}
+		BAD = {
+			all_core_state = {
+				transfer_state_to = BAD
+			}
+			load_oob = "BAD_1866"
+		}
+		FRK = {
+			all_core_state = {
+				transfer_state_to = FRK
+			}
+		}
+		BAV = {
+			annex_country = {
+				target = WRT
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = BAD
+				transfer_troops = yes
+			}
+		}
+		#silesia and austria
+		67 = { transfer_state_to = SIL }
+		762 = { transfer_state_to = SIL }
+		947 = { transfer_state_to = AUS }
+		58 = { transfer_state_to = AUS }
+		puppet = SIL
+		#rhine
+		42 = { transfer_state_to = FRA }
+		51 = { transfer_state_to = FRA }
+		1009 = { transfer_state_to = FRA }
+		981 = { transfer_state_to = FRA }
+		939 = { transfer_state_to = BAV }
+		#saxony
+		937 = { transfer_state_to = SXY add_core_of = SXY }
+		954 = { transfer_state_to = SXY add_core_of = SXY }
+		955 = { transfer_state_to = SXY add_core_of = SXY }
+		60 = { transfer_state_to = SXY add_core_of = SXY }
+		953 = { transfer_state_to = SXY add_core_of = SXY }
+		#hesse
+		941 = { transfer_state_to = HES add_core_of = HES }
+		942 = { transfer_state_to = HES add_core_of = HES }
+		57 = { transfer_state_to = HES add_core_of = HES }
+		951 = { transfer_state_to = HES add_core_of = HES }
+		943 = { transfer_state_to = HES add_core_of = HES }
+		#hannover
+		948 = { transfer_state_to = HNV add_core_of = HNV }
+		944 = { transfer_state_to = HNV add_core_of = HNV }
+		950 = { transfer_state_to = HNV add_core_of = HNV }
+		945 = { transfer_state_to = HNV add_core_of = HNV }
+		946 = { transfer_state_to = HNV add_core_of = HNV }
+		every_country = {
+			limit = {
+				OR = {
+					tag = BAV
+					tag = WRT
+					tag = BAD
+					tag = HES
+					tag = HNV
+					tag = SXY
+					tag = FRK
+				}
+			}
+			AUS = { add_to_faction = PREV }
+		}
+		release_puppet = PRS
+	}
+}
 
 
 
