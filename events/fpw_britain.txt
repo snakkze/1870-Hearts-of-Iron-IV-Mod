@@ -2,38 +2,29 @@ add_namespace = britain_fpw
 
 country_event = {
 	id = britain_fpw.1
-	title = "Parliamentary Reform Proposal"
+	title = "Lord Russell's government collapses"
 	desc = britain_fpw.1.d
+	picture = GFX_fpw_russell_resigns
 	
 	is_triggered_only = yes
 
 	option = {
-		name = "Russel Loses"
+		name = "The Conservatives will take over from here."
 		ai_chance = {
 			base = 50
-			modifier = {
-				add = 50
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				add = 25
-				is_historical_focus_on = no
-			}
 		}
-		custom_effect_tooltip = historical_choice_tt
-		news_event = { days = 8 id = news_fpw.8 }
-	}
-
-	option = {
-		name = "Russel Wins"
-		ai_chance = {
-			base = 0 
-			modifier = {
-				add = 25
-				is_historical_focus_on = no
-			}
+		add_stability = -0.05
+		complete_national_focus = ENG_collapse_of_liberal_government
+		retire_country_leader = ENG_john_russell
+		hidden_effect = {
+		    recruit_character = ENG_william_gladstone
 		}
-		complete_national_focus = ENG_russel_stays
+		promote_character = ENG_william_gladstone
+		set_politics = {
+            ruling_party = democratic
+            election_frequency = 48
+            elections_allowed = yes
+        }
 	}
 }
 country_event = {

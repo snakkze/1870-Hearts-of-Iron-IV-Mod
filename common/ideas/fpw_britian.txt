@@ -441,6 +441,25 @@ ideas = {
 				monthly_population = -0.05
             }
 		}
+		fpw_eng_widespread_malnutrition2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = raj_risk_of_famine
+
+			modifier = {
+				army_attack_factor = -0.025
+				army_morale_factor = -0.05
+				monthly_population = -0.05
+            }
+		}
 		fpw_eng_blocked_legislation = {
 			allowed = {
 				always = yes

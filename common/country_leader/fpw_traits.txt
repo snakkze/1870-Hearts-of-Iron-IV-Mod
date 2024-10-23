@@ -304,6 +304,16 @@ leader_traits = {
 	 war_support_factor = -0.1
 	 political_power_factor = 0.1
   }
+	fpw_liberal_critic = {
+		random = no
+		research_speed_factor = 0.075
+		fascism_drift = 0.02
+		political_power_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	
 }

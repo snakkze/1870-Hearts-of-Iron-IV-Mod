@@ -21,6 +21,15 @@ add_dynamic_modifier = {
 add_dynamic_modifier = { 
 	modifier = fpw_ENG_sun_never_sets 
 }
+add_dynamic_modifier = { 
+	modifier = fpw_eng_workshop_of_the_world
+}
+set_variable = { ENG_min_export = 0.2 }
+set_variable = { ENG_consumer_goods_factor = -0.15 }
+set_variable = { ENG_industrial_capacity_factory = 0.05 }
+set_variable = { ENG_industrial_capacity_dockyard = 0.05 }
+set_variable = { ENG_production_speed_buildings_factor = 0.1 }
+set_variable = { ENG_local_resources_factor = 0 }
 
 add_ideas = {
 	fpw_victoria
@@ -28,9 +37,6 @@ add_ideas = {
 	fpw_eng_blocked_legislation
 	fpw_eng_widespread_malnutrition
 }
-
-
-
 
 
 
@@ -188,6 +194,7 @@ recruit_character = ENG_victoria
 recruit_character = ENG_karl_marx
 recruit_character = ENG_john_russell
 recruit_character = ENG_edward_smith-stanley
+recruit_character = ENG_matthew_arnold
 
 if = {
 	limit = {

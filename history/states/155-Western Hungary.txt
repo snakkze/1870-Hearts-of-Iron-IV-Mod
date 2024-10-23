@@ -1,35 +1,33 @@
 
 state={
 	id=155
-	name="STATE_155" # Transdanubia
-	manpower = 1142755
-	
-	state_category = city
+	name="STATE_155"
 	resources={
+		oil=1.000
+		aluminium=60.000
+		wood=6.000
+	}
 
-		oil = 1 # was: 1
-		aluminium=60 # moved from Northern Hungary
-	
-
-wood=6
-}
 	history={
 		owner = AUS
 		victory_points = {
 			11610 5 
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			arms_factory = 1
+
 		}
 		add_core_of = HUN
 		add_core_of = AUS
+
 	}
 
 	provinces={
-		682 686 701 3670 3680 3683 6685 6703 6720 9624 9643 9676 11610 11627 11663 13125 
+		682 686 701 3670 3680 3683 3700 6672 6685 6703 6720 9624 9643 9676 11610 11627 11663 13125 
 	}
-
-	local_supplies=0.0 
+	manpower=1142755
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }
-

@@ -29,24 +29,14 @@
  
  ENG_the_empire_is_booming:0 "The Empire is Booming"
  
- ENG_british_economy:0 "The British Economy"
- ENG_collapse_of_gurney_and_co:0 "Collapse of Gurney and Company"
- ENG_earl_of_derby:0 "Earl of Derby"
- ENG_earl_russel:0 "Earl Russel"
- 
- ENG_the_motherland_in_danger:0 "The Homeland Under Siege"
- ENG_wartime_conscription:0 "Wartime Conscription"
- ENG_war_propaganda:0 "War Propoganda"
- ENG_food_rationing:0 "Food Rationing"
- ENG_develop_new_guns:0 "Develop New Weapons"
- ENG_activate_emergency_reserves:0 "Activate Emergency Reserves"
- ENG_encourage_the_people_to_rise_up:0 "Encourage the People to Rise Up"
- ENG_fortify_the_cornwall_coast:0 "Fortify the Cornwall Coast"
- 
- ENG_found_raes:0 "Found Royal Aeronautical Society"
- ENG_parliamentary_reform_proposal:0 "Parliamentary Reform Proposal"
- ENG_british_patriotism:0 "British Patriotism"
-
+ ENG_industrial_sector:0 "Industrial Sector"
+ ENG_industrial_sector_desc:0 "The British economy has boomed for decades as a result of being the birthplace of the Industrial Revolution. Expanding the industrial sector will enhance our performance and strengthen our position as the sole global hegemon."
+ ENG_increase_resource_output:0 "Increase Resource Output"
+ ENG_increase_resource_output_desc:0 "Though the most significant part of our economy, factories alone cannot foster economic growth. Mines will assist in this effort, and provide a good income for local families which are in need of occupation."
+ ENG_mine_tungsten_in_plymouth:0 "Mine Tungsten in Plymouth"
+ ENG_mine_tungsten_in_plymouth_desc:0 "Discoveries of Tungsten deposits within south-western England have come to light, giving us the opportunity to take full advantage of the situation and extract the much needed resource."
+ ENG_acquire_the_technology:0 "Acquire the Technology"
+ ENG_acquire_the_technology_desc:0 "Innovation in Britain has skyrocketed throughout the 19th century, and such commitment must be followed up on including how we extract our resources. Only the finest and up-to-date technology will do."
 
 #decisions
  
@@ -70,14 +60,27 @@
  fpw_eng_royal_aeronautical_society:0 "Royal Aeronautical Society"
  fpw_eng_volunteer_rush:0 "Volunteer Rush"
  fpw_eng_volunteer_rush_desc:0 "As a new conflict arises, young loyalists have rushed to volunteer for the military, creating a boom in manpower as the initial stage of war kicks off."
- 
- 
+ fpw_eng_splendid_isolation:0 "Splendid Isolation"
+ fpw_eng_splendid_isolation_desc:0 "With such a vast empire, consolidation is a necessity for Britannia to maintain her hegemony. Thus, the policy of isolation was adopted which would see Britain distance herself from European affairs, focusing on colonial and economic matters internationally."
+ fpw_eng_widespread_malnutrition:0 "Widespread Malnutrition"
+ fpw_eng_widespread_malnutrition_desc:0 "Malnutrition has become an issue amongst the general population since the industrial revolution, impacting both social and military aspects. Should this remain unresolved, the public will suffer and our army will continue to consist of physically unfit conscripts."
+ fpw_eng_widespread_malnutrition2:0 "Widespread Malnutrition"
+  fpw_eng_widespread_malnutrition2_desc:0 "Malnutrition has become an issue amongst the general population since the industrial revolution, impacting both social and military aspects. Should this remain unresolved, the public will suffer and our army will continue to consist of physically unfit conscripts."
+ fpw_eng_blocked_legislation:0 "Blocked Legislation"
+ fpw_eng_blocked_legislation_desc:0 "The House of Lords, one of the three components of Parliament, has been at odds with the House of Commons throughout the 19th Century- blocking proposals and generally being a nuisance throughout the legislative process, tampering with our ability to pass reforms and create new laws."
+ fpw_eng_workshop_of_the_world:0 "Workshop of the World"
+ fpw_eng_workshop_of_the_world_desc:0 "Britain has long enjoyed control over international trade, largely caused by our mass production and exportation of goods. This has fostered economic growth across our nation and will continue to benefit us in the years to come."
+ ENG_matthew_arnold:0 "Matthew Arnold"
+
 #events
- news_fpw.7.d:0 "Reports have come from London that the bank of Gurney and Company has collapsed, causing economic freefall in England. Experts predict this collapse will not last for longer than a year, but if Britain fails to respond appropriately, it could last for much longer. Countries that rely on the British Empire watch closely, as they know their nation's economy could be at risk."
+ britain_fpw.1.d:0 "After extreme frustration with his party, John Russell has decided to resign from his post as Prime Minister. This has lead to the collapse of the Liberal government, and has created a power vacuum which must be filled to ensure stability. "
  
  
+#traits 
+ fpw_liberal_critic:0 "Liberal Critic"
+
 #custom cost texts 
- 
+ ENG_local_resources:0 "Modify §YWorkshop of the World § §Wby\nResource Gain Efficiency:§  §G+20.00%§W"
  
 #custom effect tooltips
  
@@ -94,6 +97,7 @@
  
 
 #leaders
+ ENG_william_gladstone:0 "William Ewart Gladstone"
 
 #opinion modifiers
 

@@ -244,6 +244,10 @@ spriteTypes = {
 		name = "GFX_idea_victor_of_crimean_war"
 		texturefile = "gfx/interface/ideas/idea_winner_of_crimea_war.png"
 	}
+	SpriteType = {
+		name = "GFX_idea_ENG_matthew_arnold"
+		texturefile = "gfx/interface/ideas/ENG/idea_ENG_matthew_arnold.png"
+	}
 	
 	
 }

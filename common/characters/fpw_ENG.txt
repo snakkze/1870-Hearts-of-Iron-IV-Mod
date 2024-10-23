@@ -57,6 +57,20 @@ characters={
 		}
 	}
 
+	ENG_william_gladstone={
+		name=ENG_william_gladstone
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_william_gladstone
+			}
+		}
+		country_leader={
+			ideology=liberal_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
 	ENG_benjamin_disraeli={
 		name=ENG_benjamin_disraeli
 		portraits={
@@ -64,5 +78,30 @@ characters={
 				large=GFX_portrait_ENG_benjamin_disraeli
 			}
 		}
+	}
+	ENG_matthew_arnold = { 
+		name = ENG_matthew_arnold
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_matthew_arnold"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = matthew_arnold
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_support_social_critics
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_liberal_critic
+			}
+		}	
+		
 	}
 }

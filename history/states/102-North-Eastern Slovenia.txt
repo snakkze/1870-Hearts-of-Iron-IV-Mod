@@ -1,31 +1,30 @@
-state=
-{
-resources={
-wood=1
-}
 
+state={
 	id=102
 	name="STATE_102"
-	manpower = 421746 # was 1144300 before Ljubljana split
-	
-	state_category = large_town
-	
-	history =
-	{
+	resources={
+		wood=1.000
+	}
+
+	history={
 		owner = AUS
-add_core_of = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			665 1
+			665 1 
 		}
 		add_core_of = SLV
-	}
-	provinces={
-		596 665 3631 3654 6672 9596
-	}
-	
-	local_supplies=0.0 
-}
 
+	}
+
+	provinces={
+		596 665 3631 3654 9596 
+	}
+	manpower=421746
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
