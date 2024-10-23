@@ -59,4 +59,12 @@ spriteTypes = {
 		name = "GFX_AUS_east_balkan"
 		texturefile = "gfx/interface/goals/east_balkan_focus.png"
 	}
+	spriteType = {
+		name = "GFX_AUS_influence_germany"
+		texturefile = "gfx/interface/goals/aus_influence_germany.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_promise_macedonia"
+		texturefile = "gfx/interface/goals/aus_macedonia_serbia.png"
+	}
 }

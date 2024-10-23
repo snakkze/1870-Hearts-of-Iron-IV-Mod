@@ -9,11 +9,9 @@ guiTypes = {
 	### bookmark entry
 	containerWindowType = {
 		name = "bookmark_entry"
-		position = { x= 0 y = 0 }
-		size = { width=232 height=211}
+		position = { x = 0 y =0 }
+		size = { width=232 height=211 }
 		clipping = no
-		fade_time = 500
-		fade_type = linear
 
 		background = {
 			name = "background"
@@ -24,14 +22,14 @@ guiTypes = {
 		iconType = {
 			name = "icon"
 			spriteType = "GFX_select_date_1936"
-			position = { x = 27 y = 28 }
+			position = { x = -173 y = -13 }
 			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
 			name = "date"
-			position = { x = 22 y = 147 }
-			font = "hoi_20b"
+			position = { x = -200 y = 190 }
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "FE_BOOKMARK_DATE"
 			maxWidth = 185
@@ -39,6 +37,7 @@ guiTypes = {
 			fixedsize = yes
 			format = centre
 		}
+
 	}
 
 	containerWindowType = {

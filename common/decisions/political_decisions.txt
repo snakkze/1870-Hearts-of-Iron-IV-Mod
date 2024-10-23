@@ -2552,4 +2552,37 @@ political_actions = {
 			}
 		}
 	}
+	AUS_form_iron_triangle = {
+
+		icon = GFX_decision_generic_decision
+
+		available = {
+			OR = {
+				has_completed_focus = AUS_consolidate_our_losses
+				has_completed_focus = AUS_secure_danish_interests
+			}
+		}
+
+		visible = {
+			original_tag = AUS
+			has_cosmetic_tag = AUS_austria_hungary
+			NOT = {
+				has_completed_focus = AUS_support_andrassy
+			}
+		}
+		
+		cost = 100
+		
+		complete_effect = {
+			create_faction = iron_triangle
+			AUS = {
+				add_to_faction = FRA
+				add_to_faction = DEN
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

@@ -9,6 +9,9 @@ characters={
 		}
 		country_leader={
 			ideology=socialist_semi_constitutional_monarchism
+			traits = {
+			    fpw_par_proud
+			}
 			expire="1956.01.01.01"
 			id=-1
 		}
