@@ -10,8 +10,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = fpw_austria.1.a
 		complete_national_focus = AUS_allow_for_a_compromise
@@ -32,7 +30,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
 	trigger = {
 		has_completed_focus = AUS_restore_the_hungarian_constitution
 	}
@@ -74,8 +71,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = fpw_austria.3.a
 		custom_effect_tooltip = austria_3a_desc
@@ -107,10 +102,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-	trigger = {
-		has_completed_focus = AUS_seperate_taxation
-	}
 	option = {
 		name = fpw_austria.4.a
 		custom_effect_tooltip = austria_4a_desc
@@ -134,7 +125,7 @@ country_event = {
 	immediate = {
 		country_event = {
 			id = fpw_austria.5
-			days = 15
+			days = 7
 		}
 	}
 }
@@ -148,8 +139,6 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
-
-	major = yes
 
 	option = {
 		name = fpw_austria.5.a
@@ -195,8 +184,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = fpw_austria.6.a
 		activate_mission = ratifying_the_augsleich
@@ -213,352 +200,349 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = fpw_austria.7.a
-			if = {
-			
-				#natural borders debuff
-				limit = {
-					has_country_flag = AUS_natural_borders
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 1}
-					}
-					70 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					71 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					73 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					109 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}					
-					664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 2}
-					}
-					70 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					71 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					73 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					109 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}					
-					664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 3}
-					}
-					70 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					71 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					73 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					109 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}					
-					664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 4}
-					}
-					70 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					71 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					73 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					109 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}					
-					664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}
-				}
+		if = {
+		
+			#natural borders debuff
+			limit = {
+				has_country_flag = AUS_natural_borders
 			}
-			
-			#Transylvania only
 			if = {
 				limit = {
-					has_country_flag = AUS_transylvania
+					check_variable = { state_debuff_level = 1}
 				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 1}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}
+				70 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				71 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				73 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				109 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}					
+				664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
 				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 2}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 3}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 4}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}664 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}76 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}84 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}83 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}82 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}45 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}
-				}
-
 			}
-			
-			#vanilla only
-			if  {
+			if = {
 				limit = {
-					has_country_flag = AUS_vanilla_hungary
+					check_variable = { state_debuff_level = 2}
 				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 1}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 2}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 3}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { state_debuff_level = 4}
-					}
-					155 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}43 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}154 = {
-						add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
-					}
+				70 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				71 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				73 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				109 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}					
+				664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
 				}
 			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 3}
+				}
+				70 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				71 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				73 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				109 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}					
+				664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 4}
+				}
+				70 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				71 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				73 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				109 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}					
+				664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}
+			}
+		}
+		
+		#Transylvania only
+		if = {
+			limit = {
+				has_country_flag = AUS_transylvania
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 1}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 2}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 3}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 4}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}664 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}76 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}84 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}83 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}82 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}45 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}
+			}
+		}
+		
+		#vanilla only
+		if  {
+			limit = {
+				has_country_flag = AUS_vanilla_hungary
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 1}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state1 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 2}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state2 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 3}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state3 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { state_debuff_level = 4}
+				}
+				155 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}43 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}154 = {
+					add_dynamic_modifier = { modifier = fpw_AUS_autonomous_state4 }
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -570,7 +554,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
 
 	option = {
 		name = "Ok"
@@ -585,7 +568,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
 
 	option = {
 		name = "Ok"
@@ -600,8 +582,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = "Never another 1867!"
 	}
@@ -614,8 +594,6 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once=yes
-
-	major = yes
 
 	option = {
 		name = "Declare War Quick, we must utilize the Element of Surprise!"
@@ -638,8 +616,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = "Bruh"
 		add_war_support = -0.2
@@ -653,8 +629,6 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once=yes
-
-	major = yes
 
 	option = {
 		name = "Make a Small Effort to Secure their Allegiance."
@@ -684,8 +658,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = "A New Challenger Approaches..."
 		add_opinion_modifier = {
@@ -704,8 +676,6 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
 		name = "Austria will be the Leader of the Germans once again!"
 	}
@@ -720,406 +690,31 @@ country_event = {
 
 	fire_only_once=yes
 
-	major = yes
-
 	option = {
-		name = "Puppet Silesia, give Schlesiwig to Denmark for an alliance."
+		name = "Puppet Silesia and give Schlesiwig to Denmark in hope for an Alliance."
+
 		create_faction = german_confederation
-		#restoration
-		BAV = {
-			all_core_state = {
-				transfer_state_to = BAV
-			}
-			load_oob = "BAV_1866"
-		}
-		WRT = {
-			all_core_state = {
-				transfer_state_to = WRT
-			}
-			load_oob = "WRT_1866"
-		}
-		SXY = {
-			all_core_state = {
-				transfer_state_to = SXY
-			}
-			load_oob = "SXY_1866"
-		}
-		HNV = {
-			all_core_state = {
-				transfer_state_to = HNV
-			}
-			load_oob = "HNV_1866"
-		}
-		HES = {
-			all_core_state = {
-				transfer_state_to = HES
-			}
-			load_oob = "HES_1866"
-		}
-		BAD = {
-			all_core_state = {
-				transfer_state_to = BAD
-			}
-			load_oob = "BAD_1866"
-		}
-		FRK = {
-			all_core_state = {
-				transfer_state_to = FRK
-			}
-		}
-		#silesia and austria
+		#silesia
 		67 = { transfer_state_to = SIL }
 		762 = { transfer_state_to = SIL }
-		947 = { transfer_state_to = AUS }
-		58 = { transfer_state_to = AUS }
 		puppet = SIL
-		#rhine
-		42 = { transfer_state_to = FRA }
-		51 = { transfer_state_to = FRA }
-		1009 = { transfer_state_to = FRA }
-		981 = { transfer_state_to = FRA }
-		939 = { transfer_state_to = BAV }
-		#saxony
-		937 = { transfer_state_to = SXY add_core_of = SXY }
-		954 = { transfer_state_to = SXY add_core_of = SXY }
-		955 = { transfer_state_to = SXY add_core_of = SXY }
-		60 = { transfer_state_to = SXY add_core_of = SXY }
-		953 = { transfer_state_to = SXY add_core_of = SXY }
-		#hesse
-		941 = { transfer_state_to = HES add_core_of = HES }
-		942 = { transfer_state_to = HES add_core_of = HES }
-		57 = { transfer_state_to = HES add_core_of = HES }
-		951 = { transfer_state_to = HES add_core_of = HES }
-		943 = { transfer_state_to = HES add_core_of = HES }
-		#hannover
-		948 = { transfer_state_to = HNV add_core_of = HNV }
-		944 = { transfer_state_to = HNV add_core_of = HNV }
-		950 = { transfer_state_to = HNV add_core_of = HNV }
-		945 = { transfer_state_to = HNV add_core_of = HNV }
-		946 = { transfer_state_to = HNV add_core_of = HNV }
 		#denmark
 		912 = { transfer_state_to = DEN add_core_of = DEN }
+		58 = { transfer_state_to = DEN add_core_of = DEN }
 		909 = { transfer_state_to = DEN add_core_of = DEN }
 		DEN = {
 			remove_ideas = lost_schleswig
 		}
-		every_country = {
-			limit = {
-				OR = {
-					tag = BAV
-					tag = WRT
-					tag = BAD
-					tag = HES
-					tag = HNV
-					tag = DEN
-					tag = SXY
-					tag = FRK
-				}
-			}
-			AUS = { add_to_faction = PREV }
-		}
-		release_puppet = PRS
 	}
 	option = {
-		name = "Annex Silesia, annex Schlesiwig"
+		name = "Annex Silesia and annex Schlesiwig"
 		create_faction = german_confederation
-		#restoration
-		BAV = {
-			all_core_state = {
-				transfer_state_to = BAV
-			}
-			load_oob = "BAV_1866"
-		}
-		WRT = {
-			all_core_state = {
-				transfer_state_to = WRT
-			}
-			load_oob = "WRT_1866"
-		}
-		SXY = {
-			all_core_state = {
-				transfer_state_to = SXY
-			}
-			load_oob = "SXY_1866"
-		}
-		HNV = {
-			all_core_state = {
-				transfer_state_to = HNV
-			}
-			load_oob = "HNV_1866"
-		}
-		HES = {
-			all_core_state = {
-				transfer_state_to = HES
-			}
-			load_oob = "HES_1866"
-		}
-		BAD = {
-			all_core_state = {
-				transfer_state_to = BAD
-			}
-			load_oob = "BAD_1866"
-		}
-		FRK = {
-			all_core_state = {
-				transfer_state_to = FRK
-			}
-		}
 		#silesia and austria
-		67 = { transfer_state_to = AUS }
-		762 = { transfer_state_to = AUS }
-		947 = { transfer_state_to = AUS }
-		58 = { transfer_state_to = AUS }
-		#rhine
-		42 = { transfer_state_to = FRA }
-		51 = { transfer_state_to = FRA }
-		1009 = { transfer_state_to = FRA }
-		981 = { transfer_state_to = FRA }
-		939 = { transfer_state_to = BAV }
-		#saxony
-		937 = { transfer_state_to = SXY add_core_of = SXY }
-		954 = { transfer_state_to = SXY add_core_of = SXY }
-		955 = { transfer_state_to = SXY add_core_of = SXY }
-		60 = { transfer_state_to = SXY add_core_of = SXY }
-		953 = { transfer_state_to = SXY add_core_of = SXY }
-		#hesse
-		941 = { transfer_state_to = HES add_core_of = HES }
-		942 = { transfer_state_to = HES add_core_of = HES }
-		57 = { transfer_state_to = HES add_core_of = HES }
-		951 = { transfer_state_to = HES add_core_of = HES }
-		943 = { transfer_state_to = HES add_core_of = HES }
-		#hannover
-		948 = { transfer_state_to = HNV add_core_of = HNV }
-		944 = { transfer_state_to = HNV add_core_of = HNV }
-		950 = { transfer_state_to = HNV add_core_of = HNV }
-		945 = { transfer_state_to = HNV add_core_of = HNV }
-		946 = { transfer_state_to = HNV add_core_of = HNV }
-		#denmark
+		67 = { transfer_state_to = AUS add_core_of = AUS }
+		762 = { transfer_state_to = AUS add_core_of = AUS }
 		912 = { transfer_state_to = AUS }
 		909 = { transfer_state_to = AUS }
-		every_country = {
-			limit = {
-				OR = {
-					tag = BAV
-					tag = WRT
-					tag = BAD
-					tag = HES
-					tag = HNV
-					tag = DEN
-					tag = SXY
-					tag = FRK
-				}
-			}
-			AUS = { add_to_faction = PREV }
-		}
-		release_puppet = PRS
-	}
-	option = {
-		name = "Create a South German Confederation, Annex Schlesiwig"
-		create_faction = german_confederation
-		#restoration
-		BAV = {
-			all_core_state = {
-				transfer_state_to = BAV
-			}
-			load_oob = "BAV_1866"
-			set_cosmetic_tag = BAV_SGC
-			952 = { transfer_state_to = BAV }
-		}
-		WRT = {
-			all_core_state = {
-				transfer_state_to = WRT
-			}
-			load_oob = "WRT_1866"
-		}
-		SXY = {
-			all_core_state = {
-				transfer_state_to = SXY
-			}
-			load_oob = "SXY_1866"
-		}
-		HNV = {
-			all_core_state = {
-				transfer_state_to = HNV
-			}
-			load_oob = "HNV_1866"
-		}
-		HES = {
-			all_core_state = {
-				transfer_state_to = HES
-			}
-			load_oob = "HES_1866"
-		}
-		BAD = {
-			all_core_state = {
-				transfer_state_to = BAD
-			}
-			load_oob = "BAD_1866"
-		}
-		FRK = {
-			all_core_state = {
-				transfer_state_to = FRK
-			}
-		}
-		BAV = {
-			annex_country = {
-				target = WRT
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = BAD
-				transfer_troops = yes
-			}
-		}
-		#silesia and austria
-		947 = { transfer_state_to = AUS }
 		58 = { transfer_state_to = AUS }
-		#rhine
-		42 = { transfer_state_to = FRA }
-		51 = { transfer_state_to = FRA }
-		1009 = { transfer_state_to = FRA }
-		981 = { transfer_state_to = FRA }
-		939 = { transfer_state_to = BAV }
-		#saxony
-		937 = { transfer_state_to = SXY add_core_of = SXY }
-		954 = { transfer_state_to = SXY add_core_of = SXY }
-		955 = { transfer_state_to = SXY add_core_of = SXY }
-		60 = { transfer_state_to = SXY add_core_of = SXY }
-		953 = { transfer_state_to = SXY add_core_of = SXY }
-		#hesse
-		941 = { transfer_state_to = HES add_core_of = HES }
-		942 = { transfer_state_to = HES add_core_of = HES }
-		57 = { transfer_state_to = HES add_core_of = HES }
-		951 = { transfer_state_to = HES add_core_of = HES }
-		943 = { transfer_state_to = HES add_core_of = HES }
-		#hannover
-		948 = { transfer_state_to = HNV add_core_of = HNV }
-		944 = { transfer_state_to = HNV add_core_of = HNV }
-		950 = { transfer_state_to = HNV add_core_of = HNV }
-		945 = { transfer_state_to = HNV add_core_of = HNV }
-		946 = { transfer_state_to = HNV add_core_of = HNV }
-		#denmark
-		912 = { transfer_state_to = AUS }
-		909 = { transfer_state_to = AUS }
-		every_country = {
-			limit = {
-				OR = {
-					tag = BAV
-					tag = WRT
-					tag = BAD
-					tag = HES
-					tag = HNV
-					tag = DEN
-					tag = SXY
-					tag = FRK
-				}
-			}
-			AUS = { add_to_faction = PREV }
-		}
-		release_puppet = PRS
-	}
-	option = {
-		name = "Puppet Silesia, Create a South German Confederation."
-		create_faction = german_confederation
-		#restoration
-		BAV = {
-			all_core_state = {
-				transfer_state_to = BAV
-			}
-			load_oob = "BAV_1866"
-			set_cosmetic_tag = BAV_SGC
-			952 = { transfer_state_to = BAV }
-		}
-		WRT = {
-			all_core_state = {
-				transfer_state_to = WRT
-			}
-			load_oob = "WRT_1866"
-		}
-		SXY = {
-			all_core_state = {
-				transfer_state_to = SXY
-			}
-			load_oob = "SXY_1866"
-		}
-		HNV = {
-			all_core_state = {
-				transfer_state_to = HNV
-			}
-			load_oob = "HNV_1866"
-		}
-		HES = {
-			all_core_state = {
-				transfer_state_to = HES
-			}
-			load_oob = "HES_1866"
-		}
-		BAD = {
-			all_core_state = {
-				transfer_state_to = BAD
-			}
-			load_oob = "BAD_1866"
-		}
-		FRK = {
-			all_core_state = {
-				transfer_state_to = FRK
-			}
-		}
-		BAV = {
-			annex_country = {
-				target = WRT
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = BAD
-				transfer_troops = yes
-			}
-		}
-		#silesia and austria
-		67 = { transfer_state_to = SIL }
-		762 = { transfer_state_to = SIL }
-		947 = { transfer_state_to = AUS }
-		58 = { transfer_state_to = AUS }
-		puppet = SIL
-		#rhine
-		42 = { transfer_state_to = FRA }
-		51 = { transfer_state_to = FRA }
-		1009 = { transfer_state_to = FRA }
-		981 = { transfer_state_to = FRA }
-		939 = { transfer_state_to = BAV }
-		#saxony
-		937 = { transfer_state_to = SXY add_core_of = SXY }
-		954 = { transfer_state_to = SXY add_core_of = SXY }
-		955 = { transfer_state_to = SXY add_core_of = SXY }
-		60 = { transfer_state_to = SXY add_core_of = SXY }
-		953 = { transfer_state_to = SXY add_core_of = SXY }
-		#hesse
-		941 = { transfer_state_to = HES add_core_of = HES }
-		942 = { transfer_state_to = HES add_core_of = HES }
-		57 = { transfer_state_to = HES add_core_of = HES }
-		951 = { transfer_state_to = HES add_core_of = HES }
-		943 = { transfer_state_to = HES add_core_of = HES }
-		#hannover
-		948 = { transfer_state_to = HNV add_core_of = HNV }
-		944 = { transfer_state_to = HNV add_core_of = HNV }
-		950 = { transfer_state_to = HNV add_core_of = HNV }
-		945 = { transfer_state_to = HNV add_core_of = HNV }
-		946 = { transfer_state_to = HNV add_core_of = HNV }
-		every_country = {
-			limit = {
-				OR = {
-					tag = BAV
-					tag = WRT
-					tag = BAD
-					tag = HES
-					tag = HNV
-					tag = SXY
-					tag = FRK
-				}
-			}
-			AUS = { add_to_faction = PREV }
-		}
-		release_puppet = PRS
 	}
 }
 

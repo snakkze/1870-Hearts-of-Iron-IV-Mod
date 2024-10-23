@@ -1806,6 +1806,11 @@
 				tooltip = fpw_prussia_lost_apw_tt
 				has_global_flag = fpw_prussia_lost_apw
 			}
+			hidden_trigger = {
+				PRS = {
+					has_completed_focus = PRS_greater_german_solution
+				}
+			}
 		}
 
 		completion_reward = {

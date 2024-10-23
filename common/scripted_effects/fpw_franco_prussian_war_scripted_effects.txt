@@ -25,12 +25,35 @@ prussian_surrender_2 = {
 			modifier = fpw_FRA_loser_of_1871
 		}
 	}	
+	if = {
+		limit = {
+			AUS = {
+				is_in_faction_with = FRA
+			}
+		}
+		AUS = {
+			set_country_flag = AUS_won_fpw
+			complete_national_focus = AUS_integration_of_silesia
+		}
+	}
+	NRW = {
+		981 = {
+			transfer_state_to = NRW
+			add_core_of = NRW
+		}
+		57 = {
+			transfer_state_to = NRW
+			add_core_of = NRW
+		}
+	}
 	FRA = {
 		dismantle_faction = yes
 		clr_country_flag = franco_prussian_war
 		add_dynamic_modifier = { 
 			modifier = fpw_PRS_heil_dir_im_siegerkranz
 		}
+
+		puppet = NRW
 
 		936 = {
 			transfer_state_to = FRA
@@ -141,7 +164,19 @@ france_surrender = {
 			modifier = fpw_PRS_heil_dir_im_siegerkranz
 		}
 	
-	}	
+	}
+	
+	if = {
+		limit = {
+			AUS = {
+				is_in_faction_with = FRA
+			}
+		}
+		AUS = {
+			set_country_flag = AUS_lost_fpw
+		}
+	}
+
 	FRA = {
 		dismantle_faction = yes
 		clr_country_flag = franco_prussian_war

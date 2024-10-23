@@ -1350,7 +1350,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = fpw_austria.4
-			    days = 20
 			}
 		}
 	}
@@ -1523,7 +1522,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_political_power = 50
 			army_experience = 25
 		}
 	}
@@ -1557,9 +1555,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = fpw_austria.8
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
 			}
 		}
 	}
@@ -1915,21 +1910,21 @@ focus_tree = {
 		}
 
 		available = {
-			or = {
-			PRS = { 
-				has_war_with = FRA
-			}
-			date > 1871.01.28
-			}
+			has_global_flag = fpw_franco_prussian_war_flag
 		}
 		
 		bypass = {
-			date > 1871.01.28
+			custom_trigger_tooltip = {
+				tooltip = fpw_prussia_lost_apw_tt
+				has_global_flag = fpw_prussia_lost_apw
+			}
+			hidden_trigger = {
+				PRS = {
+					has_completed_focus = PRS_greater_german_solution
+				}
+			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -1955,6 +1950,10 @@ focus_tree = {
 		available = {
 	
 		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 		
 		bypass = {
 
@@ -1968,7 +1967,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = AUS_andrassy_speach_on_neutrality
-			    days = 5
 			}
 			custom_effect_tooltip = good_relations_german_tt
 		}
@@ -1988,7 +1986,6 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1870.01.01
 		}
 		
 		bypass = {
@@ -2019,7 +2016,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = AUS_sarajevo_and_belgrade
 		}
 		
 		bypass = {
@@ -2033,8 +2029,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-			    id = AUS_moving_in_the_west
-			    days = 5
+			    id = AUS_moving_in_the_west # 100 pp and balkan nations (except ottomans) will gain -25 opinion to the austrians
 			}
 			add_opinion_modifier = {
 			    target = SER
@@ -2047,7 +2042,7 @@ focus_tree = {
 		id = AUS_sponsor_herzegovinian_uprising
 		relative_position_id = AUS_moving_in_the_west
 		prerequisite = { focus = AUS_moving_in_the_west }
-		x = -1s
+		x = -1
 		y = 1
 		cost = 5
 		icon = GFX_goal_generic_military_deal
@@ -2057,7 +2052,6 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1874.01.01
 		}
 		
 		bypass = {
@@ -2070,7 +2064,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			activate_decision = herzegovinian_uprising
+			# bosnia will be independent after a short "war" agaisnt the ottomans (make it scripted)
 		}
 	}
 
@@ -2088,15 +2082,10 @@ focus_tree = {
 		}
 
 		available = {
-			country_exists = ROM
-			ROM = {
-				is_subject = no
-			}
-			country_exists = SER
-			SER = {
-				is_subject = no
-			}
 			country_exists = BOS
+			BOS = {
+				is_subject = no
+			}
 		}
 		
 		bypass = {
@@ -2109,10 +2098,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			AUS = {
-				puppet = BOS
-				end_wars = yes
-			}
+			# declare war on bosnia (independent)
 		}
 	}
 
@@ -2130,16 +2116,12 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1881.01.01
 		}
 		
 		bypass = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {  }
 
 		completion_reward = {
@@ -2174,11 +2156,11 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			country_event = {
-			    id = AUS_meeting_in_belgrade
-			    days = 5
+			SER = {
+				country_event = {
+					id = AUS_meeting_in_belgrade # Serbia gets event about austrian guarantee
+				}
 			}
-			add_political_power = 50
 			AUS = {
 				give_guarantee = SER
 			}
@@ -2212,11 +2194,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			106 = { add_claim_by = SER }
-			reverse_add_opinion_modifier = {
-			    target = SER
-			    modifier = AUS_mod_promise_macedonia ## +15 opinion serbia
-			}
+			# country event to serbia, if accepted they get core on macedonia and relations improve by 25
 		}
 	}
 
@@ -2290,10 +2268,9 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			AUS = {
-				puppet = SER
-				end_wars = yes
-			}
+			# Event to ottomand // host austro-serbian convention
+			# Ottoman will get text like austria offers us xy to get serbia (offmap factories)
+			# if accepted get serbia as puppet
 		}
 	}
 
@@ -2345,7 +2322,7 @@ focus_tree = {
 		}
 
 		available = {
-	
+			has_idea = AUS_romanian_allegance
 		}
 		
 		bypass = {
@@ -2358,11 +2335,10 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			country_event = {
-			    id = AUS_meeting_in_bucharest
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
+			ROM = {
+				country_event = {
+					id = AUS_meeting_in_bucharest # Austrian kaiser has invited us to vienna talking about there hopes of a friendship between them and us
+				}
 			}
 			swap_ideas = {
 			    remove_idea = AUS_romanian_contraversy
@@ -2398,42 +2374,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			add_political_power = 50
+			# romanian event austria guarantees us
 			give_guarantee = ROM
-		}
-	}
-
-	focus = {
-		id = AUS_but_to_secure_ally
-		relative_position_id = AUS_not_just_secure_neutrality
-		prerequisite = { focus = AUS_not_just_secure_neutrality }
-		x = 0
-		y = 1
-		cost = 10
-		icon = GFX_goal_generic_alliance
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-			is_in_faction = yes
-			ROM = { is_subject = no }
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			ROM = {
-				country_event = generic.5
-			}
 		}
 	}
 
@@ -2465,10 +2407,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-			    id = AUS_our_place_in_german_politics
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
+			    id = AUS_our_place_in_german_politics # Entering the Germanic Sphere once again // 100pp
 			}
 		}
 	}
@@ -2525,62 +2464,15 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			# bypass if prussia did this focus in their tree (otherway around too)
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {  }
 
 		completion_reward = {
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = ITA
-					modifier = medium_increase
-				}
-			}
-			country_event = {
-			    id = fpw_austria.13
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
-			}
-		}
-	}
-
-	focus = {
-		id = AUS_clashes_with_russia
-		relative_position_id =  AUS_reapproachment_with_italy
-		prerequisite = { focus =  AUS_reapproachment_with_italy }
-		x = 0
-		y = 1
-		cost = 5
-		icon = GFX_focus_attack_russia
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-	
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			country_event = {
-			    id = fpw_austria.14
-			    days = 7
-			    random_hours = 12
-			    random_days = 5
+			add_opinion_modifier = {
+				target = ITA
+				modifier = medium_increase
 			}
 		}
 	}
@@ -2600,25 +2492,18 @@ focus_tree = {
 		}
 
 		available = {
-	
+			has_global_flag = fpw_franco_prussian_war_flag
 		}
 		
 		bypass = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		# non historical
 		search_filters = {  }
 
 		completion_reward = {
-			country_event = {
-			    id = fpw_austria.11
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
-			}
+			# Event to france asking about if austria can join on behalf of there side, if accepted join the fpw (i did the peace deal, austria gets silesia if in war)
 			custom_effect_tooltip = war_with_germany_tt
 		}
 	}
@@ -2638,11 +2523,11 @@ focus_tree = {
 		}
 
 		available = {
-	
+			has_country_flag = AUS_lost_fpw
 		}
 		
 		bypass = {
-
+			has_country_flag = AUS_won_fpw
 		}
 
 		cancel_if_invalid = yes
@@ -2691,6 +2576,7 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = AUS_form_iron_triangle
+			# This needs to be done, is a decision to invite Denmark and France to austrian faction "Iron Triangle"
 		}
 	}
 
@@ -2721,17 +2607,9 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			declare_war_on = {
-                target = PRS
-                type = take_state_focus
-				generator = { 762 67 66 }
-            }
-			country_event = {
-			    id = AUS_second_german_bruderkreig
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
-			}
+			# Every nation in faction with austria + austria itself will declare war on germany
+			# set global flag apw_2 and remove when that war is won (look at other scripted peace deals in austro_prussian_war_scripted_effects and the trigger events to know how)
+			# Depending on result, either get country flag won_apw_2 or lost_apw_2
 		}
 	}
 
@@ -2750,11 +2628,11 @@ focus_tree = {
 		}
 
 		available = {
-	
+			has_country_flag = AUS_won_fpw
 		}
 		
 		bypass = {
-
+			has_country_flag = AUS_lost_fpw
 		}
 
 		cancel_if_invalid = yes
@@ -2765,9 +2643,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = fpw_austria.16
-			    days = 1
-			    random_hours = 12
-			    random_days = 5
 			}
 		}
 	}
@@ -2833,6 +2708,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
+			# This needs to be done, is a decision to invite Denmark and France to austrian faction "Iron Triangle"
 			unlock_decision_tooltip = AUS_form_iron_triangle
 			reverse_add_opinion_modifier = {
 				target = DEN
@@ -2859,11 +2735,14 @@ focus_tree = {
 		}
 
 		available = {
-	
+			OR = {
+				has_country_flag = won_apw_2
+				has_country_flag = AUS_won_fpw
+			}
 		}
 		
 		bypass = {
-
+			has_country_flag = lost_apw_2
 		}
 
 		cancel_if_invalid = yes
@@ -2872,12 +2751,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			country_event = {
-			    id = AUS_aeiou
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
-			}
+			# add an idea that gives same effects as the prussian idea at the end of the holy roman branch (ask me on discord if you dont know what i mean)
 		}
 	}
 
@@ -2910,9 +2784,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = fpw_austria.9
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
+				# Decision to make hungary a puppet or keep it how it is
 			}
 		}
 	}
@@ -2946,9 +2818,14 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = AUS_andrassy_aspirations
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
+				# Andrassy was a crazy nationalist that apperently wanted to kill every non hungarian?
+				# Option A does nothing
+				# Option B "Crazy man" Remove relation with hungary if exists and hungary will loose 1 in var AUS_hungarians_loyalty
+
+				# FOR THIS BRANCH
+				# when i talk abotu adding or removing stuff from variables, you do what i said and always at the end do 
+				# AUS_population_of_the_empire_update_effect = yes
+				# to update the gui, also make sure that the variable when adding or removing is capped at +3 or -3
 			}
 		}
 	}
@@ -2983,9 +2860,8 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = AUS_riots_in_croatia
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
+				# remove from var AUS_croats_loyalty 1
+				# add to var AUS_hungarians_loyalty 1
 			}
 		}
 	}
@@ -3022,6 +2898,7 @@ focus_tree = {
 			    remove_idea = AUS_croation_agitation
 			    add_idea = AUS_the_nagodba
 			}
+			# add to var AUS_croats_loyalty 1
 		}
 	}
 
@@ -3052,7 +2929,9 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-		
+			# add to var AUS_hungarians_loyalty 1
+			# remove from var AUS_slovaks_loyalty 1
+			# Decision/mission 120 days, if var AUS_slovaks_loyalty = 0 or less will fail and give -20%, will not fail if 1 or above (Dominating Slovakia)
 		}
 	}
 
@@ -3070,11 +2949,11 @@ focus_tree = {
 		}
 
 		available = {
-
+			# (Dominating Slovakia) decision didnt fail
 		}
 		
 		bypass = {
-
+			# (Dominating Slovakia) failed
 		}
 
 		cancel_if_invalid = yes
@@ -3083,7 +2962,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-		
+			# add to var AUS_hungarians_loyalty 1
+			# if decision above didnt fail, then var AUS_slovaks_loyalty will be set to 3 and all cores from slovakia are removed and given to hungary
 		}
 	}
 
@@ -3105,7 +2985,7 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			# (Dominating Slovakia) decision didnt fail
 		}
 
 		cancel_if_invalid = yes
@@ -3114,7 +2994,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-		
+			
 		}
 	}
 
@@ -3147,9 +3027,8 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 			    id = AUS_backlash_in_transylvania
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
+				# remove from var AUS_hungarians_loyalty 1
+				# add stability 10%
 			}
 		}
 	}
@@ -3181,7 +3060,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_idea = AUS_romanian_contraversy
+			add_ideas = AUS_romanian_contraversy
 		}
 	}
 
@@ -3248,7 +3127,30 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			
+			# 50pp
+			# Event to trigger 50 days after this to do this:
+			# Need to do cosmetic tag CRO_prov_gov "Provisional Government of United Croatia", no color or flag change needed. Only loc
+
+			# every_state = {
+			#	limit = {
+			#		AND = {
+			#			is_owned_by = AUS
+			#			is_core_of = CRO
+			#		}
+			#	}
+			#	CRO = {
+			#		transfer_state = PREV	
+			#	}
+			# }
+			# set_variable = { var = AUS_croats_loyalty value = 0 }
+			# AUS_population_of_the_empire_update_effect = yes
+			# CRO = {
+			#	set_cosmetic_tag = CRO_prov_gov
+			#	declare_war_on = {
+			#		target = AUS
+			#		type = independence_wargoal
+			#	}
+			# }
 		}
 	}
 
@@ -3256,7 +3158,7 @@ focus_tree = {
 		id = AUS_dealing_rakovica_revolt
 		relative_position_id = AUS_deak_party_victory
 		prerequisite = { focus = AUS_deak_party_victory }
-		x = 0
+		x = -2
 		y = 1
 		cost = 5
 		icon = g
@@ -3266,11 +3168,13 @@ focus_tree = {
 		}
 
 		available = {
-				
+			has_war_with = CRO
 		}
 		
 		bypass = {
-
+			NOT = {
+				has_war_with = CRO
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3279,7 +3183,7 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			# Attack modifier by 15% against croatia
 		}
 	}
 
@@ -3303,19 +3207,16 @@ focus_tree = {
 		bypass = {
 
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {  }
 
 		completion_reward = {
-			country_event = {
-			    id = AUS_event_abolish_military_frontier
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
-			}
+			# -10 stability
+			# 10% more manpower
+			add_to_variable = { var = AUS_hungarians_loyalty value = 1 }
+			add_to_variable = { var = AUS_croats_loyalty value = 1 }
+			add_to_variable = { var = AUS_slovaks_loyalty value = 1 }
+			add_to_variable = { var = AUS_czechs_loyalty value = 1 }
+			AUS_population_of_the_empire_update_effect = yes
 		}
 	}
 
@@ -3323,7 +3224,7 @@ focus_tree = {
 		id = AUS_trading_with_serbia
 		relative_position_id = AUS_abolish_military_frontier
 		prerequisite = { focus = AUS_abolish_military_frontier }
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		icon = g
@@ -3346,83 +3247,10 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
+			# Trading modifier making cost with serbia 50% cheaper
 			add_opinion_modifier = {
 			    target = AUS
 			    modifier = AUS_trading_with_serbia_mod
-			}
-		}
-	}
-
-	focus = {
-		id = AUS_allinging_with_bosnia_catholics
-		relative_position_id = AUS_abolish_military_frontier
-		prerequisite = { focus = AUS_abolish_military_frontier }
-		x = 1
-		y = 1
-		cost = 5
-		icon = g
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-				
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			country_event = {
-			    id = AUS_support_catholic_bosnians
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
-			}
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = AUS_sarajevo_and_belgrade
-		relative_position_id = AUS_allinging_with_bosnia_catholics
-		prerequisite = { focus = AUS_allinging_with_bosnia_catholics }
-		prerequisite = { focus = AUS_trading_with_serbia }
-		x = -1
-		y = 1
-		cost = 5
-		icon = g
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-				
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-
-		completion_reward = {
-			country_event = {
-			    id = AUS_sarajavo_and_belgrade_event
-			    days = 5
-			    random_hours = 12
-			    random_days = 5
 			}
 		}
 	}
@@ -3431,7 +3259,7 @@ focus_tree = {
 		id = AUS_economic_restructure
 		relative_position_id = AUS_deak_party_victory
 		prerequisite = { focus = AUS_deak_party_victory }
-		x = 3
+		x = 2
 		y = 1
 		cost = 5
 		icon = GFX_goal_generic_construct_civ_factory
