@@ -96,10 +96,20 @@ if = {
 		target = EGY
 		autonomous_state = autonomy_puppet
 	}
+	set_autonomy = {
+		target = KUW
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_puppet
+	}
 	else = {
 		puppet = EGY
 		puppet = SER
 		puppet = ROM
+		puppet = KUW
+		puppet = TUN
 	}
 }
 

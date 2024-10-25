@@ -11,7 +11,7 @@ set_technology = {
 set_convoys = 20
 
 
-
+recruit_character = EGY_ismail_pasha
 
 set_politics = {
 	ruling_party = neutrality
@@ -20,20 +20,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	neutrality = 20
-	communism = 5
-	neutrality = 50
-}
-
-create_country_leader = {
-	name = "Muhammad Ali Pascha"
-	desc = ""
-	# Needs picture
-	picture = "GFX_portrait_egy_faud_i"
-	ideology = monarchism
-	# Actually constantutional but idc
-	traits = {
-		#
-	}
+	democratic = 0
+	neutrality = 100
+	communism = 0
+	neutrality = 0
 }

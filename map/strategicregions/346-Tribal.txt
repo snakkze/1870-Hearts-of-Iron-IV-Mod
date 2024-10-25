@@ -1,9 +1,12 @@
+
 strategic_region={
-    id=346
-    name="STATE_678"
-    provinces={ 4924 5049 8030 8118 12740 12768 }
-    weather={
-        period={
+	id=346
+	name="STATE_678"
+	provinces={
+		8030 8118 12740 12768 
+	}
+	weather={
+		period={
 			between={ 0.0 30.0 }
 			temperature={ 21.0 34.0 }
 			no_phenomenon=0.900
@@ -159,5 +162,5 @@ strategic_region={
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
-    }
+	}
 }

@@ -7,8 +7,11 @@ state={
 	}
 
 	history={
-		owner = TUR
+		owner = TUN
 		add_core_of = TUN
+		victory_points = {
+			1932 5 
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

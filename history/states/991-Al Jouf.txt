@@ -1,21 +1,30 @@
+
 state={
 	id=991
 	name="STATE_991"
 
 	history={
-		owner = JAB
-		add_core_of = JAB
-		add_core_of = JOR
+		owner = OMA
+		add_core_of = OMA
+		add_core_of = PER
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+			7982 = {
+				naval_base = 1
+
+			}
 
 		}
+
 	}
+
 	provinces={
-		13275 
+		7982 
 	}
-	manpower=9745
+	manpower=129745
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=rural
 	local_supplies=0.000
 }

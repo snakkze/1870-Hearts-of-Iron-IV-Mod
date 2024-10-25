@@ -1,8 +1,14 @@
 ﻿l_english:
 
 #focuses
- ENG_continue_colonization_around_the_world:0 "Developing the Colonies"
- ENG_indian_focus:0 "Indian Focus"
+ ENG_continue_colonization_around_the_world:0 "Colonial Prospects"
+
+ ENG_turn_to_the_west:0 "Turn to the West"
+ ENG_turn_to_the_west_desc:0 "Britain may hold little colonies in the Americas, but the ones she does hold must be attended to and developed for prosperity and cooperation with the Crown."
+
+ ENG_turn_to_the_east:0 "Turn to the East"
+ ENG_turn_to_the_east_desc:0 "The east has presented Britain with many opportunities for expansion and increased influence. We must exploit these if we are to remain as the sole global superpower."
+ ENG_indian_focus:0 "Crown Jewel of the Empire"
  ENG_reinforce_land_revenue_system:0 "Reinforce the Land Revenue System"
  ENG_build_infastructure_in_india:0 "Build Infrastructure in India"
  ENG_build_infastructure_in_india_desc:0 "Building infrastructure and railroads was an effort by the British to increase trade with the British Raj."
@@ -11,13 +17,6 @@
  ENG_increase_indian_garrisons:0 "Increase Garrisons in India"
  ENG_indian_council_act:0 "Indian Council Act"
  ENG_indian_industrialization:0 "Indian Industrialization"
- 
- ENG_african_focus:0 "African Focus"
- ENG_nigerian_oil:0 "Nigerian Oil"
- ENG_grain_production_in_the_cape_colony:0 "Grain Production in the Cape Colony"
- ENG_increased_wine_production:0 "Wine From Down South"
- ENG_africa_doing_well:0 "Africa Doing Well"
- 
  ENG_oceania_focus:0 "Oceania Focus"
  ENG_australia:0 "Australia"
  ENG_economic_growth_in_southeast_australia:0 "Economic Growth in Southeast Australia"
@@ -26,6 +25,18 @@
  ENG_grant_straits_settlements_a_colonial_constitution:0 "Colonial Constitution for the Straits Settlements"
  ENG_crown_colony_of_the_straits_settlements:0 "Crown Colony of the Straits Settlements"
  ENG_progress_in_oceania:0 "Progress in Oceania"
+ 
+ ENG_turn_to_the_south:0 "Turn to the South"
+ ENG_turn_to_the_south_desc:0 "To the south of Britain lies a vast continent, largely ignored by other European powers. Though not entirely. Challening their influence and asserting our own will be vital."
+ ENG_african_focus:0 "African Focus"
+ ENG_african_focus_desc:0 "Africa is a land of great wealth and natural resources, and though other may have not recognised it yet- we have, and will strike first to ensure the resources remain in our hands."
+ ENG_influence_egypt:0 "Influence Egypt"
+ ENG_influence_egypt_desc:0 "Egypt's strategic value is that of great significance, especially in regards to British interests. Influencing the state will allow us to have an easier time taking it in the future- whether it be by peace or by force."
+ ENG_nigerian_oil:0 "Nigerian Oil"
+ ENG_grain_production_in_the_cape_colony:0 "Grain Production in the Cape Colony"
+ ENG_increased_wine_production:0 "Wine From Down South"
+ ENG_africa_doing_well:0 "Africa Doing Well"
+ 
  
  ENG_the_empire_is_booming:0 "The Empire is Booming"
  

@@ -314,6 +314,12 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	fpw_unrecognised_khedive = {
+		random = no
+		stability_factor = -0.2
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+	}
  fpw_par_proud = {
     random = no
 	stability_factor = -0.03

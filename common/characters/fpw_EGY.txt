@@ -1,0 +1,20 @@
+characters={
+
+
+	EGY_ismail_pasha={
+		name=EGY_ismail_pasha
+		portraits={
+			civilian={
+				large=GFX_portrait_EGY_ismail_pasha
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			traits = {
+				fpw_unrecognised_khedive
+			}
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

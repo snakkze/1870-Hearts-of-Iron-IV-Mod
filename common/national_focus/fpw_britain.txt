@@ -16,10 +16,10 @@
 
 	focus = {
 		id = ENG_continue_colonization_around_the_world
-		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+		icon = GFX_focus_eng_global_defense
 		x = 55
 		y = 0
-		cost = 5
+		cost = 7.25
 
 		search_filters = {  FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		
@@ -31,13 +31,13 @@
 		}
 		
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 120
 		}
 	}
 	focus = {
-		id = ENG_indian_focus
-		icon = GFX_focus_ENG_india
-		x = -4
+		id = ENG_turn_to_the_west
+		icon = GFX_focus_BRA_north_and_south_america
+		x = -7
 		y = 1
 		cost = 5
 
@@ -47,6 +47,48 @@
 
 		prerequisite = { focus = ENG_continue_colonization_around_the_world }
 		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+		}
+		
+		completion_reward = {		
+            add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_turn_to_the_east
+		icon = GFX_focus_usa_focus_on_asia
+		x = 9
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_continue_colonization_around_the_world }
+		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+		}
+		
+		completion_reward = {
+            add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_indian_focus
+		icon = GFX_focus_ENG_india
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_turn_to_the_east }
+		relative_position_id = ENG_turn_to_the_east
 
 		available = {
 			RAJ = {
@@ -325,8 +367,8 @@
 		}
 	}
 	focus = {
-		id = ENG_african_focus
-		icon = GFX_focus_ENG_africa
+		id = ENG_turn_to_the_south
+		icon = GFX_focus_generic_africa_liberation
 		x = 0
 		y = 1
 		cost = 5
@@ -337,6 +379,27 @@
 
 		prerequisite = { focus = ENG_continue_colonization_around_the_world }
 		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+		}
+		
+		completion_reward = {
+            add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_african_focus
+		icon = GFX_focus_ENG_africa
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_turn_to_the_south }
+		relative_position_id = ENG_turn_to_the_south
 
 		available = {
 			any_state = {
@@ -362,7 +425,7 @@
 	focus = {
 		id = ENG_nigerian_oil
 		icon = GFX_focus_generic_resource_extraction
-		x = 0
+		x = 1.5
 		y = 1
 		cost = 10
 
@@ -390,7 +453,7 @@
 		id = ENG_grain_production_in_the_cape_colony
 		icon = GFX_focus_generic_farmland
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_ANNEXATION }
@@ -398,7 +461,7 @@
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_nigerian_oil }
-		relative_position_id = ENG_african_focus
+		relative_position_id = ENG_nigerian_oil
 
 		available = {
 			controls_state = 961
@@ -500,9 +563,39 @@
 		}
 	}
 	focus = {
+		id = ENG_influence_egypt
+		icon = GFX_focus_generic_the_suez
+		x = -1.5
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_african_focus }
+		relative_position_id = ENG_african_focus
+
+		available = {
+			controls_state = 961
+		}
+		
+		completion_reward = {
+			961 = {
+				add_resource = {
+					type = Oil
+					amount = 18
+				}
+			}
+			EGY = { 
+                add_ideas = fpw_egy_british_influence
+            }
+		}
+	}
+	focus = {
 		id = ENG_oceania_focus
 		icon = GFX_focus_ENG_oceania
-		x = 4
+		x = 3
 		y = 1
 		cost = 5
 
@@ -510,8 +603,8 @@
 		
 		available_if_capitulated = yes
 
-		prerequisite = { focus = ENG_continue_colonization_around_the_world }
-		relative_position_id = ENG_continue_colonization_around_the_world
+		prerequisite = { focus = ENG_turn_to_the_east }
+		relative_position_id = ENG_turn_to_the_east
 
 		available = {
 			OR = {
@@ -863,7 +956,7 @@
 		id = ENG_the_empire_is_booming
 		icon = GFX_focus_eng_the_sun_never_sets
 		x = 0
-		y = 1
+		y = 6
 		cost = 5
 
 		search_filters = {  FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
@@ -871,9 +964,8 @@
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_africa_doing_well }
-		prerequisite = { focus = ENG_progress_in_oceania }
-		prerequisite = { focus = ENG_indian_industrialization }
-		relative_position_id = ENG_africa_doing_well
+		prerequisite = { focus = ENG_progress_in_oceania focus = ENG_indian_industrialization}
+		relative_position_id = ENG_african_focus
 
 		available = {
 			
@@ -1054,7 +1146,7 @@
 		icon = GFX_focus_generic_resource_extraction
 		prerequisite = { focus = ENG_industrial_sector }
 		relative_position_id = ENG_industrial_sector
-		x = -2
+		x = -3
 		y = 1
 		cost = 5
 
@@ -1134,6 +1226,108 @@
 	        uses = 2
 	        category = excavation_tech
             }
+		}
+	}
+	focus = {
+		id = ENG_agricultural_sector
+		icon = GFX_focus_generic_farmland
+		x = 33
+		y = 0
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			338 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+			127 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+			125 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+			129 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+		}
+	}
+	focus = {
+		id = ENG_encourage_international_trade
+		icon = GFX_focus_generic_british_trade
+		prerequisite = { focus = ENG_industrial_sector }
+		relative_position_id = ENG_industrial_sector
+		mutually_exclusive = { focus = ENG_reintroduce_corn_laws }
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+        add_ideas = free_trade
+		}
+	}
+	focus = {
+		id = ENG_reintroduce_corn_laws
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ENG_agricultural_sector }
+		relative_position_id = ENG_agricultural_sector
+		mutually_exclusive = { focus = ENG_encourage_international_trade }
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+        add_ideas = limited_exports
 		}
 	}
 }

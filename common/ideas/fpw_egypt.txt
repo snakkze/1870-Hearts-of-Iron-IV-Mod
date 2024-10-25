@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		fpw_egy_british_influence = {
+			allowed = {
+				has_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = hol_caved_to_the_british
+
+			modifier = {
+				stability_factor = -0.1
+			}
+            targeted_modifier = {
+                tag = ENG
+                attack_bonus_against = -0.1
+                defense_bonus_against = -0.1
+            }
+		}
+	}
+}
