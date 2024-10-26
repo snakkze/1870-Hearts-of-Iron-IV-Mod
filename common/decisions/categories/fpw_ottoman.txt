@@ -1,0 +1,17 @@
+fpw_handle_the_cretan_revolt = {
+
+	priority = 99
+
+	visible = {
+		has_dynamic_modifier = {
+   			modifier = fpw_TUR_cretan_revolt
+		}
+	}
+
+	allowed = {
+		always = yes
+	}
+
+	icon = mission_icon
+}
+

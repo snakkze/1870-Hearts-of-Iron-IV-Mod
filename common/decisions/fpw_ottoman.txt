@@ -1,0 +1,61 @@
+fpw_handle_the_cretan_revolt = {
+
+	fpw_check_cretan_revolt_value = {
+
+
+		available = {
+		}
+
+		visible = {
+			always = yes
+		}
+
+		allowed = {
+			tag = TUR
+		}
+
+		icon = mission_icon
+		
+
+
+		complete_effect = {
+			custom_effect_tooltip = ct_value_check
+		}
+	}
+	
+	fpw_harsh_treatment = {
+
+		cost = 10
+		available = {
+		}
+
+		visible = {
+			always = yes
+		}
+
+		allowed = {
+			tag = TUR
+		}
+
+		icon = mission_icon
+		
+		days_remove = 30
+
+		days_re_enable = 100
+
+		complete_effect = {
+			add_to_variable = {
+				var = cretan_revolt
+				value = -2
+				tooltip = basic_subtrat_two_ct
+			}
+			add_timed_idea = {
+				idea = fpw_TUR_undermined_minority
+				days = 32
+			}
+		}
+	}
+
+	
+}
+

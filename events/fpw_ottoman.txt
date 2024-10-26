@@ -1,0 +1,25 @@
+add_namespace = fpw_ottoman
+
+country_event = {
+	id = fpw_ottoman.1
+	title = ottoman_fpw.1.t
+	desc = ottoman_fpw.1.d
+	
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	option = {
+		name = "Shit"
+		ai_chance =  {factor = 100}
+		add_dynamic_modifier = {
+			modifier = fpw_TUR_cretan_revolt
+		}
+		hidden_effect = {
+			set_variable = {
+				var = cretan_revolt
+				value = 0
+			}
+		}
+	}
+}

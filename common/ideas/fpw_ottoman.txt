@@ -35,8 +35,8 @@ ideas = {
 			picture = generic_army_problems
 
 			modifier = {
-				army_attack_factor = -0.15
-				army_defence_factor = -0.15
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
 				army_morale_factor = -0.3
 				army_org_factor = -0.3
 				breakthrough_factor = -0.15
@@ -96,6 +96,46 @@ ideas = {
 				industrial_capacity_dockyard = -1.0
 			}
 		}
+
+		fpw_TUR_agrarian_economy = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = LIT_invested_in_farms
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.3
+				production_speed_buildings_factor = -0.15
+				line_change_production_efficiency_factor = -0.3
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		fpw_TUR_undermined_minority = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+
 }
 	hidden_ideas = {
 	

@@ -23,3 +23,13 @@ fpw_TUR_sick_man_of_europe_2 = {
 
 	custom_modifier_tooltip = prestige_modifier_sick_man_of_europe_2
 }
+
+fpw_TUR_cretan_revolt = {
+	enable = { always = yes }
+	icon = tfv_can_conscription_crisis
+
+	hidden_effect = {
+	}
+
+	custom_modifier_tooltip = ottoman_cretan_revolt
+}

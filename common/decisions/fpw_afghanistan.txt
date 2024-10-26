@@ -1,20 +1,19 @@
-fpw_investment_chances = {
+fpw_afg_investment_chances_dec = {
 	fpw_ask_britain = {
 		available = {
+			has_completed_focus = afg_investments
 			has_war_with = AFZ
 		}
 
 		visible = {
-			always = no
 		}
 
 		allowed = {
-			original_tag = AFG
-			has_completed_focus = afg_investments
+			tag = AFG
 		}
 
 		icon = mission_icon
-		
+		cost = 50
 		complete_effect = {
 			ENG = {
 				country_event = fpw_afghan.8
@@ -22,6 +21,49 @@ fpw_investment_chances = {
 		}
 	}
 
-	
+	fpw_ask_prussia = {
+		available = {
+			has_completed_focus = afg_investments
+			has_war_with = AFZ
+		}
+
+		visible = {
+		}
+
+		allowed = {
+			tag = AFG
+		}
+
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			PRS = {
+				country_event = fpw_afghan.8
+			}
+		}
+	}
+
+
+	fpw_ask_france = {
+		available = {
+			has_completed_focus = afg_investments
+			has_war_with = AFZ
+		}
+
+		visible = {
+		}
+
+		allowed = {
+			tag = AFG
+		}
+
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			FRA = {
+				country_event = fpw_afghan.8
+			}
+		}
+	}
 }
 

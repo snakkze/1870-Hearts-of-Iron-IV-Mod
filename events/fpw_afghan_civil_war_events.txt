@@ -188,3 +188,19 @@ country_event = {
 	}
 
 }
+
+country_event = {
+	id = fpw_afghan.9
+	title = afghan_fpw.9.t
+	desc = afghan_fpw.9.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "What did we expect?"
+		}
+
+
+}
+

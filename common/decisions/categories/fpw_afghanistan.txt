@@ -1,0 +1,14 @@
+fpw_afg_investment_chances_dec = {
+	priority = 99
+
+	###icon = GFX_decision_category_generic_formable_nations
+	###picture = GFX_decision_category_franco_prussian_war
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		has_completed_focus = afg_investments
+	}
+}
