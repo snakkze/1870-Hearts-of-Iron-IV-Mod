@@ -108,7 +108,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_
+		icon = GFX_focus_SOV_crush_polish_resistance
 		mutually_exclusive = { focus = SOV_amnesty_for_polish_resistance }
 		prerequisite = { focus = SOV_state_of_the_empire }
 		relative_position_id = SOV_state_of_the_empire
@@ -213,7 +213,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_
+		icon = GFX_focus_SOV_undermine_national_identities
 		prerequisite = { focus = SOV_russification_programs }
 		relative_position_id = SOV_crush_polish_resistance_remnants
 		
@@ -347,7 +347,7 @@ focus_tree = {
 		y = 3
 		cost = 5
 		
-		#icon = GFX_
+		icon = GFX_focus_SOV_integration_of_subjects
 		prerequisite = { focus = SOV_one_way_trip_to_siberia }
 		prerequisite = { focus = SOV_undermine_national_identity}
 		relative_position_id = SOV_crush_polish_resistance_remnants
@@ -423,7 +423,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { }
 		
-		#icon = GFX_
+		icon = GFX_focus_SOV_finish_integration
 		prerequisite = { focus = SOV_undermine_national_identity }
 		prerequisite = { focus = SOV_finnish_question }
 		relative_position_id = SOV_finnish_question
@@ -1552,6 +1552,11 @@ focus_tree = {
 					long_name = SOV_conservative_government_party
 					name = SOV_conservative_government_party
 				}
+				set_party_name = {
+					ideology = fascism
+					long_name = SOV_liberal_government_party
+					name = SOV_liberal_government_party
+				}
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.20
@@ -1572,12 +1577,14 @@ focus_tree = {
 						promote_leader = yes
 					}
 				}
-				add_ideas = fpw_alexander_ii
-				set_country_flag = fpw_secondary_leader_sov_alexander_II
-				set_rule = {
-					can_declare_war_on_same_ideology = yes
-					can_only_justify_war_on_threat_country = no
-					can_puppet = yes
+				hidden_effect = {
+					add_ideas = fpw_alexander_ii
+					set_country_flag = fpw_secondary_leader_sov_alexander_II
+					set_rule = {
+						can_declare_war_on_same_ideology = yes
+						can_only_justify_war_on_threat_country = no
+						can_puppet = yes
+					}
 				}
 			}
 			if = {
@@ -1592,6 +1599,11 @@ focus_tree = {
 					ideology = fascism
 					long_name = SOV_liberal_government_party
 					name = SOV_liberal_government_party
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = SOV_conservative_government_party
+					name = SOV_conservative_government_party
 				}
 				add_popularity = {
 					ideology = democratic
@@ -1613,12 +1625,14 @@ focus_tree = {
 						promote_leader = yes
 					}
 				}
-				add_ideas = fpw_alexander_ii
-				set_country_flag = fpw_secondary_leader_sov_alexander_II
-				set_rule = {
-					can_declare_war_on_same_ideology = yes
-					can_only_justify_war_on_threat_country = no
-					can_puppet = yes
+				hidden_effect = {
+					add_ideas = fpw_alexander_ii
+					set_country_flag = fpw_secondary_leader_sov_alexander_II
+					set_rule = {
+						can_declare_war_on_same_ideology = yes
+						can_only_justify_war_on_threat_country = no
+						can_puppet = yes
+					}
 				}
 			}
 			else = {

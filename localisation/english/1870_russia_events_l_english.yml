@@ -2,10 +2,10 @@
  ## Russian Events
 
  russia_fpw.1.t: "Reforms Continue"
- russia_fpw.1.d: "text"
+ russia_fpw.1.d: "Tsars Alexanders reforms have proved quite succesful. Let's continue this endeavor to a better future."
  russia_fpw.1.a: "Let's improve the Empire"
  russia_fpw.2.t: "More Radical Changes"
- russia_fpw.2.d: "text"
+ russia_fpw.2.d: "Tsars Alexanders reforms have proved quite succesful but not enough. Let's continue this endeavor and make some more radical changes."
  
  russia_fpw.3.t: "Selling Alaska"
  russia_fpw.3.d: "Today our Tsar has dicided too offer the white house of the United Staates, the purchase of Russian Alaska for 4 million dollars, he explained that the not Asian part of russia isn't profitable enough as also ethnical not Russian enough to longer hold on to , the Tsar also explained if the US woould agree to buy Alaska he would put the Money we gained in 1 year into our economy"
@@ -26,43 +26,49 @@
  russia_fpw.6.a: "Shame..."
  
  russia_fpw.7.t: "Russo-German Relations"
- russia_fpw.7.d: "Mixed relations with the german confederation. Good relations with Prussia. Bad relations with Austrian Empire."
+ russia_fpw.7.d: "Relations of [SOV.GetNameDef] with german countries are very mixed. While our relations with [PRS.GetName] are good, the Austrians have betrayed us and we cannot trust those bastard."
  russia_fpw.7.a: "We'll see what the future holds"
  
  russia_fpw.8.t: "Russian Economic Situation"
- russia_fpw.8.d: "It's not very good..."
+ russia_fpw.8.d: "While the rest of europe is industrializing we are far behind them, having abolished serfdom only a couple years ago. We must catch up to the west and surpass them to be a full great power again."
  
  russia_fpw.9.t: "Writing the First Russian Constitution"
- russia_fpw.9.d: ""
+ russia_fpw.9.d: "After year of being a backwards country it's time we modernize and finally establish a All-Russian constitution"
  russia_fpw.9.a: "Let's begin the process!"
+ russia_fpw_9_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§!"
  
  russia_fpw.10.t: "Civilian Administration"
- russia_fpw.10.d: ""
+ russia_fpw.10.d: "We must reform our civilian administration to make sure it can handle all the new changes in our state."
  russia_fpw.10.a: "Let's move on"
+ russia_fpw_10_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nPolitical Advisor Cost: §G-10%§!"
  
  russia_fpw.11.t: "Military Administration"
- russia_fpw.11.d: ""
+ russia_fpw.11.d: "In our reformed state the Army cannot hold as much levy as it has now. A reshuffling of the high command from time to time should keep them in check."
+ russia_fpw_11_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nWar Support: §G+2.00%§! \nHigh Command Cost: §G-10%§!"
  
  russia_fpw.12.t: "Tsars Position"
- russia_fpw.12.d: ""
+ russia_fpw.12.d: "Our Great Tsar has started this whole process and without him we wouldn't be here. He agreed to become a constitutional monarch under the condition that he would still have a great amount of levy in Russian affairs."
  russia_fpw.12.a: "Tsar must be kept!"
+ russia_fpw_12_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nWar Support: §G+2.00%§! \nDaily Support for Authoritarianism: §G+0.01§! "
  
  russia_fpw.13.t: "Leanings of the Constitution"
- russia_fpw.13.d: ""
+ russia_fpw.13.d: "There are two powerful factions backing the constitution Conservative 'Slavophiles' and Liberal 'Westerners'. Those two both have very different ideas how the our new constitution should look. On whose side we will stand?"
  
  russia_fpw.13.a: "We must keep our conservative vaules!"
  russian_constitution_conservative_tp: "§YThe Conservative public will be pleased§!"
+ russia_fpw_13_effect_a: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nDaily Conservative Support: §G+0.03§!"
  
  russia_fpw.13.b: "Liberalism is the way forward!"
- russian_constitution_liberal_tp: "§RThe Conservative public will be disgruntled. \nIt may have consequences!§!"
- 
+ russian_constitution_liberal_tp: "§YThe Liberal public will be pleased§!\n§RThe Conservative public will be disgruntled. \nIt may have consequences! (WIP)§!"
+ russia_fpw_13_effect_b: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §R-2.00%§! \nDaily Liberal Support: §G+0.03§!"
  
  russia_fpw.14.t: "Finishing the Constitution"
- russia_fpw.14.d: ""
+ russia_fpw.14.d: "With the completion of this constitution Russia can officially call it self a modern nation. We're not politicaly backwards any more!"
  russia_fpw.14.a: "The hard work is done!"
+ russia_fpw_14_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nWar Support: §G+2.00%§! \nDefensive War Penalty Stability Modifier: §G+20.00%§!"
  
  russia_fpw.15.t: "Russian Military Situation"
- russia_fpw.15.d: ""
+ russia_fpw.15.d: "While our military is not much worse than the western ones the rapidly evolving doctrine of warfare means that if we don't reform it we will quickly find ourselfs behind the rest of europe"
  
  russia_fpw.16.t: "Russia Proposes a Friendship Treaty"
  russia_fpw.16.d: "Today a ambasador from [SOV.GetNameDef] came to us with a intresting proposal. The [SOV.GetAdjective] government wants us to sign a mutual friendship treaty, that will include a point about non agression"
@@ -105,7 +111,7 @@
  russia_fpw.23.c: "For Latvia!"
  russia_fpw.23.e: "For Lithuania!"
  
- russia_fpw.24.t: "Caucasian Staates Uprising"
+ russia_fpw.24.t: "Caucasian States Uprising"
  russia_fpw.24.d: ""
  russia_fpw.24.a: "Crush Them!"
  russia_fpw.24.b: "For Georgia!"
@@ -124,13 +130,13 @@
  russia_fpw.27.t: "Austria Rejects Our Proposal"
  russia_fpw.27.d: ""
  
- russia_fpw.28.t: "Alaska... Usefull?"
+ russia_fpw.28.t: "Alaska... Useful?"
  russia_fpw.28.d: "We found some resources there like oil and tungsten!"
  russia_fpw.28.a: "What a pleasent suprise!"
  
  russia_fpw.29.t: "Russia Demands Liaodong Peninsula"
  russia_fpw.29.d: ""
- russia_fpw.29.a: "We need theirs protection"
+ russia_fpw.29.a: "We need their protection"
  russia_fpw.29.b: "We can't trust them"
  
  russia_fpw.30.t: "China Gives In"
@@ -150,7 +156,7 @@
  russia_news_fpw.32.a: "Thank God he's fine"
  
  russia_fpw.33.t: "The Serfdom Question"
- russia_fpw.33.d: "Should we continue with Tsars Alexanders plans od dismantling rerfdom... or shall we bring it back...?"
+ russia_fpw.33.d: "Should we continue with Tsars Alexanders plans of dismantling serfdom... or shall we bring it back...?"
  russia_fpw.33.a: "Continue, we don't want a peasent revolt"
  russia_fpw.33.a.effect: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+15.0%§! \nMax Factories in a State: §G+20.00%§! \nProduction Efficiency Cap: §G+25.00%§! \nResource Gain Efficiency: §G+10.00%§! \n\n"
  russia_fpw.33.b: "Serfdom existed for a reason!"
@@ -193,16 +199,16 @@
  russia_fpw.42.d: ""
  russia_fpw.42.a: "Shame"
  
- peace_poland_uprising_tt: "Poland has won the uprising and it's independence."
- peace_finland_uprising_tt: "Finland has won the uprising and it's independence."
- peace_ukraine_uprising_tt: "Ukraine has won the uprising and it's independence."
- peace_belarus_uprising_tt: "Belarus has won the uprising and it's independence."
- peace_lithuania_uprising_tt: "Lithuania has won the uprising and it's independence."
- peace_latvia_uprising_tt: "Latvia has won the uprising and it's independence."
- peace_estonia_uprising_tt: "Estonia has won the uprising and it's independence."
- peace_georgia_uprising_tt: "Georgia has won the uprising and it's independence."
- peace_armenia_uprising_tt: "Armenia has won the uprising and it's independence."
- peace_azerbaijan_uprising_tt: "Azerbaijan has won the uprising and it's independence."
+ peace_poland_uprising_tt: "§YPoland§! has won the uprising and it's §Yindependence§!."
+ peace_finland_uprising_tt: "§YFinland§! has won the uprising and it's §Yindependence§!."
+ peace_ukraine_uprising_tt: "§YUkraine§! has won the uprising and it's §Yindependence§!."
+ peace_belarus_uprising_tt: "§YBelarus§! has won the uprising and it's §Yindependence§!."
+ peace_lithuania_uprising_tt: "§YLithuania§! has won the uprising and it's §Yindependence§!."
+ peace_latvia_uprising_tt: "§YLatvia§! has won the uprising and it's §Yindependence§!."
+ peace_estonia_uprising_tt: "§YEstonia§! has won the uprising and it's §Yindependence§!."
+ peace_georgia_uprising_tt: "§YGeorgia§! has won the uprising and it's §Yindependence§!."
+ peace_armenia_uprising_tt: "§YArmenia§! has won the uprising and it's §Yindependence§!."
+ peace_azerbaijan_uprising_tt: "§YAzerbaijan§! has won the uprising and it's §Yindependence§!."
  
  russia_fpw.43.t: "Admitting Defeat"
  russia_fpw.43.d: "Should we admit our defeat against the poles?"

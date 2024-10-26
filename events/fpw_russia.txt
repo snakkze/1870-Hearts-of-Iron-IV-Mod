@@ -275,6 +275,7 @@ country_event = {
 	option = {
 		name = russia_fpw.9.a
 		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
+		custom_effect_tooltip = russia_fpw_9_effect
 		
 		country_event = {
 			id = russia_fpw.10
@@ -297,6 +298,7 @@ country_event = {
 		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
 		add_to_variable = { SOV_fc_stability_factor = 0.02 }
 		add_to_variable = { SOV_fc_civilian_advisor_cost_factor = -0.10 }
+		custom_effect_tooltip = russia_fpw_10_effect
 		
 		country_event = {
 			id = russia_fpw.11
@@ -320,6 +322,7 @@ country_event = {
 		add_to_variable = { SOV_fc_stability_factor = 0.02 }
 		add_to_variable = { SOV_fc_war_support_factor = 0.02 }
 		add_to_variable = { SOV_fc_high_command_advisor_cost_factor = -0.10 }
+		custom_effect_tooltip = russia_fpw_11_effect
 		
 		country_event = {
 			id = russia_fpw.12
@@ -342,6 +345,7 @@ country_event = {
 		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
 		add_to_variable = { SOV_fc_war_support_factor = 0.02 }
 		add_to_variable = { SOV_fc_neutrality_drift = 0.01 }
+		custom_effect_tooltip = russia_fpw_12_effect
 		
 		country_event = {
 			id = russia_fpw.13
@@ -364,6 +368,7 @@ country_event = {
 		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
 		add_to_variable = { SOV_fc_stability_factor = 0.02 }
 		add_to_variable = { SOV_fc_democratic_drift = 0.03 }
+		custom_effect_tooltip = russia_fpw_13_effect_a
 		custom_effect_tooltip = russian_constitution_conservative_tp
 		
 		country_event = {
@@ -381,6 +386,7 @@ country_event = {
 		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
 		add_to_variable = { SOV_fc_stability_factor = -0.02 }
 		add_to_variable = { SOV_fc_fascism_drift = 0.03 }
+		custom_effect_tooltip = russia_fpw_13_effect_b
 		custom_effect_tooltip = russian_constitution_liberal_tp
 		
 		country_event = {
