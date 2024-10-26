@@ -30,7 +30,7 @@ tags={
 	"Technologies"
 	"Gameplay"
 }
-name="1870: Franco-Prussian War"
+name="La Belle Epoque"
 supported_version="1.14.7"
 path="C:/Users/Anwender/Documents/Paradox Interactive/Hearts of Iron IV/mod/1870-Franco-Prussian-War"
 remote_file_id="1870-Franco-Prussian-War"
