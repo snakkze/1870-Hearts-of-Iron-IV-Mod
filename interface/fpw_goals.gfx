@@ -268,46 +268,6 @@ spriteTypes = {
 	}
 }
 
-# RUSSIA #
-spriteTypes = {
-	spriteType = {
-		name = "GFX_focus_SOV_tsar"
-		texturefile = "gfx/interface/goals/SOV_tsar.png"
-	}
-	spriteType = {
-		name = "GFX_focus_SOV_plot_tsar"
-		texturefile = "gfx/interface/goals/SOV_plot_tsar.png"
-	}
-	spriteType = {
-		name = "GFX_focus_SOV_army"
-		texturefile = "gfx/interface/goals/SOV_army.png"
-	}
-	spriteType = {
-		name = "GFX_focus_SOV_new_oficer_core"
-		texturefile = "gfx/interface/goals/focus_SOV_new_oficer_core.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_ukraine_construct_infrastructure"
-		texturefile = "gfx/interface/goals/goal_ukraine_construct_infrastructure.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_belarus_construct_infrastructure"
-		texturefile = "gfx/interface/goals/goal_belarus_construct_infrastructure.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_russia_construct_infrastructure"
-		texturefile = "gfx/interface/goals/goal_russia_construct_infrastructure.dds"
-	}
-	spriteType = {
-		name = "GFX_focus_SOV_russification"
-		texturefile = "gfx/interface/goals/russification.png"
-	}
-	spriteType = {
-		name = "GFX_focus_crimean_war"
-		texturefile = "gfx/interface/goals/focus_crimean_war.png"
-	}
-	
-}
 
 # ROMANIA #
 spriteTypes = {

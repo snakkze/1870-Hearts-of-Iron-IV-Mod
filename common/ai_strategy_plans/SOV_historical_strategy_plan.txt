@@ -29,18 +29,17 @@ SOV_historical = {
 
 	ai_national_focuses = {
 		# year 1
-		SOV_russian_diplomacy
-		SOV_asian_giant
 		SOV_consolidate_central_asia
+		SOV_tsars_regime
 		SOV_state_of_the_empire
 		SOV_crush_polish_resistance_remnants
 		SOV_russian_army
 		SOV_russification_programs
+		SOV_russian_economy
 		# year 2
-		SOV_tsars_regime
+		SOV_russian_diplomacy
 		SOV_recovering_from_the_cimean_war
 		SOV_sale_of_alaska
-		SOV_russian_economy
 		SOV_promote_industralization
 		SOV_local_advisors
 		SOV_new_military_equipment
@@ -74,6 +73,7 @@ SOV_historical = {
 		SOV_universal_conscription
 		SOV_ukrainian_wheat
 		# year 7
+		SOV_asian_giant
 		
 		
 	}
