@@ -13,10 +13,6 @@
 	default = no
 	reset_on_civilwar = no
 
-	initial_show_position = {
-		focus = industrial_effort
-	}
-
 	focus = {
 		id = PAP_catholic_tradition
 		icon = GFX_focus_generic_catholic_dominion
@@ -24,32 +20,98 @@
 		mutually_exclusive = { focus = PAP_italian_compromise }
 		x = 0
 		y = 0
-		cost = 5
-		ai_will_do = { base = 1 }
+		cost = 10
+		ai_will_do = { base = 10 }
 		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = PAP_austria
-		icon = GFX_focus_ph
+		icon = GFX_focus_befriend_austria
 		mutually_exclusive = { focus = PAP_italian_compromise }
 		mutually_exclusive = { focus = PAP_catholic_tradition }
 		x = 3
 		y = 0
 		relative_position_id = PAP_catholic_tradition
-		cost = 5
-		ai_will_do = { base = 0 }
+		cost = 10
+		ai_will_do = { base = 1 }
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
+			diplomatic_relation = {
+				country = AUS
+				relation = non_aggression_pact
+				active = yes
+			}
 			add_political_power = 150
+			add_opinion_modifier = {
+				target = AUS
+				modifier = huge_increase
+			}
+			reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = huge_increase
+			}
+			reverse_add_opinion_modifier = {
+				target = PRS
+				modifier = condemn_aggression
+			}
+		}
+	}
+	focus = {
+		id = PAP_austrian_volunteers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = PAP_austria }
+		x = 5
+		y = 1
+		relative_position_id = PAP_catholic_tradition
+		cost = 10
+		ai_will_do = { base = 2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			2 = {
+				create_unit = {
+					division = "name = \"Austrian Volunteers\" division_template = \"Holy-Division\" start_experience_factor = 0.5"
+					owner = PAP
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PAP_fortify_the_border
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = PAP_austria }
+		x = 1
+		y = 1
+		relative_position_id = PAP_catholic_tradition
+		cost = 10
+		ai_will_do = { base = 2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -66,8 +128,8 @@
 		y = 1
 		relative_position_id = PAP_austria
 		cost = 5
-		ai_will_do = { base = 0 }
-		search_filters = {  FOCUS_FILTER_POLITICAL }
+		ai_will_do = { base = 1 }
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		
 		available_if_capitulated = yes
 
@@ -79,6 +141,72 @@
 		}
 	}
 	focus = {
+		id = PAP_distance_from_france
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = PAP_attack_italy }
+		available = {
+			has_war = no
+		}
+		x = 0
+		y = 2
+		relative_position_id = PAP_austria
+		cost = 10
+		ai_will_do = { base = 1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = french_garrison
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = PAP_submit_to_austria
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = PAP_distance_from_france }
+		mutually_exclusive = { focus = PAP_friends_with_benefits }
+		available = {
+			
+		}
+		x = -1
+		y = 1
+		relative_position_id = PAP_distance_from_france
+		cost = 3
+		ai_will_do = { base = 1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			AUS = {
+				puppet = PAP
+			}
+		}
+	}
+	focus = {
+		id = PAP_friends_with_benefits
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PAP_distance_from_france }
+		mutually_exclusive = { focus = PAP_submit_to_austria }
+		available = {
+			
+		}
+		x = 1
+		y = 1
+		relative_position_id = PAP_distance_from_france
+		cost = 10
+		ai_will_do = { base = 1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+	focus = {
 		id = PAP_italian_compromise
 		icon = GFX_focus_befriend_italy
 		mutually_exclusive = { focus = PAP_austria }
@@ -86,14 +214,13 @@
 		x = -3
 		y = 0
 		relative_position_id = PAP_catholic_tradition
-		cost = 5
+		cost = 10
 		ai_will_do = { base = 0 }
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 150
 			if = {
 				limit = { country_exists = ITA }
 				ITA = {
