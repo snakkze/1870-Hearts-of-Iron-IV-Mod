@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		fpw_bra_slavery = {
+			
+			removal_cost = -1
+			
+			picture = g
+
+			modifier = {
+				consumer_goods_factor = -0.08
+	            stability_factor = -0.1
+				war_support_factor = -0.1
+				conscription_factor = 0.05
+				enemy_justify_war_goal_time = -0.2
+				production_speed_buildings_factor = 0.05
+				
+			}
+		}
+	}
+}
