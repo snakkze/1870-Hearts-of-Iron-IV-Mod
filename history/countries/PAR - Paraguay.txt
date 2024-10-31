@@ -21,7 +21,9 @@ set_politics = {
 }
 
 recruit_character = PAR_solano_lopez
-
+   add_ideas = {
+       fpw_PAR_hasta_la_muerte
+}
 set_popularities = {
     democratic = 25
     communism = 75
