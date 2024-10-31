@@ -1,6 +1,31 @@
 
 # RUSSIA #
 spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_focus_SOV_tsar"
+		texturefile = "gfx/interface/goals/SOV/SOV_tsar.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_plot_tsar"
+		texturefile = "gfx/interface/goals/SOV/focus_SOV_plot_tsar.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_russian_army"
+		texturefile = "gfx/interface/goals/SOV/focus_SOV_russian_army.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_new_oficer_core"
+		texturefile = "gfx/interface/goals/SOV/focus_SOV_new_oficer_core.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_russification"
+		texturefile = "gfx/interface/goals/SOV/russification.png"
+	}
+	spriteType = {
+		name = "GFX_focus_crimean_war"
+		texturefile = "gfx/interface/goals/SOV/focus_crimean_war.png"
+	}
 	spriteType = {
 		name = "GFX_focus_SOV_crush_polish_resistance"
 		texturefile = "gfx/interface/goals/SOV/SOV_crush_polish_resistance.png"
@@ -16,6 +41,34 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_SOV_undermine_national_identities"
 		texturefile = "gfx/interface/goals/SOV/SOV_undermine_national_identities.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_deportations_to_siberia"
+		texturefile = "gfx/interface/goals/SOV/focus_SOV_deportations_to_siberia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_amnesty_for_polish_resistance"
+		texturefile = "gfx/interface/goals/SOV/amnesty_for_polish_resistance.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_stop_russification"
+		texturefile = "gfx/interface/goals/SOV/stop_russification.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_promote_national_identities"
+		texturefile = "gfx/interface/goals/SOV/promote_national_identities.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_aces_of_culture"
+		texturefile = "gfx/interface/goals/SOV/aces_of_culture.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_federal_empire"
+		texturefile = "gfx/interface/goals/SOV/federal_empire.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_finish_autonomy"
+		texturefile = "gfx/interface/goals/SOV/finish_autonomy.png"
 	}
 	
 }

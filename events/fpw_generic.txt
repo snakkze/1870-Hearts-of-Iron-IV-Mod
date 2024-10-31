@@ -24,6 +24,17 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		ai_chance = {
+			base = 50 
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = 50
+				is_historical_focus_on = no
+			}
+		}
 		name = fpw_generic.2.a 
 		if = {
 			limit = {
@@ -39,6 +50,13 @@ country_event = {
 
 	option = {
 		name = fpw_generic.2.b
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		FROM = {
 			country_event = fpw_generic.4
 		}
