@@ -116,8 +116,9 @@ add_to_faction = URG
 add_to_faction = ARG
  
 recruit_character = BRA_dom_pedro_ii
-
-
+add_ideas = {
+fpw_bra_slavery
+}
 set_convoys = 40
 
 1939.1.1 = {
