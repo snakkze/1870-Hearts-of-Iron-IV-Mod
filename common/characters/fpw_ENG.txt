@@ -101,7 +101,55 @@ characters={
 			traits = {
 				fpw_liberal_critic
 			}
-		}	
+		}
+		
+	}
+	ENG_william_stanley_jevons = { 
+		name = ENG_william_stanley_jevons
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_william_stanley_jevons"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = william_stanley_jevons
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				economic_reformer
+			}
+		}
+		
+	}
+	ENG_charles_darwin = { 
+		name = ENG_charles_darwin
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_charles_darwin"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = charles_darwin
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_evolutionary_biologst
+			}
+		}
 		
 	}
 }

@@ -118,6 +118,8 @@
  AUS_kuk_kriegsschule:0 "Expand k.u.k Kriegsschule"
  AUS_kuk_kriegsschule_desc:0 "k.u.k Kriegsschule is an elite military academy which will allow Austria to have only the finest commanders at her disposal, as they are trained by professional and experienced generals."
  AUS_short_service_conscription:0 "Short Service Conscription"
+ AUS_pressure_traditionalists:0 "Pressure Traditionalists"
+ AUS_pressure_traditionalists_desc:0 "To pass reforms and laws regarding the military situation we must gain the support of traditionalists within the army. Pressuring them will allow us to achieve this albeit begrudgingly."
  AUS_dev_of_small_arms:0 "Developer of Small Arms"
  AUS_spec_equipment:0 "Special Equipment"
  AUS_upgrade_mil_equipment:0 "Upgrade Military Equipment"
@@ -257,7 +259,11 @@ fpw_crush_czechs_tt:0 "Anti-Czech policies will decrease Czech attitudes, reduci
 fpw_civil_war_czechs_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Bohemia§!"
 
 focused_on_the_balkans:0 "§GYou will gain 10% attack on all balkan states§!"
- 
+
+AUS_radical_reformstooltip:0 "Modify §YDivided Military § §Wby\nArmy Organisation Regain:§  §G+10.00%§W\nDivison Attack:§  §G+10.00%§W\nDivison Defense:§  §G+10.00%§W"
+AUS_radical_reformstooltip2:0 "Modify §YDivided Military § §Wby\nArmy Organisation Regain:§  §G+5.00%§W\nDivison Attack:§  §G+7.50%§W\nDivison Defense:§  §G+7.50%§W"
+AUS_radical_reformstooltip3:0 "Modify §YDivided Military § §Wby\nDivison Recovery Rate:§  §G+12.00%§W\nDivison Attack:§  §G+2.50%§W\nDivison Defense:§  §G+2.50%§W\nRecruitable Population:§  §G+15.00%§W"
+AUS_radical_reformstooltip4:0 "Modify §YDivided Military § §Wby\nDivison Recovery Rate:§  §G+12.00%§W\nDivison Defense:§  §G+5.00%§W"
  
 #custom modifier tooltips
 

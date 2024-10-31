@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		republican_opposition = {
+		fpw_ITA_republican_opposition = {
 			allowed = {
 				original_tag = ITA
 			}
@@ -12,13 +12,14 @@ ideas = {
 			
 			removal_cost = -1
 			
+			picture = SPR_masters_of_our_own_fate
+
 			modifier = {
 				stability_factor = -0.1
-				political_power_factor = -0.1
-				fascism_drift = 0.01
+				political_power_cost = 0.35
 			}
 		}
-		liberal_country = {
+		fpw_ITA_liberal_country = {
 			allowed = {
 				original_tag = ITA
 			}
@@ -32,11 +33,10 @@ ideas = {
 			
 			removal_cost = -1
 			
+			picture = generic_democratic_drift_bonus
+
 			modifier = {
-				war_support_factor = 0.05
-				fascism_acceptance = 50
-				neutrality_drift = -0.05
-				communism_drift = -0.03
+				fascism_drift = 0.05
 			}
 		}
 		ITA_venice_attack = {

@@ -58,3 +58,17 @@ fpw_AUS_focused_on_balkan = {
 	army_attack_factor = 0.1
 
 }
+
+fpw_AUS_divided_military = { 
+	enable = { always = yes }
+
+    icon = GFX_idea_divided_military
+
+    army_morale_factor = AUS_army_morale_factor
+    army_org_regain = AUS_army_org_regain
+    army_defence_factor = AUS_army_defence_factor
+    army_attack_factor = AUS_army_attack_factor
+    recruitable_population_factor = recruitable_population_factor
+    planning_speed = AUS_planning_speed
+    breakthrough_factor = AUS_breakthrough_factor
+}

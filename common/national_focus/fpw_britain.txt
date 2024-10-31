@@ -1093,7 +1093,7 @@
 	focus = {
 		id = ENG_industrial_sector
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 25
+		x = 24
 		y = 0
 		cost = 10
 
@@ -1142,11 +1142,102 @@
 		}
 	}
 	focus = {
+		id = ENG_fill_the_factories
+		icon = GFX_focus_generic_full_employment
+		prerequisite = { focus = ENG_industrial_sector }
+		relative_position_id = ENG_industrial_sector
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.025
+			123 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = -25000
+				}
+			}
+			125 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = -25000
+				}
+			}
+			129 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = -25000
+				}
+			}
+			126 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = 25000
+				}
+			}
+			128 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = 25000
+				}
+			}
+			130 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = 25000
+				}
+			}
+			custom_effect_tooltip = ENG_industrial_capacity
+		    add_to_variable = { ENG_industrial_capacity_factory = 0.025 }
+		    add_to_variable = { ENG_industrial_capacity_dockyard = 0.025 }
+		}
+	}
+	focus = {
+		id = ENG_textile_industry_in_lancashire
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		prerequisite = { focus = ENG_fill_the_factories }
+		relative_position_id = ENG_fill_the_factories
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			132 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
 		id = ENG_increase_resource_output
 		icon = GFX_focus_generic_resource_extraction
 		prerequisite = { focus = ENG_industrial_sector }
 		relative_position_id = ENG_industrial_sector
-		x = -3
+		x = -5
 		y = 1
 		cost = 5
 
@@ -1292,7 +1383,7 @@
 		prerequisite = { focus = ENG_industrial_sector }
 		relative_position_id = ENG_industrial_sector
 		mutually_exclusive = { focus = ENG_reintroduce_corn_laws }
-		x = 2
+		x = 3
 		y = 1
 		cost = 5
 

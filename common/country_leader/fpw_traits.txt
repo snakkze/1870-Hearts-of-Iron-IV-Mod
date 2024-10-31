@@ -306,9 +306,18 @@ leader_traits = {
   }
 	fpw_liberal_critic = {
 		random = no
-		research_speed_factor = 0.075
+		research_speed_factor = 0.05
 		fascism_drift = 0.02
 		political_power_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fpw_evolutionary_biologst = {
+		random = no
+		research_speed_factor = 0.15
+		stability_factor = -0.05
 
 		ai_will_do = {
 			factor = 1

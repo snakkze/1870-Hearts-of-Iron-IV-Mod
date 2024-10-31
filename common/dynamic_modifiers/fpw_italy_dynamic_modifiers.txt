@@ -1,0 +1,12 @@
+fpw_ITA_disorganised_army = { 
+	enable = { always = yes }
+
+    icon = GFX_idea_tur_disorganised_armed_forces
+
+	army_attack_factor = ENG_min_export
+	consumer_goods_factor = ENG_consumer_goods_factor
+	industrial_capacity_factory = ENG_industrial_capacity_factory
+	industrial_capacity_dockyard = ENG_industrial_capacity_dockyard
+	production_speed_buildings_factor = ENG_production_speed_buildings_factor
+	local_resources_factor = ENG_local_resources_factor
+}

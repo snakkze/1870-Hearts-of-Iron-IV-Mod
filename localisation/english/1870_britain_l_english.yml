@@ -42,12 +42,22 @@
  
  ENG_industrial_sector:0 "Industrial Sector"
  ENG_industrial_sector_desc:0 "The British economy has boomed for decades as a result of being the birthplace of the Industrial Revolution. Expanding the industrial sector will enhance our performance and strengthen our position as the sole global hegemon."
+ ENG_textile_industry_in_lancashire:0 "Textile Industry in Lancashire"
+ ENG_textile_industry_in_lancashire_desc:0 "Textiles are an important export of Britain. Increasing production will be important to keep up with increasing demand."
  ENG_increase_resource_output:0 "Increase Resource Output"
  ENG_increase_resource_output_desc:0 "Though the most significant part of our economy, factories alone cannot foster economic growth. Mines will assist in this effort, and provide a good income for local families which are in need of occupation."
  ENG_mine_tungsten_in_plymouth:0 "Mine Tungsten in Plymouth"
  ENG_mine_tungsten_in_plymouth_desc:0 "Discoveries of Tungsten deposits within south-western England have come to light, giving us the opportunity to take full advantage of the situation and extract the much needed resource."
  ENG_acquire_the_technology:0 "Acquire the Technology"
  ENG_acquire_the_technology_desc:0 "Innovation in Britain has skyrocketed throughout the 19th century, and such commitment must be followed up on including how we extract our resources. Only the finest and up-to-date technology will do."
+ ENG_fill_the_factories:0 "Fill the Factories"
+ ENG_fill_the_factories_desc:0 "Workers are required for our many factories. Displacing those in rural areas will easily achieve this, at the cost of some stability."
+ ENG_encourage_international_trade:0 "Encourage International Trade"
+ ENG_encourage_international_trade_desc:0 "Since the repeal of the corn laws, the nation has flourished and become an international superpower. Such policies must be maintained so we may keep our position."
+ ENG_reintroduce_corn_laws:0 "Reintroduce the Corn Laws"
+ ENG_reintroduce_corn_laws_desc:0 "Landowners have warned of the repealment of the corn laws and we must hear their cries. Though it has provided economic growth, it has also hurt the farmers of our nation- and their interests should be protected."
+ ENG_agricultural_sector:0 "Agricultural Sector"
+ ENG_agricultural_sector_desc:0 "Agriculture has become less relevant as the years pass by, as much of our grain is now imported. For the sake of the farmers we should attempt to amend this situation."
 
 #decisions
  
@@ -82,6 +92,8 @@
  fpw_eng_workshop_of_the_world:0 "Workshop of the World"
  fpw_eng_workshop_of_the_world_desc:0 "Britain has long enjoyed control over international trade, largely caused by our mass production and exportation of goods. This has fostered economic growth across our nation and will continue to benefit us in the years to come."
  ENG_matthew_arnold:0 "Matthew Arnold"
+ ENG_william_stanley_jevons:0 "William Stanley Jevons"
+ ENG_charles_darwin:0 "Charles Darwin"
 
 #events
  britain_fpw.1.d:0 "After extreme frustration with his party, John Russell has decided to resign from his post as Prime Minister. This has lead to the collapse of the Liberal government, and has created a power vacuum which must be filled to ensure stability. "
@@ -89,9 +101,11 @@
  
 #traits 
  fpw_liberal_critic:0 "Liberal Critic"
+ fpw_evolutionary_biologst:0 "Evolutionary Biologist"
 
 #custom cost texts 
  ENG_local_resources:0 "Modify §YWorkshop of the World § §Wby\nResource Gain Efficiency:§  §G+20.00%§W"
+ ENG_industrial_capacity:0 "Modify §YWorkshop of the World § §Wby\nFactory Output:§  §G+2.5%§W\nDockyard Output:§  §G+2.5%§W"
  
 #custom effect tooltips
  

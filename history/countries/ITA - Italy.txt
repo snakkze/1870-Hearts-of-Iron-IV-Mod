@@ -35,25 +35,6 @@ set_popularities = {
 	neutrality = 3
 }
 
-1870.1.1 = {
-	unlock_national_focus = ITA_start
-	unlock_national_focus = ITA_ally_prussia
-	unlock_national_focus = ITA_prussian_military_cooperation
-	unlock_national_focus = ITA_the_war_with_austria	
-	unlock_national_focus = ITA_mountain_defence
-	unlock_national_focus = ITA_w
-	unlock_national_focus = ITA_economics
-	unlock_national_focus = ITA_develop_north
-	unlock_national_focus = ITA_construct_more_factories
-	unlock_national_focus = ITA_produce_cheese
-	unlock_national_focus = ITA_even_more_factories
-	unlock_national_focus = ITA_expanding_military_industry
-	unlock_national_focus = ITA_lombardy_weapons
-	unlock_national_focus = ITA_venice_weapons
-	unlock_national_focus = ITA_seek_allies
-	unlock_national_focus = ITA_ally_germany
-}
-
 
 starting_train_buffer = 1.5
 
@@ -62,8 +43,8 @@ set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
 	vittorio_emanuele
-	republican_opposition
-	liberal_country
+	fpw_ITA_republican_opposition
+	fpw_ITA_liberal_country
 	volunteers_only
 	civilian_economy
 }

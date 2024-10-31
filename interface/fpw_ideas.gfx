@@ -248,6 +248,14 @@ spriteTypes = {
 		name = "GFX_idea_ENG_matthew_arnold"
 		texturefile = "gfx/interface/ideas/ENG/idea_ENG_matthew_arnold.png"
 	}
+	SpriteType = {
+		name = "GFX_idea_ENG_william_stanley_jevons"
+		texturefile = "gfx/interface/ideas/ENG/idea_ENG_william_stanley_jevons.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_charles_darwin"
+		texturefile = "gfx/interface/ideas/ENG/idea_ENG_charles_darwin.png"
+	}
 	
 	
 }
