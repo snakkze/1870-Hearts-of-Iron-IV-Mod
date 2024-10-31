@@ -1,51 +1,32 @@
 division_template = {
-  name = "Militia-Division"
-  is_locked = no
-
-  regiments = {
-    irregular_infantry = { x = 0 y = 0 }
-    irregular_infantry = { x = 0 y = 1 }
-    irregular_infantry = { x = 1 y = 0 }
-    irregular_infantry = { x = 1 y = 1 }
-  }
-}
-division_template = {
-  name = "Infantry-Division"
-  is_locked = no
+  name = "División Regular"
+  is_locked = yes
 
   regiments = {
     infantry = { x = 0 y = 0 }
     infantry = { x = 0 y = 1 }
+	infantry = { x = 1 y = 1 }
     infantry = { x = 1 y = 0 }
-    infantry = { x = 1 y = 1 }
   }
 }
+
 units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12379
-		division_template = "Militia-Division"
-		start_experience_factor = 0.1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 2179
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		location = 5213
+		division_template = "División Regular"
+		start_experience_factor = 0.25
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 12321
-		division_template = "Infantry-Division"
+		location = 2208
+		division_template = "División Regular"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -53,8 +34,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 1555
-		division_template = "Infantry-Division"
+		location = 2194
+		division_template = "División Regular"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -62,8 +43,44 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 4643
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
+		location = 10965
+		division_template = "División Regular"
+		start_experience_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12964
+		division_template = "División Regular"
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 5213
+		division_template = "División Regular"
+		start_experience_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 2208
+		division_template = "División Regular"
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 2194
+		division_template = "División Regular"
+		start_experience_factor = 0.6
 	}
 }
