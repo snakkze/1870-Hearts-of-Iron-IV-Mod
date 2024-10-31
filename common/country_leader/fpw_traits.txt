@@ -322,16 +322,13 @@ leader_traits = {
 	}
  fpw_par_proud = {
     random = no
-	stability_factor = -0.03
-	war_support_factor = 0.07
-	political_power_factor = -0.04
-	political_advisor_cost_factor = 0.22
+	stability_factor = -0.08
+	war_support_factor = 0.12
+	political_power_factor = -0.1
+	political_advisor_cost_factor = 0.25
 	trade_laws_cost_factor = 0.25
 	economy_cost_factor = 0.2
-	conscription_factor = -0.045
+	conscription_factor = 0.15
   }
 
-}
-
-	
 }
