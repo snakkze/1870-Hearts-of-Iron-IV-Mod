@@ -1701,7 +1701,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			AUS = {
+				country_event = {
+					id = prussia_fpw.44
+					days = 1
+				}
+			}
+			ITA = {
+				country_event = {
+					id = prussia_fpw.44
+					days = 1
+				}
+			}
 		}
 	}
 

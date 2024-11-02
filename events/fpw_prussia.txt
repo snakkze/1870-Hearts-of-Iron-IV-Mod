@@ -1473,3 +1473,42 @@ country_event = { # Fate of the Monarchy
 		set_country_flag = fpw_option_constitutional_monarchy
 	}
 }
+
+# XY visits us
+country_event = {
+	id = prussia_fpw.44
+	title = prussia_fpw.44.t
+	desc = "[prussia_fpw_44_d]"
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_fpw.44.a
+		if = {
+			limit = {
+				original_tag = AUS
+			}
+			add_opinion_modifier = {
+				target = ITA
+				modifier = refused_help
+			}
+			reverse_add_opinion_modifier = {
+				target = ITA
+				modifier = refused_help
+			}
+		} else_if = {
+			limit = {
+				original_tag = ITA
+			}
+			add_opinion_modifier = {
+				target = AUS
+				modifier = refused_help
+			}
+			reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = refused_help
+			}
+		}
+	}
+}

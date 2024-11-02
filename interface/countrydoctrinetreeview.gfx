@@ -1,0 +1,381 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_nap_doc_bg"
+		texturefile = "gfx/interface/doctrines/nap_doc_bg.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_mod_warfare_bg"
+		texturefile = "gfx/interface/doctrines/modernized_warfare/mod_warfare_bg.png"
+	}	
+	spriteType = {
+		name = "GFX_fpw_sup_firepower_bg"
+		texturefile = "gfx/interface/doctrines/superior_firepower/sup_firepower_bg.png"
+	}	
+	spriteType = {
+		name = "GFX_nap_legacy_bg"
+		texturefile = "gfx/interface/doctrines/napoleons_legacy/nap_legacy_bg.png"
+	}	
+	spriteType = {
+		name = "GFX_fpw_mass_assault_bg"
+		texturefile = "gfx/interface/doctrines/mass_assault/mass_assault_bg.png"
+	}		
+	
+	### modernized warfare ###
+	SpriteType = {
+		name = "GFX_rapid_strike_tactics_medium"
+		texturefile = "gfx/interface/doctrines/mass_assault/fpw_deep_operations.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_improved_communications_medium"
+		texturefile = "gfx/interface/doctrines/modernized_warfare/telegraph.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_artillery_coordination_medium"
+		texturefile = "gfx/interface/technologies/concentrated_fire_plans.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_artillery_support_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/consistent_reinforcement.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_cavalry_reconnaissance_medium"
+		texturefile = "gfx/interface/doctrines/modernized_warfare/cavalry_reconnaissance.png"
+		alwaystransparent = yes
+	}
+	### cavalry spearhead
+	SpriteType = {
+		name = "GFX_forward_logistics_medium"
+		texturefile = "gfx/interface/doctrines/modernized_warfare/forward_logistics.png"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_quick_reinforcements_medium"
+		texturefile = "gfx/interface/doctrines/modernized_warfare/artillery_support.png"
+		alwaystransparent = yes
+	}
+
+
+	SpriteType = {
+		name = "GFX_railway_repair_corps_medium"
+		texturefile = "gfx/interface/doctrines/modernized_warfare/railway_repair_corps.png"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_fpw_modernized_warfare_medium"
+		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_flexible_defense_medium"
+		texturefile = "gfx/interface/technologies/elastic_defence.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mobilize_reserves_medium"
+		texturefile = "gfx/interface/technologies/peoples_army.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_flanking_maneuvers_medium"
+		texturefile = "gfx/interface/technologies/backhand_blow.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_elite_infantry_training_medium"
+		texturefile = "gfx/interface/technologies/kampfgruppe.dds"
+		alwaystransparent = yes
+	}
+
+		
+	
+	### napoleons legacy ###
+	SpriteType = {
+		name = "GFX_eyes_of_the_empire_medium"
+		texturefile = "gfx/interface/doctrines/modernized_warfare/cavalry_reconnaissance.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_disciplined_line_medium"
+		texturefile = "gfx/interface/doctrines/napoleons_legacy/disciplined_line.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_napoleons_legacy_medium"
+		texturefile = "gfx/interface/doctrines/napoleons_legacy/napoleons_legacy.png"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_cavalry_superiority_medium"
+		texturefile = "gfx/interface/doctrines/napoleons_legacy/cavalry_superiority.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_formations_discipline_medium"
+		texturefile = "gfx/interface/doctrines/napoleons_legacy/artillery_supremacy.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_rapid_mobilization_medium"
+		texturefile = "gfx/interface/doctrines/napoleons_legacy/rapid_mobilization.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_logistics_innovation_medium"
+		texturefile = "gfx/interface/doctrines/superior_firepower/fpw_combined_arms.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_reserve_forces_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/expedited_training_standard.png"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_stronghold_tactics_medium"
+		texturefile = "gfx/interface/technologies/trench_warfare.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_superior_command_medium"
+		texturefile = "gfx/interface/technologies/central_planning.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_rallying_changes_medium"
+		texturefile = "gfx/interface/technologies/grand_assault.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_shock_infantry_medium"
+		texturefile = "gfx/interface/technologies/kampfgruppe.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_warfare_tactics_medium"
+		texturefile = "gfx/interface/technologies/assault_breakthrough.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_coordinated_offensives_medium"
+		texturefile = "gfx/interface/technologies/breakthrough_priority.dds"
+		alwaystransparent = yes
+	}
+
+
+
+	
+	
+	### mass manpower doctrines ###
+	SpriteType = {
+		name = "GFX_fpw_large_front_operations_medium"
+		texturefile = "gfx/interface/doctrines/mass_assault/fpw_large_front_operations.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fpw_deep_operations_medium"
+		texturefile = "gfx/interface/doctrines/mass_assault/fpw_deep_operations.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fpw_mobilized_wave_medium"
+		texturefile = "gfx/interface/doctrines/mass_assault/fpw_mobilized_wave.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fpw_continuous_offensive_medium"
+		texturefile = "gfx/interface/doctrines/mass_assault/fpw_continuos_offensive.png"
+		alwaystransparent = yes
+	}
+
+	
+	### sup firepower doctrines ###
+	SpriteType = {
+		name = "GFX_fpw_mobile_defence_medium"
+		texturefile = "gfx/interface/doctrines/superior_firepower/fpw_mobile_defence.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fpw_regimental_combat_teams_medium"
+		texturefile = "gfx/interface/doctrines/superior_firepower/fpw_regimental_combat_teams.png"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_fpw_sup_mobilized_offensive_medium"
+		texturefile = "gfx/interface/doctrines/superior_firepower/fpw_sup_mobilized_offensive.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fpw_combined_arms_medium"
+		texturefile = "gfx/interface/doctrines/superior_firepower/fpw_combined_arms.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fpw_tactical_control_medium"
+		texturefile = "gfx/interface/doctrines/superior_firepower/fpw_tactical_control.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fpw_shock_and_awe_medium"
+		texturefile = "gfx/interface/doctrines/superior_firepower/shock_and_awe.png"
+		alwaystransparent = yes
+	}
+
+
+
+	### napolenoc doctrines ###
+	SpriteType = {
+		name = "GFX_napoleonic_doctrine_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/speed_of_thought.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_element_of_suprise_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/element_of_suprise.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_consistent_reinforcement_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/consistent_reinforcement.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_aggressive_expansion_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/frontline_expansions.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_expedited_training_standard_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/expedited_training_standard.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_intense_offensives_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/intense_offensives.png"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_appel_aux_armes_medium"
+		texturefile = "gfx/interface/doctrines/napoleonic/call_to_arms.png"
+		alwaystransparent = yes
+	}
+
+	
+	### naval doctrine tech entry bgs ###
+	
+	spriteType = {
+		name = "GFX_technology_fpw_naval_doctrine_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_fpw_naval_doctrine_folder_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_fpw_naval_doctrine_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fpw_naval_doctrine_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fpw_naval_doctrine_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	#### land doctrine #####
+	
+	spriteType = {
+		name = "GFX_technology_fpw_land_doctrine_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_fpw_land_doctrine_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_fpw_land_doctrine_folder_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_fpw_industry_folder_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_fpw_land_doctrine_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fpw_land_doctrine_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	
+	### special_forces doctrine tech entry bgs ###
+	
+	spriteType = {
+		name = "GFX_technology_fpw_special_forces_doctrine_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_fpw_special_forces_doctrine_folder_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_fpw_special_forces_doctrine_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fpw_special_forces_doctrine_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fpw_special_forces_doctrine_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+}

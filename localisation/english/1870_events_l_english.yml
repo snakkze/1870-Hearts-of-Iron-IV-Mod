@@ -331,6 +331,11 @@
   prussia_fpw.41.b: "Proclaim the @PRSUnited Kingdom"
   prussia_fpw.41.c: "Proclaim the @PRSSocialist Republic"
 
+  prussia_fpw.44.t:0 "New [PRS.GetNameAdjectiveCap] European concert"
+  prussia_fpw_44_d_aus:0 "With [PRS.GetNameDefCap]'s recent formation and its deft diplomatic outreach, they have arranged a meeting between us and [ITA.GetAdjective] leader [ITA.GetLeader] in our capital, Vienna. This Prussian maneuver, fostering rapprochement with Italy, opens the door to a promising alliance in Europe, uniting [Aus.GetNameDef], [PRS.GetNameDef], and Italy in a new vision for continental power."
+  prussia_fpw_44_d_ita:0 "Through recent political efforts by [PRS.GetNameDefCap], a historic meeting has been arranged between us and [Aus.GetLeader] in the Austrian capital of Vienna. Prussia’s intent to strengthen ties with [Aus.GetNameDef] could mark the beginning of a powerful alliance, bringing Italy, Austria, and [PRS.GetNameDef] together in a united front for Europe’s future."
+  prussia_fpw.44.a:0 "Maybe they're not as bad after all."
+
  
   generic.26.t:0 "Warning"
   generic.26.d:0 "This mod is an early release, and some bugs will be present, and some national focuses will be missing. If you find any bugs, please report them to the Discord server. For now, we only recommend playing as Prussia, Italy or France, with Historical AI enabled."

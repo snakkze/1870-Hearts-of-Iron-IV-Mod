@@ -150,6 +150,20 @@ technology_folders = {
 		ledger = civilian
 	}
 
+	fpw_land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	fpw_naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	fpw_special_forces_doctrine_folder = {
+		ledger = hidden #For now
+		doctrine = yes
+	}
+
+
 
 	## VANILLA WE DONT WANT!(Even tho its the best ice cream)
 	infantry_folder = {

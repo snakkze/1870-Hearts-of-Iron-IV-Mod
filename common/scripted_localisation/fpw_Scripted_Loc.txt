@@ -33,6 +33,21 @@ defined_text = {
     }
 }
 defined_text = {
+    name = prussia_fpw_44_d
+    text = {
+        trigger = {
+            original_tag = AUS
+        }
+        localization_key = prussia_fpw_44_d_aus
+    }
+    text = {
+        trigger = {
+            original_tag = ITA
+        }
+        localization_key = prussia_fpw_44_d_ita
+    }
+}
+defined_text = {
     name = fpw_crisis_event_description_loc
     
     text = {
