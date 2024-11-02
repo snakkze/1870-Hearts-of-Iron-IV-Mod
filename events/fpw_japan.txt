@@ -1262,61 +1262,21 @@ add_namespace = fpw_japan
 		option = {
 			name = fpw_japan.29.a
 			ai_chance = {
-				base = 10
+				base = 1	
+				modifier = { has_stability > 0.5 add = 3 }
+				modifier = { has_war_support > 0.5 add = 3 }
+				modifier = { has_war_support > 0.75 add = 5 }
+				modifier = { has_defensive_war = yes add = -3 }
 			}
-			add_timed_idea = {
-			idea = jap_supporting_korea
-			days = 365
-			}
-			send_equipment = {
-			equipment = infantry_equipment
-			amount = 5000
-			target = JAP
-			}
-			add_manpower = -20000
-			KOR = {
-			add_manpower = 20000
-			}
+			add_war_support = 0.02
 		}
 		option = {
 			name = fpw_japan.29.b
 			ai_chance = {
-				base = 0
+				base = 6
 			}
-			if = {
-			limit = {
-			KOR = {
-			has_war_with = JAP
-			}
-			}
-			declare_war_on = {
-			target = JAP
-			type = annex_everything
-			}
-			KOR = {
-			give_military_access = CHI
-			}
-			}
-			if = {
-			limit = {
-			KOR = {
-			NOT = {
-			has_war_with = JAP
-			}
-			}
-			}
-			give_guarantee = KOR
-			KOR = {
-			give_military_access = CHI
-			}
-			}	
-			
-		}
-		option = {
-			name = fpw_japan.29.c
-			ai_chance = {
-				base = 0
-			}
+			end_puppet = KOR
+			remove_from_faction = KOR
 			KOR = {add_opinion_modifier = { target = CHI modifier = large_decrease }}
 		}
 	}

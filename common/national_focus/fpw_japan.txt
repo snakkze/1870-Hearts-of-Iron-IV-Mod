@@ -20,7 +20,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 2400 y = 1565 }
+	continuous_focus_position = { x = 2400 y = 2565 }
 	
 	default = no
 
@@ -501,6 +501,7 @@ focus_tree = {
 	}
 	
 	
+	
 	focus = {
 		id = JAP_a_strong_centralized_state
 		icon = GFX_focus_jap_centralized_state
@@ -761,7 +762,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		jap_decrease_societal_backlash = yes
-		#Western Powers maybe get event to intervene? 
+		
 		
 		
 
@@ -769,12 +770,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_fortify_the_homeland
-		icon = GFX_focus_jap_fortify_homeland
+		id = JAP_challenge_the_unequal_treaties
+		icon = GFX_
 		prerequisite = { focus = JAP_guard_national_sovereignty }
 		relative_position_id = JAP_guard_national_sovereignty
-		x = -1
-		y = 2
+		x = -2
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -790,8 +791,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = JAP_boost_domestic_production
-		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
+		id = JAP_preserve_traditional_governance
+		icon = GFX_
 		prerequisite = { focus = JAP_guard_national_sovereignty }
 		relative_position_id = JAP_guard_national_sovereignty
 		x = 0
@@ -810,26 +811,10 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = JAP_indigenous_military_innovation
-		icon = GFX_
-		prerequisite = { focus = JAP_guard_national_sovereignty }
-		relative_position_id = JAP_guard_national_sovereignty
-		x = 1
-		y = 2
-		cost = 10
+	
+	
+	
 
-		ai_will_do = {
-			factor = 2
-		}
-		completion_reward = {
-		
-		
-		
-
-
-		}
-	}
 	
 	
 	
@@ -1390,21 +1375,23 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-		create_wargoal = {
-		type = puppet_wargoal_focus
-		target = KOR
-		}
 		if = {
 		limit = {
 		NOT = {
 		has_war_with = CHI
+		}
+		KOR = {
+		is_puppet_of = CHI
 		}
 		}
 		CHI = {
 			country_event = fpw_japan.29
 			}
 		}	
-		
+		create_wargoal = {
+		type = puppet_wargoal_focus
+		target = KOR
+		}
 		}
 		mutually_exclusive = { focus = JAP_demand_an_official_apology }
 	}
@@ -2327,10 +2314,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2599,10 +2586,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -2631,10 +2618,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2676,10 +2663,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -2708,10 +2695,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
