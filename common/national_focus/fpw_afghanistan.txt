@@ -81,7 +81,10 @@
 		}
 		
 		completion_reward = {	
-			add_ideas = fpw_AFG_extended_use_of_propoganda
+			add_timed_idea = {
+				idea = fpw_AFG_extended_use_of_propoganda
+				days = 360
+			}
 		}
 		
 		ai_will_do = {
@@ -137,5 +140,405 @@
 		}
 	}
 
+	focus = {
+		id = afg_state_of_the_military
+		icon = GFX_focus_generic_military_academy
+		
+		x = 25
+		y = 3
+		
+		cost = 1
+		
+		prerequisite = { focus = afg_cheaper_guns }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			custom_effect_tooltip = fpw_afg_unlocks_mil_branch
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_mountain_warfare
+		icon = GFX_focus_GRE_a_land_of_mountains
+
+		
+		x = 15
+		y = 0
+		
+		cost = 1
+		
+		#prerequisite = { focus = afg_cheaper_guns }
+
+		available = {
+			has_completed_focus = afg_state_of_the_military
+		}
+		
+		completion_reward = {	
+			add_ideas = fpw_AFG_mountain_warfare
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_begin_mordernization
+		icon = GFX_goal_generic_army_artillery2
+
+		
+		
+		x = 15
+		y = 1
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_mountain_warfare }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			army_experience = 30
+			add_ideas = fpw_AFG_mordernizing_army
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_modernize_infantry_equipment
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+
+		
+		
+		x = 15
+		y = 2
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_begin_mordernization }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			#unlocks decision to reform the army infantry equipment
+			#custom_effect_tooltip = afg_modernize_infantry
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_modernize_support_equipment
+		icon = GFX_focus_generic_truck
+
+		
+		
+		x = 15
+		y = 3
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_modernize_infantry_equipment }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			#unlocks decision to reform the army support equipment
+			#custom_effect_tooltip = afg_modernize_support
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_modernize_artillery_equipment
+		icon = GFX_goal_generic_army_artillery
+
+		
+		
+		x = 13
+		y = 2
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_begin_mordernization }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			#unlocks decision to reform the army artillery equipment
+			#custom_effect_tooltip = afg_modernize_artillery
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = afg_copy_prussian_model
+		icon = GFX_focus_befriend_prussia
+
+		
+		
+		x = 13
+		y = 3
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_modernize_artillery_equipment }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			#gives an event to prussia asking if we can copy their tatics and if they accept Afg get a buff
+			PRS = {
+				country_event = fpw_afghan.10
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_modernize_calvary
+		icon = GFX_focus_generic_horse_studs
+
+		
+		
+		x = 17
+		y = 2
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_begin_mordernization }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			#unlocks decision to give reform calvary  equipment
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_extensive_calvary_research_plan
+		icon = GFX_goal_generic_cavalry
+
+		
+		
+		x = 17
+		y = 3
+		
+		cost = 3
+		
+		prerequisite = { focus = afg_modernize_calvary }
+
+		available = {
+		}
+		
+		completion_reward = {	
+			#gives an idea that gives research bonus speed to calv tech that is later upgradable when you unlock a focus to intensify research even more
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_reformed_army
+		icon = GFX_focus_generic_full_social_mobilization
+
+		
+		
+		x = 15
+		y = 4
+		
+		cost = 10
+		
+		prerequisite = { focus = afg_extensive_calvary_research_plan focus = afg_copy_prussian_model focus = afg_modernize_support_equipment}
+
+		available = {
+			AND = {
+				has_completed_focus = afg_extensive_calvary_research_plan
+				has_completed_focus = afg_copy_prussian_model
+				has_completed_focus = afg_modernize_support_equipment
+			}
+		}
+		
+		completion_reward = {	
+			#fixes army spirit
+			remove_ideas = fpw_AFG_lagging_military_research
+			add_ideas = fpw_AFG_new_afghan_army
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_new_high_command
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+
+		
+		
+		x = 15
+		y = 5
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_reformed_army }
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = {	
+				remove_idea = fpw_AFG_new_afghan_army
+				add_idea = fpw_AFG_afghan_modern_army
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_study_civil_war
+		icon = GFX_goal_generic_army_doctrines
+
+		
+		
+		x = 18
+		y = 5
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_reformed_army }
+
+		available = {
+			has_war = no
+		}
+		
+		completion_reward = {
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_mobalize_the_economy
+		icon = GFX_focus_generic_little_entente
+
+		
+		
+		x = 12
+		y = 5
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_reformed_army }
+
+		available = {
+			has_war = no
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				#prioritize = {}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				#prioritize = {}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = partial_economic_mobilisation
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = afg_allow_tribes_in_army
+		icon = GFX_focus_URG_turmoil_of_paso_morlan
+
+		
+		
+		x = 10
+		y = 6
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_mobalize_the_economy }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_AFG_moblized_tribes
+			set_variable = { tribal_army_influence = 1 }
+			custom_effect_tooltip = afg_army_influence
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
 	
 }

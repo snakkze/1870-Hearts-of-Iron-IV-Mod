@@ -315,6 +315,57 @@ ideas = {
 			targeted_modifier = { tag = BAV attack_bonus_against = 0.05 }
 			targeted_modifier = { tag = WRT attack_bonus_against = 0.05 }
 		}
+
+		prs_fpw_industrial_economy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+				
+			}
+		}
+		prs_fpw_prussian_bank = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+				trade_opinion_factor = 0.2
+			}
+		}
+
+		prs_fpw_prussian_manufactoring_industry = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+
+
 	}
 	
 	hidden_ideas = {

@@ -137,7 +137,7 @@ ideas = {
 			}
 		}
 	}
-country = {
+	country = {
 		fpw_AFG_extended_use_of_propoganda = {
 			allowed = {
 				always = no
@@ -154,7 +154,7 @@ country = {
 		}
 	}
 
-country = {
+	country = {
 		fpw_AFG_supporting_afghanistan = {
 			allowed = {
 				always = no
@@ -169,7 +169,7 @@ country = {
 			}
 		}
 	}
-country = {
+	country = {
 		fpw_AFG_munitys_in_the_army = {
 			allowed = {
 				always = no
@@ -185,5 +185,162 @@ country = {
 			}
 		}
 	}
+	country = {
+		fpw_AFG_mountain_warfare = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				terrain_penalty_reduction = 0.3
+				pocket_penalty = 0.25
+				experience_gain_army = -0.15
+				cavalry_attack_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		fpw_AFG_mordernizing_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				army_org_factor = 0.05
+				experience_gain_army_unit_factor = 0.05
+				max_planning_factor = 0.05
+				planning_speed = 0.05
+				artillery_attack_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		fpw_AFG_lagging_military_research = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				research_speed_factor = -0.1
+				artillery_attack_factor = -0.3
+				breakthrough_factor = -0.2
+				army_defence_factor = -0.05
+				max_planning_factor = -0.2
+				planning_speed = -0.5
+			}
+		}
+	}
+
+	country = {
+		fpw_AFG_new_afghan_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+				custom_effect_tooltip = new_afghan_army
+			}
+		}
+	}
+
+	country = {
+		fpw_AFG_prussian_artillery_designs = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				research_bonus = {
+					artillery = 0.1
+				}
+				equipment_bonus = {
+					artillery = {
+						instant = yes
+						build_cost_ic = -0.2
+					}
+				}
+			}
+		}
+	}
+
+	country = {
+		fpw_AFG_afghan_modern_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+				planning_speed = 0.2
+				max_planning_factor = 0.2
+				custom_effect_tooltip = new_afghan_army
+			}
+		}
+	}
+
+	country = {
+		fpw_AFG_moblized_tribes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				conscription_factor = 0.05
+				stability_factor = -0.2
+				
+			}
+		}
+	}
+
+	country = {
+		fpw_AFG_tribal_leaders_allowed_in_highcommand = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				planning_speed = -0.1
+				max_planning_factor = -0.05
+			}
+		}
+	}
+
 }
 

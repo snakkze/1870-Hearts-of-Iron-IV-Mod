@@ -26,7 +26,8 @@
  afghan_fpw.9.t:0 "The British Has Rejected Us"
  afghan_fpw.9.d:0 "It was obvious the British were going to reject but atleast we gave it a try. We do not need their help in order to win this civil war."
 
-
+ afghan_fpw.10.t:0 "Afghanistan asks to copy artillery designs"
+ afghan_fpw.10.d:0 "The Afghans have come to us asking for our artillery designs, we could use this chance to make sure Afghanistan is aligned with us in the future"
 
 
 
@@ -44,12 +45,40 @@ afg_heavy_use_of_propoganda:0 "Use of Propaganda"
 afg_heavy_use_of_propoganda_desc:0 "We must use propoganda to increase support for the war and conscription."
 afg_ask_russia_for_help:0 "Reach Out To Russia"
 afg_ask_russia_for_help_desc:0 "We need all the help we can get for the civil war, so why not ask the giant state to our north."
+afg_investments:0 "Foreign Investments"
+afg_investments_desc:0 "We need to factories to produce more guns, but because of our current situation building more would be nearly impossible, we must ask other nations for help."
+afg_mountain_warfare:0 "Mountain Warfare"
+afg_mountain_warfare:0 "We need to embrace our mountainess terrian."
+afg_begin_mordernization:0 "Begin Army Modernization"
+afg_begin_mordernization_desc:0 "The mountains won't be enough we have to modernize and evolve the military to catch up the the rest of the world."
+afg_modernize_infantry_equipment:0 "Modernize Infantry Equipment"
+afg_modernize_infantry_equipment_desc:0 "We must begin the process of modernizing our infantry equipment"
+afg_modernize_support_equipment:0 "Modernize Support Equipment"
+afg_modernize_support_equipment_desc:0 "Now that we have modernized our infantry equipment it is only natural that we modernize our infantry equipment"
+afg_modernize_artillery_equipment:0 "Modernize Artillery Equipment"
+afg_modernize_artillery_equipment_desc:0 "Infantry alone will not break the enemies front line we need something to punch through."
+afg_copy_prussian_model:0 "Copy Prussian Model"
+afg_copy_prussian_model_desc:0 "The Prussians are another relatively small country in size but powerful in military. They have some of the best designs so if they allow us to take their designs it would be amazing."
+afg_modernize_calvary:0 "Modernize Calvary"
+afg_modernize_calvary_desc:0 "Most of the tribes use calvary, our military might would increase dramatically if we were to reform our calvary."
+afg_extensive_calvary_research_plan:0 "Calvary Research Plan"
+afg_extensive_calvary_research_plan_desc:0 "We need to make a more permanent solution to our calvary problem. Having a dedicated research plan to research calvary technology can help us grealy get ahead of the rest of the world."
+afg_reformed_army:0 "Reforms Completed"
+afg_reformed_army_desc:0 "We have finally completed the reforms and we now have a new, more modern army."
+afg_state_of_the_military:0 "State of The Military"
+
+
+
+
 
 
 #### Custom Tooltips
 
 fpw_afg_investments:0 "§G This focus will unlock investment decisions §!"
 fpw_afg_inv_dec:0 "Unlocks Decision §Y Investment Oppurtinities§!"
+fpw_afg_unlocks_mil_branch:0 "§GThis Focus Will Unlock Afghan Civil War Military Branch§!"
+new_afghan_army:0 "§GThis idea will be improved with each focus you do in the military branch§!"
+afg_army_influence:0 "§GThis focus will start the tribal influence mechanic! If the tribal influence reaches 10 or -10 you will get a civil war!§!"
 
 
 
@@ -58,3 +87,13 @@ fpw_afg_investment_chances_dec:0 "Investment Chances"
 fpw_ask_prussia:0 "Ask the Prussians for investments"
 fpw_ask_france:0 "Ask the French for investments"
 fpw_ask_britain:0 "Ask the British for investments"
+
+
+### The rest of the ideas that arent in the other idea thingy
+fpw_AFG_afghan_modern_army:0 "New Afghan Army"
+fpw_AFG_prussian_artillery_designs:0 "Prussian Artillery Designs"
+fpw_AFG_new_afghan_army:0 "New Afghan Army"
+fpw_AFG_lagging_military_research:0 "Lagging Military Research"
+fpw_AFG_mordernizing_army:0 "Modernizing Army"
+fpw_AFG_mountain_warfare:0 "Mountain Warfare"
+fpw_AFG_munitys_in_the_army:0 "Mutinies In The Army"

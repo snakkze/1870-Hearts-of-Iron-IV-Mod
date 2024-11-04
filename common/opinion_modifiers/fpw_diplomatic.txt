@@ -33,4 +33,14 @@ opinion_modifiers = {
 		trade = no
 		value = -75
 	}
+
+	fpw_afghan_friend_modifier = {
+        	trade = no
+        	value = 25
+	}
+
+	fpw_afghan_enemy_modifier = {
+        	trade = no
+        	value = -25
+	}
 }
