@@ -381,6 +381,22 @@ ideas = {
 			}
 		}
 
+		prs_fpw_strikes = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FIN_socialist_welfare
+
+			modifier = {
+				industrial_capacity_factory = -0.20
+				stability_factor = -0.20
+				production_speed_buildings_factor = -0.20
+			}
+		}
+
 		prs_fpw_concessions_granted_to_workers = {
 			allowed = {
 				always = no
