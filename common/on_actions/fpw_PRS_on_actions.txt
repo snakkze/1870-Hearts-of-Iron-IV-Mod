@@ -1,0 +1,18 @@
+on_actions = {
+	on_daily_PRS = {
+		effect = {
+			if = {
+				limit = {
+					date > 1868.1.12
+					date < 1868.2.22
+				}
+				PRS = {
+					country_event = prussia_fpw.45
+				}
+			}
+					
+		}
+
+
+	}
+}

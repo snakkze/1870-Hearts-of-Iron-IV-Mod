@@ -4578,7 +4578,10 @@ focus = {
 		y = 1
 		relative_position_id = PRS_extra_funding_for_industry
 		cost = 10
-	
+
+		bypass = {
+			has_variable = prs_fpw_strikes_variable
+		}
 		
 		available_if_capitulated = yes
 	
