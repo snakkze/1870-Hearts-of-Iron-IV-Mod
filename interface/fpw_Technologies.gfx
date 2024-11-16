@@ -7,12 +7,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/icons/fpw_techtree_cavalry_tab.dds"
 		noOfFrames = 2
 	}	
-
+	SpriteType = {
+		name = "GFX_fpw_colonist_folder_tab"
+		texturefile = "gfx/interface/technologies/icons/fpw_techtree_colonist_tab.png"
+		noOfFrames = 2
+	}	
 	# folder background #
 	SpriteType = {
 		name = "GFX_fpw_cavalry_bg"
 		texturefile = "gfx/interface/technologies/fpw_cavalry_techtree_bg.png"
-	}	
+	}
+	SpriteType = {
+		name = "GFX_fpw_colonist_bg"
+		texturefile = "gfx/interface/technologies/fpw_colonist_techtree_bg.png"
+	}
+
 
 
 	### generic equipment archetypes ###

@@ -1,10 +1,11 @@
 scripted_gui = {
-    superevents_gui = {
-        window_name = "superevents_gui_window"
+
+	fpw_startup_gui = {
+        window_name = "startup_gui_window"
         context_type = player_context
 
         visible = {
-            has_global_flag = super_visible
+            has_global_flag = startup_visible
         }
 
         effects = {
@@ -38,8 +39,6 @@ scripted_gui = {
         ai_enabled = {
             always = no
         }
-
-        ai_test_interval = 290  # The higher, the long it takes the ai to do actions
-        ai_test_variance = 0.5
-    }
+	}
 }
+

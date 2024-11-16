@@ -56,46 +56,6 @@ technologies = {
 		org_loss_when_moving = -0.05
 				
 		path = {
-			leads_to_tech = disciplined_training 
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 4.5
-
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-
-		folder = {
-			name = fpw_land_doctrine_folder
-			position = { x = -8 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 3.0
-		}
-	}
-	
-	disciplined_training = {
-
-		xp_research_type = army
-		xp_unlock_cost = 100
-		
-		org_loss_when_moving = -0.05
-				
-		path = {
 			leads_to_tech = consistent_reinforcement 
 			research_cost_coeff = 1
 		}
@@ -110,7 +70,7 @@ technologies = {
 
 		folder = {
 			name = fpw_land_doctrine_folder
-			position = { x = -4 y = 0 }
+			position = { x = -8 y = 0 }
 		}
 		
 		ai_will_do = {
