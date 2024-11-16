@@ -204,3 +204,27 @@ country_event = {
 
 }
 
+country_event = {
+	id = fpw_afghan.10
+	title = afghan_fpw.10.t
+	desc = afghan_fpw.10.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We can help them"
+		AFG = {
+			add_ideas = fpw_AFG_prussian_artillery_designs
+		}
+		add_opinion_modifier = fpw_afghan_friend_modifier
+	}
+
+	option = {
+		name = "No"
+		add_opinion_modifier = fpw_afghan_enemy_modifier
+	}
+
+
+}
+

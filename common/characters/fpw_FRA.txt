@@ -80,6 +80,81 @@ characters={
 			id=-1
 		}
 	}
+
+	FRA_georges_eugene = { 
+		name = FRA_georges_eugene
+		portraits = {
+			civilian = {
+				small="GFX_idea_FRA_georges_eugene"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = georges_eugene
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_public_works_expert
+			}
+		}
+		
+	}
+
+	FRA_louis_pasteur = { 
+		name = FRA_louis_pasteur
+		portraits = {
+			civilian = {
+				small="GFX_idea_FRA_louis_pasteur"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = louis_pasteur
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_father_of_microbiology
+			}
+		}
+		
+	}
+
+	FRA_leon_gambetta = { 
+		name = FRA_leon_gambetta
+		portraits = {
+			civilian = {
+				small="GFX_idea_FRA_leon_gambetta"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = leon_gambetta
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+			traits = {
+				fpw_fierce_anti_monarchist
+			}
+		}
+		
+	}
 		
 	FRA_François_Achille_Bazaine = {
 		name = "François Achille Bazaine"

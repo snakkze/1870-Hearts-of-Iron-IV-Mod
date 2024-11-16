@@ -548,4 +548,234 @@ PRS_reform_balance_of_power_category = {
 			}
 		}
 	}
-}	
+}
+
+fpw_mass_urbanization_projects = {
+	PRS_develop_berlin = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 64
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			64 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 12
+	            }
+				add_resource = {
+		            type = wood
+		            amount = 30
+	            }
+			}
+		}
+	}
+
+	PRS_develop_essen = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 981
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			981 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 25
+	            }
+			}
+		}
+	}
+
+	PRS_develop_konigsberg = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 763
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			763 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 10
+	            }
+				add_resource = {
+		            type = wood
+		            amount = 20
+	            }
+			}
+		}
+	}
+
+	PRS_develop_Dresden = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 65
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			65 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = tungsten
+		            amount = 20
+	            }
+			}
+		}
+	}
+
+	PRS_develop_Dresden = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 65
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			65 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = tungsten
+		            amount = 20
+	            }
+			}
+		}
+	}
+}

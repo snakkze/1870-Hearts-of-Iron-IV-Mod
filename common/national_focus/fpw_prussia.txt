@@ -23,9 +23,8 @@ focus_tree = {
 	
 	continuous_focus_position = {
 		x = 3800
-		y = 950	
+		y = 1200	
 	}
-	
 	default = no
 
 	focus = {
@@ -4038,8 +4037,8 @@ focus = {
 	}
 	
 	focus = {
-		id = PRS_industrial_effort
-		icon = GFX_focus_generic_industry_2
+		id = PRS_industrialzation
+		icon = GFX_focus_generic_industry_3
 
 		offset = {
 			x = -13
@@ -4057,22 +4056,17 @@ focus = {
 			}
 		}
 
-		x = 48
+		x = 55
 		y = 0
 
 		cost = 5
 	
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
+			add_ideas = prs_fpw_industrial_economy
 		}
 	
 		ai_will_do = {
@@ -4099,13 +4093,13 @@ focus = {
 	}
 	
 	focus = {
-		id = PRS_construction_effort
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = PRS_industrial_effort }
-		x = -1
+		id = PRS_give_to_junkers
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = PRS_industrialzation }
+		x = -5
 		y = 1
-		relative_position_id = PRS_industrial_effort
-		cost = 5
+		relative_position_id = PRS_industrialzation
+		cost = 10
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -4118,69 +4112,41 @@ focus = {
 		}
 	
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 2
-						include_locked = yes
-					}					
-				}
-			}
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}			
 		}
 	
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
+			63 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
 				}
 			}
+
+			62 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+			}
+
 		}
 	}
 	
 	focus = {
-		id = PRS_production_effort
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = PRS_industrial_effort }
-		x = 1
+		id = PRS_expand_rhineland_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PRS_give_to_junkers }
+		x = 2
 		y = 1
-		relative_position_id = PRS_industrial_effort
-		cost = 10
+		relative_position_id = PRS_give_to_junkers
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -4192,68 +4158,55 @@ focus = {
 		}
 	
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 2
-						include_locked = yes
-					}
-				}
-			}
+
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
 		}
 	
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+
+			981 = {
+         		add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+			}
+
+			51 = {
+         		add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+			}
+
+			42 = {
+         		add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+			}
+
+			1009 = {
+         		add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
 				}
 			}
 		}
 	}
 	
 	focus = {
-		id = PRS_construction_effort_2
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = PRS_construction_effort }
+		id = PRS_continue_deving_rhineland
+		icon = GFX_goal_reichsautobahn
+		prerequisite = { focus = PRS_expand_rhineland_infrastructure }
 		x = 0
-		y = 1
-		relative_position_id = PRS_construction_effort
+		y = 2
+		relative_position_id = PRS_expand_rhineland_infrastructure
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -4266,69 +4219,50 @@ focus = {
 		}
 	
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 2
-						include_locked = yes
-					}
-				}
-			}
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
 		}		
 	
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+
+			51 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
+			}
+
+			42 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+			}
+
+			1009 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
 				}
 			}
 		}
 	}
 	
 	focus = {
-		id = PRS_production_effort_2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = PRS_production_effort }
-		x = 0
+		id = PRS_invest_in_agricultural_lands
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = PRS_give_to_junkers }
+		x = -2
 		y = 1
-		relative_position_id = PRS_production_effort
-		cost = 10
+		relative_position_id = PRS_give_to_junkers
+		cost = 7
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 	
@@ -4340,68 +4274,137 @@ focus = {
 		}
 	
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
 		}		
 	
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+			60 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+			}
+
+			66 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = PRS_expand_silesian_steel_mines
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = PRS_invest_in_agricultural_lands }
+		x = 0
+		y = 2
+		relative_position_id = PRS_invest_in_agricultural_lands
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			762 = {
+         		add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 6
+	            }
+			}
+
+			67 = {
+         		add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 6
+	            }
+			}
+
+			66 = {
+         		add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 6
+	            }
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_berlin_economic_development
+		icon = GFX_focus_spa_save_the_alcazar
+		prerequisite = { focus = PRS_expand_rhineland_infrastructure focus = PRS_invest_in_agricultural_lands }
+		x = 0
+		y = 2
+		relative_position_id = PRS_give_to_junkers
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+	
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}		
+	
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
 				}
 			}
 		}
 	}
 	
 	focus = {
-		id = PRS_infrastructure_effort
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = PRS_construction_effort_2 }
+		id = PRS_urbanization_projects
+		icon = GFX_focus_SWE_urbanization
+		prerequisite = { focus = PRS_berlin_economic_development }
+		prerequisite = { focus = PRS_expand_silesian_steel_mines }
+		prerequisite = { focus = PRS_continue_deving_rhineland }
+		prerequisite = { focus = PRS_grant_concession_to_the_workers }
 		x = 0
-		y = 1
-		relative_position_id = PRS_construction_effort_2
+		y = 2
+		relative_position_id = PRS_berlin_economic_development
 		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -4409,95 +4412,23 @@ focus = {
 		available_if_capitulated = yes
 	
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
 		}
 	
 		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
 		}
 	
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
+			custom_effect_tooltip = prs_fpw_urbanization_projects
 		}
 	}
 	
 	focus = {
-		id = PRS_production_effort_3
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = PRS_production_effort_2 }
-		x = 0
+		id = PRS_prussian_bank
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = PRS_expand_rhineland_infrastructure }
+		x = 2
 		y = 1
-		relative_position_id = PRS_production_effort_2
+		relative_position_id = PRS_expand_rhineland_infrastructure
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -4510,261 +4441,47 @@ focus = {
 		}
 	
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 4
-						include_locked = yes
-					}					
-				}
-			}
 		}
 	
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-				type = arms_factory
-				level = 4
-				instant_build = yes
-			}
-		}		
+		}
 	
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
+			add_ideas = prs_fpw_prussian_bank
 		}
 	}
 	
 	focus = {
-		id = PRS_infrastructure_effort_2
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = PRS_infrastructure_effort }
-		x = -1
+		id = PRS_extra_funding_for_industry
+		icon = GFX_focus_generic_modernize_industry
+		prerequisite = { focus = PRS_invest_in_agricultural_lands }
+		x = -2
 		y = 1
-		relative_position_id = PRS_infrastructure_effort
-		cost = 10
-	
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
-		available_if_capitulated = yes
-	
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-	
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-	
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = PRS_construction_effort_3
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = PRS_infrastructure_effort }
-		x = 1
-		y = 1
-		relative_position_id = PRS_infrastructure_effort
-		cost = 10
-	
-		search_filters = { FOCUS_FILTER_INDUSTRY  }
-		
-		available_if_capitulated = yes
-	
-	
-		ai_will_do = {
-			factor = 2
-		}
-	
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 2
-						include_locked = yes
-					}
-				}
-			}
-		}
-	
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-	
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 1
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = PRS_extra_tech_slot
-		icon = GFX_focus_research
-		prerequisite = { focus = PRS_infrastructure_effort_2 focus = PRS_construction_effort_3 }
-		x = 1
-		y = 1
-		relative_position_id = PRS_infrastructure_effort_2
+		relative_position_id = PRS_invest_in_agricultural_lands
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_RESEARCH } 
-		
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.10
+				uses = 5
+				category = industry
+			}
 		}
 	}
 	
 	focus = {
-		id = PRS_extra_tech_slot_2
+		id = PRS_expand_university_of_berlin
 		icon = GFX_focus_research
-		prerequisite = { focus = PRS_extra_tech_slot }
+		prerequisite = { focus = PRS_urbanization_projects }
 		available = {
-			num_of_factories > 50
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 		x = 0
 		y = 1
-		relative_position_id = PRS_extra_tech_slot
+		relative_position_id = PRS_urbanization_projects
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4773,9 +4490,631 @@ focus = {
 	
 		completion_reward = {
 			add_research_slot = 1
+			### Planned to add a political advisor "Richard Holtze"
 		}
 	}
+
+	focus = {
+		id = PRS_utilize_textile_industry
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		prerequisite = { focus = PRS_expand_university_of_berlin }
+		available = {
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRS_expand_university_of_berlin
+		cost = 5
 	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			random_owned_state = {
+        		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            	type = industrial_complex
+            	level = 1
+            	instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_utilize_coal_mining_industry
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = PRS_expand_university_of_berlin }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRS_expand_university_of_berlin
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			random_owned_state = {
+        		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            	type = industrial_complex
+            	level = 1
+            	instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_utilize_manufactoring_industry
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = PRS_expand_university_of_berlin }
+		available = {
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRS_expand_university_of_berlin
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_ideas = prs_fpw_prussian_manufactoring_industry
+		}
+	}
+
+	focus = {
+		id = PRS_grant_concession_to_the_workers
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = PRS_extra_funding_for_industry }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRS_extra_funding_for_industry
+		cost = 10
+
+		bypass = {
+			has_variable = prs_fpw_strikes_variable
+		}
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			remove_ideas = prs_fpw_social_unrest
+			add_timed_idea = {
+				idea = prs_fpw_concessions_granted_to_workers
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = PRS_settle_trade_disputes
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = PRS_prussian_bank }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRS_prussian_bank
+		cost = 10
+	
+		
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			remove_ideas = prs_fpw_trade_disputes
+			add_ideas = free_trade
+		}
+	}
+	focus = {
+		id = PRS_develop_ruhr_area
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = PRS_settle_trade_disputes }
+		available = {
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRS_settle_trade_disputes
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			981 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+			57 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_expand_coal_mines_in_ruhr
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = PRS_settle_trade_disputes }
+		prerequisite = { focus = PRS_continue_deving_rhineland }
+		available = {
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRS_settle_trade_disputes
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			981 = {
+				add_extra_state_shared_building_slots = 2
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_spandauer_zeughaus
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = PRS_industrialzation }
+		x = 5
+		y = 1
+		relative_position_id = PRS_industrialzation
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = arms_factory
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_invest_into_small_arms_research
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = PRS_spandauer_zeughaus }
+		x = 3
+		y = 1
+		relative_position_id = PRS_spandauer_zeughaus
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = PRS_mauser_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PRS_spandauer_zeughaus }
+		x = -3
+		y = 1
+		relative_position_id = PRS_spandauer_zeughaus
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = arms_factory
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_new_prussian_artillery_designs
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = PRS_invest_into_small_arms_research }
+		x = -1
+		y = 1
+		relative_position_id = PRS_invest_into_small_arms_research
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = PRS_invest_in_military_research
+		icon = GFX_focus_research2
+		prerequisite = { focus = PRS_spandauer_zeughaus }
+		prerequisite = { focus = PRS_new_prussian_artillery_designs }
+		prerequisite = { focus = PRS_schneider_and_Co_factories }
+		x = 0
+		y = 3
+		relative_position_id = PRS_spandauer_zeughaus
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = PRS_schneider_and_Co_factories
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = PRS_mauser_factories }
+		x = 1
+		y = 1
+		relative_position_id = PRS_mauser_factories
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = arms_factory
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_united_royal_prussian_gun_foundry
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = PRS_mauser_factories }
+		x = 0
+		y = 3
+		relative_position_id = PRS_mauser_factories
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 2
+         		add_building_construction = {
+           			type = arms_factory
+            		level = 2
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_continue_the_use_of_light_cavalry
+		icon = GFX_focus_generic_horse_studs
+		prerequisite = { focus = PRS_invest_into_small_arms_research }
+		x = 0
+		y = 3
+		relative_position_id = PRS_invest_into_small_arms_research
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = cavalry
+			}
+		}
+	}
+	focus = {
+		id = PRS_fortify_berlin
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PRS_spandauer_zeughaus }
+		x = 1
+		y = 1
+		relative_position_id = PRS_spandauer_zeughaus
+		cost = 10
+	
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			64 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 3
+    				province = {
+        				limit_to_border = no
+        				level < 3
+					}	
+    			}
+			}
+		}
+	}
+	focus = {
+		id = PRS_fortify_konigsberg
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PRS_spandauer_zeughaus }
+		x = -1
+		y = 1
+		relative_position_id = PRS_spandauer_zeughaus
+		cost = 10
+	
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			763 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 3
+    				province = {
+        				limit_to_border = no
+        				level < 3
+					}	
+    			}
+			}
+		}
+	}
+	focus = {
+		id = PRS_expand_military_industries_in_berlin
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PRS_invest_in_military_research }
+		prerequisite = { focus = PRS_continue_the_use_of_light_cavalry }
+		prerequisite = { focus = PRS_united_royal_prussian_gun_foundry }
+		x = 0
+		y = 2
+		relative_position_id = PRS_invest_in_military_research
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 2
+         		add_building_construction = {
+            		type = arms_factory
+            		level = 2
+           			instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_expand_military_industry_in_rhineland
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PRS_schneider_and_Co_factories }
+		x = 0
+		y = 1
+		relative_position_id = PRS_schneider_and_Co_factories
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+	
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+	
+		bypass = {
+		}
+	
+		complete_tooltip = {
+		}
+	
+		completion_reward = {
+			42 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+			}
+			51 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+			}
+			981 = {
+				add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+			}
+		}
+	}
 	###################
 	#	ARMY BRANCH   #
 	###################

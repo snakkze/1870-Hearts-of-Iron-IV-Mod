@@ -329,6 +329,25 @@ leader_traits = {
 		army_core_attack_factor = 0.05
 		army_core_defence_factor = 0.05
 	}
+	fpw_public_works_expert = {
+		random = no
+		monthly_population = 0.2
+		production_speed_infrastructure_factor = 0.15
+		global_building_slots_factor = 0.1
+	}
+	fpw_father_of_microbiology = {
+		random = no
+		research_speed_factor = 0.125
+	}
+	fpw_fierce_anti_monarchist = {
+		random = no
+		democratic_drift = 0.02
+		fascism_drift = 0.02
+		neutrality_drift = -0.05
+		political_power_gain = 0.30
+		neutrality_acceptance = -50
+
+	}
  fpw_par_proud = {
     random = no
 	stability_factor = -0.08

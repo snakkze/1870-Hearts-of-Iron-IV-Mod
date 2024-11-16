@@ -11,7 +11,7 @@ fpw_afg_investment_chances_dec = {
 		allowed = {
 			tag = AFG
 		}
-
+		fire_only_once = yes
 		icon = mission_icon
 		cost = 50
 		complete_effect = {
@@ -33,7 +33,7 @@ fpw_afg_investment_chances_dec = {
 		allowed = {
 			tag = AFG
 		}
-
+		fire_only_once = yes
 		icon = mission_icon
 		cost = 50
 		complete_effect = {
@@ -57,11 +57,70 @@ fpw_afg_investment_chances_dec = {
 			tag = AFG
 		}
 
+		fire_only_once = yes
+
 		icon = mission_icon
 		cost = 50
 		complete_effect = {
 			FRA = {
 				country_event = fpw_afghan.8
+			}
+		}
+	}
+}
+fpw_afg_tribal_influence = {
+	fpw_tribal_high_command = {
+		available = {
+			
+		}
+
+		cost = 50
+
+
+		visible = {
+			not = {
+				has_idea = fpw_AFG_tribal_leaders_allowed_in_highcommand
+			}
+		}
+
+		allowed = {
+			tag = AFG
+		}
+
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			add_ideas = fpw_AFG_tribal_leaders_allowed_in_highcommand
+			add_to_variable = {
+				var = tribal_army_influence
+				value = 5
+			}
+		}
+	}
+
+	fpw_remove_them_from_high_command = {
+		available = {
+			
+		}
+
+		cost = 50
+
+
+		visible = {
+			has_idea = fpw_AFG_tribal_leaders_allowed_in_highcommand
+		}
+
+		allowed = {
+			tag = AFG
+		}
+
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			remove_ideas = fpw_AFG_tribal_leaders_allowed_in_highcommand
+			add_to_variable = {
+				var = tribal_army_influence
+				value = 5
 			}
 		}
 	}

@@ -1512,3 +1512,25 @@ country_event = {
 		}
 	}
 }
+#Strikes because you didnt do the grant concessions focus
+country_event = {
+	id = prussia_fpw.45
+	title = prussia_fpw.45.t
+	desc = prussia_fpw.45.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#minor_flavor = yes
+
+	option = {
+		name = prussia_fpw.45.a
+		PRS = {
+			remove_ideas = prs_fpw_social_unrest
+			add_timed_idea = {
+				idea = prs_fpw_strikes
+				days = 365
+			}
+			set_variable = { prs_fpw_strikes_variable = 1 }
+		}
+	}
+}
