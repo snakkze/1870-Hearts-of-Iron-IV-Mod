@@ -3997,7 +3997,7 @@ focus = {
 	
 	focus = {
 		id = PRS_kaiserliche_marine
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_GER_seeherrschaft
 		prerequisite = { focus = PRS_frigates_effort }
 		prerequisite = { focus = PRS_ironclad_effort }
 		x = 1
@@ -5121,7 +5121,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_status_of_the_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_prussian_legacy
 		
 		allow_branch = {
 			NOT = {

@@ -5,14 +5,14 @@ defined_text = {
         trigger = {
             tag = PRS
         }
-        localization_key = "fpw_austro_prussian_PRS_desc"
+        localization_key = fpw_austro_prussian_PRS_desc
     }
 
     text = {
         trigger = {
             tag = AUS
         }
-        localization_key = "fpw_austro_prussian_AUS_desc"
+        localization_key = fpw_austro_prussian_AUS_desc
     }
 
     text = {
@@ -24,6 +24,6 @@ defined_text = {
 			}
 		}	  
         }
-        localization_key = "fpw_austro_prussian_desc"
+        localization_key = fpw_austro_prussian_desc
     }
 }

@@ -22,7 +22,16 @@ wood=14
 			infrastructure = 3 #was: 8
 			arms_factory = 1
 			industrial_complex = 1
+			6380 = {
+                landmark_kremlin = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+			}
 		}
+
 		add_core_of = SOV
 	}
 

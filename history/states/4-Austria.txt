@@ -18,8 +18,16 @@ state={
 			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 3
-
+			11666 = {
+				landmark_hofburg_palace = {
+					level = 1
+					allowed = {
+						has_dlc = "Gotterdammerung"
+					}
+				}
+			}
 		}
+
 		add_core_of = AUS
 
 	}
