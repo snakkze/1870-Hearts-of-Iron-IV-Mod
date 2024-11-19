@@ -41,6 +41,26 @@ ideas = {
 			}
 		}
 
+		fpw_AUS_general_staff = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+
+			modifier = {
+				max_planning_factor = 0.1
+				planning_speed = 0.25
+				max_command_power = 50
+			}
+		}
+
 		fpw_AUS_divided_military2 = {
 			allowed = {
 				always = no
