@@ -349,10 +349,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			OR = {
 			has_global_flag = SUEZ_CANAL_NOT_BUILT
-			date < 1869.11.17 #should be removed once suez canal can be built + news
-		}
 		}
 		localization_key = fpw_suez_blocked_ttB
 	}

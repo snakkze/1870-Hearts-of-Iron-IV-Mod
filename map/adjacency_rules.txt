@@ -52,7 +52,6 @@ adjacency_rule = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
 			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
 			has_country_flag = SUEZ_SANCTIONS_FLAG
-			date < 1869.11.17 #should be removed once suez canal can be built + news
 		}
 		tooltip = fpw_suez_blocked_tt
 	}

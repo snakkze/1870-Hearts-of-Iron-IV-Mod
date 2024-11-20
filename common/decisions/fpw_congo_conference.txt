@@ -1,0 +1,27 @@
+fpw_congo_conference = {
+	debug_test = {
+
+		icon = fwp_franco_prussian_war_sided
+
+		allowed = {
+			
+		}
+
+		cost = 0
+
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			# We will use missions and show that to every country part of the
+			# congo conference, by the round count we can display how many are left
+			# and what decision to show, rounds are hard scripted aswell as regions
+			set_variable = { congo_round = 1 }
+		}
+	}
+}

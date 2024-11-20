@@ -1,0 +1,1643 @@
+spriteTypes = {
+
+	# NEUTRAL
+	spriteType = {
+		name = "GFX_congo_background"
+		texturefile = "gfx/interface/congo_conference/background.png"
+	}
+
+	# NATIONS
+	# GENERATED
+	spriteType = {
+		name = "GFX_lib_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/lib_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_bel_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/bel_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_eng_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eng_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_eth_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/eth_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_fra_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/fra_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_ita_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/ita_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_mor_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/mor_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_por_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/por_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_por_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/por_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_por_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/por_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_por_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/por_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_por_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/por_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_por_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/por_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_por_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/por_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_por_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/por_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_por_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/por_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_por_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/por_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_por_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/por_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_por_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/por_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_por_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/por_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_por_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/por_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_por_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/por_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_por_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/por_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_por_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/por_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_por_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/por_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_por_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/por_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_por_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/por_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_por_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/por_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_por_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/por_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_por_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/por_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_por_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/por_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_por_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/por_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_por_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/por_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_por_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/por_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_por_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/por_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_por_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/por_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_por_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/por_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_por_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/por_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_por_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/por_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_por_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/por_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_por_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/por_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_por_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/por_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_por_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/por_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_por_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/por_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_prs_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/prs_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_spr_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/spr_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_tur_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/tur_0036_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0000_congo"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0000_congo.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0001_ethiopia"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0001_ethiopia.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0002_cameroon"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0002_cameroon.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0003_equatorial_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0003_equatorial_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0004_nigeria"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0004_nigeria.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0005_cape"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0005_cape.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0006_south_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0006_south_west_africa.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0007_southern_africa"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0007_southern_africa.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0008_angola"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0008_angola.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0009_zambia"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0009_zambia.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0010_tansania"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0010_tansania.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0011_mosambique"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0011_mosambique.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0012_french_congo"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0012_french_congo.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0013_gabon"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0013_gabon.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0014_jubaland"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0014_jubaland.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0015_british_somaliland"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0015_british_somaliland.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0016_somalia"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0016_somalia.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0017_british_east_africa"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0017_british_east_africa.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0018_chad"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0018_chad.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0019_west_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0019_west_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0020_djibouti"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0020_djibouti.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0021_eritrea"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0021_eritrea.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0022_egypt"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0022_egypt.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0023_dahomey"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0023_dahomey.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0024_togo"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0024_togo.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0025_sierra_leone"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0025_sierra_leone.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0026_liberia"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0026_liberia.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0027_tunis"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0027_tunis.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0028_madagascar"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0028_madagascar.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0029_algeria"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0029_algeria.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0030_libya"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0030_libya.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0031_western_sahara"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0031_western_sahara.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0032_morroco"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0032_morroco.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0033_portugal_guinea"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0033_portugal_guinea.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0034_gambia"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0034_gambia.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0035_senegal"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0035_senegal.png"
+	}
+	spriteType = {
+		name = "GFX_usa_0036_west_africa"
+		texturefile = "gfx/interface/congo_conference/nations/usa_0036_west_africa.png"
+	}
+}

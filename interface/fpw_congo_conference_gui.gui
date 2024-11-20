@@ -1,4 +1,4 @@
-@ANCHOR_X = 0
+@ANCHOR_X = 15
 @ANCHOR_Y = -10
 
 guiTypes = {
@@ -6,6 +6,2264 @@ guiTypes = {
 	containerWindowType = {
 		name = "fpw_congo_conference_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 400 }
+		size = { width = 100% height= 700 }
+
+		#BACKGROUND
+		iconType = {
+			name ="background"
+			spriteType = "GFX_congo_background"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+		#NATIONS
+		#LIB
+		iconType = {
+			name ="lib_liberia"
+			spriteType = "GFX_lib_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		#BEL
+		iconType = {
+			name ="bel_congo"
+			spriteType = "GFX_bel_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_ethiopia"
+			spriteType = "GFX_bel_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_cameroon"
+			spriteType = "GFX_bel_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_equatorial_guinea"
+			spriteType = "GFX_bel_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_nigeria"
+			spriteType = "GFX_bel_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_cape"
+			spriteType = "GFX_bel_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_south_west_africa"
+			spriteType = "GFX_bel_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_southern_africa"
+			spriteType = "GFX_bel_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_angola"
+			spriteType = "GFX_bel_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_zambia"
+			spriteType = "GFX_bel_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_tansania"
+			spriteType = "GFX_bel_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_mosambique"
+			spriteType = "GFX_bel_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_french_congo"
+			spriteType = "GFX_bel_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_gabon"
+			spriteType = "GFX_bel_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_jubaland"
+			spriteType = "GFX_bel_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_british_somaliland"
+			spriteType = "GFX_bel_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_somalia"
+			spriteType = "GFX_bel_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_british_east_africa"
+			spriteType = "GFX_bel_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_chad"
+			spriteType = "GFX_bel_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_west_egypt"
+			spriteType = "GFX_bel_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_djibouti"
+			spriteType = "GFX_bel_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_eritrea"
+			spriteType = "GFX_bel_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_egypt"
+			spriteType = "GFX_bel_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_dahomey"
+			spriteType = "GFX_bel_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_togo"
+			spriteType = "GFX_bel_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_sierra_leone"
+			spriteType = "GFX_bel_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_liberia"
+			spriteType = "GFX_bel_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_tunis"
+			spriteType = "GFX_bel_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_madagascar"
+			spriteType = "GFX_bel_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_algeria"
+			spriteType = "GFX_bel_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_libya"
+			spriteType = "GFX_bel_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_western_sahara"
+			spriteType = "GFX_bel_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_morroco"
+			spriteType = "GFX_bel_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_portugal_guinea"
+			spriteType = "GFX_bel_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_gambia"
+			spriteType = "GFX_bel_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_senegal"
+			spriteType = "GFX_bel_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_west_africa"
+			spriteType = "GFX_bel_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+
+		#BEL
+		iconType = {
+			name ="bel_congo"
+			spriteType = "GFX_bel_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_ethiopia"
+			spriteType = "GFX_bel_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_cameroon"
+			spriteType = "GFX_bel_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_equatorial_guinea"
+			spriteType = "GFX_bel_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_nigeria"
+			spriteType = "GFX_bel_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_cape"
+			spriteType = "GFX_bel_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_south_west_africa"
+			spriteType = "GFX_bel_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_southern_africa"
+			spriteType = "GFX_bel_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_angola"
+			spriteType = "GFX_bel_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_zambia"
+			spriteType = "GFX_bel_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_tansania"
+			spriteType = "GFX_bel_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_mosambique"
+			spriteType = "GFX_bel_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_french_congo"
+			spriteType = "GFX_bel_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_gabon"
+			spriteType = "GFX_bel_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_jubaland"
+			spriteType = "GFX_bel_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_british_somaliland"
+			spriteType = "GFX_bel_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_somalia"
+			spriteType = "GFX_bel_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_british_east_africa"
+			spriteType = "GFX_bel_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_chad"
+			spriteType = "GFX_bel_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_west_egypt"
+			spriteType = "GFX_bel_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_djibouti"
+			spriteType = "GFX_bel_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_eritrea"
+			spriteType = "GFX_bel_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_egypt"
+			spriteType = "GFX_bel_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_dahomey"
+			spriteType = "GFX_bel_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_togo"
+			spriteType = "GFX_bel_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_sierra_leone"
+			spriteType = "GFX_bel_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_liberia"
+			spriteType = "GFX_bel_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_tunis"
+			spriteType = "GFX_bel_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_madagascar"
+			spriteType = "GFX_bel_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_algeria"
+			spriteType = "GFX_bel_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_libya"
+			spriteType = "GFX_bel_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_western_sahara"
+			spriteType = "GFX_bel_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_morroco"
+			spriteType = "GFX_bel_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_portugal_guinea"
+			spriteType = "GFX_bel_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_gambia"
+			spriteType = "GFX_bel_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_senegal"
+			spriteType = "GFX_bel_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="bel_west_africa"
+			spriteType = "GFX_bel_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#eng
+		iconType = {
+			name ="eng_congo"
+			spriteType = "GFX_eng_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_ethiopia"
+			spriteType = "GFX_eng_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_cameroon"
+			spriteType = "GFX_eng_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_equatorial_guinea"
+			spriteType = "GFX_eng_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_nigeria"
+			spriteType = "GFX_eng_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_cape"
+			spriteType = "GFX_eng_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_south_west_africa"
+			spriteType = "GFX_eng_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_southern_africa"
+			spriteType = "GFX_eng_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_angola"
+			spriteType = "GFX_eng_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_zambia"
+			spriteType = "GFX_eng_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_tansania"
+			spriteType = "GFX_eng_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_mosambique"
+			spriteType = "GFX_eng_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_french_congo"
+			spriteType = "GFX_eng_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_gabon"
+			spriteType = "GFX_eng_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_jubaland"
+			spriteType = "GFX_eng_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_british_somaliland"
+			spriteType = "GFX_eng_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_somalia"
+			spriteType = "GFX_eng_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_british_east_africa"
+			spriteType = "GFX_eng_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_chad"
+			spriteType = "GFX_eng_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_west_egypt"
+			spriteType = "GFX_eng_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_djibouti"
+			spriteType = "GFX_eng_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_eritrea"
+			spriteType = "GFX_eng_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_egypt"
+			spriteType = "GFX_eng_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_dahomey"
+			spriteType = "GFX_eng_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_togo"
+			spriteType = "GFX_eng_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_sierra_leone"
+			spriteType = "GFX_eng_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_liberia"
+			spriteType = "GFX_eng_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_tunis"
+			spriteType = "GFX_eng_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_madagascar"
+			spriteType = "GFX_eng_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_algeria"
+			spriteType = "GFX_eng_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_libya"
+			spriteType = "GFX_eng_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_western_sahara"
+			spriteType = "GFX_eng_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_morroco"
+			spriteType = "GFX_eng_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_portugal_guinea"
+			spriteType = "GFX_eng_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_gambia"
+			spriteType = "GFX_eng_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_senegal"
+			spriteType = "GFX_eng_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eng_west_africa"
+			spriteType = "GFX_eng_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#eth
+		iconType = {
+			name ="eth_congo"
+			spriteType = "GFX_eth_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_ethiopia"
+			spriteType = "GFX_eth_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_cameroon"
+			spriteType = "GFX_eth_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_equatorial_guinea"
+			spriteType = "GFX_eth_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_nigeria"
+			spriteType = "GFX_eth_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_cape"
+			spriteType = "GFX_eth_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_south_west_africa"
+			spriteType = "GFX_eth_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_southern_africa"
+			spriteType = "GFX_eth_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_angola"
+			spriteType = "GFX_eth_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_zambia"
+			spriteType = "GFX_eth_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_tansania"
+			spriteType = "GFX_eth_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_mosambique"
+			spriteType = "GFX_eth_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_french_congo"
+			spriteType = "GFX_eth_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_gabon"
+			spriteType = "GFX_eth_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_jubaland"
+			spriteType = "GFX_eth_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_british_somaliland"
+			spriteType = "GFX_eth_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_somalia"
+			spriteType = "GFX_eth_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_british_east_africa"
+			spriteType = "GFX_eth_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_chad"
+			spriteType = "GFX_eth_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_west_egypt"
+			spriteType = "GFX_eth_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_djibouti"
+			spriteType = "GFX_eth_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_eritrea"
+			spriteType = "GFX_eth_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_egypt"
+			spriteType = "GFX_eth_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_dahomey"
+			spriteType = "GFX_eth_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_togo"
+			spriteType = "GFX_eth_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_sierra_leone"
+			spriteType = "GFX_eth_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_liberia"
+			spriteType = "GFX_eth_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_tunis"
+			spriteType = "GFX_eth_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_madagascar"
+			spriteType = "GFX_eth_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_algeria"
+			spriteType = "GFX_eth_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_libya"
+			spriteType = "GFX_eth_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_western_sahara"
+			spriteType = "GFX_eth_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_morroco"
+			spriteType = "GFX_eth_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_portugal_guinea"
+			spriteType = "GFX_eth_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_gambia"
+			spriteType = "GFX_eth_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_senegal"
+			spriteType = "GFX_eth_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="eth_west_africa"
+			spriteType = "GFX_eth_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#fra
+		iconType = {
+			name ="fra_congo"
+			spriteType = "GFX_fra_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_ethiopia"
+			spriteType = "GFX_fra_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_cameroon"
+			spriteType = "GFX_fra_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_equatorial_guinea"
+			spriteType = "GFX_fra_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_nigeria"
+			spriteType = "GFX_fra_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_cape"
+			spriteType = "GFX_fra_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_south_west_africa"
+			spriteType = "GFX_fra_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_southern_africa"
+			spriteType = "GFX_fra_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_angola"
+			spriteType = "GFX_fra_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_zambia"
+			spriteType = "GFX_fra_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_tansania"
+			spriteType = "GFX_fra_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_mosambique"
+			spriteType = "GFX_fra_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_french_congo"
+			spriteType = "GFX_fra_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_gabon"
+			spriteType = "GFX_fra_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_jubaland"
+			spriteType = "GFX_fra_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_british_somaliland"
+			spriteType = "GFX_fra_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_somalia"
+			spriteType = "GFX_fra_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_british_east_africa"
+			spriteType = "GFX_fra_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_chad"
+			spriteType = "GFX_fra_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_west_egypt"
+			spriteType = "GFX_fra_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_djibouti"
+			spriteType = "GFX_fra_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_eritrea"
+			spriteType = "GFX_fra_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_egypt"
+			spriteType = "GFX_fra_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_dahomey"
+			spriteType = "GFX_fra_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_togo"
+			spriteType = "GFX_fra_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_sierra_leone"
+			spriteType = "GFX_fra_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_liberia"
+			spriteType = "GFX_fra_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_tunis"
+			spriteType = "GFX_fra_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_madagascar"
+			spriteType = "GFX_fra_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_algeria"
+			spriteType = "GFX_fra_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_libya"
+			spriteType = "GFX_fra_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_western_sahara"
+			spriteType = "GFX_fra_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_morroco"
+			spriteType = "GFX_fra_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_portugal_guinea"
+			spriteType = "GFX_fra_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_gambia"
+			spriteType = "GFX_fra_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_senegal"
+			spriteType = "GFX_fra_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="fra_west_africa"
+			spriteType = "GFX_fra_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#ita
+		iconType = {
+			name ="ita_congo"
+			spriteType = "GFX_ita_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_ethiopia"
+			spriteType = "GFX_ita_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_cameroon"
+			spriteType = "GFX_ita_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_equatorial_guinea"
+			spriteType = "GFX_ita_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_nigeria"
+			spriteType = "GFX_ita_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_cape"
+			spriteType = "GFX_ita_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_south_west_africa"
+			spriteType = "GFX_ita_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_southern_africa"
+			spriteType = "GFX_ita_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_angola"
+			spriteType = "GFX_ita_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_zambia"
+			spriteType = "GFX_ita_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_tansania"
+			spriteType = "GFX_ita_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_mosambique"
+			spriteType = "GFX_ita_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_french_congo"
+			spriteType = "GFX_ita_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_gabon"
+			spriteType = "GFX_ita_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_jubaland"
+			spriteType = "GFX_ita_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_british_somaliland"
+			spriteType = "GFX_ita_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_somalia"
+			spriteType = "GFX_ita_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_british_east_africa"
+			spriteType = "GFX_ita_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_chad"
+			spriteType = "GFX_ita_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_west_egypt"
+			spriteType = "GFX_ita_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_djibouti"
+			spriteType = "GFX_ita_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_eritrea"
+			spriteType = "GFX_ita_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_egypt"
+			spriteType = "GFX_ita_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_dahomey"
+			spriteType = "GFX_ita_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_togo"
+			spriteType = "GFX_ita_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_sierra_leone"
+			spriteType = "GFX_ita_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_liberia"
+			spriteType = "GFX_ita_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_tunis"
+			spriteType = "GFX_ita_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_madagascar"
+			spriteType = "GFX_ita_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_algeria"
+			spriteType = "GFX_ita_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_libya"
+			spriteType = "GFX_ita_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_western_sahara"
+			spriteType = "GFX_ita_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_morroco"
+			spriteType = "GFX_ita_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_portugal_guinea"
+			spriteType = "GFX_ita_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_gambia"
+			spriteType = "GFX_ita_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_senegal"
+			spriteType = "GFX_ita_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="ita_west_africa"
+			spriteType = "GFX_ita_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#mor
+		iconType = {
+			name ="mor_congo"
+			spriteType = "GFX_mor_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_ethiopia"
+			spriteType = "GFX_mor_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_cameroon"
+			spriteType = "GFX_mor_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_equatorial_guinea"
+			spriteType = "GFX_mor_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_nigeria"
+			spriteType = "GFX_mor_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_cape"
+			spriteType = "GFX_mor_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_south_west_africa"
+			spriteType = "GFX_mor_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_southern_africa"
+			spriteType = "GFX_mor_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_angola"
+			spriteType = "GFX_mor_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_zambia"
+			spriteType = "GFX_mor_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_tansania"
+			spriteType = "GFX_mor_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_mosambique"
+			spriteType = "GFX_mor_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_french_congo"
+			spriteType = "GFX_mor_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_gabon"
+			spriteType = "GFX_mor_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_jubaland"
+			spriteType = "GFX_mor_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_british_somaliland"
+			spriteType = "GFX_mor_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_somalia"
+			spriteType = "GFX_mor_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_british_east_africa"
+			spriteType = "GFX_mor_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_chad"
+			spriteType = "GFX_mor_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_west_egypt"
+			spriteType = "GFX_mor_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_djibouti"
+			spriteType = "GFX_mor_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_eritrea"
+			spriteType = "GFX_mor_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_egypt"
+			spriteType = "GFX_mor_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_dahomey"
+			spriteType = "GFX_mor_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_togo"
+			spriteType = "GFX_mor_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_sierra_leone"
+			spriteType = "GFX_mor_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_liberia"
+			spriteType = "GFX_mor_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_tunis"
+			spriteType = "GFX_mor_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_madagascar"
+			spriteType = "GFX_mor_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_algeria"
+			spriteType = "GFX_mor_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_libya"
+			spriteType = "GFX_mor_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_western_sahara"
+			spriteType = "GFX_mor_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_morroco"
+			spriteType = "GFX_mor_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_portugal_guinea"
+			spriteType = "GFX_mor_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_gambia"
+			spriteType = "GFX_mor_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_senegal"
+			spriteType = "GFX_mor_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="mor_west_africa"
+			spriteType = "GFX_mor_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#por
+		iconType = {
+			name ="por_congo"
+			spriteType = "GFX_por_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_ethiopia"
+			spriteType = "GFX_por_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_cameroon"
+			spriteType = "GFX_por_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_equatorial_guinea"
+			spriteType = "GFX_por_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_nigeria"
+			spriteType = "GFX_por_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_cape"
+			spriteType = "GFX_por_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_south_west_africa"
+			spriteType = "GFX_por_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_southern_africa"
+			spriteType = "GFX_por_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_angola"
+			spriteType = "GFX_por_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_zambia"
+			spriteType = "GFX_por_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_tansania"
+			spriteType = "GFX_por_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_mosambique"
+			spriteType = "GFX_por_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_french_congo"
+			spriteType = "GFX_por_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_gabon"
+			spriteType = "GFX_por_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_jubaland"
+			spriteType = "GFX_por_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_british_somaliland"
+			spriteType = "GFX_por_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_somalia"
+			spriteType = "GFX_por_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_british_east_africa"
+			spriteType = "GFX_por_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_chad"
+			spriteType = "GFX_por_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_west_egypt"
+			spriteType = "GFX_por_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_djibouti"
+			spriteType = "GFX_por_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_eritrea"
+			spriteType = "GFX_por_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_egypt"
+			spriteType = "GFX_por_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_dahomey"
+			spriteType = "GFX_por_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_togo"
+			spriteType = "GFX_por_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_sierra_leone"
+			spriteType = "GFX_por_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_liberia"
+			spriteType = "GFX_por_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_tunis"
+			spriteType = "GFX_por_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_madagascar"
+			spriteType = "GFX_por_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_algeria"
+			spriteType = "GFX_por_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_libya"
+			spriteType = "GFX_por_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_western_sahara"
+			spriteType = "GFX_por_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_morroco"
+			spriteType = "GFX_por_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_portugal_guinea"
+			spriteType = "GFX_por_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_gambia"
+			spriteType = "GFX_por_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_senegal"
+			spriteType = "GFX_por_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="por_west_africa"
+			spriteType = "GFX_por_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#prs
+		iconType = {
+			name ="prs_congo"
+			spriteType = "GFX_prs_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_ethiopia"
+			spriteType = "GFX_prs_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_cameroon"
+			spriteType = "GFX_prs_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_equatorial_guinea"
+			spriteType = "GFX_prs_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_nigeria"
+			spriteType = "GFX_prs_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_cape"
+			spriteType = "GFX_prs_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_south_west_africa"
+			spriteType = "GFX_prs_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_southern_africa"
+			spriteType = "GFX_prs_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_angola"
+			spriteType = "GFX_prs_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_zambia"
+			spriteType = "GFX_prs_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_tansania"
+			spriteType = "GFX_prs_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_mosambique"
+			spriteType = "GFX_prs_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_french_congo"
+			spriteType = "GFX_prs_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_gabon"
+			spriteType = "GFX_prs_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_jubaland"
+			spriteType = "GFX_prs_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_british_somaliland"
+			spriteType = "GFX_prs_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_somalia"
+			spriteType = "GFX_prs_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_british_east_africa"
+			spriteType = "GFX_prs_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_chad"
+			spriteType = "GFX_prs_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_west_egypt"
+			spriteType = "GFX_prs_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_djibouti"
+			spriteType = "GFX_prs_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_eritrea"
+			spriteType = "GFX_prs_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_egypt"
+			spriteType = "GFX_prs_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_dahomey"
+			spriteType = "GFX_prs_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_togo"
+			spriteType = "GFX_prs_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_sierra_leone"
+			spriteType = "GFX_prs_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_liberia"
+			spriteType = "GFX_prs_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_tunis"
+			spriteType = "GFX_prs_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_madagascar"
+			spriteType = "GFX_prs_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_algeria"
+			spriteType = "GFX_prs_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_libya"
+			spriteType = "GFX_prs_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_western_sahara"
+			spriteType = "GFX_prs_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_morroco"
+			spriteType = "GFX_prs_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_portugal_guinea"
+			spriteType = "GFX_prs_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_gambia"
+			spriteType = "GFX_prs_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_senegal"
+			spriteType = "GFX_prs_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="prs_west_africa"
+			spriteType = "GFX_prs_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#spr
+		iconType = {
+			name ="spr_congo"
+			spriteType = "GFX_spr_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_ethiopia"
+			spriteType = "GFX_spr_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_cameroon"
+			spriteType = "GFX_spr_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_equatorial_guinea"
+			spriteType = "GFX_spr_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_nigeria"
+			spriteType = "GFX_spr_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_cape"
+			spriteType = "GFX_spr_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_south_west_africa"
+			spriteType = "GFX_spr_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_southern_africa"
+			spriteType = "GFX_spr_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_angola"
+			spriteType = "GFX_spr_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_zambia"
+			spriteType = "GFX_spr_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_tansania"
+			spriteType = "GFX_spr_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_mosambique"
+			spriteType = "GFX_spr_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_french_congo"
+			spriteType = "GFX_spr_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_gabon"
+			spriteType = "GFX_spr_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_jubaland"
+			spriteType = "GFX_spr_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_british_somaliland"
+			spriteType = "GFX_spr_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_somalia"
+			spriteType = "GFX_spr_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_british_east_africa"
+			spriteType = "GFX_spr_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_chad"
+			spriteType = "GFX_spr_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_west_egypt"
+			spriteType = "GFX_spr_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_djibouti"
+			spriteType = "GFX_spr_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_eritrea"
+			spriteType = "GFX_spr_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_egypt"
+			spriteType = "GFX_spr_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_dahomey"
+			spriteType = "GFX_spr_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_togo"
+			spriteType = "GFX_spr_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_sierra_leone"
+			spriteType = "GFX_spr_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_liberia"
+			spriteType = "GFX_spr_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_tunis"
+			spriteType = "GFX_spr_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_madagascar"
+			spriteType = "GFX_spr_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_algeria"
+			spriteType = "GFX_spr_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_libya"
+			spriteType = "GFX_spr_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_western_sahara"
+			spriteType = "GFX_spr_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_morroco"
+			spriteType = "GFX_spr_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_portugal_guinea"
+			spriteType = "GFX_spr_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_gambia"
+			spriteType = "GFX_spr_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_senegal"
+			spriteType = "GFX_spr_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="spr_west_africa"
+			spriteType = "GFX_spr_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#tur
+		iconType = {
+			name ="tur_congo"
+			spriteType = "GFX_tur_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_ethiopia"
+			spriteType = "GFX_tur_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_cameroon"
+			spriteType = "GFX_tur_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_equatorial_guinea"
+			spriteType = "GFX_tur_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_nigeria"
+			spriteType = "GFX_tur_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_cape"
+			spriteType = "GFX_tur_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_south_west_africa"
+			spriteType = "GFX_tur_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_southern_africa"
+			spriteType = "GFX_tur_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_angola"
+			spriteType = "GFX_tur_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_zambia"
+			spriteType = "GFX_tur_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_tansania"
+			spriteType = "GFX_tur_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_mosambique"
+			spriteType = "GFX_tur_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_french_congo"
+			spriteType = "GFX_tur_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_gabon"
+			spriteType = "GFX_tur_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_jubaland"
+			spriteType = "GFX_tur_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_british_somaliland"
+			spriteType = "GFX_tur_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_somalia"
+			spriteType = "GFX_tur_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_british_east_africa"
+			spriteType = "GFX_tur_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_chad"
+			spriteType = "GFX_tur_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_west_egypt"
+			spriteType = "GFX_tur_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_djibouti"
+			spriteType = "GFX_tur_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_eritrea"
+			spriteType = "GFX_tur_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_egypt"
+			spriteType = "GFX_tur_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_dahomey"
+			spriteType = "GFX_tur_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_togo"
+			spriteType = "GFX_tur_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_sierra_leone"
+			spriteType = "GFX_tur_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_liberia"
+			spriteType = "GFX_tur_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_tunis"
+			spriteType = "GFX_tur_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_madagascar"
+			spriteType = "GFX_tur_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_algeria"
+			spriteType = "GFX_tur_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_libya"
+			spriteType = "GFX_tur_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_western_sahara"
+			spriteType = "GFX_tur_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_morroco"
+			spriteType = "GFX_tur_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_portugal_guinea"
+			spriteType = "GFX_tur_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_gambia"
+			spriteType = "GFX_tur_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_senegal"
+			spriteType = "GFX_tur_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="tur_west_africa"
+			spriteType = "GFX_tur_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		
+		#usa
+		iconType = {
+			name ="usa_congo"
+			spriteType = "GFX_usa_0000_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_ethiopia"
+			spriteType = "GFX_usa_0001_ethiopia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_cameroon"
+			spriteType = "GFX_usa_0002_cameroon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_equatorial_guinea"
+			spriteType = "GFX_usa_0003_equatorial_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_nigeria"
+			spriteType = "GFX_usa_0004_nigeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_cape"
+			spriteType = "GFX_usa_0005_cape"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_south_west_africa"
+			spriteType = "GFX_usa_0006_south_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_southern_africa"
+			spriteType = "GFX_usa_0007_southern_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_angola"
+			spriteType = "GFX_usa_0008_angola"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_zambia"
+			spriteType = "GFX_usa_0009_zambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_tansania"
+			spriteType = "GFX_usa_0010_tansania"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_mosambique"
+			spriteType = "GFX_usa_0011_mosambique"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_french_congo"
+			spriteType = "GFX_usa_0012_french_congo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_gabon"
+			spriteType = "GFX_usa_0013_gabon"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_jubaland"
+			spriteType = "GFX_usa_0014_jubaland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_british_somaliland"
+			spriteType = "GFX_usa_0015_british_somaliland"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_somalia"
+			spriteType = "GFX_usa_0016_somalia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_british_east_africa"
+			spriteType = "GFX_usa_0017_british_east_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_chad"
+			spriteType = "GFX_usa_0018_chad"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_west_egypt"
+			spriteType = "GFX_usa_0019_west_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_djibouti"
+			spriteType = "GFX_usa_0020_djibouti"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_eritrea"
+			spriteType = "GFX_usa_0021_eritrea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_egypt"
+			spriteType = "GFX_usa_0022_egypt"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_dahomey"
+			spriteType = "GFX_usa_0023_dahomey"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_togo"
+			spriteType = "GFX_usa_0024_togo"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_sierra_leone"
+			spriteType = "GFX_usa_0025_sierra_leone"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_liberia"
+			spriteType = "GFX_usa_0026_liberia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_tunis"
+			spriteType = "GFX_usa_0027_tunis"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_madagascar"
+			spriteType = "GFX_usa_0028_madagascar"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_algeria"
+			spriteType = "GFX_usa_0029_algeria"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_libya"
+			spriteType = "GFX_usa_0030_libya"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_western_sahara"
+			spriteType = "GFX_usa_0031_western_sahara"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_morroco"
+			spriteType = "GFX_usa_0032_morroco"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_portugal_guinea"
+			spriteType = "GFX_usa_0033_portugal_guinea"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_gambia"
+			spriteType = "GFX_usa_0034_gambia"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_senegal"
+			spriteType = "GFX_usa_0035_senegal"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
+		iconType = {
+			name ="usa_west_africa"
+			spriteType = "GFX_usa_0036_west_africa"
+			position = { x = @ANCHOR_X y = @ANCHOR_Y }
+		}
 	}
 }

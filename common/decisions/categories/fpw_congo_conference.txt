@@ -1,0 +1,28 @@
+fpw_congo_conference = {
+	
+	priority = {
+		base = 1000
+	}
+
+	icon = GFX_decision_category_usa_intervention_mandate
+	scripted_gui = fpw_congo_conference_scripted_gui
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		if = {
+			limit = {
+				is_debug = yes
+			}
+			always = yes
+		} else = {	
+			AND = {
+				has_global_flag = fpw_congo_conference
+				#is_in_array = { global.top_seven_prestige_array = ROOT }
+			}
+		}
+	}
+}
+
