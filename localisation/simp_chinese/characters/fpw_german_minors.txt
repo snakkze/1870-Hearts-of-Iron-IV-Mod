@@ -1,0 +1,327 @@
+﻿characters = {
+  ANH_leopold_iv = {
+    name = "利奥波德四世" 	# Leopold IV
+    portraits = {
+      civilian = {
+        large = GFX_portrait_ANH_leopold_iv
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  BAD_frederick_i = {
+    name = "腓特烈一世" 	# Friedrich I
+    portraits = {
+      civilian = {
+        large = GFX_portrait_BAD_frederick_i
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  BAV_ludwig_ii = {
+    name = "路德维希二世" 	# Ludwig II
+    portraits = {
+      civilian = {
+        large = GFX_portrait_BAV_ludwig_ii
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  BRU_william = {
+    name = "威廉·奥古斯特·路德维希·马克西米利安·弗里德里希" 	# Wilhelm August Ludwig Maximilian Friedrich
+    portraits = {
+      civilian = {
+        large = GFX_portrait_BRU_william
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  LIP_leopold_iii = {
+    name = "利奥波德三世" 	# Leopold III
+    portraits = {
+      civilian = {
+        large = GFX_portrait_LIP_leopold_iii
+      }
+    }
+    country_leader = {
+      ideology = conservative_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  HES_louis_iii = {
+    name = "路易斯三世" 	# Louis III
+    portraits = {
+      civilian = {
+        large = GFX_portrait_HES_louis_iii
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  HNV_george_v = {
+    name = "乔治五世" 	# George V
+    portraits = {
+      civilian = {
+        large = GFX_portrait_HNV_george_v
+      }
+    }
+    country_leader = {
+      ideology = monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  MCK_frederick_francis_ii = {
+    name = "弗里德里希·弗朗茨二世" 	# Frederick Francis II
+    portraits = {
+      civilian = {
+        large = GFX_portrait_MCK_frederick_francis_ii
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SCG_leopold = {
+    name = "利奥波德亲王" 	# Prince Leopold
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SCG_leopold
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SXM_bernhard_ii = {
+    name = "伯恩哈德二世" 	# Bernhard II
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SXM_bernhard_ii
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SXW_charles_alexander = {
+    name = "查尔斯·亚历山大" 	# Charles Alexander
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SXW_charles_alexander
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SXY_john_i = {
+    name = "约翰一世" 	# John I
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SXY_john_i
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SBG_friedrich_guenther = {
+    name = "弗里德里希·冈特" 	# Friedrich Günther
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SBG_friedrich_guenther
+      }
+    }
+    country_leader = {
+      ideology = conservative_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  WLD_goerge_victor = {
+    name = "乔治·维克托" 	# George Victor
+    portraits = {
+      civilian = {
+        large = GFX_portrait_WLD_george_victor
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  OLD_peter_ii = {
+    name = "彼得二世" 	# Peter II
+    portraits = {
+      civilian = {
+        large = GFX_portrait_OLD_peter_ii
+      }
+    }
+    country_leader = {
+      ideology = conservative_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SBL_adolf_i = {
+    name = "阿道夫一世" 	# Adolf I
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SBL_adolf_i
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  MKS_frederick_william = {
+    name = "弗雷德里克·威廉" 	# Frederick William
+    portraits = {
+      civilian = {
+        large = GFX_portrait_MKS_frederick_william
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  WRT_karl_friedrich_august = {
+    name = " 腓特烈·卡尔·奥古斯特" 	# Friedrich Karl August
+    portraits = {
+      civilian = {
+        large = GFX_portrait_WRT_karl_friedrich_august
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  HEK_friedrich_wilhelm = {
+    name = "腓特烈·威廉一世" 	# Friedrich Wilhelm I
+    portraits = {
+      civilian = {
+        large = GFX_portrait_HEK_friedrich_wilhelm
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  BRE_arnold_duckwitz = {
+    name = "阿诺德·杜克维茨" 	# Arnold Duckwitz
+    portraits = {
+      civilian = {
+        large = GFX_portrait_BRE_arnold_duckwitz
+      }
+    }
+    country_leader = {
+      ideology = liberalism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  FRK_karl_konstanz_viktor_fellner = {
+    name = "卡尔·康斯坦茨·维克多·费尔纳" 	# Karl Konstanz Viktor Fellner
+    portraits = {
+      civilian = {
+        large = GFX_portrait_FRK_karl_fellner
+      }
+    }
+    country_leader = {
+      ideology = conservatism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  HAM_senate = {
+    name = "汉堡参议院" 	# Senate of Hamburg
+    portraits = {
+      civilian = {
+        large = GFX_portrait_HAM_senate
+      }
+    }
+    country_leader = {
+      ideology = liberalism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  NAS_august_ludwig = {
+    name = "奥古斯特·路德维希" 	# August Ludwig
+    portraits = {
+      civilian = {
+        large = GFX_portrait_NAS_august_ludwig
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  LUE_heinrich_brehmer = {
+    name = "海因里希·布雷默" 	# Heinrich Brehmer
+    portraits = {
+      civilian = {
+        large = GFX_portrait_LUE_heinrich_brehmer
+      }
+    }
+    country_leader = {
+      ideology = liberal_constitutional_monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  LUX_victor_de_tornaco = {
+    name = "维克托·德·托纳科" 	# Victor de Tornaco
+    portraits = {
+      civilian = {
+        large = GFX_portrait_LUX_victor_de_tornaco
+      }
+    }
+    country_leader = {
+      ideology = conservatism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+}

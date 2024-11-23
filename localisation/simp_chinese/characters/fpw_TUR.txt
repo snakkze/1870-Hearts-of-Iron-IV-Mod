@@ -1,0 +1,28 @@
+﻿characters = {
+  TUR_murad_v = {
+    name = "穆拉德五世" 	# Murad V
+    portraits = {
+      civilian = {
+        large = GFX_portrait_TUR_murad_v
+      }
+    }
+    country_leader = {
+      ideology = aboslute_monarchy
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  TUR_abdulaziz = {
+    name = "阿卜杜勒阿齐兹" 	# Abdülaziz
+    portraits = {
+      civilian = {
+        large = GFX_portrait_TUR_abdulaziz
+      }
+    }
+    country_leader = {
+      ideology = aboslute_monarchy
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+}

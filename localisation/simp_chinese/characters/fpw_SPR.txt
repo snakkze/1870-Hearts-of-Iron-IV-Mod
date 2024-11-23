@@ -1,0 +1,80 @@
+﻿characters = {
+  SPR_isabella_ii = {
+    name = "伊莎贝拉二世" 	# Isabella II
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SPR_isabella
+      }
+    }
+    country_leader = {
+      ideology = monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SPR_amadeo_i = {
+    name = "阿马迪奥一世" 	# Amadeo I
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SPR_amadeo
+      }
+    }
+    country_leader = {
+      ideology = monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SPR_leopold = {
+    name = "霍亨索伦的利奥波德" 	# Leopold of Hohenzollern
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SPR_leopold
+      }
+    }
+    country_leader = {
+      ideology = monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SPR_napoleon_iv = {
+    name = "拿破仑四世" 	# Napoleon IV
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SPR_napoleon
+      }
+    }
+    country_leader = {
+      ideology = monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SPR_victoria_mary_louisa = {
+    name = "维多利亚·玛丽·路易莎" 	# Victoria Mary Louisa
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SPR_victoria
+      }
+    }
+    country_leader = {
+      ideology = monarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  SPR_prov_gov = {
+    name = "西班牙临时政府" 	# Spanish Provisional Government
+    portraits = {
+      civilian = {
+        large = GFX_portrait_SPR_prov_gov
+      }
+    }
+    country_leader = {
+      ideology = conservatism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+}

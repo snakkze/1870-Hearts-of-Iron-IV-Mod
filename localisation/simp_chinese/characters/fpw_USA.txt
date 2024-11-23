@@ -1,0 +1,171 @@
+﻿characters = {
+  USA_andrew_johnson = {
+    name = "安德鲁·约翰逊" 	# Andrew Johnson
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_andrew_johnson
+      }
+    }
+    country_leader = {
+      ideology = usa_democrat
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_ulysses_s_grant = {
+    name = "尤利西斯·S·格兰特" 	# Ulysses S. Grant
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_ulysses_s_grant
+      }
+    }
+    country_leader = {
+      ideology = usa_republican
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_john_noble_goodwin = {
+    name = "约翰·诺布尔·古德温" 	# John Noble Goodwin
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_john_noble_goodwin
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_robert_byington_mitchell = {
+    name = "罗伯特·拜因顿·米切尔" 	# Robert Byington Mitchell
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_robert_byington_mitchell
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_alexander_cummings = {
+    name = "亚历山大·卡明斯" 	# Alexander Cummings
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_alexander_cummings
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_charles_durkee = {
+    name = "查尔斯·德基" 	# Charles Durkee
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_charles_durkee
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_alvin_saunders = {
+    name = "阿尔文·桑德斯" 	# Alvin Saunders
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_alvin_saunders
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_newton_edmunds = {
+    name = "牛顿·埃德蒙兹" 	# Newton Edmunds
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_newton_edmunds
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_sidney_edgerton = {
+    name = "西德尼·埃杰顿" 	# Sidney Edgerton
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_sidney_edgerton
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_david_w_ballard = {
+    name = "戴维·W·巴拉德" 	# David W. Ballard
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_david_w_ballard
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_william_pickering = {
+    name = "威廉·皮克林" 	# William Pickering
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_william_pickering
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_tribal_government = {
+    name = "部落制" 	# Tribal Governments
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_tribal_government
+      }
+    }
+    country_leader = {
+      ideology = interim_government
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+  USA_no_mans_land = {
+    name = "无人区" 	# No Man's Land
+    portraits = {
+      civilian = {
+        large = GFX_portrait_USA_no_mans_land
+      }
+    }
+    country_leader = {
+      ideology = anarchism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+}

@@ -1,0 +1,15 @@
+﻿characters = {
+  LAN_liu_asheng = {
+    name = "刘阿生" 	# Liu Asheng
+    portraits = {
+      civilian = {
+        large = GFX_Portrait_LAN_liu_asheng
+      }
+    }
+    country_leader = {
+      ideology = centrism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+}

@@ -1,0 +1,15 @@
+﻿characters = {
+  DEN_christian_emil = {
+    name = "克里斯蒂安·埃米尔" 	# Christian Emil
+    portraits = {
+      civilian = {
+        large = GFX_portrait_DEN_christian_emil
+      }
+    }
+    country_leader = {
+      ideology = conservatism
+      expire = "1956.01.01.01"
+      id = -1
+    }
+  }
+}
