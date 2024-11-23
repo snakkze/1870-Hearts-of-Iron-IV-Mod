@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ fpw_colonize_button_tt:0 "[fpw_colonize_button_tt_loc]"
+ fpw_button_start_colonize_localization_key:0 "殖民§Y[?This.GetName]§!。"
+ fpw_button_stop_colonize_localization_key:0 "停止殖民§Y[?This.GetName]§!。"
+ fpw_colonize_button_long_tt:0 "[fpw_colonize_button_tt_long_loc]"
+ fpw_button_colonize_colonists_localization_key:0 "§R无法殖民§Y[?This.GetName]§!地区§!\n§R您没有足够的§Y殖民队§!来殖民该地区！§!"
+ fpw_button_colonize_other_localization_key:0 "§R无法殖民该地区§!§Y[?This.GetName]§!\n§R地区已经被他国抢先殖民§!"
+ fpw_button_colonize_you_localization_key:0 "停止您对§Y[?This.GetName]§!地区的殖民。\n§R如果您选择停止殖民，您将失去在该地区的所有殖民进度！§!"
+ fpw_button_colonize_colonizable_localization_key:0 "开始殖民§Y[?This.GetName]§!地区\n但请确保您的国家能管理好§R治理费§!！"
+ fpw_colonists_tt:0 "§Y殖民队§!\n殖民队数量：§Y[?ROOT.colonists]§!"
+ fpw_colonists_amount_tt:0 "殖民队伍安居于各部族的土地上。为了§Y殖民§!每块领土，你便需要一支§Y殖民队§!。如果你想增加§Y殖民队§!的数量，可以尝试在§Y研究面板§!中不断研究，或是完成§Y国策§!以增加您的§Y殖民队能力§!。"
+ fpw_integrate_button_tt:0 "整合§Y[?This.GetName]§!."
+ fpw_colonize_integrate_long_tt:0 "整合§Y[?This.GetName]§!区域将花费你§Y25政治点数§!整合将移除该地区的§Y维护成本§!以及您可能获得的其他负面修正。"
