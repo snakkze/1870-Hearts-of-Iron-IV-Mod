@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -3248,7 +3248,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		
-		icon = GFX_focus_SOV_panslavic_nationalism
+		icon = GFX_focus_SOV_panslavic_socialism
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_establish_a_new_government }
 		relative_position_id = SOV_establish_a_new_government
@@ -5654,7 +5654,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
-		icon = GFX_focus_generic_railroad
+		icon = GFX_focus_SOV_polish_railways
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_build_upon_the_new_infrastracture }
 		relative_position_id = SOV_build_upon_the_new_infrastracture
@@ -5705,7 +5705,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
-		icon = GFX_focus_generic_railroad
+		icon = GFX_focus_SOV_ukrainian_railways
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_build_upon_the_new_infrastracture }
 		relative_position_id = SOV_build_upon_the_new_infrastracture
@@ -5764,7 +5764,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
-		icon = GFX_focus_generic_railroad
+		icon = GFX_focus_SOV_baltic_railways
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_build_upon_the_new_infrastracture }
 		relative_position_id = SOV_build_upon_the_new_infrastracture
@@ -5815,7 +5815,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
-		icon = GFX_focus_generic_railroad
+		icon = GFX_focus_SOV_russian_railways
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_industry_upgrade_two }
 		relative_position_id = SOV_industry_upgrade_two

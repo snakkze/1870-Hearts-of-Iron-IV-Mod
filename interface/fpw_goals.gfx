@@ -161,7 +161,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_PRS_albrecht_roon"
 		texturefile = "gfx/interface/goals/focus_PRS_albrecht_roon.dds"
-	}
+          }
+	spriteType = {
+		name = "GFX_focus_PRS_tsingdao_incedent"
+		texturefile = "gfx/interface/goals/PRS_tsingdao_incedent.png"	
+          }
 }
 
 # SPAIN #
@@ -266,6 +270,9 @@ spriteTypes = {
 		name = "GFX_focus_generic_anarchy"
 		texturefile = "gfx/interface/goals/focus_generic_anarchy.png"
 	}
+	spriteType = {
+		name = "GFX_focus_FRA_strengthen_bonaparte_dynasty"
+		texturefile = "gfx/interface/goals/FRA_strengthen_bonaparte_dynasty.png"
 }
 
 
