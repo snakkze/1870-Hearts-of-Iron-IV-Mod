@@ -1,0 +1,54 @@
+#######################################
+# Example on how to make a soundeffect to add in game
+#######################################
+
+# First of all make a sound so that the game can find the location of the file
+# Then make a soundeffect, in there you can change a bunch of things, to know more visit https://hoi4.paradoxwikis.com/Sound_modding
+# Finally add in the event/focus/decision whatever sound_effect = "sound_test_2"
+# Remember that the files must be .wav
+
+#sound = {
+#	name = "sound_test"
+#	file = "sound_effects/musicfile.wav"
+#	always_load = yes
+#}
+
+#soundeffect = {
+#	name = sound_test_2
+#	volume = 1
+#	sounds = {
+#		sound = sound_test
+#	} 
+#}
+
+category = {
+	name = "fpw_sounds"
+	
+	soundeffects = {
+		fpw_APW_Soundeffect
+	}
+	
+	compressor = {
+		enabled = yes
+		pregain = 3.0
+		postgain = 1.0
+		ratio = 2.0
+		threshold = -10.0
+		attacktime = 0.03
+		releasetime = 0.0
+	}
+}
+
+sound = {
+	name = "fpw_apw"
+	file = "sound_effects/fpw_apw.wav"
+	always_load = yes
+}
+
+soundeffect = {
+	name = fpw_APW_Soundeffect
+	volume = 1
+	sounds = {
+		sound = fpw_apw
+	} 
+}
