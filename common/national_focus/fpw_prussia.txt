@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -1818,7 +1818,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_tsingdao_incedent
-		icon = GFX_focus_jap_manchurian_project
+		icon = GFX_focus_PRS_tsingdao_incedent
 		prerequisite = { focus = PRS_kolonialamt_asien }
 		relative_position_id = PRS_kolonialamt_asien
 		x = -2

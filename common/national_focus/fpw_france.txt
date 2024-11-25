@@ -1336,7 +1336,7 @@
 	#
 	focus = {
 		id = FRA_strengthen_bonaparte_dynasty
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_focus_FRA_strengthen_bonaparte_dynasty
 		prerequisite = { focus = FRA_internal_politics }
 		x = 2
 		y = 1

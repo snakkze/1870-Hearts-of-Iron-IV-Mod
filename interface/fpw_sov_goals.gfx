@@ -69,6 +69,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_SOV_finish_autonomy"
 		texturefile = "gfx/interface/goals/SOV/finish_autonomy.png"
+          }
+	spriteType = {
+		name = "GFX_focus_SOV_panslavic_socialism"
+		texturefile = "gfx/interface/goals/SOV/SOV_panslavic_socialism.png"
+          }
+	spriteType = {
+		name = "GFX_focus_SOV_polish_railways"
+		texturefile = "gfx/interface/goals/SOV/SOV_polish_railways.png"
+          }
+	spriteType = {
+		name = "GFX_focus_SOV_baltic_railways"
+		texturefile = "gfx/interface/goals/SOV/SOV_baltic_railways.png"
+          }
+	spriteType = {
+		name = "GFX_focus_SOV_russian_railways"
+		texturefile = "gfx/interface/goals/SOV/SOV_russian_railways.png"
+          }
+	spriteType = {
+		name = "GFX_focus_SOV_ukrainian_railways"
+		texturefile = "gfx/interface/goals/SOV/SOV_ukrainian_railways.png"
 	}
 	
 }
