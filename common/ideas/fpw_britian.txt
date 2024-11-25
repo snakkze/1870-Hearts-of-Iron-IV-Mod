@@ -387,7 +387,6 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
 			}
 
 			removal_cost = -1
@@ -406,7 +405,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -427,7 +426,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -441,13 +440,253 @@ ideas = {
 				monthly_population = -0.05
             }
 		}
-		fpw_eng_widespread_malnutrition2 = {
+		fpw_eng_expanded_franchise = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.25
+				communism_drift = -0.02
+            }
+		}
+		fpw_eng_expanded_franchise2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.25
+            }
+		}
+		fpw_eng_improved_administration = {
 			allowed = {
 				always = yes
 			}
 
 			allowed_civil_war = {
 				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = BRA_dasp
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.1
+            }
+		}
+		fpw_eng_improved_administration2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = BRA_dasp
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.1
+				political_power_gain = 0.25
+            }
+		}
+		fpw_eng_improved_administration3 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = BRA_dasp
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+            }
+		}
+		fpw_eng_improved_administration4 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = BRA_dasp
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_infrastructure_factor = 0.2
+            }
+		}
+		fpw_eng_improved_administration5 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = BRA_dasp
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				political_power_gain = 0.55
+            }
+		}
+		fpw_eng_economic_collapse = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+            }
+		}
+		fpw_eng_bribed_aristocrats = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+				consumer_goods_factor = 0.1
+            }
+		}
+		fpw_eng_rising_working_class = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			modifier = {
+				communism_drift = 0.02
+				fascism_drift = 0.02
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+            }
+		}
+		fpw_eng_rising_working_class2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			modifier = {
+				communism_drift = 0.05
+				fascism_drift = 0.02
+            }
+		}
+		fpw_eng_london_strikes = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ICE_general_strike
+
+			modifier = {
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+            }
+		}
+		fpw_eng_northern_strikes = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ICE_general_strike
+
+			modifier = {
+				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.25
+				local_resources_factor = -0.75
+            }
+		}
+		fpw_eng_widespread_malnutrition2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
 			}
 
 			removal_cost = -1
@@ -466,7 +705,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			removal_cost = -1
@@ -476,6 +715,63 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.5
 				stability_factor = -0.1
+            }
+		}
+		fpw_eng_house_of_commons_disrupted = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = hol_caved_to_the_british
+
+			modifier = {
+				political_power_cost = 1
+				stability_factor = -0.2
+            }
+		}
+		fpw_eng_political_fragmentation = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPR_crush_the_revolution
+
+			modifier = {
+				political_power_cost = 0.35
+				stability_factor = -0.1
+				drift_defence_factor = -0.5
+            }
+		}
+		fpw_eng_army_in_disarray = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tur_disorganised_armed_forces
+
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.08
+				army_morale_factor = -0.2
             }
 		}
 	}

@@ -60,7 +60,11 @@
  ENG_agricultural_sector_desc:0 "Agriculture has become less relevant as the years pass by, as much of our grain is now imported. For the sake of the farmers we should attempt to amend this situation."
 
 #decisions
- 
+ ENG_strike_the_capital:0 "Strike the Capital"
+ ENG_strike_the_northern_heartland:0 "Strike the Northern Heartlands"
+
+#decision categories
+ ENG_organise_strikes:0 "Organise Strikes"
  
 #ideas
  fpw_eng_grain_from_cape:0 "Grain from the Cape Colony"
@@ -86,7 +90,7 @@
  fpw_eng_widespread_malnutrition:0 "Widespread Malnutrition"
  fpw_eng_widespread_malnutrition_desc:0 "Malnutrition has become an issue amongst the general population since the industrial revolution, impacting both social and military aspects. Should this remain unresolved, the public will suffer and our army will continue to consist of physically unfit conscripts."
  fpw_eng_widespread_malnutrition2:0 "Widespread Malnutrition"
-  fpw_eng_widespread_malnutrition2_desc:0 "Malnutrition has become an issue amongst the general population since the industrial revolution, impacting both social and military aspects. Should this remain unresolved, the public will suffer and our army will continue to consist of physically unfit conscripts."
+ fpw_eng_widespread_malnutrition2_desc:0 "Malnutrition has become an issue amongst the general population since the industrial revolution, impacting both social and military aspects. Should this remain unresolved, the public will suffer and our army will continue to consist of physically unfit conscripts."
  fpw_eng_blocked_legislation:0 "Blocked Legislation"
  fpw_eng_blocked_legislation_desc:0 "The House of Lords, one of the three components of Parliament, has been at odds with the House of Commons throughout the 19th Century- blocking proposals and generally being a nuisance throughout the legislative process, tampering with our ability to pass reforms and create new laws."
  fpw_eng_workshop_of_the_world:0 "Workshop of the World"
@@ -94,14 +98,23 @@
  ENG_matthew_arnold:0 "Matthew Arnold"
  ENG_william_stanley_jevons:0 "William Stanley Jevons"
  ENG_charles_darwin:0 "Charles Darwin"
+ ENG_engels:0 "Friedrich Engels"
+ ENG_charles_dickens:0 "Charles Dickens"
+ fpw_eng_northern_strikes:0 "Northern Strikes"
+ fpw_eng_northern_strikes_desc:0 "Essential workers in the northern half of the country have gone on a general strike, crippling our production of goods, resources and equipment."
+ fpw_eng_london_strikes:0 "London Strikes"
+ fpw_eng_london_strikes_desc:0 "Essential workers in the capital have gone on a general strike, crippling our production of goods and equipment."
 
 #events
  britain_fpw.1.d:0 "After extreme frustration with his party, John Russell has decided to resign from his post as Prime Minister. This has lead to the collapse of the Liberal government, and has created a power vacuum which must be filled to ensure stability. "
- 
+ britain_fpw.6.t:0 "Our Dominions Abandon Us!"
+ britain_fpw.6.d:0 "Various far flung colonies and dominions have officially severed ties with us in defiance of the workers' revolution. Within their independence declarations, they strongly denounced the idea of Marxism and declared our regime to be illegitimate."
+ britain_fpw.6.a:0 "Wankers"
  
 #traits 
  fpw_liberal_critic:0 "Liberal Critic"
  fpw_evolutionary_biologst:0 "Evolutionary Biologist"
+ fpw_communist_philosopher:0 "Communist Philosopher"
 
 #custom cost texts 
  ENG_local_resources:0 "Modify §YWorkshop of the World § §Wby\nResource Gain Efficiency:§  §G+20.00%§W"
@@ -114,6 +127,7 @@
  historical_choice_tt:0 "§OThis is the historical choice.§!"
  prp_tt:0 "§OThis event will decide who will lead our country.§!"
  fpw_eng_volunteer_rush_tt:0 "If we have National Spirit §YImperial Pride§!:"
+ ENG_civil_war:0 "The Monarchists and Parliamentarians will start a civil war to crush our revolution."
  
  
 #custom modifier tooltips
@@ -123,6 +137,7 @@
 
 #leaders
  ENG_william_gladstone:0 "William Ewart Gladstone"
+ ENG_george_odger:0 "George Odger"
 
 #opinion modifiers
 

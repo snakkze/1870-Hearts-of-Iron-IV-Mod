@@ -474,24 +474,13 @@ country_event = {
 	hidden = yes
 		
 	trigger = {
-		AND = {
-			date < 1869.11.16
-			date > 1869.11.18
-		}
 	}
 
 	immediate = {
-		clr_global_flag = SUEZ_CANAL_NOT_BUILT
 	}
 
 	option = {
 		name = trigger.12.a
-		random_other_country = {
-			limit = {
-				owns_state = 446
-			}
-			country_event = egypt_fpw.1
-		}
 	}
 }
 

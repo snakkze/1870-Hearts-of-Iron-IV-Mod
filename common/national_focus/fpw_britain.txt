@@ -1011,6 +1011,11 @@
 		
 		completion_reward = {
 			add_political_power = 100
+			set_global_flag = super_visible
+            set_global_flag = fpw_bcw
+            visible = {
+                has_global_flag = super_visible
+            }
 		}
 	}
 	focus = {
@@ -1091,9 +1096,631 @@
 		}
 	}
 	focus = {
+		id = ENG_conservative_leadership
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = ENG_collapse_of_liberal_government }
+		relative_position_id = ENG_collapse_of_liberal_government
+		mutually_exclusive = { focus = ENG_convene_an_order_in_council }
+		x = 8
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+		    retire_country_leader = ENG_john_russell
+		    hidden_effect = {
+		        recruit_character = ENG_william_gladstone
+		    }
+		    promote_character = ENG_william_gladstone
+		    set_politics = {
+                ruling_party = democratic
+                elections_allowed = yes
+            }
+		}
+	}
+	focus = {
+		id = ENG_expansion_of_the_franchise
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = ENG_conservative_leadership focus = ENG_undermine_the_government }
+		relative_position_id = ENG_conservative_leadership
+		x = -8
+		y = 2
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_expanded_franchise
+
+        }
+	}
+	focus = {
+		id = ENG_administrative_reform
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = ENG_conservative_leadership }
+		relative_position_id = ENG_conservative_leadership
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_improved_administration
+
+        }
+	}
+	focus = {
+		id = ENG_decentralise_local_governance
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_administrative_reform }
+		relative_position_id = ENG_administrative_reform
+		mutually_exclusive = { focus = ENG_centralise_local_governance }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration
+                add_idea = fpw_eng_improved_administration2
+            }
+        }
+	}
+	focus = {
+		id = ENG_centralise_local_governance
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ENG_administrative_reform }
+		relative_position_id = ENG_administrative_reform
+		mutually_exclusive = { focus = ENG_decentralise_local_governance }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration
+                add_idea = fpw_eng_improved_administration3
+            }
+        }
+	}
+	focus = {
+		id = ENG_laissez_faire_attitude
+		icon = GFX_focus_ARG_anti_corruption_policies
+		prerequisite = { focus = ENG_decentralise_local_governance }
+		relative_position_id = ENG_decentralise_local_governance
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration2
+                add_idea = fpw_eng_improved_administration5
+            }
+			add_popularity = {
+                ideology = democratic
+                popularity = -0.10
+            }
+        }
+	}
+	focus = {
+		id = ENG_invest_in_public_works
+		icon = GFX_goal_reichsautobahn
+		prerequisite = { focus = ENG_centralise_local_governance }
+		prerequisite = { focus = ENG_expansion_of_the_franchise }
+		relative_position_id = ENG_centralise_local_governance
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration3
+                add_idea = fpw_eng_improved_administration4
+            }
+        }
+	}
+	focus = {
+		id = ENG_strengthen_ties_with_the_turks
+		icon = GFX_focus_generic_befriend_turkey
+		prerequisite = { focus = ENG_conservative_leadership }
+		relative_position_id = ENG_conservative_leadership
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 75
+			TUR = {
+			    add_opinion_modifier = { target = ENG modifier = large_increase }
+			}
+
+        }
+	}
+	focus = {
+		id = ENG_finish_construction_of_the_suez
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ENG_strengthen_ties_with_the_turks }
+		relative_position_id = ENG_strengthen_ties_with_the_turks
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 500
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			TUR = {
+				has_opinion = {
+                target = ENG
+                value > 99
+                }
+			}
+		}
+		
+		completion_reward = {
+			clr_global_flag = SUEZ_CANAL_NOT_BUILT
+			EGY = {
+				country_event = egypt_fpw.1
+			}
+        }
+	}
+	focus = {
+		id = ENG_bribe_aristocratic_conservatives
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = ENG_conservative_leadership }
+		relative_position_id = ENG_conservative_leadership
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = { idea = fpw_eng_bribed_aristocrats days = 365 }
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.20
+            }
+
+        }
+	}
+	focus = {
+		id = ENG_1868_elections
+		icon = GFX_focus_generic_hold_election
+		prerequisite = { focus = ENG_finish_construction_of_the_suez }
+		prerequisite = { focus = ENG_laissez_faire_attitude focus = ENG_invest_in_public_works }
+		relative_position_id = ENG_laissez_faire_attitude
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = { idea = fpw_eng_bribed_aristocrats days = 365 }
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.20
+            }
+
+        }
+	}
+	focus = {
+		id = ENG_convene_an_order_in_council
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = ENG_collapse_of_liberal_government }
+		relative_position_id = ENG_collapse_of_liberal_government
+		mutually_exclusive = { focus = ENG_conservative_leadership }
+		x = -8
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+		    retire_country_leader = ENG_john_russell
+		    hidden_effect = {
+		        recruit_character = ENG_william_gladstone
+		    }
+		    promote_character = ENG_william_gladstone
+		    set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+            }
+		}
+	}
+	focus = {
+		id = ENG_undermine_the_government
+		icon = GFX_focus_AST_never_gallipoli
+		prerequisite = { focus = ENG_convene_an_order_in_council }
+		relative_position_id = ENG_convene_an_order_in_council
+		mutually_exclusive = { focus = ENG_victorias_cabinet }
+		x = 4
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = engels
+        }
+	}
+	focus = {
+		id = ENG_concessions_to_the_workers
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = ENG_undermine_the_government }
+		relative_position_id = ENG_undermine_the_government
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			has_idea = fpw_eng_rising_working_class
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_rising_working_class
+                add_idea = fpw_eng_rising_working_class2
+            }
+        }
+	}
+	focus = {
+		id = ENG_assert_the_rights_of_trade_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = ENG_undermine_the_government }
+		relative_position_id = ENG_undermine_the_government
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+                ideology = communism
+                popularity = 0.075
+            }
+        }
+	}
+	focus = {
+		id = ENG_organise_strikes_focus
+		icon = GFX_focus_NOR_empower_sivorg
+		prerequisite = { focus = ENG_assert_the_rights_of_trade_unions }
+		relative_position_id = ENG_assert_the_rights_of_trade_unions
+		x = 1
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			unlock_decision_category_tooltip = ENG_organise_strikes
+        }
+	}
+	focus = {
+		id = ENG_uhh
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = ENG_undermine_the_government }
+		relative_position_id = ENG_undermine_the_government
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+        }
+	}
+	focus = {
+		id = ENG_disrupt_legislative_process
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = ENG_uhh }
+		relative_position_id = ENG_uhh
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			unlock_decision_category_tooltip = ENG_disrupt_parliament
+        }
+	}
+	focus = {
+		id = ENG_revolution_of_the_proletariat
+		icon = GFX_focus_eng_decolonization
+		prerequisite = { focus = ENG_organise_strikes_focus focus = ENG_disrupt_legislative_process }
+		prerequisite = { focus = ENG_concessions_to_the_workers }
+		relative_position_id = ENG_organise_strikes_focus
+		x = 1
+		y = 1
+		cost = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			communism > 0.5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = ENG_civil_war
+		    set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+			hidden_effect = {
+				set_capital = {
+                    state = 132
+                }
+                start_civil_war = {
+	                ideology = neutrality
+	                size = 0.6
+					states = { 122 123 126 127 338 125 121 133 921 120 136 933 331 332 690 696 693 689 308 692 691 687 116 118 700 701 960 961 703 704 311 906 707 709 710 659 765 281 422 711 712 733 326 284 723 870 871 674 522 520 872 521 873 285 517 518 519 636 643 639 725 726 270 299 720 134 135 113 119 129 931 932 }
+				}
+				country_event = britain_fpw.6
+            }
+        }
+	}
+	focus = {
+		id = ENG_societal_restructure
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		prerequisite = { focus = ENG_revolution_of_the_proletariat }
+		relative_position_id = ENG_revolution_of_the_proletariat
+		x = 0
+		y = 1
+		cost = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = fpw_eng_political_fragmentation
+			add_ideas = fpw_eng_army_in_disarray
+			add_ideas = fpw_eng_economic_collapse
+			
+        }
+	}
+	focus = {
+		id = ENG_progressive_thinking
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = ENG_societal_restructure focus = ENG_1868_elections }
+		relative_position_id = ENG_societal_restructure
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			unlock_decision_category_tooltip = ENG_disrupt_parliament
+        }
+	}
+	focus = {
+		id = ENG_support_womens_suffrage
+		icon = GFX_focus_generic_universal_suffrage
+		prerequisite = { focus = ENG_progressive_thinking }
+		relative_position_id = ENG_progressive_thinking
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			has_completed_focus = ENG_societal_restructure
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_eng_expanded_franchise
+				add_idea = fpw_eng_expanded_franchise2
+			}
+        }
+	}
+	focus = {
+		id = ENG_victorias_cabinet
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = { focus = ENG_convene_an_order_in_council }
+		relative_position_id = ENG_convene_an_order_in_council
+		mutually_exclusive = { focus = ENG_undermine_the_government }
+		x = -4
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+
+        }
+	}
+	focus = {
 		id = ENG_industrial_sector
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 24
+		x = 27
 		y = 0
 		cost = 10
 
@@ -1138,6 +1765,9 @@
 							instant_build = yes
 					}
 				}
+			}
+			hidden_effect = {
+				add_ideas = fpw_eng_rising_working_class
 			}
 		}
 	}
@@ -1322,7 +1952,7 @@
 	focus = {
 		id = ENG_agricultural_sector
 		icon = GFX_focus_generic_farmland
-		x = 33
+		x = 35
 		y = 0
 		cost = 10
 

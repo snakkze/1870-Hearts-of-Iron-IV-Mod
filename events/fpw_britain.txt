@@ -9,22 +9,12 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "The Conservatives will take over from here."
+		name = "Let's see what the future holds."
 		ai_chance = {
 			base = 50
 		}
 		add_stability = -0.05
 		complete_national_focus = ENG_collapse_of_liberal_government
-		retire_country_leader = ENG_john_russell
-		hidden_effect = {
-		    recruit_character = ENG_william_gladstone
-		}
-		promote_character = ENG_william_gladstone
-		set_politics = {
-            ruling_party = democratic
-            election_frequency = 48
-            elections_allowed = yes
-        }
 	}
 }
 country_event = {
@@ -228,5 +218,32 @@ country_event = {
 			}
 			transfer_state_to = HAM
 		}
+	}
+}
+country_event = {
+	id = britain_fpw.6
+	title = britain_fpw.6.t
+	desc = britain_fpw.6.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 151	# Historical outbreak time after elections
+	}
+
+	option = { 
+		name = britain_fpw.6.a
+		    dismantle_faction = yes
+			end_puppet = NOV
+			end_puppet = NBR
+			end_puppet = PEI
+			end_puppet = CAN
+			end_puppet = REU
+			end_puppet = BRC
+			end_puppet = SAF
+			end_puppet = RAJ
 	}
 }

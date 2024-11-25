@@ -1,0 +1,136 @@
+ENG_organise_strikes = {
+
+	ENG_strike_the_capital = {
+
+		icon = GFX_decision_generic_political_rally
+
+		allowed = { 
+			original_tag = ENG
+		}
+
+		available = {
+		}
+
+		cost = 25
+
+		fire_only_once = no
+		days_re_enable = 10
+
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		}
+
+		highlight_states = {
+            highlight_state_targets = {
+                state = 126
+            }
+		}
+
+		complete_effect = {
+            add_ideas = fpw_eng_london_strikes
+        }
+
+		remove_effect = {
+			add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+			remove_ideas = fpw_eng_london_strikes
+		}
+	}
+	ENG_strike_the_northern_heartland = {
+
+		icon = GFX_decision_generic_political_rally
+
+		allowed = { 
+			original_tag = ENG
+		}
+
+		available = {
+		}
+
+		cost = 25
+
+		fire_only_once = no
+		days_re_enable = 10
+
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		}
+
+		highlight_states = {
+            highlight_state_targets = {
+                state = 128
+                state = 130
+                state = 132
+            }
+		}
+
+		complete_effect = {
+            add_ideas = fpw_eng_northern_strikes
+        }
+
+		remove_effect = {
+			add_popularity = {
+                ideology = communism
+                popularity = 0.075
+            }
+            remove_ideas = fpw_eng_northern_strikes
+		}
+	}
+}
+ENG_disrupt_parliament = {
+
+	ENG_disrupt_the_house_of_commons = {
+
+		icon = GFX_decision_generic_political_rally
+
+		allowed = { 
+			original_tag = ENG
+		}
+
+		available = {
+		}
+
+		fire_only_once = no
+		days_re_enable = 5
+
+		days_remove = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+		}
+
+		highlight_states = {
+            highlight_state_targets = {
+                state = 126
+            }
+		}
+
+		complete_effect = {
+            add_ideas = fpw_eng_house_of_commons_disrupted
+			add_political_power = -50
+        }
+
+		remove_effect = {
+			add_popularity = {
+                ideology = communism
+                popularity = 0.1
+            }
+			remove_ideas = fpw_eng_house_of_commons_disrupted
+		}
+	}
+}

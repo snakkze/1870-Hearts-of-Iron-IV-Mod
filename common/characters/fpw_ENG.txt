@@ -15,6 +15,20 @@ characters={
 		}
 	}
 
+	ENG_george_odger={
+		name=ENG_george_odger
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_george_odger
+			}
+		}
+		country_leader={
+			ideology=communism_subideology
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
 	ENG_karl_marx={
 		name=ENG_karl_marx
 		portraits={
@@ -116,6 +130,7 @@ characters={
 			idea_token = william_stanley_jevons
 			allowed = {
 				original_tag = ENG
+				NOT = { has_completed_focus = ENG_undermine_the_government }
 			}
 			available = {
 			}
@@ -148,6 +163,55 @@ characters={
 			}
 			traits = {
 				fpw_evolutionary_biologst
+			}
+		}
+		
+	}
+	ENG_engels = { 
+		name = ENG_engels
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_engels"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = engels
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_undermine_the_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_communist_philosopher
+			}
+		}
+		
+	}
+	ENG_charles_dickens = { 
+		name = ENG_charles_dickens
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_charles_dickens"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = charles_dickens
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				popular_figurehead
 			}
 		}
 		

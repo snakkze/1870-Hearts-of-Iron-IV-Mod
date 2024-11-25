@@ -22,6 +22,12 @@ scripted_gui = {
                 }
                 clr_global_flag = fpw_fpw
                 }
+            if = {
+                limit = {
+                    has_global_flag = fpw_bcw
+                }
+                clr_global_flag = fpw_bcw
+                }
             }
 		}
 
@@ -31,6 +37,9 @@ scripted_gui = {
             }
             Super_Event_Image_FPW_visible = {
                 has_global_flag = fpw_fpw
+            }
+            Super_Event_Image_BCW_visible = {
+                has_global_flag = fpw_bcw
             }
 
         }
