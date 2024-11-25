@@ -26,6 +26,7 @@ category = {
 	
 	soundeffects = {
 		fpw_APW_Soundeffect
+		fpw_BCW_Soundeffect
 	}
 	
 	compressor = {
@@ -50,5 +51,19 @@ soundeffect = {
 	volume = 1
 	sounds = {
 		sound = fpw_apw
+	} 
+}
+
+sound = {
+	name = "fpw_bcw"
+	file = "sound_effects/fpw_bcw.wav"
+	always_load = yes
+}
+
+soundeffect = {
+	name = fpw_BCW_Soundeffect
+	volume = 1
+	sounds = {
+		sound = fpw_bcw
 	} 
 }

@@ -1011,11 +1011,6 @@
 		
 		completion_reward = {
 			add_political_power = 100
-			set_global_flag = super_visible
-            set_global_flag = fpw_bcw
-            visible = {
-                has_global_flag = super_visible
-            }
 		}
 	}
 	focus = {
@@ -1621,6 +1616,12 @@
 					states = { 122 123 126 127 338 125 121 133 921 120 136 933 331 332 690 696 693 689 308 692 691 687 116 118 700 701 960 961 703 704 311 906 707 709 710 659 765 281 422 711 712 733 326 284 723 870 871 674 522 520 872 521 873 285 517 518 519 636 643 639 725 726 270 299 720 134 135 113 119 129 931 932 }
 				}
 				country_event = britain_fpw.6
+            }
+			play_song = "the_manchester_rambler"
+			set_global_flag = super_visible
+            set_global_flag = fpw_bcw
+            visible = {
+                has_global_flag = super_visible
             }
         }
 	}
