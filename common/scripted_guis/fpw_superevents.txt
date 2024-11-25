@@ -15,18 +15,18 @@ scripted_gui = {
                         has_global_flag = fpw_apw
                     }
                     clr_global_flag = fpw_apw
-		    }
-            if = {
-                limit = {
-                    has_global_flag = fpw_fpw
+		        }
+                if = {
+                    limit = {
+                        has_global_flag = fpw_fpw
+                    }
+                    clr_global_flag = fpw_fpw
                 }
-                clr_global_flag = fpw_fpw
-                }
-            if = {
-                limit = {
-                    has_global_flag = fpw_bcw
-                }
-                clr_global_flag = fpw_bcw
+                if = {
+                    limit = {
+                        has_global_flag = fpw_bcw
+                    }
+                    clr_global_flag = fpw_bcw
                 }
             }
 		}

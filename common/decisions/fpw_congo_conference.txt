@@ -1,5 +1,5 @@
 fpw_congo_conference = {
-	debug_test = {
+	debug_start_conference = {
 
 		icon = fwp_franco_prussian_war_sided
 
@@ -22,6 +22,126 @@ fpw_congo_conference = {
 			# congo conference, by the round count we can display how many are left
 			# and what decision to show, rounds are hard scripted aswell as regions
 			set_variable = { congo_round = 1 }
+			add_to_array = { global.congo_conference_members = THIS }
+
+			set_global_flag = congo_conference
+			country_event = fpw_congo_conference.1
 		}
 	}
+
+	current_votes = {
+
+		icon = fwp_franco_prussian_war_sided
+
+		activation = {
+			always = yes
+		}
+
+		is_good = yes
+		days_mission_timeout = 4
+		selectable_mission = no
+
+		cost = 0
+
+		available = {
+			always = no
+		}
+		
+		visible = {
+			is_in_array = { global.congo_conference_members = THIS }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = fpw_congo_effect_self_tt
+		}
+
+		timeout_effect = {
+			activate_mission = vote_for_nation
+		}
+	}
+
+	vote_for_nation = {
+
+		target_trigger = {
+			FROM = {
+				is_in_array = { global.congo_conference_members = THIS }
+			}
+		}
+
+		activation = {
+			always = yes
+		}
+
+		available = {
+			NOT = {
+				ROOT = { has_country_flag = congo_voted }
+			}
+		}
+
+		is_good = yes
+		days_mission_timeout = 4
+		selectable_mission = yes
+
+		icon = GFX_decision_oppression
+		war_with_target_on_complete = yes
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		complete_effect = {
+			if = {
+				# Nigeria
+				limit = { check_variable = { congo_round = 1 } }
+				FROM = { add_to_variable = { FROM.congo_votes = 1 } }
+				ROOT = { set_country_flag = congo_voted }
+				custom_effect_tooltip = fpw_congo_effect_tt
+			}	                           	
+		}
+
+		timeout_effect = {
+			activate_mission = vote_for_nation
+		}
+	}
+
+	vote_for_ethiopia = {
+
+		target_trigger = {
+			FROM = {
+				original_tag = ETH
+			}
+		}
+
+		visible = {
+			AND = {
+				check_variable = { congo_round = 35 }
+				any_country = {
+					is_in_array = { global.congo_conference_members = THIS }
+				}
+			}
+		}
+
+		icon = GFX_decision_oppression
+		war_with_target_on_complete = yes
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { congo_round = 35 }
+				}
+				FROM = {
+					set_cosmetic_tag = PRS
+				}
+			}		                            	
+		}
+	}
+
 }

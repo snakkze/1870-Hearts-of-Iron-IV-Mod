@@ -9,6 +9,9 @@ fpw_austria_populations_of_the_empire = {
 
 	visible = {
 		tag = AUS
+		OR = {
+			has_completed_focus = AUS_a_duel_monarchy_with_dual_problems
+		}
 	}
 }
 

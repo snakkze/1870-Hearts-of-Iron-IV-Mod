@@ -637,7 +637,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		icon = g
+		icon = GFX_focus_AUS_proclaim_austrian_empire
 
 		ai_will_do = {
 			factor = 10
@@ -1419,7 +1419,7 @@ focus_tree = {
 		completion_reward = {
 			## Unlocks Ethnic Management System
 			add_war_support = -0.2
-			custom_effect_tooltip = unlock_other_focuses_tt
+			custom_effect_tooltip = fpw_unlock_ethnic_management
 		}
 	}
 
@@ -1618,6 +1618,7 @@ focus_tree = {
 		completion_reward = {
 			#
 			add_stability = -0.05
+			AUS_crush_czechs = yes
 		}
 	}
 
@@ -1650,6 +1651,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			AUS_crush_czechs = yes
 		}
 	}
 
@@ -1720,6 +1722,7 @@ focus_tree = {
 			    add_idea = AUS_czech_relunctant_participaion
 			}
 			add_political_power = 10
+			AUS_befriend_czechs = yes
 		}
 	}
 
@@ -1752,6 +1755,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			AUS_befriend_czechs = yes
 		}
 	}
 
@@ -1823,6 +1827,7 @@ focus_tree = {
 		completion_reward = {
 			## effect ethnic system
 			add_political_power = 50
+			AUS_befriend_czechs = yes
 		}
 	}
 
@@ -1867,7 +1872,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 8.6
-		icon = GFX_focus_PRS_beat_austria
+		icon = GFX_focus_AUS_heritage_of_an_empire
 
 		ai_will_do = {
 			factor = 10
@@ -1892,6 +1897,7 @@ focus_tree = {
 			    days = 5
 			}
 			set_major = yes
+			# prestige modifier
 		}
 	}
 
@@ -1909,7 +1915,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = fpw_franco_prussian_war_flag
+			custom_trigger_tooltip = {
+				tooltip = fpw_franco_prussian_war_tt
+				has_global_flag = fpw_franco_prussian_war_flag
+			}
 		}
 		
 		bypass = {
@@ -2862,6 +2871,8 @@ focus_tree = {
 				# remove from var AUS_croats_loyalty 1
 				# add to var AUS_hungarians_loyalty 1
 			}
+			AUS_crush_croats = yes
+			AUS_befriend_hungarians = yes
 		}
 	}
 
@@ -2931,6 +2942,8 @@ focus_tree = {
 			# add to var AUS_hungarians_loyalty 1
 			# remove from var AUS_slovaks_loyalty 1
 			# Decision/mission 120 days, if var AUS_slovaks_loyalty = 0 or less will fail and give -20%, will not fail if 1 or above (Dominating Slovakia)
+			AUS_befriend_hungarians = yes
+			AUS_crush_slovaks = yes
 		}
 	}
 
@@ -2948,6 +2961,7 @@ focus_tree = {
 		}
 
 		available = {
+			always = no
 			# (Dominating Slovakia) decision didnt fail
 		}
 		
@@ -2963,6 +2977,15 @@ focus_tree = {
 		completion_reward = {
 			# add to var AUS_hungarians_loyalty 1
 			# if decision above didnt fail, then var AUS_slovaks_loyalty will be set to 3 and all cores from slovakia are removed and given to hungary
+			AUS_befriend_hungarians = yes
+			every_state = {
+				limit = {
+					is_core_of = SLO
+				}
+				remove_core_of = SLO
+				add_core_of = HUN
+			}
+			set_variable = { var = AUS_slovaks_loyalty value = 0 }
 		}
 	}
 
@@ -2993,7 +3016,8 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+			AUS_crush_croats = yes
+			AUS_crush_czechs = yes
 		}
 	}
 

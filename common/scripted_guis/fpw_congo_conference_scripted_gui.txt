@@ -3,6 +3,1374 @@ scripted_gui = {
 	fpw_congo_conference_scripted_gui = {
 		context_type = decision_category
 		window_name = "fpw_congo_conference_gui_window"
+
+		triggers = {
+			# MIXED
+			por_eng_mosambique_visible = {
+				has_global_flag = por_eng_mosambique
+			}
+
+			# LIBERIA
+			lib_liberia_visible = {
+				has_global_flag = lib_liberia
+			}
+			
+			# Belgium
+			bel_congo_visible = {
+				has_global_flag = bel_congo
+			}
+
+			bel_ethiopia_visible = {
+				has_global_flag = bel_ethiopia
+			}
+
+			bel_cameroon_visible = {
+				has_global_flag = bel_cameroon
+			}
+
+			bel_equatorial_guinea_visible = {
+				has_global_flag = bel_equatorial_guinea
+			}
+
+			bel_nigeria_visible = {
+				has_global_flag = bel_nigeria
+			}
+
+			bel_cape_visible = {
+				has_global_flag = bel_cape
+			}
+
+			bel_south_west_africa_visible = {
+				has_global_flag = bel_south_west_africa
+			}
+
+			bel_southern_africa_visible = {
+				has_global_flag = bel_southern_africa
+			}
+
+			bel_angola_visible = {
+				has_global_flag = bel_angola
+			}
+
+			bel_zambia_visible = {
+				has_global_flag = bel_zambia
+			}
+
+			bel_tansania_visible = {
+				has_global_flag = bel_tansania
+			}
+
+			bel_mosambique_visible = {
+				has_global_flag = bel_mosambique
+			}
+
+			bel_french_congo_visible = {
+				has_global_flag = bel_french_congo
+			}
+
+			bel_gabon_visible = {
+				has_global_flag = bel_gabon
+			}
+
+			bel_jubaland_visible = {
+				has_global_flag = bel_jubaland
+			}
+
+			bel_british_somaliland_visible = {
+				has_global_flag = bel_british_somaliland
+			}
+
+			bel_somalia_visible = {
+				has_global_flag = bel_somalia
+			}
+
+			bel_british_east_africa_visible = {
+				has_global_flag = bel_british_east_africa
+			}
+
+			bel_chad_visible = {
+				has_global_flag = bel_chad
+			}
+
+			bel_west_egypt_visible = {
+				has_global_flag = bel_west_egypt
+			}
+
+			bel_djibouti_visible = {
+				has_global_flag = bel_djibouti
+			}
+
+			bel_eritrea_visible = {
+				has_global_flag = bel_eritrea
+			}
+
+			bel_egypt_visible = {
+				has_global_flag = bel_egypt
+			}
+
+			bel_dahomey_visible = {
+				has_global_flag = bel_dahomey
+			}
+
+			bel_togo_visible = {
+				has_global_flag = bel_togo
+			}
+
+			bel_sierra_leone_visible = {
+				has_global_flag = bel_sierra_leone
+			}
+
+			bel_liberia_visible = {
+				has_global_flag = bel_liberia
+			}
+
+			bel_tunis_visible = {
+				has_global_flag = bel_tunis
+			}
+
+			bel_madagascar_visible = {
+				has_global_flag = bel_madagascar
+			}
+
+			bel_algeria_visible = {
+				has_global_flag = bel_algeria
+			}
+
+			bel_libya_visible = {
+				has_global_flag = bel_libya
+			}
+
+			bel_western_sahara_visible = {
+				has_global_flag = bel_western_sahara
+			}
+
+			bel_morroco_visible = {
+				has_global_flag = bel_morroco
+			}
+
+			bel_portugal_guinea_visible = {
+				has_global_flag = bel_portugal_guinea
+			}
+
+			bel_gambia_visible = {
+				has_global_flag = bel_gambia
+			}
+
+			bel_senegal_visible = {
+				has_global_flag = bel_senegal
+			}
+
+			bel_west_africa_visible = {
+				has_global_flag = bel_west_africa
+			}
+			
+			# England
+			eng_congo_visible = {
+				has_global_flag = eng_congo
+			}
+
+			eng_ethiopia_visible = {
+				has_global_flag = eng_ethiopia
+			}
+
+			eng_cameroon_visible = {
+				has_global_flag = eng_cameroon
+			}
+
+			eng_equatorial_guinea_visible = {
+				has_global_flag = eng_equatorial_guinea
+			}
+
+			eng_nigeria_visible = {
+				has_global_flag = eng_nigeria
+			}
+
+			eng_cape_visible = {
+				has_global_flag = eng_cape
+			}
+
+			eng_south_west_africa_visible = {
+				has_global_flag = eng_south_west_africa
+			}
+
+			eng_southern_africa_visible = {
+				has_global_flag = eng_southern_africa
+			}
+
+			eng_angola_visible = {
+				has_global_flag = eng_angola
+			}
+
+			eng_zambia_visible = {
+				has_global_flag = eng_zambia
+			}
+
+			eng_tansania_visible = {
+				has_global_flag = eng_tansania
+			}
+
+			eng_mosambique_visible = {
+				has_global_flag = eng_mosambique
+			}
+
+			eng_french_congo_visible = {
+				has_global_flag = eng_french_congo
+			}
+
+			eng_gabon_visible = {
+				has_global_flag = eng_gabon
+			}
+
+			eng_jubaland_visible = {
+				has_global_flag = eng_jubaland
+			}
+
+			eng_british_somaliland_visible = {
+				has_global_flag = eng_british_somaliland
+			}
+
+			eng_somalia_visible = {
+				has_global_flag = eng_somalia
+			}
+
+			eng_british_east_africa_visible = {
+				has_global_flag = eng_british_east_africa
+			}
+
+			eng_chad_visible = {
+				has_global_flag = eng_chad
+			}
+
+			eng_west_egypt_visible = {
+				has_global_flag = eng_west_egypt
+			}
+
+			eng_djibouti_visible = {
+				has_global_flag = eng_djibouti
+			}
+
+			eng_eritrea_visible = {
+				has_global_flag = eng_eritrea
+			}
+
+			eng_egypt_visible = {
+				has_global_flag = eng_egypt
+			}
+
+			eng_dahomey_visible = {
+				has_global_flag = eng_dahomey
+			}
+
+			eng_togo_visible = {
+				has_global_flag = eng_togo
+			}
+
+			eng_sierra_leone_visible = {
+				has_global_flag = eng_sierra_leone
+			}
+
+			eng_liberia_visible = {
+				has_global_flag = eng_liberia
+			}
+
+			eng_tunis_visible = {
+				has_global_flag = eng_tunis
+			}
+
+			eng_madagascar_visible = {
+				has_global_flag = eng_madagascar
+			}
+
+			eng_algeria_visible = {
+				has_global_flag = eng_algeria
+			}
+
+			eng_libya_visible = {
+				has_global_flag = eng_libya
+			}
+
+			eng_western_sahara_visible = {
+				has_global_flag = eng_western_sahara
+			}
+
+			eng_morroco_visible = {
+				has_global_flag = eng_morroco
+			}
+
+			eng_portugal_guinea_visible = {
+				has_global_flag = eng_portugal_guinea
+			}
+
+			eng_gambia_visible = {
+				has_global_flag = eng_gambia
+			}
+
+			eng_senegal_visible = {
+				has_global_flag = eng_senegal
+			}
+
+			eng_west_africa_visible = {
+				has_global_flag = eng_west_africa
+			}
+
+			# Ethiopia
+			eth_ethiopia_visible = {
+				has_global_flag = eth_ethiopia
+			}
+			
+			# France
+			fra_congo_visible = {
+				has_global_flag = fra_congo
+			}
+
+			fra_ethiopia_visible = {
+				has_global_flag = fra_ethiopia
+			}
+
+			fra_cameroon_visible = {
+				has_global_flag = fra_cameroon
+			}
+
+			fra_equatorial_guinea_visible = {
+				has_global_flag = fra_equatorial_guinea
+			}
+
+			fra_nigeria_visible = {
+				has_global_flag = fra_nigeria
+			}
+
+			fra_cape_visible = {
+				has_global_flag = fra_cape
+			}
+
+			fra_south_west_africa_visible = {
+				has_global_flag = fra_south_west_africa
+			}
+
+			fra_southern_africa_visible = {
+				has_global_flag = fra_southern_africa
+			}
+
+			fra_angola_visible = {
+				has_global_flag = fra_angola
+			}
+
+			fra_zambia_visible = {
+				has_global_flag = fra_zambia
+			}
+
+			fra_tansania_visible = {
+				has_global_flag = fra_tansania
+			}
+
+			fra_mosambique_visible = {
+				has_global_flag = fra_mosambique
+			}
+
+			fra_french_congo_visible = {
+				has_global_flag = fra_french_congo
+			}
+
+			fra_gabon_visible = {
+				has_global_flag = fra_gabon
+			}
+
+			fra_jubaland_visible = {
+				has_global_flag = fra_jubaland
+			}
+
+			fra_british_somaliland_visible = {
+				has_global_flag = fra_british_somaliland
+			}
+
+			fra_somalia_visible = {
+				has_global_flag = fra_somalia
+			}
+
+			fra_british_east_africa_visible = {
+				has_global_flag = fra_british_east_africa
+			}
+
+			fra_chad_visible = {
+				has_global_flag = fra_chad
+			}
+
+			fra_west_egypt_visible = {
+				has_global_flag = fra_west_egypt
+			}
+
+			fra_djibouti_visible = {
+				has_global_flag = fra_djibouti
+			}
+
+			fra_eritrea_visible = {
+				has_global_flag = fra_eritrea
+			}
+
+			fra_egypt_visible = {
+				has_global_flag = fra_egypt
+			}
+
+			fra_dahomey_visible = {
+				has_global_flag = fra_dahomey
+			}
+
+			fra_togo_visible = {
+				has_global_flag = fra_togo
+			}
+
+			fra_sierra_leone_visible = {
+				has_global_flag = fra_sierra_leone
+			}
+
+			fra_liberia_visible = {
+				has_global_flag = fra_liberia
+			}
+
+			fra_tunis_visible = {
+				has_global_flag = fra_tunis
+			}
+
+			fra_madagascar_visible = {
+				has_global_flag = fra_madagascar
+			}
+
+			fra_algeria_visible = {
+				has_global_flag = fra_algeria
+			}
+
+			fra_libya_visible = {
+				has_global_flag = fra_libya
+			}
+
+			fra_western_sahara_visible = {
+				has_global_flag = fra_western_sahara
+			}
+
+			fra_morroco_visible = {
+				has_global_flag = fra_morroco
+			}
+
+			fra_portugal_guinea_visible = {
+				has_global_flag = fra_portugal_guinea
+			}
+
+			fra_gambia_visible = {
+				has_global_flag = fra_gambia
+			}
+
+			fra_senegal_visible = {
+				has_global_flag = fra_senegal
+			}
+
+			fra_west_africa_visible = {
+				has_global_flag = fra_west_africa
+			}
+			
+			# Italy
+			ita_congo_visible = {
+				has_global_flag = ita_congo
+			}
+
+			ita_ethiopia_visible = {
+				has_global_flag = ita_ethiopia
+			}
+
+			ita_cameroon_visible = {
+				has_global_flag = ita_cameroon
+			}
+
+			ita_equatorial_guinea_visible = {
+				has_global_flag = ita_equatorial_guinea
+			}
+
+			ita_nigeria_visible = {
+				has_global_flag = ita_nigeria
+			}
+
+			ita_cape_visible = {
+				has_global_flag = ita_cape
+			}
+
+			ita_south_west_africa_visible = {
+				has_global_flag = ita_south_west_africa
+			}
+
+			ita_southern_africa_visible = {
+				has_global_flag = ita_southern_africa
+			}
+
+			ita_angola_visible = {
+				has_global_flag = ita_angola
+			}
+
+			ita_zambia_visible = {
+				has_global_flag = ita_zambia
+			}
+
+			ita_tansania_visible = {
+				has_global_flag = ita_tansania
+			}
+
+			ita_mosambique_visible = {
+				has_global_flag = ita_mosambique
+			}
+
+			ita_french_congo_visible = {
+				has_global_flag = ita_french_congo
+			}
+
+			ita_gabon_visible = {
+				has_global_flag = ita_gabon
+			}
+
+			ita_jubaland_visible = {
+				has_global_flag = ita_jubaland
+			}
+
+			ita_british_somaliland_visible = {
+				has_global_flag = ita_british_somaliland
+			}
+
+			ita_somalia_visible = {
+				has_global_flag = ita_somalia
+			}
+
+			ita_british_east_africa_visible = {
+				has_global_flag = ita_british_east_africa
+			}
+
+			ita_chad_visible = {
+				has_global_flag = ita_chad
+			}
+
+			ita_west_egypt_visible = {
+				has_global_flag = ita_west_egypt
+			}
+
+			ita_djibouti_visible = {
+				has_global_flag = ita_djibouti
+			}
+
+			ita_eritrea_visible = {
+				has_global_flag = ita_eritrea
+			}
+
+			ita_egypt_visible = {
+				has_global_flag = ita_egypt
+			}
+
+			ita_dahomey_visible = {
+				has_global_flag = ita_dahomey
+			}
+
+			ita_togo_visible = {
+				has_global_flag = ita_togo
+			}
+
+			ita_sierra_leone_visible = {
+				has_global_flag = ita_sierra_leone
+			}
+
+			ita_liberia_visible = {
+				has_global_flag = ita_liberia
+			}
+
+			ita_tunis_visible = {
+				has_global_flag = ita_tunis
+			}
+
+			ita_madagascar_visible = {
+				has_global_flag = ita_madagascar
+			}
+
+			ita_algeria_visible = {
+				has_global_flag = ita_algeria
+			}
+
+			ita_libya_visible = {
+				has_global_flag = ita_libya
+			}
+
+			ita_western_sahara_visible = {
+				has_global_flag = ita_western_sahara
+			}
+
+			ita_morroco_visible = {
+				has_global_flag = ita_morroco
+			}
+
+			ita_portugal_guinea_visible = {
+				has_global_flag = ita_portugal_guinea
+			}
+
+			ita_gambia_visible = {
+				has_global_flag = ita_gambia
+			}
+
+			ita_senegal_visible = {
+				has_global_flag = ita_senegal
+			}
+
+			ita_west_africa_visible = {
+				has_global_flag = ita_west_africa
+			}
+			
+			# Morocco
+			mor_western_sahara_visible = {
+				has_global_flag = mor_western_sahara
+			}
+
+			mor_morroco_visible = {
+				has_global_flag = eng_morroco
+			}
+			
+			# Portugal
+			por_congo_visible = {
+				has_global_flag = por_congo
+			}
+
+			por_ethiopia_visible = {
+				has_global_flag = por_ethiopia
+			}
+
+			por_cameroon_visible = {
+				has_global_flag = por_cameroon
+			}
+
+			por_equatorial_guinea_visible = {
+				has_global_flag = por_equatorial_guinea
+			}
+
+			por_nigeria_visible = {
+				has_global_flag = por_nigeria
+			}
+
+			por_cape_visible = {
+				has_global_flag = por_cape
+			}
+
+			por_south_west_africa_visible = {
+				has_global_flag = por_south_west_africa
+			}
+
+			por_southern_africa_visible = {
+				has_global_flag = por_southern_africa
+			}
+
+			por_angola_visible = {
+				has_global_flag = por_angola
+			}
+
+			por_zambia_visible = {
+				has_global_flag = por_zambia
+			}
+
+			por_tansania_visible = {
+				has_global_flag = por_tansania
+			}
+
+			por_mosambique_visible = {
+				has_global_flag = por_mosambique
+			}
+
+			por_french_congo_visible = {
+				has_global_flag = por_french_congo
+			}
+
+			por_gabon_visible = {
+				has_global_flag = por_gabon
+			}
+
+			por_jubaland_visible = {
+				has_global_flag = por_jubaland
+			}
+
+			por_british_somaliland_visible = {
+				has_global_flag = por_british_somaliland
+			}
+
+			por_somalia_visible = {
+				has_global_flag = por_somalia
+			}
+
+			por_british_east_africa_visible = {
+				has_global_flag = por_british_east_africa
+			}
+
+			por_chad_visible = {
+				has_global_flag = por_chad
+			}
+
+			por_west_egypt_visible = {
+				has_global_flag = por_west_egypt
+			}
+
+			por_djibouti_visible = {
+				has_global_flag = por_djibouti
+			}
+
+			por_eritrea_visible = {
+				has_global_flag = por_eritrea
+			}
+
+			por_egypt_visible = {
+				has_global_flag = por_egypt
+			}
+
+			por_dahomey_visible = {
+				has_global_flag = por_dahomey
+			}
+
+			por_togo_visible = {
+				has_global_flag = por_togo
+			}
+
+			por_sierra_leone_visible = {
+				has_global_flag = por_sierra_leone
+			}
+
+			por_liberia_visible = {
+				has_global_flag = por_liberia
+			}
+
+			por_tunis_visible = {
+				has_global_flag = por_tunis
+			}
+
+			por_madagascar_visible = {
+				has_global_flag = por_madagascar
+			}
+
+			por_algeria_visible = {
+				has_global_flag = por_algeria
+			}
+
+			por_libya_visible = {
+				has_global_flag = por_libya
+			}
+
+			por_western_sahara_visible = {
+				has_global_flag = por_western_sahara
+			}
+
+			por_morroco_visible = {
+				has_global_flag = por_morroco
+			}
+
+			por_portugal_guinea_visible = {
+				has_global_flag = por_portugal_guinea
+			}
+
+			por_gambia_visible = {
+				has_global_flag = por_gambia
+			}
+
+			por_senegal_visible = {
+				has_global_flag = por_senegal
+			}
+
+			por_west_africa_visible = {
+				has_global_flag = por_west_africa
+			}
+			
+			# Prussia
+			prs_congo_visible = {
+				has_global_flag = prs_congo
+			}
+
+			prs_ethiopia_visible = {
+				has_global_flag = prs_ethiopia
+			}
+
+			prs_cameroon_visible = {
+				has_global_flag = prs_cameroon
+			}
+
+			prs_equatorial_guinea_visible = {
+				has_global_flag = prs_equatorial_guinea
+			}
+
+			prs_nigeria_visible = {
+				has_global_flag = prs_nigeria
+			}
+
+			prs_cape_visible = {
+				has_global_flag = prs_cape
+			}
+
+			prs_south_west_africa_visible = {
+				has_global_flag = prs_south_west_africa
+			}
+
+			prs_southern_africa_visible = {
+				has_global_flag = prs_southern_africa
+			}
+
+			prs_angola_visible = {
+				has_global_flag = prs_angola
+			}
+
+			prs_zambia_visible = {
+				has_global_flag = prs_zambia
+			}
+
+			prs_tansania_visible = {
+				has_global_flag = prs_tansania
+			}
+
+			prs_mosambique_visible = {
+				has_global_flag = prs_mosambique
+			}
+
+			prs_french_congo_visible = {
+				has_global_flag = prs_french_congo
+			}
+
+			prs_gabon_visible = {
+				has_global_flag = prs_gabon
+			}
+
+			prs_jubaland_visible = {
+				has_global_flag = prs_jubaland
+			}
+
+			prs_british_somaliland_visible = {
+				has_global_flag = prs_british_somaliland
+			}
+
+			prs_somalia_visible = {
+				has_global_flag = prs_somalia
+			}
+
+			prs_british_east_africa_visible = {
+				has_global_flag = prs_british_east_africa
+			}
+
+			prs_chad_visible = {
+				has_global_flag = prs_chad
+			}
+
+			prs_west_egypt_visible = {
+				has_global_flag = prs_west_egypt
+			}
+
+			prs_djibouti_visible = {
+				has_global_flag = prs_djibouti
+			}
+
+			prs_eritrea_visible = {
+				has_global_flag = prs_eritrea
+			}
+
+			prs_egypt_visible = {
+				has_global_flag = prs_egypt
+			}
+
+			prs_dahomey_visible = {
+				has_global_flag = prs_dahomey
+			}
+
+			prs_togo_visible = {
+				has_global_flag = prs_togo
+			}
+
+			prs_sierra_leone_visible = {
+				has_global_flag = prs_sierra_leone
+			}
+
+			prs_liberia_visible = {
+				has_global_flag = prs_liberia
+			}
+
+			prs_tunis_visible = {
+				has_global_flag = prs_tunis
+			}
+
+			prs_madagascar_visible = {
+				has_global_flag = prs_madagascar
+			}
+
+			prs_algeria_visible = {
+				has_global_flag = prs_algeria
+			}
+
+			prs_libya_visible = {
+				has_global_flag = prs_libya
+			}
+
+			prs_western_sahara_visible = {
+				has_global_flag = prs_western_sahara
+			}
+
+			prs_morroco_visible = {
+				has_global_flag = prs_morroco
+			}
+
+			prs_portugal_guinea_visible = {
+				has_global_flag = prs_prstugal_guinea
+			}
+
+			prs_gambia_visible = {
+				has_global_flag = prs_gambia
+			}
+
+			prs_senegal_visible = {
+				has_global_flag = prs_senegal
+			}
+
+			prs_west_africa_visible = {
+				has_global_flag = prs_west_africa
+			}
+			
+			# Spain
+			spr_congo_visible = {
+				has_global_flag = spr_congo
+			}
+
+			spr_ethiopia_visible = {
+				has_global_flag = spr_ethiopia
+			}
+
+			spr_cameroon_visible = {
+				has_global_flag = spr_cameroon
+			}
+
+			spr_equatorial_guinea_visible = {
+				has_global_flag = spr_equatorial_guinea
+			}
+
+			spr_nigeria_visible = {
+				has_global_flag = spr_nigeria
+			}
+
+			spr_cape_visible = {
+				has_global_flag = spr_cape
+			}
+
+			spr_south_west_africa_visible = {
+				has_global_flag = spr_south_west_africa
+			}
+
+			spr_southern_africa_visible = {
+				has_global_flag = spr_southern_africa
+			}
+
+			spr_angola_visible = {
+				has_global_flag = spr_angola
+			}
+
+			spr_zambia_visible = {
+				has_global_flag = spr_zambia
+			}
+
+			spr_tansania_visible = {
+				has_global_flag = spr_tansania
+			}
+
+			spr_mosambique_visible = {
+				has_global_flag = spr_mosambique
+			}
+
+			spr_french_congo_visible = {
+				has_global_flag = spr_french_congo
+			}
+
+			spr_gabon_visible = {
+				has_global_flag = spr_gabon
+			}
+
+			spr_jubaland_visible = {
+				has_global_flag = spr_jubaland
+			}
+
+			spr_british_somaliland_visible = {
+				has_global_flag = spr_british_somaliland
+			}
+
+			spr_somalia_visible = {
+				has_global_flag = spr_somalia
+			}
+
+			spr_british_east_africa_visible = {
+				has_global_flag = spr_british_east_africa
+			}
+
+			spr_chad_visible = {
+				has_global_flag = spr_chad
+			}
+
+			spr_west_egypt_visible = {
+				has_global_flag = spr_west_egypt
+			}
+
+			spr_djibouti_visible = {
+				has_global_flag = spr_djibouti
+			}
+
+			spr_eritrea_visible = {
+				has_global_flag = spr_eritrea
+			}
+
+			spr_egypt_visible = {
+				has_global_flag = spr_egypt
+			}
+
+			spr_dahomey_visible = {
+				has_global_flag = spr_dahomey
+			}
+
+			spr_togo_visible = {
+				has_global_flag = spr_togo
+			}
+
+			spr_sierra_leone_visible = {
+				has_global_flag = spr_sierra_leone
+			}
+
+			spr_liberia_visible = {
+				has_global_flag = spr_liberia
+			}
+
+			spr_tunis_visible = {
+				has_global_flag = spr_tunis
+			}
+
+			spr_madagascar_visible = {
+				has_global_flag = spr_madagascar
+			}
+
+			spr_algeria_visible = {
+				has_global_flag = spr_algeria
+			}
+
+			spr_libya_visible = {
+				has_global_flag = spr_libya
+			}
+
+			spr_western_sahara_visible = {
+				has_global_flag = spr_western_sahara
+			}
+
+			spr_morroco_visible = {
+				has_global_flag = spr_morroco
+			}
+
+			spr_portugal_guinea_visible = {
+				has_global_flag = spr_portugal_guinea
+			}
+
+			spr_gambia_visible = {
+				has_global_flag = spr_gambia
+			}
+
+			spr_senegal_visible = {
+				has_global_flag = spr_senegal
+			}
+
+			spr_west_africa_visible = {
+				has_global_flag = spr_west_africa
+			}
+			
+			# Turkey
+			tur_congo_visible = {
+				has_global_flag = tur_congo
+			}
+
+			tur_ethiopia_visible = {
+				has_global_flag = tur_ethiopia
+			}
+
+			tur_cameroon_visible = {
+				has_global_flag = tur_cameroon
+			}
+
+			tur_equatorial_guinea_visible = {
+				has_global_flag = tur_equatorial_guinea
+			}
+
+			tur_nigeria_visible = {
+				has_global_flag = tur_nigeria
+			}
+
+			tur_cape_visible = {
+				has_global_flag = tur_cape
+			}
+
+			tur_south_west_africa_visible = {
+				has_global_flag = tur_south_west_africa
+			}
+
+			tur_southern_africa_visible = {
+				has_global_flag = tur_southern_africa
+			}
+
+			tur_angola_visible = {
+				has_global_flag = tur_angola
+			}
+
+			tur_zambia_visible = {
+				has_global_flag = tur_zambia
+			}
+
+			tur_tansania_visible = {
+				has_global_flag = tur_tansania
+			}
+
+			tur_mosambique_visible = {
+				has_global_flag = tur_mosambique
+			}
+
+			tur_french_congo_visible = {
+				has_global_flag = tur_french_congo
+			}
+
+			tur_gabon_visible = {
+				has_global_flag = tur_gabon
+			}
+
+			tur_jubaland_visible = {
+				has_global_flag = tur_jubaland
+			}
+
+			tur_british_somaliland_visible = {
+				has_global_flag = tur_british_somaliland
+			}
+
+			tur_somalia_visible = {
+				has_global_flag = tur_somalia
+			}
+
+			tur_british_east_africa_visible = {
+				has_global_flag = tur_british_east_africa
+			}
+
+			tur_chad_visible = {
+				has_global_flag = tur_chad
+			}
+
+			tur_west_egypt_visible = {
+				has_global_flag = tur_west_egypt
+			}
+
+			tur_djibouti_visible = {
+				has_global_flag = tur_djibouti
+			}
+
+			tur_eritrea_visible = {
+				has_global_flag = tur_eritrea
+			}
+
+			tur_egypt_visible = {
+				has_global_flag = tur_egypt
+			}
+
+			tur_dahomey_visible = {
+				has_global_flag = tur_dahomey
+			}
+
+			tur_togo_visible = {
+				has_global_flag = tur_togo
+			}
+
+			tur_sierra_leone_visible = {
+				has_global_flag = tur_sierra_leone
+			}
+
+			tur_liberia_visible = {
+				has_global_flag = tur_liberia
+			}
+
+			tur_tunis_visible = {
+				has_global_flag = tur_tunis
+			}
+
+			tur_madagascar_visible = {
+				has_global_flag = tur_madagascar
+			}
+
+			tur_algeria_visible = {
+				has_global_flag = tur_algeria
+			}
+
+			tur_libya_visible = {
+				has_global_flag = tur_libya
+			}
+
+			tur_western_sahara_visible = {
+				has_global_flag = tur_western_sahara
+			}
+
+			tur_morroco_visible = {
+				has_global_flag = tur_morroco
+			}
+
+			tur_portugal_guinea_visible = {
+				has_global_flag = tur_portugal_guinea
+			}
+
+			tur_gambia_visible = {
+				has_global_flag = tur_gambia
+			}
+
+			tur_senegal_visible = {
+				has_global_flag = tur_senegal
+			}
+
+			tur_west_africa_visible = {
+				has_global_flag = tur_west_africa
+			}
+			
+			# USA
+			usa_congo_visible = {
+				has_global_flag = usa_congo
+			}
+
+			usa_ethiopia_visible = {
+				has_global_flag = usa_ethiopia
+			}
+
+			usa_cameroon_visible = {
+				has_global_flag = usa_cameroon
+			}
+
+			usa_equatorial_guinea_visible = {
+				has_global_flag = usa_equatorial_guinea
+			}
+
+			usa_nigeria_visible = {
+				has_global_flag = usa_nigeria
+			}
+
+			usa_cape_visible = {
+				has_global_flag = usa_cape
+			}
+
+			usa_south_west_africa_visible = {
+				has_global_flag = usa_south_west_africa
+			}
+
+			usa_southern_africa_visible = {
+				has_global_flag = usa_southern_africa
+			}
+
+			usa_angola_visible = {
+				has_global_flag = usa_angola
+			}
+
+			usa_zambia_visible = {
+				has_global_flag = usa_zambia
+			}
+
+			usa_tansania_visible = {
+				has_global_flag = usa_tansania
+			}
+
+			usa_mosambique_visible = {
+				has_global_flag = usa_mosambique
+			}
+
+			usa_french_congo_visible = {
+				has_global_flag = usa_french_congo
+			}
+
+			usa_gabon_visible = {
+				has_global_flag = usa_gabon
+			}
+
+			usa_jubaland_visible = {
+				has_global_flag = usa_jubaland
+			}
+
+			usa_british_somaliland_visible = {
+				has_global_flag = usa_british_somaliland
+			}
+
+			usa_somalia_visible = {
+				has_global_flag = usa_somalia
+			}
+
+			usa_british_east_africa_visible = {
+				has_global_flag = usa_british_east_africa
+			}
+
+			usa_chad_visible = {
+				has_global_flag = usa_chad
+			}
+
+			usa_west_egypt_visible = {
+				has_global_flag = usa_west_egypt
+			}
+
+			usa_djibouti_visible = {
+				has_global_flag = usa_djibouti
+			}
+
+			usa_eritrea_visible = {
+				has_global_flag = usa_eritrea
+			}
+
+			usa_egypt_visible = {
+				has_global_flag = usa_egypt
+			}
+
+			usa_dahomey_visible = {
+				has_global_flag = usa_dahomey
+			}
+
+			usa_togo_visible = {
+				has_global_flag = usa_togo
+			}
+
+			usa_sierra_leone_visible = {
+				has_global_flag = usa_sierra_leone
+			}
+
+			usa_liberia_visible = {
+				has_global_flag = usa_liberia
+			}
+
+			usa_tunis_visible = {
+				has_global_flag = usa_tunis
+			}
+
+			usa_madagascar_visible = {
+				has_global_flag = usa_madagascar
+			}
+
+			usa_algeria_visible = {
+				has_global_flag = usa_algeria
+			}
+
+			usa_libya_visible = {
+				has_global_flag = usa_libya
+			}
+
+			usa_western_sahara_visible = {
+				has_global_flag = usa_western_sahara
+			}
+
+			usa_morroco_visible = {
+				has_global_flag = usa_morroco
+			}
+
+			usa_portugal_guinea_visible = {
+				has_global_flag = usa_portugal_guinea
+			}
+
+			usa_gambia_visible = {
+				has_global_flag = usa_gambia
+			}
+
+			usa_senegal_visible = {
+				has_global_flag = usa_senegal
+			}
+
+			usa_west_africa_visible = {
+				has_global_flag = usa_west_africa
+			}
+
+		}
 	}
 	
 }
