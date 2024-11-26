@@ -1607,6 +1607,7 @@
                 elections_allowed = no
             }
 			hidden_effect = {
+				play_song = "the_manchester_rambler"
 				set_capital = {
                     state = 132
                 }
@@ -1617,7 +1618,6 @@
 				}
 				country_event = britain_fpw.6
             }
-			play_song = "the_manchester_rambler"
 			set_global_flag = super_visible
             set_global_flag = fpw_bcw
             visible = {

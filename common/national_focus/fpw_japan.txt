@@ -367,6 +367,12 @@ focus_tree = {
 		}
 		}
 		hidden_effect = {
+			play_song = "miya_san_miya_san"
+		    set_global_flag = super_visible
+            set_global_flag = fpw_bw
+            visible = {
+                has_global_flag = super_visible
+            }
 			clr_country_flag = fpw_secondary_leader_jap_komei
 			}
 		hidden_effect = {

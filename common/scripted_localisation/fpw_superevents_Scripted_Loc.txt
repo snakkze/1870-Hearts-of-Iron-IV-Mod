@@ -20,6 +20,12 @@ defined_text = {
         }
         localization_key = "SuperEvent_BCW"
     }
+    text = {
+        trigger = {
+            has_global_flag = fpw_bw
+        }
+        localization_key = "SuperEvent_BW"
+    }
 
 }
 	
@@ -48,6 +54,13 @@ defined_text = {
         localization_key = "SuperEvent_BCW_DESCRIPTION"
     }
 
+    text = { 
+        trigger = {
+            has_global_flag = fpw_bw
+        }
+        localization_key = "SuperEvent_BW_DESCRIPTION"
+    }
+
 }
 	
 #Quotes
@@ -73,5 +86,12 @@ defined_text = {
             has_global_flag = fpw_bcw
         }
         localization_key = "SuperEvent_BCW_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = fpw_bw
+        }
+        localization_key = "SuperEvent_BW_REMARK"
     }
 }
