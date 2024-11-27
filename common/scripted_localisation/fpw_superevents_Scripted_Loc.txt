@@ -6,19 +6,19 @@ defined_text = {
         trigger = {
             has_global_flag = fpw_apw
         }
-        localization_key = "SuperEvent_APW"
+        localization_key = SuperEvent_APW
     }
     text = {
         trigger = {
             has_global_flag = fpw_fpw
         }
-        localization_key = "SuperEvent_FPW"
+        localization_key = SuperEvent_FPW
     }
     text = {
         trigger = {
             has_global_flag = fpw_bcw
         }
-        localization_key = "SuperEvent_BCW"
+        localization_key = SuperEvent_BCW
     }
     text = {
         trigger = {
@@ -37,21 +37,21 @@ defined_text = {
         trigger = {
             has_global_flag = fpw_APW
         }
-        localization_key = "SuperEvent_APW_DESCRIPTION"
+        localization_key = SuperEvent_APW_DESCRIPTION
     }
 
     text = { 
         trigger = {
             has_global_flag = fpw_fpw
         }
-        localization_key = "SuperEvent_FPW_DESCRIPTION"
+        localization_key = SuperEvent_FPW_DESCRIPTION
     }
 
     text = { 
         trigger = {
             has_global_flag = fpw_bcw
         }
-        localization_key = "SuperEvent_BCW_DESCRIPTION"
+        localization_key = SuperEvent_BCW_DESCRIPTION
     }
 
     text = { 
@@ -71,21 +71,21 @@ defined_text = {
         trigger = {
             has_global_flag = fpw_APW
         }
-        localization_key = "SuperEvent_APW_REMARK"
+        localization_key = SuperEvent_APW_REMARK
     }
 
     text = {
         trigger = {
             has_global_flag = fpw_fpw
         }
-        localization_key = "SuperEvent_FPW_REMARK"
+        localization_key = SuperEvent_FPW_REMARK
     }
 
     text = {
         trigger = {
             has_global_flag = fpw_bcw
         }
-        localization_key = "SuperEvent_BCW_REMARK"
+        localization_key = SuperEvent_BCW_REMARK
     }
 
     text = {
