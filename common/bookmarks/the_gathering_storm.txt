@@ -112,6 +112,20 @@ bookmarks = {
 			}
 		}
 
+		#AFG={
+			#This is for when I put afghanistan
+			#minor = yes
+			#history = "AFG_1866_DESC"
+			#ideology = neutrality
+			#ideas = {
+				#fpw_AFG_AFZ_illiterate_state
+				#fpw_AFG_our_chance_is_now
+				#fpw_AFG_entirely_war_economy
+			#}
+			#focuses = {
+			#}
+		#}
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

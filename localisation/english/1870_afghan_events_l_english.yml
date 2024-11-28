@@ -29,6 +29,27 @@
  afghan_fpw.10.t:0 "Afghanistan asks to copy artillery designs"
  afghan_fpw.10.d:0 "The Afghans have come to us asking for our artillery designs, we could use this chance to make sure Afghanistan is aligned with us in the future"
 
+ afghan_fpw.11.t:0 "Prussia Accepts Our Proposal"
+ afghan_fpw.11.d:0 "The Prussian have agreed for us to copy their artillery designs."
+ afghan_fpw.12.t:0 "Prussia Rejects"
+ afghan_fpw.12.d:0 "The Prussians have rejected."
+
+ afghan_fpw.13.t:0 "Yearly Calvary Research Report"
+ afghan_fpw.13.d:0 "Our calvary research plan has been going as planned."
+ afghan_fpw.14.t:0 "Yearly Calvary Research Report"
+ afghan_fpw.14.d:0 "Our calvary research plan has been going as planned."
+ afghan_fpw.15.t:0 "Yearly Calvary Research Report"
+ afghan_fpw.15.d:0 "Our calvary research plan has been going as planned."
+ afghan_fpw.16.t:0 "Yearly Calvary Research Report"
+ afghan_fpw.16.d:0 "Our calvary research plan has been going as planned."
+ afghan_fpw.17.t:0 "Yearly Calvary Research Report"
+ afghan_fpw.17.d:0 "Our calvary research plan has been going as planned."
+ afghan_fpw.18.t:0 "Yearly Calvary Research Report"
+ afghan_fpw.18.d:0 "Our calvary research plan has been going as planned."
+ afghan_fpw.19.t:0 "Yearly Calvary Research Report"
+ afghan_fpw.19.d:0 "Our calvary research plan has been going as planned."
+ afghan_fpw.20.t:0 "Final Calvary Research Report"
+ afghan_fpw.20.d:0 "Our calvary research plan have finished."
 
 
 
@@ -66,6 +87,10 @@ afg_extensive_calvary_research_plan_desc:0 "We need to make a more permanent sol
 afg_reformed_army:0 "Reforms Completed"
 afg_reformed_army_desc:0 "We have finally completed the reforms and we now have a new, more modern army."
 afg_state_of_the_military:0 "State of The Military"
+afg_kabul_offensive:0 "The Kabul Offensive"
+afg_war_bonds:0 "Collect War Bonds"
+afg_handle_lacking_national_identity:0 "Create a National Flag"
+afg_victory_in_civil_war:0 "Victory In Afghan Civil War"
 
 
 
@@ -79,8 +104,11 @@ fpw_afg_inv_dec:0 "Unlocks Decision §Y Investment Oppurtinities§!"
 fpw_afg_unlocks_mil_branch:0 "§GThis Focus Will Unlock Afghan Civil War Military Branch§!"
 new_afghan_army:0 "§GThis idea will be improved with each focus you do in the military branch§!"
 afg_army_influence:0 "§GThis focus will start the tribal influence mechanic! If the tribal influence reaches 10 or -10 you will get a civil war!§!"
-
-
+afg_modernize_infantry:0 "Unlocks Decision §YModernize Infantry Equipment§!"
+afg_modernize_support:0 "Unlocks Decision §YModernize Support Equipment§!"
+afg_modernize_artillery:0 "Unlocks Decision §YModernize Artillery Equipment§!"
+afg_modernize_calvary_equipment:0 "Unlocks Decision §YModernize Calvary Equipment§!"
+afg_research_plan:0 "Every year we have this idea we get a different calvary bonus or modifier to the calvary research plan idea. (Stops at the year 1874)"
 
 ##### DECISIONS
 fpw_afg_investment_chances_dec:0 "Investment Chances"
@@ -97,3 +125,13 @@ fpw_AFG_lagging_military_research:0 "Lagging Military Research"
 fpw_AFG_mordernizing_army:0 "Modernizing Army"
 fpw_AFG_mountain_warfare:0 "Mountain Warfare"
 fpw_AFG_munitys_in_the_army:0 "Mutinies In The Army"
+fpw_AFG_increased_calvary_research:0 "Cavalry Research Plan"
+fpw_AFG_increased_calvary_research_two:0 "Cavalry Research Plan"
+fpw_AFG_increased_calvary_research_three:0 "Cavalry Research Plan"
+fpw_AFG_increased_calvary_research_four:0 "Cavalry Research Plan"
+fpw_AFG_increased_calvary_research_five:0 "Cavalry Research Plan"
+fpw_AFG_increased_calvary_research_six:0 "Cavalry Research Plan"
+fpw_AFG_increased_calvary_research_seven:0 "Cavalry Research Plan"
+fpw_AFG_increased_calvary_research_eight:0 "Cavalry Supremacy"
+fpw_AFG_war_bonds:0 "War Bonds"
+fpw_AFG_attack_on_kabul:0 "Kabul Offensive"

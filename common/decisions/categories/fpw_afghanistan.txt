@@ -27,3 +27,17 @@ fpw_afg_tribal_influence = {
 		has_completed_focus = afg_allow_tribes_in_army
 	}
 }
+fpw_afg_army_modernization = {
+	priority = 10
+
+	###icon = GFX_decision_category_generic_formable_nations
+	###picture = GFX_decision_category_franco_prussian_war
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		has_completed_focus = afg_begin_mordernization
+	}
+}

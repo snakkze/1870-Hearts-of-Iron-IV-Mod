@@ -146,7 +146,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = generic_disjointed_gov
 			modifier = {
 				war_support_factor = 0.2
 				stability_factor = -0.1
@@ -181,7 +181,7 @@ ideas = {
 			picture = generic_infantry_bonus
 			modifier = {
 				army_attack_factor = -0.5
-				army_defence_factor = -0.3
+				army_defence_factor = -0.75
 			}
 		}
 	}
@@ -198,7 +198,7 @@ ideas = {
 			modifier = {
 				terrain_penalty_reduction = 0.3
 				pocket_penalty = 0.25
-				experience_gain_army = -0.15
+				experience_gain_army = 0.05
 				cavalry_attack_factor = 0.05
 			}
 		}
@@ -271,7 +271,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_artillery_regiments
+			picture = soviet_german_friendship
 			modifier = {
 				research_bonus = {
 					artillery = 0.1
@@ -298,8 +298,8 @@ ideas = {
 			#picture = generic_artillery_regiments
 			modifier = {
 				experience_gain_army_unit_factor = 0.2
-				planning_speed = 0.2
-				max_planning_factor = 0.2
+				planning_speed = 0.1
+				max_planning_factor = 0.1
 				custom_effect_tooltip = new_afghan_army
 			}
 		}
@@ -338,6 +338,216 @@ ideas = {
 				war_support_factor = 0.2
 				planning_speed = -0.1
 				max_planning_factor = -0.05
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				custom_effect_tooltip = afg_research_plan
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research_two = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				custom_effect_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.025
+				cavalry_defence_factor = 0.025
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research_three = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_effect_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.025
+				cavalry_defence_factor = 0.025
+				cavalry_speed_factor = 0.05
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research_four = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_effect_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.025
+				cavalry_defence_factor = 0.025
+				cavalry_speed_factor = 0.05
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_brigade_design_cost_factor = -0.5
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research_five = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.15
+				custom_effect_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				cavalry_speed_factor = 0.1
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_brigade_design_cost_factor = -0.5
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research_six = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.15
+				custom_effect_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				cavalry_speed_factor = 0.1
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_brigade_design_cost_factor = -0.5
+				breakthrough_factor = 0.05
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research_seven = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_effect_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				cavalry_speed_factor = 0.1
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_brigade_design_cost_factor = -0.5
+				breakthrough_factor = 0.05
+			}
+		}
+	}
+	country = {
+		fpw_AFG_increased_calvary_research_eight = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_effect_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.125
+				cavalry_defence_factor = 0.125
+				cavalry_speed_factor = 0.15
+				experience_gain_cavalry_combat_factor = 0.45
+				unit_cavalry_brigade_design_cost_factor = -1.0
+				breakthrough_factor = 0.15
+			}
+		}
+	}
+	country = {
+		fpw_AFG_war_bonds = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+			modifier = {
+				war_support_factor = -0.01
+				stability_factor = -0.01
+				consumer_goods_factor = -0.2
+			}
+		}
+	}
+	country = {
+		fpw_AFG_attack_on_kabul = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			targeted_modifier = {
+				tag = AFZ
+				attack_bonus_against = 0.15
+			}
+		}
+	}
+	country = {
+		fpw_AFG_tribal_recruitment_campaign = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			modifier = {
+				local_manpower = 0.15
+				mobilization_speed = 0.05
 			}
 		}
 	}

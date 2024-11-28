@@ -125,4 +125,110 @@ fpw_afg_tribal_influence = {
 		}
 	}
 }
+fpw_afg_army_modernization = {
+	fpw_modernize_infantry_eq = {
+		available = {
+			has_completed_focus = afg_modernize_infantry_equipment
+		}
 
+		cost = 25
+
+
+		visible = {
+			
+		}
+
+		allowed = {
+			tag = AFG
+		}
+		fire_only_once = yes
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	fpw_modernize_support_eq = {
+		available = {
+			has_completed_focus = afg_modernize_support_equipment
+		}
+
+		cost = 25
+
+
+		visible = {
+			
+		}
+
+		allowed = {
+			tag = AFG
+		}
+		fire_only_once = yes
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	fpw_modernize_calvary = {
+		available = {
+			has_completed_focus = afg_modernize_calvary
+		}
+
+		cost = 25
+
+
+		visible = {
+			
+		}
+
+		allowed = {
+			tag = AFG
+		}
+		fire_only_once = yes
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = cavalry
+			}
+		}
+	}
+	fpw_modernize_artillery = {
+		available = {
+			has_completed_focus = afg_modernize_artillery_equipment
+		}
+
+		cost = 25
+
+
+		visible = {
+			
+		}
+
+		allowed = {
+			tag = AFG
+		}
+		fire_only_once = yes
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+}

@@ -51,8 +51,10 @@ country_event = {
 		remove_ideas = fpw_AFG_careful_planning
 		remove_ideas = fpw_AFZ_AFG_Afghan_Civil_War
 		remove_ideas = fpw_AFG_entirely_war_economy
+		remove_ideas = fpw_AFG_our_chance_is_now
 		war_support_factor = 0.1
 		add_ideas = fpw_AFG_post_war_economy
+		complete_national_focus = afg_victory_in_civil_war
 	}
 
 }
@@ -216,15 +218,169 @@ country_event = {
 		name = "We can help them"
 		AFG = {
 			add_ideas = fpw_AFG_prussian_artillery_designs
+			country_event = fpw_afghan.11
 		}
 		add_opinion_modifier = fpw_afghan_friend_modifier
 	}
 
 	option = {
+		AFG = {
+			country_event = fpw_afghan.12
+		}
 		name = "No"
 		add_opinion_modifier = fpw_afghan_enemy_modifier
 	}
-
-
 }
+country_event = {
+	id = fpw_afghan.11
+	title = afghan_fpw.11.t
+	desc = afghan_fpw.11.d
+	
+	is_triggered_only = yes
 
+
+	option = {
+		name = "Great"
+	}
+}
+country_event = {
+	id = fpw_afghan.12
+	title = afghan_fpw.12.t
+	desc = afghan_fpw.12.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Whatever"
+	}
+}
+country_event = {
+	id = fpw_afghan.13
+	title = afghan_fpw.13.t
+	desc = afghan_fpw.13.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = cavalry
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.14
+	title = afghan_fpw.14.t
+	desc = afghan_fpw.14.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research
+			add_idea = fpw_AFG_increased_calvary_research_two
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.15
+	title = afghan_fpw.15.t
+	desc = afghan_fpw.15.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_two
+			add_idea = fpw_AFG_increased_calvary_research_three
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.16
+	title = afghan_fpw.16.t
+	desc = afghan_fpw.16.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_three
+			add_idea = fpw_AFG_increased_calvary_research_four
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.17
+	title = afghan_fpw.17.t
+	desc = afghan_fpw.17.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_four
+			add_idea = fpw_AFG_increased_calvary_research_five
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.18
+	title = afghan_fpw.18.t
+	desc = afghan_fpw.18.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_five
+			add_idea = fpw_AFG_increased_calvary_research_six
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.19
+	title = afghan_fpw.19.t
+	desc = afghan_fpw.19.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_six
+			add_idea = fpw_AFG_increased_calvary_research_seven
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.20
+	title = afghan_fpw.20.t
+	desc = afghan_fpw.20.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_seven
+			add_idea = fpw_AFG_increased_calvary_research_eight
+		}
+	}
+}
