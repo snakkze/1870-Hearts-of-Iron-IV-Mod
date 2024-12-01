@@ -55,6 +55,7 @@ country_event = {
 		war_support_factor = 0.1
 		add_ideas = fpw_AFG_post_war_economy
 		complete_national_focus = afg_victory_in_civil_war
+		set_capital = {state = 267}
 	}
 
 }
@@ -75,14 +76,14 @@ country_event = {
 			days = 100
 		}
 		415 = {
-					if = {
-					    add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-					}
+			if = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
+			}
 		}
 		diplomatic_relation = {
    			country = AFG
@@ -382,5 +383,168 @@ country_event = {
 			remove_idea = fpw_AFG_increased_calvary_research_seven
 			add_idea = fpw_AFG_increased_calvary_research_eight
 		}
+	}
+}
+country_event = {
+	id = fpw_afghan.21
+	title = afghan_fpw.21.t
+	desc = afghan_fpw.21.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We will not give up even an inch"
+		ai_chance = { factor = 50}
+		AFG = {
+			country_event = fpw_afghan.22
+		}
+	}
+	option = {
+		name = "Hand over the territories"
+		ai_chance = { factor = 50}
+		AFG = {
+			country_event = fpw_afghan.23
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.22
+	title = afghan_fpw.22.t
+	desc = afghan_fpw.22.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Punishment must be served"
+		create_war_goal = {
+            type = take_state_focus
+            target = PER
+			generator = {410 414 416}
+        }
+	}
+}
+country_event = {
+	id = fpw_afghan.23
+	title = afghan_fpw.23.t
+	desc = afghan_fpw.23.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Amazing"
+		transfer_state = 410
+		transfer_state = 414
+		transfer_state = 416
+	}
+}
+country_event = {
+	id = fpw_afghan.24
+	title = afghan_fpw.24.t
+	desc = afghan_fpw.24.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		ai_chance = { factor = 0}
+		name = "We are not scared of third world countries"
+		AFG = {
+			country_event = fpw_afghan.25
+		}
+	}
+	option = {
+		ai_chance = { factor = 100}
+		name = "It's better to take accept our loses"
+		AFG = {
+			country_event = fpw_afghan.26
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.25
+	title = afghan_fpw.25.t
+	desc = afghan_fpw.25.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "It's their loss"
+		remove_ideas = fpw_AFG_bukharian_campaign
+	}
+}
+country_event = {
+	id = fpw_afghan.26
+	title = afghan_fpw.26.t
+	desc = afghan_fpw.26.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Great"
+		white_peace = SOV
+		transfer_state = 830
+		transfer_state = 405
+		remove_ideas = fpw_AFG_bukharian_campaign
+	}
+}
+country_event = {
+	id = fpw_afghan.27
+	title = afghan_fpw.27.t
+	desc = afghan_fpw.27.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		ai_chance = { factor = 0}
+		name = "We are not scared by them"
+		AFG = {
+			country_event = fpw_afghan.28
+		}
+	}
+	option = {
+		ai_chance = { factor = 100}
+		name = "It's better to take accept our loses"
+		AFG = {
+			country_event = fpw_afghan.29
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.28
+	title = afghan_fpw.28.t
+	desc = afghan_fpw.28.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "It's their loss"
+		remove_ideas = fpw_AFG_indian_campaign
+	}
+}
+country_event = {
+	id = fpw_afghan.29
+	title = afghan_fpw.29.t
+	desc = afghan_fpw.29.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Great"
+		white_peace = ENG
+		transfer_state = 444
+		transfer_state = 787
+		transfer_state = 441
+		transfer_state = 440
+		transfer_state = 443
+		transfer_state = 439
+		remove_ideas = fpw_AFG_indian_campaign
 	}
 }

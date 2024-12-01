@@ -54,7 +54,7 @@ ideas = {
 			picture = generic_economic_crisis
 
 			modifier = {
-				research_speed_factor = -0.2
+				research_speed_factor = -0.5
 				consumer_goods_factor = 0.4
 				political_power_gain = -0.025
 			}
@@ -551,6 +551,157 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		fpw_AFG_barazaki_dynasty = {
+			allowed = {
+				always = no
+			}
 
+
+			removal_cost = -1
+
+			picture = generic_monarchist_uprising
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+	}
+	country = {
+		fpw_AFG_supressing_tribes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = 
+			modifier = {
+				resistance_activity = -0.1
+				compliance_growth_on_our_occupied_states = -0.5
+				resistance_target = -0.15
+			}
+		}
+	}
+	country = {
+		fpw_AFG_unified_country = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = 
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0.5
+			}
+		}
+	}
+	country = {
+		fpw_AFG_illiterate_state_two = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				research_speed_factor = -0.3
+				consumer_goods_factor = 0.25
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_illiterate_state_three = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				research_speed_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_bukharian_campaign = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.25
+			}
+			modifier = {
+				custom_effect_tooltip = fpw_afg_into_russia
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_indian_campaign = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.25
+			}
+			modifier = {
+				custom_effect_tooltip = fpw_afg_into_britain
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_nationalism = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.15
+			}
+		}
+
+	}
 }
 

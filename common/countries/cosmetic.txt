@@ -1227,5 +1227,13 @@ ENE = {
 
 AFG_ni_found = {
 	color = rgb { 173 216 230 }
-	color = rgb { 173 216 230 }
+	color_ui = rgb { 173 216 230 }
+}
+AFG_DUR_EMP = {
+	color = rgb { 1 128 1 }
+	color_ui = rgb { 1 128 1 }
+}
+AFG_ISL_UNI = {
+	color = rgb { 1 1 1 }
+	color_ui = rgb { 1 1 1 }
 }

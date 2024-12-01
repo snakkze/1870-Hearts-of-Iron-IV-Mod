@@ -370,5 +370,41 @@ leader_traits = {
 	economy_cost_factor = 0.2
 	conscription_factor = 0.15
   }
+  	fpw_fanatic_barakzai_writer = {
+		random = no
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		
+	}
+	fpw_centralizing_reformer = {
+		random = no
+		political_power_gain = 0.25
+		stability_factor = 0.05
+		
+	}
+	fpw_genius_militarist = {
+		random = no
+		weekly_manpower = 1000
+		experience_gain_army_factor = 0.15
+	}
+	fpw_diplomatic_strategist = {
+		random = no
+		improve_relations_maintain_cost_factor = -0.5
+		justify_war_goal_time = -0.15
+		opinion_gain_monthly_factor = 0.25
+		autonomy_gain = -0.05
+	}
+	fpw_will_of_allah = {
+		random = no
+		stability_factor = 0.15
+		war_stability_factor = 0.15
+		resistance_target = -0.3
+		compliance_growth = 0.10
+		compliance_gain = 0.05
+	}
+	fpw_defender_of_islam = {
+		army_attack_factor = 0.025
+		army_defence_factor = 0.025
+	}
 
 }

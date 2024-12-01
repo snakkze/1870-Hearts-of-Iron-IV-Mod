@@ -13,4 +13,30 @@ characters={
 			traits = { fpw_rightful_emir }
 		}
 	}
+
+	AFG_faiz_muhammad_kateb = { 
+		name = AFG_faiz_muhammad_kateb
+		portraits = {
+			civilian = {
+				small="GFX_idea_AFG_muhammad_kateb"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = faiz_muhammad_kateb
+			allowed = {
+				original_tag = AFG
+			}
+			available = {
+				has_completed_focus = afg_barazaki
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_fanatic_barakzai_writer
+			}
+		}
+		
+	}
 }

@@ -153,4 +153,32 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_AFG = {
+		effect = {
+			if = {
+			limit = {
+				has_idea = fpw_AFG_bukharian_campaign
+				controls_province = 1573
+				controls_province = 10671
+				controls_province = 1384
+			}
+			SOV = {
+				country_event = fpw_afghan.24
+			}
+			}
+		}
+	}
+	on_daily_AFG = {
+		effect = {
+			if = {
+			limit = {
+				has_idea = fpw_AFG_indian_campaign
+				controls_province = 2086
+			}
+			ENG = {
+				country_event = fpw_afghan.27
+			}
+			}
+		}
+	}
 }
