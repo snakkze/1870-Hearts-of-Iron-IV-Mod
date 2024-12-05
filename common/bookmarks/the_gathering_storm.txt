@@ -7,46 +7,7 @@ bookmarks = {
 		default_country = "AUS"
 		default = yes
 		
-		"FRA"={
-			history = "FRA_1866_DESC"
-			ideology = neutrality
-			available = { always = yes }
-			ideas = {
-			}
-			focuses = {
-				FRA_empire_triumphant
-				FRA_strengthen_bonaparte_dynasty
-				FRA_expanding_colonial_empire
-			}
-		}
-
-		"ENG"={
-			history = "ENG_1866_DESC"
-			ideology = fascism
-			available = { always = yes }
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		
-
-		"ITA"={
-			history = "ITA_1866_DESC"
-			ideology = democratic
-			available = { always = yes }
-			ideas = {
-				vittorio_emanuele
-				republican_opposition
-				liberal_country
-			}
-			focuses = {
-				ITA_start
-				ITA_conservative_politics
-				ITA_the_war_with_austria
-			}
-		}
+		## NOTMINOR
 
 		"PRS"={
 			history = "PRS_1866_DESC"
@@ -76,41 +37,92 @@ bookmarks = {
 				AUS_victor_of_the_apw
 			}
 		}
-
-		"CHI"={
-			history = "CHI_1866_DESC"
-			ideology = neutrality
-			available = { always = yes }
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"SOV"={
-			history = "SOV_1866_DESC"
-			ideology = neutrality
-			available = { always = yes }
-			ideas = {
-				orthodox_giant
-				fpw_SOV_losers_of_the_crimean_war_1
-				underdeveloped_industry_1
-			}
-			focuses = {
-				SOV_russification_programs
-				SOV_new_agricultural_economy
-				SOV_plot_against_the_tsars
-			}
-		}
 		
-		"USA"={
-			history = "USA_1866_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
+		##
+		
+		## MINOR SELECTION
+		
+		"CHI"={
+            history = "CHI_1866_DESC"
+			minor = yes
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+            }
+            focuses = {
+            }
+        }
+
+        "SOV"={
+            history = "SOV_1866_DESC"
+			minor = yes
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+                orthodox_giant
+                fpw_SOV_losers_of_the_crimean_war_1
+                underdeveloped_industry_1
+            }
+            focuses = {
+                SOV_russification_programs
+                SOV_new_agricultural_economy
+                SOV_plot_against_the_tsars
+            }
+        }
+
+        "USA"={
+            history = "USA_1866_DESC"
+			minor = yes
+            ideology = democratic
+            ideas = {
+            }
+            focuses = {
+            }
+        }
+		
+        "FRA"={
+		    minor = yes
+            history = "FRA_1866_DESC"
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+            }
+            focuses = {
+                FRA_empire_triumphant
+                FRA_strengthen_bonaparte_dynasty
+                FRA_expanding_colonial_empire
+            }
+        }
+
+        "ENG"={
+		    minor = yes
+            history = "ENG_1866_DESC"
+            ideology = fascism
+            available = { always = yes }
+            ideas = {
+            }
+            focuses = {
+            }
+        }
+
+
+
+        "ITA"={
+		    minor = yes
+            history = "ITA_1866_DESC"
+            ideology = democratic
+            available = { always = yes }
+            ideas = {
+                vittorio_emanuele
+                republican_opposition
+                liberal_country
+            }
+            focuses = {
+                ITA_start
+                ITA_conservative_politics
+                ITA_the_war_with_austria
+            }
+        }
 
 		#AFG={
 			#This is for when I put afghanistan
