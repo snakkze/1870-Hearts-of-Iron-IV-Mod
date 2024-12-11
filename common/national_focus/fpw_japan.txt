@@ -1094,7 +1094,7 @@ focus_tree = {
         }
 
         hidden_effect = {
-        2715 = { transfer_state_to = ROOT }
+		1176 = { transfer_state_to = ROOT }
 		CHI = {
 		set_province_controller = 11914
 		set_province_controller = 1175
@@ -1111,7 +1111,7 @@ focus_tree = {
 					
 				}
 			}
-			2715 = {
+			1176 = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
 				create_unit = {
 					division = "name = \"1. Colonial Assault Division\" division_template = \"Colonial Assault Division\" start_experience_factor = 0.3" 

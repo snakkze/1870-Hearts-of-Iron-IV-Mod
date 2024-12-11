@@ -2650,7 +2650,7 @@ add_namespace = fpw_japan
 			add_offsite_building = { type = industrial_complex level = 1 }
 			}
 			hidden_effect = {
-			2715 = { transfer_state_to = CHI }
+			1176 = { transfer_state_to = CHI }
 			CHI = {
             country_event = { id = fpw_japan.53 days = 2 random_days = 3 }
 			}
@@ -2941,7 +2941,7 @@ add_namespace = fpw_japan
 			create_wargoal = {
             target = JAP
             type = take_state_focus
-            generator = { 2715 }
+            generator = { 1176 }
 			}
 			}
 			}
@@ -2957,7 +2957,7 @@ add_namespace = fpw_japan
 			ai_chance = {
 				base = 0
 			}
-			2715 = { transfer_state_to = CHI }
+			1176 = { transfer_state_to = CHI }
 			hidden_effect = {
 			CHI = {
             country_event = { id = fpw_japan.61 days = 2 random_days = 3 }
@@ -2990,7 +2990,7 @@ add_namespace = fpw_japan
 			create_wargoal = {
             target = JAP
             type = take_state_focus
-            generator = { 2715 }
+            generator = { 1176 }
 			}
 		}
 
