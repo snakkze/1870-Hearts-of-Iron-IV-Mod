@@ -1445,7 +1445,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_rom_minor_staff_expansionss.dds"
+			animationmaskfile = "gfx/interface/goals/focus_rom_minor_staff_expansions.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -2544,10 +2544,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_crimean_war_shine"
-		texturefile = "gfx/interface/goals/focus_crimean_war.png"
+		texturefile = "gfx/interface/goals/SOV/focus_crimean_war.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_crimean_war.png"
+			animationmaskfile = "gfx/interface/goals/SOV/focus_crimean_war.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -2560,7 +2560,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_crimean_war.png"
+			animationmaskfile = "gfx/interface/goals/SOV/focus_crimean_war.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -2575,10 +2575,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_SOV_russification_shine"
-		texturefile = "gfx/interface/goals/russification.png"
+		texturefile = "gfx/interface/goals/SOV/russification.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/russification.png"
+			animationmaskfile = "gfx/interface/goals/SOV/russification.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -2591,7 +2591,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/russification.png"
+			animationmaskfile = "gfx/interface/goals/SOV/russification.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
