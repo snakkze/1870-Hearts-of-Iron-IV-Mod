@@ -125,28 +125,7 @@ set_war_support = 0.3
 
 if = {
 	limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
-	recruit_character = TUR_ismet_inonu
-	recruit_character = TUR_mustafa_kemal_ataturk
-	recruit_character = TUR_sefik_husnu
-	recruit_character = TUR_celal_bayar
-	recruit_character = TUR_fevzi_cakmak
-	recruit_character = TUR_cemil_cahit_toydemir
-	recruit_character = TUR_rauf_orbay
-	recruit_character = TUR_memduh_tagmac
-	recruit_character = TUR_abdurrahman_gurman
-	recruit_character = TUR_mehmet_ali_ulgen
-	recruit_character = TUR_sabiha_gokcen
-	recruit_character = TUR_mehmet_gunaltay
-	recruit_character = TUR_ali_fuat_cebesoy
-	recruit_character = TUR_refik_saydam
-	recruit_character = TUR_erkan_gataly
-	recruit_character = TUR_ali_orlungat
-	recruit_character = TUR_mehmet_salih_omurtak
-	recruit_character = TUR_nazmi_solok
-	recruit_character = TUR_hassan_saka
-	recruit_character = TUR_kazim_ozalp
-	recruit_character = TUR_mumtaz_okmen
-	recruit_character = TUR_kazim_orbay
+	
 }
 
 if = {

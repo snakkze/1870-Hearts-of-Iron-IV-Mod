@@ -20,6 +20,7 @@ replace_path = "common/decisions/categories"
 replace_path = "common/ideas"
 replace_path = "common/autonomous_states"
 replace_path = "common/on_actions"
+replace_path = "common/scripted_triggers/diplomacy_scripted_triggers"
 version="1.0"
 picture="thumbnail.png"
 tags={
