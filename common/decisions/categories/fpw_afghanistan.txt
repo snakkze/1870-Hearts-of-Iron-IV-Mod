@@ -41,3 +41,17 @@ fpw_afg_army_modernization = {
 		has_completed_focus = afg_begin_mordernization
 	}
 }
+fpw_sher_ali_khans_reforms = {
+	priority = 10
+
+	###icon = GFX_decision_category_generic_formable_nations
+	###picture = GFX_decision_category_franco_prussian_war
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		has_completed_focus = afg_begin_sher_alis_reforms
+	}
+}

@@ -4612,6 +4612,8 @@ focus = {
 			remove_ideas = prs_fpw_trade_disputes
 			add_ideas = free_trade
 		}
+		hidden_effect = {
+		}
 	}
 	focus = {
 		id = PRS_develop_ruhr_area

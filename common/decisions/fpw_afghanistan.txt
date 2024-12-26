@@ -232,3 +232,98 @@ fpw_afg_army_modernization = {
 	}
 
 }
+fpw_sher_ali_khans_reforms = {
+	fpw_promote_common_welfare = {
+		available = {
+			
+		}
+
+		cost = 50
+
+
+		visible = {
+			has_completed_focus = afg_improve_living_conditions
+		}
+
+		allowed = {
+			tag = AFG
+		}
+
+		icon = mission_icon
+		cost = 150
+		complete_effect = {
+			445 = {
+				add_building_construction = {
+				   type = infrastructure
+				   level = 1
+					  instant_build = yes
+			   }
+			}
+			415 = {
+				add_building_construction = {
+				   type = infrastructure
+				   level = 1
+					  instant_build = yes
+			   }
+			}
+			442 = {
+				add_building_construction = {
+				   type = infrastructure
+				   level = 1
+					  instant_build = yes
+			   }
+			}
+			267 = {
+				add_building_construction = {
+				   type = infrastructure
+				   level = 1
+					  instant_build = yes
+			   }
+			}
+		}
+	}
+	fpw_establish_justice_systems = {
+		available = {
+			
+		}
+
+		cost = 50
+
+
+		visible = {
+			has_completed_focus = afg_create_a_tribal_justice_system
+		}
+
+		allowed = {
+			tag = AFG
+		}
+
+		icon = mission_icon
+		cost = 150
+		complete_effect = {
+			add_ideas = fpw_AFG_tribal_justice_system
+		}
+	}
+	fpw_reorginize_the_bureaucracy = {
+		available = {
+			
+		}
+
+		cost = 50
+
+
+		visible = {
+			has_completed_focus = afg_reorginize_the_bureaucracy
+		}
+
+		allowed = {
+			tag = AFG
+		}
+
+		icon = mission_icon
+		cost = 150
+		complete_effect = {
+			add_ideas = fpw_AFG_reorganized_bureaucracy
+		}
+	}
+}

@@ -372,6 +372,8 @@
 		cost = 5
 
 		prerequisite = { focus = afg_fan_afghan_nationalism }
+		mutually_exclusive = { focus = afg_militarism }
+		mutually_exclusive = { focus = afg_diplomatic_genius }
 
 		available = {
 		}
@@ -388,12 +390,14 @@
 		id = afg_militarism
 		icon = GFX_goal_unknown
 		
-		x = 73
+		x = 72
 		y = 3
 		
 		cost = 5
 
 		prerequisite = { focus = afg_fan_afghan_nationalism }
+		mutually_exclusive = { focus = afg_diplomatic_genius }
+		mutually_exclusive = { focus = afg_reform }
 
 		available = {
 		}
@@ -410,12 +414,14 @@
 		id = afg_diplomatic_genius
 		icon = GFX_goal_unknown
 		
-		x = 77
+		x = 78
 		y = 3
 		
 		cost = 5
 
 		prerequisite = { focus = afg_fan_afghan_nationalism }
+		mutually_exclusive = { focus = afg_militarism }
+		mutually_exclusive = { focus = afg_reform }
 
 		available = {
 		}
@@ -429,90 +435,44 @@
 		}
 	}
 	focus = {
-		id = afg_blessed_by_allah
+		id = afg_begin_sher_alis_reforms
 		icon = GFX_goal_unknown
 		
 		x = 75
 		y = 4
 		
-		cost = 5
+		cost = 1
 
-		prerequisite = { focus = afg_diplomatic_genius }
-		prerequisite = { focus = afg_militarism }
-		prerequisite = { focus = afg_reform }
+		prerequisite = { focus = afg_diplomatic_genius focus = afg_militarism focus = afg_reform }
 
 		available = {
-			NOT = { has_completed_focus = afg_restore_the_durrani_empire }
 		}
 		
 		completion_reward = {
-			add_country_leader_trait = fpw_will_of_allah
-			add_country_leader_trait = fpw_defender_of_islam
+			custom_effect_tooltip = unlocks_sher_ali_khan_reforms
+			add_ideas = fpw_AFG_sher_ali_khans_reforms
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 	}
 	focus = {
-		id = afg_unify_islam
+		id = afg_improve_living_conditions
 		icon = GFX_goal_unknown
 		
 		x = 75
 		y = 5
 		
-		cost = 10
+		cost = 1
 
-		prerequisite = { focus = afg_blessed_by_allah }
+		prerequisite = { focus = afg_begin_sher_alis_reforms }
 
 		available = {
 		}
-		hidden_effect = {
-			set_cosmetic_tag = AFG_ISL_UNI
-		}
+		
 		completion_reward = {
-			custom_effect_tooltip = fpw_afg_islam_united
-			create_wargoal = {
-				type = annex_everything
-				target = TUR
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = PER
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = KUW
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = JAB
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SAU
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = OMA
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = EGY
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = RAJ
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = FRA
-			}
-			set_cosmetic_tag = AFG_ISL_UNI
+			custom_effect_tooltip = common_people
 		}
 		
 		ai_will_do = {
@@ -520,66 +480,21 @@
 		}
 	}
 	focus = {
-		id = afg_intergrate_iraq_and_iran
-		icon = GFX_goal_unknown
-		
-		x = 75
-		y = 6
-		
-		cost = 5
-
-		prerequisite = { focus = afg_unify_islam }
-
-		available = {
-		}
-		
-		completion_reward = {
-			291 = { add_core_of = ROOT }
-			410 = { add_core_of = ROOT }
-			414 = { add_core_of = ROOT }
-			416 = { add_core_of = ROOT }
-			418 = { add_core_of = ROOT }
-			411 = { add_core_of = ROOT }
-			412 = { add_core_of = ROOT }
-			413 = { add_core_of = ROOT }
-			266 = { add_core_of = ROOT }
-			421 = { add_core_of = ROOT }
-			417 = { add_core_of = ROOT }
-			420 = { add_core_of = ROOT }
-			419 = { add_core_of = ROOT }
-			676 = { add_core_of = ROOT }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = afg_intergrate_the_north
+		id = afg_create_a_tribal_justice_system
 		icon = GFX_goal_unknown
 		
 		x = 77
-		y = 6
+		y = 5
 		
-		cost = 5
+		cost = 1
 
-		prerequisite = { focus = afg_unify_islam }
+		prerequisite = { focus = afg_begin_sher_alis_reforms }
 
 		available = {
 		}
 		
 		completion_reward = {
-			742 = { add_core_of = ROOT }
-			830 = { add_core_of = ROOT }
-			405 = { add_core_of = ROOT }
-			584 = { add_core_of = ROOT }
-			832 = { add_core_of = ROOT }
-			831 = { add_core_of = ROOT }
-			823 = { add_core_of = ROOT }
-			587 = { add_core_of = ROOT }
-			402 = { add_core_of = ROOT }
-			585 = { add_core_of = ROOT }
-			732 = { add_core_of = ROOT }
+			custom_effect_tooltip = justice_system
 		}
 		
 		ai_will_do = {
@@ -587,136 +502,21 @@
 		}
 	}
 	focus = {
-		id = afg_intergrate_arabia
+		id = afg_reorginize_the_bureaucracy
 		icon = GFX_goal_unknown
 		
 		x = 73
-		y = 6
+		y = 5
 		
-		cost = 5
+		cost = 1
 
-		prerequisite = { focus = afg_unify_islam }
-
-		available = {
-		}
-		
-		completion_reward = {
-			680 = { add_core_of = ROOT }
-			677 = { add_core_of = ROOT }
-			799 = { add_core_of = ROOT }
-			990 = { add_core_of = ROOT }
-			992 = { add_core_of = ROOT }
-			675 = { add_core_of = ROOT }
-			993 = { add_core_of = ROOT }
-			854 = { add_core_of = ROOT }
-			553 = { add_core_of = ROOT }
-			554 = { add_core_of = ROOT }
-			455 = { add_core_of = ROOT }
-			454 = { add_core_of = ROOT }
-			855 = { add_core_of = ROOT }
-			679 = { add_core_of = ROOT }
-			856 = { add_core_of = ROOT }
-			765 = { add_core_of = ROOT }
-			857 = { add_core_of = ROOT }
-			292 = { add_core_of = ROOT }
-			859 = { add_core_of = ROOT }
-			294 = { add_core_of = ROOT }
-			991 = { add_core_of = ROOT }
-			659 = { add_core_of = ROOT }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = afg_intergrate_anatolia
-		icon = GFX_goal_unknown
-		
-		x = 71
-		y = 6
-		
-		cost = 5
-
-		prerequisite = { focus = afg_unify_islam }
+		prerequisite = { focus = afg_begin_sher_alis_reforms }
 
 		available = {
 		}
 		
 		completion_reward = {
-			352 = { add_core_of = ROOT }
-			800 = { add_core_of = ROOT }
-			984 = { add_core_of = ROOT }
-			354 = { add_core_of = ROOT }
-			353 = { add_core_of = ROOT }
-			350 = { add_core_of = ROOT }
-			344 = { add_core_of = ROOT }
-			349 = { add_core_of = ROOT }
-			355 = { add_core_of = ROOT }
-			798 = { add_core_of = ROOT }
-			348 = { add_core_of = ROOT }
-			356 = { add_core_of = ROOT }
-			345 = { add_core_of = ROOT }
-			346 = { add_core_of = ROOT }
-			49 = { add_core_of = ROOT }
-			347 = { add_core_of = ROOT }
-			342 = { add_core_of = ROOT }
-			343 = { add_core_of = ROOT }
-			340 = { add_core_of = ROOT }
-			339 = { add_core_of = ROOT }
-			164 = { add_core_of = ROOT }
-			183 = { add_core_of = ROOT }
-			187 = { add_core_of = ROOT }
-			182 = { add_core_of = ROOT }
-			797 = { add_core_of = ROOT }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = afg_intergrate_egypt_libya_tunis
-		icon = GFX_goal_unknown
-		
-		x = 79
-		y = 6
-		
-		cost = 5
-
-		prerequisite = { focus = afg_unify_islam }
-
-		available = {
-		}
-		
-		completion_reward = {
-			453 = { add_core_of = ROOT }
-			446 = { add_core_of = ROOT }
-			457 = { add_core_of = ROOT }
-			447 = { add_core_of = ROOT }
-			452 = { add_core_of = ROOT }
-			663 = { add_core_of = ROOT }
-			451 = { add_core_of = ROOT }
-			450 = { add_core_of = ROOT }
-			449 = { add_core_of = ROOT }
-			662 = { add_core_of = ROOT }
-			661 = { add_core_of = ROOT }
-			957 = { add_core_of = ROOT }
-			448 = { add_core_of = ROOT }
-			665 = { add_core_of = ROOT }
-			458 = { add_core_of = ROOT }
-			457 = { add_core_of = ROOT }
-			456 = { add_core_of = ROOT }
-			452 = { add_core_of = ROOT }
-			551 = { add_core_of = ROOT }
-			886 = { add_core_of = ROOT }
-			550 = { add_core_of = ROOT }
-			883 = { add_core_of = ROOT }
-			268 = { add_core_of = ROOT }
-			1022 = { add_core_of = ROOT }
-			513 = { add_core_of = ROOT }
-			460 = { add_core_of = ROOT }
-			459 = { add_core_of = ROOT }
+			custom_effect_tooltip = decision_organize_bureaucracy
 		}
 		
 		ai_will_do = {

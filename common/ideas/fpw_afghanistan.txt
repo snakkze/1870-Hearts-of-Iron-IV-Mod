@@ -703,5 +703,61 @@ ideas = {
 		}
 
 	}
+	country = {
+		fpw_AFG_sher_ali_khans_reforms = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_tribal_justice_system = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.01
+				drift_defence_factor = 0.25
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_reorganized_bureaucracy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+
+			}
+		}
+
+	}
 }
 
