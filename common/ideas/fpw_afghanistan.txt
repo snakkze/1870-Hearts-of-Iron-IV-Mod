@@ -51,7 +51,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_economic_crisis
+			picture = jap_duplicate_research
 
 			modifier = {
 				research_speed_factor = -0.5
@@ -233,7 +233,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_artillery_regiments
+			picture = generic_neglected_military
 			modifier = {
 				research_speed_factor = -0.1
 				artillery_attack_factor = -0.3
@@ -254,7 +254,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_artillery_regiments
+			picture = generic_artillery_regiments
 			modifier = {
 				experience_gain_army_unit_factor = 0.2
 				custom_effect_tooltip = new_afghan_army
@@ -600,6 +600,28 @@ ideas = {
 				political_power_gain = 0.5
 			}
 		}
+		
+	}
+	country = {
+		fpw_AFG_comprimise_with_tribes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = 
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				political_power_gain = -0.2
+				weekly_manpower = 500
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+			}
+		}
+		
 	}
 	country = {
 		fpw_AFG_illiterate_state_two = {
@@ -610,7 +632,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = jap_duplicate_research
 
 			modifier = {
 				research_speed_factor = -0.3
@@ -628,7 +650,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = jap_duplicate_research
 
 			modifier = {
 				research_speed_factor = -0.15
@@ -759,5 +781,89 @@ ideas = {
 		}
 
 	}
+	country = {
+		fpw_AFG_a_reformed_afghanistan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				stability_factor = 0.1
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_complete_trust_in_sher_ali_khan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.025
+				resistance_target = -0.15
+				compliance_growth = 0.05
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_nationalized_jirga_system = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = -0.025
+				army_core_defence_factor = 0.05
+				cavalry_attack_factor = 0.01
+				cavalry_defence_factor = 0.01
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_nationalized_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+				research_speed_factor = -0.05
+			}
+		}
+
+	}
+
 }
 

@@ -548,3 +548,67 @@ country_event = {
 		remove_ideas = fpw_AFG_indian_campaign
 	}
 }
+country_event = {
+	id = fpw_afghan.30
+	title = afghan_fpw.30.t
+	desc = afghan_fpw.30.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "A Fair Election"
+		complete_national_focus = afg_clean_election
+		set_country_flag = AFG_clean_election
+	}
+	option = {
+		name = "Rig The Elections"
+		complete_national_focus = afg_rig_the_elections
+		set_country_flag = AFG_rigged_election
+	}
+}
+country_event = {
+	id = fpw_afghan.31
+	title = afghan_fpw.31.t
+	desc = afghan_fpw.31.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Conservative Vicotry"
+		complete_national_focus = afg_conservative_victory
+		set_country_flag = AFG_conservative
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = "Liberal Victory"
+		set_country_flag = AFG_liberal
+		complete_national_focus = afg_liberal_victory
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.32
+	title = afghan_fpw.32.t
+	desc = afghan_fpw.32.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Socalist Vicotry"
+		complete_national_focus = afg_socialist_victory
+		set_country_flag = AFG_socialist
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+}

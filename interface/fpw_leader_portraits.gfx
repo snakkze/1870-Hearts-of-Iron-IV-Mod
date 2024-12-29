@@ -546,5 +546,11 @@ spriteTypes = {
 		name = "GFX_portrait_EGY_ismail_pasha"
 		texturefile = "gfx/leaders/EGY/Portrait_EGY_ismail_pasha.dds"
 	}
+
+	# AFG
+	spriteType = {
+		name = "GFX_Portrait_AFG_mahmud_tarzi"
+		texturefile = "gfx/leaders/AFG/Portrait_AFG_mahmud_tarzi.dds"
+	}
     
 }

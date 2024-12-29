@@ -406,5 +406,9 @@ leader_traits = {
 		army_attack_factor = 0.025
 		army_defence_factor = 0.025
 	}
+	fpw_visionary = {
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.05
+	}
 
 }

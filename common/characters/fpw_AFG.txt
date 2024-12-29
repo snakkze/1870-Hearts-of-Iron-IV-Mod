@@ -39,4 +39,17 @@ characters={
 		}
 		
 	}
+	AFG_mahmud_tarzi={
+		name= "Mahmud Tarzi"
+		portraits={
+			civilian={
+				large = "gfx/leaders/AFG/Portrait_AFG_mahmud_tarzi.dds"
+			}
+		}
+		country_leader={
+			ideology = liberalism
+			expire="1956.01.01.01"
+			traits = { fpw_visionary }
+		}
+	}
 }
