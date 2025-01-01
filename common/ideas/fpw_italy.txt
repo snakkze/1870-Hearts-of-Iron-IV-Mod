@@ -39,6 +39,67 @@ ideas = {
 				fascism_drift = 0.05
 			}
 		}
+		fpw_ITA_aftermath_of_the_risorgimento = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_idea = vittorio_emanuele
+			}
+			
+			removal_cost = -1
+			
+			picture = risorgimento
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.2
+				surrender_limit = -0.25
+				production_speed_buildings_factor = -0.2
+				global_building_slots_factor = -0.2
+			}
+		}
+		fpw_ITA_campanilismo = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_idea = vittorio_emanuele
+			}
+			
+			removal_cost = -1
+			
+			picture = prc_low_popular_support
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.15
+				drift_defence_factor = -0.1
+			}
+		}
+		fpw_ITA_limited_industrialisation = {
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_idea = vittorio_emanuele
+			}
+			
+			removal_cost = -1
+			
+			picture = POL_disjointed_industry
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.3
+				production_factory_efficiency_gain_factor = -0.075
+				line_change_production_efficiency_factor = -0.1
+			}
+		}
 		ITA_venice_attack = {
 			allowed = {
 				original_tag = ITA

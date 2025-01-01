@@ -43,11 +43,26 @@ set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
 	vittorio_emanuele
-	fpw_ITA_republican_opposition
-	fpw_ITA_liberal_country
 	volunteers_only
 	civilian_economy
+	fpw_ITA_republican_opposition
+	fpw_ITA_liberal_country
+	fpw_ITA_campanilismo
+	fpw_ITA_aftermath_of_the_risorgimento
+	fpw_ITA_limited_industrialisation
 }
+add_dynamic_modifier = { 
+	modifier = fpw_ITA_disorganised_army
+}
+set_variable = { ITA_dig_in_speed_factor = 0.12 }
+set_variable = { ITA_army_attack_factor = -0.1 }
+set_variable = { ITA_army_org_factor = -0.08 }
+set_variable = { ITA_army_speed_factor = 0 }
+set_variable = { ITA_cavalry_attack_factor = 0 }
+set_variable = { ITA_max_planning_factor = -0.1 }
+set_variable = { ITA_army_morale_factor = -0.12 }
+set_variable = { ITA_breakthrough_factor = -0.05 }
+
 #######################################
 # Starting tech
 set_technology = {

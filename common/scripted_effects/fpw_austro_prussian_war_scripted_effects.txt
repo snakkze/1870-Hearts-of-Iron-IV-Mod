@@ -416,7 +416,7 @@ austrian_surrender = {
 				is_in_faction_with = PRS
 			}
 			160 = {
-				transfer_state_to = ITA
+				transfer_state_to = FRA
 				remove_core_of = AUS
 			}
 		}

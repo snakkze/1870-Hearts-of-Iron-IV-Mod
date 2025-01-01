@@ -1736,583 +1736,102 @@ focus_tree = {
 
 	# MORE STUFF #
 	focus = {
-		id = ITA_economics
+		id = ITA_address_the_economic_situation
 		icon = GFX_focus_generic_industry_2
-		x = -8
+		x = -6
 		y = 0
 		cost = 5
 		ai_will_do = {
 			base = 5
 		}
 		relative_position_id = ITA_start
-		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		search_filters = {  }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-		}
-	}
-	focus = {
-		id = ITA_expanding_military_industry
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ITA_economics }
-		x = 3
-		y = 1
-		cost = 5
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_economics
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			162 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = arms_factory
-    				level = 1
-    				instant_build = yes
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
 				}
 			}
 		}
 	}
 	focus = {
-		id = ITA_southern_arms_industries
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ITA_expanding_military_industry }
-		prerequisite = { focus = ITA_develop_south }
-		available = {
-			owns_state = 117
-			owns_state = 849
-			owns_state = 156
-			owns_state = 115
-		}
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_expanding_military_industry
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			117 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = arms_factory
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			849 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = arms_factory
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			156 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = arms_factory
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			115 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = arms_factory
-    				level = 1
-    				instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_lombardy_weapons
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ITA_expanding_military_industry }
-		available = {
-			owns_state = 159
-		}
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_expanding_military_industry
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = { owns_state = 159 }
-				159 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-    					type = arms_factory
-    					level = 3
-    					instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_venice_weapons
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ITA_lombardy_weapons }
-		available = {
-			owns_state = 160
-		}
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_lombardy_weapons
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			160 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-    				type = arms_factory
-    				level = 3
-    				instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_start_mobilisation
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ITA_lombardy_weapons }
-		prerequisite = { focus = ITA_expanding_military_industry }
-		available = {
-			NOT = { has_idea = partial_economic_mobilisation }
-		}
-		bypass = {
-			has_idea = partial_economic_mobilisation
-		}
-		x = -1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_lombardy_weapons
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_idea = partial_economic_mobilisation }
-				}
-				add_ideas = partial_economic_mobilisation
-			}
-		}
-	}
-	focus = {
-		id = ITA_develop_south
-		icon = GFX_focus_ITA_southern_industry
-		prerequisite = { focus = ITA_economics }
-		mutually_exclusive = { focus = ITA_develop_north }
-		available = {
-			owns_state = 117
-			owns_state = 849
-			owns_state = 156
-			owns_state = 115
-		}
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_economics
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			117 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			849 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			156 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			115 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_produce_olive_oil
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = ITA_develop_south }
-		available = {
-			owns_state = 117
-			owns_state = 849
-			owns_state = 156
-			owns_state = 115
-		}
-		x = 0
-		y = 2
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_develop_south
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			117 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = synthetic_refinery
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			849 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = synthetic_refinery
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			156 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = synthetic_refinery
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			115 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = synthetic_refinery
-    				level = 1
-    				instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_produce_wine
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ITA_produce_olive_oil }
-		available = {
-			owns_state = 156
-		}
-		x = 0
-		y = 1
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_produce_olive_oil
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			156 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 2
-    				instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_produce_ice_cream
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ITA_produce_olive_oil }
-		available = {
-			owns_state = 117
-		}
+		id = ITA_commit_to_the_industrious_north
+		prerequisite = { focus = ITA_address_the_economic_situation }
+		relative_position_id = ITA_address_the_economic_situation
+		icon = GFX_focus_ITA_northern_industry
 		x = 2
 		y = 1
 		cost = 5
 		ai_will_do = {
 			base = 5
 		}
-		relative_position_id = ITA_produce_olive_oil
-		search_filters = {}
+		search_filters = {  }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			117 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
 				}
 			}
 		}
 	}
 	focus = {
-		id = ITA_develop_north
-		icon = GFX_focus_ITA_northern_industry
-		prerequisite = { focus = ITA_economics }
-		mutually_exclusive = { focus = ITA_develop_south }
-		available = {
-			owns_state = 158
-			owns_state = 161
-		}
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_economics
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			158 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			161 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			if = {
-				limit = { owns_state = 159 }
-				159 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-    					type = industrial_complex
-    					level = 1
-    					instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = { owns_state = 160 }
-				160 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-    					type = industrial_complex
-    					level = 1
-    					instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = { NOT = { owns_state = 160 } }
-				162 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-    					type = industrial_complex
-    					level = 1
-    					instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_construct_more_factories
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ITA_develop_north }
-		available = {
-			owns_state = 158
-			owns_state = 161
-		}
-		x = 0
-		y = 2
-		cost = 10
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_develop_north
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			158 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			161 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			if = {
-				limit = { owns_state = 159 }
-				159 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-    					type = industrial_complex
-    					level = 1
-    					instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = { owns_state = 160 }
-				160 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-    					type = industrial_complex
-    					level = 1
-    					instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = { NOT = { owns_state = 160 } }
-				162 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-    					type = industrial_complex
-    					level = 1
-    					instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_produce_cheese
-		icon = GFX_focus_generic_steel
-		prerequisite = { focus = ITA_construct_more_factories }
-		available = {
-			owns_state = 158
-			owns_state = 161
-		}
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			base = 5
-		}
-		relative_position_id = ITA_construct_more_factories
-		search_filters = {}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			158 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			161 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ITA_even_more_factories
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ITA_construct_more_factories }
-		available = {
-			owns_state = 114
-			owns_state = 162
-		}
+		id = ITA_commit_to_unification
+		prerequisite = { focus = ITA_address_the_economic_situation }
+		relative_position_id = ITA_address_the_economic_situation
+		icon = GFX_focus_ITA_southern_industry
 		x = -2
 		y = 1
 		cost = 5
 		ai_will_do = {
 			base = 5
 		}
-		relative_position_id = ITA_construct_more_factories
-		search_filters = {}
+		search_filters = {  }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			162 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
 				}
 			}
-			114 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
 				}
 			}
 		}
@@ -2322,13 +1841,13 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		available = {
 		}
-		x = 0
-		y = 1
+		x = 10
+		y = 3
 		cost = 5
 		ai_will_do = {
 			base = 5
 		}
-		relative_position_id = ITA_produce_cheese
+		relative_position_id = ITA_start
 		search_filters = {}
 		
 		available_if_capitulated = yes

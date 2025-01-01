@@ -157,6 +157,12 @@
  fpw_ITA_republican_opposition_desc:0 "Many radicals are extremely opposed to the Monarchy, as they have fought a lot of monarchies in the unification wars and are disgusted that they still live under the rule of a King. Tensions between monarchists and republicans erupted following Giuseppe Garibaldi's arrest in 1862, sparking a worldwide controversy."
  fpw_ITA_liberal_country:0 "A Nation of Liberalism"
  fpw_ITA_liberal_country_desc:0 "Many politicians favour liberal ideology, with a liberal-conservative right and a progressive left dominating the chamber of deputies."
+ fpw_ITA_campanilismo:0 "Campanilismo"
+ fpw_ITA_campanilismo_desc:0 "Campanilismo is the idea that rather than identifying with the state, the citizens identify with their cities. Such disunity will most likely lead to continued political instability."
+ fpw_ITA_aftermath_of_the_risorgimento:0 "Aftermath of the Risorgimento"
+ fpw_ITA_aftermath_of_the_risorgimento_desc:0 "The unification of Italy has not been entirely successful. Strong divides exist between the people in our Kingdom both economically and politically, as well as the disparities in wealth regarding the north and south."
+ fpw_ITA_limited_industrialisation:0 "Limited Industrialisation"
+ fpw_ITA_limited_industrialisation_desc:0 "Whilst the north enjoys some relative wealth and industrial prosperity, the nation is still largely dependant on agriculture. If this issue persists we will continue to fall behind the other Great Powers of Europe."
 
 #events
  
@@ -213,8 +219,12 @@
  italy_fpw.24.t: "Birth of the Italian National Party"
  italy_fpw.24.d: "Due to our defeat in the third war of independence, former Prime Minister Alfonso Ferrero la Marmora has adopted ultranationalist policies and founded the Italian National Party."
  italy_fpw.24.a: "Scary"
- 
- 
+
+ france_fpw.8.t: "Venetian Plebiscite"
+ france_fpw.8.d: "France has recently acquired the territory of Venice following the aftermath of the Austro-Prussian War. A plebiscite has been held, and an overwhelming majority of the people wish to enter the newly created Kingdom of Italy. In addition, Venice was promised to Italy in return for Nice and Savoy in a treaty from 1858. What should we do?"
+ france_fpw.8.a: "Give them Venice, naturally."
+ france_fpw.8.b: "Treaties are created to be broken."
+
 #custom cost texts 
  
  

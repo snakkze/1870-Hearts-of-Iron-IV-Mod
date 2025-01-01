@@ -1,0 +1,70 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_PRS_unification"
+		texturefile = "gfx/interface/goals/focus_PRS_unification.dds"
+	}	
+	spriteType = {
+		name = "GFX_allow_for_a_compromise"
+		texturefile = "gfx/interface/goals/allow_for_a_compromise.dds"
+	}	
+	spriteType = {
+		name = "GFX_hungarian_constitution"
+		texturefile = "gfx/interface/goals/hungarian_constitution.dds"
+	}	
+	spriteType = {
+		name = "GFX_hungarian_crisis"
+		texturefile = "gfx/interface/goals/hungarian_crisis.dds"
+	}	
+	spriteType = {
+		name = "GFX_ratify_ausgleich"
+		texturefile = "gfx/interface/goals/ratify_ausgleich.dds"
+	}	
+	spriteType = {
+		name = "GFX_seperate_taxations"
+		texturefile = "gfx/interface/goals/seperate_taxations.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_cisleitania_politics"
+		texturefile = "gfx/interface/goals/aus_cisleitania_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_transleitania_politics"
+		texturefile = "gfx/interface/goals/aus_transleitania_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_auersperg"
+		texturefile = "gfx/interface/goals/aus_auersperg.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_bohemian_army"
+		texturefile = "gfx/interface/goals/aus_bohemian_army.dds"
+	}
+	spriteType = {
+		name = "GFX_austria_vs_serbia"
+		texturefile = "gfx/interface/goals/austria_vs_serbia.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_occupy_bosnia"
+		texturefile = "gfx/interface/goals/AUS_occupy_bosnia.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_woman_patriot"
+		texturefile = "gfx/interface/goals/aus_woman.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_west_balkan"
+		texturefile = "gfx/interface/goals/west_balkan_focus.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_east_balkan"
+		texturefile = "gfx/interface/goals/east_balkan_focus.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_influence_germany"
+		texturefile = "gfx/interface/goals/aus_influence_germany.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_promise_macedonia"
+		texturefile = "gfx/interface/goals/aus_macedonia_serbia.png"
+	}
+}

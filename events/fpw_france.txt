@@ -281,3 +281,47 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = france_fpw.8
+	title = france_fpw.8.t
+	desc = france_fpw.8.d
+	picture = GFX_report_event_generic_italian_celebration
+
+	is_triggered_only = no
+
+	trigger = {
+		tag = FRA
+		FRA = { owns_state = 160 }
+	}
+    fire_only_once = yes
+
+	# give venice
+	option = {
+		name = france_fpw.8.a
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		add_political_power = 50
+		ITA = {
+			set_state_owner = 160
+		}
+	}
+
+	# keep venice
+	option = {
+		name = france_fpw.8.b
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_stability = -0.15
+		add_political_power = -200
+	}
+}

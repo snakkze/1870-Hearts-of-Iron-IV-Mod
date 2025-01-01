@@ -3,10 +3,12 @@ fpw_ITA_disorganised_army = {
 
     icon = GFX_idea_tur_disorganised_armed_forces
 
-	army_attack_factor = ENG_min_export
-	consumer_goods_factor = ENG_consumer_goods_factor
-	industrial_capacity_factory = ENG_industrial_capacity_factory
-	industrial_capacity_dockyard = ENG_industrial_capacity_dockyard
-	production_speed_buildings_factor = ENG_production_speed_buildings_factor
-	local_resources_factor = ENG_local_resources_factor
+    dig_in_speed_factor = ITA_dig_in_speed_factor
+	army_attack_factor = ITA_army_attack_factor
+	army_org_factor = ITA_army_org_factor
+	army_speed_factor = ITA_army_speed_factor
+	cavalry_attack_factor = ITA_cavalry_attack_factor
+	max_planning_factor = ITA_max_planning_factor
+	army_morale_factor = ITA_army_morale_factor
+	breakthrough_factor = ITA_breakthrough_factor
 }
