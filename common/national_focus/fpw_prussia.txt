@@ -4065,8 +4065,11 @@ focus = {
 		
 		available_if_capitulated = yes
 		
+		hidden_effect = {
+
+		}
 		completion_reward = {
-			add_ideas = prs_fpw_industrial_economy
+			country_event = prussia_fpw.46
 		}
 	
 		ai_will_do = {
@@ -4099,7 +4102,7 @@ focus = {
 		x = -5
 		y = 1
 		relative_position_id = PRS_industrialzation
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -4225,6 +4228,7 @@ focus = {
 		}		
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 
 			51 = {
 				add_extra_state_shared_building_slots = 1
@@ -4252,6 +4256,14 @@ focus = {
            			instant_build = yes
 				}
 			}
+			add_to_variable = {
+				var = prs_consumer_goods_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_civ_construction_speed
+				valeu = 0.05
+			}
 		}
 	}
 	
@@ -4262,7 +4274,7 @@ focus = {
 		x = -2
 		y = 1
 		relative_position_id = PRS_give_to_junkers
-		cost = 7
+		cost = 5
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 	
@@ -4308,7 +4320,7 @@ focus = {
 		x = 0
 		y = 2
 		relative_position_id = PRS_invest_in_agricultural_lands
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -4321,6 +4333,7 @@ focus = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			762 = {
          		add_building_construction = {
             		type = infrastructure
@@ -4356,6 +4369,10 @@ focus = {
 		            amount = 6
 	            }
 			}
+			add_to_variable = {
+				var = prs_lack_of_resource_penatly_factor
+				value = -0.05
+			}
 		}
 	}
 	
@@ -4384,6 +4401,7 @@ focus = {
 		}		
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			64 = {
 				add_extra_state_shared_building_slots = 1
          		add_building_construction = {
@@ -4391,6 +4409,14 @@ focus = {
             		level = 1
            			instant_build = yes
 				}
+			}
+			add_to_variable = {
+				var = prs_construction_speed_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_building_air_damage
+				value = -0.05
 			}
 		}
 	}
@@ -4448,6 +4474,11 @@ focus = {
 	
 		completion_reward = {
 			add_ideas = prs_fpw_prussian_bank
+			custom_effect_tooltip = prs_fpw_industrialization_debuff
+			add_to_variable = {
+				var = prs_civillian_factories_in_use
+				value = 2
+			}
 		}
 	}
 	
@@ -4465,10 +4496,15 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			add_tech_bonus = {
 				bonus = 0.10
 				uses = 5
 				category = industry
+			}
+			add_to_variable = {
+				var = prs_building_air_damage
+				value = -0.05
 			}
 		}
 	}
@@ -4489,6 +4525,10 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
+			add_to_variable = {
+				var = prs_consumer_goods_factor
+				value = 0.05
+			}
 			add_research_slot = 1
 			### Planned to add a political advisor "Richard Holtze"
 		}
@@ -4537,6 +4577,7 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			random_owned_state = {
         		add_extra_state_shared_building_slots = 1
          		add_building_construction = {
@@ -4544,6 +4585,18 @@ focus = {
             	level = 1
             	instant_build = yes
 				}
+			}
+			add_to_variable = {
+				var = prs_base_oil_gain_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_oil_gain_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_max_fuel_factor
+				value = 0.05
 			}
 		}
 	}
@@ -4564,7 +4617,19 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			add_ideas = prs_fpw_prussian_manufactoring_industry
+			custom_effect_tooltip = prs_fpw_industrialization_buff
+			add_to_variable = {
+				var = prs_efficiency_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_growth_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_rention_factor
+				value = 0.05
+			}
 		}
 	}
 
@@ -4624,7 +4689,7 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id = PRS_settle_trade_disputes
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -4660,7 +4725,7 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = PRS_settle_trade_disputes
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -4773,6 +4838,7 @@ focus = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			random_owned_state = {
          		add_extra_state_shared_building_slots = 1
          		add_building_construction = {
@@ -4780,6 +4846,10 @@ focus = {
             		level = 1
             		instant_build = yes
 				}
+			}
+			add_to_variable = {
+				var = prs_factory_output_factor
+				value = 0.05
 			}
 		}
 	}
@@ -4874,6 +4944,7 @@ focus = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			random_owned_state = {
          		add_extra_state_shared_building_slots = 1
          		add_building_construction = {
@@ -4881,6 +4952,10 @@ focus = {
             		level = 1
             		instant_build = yes
 				}
+			}
+			add_to_variable = {
+				var = prs_mil_construction_speed
+				value = 0.05
 			}
 		}
 	}
@@ -5055,6 +5130,7 @@ focus = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			64 = {
 				add_extra_state_shared_building_slots = 2
          		add_building_construction = {
@@ -5062,6 +5138,10 @@ focus = {
             		level = 2
            			instant_build = yes
 				}
+			}
+			add_to_variable = {
+				var = prs_mil_construction_speed
+				value = 0.05
 			}
 		}
 	}
@@ -5091,6 +5171,7 @@ focus = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			42 = {
 				add_extra_state_shared_building_slots = 1
          		add_building_construction = {
@@ -5114,6 +5195,10 @@ focus = {
             		level = 1
            			instant_build = yes
 				}
+			}
+			add_to_variable = {
+				var = prs_mil_construction_speed
+				value = 0.05
 			}
 		}
 	}

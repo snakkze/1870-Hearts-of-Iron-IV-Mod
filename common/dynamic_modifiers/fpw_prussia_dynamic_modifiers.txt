@@ -68,3 +68,25 @@ fpw_socialist_front = {
 	party_popularity_stability_factor = prs_bop_party_popularity_stability_factor
 }
 
+fpw_PRS_prussian_industrialization = {
+	enable = { always = yes }
+	icon = SPR_seize_the_gold_reserves
+
+	production_speed_buildings_factor = prs_construction_speed_factor
+	industrial_capacity_factory = prs_factory_output_factor
+	production_factory_max_efficiency_factor = prs_efficiency_factor
+	production_factory_efficiency_gain_factor = prs_growth_factor
+	production_speed_industrial_complex_factor = prs_civ_construction_speed
+	production_speed_arms_factory_factor = prs_mil_construction_speed
+	civilian_factory_use = prs_civillian_factories_in_use
+	industry_air_damage_factor = prs_building_air_damage
+	consumer_goods_factor = prs_consumer_goods_factor
+	line_change_production_efficiency_factor = prs_rention_factor
+	base_fuel_gain_factor = prs_base_oil_gain_factor
+	fuel_gain_factor = prs_oil_gain_factor
+	max_fuel_factor = prs_max_fuel_factor
+	production_lack_of_resource_penalty_factor = prs_lack_of_resource_penatly_factor
+	
+
+}
+

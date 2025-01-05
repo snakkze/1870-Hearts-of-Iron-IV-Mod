@@ -280,6 +280,16 @@ spriteTypes = {
 		name = "GFX_idea_AFG_muhammad_kateb"
 		texturefile = "gfx/interface/ideas/AFG/idea_AFG_muhammad_kateb.png"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_afghanistan_broken"
+		texturefile = "gfx/interface/ideas/AFG/afghanistan_broken.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_illiteracy_afghan"
+		texturefile = "gfx/interface/ideas/AFG/illiteracy_spirit.png"
+	}
 	
 	
 }

@@ -5,6 +5,7 @@ on_actions = {
 				limit = {
 					date > 1868.1.12
 					date < 1868.2.22
+					NOT = { has_idea = prs_fpw_strikes }
 				}
 				PRS = {
 					country_event = prussia_fpw.45

@@ -1534,3 +1534,54 @@ country_event = {
 		}
 	}
 }
+# Prussian Industrialization event
+country_event = {
+	id = prussia_fpw.46
+	title = prussia_fpw.46.t
+	desc = prussia_fpw.46.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#minor_flavor = yes
+
+	option = {
+		name = "Ok"
+		PRS = {
+			add_to_variable = {
+				var = prs_construction_speed_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_consumer_goods_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_civ_construction_speed
+				value = 0.05
+			}
+			country_event = prussia_fpw.47
+		}
+	}
+}
+
+# Second Prussian Industrialization event
+country_event = {
+	id = prussia_fpw.47
+	title = prussia_fpw.47.t
+	desc = prussia_fpw.47.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#minor_flavor = yes
+
+	option = {
+		name = "Ok"
+		PRS = {
+			add_dynamic_modifier = { 
+				modifier = fpw_PRS_prussian_industrialization
+			}
+		}
+	}
+}
+		
+	
