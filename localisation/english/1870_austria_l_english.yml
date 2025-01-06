@@ -1,10 +1,10 @@
-l_english:
+﻿l_english:
 
 #focuses
  AUS_allow_for_a_compromise:0 "Allow for a compromise"
  AUS_continue_the_occupation:0 "Continue the occupation"
  AUS_prepare_looming_conflict:0 "Prepare for the Looming Conflict"
- AUS_prepare_looming_conflict:0 "As the sun rises over the once mighty empire, it is a former shadow of itself, being defeated in 1859 by a puny nation called Piedmont-Sardinia with french help everyone saw how weak the Empire truly had become its economy bust and completely shattered the empire must rebuild to its former strenght. Initiating various military reforms will help the empire to regain its former glory and secure its position in the German Confederation to get those treacherous Prussian pigs off of their power they are so desperately clinging to."
+ AUS_prepare_looming_conflict_desc:0 "As the sun rises over the once mighty empire, it is a former shadow of itself, being defeated in 1859 by a puny nation called Piedmont-Sardinia with french help everyone saw how weak the Empire truly had become its economy bust and completely shattered the empire must rebuild to its former strenght. Initiating various military reforms will help the empire to regain its former glory and secure its position in the German Confederation to get those treacherous Prussian pigs off of their power they are so desperately clinging to."
  AUS_mobilise_the_army:0 "Mobilize the Army"
  AUS_activating_the_reserves:0 "Activating the Reserves"
  AUS_schleswig_question:0 "The Schleswig Question"
@@ -135,6 +135,28 @@ l_english:
  AUS_multiculturism:0 "Multiculturism"
  AUS_independent_general_staff:0 "Separate Bureaucracy and Military"
  AUS_independent_general_staff_desc:0 "Bureaucratic elements such as the War Ministry have taken a toll on the abilities of the Austrian military and general staff. Whilst the bureaucracy fiercely opposes it, these two must be separated if we hope to modernise."
+ AUS_the_brothers_war: "The Brother's War"
+ AUS_the_brothers_war_desc: "The Imperial army has undergone major reforms since 1859 but despite a small war with Denmark it is clear that our reforms have yet to be tested and with the looming threats of Prussia and Italy we must make sure that our military is the best it can possibly be."
+ AUS_bendek_as_commander: "Von Bendek as Commander"
+ AUS_bendek_as_commander_desc: "Von Benedek is the most senior of our commanders and rightfully should be appointed to command our armies against Prussia in Bohemia.\n\n Appoint von Benedek as Field Marshal and chief of staff\n Appoints von Henikstein and von Krismanic as military advisors"
+ AUS_bendeks_doctrine: "Von Bendek's doctrine"
+ AUS_bendeks_doctrine_desc: "Benedek our foremost commander has drawn from the conclusions of 1859 that the French style massed attack battalions are the key to victory with our infantry aimed to close the distance and drive away the enemy. These tactics have worked against the Danes though at the cost of high casualties\n\n We will shatter our enemies!"
+ AUS_gablenz_as_commander: "Von Gablenz as Commander"
+ AUS_gablenz_as_commander_desc: "von Gablenz a cavalry commander and a far more energetic commander to begin with has been appointed as Commander of our armies\n\n Appoints von Gablenz as Field Marshal and Chief of staff."
+ AUS_gablenz_doctrine: "Von Gablenz's thinking"
+ AUS_gablenz_doctrine_desc: "Von Gablenz has proposed a strategy derived via closer cooperation with the Federal german army assembling our troops in Aussig from which they can move quickly into Saxony link up with the Saxon army and then march to assist the Federal army in Central Germany before turning on Berlin with the mobilised troops and the 100,000 strong Federal Army in the South."
+ AUS_apw_mobilisation: "Mobilisation"
+ AUS_apw_mobilisation_desc: "The Prussians have made it clear that they are no longer willing to resort to diplomatic measures and that only force of arms will decide the contest.\n\n We must immediately mobilise."
+ AUS_northern_army: "The Northern Army"
+ AUS_northern_army_desc: "With our focus in the north in Germany we will aim for a quick movement of troops into key areas to secure our victory"
+ AUS_southern_army: "The Southern Army"
+ AUS_southern_army_desc: "The foolhardy Italians think that they now are able to best us on the field of battle alone. We will prove them wrong and defend our possessions in Venetia Tooth and Nail."
+ AUS_assembly_point: "An Assembly Point"
+ AUS_Assembly_point_desc: "We must decide where to focus our troops in the event of mobilisation and to decide our strategy and direction of advance"
+ AUS_kaisers_decision: "The Kaiser's decision"
+ AUS_kaisers_decision_desc: "The Kaiser has decided to assemble our troops further west near Prague so that we may assist the Saxons if Prussia strikes here. It also provides the best and quickest avenue of advance straight to Berlin"
+ AUS_assamble_at_olmutz: "Assemble at Olmutz"
+ AUS_assamble_at_olmutz_desc: "It has been decided by Benedek to assemble our troops at Olmutz and to march into Silesia and then Berlin."
 
 #decisions
  fpw_austro_hungarian_compromise:0 "The Austro-Hungarian Compromise"
@@ -272,6 +294,8 @@ AUS_radical_reformstooltip3:0 "Modify §YDivided Military § §Wby\nDivison Reco
 AUS_radical_reformstooltip4:0 "Modify §YDivided Military § §Wby\nDivison Recovery Rate:§  §G+12.00%§W\nDivison Defense:§  §G+5.00%§W"
  
 AUS_wip_tt:0 "§RContent is WIP, path will be done in a later update"
+
+AUS_effect_dynamic: "Effects changes based on previously taken Focuses"
 #custom modifier tooltips
 
 #scripted gui text

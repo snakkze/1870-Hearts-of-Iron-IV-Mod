@@ -3816,4 +3816,246 @@ focus_tree = {
 		}
 	}
 
+# Austro Prussian war military branch
+	focus = {
+		id = AUS_the_brothers_war
+		x = 8
+		y = 0
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		allow_branch = {
+			has_global_flag = austro_prussian_war
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_bendek_as_commander
+		x = -1
+		y = 1
+		relative_position_id = AUS_the_brothers_war
+		mutually_exclusive = {
+			focus = AUS_gablenz_as_commander
+		}
+		prerequisite = {
+			focus = AUS_the_brothers_war
+		}
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_bendeks_doctrine
+		x = 0
+		y = 1
+		relative_position_id = AUS_bendek_as_commander
+		prerequisite = {
+			focus = AUS_bendek_as_commander
+		}
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_gablenz_as_commander
+		x = 1
+		y = 1
+		relative_position_id = AUS_the_brothers_war
+		mutually_exclusive = {
+			focus = AUS_bendek_as_commander
+		}
+		prerequisite = {
+			focus = AUS_the_brothers_war
+		}
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_gablenz_doctrine
+		x = 0
+		y = 1
+		relative_position_id = AUS_gablenz_as_commander
+		prerequisite = {
+			focus = AUS_gablenz_as_commander
+		}
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_apw_mobilisation
+		x = 1
+		y = 1
+		relative_position_id = AUS_bendeks_doctrine
+		prerequisite = {
+			focus = AUS_bendeks_doctrine
+			focus = AUS_gablenz_doctrine
+		}
+	
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AUS_effect_dynamic
+		}
+	}
+	focus = {
+		id = AUS_southern_army
+		x = -1
+		y = 1
+		relative_position_id = AUS_apw_mobilisation
+		prerequisite = {
+			focus = AUS_apw_mobilisation
+		}
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = AUS_bendek_as_commander
+						has_completed_focus = AUS_gablenz_doctrine
+					} 
+				}
+				custom_effect_tooltip = AUS_effect_dynamic
+			}	
+		}
+	}
+	focus = {
+		id = AUS_northern_army
+		x = 1
+		y = 1
+		relative_position_id = AUS_apw_mobilisation
+		prerequisite = {
+			focus = AUS_apw_mobilisation
+		}
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = AUS_bendek_as_commander
+						has_completed_focus = AUS_gablenz_doctrine
+					} 
+				}
+				custom_effect_tooltip = AUS_effect_dynamic
+			}
+		}
+	}
+	focus = {
+		id = AUS_assembly_point
+		x = -3
+		y = 1
+		relative_position_id = AUS_bendek_as_commander
+		prerequisite = {
+			focus = AUS_bendek_as_commander
+		}
+	
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_kaisers_decision
+		x = -1
+		y = 1
+		relative_position_id = AUS_assembly_point
+		prerequisite = {
+			focus = AUS_assembly_point
+		}
+	
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_assamble_at_olmutz
+		x = 1
+		y = 1
+		relative_position_id = AUS_assembly_point
+		prerequisite = {
+			focus = AUS_assembly_point
+		}
+	
+		cost = 1
+		icon = GFX_austria_vs_serbia
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+		}
+	}
 }
