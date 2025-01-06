@@ -70,7 +70,7 @@ fpw_socialist_front = {
 
 fpw_PRS_prussian_industrialization = {
 	enable = { always = yes }
-	icon = SPR_seize_the_gold_reserves
+	icon = GFX_idea_prussian_industrialization
 
 	production_speed_buildings_factor = prs_construction_speed_factor
 	industrial_capacity_factory = prs_factory_output_factor

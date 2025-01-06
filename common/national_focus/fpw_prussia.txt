@@ -4262,7 +4262,7 @@ focus = {
 			}
 			add_to_variable = {
 				var = prs_civ_construction_speed
-				valeu = 0.05
+				valeu = 0.025
 			}
 		}
 	}
@@ -4383,7 +4383,7 @@ focus = {
 		x = 0
 		y = 2
 		relative_position_id = PRS_give_to_junkers
-		cost = 5
+		cost = 10
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -4416,7 +4416,23 @@ focus = {
 			}
 			add_to_variable = {
 				var = prs_building_air_damage
-				value = -0.05
+				value = -0.025
+			}
+			add_to_variable = {
+				var = prs_efficiency_factor
+				value = 0.025
+			}
+			add_to_variable = {
+				var = prs_growth_factor
+				value = 0.025
+			}
+			add_to_variable = {
+				var = prs_rention_factor
+				value = 0.025
+			}
+			add_to_variable = {
+				var = prs_consumer_goods_factor
+				value = 0.05
 			}
 		}
 	}
@@ -4620,15 +4636,15 @@ focus = {
 			custom_effect_tooltip = prs_fpw_industrialization_buff
 			add_to_variable = {
 				var = prs_efficiency_factor
-				value = 0.05
+				value = 0.025
 			}
 			add_to_variable = {
 				var = prs_growth_factor
-				value = 0.05
+				value = 0.025
 			}
 			add_to_variable = {
 				var = prs_rention_factor
-				value = 0.05
+				value = 0.025
 			}
 		}
 	}
@@ -4696,6 +4712,7 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			981 = {
 				add_extra_state_shared_building_slots = 1
          		add_building_construction = {
@@ -4711,6 +4728,14 @@ focus = {
             		level = 1
             		instant_build = yes
 				}
+			}
+			add_to_variable = {
+				var = prs_civ_construction_speed
+				value = 0.05
+			}
+			add_to_variable = {
+				var = prs_consumer_goods_factor
+				value = 0.05
 			}
 		}
 	}
@@ -4955,7 +4980,7 @@ focus = {
 			}
 			add_to_variable = {
 				var = prs_mil_construction_speed
-				value = 0.05
+				value = 0.025
 			}
 		}
 	}
@@ -5053,6 +5078,7 @@ focus = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			64 = {
 				set_building_level = {
    		 			type = bunker
@@ -5062,6 +5088,10 @@ focus = {
         				level < 3
 					}	
     			}
+			}
+			add_to_variable = {
+				var = prs_factory_output_factor
+				value = 0.1
 			}
 		}
 	}
@@ -5090,6 +5120,7 @@ focus = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = prs_fpw_industrialization_buff
 			763 = {
 				set_building_level = {
    		 			type = bunker
@@ -5099,6 +5130,10 @@ focus = {
         				level < 3
 					}	
     			}
+			}
+			add_to_variable = {
+				var = prs_factory_output_factor
+				value = 0.05
 			}
 		}
 	}
@@ -5141,7 +5176,7 @@ focus = {
 			}
 			add_to_variable = {
 				var = prs_mil_construction_speed
-				value = 0.05
+				value = 0.025
 			}
 		}
 	}
@@ -5198,7 +5233,7 @@ focus = {
 			}
 			add_to_variable = {
 				var = prs_mil_construction_speed
-				value = 0.05
+				value = 0.025
 			}
 		}
 	}
