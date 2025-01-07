@@ -6,8 +6,11 @@
  AUS_prepare_looming_conflict:0 "Prepare for the Looming Conflict"
  AUS_prepare_looming_conflict_desc:0 "As the sun rises over the once mighty empire, it is a former shadow of itself, being defeated in 1859 by a puny nation called Piedmont-Sardinia with french help everyone saw how weak the Empire truly had become its economy bust and completely shattered the empire must rebuild to its former strenght. Initiating various military reforms will help the empire to regain its former glory and secure its position in the German Confederation to get those treacherous Prussian pigs off of their power they are so desperately clinging to."
  AUS_mobilise_the_army:0 "Mobilize the Army"
+ AUS_mobilise_the_army_desc:0 "For too long we have been bullied into submission by the Prussians, by swiftly mobilizing the Austrian fighting forces we can truly show the strength the Double-Headed Eagle still carries in it. The Prussians shall fear of such mighty mobilization. By changing to war law we can effectively and swiftly mobilize the army."
  AUS_activating_the_reserves:0 "Activating the Reserves"
+ AUS_activating_the_reserves_desc:0 "Everybody shall fight under the Double-Headed Eagle to win back our glory. With our place in Central Europe, we must prove our spirit remains, everyone with military experience shall head into the fight."
  AUS_schleswig_question:0 "The Schleswig Question"
+ AUS_schleswig_question_desc:0 "Schleswig-Holstein is not in reach of Vienna, yet it shall remain as a state within the empire to prove our strength and to have a favourable position in war looming on the Horizon. By protecting this territory we will gain a key point to strike down the Prussians when they least expect it."
  AUS_brothers_at_war:0 "Brothers at War"
  AUS_halt_prussian_expansion:0 "Halt Prussian Expansion"
  AUS_ausgleich_negotiations:0 "Enter the Augsleich Negotiations"
@@ -109,7 +112,7 @@
  AUS_erecting_new_strongholds:0 "Erecting New Strongholds"
  AUS_increase_mil_spending:0 "Increase Military Spending"
  AUS_increase_mil_spending_desc:0 "Austria's army remains weak and barely able to stand up to foreign threats. A significant portion of the budget must be devoted to funding our military if we wish to get up to date with the rest of Europe."
- AUS_archduke_albrecht:0 "Command under Archduke Albrecht"
+ AUS_focus_archduke_albrecht:0 "Command under Archduke Albrecht"
  AUS_friedrich_beck:0 "Command under Friedrich Beck"
  AUS_conservative_reforms:0 "Conservative Reforms"
  AUS_conservative_reforms_desc:0 "The best way to pass our military reforms is to do so with a pinch of salt. Radical reforms will upset conservative elements, and so by following this strategy we will modernise our army while maintaining our popularity."
@@ -317,3 +320,8 @@ AUS_effect_dynamic: "Effects changes based on previously taken Focuses"
  fpw_rivalry:0 "Rivalry"
 
  #cosmetic nation/ideology names
+
+#Traits
+ fpw_elan: "Elan"
+ fpw_grand_battery: "Grand Battery"
+ fpw_habsburg_traditionalism: "Habsburg traditionalism"

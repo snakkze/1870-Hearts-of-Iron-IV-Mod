@@ -3125,7 +3125,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUS_archduke_albrecht 
+		id = AUS_focus_archduke_albrecht 
 		relative_position_id = AUS_increase_mil_spending
 		prerequisite = { focus = AUS_increase_mil_spending }
 		mutually_exclusive = { focus = AUS_friedrich_beck }
@@ -3163,8 +3163,8 @@ focus_tree = {
 
 	focus = {
 		id = AUS_conservative_reforms
-		relative_position_id = AUS_archduke_albrecht 
-		prerequisite = { focus = AUS_archduke_albrecht }
+		relative_position_id = AUS_focus_archduke_albrecht 
+		prerequisite = { focus = AUS_focus_archduke_albrecht }
 		x = 0
 		y = 1
 		cost = 10
@@ -3203,8 +3203,8 @@ focus_tree = {
 
 	focus = {
 		id = AUS_kuk_kriegsschule
-		relative_position_id = AUS_archduke_albrecht 
-		prerequisite = { focus = AUS_archduke_albrecht focus = AUS_friedrich_beck}
+		relative_position_id = AUS_focus_archduke_albrecht 
+		prerequisite = { focus = AUS_focus_archduke_albrecht focus = AUS_friedrich_beck}
 		x = -2
 		y = 1
 		cost = 5
@@ -3234,8 +3234,8 @@ focus_tree = {
 
 	focus = {
 		id = AUS_short_service_conscription
-		relative_position_id = AUS_archduke_albrecht
-		prerequisite = { focus = AUS_archduke_albrecht }
+		relative_position_id = AUS_focus_archduke_albrecht
+		prerequisite = { focus = AUS_focus_archduke_albrecht }
 		x = 2
 		y = 1
 		cost = 5
@@ -3271,7 +3271,7 @@ focus_tree = {
 		id = AUS_friedrich_beck
 		relative_position_id = AUS_increase_mil_spending
 		prerequisite = { focus = AUS_increase_mil_spending }
-		mutually_exclusive = { focus = AUS_archduke_albrecht }
+		mutually_exclusive = { focus = AUS_focus_archduke_albrecht }
 		x = -2.5
 		y = 1
 		cost = 5
@@ -3819,7 +3819,7 @@ focus_tree = {
 # Austro Prussian war military branch
 	focus = {
 		id = AUS_the_brothers_war
-		x = 8
+		x = 28
 		y = 0
 		cost = 1
 		icon = GFX_austria_vs_serbia
@@ -3859,7 +3859,42 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			AUS_von_benedek	= {
+				add_field_marshal_role = {
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 2
+					traits = { old_guard }
+				}
+				add_advisor_role = {
+					advisor={
+						slot = army_chief
+						idea_token = von_benedek
+						traits = { fpw_elan }
+					}
+					activate = yes
+				}
+			}
+			AUS_henikstein = {
+				add_corps_commander_role = {
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+			}
+			AUS_krismanic = {
+				add_corps_commander_role = {
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -3878,7 +3913,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -3900,7 +3940,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			AUS_von_gablenz	= {
+				add_field_marshal_role = {
+					skill = 2
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				add_advisor_role = {
+					advisor={
+						slot = army_chief
+						idea_token = von_gablenz
+						traits = { fpw_grand_battery }
+					}
+					activate = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3919,7 +3975,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -3999,7 +4060,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_assembly_point
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = AUS_bendek_as_commander
 		prerequisite = {

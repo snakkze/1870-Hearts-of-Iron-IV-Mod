@@ -410,5 +410,14 @@ leader_traits = {
 		research_speed_factor = 0.05
 		consumer_goods_factor = -0.05
 	}
-
+	fpw_elan = { #Benedek
+		army_attack_factor = 0.05
+		army_strength_factor = 0.05
+	}
+	fpw_grand_battery = { #Gablenz
+		army_artillery_attack_factor = 0.05
+	}
+	fpw_habsburg_traditionalism = {
+		army_org_factor = 0.025
+	}
 }

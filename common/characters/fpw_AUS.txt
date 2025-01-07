@@ -13,4 +13,59 @@ characters={
 			id=-1
 		}
 	}
+#Army leaders
+	AUS_von_benedek ={
+		name="Ludwig von Benedek"
+		portraits={
+			civilian={
+				large=""
+			}
+		}
+	}
+
+	AUS_henikstein = {
+		name="Henikstein"
+		portraits={
+			civilian={
+				large=""
+			}
+		}
+	}
+	AUS_krismanic = {
+		name="Krismanic"
+		portraits={
+			civilian={
+				large=""
+			}
+		}
+	}
+	AUS_von_gablenz  = {
+		name="Krismanic"
+		portraits={
+			civilian={
+				large=""
+			}
+		}
+	}
+	AUS_archduke_albrecht = {
+		name="Archduke Albrecht"
+		portraits={
+			civilian={
+				large=""
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			slot = army_chief
+			cost = 150
+			idea_token = archduke_albrecht
+			traits = { fpw_habsburg_traditionalism }
+		}
+	}
 }
