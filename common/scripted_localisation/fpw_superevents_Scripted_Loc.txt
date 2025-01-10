@@ -24,7 +24,7 @@ defined_text = {
         trigger = {
             has_global_flag = fpw_bw
         }
-        localization_key = "SuperEvent_BW"
+        localization_key = SuperEvent_BW
     }
 
 }
@@ -58,7 +58,7 @@ defined_text = {
         trigger = {
             has_global_flag = fpw_bw
         }
-        localization_key = "SuperEvent_BW_DESCRIPTION"
+        localization_key = SuperEvent_BW_DESCRIPTION
     }
 
 }
@@ -92,6 +92,6 @@ defined_text = {
         trigger = {
             has_global_flag = fpw_bw
         }
-        localization_key = "SuperEvent_BW_REMARK"
+        localization_key = SuperEvent_BW_REMARK
     }
 }
