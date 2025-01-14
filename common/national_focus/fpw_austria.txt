@@ -4001,7 +4001,104 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = AUS_effect_dynamic
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = AUS_bendek_as_commander
+						has_completed_focus = AUS_gablenz_doctrine
+					} 
+				}
+				custom_effect_tooltip = AUS_effect_dynamic
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_gablenz_doctrine
+				}
+				22 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 203
+					}
+				}
+				22 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 204
+					}
+				}
+				22 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 205
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_bendek_as_commander
+					has_completed_focus = AUS_assamble_at_olmutz
+				}
+				75 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 203
+					}
+				}
+				75 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 204
+					}
+				}
+				75 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 205
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_bendek_as_commander
+					has_completed_focus = AUS_kaisers_decision
+				}
+				9 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 203
+					}
+				}
+				9 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 204
+					}
+				}
+				9 = {
+					create_unit = {
+						division = "name = \"Infanterietruppendivision\" division_template = \"Infanterietruppendivision\" start_manpower_factor = 0.5"
+						owner = AUS
+						count = 2
+						id = 205
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -4028,7 +4125,19 @@ focus_tree = {
 					} 
 				}
 				custom_effect_tooltip = AUS_effect_dynamic
-			}	
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_bendek_as_commander
+				}
+				add_ideas = fpw_AUS_idea_northern_army_1
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_gablenz_doctrine
+				}
+				add_ideas = fpw_AUS_idea_northern_army_2
+			}
 		}
 	}
 	focus = {
@@ -4055,6 +4164,18 @@ focus_tree = {
 					} 
 				}
 				custom_effect_tooltip = AUS_effect_dynamic
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_bendek_as_commander
+				}
+				add_ideas = fpw_AUS_idea_southern_army_1
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_gablenz_doctrine
+				}
+				add_ideas = fpw_AUS_idea_southern_army_2
 			}
 		}
 	}
@@ -4094,6 +4215,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = AUS_focus_assemble_point_tt
 		}
 	}
 	focus = {
@@ -4117,6 +4239,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = AUS_focus_assemble_point_tt
 		}
 	}
 }

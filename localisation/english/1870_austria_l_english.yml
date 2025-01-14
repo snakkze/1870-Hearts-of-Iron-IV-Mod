@@ -219,6 +219,10 @@ AUS_crush_czechs:0 "Repress Czech Nationalism"
  fpw_AUS_kuk_kriegsschule:0 "k.u.k Kriegsschule"
  fpw_AUS_general_staff:0 "Austrian General Staff"
  fpw_AUS_political_instability:0 "Political Instability"
+ fpw_AUS_idea_southern_army_1: "The Southern Army"
+ fpw_AUS_idea_southern_army_2: "The Southern Army"
+ fpw_AUS_idea_northern_army_1: "The Northern Army"
+ fpw_AUS_idea_northern_army_2: "The Northern Army"
 
 #events
  
@@ -299,6 +303,8 @@ AUS_radical_reformstooltip4:0 "Modify §YDivided Military § §Wby\nDivison Reco
 AUS_wip_tt:0 "§RContent is WIP, path will be done in a later update"
 
 AUS_effect_dynamic: "Effects changes based on previously taken Focuses"
+AUS_focus_assemble_point_tt: "Focus will decide where troops get deployed"
+
 #custom modifier tooltips
 
 #scripted gui text
