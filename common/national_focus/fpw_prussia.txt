@@ -5437,7 +5437,7 @@ focus = {
 	
 	focus = {
 		id = PRS_focus_mobile_warfare
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_horse_studs
 		
 		allow_branch = {
 			is_debug = yes
@@ -5461,13 +5461,18 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 5
+				category = cat_nap_legacy
+			}
 			
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_expand_cavalry_core
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_goal_generic_cavalry
 		
 		allow_branch = {
 			is_debug = yes
@@ -5490,13 +5495,13 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_ideas = prs_fpw_expanded_cavalry_core
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_faster_armies
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_little_entente
 		
 		allow_branch = {
 			is_debug = yes
@@ -5519,7 +5524,7 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_ideas = prs_fpw_mobile_warfare
 		}
 	}
 	
@@ -5549,13 +5554,18 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = cat_superior_firepower
+			}
+			add_ideas = prs_fpw_prussian_goose_step
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_improve_training_quality
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_advanced_military_studies
 		
 		allow_branch = {
 			is_debug = yes
@@ -5577,13 +5587,14 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
+			add_ideas = prs_fpw_quality_training
 			
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_quality_of_education
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_goal_generic_army_artillery
 		
 		allow_branch = {
 			is_debug = yes
@@ -5605,13 +5616,13 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_ideas = prs_fpw_prussian_artillery
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_amend_research_budget
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_military_industry
 		
 		allow_branch = {
 			is_debug = yes
@@ -5633,13 +5644,13 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_ideas = prs_fpw_amended_military_budget
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_equipment_quality
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_chi_army_reform
 		
 		allow_branch = {
 			is_debug = yes
@@ -5666,13 +5677,13 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_ideas = prs_fpw_equipment_quality
 		}
 	}
 	
 	focus = {
 		id = PRS_focus_equipment_quantity
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_limited_social_mobilization
 		
 		allow_branch = {
 			is_debug = yes
@@ -5699,7 +5710,7 @@ focus = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-			
+			add_ideas = prs_fpw_equipment_quantity
 		}
 	}
 
@@ -5725,7 +5736,6 @@ focus = {
 		y = 1
 	
 		completion_reward = {
-			
 		}
 	}
 

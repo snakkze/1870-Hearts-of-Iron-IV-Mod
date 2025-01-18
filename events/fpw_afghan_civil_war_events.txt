@@ -1,4 +1,4 @@
-add_namespace = fpw_afghan
+ add_namespace = fpw_afghan
 
 country_event = {
 	id = fpw_afghan.1
@@ -419,9 +419,8 @@ country_event = {
 	option = {
 		name = "Punishment must be served"
 		create_war_goal = {
-            type = take_state_focus
+            type = annex_everything
             target = PER
-			generator = {410 414 416}
         }
 	}
 }
