@@ -1583,5 +1583,86 @@ country_event = {
 		}
 	}
 }
+### Qingdao Incident
+country_event = {
+	id = prussia_fpw.48
+	title = prussia_fpw.48.t
+	desc = prussia_fpw.48.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#minor_flavor = yes
+
+	option = {
+		name = "Fine"
+		PRS = {
+			transfer_state = 743
+			country_event = prussia_fpw.49
+		}
+		ai_chance = 4000
 		
+	}
+	option = {
+		name = "They can come and take it"
+		PRS = {
+			country_event = prussia_fpw.50
+		}
+		
+		ai_chance = 0
+	}
+}	
+
+country_event = {
+	id = prussia_fpw.49
+	title = prussia_fpw.49.t
+	desc = prussia_fpw.49.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#minor_flavor = yes
+
+	option = {
+		name = "cool"
+		
+	}
+}	
+
+country_event = {
+	id = prussia_fpw.50
+	title = prussia_fpw.50.t
+	desc = prussia_fpw.50.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#minor_flavor = yes
+
+	option = {
+		name = "How dare they, go get the other great powers."
+		declare_war_on = CHI
+		ENG = {
+			country_event = prussia_fpw.51
+		}
+		SOV = {
+			country_event = prussia_fpw.51
+		}
+		FRA = {
+			country_event = prussia_fpw.51
+		}
+	}
+}	
+
+country_event = {
+	id = prussia_fpw.51
+	title = prussia_fpw.51.t
+	desc = prussia_fpw.51.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#minor_flavor = yes
+
+	option = {
+		name = "We Shall Help Them"
+		declare_war_on = CHI
+	}
+}	
 	

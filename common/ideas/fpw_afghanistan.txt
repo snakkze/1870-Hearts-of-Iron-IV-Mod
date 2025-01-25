@@ -300,7 +300,26 @@ ideas = {
 				experience_gain_army_unit_factor = 0.2
 				planning_speed = 0.1
 				max_planning_factor = 0.1
-				custom_effect_tooltip = new_afghan_army
+			}
+		}
+	}
+	country = {
+		fpw_AFG_afghan_modern_army_two = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				army_org_factor = 0.05
 			}
 		}
 	}

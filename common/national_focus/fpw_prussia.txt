@@ -1837,7 +1837,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			CHI = {
+				country_event = prussia_fpw.48
+			}
 		}
 	}
 

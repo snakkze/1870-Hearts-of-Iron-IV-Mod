@@ -901,7 +901,7 @@
 		x = 63
 		y = 3
 		
-		cost = 5
+		cost = 1
 
 		prerequisite = { focus = afg_begin_centralization }
 
@@ -945,7 +945,7 @@
 		x = 64
 		y = 4
 		
-		cost = 5
+		cost = 1
 
 		prerequisite = { focus = afg_reduce_tribal_autonomy }
 
@@ -968,7 +968,7 @@
 		x = 66
 		y = 5
 		
-		cost = 5
+		cost = 1
 
 		prerequisite = { focus = afg_enforce_a_central_government }
 		prerequisite = { focus = afg_enforce_state_soveriegnty }
@@ -1802,6 +1802,34 @@
 	}
 
 	focus = {
+		id = afg_infantry_improvements
+		icon = GFX_goal_generic_allies_build_infantry
+
+		
+		
+		x = 15
+		y = 6
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_new_high_command }
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = {	
+				remove_idea = fpw_AFG_afghan_modern_army
+				add_idea = fpw_AFG_afghan_modern_army_two
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
 		id = afg_study_civil_war
 		icon = GFX_goal_generic_army_doctrines
 
@@ -1823,6 +1851,36 @@
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.50
 				uses = 2
+				category = land_doctrine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_military_college
+		icon = GFX_focus_generic_military_academy
+
+		
+		
+		x = 20
+		y = 6
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_study_civil_war }
+
+		available = {
+			has_war = no
+		}
+		
+		completion_reward = {
+			army_experience = 100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 5
 				category = land_doctrine
 			}
 		}
@@ -1871,6 +1929,53 @@
 				}
 			}
 			add_ideas = partial_economic_mobilisation
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_war_time_economy
+		icon = GFX_focus_generic_limited_social_mobilization
+
+		
+		
+		x = 13
+		y = 6
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_reformed_army }
+		prerequisite = { focus = afg_mobalize_the_economy }
+		prerequisite = { focus = afg_new_high_command }
+
+		available = {
+			has_war = yes
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				#prioritize = {}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				#prioritize = {}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = war_economy
 		}
 		
 		ai_will_do = {
