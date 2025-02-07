@@ -4118,7 +4118,7 @@ focus_tree = {
 		cost = 10
 		#search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_attack_austria
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
@@ -4298,7 +4298,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {  }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_attack_germany
 		mutually_exclusive = { focus = SOV_our_prussian_friends }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
@@ -4692,7 +4692,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_ukraine_construct_infrastructure
+		icon = GFX_focus_generic_farmland
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
@@ -4727,7 +4727,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_belarus_construct_infrastructure
+		icon = GFX_focus_generic_resource_extraction
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
@@ -4762,7 +4762,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_russia_construct_infrastructure
+		icon = GFX_focus_generic_mining_industry
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
