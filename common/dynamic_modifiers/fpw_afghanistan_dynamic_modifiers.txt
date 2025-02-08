@@ -1,0 +1,43 @@
+fpw_AFG_afghan_modernized_economy = {
+	enable = { always = yes }
+	icon = 
+
+	production_speed_buildings_factor = afg_construction_speed_factor
+	industrial_capacity_factory = afg_factory_output_factor
+	production_factory_max_efficiency_factor = afg_efficiency_factor
+	production_factory_efficiency_gain_factor = afg_growth_factor
+	production_speed_industrial_complex_factor = afg_civ_construction_speed
+	production_speed_arms_factory_factor = afg_mil_construction_speed
+	civilian_factory_use = afg_civillian_factories_in_use
+	industry_air_damage_factor = afg_building_air_damage
+	consumer_goods_factor = afg_consumer_goods_factor
+	line_change_production_efficiency_factor = afg_rention_factor
+	base_fuel_gain_factor = afg_base_oil_gain_factor
+	fuel_gain_factor = prs_oil_gain_factor
+	max_fuel_factor = prs_max_fuel_factor
+	production_lack_of_resource_penalty_factor = afg_lack_of_resource_penatly_factor
+	
+
+}
+fpw_AFG_afghan_agricultural_economy = {
+	enable = { always = yes }
+	icon = 
+
+	production_speed_buildings_factor = afg_construction_speed_factor
+	industrial_capacity_factory = afg_factory_output_factor
+	production_factory_max_efficiency_factor = afg_efficiency_factor
+	production_factory_efficiency_gain_factor = afg_growth_factor
+	production_speed_industrial_complex_factor = afg_civ_construction_speed
+	production_speed_arms_factory_factor = afg_mil_construction_speed
+	civilian_factory_use = afg_civillian_factories_in_use
+	industry_air_damage_factor = afg_building_air_damage
+	consumer_goods_factor = afg_consumer_goods_factor
+	line_change_production_efficiency_factor = afg_rention_factor
+	base_fuel_gain_factor = afg_base_oil_gain_factor
+	fuel_gain_factor = prs_oil_gain_factor
+	max_fuel_factor = prs_max_fuel_factor
+	production_lack_of_resource_penalty_factor = afg_lack_of_resource_penatly_factor
+	
+
+}
+
