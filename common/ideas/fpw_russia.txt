@@ -1000,7 +1000,206 @@ ideas = {
 			}
 		}
 		
+		# Ideas for subject coutries
 		
+		SOV_russian_investments = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = generic_goods_red_bonus
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		SOV_shared_politics = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = generic_volunteer_expedition_bonus
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				command_power_gain_mult = 0.10
+			}
+		}
+		
+		SOV_shared_independent_economy_idea = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = ARG_construction_guilds
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		
+		SOV_shared_army_idea = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = chi_army_corruption2
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				experience_gain_army_factor = 0.05
+				conscription = 0.005
+			}
+		}
+		SOV_shared_army_idea2 = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = chi_army_corruption2
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				experience_gain_army_factor = 0.10
+				conscription = 0.005
+				max_command_power = 20
+				weekly_manpower = 50
+			}
+		}
+		SOV_shared_army_idea3 = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = chi_army_corruption2
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				experience_gain_army_factor = 0.10
+				conscription = 0.01
+				max_command_power = 20
+				weekly_manpower = 50
+				army_org_factor = 0.10
+				breakthrough_factor = 0.05
+			}
+		}
+		
+		SOV_shared_obedient = {
+			allowed = {
+				is_puppet = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = generic_monarchist_uprising #CHI_wargaming_division
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				autonomy_gain = -0.1
+			}
+		}
+		
+		SOV_shared_conspiracy = {
+			allowed = {
+				is_puppet = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			removal_cost = -1
+			cancel = {
+				
+			}
+			picture = generic_deal_with_the_devil
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				autonomy_gain = 0.5
+			}
+		}
 		
 	}
 	industrial_concern = {

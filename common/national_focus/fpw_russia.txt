@@ -2163,12 +2163,12 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				has_completed_focus = SOV_never_trust_germans
+				has_completed_focus = SOV_never_trust_the_prussians
 			}
 		}
 		
 		bypass = {
-			has_completed_focus = SOV_never_trust_germans
+			has_completed_focus = SOV_never_trust_the_prussians
 		}
 
 		cancel_if_invalid = yes
@@ -4118,7 +4118,7 @@ focus_tree = {
 		cost = 10
 		#search_filters = { FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_attack_austria
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
@@ -4168,7 +4168,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		
 		icon = GFX_focus_befriend_prussia
-		mutually_exclusive = { focus = SOV_never_trust_germans }
+		mutually_exclusive = { focus = SOV_never_trust_the_prussians }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
 		
@@ -4292,13 +4292,13 @@ focus_tree = {
 	
 	
 	focus = {
-		id = SOV_never_trust_germans 
+		id = SOV_never_trust_the_prussians 
 		x = 1
 		y = 1
 		cost = 10
 		search_filters = {  }
 		
-		#icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_attack_germany
 		mutually_exclusive = { focus = SOV_our_prussian_friends }
 		prerequisite = { focus = SOV_our_german_intrests }
 		relative_position_id = SOV_our_german_intrests
@@ -4347,13 +4347,13 @@ focus_tree = {
 		icon = GFX_focus_generic_polish_deal
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_remember_austrian_betrayal}
-		prerequisite = { focus = SOV_never_trust_germans }
+		prerequisite = { focus = SOV_never_trust_the_prussians }
 		relative_position_id = SOV_remember_austrian_betrayal
 		
 		ai_will_do = {
 			factor = 1
 		}
-
+		
 		available = {
 			
 		}
@@ -4692,7 +4692,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_ukraine_construct_infrastructure
+		icon = GFX_focus_generic_farmland
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
@@ -4727,7 +4727,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_belarus_construct_infrastructure
+		icon = GFX_focus_generic_resource_extraction
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments
@@ -4762,7 +4762,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		
-		#icon = GFX_goal_russia_construct_infrastructure
+		icon = GFX_focus_generic_mining_industry
 		#mutually_exclusive = { focus =  }
 		prerequisite = { focus = SOV_infrastracture_investments }
 		relative_position_id = SOV_infrastracture_investments

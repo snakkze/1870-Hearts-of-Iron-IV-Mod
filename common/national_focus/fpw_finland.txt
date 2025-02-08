@@ -1,0 +1,75 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = finland_focus
+	
+	country = {
+		factor = 0
+		
+		#modifier = {
+		#	add = 100
+		#	AND = {
+		#		tag = FIN
+		#		is_debug = yes
+		#	}
+		#}
+		
+	}
+	initial_show_position = {
+		x = 2
+		y = 2
+		
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1200 }
+	
+	shared_focus = SOV_shared_new_autonomy
+	
+	#focus = {
+	#	id = FIN_fimlamd
+	#	x = 1
+	#	y = 1
+	#	cost = 5
+	#	search_filters = { FOCUS_FILTER_HISTORICAL }
+	#	
+	#	icon = GFX_focus_SOV_crush_polish_resistance
+	#	#mutually_exclusive = { focus =  }
+	#	#prerequisite = { focus =  }
+	#	#relative_position_id = 
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#
+	#	available = {
+	#		
+	#	}
+	#	
+	#	bypass = {
+	#
+	#	}
+	#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+	#	search_filters = {  }
+	#
+	#	completion_reward = {
+	#		
+	#	}
+	#}
+	
+	
+	
+	
+	
+	
+}
