@@ -27,6 +27,9 @@ focus_tree = {
 	initial_show_position = {
 		focus = industrial_effort
 	}
+	
+	shared_focus = SOV_shared_new_autonomy
+	
 
 	focus = {
 		id = army_effort

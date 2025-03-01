@@ -2503,6 +2503,71 @@ country_event = {
 	
 }
 
+country_event = { # our subject declares independence
+	id = russia_fpw.49
+	title = russia_fpw.49.t
+	desc = russia_fpw.49.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.49.a
+		
+		add_stability = -0.05
+		
+		FROM = {
+			country_event = {
+				id = russia_fpw.50
+				hours = 4
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.49.b
+		
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+		
+		ai_chance = { 
+			base = 6
+		}
+	}
+	
+}
+country_event = {
+	id = russia_fpw.50
+	title = russia_fpw.50.t
+	desc = russia_fpw.50.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { 
+		name = russia_fpw.50.a
+		
+		add_stability = 0.05
+		
+		ai_chance = { 
+			base = 1
+		}
+	}
+	
+}
 
 
 

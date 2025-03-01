@@ -119,6 +119,151 @@ ideas = {
 		}
 	}
 	country = {
+		fpw_AFG_modernizing_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.05
+				industry_free_repair_factor = -0.25
+				industrial_capacity_factory = -0.2
+			}
+		}
+	}
+	country = {
+		fpw_AFG_agricultural_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				industry_free_repair_factor = -0.25
+				industrial_capacity_factory = -0.3
+			}
+		}
+	}
+	country = {
+		fpw_AFG_lowered_taxes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+	country = {
+		fpw_AFG_raised_taxes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+	}
+	country = {
+		fpw_AFG_welfare_programs = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				monthly_population = 0.1
+				local_manpower = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+	country = {
+		fpw_AFG_farmers_supported = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+	country = {
+		fpw_AFG_afghan_banks = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+	country = {
+		fpw_AFG_economic_reformation_process = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.15
+			}
+		}
+	}
+	country = {
 		fpw_AFG_cheaper_guns = {
 			allowed = {
 				always = no

@@ -1,0 +1,792 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+shared_focus = {
+	id = SOV_shared_new_autonomy
+	x = 5
+	y = 1
+	cost = 10
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_improve_relations
+	#mutually_exclusive = { focus =  }
+	#prerequisite = { focus =  }
+	#relative_position_id = 
+	
+	allow_branch = {
+		is_puppet_of = SOV
+		OR = {
+			original_tag = FIN
+			original_tag = POL
+			original_tag = UKR
+			original_tag = BLR
+			original_tag = LIT
+			original_tag = LAT
+			original_tag = EST
+			original_tag = GEO
+			original_tag = ARM
+			original_tag = AZR
+			original_tag = KAZ
+		}
+	} 
+	offset = {
+		trigger = {
+			OR = {
+				original_tag = FIN
+				original_tag = POL
+				original_tag = UKR
+				original_tag = BLR
+				original_tag = LIT
+				original_tag = LAT
+				original_tag = EST
+				original_tag = GEO
+				original_tag = ARM
+				original_tag = AZR
+				original_tag = KAZ
+			}
+		}
+		x = 12
+		y = 4
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = {
+		add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_russian_investments
+	x = -1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_focus_PRS_russian_friendship #GFX_goal_generic_positive_trade_relations
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_new_autonomy }
+	relative_position_id = SOV_shared_new_autonomy
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = {
+		add_ideas = SOV_russian_investments
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_russian_model_army
+	x = 1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_focus_SOV_russian_army #GFX_goal_generic_military_deal
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_new_autonomy }
+	relative_position_id = SOV_shared_new_autonomy
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = {
+		army_experience = 25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = SOV
+		}
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_our_politics
+	x = 1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_national_unity
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_russian_investments }
+	prerequisite = { focus = SOV_shared_russian_model_army }
+	relative_position_id = SOV_shared_russian_investments
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		add_stability = 0.10
+		add_war_support = 0.10
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_stay_obedient
+	x = -1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_focus_CZE_german_puppet
+	mutually_exclusive = { focus = SOV_shared_conspiracy_in_the_shadows }
+	prerequisite = { focus = SOV_shared_our_politics }
+	relative_position_id = SOV_shared_our_politics
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		add_stability = 0.10
+		add_war_support = -0.05
+		add_ideas = SOV_shared_obedient
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_conspiracy_in_the_shadows
+	x = 1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_focus_generic_conspiracy
+	mutually_exclusive = { focus = SOV_shared_stay_obedient }
+	prerequisite = { focus = SOV_shared_our_politics }
+	relative_position_id = SOV_shared_our_politics
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		add_stability = -0.05
+		add_war_support = 0.10
+		add_ideas = SOV_shared_conspiracy
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_our_new_state
+	x = 1
+	y = 1
+	cost = 10
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_demand_territory
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_conspiracy_in_the_shadows focus = SOV_shared_stay_obedient }
+	relative_position_id = SOV_shared_stay_obedient
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+		add_ideas = SOV_shared_politics
+		
+		if = {
+			limit = {
+				has_completed_focus = SOV_shared_conspiracy_in_the_shadows
+			}
+			random_character = {
+				limit = {
+					is_country_leader = yes
+					has_trait = fpw_russian_leader
+				}
+				set_nationality = SOV
+			}
+			clr_country_flag = fpw_secondary_leader_fin_alexander_II
+			remove_ideas = fpw_alexander_ii
+			remove_ideas = SOV_russian_investments
+			SOV = {
+				end_puppet = FROM
+				country_event = {
+					id = russia_fpw.49
+					hours = 4
+				}
+			}
+			leave_faction = yes
+		}
+		else = {
+			random_character = {
+				limit = {
+					is_country_leader = yes
+					has_trait = fpw_russian_leader
+				}
+				hidden_effect = {
+					remove_trait = {
+						slot = political_advisor
+						trait = fpw_russian_leader
+					}
+				}
+				add_trait = {
+					slot = political_advisor
+					trait = fpw_russian_leader2
+				}
+			}
+		}
+		
+	}
+}
+
+
+shared_focus = {
+	id = SOV_shared_our_economy
+	x = -3
+	y = 1
+	cost = 10
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_consumer_goods
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_russian_investments }
+	relative_position_id = SOV_shared_russian_investments
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = {
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		} 
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		} 
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		} 
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_invest_in_infrastructure
+	x = -1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_construct_infrastructure
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_our_economy }
+	relative_position_id = SOV_shared_our_economy
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = {
+		random_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				infrastructure < 5
+			}
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		} 
+		random_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				infrastructure < 5
+			}
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		} 
+		random_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				infrastructure < 5
+			}
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+		random_owned_state = {
+			limit = {
+				steel  > 0
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+			IF = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_military_industry
+	x = 1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_construct_mil_factory
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_our_economy }
+	relative_position_id = SOV_shared_our_economy
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = {
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}  
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_independent_economy
+	x = 1
+	y = 1
+	cost = 10
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_construct_civ_factory
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_invest_in_infrastructure }
+	prerequisite = { focus = SOV_shared_military_industry }
+	relative_position_id = SOV_shared_invest_in_infrastructure
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = {
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		} 
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			prioritize = { }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		} 
+		add_ideas = SOV_shared_independent_economy_idea
+	}
+}
+
+
+shared_focus = {
+	id = SOV_shared_our_army
+	x = 3
+	y = 1
+	cost = 10
+	search_filters = {  }
+	
+	icon = GFX_goal_generic_army_artillery 
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_russian_model_army }
+	relative_position_id = SOV_shared_russian_model_army
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		army_experience = 50
+		add_ideas = SOV_shared_army_idea
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_new_military_academies
+	x = -1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_focus_generic_military_academy
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_our_army }
+	relative_position_id = SOV_shared_our_army
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.50
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_expand_the_officer_core
+	x = 1
+	y = 1
+	cost = 5
+	search_filters = {  }
+	
+	icon = GFX_focus_generic_military_mission
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_our_army }
+	relative_position_id = SOV_shared_our_army
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = SOV_shared_army_idea
+			add_idea = SOV_shared_army_idea2
+		}
+	}
+}
+
+shared_focus = {
+	id = SOV_shared_new_model_army
+	x = 1
+	y = 1
+	cost = 10
+	search_filters = {  }
+	
+	icon = GFX_focus_generic_military_academy
+	#mutually_exclusive = { focus =  }
+	prerequisite = { focus = SOV_shared_new_military_academies }
+	prerequisite = { focus = SOV_shared_expand_the_officer_core }
+	relative_position_id = SOV_shared_new_military_academies
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+		
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = {  }
+	
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = SOV_shared_army_idea2
+			add_idea = SOV_shared_army_idea3
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}

@@ -17,6 +17,881 @@
 	}
 	
 	continuous_focus_position = { x = 25 y = 680 }
+	### ECO TREE
+	focus = {
+		id = afg_modernization_efforts
+		icon = GFX_goal_unknown
+		
+		x = 23
+		y = 10
+		
+		cost = 5
+		mutually_exclusive = { focus = afg_focus_on_our_strengths }
+		available = {
+			has_idea = fpw_AFG_post_war_economy
+		}
+		
+		completion_reward = {	
+			remove_ideas = fpw_AFG_post_war_economy
+			add_ideas = fpw_AFG_modernizing_economy
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_lower_taxes
+		icon = GFX_goal_unknown
+		
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = afg_modernization_efforts }
+		relative_position_id = afg_modernization_efforts
+		available = {
+		}
+		
+		completion_reward = {	
+			add_ideas = fpw_AFG_lowered_taxes
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_welfare_programs
+		icon = GFX_goal_unknown
+		
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = afg_lower_taxes}
+		relative_position_id = afg_lower_taxes
+		available = {
+		}
+		
+		completion_reward = {	
+			add_stability = 5
+			add_ideas = fpw_AFG_welfare_programs
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_economic_reforms
+		icon = GFX_goal_unknown
+		
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = afg_modernization_efforts focus = afg_focus_on_our_strengths }
+		relative_position_id = afg_modernization_efforts
+		available = {
+		}
+		
+		completion_reward = {	
+			add_timed_idea = {
+				idea = fpw_AFG_economic_reformation_process
+				days = 120
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_improve_quality_of_living
+		icon = GFX_goal_unknown
+		
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = afg_economic_reforms }
+		relative_position_id = afg_economic_reforms
+		available = {
+			NOT = {
+				has_idea = fpw_AFG_economic_reformation_process
+			}
+		}
+		
+		completion_reward = {	
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_complete_economic_reforms
+		icon = GFX_goal_unknown
+		
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_improve_quality_of_living }
+		prerequisite = { focus = afg_welfare_programs focus = afg_support_farmers}
+		relative_position_id = afg_improve_quality_of_living
+		available = {
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = fpw_AFG_agricultural_economy
+				}
+				remove_ideas = fpw_AFG_agricultural_economy
+			}
+			if = {
+				limit = {
+					has_idea = fpw_AFG_modernizing_economy
+				}
+				remove_ideas = fpw_AFG_modernizing_economy
+			}
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_focus_on_our_strengths
+		icon = GFX_goal_unknown
+		
+		x = 27
+		y = 10
+		mutually_exclusive = { focus = afg_modernization_efforts }
+		cost = 5
+		###prerequisite = { focus = afg_modernization_efforts }
+		available = {
+			has_idea = fpw_AFG_post_war_economy
+		}
+		
+		completion_reward = {	
+			remove_ideas = fpw_AFG_post_war_economy
+			add_ideas = fpw_AFG_agricultural_economy
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_raise_taxes
+		icon = GFX_goal_unknown
+		relative_position_id = afg_focus_on_our_strengths
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = afg_focus_on_our_strengths }
+		available = {
+		}
+		
+		completion_reward = {	
+			add_ideas = fpw_AFG_raised_taxes
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_support_farmers
+		icon = GFX_goal_unknown
+		relative_position_id = afg_focus_on_our_strengths
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = afg_raise_taxes }
+		available = {
+		}
+		
+		completion_reward = {	
+			add_ideas = fpw_AFG_farmers_supported
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_focus_on_agriculture
+		icon = GFX_goal_unknown
+		
+		x = 3
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_complete_economic_reforms }
+		relative_position_id = afg_complete_economic_reforms
+		available = {
+			has_completed_focus = afg_focus_on_our_strengths
+		}
+
+		mutually_exclusive = { focus = afg_dreams_of_a_modern_economy }
+		
+		completion_reward = {
+			add_dynamic_modifier = { modifier = fpw_AFG_afghan_agricultural_economy }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_grant_rights_to_farmers
+		icon = GFX_goal_unknown
+		
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_focus_on_agriculture }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = -0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_stricter_factory_regulations
+		icon = GFX_goal_unknown
+		
+		x = 4
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_focus_on_agriculture }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_factory_output_factor
+				value = 0.1
+			}
+			add_to_variable = {
+				var = afg_rention_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_efficiency_factor
+				value = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_domestic_suppliers
+		icon = GFX_goal_unknown
+		
+		x = 4
+		y = 2
+		cost = 10
+		prerequisite = { focus = afg_stricter_factory_regulations }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = -0.05
+			}
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_longer_working_hours
+		icon = GFX_goal_unknown
+		
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = afg_stricter_factory_regulations }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = -0.1
+			}
+			add_to_variable = {
+				var = afg_factory_output_factor
+				value = 0.1
+			}
+			add_to_variable = {
+				var = afg_rention_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_efficiency_factor
+				value = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_promote_the_local_market
+		icon = GFX_goal_unknown
+		
+		x = 3
+		y = 3
+		cost = 10
+		prerequisite = { focus = afg_domestic_suppliers focus = afg_decrease_health_care_funding }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_civ_construction_speed
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_mil_construction_speed
+				value = 0.05
+			}
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_mining_industry
+		icon = GFX_goal_unknown
+		
+		x = 3
+		y = 4
+		cost = 5
+		prerequisite = { focus = afg_promote_the_local_market }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+		
+		completion_reward = {
+			445 = {
+				add_resource = {
+		            type = steel
+		            amount = 9
+	            }
+			}
+			415 = {
+				add_resource = {
+		            type = steel
+		            amount = 12
+	            }
+			}
+			267 = {
+				add_resource = {
+		            type = steel
+		            amount = 24
+	            }
+				add_resource = {
+		            type = tungsten
+		            amount = 12
+	            }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_focus_on_military_production
+		icon = GFX_goal_unknown
+		
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_focus_on_agriculture }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = -0.05
+			}
+			add_to_variable = {
+				var = afg_mil_construction_speed
+				value = 0.15
+			}
+			random_owned_state = {
+				limit = { is_core_of = AFG }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = afg_decrease_health_care_funding
+		icon = GFX_goal_unknown
+			
+		x = 1
+		y = 2
+		cost = 10
+		prerequisite = { focus = afg_grant_rights_to_farmers }
+		prerequisite = { focus = afg_focus_on_military_production }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+			
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = -0.1
+			}
+			add_stability = -0.05
+		}
+		
+		ai_will_do = {
+		factor = 5
+		}
+	}
+	focus = {
+		id = afg_promote_cottage_industry
+		icon = GFX_goal_unknown
+			
+		x = 0
+		y = 4
+		cost = 10
+		prerequisite = { focus = afg_decrease_health_care_funding }
+		prerequisite = { focus = afg_promote_the_local_market }
+		relative_position_id = afg_focus_on_agriculture
+		available = {
+		}
+			
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_civ_construction_speed
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_mil_construction_speed
+				value = 0.05
+			}
+		}
+		
+		ai_will_do = {
+		factor = 5
+		}
+	}
+	focus = {
+		id = afg_dreams_of_a_modern_economy
+		icon = GFX_goal_unknown
+		
+		x = -3
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_complete_economic_reforms }
+		relative_position_id = afg_complete_economic_reforms
+		available = {
+		}
+		
+		mutually_exclusive = { focus = afg_focus_on_agriculture }
+
+		completion_reward = {
+			add_dynamic_modifier = { modifier = fpw_AFG_afghan_modernized_economy }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_fund_civillian_production
+		icon = GFX_goal_unknown
+		
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_dreams_of_a_modern_economy }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_to_variable = {
+				var = afg_civ_construction_speed
+				value = 0.1
+			}
+			add_to_variable = {
+				var = afg_construction_speed_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = 0.025
+			}
+			custom_effect_tooltip = afg_economic_tooltip
+		}		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_promote_economic_growth
+		icon = GFX_goal_unknown
+		
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_dreams_of_a_modern_economy }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_to_variable = {
+				var = afg_efficiency_factor
+				value = 0.1
+			}
+			add_to_variable = {
+				var = afg_rention_factor
+				value = 0.05
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+			custom_effect_tooltip = afg_economic_tooltip
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_build_more_factories
+		icon = GFX_goal_unknown
+		
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_dreams_of_a_modern_economy }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_to_variable = {
+				var = afg_construction_speed_factor
+				value = 0.1
+			}
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = 0.025
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+			custom_effect_tooltip = afg_economic_tooltip
+
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_state_sponsered_construction
+		icon = GFX_goal_unknown
+		
+		x = 2
+		y = 2
+		cost = 5
+		prerequisite = { focus = afg_build_more_factories }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_expand_kabul
+		icon = GFX_goal_unknown
+		
+		x = -1
+		y = 2
+		cost = 5
+		prerequisite = { focus = afg_dreams_of_a_modern_economy }
+		prerequisite = { focus = afg_promote_economic_growth }
+		prerequisite = { focus = afg_fund_civillian_production }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			267 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_expand_mining_industry
+		icon = GFX_goal_unknown
+		
+		x = -3
+		y = 3
+		cost = 5
+		prerequisite = { focus = afg_expand_kabul }
+		prerequisite = { focus = afg_establish_banking_systems }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			445 = {
+				add_resource = {
+		            type = steel
+		            amount = 9
+	            }
+			}
+			415 = {
+				add_resource = {
+		            type = steel
+		            amount = 12
+	            }
+			}
+			267 = {
+				add_resource = {
+		            type = steel
+		            amount = 24
+	            }
+				add_resource = {
+		            type = tungsten
+		            amount = 12
+	            }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_establish_banking_systems
+		icon = GFX_goal_unknown
+		
+		x = -4
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_dreams_of_a_modern_economy }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_AFG_afghan_banks
+
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_grant_workers_rights
+		icon = GFX_goal_unknown
+		
+		x = 1
+		y = 3
+		cost = 10
+		prerequisite = { focus = afg_build_more_factories }
+		prerequisite = { focus = afg_fund_civillian_production }
+		prerequisite = { focus = afg_expand_kabul }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_to_variable = {
+				var = afg_factory_output_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_mil_construction_speed
+				value = 0.05
+			}
+			custom_effect_tooltip = afg_economic_tooltip
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_modernized_economy
+		icon = GFX_goal_unknown
+		
+		x = -1
+		y = 4
+		cost = 10
+		prerequisite = { focus = afg_expand_mining_industry }
+		prerequisite = { focus = afg_grant_workers_rights }
+		prerequisite = { focus = afg_expand_kabul }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_factory_output_factor
+				value = 0.1
+			}
+			add_to_variable = {
+				var = afg_civ_construction_speed
+				value = 0.15
+			}
+			add_to_variable = {
+				var = afg_construction_speed_factor
+				value = 0.1
+			}
+			add_to_variable = {
+				var = afg_lack_of_resource_penatly_factor
+				value = -0.15
+			}
+			custom_effect_tooltip = afg_economic_tooltip
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
 
 	### CIVIL WAR TREE
 	focus = {
@@ -1910,7 +2785,6 @@
 		completion_reward = {
 			random_owned_state = {
 				limit = { is_core_of = AFG }
-				#prioritize = {}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -2009,5 +2883,7 @@
 			factor = 5
 		}
 	}
-	
+	}
 }
+
+	

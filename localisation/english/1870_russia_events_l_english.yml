@@ -219,6 +219,14 @@
  russia_fpw.47.d: "Should we admit our defeat against the baltics?"
  russia_fpw.48.d: "Should we admit our defeat against the caucasians?"
  
+ russia_fpw.49.t: "[FROM.GetName] Declares Independence!"
+ russia_fpw.49.d: "Our subject [FROM.GetName] has declared independence. How should we respond?"
+ russia_fpw.49.a: "Leave them be."
+ russia_fpw.49.b: "This means War!"
+ 
+ russia_fpw.50.t: "[SOV.GetName] Abandons Us!"
+ russia_fpw.50.d: ""
+ russia_fpw.50.a: "Great!"
  
  russia_fpw.1000.t: "Seeking Peace With [SOV.GetName]"
  russia_fpw.1000.d: "After capturing [195.GetName] and [219.GetName] we think it's time to demands peace."
