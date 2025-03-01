@@ -8,20 +8,14 @@ fpw_congo_conference = {
 	scripted_gui = fpw_congo_conference_scripted_gui
 
 	allowed = {
-		always = yes
+		is_debug = yes
 	}
 
 	visible = {
-		if = {
-			limit = {
-				is_debug = yes
-			}
-			always = yes
-		} else = {	
-			AND = {
-				has_global_flag = fpw_congo_conference
-				#is_in_array = { global.top_seven_prestige_array = ROOT }
-			}
+		AND = {
+			has_global_flag = fpw_congo_conference
+			is_debug = yes
+			#is_in_array = { global.top_seven_prestige_array = ROOT }
 		}
 	}
 }

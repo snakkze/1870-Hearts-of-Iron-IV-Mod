@@ -91,6 +91,7 @@ scripted_gui = {
         			}
                     colonize_state = yes
         		}
+                # stop colonize
                 else_if = {
                     limit = {
                         OR = {
@@ -101,14 +102,15 @@ scripted_gui = {
                             }
                         }
                     }
-                    ROOT = {
-                        remove_targeted_decision = {
-                            target = PREV
-                            decision = colonization_descision
-                        }
-                        clr_country_flag = is_colonizing
-					    add_to_variable = { THIS.colonists = 1 }
-                    }
+                    #ROOT = {
+                    #    remove_targeted_decision = {
+                    #        target = PREV
+                    #        decision = colonization_descision
+                    #    }
+                    #    clr_country_flag = is_colonizing
+					#    add_to_variable = { THIS.colonists = 1 }
+                    #}
+                    log = "Nope, not today"
                 }
             }
         }

@@ -102,100 +102,179 @@ fpw_colonization_category = {
 				
 				if = {
 					limit = {
-						any_neighbor_state = {
-							check_variable = { THIS.tribal = PREV.tribal }
-							has_state_flag = tribe_state
-							is_owned_by = TRB
-							is_coastal = yes
-							NOT = {
-								has_state_flag = is_colonizing
-							}
-						}
-					}
-					random_neighbor_state = {
-						limit = {
-							check_variable = { THIS.tribal = PREV.tribal }
-							has_state_flag = tribe_state
-							is_owned_by = TRB
-							is_coastal = yes
-							NOT = {
-								has_state_flag = is_colonizing
-							}
-						}
-						colonize_state = yes
-					}
-				} else_if = {
-					limit = {
-						any_neighbor_state = {
-							check_variable = { THIS.tribal = PREV.tribal }
-							has_state_flag = tribe_state
-							is_owned_by = TRB
-							is_coastal = no
-							NOT = {
-								has_state_flag = is_colonizing
-							}
-						}
-					}
-					random_neighbor_state = {
-						limit = {
-							check_variable = { THIS.tribal = PREV.tribal }
-							has_state_flag = tribe_state
-							is_owned_by = TRB
-							is_coastal = no
-						}
-						colonize_state = yes
-					}
-				} else_if = {
-					limit = {
-						ROOT = {
-							any_controlled_state = {
-								any_neighbor_state = {
-									check_variable = { THIS.tribal = PREVPREV.tribal }
-									has_state_flag = tribe_state
-									is_owned_by = TRB
-									is_coastal = no
-									NOT = {
-										has_state_flag = is_colonizing
-									}
-								}
-							}
-						}
-					}
-					ROOT = {
-						random_controlled_state = {
-							limit = {
-								check_variable = { THIS.tribal = PREVPREV.tribal }
-							}
-							random_neighbor_state = {
-								limit = {
-									check_variable = { THIS.tribal = PREVPREV.tribal }
-									has_state_flag = tribe_state	
-									is_owned_by = TRB
-									is_coastal = no
-								}
-								colonize_state = yes
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
 						any_state = {
+							# If new state of scape is the same region as the previously colonized
 							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
 							has_state_flag = tribe_state
 							is_owned_by = TRB
+							# Is not already colonized
 							NOT = {
 								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 3 # The Count of states is greater than 3
 							}
 						}
 					}
 					random_state = {
 						limit = {
+							# If new state of scape is the same region as the previously colonized
 							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
 							has_state_flag = tribe_state
 							is_owned_by = TRB
+							# Is not already colonized
 							NOT = {
 								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 3 # The Count of states is greater than 3
+							}
+						}
+						colonize_state = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_state = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 2 # The Count of states is 3
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 4 # The Count of states is 3
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 2 # The Count of states is 3
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 4 # The Count of states is 3
+							}
+						}
+						colonize_state = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_state = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 1 # The Count of states is 2
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 3 # The Count of states is 2
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 1 # The Count of states is 2
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 3 # The Count of states is 2
+							}
+						}
+						colonize_state = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_state = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 0 # The Count of states is 1
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 2 # The Count of states is 1
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 0 # The Count of states is 1
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 2 # The Count of states is 1
 							}
 						}
 						colonize_state = yes

@@ -10,7 +10,7 @@ fpw_congo_conference = {
 		cost = 0
 
 		available = {
-			always = yes
+			is_debug = yes
 		}
 		
 		visible = {
@@ -34,7 +34,7 @@ fpw_congo_conference = {
 		icon = fwp_franco_prussian_war_sided
 
 		activation = {
-			always = yes
+			is_debug = yes
 		}
 
 		is_good = yes
@@ -44,11 +44,14 @@ fpw_congo_conference = {
 		cost = 0
 
 		available = {
-			always = no
+			is_debug = yes
 		}
 		
 		visible = {
-			is_in_array = { global.congo_conference_members = THIS }
+			AND = {
+				is_in_array = { global.congo_conference_members = THIS }
+				is_debug = yes
+			}
 		}
 
 		complete_effect = {
@@ -69,12 +72,15 @@ fpw_congo_conference = {
 		}
 
 		activation = {
-			always = yes
+			is_debug = yes
 		}
 
 		available = {
-			NOT = {
-				ROOT = { has_country_flag = congo_voted }
+			AND = {
+				is_debug = yes
+				NOT = {
+					ROOT = { has_country_flag = congo_voted }
+				}
 			}
 		}
 
@@ -116,6 +122,7 @@ fpw_congo_conference = {
 
 		visible = {
 			AND = {
+				is_debug = yes
 				check_variable = { congo_round = 35 }
 				any_country = {
 					is_in_array = { global.congo_conference_members = THIS }
