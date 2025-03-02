@@ -16,8 +16,8 @@ guiTypes = {
 		buttonType = {
 			name = "integrate_button"
 			quadTextureSprite ="GFX_integrate_button"
-			#position = { x= 15 y = 60 }
-			position = { x= -150 y = 60 }
+			position = { x= 15 y = 60 }
+			#position = { x= -150 y = 60 }
 			pdx_tooltip = "fpw_integrate_button_tt"
 			pdx_tooltip_delayed = "fpw_colonize_integrate_long_tt"
 		}	

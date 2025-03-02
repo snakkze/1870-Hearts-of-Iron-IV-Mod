@@ -149,31 +149,29 @@ fpw_france_debts_category = {
 		complete_effect = {
 			every_state = {
 				limit = {
-					AND = {
-						is_owned_by = PRS
-						OR = {
-							state = 18
-							state = 971
-							if = {
-								limit = {
-									PRS = {
-										NOT = {
-											has_country_flag = fpw_PRS_took_alsace_lorraine_and_belfort
-										}
+					is_owned_by = PRS
+					OR = {
+						state = 18
+						state = 971
+						if = {
+							limit = {
+								PRS = {
+									NOT = {
+										has_country_flag = fpw_PRS_took_alsace_lorraine_and_belfort
 									}
 								}
-								state = 975
 							}
-							if = {
-								limit = {
-									PRS = {
-										NOT = {
-											has_country_flag = fpw_PRS_took_nanzig_epinal
-										}
+							state = 975
+						}
+						if = {
+							limit = {
+								PRS = {
+									NOT = {
+										has_country_flag = fpw_PRS_took_nanzig_epinal
 									}
 								}
-								state = 977
 							}
+							state = 977
 						}
 					}
 				}
@@ -226,20 +224,18 @@ fpw_france_debts_category = {
 		complete_effect = {
 			every_state = {
 				limit = {
-					AND = {
-						is_owned_by = PRS
-						OR = {
-							state = 972
-							if = {
-								limit = {
-									PRS = {
-										NOT = {
-											has_country_flag = fpw_PRS_took_nanzig_epinal
-										}
+					is_owned_by = PRS
+					OR = {
+						state = 972
+						if = {
+							limit = {
+								PRS = {
+									NOT = {
+										has_country_flag = fpw_PRS_took_nanzig_epinal
 									}
 								}
-								state = 976
 							}
+							state = 976
 						}
 					}
 				}
