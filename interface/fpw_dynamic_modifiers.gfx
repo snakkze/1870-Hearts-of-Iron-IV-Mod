@@ -1,0 +1,10 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_modifiers_fpw_tribal_state"
+		texturefile = "gfx/interface/state_modifiers/modifiers_fpw_tribal_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_modifiers_fpw_unwanted_colonization"
+		texturefile = "gfx/interface/state_modifiers/modifiers_fpw_unwanted_colonization.dds"
+	}
+}

@@ -50,6 +50,7 @@ scripted_gui = {
 				for_each_scope_loop = {
 					array = temp_colonial_region
 					add_to_temp_variable = { total_admin_cost = THIS.admin_cost }
+                    clr_state_flag = can_be_integrated
 				}	
 
                 set_temp_variable = { total_admin_cost_percentage = total_admin_cost }
@@ -171,6 +172,20 @@ scripted_gui = {
         }
 
         ai_weights = {
+            integrate_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        AND = {
+                            ROOT = {
+                                has_political_power > 25
+                            }
+                            has_state_flag = can_be_integrated
+                        }
+                        add = 4000
+                    }
+                }
+            }
             colonize_button_click = {
                 ai_will_do = {
                     base = 0
@@ -315,6 +330,171 @@ scripted_gui = {
                             }
                             ROOT = {
                                 original_tag = FRA
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            OR = {
+                                check_variable = { tribal = 893 }
+                                check_variable = { tribal = 894 }
+                            }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                AND = {
+                                    original_tag = PRS
+                                    has_completed_focus = PRS_luederitz_expedition
+                                }
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            all_state = {
+                                check_variable = { tribal = 894 }
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            check_variable = { tribal = 541 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                AND = {
+                                    original_tag = PRS
+                                    has_completed_focus = PRS_luederitz_expedition
+                                }
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            all_state = {
+                                any_neighbor_state = {
+                                    check_variable = { tribal = 1024 }
+                                }
+                                check_variable = { tribal = 514 }
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            check_variable = { tribal = 1024 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                AND = {
+                                    original_tag = ARG
+                                    has_completed_focus = PRS_luederitz_expedition
+                                }
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            all_state = {
+                                check_variable = { tribal = 511 }
+                                has_state_flag = is_colonized_by_@ROOT
+                            }
+                            check_variable = { tribal = 512 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                AND = {
+                                    original_tag = ARG
+                                    has_completed_focus = PRS_luederitz_expedition
+                                }
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            OR = {
+                                check_variable = { tribal = 2716 }
+                                check_variable = { tribal = 737 }
+                                check_variable = { tribal = 634 }
+                            }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                AND = {
+                                    original_tag = PRS
+                                    has_completed_focus = PRS_new_guinea_expedition
+                                }
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 523 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                original_tag = ENG
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 627 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                original_tag = PHI
+                            }
+                        }
+                        add = 4000
+                    }
+                    modifier = {
+                        AND = {
+                            check_variable = { tribal = 669 }
+                            NOT = {
+                                has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
+                            }
+                            ROOT = {
+                                original_tag = INS
                             }
                         }
                         add = 4000

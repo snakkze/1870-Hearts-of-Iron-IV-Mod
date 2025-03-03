@@ -2,13 +2,37 @@ fpw_colonial_debuff = {
 	enable = { always = yes }
 	icon = GFX_modifier_colonization_debuff
 	
-	industrial_capacity_factory = ROOT.debuff
+	political_power_factor = ROOT.debuff
 	custom_modifier_tooltip = fpw_colonize_debuff_modifier_tt
+}
+
+fpw_tribal_state = {
+	enable = { always = yes }
+	icon = GFX_modifiers_fpw_tribal_state
+	remove_trigger = {
+		# has infrastructure build it in like railways etc
+	}
+	local_building_slots_factor = -0.8
+	local_factories = -0.3
+	local_resources_factor = -0.4
+	local_supply_impact_factor = 0.2
+}
+
+fpw_unwanted_colonization = {
+	enable = { always = yes }
+	icon = GFX_modifiers_fpw_unwanted_colonization
+	remove_trigger = {
+		has_state_flag = is_integrated_by_@ROOT
+	}
+	resistance_target = 0.5
+	resistance_growth = 0.3
+	no_compliance_gain = 1
+	local_supply_impact_factor = 0.1
 }
 
 fpw_victors_of_the_crimean_war = {
 	enable = { always = yes }
-	icon = victor_of_crimean_war
+	icon = GFX_idea_wip
 	
 	custom_modifier_tooltip = prestige_modifier_crimean_victors
 }
@@ -21,7 +45,7 @@ fpw_underdeveloped_industry = {
 }
 
 fpw_outdated_military = {
-    icon = generic_army_problems
+    icon = GFX_idea_generic_army_problems
     enable = { always = yes }
     
     breakthrough_factor = -0.2

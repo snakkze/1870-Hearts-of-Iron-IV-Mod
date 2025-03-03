@@ -51,29 +51,29 @@ fpw_colonization_category = {
 						}
 					}
 					# Calculate the debuff amount
-					set_variable = { ROOT.temp_debuff_population = state_population_k }
-					divide_variable = { ROOT.temp_debuff_population = 25 }
+					set_temp_variable = { temp_debuff_population = state_population_k }
+					divide_temp_variable = { temp_debuff_population = 25 }
 
 					# For whatever reason dividing trough 100 directly doesnt work but dividing two times by 10 does?
-					divide_variable = { ROOT.temp_debuff_population = 10 }
-					divide_variable = { ROOT.temp_debuff_population = 10 }
+					divide_temp_variable = { temp_debuff_population = 10 }
+					divide_temp_variable = { temp_debuff_population = 10 }
 	
 					# Shouldnt be too high thats why a max of 5% per tile
-					clamp_variable = {
-						var = ROOT.temp_debuff_population
+					clamp_temp_variable = {
+						var = temp_debuff_population
 						max = 5
 					}
 	
-					set_variable = { THIS.admin_cost = ROOT.temp_debuff_population }
+					set_variable = { THIS.admin_cost = temp_debuff_population }
 
 					# Sum of all debuffs
 					# ROOT.debuff is a variable we use to get the negative value to use in the modifier
 					subtract_from_variable = { ROOT.debuff = THIS.admin_cost }
 
-					# I feel very stupid doing it this way but this causes the margin of error to go away from substractic, im sure theres a better method but idgaf + this should be temp variable 
-					multiply_variable = { ROOT.temp_debuff_population = 10 }
-					multiply_variable = { ROOT.temp_debuff_population = 10 }
-					add_to_variable = { ROOT.debuff_tt = ROOT.temp_debuff_population }
+					# I feel very stupid doing it this way but this causes the margin of error to go away from substractic, im sure theres a better method but idgaf
+					multiply_temp_variable = { temp_debuff_population = 10 }
+					multiply_temp_variable = { temp_debuff_population = 10 }
+					add_to_variable = { ROOT.debuff_tt = temp_debuff_population }
 	
 					# Could cause problems maybe maybe not idk i wont try out
 					#clamp_variable = {
@@ -84,6 +84,10 @@ fpw_colonization_category = {
 
 				transfer_state_to = ROOT
 				clr_state_flag = tribe_state
+
+				add_dynamic_modifier = {
+					modifier = fpw_unwanted_colonization
+				}
 
 				ROOT = {
 					# remove
@@ -350,6 +354,15 @@ fpw_colonization_category = {
 						}
 						ROOT = { remove_dynamic_modifier = { modifier = fpw_colonial_debuff } }
 					} else = { ROOT = { force_update_dynamic_modifier = yes } }
+
+					every_state = {
+						limit = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							# If all the states of the regions can be integrated and is controlled by ROOT
+							is_controlled_by = ROOT
+						}
+						set_state_flag = is_integrated_by_@ROOT
+					}
 				}
 			}
 		}

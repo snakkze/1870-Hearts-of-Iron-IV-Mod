@@ -34,12 +34,12 @@ FRA_defend_franco_prussian_border = {
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = BEL"
+		id = BEL
 		value = 50
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = LUX"
+		id = LUX
 		value = 50
 	}
 	ai_strategy = {

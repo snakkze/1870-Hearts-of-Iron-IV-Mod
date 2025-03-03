@@ -184,6 +184,9 @@ on_actions = {
 						is_owned_by = TRB
 					}
 					set_state_flag = tribe_state
+					add_dynamic_modifier = {
+						modifier = fpw_tribal_state
+					}
 				}
 			}
 		}

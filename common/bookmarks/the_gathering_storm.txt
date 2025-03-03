@@ -105,8 +105,6 @@ bookmarks = {
             }
         }
 
-
-
         "ITA"={
 		    minor = yes
             history = "ITA_1866_DESC"
@@ -121,6 +119,37 @@ bookmarks = {
                 ITA_start
                 ITA_conservative_politics
                 ITA_the_war_with_austria
+            }
+        }
+
+        "TUR" = {
+		    minor = yes
+            history = "TUR_1866_DESC"
+            ideology = democratic
+            available = { always = yes }
+            ideas = {
+                fpw_TUR_multi_ethnic_state
+                fpw_TUR_dated_army
+                fpw_TUR_agrarian_economy
+            }
+            focuses = {
+            }
+        }
+
+        "JAP"={
+		    minor = yes
+            history = "JAP_1866_DESC"
+            ideology = democratic
+            available = { always = yes }
+            ideas = {
+                jap_unequal_treaties
+                jap_feudal_fragmentation
+                jap_isolationist_sentiment
+            }
+            focuses = {
+                JAP_form_satcho_alliance
+                JAP_proclaim_emperor_meijis_restoration_to_full_power
+                JAP_samurai_spirit
             }
         }
 
