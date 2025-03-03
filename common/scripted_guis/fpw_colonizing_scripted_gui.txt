@@ -33,19 +33,69 @@ scripted_gui = {
             integrate_button_click = {
                 clr_state_flag = is_colonized_by_@ROOT
                 add_claim_by = ROOT 
+                
+                set_temp_variable = { total_admin_cost = 0 }
 
-                add_to_variable = { ROOT.debuff = THIS.admin_cost }
+                # Put every state of region into one array to loop trough
+                every_state = {
+					limit = {
+						check_variable = { THIS.tribal = PREV.tribal }
+						# If all the states of the regions can be integrated and is controlled by ROOT
+						has_state_flag = can_be_integrated
+						is_controlled_by = ROOT
+					}
+					add_to_temp_array = { temp_colonial_region = THIS }
+				}
+	
+				for_each_scope_loop = {
+					array = temp_colonial_region
+					add_to_temp_variable = { total_admin_cost = THIS.admin_cost }
+				}	
+
+                set_temp_variable = { total_admin_cost_percentage = total_admin_cost }
+                multiply_temp_variable = { total_admin_cost = 100 }
+
+                every_state = {
+					limit = {
+						check_variable = { THIS.tribal = PREV.tribal }
+					}
+                    set_variable = { THIS.total_admin_cost_percentage = total_admin_cost_percentage }
+                    set_variable = { THIS.total_admin_cost = total_admin_cost }
+				}
+
+                # y = (-0.05 * x * x) + (6.67 * x) + 22
+                subtract_from_temp_variable = { temp_x1 = 0.05 }
+                multiply_temp_variable = { temp_x1 = temp_colonial_region^num }
+                multiply_temp_variable = { temp_x1 = temp_colonial_region^num }
+
+                set_temp_variable = { temp_x2 = 6.67 }
+                multiply_temp_variable = { temp_x2 = temp_colonial_region^num }
+
+                set_variable = { ROOT.integration_time = 22 }
+                add_to_variable = { ROOT.integration_time = temp_x1 }
+                add_to_variable = { ROOT.integration_time = temp_x2 }
                 
                 if = {
                     limit = {
-                        check_variable = { ROOT.debuff > 0 }
+                        is_debug = yes
                     }
-                    clamp_variable = {
-                        var = ROOT.debuff
-                        max = 0
+                    set_variable = { ROOT.integration_time = 1 }
+                }
+
+                random_state = {
+                    limit = {
+                        check_variable = { THIS.tribal = PREV.tribal }
                     }
-                    ROOT = { remove_dynamic_modifier = { modifier = fpw_colonial_debuff } }
-                } else = { ROOT = { force_update_dynamic_modifier = yes } }
+                    ROOT = {
+                        activate_targeted_decision = {
+                            target = PREV
+                            decision = integration_descision
+                        }
+                        add_political_power = -25
+                    }
+                }
+
+                #log = "Total Administration Cost: [?total_admin_cost]"
             }
 
             colonize_button_click = {
@@ -125,10 +175,24 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
+                        has_game_rule = {
+                            rule = fpw_rule_ai_colonize_options
+                            option = FPW_RULE_COLONIZE_ALL
+                        }
+                        add = 4000
+                    }
+                }
+                ai_will_do = {
+                    base = 0
+                    modifier = {
                         AND = {
                             check_variable = { tribal = 269 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             ROOT = {
                                 original_tag = ENG
@@ -141,6 +205,10 @@ scripted_gui = {
                             check_variable = { tribal = 1019 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             ROOT = {
                                 original_tag = LIB
@@ -153,6 +221,10 @@ scripted_gui = {
                             check_variable = { tribal = 891 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             ROOT = {
                                 original_tag = POR
@@ -165,6 +237,10 @@ scripted_gui = {
                             check_variable = { tribal = 514 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             ROOT = {
                                 original_tag = FRA
@@ -177,6 +253,10 @@ scripted_gui = {
                             check_variable = { tribal = 1024 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             all_state = {
                                 check_variable = { tribal = 514 }
@@ -196,6 +276,10 @@ scripted_gui = {
                             check_variable = { tribal = 1013 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             ROOT = {
                                 original_tag = SPR
@@ -208,6 +292,10 @@ scripted_gui = {
                             check_variable = { tribal = 511 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             ROOT = {
                                 original_tag = ARG
@@ -220,6 +308,10 @@ scripted_gui = {
                             check_variable = { tribal = 297 }
                             NOT = {
                                 has_state_flag = is_colonized_by_@ROOT
+                                has_game_rule = {
+                                    rule = fpw_rule_ai_colonize_options
+                                    option = FPW_RULE_COLONIZE_NO
+                                }
                             }
                             ROOT = {
                                 original_tag = FRA

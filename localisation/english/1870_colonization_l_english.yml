@@ -1,7 +1,8 @@
 ﻿l_english:
  fpw_integrate_button_tt:0 "Integrate §Y[?This.GetName]§!."
  #25 pp may be changed to differ between the states. 
- fpw_colonize_integrate_long_tt:0 "Integrating the region §Y[?This.GetName]§! will cost you §Y25 Political Power§! Integrating will remove the §YMaintainment Cost§! of the region as well as other negative modifiers you might have gained."
+ fpw_colonize_integrate_long_tt:0 "Integrating the region §Y[?This.GetName]§! will cost you §Y25 Political Power§!. Integrating will remove the §YMaintainment Cost§! of the region as well as other negative modifiers you might have gained."
+ fpw_colonize_integrate_decision_tt:0 "§YMaintainment Cost§!:\nRemoves Maintenance Cost for §Y[?FROM.GetName]§! which is costing you §R[?FROM.total_admin_cost|0..2]%§! of your Factory Outputs!"
  fpw_colonize_button_tt:0 "[fpw_colonize_button_tt_loc]"
  fpw_button_start_colonize_localization_key:0 "Colonize §Y[?This.GetName]§!."
  #fpw_button_stop_colonize_localization_key:0 "Stop colonizing §Y[?This.GetName]§!."

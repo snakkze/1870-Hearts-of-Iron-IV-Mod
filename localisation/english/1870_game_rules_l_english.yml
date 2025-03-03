@@ -29,6 +29,14 @@
  FPW_RULE_OPTION_SCRIPTED_PEACE_DISABLED:0 "Disabled"
  FPW_RULE_OPTION_SCRIPTED_PEACE_DISABLED_desc:0 "Scripted peace deals will be disabled for all nations when triggered."
 
+ FPW_RULE_COLONIZE:0 "AI Colonization"
+ FPW_RULE_COLONIZE_NO:0 "Disabled"
+ FPW_RULE_COLONIZE_NO_desc:0 "AI can't colonize anything. The world is up to you."
+ FPW_RULE_COLONIZE_HISTORICAL:0 "Historical Colonization"
+ FPW_RULE_COLONIZE_HISTORICAL_desc:0 "AI will colonize historical regions, won't cause lag or border gore."
+ FPW_RULE_COLONIZE_ALL:0 "Enabled"
+ FPW_RULE_COLONIZE_ALL_desc:0 "AI can and will colonize whatever they want. Causes lag and border gore, not recommended!"
+
 
  PRS_AI_BEHAVIOR:0 "@PRS Prussia"
  RULE_OPTION_MONARCHISM_PRS:0 "Monarchist - Wilhelm's Germany"

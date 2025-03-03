@@ -104,6 +104,29 @@ fpw_rule_subject_colors_options = {
 	}
 }
 
+fpw_rule_ai_colonize_options = {
+	name = "FPW_RULE_COLONIZE"
+	group = "FPW_RULE_GROUP_MOD_CUSTOMIZATION"
+	default = {
+		name = "FPW_RULE_COLONIZE_HISTORICAL"
+		text = FPW_RULE_COLONIZE_HISTORICAL
+		desc = FPW_RULE_COLONIZE_HISTORICAL_desc
+		allow_achievements = yes
+	}
+	option = {
+		name = "FPW_RULE_COLONIZE_NO"
+		text = FPW_RULE_COLONIZE_NO
+		desc = FPW_RULE_COLONIZE_NO_desc
+		allow_achievements = yes
+	}
+	option = {
+		name = "FPW_RULE_COLONIZE_ALL"
+		text = FPW_RULE_COLONIZE_ALL
+		desc = FPW_RULE_COLONIZE_ALL_desc
+		allow_achievements = yes
+	}
+}
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
