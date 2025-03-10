@@ -26,6 +26,10 @@ ideologies = {
 			usa_democrat = {
 				can_be_randomly_selected = no
 			}
+			afghan_nationalist_party = {
+				can_be_randomly_selected = no
+				color = { 0 0 139 }
+			}
 		}
 
 		dynamic_faction_names = {

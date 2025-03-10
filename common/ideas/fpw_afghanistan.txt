@@ -1028,6 +1028,85 @@ ideas = {
 		}
 
 	}
+	country = {
+		fpw_AFG_corrupt_takeover = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_nationalism_embraced = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = 0.25
+				consumer_goods_factor = 0.1
+				war_support_factor = 0.1
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription = 0.05
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_raze_the_ground_and_scorcth_the_earth = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.25
+				war_support_factor = 0.1
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_the_means_to_wage_war = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}
+
+	}
+	
 
 }
 

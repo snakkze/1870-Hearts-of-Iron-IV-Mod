@@ -33,7 +33,7 @@ country_event = {
 		name = "Be Patient"
 		ai_chance = { factor = 50}
 		add_ideas = fpw_AFG_careful_planning
-		stability_factor_factor = 0.1
+		stability_factor = 0.1
 	}
 }
 country_event = {
@@ -418,10 +418,11 @@ country_event = {
 
 	option = {
 		name = "Punishment must be served"
-		create_war_goal = {
-            type = annex_everything
-            target = PER
-        }
+		create_wargoal = {
+			type = take_state_focus
+			target = PER
+			generator = { 410 414 416 }
+		}
 	}
 }
 country_event = {

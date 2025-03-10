@@ -40,4 +40,14 @@ fpw_AFG_afghan_agricultural_economy = {
 	
 
 }
+fpw_AFG_radical_elements_incouraged = {
+	enable = { always = yes }
+	icon = 
+
+	stability_factor = afg_stability_factor
+	army_attack_factor = afg_army_attack
+	army_org_factor = afg_org
+	consumer_goods_factor = afg_radical_consumer_goods
+	industrial_capacity_factory = afg_radical_factory_output
+}
 
