@@ -229,7 +229,25 @@ ideas = {
 		}
 	}
 	country = {
-		fpw_AFG_afghan_banks = {
+		fpw_AFG_afghan_banking_systems = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+	country = {
+		fpw_AFG_afghan_national_bank = {
 			allowed = {
 				always = no
 			}
@@ -240,9 +258,8 @@ ideas = {
 			picture = generic_economic_crisis
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = -0.15
 				stability_factor = 0.05
-				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 	}
@@ -1102,6 +1119,81 @@ ideas = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				army_org_factor = 0.1
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_tax_breaks_granted = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_complete_support = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_expanded_factory_rights = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_pro_womens_rights = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = 0.15
+				research_speed_factor = 0.1
 			}
 		}
 

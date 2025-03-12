@@ -612,3 +612,46 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = fpw_afghan.33
+	title = afghan_fpw.33.t
+	desc = afghan_fpw.33.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "To India"
+		RAJ = {
+			country_event = fpw_afghan.34
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.34
+	title = afghan_fpw.34.t
+	desc = afghan_fpw.34.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "The people have spoken..."
+		AFG = {
+
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.35
+	title = afghan_fpw.35.t
+	desc = afghan_fpw.35.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Brilliant"
+		transfer_state = 444
+	}
+}
