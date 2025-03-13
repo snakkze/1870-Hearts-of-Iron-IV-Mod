@@ -1210,6 +1210,12 @@ focus_tree = {
 		completion_reward = {
 			# North Germany will be added as a cosmetic tag
 			set_cosmetic_tag = GER_north_germany
+			hidden_effect = {
+				news_event = {
+					hours = 6
+					id = news_fpw.11
+				}
+			}
 		}
 	}
 
@@ -1395,7 +1401,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			FRA = { country_event = { id = france_fpw.1 hours = 2 } }
+			hidden_effect = {
+				news_event = {
+					hours = 6
+					id = news_fpw.12
+				}
+			}
+			FRA = { country_event = { id = france_fpw.1 hours = 6 } }
 		}
 	}
 

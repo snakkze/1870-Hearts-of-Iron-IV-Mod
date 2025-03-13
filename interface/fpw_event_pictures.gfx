@@ -30,4 +30,20 @@ spriteTypes = {
 		name = "GFX_fpw_russell_resigns"
 		texturefile = "gfx/event_pictures/fpw_russell_resigns.dds"
 	}
+
+	##################
+	### NEWSPAPERS ###
+	##################
+	spriteType = {
+		name = "GFX_news_fpw_austro_prussian_war"
+		texturefile = "gfx/news_pictures/austro_prussian_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_fpw_north_germany"
+		texturefile = "gfx/news_pictures/north_german_unification.dds"
+	}
+	spriteType = {
+		name = "GFX_news_fpw_ems_dispatch"
+		texturefile = "gfx/news_pictures/ems_dispatch.dds"
+	}
 }

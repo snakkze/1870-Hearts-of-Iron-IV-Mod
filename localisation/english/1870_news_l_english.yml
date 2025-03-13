@@ -1,9 +1,9 @@
 ﻿l_english:
-  news_fpw.1.t:0 "Austro-Prussian Escalations!"
-  news_fpw.1.d:0 ""
-  news_fpw.1.a:0 "Will the Germans finally unite?"
-  news_fpw.1.b:0 "It's time to show our Dominance!"
-  news_fpw.1.c:0 "We won't accept this!"
+  news_fpw.1.t:0 "Crisis in Germany!"
+  news_fpw.1.d:0 "Tensions between [PRS.GetNameDef] and [AUS.GetNameDef] have reached a breaking point following the crisis over Holstein. A last attempt at diplomacy in Frankfurt, where the German states convened to resolve the dispute, ended in failure. The assembly voted 16 to 9 in favor of allowing [AUS.GetNameDef] to mobilize against [PRS.GetNameDef], citing Prussias unilateral seizure of Holstein as a violation of the Gastein Convention and an attack on the sovereignty of the Confederation. With Austrian troops now gathering along the Bohemian border and Prussia refusing to back down, war seems inevitable."
+  news_fpw.1.a:0 "Germany stands at the brink."
+  news_fpw.1.b:0 "Prussia must unite Germany!"
+  news_fpw.1.c:0 "Austria will defend its rightful place!"
   
   news_fpw.2.t:0 "The [FRA.GetName] has collapsed"
   news_fpw.2.d:0 "Following the recent events in the Franco-Prussian War, the [FRA.GetAdjective] Emperor Napoleon III has been captured in Sedan! When this message reached the population of France, the Republicans have called out the Third French Republic. Will this end the horrors of war in France?"
@@ -19,4 +19,17 @@
 
   news_fpw.4.t:0 "Luxembourg Crisis"
   news_fpw.4.d:0 "War looms after [FRA.GetNameDef] attempts to buy [LUX.GetNameDef]. The tension arises as [PRS.GetNameDef] tries to intervene in the purchase of the small duchy of Luxembourg."
-  news_fpw.4.a:0 "Let’s see where this is going"
+  news_fpw.4.a:0 "Let's see where this is going"
+
+  news_fpw.11.t:0 "[PRS.GetNameDefCap] Unites Northern Germany!"
+  news_fpw.11.d:0 "With Austria's influence pushed out of German affairs and [PRS.GetLeader] at the helm, the dream of a Prussian-led Germany seems closer than ever. Meanwhile, southern German states remain independent but closely watch these developments, will they be next to join this new German nation?"
+  news_fpw.11.a:0 "A new Germany rises!"
+  news_fpw.11.b:0 "Prussian dominance is complete."
+  news_fpw.11.c:0 "Dark days for Austria..."
+  news_fpw.11.e:0 "Dark days for Europe..."
+
+  news_fpw.12.t:0 "France Humiliated After Ems Incident?"
+  news_fpw.12.d:0 "A diplomatic exchange in Bad Ems has escalated into crisis after Prussia published a report on a tense meeting between King Wilhelm I and French ambassador Count Benedetti. According to Prussia, Benedetti repeatedly pressed the King to renounce any Hohenzollern claim to the Spanish throne, but the King refused to make binding commitments. Chancellor [PRS.GetLeader] later released an edited version of the exchange, stating it \"revealed the pressure France attempted to exert on Prussia.\" In Paris, [FRA.GetLeader]'s government saw it as a calculated insult, fueling outrage. With tensions rising, many fear this could push France and Prussia to war."
+  news_fpw.12.a:0 "Is war coming?"
+  news_fpw.12.b:0 "Let's see how France reacts."
+  news_fpw.12.c:0 "Damn Prussian liars!"

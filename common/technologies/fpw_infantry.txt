@@ -412,6 +412,81 @@ technologies = {
 		}
 	}
 
+	fpw_supply_waggon = {
+		enable_equipments = {
+			fpw_supply_waggon_equipment_0
+		}
+
+		research_cost = 1.5
+		start_year = 1860
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 3 y = -1 }
+		}
+
+		path = {
+			leads_to_tech = fpw_improved_supply_waggon
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cavalry
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				date > "1866.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1867.1.1"
+			}
+			
+			modifier = {
+				factor = 6
+				date > "1868.1.1"
+			}
+		}
+	}
+
+	fpw_improved_supply_waggon = {
+		enable_equipments = {
+			fpw_supply_waggon_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 1864
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 3 y = @1864 }
+		}
+		
+		categories = {
+			cavalry
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				date > "1868.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1869.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1870.1.1"
+			}
+		}
+	}
+
 	fpw_basic_train = {
 		enable_equipments = {
 			train_equipment_1
@@ -421,7 +496,7 @@ technologies = {
 		start_year = 1860
 		folder = {
 			name = fpw_infantry_folder
-			position = { x = 4 y = -1 }
+			position = { x = 3 y = -1 }
 		}
 
 		path = {
@@ -466,7 +541,7 @@ technologies = {
 		start_year = 1866
 		folder = {
 			name = fpw_infantry_folder
-			position = { x = 4 y = @1866 }
+			position = { x = 3 y = @1866 }
 		}
 		
 		categories = {
@@ -482,17 +557,17 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.2
-				date > "1940.1.1"
+				date > "1868.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1941.1.1"
+				date > "1869.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1942.1.1"
+				date > "1870.1.1"
 			}
 		}
 	}

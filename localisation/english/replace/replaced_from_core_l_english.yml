@@ -1,0 +1,18 @@
+﻿l_english:
+  AIRVIEW_DETAILS_CHANNEL_10:3 "Our wagons lost: $VAL|R1$"
+ AIRVIEW_DETAILS_CHANNEL_22:0 "Enemy wagons lost: $VAL|G1$"
+ SUPPLY_TRUCKS:0 "Supply Wagons"
+ SUPPLY_TRUCKS_DESC:2 "§YSupply Trucks§!\nCurrent Supply Wagons Usage: $CURRENT_USAGE|H$\n"
+ SUPPLY_TRUCKS_DESC_DETAILED:1 "#TODO Supply Wagons are used for delivering supply from supply hubs to armies."
+ TRUCKS:0 "Supply Wagons"
+ TRUCKS_COLON:0 "Supply Wagons:"
+ SUPPLY_NODE_TRUCK_TOOLTIP:0 "§HSupply Wagons§!\n  $NEEDED$: $NUM_NEEDED|H$\n  $SATISFIED$: $RATIO$"
+ SUPPLY_USED_TRUCKS:0 "Using §H$ACTUAL|.0$§! / §H$WANTED|.0$§! Supply Wagons £unit_motorized_icon_small£"
+ SUPPLY_NODE_MOTORIZATION_PRIORITY:1 "§HMobilization Level§!\nSupply Hub Mobilization uses Supply Wagons from the Stockpile, and extends the Hub's supply range and the amount of supply provided to provinces.\n§GClick§! to cycle through priorities."
+
+
+
+
+
+
+

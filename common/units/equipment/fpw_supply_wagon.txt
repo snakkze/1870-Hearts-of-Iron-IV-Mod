@@ -1,0 +1,52 @@
+equipments = {
+
+	fpw_supply_waggon_equipment = {
+		year = 1860
+
+		is_archetype = yes
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		type = {
+			infantry
+			cavalry
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+
+		#Space taken in convoy
+		lend_lease_cost = 3
+
+		resources = {
+			wood = 1
+			steel = 1
+		}
+		
+		fuel_consumption = 0
+
+		maximum_speed = 8
+		reliability = 0.65
+		
+		build_cost_ic = 2.5
+		supply_truck = yes
+	}
+
+	fpw_supply_waggon_equipment_0 = {
+		year = 1860
+
+		archetype = fpw_supply_waggon_equipment
+		priority = 30	
+	}
+
+	fpw_supply_waggon_equipment_1 = {
+		year = 1862
+
+		archetype = fpw_supply_waggon_equipment
+		parent = fpw_supply_waggon_equipment_0
+		priority = 30	
+
+		maximum_speed = 10
+		reliability = 0.8
+	}
+}

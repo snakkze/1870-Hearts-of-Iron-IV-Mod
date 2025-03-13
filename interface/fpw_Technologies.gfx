@@ -25,8 +25,17 @@ spriteTypes = {
 
 
 	### generic equipment archetypes ###
-	# trains #
+	# supply waggons #
+	SpriteType = {
+		name = "GFX_fpw_supply_waggon_medium"
+		texturefile = "gfx/interface/technologies/supply_waggons/fpw_supply_waggon_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_fpw_improved_supply_waggon_medium"
+		texturefile = "gfx/interface/technologies/supply_waggons/fpw_supply_waggon_1.dds"
+	}
 
+	# trains #
 	SpriteType = {
 		name = "GFX_fpw_basic_train_medium"
 		texturefile = "gfx/interface/technologies/train_equipment_1.dds"

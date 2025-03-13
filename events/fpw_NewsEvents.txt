@@ -5,14 +5,9 @@ news_event = {
 	id = news_fpw.1
 	title = news_fpw.1.t
 	desc = news_fpw.1.d
-	picture = GFX_report_event_total_war
+	picture = GFX_news_fpw_austro_prussian_war
 
 	is_triggered_only = yes
-	
-	trigger = {			
-		has_global_flag = austro_prussian_war_escalation_flag		
-	}
-
 
 	option = {
 		name = news_fpw.1.a
@@ -295,6 +290,90 @@ news_event = {
 			NOT = {
 				original_tag = ENG
 			}
+		}
+	}
+}
+
+# north german unification
+news_event = {
+	id = news_fpw.11
+	title = news_fpw.11.t
+	desc = news_fpw.11.d
+	picture = GFX_news_fpw_north_germany
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.11.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = AUS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.11.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.11.c
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	option = {
+		name = news_fpw.11.e
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}
+
+# north german unification
+news_event = {
+	id = news_fpw.12
+	title = news_fpw.12.t
+	desc = news_fpw.12.d
+	picture = GFX_news_fpw_ems_dispatch
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.12.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.12.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.12.c
+		trigger = {
+			original_tag = FRA
 		}
 	}
 }

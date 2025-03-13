@@ -81,10 +81,10 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 
-			# Supplies
+			# Trains & Supplies
 			instantTextBoxType = {
-				name = "infantry_subtitle_motorized"
-				position = { x = 30 y = 500 }
+				name = "infantry_subtitle_trains"
+				position = { x = 30 y = 425 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = { x = 0 y = 0}
@@ -218,8 +218,16 @@ guiTypes = {
 		}
 
 		gridboxtype = {
-			name = "fpw_basic_train_tree"
+			name = "fpw_supply_waggon_tree"
 			position = { x = 160 y = 325 }
+			slotsize = { width = 70 height = 70 }
+			format = "LEFT"
+
+		}
+
+		gridboxtype = {
+			name = "fpw_basic_train_tree"
+			position = { x = 160 y = 440 }
 			slotsize = { width = 70 height = 70 }
 			format = "LEFT"
 
