@@ -247,6 +247,62 @@ ideas = {
 		}
 	}
 	country = {
+		fpw_rights_of_man = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_social_welfare_fund_ns
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+	country = {
+		fpw_the_afghan_constitution = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				cic_construction_boost = 0.1
+			}
+		}
+	}
+	country = {
+		fpw_pax_afghanistan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_growing_nationalism_modifier
+
+			modifier = {
+				consumer_goods_factor = -0.25
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+	}
+	country = {
 		fpw_AFG_afghan_national_bank = {
 			allowed = {
 				always = no

@@ -638,7 +638,7 @@ country_event = {
 	option = {
 		name = "The people have spoken..."
 		AFG = {
-
+			country_event = fpw_afghan.35
 		}
 	}
 }
@@ -653,5 +653,51 @@ country_event = {
 	option = {
 		name = "Brilliant"
 		transfer_state = 444
+	}
+}
+country_event = {
+	id = fpw_afghan.36
+	title = afghan_fpw.36.t
+	desc = afghan_fpw.36.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "no"
+		AFG = {
+			country_event = fpw_afghan.37
+		}
+	}
+	option = {
+		name = "We don't need these lands anyway"
+		transfer_state = 659
+		AFG = {
+			country_event = fpw_afghan.37
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.37
+	title = afghan_fpw.37.t
+	desc = afghan_fpw.37.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Damn it"
+	}
+}
+country_event = {
+	id = fpw_afghan.38
+	title = afghan_fpw.38.t
+	desc = afghan_fpw.38.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Great"
 	}
 }

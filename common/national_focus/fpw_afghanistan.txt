@@ -658,7 +658,7 @@
 	}
 	focus = {
 		id = afg_build_more_factories
-		icon = GFX_SOV_fourth_five_year_plan_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_industry_3
 		
 		x = 2
 		y = 1
@@ -725,7 +725,7 @@
 	}
 	focus = {
 		id = afg_expand_kabul
-		icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_construct_civ_factory
 		
 		x = -1
 		y = 2
@@ -2346,7 +2346,7 @@
 	}
 	focus = {
 		id = afg_grant_tax_breaks
-		icon = GFX_SOV_eastern_development_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_construct_civ_factory
 		
 		x = 3
 		y = 1
@@ -2385,7 +2385,7 @@
 	}
 	focus = {
 		id = afg_expand_factory_rights
-		icon = GFX_SOV_eastern_development_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_construction2
 		
 		x = 3
 		y = 2
@@ -2441,7 +2441,7 @@
 	}
 	focus = {
 		id = afg_acceptance_of_minorities
-		icon = GFX_SOV_bring_old_trotskyists_back_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_concessions
 		
 		x = -1
 		y = 2
@@ -2470,7 +2470,7 @@
 	}
 	focus = {
 		id = afg_consolodate_land_under_the_state
-		icon = GFX_SOV_bringing_breakaways_back_to_the_fold_ccp_2d_sov_compatibility
+		icon = GFX_focus_IRQ_royal_iraqi_army_alt
 		
 		x = -3
 		y = 2
@@ -2528,10 +2528,190 @@
 		}
 	}
 	focus = {
+		id = afg_destroy_the_noble_elite
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		
+		x = 0
+		y = 1
+		
+
+		relative_position_id = afg_truimp_of_democracy
+
+
+		cost = 1
+		
+		prerequisite = { focus = afg_truimp_of_democracy }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_rights_of_man
+		icon = GFX_focus_generic_the_giant_wakes
+		
+		x = 2
+		y = 1
+		
+
+		relative_position_id = afg_destroy_the_noble_elite
+
+
+		cost = 1
+		
+		prerequisite = { focus = afg_destroy_the_noble_elite }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_rights_of_man
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_create_a_national_constitution
+		icon = GFX_focus_PER_constitutional_monarchy
+		
+		x = -2
+		y = 1
+		
+
+		relative_position_id = afg_destroy_the_noble_elite
+
+
+		cost = 1
+		
+		prerequisite = { focus = afg_destroy_the_noble_elite }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_the_afghan_constitution
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_annex_the_durran_line
+		icon = GFX_goal_generic_major_war
+		
+		x = 0
+		y = 1
+		
+
+		relative_position_id = afg_destroy_the_noble_elite
+
+
+		cost = 1
+		
+		prerequisite = { focus = afg_destroy_the_noble_elite }
+
+		available = {
+		}
+		
+		completion_reward = {
+			transfer_state = 787
+			transfer_state = 440
+			RAJ = {
+				create_wargoal = {
+					type = take_state_focus
+					target = AFG
+					generator = { 787 440 }
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_ask_for_arabian_lands
+		icon = GFX_focus_AFG_savior_of_the_holy_lands
+		
+		x = 0
+		y = 2
+		
+
+		relative_position_id = afg_destroy_the_noble_elite
+
+
+		cost = 1
+		
+		prerequisite = { focus = afg_annex_the_durran_line }
+
+		available = {
+		}
+		
+		completion_reward = {
+			ENG = {
+				country_event = fpw_afghan.36
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_pax_afghanistan
+		icon = GFX_goal_generic_propaganda
+		
+		x = 0
+		y = 4
+		
+
+		relative_position_id = afg_destroy_the_noble_elite
+
+
+		cost = 1
+		
+		prerequisite = { focus = afg_ask_for_arabian_lands }
+		prerequisite = { focus = afg_create_national_banks }
+		prerequisite = { focus = afg_hold_a_baluchistani_referandum }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_pax_afghanistan
+			444 = { add_core_of = ROOT }
+			440 = { add_core_of = ROOT }
+			787 = { add_core_of = ROOT }
+			830 = { add_core_of = ROOT }
+			405 = { add_core_of = ROOT }
+			229 = { add_core_of = ROOT }
+			230 = { add_core_of = ROOT }
+			742 = { add_core_of = ROOT }
+			584 = { add_core_of = ROOT }
+			832 = { add_core_of = ROOT }
+			831 = { add_core_of = ROOT }
+			821 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
 		id = afg_support_pro_womens_rights_movements
 		icon = GFX_focus_generic_university_1
 		
-		x = -2
+		x = -4
 		y = 4
 		
 
@@ -2557,7 +2737,7 @@
 		id = afg_increase_litteracy_funding
 		icon = GFX_focus_AFG_research
 		
-		x = -2
+		x = -4
 		y = 5
 		
 
@@ -2582,7 +2762,7 @@
 		id = afg_create_national_banks
 		icon = GFX_focus_PER_national_bank
 		
-		x = -2
+		x = -4
 		y = 6
 		
 
@@ -2607,7 +2787,7 @@
 		id = afg_spread_asian_democracy
 		icon = GFX_focus_generic_democratic_europe
 		
-		x = 2
+		x = 4
 		y = 4
 		
 
@@ -2632,7 +2812,7 @@
 		id = afg_expand_democracy_to_iran
 		icon = GFX_focus_generic_attack_iran
 		
-		x = 2
+		x = 4
 		y = 5
 		
 
@@ -2661,7 +2841,7 @@
 		id = afg_liberate_iraq
 		icon = GFX_focus_generic_attack_turkey
 		
-		x = 2
+		x = 4
 		y = 6
 		
 
@@ -2690,7 +2870,7 @@
 		id = afg_destroy_asian_monarchism
 		icon = GFX_SOV_the_defense_of_moscow_ccp_2d_sov_compatibility
 		
-		x = 5
+		x = 7
 		y = 7
 		
 
@@ -2725,7 +2905,7 @@
 		id = afg_hold_a_baluchistani_referandum
 		icon = GFX_focus_AFG_pashtunistan_referendum
 		
-		x = 2
+		x = 4
 		y = 7
 		
 
@@ -2750,7 +2930,7 @@
 		id = afg_unite_the_shah_of_iran_and_amir_of_afghanistan
 		icon = GFX_focus_PER_establish_tehran_armor
 		
-		x = 5
+		x = 7
 		y = 6
 		
 
@@ -3435,7 +3615,7 @@
 	}
 	focus = {
 		id = afg_corruption_of_national_movement_party
-		icon = GFX_SOV_japanese_overtures_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_forceful_treaty
 		
 		x = 0
 		y = 2
@@ -3481,7 +3661,7 @@
 	}
 	focus = {
 		id = afg_increase_radical_elements
-		icon = GFX_SOV_great_commander_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_monarchy_1
 		
 		x = 2
 		y = 3
@@ -3506,7 +3686,7 @@
 	}
 	focus = {
 		id = afg_afghanistan_first
-		icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_support_the_left_right
 		
 		x = 3
 		y = 4
@@ -3546,7 +3726,7 @@
 	}
 	focus = {
 		id = afg_redifine_afghan_borders
-		icon = GFX_SOV_into_central_asia_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_attack_allies
 		
 		x = 1
 		y = 4
@@ -3582,7 +3762,7 @@
 	}
 	focus = {
 		id = afg_crush_the_liberals
-		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_political_pressure
 		
 		x = -2
 		y = 3
@@ -3610,7 +3790,7 @@
 	}
 	focus = {
 		id = afg_assianate_sher_ali_khan
-		icon = GFX_SOV_keep_commissars_organization_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_major_war
 		
 		x = -2
 		y = 4
