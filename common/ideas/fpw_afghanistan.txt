@@ -415,7 +415,7 @@ ideas = {
 			picture = ast_volunteer_defence_corps
 			modifier = {
 				terrain_penalty_reduction = 0.3
-				pocket_penalty = 0.25
+				pocket_penalty = -0.25
 				experience_gain_army = 0.05
 				cavalry_attack_factor = 0.05
 			}
@@ -513,7 +513,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_artillery_regiments
+			picture = AFG_adopt_nufus
 			modifier = {
 				experience_gain_army_unit_factor = 0.2
 				planning_speed = 0.1
@@ -530,7 +530,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_artillery_regiments
+			picture = AFG_adopt_nufus
 			modifier = {
 				experience_gain_army_unit_factor = 0.2
 				planning_speed = 0.1
@@ -538,6 +538,58 @@ ideas = {
 				army_infantry_attack_factor = 0.05
 				army_infantry_defence_factor = 0.05
 				army_org_factor = 0.05
+			}
+		}
+	}
+	country = {
+		fpw_AFG_afghan_modern_army_three = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_adopt_nufus
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+				planning_speed = 0.15
+				max_planning_factor = 0.15
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+	}
+	country = {
+		fpw_AFG_afghan_modern_army_four = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_adopt_nufus
+			modifier = {
+				experience_gain_army_unit_factor = 0.5
+				planning_speed = 0.25
+				max_planning_factor = 0.25
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.15
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				terrain_penalty_reduction = 0.25
+				pocket_penalty = -0.05
+				acclimatization_hot_climate_gain_factor = 0.5
+				acclimatization_cold_climate_gain_factor = 0.5
 			}
 		}
 	}
@@ -813,7 +865,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
 				resistance_activity = -0.1
 				compliance_growth_on_our_occupied_states = -0.5
@@ -830,7 +882,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = PER_unification_initiative_idea
 			modifier = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
@@ -848,7 +900,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = FRA_matignon_agreements
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = 0.05
@@ -905,7 +957,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = CZE_planning_bonus
 
 			targeted_modifier = {
 				tag = SOV
@@ -926,7 +978,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = AFG_raj_attack_bonus
 
 			targeted_modifier = {
 				tag = RAJ
@@ -951,7 +1003,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = AFG_from_the_ashes
 
 			modifier = {
 				army_core_attack_factor = 0.05
@@ -971,7 +1023,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = generic_agrarian_reform
 
 			modifier = {
 				political_power_factor = 0.05
@@ -989,7 +1041,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = AFG_parliament_building
 
 			modifier = {
 				political_power_factor = 0.15
@@ -1008,7 +1060,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = HUN_turul_association_idea
 
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -1027,7 +1079,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = generic_improved_industries
 
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -1069,7 +1121,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = AFG_parliament_building
 
 			modifier = {
 				stability_factor = 0.05
@@ -1091,7 +1143,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = GER_economy_of_conquest
 
 			modifier = {
 				stability_factor = -0.05
@@ -1110,7 +1162,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = ETH_corrupt_bureaucracy
 
 			modifier = {
 				stability_factor = -0.2
@@ -1128,7 +1180,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = ARG_growing_nationalism_modifier
 
 			modifier = {
 				stability_factor = 0.25
@@ -1136,6 +1188,23 @@ ideas = {
 				war_support_factor = 0.1
 				army_org_factor = 0.1
 				industrial_capacity_factory = 0.05
+				conscription = 0.05
+			}
+		}
+
+	}
+	country = {
+		fpw_AFG_afghan_recruit_ment_system = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+
+			modifier = {
 				conscription = 0.05
 			}
 		}
@@ -1150,12 +1219,13 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = RAJ_private_military_complex
 
 			modifier = {
 				stability_factor = -0.05
 				consumer_goods_factor = -0.25
 				war_support_factor = 0.1
+				army_attack_factor = 0.05
 			}
 		}
 
@@ -1169,7 +1239,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = chi_war_of_resistance3
 
 			modifier = {
 				army_attack_factor = 0.05
@@ -1188,7 +1258,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = HABSBURG_economy
 
 			modifier = {
 				stability_factor = 0.1
@@ -1206,10 +1276,10 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = air_support_focus
 
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.01
 				army_core_defence_factor = 0.05
 				army_core_attack_factor = 0.05
 			}
@@ -1225,7 +1295,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = AFG_republic_idea
 
 			modifier = {
 				industrial_capacity_factory = 0.1
@@ -1243,7 +1313,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = generic_economic_crisis
+			picture = ARG_women_in_industry
 
 			modifier = {
 				consumer_goods_factor = 0.05

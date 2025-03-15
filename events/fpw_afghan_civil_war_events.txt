@@ -557,14 +557,9 @@ country_event = {
 
 
 	option = {
-		name = "A Fair Election"
+		name = "Let The Voting Begin"
 		complete_national_focus = afg_clean_election
 		set_country_flag = AFG_clean_election
-	}
-	option = {
-		name = "Rig The Elections"
-		complete_national_focus = afg_rig_the_elections
-		set_country_flag = AFG_rigged_election
 	}
 }
 country_event = {

@@ -234,7 +234,7 @@
 		
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_complete_economic_reforms }
 		relative_position_id = afg_complete_economic_reforms
 		available = {
@@ -257,7 +257,7 @@
 		
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_focus_on_agriculture }
 		relative_position_id = afg_focus_on_agriculture
 		available = {
@@ -317,7 +317,7 @@
 		
 		x = 4
 		y = 2
-		cost = 10
+		cost = 3
 		prerequisite = { focus = afg_stricter_factory_regulations }
 		relative_position_id = afg_focus_on_agriculture
 		available = {
@@ -360,7 +360,7 @@
 		
 		x = 6
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_stricter_factory_regulations }
 		relative_position_id = afg_focus_on_agriculture
 		available = {
@@ -396,7 +396,7 @@
 		
 		x = 3
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_domestic_suppliers focus = afg_decrease_health_care_funding }
 		relative_position_id = afg_focus_on_agriculture
 		available = {
@@ -438,7 +438,7 @@
 		
 		x = 3
 		y = 4
-		cost = 5
+		cost = 10
 		prerequisite = { focus = afg_promote_the_local_market }
 		relative_position_id = afg_focus_on_agriculture
 		available = {
@@ -512,7 +512,7 @@
 			
 		x = 1
 		y = 2
-		cost = 10
+		cost = 3
 		prerequisite = { focus = afg_grant_rights_to_farmers }
 		prerequisite = { focus = afg_focus_on_military_production }
 		relative_position_id = afg_focus_on_agriculture
@@ -538,7 +538,7 @@
 			
 		x = 0
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_decrease_health_care_funding }
 		prerequisite = { focus = afg_promote_the_local_market }
 		relative_position_id = afg_focus_on_agriculture
@@ -571,7 +571,7 @@
 		
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_complete_economic_reforms }
 		relative_position_id = afg_complete_economic_reforms
 		available = {
@@ -662,7 +662,7 @@
 		
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_dreams_of_a_modern_economy }
 		relative_position_id = afg_dreams_of_a_modern_economy
 		available = {
@@ -729,7 +729,7 @@
 		
 		x = -1
 		y = 2
-		cost = 5
+		cost = 3
 		prerequisite = { focus = afg_dreams_of_a_modern_economy }
 		prerequisite = { focus = afg_promote_economic_growth }
 		prerequisite = { focus = afg_fund_civillian_production }
@@ -824,7 +824,7 @@
 		
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = afg_build_more_factories }
 		prerequisite = { focus = afg_fund_civillian_production }
 		prerequisite = { focus = afg_expand_kabul }
@@ -896,15 +896,15 @@
 	### CIVIL WAR TREE
 	focus = {
 		id = afg_ongoing_civil_war
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		
 		x = 25
 		y = 0
 		
-		cost = 5
+		cost = 1
 		
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -921,14 +921,14 @@
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		
 		x = 25
-		y = 2
+		y = 1
 		
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = afg_ongoing_civil_war }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -948,14 +948,14 @@
 		icon = GFX_focus_generic_whispers
 		
 		x = 22
-		y = 2
+		y = 1
 		
-		cost = 5
+		cost = 3
 		
 		prerequisite = { focus = afg_ongoing_civil_war }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -971,17 +971,17 @@
 	}
 	focus = {
 		id = afg_war_bonds
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		
 		x = 22
-		y = 5
+		y = 3
 		
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = afg_heavy_use_of_propoganda }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -1000,14 +1000,14 @@
 		icon = GFX_focus_PRS_russian_friendship
 		
 		x = 28
-		y = 2
+		y = 1
 		
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = afg_ongoing_civil_war }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -1023,16 +1023,16 @@
 
 	focus = {
 		id = afg_investments
-		icon = GFX_focus_CONGO_gold_and_diamonds
+		icon = GFX_focus_generic_monetary_union
 		
 		x = 28
-		y = 4
-		cost = 5
+		y = 2
+		cost = 3
 		
 		prerequisite = { focus = afg_ask_russia_for_help }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -1049,13 +1049,13 @@
 		icon = GFX_focus_AFG_quami
 		
 		x = 28
-		y = 5
-		cost = 5
+		y = 3
+		cost = 3
 		
 		prerequisite = { focus = afg_investments }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -1075,14 +1075,14 @@
 		icon = GFX_focus_generic_military_academy
 		
 		x = 25
-		y = 3
+		y = 2
 		
-		cost = 5
+		cost = 3
 		
 		prerequisite = { focus = afg_cheaper_guns }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 		}
 		
 		completion_reward = {	
@@ -1098,14 +1098,14 @@
 		icon = GFX_focus_generic_military_academy
 		
 		x = 25
-		y = 5
+		y = 3
 		
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = afg_state_of_the_military }
 
 		available = {
-			has_war = yes
+			has_war_with = AFZ
 			date > 1867
 		}
 		
@@ -1125,7 +1125,7 @@
 		icon = GFX_focus_generic_total_war
 		
 		x = 25
-		y = 6
+		y = 4
 		
 		cost = 5
 		
@@ -1138,6 +1138,12 @@
 		}
 		
 		completion_reward = {	
+			hidden_effect = {
+				news_event = {
+					hours = 6
+					id = news_fpw.13
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1190,7 +1196,7 @@
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 4000
 		}
 	}
 	focus = {
@@ -1369,7 +1375,7 @@
 	}
 	focus = {
 		id = afg_begin_sher_alis_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		
 		x = 75
 		y = 4
@@ -1414,7 +1420,7 @@
 	}
 	focus = {
 		id = afg_reformed_afghanistan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		
 		x = 75
 		y = 6
@@ -1438,7 +1444,7 @@
 	}
 	focus = {
 		id = afg_cult_of_sher_ali_khan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_2
 		
 		x = 75
 		y = 7
@@ -1481,7 +1487,7 @@
 	}
 	focus = {
 		id = afg_reorginize_the_bureaucracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		
 		x = 73
 		y = 5
@@ -1504,7 +1510,7 @@
 	### Shared tree
 	focus = {
 		id = afg_combat_illertacy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AFG_research
 		
 		x = 55
 		y = 2
@@ -1548,7 +1554,7 @@
 	}
 	focus = {
 		id = afg_expand_industrial_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_modernize_industry
 		
 		x = 51
 		y = 4
@@ -1574,7 +1580,7 @@
 	}
 	focus = {
 		id = afg_expand_military_research
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_industry
 		
 		x = 53
 		y = 4
@@ -1600,7 +1606,7 @@
 	}
 	focus = {
 		id = afg_battle_illiteracy
-		icon = afg_fight_illiteracy
+		icon = GFX_focus_generic_university_2
 		
 		x = 58
 		y = 3
@@ -1625,7 +1631,7 @@
 	}
 	focus = {
 		id = afg_kabul_works
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		
 		x = 56
 		y = 3
@@ -1654,7 +1660,7 @@
 	}
 	focus = {
 		id = afg_mass_literazation_campaigns
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWE_education_reform
 		
 		x = 58
 		y = 4
@@ -1679,7 +1685,7 @@
 	}
 	focus = {
 		id = afg_truimph_against_illiteracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research2
 		
 		x = 55
 		y = 5
@@ -1748,7 +1754,7 @@
 	}
 	focus = {
 		id = afg_enforce_a_central_government
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_home_defense
 		
 		x = 68
 		y = 4
@@ -1771,7 +1777,7 @@
 	}
 	focus = {
 		id = afg_reduce_tribal_autonomy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		
 		x = 63
 		y = 3
@@ -1793,7 +1799,7 @@
 	}
 	focus = {
 		id = afg_supress_tribes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		
 		x = 62
 		y = 4
@@ -1815,7 +1821,7 @@
 	}
 	focus = {
 		id = afg_enforce_state_soveriegnty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		
 		x = 64
 		y = 4
@@ -1838,7 +1844,7 @@
 	}
 	focus = {
 		id = afg_end_the_tribes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		
 		x = 66
 		y = 5
@@ -1877,6 +1883,11 @@
 
 		available = {
 		}
+		bypass = {
+			PER = {
+				exists = no
+			}
+		}
 		
 		completion_reward = {
 			PER = {
@@ -1885,7 +1896,7 @@
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 	}
 	focus = {
@@ -1937,11 +1948,7 @@
 
 		available = {
 			NOT = { has_completed_focus = afg_blessed_by_allah }
-		}
-		hidden_effect = {
-			
-		}
-		completion_reward = {
+		}mpletion_reward = {
 			custom_effect_tooltip = fpw_afg_durrani
 			410 = { add_core_of = ROOT }
 			414 = { add_core_of = ROOT }
@@ -1954,6 +1961,12 @@
 			439 = { add_core_of = ROOT}
 			742 = { add_core_of = ROOT}
 			set_cosmetic_tag = AFG_DUR_EMP
+			hidden_effect = {
+				news_event = {
+					hours = 6
+					id = news_fpw.14
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1973,7 +1986,11 @@
 
 		available = {
 		}
-		
+		bypass = {
+			SOV = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			830 = { add_core_of = ROOT }
 			405 = { add_core_of = ROOT }
@@ -2002,6 +2019,11 @@
 
 		available = {
 		}
+		bypass = {
+			RAJ = {
+				exists = no
+			}
+		}
 		
 		completion_reward = {
 			create_wargoal = {
@@ -2010,6 +2032,12 @@
 				generator = { 439 }
 			}
 			add_ideas = fpw_AFG_indian_campaign
+			hidden_effect = {
+				news_event = {
+					hours = 6
+					id = news_fpw.17
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2030,7 +2058,11 @@
 
 		available = {
 		}
-		
+		bypass = {
+			TUR = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -2044,7 +2076,7 @@
 	}
 	focus = {
 		id = afg_intergrate_iraq_and_kuwait
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PER_demand_iraqi_territory
 		
 		x = 66
 		y = 11
@@ -2100,7 +2132,7 @@
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 	}
 	focus = {
@@ -2136,9 +2168,9 @@
 	}
 	focus = {
 		id = afg_clean_election
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_election
 		
-		x = 44
+		x = 45
 		y = 3
 		
 
@@ -2167,33 +2199,6 @@
 		}
 	}
 	focus = {
-		id = afg_rig_the_elections
-		icon = GFX_focus_usa_voter_registration_act
-		
-		x = 46
-		y = 3
-		
-
-		cost = 1
-		
-		prerequisite = { focus = afg_found_multiple_parties }
-
-		available = {
-			always = no
-		}
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.25
-			}
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
 		id = afg_results_of_elections
 		icon = GFX_focus_usa_voter_registration_act
 		
@@ -2203,7 +2208,7 @@
 
 		cost = 1
 		
-		prerequisite = { focus = afg_rig_the_elections focus = afg_clean_election }
+		prerequisite = { focus = afg_clean_election }
 
 
 		available = {
@@ -2231,7 +2236,7 @@
 	### Socialism
 	focus = {
 		id = afg_socialist_victory
-		#icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_focus_generic_social_democracy
 		
 		x = 45
 		y = 5
@@ -2243,6 +2248,33 @@
 		
 		prerequisite = { focus = afg_results_of_elections }
 
+
+		available = {
+		}
+		
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_
+		icon = GFX_focus_generic_social_democracy
+		
+		x = 0
+		y = 1
+		
+
+		allow_branch = { has_country_flag = AFG_socialist }
+
+		cost = 1
+		
+		prerequisite = { focus = afg_results_of_elections }
+
+		relative_position_id = afg_socialist_victory
 
 		available = {
 		}
@@ -2293,7 +2325,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 10
 		
 		prerequisite = { focus = afg_liberal_victory }
 
@@ -2325,7 +2357,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 5
 		
 		prerequisite = { focus = afg_democratization_of_afghanistan }
 
@@ -2355,7 +2387,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 3
 		
 		prerequisite = { focus = afg_liberal_victory }
 
@@ -2394,7 +2426,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 3
 		
 		prerequisite = { focus = afg_grant_tax_breaks }
 
@@ -2422,7 +2454,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 5
 		
 		prerequisite = { focus = afg_liberal_victory }
 
@@ -2450,7 +2482,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 5
 		
 		prerequisite = { focus = afg_intergrating_the_tribes }
 
@@ -2479,7 +2511,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 5
 		
 		prerequisite = { focus = afg_intergrating_the_tribes }
 
@@ -2506,7 +2538,7 @@
 		relative_position_id = afg_liberal_victory
 
 
-		cost = 1
+		cost = 10
 		
 		prerequisite = { focus = afg_democratization_of_afghanistan }
 		prerequisite = { focus = afg_acceptance_of_minorities }
@@ -2538,7 +2570,7 @@
 		relative_position_id = afg_truimp_of_democracy
 
 
-		cost = 1
+		cost = 10
 		
 		prerequisite = { focus = afg_truimp_of_democracy }
 
@@ -2564,7 +2596,7 @@
 		relative_position_id = afg_destroy_the_noble_elite
 
 
-		cost = 1
+		cost = 5
 		
 		prerequisite = { focus = afg_destroy_the_noble_elite }
 
@@ -2590,7 +2622,7 @@
 		relative_position_id = afg_destroy_the_noble_elite
 
 
-		cost = 1
+		cost = 10
 		
 		prerequisite = { focus = afg_destroy_the_noble_elite }
 
@@ -2616,7 +2648,7 @@
 		relative_position_id = afg_destroy_the_noble_elite
 
 
-		cost = 1
+		cost = 10
 		
 		prerequisite = { focus = afg_destroy_the_noble_elite }
 
@@ -2650,7 +2682,7 @@
 		relative_position_id = afg_destroy_the_noble_elite
 
 
-		cost = 1
+		cost = 2
 		
 		prerequisite = { focus = afg_annex_the_durran_line }
 
@@ -2678,7 +2710,7 @@
 		relative_position_id = afg_destroy_the_noble_elite
 
 
-		cost = 1
+		cost = 10
 		
 		prerequisite = { focus = afg_ask_for_arabian_lands }
 		prerequisite = { focus = afg_create_national_banks }
@@ -2719,7 +2751,7 @@
 
 		prerequisite = { focus = afg_truimp_of_democracy } 
 
-		cost = 1
+		cost = 5
 
 		available = {
 		}
@@ -2745,7 +2777,7 @@
 
 		prerequisite = { focus = afg_support_pro_womens_rights_movements } 
 
-		cost = 1
+		cost = 5
 
 		available = {
 		}
@@ -2770,7 +2802,7 @@
 
 		prerequisite = { focus = afg_increase_litteracy_funding } 
 
-		cost = 1
+		cost = 5
 
 		available = {
 		}
@@ -2820,8 +2852,12 @@
 
 		prerequisite = { focus = afg_spread_asian_democracy } 
 
-		cost = 1
-
+		cost = 10
+		bypass = {
+			PER = {
+				exists = no
+			}
+		}
 		available = {
 		}
 		
@@ -2839,7 +2875,7 @@
 	}
 	focus = {
 		id = afg_liberate_iraq
-		icon = GFX_focus_generic_attack_turkey
+		icon = GFX_focus_PER_secure_iraq
 		
 		x = 4
 		y = 6
@@ -2849,8 +2885,17 @@
 
 		prerequisite = { focus = afg_expand_democracy_to_iran } 
 
-		cost = 1
-
+		cost = 5
+		bypass = {
+			TUR = {
+				exists = no
+			}
+		}
+		bypass = {
+			IRQ = {
+				exists = yes
+			}
+		}
 		available = {
 		}
 		
@@ -2879,7 +2924,7 @@
 		prerequisite = { focus = afg_liberate_iraq } 
 		prerequisite = { focus = afg_unite_the_shah_of_iran_and_amir_of_afghanistan }
 
-		cost = 1
+		cost = 10
 
 		available = {
 		}
@@ -2913,7 +2958,7 @@
 
 		prerequisite = { focus = afg_expand_democracy_to_iran } 
 
-		cost = 1
+		cost = 5
 
 		available = {
 		}
@@ -3034,7 +3079,7 @@
 		
 
 
-		cost = 1
+		cost = 5
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_conservative_victory }
 
@@ -3058,7 +3103,7 @@
 		
 
 
-		cost = 1
+		cost = 5
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_expansionist_policies }
 
@@ -3090,13 +3135,17 @@
 		
 
 
-		cost = 1
+		cost = 5
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_retake_khorastan }
 
 		available = {
 		}
-		
+		bypass = {
+			TUR = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			add_to_variable = {
 				var = afg_army_attack
@@ -3122,11 +3171,16 @@
 		
 
 
-		cost = 1
+		cost = 5
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_retake_khorastan }
 
 		available = {
+		}
+		bypass = {
+			ETH = {
+				exists = no
+			}
 		}
 		
 		completion_reward = {
@@ -3164,13 +3218,23 @@
 		
 
 
-		cost = 1
+		cost = 5
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_retake_khorastan }
 
 		available = {
 		}
-		
+		bypass = {
+			SAU = {
+				exists = no
+			}
+			JAB = {
+				exists = no
+			}
+			OMA = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			add_to_variable = {
 				var = afg_army_attack
@@ -3319,6 +3383,12 @@
             513 = { add_core_of = ROOT }
             460 = { add_core_of = ROOT }
             459 = { add_core_of = ROOT }
+			hidden_effect = {
+				news_event = {
+					hours = 6
+					id = news_fpw.15
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -3334,7 +3404,7 @@
 		
 
 
-		cost = 20
+		cost = 5
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_claim_the_title_of_the_caliphate }
 
@@ -3359,7 +3429,7 @@
 		
 
 
-		cost = 20
+		cost = 10
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_raze_the_ground_and_scorch_the_earth }
 		prerequisite = { focus = afg_assume_full_control }
@@ -3384,7 +3454,7 @@
 		
 
 
-		cost = 20
+		cost = 10
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_war_against_the_world }
 		available = {
@@ -3400,7 +3470,12 @@
 				}
 			}
 			set_cosmetic_tag = AFG_NWO
-			
+			hidden_effect = {
+				news_event = {
+					hours = 6
+					id = news_fpw.16
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -3416,13 +3491,17 @@
 		
 
 
-		cost = 20
+		cost = 10
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_claim_the_title_of_the_caliphate }
 
 		available = {
 		}
-		
+		bypass = {
+			SOV = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -3444,13 +3523,20 @@
 		
 
 
-		cost = 20
+		cost = 10
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_claim_the_title_of_the_caliphate }
 
 		available = {
 		}
-		
+		bypass = {
+			FRA = {
+				exists = no
+			}
+			ENG = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -3477,13 +3563,20 @@
 		
 
 
-		cost = 20
+		cost = 10
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_claim_the_title_of_the_caliphate }
 
 		available = {
 		}
-		
+		bypass = {
+			PRS = {
+				exists = no
+			}
+			AUS = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -3510,13 +3603,17 @@
 		
 
 
-		cost = 20
+		cost = 10
 		relative_position_id = afg_expansionist_policies
 		prerequisite = { focus = afg_march_into_europe focus = afg_destroy_imperalism focus = afg_destruction_of_the_russian_state }
 
 		available = {
 		}
-		
+		bypass = {
+			CHI = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -3538,7 +3635,7 @@
 		
 
 
-		cost = 1
+		cost = 10
 		
 		prerequisite = { focus = afg_conservative_victory }
 
@@ -3564,7 +3661,7 @@
 		
 
 
-		cost = 1
+		cost = 5
 		
 		prerequisite = { focus = afg_conservative_victory }
 
@@ -3622,7 +3719,7 @@
 		
 
 
-		cost = 1
+		cost = 3
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_improve_agriculture }
 		prerequisite = { focus = afg_nationalize_the_jirga_system }
@@ -3668,7 +3765,7 @@
 		
 
 
-		cost = 1
+		cost = 2
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_corruption_of_national_movement_party }
 
@@ -3693,7 +3790,7 @@
 		
 
 
-		cost = 1
+		cost = 2
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_increase_radical_elements }
 
@@ -3733,7 +3830,7 @@
 		
 
 
-		cost = 1
+		cost = 2
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_increase_radical_elements }
 
@@ -3769,7 +3866,7 @@
 		
 
 
-		cost = 1
+		cost = 5
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_corruption_of_national_movement_party }
 
@@ -3797,7 +3894,7 @@
 		
 
 
-		cost = 1
+		cost = 10
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_crush_the_liberals }
 
@@ -3826,7 +3923,7 @@
 		
 
 
-		cost = 1
+		cost = 10
 		relative_position_id = afg_conservative_victory
 		prerequisite = { focus = afg_assianate_sher_ali_khan }
 		prerequisite = { focus = afg_afghanistan_first }
@@ -4110,6 +4207,7 @@
 		prerequisite = { focus = afg_reformed_army }
 
 		available = {
+			has_war = yes
 		}
 		
 		completion_reward = {
@@ -4138,12 +4236,69 @@
 		prerequisite = { focus = afg_new_high_command }
 
 		available = {
+			has_war = yes
 		}
 		
 		completion_reward = {
 			swap_ideas = {	
 				remove_idea = fpw_AFG_afghan_modern_army
 				add_idea = fpw_AFG_afghan_modern_army_two
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_complete_modernization_of_the_afghan_army
+		icon = GFX_focus_GER_demonstration_of_military_achievements
+
+		
+		
+		x = 15
+		y = 7
+		
+		cost = 10
+		
+		prerequisite = { focus = afg_infantry_improvements }
+
+		available = {
+			has_war = yes
+		}
+		
+		completion_reward = {
+			swap_ideas = {	
+				remove_idea = fpw_AFG_afghan_modern_army_two
+				add_idea = fpw_AFG_afghan_modern_army_three
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_the_graveyard_of_empires
+		icon = GFX_focus_AFG_graveyard_of_empires
+
+		
+		
+		x = 15
+		y = 8
+		
+		cost = 10
+		
+		prerequisite = { focus = afg_complete_modernization_of_the_afghan_army }
+		prerequisite = { focus = afg_study_old_doctrines }
+		prerequisite = { focus = afg_modernize_recruitment_systems }
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = {	
+				remove_idea = fpw_AFG_afghan_modern_army_three
+				add_idea = fpw_AFG_afghan_modern_army_four
 			}
 		}
 		
@@ -4188,12 +4343,42 @@
 
 		
 		
-		x = 20
+		x = 18
 		y = 6
 		
 		cost = 5
 		
 		prerequisite = { focus = afg_study_civil_war }
+
+		available = {
+			has_war = no
+		}
+		
+		completion_reward = {
+			army_experience = 100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 5
+				category = land_doctrine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_study_old_doctrines
+		icon = GFX_focus_FIN_strengthen_military_administration
+
+		
+		
+		x = 18
+		y = 7
+		
+		cost = 5
+		
+		prerequisite = { focus = afg_military_college }
 
 		available = {
 			has_war = no
@@ -4304,34 +4489,33 @@
 			factor = 5
 		}
 	}
-
 	focus = {
-		id = afg_allow_tribes_in_army
-		icon = GFX_focus_AFG_quami
+		id = afg_modernize_recruitment_systems
+		icon = GFX_focus_generic_manpower
 
 		
 		
-		x = 10
-		y = 6
+		x = 12
+		y = 7
 		
 		cost = 5
 		
+		prerequisite = { focus = afg_war_time_economy }
 		prerequisite = { focus = afg_mobalize_the_economy }
 
+
 		available = {
-			has_completed_focus = { focus = afg_increase_radical_elements }
 		}
 		
 		completion_reward = {
-			add_ideas = fpw_AFG_moblized_tribes
-			set_variable = { tribal_army_influence = 1 }
-			custom_effect_tooltip = afg_army_influence
+			add_ideas = fpw_AFG_afghan_recruit_ment_system
 		}
 		
 		ai_will_do = {
 			factor = 5
 		}
 	}
+
 }
 
 	
