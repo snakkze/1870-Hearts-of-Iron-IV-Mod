@@ -2,10 +2,10 @@
 state={
 	id=374
 	name="STATE_374"
-	manpower = 1
+	manpower = 61834
 
 	history={
-		owner = OKL
+		owner = USA
 		add_claim_by = USA
 		add_core_of = OKL
 		victory_points = {
@@ -14,7 +14,7 @@ state={
 	}
 
 	provinces={
-		1618 5103 10798 
+		1618 5103 10798 7904 7762 10702 9822 11743 11802 7904
 	}
 
 	local_supplies=0.0 

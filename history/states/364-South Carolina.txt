@@ -12,6 +12,8 @@ wood=1
 
 	history={
 		owner = USA
+		add_claim_by = USA
+		add_core_of = CSA
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -20,7 +22,6 @@ wood=1
 
 			}
 		}
-		add_core_of = USA
 		victory_points = {
 			7202 1 
 		}

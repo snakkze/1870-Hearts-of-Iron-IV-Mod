@@ -7,17 +7,14 @@ wood=1
 	name="STATE_997"
 
 	history={
-		owner = OKL
+		owner = USA
 		add_claim_by = USA
 		add_core_of = OKL
-		victory_points = {
-			7945 1 
-		}
 	}
 	provinces={
-		7945 
+		7945 8025 6803 1806 2043
 	}
-	manpower=1
+	manpower=180182
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000
