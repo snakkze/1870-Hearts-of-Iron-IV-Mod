@@ -183,19 +183,53 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			463 = {
+				set_state_owner_to = ALS
+				add_core_of = ALS
+			}
+			650 = {
+				set_state_owner_to = ALS
+				add_core_of = ALS
+			}
+			986 = {
+				set_state_owner_to = ALS
+				add_core_of = ALS
+			}
+			USA = {
+				set_autonomy = {
+    				target = ALS
+    				autonomous_state = autonomy_colony
+				}
+				add_timed_idea = {
+					idea = alaska_bought
+					days = 365
+				}
+			}
+			ALS = {
+				set_cosmetic_tag = ALS_department
+				recruit_character = USA_jefferson_columbus_davis
+				promote_character = {
+    				character = USA_jefferson_columbus_davis
+    				ideology = neutrality
+				}
+				set_politics = {
+   					ruling_party = neutrality
+    				elections_allowed = no
+    				long_name = interim_government_party
+    				name = interim_government_party
+				}
+				set_popularities = {
+					neutrality = 100
+				}			
+			}
+		}
+	}
 	
 	option = {
 		name = russia_fpw.5.a
-		
-		USA = {
-			transfer_state = 463
-			transfer_state = 650
-			transfer_state = 986
-			add_timed_idea = {
-				idea = alaska_bought
-				days = 365
-			}
-		}
+
 		add_timed_idea = {
 			idea = alaska_sold
 			days = 365
@@ -204,9 +238,6 @@ country_event = {
 		hidden_effect = {
 			
 		}
-		
-		
-		
 	}
 	
 	

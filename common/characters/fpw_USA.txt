@@ -1,5 +1,4 @@
 characters={
-
 	USA_andrew_johnson={
 		name="Andrew Johnson"
 		portraits={
@@ -26,148 +25,15 @@ characters={
 			id=-1
 		}
 	}
-
-
-
-	USA_john_noble_goodwin={
-		name="John Noble Goodwin"
+	USA_jefferson_columbus_davis={
+		name="Jefferson Columbus Davis"
 		portraits={
 			civilian={
-				large=GFX_portrait_USA_john_noble_goodwin
+				large=GFX_portrait_USA_jefferson_columbus_davis
 			}
 		}
 		country_leader={
 			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_robert_byington_mitchell={
-		name="Robert Byington Mitchell"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_robert_byington_mitchell
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_alexander_cummings={
-		name="Alexander Cummings"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_alexander_cummings
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_charles_durkee={
-		name="Charles Durkee"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_charles_durkee
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_alvin_saunders={
-		name="Alvin Saunders"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_alvin_saunders
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_newton_edmunds={
-		name="Newton Edmunds"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_newton_edmunds
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_sidney_edgerton={
-		name="Sidney Edgerton"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_sidney_edgerton
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_david_w_ballard={
-		name="David W. Ballard"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_david_w_ballard
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_william_pickering={
-		name="William Pickering"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_william_pickering
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_tribal_government={
-		name="Tribal Governments"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_tribal_government
-			}
-		}
-		country_leader={
-			ideology=interim_government
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-	USA_no_mans_land={
-		name="No Man's Land"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_no_mans_land
-			}
-		}
-		country_leader={
-			ideology=anarchism
 			expire="1956.01.01.01"
 			id=-1
 		}

@@ -88,11 +88,17 @@ autonomy_state = {
 	}
 	
 	can_take_level = {
-		always = no
+        custom_trigger_tooltip = {
+        	tooltip = RULE_AUTONOMY_LOCKED_MANUALLY_TOOLTIP
+			always = no
+		}
 	}
 
 	can_lose_level = {
-		always = no
+		custom_trigger_tooltip = {
+        	tooltip = RULE_AUTONOMY_LOCKED_MANUALLY_TOOLTIP
+			always = no
+		}
 	}
 }
 

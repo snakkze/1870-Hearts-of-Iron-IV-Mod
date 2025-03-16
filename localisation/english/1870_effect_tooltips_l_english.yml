@@ -101,3 +101,4 @@
   prs_fpw_industrialization_buff:0 "§GThis Focus Will Buff Prussian Industrialization!§!"
   prs_fpw_industrialization_debuff:0 "§GMaintaining the Banks Will Cost You 2 Civs From Your Prussian Industrialization Focus!§!"
   RULE_ALLOW_RELEASE_NATIONS_NOT_USA_TERRITORIES_TOOLTIP:0 "§RYou cannot release §Y[USA.GetFlag] Unorganized Territories §Ror    [USA.GetFlag] §YUnion States"
+  RULE_AUTONOMY_LOCKED_MANUALLY_TOOLTIP:0 "§RYou cannot manually modify the autonomy of a [ROOT.GetFlag] §YColonial Administration"

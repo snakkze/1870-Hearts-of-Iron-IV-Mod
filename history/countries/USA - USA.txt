@@ -32,16 +32,16 @@ set_technology = {
 }
 
 # Unorganized Territories
-OKL = { set_cosmetic_tag = OKL_36_territory }
-NMX = { set_cosmetic_tag = NMX_36_territory } 
-ARZ = { set_cosmetic_tag = ARZ_36_territory } 
-UTH = { set_cosmetic_tag = UTH_territory } 
-CLR = { set_cosmetic_tag = CLR_36_territory } 
-NEB = { set_cosmetic_tag = NEB_36_territory }
-DAK = { set_cosmetic_tag = DAK_36_territory } 
-MTN = { set_cosmetic_tag = MTN_36_territory } 
-IDA = { set_cosmetic_tag = IDA_36_territory } 
-WAS = { set_cosmetic_tag = WAS_36_territory } 
+OKL = { set_cosmetic_tag = OKL_unorganized_territory }
+NMX = { set_cosmetic_tag = NMX_unorganized_territory } 
+ARZ = { set_cosmetic_tag = ARZ_unorganized_territory } 
+UTH = { set_cosmetic_tag = UTH_unorganized_territory } 
+CLR = { set_cosmetic_tag = CLR_unorganized_territory } 
+NEB = { set_cosmetic_tag = NEB_unorganized_territory }
+DAK = { set_cosmetic_tag = DAK_unorganized_territory } 
+MTN = { set_cosmetic_tag = MTN_unorganized_territory } 
+IDA = { set_cosmetic_tag = IDA_unorganized_territory } 
+WAS = { set_cosmetic_tag = WAS_unorganized_territory } 
 
 add_dynamic_modifier = { 
 	modifier = fpw_USA_divided_country 
