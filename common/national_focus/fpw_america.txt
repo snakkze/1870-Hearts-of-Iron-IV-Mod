@@ -1,0 +1,306 @@
+﻿focus_tree = {
+	id = american_focus
+	
+	default = no
+	
+	continuous_focus_position = { x = 9999 y = 9999 }
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+
+	focus = {
+		id = usa_focus_rebuilding_the_union
+		icon = GFX_focus_generic_american_investments
+
+		x = 0
+		y = 0
+		cost = 0
+
+		available = {
+			always = false
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = usa_focus_status_freedmens_bureau
+		icon = GFX_focus_generic_population_growth
+
+		prerequisite = { focus = usa_focus_rebuilding_the_union }
+		relative_position_id = usa_focus_rebuilding_the_union
+		x = -1
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_civil_rights_act
+		icon = GFX_focus_RAJ_seven_shackles
+
+		prerequisite = { focus = usa_focus_rebuilding_the_union }
+		relative_position_id = usa_focus_rebuilding_the_union
+		x = 1
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_the_power_struggle
+		icon = GFX_focus_generic_whispers
+
+		prerequisite = { focus = usa_focus_status_freedmens_bureau }
+		prerequisite = { focus = usa_focus_civil_rights_act }
+		relative_position_id = usa_focus_rebuilding_the_union
+		x = 0
+		y = 2
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_reconstruction_act
+		icon = GFX_goal_generic_territory_or_war
+
+		mutually_exclusive = { focus = usa_focus_ten_percent_plan }
+		prerequisite = { focus = usa_focus_the_power_struggle }
+		relative_position_id = usa_focus_the_power_struggle
+		x = -2
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_establish_military_districts
+		icon = GFX_focus_generic_military_dictatorship
+
+		prerequisite = { focus = usa_focus_reconstruction_act }
+		relative_position_id = usa_focus_reconstruction_act
+		x = 0
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_the_rejoining_clause
+		icon = GFX_focus_AUS_lawmaking_leniency
+
+		prerequisite = { focus = usa_focus_reconstruction_act }
+		relative_position_id = usa_focus_reconstruction_act
+		x = -2
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_the_johnson_crisis
+		icon = GFX_focus_generic_improve_the_administration
+
+		prerequisite = { focus = usa_focus_establish_military_districts }
+		prerequisite = { focus = usa_focus_the_rejoining_clause }
+		relative_position_id = usa_focus_reconstruction_act
+		x = -1
+		y = 2
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_ten_percent_plan
+		icon = GFX_focus_usa_honor_the_confederacy
+
+		mutually_exclusive = { focus = usa_focus_reconstruction_act }
+		prerequisite = { focus = usa_focus_the_power_struggle }
+		relative_position_id = usa_focus_the_power_struggle
+		x = 2
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = usa_focus_a_swift_reunification
+		icon = GFX_goal_generic_improve_relations
+
+		prerequisite = { focus = usa_focus_ten_percent_plan }
+		relative_position_id = usa_focus_ten_percent_plan
+		x = 0
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = usa_focus_oath_of_loyalty
+		icon = GFX_focus_generic_full_social_mobilization
+
+		prerequisite = { focus = usa_focus_a_swift_reunification }
+		relative_position_id = usa_focus_a_swift_reunification
+		x = 2
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = usa_focus_southern_abolitionism
+		icon = GFX_focus_generic_concessions
+
+		prerequisite = { focus = usa_focus_a_swift_reunification }
+		relative_position_id = usa_focus_a_swift_reunification
+		x = 4
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = usa_focus_reintegration_in_the_union
+		icon = GFX_goal_generic_propaganda
+
+		prerequisite = { focus = usa_focus_a_swift_reunification }
+		prerequisite = { focus = usa_focus_oath_of_loyalty }
+		prerequisite = { focus = usa_focus_southern_abolitionism }
+		relative_position_id = usa_focus_ten_percent_plan
+		x = 0
+		y = 3
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_lincolns_vision
+		icon = GFX_focus_generic_self_management
+
+
+		mutually_exclusive = { focus = usa_focus_johnsons_plan }
+		prerequisite = { focus = usa_focus_reintegration_in_the_union }
+		relative_position_id = usa_focus_reintegration_in_the_union
+		x = 0
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = usa_focus_johnsons_plan
+		icon = GFX_focus_generic_self_management
+
+		mutually_exclusive = { focus = usa_focus_lincolns_vision }
+		prerequisite = { focus = usa_focus_reintegration_in_the_union }
+		relative_position_id = usa_focus_reintegration_in_the_union
+		x = 3
+		y = 1
+		cost = 0
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+}
+
+	
