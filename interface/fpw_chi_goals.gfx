@@ -1,7 +1,7 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_support_yixin"
-		texturefile = "gfx/interface/goals/support_yixin.png"
+		texturefile = "gfx/interface/goals/support_yixin.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_support_yixin_shine"
@@ -36,7 +36,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_focus_support_cixi"
-		texturefile = "gfx/interface/goals/support_cixi.png"
+		texturefile = "gfx/interface/goals/support_cixi.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_support_cixi_shine"
@@ -71,7 +71,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_focus_xinyou_coup"
-		texturefile = "gfx/interface/goals/xinyou_coup.png"
+		texturefile = "gfx/interface/goals/xinyou_coup.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_xinyou_coup_shine"

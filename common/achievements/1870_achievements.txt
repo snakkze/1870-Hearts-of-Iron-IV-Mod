@@ -41,8 +41,6 @@ germany_formed_achievement = {
 			tooltip = country_is_germany
 			OR = {
 				has_cosmetic_tag = PRS_GER
-				has_cosmetic_tag = GER
-				tag = GER
 			}
 		}
 	}

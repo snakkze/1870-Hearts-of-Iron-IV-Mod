@@ -52,7 +52,7 @@ country_event = {
 
 	option = {
 		name = austro_prussian_fpw.3.a
-		prussian_surrender = yes
+		set_global_flag = fpw_austria_victory
 	}
 }
 

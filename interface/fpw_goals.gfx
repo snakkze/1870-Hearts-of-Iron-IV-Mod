@@ -165,7 +165,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_PRS_tsingdao_incedent"
 		texturefile = "gfx/interface/goals/PRS_tsingdao_incedent.png"	
-          }
+    }
 }
 
 # SPAIN #
@@ -273,6 +273,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_FRA_strengthen_bonaparte_dynasty"
 		texturefile = "gfx/interface/goals/FRA_strengthen_bonaparte_dynasty.png"
+	}
 }
 
 
@@ -362,8 +363,6 @@ spriteTypes = {
 		name = "GFX_focus_generic_offer_token_connciusen"
 		texturefile = "gfx/interface/goals/generic_offer_token_connciusen.png"
 	}
-	
-	
 }
 
 # AFGHANISTAN

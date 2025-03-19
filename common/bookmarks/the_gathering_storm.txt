@@ -27,9 +27,9 @@ bookmarks = {
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
-				fpw_AUS_hungarian_speratism
+				fpw_AUS_hungarian_seperatism
 				fpw_AUS_divided_military
-				fpw_AUS_stagnant_economy
+				fpw_AUS_stagnant_economy1
 			}
 			focuses = {
 				AUS_prepare_looming_conflict
@@ -112,8 +112,8 @@ bookmarks = {
             available = { always = yes }
             ideas = {
                 vittorio_emanuele
-                republican_opposition
-                liberal_country
+                fpw_ITA_republican_opposition
+                fpw_ITA_liberal_country
             }
             focuses = {
                 ITA_start

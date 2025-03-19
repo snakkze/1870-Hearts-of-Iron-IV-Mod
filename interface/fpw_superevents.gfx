@@ -2,23 +2,23 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_superevents_apw"
-		textureFile = "/gfx/interface/superevents/superevent_APW.png"
+		textureFile = "gfx/interface/superevents/superevent_APW.png"
 	}
 	spriteType = {
 		name = "GFX_superevents_fpw"
-		textureFile = "/gfx/interface/superevents/superevent_FPW.png"
+		textureFile = "gfx/interface/superevents/superevent_FPW.png"
 	}
 	spriteType = {
 		name = "GFX_superevents_bcw"
-		textureFile = "/gfx/interface/superevents/superevent_BCW.png"
+		textureFile = "gfx/interface/superevents/superevent_BCW.png"
 	}
 	spriteType = {
 		name = "GFX_superevents_bw"
-		textureFile = "/gfx/interface/superevents/superevent_BW.png"
+		textureFile = "gfx/interface/superevents/superevent_BW.png"
 	}
 
 	spriteType = {
 		name = "GFX_superevents_window_background"
-		textureFile = "/gfx/interface/superevents/superevent.png"
+		textureFile = "gfx/interface/superevents/superevent.png"
 	}
 }

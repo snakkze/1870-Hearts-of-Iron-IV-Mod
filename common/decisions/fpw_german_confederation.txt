@@ -64,6 +64,42 @@ fpw_german_confederation_category = {
 }
 
 fpw_german_unification_category = {
+
+	fpw_austro_prussian_war_alt_history_peace = {
+
+		activation = {
+			has_global_flag = fpw_austria_victory
+		}
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					has_global_flag = fpw_austrian_peace
+					has_global_flag = fpw_austria_victory
+				}
+			}
+		}
+		icon = mission_icon
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+
+		timeout_effect = {
+
+			prussian_surrender = yes
+			if = {
+				limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+				ITA = { country_event = austro_prussian_fpw.5 }
+			}
+			clr_global_flag = fpw_austria_victory
+			clr_global_flag = austro_prussian_war
+		}
+	}
 	
 	fpw_austro_prussian_war_historical_peace = {
 
@@ -78,7 +114,13 @@ fpw_german_unification_category = {
 		fire_only_once = yes
 
 		cancel_trigger = {
-			has_global_flag = fpw_prussia_peace
+			OR = {
+				NOT = {
+					# kinda wishing i did documentation for this piece of shit code a year back cause i dont understand what im trying with fpw_prussia_peace
+					has_global_flag = fpw_prussia_peace
+					has_global_flag = fpw_koniggratz_victory
+				}
+			}
 		}
 		icon = mission_icon
 		is_good = yes

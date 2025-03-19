@@ -24,14 +24,14 @@ prs_calculate_claimant_effect = {
 	}
 	if = {
 		limit = {
-			check_variable = {claim_strength_PRS > claim_strength_AUS }
+			check_variable = { claim_strength_PRS > claim_strength_AUS }
 		}
 		set_state_flag = strongest_claimant_PRS
 		clr_state_flag = strongest_claimant_AUS
 	}
 	if = {
 		limit = {
-			check_variable = {claim_strength_AUS > claim_strength_PRS }
+			check_variable = { claim_strength_AUS > claim_strength_PRS }
 		}
 		set_state_flag = strongest_claimant_AUS
 		clr_state_flag = strongest_claimant_PRS
@@ -130,13 +130,30 @@ prussian_surrender = {
 		# Austrian faction peace with prussian faction
 		white_peace = {
 			tag = PRS
-			message = vienna_peace_tt
+			message = german_peace_tt
 		}
 		# Austrian faction peace with prussian faction
 		set_truce = {
 			target = PRS
 			days = 90
 		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				# Holstein question aftermath
+				state = 58
+				state = 909
+				state = 912
+				# Thurignia Question
+				state = 60
+				state = 954
+				state = 953
+				state = 955
+				state = 937
+			}
+		}
+		set_demilitarized_zone = yes
 	}
 	PRS = {
 		clr_country_flag = austro_prussian_war
@@ -157,41 +174,16 @@ prussian_surrender = {
 				is_on_continent = europe
 			}				
 			teleport_armies = {
-			limit = {
-			has_war = no
-			OR = {
-				original_tag = ANH
-				original_tag = BAD
-				original_tag = BAV
-				original_tag = BRE
-				original_tag = HAM
-				original_tag = HEK
-				original_tag = HES
-				original_tag = HNV
-				original_tag = HOH
-				original_tag = LIP
-				original_tag = LUE
-				original_tag = MCK
-				original_tag = MKS
-				original_tag = NAS
-				original_tag = OLD
-				original_tag = SBG
-				original_tag = OLD
-				original_tag = SBL
-				original_tag = SCG
-				original_tag = SXM
-				original_tag = SXW
-				original_tag = SXY
-				original_tag = WLD
-				original_tag = WRT
-				original_tag = BRU
-				original_tag = FRK
-				original_tag = AUS
-				original_tag = PRS
-				original_tag = ITA
-			}
-			}
-			to_state_array = owned_controlled_states
+				limit = {
+					has_war = no
+					OR = {
+						is_german_minor = yes
+						original_tag = AUS
+						original_tag = PRS
+						original_tag = ITA
+					}
+				}
+				to_state_array = owned_controlled_states
 			}
 		}
 
@@ -201,16 +193,6 @@ prussian_surrender = {
 		}
 		67 = {
 			add_core_of = AUS
-			transfer_state_to = AUS
-		}
-		58 = {
-			add_core_of = AUS
-			transfer_state_to = AUS
-		}
-		909 = {
-			transfer_state_to = AUS
-		}
-		912 = {
 			transfer_state_to = AUS
 		}
 		159 = {
@@ -224,19 +206,19 @@ prussian_surrender = {
 				}
 			}
 			set_autonomy = {
-				target = SXY
+				target = WRT
 				autonomous_state = autonomy_dominion
 				end_wars = no
 				end_civil_wars = no
 			}
 			set_autonomy = {
-				target = HES
+				target = BAD
 				autonomous_state = autonomy_dominion
 				end_wars = no
 				end_civil_wars = no
 			}
 			set_autonomy = {
-				target = HEK
+				target = BAV
 				autonomous_state = autonomy_dominion
 				end_wars = no
 				end_civil_wars = no
@@ -248,18 +230,32 @@ prussian_surrender = {
 				end_civil_wars = no
 			}
 			set_autonomy = {
-				target = BAV
+				target = HEK
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			set_autonomy = {
+				target = FRK
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			set_autonomy = {
+				target = HES
 				autonomous_state = autonomy_dominion
 				end_wars = no
 				end_civil_wars = no
 			}
 		}
 		else = {
-			add_to_faction = SXY
-			add_to_faction = HES
-			add_to_faction = HEK
-			add_to_faction = NAS
+			add_to_faction = WRT
+			add_to_faction = BAD
 			add_to_faction = BAV
+			add_to_faction = NAS
+			add_to_faction = HEK
+			add_to_faction = FRK
+			add_to_faction = HES
 		}
 	}
 	# HNV should be able to be puppeted by the uk via the focus. Context either stand on yourself and be the opfer of prussia or be defended by the uk
@@ -273,42 +269,65 @@ prussian_surrender = {
 			transfer_state_to = HNV
 			add_core_of = HNV
 		}
-		951 = {
+		945 = {
 			transfer_state_to = HNV
-			add_core_of = HNV
+			#add_core_of = HNV
+		}
+		946 = {
+			transfer_state_to = HNV
+			#add_core_of = HNV
+		}
+		947 = {
+			transfer_state_to = HNV
+			#add_core_of = HNV
 		}
 	}
-	SXY = {
-		60 = {
-			transfer_state_to = SXY
-			add_core_of = SXY
-		}
+	PRS = {
 		937 = {
-			transfer_state_to = SXY
-			add_core_of = SXY
+			transfer_state_to = PRS
+			#add_core_of = SXY
 		}
 		955 = {
-			transfer_state_to = SXY
-			add_core_of = SXY
+			transfer_state_to = PRS
+			#add_core_of = SXY
 		}
 		953 = {
-			transfer_state_to = SXY
-			add_core_of = SXY
+			transfer_state_to = PRS
+			#add_core_of = SXY
 		}
 		954 = {
-			transfer_state_to = SXY
-			add_core_of = SXY
+			transfer_state_to = PRS
+			#add_core_of = SXY
+		}
+		949 = {
+			transfer_state_to = PRS
+			#add_core_of = SXY
+		}
+		951 = {
+			transfer_state_to = PRS
+			#add_core_of = SXY
+		}
+		938 = {
+			transfer_state_to = PRS
+			#add_core_of = SXY
+		}
+		61 = {
+			transfer_state_to = PRS
+			#add_core_of = SXY
+		}
+		956 = {
+			transfer_state_to = PRS
+			#add_core_of = SXY
+		}
+		943 = {
+			transfer_state_to = PRS
+			#add_core_of = SXY
 		}
 	}
-	# CAN INCOOPERATE FRANKRURT IN FOCUS
-	HES = {
-		annex_country = {
-			target = HEK
-			transfer_troops = yes
-		}
-		annex_country = {
-			target = NAS
-			transfer_troops = yes
+	WRT = {
+		952 = {
+			transfer_state_to = WRT
+			add_core_of = WRT
 		}
 	}
 	BAV = {
@@ -367,6 +386,14 @@ prussian_surrender = {
 				transfer_state_to = FRA
 				add_core_of = FRA
 			}
+			988 = {
+				transfer_state_to = FRA
+				add_core_of = FRA
+			}
+			936 = {
+				transfer_state_to = FRA
+				add_core_of = FRA
+			}
 			57 = {
 				transfer_state_to = NRW
 				add_core_of = NRW
@@ -375,14 +402,27 @@ prussian_surrender = {
 				transfer_state_to = NRW
 				add_core_of = NRW
 			}
-			
-			# Bavarian Pfalz is given to france because of the help in the war
-			936 = {
-				transfer_state_to = FRA
-				add_core_of = FRA
+			943 = {
+				transfer_state_to = NRW
+				add_core_of = NRW
+			}
+			951 = {
+				transfer_state_to = NRW
+				add_core_of = NRW
+			}
+			2713 = {
+				transfer_state_to = NRW
+				add_core_of = NRW
+			}
+			1009 = {
+				transfer_state_to = NRW
+				add_core_of = NRW
 			}
 			puppet = NRW
 		}	
+	}
+	FRA = {
+		puppet = NRW
 	}
 
 
