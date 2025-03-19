@@ -1,4 +1,28 @@
 state={
 	id=1001
 	name="STATE_1001"
+	manpower = 1345096
+	state_category = city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			dockyard = 2
+			6732 = {
+				naval_base = 8
+			}
+		}
+		victory_points = {
+			6732 20 
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		905 3906 6732 715 718 908 3710
+	}
+
+	local_supplies=0.0 
 }

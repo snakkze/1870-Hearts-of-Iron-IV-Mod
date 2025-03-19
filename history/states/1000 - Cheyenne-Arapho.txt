@@ -1,4 +1,25 @@
 state={
 	id=1000
 	name="STATE_1000"
+	manpower = 195000
+	state_category = city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			dockyard = 2
+			9832 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		9832 11830
+	}
+
+	local_supplies=0.0 
 }
