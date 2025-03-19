@@ -167,7 +167,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_economic_crisis
+			picture = RAJ_taxes
 
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -184,7 +184,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_economic_crisis
+			picture = SPR_seize_the_gold_reserves
 
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -201,7 +201,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_economic_crisis
+			picture = ARG_social_welfare_fund_ns
 
 			modifier = {
 				production_speed_buildings_factor = 0.15
@@ -220,7 +220,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_economic_crisis
+			picture = generic_agrarian_society
 
 			modifier = {
 				production_speed_buildings_factor = 0.15
@@ -328,7 +328,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_economic_crisis
+			picture = ARG_economic_reactivation
 
 			modifier = {
 				consumer_goods_factor = 0.05
