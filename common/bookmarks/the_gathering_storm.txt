@@ -122,19 +122,19 @@ bookmarks = {
             }
         }
 
-        "TUR" = {
-		    minor = yes
-            history = "TUR_1866_DESC"
-            ideology = democratic
-            available = { always = yes }
-            ideas = {
-                fpw_TUR_multi_ethnic_state
-                fpw_TUR_dated_army
-                fpw_TUR_agrarian_economy
-            }
-            focuses = {
-            }
-        }
+        #"TUR" = {
+		    #minor = yes
+           #history = "TUR_1866_DESC"
+            #ideology = neutrality
+            #available = { always = yes }
+            #ideas = {
+                #fpw_TUR_multi_ethnic_state
+                #fpw_TUR_dated_army
+                #fpw_TUR_agrarian_economy
+            #}
+            #focuses = {
+            #}
+        #}
 
         "JAP"={
 		    minor = yes
@@ -153,19 +153,22 @@ bookmarks = {
             }
         }
 
-		#AFG={
-			#This is for when I put afghanistan
-			#minor = yes
-			#history = "AFG_1866_DESC"
-			#ideology = neutrality
-			#ideas = {
-				#fpw_AFG_AFZ_illiterate_state
-				#fpw_AFG_our_chance_is_now
-				#fpw_AFG_entirely_war_economy
-			#}
-			#focuses = {
-			#}
-		#}
+		"AFG"={
+            minor = yes
+			history = "AFG_1866_DESC"
+			ideology = neutrality
+            available = { always yes }
+			ideas = {
+				fpw_AFZ_AFG_Afghan_Civil_War
+				fpw_AFZ_AFG_lack_of_national_identity
+                fpw_AFG_entirely_war_economy
+			}
+			focuses = {
+				afg_begin_sher_alis_reforms
+				afg_the_graveyard_of_empires
+				afg_assume_full_control
+			}
+		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
