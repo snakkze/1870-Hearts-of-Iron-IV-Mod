@@ -65,12 +65,6 @@ division_limiter = {
 
 	ai_strategy = {
 		type = build_army
-		id = camelry
-		value = -300
-	}
-
-	ai_strategy = {
-		type = build_army
 		id = motorized
 		value = -300
 	}

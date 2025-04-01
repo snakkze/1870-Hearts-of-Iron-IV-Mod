@@ -964,8 +964,8 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_rifle_0
-			creator = "RUS"
+			type = infantry_equipment_0
+			creator = "SOV"
 		}
 		requested_factories = 2
 		progress = 0
@@ -973,17 +973,8 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = uniform_equipment_1
-			creator = "RUS"
-		}
-		requested_factories = 1
-		progress = 0
-		efficiency = 30
-	}
-	add_equipment_production = {
-		equipment = {
-			type = cavalry_equipment_0
-			creator = "RUS"
+			type = fpw_cavalry_equipment
+			creator = "SOV"
 		}
 		requested_factories = 1
 		progress = 0
@@ -991,55 +982,11 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = cannon_equipment_0
-			creator = "RUS"
+			type = fpw_cannon_artillery_equipment
+			creator = "SOV"
 		}
 		requested_factories = 1
 		progress = 0
 		efficiency = 15
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_ironclad_2
-			creator = "RUS"
-			version_name = "Ironclad Petr Velikiy-class M1870"
-		}
-		name = "Petr Velikiy"
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_ironclad_1
-			creator = "RUS"
-			version_name = "Armored frigate Minin-class M1865"
-		}
-		name = "Minin"
-		requested_factories = 1
-		progress = 0.65
-		amount = 1
-	}
-		add_equipment_production = {
-		equipment = {
-			type = ship_hull_ironclad_1
-			creator = "RUS"
-			version_name = "Armored frigate General-Admiral-class M1870"
-		}
-		name = "General-Admirаl"
-		requested_factories = 1
-		progress = 0.06
-		amount = 1
-	}
-		add_equipment_production = {
-		equipment = {
-			type = ship_hull_ironclad_1
-			creator = "RUS"
-			version_name = "Armored frigate General-Admiral-class M1870"
-		}
-		name = "Aleksandr Nevskiy"
-		requested_factories = 1
-		progress = 0.05
-		amount = 1
 	}
 }

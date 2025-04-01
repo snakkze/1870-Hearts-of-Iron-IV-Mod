@@ -240,7 +240,7 @@ guiTypes = {
 					# contains industrial_organisation_tree_window
 					name = "tree_list"
 					position = { x = 0 y = 0 }
-					slotsize = { width = 315 }
+					slotsize = { width = 315 height = 0 }
 					max_slots_horizontal = 100
 					max_slots_vertical = 1
 					format = "UPPER_LEFT"

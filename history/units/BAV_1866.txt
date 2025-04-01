@@ -1,6 +1,6 @@
 division_template = {
   	name = "Infanterieregiment"
-	division_names_group = PRS_LWR_01
+	
   is_locked = no
 
   regiments = {
@@ -11,7 +11,7 @@ division_template = {
 }
 division_template = {
 	name = "Feldartillerieregiment"
-	division_names_group = PRS_LWR_01
+	
 	is_locked = no
 
 	regiments = {
@@ -25,7 +25,7 @@ division_template = {
 }
 division_template = {
 	name = "Kavallerieregiment"
-	division_names_group = PRS_KAV_01
+	
 	is_locked = no
 
 	regiments = {

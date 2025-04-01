@@ -37,7 +37,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_idea_fra_napoleon_iii_i"
-		texturefile = "gfx/interface/ideas/napoleon_iii.dds"
+		texturefile = "gfx/interface/ideas/idea_napoleon_iii.dds"
 	}
 
 	SpriteType = {
@@ -102,7 +102,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_education_reform"
-		texturefile = "gfx/interface/ideas/education_reform.dds"
+		texturefile = "gfx/interface/ideas/progressive_education.dds"
 	}	
 
 	SpriteType = {
@@ -242,7 +242,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_idea_victor_of_crimean_war"
-		texturefile = "gfx/interface/ideas/idea_winner_of_crimea_war.png"
+		texturefile = "gfx/interface/ideas/prestige_modifiers/WIP.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_ENG_matthew_arnold"
@@ -278,7 +278,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_idea_AFG_muhammad_kateb"
-		texturefile = "gfx/interface/ideas/AFG/idea_AFG_muhammad_kateb.png"
+		texturefile = "gfx/interface/ideas/AFG/idea_AFG_muhammad_kateb.dds"
 	}
 
 	SpriteType = {

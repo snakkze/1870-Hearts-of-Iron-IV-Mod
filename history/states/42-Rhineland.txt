@@ -4,8 +4,8 @@ state={
 	name="STATE_42"
 	resources={
 
-		steel=50.000
-		aluminium=14.000
+		steel=21.000
+		aluminium=5.000
 	
 
 wood=4
@@ -13,9 +13,6 @@ wood=4
 
 	history={
 		owner = PRS
-		victory_points = {
-			11435 1 
-		}
 		victory_points = {
 			11531 5 
 		}
@@ -29,11 +26,11 @@ wood=4
 	}
 
 	provinces={
-		9575 11435 11470 11531 11494
+		9575 11531 14655 14656
 	}
-	manpower=1574424
+	manpower=574424
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=town
 	local_supplies=0.000
 }
 

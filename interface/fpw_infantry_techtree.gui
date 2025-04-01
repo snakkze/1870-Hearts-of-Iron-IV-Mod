@@ -8,7 +8,7 @@ guiTypes = {
 
 		background = {
 			name = "bg"
-			quadTextureSprite ="GFX_technology_fpw_infantry_folder_small_unavailable_item_bg"
+			quadTextureSprite ="GFX_technology_fpw_industry_folder_small_unavailable_item_bg"
 		}
 		
 		gridboxtype = {
@@ -56,7 +56,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+			quadTextureSprite ="GFX_subtechnology_unavailable_item_bg"
 		}
 		
 		gridboxtype = {

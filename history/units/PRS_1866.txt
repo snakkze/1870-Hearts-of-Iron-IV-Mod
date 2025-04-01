@@ -1,6 +1,6 @@
 division_template = {
 	name = "Infanterie-Division"
-	division_names_group = PRS_INF_01
+	
 	is_locked = no
 
 	regiments = {
@@ -16,7 +16,7 @@ division_template = {
 
 division_template = {
 	name = "Kavallerie-Division"
-	division_names_group = PRS_KAV_01
+	
 	is_locked = no
 
 	regiments = {
@@ -32,7 +32,7 @@ division_template = {
 
 division_template = {
 	name = "Landwehr-Regiment"
-	division_names_group = PRS_LWR_01
+	
 	is_locked = no
 
 	regiments = {
@@ -45,7 +45,6 @@ division_template = {
 
 division_template = {
 	name = "Garde-Infanterie-Division"
-	division_names_group = PRS_GAR_01
 	priority = 2
 	is_locked = no
 
@@ -603,7 +602,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_rifle_1
+			type = infantry_equipment_1
 			creator = "PRS"
 		}
 		requested_factories = 2
@@ -612,16 +611,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = uniform_equipment_2
-			creator = "PRS"
-		}
-		requested_factories = 2
-		progress = 0.5
-		efficiency = 30
-	}
-	add_equipment_production = {
-		equipment = {
-			type = cavalry_equipment_0
+			type = fpw_cavalry_equipment_0
 			creator = "PRS"
 		}
 		requested_factories = 1
@@ -630,7 +620,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = rifled_cannon_equipment_0
+			type = fpw_cannon_artillery_equipment
 			creator = "PRS"
 		}
 		requested_factories = 2

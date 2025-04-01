@@ -1770,7 +1770,7 @@ spriteTypes = {
     }
 	SpriteType = {
 		name = "GFX_focus_SOV_tsar_shine"
-		texturefile = "gfx/interface/goals/SOV_tsar.png"
+		texturefile = "gfx/interface/goals/SOV/SOV_tsar.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/SOV_tsar.png"
@@ -1801,7 +1801,7 @@ spriteTypes = {
     }
 	SpriteType = {
 		name = "GFX_focus_SOV_plot_tsar_shine"
-		texturefile = "gfx/interface/goals/SOV_plot_tsar.png"
+		texturefile = "gfx/interface/goals/SOV/focus_SOV_plot_tsar.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/SOV_plot_tsar.png"
@@ -1832,7 +1832,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_SOV_army_shine"
-		texturefile = "gfx/interface/goals/SOV_army.png"
+		texturefile = "gfx/interface/goals/SOV/focus_SOV_russian_army.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/SOV_army.png"
@@ -2605,101 +2605,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_russia_construct_infrastructure_shine"
-		texturefile = "gfx/interface/goals/goal_russia_construct_infrastructure.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_russia_construct_infrastructure.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_russia_construct_infrastructure.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_belarus_construct_infrastructure_shine"
-		texturefile = "gfx/interface/goals/goal_belarus_construct_infrastructure.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_belarus_construct_infrastructure.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_belarus_construct_infrastructure.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_ukraine_construct_infrastructure_shine"
-		texturefile = "gfx/interface/goals/goal_ukraine_construct_infrastructure.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_ukraine_construct_infrastructure.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_ukraine_construct_infrastructure.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_focus_SOV_new_oficer_core_shine"
-		texturefile = "gfx/interface/goals/focus_SOV_new_oficer_core.dds"
+		texturefile = "gfx/interface/goals/SOV/focus_SOV_new_oficer_core.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_SOV_new_oficer_core.dds"
