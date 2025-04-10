@@ -157,14 +157,14 @@ bookmarks = {
             minor = yes
 			history = "AFG_1866_DESC"
 			ideology = neutrality
-            available = { always yes }
+            available = { always = yes }
 			ideas = {
 				fpw_AFZ_AFG_Afghan_Civil_War
 				fpw_AFZ_AFG_lack_of_national_identity
                 fpw_AFG_entirely_war_economy
 			}
 			focuses = {
-				afg_begin_sher_alis_reforms
+				afg_cut_the_ties
 				afg_the_graveyard_of_empires
 				afg_assume_full_control
 			}

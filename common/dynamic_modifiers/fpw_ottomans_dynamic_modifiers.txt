@@ -28,8 +28,6 @@ fpw_TUR_cretan_revolt = {
 	enable = { always = yes }
 	icon = tfv_can_conscription_crisis
 
-	hidden_effect = {
-	}
 
 	custom_modifier_tooltip = ottoman_cretan_revolt
 }

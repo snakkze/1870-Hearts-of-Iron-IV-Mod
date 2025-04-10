@@ -574,6 +574,7 @@
 		prerequisite = { focus = afg_complete_economic_reforms }
 		relative_position_id = afg_complete_economic_reforms
 		available = {
+			has_completed_focus = afg_modernization_efforts
 		}
 		
 		mutually_exclusive = { focus = afg_focus_on_agriculture }
@@ -819,7 +820,7 @@
 	}
 	focus = {
 		id = afg_grant_workers_rights
-		icon = GFX_SOV_increase_state_reserves_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_construction2
 		
 		x = 1
 		y = 3
@@ -1105,7 +1106,7 @@
 
 		available = {
 			has_war_with = AFZ
-			date > 1867
+			date > 1867.1.1
 		}
 		
 		completion_reward = {	
@@ -1236,6 +1237,178 @@
 		
 		completion_reward = {
 			add_ideas = fpw_AFG_nationalism
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_resist_the_great_game
+		icon = GFX_focus_PER_secure_afghanistan
+		
+		x = 83
+		y = 2
+		
+		cost = 5
+
+		prerequisite = { focus = afg_barazaki}
+
+		available = {
+			date > 1874.1.1
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_provoke_the_british
+		icon = GFX_focus_eng_decolonization
+		
+		x = 0
+		y = 1
+		
+		cost = 5
+
+		prerequisite = { focus = afg_resist_the_great_game }
+		relative_position_id = afg_resist_the_great_game
+		available = {
+			date > 1874.1.1
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_treaty_of_gandamak
+		icon = GFX_focus_generic_treaty
+		
+		x = -2
+		y = 1
+		
+		cost = 5
+
+		prerequisite = { focus = afg_provoke_the_british }
+		relative_position_id = afg_provoke_the_british
+		available = {
+		}
+		
+		completion_reward = {
+			SOV = {
+				country_event = fpw_afghan.39
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_deny_british_envoy
+		icon = GFX_focus_attack_britain
+		
+		x = 2
+		y = 1
+		
+		cost = 3
+
+		prerequisite = { focus = afg_provoke_the_british }
+		relative_position_id = afg_provoke_the_british
+		available = {
+		}
+		
+		completion_reward = {
+			add_war_support = 0.15
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_cut_the_ties
+		icon = GFX_focus_ARG_cut_ties_with_britain
+		
+		x = 0
+		y = 2
+		
+		cost = 5
+
+		prerequisite = { focus = afg_treaty_of_gandamak }
+		prerequisite = { focus = afg_deny_british_envoy }
+		relative_position_id = afg_provoke_the_british
+		available = {
+		}
+		
+		completion_reward = {
+			ENG = {
+				country_event = fpw_afghan.40
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_realize_sher_ali_khans_dreams
+		icon = GFX_focus_AFG_confederation_with_pakistan
+		
+		x = 0
+		y = 3
+		
+		cost = 5
+
+		prerequisite = { focus = afg_cut_the_ties }
+		relative_position_id = afg_provoke_the_british
+		available = {
+			if  = {
+				limit = {
+					has_war_with = ENG
+				}
+				NOT = {
+					has_completed_focus = afg_restore_the_durrani_empire
+				}
+				controls_province = 2086
+			}
+			else = {
+				NOT = {
+					has_completed_focus = afg_restore_the_durrani_empire
+				}
+				owns_state = 443
+				owns_state = 440
+				owns_state = 787
+				owns_state = 441
+				owns_state = 439
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_war_with = ENG
+					controls_province = 2086
+				}
+				transfer_state = 443
+				transfer_state = 440
+				transfer_state = 787
+				transfer_state = 441
+				transfer_state = 439
+				white_peace = ENG
+			}
+			set_cosmetic_tag = AFG_SHR
 		}
 		
 		ai_will_do = {
@@ -1456,6 +1629,7 @@
 		
 		completion_reward = {
 			add_ideas = fpw_AFG_complete_trust_in_sher_ali_khan
+			add_country_leader_trait = fpw_afghan_lion
 		}
 		
 		ai_will_do = {
@@ -1946,8 +2120,8 @@
 		prerequisite = { focus = afg_avenge_the_anglo_persian_war }
 
 		available = {
-			NOT = { has_completed_focus = afg_blessed_by_allah }
-		}mpletion_reward = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = fpw_afg_durrani
 			410 = { add_core_of = ROOT }
 			414 = { add_core_of = ROOT }
@@ -2889,10 +3063,10 @@
 			TUR = {
 				exists = no
 			}
-		}
-		bypass = {
-			IRQ = {
-				exists = yes
+			OR = {
+				IRQ = {
+					exists = yes
+				}
 			}
 		}
 		available = {
