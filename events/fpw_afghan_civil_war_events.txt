@@ -737,3 +737,36 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = fpw_afghan.41
+	title = afghan_fpw.41.t
+	desc = afghan_fpw.41.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We must use this chance"
+		declare_war_on = {
+			target = RAJ
+			type = puppet_wargoal_focus
+		}
+		ai_chance = { base = 75 }
+	}
+	option = {
+		name = "no"
+		ai_chance = { base = 25 }
+	}
+}
+country_event = {
+	id = fpw_afghan.42
+	title = afghan_fpw.42.t
+	desc = afghan_fpw.42.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We tried"
+	}
+}

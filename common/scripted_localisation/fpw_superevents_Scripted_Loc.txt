@@ -26,6 +26,12 @@ defined_text = {
         }
         localization_key = SuperEvent_BW
     }
+    text = {
+        trigger = {
+            has_global_flag = fpw_aaw
+        }
+        localization_key = SuperEvent_AAW
+    }
 
 }
 	
@@ -60,6 +66,12 @@ defined_text = {
         }
         localization_key = SuperEvent_BW_DESCRIPTION
     }
+    text = { 
+        trigger = {
+            has_global_flag = fpw_aaw
+        }
+        localization_key = SuperEvent_AAW_DESCRIPTION
+    }
 
 }
 	
@@ -93,5 +105,11 @@ defined_text = {
             has_global_flag = fpw_bw
         }
         localization_key = SuperEvent_BW_REMARK
+    }
+    text = {
+        trigger = {
+            has_global_flag = fpw_aaw
+        }
+        localization_key = SuperEvent_AAW_REMARK
     }
 }

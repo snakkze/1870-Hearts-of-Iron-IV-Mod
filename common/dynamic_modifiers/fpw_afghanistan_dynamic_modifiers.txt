@@ -50,4 +50,10 @@ fpw_AFG_radical_elements_incouraged = {
 	consumer_goods_factor = afg_radical_consumer_goods
 	industrial_capacity_factory = afg_radical_factory_output
 }
+fpw_AFG_pakistani_resistance = {
+	enable = { always = yes }
+	icon = GFX_afg_wip
 
+	army_attack_factor = 0.25
+	
+}
