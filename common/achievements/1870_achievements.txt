@@ -246,3 +246,32 @@ carlist_w = {
 		# i aint coding this
 	}
 }
+
+burn_the_world = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = AFG
+	}
+
+	happened = {
+		has_completed_focus = afg_a_new_world_order
+		all_state = {
+			is_owned_by = AFG
+		}
+	}
+}
+
+restore_durrani_emp = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		original_tag = AFG
+	}
+
+	happened = {
+		has_completed_focus = afg_restore_the_durrani_empire
+	}
+}

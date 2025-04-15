@@ -5453,12 +5453,6 @@ focus = {
 		id = PRS_focus_mobile_warfare
 		icon = GFX_focus_generic_horse_studs
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		x = 2
 		y = 1
@@ -5488,12 +5482,6 @@ focus = {
 		id = PRS_focus_expand_cavalry_core
 		icon = GFX_goal_generic_cavalry
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		available = {
 			
@@ -5517,12 +5505,6 @@ focus = {
 		id = PRS_focus_faster_armies
 		icon = GFX_focus_generic_little_entente
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		available = {
 			
@@ -5546,12 +5528,6 @@ focus = {
 		id = PRS_focus_grand_planning
 		icon = GFX_focus_generic_fascist_troops
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		x = -2
 		y = 1
@@ -5581,12 +5557,6 @@ focus = {
 		id = PRS_focus_improve_training_quality
 		icon = GFX_focus_generic_advanced_military_studies
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		available = {
 		}
@@ -5610,12 +5580,6 @@ focus = {
 		id = PRS_focus_quality_of_education
 		icon = GFX_goal_generic_army_artillery
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		available = {
 		}
@@ -5638,12 +5602,6 @@ focus = {
 		id = PRS_focus_amend_research_budget
 		icon = GFX_focus_generic_military_industry
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		available = {
 		}
@@ -5666,12 +5624,6 @@ focus = {
 		id = PRS_focus_equipment_quality
 		icon = GFX_focus_chi_army_reform
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		available = {
 		}
@@ -5699,12 +5651,6 @@ focus = {
 		id = PRS_focus_equipment_quantity
 		icon = GFX_focus_generic_limited_social_mobilization
 		
-		allow_branch = {
-			is_debug = yes
-			NOT = {
-				has_completed_focus = PRS_bruderkrieg_ending
-			}
-		}
 
 		available = {
 		}

@@ -714,7 +714,6 @@ country_event = {
 		diplomatic_relation = {
 			country = AFG
 			relation = non_aggression_pact
-			active = no
 		}
 	}
 	option = {
@@ -768,5 +767,78 @@ country_event = {
 
 	option = {
 		name = "We tried"
+	}
+}
+country_event = {
+	id = fpw_afghan.43
+	title = afghan_fpw.43.t
+	desc = afghan_fpw.43.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We Shall Sign the Treaty"
+		diplomatic_relation = {
+			country = AFG
+			relation = non_aggression_pact
+		}
+	}
+	option = {
+		name = "You are but a pawn"
+	}
+}
+country_event = {
+	id = fpw_afghan.44
+	title = afghan_fpw.44.t
+	desc = afghan_fpw.44.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Africa is but our playground"
+		every_state = {
+			limit = {
+				is_on_continent = africa
+			}
+			add_core_of = PREV
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.45
+	title = afghan_fpw.45.t
+	desc = afghan_fpw.45.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Africa is but our playground"
+		every_state = {
+			limit = {
+				is_core_of = AUS
+			}
+			add_core_of = PREV
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.46
+	title = afghan_fpw.46.t
+	desc = afghan_fpw.46.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Asia shall become our main base of operations"
+		every_state = {
+			limit = {
+				is_on_continent = asia
+			}
+			add_core_of = PREV
+		}
 	}
 }

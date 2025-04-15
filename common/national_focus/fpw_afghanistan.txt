@@ -1247,7 +1247,7 @@
 		id = afg_resist_the_great_game
 		icon = GFX_focus_PER_secure_afghanistan
 		
-		x = 83
+		x = 87
 		y = 2
 		
 		cost = 5
@@ -1271,7 +1271,7 @@
 		id = afg_provoke_the_british
 		icon = GFX_focus_eng_decolonization
 		
-		x = 0
+		x = -5
 		y = 1
 		
 		cost = 5
@@ -1279,8 +1279,13 @@
 		prerequisite = { focus = afg_resist_the_great_game }
 		relative_position_id = afg_resist_the_great_game
 		available = {
-			date > 1874.1.1
+			date > 1871.1.1
+			NOT = {
+				has_completed_focus = afg_indian_campaign
+			}
 		}
+
+		mutually_exclusive = { focus = afg_against_russian_imperalism }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -1292,13 +1297,422 @@
 		}
 	}
 	focus = {
+		id = afg_against_russian_imperalism
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		
+		x = 5
+		y = 1
+		
+		cost = 5
+
+		prerequisite = { focus = afg_resist_the_great_game }
+		relative_position_id = afg_resist_the_great_game
+		available = {
+			date > 1871.1.1
+		}
+
+		mutually_exclusive = {
+			focus = afg_provoke_the_british
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_secure_the_southern_front
+		icon = GFX_focus_chi_british_cooperation
+		
+		x = 0
+		y = 1
+		
+		cost = 3
+
+		prerequisite = { focus = afg_against_russian_imperalism }
+		relative_position_id = afg_against_russian_imperalism
+		available = {
+			date > 1871.1.1
+		}
+
+		
+		completion_reward = {
+			ENG = {
+				country_event = fpw_afghan.43
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_promote_nationalism_in_russia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		
+		x = -1
+		y = 1
+		
+		cost = 5
+
+		prerequisite = { focus = afg_secure_the_southern_front }
+		relative_position_id = afg_secure_the_southern_front
+		available = {
+		}
+
+		
+		completion_reward = {
+			742 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			830 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			405 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			584 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			832 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			823 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			831 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			732 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			586 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			404 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			585 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			402 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+			587 = {
+				add_dynamic_modifier = {
+					modifier = fpw_AFG_central_asian_nationalism
+					scope = AFG
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_ready_the_armies
+		icon = GFX_focus_generic_advanced_military_studies
+		
+		x = 1
+		y = 1
+		
+		cost = 3
+
+		prerequisite = { focus = afg_secure_the_southern_front }
+		relative_position_id = afg_secure_the_southern_front
+		available = {
+		}
+
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = fpw_AFG_mobilize_the_reserves
+				days = 360
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_avenge_bukharia
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		
+		x = 0
+		y = 2
+		
+		cost = 10
+
+		prerequisite = { focus = afg_promote_nationalism_in_russia }
+		prerequisite = { focus = afg_ready_the_armies }
+		relative_position_id = afg_secure_the_southern_front
+		available = {
+			BUK = {
+				exists = no
+			}
+		}
+
+		
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_realize_sher_ali_dreams
+		icon = GFX_focus_GER_autarky_achieved
+		
+		x = 0
+		y = 4
+		
+		cost = 3
+
+		prerequisite = { focus = afg_promote_nationalism_in_russia }
+		prerequisite = { focus = afg_ready_the_armies }
+		relative_position_id = afg_secure_the_southern_front
+		available = {
+			if  = {
+				limit = {
+					has_war_with = SOV
+				}
+				controls_state = 742
+				controls_state = 830
+				controls_state = 405
+				controls_state = 584
+				controls_state = 832
+				controls_state = 830
+				controls_state = 823
+				controls_state = 831
+				controls_state = 732
+				controls_state = 586
+				controls_state = 404
+				controls_state = 585
+				controls_state = 402
+				controls_state = 587
+			}
+			else = {
+
+				owns_state = 742
+				owns_state = 830
+				owns_state = 405
+				owns_state = 584
+				owns_state = 832
+				owns_state = 830
+				owns_state = 823
+				owns_state = 831
+				owns_state = 732
+				owns_state = 586
+				owns_state = 404
+				owns_state = 585
+				owns_state = 402
+				owns_state = 587
+			}
+		}
+
+		
+		completion_reward = {
+			set_cosmetic_tag = AFG_SHR
+			if = {
+				limit = {
+					has_war_with = SOV
+					controls_state = 742
+					controls_state = 830
+					controls_state = 405
+					controls_state = 584
+					controls_state = 832
+					controls_state = 830
+					controls_state = 823
+					controls_state = 831
+					controls_state = 732
+					controls_state = 586
+					controls_state = 404
+					controls_state = 585
+					controls_state = 402
+					controls_state = 587
+				}
+				transfer_state = 742
+				transfer_state = 830
+				transfer_state = 405
+				transfer_state = 584
+				transfer_state = 832
+				transfer_state = 830
+				transfer_state = 823
+				transfer_state = 831
+				transfer_state = 732
+				transfer_state = 586
+				transfer_state = 404
+				transfer_state = 585
+				transfer_state = 402
+				transfer_state = 587
+				white_peace = SOV
+			}
+			742 = { add_core_of = ROOT }
+			830 = { add_core_of = ROOT }
+			405 = { add_core_of = ROOT }
+			584 = { add_core_of = ROOT }
+			832 = { add_core_of = ROOT }
+			830 = { add_core_of = ROOT }
+			823 = { add_core_of = ROOT }
+			831 = { add_core_of = ROOT }
+			732 = { add_core_of = ROOT }
+			787 = { add_core_of = ROOT }
+			586 = { add_core_of = ROOT }
+			404 = { add_core_of = ROOT }
+			585 = { add_core_of = ROOT }
+			402 = { add_core_of = ROOT }
+			587 = { add_core_of = ROOT }
+			hidden_effect = {
+				BUK = {
+					transfer_state = 742
+					transfer_state = 830
+					transfer_state = 405
+					transfer_state = 584
+					transfer_state = 832
+					transfer_state = 830
+					transfer_state = 823
+					transfer_state = 831
+					transfer_state = 732
+					transfer_state = 586
+					transfer_state = 404
+					transfer_state = 585
+					transfer_state = 402
+					transfer_state = 587
+					742 = { add_core_of = ROOT }
+					830 = { add_core_of = ROOT }
+					405 = { add_core_of = ROOT }
+					584 = { add_core_of = ROOT }
+					832 = { add_core_of = ROOT }
+					830 = { add_core_of = ROOT }
+					823 = { add_core_of = ROOT }
+					831 = { add_core_of = ROOT }
+					732 = { add_core_of = ROOT }
+					787 = { add_core_of = ROOT }
+					586 = { add_core_of = ROOT }
+					404 = { add_core_of = ROOT }
+					585 = { add_core_of = ROOT }
+					402 = { add_core_of = ROOT }
+					587 = { add_core_of = ROOT }
+				}
+				set_autonomy = {
+					target = BUK
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = annex_central_asia
+		icon = GFX_focus_generic_annex_country
+		
+		x = 0
+		y = 1
+		
+		cost = 10
+
+		prerequisite = { focus = afg_realize_sher_ali_dreams}
+		relative_position_id = afg_realize_sher_ali_dreams
+		available = {
+		}
+
+		
+		completion_reward = {
+			annex_country = {
+				target = BUK
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_defend_the_mountains
+		icon = GFX_focus_generic_mountain_fortification
+		
+		x = 0
+		y = 2
+		
+		cost = 5
+
+		prerequisite = { focus = afg_provoke_the_british focus = afg_against_russian_imperalism}
+		relative_position_id = afg_resist_the_great_game
+		available = {
+		}
+
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = fpw_AFG_defend_the_homeland
+				days = 180
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
 		id = afg_treaty_of_gandamak
 		icon = GFX_focus_generic_treaty
 		
 		x = -2
 		y = 1
 		
-		cost = 5
+		cost = 3
 
 		prerequisite = { focus = afg_provoke_the_british }
 		relative_position_id = afg_provoke_the_british
@@ -1344,7 +1758,7 @@
 		x = 0
 		y = 2
 		
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = afg_treaty_of_gandamak }
 		prerequisite = { focus = afg_deny_british_envoy }
@@ -1356,11 +1770,16 @@
 			ENG = {
 				country_event = fpw_afghan.40
 			}
-			set_global_flag = super_visible
-            set_global_flag = fpw_aaw
-            visible = {
-                has_global_flag = super_visible
-            }
+			hidden_effect = {
+				play_song = "sultan_qalbam"
+				set_global_flag = super_visible
+            	set_global_flag = fpw_aaw
+            	visible = {
+                	has_global_flag = super_visible
+            	}
+			}
+			
+			
 		}
 		
 		ai_will_do = {
@@ -1489,9 +1908,6 @@
 				limit = {
 					has_war_with = ENG
 				}
-				NOT = {
-					has_completed_focus = afg_restore_the_durrani_empire
-				}
 				controls_province = 2086
 			}
 			else = {
@@ -1591,7 +2007,7 @@
 		x = -1
 		y = 1
 		
-		cost = 3
+		cost = 5
 
 		prerequisite = { focus = afg_realize_sher_ali_khans_dreams }
 		relative_position_id = afg_realize_sher_ali_khans_dreams
@@ -1617,7 +2033,7 @@
 		x = 0
 		y = 2
 		
-		cost = 3
+		cost = 10
 
 		prerequisite = { focus = afg_decrease_pakistani_autonomy }
 		prerequisite = { focus = afg_intergrate_pakistan_national_identity }
@@ -3335,7 +3751,7 @@
 	}
 	focus = {
 		id = afg_hold_a_baluchistani_referandum
-		icon = GFX_focus_AFG_pashtunistan_referendum
+		icon = GFX_focus_AFG_future_of_balochistan
 		
 		x = 4
 		y = 7
@@ -3433,7 +3849,7 @@
 	### Conservative Branch
 	focus = {
 		id = afg_conservative_victory
-		icon = GFX_SOV_dismantle_the_zemsky_sobor_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_fascist_propaganda
 		
 		x = 45
 		y = 5
@@ -3458,6 +3874,218 @@
 		}
 	}
 	focus = {
+		id = afg_national_afghan_army
+		icon = GFX_focus_generic_little_entente
+		
+		x = -13
+		y = 1
+		
+
+
+		cost = 10
+		
+		prerequisite = { focus = afg_conservative_victory }
+		relative_position_id = afg_conservative_victory
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_AFG_the_national_afghan_army
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_rapid_militarization
+		icon = GFX_focus_ITA_generic_fascist_workers
+		
+		x = 0
+		y = 1
+		
+
+
+		cost = 10
+		
+		prerequisite = { focus = afg_national_afghan_army }
+		relative_position_id = afg_national_afghan_army
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_AFG_the_national_afghan_army
+				add_idea = fpw_AFG_the_national_afghan_army_2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_ignore_civillian_needs
+		icon = GFX_focus_GER_demonstration_of_military_achievements
+		
+		x = 0
+		y = 2
+		
+
+
+		cost = 5
+		
+		prerequisite = { focus = afg_rapid_militarization }
+		relative_position_id = afg_national_afghan_army
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_AFG_the_national_afghan_army_2
+				add_idea = fpw_AFG_the_national_afghan_army_3
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_our_domain
+		icon = GFX_focus_GER_mittelafrika
+		
+		x = -3
+		y = 1
+		
+
+
+		cost = 15
+		
+		prerequisite = { focus = afg_national_afghan_army }
+		relative_position_id = afg_national_afghan_army
+
+
+		available = {
+			has_completed_focus = afg_crush_the_false_sultan
+		}
+		
+		completion_reward = {
+			country_event = fpw_afghan.44
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_raze_austria
+		icon = GFX_focus_RAJ_bathe_in_hellfire
+		
+		x = -1
+		y = 1
+		
+
+
+		cost = 5
+		
+		prerequisite = { focus = afg_our_domain }
+		relative_position_id = afg_our_domain
+
+
+		available = {
+			has_completed_focus = afg_march_into_europe
+			has_completed_focus = afg_raze_the_ground_and_scorch_the_earth
+		}
+		
+		completion_reward = {
+			country_event = fpw_afghan.45
+			every_state = {
+				limit = {
+					is_core_of = AUS
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_dominating_our_home
+		icon = GFX_focus_RAJ_burn_down_the_cellular_jail
+		
+		x = 1
+		y = 1
+		
+
+
+		cost = 15
+		
+		prerequisite = { focus = afg_our_domain }
+		relative_position_id = afg_our_domain
+
+
+		available = {
+			has_completed_focus = afg_raze_the_ground_and_scorch_the_earth
+			has_completed_focus = afg_liberate_chinese_muslims
+			has_completed_focus = afg_destruction_of_the_russian_state
+		}
+		
+		completion_reward = {
+			country_event = fpw_afghan.46
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_afghanistan_knows_no_bounds
+		icon = GFX_focus_ETH_expand_the_levy
+		
+		x = 1
+		y = 2
+		
+
+
+		cost = 2
+		
+		prerequisite = { focus = afg_dominating_our_home }
+		prerequisite = { focus = afg_raze_austria }
+		prerequisite = { focus = afg_ignore_civillian_needs }
+		relative_position_id = afg_our_domain
+
+
+		available = {
+			has_completed_focus = afg_march_into_europe
+			has_completed_focus = afg_raze_the_ground_and_scorch_the_earth
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = fpw_AFG_the_national_afghan_army_3
+				add_idea = fpw_AFG_the_national_afghan_army_4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
 		id = afg_expansionist_policies
 		icon = GFX_focus_generic_annex_country
 		
@@ -3475,6 +4103,7 @@
 		
 		completion_reward = {
 			add_war_support = 0.05
+			add_ideas = fpw_AFG_expansionist_policies
 		}
 		
 		ai_will_do = {
@@ -4324,6 +4953,18 @@
 		completion_reward = {
 			set_cosmetic_tag = AFG_CTRL
 			add_ideas = fpw_AFG_nationalism_embraced
+			add_to_variable = {
+				var = afg_org
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_stability_factor
+				value = -0.025
+			}
+			add_to_variable = {
+				var = afg_army_attack
+				value = 0.025
+			}
 		}
 		
 		ai_will_do = {
@@ -4395,7 +5036,7 @@
 		x = 15
 		y = 2
 		
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = afg_begin_mordernization }
 
@@ -4422,7 +5063,7 @@
 		x = 15
 		y = 3
 		
-		cost = 10
+		cost = 3
 		
 		prerequisite = { focus = afg_modernize_infantry_equipment }
 
@@ -4449,7 +5090,7 @@
 		x = 13
 		y = 2
 		
-		cost = 5
+		cost = 3
 		
 		prerequisite = { focus = afg_begin_mordernization }
 
@@ -4505,7 +5146,7 @@
 		x = 17
 		y = 2
 		
-		cost = 5
+		cost = 3
 		
 		prerequisite = { focus = afg_begin_mordernization }
 
@@ -4532,7 +5173,7 @@
 		x = 17
 		y = 3
 		
-		cost = 10
+		cost = 5
 		
 		prerequisite = { focus = afg_modernize_calvary }
 

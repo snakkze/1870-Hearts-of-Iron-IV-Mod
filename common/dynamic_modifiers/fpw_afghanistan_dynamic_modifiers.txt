@@ -57,3 +57,10 @@ fpw_AFG_pakistani_resistance = {
 	army_attack_factor = 0.25
 	
 }
+fpw_AFG_central_asian_nationalism = {
+	enable = { always = yes }
+	icon = GFX_afg_wip
+
+	army_attack_factor = 0.25
+	
+}
