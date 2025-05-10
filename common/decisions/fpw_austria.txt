@@ -361,3 +361,171 @@ fpw_austro_hungarian_compromise = {
 		}
 	}
 }
+
+fpw_austria_german_solution = {
+	schleswig_holstein_question = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		visible = {
+			always = yes
+		}
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			AUS = {
+				country_event = austria_fpw.3
+			}
+		}
+	}
+
+	thuringia_question = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		visible = {
+			always = yes
+		}
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			AUS = {
+				country_event = austria_fpw.4
+			}
+		}
+	}
+
+	south_german_question = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		visible = {
+			always = yes
+		}
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			AUS = {
+				country_event = austria_fpw.5
+			}
+		}
+	}
+
+	birkenfeld_question = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		visible = {
+			42 = {
+				is_owned_and_controlled_by = FRA
+			}
+		}
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			AUS = {
+				country_event = austria_fpw.6
+			}
+		}
+	}
+
+	hesse_question = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		visible = {
+			always = yes
+		}
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			AUS = {
+				country_event = austria_fpw.7
+			}
+		}
+	}
+
+	justice_for_liechtenstein = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		visible = {
+			always = yes
+		}
+		allowed = {
+			always = yes
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			# no country sorry :/
+			add_victory_points = {
+				province = 6680
+				value = 1
+			}
+		}
+	}
+}

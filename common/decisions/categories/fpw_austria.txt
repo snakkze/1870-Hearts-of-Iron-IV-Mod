@@ -8,10 +8,8 @@ fpw_austria_populations_of_the_empire = {
 	}
 
 	visible = {
-		tag = AUS
-		OR = {
-			has_completed_focus = AUS_a_duel_monarchy_with_dual_problems
-		}
+		original_tag = AUS
+		has_completed_focus = AUS_a_duel_monarchy_with_dual_problems
 	}
 }
 
@@ -30,5 +28,27 @@ fpw_austro_hungarian_compromise = {
 
 	visible = {
 		tag = AUS
+	}
+}
+
+fpw_austria_german_solution = {
+	priority = 99
+
+	picture = GFX_decision_category_german_solutions
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		if = {
+			limit = {
+				is_debug = yes
+			}
+			original_tag = AUS
+		} else = {
+			original_tag = AUS
+			has_completed_focus = AUS_seek_for_the_german_solution
+		}
 	}
 }

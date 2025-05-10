@@ -261,28 +261,62 @@ prussian_surrender = {
 	# HNV should be able to be puppeted by the uk via the focus. Context either stand on yourself and be the opfer of prussia or be defended by the uk
 	HNV = {
 		puppet = OLD
-		948 = {
-			transfer_state_to = HNV
-			add_core_of = HNV
-		}
-		950 = {
-			transfer_state_to = HNV
-			add_core_of = HNV
-		}
-		945 = {
-			transfer_state_to = HNV
-			#add_core_of = HNV
-		}
-		946 = {
-			transfer_state_to = HNV
-			#add_core_of = HNV
-		}
-		947 = {
-			transfer_state_to = HNV
-			#add_core_of = HNV
-		}
+		if = {
+			limit = {
+				BRE = {
+					is_in_faction_with = PRS
+				}
+			}
+			annex_country = {
+				target = BRE
+				transfer_troops = yes
+			}
+		} else = { puppet = BRE }
+		if = {
+			limit = {
+				BRU = {
+					is_in_faction_with = PRS
+				}
+			}
+			annex_country = {
+				target = BRU
+				transfer_troops = yes
+			}
+			948 = {
+				transfer_state_to = HNV
+				add_core_of = HNV
+			}
+		} else = { puppet = BRU }
+		if = {
+			limit = {
+				HAM = {
+					is_in_faction_with = PRS
+				}
+			}
+			annex_country = {
+				target = HAM
+				transfer_troops = yes
+			}
+		} else = { puppet = HAM }
+		if = {
+			limit = {
+				SBL = {
+					is_in_faction_with = PRS
+				}
+			}
+			annex_country = {
+				target = SBL
+				transfer_troops = yes
+			}
+		} else = { puppet = SBL }
 	}
 	PRS = {
+		puppet = ANH
+		puppet = MKS
+		puppet = MCK
+		puppet = LIP
+		puppet = LUE
+		puppet = WLD
 		937 = {
 			transfer_state_to = PRS
 			#add_core_of = SXY
@@ -299,30 +333,6 @@ prussian_surrender = {
 			transfer_state_to = PRS
 			#add_core_of = SXY
 		}
-		949 = {
-			transfer_state_to = PRS
-			#add_core_of = SXY
-		}
-		951 = {
-			transfer_state_to = PRS
-			#add_core_of = SXY
-		}
-		938 = {
-			transfer_state_to = PRS
-			#add_core_of = SXY
-		}
-		61 = {
-			transfer_state_to = PRS
-			#add_core_of = SXY
-		}
-		956 = {
-			transfer_state_to = PRS
-			#add_core_of = SXY
-		}
-		943 = {
-			transfer_state_to = PRS
-			#add_core_of = SXY
-		}
 	}
 	WRT = {
 		952 = {
@@ -332,24 +342,6 @@ prussian_surrender = {
 	}
 	BAV = {
 		set_cosmetic_tag = BAV_SGC
-		annex_country = {
-			target = BAD
-			transfer_troops = yes
-		}
-		annex_country = {
-			target = WRT
-			transfer_troops = yes
-		}
-		952 = {
-			transfer_state_to = BAV
-			add_core_of = BAV
-		}
-		935 = {
-			add_core_of = BAV
-		}
-		50 = {
-			add_core_of = BAV
-		}
 	}
 
 	ITA = {

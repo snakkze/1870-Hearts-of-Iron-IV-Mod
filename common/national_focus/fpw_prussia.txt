@@ -3050,8 +3050,6 @@ focus = {
 					custom_effect_tooltip = PRS_reform_civil_war
 					hidden_effect = {
 						start_civil_war = {
-							ruling_party = root
-							# Original country's ideology changes to communism
 							ideology = neutrality
 							# Breakaway gets old ideology of ROOT
 							size = 0.5

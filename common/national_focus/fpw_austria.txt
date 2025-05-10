@@ -20,7 +20,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 4175 y = 800 }
+	continuous_focus_position = { x = 2000 y = 2800 }
 	
 	default = no
 
@@ -180,8 +180,12 @@ focus_tree = {
 		}
 		
 		bypass = {
-			PRS = {
-				has_completed_focus = PRS_greater_german_solution
+			OR = {
+				PRS = {
+					has_completed_focus = PRS_greater_german_solution
+				}
+				has_completed_focus = AUS_victor_of_the_apw
+				has_completed_focus = AUS_ausgleich_negotiations
 			}
 		}
 
@@ -214,8 +218,12 @@ focus_tree = {
 		}
 		
 		bypass = {
-			PRS = {
-				has_completed_focus = PRS_greater_german_solution
+			OR = {
+				PRS = {
+					has_completed_focus = PRS_greater_german_solution
+				}
+				has_completed_focus = AUS_victor_of_the_apw
+				has_completed_focus = AUS_ausgleich_negotiations
 			}
 		}
 
@@ -248,11 +256,9 @@ focus_tree = {
 		}
 		
 		bypass = {
-			NOT = {
-				OR = {
-					has_war_with = PRS
-					has_global_flag = austro_prussian_war
-				}
+			OR = {
+				has_completed_focus = AUS_victor_of_the_apw
+				has_completed_focus = AUS_ausgleich_negotiations
 			}
 		}
 
@@ -274,7 +280,7 @@ focus_tree = {
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_victor_of_the_apw }
-		x = -6
+		x = -14
 		y = 1
 		cost = 5
 		icon = GFX_goal_generic_dangerous_deal
@@ -303,12 +309,15 @@ focus_tree = {
 		}
 	}
 
+	# German Confederation
+	# Habsburg Focus / global view
+	# Austria First (More industry, less expansion wargoals)
 	focus = {
 		id = AUS_victor_of_the_apw
 		relative_position_id = AUS_halt_prussian_expansion
 		prerequisite = { focus = AUS_halt_prussian_expansion }
 		mutually_exclusive = { focus = AUS_ausgleich_negotiations }
-		x = 6
+		x = 14
 		y = 1
 		cost = 5
 		icon = GFX_focus_ger_revive_kaiserreich
@@ -332,6 +341,929 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = AUS_wip_tt
+		}
+	}
+
+	# habsburg
+	focus = {
+		id = AUS_rethink_the_situation
+		relative_position_id = AUS_victor_of_the_apw
+		prerequisite = { focus = AUS_victor_of_the_apw }
+		mutually_exclusive = {
+			focus = AUS_german_solution
+		}
+		x = -10
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+		}
+	}
+
+	# Ausgleich now not in interest anymore as empire is more stable then ever before
+	focus = {
+		id = AUS_the_obsolete_question
+		relative_position_id = AUS_rethink_the_situation
+		prerequisite = { focus = AUS_rethink_the_situation }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+		}
+	}
+
+	# Get back what was taken from us
+	focus = {
+		id = AUS_validation_of_habsburg_claims
+		relative_position_id = AUS_the_obsolete_question
+		prerequisite = { focus = AUS_the_obsolete_question }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# gains claims on all habsburg territory
+			# netherlands
+			# iberia
+			# palestine
+		}
+	}
+
+	focus = {
+		id = AUS_spanish_habsburg
+		relative_position_id = AUS_validation_of_habsburg_claims
+		prerequisite = { focus = AUS_validation_of_habsburg_claims }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# decisions to support habsburg monarchists in spain
+		}
+	}
+
+	focus = {
+		id = AUS_portugese_general_consumption_tax
+		relative_position_id = AUS_spanish_habsburg
+		prerequisite = { focus = AUS_spanish_habsburg }
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# https://en.wikipedia.org/wiki/Lu%C3%ADs_I_of_Portugal
+			# auto completed with this historical moment (150 days after glorious revolution ends)
+			# triggers the "Janeirinha", event to fund unionists (scripted to lose)
+		}
+	}
+
+	focus = {
+		id = AUS_chance_in_the_glorious_revolution
+		relative_position_id = AUS_spanish_habsburg
+		prerequisite = { focus = AUS_spanish_habsburg }
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_avenge_the_unionists
+		relative_position_id = AUS_portugese_general_consumption_tax
+		prerequisite = { focus = AUS_chance_in_the_glorious_revolution }
+		prerequisite = { focus = AUS_portugese_general_consumption_tax }
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# Habsburg Spain will declare war on Portugal as portugal has fought a war against the will of the people (The small group of unionists)
+		}
+	}
+
+	
+	focus = {
+		id = AUS_iberian_union
+		relative_position_id = AUS_avenge_the_unionists
+		prerequisite = { focus = AUS_avenge_the_unionists }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_approaching_the_pope
+		relative_position_id = AUS_validation_of_habsburg_claims
+		prerequisite = { focus = AUS_validation_of_habsburg_claims }
+		x = 4
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# event for the pope "hey so remember the title i have. yk, king of jerusalem"
+		}
+	}
+
+	focus = {
+		id = AUS_pact_with_the_tsar
+		relative_position_id = AUS_approaching_the_pope
+		prerequisite = { focus = AUS_approaching_the_pope }
+		mutually_exclusive = {
+			focus = AUS_austria_stands_alone
+		}
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_austria_stands_alone
+		relative_position_id = AUS_approaching_the_pope
+		prerequisite = { focus = AUS_approaching_the_pope }
+		mutually_exclusive = {
+			focus = AUS_pact_with_the_tsar
+		}
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_the_last_crusade
+		relative_position_id = AUS_pact_with_the_tsar
+		prerequisite = { 
+			focus = AUS_austria_stands_alone
+			focus = AUS_pact_with_the_tsar 
+		}
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_kingdom_of_jerusalem
+		relative_position_id = AUS_the_last_crusade
+		prerequisite = { focus = AUS_the_last_crusade }
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = AUS_luxembourg_crisis
+		relative_position_id = AUS_validation_of_habsburg_claims
+		prerequisite = { focus = AUS_validation_of_habsburg_claims }
+		x = -4
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# autocompletes with the luxembourg crisis
+			# event for austria to intervene		
+			# with prussia not being able to intervene in this timeline the austrians guarantee luxembourg (as it is a german state at the end) and threat the netherlands if its sold
+			# threat to the dutchs means "you get a habsburg king, dont sell luxembourg and we protect you till end of time", of course france would defend the netherlands but with the massive austrian influence you cant be sure if france will be a good defense
+			# if accepted lead to france and britain guaranteeing belgium as response
+		}
+	}
+
+	focus = {
+		id = AUS_integrate_luxembourg_into_netherlands
+		relative_position_id = AUS_luxembourg_crisis
+		prerequisite = { focus = AUS_luxembourg_crisis }
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_fight_for_beligum
+		relative_position_id = AUS_luxembourg_crisis
+		prerequisite = { focus = AUS_luxembourg_crisis }
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# ignoring the guarantees getting a wargoal for belgium
+			# belgium will be integrated into "habsburg netherlands"
+		}
+	}
+
+	# North Pas de Calais = npdc
+	focus = {
+		id = AUS_belgian_npdc
+		relative_position_id = AUS_fight_for_beligum
+		prerequisite = { focus = AUS_fight_for_beligum }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# belgium will core NPdC, if still in the previous war with france it will be added in the peace deal, else if you gotta fight again
+		}
+	}
+
+	# United Netherlands
+	focus = {
+		id = AUS_united_netherlands
+		relative_position_id = AUS_belgian_npdc
+		prerequisite = { focus = AUS_belgian_npdc }
+		prerequisite = { focus = AUS_integrate_luxembourg_into_netherlands }
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# belgium will core NPdC, if still in the previous war with france it will be added in the peace deal, else if you gotta fight again
+		}
+	}
+
+	# final focus
+	focus = {
+		id = AUS_habsburgs_glorious_again
+		relative_position_id = AUS_iberian_union
+		prerequisite = { focus = AUS_iberian_union }
+		prerequisite = { focus = AUS_united_netherlands }
+		prerequisite = { focus = AUS_kingdom_of_jerusalem }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_focus_HABSBURG_for_the_glory_of_the_empire
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+		}
+	}
+
+	# Only for expansion tho
+	focus = {
+		id = AUS_euthnasia_for_the_sick_man
+		relative_position_id = AUS_the_obsolete_question
+		prerequisite = { focus = AUS_the_obsolete_question }
+		x = 8
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# dynamic decisions to support independence group for each balkan nation in the ottoman empire
+			# each country gets a variable that will increase with each support decision
+			# the median of all variables will calculate the total success chance
+			# each country can be no / medium / good chance
+			# no chance is no support = no oob etc
+			# medium chance is a medium army etc you understand
+		}
+	}
+
+	focus = {
+		id = AUS_seek_greek_support
+		relative_position_id = AUS_euthnasia_for_the_sick_man
+		prerequisite = { focus = AUS_euthnasia_for_the_sick_man }
+		x = 2
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# potential greek alliance
+			# if done before balkan war greek can also join the balkan war (if accepted ofc)
+		}
+	}
+
+	focus = {
+		id = AUS_kick_off_the_coups
+		relative_position_id = AUS_euthnasia_for_the_sick_man
+		prerequisite = { focus = AUS_euthnasia_for_the_sick_man }
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# start the indepence wars in balkan
+			# you may ask "wouldnt yugoslavia form" hell no they hate themselves why form yugoslavia lmao
+			# scripted they must win
+		}
+	}
+
+	# 
+	focus = {
+		id = AUS_bosnian_crisis
+		relative_position_id = AUS_kick_off_the_coups
+		prerequisite = { focus = AUS_kick_off_the_coups }
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# annex bosnia
+		}
+	}
+
+
+	# Basically the second german treaty finishing the remaining questions
+	focus = {
+		id = AUS_seek_for_the_german_solution
+		relative_position_id = AUS_the_obsolete_question
+		prerequisite = { focus = AUS_the_obsolete_question }
+		x = -8
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# Unlock decisions about the german questions
+			# thuringia
+			# schleswig
+			# hesse
+			# south german administration?
+
+			# form liechtenstein cause why not
+		}
+	}
+
+	focus = {
+		id = AUS_offer_protection_to_saxony
+		relative_position_id = AUS_seek_for_the_german_solution
+		prerequisite = { focus = AUS_seek_for_the_german_solution }
+		x = -2
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# hey sxy wanna be puppet?
+		}
+	}
+
+	# mark_layout_dirty
+	focus = {
+		id = AUS_offer_protection_to_thuringia
+		relative_position_id = AUS_seek_for_the_german_solution
+		prerequisite = { focus = AUS_seek_for_the_german_solution }
+		x = -1
+		y = 2
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		allow_branch = {
+			SXW = {
+				has_cosmetic_tag = SXW_thuringia
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# hey sxw wanna be puppet?
+		}
+	}
+
+	# Re-Integrate what has been taken from us!
+	focus = {
+		id = AUS_core_silesia
+		relative_position_id = AUS_seek_for_the_german_solution
+		prerequisite = { focus = AUS_seek_for_the_german_solution }
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
+			# core silesia
+		}
+	}
+
+	# try to unify greater germany
+	focus = {
+		id = AUS_german_solution
+		relative_position_id = AUS_victor_of_the_apw
+		prerequisite = { focus = AUS_victor_of_the_apw }
+		mutually_exclusive = {
+			focus = AUS_rethink_the_situation
+		}
+		x = 10
+		y = 1
+		cost = 5
+		icon = GFX_goal_unknown
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+
+		completion_reward = {
 		}
 	}
 
@@ -615,7 +1547,7 @@ focus_tree = {
 		id = AUS_cisleithanian_politics
 		relative_position_id = AUS_a_duel_monarchy_with_dual_problems
 		prerequisite = { focus = AUS_a_duel_monarchy_with_dual_problems }
-		x = -4
+		x = -5
 		y = 1
 		cost = 5
 		icon = GFX_aus_cisleitania_politics
@@ -2454,7 +3386,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUS_grunderzeit
-		x = 36
+		x = 46
 		y = 0
 		cost = 10
 		icon = GFX_focus_spa_save_the_alcazar
@@ -3096,7 +4028,8 @@ focus_tree = {
 
 	focus = {
 		id = AUS_increase_mil_spending
-		x = 45
+		relative_position_id = AUS_grunderzeit 
+		x = 9
 		y = 0
 		cost = 5
 		icon = GFX_focus_mex_privatisation

@@ -31,6 +31,27 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/fpw_russell_resigns.dds"
 	}
 
+	spriteType = {
+		name = "GFX_fpw_bavaria"
+		texturefile = "gfx/event_pictures/fpw_austria_bavaria.dds"
+	}
+	spriteType = {
+		name = "GFX_fpw_birkenfeld"
+		texturefile = "gfx/event_pictures/fpw_austria_birkenfeld.dds"
+	}
+	spriteType = {
+		name = "GFX_fpw_schleswig"
+		texturefile = "gfx/event_pictures/fpw_austria_schleswig_holstein.dds"
+	}
+	spriteType = {
+		name = "GFX_fpw_thuringia"
+		texturefile = "gfx/event_pictures/fpw_austria_thuringia.dds"
+	}
+	spriteType = {
+		name = "GFX_fpw_hesse"
+		texturefile = "gfx/event_pictures/fpw_austria_hesse.dds"
+	}
+
 	##################
 	### NEWSPAPERS ###
 	##################

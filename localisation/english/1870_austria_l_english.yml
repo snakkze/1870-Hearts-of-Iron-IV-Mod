@@ -166,18 +166,27 @@
  fpw_austro_hungarian_compromise_desc:0 "After our recent defeats in Prussia and Italy, the Hungarians have once more made clear their desire for autonomy. This time, we must amend the mistakes of the past and allow for some measure of Hungarian freedom.\n\nWe can do this through a number of reforms, which will debuff Hungarian states to allow for political stability.\n\n§RWe must keep Hungarian Reform Approval above 50 for the reforms to succeed§!\n\nCurrent §CHungarian Reform Approval§!: §Y[?AUS.hungarian_approval]%§!"
  AUS_hungarian_states:0 "Hungarian States affected by reform"
 
-AUS_befriend_hungarians:0 "Support Hungarian Interests"
-AUS_crush_hungarians:0 "Suppress Hungarian Autonomy"
-AUS_befriend_croats:0 "Strengthen Ties with Croatia"
-AUS_crush_croats:0 "Undermine Croatian Influence"
-AUS_befriend_slovak:0 "Promote Slovak Cooperation"
-AUS_crush_slovaks:0 "Crack Down on Slovak Ambitions"
-AUS_befriend_czechs:0 "Foster Czech Relations"
-AUS_crush_czechs:0 "Repress Czech Nationalism"
+ fpw_austria_german_solution:0 "Second German Treaty"
+ fpw_austria_german_solution_desc:0 "The Prussian threat has been crushed, and the German states now lie at the mercy of the Habsburg crown. With the old order shattered, Vienna must dictate the future of Germany. The fate of the German people will no longer be decided in Berlin, but in the halls of the Hofburg."
+ schleswig_holstein_question:0 "Fate of Schleswig-Holstein"
+ thuringia_question:0 "Thuringia Question"
+ south_german_question:0 "New South German Administration"
+ birkenfeld_question:0 "Birkenfeld's Fate"
+ hesse_question:0 "Unification of Hesse"
+ justice_for_liechtenstein:0 "Justic for Liechtentein"
 
- AUS_form_iron_triangle:0 "Form the Iron Triangle"
- iron_triangle:0 "The Iron Triangle"
- german_confederation:0 "German Confederation"
+  AUS_befriend_hungarians:0 "Support Hungarian Interests"
+  AUS_crush_hungarians:0 "Suppress Hungarian Autonomy"
+  AUS_befriend_croats:0 "Strengthen Ties with Croatia"
+  AUS_crush_croats:0 "Undermine Croatian Influence"
+  AUS_befriend_slovak:0 "Promote Slovak Cooperation"
+  AUS_crush_slovaks:0 "Crack Down on Slovak Ambitions"
+  AUS_befriend_czechs:0 "Foster Czech Relations"
+  AUS_crush_czechs:0 "Repress Czech Nationalism"
+
+  AUS_form_iron_triangle:0 "Form the Iron Triangle"
+  iron_triangle:0 "The Iron Triangle"
+  german_confederation:0 "German Confederation"
  
 #ideas
  
@@ -267,43 +276,71 @@ AUS_crush_czechs:0 "Repress Czech Nationalism"
  fpw_austria.14.d:0 "[SOV.GetNameDefCap] have recently been showing interest in the Balkan region, where millions of slavic people call home. This could potentially hurt our influence in the area and escalate tensions between [TUR.GetNameDef] and Russia, potentially starting another war between the two powers."
  fpw_austria.16.t:0 "Treaty of Kraków"
  fpw_austria.16.d:0 "After our recent victory over Prussia, we must decide what to do with our newly conquered German lands, peace talks have been made, and some decisions have already been made, such as France gaining ownership over the Rhineland, however, some things remain undecided, such as the territory of Silesia and Schleswig, and even the possibility of a South German Confederation. How should these peace talks in Krakow turn out?"
+
+  austria_fpw.3.t:0 "Fate of Schleswig-Holstein"
+  austria_fpw.3.d:0 ""
+  austria_fpw.3.a:0 "Schleswig-Holstein belongs to Denmark!"
+  austria_fpw.3.b:0 "Let the Prussians have it."
+  austria_fpw.3.c:0 "We shall reinstate the Gastein Convention."
+
+  austria_fpw.4.t:0 "The Thuringia Question"
+  austria_fpw.4.d:0 ""
+  austria_fpw.4.a:0 "Give Thuringia to Prussia."
+  austria_fpw.4.b:0 "Saxony shall rule Thuringia."
+  austria_fpw.4.c:0 "An independent Thuringia is the best solution."
+
+  austria_fpw.5.t:0 "New South German Administration"
+  austria_fpw.5.d:0 ""
+  austria_fpw.5.a:0 "Place South Germany under our puppet's rule."
+  austria_fpw.5.b:0 "We will administer the region ourselves."
+
+  austria_fpw.6.t:0 "Birkenfeld's Fate"
+  austria_fpw.6.d:0 ""
+  austria_fpw.6.a:0 "France deserves it."
+  austria_fpw.6.b:0 "Birkenfeld shall remain [OLD.GetAdjective]."
+
+  austria_fpw.7.t:0 "Unification of Hesse"
+  austria_fpw.7.d:0 ""
+  austria_fpw.7.a:0 "Unify without Frankfurt."
+  austria_fpw.7.b:0 "Hesse needs Frankfurt to unify."
+  austria_fpw.7.c:0 "Split Hesse with the Rhenish Confederation"
  
 #custom cost texts 
  
  
 #custom effect tooltips
-fpw_befriend_hungarians_tt:0 "Hungarian-focused policies will improve Hungarian attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_increased_hungarian_population_attitude]" 
+  fpw_befriend_hungarians_tt:0 "Hungarian-focused policies will improve Hungarian attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_increased_hungarian_population_attitude]" 
 
-fpw_befriend_croats_tt:0 "Croatian-focused policies will improve Croation attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_croat_increased_population_attitude]" 
+  fpw_befriend_croats_tt:0 "Croatian-focused policies will improve Croation attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_croat_increased_population_attitude]" 
 
-fpw_befriend_slovaks_tt:0 "Slovak-focused policies will improve Slovak attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_slovak_increased_population_attitude]"
- 
-fpw_befriend_czechs_tt:0 "Czech-focused policies will improve Czech attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_czech_increased_population_attitude]" 
+  fpw_befriend_slovaks_tt:0 "Slovak-focused policies will improve Slovak attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_slovak_increased_population_attitude]"
+  
+  fpw_befriend_czechs_tt:0 "Czech-focused policies will improve Czech attitudes, raising their support from [fpw_hungarian_population_attitude] to [fpw_czech_increased_population_attitude]" 
 
 
-fpw_crush_hungarians_tt:0 "Anti-Hungarian policies will decrease Hungarian attitudes, reducing their support from [fpw_hungarian_population_attitude] to [fpw_decreased_hungarian_population_attitude]"
-fpw_civil_war_hungarians_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Hungary§!"
+  fpw_crush_hungarians_tt:0 "Anti-Hungarian policies will decrease Hungarian attitudes, reducing their support from [fpw_hungarian_population_attitude] to [fpw_decreased_hungarian_population_attitude]"
+  fpw_civil_war_hungarians_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Hungary§!"
 
-fpw_crush_croats_tt:0 "Anti-Croat policies will decrease Croation attitudes, reducing their support from [fpw_croat_population_attitude] to [fpw_decreased_croat_population_attitude]"
-fpw_civil_war_croats_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Croatia§!"
+  fpw_crush_croats_tt:0 "Anti-Croat policies will decrease Croation attitudes, reducing their support from [fpw_croat_population_attitude] to [fpw_decreased_croat_population_attitude]"
+  fpw_civil_war_croats_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Croatia§!"
 
-fpw_crush_slovaks_tt:0 "Anti-Slovak policies will decrease Slovak attitudes, reducing their support from [fpw_slovak_population_attitude] to [fpw_decreased_slovak_population_attitude]"
-fpw_civil_war_slovaks_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Slovakia§!"
+  fpw_crush_slovaks_tt:0 "Anti-Slovak policies will decrease Slovak attitudes, reducing their support from [fpw_slovak_population_attitude] to [fpw_decreased_slovak_population_attitude]"
+  fpw_civil_war_slovaks_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Slovakia§!"
 
-fpw_crush_czechs_tt:0 "Anti-Czech policies will decrease Czech attitudes, reducing their support from [fpw_czech_population_attitude] to [fpw_decreased_czech_population_attitude]"
-fpw_civil_war_czechs_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Bohemia§!"
+  fpw_crush_czechs_tt:0 "Anti-Czech policies will decrease Czech attitudes, reducing their support from [fpw_czech_population_attitude] to [fpw_decreased_czech_population_attitude]"
+  fpw_civil_war_czechs_tt:0 "Enacting this policy will lead to a §Rcivil war§! between you and §Ythe Kingdom of Bohemia§!"
 
-focused_on_the_balkans:0 "§GYou will gain 10% attack on all balkan states§!"
+  focused_on_the_balkans:0 "§GYou will gain 10% attack on all balkan states§!"
 
-AUS_radical_reformstooltip:0 "Modify §YDivided Military § §Wby\nArmy Organisation Regain:§  §G+10.00%§W\nDivison Attack:§  §G+10.00%§W\nDivison Defense:§  §G+10.00%§W"
-AUS_radical_reformstooltip2:0 "Modify §YDivided Military § §Wby\nArmy Organisation Regain:§  §G+5.00%§W\nDivison Attack:§  §G+7.50%§W\nDivison Defense:§  §G+7.50%§W"
-AUS_radical_reformstooltip3:0 "Modify §YDivided Military § §Wby\nDivison Recovery Rate:§  §G+12.00%§W\nDivison Attack:§  §G+2.50%§W\nDivison Defense:§  §G+2.50%§W\nRecruitable Population:§  §G+15.00%§W"
-AUS_radical_reformstooltip4:0 "Modify §YDivided Military § §Wby\nDivison Recovery Rate:§  §G+12.00%§W\nDivison Defense:§  §G+5.00%§W"
- 
-AUS_wip_tt:0 "§RContent is WIP, path will be done in a later update"
+  AUS_radical_reformstooltip:0 "Modify §YDivided Military § §Wby\nArmy Organisation Regain:§  §G+10.00%§W\nDivison Attack:§  §G+10.00%§W\nDivison Defense:§  §G+10.00%§W"
+  AUS_radical_reformstooltip2:0 "Modify §YDivided Military § §Wby\nArmy Organisation Regain:§  §G+5.00%§W\nDivison Attack:§  §G+7.50%§W\nDivison Defense:§  §G+7.50%§W"
+  AUS_radical_reformstooltip3:0 "Modify §YDivided Military § §Wby\nDivison Recovery Rate:§  §G+12.00%§W\nDivison Attack:§  §G+2.50%§W\nDivison Defense:§  §G+2.50%§W\nRecruitable Population:§  §G+15.00%§W"
+  AUS_radical_reformstooltip4:0 "Modify §YDivided Military § §Wby\nDivison Recovery Rate:§  §G+12.00%§W\nDivison Defense:§  §G+5.00%§W"
+  
+  AUS_wip_tt:0 "§RContent is WIP, path will be done in a later update"
 
-AUS_effect_dynamic: "Effects changes based on previously taken Focuses"
-AUS_focus_assemble_point_tt: "Focus will decide where troops get deployed"
+  AUS_effect_dynamic: "Effects changes based on previously taken Focuses"
+  AUS_focus_assemble_point_tt: "Focus will decide where troops get deployed"
 
 #custom modifier tooltips
 

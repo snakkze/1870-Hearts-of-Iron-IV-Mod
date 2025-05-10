@@ -3,9 +3,21 @@ PRS_GER = {
 	color_ui = rgb { 138 155 116 }
 }
 
-AUS_kingdom_of_jerusalem = {
-	color = rgb { 0 134 190 }
-	color_ui = rgb { 0 134 190 }
+SPR_austrian_subject = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 255 255 122 }
+}
+HOL_austrian_subject = {
+	color = rgb { 255 128 0 }
+	color_ui = rgb { 255 128 0 }
+}
+SPR_iberian_union = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+PAL_kingdom_of_jerusalem = {
+	color = rgb { 152  130  191 }
+	color_ui = rgb { 152  130  191 }
 }
 
 PRS_greater_germany = {
@@ -25,6 +37,11 @@ PRS_socialist_republic_1 = {
 PRS_socialist_republic_2 = {
 	color = rgb { 123 15 20 }
 	color_ui = rgb { 123 15 20 }
+}
+
+SXW_thuringia = {
+	color = rgb { 255 128 102 }
+	color_ui = rgb { 0 51 153 }
 }
 
 
