@@ -3,33 +3,7 @@ oob = "AUS_1866"
 
 set_cosmetic_tag = AUS_austrian_empire
 
-1870.1.1 = {
-	set_cosmetic_tag = AUS_austria_hungary
-	add_dynamic_modifier = { 
-		modifier = fpw_AUS_loser_of_the_brotherswar
-	}
-}
-
-set_variable = { var = AUS_hungarians_loyalty value = -1 }
-set_variable = { var = AUS_croats_loyalty value = 1 }
-set_variable = { var = AUS_slovaks_loyalty value = 0 }
-set_variable = { var = AUS_czechs_loyalty value = 1 }
 AUS_population_of_the_empire_update_effect = yes
-
-add_dynamic_modifier = {
-    modifier = fpw_AUS_political_instability
-}
-add_dynamic_modifier = { 
-	modifier = fpw_AUS_divided_military
-}
-set_variable = { AUS_army_morale_factor = -0.2 }
-set_variable = { AUS_army_org_regain = -0.2 }
-set_variable = { AUS_army_defence_factor = -0.15 }
-set_variable = { AUS_army_attack_factor = -0.15 }
-set_variable = { AUS_recruitable_population_factor = -0.1 }
-set_variable = { AUS_planning_speed = 0 }
-set_variable = { AUS_breakthrough_factor = 0 }
-
 
 set_research_slots = 3
 
