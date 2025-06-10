@@ -1,0 +1,196 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_HISTORICAL}
+
+#!gfx:interface\fpw_goals.gfx
+
+focus_tree = {
+	id = ottoman_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	
+	continuous_focus_position = {
+		x = 3800
+		y = 1200	
+	}
+	default = no
+
+	focus = {
+		id = TUR_tanzimat_era
+		icon = GFX_focus_generic_treaty
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 10
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_ideas = fpw_TUR_tanzimat_economic_era
+			797 = {
+				add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+			}
+			347 = {
+				add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+			}
+			341 = {
+				add_building_construction = {
+            		type = infrastructure
+            		level = 1
+           			instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_our_response
+		icon = GFX_goal_generic_political_pressure
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_global_flag = TUR_cretan_revolt
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_tanzimat_era
+		prerequisite = {
+			focus = TUR_tanzimat_era
+		}
+
+		completion_reward = {
+			182 = {
+				set_demilitarized_zone = no
+			}
+			add_manpower = -15000
+		}
+	}
+	focus = {
+		id = TUR_ready_for_disaster
+		icon = GFX_goal_generic_defence
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_tanzimat_era
+		prerequisite = {
+			focus = TUR_tanzimat_era
+		}
+
+		completion_reward = {
+			add_ideas = limited_conscription
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_deport_greeks
+		icon = GFX_goal_unknown
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_tanzimat_era
+		prerequisite = {
+			focus = TUR_tanzimat_era
+		}
+
+		completion_reward = {
+			185 = {
+				add_manpower = -100000
+			}
+			805 = {
+				add_manpower = -50000
+			}
+			731 = {
+				add_manpower = -150000
+			}
+		}
+	}
+	focus = {
+		id = TUR_reform_civillian_projects
+		icon = GFX_focus_AFG_a_modern_economy
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_deport_greeks
+		prerequisite = {
+			focus = TUR_deport_greeks
+		}
+		prerequisite = {
+			focus = TUR_ready_for_disaster
+		}
+		prerequisite = {
+			focus = TUR_our_response
+		}
+
+		completion_reward = {
+			
+		}
+	}
+}

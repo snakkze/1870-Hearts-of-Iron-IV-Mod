@@ -117,8 +117,7 @@ ideas = {
 				consumer_goods_factor = 0.2
 			}
 		}
-
-		fpw_TUR_undermined_minority = {
+		fpw_TUR_tanzimat_economic_era = {
 			allowed = {
 				tag = TUR
 			}
@@ -129,10 +128,12 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = GER_recovering_economy
 
 			modifier = {
-				stability_factor = -0.2
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = -0.15
 			}
 		}
 

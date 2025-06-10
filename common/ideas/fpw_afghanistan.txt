@@ -245,6 +245,21 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
+		fpw_AFG_western_economic_model = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = HABSBURG_economy
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
 	}
 	country = {
 		fpw_rights_of_man = {

@@ -1,61 +1,101 @@
-fpw_handle_the_cretan_revolt = {
-
-	fpw_check_cretan_revolt_value = {
-
-
+fpw_tanzimat_era = {
+	fpw_construct_infrastructure = {
 		available = {
+			
 		}
 
+		cost = 50
+
+
 		visible = {
-			always = yes
+			has_completed_focus = TUR_tanzimat_era
 		}
 
 		allowed = {
-			tag = TUR
+			tag = AFG
 		}
+		fire_only_once = yes
+
+		days_re_enable = 20
+
+		days_remove = 32
+
 
 		icon = mission_icon
-		
-
-
+		cost = 150
 		complete_effect = {
-			custom_effect_tooltip = ct_value_check
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					
+				}
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					
+				}
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+				}
+			}
 		}
 	}
-	
-	fpw_harsh_treatment = {
-
-		cost = 10
+	fpw_construct_civillian_industry = {
 		available = {
+			has_completed_focus = TUR_reform_civillian_projects
 		}
 
+		cost = 50
+
+
 		visible = {
-			always = yes
+			has_completed_focus = TUR_tanzimat_era
 		}
 
 		allowed = {
-			tag = TUR
+			tag = AFG
 		}
-
-		icon = mission_icon
-		
-		days_remove = 30
+		fire_only_once = yes
 
 		days_re_enable = 100
 
+		days_remove = 50
+
+
+		icon = mission_icon
+		cost = 150
 		complete_effect = {
-			add_to_variable = {
-				var = cretan_revolt
-				value = -2
-				tooltip = basic_subtrat_two_ct
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
 			}
-			add_timed_idea = {
-				idea = fpw_TUR_undermined_minority
-				days = 32
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
 			}
 		}
 	}
-
-	
 }
 

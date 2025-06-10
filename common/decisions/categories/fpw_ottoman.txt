@@ -1,11 +1,9 @@
-fpw_handle_the_cretan_revolt = {
+fpw_tanzimat_era = {
 
 	priority = 99
 
 	visible = {
-		has_dynamic_modifier = {
-   			modifier = fpw_TUR_cretan_revolt
-		}
+		has_completed_focus = TUR_tanzimat_era
 	}
 
 	allowed = {

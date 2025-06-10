@@ -275,6 +275,66 @@
 		}
 	}
 	focus = {
+		id = afg_develop_rural_areas
+		icon = GFX_focus_ITA_grande_rivolta_rurale
+		
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = afg_grant_rights_to_farmers }
+		relative_position_id = afg_grant_rights_to_farmers
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = afg_economic_tooltip
+			add_to_variable = {
+				var = afg_consumer_goods_factor
+				value = 0.025
+			}
+			add_to_variable = {
+				var = afg_factory_output_factor
+				value = 0.05
+			}
+			445 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+			415 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+			442 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+			267 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				   type = industrial_complex
+				   level = 2
+				   instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
 		id = afg_stricter_factory_regulations
 		icon = GFX_focus_DEN_limited_regulations
 		
@@ -369,7 +429,7 @@
 			custom_effect_tooltip = afg_economic_tooltip
 			add_to_variable = {
 				var = afg_consumer_goods_factor
-				value = -0.1
+				value = -0.05
 			}
 			add_to_variable = {
 				var = afg_factory_output_factor
@@ -405,7 +465,7 @@
 			custom_effect_tooltip = afg_economic_tooltip
 			add_to_variable = {
 				var = afg_consumer_goods_factor
-				value = 0.05
+				value = 0.1
 			}
 			add_to_variable = {
 				var = afg_civ_construction_speed
@@ -488,7 +548,7 @@
 			custom_effect_tooltip = afg_economic_tooltip
 			add_to_variable = {
 				var = afg_consumer_goods_factor
-				value = -0.05
+				value = 0.05
 			}
 			add_to_variable = {
 				var = afg_mil_construction_speed
@@ -548,7 +608,7 @@
 			custom_effect_tooltip = afg_economic_tooltip
 			add_to_variable = {
 				var = afg_consumer_goods_factor
-				value = 0.05
+				value = -0.05
 			}
 			add_to_variable = {
 				var = afg_civ_construction_speed
@@ -797,6 +857,52 @@
 		}
 	}
 	focus = {
+		id = afg_steel_mining_in_kabul
+		icon = GFX_focus_generic_steel
+		
+		x = -4
+		y = 4
+		cost = 5
+		prerequisite = { focus = afg_expand_mining_industry }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			267 = {
+				add_resource = {
+		            type = steel
+		            amount = 48
+	            }
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_follow_western_economic_models
+		icon = GFX_focus_RAJ_special_economic_zones
+		
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = afg_establish_banking_systems }
+		relative_position_id = afg_establish_banking_systems
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_AFG_western_economic_model
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
 		id = afg_establish_banking_systems
 		icon = GFX_focus_CHL_strengthen_the_central_bank
 		
@@ -850,14 +956,44 @@
 		}
 	}
 	focus = {
+		id = afg_increase_economic_reformation_effort
+		icon = GFX_focus_generic_industry_3
+		
+		x = 2
+		y = 4
+		cost = 5
+		prerequisite = { focus = afg_state_sponsered_construction }
+		prerequisite = { focus = afg_grant_workers_rights }
+		relative_position_id = afg_dreams_of_a_modern_economy
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_to_variable = {
+				var = afg_factory_output_factor
+				value = 0.05
+			}
+			add_to_variable = {
+				var = afg_mil_construction_speed
+				value = 0.05
+			}
+			custom_effect_tooltip = afg_economic_tooltip
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
 		id = afg_modernized_economy
 		icon = GFX_focus_spa_the_spanish_miracle
 		
 		x = -1
-		y = 4
+		y = 5
 		cost = 10
-		prerequisite = { focus = afg_expand_mining_industry }
-		prerequisite = { focus = afg_grant_workers_rights }
+		prerequisite = { focus = afg_steel_mining_in_kabul }
+		prerequisite = { focus = afg_increase_economic_reformation_effort }
 		prerequisite = { focus = afg_expand_kabul }
 		relative_position_id = afg_dreams_of_a_modern_economy
 		available = {
