@@ -15,7 +15,6 @@
 	
 	default = no
 
-
 	focus = {
 		id = AUS_focus_austria_in_despair
 		x = 0
@@ -30,7 +29,7 @@
 	}
 
 	focus = {
-		id = AUS_focus_state_of_the_confed
+		id = AUS_focus_shadow_of_frankfurt
 		x = -2
 		y = 1
 		relative_position_id = AUS_focus_austria_in_despair
@@ -48,17 +47,21 @@
 	}
 
 	focus = {
-		id = AUS_focus_reassert_our_leadership
+		id = AUS_focus_strengthen_central_power
 		x = -1
 		y = 1
-		relative_position_id = AUS_focus_state_of_the_confed
+		relative_position_id = AUS_focus_shadow_of_frankfurt
 		cost = 0
 
 		available = {
 		}
 
 		prerequisite = {
-			focus = AUS_focus_state_of_the_confed
+			focus = AUS_focus_shadow_of_frankfurt
+		}
+
+		mutually_exclusive = {
+			focus = AUS_focus_appease_the_lands
 		}
 
 		completion_reward = {
@@ -66,17 +69,21 @@
 	}
 
 	focus = {
-		id = AUS_focus_rally_the_south
+		id = AUS_focus_appease_the_lands
 		x = 1
 		y = 1
-		relative_position_id = AUS_focus_state_of_the_confed
+		relative_position_id = AUS_focus_shadow_of_frankfurt
 		cost = 0
 
 		available = {
 		}
 
 		prerequisite = {
-			focus = AUS_focus_state_of_the_confed
+			focus = AUS_focus_shadow_of_frankfurt
+		}
+
+		mutually_exclusive = {
+			focus = AUS_focus_shadow_of_frankfurt
 		}
 
 		completion_reward = {
@@ -84,28 +91,7 @@
 	}
 
 	focus = {
-		id = AUS_focus_mission_to_saxony
-		x = 1
-		y = 2
-		relative_position_id = AUS_focus_state_of_the_confed
-		cost = 0
-
-		available = {
-		}
-
-		prerequisite = {
-			focus = AUS_focus_reassert_our_leadership
-		}
-		prerequisite = {
-			focus = AUS_focus_rally_the_south
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = AUS_focus_threat_of_prussia
+		id = AUS_focus_status_of_confed
 		x = 2
 		y = 1
 		relative_position_id = AUS_focus_austria_in_despair
@@ -123,17 +109,17 @@
 	}
 
 	focus = {
-		id = AUS_focus_build_up_in_bohemia
+		id = AUS_focus_outmaneuver_prussia
 		x = -1
 		y = 1
-		relative_position_id = AUS_focus_threat_of_prussia
+		relative_position_id = AUS_focus_status_of_confed
 		cost = 0
 
 		available = {
 		}
 
 		prerequisite = {
-			focus = AUS_focus_threat_of_prussia
+			focus = AUS_focus_status_of_confed
 		}
 
 		completion_reward = {
@@ -141,17 +127,17 @@
 	}
 
 	focus = {
-		id = AUS_focus_fortify_the_north
+		id = AUS_focus_seek_french_support
 		x = 1
 		y = 1
-		relative_position_id = AUS_focus_threat_of_prussia
+		relative_position_id = AUS_focus_status_of_confed
 		cost = 0
 
 		available = {
 		}
 
 		prerequisite = {
-			focus = AUS_focus_threat_of_prussia
+			focus = AUS_focus_status_of_confed
 		}
 
 		completion_reward = {
@@ -159,20 +145,182 @@
 	}
 
 	focus = {
-		id = AUS_focus_anticipate_war
-		x = -1
-		y = 2
-		relative_position_id = AUS_focus_threat_of_prussia
+		id = AUS_focus_holstein_crisis
+		x = 0
+		y = 3
+		relative_position_id = AUS_focus_austria_in_despair
 		cost = 0
 
 		available = {
 		}
 
 		prerequisite = {
-			focus = AUS_focus_fortify_the_north
+			focus = AUS_focus_strengthen_central_power
+			focus = AUS_focus_appease_the_lands
 		}
 		prerequisite = {
-			focus = AUS_focus_build_up_in_bohemia
+			focus = AUS_focus_outmaneuver_prussia
+		}
+		prerequisite = {
+			focus = AUS_focus_seek_french_support
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_prussian_front
+		x = -1
+		y = 1
+		relative_position_id = AUS_focus_holstein_crisis
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_holstein_crisis
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_study_prussian_tech
+		x = 0
+		y = 1
+		relative_position_id = AUS_focus_prussian_front
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_prussian_front
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_shell_the_prussians
+		x = -2
+		y = 1
+		relative_position_id = AUS_focus_prussian_front
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_prussian_front
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_italian_front
+		x = 1
+		y = 1
+		relative_position_id = AUS_focus_holstein_crisis
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_holstein_crisis
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_fortify_south_tyrol
+		x = 0
+		y = 1
+		relative_position_id = AUS_focus_italian_front
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_italian_front
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_utilize_our_navy
+		x = 2
+		y = 1
+		relative_position_id = AUS_focus_italian_front
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_italian_front
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_peace_of_prague
+		x = 0
+		y = 1
+		relative_position_id = AUS_focus_study_prussian_tech
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_shell_the_prussians
+		}
+		prerequisite = {
+			focus = AUS_focus_study_prussian_tech
+		}
+
+		mutually_exclusive = {
+			focus = AUS_focus_peace_of_vienna
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = AUS_focus_peace_of_vienna
+		x = 0
+		y = 1
+		relative_position_id = AUS_focus_fortify_south_tyrol
+		cost = 0
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = AUS_focus_fortify_south_tyrol
+		}
+		prerequisite = {
+			focus = AUS_focus_utilize_our_navy
+		}
+
+		mutually_exclusive = {
+			focus = AUS_focus_peace_of_prague
 		}
 
 		completion_reward = {
