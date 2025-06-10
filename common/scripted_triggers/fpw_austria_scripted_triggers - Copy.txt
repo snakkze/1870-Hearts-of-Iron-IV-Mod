@@ -1,0 +1,63 @@
+fpw_is_not_actively_doing_italy_focus = {
+	AND = {
+		NOT = {
+			AND = {
+				focus_progress = {
+					focus = AUS_focus_italian_front
+					progress > 0.0
+				}
+				NOT = { has_completed_focus = AUS_focus_italian_front }
+			}
+		}
+		NOT = {
+			AND = {
+				focus_progress = {
+					focus = AUS_focus_fortify_south_tyrol
+					progress > 0.0
+				}
+				NOT = { has_completed_focus = AUS_focus_fortify_south_tyrol }
+			}
+		}
+		NOT = {
+			AND = {
+				focus_progress = {
+					focus = AUS_focus_utilize_our_navy
+					progress > 0.0
+				}
+				NOT = { has_completed_focus = AUS_focus_utilize_our_navy }
+			}
+		}
+	}
+}
+
+fpw_is_not_actively_doing_prussia_focus = {
+	AND = {
+		NOT = {
+			AND = {
+				focus_progress = {
+					focus = AUS_focus_shell_the_prussians
+					progress > 0.0
+				}
+				NOT = { has_completed_focus = AUS_focus_shell_the_prussians }
+			}
+		}
+		NOT = {
+			AND = {
+				focus_progress = {
+					focus = AUS_focus_study_prussian_tech
+					progress > 0.0
+				}
+				NOT = { has_completed_focus = AUS_focus_study_prussian_tech }
+			}
+		}
+		NOT = {
+			AND = {
+				focus_progress = {
+					focus = AUS_focus_prussian_front
+					progress > 0.0
+				}
+				NOT = { has_completed_focus = AUS_focus_prussian_front }
+			}
+		}
+	}
+}

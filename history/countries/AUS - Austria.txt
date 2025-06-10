@@ -21,6 +21,10 @@ set_technology = {
 	fpw_breech2 = 1
 }
 
+add_dynamic_modifier = { 
+	modifier = fpw_outdated_military
+}
+
 add_ideas = {
 	fpw_AUS_hungarian_seperatism
 	fpw_AUS_stagnant_economy1

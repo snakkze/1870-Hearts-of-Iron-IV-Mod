@@ -297,9 +297,8 @@ country_event = {
 		name = prussia_fpw.18.a
 		if = {
 			limit = {
-				original_tag = AUS
+				tag = AUS
 			}
-			# Ask The schleswig holstein Question
 			PRS = { country_event = { id = prussia_fpw.6 hours = 2 } }
 		}
 	}
@@ -361,6 +360,7 @@ country_event = {
 	option = {
 		name = prussia_fpw.7.a
 		FRK = { country_event = { id = prussia_fpw.19 hours = 2 } }
+		complete_national_focus = AUS_focus_holstein_crisis
 	}
 }
 

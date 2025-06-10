@@ -1,4 +1,28 @@
 ideas = {
 	country = {
+		fpw_idea_austria_shelling_prussians = {
+			modifier = {
+				army_artillery_attack_factor = 0.075
+				army_artillery_defence_factor = 0.05
+                experience_gain_artillery_combat_factor = 0.1
+            }
+			cancel = {
+    			NOT = {
+					has_war_with = PRS
+				}	
+			}
+		}
+
+		fpw_idea_austria_superior_navy = {
+			modifier = {
+				navy_org = 25
+				naval_damage_factor = 0.10
+            }
+			cancel = {
+    			NOT = {
+					has_war_with = ITA
+				}	
+			}
+		}
 	}
 }

@@ -435,89 +435,93 @@ fpw_german_unification_category = {
 
 fpw_austro_prussian_war_category = {
 
-	fpw_annex_holstein = {
+fpw_annex_holstein = {
 
-		icon = GFX_decision_border_war
+	icon = GFX_decision_border_war
 
-		allowed = {
-			always = yes
-		}
+	allowed = {
+		always = yes
+	}
 
-		cost = 0
+	cost = 0
 
-		available = {
-			AND = {
-				original_tag = PRS
-				PRS = {
-					has_completed_focus = PRS_propose_federal_reform
-				}
-				if = {
-					limit = {
-						AND = {
-							PRS = {
-								has_completed_focus = PRS_propose_federal_reform
+	available = {
+		AND = {
+			original_tag = PRS
+			PRS = {
+				has_completed_focus = PRS_propose_federal_reform
+			}
+			if = {
+				limit = {
+					AND = {
+						PRS = {
+							has_completed_focus = PRS_propose_federal_reform
+						}
+						all_country = {
+							limit = {
+								is_german = yes
 							}
-							all_country = {
-								limit = {
-									is_german = yes
-								}
-								any_owned_state = {
-									OR = {
-										has_state_flag = influenced_by_AUS
-										has_state_flag = influenced_by_PRS
-									}
+							any_owned_state = {
+								OR = {
+									has_state_flag = influenced_by_AUS
+									has_state_flag = influenced_by_PRS
 								}
 							}
 						}
 					}
-				}	
-				NOT = {
-					has_completed_focus = PRS_annex_holstein
 				}
+			}	
+			NOT = {
+				has_completed_focus = PRS_annex_holstein
 			}
+			date >= 1866.6.11
+			date < 1866.6.12
 		}
-		
-		visible = {
-			AND = {
-				OR = {
-					original_tag = AUS
-					original_tag = PRS
-				}
+	}
+	
+	visible = {
+		AND = {
+			OR = {
+				original_tag = AUS
+				original_tag = PRS
+			}
+			PRS = {
+				has_completed_focus = PRS_seek_german_support
+			}
+			NOT = {
 				PRS = {
-					has_completed_focus = PRS_seek_german_support
-				}
-				NOT = {
-					PRS = {
-						OR = {
-							has_completed_focus = PRS_austro_prussian_victory
-							has_completed_focus = PRS_bruderkrieg_ending
-						}
+					OR = {
+						has_completed_focus = PRS_austro_prussian_victory
+						has_completed_focus = PRS_bruderkrieg_ending
 					}
 				}
 			}
-		}			
+		}
+	}			
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				original_tag = PRS
-				add = 4000
+	ai_will_do = {
+		base = 0
+		modifier = {
+			original_tag = PRS
+			add = 10000
+		}
+	}
+
+	complete_effect = {
+		effect_tooltip = {
+			AUS = {
+				country_event = { id = prussia_fpw.18 }
 			}
 		}
-
-		complete_effect = {
-			effect_tooltip = {
-				AUS = {
-					country_event = { id = prussia_fpw.18 }
-				}
-			}
-			hidden_effect = {
-				AUS = {
-					complete_national_focus = AUS_schleswig_question
-				}
+		hidden_effect = {
+			AUS = {
+				complete_national_focus = AUS_schleswig_question
+				country_event = { id = prussia_fpw.18 }
 			}
 		}
 	}
+}
+
 
 	# Austrian
 	PRS_ally_saxony = {

@@ -1,0 +1,25 @@
+fpw_is_actively_doing_italy_focus = {
+	OR = {
+		AND = {
+			focus_progress = {
+				focus = AUS_focus_italian_front
+				progress > 0.0
+			}
+			NOT = { has_completed_focus = AUS_focus_italian_front }
+		}
+		AND = {
+			focus_progress = {
+				focus = AUS_focus_fortify_south_tyrol
+				progress > 0.0
+			}
+			NOT = { has_completed_focus = AUS_focus_fortify_south_tyrol }
+		}
+		AND = {
+			focus_progress = {
+				focus = AUS_focus_utilize_our_navy
+				progress > 0.0
+			}
+			NOT = { has_completed_focus = AUS_focus_utilize_our_navy }
+		}
+	}
+}
