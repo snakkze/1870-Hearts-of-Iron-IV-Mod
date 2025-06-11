@@ -22,23 +22,9 @@ set_technology = {
 add_dynamic_modifier = {
     modifier = fpw_outdated_military
 }
-add_dynamic_modifier = {
-    modifier = fpw_modifier_austria_shadow_of_frankfurt
-}
-set_variable = {
-    var = AUS_modifier_political_power_factor
-    value = -0.20
-}
-set_variable = {
-    var = AUS_modifier_party_popularity_stability_factor
-    value = -0.15
-}
-set_variable = {
-    var = AUS_no_compliance_gain
-    value = 1
-}
 
 add_ideas = {
+	fpw_idea_austria_shadow_frankfurt
 }
 
 recruit_character = AUS_franz_joseph_I

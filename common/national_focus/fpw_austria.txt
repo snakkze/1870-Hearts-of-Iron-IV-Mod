@@ -69,6 +69,19 @@
 		}
 
 		completion_reward = {
+			effect_tooltip = {
+    			swap_ideas = {
+    				remove_idea = fpw_idea_austria_shadow_frankfurt
+    				add_idea = fpw_idea_austria_power_centralized
+				}
+			}
+			hidden_effect = {
+				remove_ideas = fpw_idea_austria_shadow_frankfurt
+				add_timed_idea = {
+    				idea = fpw_idea_austria_power_centralized
+    				days = 360
+				}
+			}
 		}
 	}
 
@@ -91,6 +104,19 @@
 		}
 
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = fpw_idea_austria_shadow_frankfurt
+					add_idea = fpw_idea_austria_power_decentralized
+				}
+			}
+			hidden_effect = {
+				remove_ideas = fpw_idea_austria_shadow_frankfurt
+				add_timed_idea = {
+					idea = fpw_idea_austria_power_decentralized
+					days = 360
+				}
+			}
 		}
 	}
 
@@ -102,6 +128,18 @@
 		cost = 2
 
 		available = {
+			any_owned_state = {
+				has_state_flag = german_confederation_state
+			}
+			has_war = no
+		}
+
+		bypass = {
+			NOT = {
+				any_owned_state = {
+					has_state_flag = german_confederation_state
+				}
+			}
 		}
 
 		prerequisite = {
@@ -109,6 +147,7 @@
 		}
 
 		completion_reward = {
+			add_political_power = 25
 		}
 	}
 
@@ -145,6 +184,7 @@
 		}
 
 		completion_reward = {
+			FRA = { country_event = fpw_austria.1 }
 		}
 	}
 

@@ -1,10 +1,38 @@
-add_namespace = austria_fpw
+add_namespace = fpw_austria
 
-# nord süd achse
+# France asked to support
 country_event = {
-	id = austria_fpw.1
-	title = austria_fpw.1.t
-	desc = austria_fpw.1.d
+	id = fpw_austria.1
+	title = fpw_austria.1.t
+	desc = fpw_austria.1.d
+	picture = GFX_fpw_report_event_001
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	# France accepts
+	option = {
+		name = fpw_austria.1.a 
+		AUS = { country_event = fpw_austria.2 }
+	}
+	# France stays neutral
+	option = {
+		name = fpw_austria.1.b
+		AUS = { country_event = fpw_austria.3 }
+	}
+	# France declines
+	option = {
+		name = fpw_austria.1.c
+		AUS = { country_event = fpw_austria.4 }
+	}
+}
+
+# France accepts
+country_event = {
+	id = fpw_austria.2
+	title = fpw_austria.2.t
+	desc = fpw_austria.2.d
 	picture = GFX_fpw_report_event_001
 
 	is_triggered_only = yes
@@ -12,14 +40,16 @@ country_event = {
 	fire_only_once=yes
 
 	option = {
-		name = austria_fpw.1.a 
+		name = fpw_austria.2.a 
+		
 	}
 }
 
+# France will stay neutral
 country_event = {
-	id = austria_fpw.2
-	title = austria_fpw.2.t
-	desc = austria_fpw.2.d
+	id = fpw_austria.3
+	title = fpw_austria.3.t
+	desc = fpw_austria.3.d
 	picture = GFX_fpw_report_event_001
 
 	is_triggered_only = yes
@@ -27,295 +57,24 @@ country_event = {
 	fire_only_once=yes
 
 	option = {
-		name = austria_fpw.2.a 
+		name = fpw_austria.3.a 
+		
 	}
 }
 
-# schleswig holstein
+# France declines
 country_event = {
-	id = austria_fpw.3
-	title = austria_fpw.3.t
-	desc = austria_fpw.3.d
-	picture = GFX_fpw_schleswig
+	id = fpw_austria.4
+	title = fpw_austria.4.t
+	desc = fpw_austria.4.d
+	picture = GFX_fpw_report_event_001
 
 	is_triggered_only = yes
 
 	fire_only_once=yes
 
 	option = {
-		name = austria_fpw.3.a 
-		every_state = {
-			limit = {
-				OR = {
-					state = 58
-					state = 909
-					state = 912
-				}
-				is_owned_and_controlled_by = PRS
-			}
-			set_demilitarized_zone = no
-			transfer_state_to = DEN
-		}
-	}
-
-	option = {
-		name = austria_fpw.3.b
-		every_state = {
-			limit = {
-				OR = {
-					state = 58
-					state = 909
-					state = 912
-				}
-				is_owned_and_controlled_by = PRS
-			}
-			set_demilitarized_zone = no
-		}
-	}
-
-	option = {
-		name = austria_fpw.3.c 
-		if = {
-			limit = {
-				58 = {
-					is_owned_and_controlled_by = PRS
-				}
-			}
-			58 = {
-				transfer_state_to = AUS
-				set_demilitarized_zone = no
-			}
-		}
-		every_state = {
-			limit = {
-				OR = {
-					state = 909
-					state = 912
-				}
-				is_owned_and_controlled_by = PRS
-			}
-			set_demilitarized_zone = no
-		}
-	}
-}
-
-# thuringia
-country_event = {
-	id = austria_fpw.4
-	title = austria_fpw.4.t
-	desc = austria_fpw.4.d
-	picture = GFX_fpw_thuringia
-
-	is_triggered_only = yes
-
-	fire_only_once=yes
-
-	option = {
-		name = austria_fpw.4.a 
-		every_state = {
-			limit = {
-				OR = {
-					state = 937
-					state = 955
-					state = 954
-					state = 953
-					state = 60
-				}
-				is_owned_and_controlled_by = PRS
-			}
-			set_demilitarized_zone = no
-		}
-	}
-
-	option = {
-		name = austria_fpw.4.b
-		trigger = {
-			SXY = {
-				NOT = {
-					is_subject = yes
-				}
-			}
-		}
-		every_state = {
-			limit = {
-				OR = {
-					state = 937
-					state = 955
-					state = 954
-					state = 953
-					state = 60
-				}
-				is_owned_and_controlled_by = PRS
-			}
-			set_demilitarized_zone = no
-			transfer_state_to = SXY
-		}
-	}
-
-	option = {
-		name = austria_fpw.4.c 
-		every_state = {
-			limit = {
-				OR = {
-					state = 937
-					state = 955
-					state = 954
-					state = 953
-					state = 60
-				}
-				is_owned_and_controlled_by = PRS
-			}
-			set_demilitarized_zone = no
-			hidden_effect = {
-				SXW = {
-					set_cosmetic_tag = SXW_thuringia
-				}
-			}
-			transfer_state_to = SXW
-		}
-	}
-}
-
-# south germany
-country_event = {
-	id = austria_fpw.5
-	title = austria_fpw.5.t
-	desc = austria_fpw.5.d
-	picture = GFX_fpw_bavaria
-
-	is_triggered_only = yes
-
-	fire_only_once=yes
-
-	option = {
-		name = austria_fpw.5.a 
-		BAV = {
-			annex_country = {
-				target = WRT
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = BAD
-				transfer_troops = yes
-			}
-		}
-	}
-
-	option = {
-		name = austria_fpw.5.b
-		AUS = {
-			annex_country = {
-				target = BAV
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = WRT
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = BAD
-				transfer_troops = yes
-			}
-		}
-	}
-}
-
-# birkenfeld
-country_event = {
-	id = austria_fpw.6
-	title = austria_fpw.6.t
-	desc = austria_fpw.6.d
-	picture = GFX_fpw_birkenfeld
-
-	is_triggered_only = yes
-
-	fire_only_once=yes
-
-	option = {
-		name = austria_fpw.6.a 
-		939 = {
-			transfer_state_to = FRA
-			add_core_of = FRA
-		}
-	}
-
-	option = {
-		name = austria_fpw.6.b
-	}
-}
-
-# hesse
-country_event = {
-	id = austria_fpw.7
-	title = austria_fpw.7.t
-	desc = austria_fpw.7.d
-	picture = GFX_fpw_hesse
-
-	is_triggered_only = yes
-
-	fire_only_once=yes
-
-	option = {
-		name = austria_fpw.7.a
-		HES = {
-			annex_country = {
-				target = NAS
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = HEK
-				transfer_troops = yes
-			}
-		}
-	}
-
-	option = {
-		name = austria_fpw.7.b
-		HES = {
-			annex_country = {
-				target = NAS
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = HEK
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = FRK
-				transfer_troops = yes
-			}
-		}
-	}
-
-	option = {
-		name = austria_fpw.7.c
-		trigger = {
-			NRW = {
-				exists = yes
-			}
-		}
-		NRW = {
-			annex_country = {
-				target = NAS
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = HEK
-				transfer_troops = yes
-			}
-		}
-		AUS = {
-			annex_country = {
-				target = FRK
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = HES
-				transfer_troops = yes
-			}
-		}
-		55 = {
-			transfer_state_to = NRW
-		}
+		name = fpw_austria.4.a 
+		
 	}
 }

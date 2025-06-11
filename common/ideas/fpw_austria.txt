@@ -24,5 +24,31 @@ ideas = {
 				}	
 			}
 		}
+
+		fpw_idea_austria_shadow_frankfurt = {
+			modifier = {
+				political_power_factor = -0.20
+				party_popularity_stability_factor = -0.15
+				no_compliance_gain = 1
+            }
+		}
+
+		fpw_idea_austria_power_centralized = {
+			modifier = {
+				political_power_factor = 0.25
+				drift_defence_factor = 0.25
+				stability_factor = -0.10
+				resistance_activity = 0.5
+            }
+		}
+
+		fpw_idea_austria_power_decentralized = {
+			modifier = {
+				political_power_factor = -0.25
+				drift_defence_factor = -0.25
+				stability_factor = 0.10
+				resistance_activity = 0.2
+            }
+		}
 	}
 }

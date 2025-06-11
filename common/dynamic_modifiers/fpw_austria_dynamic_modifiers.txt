@@ -1,8 +1,0 @@
-fpw_modifier_austria_shadow_of_frankfurt = {
-	enable = { always = yes }
-	icon = GFX_idea_generic_purge
-
-    political_power_factor = AUS_modifier_political_power_factor
-    party_popularity_stability_factor = AUS_modifier_party_popularity_stability_factor
-    no_compliance_gain = AUS_no_compliance_gain
-}

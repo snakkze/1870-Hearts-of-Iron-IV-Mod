@@ -213,13 +213,6 @@
   prussia_fpw_news.1.d: "After a brutal loss in the Austro-Prussian War, Prussia stood as a failing world power, losing its prestige. After various reforms by Wilhelm I, he has proclaimed a new government.\n\nThe absolute monarchy has returned as it was before 1848 in [PRS.GetNameDef]. The people of Prussia hope for a renewed sense of stability under Wilhelm's rule to counter the challenges of the past."
   prussia_fpw_news.1.a: "Gott Erhalte King Wilhelm!"
 
-  austria_fpw.1.t:0 "Nord-Süd Idea"
-  austria_fpw.1.d:0 "After the [PRS.GetAdjective] proposal to the Federal Council of German Nations, the German-speaking subcontinent has been divided into spheres of influence, with the north falling under the Prussian sphere and the south under our control."
-  austria_fpw.1.a:0 "Fine."
-  austria_fpw.2.t:0 "Holstein-Hohenzollern Exchange"
-  austria_fpw.2.d:0 "[PRS.GetNameDefCap] have requested that we exchange the territory of Holstein for their territory of Hohenzollern in the south. Given the divided spheres of influence, we have little choice but to accept this proposal, as declining would likely lead to an unwinnable war for us."
-  austria_fpw.2.a:0 "Okay."
-
   france_fpw.1.t:0 "Prussian reaction to the Ems-Dispatch"
   france_fpw.1.d:0 "[PRS.GetNameDefCap] has responded to our ultimatum in a mocking manner, publishing a modified version of it in the largest German newspaper, making us appear fearful of them. This has further enraged the French public, leaving us with a critical choice between going to war or facing national riots."
   france_fpw.1.a:0 "These damn Prussians!"
@@ -419,6 +412,21 @@
   fpw_generic.4.t: "[From.GetNameDefCap] declines our offer"
   fpw_generic.4.d: "The offer to [FROM.GetNameDefCap] has been declined."
   fpw_generic.4.a: "How unfortunate."
+
+  fpw_austria.1.t: "Austria Asks for Our Support"
+  fpw_austria.1.d: "The Austrian Empire is requesting our assistance in what they are calling a possible war with [PRS.GetNameDef]."
+  fpw_austria.1.a: "We shall help them"
+  fpw_austria.1.b: "We shall stay neutral"
+  fpw_austria.1.c: "We have other plans for Austria..."
+  fpw_austria.2.t: "France Agrees to Help"
+  fpw_austria.2.d: "[FRA.GetNameDefCap] has agreed to help us in our future war with [PRS.GetNameDef]"
+  fpw_austria.2.a: "Great!"
+  fpw_austria.3.t: "France Promises Neutrality"
+  fpw_austria.3.d: "[FRA.GetNameDefCap] has declared their neutrality in our future war with [PRS.GetNameDef]"
+  fpw_austria.3.a: "Well..."
+  fpw_austria.4.t: "France Denies to Help"
+  fpw_austria.4.d: "[FRA.GetNameDefCap] has denied to help us in our future war with [PRS.GetNameDef]"
+  fpw_austria.4.a: "You can never rely on the French!"
 
 
 
