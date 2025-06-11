@@ -1,74 +1,8 @@
-fpw_AUS_autonomous_state1 = {
+fpw_modifier_austria_shadow_of_frankfurt = {
 	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
-	
-	local_building_slots_factor = -0.2
-}
+	icon = GFX_idea_generic_purge
 
-fpw_AUS_autonomous_state2 = {
-	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
-	
-	local_building_slots_factor = -0.2
-	local_manpower = -0.3
-	
-}
-
-fpw_AUS_autonomous_state3 = {
-	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
-	
-	local_building_slots_factor = -0.2
-	local_manpower = -0.3
-	local_resources = -0.2
-}
-
-fpw_AUS_autonomous_state4 = {
-	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry
-	
-	local_building_slots_factor = -0.2
-	local_manpower = -0.3
-	local_resources = -0.2
-	state_production_speed_industrial_complex_factor = -0.1
-	state_production_speed_arms_factory_factor = -0.1
-}
-
-fpw_AUS_political_instability = {
-	enable = { always = yes }
-	icon = gre_political_instability
-
-	stability_factor = AUS_political_instability_stability_factor
-	recruitable_population_factor = AUS_political_instability_recruitable_pop_factor
-}
-
-fpw_AUS_loser_of_the_brotherswar = {
-	enable = { always = yes }
-	icon = GFX_idea_wip
-	
-	custom_modifier_tooltip = prestige_modifier_loser_of_brotherswar
-}
-
-fpw_AUS_focused_on_balkan = {
-	enable = { always = yes }
-	icon = GFX_idea_wip
-
-	attacker_modifier = yes
-
-	army_attack_factor = 0.1
-
-}
-
-fpw_AUS_divided_military = { 
-	enable = { always = yes }
-
-    icon = GFX_idea_divided_military
-
-    army_morale_factor = AUS_army_morale_factor
-    army_org_regain = AUS_army_org_regain
-    army_defence_factor = AUS_army_defence_factor
-    army_attack_factor = AUS_army_attack_factor
-    recruitable_population_factor = recruitable_population_factor
-    planning_speed = AUS_planning_speed
-    breakthrough_factor = AUS_breakthrough_factor
+    political_power_factor = AUS_modifier_political_power_factor
+    party_popularity_stability_factor = AUS_modifier_party_popularity_stability_factor
+    no_compliance_gain = AUS_no_compliance_gain
 }

@@ -46,6 +46,7 @@
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = fpw_tt_shadow_frankfurt
 		}
 	}
 
@@ -193,6 +194,10 @@
 			}
 		}
 
+		bypass = {
+			has_truce_with = PRS
+		}
+
 		prerequisite = {
 			focus = AUS_focus_holstein_crisis
 		}
@@ -218,6 +223,10 @@
 					fpw_is_not_actively_doing_italy_focus = yes
 				}
 			}
+		}
+
+		bypass = {
+			has_truce_with = PRS
 		}
 
 		prerequisite = {
@@ -251,6 +260,10 @@
 			}
 		}
 
+		bypass = {
+			has_truce_with = PRS
+		}
+
 		prerequisite = {
 			focus = AUS_focus_prussian_front
 		}
@@ -280,6 +293,10 @@
 			}
 		}
 
+		bypass = {
+			has_truce_with = ITA
+		}
+
 		prerequisite = {
 			focus = AUS_focus_holstein_crisis
 		}
@@ -306,6 +323,10 @@
 				}
 			}
 			controls_state = 39
+		}
+
+		bypass = {
+			has_truce_with = ITA
 		}
 
 		prerequisite = {
@@ -352,6 +373,10 @@
 			has_navy_size = {
     			size > 0
 			}
+		}
+
+		bypass = {
+			has_truce_with = ITA
 		}
 
 		prerequisite = {
